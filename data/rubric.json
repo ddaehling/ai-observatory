@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "scale": {"minimum": 1, "moderate": 5, "maximum": 10},
+  "dimensions": {
+    "usefulness": "Actionable value for educational and creative builders. 1: little demonstrated practical value; 5: useful for a defined task; 10: exceptional broadly actionable value.",
+    "impact": "Potential significance to AI development, grounded in evidence. 1: minor incremental change; 5: meaningful advance within a domain; 10: exceptional field-wide significance.",
+    "novelty": "Demonstrated differentiation, not promotional claims. 1: little demonstrated differentiation; 5: a meaningful distinctive capability; 10: exceptional new capability or approach.",
+    "maturity": "Documented readiness and reliability. 1: speculative or inaccessible; 5: usable with material limits; 10: extensively documented and demonstrably dependable. Do not infer reliability from benchmark scores alone.",
+    "openness": "Inspectability, licensing, portability and reproducibility. 1: closed, restrictive and difficult to inspect or migrate; 5: meaningful access with material constraints; 10: exceptionally open and reproducible with permissive documented terms."
+  },
+  "rules": [
+    "Rate each dimension as an integer from 1 to 10; explain every rating with evidence and uncertainty.",
+    "Label vendor performance claims and distinguish access to code, weights, data and training methods.",
+    "Two distinct agents must independently review the exact report, evidence and rubric hashes, without seeing one another's ratings.",
+    "Publish only two approvals using model gpt-6-astra at high effort. A difference greater than two points on any dimension blocks publication.",
+    "Public dimension scores are the arithmetic mean of the two ratings, rounded to one decimal. Overall is the mean of those dimension scores.",
+    "Independent runs of the same model are not independent experimental validation.",
+    "Final mean impact below 5 requires 1000 report-body words; 5 through 7 requires 2000; above 7 requires 3000. Each target allows ten percent variation."
+  ]
+}

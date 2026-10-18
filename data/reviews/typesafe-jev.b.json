@@ -1,0 +1,31 @@
+{
+  "reportId": "typesafe-jev",
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:25:46.346286+00:00",
+  "reportHash": "41f6290299629d11f0ebac8e7404644d43c3729a8ffac55fc9eccaf388e54c5d",
+  "evidenceHash": "326f255bca1858da47b19b64dc4fa705439cfcc1bb77213b59dd27c584aebee4",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Typed Choice/Score/Noul primitives and distributions offer actionable routing and ranking integration (ts-intro, ts-confidence); the report proposes a testable teacher-facing pilot rather than asserting deployed gains.",
+    "impact": "Separating semantic judgments from application policy could meaningfully improve a class of builder workflows (ts-intro, ts-114), but no independent evaluation establishes broad AI-development transformation.",
+    "novelty": "The explicit primitive family and code-composed decision model show meaningful product differentiation (ts-intro); images and Box expand it but remain experimental rather than a demonstrated new general capability.",
+    "maturity": "Versioned API and detailed context/confidence documentation establish usability, while 1.14 preview mapping, experimental capabilities, language unevenness and absent execution tests impose material limits (ts-models, ts-114).",
+    "openness": "Published interface and exact confidence formulas improve inspectability; reviewed sources establish a hosted service without open weights, local execution or reproducible training (ts-confidence, ts-models)."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: official vendor evidence only; workload calibration, billing and educational outcomes remain untested.",
+    "Chrome spot-check on 2026-10-18 confirmed Choice/Score confidence formula distinctions, Noul absence of confidence, $0.042/M input pricing, latest/preview mappings and context limits."
+  ]
+}

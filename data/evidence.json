@@ -1,0 +1,1503 @@
+[
+  {
+    "claim_id": "x-astra-pro-oct16-claim",
+    "claim": "GPT-6 Astra Pro update and parallel agents",
+    "source_ids": [
+      "x-astra-pro-oct16",
+      "seed-openai-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "x-astra-pro-oct16",
+        "url": "https://x.com/OpenAI/status/2111192259073094035",
+        "locator": "OpenAI public timeline, Oct16 post, visible text",
+        "passage": "GPT-6 Astra Pro in ChatGPT got an upgrade with faster responses and improved use of plugins and tools.",
+        "published_at": "2026-10-16",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher announcement; not independent performance verification",
+      "Visible public post; remaining thread and linked docs uninspected"
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Not selected for a full report within this six-report bootstrap bound."
+    ]
+  },
+  {
+    "claim_id": "x-live11-oct15-claim",
+    "claim": "GPT-Live-1.1 voice update",
+    "source_ids": [
+      "x-live11-oct15",
+      "seed-openai-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "x-live11-oct15",
+        "url": "https://x.com/OpenAI/status/2110797830361436604",
+        "locator": "OpenAI public timeline, Oct15 voice post",
+        "passage": "GPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher announcement; not independent performance verification",
+      "Visible public post; remaining thread and linked docs uninspected"
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Not selected for a full report within this six-report bootstrap bound."
+    ]
+  },
+  {
+    "claim_id": "rosalind-academic-plan-claim",
+    "claim": "Introducing the Rosalind Academic Plan",
+    "source_ids": [
+      "rosalind-academic-plan",
+      "seed-openai-news"
+    ],
+    "support": [
+      {
+        "source_id": "seed-openai-news",
+        "url": "https://openai.com/news/",
+        "locator": "All news index, first story card",
+        "passage": "Introducing the Rosalind Academic Plan - Research - Oct 15, 2026",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher announcement; not independent performance verification",
+      "Index-only discovery"
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Not selected for a full report within this six-report bootstrap bound."
+    ]
+  },
+  {
+    "claim_id": "teaching-questions-claim",
+    "claim": "Teaching students to think and learn through questions",
+    "source_ids": [
+      "teaching-questions",
+      "seed-openai-news"
+    ],
+    "support": [
+      {
+        "source_id": "seed-openai-news",
+        "url": "https://openai.com/news/",
+        "locator": "All news index, second story card",
+        "passage": "Teaching students to think and learn through questions - Company - Oct 15, 2026",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher announcement; not independent performance verification",
+      "Index-only discovery"
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Not selected for a full report within this six-report bootstrap bound."
+    ]
+  },
+  {
+    "claim_id": "gpt6-everyone-claim",
+    "claim": "GPT-6 and Intelligent UI for everyone",
+    "source_ids": [
+      "gpt6-everyone",
+      "seed-openai-news"
+    ],
+    "support": [
+      {
+        "source_id": "seed-openai-news",
+        "url": "https://openai.com/news/",
+        "locator": "All news index, product story card",
+        "passage": "GPT-6 and Intelligent UI for everyone - Product - Oct 7, 2026",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher announcement; not independent performance verification",
+      "Index-only discovery"
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Not selected for a full report within this six-report bootstrap bound."
+    ]
+  },
+  {
+    "claim_id": "creative-cf-home-claim",
+    "claim": "ComfyUI is an open-source node interface and inference engine that can run locally.",
+    "source_ids": [
+      "creative-cf-home"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-home",
+        "url": "https://docs.comfy.org/",
+        "locator": "About ComfyUI",
+        "passage": "can run on your local device",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-cf-workflow-claim",
+    "claim": "Workflows connect nodes by compatible data types; core templates provide complete examples; workflow JSON and embedded workflow metadata support sharing.",
+    "source_ids": [
+      "creative-cf-workflow"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-workflow",
+        "url": "https://docs.comfy.org/basic-concepts/workflow",
+        "locator": "Nodes are the steps; Links pass data; Starting with a template; Saving and sharing workflows",
+        "passage": "save a workflow as a JSON file",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-cf-dependencies-claim",
+    "claim": "Workflow execution depends on assets, models, custom nodes and Python dependencies; conflicting requirements can break an environment.",
+    "source_ids": [
+      "creative-cf-dependencies"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-dependencies",
+        "url": "https://docs.comfy.org/basic-concepts/dependencies",
+        "locator": "A workflow file depends on other files; Dependency Conflicts",
+        "passage": "all relevant dependencies are satisfied",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-cf-repo-claim",
+    "claim": "The repository identifies GPL-3.0 licensing, local APIs, reusable graphs, media tools and an offline mode that disables optional paid API nodes.",
+    "source_ids": [
+      "creative-cf-repo"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-repo",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "locator": "README Features; repository Resources license",
+        "passage": "force all built-in functionality to stay offline",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-nl-about-claim",
+    "claim": "Notebook supports source-grounded chat with citations and study outputs; personal-account feedback may be reviewed, while Workspace/Education uploads, queries and responses are not human reviewed or used for model training.",
+    "source_ids": [
+      "creative-nl-about"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-about",
+        "url": "https://support.google.com/gemininotebook/answer/16164461?hl=en",
+        "locator": "Learn how Gemini Notebook protects your data; Availability; Copyright",
+        "passage": "unless you provide feedback",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-nl-sources-claim",
+    "claim": "Current source import supports several document/media types but web URLs import text only, YouTube imports captions/transcripts only, Drive sources auto-sync and omit footnotes/comments.",
+    "source_ids": [
+      "creative-nl-sources"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-sources",
+        "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+        "locator": "Understand source types & limitations; Import Google Drive files; Import through Web URL; Import through YouTube URL",
+        "passage": "Only the text transcript",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-nl-video-claim",
+    "claim": "Video Overviews transform sources into video; producer-note co-creation requires Google AI Ultra; some formats/styles are age/language restricted; public notebook sharing is disabled for Workspace Enterprise/Education.",
+    "source_ids": [
+      "creative-nl-video"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-video",
+        "url": "https://support.google.com/gemininotebook/answer/16454555?hl=en",
+        "locator": "Generate video overviews; Co-create; Customize; Share a Video Overview",
+        "passage": "may contain inaccuracies or audio glitches",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-nl-students-claim",
+    "claim": "Google identifies Gemini Notebook as the same product formerly called NotebookLM, renamed in July 2026, and lists flashcards, quizzes, slide decks, audio/video and mind maps.",
+    "source_ids": [
+      "creative-nl-students"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-students",
+        "url": "https://notebook.google/students?hl=en-US",
+        "locator": "FAQ: Is Gemini Notebook the same product as NotebookLM?; Review and retain",
+        "passage": "NotebookLM is now Gemini Notebook as of July 2026.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Official product documentation, not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No hands-on generation or learner outcome experiment."
+    ]
+  },
+  {
+    "claim_id": "creative-nl-drive",
+    "claim": "Drive imports currently auto-sync, so a notebook is not necessarily a frozen source edition.",
+    "source_ids": [
+      "creative-nl-sources"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-sources",
+        "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+        "locator": "Import Google Drive files",
+        "passage": "will sync every few minutes",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-nl-footnotes",
+    "claim": "Footnotes and comments in Google files are omitted.",
+    "source_ids": [
+      "creative-nl-sources"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-sources",
+        "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+        "locator": "Import Google Drive files / Limitations",
+        "passage": "does not import footnotes or comments",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-nl-limits",
+    "claim": "Free users are documented as limited to 50 sources; each source up to 500,000 words or uploaded file up to 200MB.",
+    "source_ids": [
+      "creative-nl-sources"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-sources",
+        "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+        "locator": "Understand source types & limitations",
+        "passage": "50 sources (for Free users)",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-nl-education-privacy",
+    "claim": "Workspace/Education data handling differs from personal-account feedback handling.",
+    "source_ids": [
+      "creative-nl-about"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-about",
+        "url": "https://support.google.com/gemininotebook/answer/16164461?hl=en",
+        "locator": "Learn how Gemini Notebook protects your data",
+        "passage": "will not be reviewed by human reviewers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-nl-video-access",
+    "claim": "Producer-note co-creation specifically requires Google AI Ultra, not every Video Overview feature.",
+    "source_ids": [
+      "creative-nl-video"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-video",
+        "url": "https://support.google.com/gemininotebook/answer/16454555?hl=en",
+        "locator": "Co-create video overviews with Gemini Notebook",
+        "passage": "only available for Google AI Ultra subscribers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-nl-sharing",
+    "claim": "Do not assume a school notebook can be publicly embedded/shared through notebook public access.",
+    "source_ids": [
+      "creative-nl-video"
+    ],
+    "support": [
+      {
+        "source_id": "creative-nl-video",
+        "url": "https://support.google.com/gemininotebook/answer/16454555?hl=en",
+        "locator": "Share a Video Overview / Important",
+        "passage": "disabled for Workspace Enterprise or Education accounts",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-cf-typing",
+    "claim": "Typed links expose composition constraints.",
+    "source_ids": [
+      "creative-cf-workflow"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-workflow",
+        "url": "https://docs.comfy.org/basic-concepts/workflow",
+        "locator": "Links pass data between nodes",
+        "passage": "Only compatible data types",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-cf-license",
+    "claim": "The core repository is GPL-3.0; this is not evidence that every loaded model or custom node has identical terms.",
+    "source_ids": [
+      "creative-cf-repo"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cf-repo",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "locator": "Resources",
+        "passage": "GPL-3.0 license",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:41Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope follows current official documentation."
+    ],
+    "contradicts": [],
+    "source_family": "Comfy-Org",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "ts-primitives",
+    "claim": "Choice and Score return distributions and confidence; Noul returns a value from 0 to 1.",
+    "source_ids": [
+      "ts-intro"
+    ],
+    "support": [
+      {
+        "source_id": "ts-intro",
+        "url": "https://docs.typesafe.ai/introduction",
+        "locator": "TypeSafe primitives; Atomic questions, composed in code",
+        "passage": "Noul (0\u20131)",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Not every primitive has a separate confidence property."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "ts-release",
+    "claim": "Jev1.14 announced October14; image, box and extended context features require experimental treatment.",
+    "source_ids": [
+      "ts-114"
+    ],
+    "support": [
+      {
+        "source_id": "ts-114",
+        "url": "https://typesafe.ai/blog/jev-1-14",
+        "locator": "Composable Images; Types Beyond Decisions; jev-1.14.0",
+        "passage": "we think there is still way too much jaggedness for us to vouch for these for production use cases!",
+        "published_at": "2026-10-14",
+        "event_at": "2026-10-14",
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Vendor warning; no production readiness inferred."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "ts-confidence-definition",
+    "claim": "Confidence is calculated from output probability distributions, rather than an independently verified correctness rate.",
+    "source_ids": [
+      "ts-confidence"
+    ],
+    "support": [
+      {
+        "source_id": "ts-confidence",
+        "url": "https://docs.typesafe.ai/confidence",
+        "locator": "Confidence is derived from the probabilities; How confidence is calculated",
+        "passage": "confidence is a statistic computed from the probability distribution",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Application calibration still requires testing."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "ts-model-status",
+    "claim": "Current model reference maps latest to1.13 and preview to1.14; input costs $0.042/M tokens and output is free.",
+    "source_ids": [
+      "ts-models"
+    ],
+    "support": [
+      {
+        "source_id": "ts-models",
+        "url": "https://docs.typesafe.ai/models",
+        "locator": "Current models; Aliases; Language support; Data handling",
+        "passage": "jev-latest jev-1.13.0",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Aliases can change; documentation snapshot on retrieval date."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "ts-hallucination-scope",
+    "claim": "Homepage zero-format-error comparison cannot establish zero semantic errors.",
+    "source_ids": [
+      "ts-home"
+    ],
+    "support": [
+      {
+        "source_id": "ts-home",
+        "url": "https://typesafe.ai/",
+        "locator": "Built For Automation; chart accessibility descriptions",
+        "passage": "it is not an observed error rate from testing",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Claim concerns schema guarantee, not meaning."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-platform-rights",
+    "claim": "Homepage says free-plan use is personal and paid plans support commercial use.",
+    "source_ids": [
+      "fish-home"
+    ],
+    "support": [
+      {
+        "source_id": "fish-home",
+        "url": "https://fish.audio/",
+        "locator": "Frequently asked questions; Latest Updates",
+        "passage": "Fish Audio's free plan is for personal use only.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Hosted plan terms differ from model-weight license."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-release",
+    "claim": "Drama3 launched October13 with hosted and API availability; hosted editing remains invite-only.",
+    "source_ids": [
+      "fish-drama3"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama3",
+        "url": "https://fish.audio/blog/fish-audio-drama-3/",
+        "locator": "How Drama 3 Learned to Take Direction; Run Drama 3 Yourself; Coming Next; Launch Offer",
+        "passage": "Both are in small, invite-only testing",
+        "published_at": "2026-10-13",
+        "event_at": "2026-10-13",
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Editing API described as coming soon."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-repo-capability",
+    "claim": "Repository describes Drama3 editing and revision capability while preserving distinct S2-Pro license.",
+    "source_ids": [
+      "fish-repo"
+    ],
+    "support": [
+      {
+        "source_id": "fish-repo",
+        "url": "https://github.com/fishaudio/fish-speech",
+        "locator": "License Notice; Models; Fish Audio Drama 3",
+        "passage": "The S2-Pro weights remain under the Fish Audio Research License.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Model capability is not universal hosted feature availability."
+    ],
+    "contradicts": [
+      "fish-release"
+    ],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-header",
+    "claim": "Missing or misspelled model header silently uses s2.1-pro.",
+    "source_ids": [
+      "fish-drama-docs"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama-docs",
+        "url": "https://docs.fish.audio/features/text-to-speech/drama-3",
+        "locator": "How to use; Pronunciation; Multi-speaker dialogue",
+        "passage": "it falls back to s2.1-pro",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "This is a deployment test requirement, not an observed request failure."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-card-scope",
+    "claim": "Official model card reports35B parameters/3B active and H200-specific streaming tests; metadata license label conflicts with body.",
+    "source_ids": [
+      "fish-drama-card"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama-card",
+        "url": "https://huggingface.co/fishaudio/drama-3",
+        "locator": "Model overview; Production Serving; License",
+        "passage": "License: fish-audio-research-license",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Body points to Community License; file inspected separately."
+    ],
+    "contradicts": [
+      "fish-license"
+    ],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "fish-license",
+    "claim": "Community License v1.0 permits conditional commercial use below $500000 aggregated annual revenue and separately restricts hosted services.",
+    "source_ids": [
+      "fish-drama-license"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama-license",
+        "url": "https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE",
+        "locator": "Sections III(a), III(c), IV(a), IV(b); header",
+        "passage": "Version 1.0 \u2014 Last Updated: October 13, 2026",
+        "published_at": "2026-10-13",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Full Section III definitions govern; attribution, consent and model-training restrictions also apply."
+    ],
+    "contradicts": [
+      "fish-card-scope"
+    ],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official vendor evidence; no independent execution or experimental validation."
+    ]
+  },
+  {
+    "claim_id": "qwen38-modalities",
+    "claim": "Card identifies vision-language model with image and video support.",
+    "source_ids": [
+      "qwen38-card"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-card",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "locator": "Qwen3.8 Highlights / Vision-Language Understanding",
+        "passage": "image and video understanding",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": [
+      "Publisher description; not tested here"
+    ]
+  },
+  {
+    "claim_id": "qwen38-parameters",
+    "claim": "Language-model component is27B; Hub total rounds to28B.",
+    "source_ids": [
+      "qwen38-card"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-card",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "locator": "Model Overview > Language Model; Hub sidebar",
+        "passage": "Number of Parameters: 27B",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Hub sidebar lists28B params; differing scope, not established contradiction"
+    ],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-context",
+    "claim": "Native262144-token context can be extended to1M.",
+    "source_ids": [
+      "qwen38-card"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-card",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "locator": "Model Overview > Context Length; Best Practices > Processing Ultra-Long Texts",
+        "passage": "262,144 natively",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Extended context requires configuration; static scaling can affect shorter texts"
+    ],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-reasoning",
+    "claim": "Thinking is default; effort and preserved reasoning can be configured.",
+    "source_ids": [
+      "qwen38-card"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-card",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "locator": "API Usage > reasoning_effort; Disable Preserved Thinking",
+        "passage": "xhigh (default)",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "medium and low documented; enable_thinking and preserve_thinking controls documented",
+      "Lower effort can cause more retries; no latency guarantee"
+    ],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-api-access",
+    "claim": "Official managed version described as forthcoming at retrieval.",
+    "source_ids": [
+      "qwen38-card"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-card",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "locator": "Introduction > official Qwen Cloud API",
+        "passage": "The service is coming soon.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Third-party Hub inference-provider listings are a different route",
+      "Do not generalize this notice to all APIs"
+    ],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-license",
+    "claim": "Model repository contains Apache2.0 license.",
+    "source_ids": [
+      "qwen38-license"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-license",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE",
+        "locator": "LICENSE header, sections2,4,7; footer",
+        "passage": "Apache License\nVersion 2.0, January 2004",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Redistribution conditions apply; no warranty; does not establish dataset availability"
+    ],
+    "contradicts": [],
+    "source_family": "Qwen/Alibaba",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-serving-scope",
+    "claim": "vLLM recipe verifies text serving and requires Transformers>=5.8.",
+    "source_ids": [
+      "qwen38-vllm"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-vllm",
+        "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+        "locator": "Overview; Prerequisites",
+        "passage": "Text serving is what this recipe covers and what has been verified.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Not independent multimodal deployment validation"
+    ],
+    "contradicts": [],
+    "source_family": "vLLM project",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "qwen38-hardware",
+    "claim": "Recipe provides reduced-context single5090 configuration requiring eager execution.",
+    "source_ids": [
+      "qwen38-vllm"
+    ],
+    "support": [
+      {
+        "source_id": "qwen38-vllm",
+        "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+        "locator": "1x RTX5090 \u2014 NVFP4 needs --enforce-eager",
+        "passage": "NVFP4 fits only with CUDA graphs off",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Specific quantized artifact/backend;32K context example; not reproduced"
+    ],
+    "contradicts": [],
+    "source_family": "vLLM project",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "transformers-role",
+    "claim": "Repository positions library as model-definition framework across modalities.",
+    "source_ids": [
+      "transformers-repo"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-repo",
+        "url": "https://github.com/huggingface/transformers",
+        "locator": "README introduction",
+        "passage": "Transformers acts as the model-definition framework",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Ecosystem compatibility is a project claim, not universal interoperability"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "transformers-license",
+    "claim": "Repository identifies Apache2.0 license.",
+    "source_ids": [
+      "transformers-repo"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-repo",
+        "url": "https://github.com/huggingface/transformers",
+        "locator": "Repository files navigation / license badge",
+        "passage": "Apache-2.0 license",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Checkpoint licenses independent"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "transformers-pipeline",
+    "claim": "Pipeline handles task inference with explicit model/task and device choices.",
+    "source_ids": [
+      "transformers-pipeline"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-pipeline",
+        "url": "https://huggingface.co/docs/transformers/en/pipeline_tutorial",
+        "locator": "Pipeline; Parameters > Device",
+        "passage": "inference API",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Model/task support and hardware requirements vary"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "transformers-batching",
+    "claim": "Batching may improve speed but is not guaranteed.",
+    "source_ids": [
+      "transformers-pipeline"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-pipeline",
+        "url": "https://huggingface.co/docs/transformers/en/pipeline_tutorial",
+        "locator": "Batch inference, lines195-197",
+        "passage": "Batch inference may improve speed, especially on a GPU, but it isn\u2019t guaranteed.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "No performance testing here"
+    ]
+  },
+  {
+    "claim_id": "transformers-installation",
+    "claim": "Documentation distinguishes stable/source installs and pre-cached offline loading.",
+    "source_ids": [
+      "transformers-install"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-install",
+        "url": "https://huggingface.co/docs/transformers/en/installation",
+        "locator": "Source install; Offline mode",
+        "passage": "requires the downloaded and cached files ahead of time",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Source may not be stable; offline behavior requires configuration"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "transformers-python-discrepancy",
+    "claim": "Installation documentation describes a tested Python environment; repository directory commit text does not establish the minimum Python requirement of an installed release.",
+    "source_ids": [
+      "transformers-install",
+      "transformers-repo"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-install",
+        "url": "https://huggingface.co/docs/transformers/en/installation",
+        "locator": "Installation, line112; compare transformers-repo .github row commit metadata",
+        "passage": "It has been tested on Python 3.10+ and PyTorch 2.6+.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      },
+      {
+        "source_id": "transformers-repo",
+        "url": "https://github.com/huggingface/transformers",
+        "locator": ".github directory row, commit #49603 description, dated2026-10-14",
+        "passage": "breaks once transformers requires >=3.11 (#49251)",
+        "published_at": null,
+        "event_at": "2026-10-14",
+        "retrieved_at": "2026-10-18T15:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Tested-environment wording is not package requires-python metadata.",
+      "No universal minimum asserted; selected release/commit and actual requires-python remain unverified."
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "unresolved",
+    "limitations": [
+      "Prior directory commit metadata is retained as an observation only, not evidence of a release requirement."
+    ]
+  },
+  {
+    "claim_id": "reddit-gpu-shipment",
+    "claim": "The inspected LocalLLaMA feed showed a hardware-shipment-theft post; the external theft claim was not verified.",
+    "source_ids": [
+      "seed-reddit-localllama",
+      "reddit-gpu-shipment-story"
+    ],
+    "support": [
+      {
+        "source_id": "seed-reddit-localllama",
+        "url": "https://www.reddit.com/r/LocalLLaMA/",
+        "locator": "Visible first feed card t3_1x91svd, post-title-t3_1x91svd",
+        "passage": "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      }
+    ],
+    "qualifiers": [
+      "Title-only topic screening; relative3h displayed, not converted to exact publication date.",
+      "Observed title is not verification of the underlying allegation."
+    ],
+    "contradicts": [],
+    "source_family": "Reddit LocalLLaMA",
+    "status": "excluded",
+    "limitations": [
+      "Story and linked source not inspected; no factual theft conclusion used."
+    ]
+  },
+  {
+    "claim_id": "fish-training",
+    "claim": "Fish attributes Drama3 direction control to a learned human-preference reward conditioned on script and voice.",
+    "source_ids": [
+      "fish-drama3"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama3",
+        "url": "https://fish.audio/blog/fish-audio-drama-3/",
+        "locator": "How Drama 3 Learned to Take Direction; Run Drama 3 Yourself; Coming Next; Launch Offer",
+        "passage": "Drama 3 is tuned with one reward instead",
+        "published_at": "2026-10-13",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Vendor mechanism account; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official source only."
+    ]
+  },
+  {
+    "claim_id": "fish-direction",
+    "claim": "Drama3 docs provide bracketed direction, paired word-level controls and phonemes; mid-line language switching is experimental.",
+    "source_ids": [
+      "fish-drama-docs"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama-docs",
+        "url": "https://docs.fish.audio/features/text-to-speech/drama-3",
+        "locator": "How to use; Pronunciation; Multi-speaker dialogue",
+        "passage": "pin a pronunciation with phoneme tags",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "No sample generated or evaluated."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official source only."
+    ]
+  },
+  {
+    "claim_id": "fish-attribution",
+    "claim": "License requires attribution and consent-related conditions, and includes a restriction on training other generative models.",
+    "source_ids": [
+      "fish-drama-license"
+    ],
+    "support": [
+      {
+        "source_id": "fish-drama-license",
+        "url": "https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE",
+        "locator": "Sections III(a), III(c), IV(a), IV(b); header",
+        "passage": "Distribution & Attribution",
+        "published_at": "2026-10-13",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:14:46Z"
+      }
+    ],
+    "qualifiers": [
+      "Model-weight license, not hosted subscription terms."
+    ],
+    "contradicts": [],
+    "source_family": "Fish Audio",
+    "status": "included",
+    "limitations": [
+      "Official source only."
+    ]
+  },
+  {
+    "claim_id": "transformers-tokenizer-role",
+    "claim": "A tokenizer converts text to model inputs and decodes output identifiers; AutoTokenizer resolves the associated tokenizer through configuration.",
+    "source_ids": [
+      "transformers-tokenizers"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-tokenizers",
+        "url": "https://huggingface.co/docs/transformers/en/fast_tokenizers",
+        "locator": "Tokenizers introduction; Load a tokenizer",
+        "passage": "A tokenizer converts text into tensors",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Guide version selector showed v5.20.1; no tokenizer executed"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  },
+  {
+    "claim_id": "transformers-tokenizer-truncation",
+    "claim": "Truncation clips tokens to a maximum length; padding aligns sequence lengths.",
+    "source_ids": [
+      "transformers-tokenizers"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-tokenizers",
+        "url": "https://huggingface.co/docs/transformers/en/fast_tokenizers",
+        "locator": "Batch processing / Padding / Truncation",
+        "passage": "Truncation clips tokens so a sequence fits within a maximum length.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Application consequences and proposed input rejection are editorial inference"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  },
+  {
+    "claim_id": "transformers-processor-role",
+    "claim": "Processors coordinate preprocessing types for multimodal model inputs.",
+    "source_ids": [
+      "transformers-processors"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-processors",
+        "url": "https://huggingface.co/docs/transformers/main/en/processors",
+        "locator": "Processors introduction",
+        "passage": "providing a single and unified processor class for a multimodal model",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Main branch documentation; not a promise for every checkpoint"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  },
+  {
+    "claim_id": "transformers-processor-audio",
+    "claim": "Audio should match the pretrained model required sampling rate.",
+    "source_ids": [
+      "transformers-processors"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-processors",
+        "url": "https://huggingface.co/docs/transformers/main/en/processors",
+        "locator": "Preprocess",
+        "passage": "Remember to resample the sampling rate",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Main branch documentation; model-dependent value, no universal sampling rate asserted"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  },
+  {
+    "claim_id": "transformers-model-boundaries",
+    "claim": "Quickstart distinguishes configuration, model architecture and preprocessor; appropriate task heads and pretrained weights matter.",
+    "source_ids": [
+      "transformers-quickstart"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-quickstart",
+        "url": "https://huggingface.co/docs/transformers/main/en/quicktour",
+        "locator": "Pretrained models table; AutoClass paragraph",
+        "passage": "use the appropriate model head",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Main branch documentation; implementation choices depend on task and checkpoint"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  },
+  {
+    "claim_id": "transformers-trainer-role",
+    "claim": "Trainer provides a PyTorch training and evaluation loop, distinct from a basic inference pilot.",
+    "source_ids": [
+      "transformers-quickstart"
+    ],
+    "support": [
+      {
+        "source_id": "transformers-quickstart",
+        "url": "https://huggingface.co/docs/transformers/main/en/quicktour",
+        "locator": "Trainer",
+        "passage": "a complete training and evaluation loop for PyTorch models",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:30:52.536776Z"
+      }
+    ],
+    "qualifiers": [
+      "Main branch documentation; training is not performed or recommended as a prerequisite here"
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face",
+    "status": "included",
+    "limitations": [
+      "Documentation inspection only; no runtime validation"
+    ]
+  }
+]

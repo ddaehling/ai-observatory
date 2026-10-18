@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Parallax — AI Observatory</title>
+  <meta name="description" content="Long-form, source-linked research reports on AI tools, models, open-source projects, creative workflows and research, written for people who teach and build. Every report is rated by two separate reviewers.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f2eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1120" media="(prefers-color-scheme: dark)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Apply saved browser preferences before first paint (no network, no data). */
+    try {
+      var p = JSON.parse(localStorage.getItem('parallax.v1.prefs') || '{}'), r = document.documentElement;
+      if (p && /^(plate|darkroom|redlight)$/.test(p.theme)) r.setAttribute('data-theme', p.theme);
+      if (p && /^(s|m|l|xl)$/.test(p.text)) r.setAttribute('data-text', p.text);
+      if (p && /^(reduce|allow)$/.test(p.motion)) r.setAttribute('data-motion', p.motion);
+    } catch (e) {}
+  </script>
+  <script src="app.js" defer></script>
+</head>
+<body data-route="loading">
+  <a class="skip" href="#main" data-skip>Skip to content</a>
+  <div class="readbar" id="readbar" aria-hidden="true"><span></span></div>
+
+  <header class="masthead" id="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="#index" aria-label="Parallax, AI Observatory: index">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect class="bm-plate" width="32" height="32" rx="7"/>
+          <path class="bm-sight" d="M7 25 16 8.5 25 25"/>
+          <circle class="bm-a" cx="7" cy="25" r="2.6"/>
+          <circle class="bm-b" cx="25" cy="25" r="2.6"/>
+          <path class="bm-star" d="M16 3.6l1.15 3.75 3.75 1.15-3.75 1.15L16 13.4l-1.15-3.75L11.1 8.5l3.75-1.15z"/>
+        </svg>
+        <span class="brand-word">Parallax</span>
+        <span class="brand-sub">AI Observatory</span>
+      </a>
+
+      <nav class="primary" aria-label="Primary">
+        <ul>
+          <li><a href="#index" data-nav="index">Index</a></li>
+          <li><a href="#sources" data-nav="sources">Sources</a></li>
+          <li><a href="#editions" data-nav="editions">Editions</a></li>
+          <li><a href="#method" data-nav="method">Method</a></li>
+          <li><a href="#settings" data-nav="settings">Settings</a></li>
+        </ul>
+      </nav>
+
+      <div class="masthead-tools">
+        <button type="button" class="tool" id="open-palette" aria-label="Find reports" aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 11a6.5 6.5 0 1 0 13 0a6.5 6.5 0 1 0-13 0M16 16l4.5 4.5"/></svg>
+          <span class="tool-label">Find</span>
+          <kbd class="tool-kbd" data-kbd>⌘K</kbd>
+        </button>
+        <button type="button" class="tool" id="open-queue" aria-label="Open reading queue" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4h10v16l-5-3.6L7 20z"/></svg>
+          <span class="tool-label">Queue</span>
+          <span class="tool-count" id="queue-count" hidden></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app" class="view" aria-busy="true">
+      <section class="state state-loading wrap">
+        <h1 class="state-title">Loading the current edition…</h1>
+      </section>
+    </div>
+    <noscript>
+      <section class="state wrap">
+        <h1 class="state-title">Parallax needs JavaScript</h1>
+        <p>The reports are loaded from <code>data.json</code> by a small script. Please enable JavaScript to read them.</p>
+      </section>
+    </noscript>
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon-inner wrap">
+      <div class="colophon-brand">
+        <p class="colophon-word">Parallax</p>
+        <p class="colophon-line">The reading room of the AI Observatory: research reports on AI for people who teach and build.</p>
+      </div>
+      <div class="colophon-notes">
+        <p>Every report is rated by two separate reviewer runs of the same model. That is a consistency check, not independent validation. <a href="#method">How ratings work</a>.</p>
+        <p>Your queue, read marks and progress stay in this browser. This site sets no cookies and loads no third-party scripts.</p>
+        <p id="colophon-repo"></p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="palette" class="palette" aria-labelledby="palette-title">
+    <div class="palette-inner">
+      <h2 id="palette-title" class="sr-only">Find a report or go to a page</h2>
+      <div class="palette-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 11a6.5 6.5 0 1 0 13 0a6.5 6.5 0 1 0-13 0M16 16l4.5 4.5"/></svg>
+        <input id="palette-input" type="text" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Find a report, or jump to a page…">
+        <kbd>Esc</kbd>
+      </div>
+      <ul id="palette-list" class="palette-list" role="listbox" aria-label="Results"></ul>
+      <p class="palette-foot" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>/</kbd> search the index</span></p>
+    </div>
+  </dialog>
+
+  <dialog id="queue" class="sheet" aria-labelledby="queue-title">
+    <div class="sheet-inner">
+      <header class="sheet-head">
+        <h2 id="queue-title">Reading queue</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close reading queue">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div id="queue-body" class="sheet-body"></div>
+      <footer id="queue-foot" class="sheet-foot"></footer>
+    </div>
+  </dialog>
+
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+[
+  {
+    "id": "x-astra-pro-oct16",
+    "title": "GPT-6 Astra Pro update and parallel agents",
+    "officialUrl": "https://x.com/OpenAI/status/2111192259073094035",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": "2026-10-16",
+    "changeType": "update",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "x-astra-pro-oct16",
+      "seed-openai-on-x"
+    ],
+    "reason": "Current official update preserved for next edition; six reports prioritized distinct builder workflows.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "x-live11-oct15",
+    "title": "GPT-Live-1.1 voice update",
+    "officialUrl": "https://x.com/OpenAI/status/2110797830361436604",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": "2026-10-15",
+    "changeType": "update",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "x-live11-oct15",
+      "seed-openai-on-x"
+    ],
+    "reason": "Current official voice lead requires full rollout and API documentation review before publication.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "rosalind-academic-plan",
+    "title": "Introducing the Rosalind Academic Plan",
+    "officialUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": "2026-10-15",
+    "changeType": "update",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "rosalind-academic-plan",
+      "seed-openai-news"
+    ],
+    "reason": "Dated primary source discovered; narrower academic biology scope deferred behind general educational builder workflows.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "teaching-questions",
+    "title": "Teaching students to think and learn through questions",
+    "officialUrl": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions/",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": "2026-10-15",
+    "changeType": "update",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "teaching-questions",
+      "seed-openai-news"
+    ],
+    "reason": "Highly relevant pedagogical lead preserved; article needs inspection and independent pedagogical caveats before report.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "gpt6-everyone",
+    "title": "GPT-6 and Intelligent UI for everyone",
+    "officialUrl": "https://openai.com/index/gpt-6-for-everyone/",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": "2026-10-07",
+    "changeType": "update",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "gpt6-everyone",
+      "seed-openai-news"
+    ],
+    "reason": "Dated primary launch lead preserved, not yet a fully researched report.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "reddit-gpu-shipment",
+    "title": "Two pallets of RTX5090 cards disappear at Brazilian airport",
+    "officialUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1x91svd/two_pallets_of_zotac_rtx_5090_graphics_cards/",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "publishedAt": null,
+    "changeType": "new",
+    "status": "excluded",
+    "reportId": null,
+    "sourceIds": [
+      "seed-reddit-localllama"
+    ],
+    "reason": "Visible discovery-feed item concerns hardware shipment theft; low direct value for educational/creative AI building. Linked claim not verified.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "transformers",
+    "title": "Transformers: make model choices testable before building the product",
+    "officialUrl": "https://github.com/huggingface/transformers",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "included",
+    "reportId": "transformers",
+    "sourceIds": [
+      "transformers-repo",
+      "transformers-pipeline",
+      "transformers-install"
+    ],
+    "reason": "Source-backed substantial report complete; awaiting two independent Astra final reviews and publication gate.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "typesafe-jev",
+    "title": "Jev 1.14 makes small AI judgments a software primitive",
+    "officialUrl": "https://typesafe.ai/blog/jev-1-14",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "publishedAt": "2026-10-14",
+    "changeType": "update",
+    "status": "included",
+    "reportId": "typesafe-jev",
+    "sourceIds": [
+      "ts-114",
+      "ts-intro",
+      "ts-confidence",
+      "ts-models"
+    ],
+    "reason": "Source-backed substantial report complete; awaiting two independent Astra final reviews and publication gate.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "qwen38-27b",
+    "title": "Qwen3.8-27B: a controllable visual assistant worth a bounded pilot",
+    "officialUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "included",
+    "reportId": "qwen38-27b",
+    "sourceIds": [
+      "qwen38-card",
+      "qwen38-license",
+      "qwen38-vllm"
+    ],
+    "reason": "Source-backed substantial report complete; awaiting two independent Astra final reviews and publication gate.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "comfyui",
+    "title": "ComfyUI: make creative generation a process you can inspect",
+    "officialUrl": "https://docs.comfy.org/",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "included",
+    "reportId": "comfyui",
+    "sourceIds": [
+      "creative-cf-home",
+      "creative-cf-workflow",
+      "creative-cf-dependencies",
+      "creative-cf-repo"
+    ],
+    "reason": "Source-backed substantial report complete; awaiting two independent Astra final reviews and publication gate.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "notebooklm",
+    "title": "NotebookLM, now Gemini Notebook: build a source-first teaching workflow",
+    "officialUrl": "https://notebook.google/students?hl=en-US",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "included",
+    "reportId": "notebooklm",
+    "sourceIds": [
+      "creative-nl-about",
+      "creative-nl-sources",
+      "creative-nl-video",
+      "creative-nl-students"
+    ],
+    "reason": "Substantial researched report complete; pending two independent Astra reviews.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "fish-audio",
+    "title": "Fish Audio Drama 3 brings performance direction into speech production",
+    "officialUrl": "https://fish.audio/blog/fish-audio-drama-3/",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "publishedAt": "2026-10-13",
+    "changeType": "update",
+    "status": "included",
+    "reportId": "fish-audio",
+    "sourceIds": [
+      "fish-drama3",
+      "fish-drama-docs",
+      "fish-drama-card",
+      "fish-drama-license",
+      "fish-repo",
+      "fish-home"
+    ],
+    "reason": "Source-backed report complete; awaiting2independent Astra final reviews and publication gate.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "gemini-cli",
+    "title": "Gemini CLI access/migration lead",
+    "officialUrl": "https://github.com/google-gemini/gemini-cli",
+    "discoveredAt": "2026-10-18T15:20:19.329655+00:00",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "needs_review",
+    "reportId": null,
+    "sourceIds": [
+      "gemini-cli-candidate"
+    ],
+    "reason": "Search-only replacement notice needs direct verification; not treated as defunct.",
+    "runId": "2026-10-18-bootstrap"
+  },
+  {
+    "id": "qwen38-benchmarks",
+    "title": "Qwen3.8 vendor benchmark rankings",
+    "officialUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "discoveredAt": "2026-10-18T15:20:19.330157+00:00",
+    "publishedAt": null,
+    "changeType": "baseline",
+    "status": "excluded",
+    "reportId": null,
+    "sourceIds": [
+      "qwen38-card"
+    ],
+    "reason": "No independent reproduction; do not infer teaching readiness from vendor rankings.",
+    "runId": "2026-10-18-bootstrap"
+  }
+]

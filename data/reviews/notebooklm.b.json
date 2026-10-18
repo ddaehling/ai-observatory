@@ -1,0 +1,31 @@
+{
+  "reportId": "notebooklm",
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:25:46.494175+00:00",
+  "reportHash": "80dce2e664e7f0040b099d59ada34a227e161e49abbe084a3054e49214dc3199",
+  "evidenceHash": "e4cd5eab178b42b28dd53e3f20b9dc8c93e2cc708cfb2c777057ea69b3bf71bd",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Source selection, citations and diverse study formats offer strong practical educational value (creative-nl-about, creative-nl-students); concrete import checks and reviewed-artifact workflow make the proposals actionable.",
+    "impact": "Connecting curated evidence to study and multimedia production can materially influence educational workflows (creative-nl-sources, creative-nl-video), though this baseline supplies no measured learning or field-wide model advance.",
+    "novelty": "The integrated source-to-chat/study/video workflow is meaningfully differentiated (creative-nl-students, creative-nl-video); the July rename itself is not a novel capability and the article properly avoids treating it as one.",
+    "maturity": "Detailed current import, access, sharing and generation documentation supports a developed usable service, while documented inaccuracies, processing time and account restrictions limit dependability (creative-nl-video, creative-nl-sources).",
+    "openness": "Inspectable citations and some downloadable outputs offer limited portability; closed hosted processing, account gates and restricted notebook sharing/export prevent a high openness rating (creative-nl-video, creative-nl-about)."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: one Google source family, no generated-artifact trial or learner-outcome experiment.",
+    "Chrome spot-check on 2026-10-18 confirmed the student FAQ July 2026 rename and the import guide auto-sync, omitted footnotes/comments, text-only web/transcript imports and stated free limits."
+  ]
+}

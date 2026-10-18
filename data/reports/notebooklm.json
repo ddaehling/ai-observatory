@@ -1,0 +1,121 @@
+{
+  "id": "notebooklm",
+  "title": "NotebookLM, now Gemini Notebook: build a source-first teaching workflow",
+  "entity": "NotebookLM / Gemini Notebook",
+  "category": "Creative workflows",
+  "tags": [
+    "education",
+    "source grounding",
+    "research",
+    "video overviews",
+    "study tools"
+  ],
+  "summary": "A practical baseline for curating sources, verifying citations and producing reviewed study or video material in the product now called Gemini Notebook.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-18T15:13:41Z",
+  "updatedAt": "2026-10-18T15:13:41Z",
+  "officialUrl": "https://notebook.google/students?hl=en-US",
+  "sections": [
+    {
+      "id": "identity",
+      "title": "NotebookLM now has a different name",
+      "html": "<p>NotebookLM is now Gemini Notebook. Google's current student page says the rename took place in July 2026 and that existing notebooks remain accessible. This report retains NotebookLM as the familiar identifier while describing the product documented on 18 October 2026. It is a baseline workflow assessment, not an announcement of a newly released model or a reconstruction of every feature's launch date. The precise day of the rename was not verified. <a href=\"https://notebook.google/students?hl=en-US\">Official student page and product identity FAQ</a>.</p><p>For educators, the useful proposition is a workspace organized around selected source material. Google's Help documentation describes chat grounded in those sources, with inline citations, plus transformations into study and presentation formats. That creates a practical connection between reading, questioning and producing explanations. It does not make the selected sources correct or make every generated sentence reliable. This report distinguishes documented functions from original classroom and production proposals. No learner trial, generated lesson or comparative accuracy test was conducted. <a href=\"https://support.google.com/gemininotebook/answer/16164461?hl=en\">Current product overview</a>.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "The source collection is part of the lesson design",
+      "html": "<p>The important design decision happens before asking a question: what belongs in the notebook? The current import guide defines a source as a copied or automatically synchronized version of imported material. It documents support for documents, pasted text, audio, images, websites and other types. The product therefore sits between a collection of learning materials and several ways to interrogate or reshape them. Think of source selection as setting the scope of a conversation, with the limitations of each import method affecting what the system can actually use. <a href=\"https://support.google.com/gemininotebook/answer/16215270?hl=en\">Source types and import behavior</a>.</p><p>A teacher planning a unit on urban heat could begin with a short explanatory reading, a local public dataset description and a contrasting policy argument. Label each source by author, date and purpose. Write down the unit's central questions outside the notebook: what the phenomenon is, how it is measured, and which proposed responses involve tradeoffs. This is an editorial teaching example. The sources need not all agree, but the notebook should make disagreement available for examination rather than accidentally hiding it behind a fluent synthesis.</p><p>Ask learners to separate a source's assertion from an established fact, and a model's explanation from the source passage offered in support. A citation gives a place to inspect the relationship; it is not a verdict on that relationship. A useful classroom routine asks students to open one citation, state exactly what it supports, and identify what remains an inference. The proposed learning value lies in practicing that verification habit. Google's product pages list study functions but do not establish learning gains for this particular exercise.</p>"
+    },
+    {
+      "id": "import",
+      "title": "Inspect the material after importing it",
+      "html": "<p>Input format changes the evidence available to the system. The current guide says an ordinary webpage import extracts text, excluding embedded images, embedded videos and nested pages. A YouTube source imports the text transcript of a public captioned video. Local audio is transcribed. For a lesson involving a chart, a silent demonstration or a visual experiment, importing the URL alone may therefore omit the very evidence students need. A source appearing in the notebook is not proof that every meaningful part of the original has been represented. <a href=\"https://support.google.com/gemininotebook/answer/16215270?hl=en\">Web, YouTube and audio import limitations</a>.</p><p>Make import inspection an explicit production step. Compare the source viewer with the original and check a few important passages. If a video demonstrates a procedure, provide a separate teacher-written description or another permitted source that captures the visual steps. If a graph carries the argument, ensure that the relevant axes, units and observations are available in an appropriate supported form, then verify the interpretation. These are proposed checks; this report has not tested visual extraction quality or transcription accuracy for a particular file.</p><p>The guide also says that Google-file footnotes and comments are omitted, while Drive imports currently synchronize automatically every few minutes and update when the notebook is opened. Those two details matter together. An author's caveat in a footnote may never arrive, while a later edit to the main document may change the source after a lesson was prepared. Record the source version or retrieval date needed for an assessment and recheck the notebook before reusing an explanation. A dynamic notebook should not be mistaken for a frozen edition. <a href=\"https://support.google.com/gemininotebook/answer/16215270?hl=en\">Drive import behavior and limitations</a>.</p>"
+    },
+    {
+      "id": "questions",
+      "title": "Build questions that expose the boundary of the evidence",
+      "html": "<p>Start with questions that can be checked against a small source set. Ask for the definition used by one named document, the steps described by a procedure, or the points of agreement between two readings. Then move to harder questions: which conclusion is not supported, where the sources disagree, and what additional information would be needed to choose between explanations. The import guide documents selecting individual sources and asking specific questions to focus a response. That supports deliberate scope control, without guaranteeing that every answer will respect the intended boundary perfectly. <a href=\"https://support.google.com/gemininotebook/answer/16215270?hl=en\">Focused summaries and source selection</a>.</p><p>A proposed seminar sequence has three stages. Students first answer a question unaided, using the original materials. They then compare their reasoning with a notebook answer and inspect its citations. Finally, they revise their explanation and state one remaining uncertainty. Assessment can focus on the quality of the revision and source checking rather than the polish of the generated prose. This gives the teacher a visible artifact of thinking and makes it harder for a plausible summary to substitute for understanding.</p><p>Expect some questions to remain unanswered. Google's overview notes that source content, question clarity and safety restrictions can affect responses, including sensitive language appearing in legitimate historical material. A refusal or weak answer does not establish that the original documents contain no relevant evidence. Return to the materials directly, narrow the question and record the unresolved point. The teacher still needs a route through the lesson when a feature is unavailable or the generated explanation is unsuitable. <a href=\"https://support.google.com/gemininotebook/answer/16164461?hl=en\">Why questions may not be answered</a>.</p>"
+    },
+    {
+      "id": "study",
+      "title": "Use study outputs to support retrieval and explanation",
+      "html": "<p>The student page currently lists flashcards, quizzes, slide decks, mind maps, audio and video overviews, reports and cited question answering. These outputs offer different ways to revisit the same material. A sensible teaching choice begins with the learning task: remembering terms, explaining relationships, evaluating an argument or preparing to teach a concept. Generating every available format can create more material than a learner can meaningfully use. Select the output that addresses an identified difficulty and review whether it preserves the source's qualifications. <a href=\"https://notebook.google/students?hl=en-US\">Study material formats</a>.</p><p>For a vocabulary-heavy unit, a teacher could review a small flashcard set for ambiguous definitions, then ask students to explain why an example fits the term. For a conceptual unit, a mind map could become a discussion artifact: students inspect one proposed connection and support or challenge it with a passage. For a seminar, a short audio overview might serve as a preview followed by an assignment to identify an omitted nuance. These are suggested activities, not claims about validated instructional effectiveness or the accuracy of every generated item.</p><p>Keep a short human-authored assessment separate from the generated practice material. If the same system creates both the explanation and all questions, a repeated misconception may look internally consistent. Include a transfer question that applies the idea to a new situation, plus a request to justify the answer from the reading. Measure whether students can explain and apply the concept after using the material. Convenience, enjoyment and fluent playback are useful observations, but none alone demonstrates understanding.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Make an explainer with a review gate",
+      "html": "<p>Video Overviews provide the clearest bridge to creative production. The current Help page documents selecting Video Overview in Studio, customizing it and generating immediately or later. It also explicitly warns that generated voices and visuals can contain inaccuracies or audio glitches. Available formats include Explainer, Short and Cinematic, with restrictions that differ by format. A teacher should check the options available to the actual account rather than assume every item on a public page is enabled for every learner. <a href=\"https://support.google.com/gemininotebook/answer/16454555?hl=en\">Generation and customization</a>.</p><p>A proposed classroom video workflow begins with a source collection that already passed the import checks. Define the audience, the one idea the video must explain and the terms it must use carefully. Request an explainer focused on that purpose. Watch the complete result, compare central statements with the original sources, inspect diagrams and listen for mispronunciations. Add a companion text summary and a short question requiring learners to use the underlying materials. A generated video should be treated as a draft requiring editorial responsibility.</p><p>The same Help page documents producer-note co-creation specifically for Google AI Ultra subscribers. It allows review and consolidated feedback before proceeding to rendering, with no further producer-note refinement after that step. Generation can sometimes take more than thirty minutes. This makes the feature unsuitable as a guaranteed last-minute classroom dependency. Its value for a builder is a possible planning checkpoint; the subscription restriction applies to that co-creation route and should not be generalized to all Video Overviews. <a href=\"https://support.google.com/gemininotebook/answer/16454555?hl=en\">Producer notes, access and generation timing</a>.</p>"
+    },
+    {
+      "id": "builders",
+      "title": "Where it fits in apps and websites",
+      "html": "<p>A builder preparing a learning website can use the notebook as a research and drafting workspace upstream of the published product. A small collection of approved readings can support a draft FAQ, a lesson outline or a video briefing, which an editor then checks and integrates into the site. The evidence reviewed here does not establish a public API or an unrestricted embedding contract. Plan the website around reviewed exported materials and its own navigation rather than assuming the notebook can become an invisible application backend.</p><p>Sharing also deserves deliberate design. The video guide distinguishes sharing a video link, sharing the notebook and downloading a video. Link access depends on notebook sharing and full-notebook access, and public notebook sharing is currently disabled for Workspace Enterprise and Education accounts. The page notes that publisher restrictions on Play Books sources can prevent artifact downloads. A teacher building a public resource hub should therefore test the intended distribution route before promising access to families or external collaborators. <a href=\"https://support.google.com/gemininotebook/answer/16454555?hl=en\">Sharing and download restrictions</a>.</p><p>Treat the published site as a maintained edition. Preserve the source list, note what was reviewed, record the review date and retain a way to correct errors. Keep the original documents available where permission permits, so readers can inspect a claim independently. If a notebook is later synchronized or expanded, do not assume the already published explanation has been updated accordingly. A reviewed export and a living research workspace serve different maintenance needs, even when they originate from the same materials.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Account, privacy and copyright choices",
+      "html": "<p>A Google account and sign-in are required. The overview describes country, age and account conditions, including administrator enablement for managed accounts and all-age availability for Workspace for Education users. Individual features can have tighter limits: the video guide restricts Cinematic output to adults and English, for example. The source guide currently documents fifty sources for free users, a maximum of 500,000 words per source and a 200 MB uploaded-file ceiling, alongside format-specific limits. Verify the current account before designing an assignment around capacity. <a href=\"https://support.google.com/gemininotebook/answer/16164461?hl=en\">Availability</a>; <a href=\"https://support.google.com/gemininotebook/answer/16215270?hl=en\">Source limits</a>.</p><p>Privacy language must preserve the account distinction. Google says personal data is not used to train the product unless feedback is provided, and feedback may expose the full interaction context to review. For Workspace and Education users, its overview says uploads, queries and responses are neither human reviewed nor used for AI training. Those commitments do not by themselves authorize uploading a confidential student record or another person's material. Use the institution's approved account and source policy, and choose the minimum information necessary for the lesson. <a href=\"https://support.google.com/gemininotebook/answer/16164461?hl=en\">Data protection and copyright</a>.</p>"
+    },
+    {
+      "id": "decision",
+      "title": "Adopt the verification routine with the tool",
+      "html": "<p>My judgment is that this is a useful workspace for turning a deliberately chosen reading collection into questions, drafts and varied review material. Its strongest educational opportunity is making source inspection part of the activity. Its limitation is that a polished transformation can conceal missing imports, weak sources or an unsupported interpretation. Copyright permission remains necessary, and Google's statement that it does not claim ownership of generated content is not a blanket rights clearance for the underlying materials.</p><p>Test adoption with one bounded unit. Review a few source imports, a set of cited answers and one generated study artifact. Record factual corrections, preparation time, access failures and how well students justify answers from the reading. The hypothesis is that this workflow improves preparation and supports more deliberate study; the reviewed documentation does not prove it. Continue only if the complete cycle, including human checking and distribution, is worthwhile for the teacher and usable by the intended learners.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-curated reading companions with citation checks",
+    "Reviewed flashcards, quizzes and mind-map activities",
+    "Source-grounded drafts for educational websites",
+    "Video explainer drafts with human review"
+  ],
+  "limitations": [
+    "No generated artifact, learner trial or comparative accuracy benchmark was tested.",
+    "Web and YouTube imports may omit essential visual information; Google-file footnotes/comments are omitted.",
+    "Drive imports are dynamic and can change the notebook source set.",
+    "Account, age, region, plan and school administrator restrictions vary.",
+    "Personal-account feedback and Workspace/Education data commitments differ; uploads still require authorization and rights.",
+    "Public notebook sharing is currently disabled for Workspace Enterprise/Education; export restrictions can apply."
+  ],
+  "sources": [
+    {
+      "id": "creative-nl-about",
+      "title": "Learn about Gemini Notebook",
+      "url": "https://support.google.com/gemininotebook/answer/16164461?hl=en",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "Learn how Gemini Notebook protects your data; Availability; Copyright",
+      "supports": "Notebook supports source-grounded chat with citations and study outputs; personal-account feedback may be reviewed, while Workspace/Education uploads, queries and responses are not human reviewed or used for model training."
+    },
+    {
+      "id": "creative-nl-sources",
+      "title": "Add or discover new sources for your notebook",
+      "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "Understand source types & limitations; Import Google Drive files; Import through Web URL; Import through YouTube URL",
+      "supports": "Current source import supports several document/media types but web URLs import text only, YouTube imports captions/transcripts only, Drive sources auto-sync and omit footnotes/comments."
+    },
+    {
+      "id": "creative-nl-video",
+      "title": "Generate Video Overviews in Gemini Notebook",
+      "url": "https://support.google.com/gemininotebook/answer/16454555?hl=en",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "Generate video overviews; Co-create; Customize; Share a Video Overview",
+      "supports": "Video Overviews transform sources into video; producer-note co-creation requires Google AI Ultra; some formats/styles are age/language restricted; public notebook sharing is disabled for Workspace Enterprise/Education."
+    },
+    {
+      "id": "creative-nl-students",
+      "title": "Gemini Notebook | AI Study Tool for Students",
+      "url": "https://notebook.google/students?hl=en-US",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "FAQ: Is Gemini Notebook the same product as NotebookLM?; Review and retain",
+      "supports": "Google identifies Gemini Notebook as the same product formerly called NotebookLM, renamed in July 2026, and lists flashcards, quizzes, slide decks, audio/video and mind maps."
+    }
+  ],
+  "images": [],
+  "judgment": "Useful as a curated research and preparation workspace with varied output formats. Educational gains remain an adoption hypothesis; fluent outputs and citations require human inspection. Closed service, account restrictions and distribution limits constrain openness.",
+  "researchNote": "Baseline researched 18 October 2026 from four official Google pages in one source family. The student FAQ verifies a July2026 rename from NotebookLM to Gemini Notebook, without a precise day. Help publication dates and individual feature release dates were not verified; publishedAt remains null. Practical teaching examples are original proposals, not demonstrated outcomes."
+}

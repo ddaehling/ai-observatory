@@ -1,0 +1,1088 @@
+[
+  {
+    "claim_id": "x-astra-pro-oct16-claim",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "x-astra-pro-oct16",
+      "seed-openai-on-x"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Current official update preserved for next edition; six reports prioritized distinct builder workflows.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Visible source locator recorded; full report deferred."
+    ]
+  },
+  {
+    "claim_id": "x-live11-oct15-claim",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "x-live11-oct15",
+      "seed-openai-on-x"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Current official voice lead requires full rollout and API documentation review before publication.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Visible source locator recorded; full report deferred."
+    ]
+  },
+  {
+    "claim_id": "rosalind-academic-plan-claim",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "rosalind-academic-plan",
+      "seed-openai-news"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Dated primary source discovered; narrower academic biology scope deferred behind general educational builder workflows.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Visible source locator recorded; full report deferred."
+    ]
+  },
+  {
+    "claim_id": "teaching-questions-claim",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "teaching-questions",
+      "seed-openai-news"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Highly relevant pedagogical lead preserved; article needs inspection and independent pedagogical caveats before report.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Visible source locator recorded; full report deferred."
+    ]
+  },
+  {
+    "claim_id": "gpt6-everyone-claim",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "gpt6-everyone",
+      "seed-openai-news"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Dated primary launch lead preserved, not yet a fully researched report.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Visible source locator recorded; full report deferred."
+    ]
+  },
+  {
+    "claim_id": "reddit-gpu-shipment",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "seed-reddit-localllama"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Off-scope hardware crime lead, preserved rather than treated as evidence of an AI release. Relative time3h not converted to invented publication date.",
+    "worker_profile": "integrative coordinator",
+    "validation_findings": [
+      "Public subreddit readable; no login failure observed.",
+      "Bounded visible feed only; not chronological completeness."
+    ]
+  },
+  {
+    "claim_id": "creative-cf-home-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-home"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-workflow-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-workflow"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-dependencies-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-dependencies"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-repo-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-about-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-about"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-sources-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-sources"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-video-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-video"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-students-claim",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-students"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-drive",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-sources"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-footnotes",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-sources"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-limits",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-sources"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-education-privacy",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-about"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-video-access",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-video"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-nl-sharing",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-video"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-typing",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-workflow"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-license",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Official source supports bounded mechanism, access or limitation claim; practical examples will be explicitly editorial proposals.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "creative-cf-fastest",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-cf-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Vendor superlative fastest is not independently measured in this assignment; preserve as unverified vendor language.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "No benchmark acquired."
+    ]
+  },
+  {
+    "claim_id": "creative-learning-gains",
+    "status": "unresolved",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-students"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Marketing describes learning tools but does not establish comparative learning gains.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "No learner trial."
+    ]
+  },
+  {
+    "claim_id": "creative-release-date",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "creative-nl-students"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Rename month is July2026; exact day and feature-release dates not verified. Both reports baseline, publishedAt null.",
+    "worker_profile": "integrative",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-primitives",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-intro"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-release",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-114"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-confidence-definition",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-confidence"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-model-status",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-models"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-hallucination-scope",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-home"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-platform-rights",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-home"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-release",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama3"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-repo-capability",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-repo"
+    ],
+    "conflicting_source_ids": [
+      "fish-drama3"
+    ],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-header",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-docs"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-card-scope",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-card"
+    ],
+    "conflicting_source_ids": [
+      "fish-drama-license"
+    ],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-license",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-license"
+    ],
+    "conflicting_source_ids": [
+      "fish-drama-card"
+    ],
+    "reason": "Explicit official support; qualifications retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "ts-universal-speed",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "ts-home"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Homepage workflow cost/speed comparisons are vendor-specific and not a universal benchmark; not repeated as measured general superiority.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "No independent evaluation acquired."
+    ]
+  },
+  {
+    "claim_id": "fish-editing-universal",
+    "status": "unresolved",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-repo",
+      "fish-drama3",
+      "fish-drama-card"
+    ],
+    "conflicting_source_ids": [
+      "fish-drama3"
+    ],
+    "reason": "Separate local-model capability from hosted product access; local editing not executed.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "No editing access or model execution tested."
+    ]
+  },
+  {
+    "claim_id": "fish-license-metadata",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-license",
+      "fish-drama-card"
+    ],
+    "conflicting_source_ids": [
+      "fish-drama-card"
+    ],
+    "reason": "Model hub metadata says research license while body and actual file say Community License. Prefer full artifact file for described terms; retain visible mismatch.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "Commercial adoption should retain exact applicable artifact version."
+    ]
+  },
+  {
+    "claim_id": "qwen38-modalities",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-parameters",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-context",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-reasoning",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-api-access",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-license",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-license"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-serving-scope",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-vllm"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "qwen38-hardware",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-vllm"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-role",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-license",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-pipeline",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-pipeline"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-batching",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-pipeline"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-installation",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-install"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Direct official-source support; preserve qualifications and avoid extrapolation.",
+    "worker_profile": "integrative gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-python-discrepancy",
+    "status": "unresolved",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-install",
+      "transformers-repo"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Prior accepted metadata text is insufficient to establish a package minimum. Repaired prose explicitly distinguishes tested environments from package requirements. Did not reacquire sources or inspect pyproject.toml in this bounded expansion.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": [
+      "Missing prerequisite: exact version or commit and its requires-python metadata. No universal Python minimum asserted."
+    ]
+  },
+  {
+    "candidate_id": "gemini-cli",
+    "status": "needs_review",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "gemini-cli-candidate"
+    ],
+    "reason": "Potentially useful future migration/access story. Search surfaced replacement notice; not directly verified. Replaced in bounded pair by Transformers for broader practical applicability; do not silently treat as defunct.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "Search-result evidence only"
+    ],
+    "claim_id": "gemini-cli"
+  },
+  {
+    "candidate_id": "qwen38-benchmarks",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card"
+    ],
+    "reason": "Vendor tables contain harness/dataset qualifications; not used to produce independent rankings or infer educational readiness.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "No benchmark reproduction"
+    ],
+    "claim_id": "qwen38-benchmarks"
+  },
+  {
+    "candidate_id": "current-release-label",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "qwen38-card",
+      "transformers-repo"
+    ],
+    "reason": "Current artifact/repository existence verified, precise product release event not established. Both reports baseline with publishedAt null.",
+    "worker_profile": "integrative",
+    "validation_findings": [
+      "Latest repository commit is not product release date"
+    ],
+    "claim_id": "current-release-label"
+  },
+  {
+    "claim_id": "fish-training",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama3"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit documentation; vendor and experimental qualifiers retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-direction",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-docs"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit documentation; vendor and experimental qualifiers retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "fish-attribution",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "fish-drama-license"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Explicit documentation; vendor and experimental qualifiers retained.",
+    "worker_profile": "integrative / gpt-6.1-sol medium",
+    "validation_findings": []
+  },
+  {
+    "candidateId": "x-astra-pro-oct16",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "x-astra-pro-oct16",
+      "seed-openai-on-x"
+    ],
+    "reason": "Current official update preserved for next edition; six reports prioritized distinct builder workflows.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "x-live11-oct15",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "x-live11-oct15",
+      "seed-openai-on-x"
+    ],
+    "reason": "Current official voice lead requires full rollout and API documentation review before publication.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "rosalind-academic-plan",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "rosalind-academic-plan",
+      "seed-openai-news"
+    ],
+    "reason": "Dated primary source discovered; narrower academic biology scope deferred behind general educational builder workflows.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "teaching-questions",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "teaching-questions",
+      "seed-openai-news"
+    ],
+    "reason": "Highly relevant pedagogical lead preserved; article needs inspection and independent pedagogical caveats before report.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "gpt6-everyone",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "gpt6-everyone",
+      "seed-openai-news"
+    ],
+    "reason": "Dated primary launch lead preserved, not yet a fully researched report.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "reddit-gpu-shipment",
+    "runId": "2026-10-18-bootstrap",
+    "status": "excluded",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "seed-reddit-localllama"
+    ],
+    "reason": "Visible discovery-feed item concerns hardware shipment theft; low direct value for educational/creative AI building. Linked claim not verified.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "transformers",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "transformers-repo",
+      "transformers-pipeline",
+      "transformers-install"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "typesafe-jev",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "ts-114",
+      "ts-intro",
+      "ts-confidence",
+      "ts-models"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "qwen38-27b",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "qwen38-card",
+      "qwen38-license",
+      "qwen38-vllm"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "comfyui",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "creative-cf-home",
+      "creative-cf-workflow",
+      "creative-cf-dependencies",
+      "creative-cf-repo"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "notebooklm",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "creative-nl-about",
+      "creative-nl-sources",
+      "creative-nl-video",
+      "creative-nl-students"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "fish-audio",
+    "runId": "2026-10-18-bootstrap",
+    "status": "included",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "fish-drama3",
+      "fish-drama-docs",
+      "fish-drama-card",
+      "fish-drama-license",
+      "fish-repo",
+      "fish-home"
+    ],
+    "reason": "Final source-backed report approved and independently rated by both Astra reviewers; all content, evidence and rubric hashes match.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ],
+    "reviewerIds": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ]
+  },
+  {
+    "candidateId": "gemini-cli",
+    "runId": "2026-10-18-bootstrap",
+    "status": "needs_review",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "gemini-cli-candidate"
+    ],
+    "reason": "Search-only replacement notice needs direct verification; not treated as defunct.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "candidateId": "qwen38-benchmarks",
+    "runId": "2026-10-18-bootstrap",
+    "status": "excluded",
+    "rubricVersion": "1.0",
+    "supportingSourceIds": [
+      "qwen38-card"
+    ],
+    "reason": "No independent reproduction; do not infer teaching readiness from vendor rankings.",
+    "workerProfile": "integrative coordinator",
+    "validationFindings": [
+      "Candidate-level integration record; underlying claim-level provenance retained."
+    ]
+  },
+  {
+    "claim_id": "transformers-tokenizer-role",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-tokenizers"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-tokenizer-truncation",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-tokenizers"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-processor-role",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-processors"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-processor-audio",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-processors"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-model-boundaries",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-quickstart"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-trainer-role",
+    "status": "included",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [
+      "transformers-quickstart"
+    ],
+    "conflicting_source_ids": [],
+    "reason": "Chrome-visible official documentation supports the bounded mechanical role; proposed product workflows are explicitly editorial, not observed outcomes.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": []
+  },
+  {
+    "claim_id": "transformers-runtime-performance",
+    "status": "excluded",
+    "rubric_version": "1.0",
+    "supporting_source_ids": [],
+    "conflicting_source_ids": [],
+    "reason": "No runtime measurements exist in packet or this revision. Excluded numerical performance claims and observed educational outcomes; retained practical evaluation proposals.",
+    "worker_profile": "integrative_review gpt-6.1-sol high",
+    "validation_findings": [
+      "No installations, inference, benchmark or deployment tests performed."
+    ]
+  }
+]

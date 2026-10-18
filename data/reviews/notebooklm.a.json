@@ -1,0 +1,32 @@
+{
+  "reportId": "notebooklm",
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:22:22.584954+00:00",
+  "reportHash": "80dce2e664e7f0040b099d59ada34a227e161e49abbe084a3054e49214dc3199",
+  "evidenceHash": "e4cd5eab178b42b28dd53e3f20b9dc8c93e2cc708cfb2c777057ea69b3bf71bd",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Source selection, cited answers and multiple study/media transformations form an actionable preparation workflow for educators (creative-nl-about; creative-nl-students). Import losses, editorial checking and account eligibility reduce universality.",
+    "impact": "A substantial accessible application pattern for source-centered research and multimodal study material (creative-nl-about; creative-nl-video). The evidence does not establish measured learning gains or a new foundational AI capability.",
+    "novelty": "Integration of a curated source collection with citation-linked chat and varied study/video outputs is meaningfully distinctive (creative-nl-students; creative-nl-video). This baseline does not demonstrate when individual features became novel or establish superiority over alternatives.",
+    "maturity": "Detailed help covers imports, limits, account conditions, sharing and production steps (creative-nl-sources; creative-nl-about; creative-nl-video), supporting an established usable service. Generated inaccuracies, long processing time and untested account-specific access prevent an exceptional readiness rating.",
+    "openness": "Sources and citations expose some evidence and generated videos can be downloaded where permitted (creative-nl-video). It remains a closed hosted service with plan/account restrictions, constrained sharing and no public API or local implementation established by this evidence."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: direct Chrome verification of creative-nl-students on 2026-10-18, FAQ button Is Gemini Notebook the same product as NotebookLM?, confirmed the July 2026 rename and continued notebook access. Web text extraction returned only an iframe, so the browser supplied the pivotal identity check.",
+    "Official help spot checks confirmed Drive auto-sync and omitted footnotes, text-only web/YouTube import, Ultra-only producer-note co-creation, Cinematic age/language restrictions, account-specific privacy and public-sharing limits. These remain documented service conditions, not tested account entitlement.",
+    "2038-word body fits this reviewer's impact 7 tier; root must reconcile final mean impact."
+  ]
+}

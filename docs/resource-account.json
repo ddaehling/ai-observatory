@@ -1,0 +1,56 @@
+{
+  "research": {
+    "jobs": 4,
+    "liveSnapCalls": 4,
+    "fallbackDiagnostics": 3,
+    "fallbackDispatched": false,
+    "repair": "Initial sandbox DNS failures retried once with approved network access before dispatch",
+    "dispatchedProfiles": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "count": 3
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "count": 1
+      }
+    ],
+    "reportedRouterInputTokens": 3387,
+    "reportedRouterOutputTokens": 0,
+    "liveRouterElapsedMs": 2764.611,
+    "workerTokenUsage": null,
+    "parentTokenUsage": null,
+    "moneySpent": null
+  },
+  "reviews": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "reviewers": [
+      "/root/astra_a",
+      "/root/astra_b"
+    ],
+    "initialReports": 6,
+    "initialReviewPasses": 12,
+    "revisionReviewPasses": 2,
+    "tokenUsage": null,
+    "billing": null
+  },
+  "notes": [
+    "Reported router usage is distinct from worker or parent usage.",
+    "No total-cost or savings estimate is claimed.",
+    "Model rates are editorial assessments, not independent measured benchmarks."
+  ],
+  "feedDiscovery": {
+    "sourcesInspected": 8,
+    "declaredFeedsAdded": 3,
+    "acquisitionRepairs": 0,
+    "method": "Deterministic inspection of actual HTML feed declarations",
+    "sourceIds": [
+      "seed-microsoft-research",
+      "seed-simon-willison",
+      "seed-latent-space"
+    ]
+  }
+}

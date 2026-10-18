@@ -1,0 +1,69 @@
+{
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:18:47.258991+00:00",
+  "rubricVersion": "1.0",
+  "scope": "Small diagnostic sample of inclusion decisions; not a statistical validation or full re-crawl. No other reviewer conclusions read.",
+  "findings": [
+    {
+      "claimId": "creative-cf-workflow-claim",
+      "status": "included",
+      "decision": "uphold",
+      "sourceIds": [
+        "creative-cf-workflow"
+      ],
+      "url": "https://docs.comfy.org/basic-concepts/workflow",
+      "locator": "Links pass data between nodes; Starting with a template; Saving and sharing workflows",
+      "finding": "Primary-source spot check confirms typed links, core-node templates, JSON export and recoverable embedded metadata. Capabilities are documented; empirical portability is not established.",
+      "dates": {
+        "publishedAt": null,
+        "checkedAt": "2026-10-18T15:18:47.258991+00:00"
+      }
+    },
+    {
+      "claimId": "creative-cf-fastest",
+      "status": "excluded",
+      "decision": "uphold",
+      "sourceIds": [
+        "creative-cf-repo"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "locator": "About; opening README bullets",
+      "finding": "Vendor superlative is present, but no comparative test protocol supports a factual fastest claim. Correctly excluded from established performance findings while preserved as vendor language.",
+      "dates": {
+        "publishedAt": null,
+        "checkedAt": "2026-10-18T15:18:47.258991+00:00"
+      }
+    },
+    {
+      "claimId": "x-live11-oct15-claim",
+      "status": "needs_review",
+      "decision": "uphold deferral",
+      "sourceIds": [
+        "x-live11-oct15",
+        "seed-openai-on-x"
+      ],
+      "url": "https://x.com/OpenAI/status/2110797830361436604",
+      "locator": "Recorded OpenAI public timeline, Oct15 voice post",
+      "finding": "Existing evidence preserves an official announcement dated 2026-10-15 and explicitly leaves thread and linked rollout/API documentation uninspected. Deferral is appropriate for a full report; announcement alone cannot settle account, region or API availability. Underlying post not reacquired in this sample.",
+      "dates": {
+        "publishedAt": "2026-10-15",
+        "originalRetrievedAt": "2026-10-18T15:13:55.855771+00:00"
+      }
+    },
+    {
+      "claimId": "reddit-gpu-shipment",
+      "status": "excluded",
+      "decision": "uphold after provenance repair",
+      "sourceIds": [
+        "seed-reddit-localllama",
+        "reddit-gpu-shipment-story"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x91svd/two_pallets_of_zotac_rtx_5090_graphics_cards/",
+      "locator": "Recorded visible feed card t3_1x91svd / post-title-t3_1x91svd",
+      "finding": "Repaired evidence now preserves a story-specific URL and short feed-title passage identifying a hardware-shipment theft story. Title-only screening is sufficient to exclude it from an AI-release/workflow edition; it does not verify the underlying allegation. The relative time remains unconverted, and the candidate remains discoverable.",
+      "repairCheckedAt": "2026-10-18T15:23:15.260246+00:00"
+    }
+  ]
+}

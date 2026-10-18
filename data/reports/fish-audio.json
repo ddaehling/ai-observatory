@@ -1,0 +1,126 @@
+{
+  "id": "fish-audio",
+  "title": "Fish Audio Drama 3 brings performance direction into speech production",
+  "entity": "Fish Audio / Drama 3",
+  "category": "Creative workflows",
+  "tags": [
+    "speech synthesis",
+    "video narration",
+    "educational audio",
+    "open weights"
+  ],
+  "summary": "Drama 3 turns scripts into directed performances. Its practical promise sits alongside hosted editing limits, deployment costs and a conditional commercial license.",
+  "changeType": "update",
+  "publishedAt": "2026-10-13",
+  "discoveredAt": "2026-10-18T15:14:46Z",
+  "updatedAt": "2026-10-18T15:14:46Z",
+  "officialUrl": "https://fish.audio/blog/fish-audio-drama-3/",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "Speech generation becomes a directing task",
+      "html": "<p>Fish Audio's Drama 3 is worth examining when a creative project needs speech to carry intention as well as words. A character may need to sound reassuring while concealing concern; a lesson may need a deliberate pause before a question; a short animation may need several distinct speakers. The product proposition is that these choices can be expressed alongside the script. My assessment is that a short production trial is justified for creators who already spend time regenerating lines to get a suitable performance.</p><p>The verified release is dated 13 October 2026. Fish says Drama 3 became available through its website, mobile apps and API that day. The announcement describes a change in reinforcement learning toward a learned human-preference reward, considering the script and reference voice, rather than relying on separate transcription and similarity rewards. That is a vendor account of the mechanism, not an independently reproduced explanation of its gains. The important product question is whether an editor can obtain an appropriate, intelligible take with fewer failed iterations. <a href=\"https://fish.audio/blog/fish-audio-drama-3/\">Drama 3 release announcement</a>.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "A larger model with an explicit performance interface",
+      "html": "<p>The official model card describes a mixture-of-experts backbone with 35 billion parameters and roughly three billion active per token, hybrid attention, and an audio decoder working across ten codebooks. It also documents multi-speaker tags and chunked streaming. Active parameter count should not be read as the total memory footprint or as proof that a laptop can serve the model comfortably. The available serving measurements use H200 hardware; this report makes no consumer-hardware deployment claim. <a href=\"https://huggingface.co/fishaudio/drama-3\">Official model card and serving conditions</a>.</p><p>For a builder, the interface matters more immediately than the parameter count. Directions can precede a passage or appear where the performance changes. The documentation also provides tags for particular words, pronunciation control through phonemes and multiple speakers within a request. Language changes inside a line are explicitly experimental. One operational trap deserves attention: the documented API falls back to S2.1 Pro when the model header is absent or misspelled, rather than rejecting the request. A successful audio response alone therefore does not prove that the intended model ran. <a href=\"https://docs.fish.audio/features/text-to-speech/drama-3\">Direction controls and model selection</a>.</p><p>That last detail changes how an integration should be tested. Put model selection in a reviewed configuration, log the intended configuration with each render and keep a small known script for regression checks. Do not judge an upgrade by a random output that might have used a fallback. The same discipline applies to voice references and direction tags: make them part of the saved project, so that a second editor can understand what produced the selected asset.</p>"
+    },
+    {
+      "id": "classroom",
+      "title": "A teacher workflow that keeps the learning objective first",
+      "html": "<p>A useful first project is a two-minute explanation with one narrator and a few intentional pauses. Begin with a finished script that a teacher has checked for factual accuracy and reading level. Mark where a learner should stop and predict an answer, where a technical term needs careful pronunciation and where the pace should slow. Generate short sections and listen while following the text. This is a proposed production method; the acquired evidence does not establish educational effectiveness or that expressive speech improves retention.</p><p>Compare a restrained read with a more animated one using the same words. Ask a few learners or colleagues whether the emphasis makes the explanation easier to follow. Do not assume that emotional range is always useful. A warm delivery may suit an introduction, while excessive emphasis can distract from a procedure or make a neutral scientific statement sound argumentative. The goal is a clear teaching signal. The teacher's decision about where emphasis belongs should remain separate from the system's ability to produce it.</p><p>For language teaching, create a short exchange with a small number of speakers, then check the script and pronunciation with a fluent reviewer. Include names, numbers, abbreviations and code-switching if those appear in the actual lesson. Experimental mid-line language tags should be evaluated on the specific language pair and voice. A count of supported languages does not establish native quality for every dialect or instructional use. A recording that sounds fluent to the author may still teach the wrong stress or vowel distinction.</p><p>Keep a text equivalent and playback controls in the published lesson. Divide audio into meaningful sections so a learner can repeat a difficult part without replaying the entire explanation. Avoid forcing narration to play automatically. These are application design recommendations, rather than Fish features verified in this crawl. They matter because synthesis quality is only one part of an accessible learning experience. A compelling voice cannot compensate for a missing transcript, unclear controls or a script that assumes prior knowledge the learner does not have.</p>"
+    },
+    {
+      "id": "video",
+      "title": "An editing workflow for video and animation",
+      "html": "<p>For a video creator, start from a scene list and a pronunciation sheet. Assign a consistent voice reference to each character or narrator, and record that choice alongside the script. Specify the intent of a line before adding several emotional adjectives. A direction such as explaining an unfamiliar idea patiently gives an editor something concrete to assess. If every sentence receives a different style instruction, it becomes harder to tell whether a weak result comes from the voice, the wording or conflicting directions.</p><p>Generate scene-sized units and retain the selected audio files as production assets. Listen to each take in context with adjacent lines and visuals. A dramatic pause that sounds convincing by itself may interrupt a fast tutorial; an excited delivery may compete with music. Check timing before committing the visual edit, then preserve enough handles around a line for clean cuts. This workflow proposal uses ordinary editing judgment. It does not assume that the model will always preserve timing, speaker identity or performance between generations.</p><p>Fish's launch announcement says interactive revision and audio inpainting are in limited, invite-only testing, with an editing API forthcoming. In contrast, the repository and model card describe revision or editing capabilities for the model. These statements concern different surfaces and should not be collapsed into a promise that every hosted account can replace a word in an approved take today. Plan a current hosted workflow around rendering again; treat local-model editing as a separate technical experiment until it has been executed and evaluated. <a href=\"https://fish.audio/blog/fish-audio-drama-3/\">Hosted editing availability</a>; <a href=\"https://github.com/fishaudio/fish-speech\">Repository capability description</a>.</p><p>That availability boundary is consequential for long projects. If an editor promises a client that a single word can be changed without altering the rest of a performance, a broad capability description is insufficient evidence. The production contract should reflect the tools actually available to the team. Even when precise editing becomes accessible, inspect the splice for continuity and meaning. A locally convincing replacement can change emphasis across the sentence, so approval should cover the surrounding passage as well.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "How to test an app or website integration",
+      "html": "<p>An educational app could use generated speech for a small cast of guides, feedback prompts or narrated examples. A sensible initial deployment would pre-render stable content and cache the approved files. This lets the builder review pronunciation, duration and tone before learners encounter them. Reserve live generation for a clearly justified interaction, such as speaking a personalized explanation that cannot be prepared in advance. Live responses add failure modes: network interruption, queueing, missing audio and a mismatch between displayed text and spoken output.</p><p>Build a representative evaluation script before comparing providers or versions. Include a quiet explanation, a question, a correction, a short dialogue, a proper name, a decimal, a date and a technical abbreviation. Use the same voice conditions and instructions wherever comparison is possible. Have listeners rate intelligibility and appropriateness without seeing the model name. Measure the number of attempts required to obtain an acceptable take and the time spent reviewing it. Those are more useful production metrics than selecting one impressive demo from many generations.</p><p>The model card includes H200 streaming tables with explicit concurrency and time-to-first-audio conditions. They are useful for understanding what a documented server configuration achieved, but they do not predict response time from a user's school network or a shared hosted API. For an interactive app, measure the whole path from user action to audible speech, including text generation, transport, buffering and playback. Also test cancellation when the learner navigates away. This report did not run those measurements. <a href=\"https://huggingface.co/fishaudio/drama-3\">Serving benchmark scope</a>.</p>"
+    },
+    {
+      "id": "license",
+      "title": "Open weights require a more specific adoption decision",
+      "html": "<p>The inspected Drama 3 license file is the Fish Audio Community License v1.0, updated 13 October 2026. Its conditional commercial grant uses a $500,000 annual revenue threshold aggregated with affiliates. Hosted services have a separate restriction, with explicit exceptions for certain own-product speech, finished audio production and noncommercial demonstrations. It also imposes attribution and consent-related conditions. These terms differ from a broadly permissive open-source license, and S2-Pro weights retain a separate research license. <a href=\"https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE\">License sections III and IV</a>; <a href=\"https://github.com/fishaudio/fish-speech\">S2-Pro license notice</a>.</p><p>There is a visible documentation inconsistency: the model hub's metadata label says research license, while the body points to the Community License and the actual license file bears that title. This report uses the inspected file when describing its terms and preserves the mismatch as an adoption caveat. A team should retain the exact license and model revision it evaluates. The report does not resolve every possible product arrangement or establish that a particular organization qualifies under the conditional grant. <a href=\"https://huggingface.co/fishaudio/drama-3\">Model-card label and license section</a>.</p><p>The practical distinction is between producing finished narration, embedding speech in a broader application and offering users a self-service speech generator. Those products may look similar in a prototype while falling under different license definitions. Decide which product you are building before choosing a self-hosted path. Hosted subscription rights are another separate question: the platform's public FAQ limits free-plan content to personal use and directs commercial users to paid plans. Do not carry a model-weight permission across to a hosted plan by assumption. <a href=\"https://fish.audio/\">Platform commercial-use FAQ</a>.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "Where Drama 3 earns a place in the toolkit",
+      "html": "<p>My judgment is that Drama 3 merits a controlled trial for scripted narration, character dialogue and teaching examples where direction is part of the authoring process. Its value should be judged by accepted takes per unit of editing effort, alongside intelligibility and consistency. Open weights make deeper deployment experiments possible, but the license and hardware burden shape who can benefit. A solo creator delivering reviewed files and a company operating a speech-generation service have materially different adoption decisions.</p><p>Do not base that decision on a launch discount or a headline ranking. Fish reports external pronunciation results in its announcement, but this bounded acquisition did not independently inspect the benchmark methodology or reproduce it, so it does not establish general superiority over alternatives. Nor did this report listen to generated samples, test voice cloning or execute local inference. The next step is a small, repeatable listening and production test using the team's own scripts. Keep the best assets, document the failures and expand only when the workflow improves.</p><p>Choose an explicit acceptance threshold for the trial: an intelligible final script, consistent characters across adjacent scenes and a review burden the creator can sustain. If repeated direction changes merely shift the errors, shorten the script units or simplify the performance. The ability to request richer emotion is useful only when the finished project communicates its intended meaning reliably.</p>"
+    }
+  ],
+  "useCases": [
+    "Produce reviewed narration for a short lesson",
+    "Create character dialogue for animation",
+    "Pre-render an app’s instructional audio library"
+  ],
+  "limitations": [
+    "No listening test, model execution or independent benchmark reproduction performed.",
+    "Hosted interactive editing and inpainting are invite-only at the cited release.",
+    "Model-card license metadata conflicts with the inspected Community License file.",
+    "Conditional commercial rights and hosted-service restrictions require product-specific assessment.",
+    "Language switching tags are experimental."
+  ],
+  "sources": [
+    {
+      "id": "fish-drama3",
+      "title": "Fish Audio Drama 3 launch",
+      "url": "https://fish.audio/blog/fish-audio-drama-3/",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": "2026-10-13",
+      "locator": "How Drama 3 Learned to Take Direction; Run Drama 3 Yourself; Coming Next; Launch Offer",
+      "supports": "Release, mechanism, hosted editing status and promotional price"
+    },
+    {
+      "id": "fish-drama-docs",
+      "title": "Drama 3 documentation",
+      "url": "https://docs.fish.audio/features/text-to-speech/drama-3",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "How to use; Pronunciation; Multi-speaker dialogue",
+      "supports": "Request routing, tags, pronunciation and experimental language mixing"
+    },
+    {
+      "id": "fish-drama-card",
+      "title": "Drama 3 official model card",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "Model overview; Production Serving; License",
+      "supports": "Architecture, deployment measurements and metadata inconsistency"
+    },
+    {
+      "id": "fish-drama-license",
+      "title": "Fish Audio Community License v1.0",
+      "url": "https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": "2026-10-13",
+      "locator": "Sections III(a), III(c), IV(a), IV(b); header",
+      "supports": "Commercial, hosted service, attribution and voice-consent limits"
+    },
+    {
+      "id": "fish-repo",
+      "title": "Fish Speech repository",
+      "url": "https://github.com/fishaudio/fish-speech",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "License Notice; Models; Fish Audio Drama 3",
+      "supports": "Repository capability and license scope"
+    },
+    {
+      "id": "fish-home",
+      "title": "Fish Audio home",
+      "url": "https://fish.audio/",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "Frequently asked questions; Latest Updates",
+      "supports": "Platform and free-plan commercial restrictions"
+    }
+  ],
+  "images": [],
+  "judgment": "A worthwhile trial for scripted, reviewed audio where performance direction saves editing effort; evaluate real scripts and deployment rights before committing.",
+  "researchNote": "Bounded official-source Webcrawl on 18 October 2026. Chrome verified source identity and content; search-service extraction complemented reading. Vendor claims are attributed. Suggested workflows and adoption judgments are editorial proposals, not tested deployments. No API/audio performance experiments were performed; no release date inferred from retrieval date."
+}

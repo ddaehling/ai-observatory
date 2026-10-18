@@ -1,0 +1,31 @@
+{
+  "reportId": "comfyui",
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:23:36.443136+00:00",
+  "reportHash": "018280c3d175469e2c7ddfcebcce95e3f543abedff122f5ae82ac6e0e6474810",
+  "evidenceHash": "857e8f088872b789456a91080ab25ccb3fedfb1fd4cad830e69d64cd719ba77c",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 5,
+    "maturity": 7,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The typed graph, core templates and reusable workflow exports provide substantial actionable value for creative builders (creative-cf-workflow); explicit maintenance and review guidance keeps proposed classroom applications proportionate.",
+    "impact": "Local extensible inference, media-processing stages and an application API can materially affect creative production infrastructure (creative-cf-repo), but the evidence does not demonstrate a field-wide model advance or measured educational gains.",
+    "novelty": "Inspectable composition and recoverable workflow metadata are meaningful differentiation (creative-cf-workflow); this is an established baseline, with no supported new breakthrough or comparative uniqueness.",
+    "maturity": "Detailed official workflow and dependency documentation and the maintained core repository support usable production experimentation; extension conflicts and absent hands-on reliability tests prevent an exceptional readiness rating.",
+    "openness": "Public GPL-3.0 core, local execution/API and JSON graphs provide strong inspectability and portability (creative-cf-repo; creative-cf-license). Copyleft conditions, separate model/node terms and missing dependency capture limit reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: four official pages belong to one source family; this review verifies documented capabilities, not experimental outcomes.",
+    "Primary-source spot-check on 2026-10-18 confirmed README offline flag scope, local API, media tools and GPL-3.0 in Chrome. Initial navigation timed out; one recovery read succeeded. No substantive contradiction found."
+  ]
+}

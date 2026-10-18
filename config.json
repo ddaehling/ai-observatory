@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "intervalHours": 48,
+  "timezone": "Europe/Berlin",
+  "enabled": true,
+  "maxCandidatesPerRun": 40,
+  "bootstrapLookbackDays": 30,
+  "overlapHours": 72,
+  "repository": "ddaehling/ai-observatory",
+  "siteUrl": "https://ddaehling.github.io/ai-observatory/"
+}

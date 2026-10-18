@@ -1,0 +1,33 @@
+{
+  "reportId": "fish-audio",
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:23:15.260246+00:00",
+  "reportHash": "47375141d1638490f0cb378d0b55843df3c532aca80f1de58921c0d3f4545cc9",
+  "evidenceHash": "e33a1ae0310503053350507331e15f990ef3a8891de2f9b1ad34bccc301a766f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 5
+  },
+  "rationale": {
+    "usefulness": "Natural-language direction, word-level controls, phonemes and multiple voices support concrete narration and dialogue production (fish-drama-docs; fish-drama-card). Actual benefit remains accepted takes after listening and editing, not demonstrated classroom gains.",
+    "impact": "A meaningful advance within expressive speech production with hosted and local paths (fish-drama3; fish-drama-card). Vendor mechanism and benchmark claims do not establish field-wide significance or general superiority.",
+    "novelty": "The claimed human-preference reward and richer performance control offer meaningful differentiation (fish-drama3). Several tags, phoneme and speaker interfaces already existed, and improvements have not been independently evaluated, so novelty is moderate rather than exceptional.",
+    "maturity": "Published API instructions, model artifacts, serving recipes and scoped H200 tests support practical use (fish-drama-docs; fish-drama-card). Silent fallback, experimental language switching, invite-only hosted editing and no listening or execution test limit readiness confidence.",
+    "openness": "Accessible weights, model descriptions and serving paths permit meaningful inspection and local deployment (fish-drama-card). Revenue limits, hosted-service exclusions, attribution and training/use restrictions materially constrain rights compared with permissive open-source terms (fish-drama-license)."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: direct primary-source checks on 2026-10-18 confirmed October 13 release, missing-header fallback, experimental language tags, H200 measurement scope and hosted editing invite-only status. Model capability versus hosted access is a scope distinction, not a surviving factual contradiction.",
+    "License metadata conflict survives: the Hub label says research license, but model-card body and accompanying file identify Community License v1.0, updated October 13, 2026. Using the actual file for the described terms while preserving the mismatch is justified. This does not establish an individual organization's eligibility.",
+    "The license also restricts training other generative/speech models from materials or outputs (IV(b)); this report is about producing narration and does not promise broader reuse rights. Retain that limitation in future deployment comparisons.",
+    "1824 words fits this reviewer's impact 6 tier; root must reconcile final mean impact."
+  ]
+}

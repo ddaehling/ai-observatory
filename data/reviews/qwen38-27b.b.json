@@ -1,0 +1,31 @@
+{
+  "reportId": "qwen38-27b",
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:27:11.075688+00:00",
+  "reportHash": "ad86217a0c9612996825c21b74eb573f0f52ed317297f7b54229c8789b499df0",
+  "evidenceHash": "add61170912985f138a589163440fc8c6addec93f2c82330f11fc7983b80dbce",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Available visual input, configurable thinking and serving options support practical teacher and interface-review pilots (qwen38-card, qwen38-vllm). Concrete human-review proposals are actionable while quality is untested.",
+    "impact": "A reusable open-weight multimodal deployment target is potentially significant to builders and local AI development (qwen38-card, qwen38-license); acquired vendor benchmarks do not establish an exceptional field-wide advance.",
+    "novelty": "Combining dense multimodal inference with effort/preserved-thinking controls is meaningful differentiation (qwen38-card), but this baseline lacks independent evidence of a new uniquely capable approach.",
+    "maturity": "Model artifacts, API examples and a separate serving recipe support real evaluation; text-only recipe validation, specific hardware caveats and forthcoming official cloud access constrain readiness (qwen38-vllm, qwen38-card).",
+    "openness": "Available weights under the inspected Apache 2.0 license plus deployment choices provide strong inspectability and portability (qwen38-license). Training-data availability and full training reproducibility are not established."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: no model execution, task-specific accuracy or throughput reproduction.",
+    "Chrome spot-check on 2026-10-18 confirmed 27B language component versus 28B Hub total, image/video input, native/extended context distinction, effort controls and official hosted service coming soon."
+  ]
+}

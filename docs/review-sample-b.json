@@ -1,0 +1,87 @@
+{
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:28:47.479674+00:00",
+  "rubricVersion": "1.0",
+  "method": "Small diagnostic stratified sample against supplied inclusion policy; not statistical assurance. Reused ledger evidence and completed targeted Chrome verification, no other reviewer conclusions read.",
+  "items": [
+    {
+      "claimId": "creative-cf-home-claim",
+      "category": "accepted",
+      "decision": "included",
+      "verdict": "retain",
+      "sourceIds": [
+        "creative-cf-home",
+        "creative-cf-repo"
+      ],
+      "urls": [
+        "https://docs.comfy.org/",
+        "https://github.com/Comfy-Org/ComfyUI"
+      ],
+      "locator": "About ComfyUI; README Features",
+      "passage": "can run on your local device",
+      "date": "2026-10-18 retrieval; publication/event dates unknown",
+      "reason": "Official local node/inference mechanism is relevant to builder workflows and is represented as a baseline, not a fresh launch. Repository spot-check corroborates local execution; classroom gains remain proposals.",
+      "uncertainty": "No execution test or educational-outcome evaluation."
+    },
+    {
+      "claimId": "creative-cf-fastest",
+      "category": "excluded",
+      "decision": "excluded",
+      "verdict": "retain exclusion from established factual claims",
+      "sourceIds": [
+        "creative-cf-repo"
+      ],
+      "urls": [
+        "https://github.com/Comfy-Org/ComfyUI"
+      ],
+      "locator": "Repository About and page title",
+      "passage": "The fastest local inference engine in the world.",
+      "date": "Chrome checked 2026-10-18; publication unknown",
+      "reason": "Observed vendor superlative lacks an acquired comparative benchmark. Retain as attributed unverified language in the ledger, not a demonstrated speed conclusion.",
+      "uncertainty": "This exclusion does not establish that the claim is false."
+    },
+    {
+      "claimId": "reddit-gpu-shipment",
+      "category": "excluded non-AI-release lead",
+      "decision": "excluded",
+      "verdict": "retain",
+      "sourceIds": [
+        "seed-reddit-localllama",
+        "reddit-gpu-shipment-story"
+      ],
+      "urls": [
+        "https://www.reddit.com/r/LocalLLaMA/"
+      ],
+      "locator": "Visible feed card t3_1x91svd; post-title-t3_1x91svd",
+      "passage": "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
+      "date": "Ledger retrieved 2026-10-18T15:13:55.855771+00:00; publication/event dates unknown",
+      "reason": "Title-only screening supports excluding a hardware-theft news lead from the AI tool/model/workflow edition while preserving it. Evidence expressly does not verify the allegation; relative 3h correctly remains unconverted.",
+      "uncertainty": "Reviewed repaired provenance in ledger, not underlying linked reporting. No inference about whether the theft occurred."
+    },
+    {
+      "claimId": "teaching-questions-claim",
+      "category": "deferred",
+      "decision": "needs_review",
+      "verdict": "retain pending full article inspection",
+      "sourceIds": [
+        "teaching-questions",
+        "seed-openai-news"
+      ],
+      "urls": [
+        "https://openai.com/news/"
+      ],
+      "locator": "All news index, second story card",
+      "passage": "Teaching students to think and learn through questions - Company - Oct 15, 2026",
+      "date": "Index publication 2026-10-15; ledger retrieved 2026-10-18T15:13:55.855771+00:00; event date unknown",
+      "reason": "Relevant pedagogical candidate, but an index title supports discovery only. Deferral is an explicit six-report coverage choice, not evidence of low value or exclusion under an invented user preference.",
+      "uncertainty": "Full article and any educational claims remain unreviewed; preserve for follow-up."
+    }
+  ],
+  "validationFindings": [
+    "At least one item in each accepted/excluded/deferred category reviewed; also sampled a preserved non-AI-release lead.",
+    "No substantive sampling error found; excluded ComfyUI superlative appears in decisions without a full evidence object, but exact primary-source wording was independently observed here.",
+    "Seed index material was not reacquired; conclusions about Reddit and pedagogical lead are deliberately limited to recorded title-level screening."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "reportId": "fish-audio",
+  "reviewerId": "/root/astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:28:47.479674+00:00",
+  "reportHash": "47375141d1638490f0cb378d0b55843df3c532aca80f1de58921c0d3f4545cc9",
+  "evidenceHash": "e33a1ae0310503053350507331e15f990ef3a8891de2f9b1ad34bccc301a766f",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 5
+  },
+  "rationale": {
+    "usefulness": "Documented performance direction, phonemes and multi-speaker controls are strongly actionable for narrated lessons and creative production (fish-drama-docs); the report proposes concrete listening and accepted-take evaluations without inventing results.",
+    "impact": "Direction-aware speech and downloadable weights could materially advance an important creative domain (fish-drama3, fish-drama-card), but no independently verified quality improvement establishes field-wide exceptional impact.",
+    "novelty": "Natural-language direction, word-level control and the vendor-described preference-reward shift form a meaningfully differentiated speech workflow (fish-drama-docs, fish-drama3). Experimental language switching and untested editing remain qualified.",
+    "maturity": "Current website/app/API access and detailed documentation support usable evaluation; new release status, invite-only hosted editing, silent model fallback, H200-scoped measurements and no listening trial limit readiness (fish-release, fish-header, fish-card-scope).",
+    "openness": "Weights and code permit inspection and local experiments, but conditional commercial revenue eligibility, separately licensed hosted services, attribution, voice consent and other-model training restrictions materially constrain portability and reuse (fish-drama-license, fish-repo)."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking retained inconsistency: the Hub metadata says research license while the inspected artifact LICENSE is Community License v1.0 dated 2026-10-13. The report appropriately relies on the actual file for its bounded description and does not certify an organization\u2019s eligibility.",
+    "Chrome spot-check on 2026-10-18 confirmed LICENSE sections III(a)\u2013III(c), IV(a)\u2013IV(b), hosted-service exceptions, affiliate aggregation, the dated launch and invite-only hosted editing. Model capability versus product access is a scope difference, not a surviving contradiction.",
+    "No listening test, local execution or independent benchmark reproduction."
+  ]
+}

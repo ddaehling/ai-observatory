@@ -1,0 +1,31 @@
+{
+  "reportId": "comfyui",
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:18:47.258991+00:00",
+  "reportHash": "018280c3d175469e2c7ddfcebcce95e3f543abedff122f5ae82ac6e0e6474810",
+  "evidenceHash": "857e8f088872b789456a91080ab25ccb3fedfb1fd4cad830e69d64cd719ba77c",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 5,
+    "maturity": 7,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Visible reusable graphs, typed links and core templates make creative asset work inspectable and actionable (creative-cf-workflow, Starting with a template; creative-cf-repo, Features). Setup and output review remain material costs.",
+    "impact": "A substantial enabling layer for repeatable local multimodal production and application integration (creative-cf-repo, Features). Evidence supports domain-wide workflow significance, not a new model breakthrough or measured educational gains.",
+    "novelty": "Meaningful graph-based composition, reusable workflow metadata and extension points distinguish the working method (creative-cf-workflow, Saving and sharing workflows). This is a baseline; the sources do not establish a newly introduced capability or unique invention.",
+    "maturity": "Documented core templates, installation paths, error marking and dependency guidance support practical usability (creative-cf-workflow; creative-cf-dependencies). Official warnings about dependency conflicts and unstable development commits prevent an exceptional reliability rating; no execution was tested.",
+    "openness": "Inspectable GPL-3.0 core, JSON workflows, local API and documented offline mode provide strong user control (creative-cf-repo, Resources and Features). Copyleft is not permissive licensing, and separate models, extensions and environment dependencies limit universal portability and rights."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: the six relevant ledger claims use short excerpts; direct official-source spot checks confirmed the pivotal template, metadata, dependency, license and offline assertions on 2026-10-18. All four sources belong to one publisher family.",
+    "No independent performance, reproducibility or learner-outcome test is implied. Current 1824-word body is within the 2000-word tier for this reviewer's impact 7; root must reconcile the final mean impact."
+  ]
+}

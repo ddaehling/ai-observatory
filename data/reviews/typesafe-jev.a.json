@@ -1,0 +1,32 @@
+{
+  "reportId": "typesafe-jev",
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:19:34.305645+00:00",
+  "reportHash": "41f6290299629d11f0ebac8e7404644d43c3729a8ffac55fc9eccaf388e54c5d",
+  "evidenceHash": "326f255bca1858da47b19b64dc4fa705439cfcc1bb77213b59dd27c584aebee4",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Typed Choice, Score and Noul outputs and exposed distributions are directly useful for routing, ranking and review queues (ts-intro; ts-confidence). Proposed teacher workflows are actionable but explicitly untested.",
+    "impact": "A meaningful approach to embedding semantic judgments in ordinary software, with potentially broad routing and classification applications (ts-intro). Acquired evidence does not establish field-wide transformation, superior real-world accuracy or learning gains.",
+    "novelty": "Native typed questions, distribution outputs and shared-state composition provide a distinctive integrated interface (ts-intro). These support meaningful differentiation, not proof that classification, probabilities or programmatic orchestration are newly invented; 1.14 itself is an incremental update.",
+    "maturity": "Detailed versioning, confidence definitions, context and rate-limit documentation support a usable text API (ts-models; ts-confidence). Jev 1.14 is currently preview, new modalities remain experimental, and no independent reliability test was acquired (ts-114).",
+    "openness": "Documented primitives, formulas and version IDs provide some interface inspectability (ts-confidence; ts-models), but this evidence establishes hosted access rather than open model weights, local execution or reproducible training. Vendor-controlled service and experimental headers constrain portability."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: official-source spot checks on 2026-10-18 confirmed release date, experimental scope, aliases, price, context and confidence formula. These are vendor documentation, not an API execution or calibration experiment.",
+    "The source reference table labels standard input Text while the release enables images behind an experimental header; these scopes are compatible and the report preserves that distinction.",
+    "Current 1831-word body fits the 2000-word tier for this reviewer's impact 6; root must reconcile final mean impact."
+  ]
+}

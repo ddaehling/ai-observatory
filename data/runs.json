@@ -1,0 +1,352 @@
+[
+  {
+    "id": "2026-10-18-bootstrap",
+    "startedAt": "2026-10-18T15:10:41Z",
+    "finishedAt": "2026-10-18T15:34:04Z",
+    "status": "complete",
+    "windowStart": "2026-09-18T00:00:00Z",
+    "windowEnd": "2026-10-18T15:20:19.333618+00:00",
+    "sourcesChecked": 36,
+    "sourcesFailed": 0,
+    "candidatesFound": 14,
+    "publishedCount": 6,
+    "coverageNote": "First edition: six independently reviewed reports, plus discovery checks on public X, Reddit and official news. The ledger contains 112 source records and 75 recurring entrypoints. Thirty-six records were checked or surfaced with individual access notes; unvisited sources remain explicitly unverified. Coverage is bounded, not internet-wide.",
+    "limitations": [
+      "No exhaustive internet crawl or complete social timeline history",
+      "No API/model execution, benchmark reproduction, audio listening or measured learning outcomes",
+      "Four baseline reports retain unknown publication dates",
+      "Chrome: five recorded navigation/connection issues across workers/coordinator, all readable through recovery or public fallback",
+      "Worker/parent token and monetary billing telemetry unavailable; no spend or savings estimate claimed",
+      "Not all registered sources were visited in this bootstrap; direct-page, profile-card and search-only observations are distinguished in the ledger.",
+      "Models and products were researched from sources, not independently benchmarked or tested."
+    ],
+    "sourceIdsExpected": [
+      "seed-openai-news",
+      "seed-openai-on-x",
+      "seed-reddit-localllama",
+      "x-astra-pro-oct16",
+      "x-live11-oct15",
+      "creative-cf-home",
+      "creative-cf-workflow",
+      "creative-cf-dependencies",
+      "creative-cf-repo",
+      "creative-nl-about",
+      "creative-nl-sources",
+      "creative-nl-video",
+      "creative-nl-students",
+      "creative-nl-legacy",
+      "ts-home",
+      "ts-intro",
+      "ts-114",
+      "ts-confidence",
+      "ts-models",
+      "fish-home",
+      "fish-drama3",
+      "fish-repo",
+      "fish-drama-docs",
+      "fish-drama-card",
+      "fish-drama-license",
+      "qwen38-card",
+      "qwen38-license",
+      "qwen38-vllm",
+      "transformers-repo",
+      "transformers-pipeline",
+      "transformers-install",
+      "qwen-publisher-discovery",
+      "gemini-cli-candidate",
+      "transformers-tokenizers",
+      "transformers-processors",
+      "transformers-quickstart"
+    ],
+    "sourceResults": [
+      {
+        "sourceId": "seed-openai-news",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:23.724943+00:00",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl. Initial navigation timed out; single acquisition repair confirmed rendered page and October2026 cards.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-openai-on-x",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:23.724943+00:00",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-reddit-localllama",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:23.724943+00:00",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "x-astra-pro-oct16",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:55.855771+00:00",
+        "note": "Post text/link inspected on the official public X profile timeline; detail thread not exhaustively traversed. No date-window coverage asserted.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "x-live11-oct15",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:55.855771+00:00",
+        "note": "Post text/link inspected on the official public X profile timeline; detail thread not exhaustively traversed. No date-window coverage asserted.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-cf-home",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-cf-workflow",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-cf-dependencies",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-cf-repo",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-nl-about",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-nl-sources",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-nl-video",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-nl-students",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "creative-nl-legacy",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:13:41Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Initial Chrome navigation timed out; one recovery bound created tab and verified successful redirect to Gemini Notebook Help. Alias, not independent corroboration.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "ts-home",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: TypeSafe; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "ts-intro",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: TypeSafe; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "ts-114",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: TypeSafe; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "ts-confidence",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: TypeSafe; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "ts-models",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: TypeSafe; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-home",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-drama3",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-repo",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-drama-docs",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-drama-card",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "fish-drama-license",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:46Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Official publisher family: Fish Audio; public read-only retrieval.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "qwen38-card",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Source family: Qwen/Alibaba. Publication date unknown. Model Overview; API Usage; Best Practices; hosted API introduction",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "qwen38-license",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Source family: Qwen/Alibaba. Publication date unknown. LICENSE, Apache License header and sections 2, 4, 7; copyright footer",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "qwen38-vllm",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Chrome navigation timeout; public web extraction supplied recipe text. Serving scope checked; no runtime test or date-window coverage.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-repo",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Source family: Hugging Face. Publication date unknown. README: introduction, Installation, Quickstart, When should not use; file listing metadata",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-pipeline",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Chrome connection closed; public web extraction supplied official tutorial. No runtime benchmark or date-window coverage.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-install",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:14:00Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Source family: Hugging Face. Publication date unknown. Installation; Source install; Set up / Offline mode",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "qwen-publisher-discovery",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:18:00Z",
+        "note": "Bounded page/content inspection only; no historical/date-window completeness asserted. Chrome discovery only; current collection links led to chosen model. No release claim.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "gemini-cli-candidate",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:18:00Z",
+        "note": "Search-result discovery only; no direct Chrome detail inspection. README replacement lead remains needs_review, not a verified access claim. No date-window coverage asserted.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-tokenizers",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:30:52.536776Z",
+        "note": "Official documentation inspected in Chrome for Transformers revision; bounded role verification only, no historical coverage or runtime test. Source family: Hugging Face. Publication date unknown. Tokenizers; Load a tokenizer; Encode and decode; Batch processing / Padding / Truncation. Chrome version selector v5.20.1.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-processors",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:30:52.536776Z",
+        "note": "Official documentation inspected in Chrome for Transformers revision; bounded role verification only, no historical coverage or runtime test. Source family: Hugging Face. Publication date unknown. Processors introduction; Processor classes; Preprocess. Chrome main-branch warning.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "transformers-quickstart",
+        "status": "success",
+        "checkedAt": "2026-10-18T15:30:52.536776Z",
+        "note": "Official documentation inspected in Chrome for Transformers revision; bounded role verification only, no historical coverage or runtime test. Source family: Hugging Face. Publication date unknown. Pretrained models table and from_pretrained example; Pipeline; Trainer. Chrome main-branch warning.",
+        "coverageScope": "bounded content inspection",
+        "coverageComplete": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "reportId": "qwen38-27b",
+  "reviewerId": "/root/astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-18T15:20:25.163682+00:00",
+  "reportHash": "ad86217a0c9612996825c21b74eb573f0f52ed317297f7b54229c8789b499df0",
+  "evidenceHash": "add61170912985f138a589163440fc8c6addec93f2c82330f11fc7983b80dbce",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Available multimodal weights, reasoning controls and serving instructions make this a useful evaluation target for visual drafting and interface review (qwen38-card). The concrete teacher and developer workflows remain proposed, not tested.",
+    "impact": "Permissively licensed multimodal reasoning at this model size offers substantial potential for locally controlled AI applications (qwen38-card; qwen38-license), without independent evidence of a field-wide performance breakthrough.",
+    "novelty": "Combines configurable thinking, retained reasoning context and native image/video inputs in a dense checkpoint (qwen38-card). Architecture builds on the prior Qwen family; feature integration and vendor benchmarks do not establish exceptional novelty.",
+    "maturity": "Weights, configuration, API examples and a serving-project recipe support practical access (qwen38-card; qwen38-vllm). Recipe verification is text-only and hardware-specific, the official managed route is forthcoming, and this assessment contains no model execution.",
+    "openness": "Apache-2.0 artifact terms and accessible weights/configuration across serving stacks provide strong deployment control (qwen38-license; qwen38-card). This does not establish available training data or a fully reproducible training process; derivative and provider terms are separate."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: spot checks on 2026-10-18 verified 27B language-component versus 28B Hub total scope, native/extended context, reasoning controls, Apache artifact and text-only recipe scope. These distinctions avoid false contradictions.",
+    "The report judgment includes an author-proposed impact 6 before review; this reviewer independently assigns 7. Consider removing pre-review numeric expectations in future authoring packets to reduce anchoring.",
+    "Current 1808 words fits this reviewer's impact 7 tier; root must reconcile final mean impact."
+  ]
+}

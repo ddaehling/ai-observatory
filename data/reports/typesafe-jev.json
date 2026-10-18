@@ -1,0 +1,107 @@
+{
+  "id": "typesafe-jev",
+  "title": "Jev 1.14 makes small AI judgments a software primitive",
+  "entity": "TypeSafe / Jev",
+  "category": "Models",
+  "tags": [
+    "typed decisions",
+    "educational apps",
+    "confidence",
+    "workflow automation"
+  ],
+  "summary": "A practical look at Jev’s typed questions, confidence signals and October 14 update, with a teacher-facing pilot and clear experimental-feature limits.",
+  "changeType": "update",
+  "publishedAt": "2026-10-14",
+  "discoveredAt": "2026-10-18T15:14:46Z",
+  "updatedAt": "2026-10-18T15:14:46Z",
+  "officialUrl": "https://typesafe.ai/blog/jev-1-14",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A decision model changes where the application logic lives",
+      "html": "<p>Jev is interesting for builders who already know what their software should do after a judgment is made. A learning website might need to recognize a request for a hint, distinguish a factual question from a navigation request, or decide which explanation to show next. The difficult part is interpreting meaning. The subsequent action can often be ordinary application code. My assessment is that TypeSafe deserves a small, measurable pilot wherever this boundary is clear, especially when a conversational model currently spends most of its output producing a label.</p><p>The verified news is Jev 1.14, announced on 14 October 2026. The release adds an improved model alongside experimental images, bounding boxes and longer context. TypeSafe explicitly separates those experimental capabilities from its production quality bar. This is a version update, rather than a claim that the entire service first appeared this week. Its own release discussion also cautions that internal evaluations may favor its model. That restraint should carry into adoption decisions: neither launch charts nor an appealing interface establish performance on a particular classroom or creative workload. <a href=\"https://typesafe.ai/blog/jev-1-14\">Jev 1.14 announcement</a>.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "State, narrow questions, and software-owned policy",
+      "html": "<p>The documented interface takes state plus typed questions. Choice selects among alternatives, Score evaluates defined levels, and Noul returns a probability-like value between zero and one for a statement. Choice and Score also provide distributions and confidence. Questions can share state in one request while being evaluated independently. TypeSafe recommends decomposing broad judgments into individual factors and combining the answers in code. That is the practical mechanism worth examining, regardless of whether the vendor's System One terminology becomes an industry category. <a href=\"https://docs.typesafe.ai/introduction\">Interface and primitive definitions</a>.</p><p>Consider a resource finder for teachers. Instead of asking a model to select the best lesson and explain its reasoning in a paragraph, the application could ask separate questions about reading level, topic relevance and whether an activity requires equipment. A deterministic filter can reject unavailable equipment; a weighted ranking can combine relevance and reading level. The teacher sees why an item rose in the list because the application exposes those dimensions. This is a proposed design, not a verified Jev deployment, and its usefulness depends on whether the questions can be labeled consistently by people.</p><p>Decomposition creates an inspectable policy surface. If a teacher wants accessible language to matter more than novelty, a coefficient can change without asking a model to reinterpret an entire editorial mission. It also creates work: someone must define levels, specify ambiguous cases and maintain the evaluation set. A typed interface eliminates one category of integration friction, but choosing the right question remains product design. Poorly defined criteria can produce perfectly well-formed answers that are systematically unhelpful.</p>"
+    },
+    {
+      "id": "confidence",
+      "title": "Confidence is useful only when its meaning stays visible",
+      "html": "<p>The confidence documentation describes a statistic derived from the returned distribution. For Choice, it scales the leading probability relative to an even distribution across the available options; Score also considers distances between ordered levels. Noul has no separate confidence field. Consequently, a confidence value should not be presented as the independently measured chance that a particular answer is correct. TypeSafe itself recommends tuning thresholds on domain data and setting different boundaries for different consequences. <a href=\"https://docs.typesafe.ai/confidence\">Confidence definitions and threshold guidance</a>.</p><p>For a classroom website, the threshold for opening a likely relevant help panel can be relatively permissive because the user can immediately choose another panel. The threshold for changing a student's learning path deserves more scrutiny. An especially useful initial interface would show a suggested next activity alongside an explanation of the curriculum rule, with a teacher override. This preserves an opportunity to learn from errors before the software starts shaping a learner's experience automatically. The relevant success measure is whether the suggestion helps, not whether the distribution looks sharp.</p><p>A pilot should retain both the selected result and the underlying distribution. When two candidate routes repeatedly attract similar probabilities, the product may need better route definitions or an explicit clarification step. Increasing the threshold alone can hide a taxonomy problem. Conversely, consistently confident errors suggest a mismatch between model behavior and the task. These are proposed diagnostic practices. The acquired sources do not establish calibration on educational data, and the word calibrated in vendor positioning should not substitute for that missing experiment.</p>"
+    },
+    {
+      "id": "teacher-workflow",
+      "title": "A practical pilot for a teacher-facing website",
+      "html": "<p>Start with an existing task that creates visible review work: sorting incoming resource requests, tagging a small library of activities, or identifying when a draft explanation is missing an example. Pick one. Write a clear statement of what the application should do after each possible answer. If the team cannot agree on those actions, postpone the model integration and resolve the product rules. The narrowest successful pilot will teach more than a dashboard full of judgments whose purpose is unclear.</p><p>For example, a teacher's lesson preparation page could accept a short activity description and ask whether the instructions contain a concrete learner action. A second question could identify whether the text includes a way to check understanding. The page would then highlight a missing element and offer the teacher an editing prompt. Jev would supply the judgments; a separate writing tool, if desired, could propose revised prose. The teacher should see the original text and retain the final choice. This example is an editorial workflow proposal, not a claim that the vendor ships a lesson planner.</p><p>Construct a modest evaluation set before connecting the result to the live interface. Include straightforward activities, terse notes, mixed-language material, deliberately incomplete instructions and plausible counterexamples. Ask two educators to label a subset independently. Their disagreements reveal which criteria are subjective. Compare Jev against the existing workflow and a simple keyword or rules baseline. A model is valuable when it resolves cases that simpler methods miss at an acceptable review cost; replacing a reliable rule with a probabilistic call is not automatically an improvement.</p><p>Log the question definition, model version, selected answer, review outcome and the action the interface took. Avoid collecting more learner material than the experiment requires. Review errors by category rather than only reporting one aggregate accuracy number. A system that handles ordinary prose well but misroutes short accessibility requests may need a narrower deployment. The acquired reference says English is strongest and other languages require workload testing, which makes language-specific evaluation particularly relevant. <a href=\"https://docs.typesafe.ai/models\">Model reference and language guidance</a>.</p>"
+    },
+    {
+      "id": "creative-workflow",
+      "title": "Where it fits in app and video production",
+      "html": "<p>For an app builder, a promising first use is semantic routing inside a known set of screens. A visitor describing a problem in their own words could be directed to documentation, an account page or a support form. Keep an obvious fallback and let users change the route. The route decision should influence navigation rather than invent account information. In a website editor, the same idea could rank which draft page needs attention based on separately defined questions about missing evidence, unclear audience or incomplete instructions.</p><p>For video production, the strongest initial fit is likely text around the media. A producer could assess a transcript segment for whether it contains a complete claim, whether it needs a visual explanation, and whether it repeats a point already assigned to another segment. Application code could turn those judgments into a review queue. This is a hypothesis worth testing against an editor's selections. It would not establish that Jev understands an entire film, detects all factual errors or replaces an editor's sense of pacing.</p><p>Experimental image support may eventually extend that workflow to individual frames or storyboard panels, but the release's production warning matters. A small sandbox experiment could ask whether a screenshot contains an expected control, with a human checking each result. Keep the resulting observations distinct from the text pilot. An application should not quietly inherit experimental multimodal behavior merely because the stable text interface performed well. A bounding box also establishes a location format; its geometric validity alone says nothing about whether the intended object was found.</p>"
+    },
+    {
+      "id": "operations",
+      "title": "Price, versions and deployment discipline",
+      "html": "<p>At retrieval, the model reference listed $0.042 per million input tokens, free output, a default 64k request context and 32k per-question context. Its alias table mapped jev-latest to 1.13 and jev-preview to 1.14. Extended context raises both limits to 262k under an experimental header, with documented speed and accuracy tradeoffs. These are dated service details, not permanent guarantees. No authenticated request was made to verify account limits or actual billing. <a href=\"https://docs.typesafe.ai/models\">Current models, aliases and context limits</a>.</p><p>The practical implication is to pin the version during an evaluation and record the actual model returned. An alias can move while application code stays unchanged. If an app's confidence gates were tuned on one version, an automatic switch can alter the fraction of work that reaches a teacher. A migration should replay the same labeled cases, compare routing changes and inspect newly confident disagreements. This is inexpensive process discipline compared with discovering a changed behavior after it has accumulated in user records.</p><p>Token price should inform the budget without dominating it. Include retries, failed requests, review time, monitoring and the engineering required to maintain criteria. A low inference bill can make previously uneconomic checks worth trying, but it does not make an incorrect intervention cheap. Similarly, longer context should be justified by a task requirement. A focused lesson fragment with its relevant rubric may be easier to inspect and evaluate than a full folder of materials, even when the service technically accepts the larger request.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "The adoption decision and the evidence boundary",
+      "html": "<p>My adoption judgment is positive for a bounded trial in semantic classification, ranking or review assistance. The interface makes uncertainty available to code, and the decomposition pattern can make application policy easier to audit. The decisive test is whether a builder can define useful questions, measure their behavior and retain a manageable fallback. A team seeking open weights, local execution or a fully inspectable training process should recognize that this acquisition establishes a hosted API workflow, not those forms of openness.</p><p>The most credible limitation is semantic. A schema guarantee can prevent an invalid field or malformed response while allowing a wrong interpretation of the input. It also does not establish that several correct-looking judgments combine into a sound final action. Test the complete user experience: what the teacher sees, what happens on ambiguity, whether an override works and whether the resulting workload is smaller. A production decision should depend on these outcomes rather than a general claim of machine-native reliability.</p><p>This report draws on official release and reference material, with Chrome used to verify the site and documentation. It contains no independent latency measurements, no comparison run against another model and no evidence of classroom learning gains. Those limits leave a clear next experiment: run one narrow task in shadow mode, compare suggestions with human decisions and decide whether the measured benefit justifies integration. That is enough to evaluate Jev's distinctive product idea without asking a single launch announcement to prove a general transformation of AI.</p><p>Set a stopping rule for that experiment before running it. If review effort rises, if overrides are ignored, or if the same ambiguous category repeatedly fails, narrow the scope or remove the feature. A successful pilot should earn a specific place in the workflow; it need not justify automating every adjacent judgment.</p>"
+    }
+  ],
+  "useCases": [
+    "Route help requests in a teaching website",
+    "Rank lesson resources using explicit criteria",
+    "Queue transcript segments for editorial review"
+  ],
+  "limitations": [
+    "Official claims only; no independent API benchmark or classroom trial.",
+    "Images, box and extended context are experimental.",
+    "Hosted API access does not establish open weights or local portability.",
+    "Confidence summarizes distributions and requires task-specific evaluation."
+  ],
+  "sources": [
+    {
+      "id": "ts-114",
+      "title": "Jev: For the builders AND dreamers",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": "2026-10-14",
+      "locator": "Composable Images; Types Beyond Decisions; jev-1.14.0",
+      "supports": "Release and experimental capability status"
+    },
+    {
+      "id": "ts-intro",
+      "title": "TypeSafe introduction",
+      "url": "https://docs.typesafe.ai/introduction",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "TypeSafe primitives; Atomic questions, composed in code",
+      "supports": "Typed question interface and decomposition"
+    },
+    {
+      "id": "ts-confidence",
+      "title": "TypeSafe confidence",
+      "url": "https://docs.typesafe.ai/confidence",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "Confidence is derived from the probabilities; How confidence is calculated",
+      "supports": "Confidence definition and risk thresholds"
+    },
+    {
+      "id": "ts-models",
+      "title": "TypeSafe models",
+      "url": "https://docs.typesafe.ai/models",
+      "accessedAt": "2026-10-18T15:14:46Z",
+      "publishedAt": null,
+      "locator": "Current models; Aliases; Language support; Data handling",
+      "supports": "Version, price, context, language and service constraints"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth piloting for narrow semantic judgments with explicit criteria, a pinned model version and human review of ambiguous results.",
+  "researchNote": "Bounded official-source Webcrawl on 18 October 2026. Chrome verified source identity and content; search-service extraction complemented reading. Vendor claims are attributed. Suggested workflows and adoption judgments are editorial proposals, not tested deployments. No API/audio performance experiments were performed; no release date inferred from retrieval date."
+}

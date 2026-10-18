@@ -1,0 +1,56 @@
+name: Publish reviewed AI Observatory
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'data/reports/**'
+      - 'data/reviews/**'
+      - 'data/evidence.json'
+      - 'data/sources.json'
+      - 'data/runs.json'
+      - 'data/rubric.json'
+      - 'data/publication-baseline.json'
+      - 'config.json'
+      - 'scripts/observatory.py'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify publication gate
+        run: python3 -m unittest discover -s tests -p 'test_observatory.py'
+      - name: Build approved public reports
+        run: python3 scripts/observatory.py build --strict
+      - name: Upload only generated site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

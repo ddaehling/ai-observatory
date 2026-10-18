@@ -1,0 +1,1939 @@
+[
+  {
+    "id": "seed-openai-news",
+    "name": "OpenAI News",
+    "url": "https://openai.com/news/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": "2026-10-18T15:13:23.724943+00:00",
+    "lastSuccessAt": "2026-10-18T15:13:23.724943+00:00",
+    "feedUrl": "https://openai.com/news/rss.xml",
+    "notes": "Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl. Initial navigation timed out; single acquisition repair confirmed rendered page and October2026 cards.",
+    "monitor": true
+  },
+  {
+    "id": "seed-anthropic-news",
+    "name": "Anthropic News",
+    "url": "https://www.anthropic.com/news",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-google-ai-blog",
+    "name": "Google AI Blog",
+    "url": "https://blog.google/technology/ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-google-deepmind",
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/discover/blog/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-meta-ai",
+    "name": "Meta AI",
+    "url": "https://ai.meta.com/blog/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-microsoft-research",
+    "name": "Microsoft Research",
+    "url": "https://www.microsoft.com/en-us/research/blog/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-nvidia-developer",
+    "name": "NVIDIA Developer",
+    "url": "https://developer.nvidia.com/blog/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-mistral-ai",
+    "name": "Mistral AI",
+    "url": "https://mistral.ai/news",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-cohere",
+    "name": "Cohere",
+    "url": "https://cohere.com/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-ai21",
+    "name": "AI21",
+    "url": "https://www.ai21.com/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-stability-ai",
+    "name": "Stability AI",
+    "url": "https://stability.ai/news",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-black-forest-labs",
+    "name": "Black Forest Labs",
+    "url": "https://bfl.ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-runway",
+    "name": "Runway",
+    "url": "https://runwayml.com/research",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-pika",
+    "name": "Pika",
+    "url": "https://pika.art/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-luma",
+    "name": "Luma",
+    "url": "https://lumalabs.ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-elevenlabs",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-fish-audio",
+    "name": "Fish Audio",
+    "url": "https://fish.audio/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-typesafe",
+    "name": "TypeSafe",
+    "url": "https://typesafe.ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-comfyui",
+    "name": "ComfyUI",
+    "url": "https://www.comfy.org/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-notebooklm",
+    "name": "NotebookLM",
+    "url": "https://notebooklm.google/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-adobe-firefly",
+    "name": "Adobe Firefly",
+    "url": "https://www.adobe.com/products/firefly.html",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-recraft",
+    "name": "Recraft",
+    "url": "https://www.recraft.ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-krea",
+    "name": "Krea",
+    "url": "https://www.krea.ai/",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-replicate",
+    "name": "Replicate",
+    "url": "https://replicate.com/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-together-ai",
+    "name": "Together AI",
+    "url": "https://www.together.ai/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-groq",
+    "name": "Groq",
+    "url": "https://groq.com/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-ollama",
+    "name": "Ollama",
+    "url": "https://ollama.com/blog",
+    "kind": "official",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-github-trending",
+    "name": "GitHub Trending",
+    "url": "https://github.com/trending",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hugging-face-transformers",
+    "name": "Hugging Face Transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-llama-cpp",
+    "name": "llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-ollama-repository",
+    "name": "Ollama repository",
+    "url": "https://github.com/ollama/ollama",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-vllm",
+    "name": "vLLM",
+    "url": "https://github.com/vllm-project/vllm",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-sglang",
+    "name": "SGLang",
+    "url": "https://github.com/sgl-project/sglang",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-comfyui-repository",
+    "name": "ComfyUI repository",
+    "url": "https://github.com/Comfy-Org/ComfyUI",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-open-webui",
+    "name": "Open WebUI",
+    "url": "https://github.com/open-webui/open-webui",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-dify",
+    "name": "Dify",
+    "url": "https://github.com/langgenius/dify",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-langchain",
+    "name": "LangChain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-llamaindex",
+    "name": "LlamaIndex",
+    "url": "https://github.com/run-llama/llama_index",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-smolagents",
+    "name": "smolagents",
+    "url": "https://github.com/huggingface/smolagents",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-gemini-cli",
+    "name": "Gemini CLI",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-openai-codex",
+    "name": "OpenAI Codex",
+    "url": "https://github.com/openai/codex",
+    "kind": "repository",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hugging-face-models",
+    "name": "Hugging Face Models",
+    "url": "https://huggingface.co/models",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hugging-face-trending",
+    "name": "Hugging Face Trending",
+    "url": "https://huggingface.co/models?sort=trending",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-qwen-hub",
+    "name": "Qwen Hub",
+    "url": "https://huggingface.co/Qwen",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-deepseek-hub",
+    "name": "DeepSeek Hub",
+    "url": "https://huggingface.co/deepseek-ai",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-mistral-hub",
+    "name": "Mistral Hub",
+    "url": "https://huggingface.co/mistralai",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-google-gemma-hub",
+    "name": "Google Gemma Hub",
+    "url": "https://huggingface.co/google",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-fish-speech-hub",
+    "name": "Fish Speech Hub",
+    "url": "https://huggingface.co/fishaudio",
+    "kind": "model_hub",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-arxiv-artificial-intelligence",
+    "name": "arXiv Artificial Intelligence",
+    "url": "https://arxiv.org/list/cs.AI/recent",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-arxiv-computation-and-language",
+    "name": "arXiv Computation and Language",
+    "url": "https://arxiv.org/list/cs.CL/recent",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-arxiv-computer-vision",
+    "name": "arXiv Computer Vision",
+    "url": "https://arxiv.org/list/cs.CV/recent",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hugging-face-papers",
+    "name": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-papers-with-code",
+    "name": "Papers with Code",
+    "url": "https://paperswithcode.com/",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-allen-institute-for-ai",
+    "name": "Allen Institute for AI",
+    "url": "https://allenai.org/blog",
+    "kind": "research",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-openai-on-x",
+    "name": "OpenAI on X",
+    "url": "https://x.com/OpenAI",
+    "kind": "social",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": "2026-10-18T15:13:23.724943+00:00",
+    "lastSuccessAt": "2026-10-18T15:13:23.724943+00:00",
+    "feedUrl": null,
+    "notes": "Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl.",
+    "monitor": true
+  },
+  {
+    "id": "seed-anthropic-on-x",
+    "name": "Anthropic on X",
+    "url": "https://x.com/AnthropicAI",
+    "kind": "social",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hugging-face-on-x",
+    "name": "Hugging Face on X",
+    "url": "https://x.com/huggingface",
+    "kind": "social",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-qwen-on-x",
+    "name": "Qwen on X",
+    "url": "https://x.com/Alibaba_Qwen",
+    "kind": "social",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-reddit-localllama",
+    "name": "Reddit LocalLLaMA",
+    "url": "https://www.reddit.com/r/LocalLLaMA/",
+    "kind": "community",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": "2026-10-18T15:13:23.724943+00:00",
+    "lastSuccessAt": "2026-10-18T15:13:23.724943+00:00",
+    "feedUrl": null,
+    "notes": "Inspected in Chrome during bounded bootstrap run; public content readable. No login failure observed. No complete historical crawl.",
+    "monitor": true
+  },
+  {
+    "id": "seed-reddit-machinelearning",
+    "name": "Reddit MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/",
+    "kind": "community",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-reddit-stablediffusion",
+    "name": "Reddit StableDiffusion",
+    "url": "https://www.reddit.com/r/StableDiffusion/",
+    "kind": "community",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-hacker-news",
+    "name": "Hacker News",
+    "url": "https://news.ycombinator.com/",
+    "kind": "community",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-the-batch",
+    "name": "The Batch",
+    "url": "https://www.deeplearning.ai/the-batch/",
+    "kind": "newsletter",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-import-ai",
+    "name": "Import AI",
+    "url": "https://importai.substack.com/",
+    "kind": "newsletter",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-latent-space",
+    "name": "Latent Space",
+    "url": "https://www.latent.space/",
+    "kind": "newsletter",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": "https://www.latent.space/feed",
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-tldr-ai",
+    "name": "TLDR AI",
+    "url": "https://tldr.tech/ai",
+    "kind": "newsletter",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-ben-s-bites",
+    "name": "Ben’s Bites",
+    "url": "https://www.bensbites.com/",
+    "kind": "newsletter",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-simon-willison",
+    "name": "Simon Willison",
+    "url": "https://simonwillison.net/",
+    "kind": "blog",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": "https://simonwillison.net/atom/everything/",
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-lilian-weng",
+    "name": "Lilian Weng",
+    "url": "https://lilianweng.github.io/",
+    "kind": "blog",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-sebastian-raschka",
+    "name": "Sebastian Raschka",
+    "url": "https://magazine.sebastianraschka.com/",
+    "kind": "blog",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-chip-huyen",
+    "name": "Chip Huyen",
+    "url": "https://huyenchip.com/blog/",
+    "kind": "blog",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-techcrunch-ai",
+    "name": "TechCrunch AI",
+    "url": "https://techcrunch.com/category/artificial-intelligence/",
+    "kind": "news",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-the-verge-ai",
+    "name": "The Verge AI",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "kind": "news",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-mit-technology-review-ai",
+    "name": "MIT Technology Review AI",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/",
+    "kind": "news",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "seed-ars-technica-ai",
+    "name": "Ars Technica AI",
+    "url": "https://arstechnica.com/ai/",
+    "kind": "news",
+    "topics": [
+      "AI discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:23.724943+00:00",
+    "discoveredFrom": "curated public entrypoint seed; not private bookmarks",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Known public entrypoint queued for future inspection; availability and current content not verified in this run.",
+    "monitor": true
+  },
+  {
+    "id": "x-astra-pro-oct16",
+    "name": "GPT-6 Astra Pro update and parallel agents",
+    "url": "https://x.com/OpenAI/status/2111192259073094035",
+    "kind": "social",
+    "topics": [
+      "current discovery"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "seed-openai-on-x",
+    "lastCheckedAt": "2026-10-18T15:13:55.855771+00:00",
+    "lastSuccessAt": "2026-10-18T15:13:55.855771+00:00",
+    "feedUrl": null,
+    "notes": "Public post inspected in Chrome.",
+    "monitor": false
+  },
+  {
+    "id": "x-live11-oct15",
+    "name": "GPT-Live-1.1 voice update",
+    "url": "https://x.com/OpenAI/status/2110797830361436604",
+    "kind": "social",
+    "topics": [
+      "current discovery"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "seed-openai-on-x",
+    "lastCheckedAt": "2026-10-18T15:13:55.855771+00:00",
+    "lastSuccessAt": "2026-10-18T15:13:55.855771+00:00",
+    "feedUrl": null,
+    "notes": "Public post inspected in Chrome.",
+    "monitor": false
+  },
+  {
+    "id": "rosalind-academic-plan",
+    "name": "Introducing the Rosalind Academic Plan",
+    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+    "kind": "official",
+    "topics": [
+      "current discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "seed-openai-news",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Link and date discovered on publisher news index; full article not inspected.",
+    "monitor": false
+  },
+  {
+    "id": "teaching-questions",
+    "name": "Teaching students to think and learn through questions",
+    "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions/",
+    "kind": "official",
+    "topics": [
+      "current discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "seed-openai-news",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Link and date discovered on publisher news index; full article not inspected.",
+    "monitor": false
+  },
+  {
+    "id": "gpt6-everyone",
+    "name": "GPT-6 and Intelligent UI for everyone",
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "kind": "official",
+    "topics": [
+      "current discovery"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "seed-openai-news",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Link and date discovered on publisher news index; full article not inspected.",
+    "monitor": false
+  },
+  {
+    "id": "creative-cf-home",
+    "name": "ComfyUI Official Documentation",
+    "url": "https://docs.comfy.org/",
+    "kind": "official",
+    "topics": [
+      "Creative workflows"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+    "monitor": false
+  },
+  {
+    "id": "creative-cf-workflow",
+    "name": "ComfyUI Workflows: Nodes, Links, and Visual Programming",
+    "url": "https://docs.comfy.org/basic-concepts/workflow",
+    "kind": "official",
+    "topics": [
+      "Creative workflows"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+    "monitor": false
+  },
+  {
+    "id": "creative-cf-dependencies",
+    "name": "Dependencies",
+    "url": "https://docs.comfy.org/basic-concepts/dependencies",
+    "kind": "official",
+    "topics": [
+      "Creative workflows"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+    "monitor": false
+  },
+  {
+    "id": "creative-cf-repo",
+    "name": "Comfy-Org/ComfyUI",
+    "url": "https://github.com/Comfy-Org/ComfyUI",
+    "kind": "repository",
+    "topics": [
+      "Creative workflows"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Comfy-Org.",
+    "monitor": false
+  },
+  {
+    "id": "creative-nl-about",
+    "name": "Learn about Gemini Notebook",
+    "url": "https://support.google.com/gemininotebook/answer/16164461?hl=en",
+    "kind": "official",
+    "topics": [
+      "Education"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+    "monitor": false
+  },
+  {
+    "id": "creative-nl-sources",
+    "name": "Add or discover new sources for your notebook",
+    "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en",
+    "kind": "official",
+    "topics": [
+      "Education"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+    "monitor": false
+  },
+  {
+    "id": "creative-nl-video",
+    "name": "Generate Video Overviews in Gemini Notebook",
+    "url": "https://support.google.com/gemininotebook/answer/16454555?hl=en",
+    "kind": "official",
+    "topics": [
+      "Education"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+    "monitor": false
+  },
+  {
+    "id": "creative-nl-students",
+    "name": "Gemini Notebook | AI Study Tool for Students",
+    "url": "https://notebook.google/students?hl=en-US",
+    "kind": "official",
+    "topics": [
+      "Education"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "bounded creative workflow assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Live Chrome rendered source verified. Publication date not displayed; source family Google.",
+    "monitor": false
+  },
+  {
+    "id": "creative-nl-legacy",
+    "name": "NotebookLM legacy Help URL",
+    "url": "https://support.google.com/notebooklm/answer/16164461?hl=en",
+    "kind": "official",
+    "topics": [
+      "Education"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:13:41Z",
+    "discoveredFrom": "known official Help URL",
+    "lastCheckedAt": "2026-10-18T15:13:41Z",
+    "lastSuccessAt": "2026-10-18T15:13:41Z",
+    "feedUrl": null,
+    "notes": "Initial Chrome navigation timed out; one recovery bound created tab and verified successful redirect to Gemini Notebook Help. Alias, not independent corroboration.",
+    "monitor": false
+  },
+  {
+    "id": "ts-home",
+    "name": "TypeSafe home",
+    "url": "https://typesafe.ai/",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "decisions"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: TypeSafe; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "ts-intro",
+    "name": "TypeSafe introduction",
+    "url": "https://docs.typesafe.ai/introduction",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "decisions"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: TypeSafe; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "ts-114",
+    "name": "Jev: For the builders AND dreamers",
+    "url": "https://typesafe.ai/blog/jev-1-14",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "decisions"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: TypeSafe; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "ts-confidence",
+    "name": "TypeSafe confidence",
+    "url": "https://docs.typesafe.ai/confidence",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "decisions"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: TypeSafe; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "ts-models",
+    "name": "TypeSafe models",
+    "url": "https://docs.typesafe.ai/models",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "decisions"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: TypeSafe; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-home",
+    "name": "Fish Audio home",
+    "url": "https://fish.audio/",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-drama3",
+    "name": "Fish Audio Drama 3 launch",
+    "url": "https://fish.audio/blog/fish-audio-drama-3/",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-repo",
+    "name": "Fish Speech repository",
+    "url": "https://github.com/fishaudio/fish-speech",
+    "kind": "repository",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-drama-docs",
+    "name": "Drama 3 documentation",
+    "url": "https://docs.fish.audio/features/text-to-speech/drama-3",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-drama-card",
+    "name": "Drama 3 official model card",
+    "url": "https://huggingface.co/fishaudio/drama-3",
+    "kind": "model_hub",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "fish-drama-license",
+    "name": "Fish Audio Community License v1.0",
+    "url": "https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE",
+    "kind": "official",
+    "topics": [
+      "builders",
+      "voice"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:46Z",
+    "discoveredFrom": "bounded Webcrawl builders assignment; official navigation",
+    "lastCheckedAt": "2026-10-18T15:14:46Z",
+    "lastSuccessAt": "2026-10-18T15:14:46Z",
+    "feedUrl": null,
+    "notes": "Official publisher family: Fish Audio; public read-only retrieval.",
+    "monitor": false
+  },
+  {
+    "id": "qwen38-card",
+    "name": "Qwen3.8-27B official model card",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: Qwen/Alibaba. Publication date unknown. Model Overview; API Usage; Best Practices; hosted API introduction",
+    "monitor": false
+  },
+  {
+    "id": "qwen38-license",
+    "name": "Qwen3.8-27B LICENSE",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: Qwen/Alibaba. Publication date unknown. LICENSE, Apache License header and sections 2, 4, 7; copyright footer",
+    "monitor": false
+  },
+  {
+    "id": "qwen38-vllm",
+    "name": "vLLM Qwen3.8-27B recipe",
+    "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: vLLM project. Publication date unknown. Overview; Prerequisites; 1x RTX 5090; Processing Ultra-Long Texts",
+    "monitor": false
+  },
+  {
+    "id": "transformers-repo",
+    "name": "Hugging Face Transformers repository",
+    "url": "https://github.com/huggingface/transformers",
+    "kind": "repository",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: Hugging Face. Publication date unknown. README: introduction, Installation, Quickstart, When should not use; file listing metadata",
+    "monitor": false
+  },
+  {
+    "id": "transformers-pipeline",
+    "name": "Transformers Pipeline documentation",
+    "url": "https://huggingface.co/docs/transformers/en/pipeline_tutorial",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: Hugging Face. Publication date unknown. Pipeline; Tasks; Parameters / Device; Batch inference",
+    "monitor": false
+  },
+  {
+    "id": "transformers-install",
+    "name": "Transformers Installation documentation",
+    "url": "https://huggingface.co/docs/transformers/en/installation",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:14:00Z",
+    "discoveredFrom": "bounded openmodels assignment",
+    "lastCheckedAt": "2026-10-18T15:14:00Z",
+    "lastSuccessAt": "2026-10-18T15:14:00Z",
+    "feedUrl": null,
+    "notes": "Source family: Hugging Face. Publication date unknown. Installation; Source install; Set up / Offline mode",
+    "monitor": false
+  },
+  {
+    "id": "qwen-publisher-discovery",
+    "name": "Qwen publisher profile",
+    "url": "https://huggingface.co/Qwen",
+    "kind": "model_hub",
+    "topics": [
+      "models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:18:00Z",
+    "discoveredFrom": "bounded discovery",
+    "lastCheckedAt": "2026-10-18T15:18:00Z",
+    "lastSuccessAt": "2026-10-18T15:18:00Z",
+    "feedUrl": null,
+    "notes": "Chrome discovery only; current collection links led to chosen model. No release claim.",
+    "monitor": false
+  },
+  {
+    "id": "gemini-cli-candidate",
+    "name": "Gemini CLI candidate README search result",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "kind": "repository",
+    "topics": [
+      "agents"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:18:00Z",
+    "discoveredFrom": "complementary web search",
+    "lastCheckedAt": "2026-10-18T15:18:00Z",
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "notes": "Search result surfaced README replacement notice for unpaid/Google One users June18 2026; not directly browser verified. Preserved as future candidate, not used to assert definitive access status.",
+    "monitor": false
+  },
+  {
+    "id": "reddit-gpu-shipment-story",
+    "name": "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x91svd/two_pallets_of_zotac_rtx_5090_graphics_cards/",
+    "kind": "community",
+    "topics": [
+      "hardware",
+      "discovery exclusion"
+    ],
+    "status": "unverified",
+    "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+    "discoveredFrom": "https://www.reddit.com/r/LocalLLaMA/",
+    "lastCheckedAt": null,
+    "lastSuccessAt": null,
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Post title/link observed on public subreddit feed. Story detail and linked external claim not inspected; exclusion based on visible title topic only."
+  },
+  {
+    "id": "transformers-tokenizers",
+    "name": "Transformers Tokenizers documentation",
+    "url": "https://huggingface.co/docs/transformers/en/fast_tokenizers",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:30:52.536776Z",
+    "discoveredFrom": "bounded Transformers substantive revision",
+    "lastCheckedAt": "2026-10-18T15:30:52.536776Z",
+    "lastSuccessAt": "2026-10-18T15:30:52.536776Z",
+    "feedUrl": null,
+    "monitor": false,
+    "lastCoverageAt": "2026-10-18T15:30:52.536776Z",
+    "notes": "Source family: Hugging Face. Publication date unknown. Tokenizers; Load a tokenizer; Encode and decode; Batch processing / Padding / Truncation. Chrome version selector v5.20.1."
+  },
+  {
+    "id": "transformers-processors",
+    "name": "Transformers Processors documentation (main branch)",
+    "url": "https://huggingface.co/docs/transformers/main/en/processors",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:30:52.536776Z",
+    "discoveredFrom": "bounded Transformers substantive revision",
+    "lastCheckedAt": "2026-10-18T15:30:52.536776Z",
+    "lastSuccessAt": "2026-10-18T15:30:52.536776Z",
+    "feedUrl": null,
+    "monitor": false,
+    "lastCoverageAt": "2026-10-18T15:30:52.536776Z",
+    "notes": "Source family: Hugging Face. Publication date unknown. Processors introduction; Processor classes; Preprocess. Chrome main-branch warning."
+  },
+  {
+    "id": "transformers-quickstart",
+    "name": "Transformers Quickstart documentation (main branch)",
+    "url": "https://huggingface.co/docs/transformers/main/en/quicktour",
+    "kind": "official",
+    "topics": [
+      "models",
+      "education",
+      "builders"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-10-18T15:30:52.536776Z",
+    "discoveredFrom": "bounded Transformers substantive revision",
+    "lastCheckedAt": "2026-10-18T15:30:52.536776Z",
+    "lastSuccessAt": "2026-10-18T15:30:52.536776Z",
+    "feedUrl": null,
+    "monitor": false,
+    "lastCoverageAt": "2026-10-18T15:30:52.536776Z",
+    "notes": "Source family: Hugging Face. Publication date unknown. Pretrained models table and from_pretrained example; Pipeline; Trainer. Chrome main-branch warning."
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "id": "comfyui",
+  "title": "ComfyUI: make creative generation a process you can inspect",
+  "entity": "ComfyUI",
+  "category": "Creative workflows",
+  "tags": [
+    "visual programming",
+    "local AI",
+    "asset pipelines",
+    "education",
+    "open source"
+  ],
+  "summary": "A practical baseline for using ComfyUI graphs to create and maintain teaching, app and video assets, with dependency and licensing limits made explicit.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-18T15:13:41Z",
+  "updatedAt": "2026-10-18T15:13:41Z",
+  "officialUrl": "https://docs.comfy.org/",
+  "sections": [
+    {
+      "id": "why",
+      "title": "A creative process that can be inspected",
+      "html": "<p>ComfyUI is useful when a creative task has become a repeatable process: generating a family of illustrations, preparing assets for a learning website, or exploring shots before a video production. Its central object is a visible graph describing how inputs become outputs. The graph makes choices available for inspection and revision. For a teacher or builder, the interesting result is therefore both a piece of media and a record of the process that produced it. This baseline report examines that working method as documented on 18 October 2026; it does not announce a newly launched feature.</p><p>The official documentation describes a locally runnable, open-source interface and inference engine. Its workflow guide explains the composition of nodes, links and settings. These are documented capabilities; the examples and adoption recommendations below are editorial proposals. No model was installed or timed for this report. The repository's broad speed superlatives are not treated as established comparative results. A graph can make a process more understandable while still producing an inaccurate picture, a weak composition or an unusable asset. <a href=\"https://docs.comfy.org/\">Official overview</a>; <a href=\"https://docs.comfy.org/basic-concepts/workflow\">workflow guide</a>.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "Read the graph before changing the prompt",
+      "html": "<p>A node performs a particular operation, such as loading a model, encoding text, sampling an image or saving a result. Links carry outputs into compatible inputs. Settings attached to nodes control their behavior. The workflow guide gives a simple progression from loading a model and reading a prompt to generating and saving an image. It also explains why an image cannot simply connect to a socket expecting a number. This structure offers a concrete way to teach data types and dependency relationships without beginning with programming syntax. <a href=\"https://docs.comfy.org/basic-concepts/workflow\">Nodes, links and properties</a>.</p><p>In a workshop, ask learners to explain each connection in ordinary language before running the workflow. Which file supplies the model? Which node interprets the words? Which settings change the sampling process? Where does the output go? If learners cannot answer, the apparent simplicity of clicking Run conceals uncertainty. A useful exercise removes one link and asks the group to predict the failure. Another changes one setting and asks which downstream results might differ. These are proposed teaching exercises, not evidence of measured learning gains.</p><p>For production, the same reading habit becomes a debugging method. A failed run should first be traced to the marked node and its required inputs. A poor image requires a different investigation: whether the intended information entered the correct part of the graph, whether the chosen model can serve the brief, and whether later transformations damaged the useful result. Keeping those questions separate helps avoid spending an afternoon rewriting prompts to compensate for a missing file or incompatible component.</p>"
+    },
+    {
+      "id": "first",
+      "title": "Start with the smallest working production brief",
+      "html": "<p>The documented entry point is a built-in template, accessed through Workflow and Browse Workflow Templates. The guide says these templates use included core nodes and prompt for required model downloads. That is a sensible starting boundary for a class or small studio: establish one known working example before adding community extensions. A template is an executable example to understand and adapt, rather than evidence that every machine has the same resources or that every offered model is suitable for a commercial project. <a href=\"https://docs.comfy.org/basic-concepts/workflow\">Starting with a template</a>.</p><p>Consider a teacher preparing a website about local habitats. Begin with one illustration brief: a clear landscape scene with space reserved for labels added later in the website. Write acceptance criteria before generating anything: recognizable subject, coherent scale, readable composition at the intended display size, and no misleading biological details. Produce a small set of candidates, select one, then change a single variable for the next set. Keep notes describing why an image failed. This produces a usable decision history instead of an unstructured folder of attractive alternatives.</p><p>Separate the illustration from the final educational diagram. A generated landscape might serve as atmosphere or an invitation to investigate; labeled structures and factual relationships deserve deliberate checking and often manual construction. Add headings, interface text and accessibility descriptions in the actual website rather than depending on the image to contain reliable typography. The workflow then supplies a visual component within a designed experience. It does not replace the authoring, subject review or accessibility work needed to make the experience useful.</p>"
+    },
+    {
+      "id": "assets",
+      "title": "Turn isolated outputs into an asset system",
+      "html": "<p>A builder creating a small app could use the same approach for background scenes, onboarding illustrations and lesson covers. First define the visual role of each asset and the dimensions required by the interface. Then establish a modest set of reference outputs that express the desired composition and tone. Save a version of the workflow for each approved direction, and record the associated inputs. Use the graph to make controlled revisions while assessing every output in its real screen layout. This is a proposed production practice, not a claim that consistency appears automatically.</p><p>Test the images where users encounter them: on narrow screens, behind text, beside controls and in low-contrast environments. A composition that looks impressive by itself may overwhelm the main action or crop badly in a card. Choose variants against those concrete constraints. Keep critical information in HTML and provide appropriate text alternatives. A visual generation pipeline is valuable when it serves the interface hierarchy; adding more generated detail is not itself a product improvement.</p><p>ComfyUI's repository documents tools for masks, compositing, inpainting, upscaling and other media processing. These expand the possible stages of a workflow, but the exact model and graph determine what is available in a particular installation. For a small team, it is reasonable to add one such stage only after a recurring defect justifies it. Review the result against the original acceptance criteria. An extra processing step should earn its place through a visible benefit rather than through the complexity of the graph. <a href=\"https://github.com/Comfy-Org/ComfyUI\">Repository feature inventory</a>.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Use video as a sequence of decisions",
+      "html": "<p>For a short educational video, the safest initial use is visual development: thumbnail concepts, mood frames or a storyboard that helps a teacher decide what to film, animate or explain. The official sources describe workflows for several media types, including video, but this report does not validate a particular video model, duration or frame rate. Production examples should therefore begin with the intended teaching point and shot sequence, then select a suitable documented workflow for the required assets. <a href=\"https://docs.comfy.org/basic-concepts/workflow\">Workflow output types</a>.</p><p>A proposed workflow for a ninety-second explainer starts with a human-written outline and a small shot list. Generate exploratory images for the difficult scenes, inspect them for factual problems, and assemble a rough edit with temporary narration. This exposes pacing and continuity problems before expensive refinement. If a generated shot introduces the wrong mechanism, object relationship or physical movement, replace or redraw it. A beautiful transition cannot repair an incorrect explanation. Keep a record connecting approved media to the exact lesson segment it supports.</p><p>For teams building websites around the video, retain still images and written explanations alongside the finished clip. Learners may need to revisit one detail without watching the whole sequence. Treat each approved visual as a maintained asset with an owner and revision note. This is particularly helpful when the lesson changes: the team can identify which outputs need replacement rather than regenerate an entire collection and lose the review work already invested.</p>"
+    },
+    {
+      "id": "portable",
+      "title": "Sharing a graph is only part of reproducibility",
+      "html": "<p>The workflow guide documents JSON export and explains that built-in save nodes can embed workflow information in output files for later recovery. That makes an output potentially useful as a route back to its construction. However, the dependencies guide explicitly warns that a workflow needs more than its graph: media inputs, models, custom nodes and Python dependencies may all be required. Sharing the graph alone is therefore an incomplete handover. <a href=\"https://docs.comfy.org/basic-concepts/workflow\">Saving and sharing workflows</a>; <a href=\"https://docs.comfy.org/basic-concepts/dependencies\">Workflow dependencies</a>.</p><p>A practical handover should include the workflow file, model identifiers and permitted download locations, approved input assets, relevant versions, output examples and a short instruction describing a successful run. Record what the recipient is allowed to redistribute. Avoid assuming that a filename identifies the same weights on two machines. Where feasible, retain checksums in the team's own manifest. These are recommended reproducibility practices; the report has not tested whether two installations produce identical pixels or whether a particular workflow captures every environmental detail.</p><p>The official dependency documentation also describes conflicts between extensions and their required packages. A working environment can stop working after an update. A classroom should therefore retain a tested configuration for the duration of an exercise and try changes in a separate environment first. A production team should preserve a known working version before adding another custom node. Someone must own recovery when the graph loads but cannot execute. That maintenance responsibility belongs in the adoption decision alongside the appeal of the visual interface.</p>"
+    },
+    {
+      "id": "rights",
+      "title": "Openness, local control and their boundaries",
+      "html": "<p>The core repository identifies a GPL-3.0 license and documents local execution, a local API and an offline option. Its current README describes using the offline flag to disable optional paid API nodes and keep built-in functionality offline. This is a meaningful control surface for builders, but it does not establish that every third-party extension follows the same behavior. Review the actual graph and its components before making a claim about where a project's inputs are processed. <a href=\"https://github.com/Comfy-Org/ComfyUI\">License and offline execution</a>.</p><p>Core software licensing is distinct from the licenses of models, extensions and source media. An open-source application does not confer unlimited commercial rights to every model it can load. Nor does a local setup automatically resolve the permissions attached to a person's photograph, a publisher's image or a brand asset. For a teaching project, choose inputs with clear provenance and document the model terms relevant to the intended distribution. For an app, include that check before approving the workflow as a reusable production dependency.</p><p>Local control also moves operational work to the team. Hardware capacity, storage, compatible software and troubleshooting time affect what is practical. The repository describes resource management features, but this assignment does not establish generation speed on any device. Estimate capacity with a representative real task before buying equipment or promising a classroom turnaround time. The relevant cost is the complete production cycle, including failed candidates, review and maintenance, rather than the absence of a per-image invoice.</p>"
+    },
+    {
+      "id": "adopt",
+      "title": "A bounded adoption test",
+      "html": "<p>My judgment is that ComfyUI deserves consideration when repeatable visual production and inspectable process matter enough to justify maintaining the environment. Begin with one lesson or one app asset family. Agree on a brief, a small candidate budget and explicit review criteria. Track time spent setting up, generating, correcting and integrating assets. Ask a second person to recover the workflow and understand the handover. That trial tests whether the graph actually improves the team's work rather than merely making experimentation enjoyable.</p><p>The adoption hypothesis is that visible structure will reduce repeated setup and make revision discussions more precise. That remains a hypothesis until tested in the team's setting. A favorable result is a reusable, documented process that delivers acceptable assets within the available time. An unfavorable result may reveal that simpler manual work better serves the brief or that maintenance overwhelms the benefit. The evidence supports flexibility, inspectability and substantial extension points; it does not establish universal speed, teaching effectiveness or effortless portability.</p>"
+    }
+  ],
+  "useCases": [
+    "Reusable illustration families for learning websites",
+    "Inspectable visual-programming classroom exercises",
+    "Storyboard and visual development for short explainers",
+    "Maintained asset workflows for small apps"
+  ],
+  "limitations": [
+    "No hands-on model execution or timing was performed.",
+    "Shared JSON does not include all required models, assets or dependencies.",
+    "Core GPL-3.0 licensing does not establish model, extension or media permissions.",
+    "Local privacy depends on the actual nodes and services used."
+  ],
+  "sources": [
+    {
+      "id": "creative-cf-home",
+      "title": "ComfyUI Official Documentation",
+      "url": "https://docs.comfy.org/",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "About ComfyUI",
+      "supports": "ComfyUI is an open-source node interface and inference engine that can run locally."
+    },
+    {
+      "id": "creative-cf-workflow",
+      "title": "ComfyUI Workflows: Nodes, Links, and Visual Programming",
+      "url": "https://docs.comfy.org/basic-concepts/workflow",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "Nodes are the steps; Links pass data; Starting with a template; Saving and sharing workflows",
+      "supports": "Workflows connect nodes by compatible data types; core templates provide complete examples; workflow JSON and embedded workflow metadata support sharing."
+    },
+    {
+      "id": "creative-cf-dependencies",
+      "title": "Dependencies",
+      "url": "https://docs.comfy.org/basic-concepts/dependencies",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "A workflow file depends on other files; Dependency Conflicts",
+      "supports": "Workflow execution depends on assets, models, custom nodes and Python dependencies; conflicting requirements can break an environment."
+    },
+    {
+      "id": "creative-cf-repo",
+      "title": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "accessedAt": "2026-10-18T15:13:41Z",
+      "publishedAt": null,
+      "locator": "README Features; repository Resources license",
+      "supports": "The repository identifies GPL-3.0 licensing, local APIs, reusable graphs, media tools and an offline mode that disables optional paid API nodes."
+    }
+  ],
+  "images": [],
+  "judgment": "Useful for builders who need control and repeatable process; operational overhead and separate model rights constrain adoption. Potential impact is moderate to substantial for creative practice, without evidence of a new model breakthrough.",
+  "researchNote": "Baseline researched 18 October 2026 from four official pages in one Comfy-Org source family. Publication dates were not displayed. Examples and recommended evaluations are original proposals, not reported product tests or measured educational outcomes."
+}

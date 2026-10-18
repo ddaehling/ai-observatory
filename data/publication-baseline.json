@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "approvedReportIds": [
+    "comfyui",
+    "fish-audio",
+    "notebooklm",
+    "qwen38-27b",
+    "transformers",
+    "typesafe-jev"
+  ],
+  "withdrawals": []
+}
