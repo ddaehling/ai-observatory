@@ -1,0 +1,33 @@
+{
+  "reportId": "flux3-image-klein",
+  "reviewerId": "/root/edition_20261020_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:27:46Z",
+  "reportHash": "22ea040363c1a10f6167c446c2e19705eb89498a4888031847f2f5d9826af3e8",
+  "evidenceHash": "f981df0898dafc614435a2d50e0104e94ff67b598946278c79211a5e8d2949f8",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 5
+  },
+  "rationale": {
+    "usefulness": "Downloadable checkpoints, hosted pricing, reference editing and layout guidance support specific lesson-illustration, website-asset and storyboard workflows. The report usefully separates editable text and site behavior from generated imagery and proposes fidelity and unwanted-edit checks.",
+    "impact": "The combination of a compact image transformer, multiple deployment routes and generation/editing controls is significant for practical creative-model development. Vendor quality and speed claims and the lack of runtime testing limit any stronger claim of general technical leadership.",
+    "novelty": "One checkpoint combines generation, multi-reference editing and compositional boxes, with adaptation through Base-to-Distilled LoRA reuse. These are meaningful combined capabilities, but the reviewed evidence does not establish an entirely new image-generation paradigm or independently superior results.",
+    "maturity": "Official model cards, reference code, an API contract and maintained ComfyUI instructions make a pilot concrete. Hardware and prompt-expansion requirements vary sharply by implementation, boxes are not hard masks, and unrelated regions can change. Production reliability remains untested.",
+    "openness": "Public code and downloadable weights offer real inspection and deployment choice. The Kommunity license's revenue definition, restricted commercial grant, similar-model improvement restriction and review conditions materially limit reuse; an Apache inference-code license does not remove those weight restrictions."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Eight-gigabyte ComfyUI INT8 operation and reference BF16/FP8/NVFP4 memory figures describe different configurations. The report correctly avoids treating them as a single minimum requirement.",
+    "The reviewed BFL overview requires a separate prompt-upsampler call for its documented Diffusers path, while the repository also advertises a modular Diffusers route that runs it each request. Integration-specific behavior should be rechecked at a pinned version; the report's explicit scoping to the documented path is acceptable.",
+    "The commercial-output exception does not establish unrestricted commercial adaptation or distribution rights. The report accurately distinguishes weights, code and separate self-hosting plans.",
+    "No accepted-image yield, preservation test, GPU measurement or classroom result was independently demonstrated."
+  ]
+}

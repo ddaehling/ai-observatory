@@ -1,0 +1,33 @@
+{
+  "reportId": "studentsim",
+  "reviewerId": "/root/edition_20261020_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:27:46Z",
+  "reportHash": "be253f7a761ca50ac061c94b0c3e2326983bb11f321d060566c0241a88a08e11",
+  "evidenceHash": "486e667277b833f0693523f10c734585ca948159b5f3b8a06791fe188684f89b",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 4,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The two metrics and inspectable training pipeline provide a useful internal workbench for technically capable education teams. The proposed mathematics hint review, writing-feedback comparison and video pause-point analysis fit the text-based method and remain explicitly hypothetical.",
+    "impact": "Linking learner-behavior simulation to tutor optimization addresses a meaningful AI-education development problem. Its demonstrated scope is a three-domain simulator benchmark and a small chess expert-rating experiment, not measured improvements in real students' learning.",
+    "novelty": "The pooled-then-individual training recipe, simultaneous fidelity/responsiveness criteria and simulator-backed tutor reward constitute a distinctive research combination. The paper supplies actual comparisons, while constructed guidance and unequal chess input features constrain claims of general superiority.",
+    "maturity": "The code and experiment are concrete, but canonical-correction responsiveness is an imperfect learner proxy, the expert study has 74 annotations across 30 positions, and learner outcomes were not tested. Separate datasets, API preparation and contradictory release documentation leave substantial reproduction work.",
+    "openness": "MIT implementation code, a detailed paper and a specified Qwen/LoRA pipeline permit substantial inspection and adaptation. Separately obtained learner datasets, API-dependent preparation and the README/transparency conflict prevent treating the release as an unrestricted, complete reproduction bundle."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The paper's tutor reward uses the pooled Stage-1 simulator plus teaching-style and perception heads. The report correctly avoids attributing the result to an isolated personalized-simulator substitution.",
+    "Responsiveness targets canonical corrections and the guidance is partly constructed; it is not an observed real-student uptake or retention metric.",
+    "The trained chess simulator receives a Maia2-derived likely-move feature omitted from the prompted closed-model baseline. The report preserves this material comparison asymmetry.",
+    "README chess-data redistribution and the transparency note's code-only claim conflict. This limits reproducibility confidence but is disclosed clearly enough for publication as research coverage."
+  ]
+}

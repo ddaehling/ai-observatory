@@ -571,7 +571,7 @@
         "source_id": "ts-intro",
         "url": "https://docs.typesafe.ai/introduction",
         "locator": "TypeSafe primitives; Atomic questions, composed in code",
-        "passage": "Noul (0\u20131)",
+        "passage": "Noul (0–1)",
         "published_at": null,
         "event_at": null,
         "retrieved_at": "2026-10-18T15:14:46Z"
@@ -845,7 +845,7 @@
         "source_id": "fish-drama-license",
         "url": "https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE",
         "locator": "Sections III(a), III(c), IV(a), IV(b); header",
-        "passage": "Version 1.0 \u2014 Last Updated: October 13, 2026",
+        "passage": "Version 1.0 — Last Updated: October 13, 2026",
         "published_at": "2026-10-13",
         "event_at": null,
         "retrieved_at": "2026-10-18T15:14:46Z"
@@ -1050,7 +1050,7 @@
       {
         "source_id": "qwen38-vllm",
         "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-        "locator": "1x RTX5090 \u2014 NVFP4 needs --enforce-eager",
+        "locator": "1x RTX5090 — NVFP4 needs --enforce-eager",
         "passage": "NVFP4 fits only with CUDA graphs off",
         "published_at": null,
         "event_at": null,
@@ -1151,7 +1151,7 @@
         "source_id": "transformers-pipeline",
         "url": "https://huggingface.co/docs/transformers/en/pipeline_tutorial",
         "locator": "Batch inference, lines195-197",
-        "passage": "Batch inference may improve speed, especially on a GPU, but it isn\u2019t guaranteed.",
+        "passage": "Batch inference may improve speed, especially on a GPU, but it isn’t guaranteed.",
         "published_at": null,
         "event_at": null,
         "retrieved_at": "2026-10-18T15:18:00Z"
@@ -1499,5 +1499,2062 @@
     "limitations": [
       "Documentation inspection only; no runtime validation"
     ]
+  },
+  {
+    "claim_id": "voxtral3-release-date",
+    "claim": "Voxtral 3 was announced on October 20, 2026.",
+    "source_ids": [
+      "seed-mistral-ai",
+      "voxtral3-realtime"
+    ],
+    "support": [
+      {
+        "source_id": "seed-mistral-ai",
+        "url": "https://mistral.ai/news/",
+        "locator": "Voxtral 3 news card",
+        "passage": "October 20, 2026",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-realtime",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+        "locator": "Model header",
+        "passage": "October 20, 2026",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-pipeline",
+    "claim": "The voice-agent SDK coordinates capture, transcription, a reasoning model, tools, speech and playback; it builds on LiveKit with Python and TypeScript bindings.",
+    "source_ids": [
+      "voxtral3-agents"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-agents",
+        "url": "https://docs.mistral.ai/studio/audio/voice-agents/overview",
+        "locator": "Introduction; How a session unfolds",
+        "passage": "The SDK builds on LiveKit",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Documentation of capability, not a runtime test"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-access",
+    "claim": "The launch offers hosted API access and directs full private-stack deployment inquiries to Mistral; no public weight/license release was verified.",
+    "source_ids": [
+      "voxtral3-release"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-release",
+        "url": "https://mistral.ai/news/voxtral-3/",
+        "locator": "Get started; private-cloud/on-premises paragraph",
+        "passage": "talk to our team",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "No inference of open weights from self-deployment language"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "Private deployment contract and hardware requirements were not inspected."
+    ]
+  },
+  {
+    "claim_id": "voxtral3-preview",
+    "claim": "Realtime transcription and the inspected TTS model are Public Preview.",
+    "source_ids": [
+      "voxtral3-realtime",
+      "voxtral3-tts"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-realtime",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+        "locator": "Model header",
+        "passage": "Public Preview",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-tts",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+        "locator": "Model header",
+        "passage": "Public Preview",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-realtime-features",
+    "claim": "Realtime transcription documents 80–2,400 ms configurable latency, end-of-turn detection, context biasing and diarization in a WebSocket session.",
+    "source_ids": [
+      "voxtral3-realtime"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-realtime",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+        "locator": "Model overview",
+        "passage": "configurable latency (80 ms to 2,400 ms)",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Component setting, not a guaranteed end-to-end voice-agent delay"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-languages-conflict",
+    "claim": "The language matrix lists 50 languages for both file models, 45 languages/dialects for realtime, and 35 languages/50+ dialects for TTS; the TTS model page instead says 9 languages.",
+    "source_ids": [
+      "voxtral3-languages",
+      "voxtral3-tts"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-languages",
+        "url": "https://docs.mistral.ai/studio/audio/specs-and-limits/languages",
+        "locator": "Supported languages by model; voxtral-mini-tts-3-0 row",
+        "passage": "35 languages, 50+ dialects",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-tts",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+        "locator": "Model overview",
+        "passage": "Supports 9 languages",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Coverage differs by model and mode"
+    ],
+    "contradicts": [
+      "The linked TTS model page and model-specific language matrix disagree."
+    ],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "Launch-day discrepancy unresolved; do not promise a particular locale from the aggregate list."
+    ]
+  },
+  {
+    "claim_id": "voxtral3-price-conflict",
+    "claim": "The announcement lists TTS at $13 per million characters, while its linked TTS model page displays $16; the report preserves both.",
+    "source_ids": [
+      "voxtral3-release",
+      "voxtral3-tts"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-release",
+        "url": "https://mistral.ai/news/voxtral-3/",
+        "locator": "Get started; pricing table; Voxtral Speech 3",
+        "passage": "$13/1M chars",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-tts",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+        "locator": "Price",
+        "passage": "$16",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Published prices at retrieval; account terms were not checked"
+    ],
+    "contradicts": [
+      "$13 announcement versus $16 model page"
+    ],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "Applicable billing rate unresolved."
+    ]
+  },
+  {
+    "claim_id": "voxtral3-transcription-prices",
+    "claim": "Published transcription rates are $0.0035/min Mini batch, $0.0040/min Small, and $0.008/min realtime Mini.",
+    "source_ids": [
+      "voxtral3-release",
+      "voxtral3-realtime"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-release",
+        "url": "https://mistral.ai/news/voxtral-3/",
+        "locator": "Get started; pricing table",
+        "passage": "Voxtral Mini Transcribe 3 (batch)",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-realtime",
+        "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+        "locator": "Price",
+        "passage": "$0.008",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Report's 100-hour arithmetic is 6,000 minutes times each rate.",
+      "Excludes reasoning, speech output, tools, infrastructure and other charges."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "No bill was observed."
+    ]
+  },
+  {
+    "claim_id": "voxtral3-tts-controls",
+    "claim": "Offline TTS guide documents emotion/pace tags, pronunciation, streaming, and formats; natural-language style instructions are unavailable at launch.",
+    "source_ids": [
+      "voxtral3-tts-guide"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-tts-guide",
+        "url": "https://docs.mistral.ai/studio/audio/text-to-speech/overview",
+        "locator": "Features by mode; Style instructions row",
+        "passage": "No (not available at launch)",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Offline feature table; do not transfer every control to realtime automatically"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-channel-limit",
+    "claim": "Browser sessions are created by a server; launch telephony is enterprise-only, and phone lines cannot run client-side tools.",
+    "source_ids": [
+      "voxtral3-agents"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-agents",
+        "url": "https://docs.mistral.ai/studio/audio/voice-agents/overview",
+        "locator": "Choose your path; Telephony row",
+        "passage": "Available to enterprise customers at launch",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Phone-line restriction is explicitly stated under How it works"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "No browser session or phone call was run."
+    ]
+  },
+  {
+    "claim_id": "voxtral3-versioning",
+    "claim": "Agents are versioned configuration; sessions are individual conversations, and production sessions can pin a version.",
+    "source_ids": [
+      "voxtral3-agents"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-agents",
+        "url": "https://docs.mistral.ai/studio/audio/voice-agents/overview",
+        "locator": "When to save an agent",
+        "passage": "you can pin one",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-latency-accounting",
+    "claim": "End-to-end voice response includes multiple stages, and fillers do not shorten time to the useful answer.",
+    "source_ids": [
+      "voxtral3-latency"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-latency",
+        "url": "https://docs.mistral.ai/studio/audio/concepts/latency",
+        "locator": "Voice agents; Measure fillers separately",
+        "passage": "The filler makes the wait easier to bear but doesn't shorten it.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Vendor launch sub-second claim is not reproduced or generalized",
+      "Proposed pilot should measure first sound and useful answer separately"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": []
+  },
+  {
+    "claim_id": "voxtral3-use-cases",
+    "claim": "Educational, website, hands-free creative and video examples are editorial proposals grounded in documented components.",
+    "source_ids": [
+      "voxtral3-agents",
+      "voxtral3-tts-guide"
+    ],
+    "support": [
+      {
+        "source_id": "voxtral3-agents",
+        "url": "https://docs.mistral.ai/studio/audio/voice-agents/overview",
+        "locator": "Introduction",
+        "passage": "which tools it can call",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      },
+      {
+        "source_id": "voxtral3-tts-guide",
+        "url": "https://docs.mistral.ai/studio/audio/text-to-speech/overview",
+        "locator": "Choose your mode",
+        "passage": "The complete text, such as a script, an article, or a message to read out",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:18:00Z"
+      }
+    ],
+    "qualifiers": [
+      "Inference and application design, not observed deployments or measured outcomes"
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "included",
+    "limitations": [
+      "No classroom study, listening test or implementation performed."
+    ]
+  },
+  {
+    "claim_id": "gemini-transition-consumer",
+    "claim": "Consumer Gemini Code Assist access through Gemini CLI was scheduled to stop June 18 2026, including Google AI Pro and Ultra.",
+    "source_ids": [
+      "repos-gemini-transition",
+      "repos-gemini-auth"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-transition",
+        "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
+        "locator": "Important timeline for Consumers",
+        "passage": "will stop serving requests for Google AI Pro and Ultra",
+        "published_at": "2026-05-19",
+        "event_at": "2026-06-18",
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Consumer Gemini Code Assist access through Gemini CLI was scheduled to stop June 18 2026, including Google AI Pro and Ultra."
+      }
+    ],
+    "qualifiers": [
+      "Primary documentation; behavior not independently executed."
+    ],
+    "contradicts": [
+      {
+        "source_id": "repos-gemini-auth",
+        "explanation": "Older personal-account recommendation conflicts with later dated consumer cutoff; later notice governs report eligibility interpretation."
+      }
+    ],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-transition-enterprise",
+    "claim": "The transition announcement preserved Standard/Enterprise and paid API-key access.",
+    "source_ids": [
+      "repos-gemini-transition"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-transition",
+        "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
+        "locator": "For enterprise customers",
+        "passage": "your access remains unchanged.",
+        "published_at": "2026-05-19",
+        "event_at": "2026-06-18",
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "The transition announcement preserved Standard/Enterprise and paid API-key access."
+      }
+    ],
+    "qualifiers": [
+      "Preservation claim applies to specified organizational and paidAPI routes; current README separately limits Argon optimization."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-transition-parity",
+    "claim": "Google announced incomplete initial feature parity and shared Antigravity architecture.",
+    "source_ids": [
+      "repos-gemini-transition"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-transition",
+        "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
+        "locator": "Paragraph beginning While there won’t; Unified architecture",
+        "passage": "there won't be 1:1 feature parity",
+        "published_at": "2026-05-19",
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Google announced incomplete initial feature parity and shared Antigravity architecture."
+      }
+    ],
+    "qualifiers": [
+      "Historical launch statement; does not establish present feature-by-feature parity."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-current-argon",
+    "claim": "The current Gemini CLI README says it is not optimized for Gemini 4 Argon and recommends Antigravity.",
+    "source_ids": [
+      "seed-gemini-cli"
+    ],
+    "support": [
+      {
+        "source_id": "seed-gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "locator": "README opening note",
+        "passage": "Gemini CLI has not been optimized for Gemini 4 Argon.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "The current Gemini CLI README says it is not optimized for Gemini 4 Argon and recommends Antigravity."
+      }
+    ],
+    "qualifiers": [
+      "Observed October20; model selection is distinct from supported billing/authentication."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-client-functions",
+    "claim": "The README documents code editing, multimodal scaffolding, MCP extension and noninteractive scripts.",
+    "source_ids": [
+      "seed-gemini-cli"
+    ],
+    "support": [
+      {
+        "source_id": "seed-gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "locator": "Key Features / Code Understanding & Generation",
+        "passage": "Generate new apps from PDFs, images, or sketches using multimodal capabilities",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "The README documents code editing, multimodal scaffolding, MCP extension and noninteractive scripts."
+      }
+    ],
+    "qualifiers": [
+      "Primary documentation; behavior not independently executed."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-install-prerequisites",
+    "claim": "Gemini CLI recommends Node20+, an internet connection and platform-specific client specifications.",
+    "source_ids": [
+      "repos-gemini-install"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-install",
+        "url": "https://www.geminicli.com/docs/get-started/installation",
+        "locator": "Recommended system specifications",
+        "passage": "Runtime: Node.js 20.0.0+",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Gemini CLI recommends Node20+, an internet connection and platform-specific client specifications."
+      }
+    ],
+    "qualifiers": [
+      "Guide updated May14 2026; recommended specifications are not measured minimums."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-auth-mechanism",
+    "claim": "API-key and Vertex AI paths have separate setup requirements.",
+    "source_ids": [
+      "repos-gemini-auth"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-auth",
+        "url": "https://www.geminicli.com/docs/get-started/authentication",
+        "locator": "Use Vertex AI",
+        "passage": "with the Vertex AI API enabled",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "API-key and Vertex AI paths have separate setup requirements."
+      }
+    ],
+    "qualifiers": [
+      "Authentication mechanisms documented; individual availability reconciled with later migration notice."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-auth-conflict",
+    "claim": "Authentication guide still recommends personal account login despite later transition notice.",
+    "source_ids": [
+      "repos-gemini-auth"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-auth",
+        "url": "https://www.geminicli.com/docs/get-started/authentication",
+        "locator": "Opening recommendation",
+        "passage": "logging in with your personal Google account.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Authentication guide still recommends personal account login despite later transition notice."
+      }
+    ],
+    "qualifiers": [
+      "Conflict preserved, not silently harmonized."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "Do not use this older recommendation to infer current consumer eligibility."
+    ]
+  },
+  {
+    "claim_id": "antigravity-cli-review",
+    "claim": "Antigravity setup documents agy, workspace trust and artifact review.",
+    "source_ids": [
+      "repos-antigravity-start"
+    ],
+    "support": [
+      {
+        "source_id": "repos-antigravity-start",
+        "url": "https://antigravity.google/docs/getting-started?tab=cli",
+        "locator": "Download and install / Start a project",
+        "passage": "Workspace trust: Confirm that you trust the repository directory before the agent begins file indexing.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Antigravity setup documents agy, workspace trust and artifact review."
+      }
+    ],
+    "qualifiers": [
+      "Primary documentation; behavior not independently executed."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "antigravity-cli-controls",
+    "claim": "Successor product page documents concurrent background sessions and settings.",
+    "source_ids": [
+      "repos-antigravity-cli"
+    ],
+    "support": [
+      {
+        "source_id": "repos-antigravity-cli",
+        "url": "https://antigravity.google/product/antigravity-cli",
+        "locator": "Subagents",
+        "passage": "Delegate background tasks to concurrent agent sessions.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Successor product page documents concurrent background sessions and settings."
+      }
+    ],
+    "qualifiers": [
+      "Vendor documentation; concurrency speedup not independently measured."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "antigravity-access-tiers",
+    "claim": "Pricing page describes a free individual tier with weekly limits and paid consumer/organizational routes.",
+    "source_ids": [
+      "repos-antigravity-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "repos-antigravity-pricing",
+        "url": "https://antigravity.google/pricing",
+        "locator": "For Individuals",
+        "passage": "Basic weekly rate limits *",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Pricing page describes a free individual tier with weekly limits and paid consumer/organizational routes."
+      }
+    ],
+    "qualifiers": [
+      "Snapshot October20; no numerical consumer quota or individual entitlement established."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-headless-outputs",
+    "claim": "Headless JSON can carry response, stats and error; JSONL exposes tool and result events.",
+    "source_ids": [
+      "repos-gemini-headless"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-headless",
+        "url": "https://www.geminicli.com/docs/cli/headless",
+        "locator": "JSON output / Streaming JSON output",
+        "passage": "Returns a single JSON object containing the response and usage statistics.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Headless JSON can carry response, stats and error; JSONL exposes tool and result events."
+      }
+    ],
+    "qualifiers": [
+      "Primary documentation; behavior not independently executed."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-sandbox-scope",
+    "claim": "The documented macOS default sandbox restricts writes but permits broad reads and network.",
+    "source_ids": [
+      "repos-gemini-sandbox"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-sandbox",
+        "url": "https://www.geminicli.com/docs/cli/sandbox",
+        "locator": "macOS Seatbelt",
+        "passage": "confines writes to the project directory while allowing broad file reads and network access.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "The documented macOS default sandbox restricts writes but permits broad reads and network."
+      }
+    ],
+    "qualifiers": [
+      "Configuration-dependent security boundary; not a security audit or guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-client-license",
+    "claim": "Apache2 licenses client software; Google service terms still apply to backend use.",
+    "source_ids": [
+      "repos-gemini-terms"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-terms",
+        "url": "https://www.geminicli.com/docs/resources/tos-privacy",
+        "locator": "Opening paragraphs",
+        "passage": "the Terms of Service and Privacy Notices applicable to those services apply",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "Apache2 licenses client software; Google service terms still apply to backend use."
+      }
+    ],
+    "qualifiers": [
+      "No claim that hosted model weights or training data are Apache licensed."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "claim_id": "gemini-current-maintenance",
+    "claim": "October20 nightly release demonstrates continued repository maintenance.",
+    "source_ids": [
+      "repos-gemini-nightly-oct20"
+    ],
+    "support": [
+      {
+        "source_id": "repos-gemini-nightly-oct20",
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261020.g76e4d7c04",
+        "locator": "Prerelease badge / What’s Changed",
+        "passage": "fix(cli): decode streamed Node HTTP activity chunks with StringDecoder",
+        "published_at": "2026-10-20T01:33:51Z",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:19:21.282019+00:00",
+        "paraphrase": "October20 nightly release demonstrates continued repository maintenance."
+      }
+    ],
+    "qualifiers": [
+      "Prerelease activity is not an endorsement of nightly reliability or consumer account access."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "included",
+    "limitations": [
+      "No account-specific eligibility or runtime test."
+    ]
+  },
+  {
+    "id": "creative-flux3-claim-announcement",
+    "claim": "Released October 15, 2026 with base/distilled weights, image editing and multi-reference input.",
+    "source_ids": [
+      "creative-flux3-announcement"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-announcement",
+        "passage": "Today we are releasing FLUX 3 Image Klein",
+        "locator": "Opening and date header"
+      }
+    ],
+    "event_date": "2026-10-15",
+    "publication_date": "2026-10-15",
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Publication date verified on official announcement; event date is announcement date.",
+      "Performance rankings in same source are internal/vendor measurements."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "27013b3edc3f5632df4348ec96d60083a12a7d130c151cbbd783880d550c90f9",
+    "claim_id": "creative-flux3-claim-announcement"
+  },
+  {
+    "id": "creative-flux3-claim-product",
+    "claim": "Product page documents one model for generation, editing and multi-reference, plus bounding-box layout control.",
+    "source_ids": [
+      "creative-flux3-product"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-product",
+        "passage": "Generation, editing and multi-reference in a single set of weights.",
+        "locator": "One model, every task"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Product demonstrations, not independently tested results."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "668e616a6f0c13f3059b095fb2ebcf6adb4432a826bd8b364503b1f041e1eda6",
+    "claim_id": "creative-flux3-claim-product"
+  },
+  {
+    "id": "creative-flux3-claim-card",
+    "claim": "The model card distinguishes compositional boxes from pixel masks and warns that edits can change content elsewhere.",
+    "source_ids": [
+      "creative-flux3-card"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-card",
+        "passage": "Boxes set placement and scale, not a hard mask",
+        "locator": "Limitations"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Pixel restoration described for API cannot be assumed for local checkpoint.",
+      "Hardware figures are B200 reference-code measurements at1024x1024 without prompt upsampler."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "bbc9344e2904c56887e6511c16eb31125045104dd7cfc8b83c7265d8d14c82cc",
+    "claim_id": "creative-flux3-claim-card"
+  },
+  {
+    "id": "creative-flux3-claim-base-card",
+    "claim": "Base checkpoint is intended for training and research; image-transformer parameter count excludes the separate encoder.",
+    "source_ids": [
+      "creative-flux3-base-card"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-base-card",
+        "passage": "The 5.6B parameter label refers to the image transformer",
+        "locator": "Opening and Checkpoint table"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Published model package contains components beyond the transformer.",
+      "No weights were downloaded or gated terms accepted."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "6b1ca765a7307491620664d1cfb93bdd5f2a380a1f566233c98f6e21d3cdfe3e",
+    "claim_id": "creative-flux3-claim-base-card"
+  },
+  {
+    "id": "creative-flux3-claim-license",
+    "claim": "Commercial output generation is conditionally permitted for qualifying users; the revenue threshold includes affiliates.",
+    "source_ids": [
+      "creative-flux3-license"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-license",
+        "passage": "your affiliates’ gross annualized revenue is less than US$5,000,000.",
+        "locator": "§1.e, §2.a–e and §4.b"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Not blanket commercial fine-tuning/distribution permission.",
+      "License excludes similar-model improvement and imposes review/filtering requirements."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "614e9bdcfb3cff40f02a7677bd353eefd9e6070d0a9dfd41be2c9972a75c7137",
+    "claim_id": "creative-flux3-claim-license"
+  },
+  {
+    "id": "creative-flux3-claim-repo",
+    "claim": "Reference code is Apache2.0; the 8GB INT8 route is ComfyUI rather than this reference implementation.",
+    "source_ids": [
+      "creative-flux3-repo"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-repo",
+        "passage": "This code has no int8 path.",
+        "locator": "Memory; Which model should I use; repository license badge"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Reference BF16 distilled run reports31GB without upsampler.",
+      "No local execution performed."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "77f647bc3a8136a3aba6ce49b9bcb85e9cda9242cd3974be06f83f0d342507a3",
+    "claim_id": "creative-flux3-claim-repo"
+  },
+  {
+    "id": "creative-flux3-claim-overview",
+    "claim": "Prompt upsampling is a separate stage in documented Diffusers usage; LoRA can transfer from Base to Distilled.",
+    "source_ids": [
+      "creative-flux3-overview"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-overview",
+        "passage": "it’s a separate model that the pipeline does not call.",
+        "locator": "Prompt upsampling; Run a LoRA on Klein Distilled"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Documented workflow, not measured here.",
+      "Published LoRA example is not a universal data or training-time guarantee."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "8ab69b1086fa192f42c3c872b2c5ffd0c3500d6e6d4a3a73d86499aee6703619",
+    "claim_id": "creative-flux3-claim-overview"
+  },
+  {
+    "id": "creative-flux3-claim-comfy-docs",
+    "claim": "ComfyUI guide provides versions, local templates and component downloads; local use differs from hosted service.",
+    "source_ids": [
+      "creative-flux3-comfy-docs"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-comfy-docs",
+        "passage": "FLUX 3 Klein templates need ComfyUI 0.41.0 or later",
+        "locator": "About FLUX.3 [klein]; Model Downloads"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Guide also describes0.41.1 backport.",
+      "Prompt upsampler optional toggle does not negate BFL advice to provide full captions."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "befaebff58ca6f15c66f32287acb41de785dd13ee686245fc17a9b622514f12b",
+    "claim_id": "creative-flux3-claim-comfy-docs"
+  },
+  {
+    "id": "creative-flux3-claim-api",
+    "claim": "Hosted API needs x-key and returns an asynchronous job/polling URL, with input references and explicit output controls.",
+    "source_ids": [
+      "creative-flux3-api"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-api",
+        "passage": "Generate or edit images with FLUX 3 Klein and retrieve the asynchronous result.",
+        "locator": "API introduction; Authorizations; Body; Response"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "No API request was submitted.",
+      "Public documentation defaults may evolve."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "bad688cfb33c4eda1c9767ca8959895c4b286a3223978921c1c742b0c7fac745",
+    "claim_id": "creative-flux3-claim-api"
+  },
+  {
+    "id": "creative-flux3-claim-pricing",
+    "claim": "Current pricing lists $0.009/1K, $0.014/2K and $0.036/4K image, with references included and failed-generation billing exclusions.",
+    "source_ids": [
+      "creative-flux3-pricing"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-flux3-pricing",
+        "passage": "Reference images, whether provided by the user or retrieved by the model, and prompts are included at no extra charge.",
+        "locator": "FLUX 3 Image pricing table and footnotes"
+      }
+    ],
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Observed October20,2026; may change.",
+      "100×$0.009=$0.90 is arithmetic, not total production cost."
+    ],
+    "limitations": [
+      "Primary-source documentary evidence; not independent testing."
+    ],
+    "decision": "included",
+    "sha256": "86bd2eb2a7845b63ed8d2f3da9517052282db0d22018ccb0034d80f012c54e37",
+    "claim_id": "creative-flux3-claim-pricing"
+  },
+  {
+    "id": "creative-higgsfield-scope",
+    "claim": "October13 customer story attributes >10-minute instructional videos to a Higgsfield-built workflow; voice-to-movie is prospective. Current vendor site confirms Supercomputer, but a guaranteed public >10-minute capability was not established.",
+    "source_ids": [
+      "creative-higgsfield-case",
+      "creative-higgsfield-supercomputer"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "creative-higgsfield-case",
+        "passage": "the team has built a workflow",
+        "locator": "Making longer videos possible with GPT-6 Astra"
+      },
+      {
+        "source_id": "creative-higgsfield-case",
+        "passage": "Next, Higgsfield AI wants creators",
+        "locator": "Looking ahead to voice-to-video with GPT-Live-1"
+      }
+    ],
+    "event_date": null,
+    "publication_date": "2026-10-13",
+    "retrieved_at": "2026-10-20T16:19:06.712234Z",
+    "qualifiers": [
+      "Vendor customer story; vendor homepage/supercomputer inspected.",
+      "Public product duration guarantees, pricing and voice availability were not established."
+    ],
+    "limitations": [
+      "No generated video inspected or generation tested."
+    ],
+    "decision": "needs_review",
+    "claim_id": "creative-higgsfield-scope"
+  },
+  {
+    "claim_id": "studentsim-dates",
+    "claim": "The October 12 blog is later coverage of a preprint submitted September 1, 2026.",
+    "source_ids": [
+      "studentsim-arxiv"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-arxiv",
+        "url": "https://arxiv.org/abs/2609.01591",
+        "locator": "Submission history / v1",
+        "passage": "Tue, 1 Sep 2026 17:55:10 UTC",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:37Z"
+      }
+    ],
+    "qualifiers": [
+      "Report is baseline discovery, not a claim of an October 12 first release."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-research-scope",
+    "claim": "Microsoft describes StudentSim as a research system, not a classroom product or substitute for teachers.",
+    "source_ids": [
+      "source-e3ff286dbca97504"
+    ],
+    "support": [
+      {
+        "source_id": "source-e3ff286dbca97504",
+        "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+        "locator": "#at-a-glance, first bullet",
+        "passage": "it is not a product, is not deployed in classrooms",
+        "published_at": "2026-10-12",
+        "event_at": "2026-10-12",
+        "retrieved_at": "2026-10-20T16:10:00Z"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "This is an author scope statement, not a deployment audit.",
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-method",
+    "claim": "The framework trains a pooled domain adapter and then specializes it per student, using Qwen3-4B-Instruct-2507 with LoRA.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Sections 4–5, pp.4–6; Appendix E.1, p.35",
+        "passage": "LoRA",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Student-specific simulation must be distinguished from the pooled simulator used in the tutor-RL experiment."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-roster",
+    "claim": "StudentSimEval covers 30 chess players, 15 English learners, and 15 mathematics students with held-out evaluation records.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Table 1 and following paragraph, p.6",
+        "passage": "60",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "60 evaluated student simulators, not a 60-person randomized learning trial.",
+      "Training populations differ from the evaluated roster."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-fidelity",
+    "claim": "Fidelity measures recorded-response matching: move prediction, writing error profile, or mathematics answer-option match.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Section 3, p.4; Table 2, p.7; Appendix F.3, p.42",
+        "passage": "behavioral fidelity",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Domain-specific metrics are not directly interchangeable or student achievement percentages."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-responsiveness",
+    "claim": "Responsiveness targets canonical correction after guidance, rather than matching observed per-student post-guidance continuations.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Section 3, p.4; Appendix F.1, pp.41–42",
+        "passage": "canonical correction",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "High R is a proxy measure; not evidence of actual learner uptake, transfer, retention or classroom outcomes."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-benchmark-values",
+    "claim": "Author-reported StudentSim vs GPT-5.4 fidelity is 0.5150 vs 0.2316 in chess, 0.5624 vs 0.5141 in L2, and 0.6384 vs 0.6121 in math. Corresponding responsiveness is 0.9067 vs 0.7186, 0.6417 vs 0.5950, and 0.9181 vs 0.7099.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Table 2 p.7 and Table 3 p.8",
+        "passage": "0.5150",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Population means; paper describes three training seeds.",
+      "Different metric definitions across domains.",
+      "These results were not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-baseline-asymmetry",
+    "claim": "The chess simulator receives a Maia2-derived likely-move feature omitted from the prompted closed-model baseline; Maia2 lacks natural-language guidance input.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Appendix F.5, p.44; Table 3 caption, p.8",
+        "passage": "likely next moves",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Common held-out records do not imply identical input features.",
+      "Maia2 responsiveness is a zero-guidance lower-bound reference."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-constructed-guidance",
+    "claim": "Chess and mathematics guidance is LLM-generated around a fixed correction; L2 corrections are teacher-authored and expressed using templates.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Appendix F.2, p.42",
+        "passage": "real-teacher annotations",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "The constructed records do not establish observed learning from a live tutor."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-rl-design",
+    "claim": "The tutor-RL experiment uses the pooled Stage-1 simulator plus style and perception heads on the simulator backbone.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Section 6, p.9, final paragraph and StudentSim reward bullet",
+        "passage": "pooled Stage-1",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "The reward differs in simulator and additional heads; outcomes do not isolate only a student-simulator substitution.",
+      "The blog's personalized-simulator schematic is less specific than the paper; the report follows the experimental method."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-human-study",
+    "claim": "The chess tutor study reports 74 annotations over 30 positions from eight evaluators, with 90.5% accuracy for StudentSim reward versus 75.7% no RL and 71.6% GPT-5.4 reward.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Table 4 p.10; Appendix E.5, Table 26 p.40",
+        "passage": "74",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Each annotation rates all conditions.",
+      "Accuracy means no severe actively misleading factual error in a tutor response, not learning achievement.",
+      "Condition and presentation order were blinded; personalization judged for a Socratic-leaning student."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-compute",
+    "claim": "The paper reports training on one eight-A100-40GB node; this is not a verified minimum runtime requirement.",
+    "source_ids": [
+      "studentsim-paper"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Appendix E.6, p.41",
+        "passage": "A100-40GB",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Paper resource estimates do not establish required hardware or reproduction cost for every possible configuration."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-readme-prerequisites",
+    "claim": "README documents installation extras, separate EFCAMDAT and FoundationalASSIST extracts, model-free deterministic L2 build, two model-calling math preparation steps and Azure OpenAI configuration.",
+    "source_ids": [
+      "studentsim-repository"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-repository",
+        "url": "https://github.com/microsoft/StudentSim",
+        "locator": "README / Installation; Student simulator training / 1. Data",
+        "passage": "Two of the three steps call a model and so incur API costs",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:10:31Z"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes preparation, not a successful reproduced environment.",
+      "Base model and dataset permissions are separate from repository code licensing."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-license",
+    "claim": "The StudentSim code has an MIT license.",
+    "source_ids": [
+      "studentsim-license"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-license",
+        "url": "https://github.com/microsoft/StudentSim/blob/main/LICENSE",
+        "locator": "LICENSE",
+        "passage": "MIT License",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:11:37Z"
+      }
+    ],
+    "qualifiers": [
+      "Does not establish the terms of learner datasets, base models, or hosted APIs."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-data-conflict",
+    "claim": "README says chess records ship as data; the transparency note says the release redistributes no training or evaluation data. This documentation conflict remains unresolved.",
+    "source_ids": [
+      "studentsim-repository",
+      "studentsim-transparency"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-repository",
+        "url": "https://github.com/microsoft/StudentSim",
+        "locator": "README / Student simulator training / 1. Data",
+        "passage": "Chess ships as data.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:10:31Z"
+      },
+      {
+        "source_id": "studentsim-transparency",
+        "url": "https://github.com/microsoft/StudentSim/blob/main/TRANSPARENCY.md",
+        "locator": "How to get started; Evaluation methods",
+        "passage": "no training or evaluation data is redistributed",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:11:37Z"
+      }
+    ],
+    "qualifiers": [
+      "Do not infer a complete ready-to-run reproduction bundle.",
+      "Transparency note retains paper-link placeholders and narrower chess-only descriptions."
+    ],
+    "contradicts": [
+      {
+        "source_id": "studentsim-transparency",
+        "url": "https://github.com/microsoft/StudentSim/blob/main/TRANSPARENCY.md",
+        "locator": "How to get started; Evaluation methods",
+        "summary": "States that the release does not redistribute learner data; this conflicts with README's chess-data statement."
+      }
+    ],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-readiness",
+    "claim": "Transparency note recommends research use, further validation before real-world use, and no use of simulations to assess or rank identifiable learners; English-language limitations are stated.",
+    "source_ids": [
+      "studentsim-transparency"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-transparency",
+        "url": "https://github.com/microsoft/StudentSim/blob/main/TRANSPARENCY.md",
+        "locator": "Out-of-scope uses; Limitations; License",
+        "passage": "it should not be used to assess, rank, or make decisions about an identifiable learner",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:11:37Z"
+      }
+    ],
+    "qualifiers": [
+      "Research-use guidance is not a modification to the MIT code license.",
+      "Readiness caution is not evidence of a commercial-use license prohibition."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft Research / University of Illinois StudentSim authors",
+    "status": "included",
+    "limitations": [
+      "Source inspection only; this scan did not install, train, or run StudentSim."
+    ]
+  },
+  {
+    "claim_id": "studentsim-proposed-applications",
+    "claim": "Hint-review workbenches, writing-feedback comparisons, and educational-video pause-point review are proposed applications, not demonstrated deployments.",
+    "source_ids": [
+      "studentsim-paper",
+      "studentsim-repository"
+    ],
+    "support": [
+      {
+        "source_id": "studentsim-paper",
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "locator": "Sections 3–6; Appendix F.6",
+        "passage": "per-domain reward functions",
+        "published_at": "2026-09-01",
+        "event_at": "2026-09-01",
+        "retrieved_at": "2026-10-20T16:11:55Z"
+      }
+    ],
+    "qualifiers": [
+      "Editorial inference from response/guidance schema; no measured app, website or video result asserted.",
+      "Video proposal concerns instructional text, not audiovisual comprehension."
+    ],
+    "contradicts": [],
+    "source_family": "AI Observatory editorial application of primary research",
+    "status": "included",
+    "limitations": [
+      "No product prototype, learner study, deployment, or performance test conducted."
+    ]
+  },
+  {
+    "claim_id": "pocket-small-release-date",
+    "claim": "Kyutai announced 18.2M, 6.9M and 1.9M Pocket TTS variants on 20 October 2026.",
+    "source_ids": [
+      "pocket-small-release"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-small-release",
+        "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+        "locator": "Intro; Data and evaluation; The models; component distillation; reward fine-tuning",
+        "passage": "20 October 2026",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:17:55.359622Z"
+      }
+    ],
+    "qualifiers": [
+      "Announcement date is explicit; file upload relative timestamps were not converted into release dates."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "parameters_millions": [
+        18.2,
+        6.9,
+        1.9
+      ],
+      "counts_include_decoder": true,
+      "reward_tuned_variants": true
+    }
+  },
+  {
+    "claim_id": "pocket-small-benchmarks",
+    "claim": "Vendor evaluation shows meaningful quality degradation at 1.9M despite faster one-thread generation.",
+    "source_ids": [
+      "pocket-small-release"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-small-release",
+        "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+        "locator": "Intro; Data and evaluation; The models; component distillation; reward fine-tuning",
+        "passage": "CPU speed (1 thread)",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:17:55.359622Z"
+      }
+    ],
+    "qualifiers": [
+      "Kyutai measurements; 1,127 LibriSpeech test-clean sentences; student values average three seeds.",
+      "CPU model not identified in inspected article; older README M4 figures are separate.",
+      "WER is recognizer-based; UTMOS is an automatic naturalness estimate, not listener preference.",
+      "Reward tuning directly optimizes naturalness and intelligibility proxies."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "training": {
+        "dataset": "HiFi-TTS-2",
+        "utterances_millions": 11.3
+      },
+      "columns": [
+        "parameters_millions",
+        "WER_percent",
+        "UTMOS",
+        "SIM",
+        "CPU_realtime_multiple"
+      ],
+      "released": [
+        100,
+        0.92,
+        4.364,
+        0.923,
+        2.8
+      ],
+      "18m": [
+        18.2,
+        0.85,
+        4.339,
+        0.918,
+        9.9
+      ],
+      "18m_refl": [
+        18.2,
+        0.82,
+        4.4,
+        0.917,
+        9.9
+      ],
+      "7m": [
+        6.9,
+        0.9,
+        4.356,
+        0.914,
+        12.6
+      ],
+      "7m_refl": [
+        6.9,
+        0.89,
+        4.395,
+        0.913,
+        12.6
+      ],
+      "2m": [
+        1.9,
+        1.72,
+        3.906,
+        0.91,
+        25
+      ],
+      "2m_refl": [
+        1.9,
+        1.27,
+        4.012,
+        0.91,
+        25
+      ],
+      "original_parameter_count_is_approximate": true
+    }
+  },
+  {
+    "claim_id": "pocket-small-components",
+    "claim": "Component-wise reduction includes the decoder but does not establish full system memory.",
+    "source_ids": [
+      "pocket-small-release",
+      "pocket-tts-7m-files"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-small-release",
+        "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+        "locator": "Intro; Data and evaluation; The models; component distillation; reward fine-tuning",
+        "passage": "The encoder is not needed at inference",
+        "published_at": "2026-10-20",
+        "event_at": "2026-10-20",
+        "retrieved_at": "2026-10-20T16:17:55.359622Z"
+      },
+      {
+        "source_id": "pocket-tts-7m-files",
+        "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages/english_7m_2026-10",
+        "locator": "model.safetensors, embeddings and tokenizer listing",
+        "passage": "model.safetensors\n66.5 MB",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:17:26.722481Z"
+      }
+    ],
+    "qualifiers": [
+      "Article describes pre-encoding the voice prompt; inference parameter totals should not be interpreted as complete installation size.",
+      "File listing size is not a measurement of resident memory."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "audio_sample_rate_hz": 24000,
+      "frame_ms": 80,
+      "no_cloning_7m_folder_MB": 94.3
+    }
+  },
+  {
+    "claim_id": "pocket-small-current-variants",
+    "claim": "The current README selects six small English variants, which also appear in official public no-cloning folders.",
+    "source_ids": [
+      "pocket-tts-repository",
+      "pocket-tts-no-cloning-files"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-tts-repository",
+        "url": "https://github.com/kyutai-labs/pocket-tts",
+        "locator": "Trying it with the CLI; CPU-only installation; In-browser implementations; Unsupported features",
+        "passage": "select small English models with 18.2M, 6.9M and 1.9M parameters",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:15:32.527883Z"
+      },
+      {
+        "source_id": "pocket-tts-no-cloning-files",
+        "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages",
+        "locator": "languages/ folder listing",
+        "passage": "english_7m_refl_2026-10",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:17:16.562056Z"
+      }
+    ],
+    "qualifiers": [
+      "Documented availability and visible folder presence only; no model execution or file download.",
+      "General multilingual family support is not evidence of multilingual small variants."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "selectors": [
+        "english_18m_2026-10",
+        "english_18m_refl_2026-10",
+        "english_7m_2026-10",
+        "english_7m_refl_2026-10",
+        "english_2m_2026-10",
+        "english_2m_refl_2026-10"
+      ],
+      "python_versions": [
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14"
+      ],
+      "minimum_pytorch": "2.5"
+    }
+  },
+  {
+    "claim_id": "pocket-small-integration-limits",
+    "claim": "Documented interfaces include CLI, Python and a local HTTP server; browser implementations are community work and text-driven pause insertion is unsupported.",
+    "source_ids": [
+      "pocket-tts-repository"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-tts-repository",
+        "url": "https://github.com/kyutai-labs/pocket-tts",
+        "locator": "Trying it with the CLI; CPU-only installation; In-browser implementations; Unsupported features",
+        "passage": "We don't have official support for this yet",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:15:32.527883Z"
+      }
+    ],
+    "qualifiers": [
+      "Quote refers to In-browser implementations, not the Python package.",
+      "Small-variant browser compatibility and mobile performance remain untested.",
+      "Product interaction, caching, caption alignment and classroom/video applications in the report are editorial proposals."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ]
+  },
+  {
+    "claim_id": "pocket-small-model-access",
+    "claim": "The main model card is gated and labels weights CC BY 4.0; config includes a separate official no-cloning checkpoint.",
+    "source_ids": [
+      "pocket-tts-model-card",
+      "pocket-tts-small-config",
+      "pocket-tts-no-cloning-card"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-tts-model-card",
+        "url": "https://huggingface.co/kyutai/pocket-tts",
+        "locator": "CC BY 4.0 badge; access notice; general model card",
+        "passage": "You need to agree to share your Hugging Face information to access this model",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:15:49.117172Z"
+      },
+      {
+        "source_id": "pocket-tts-small-config",
+        "url": "https://github.com/kyutai-labs/pocket-tts/blob/main/pocket_tts/config/english_7m_2026-10.yaml",
+        "locator": "weights_path; weights_path_without_voice_cloning; model dimensions",
+        "passage": "weights_path_without_voice_cloning",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:16:47.412486Z"
+      },
+      {
+        "source_id": "pocket-tts-no-cloning-card",
+        "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning",
+        "locator": "CC BY 4.0 badge and public model card",
+        "passage": "cc-by-4.0",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:17:00.883290Z"
+      }
+    ],
+    "qualifiers": [
+      "No gate conditions accepted; no credentials entered or model weights downloaded.",
+      "No-cloning repository is explicitly referenced by the official config and was inspected as a separate public product variant.",
+      "Both model cards retain older general documentation; variant presence verified using current README and file inventory."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "standard_checkpoint_revision": "a0172fa05a0725a745539c88e4b58f1ee19cb9a7",
+      "no_cloning_checkpoint_revision": "08ffc58775e62aad9409511b9591c9af626270f3",
+      "model_license_label": "CC BY 4.0"
+    }
+  },
+  {
+    "claim_id": "pocket-small-licenses",
+    "claim": "Code, model weights and voice assets have separate published license terms.",
+    "source_ids": [
+      "pocket-tts-license",
+      "pocket-tts-model-card",
+      "pocket-tts-no-cloning-card",
+      "pocket-tts-voices"
+    ],
+    "support": [
+      {
+        "source_id": "pocket-tts-license",
+        "url": "https://github.com/kyutai-labs/pocket-tts/blob/main/LICENSE",
+        "locator": "MIT License and complete license text",
+        "passage": "Permission is hereby granted, free of charge",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:17:00.856724Z"
+      },
+      {
+        "source_id": "pocket-tts-voices",
+        "url": "https://huggingface.co/kyutai/tts-voices",
+        "locator": "voice-donations; vctk; expresso; ears; alba-mackenna; voice-zero",
+        "passage": "Non-commercial use only.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:16:05.777143Z"
+      }
+    ],
+    "qualifiers": [
+      "Code is labeled MIT; model cards label CC BY 4.0.",
+      "Voice asset licenses vary by dataset and require checking the exact asset; this is not clearance for a particular use.",
+      "Kyutai's prohibited-use notice separately requires explicit lawful consent for cloning."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai",
+    "status": "included",
+    "limitations": [
+      "Documentation and visible files inspected; no runtime or listening validation."
+    ],
+    "extracted_values": {
+      "voices": {
+        "voice-donations": "CC0",
+        "voice-zero": "CC0",
+        "vctk": "CC BY 4.0",
+        "alba-mackenna": "CC BY 4.0",
+        "expresso": "CC BY-NC 4.0",
+        "ears": "CC BY-NC 4.0"
+      }
+    }
+  },
+  {
+    "claim_id": "x-astra-pro-oct16-claim-reconsidered-20261020",
+    "claim": "The inspected official post says Astra Pro in ChatGPT responds faster, handles plugins and tools better, and can divide a task among parallel agents whose progress and completed work can be reviewed. The post states availability for Pro users in the Chat tab.",
+    "source_ids": [
+      "x-astra-pro-oct16",
+      "seed-openai-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "x-astra-pro-oct16",
+        "url": "https://x.com/OpenAI/status/2111192259073094035",
+        "locator": "OpenAI public timeline, Oct16 post, visible text",
+        "passage": "GPT-6 Astra Pro in ChatGPT got an upgrade with faster responses and improved use of plugins and tools.",
+        "published_at": "2026-10-16",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      },
+      {
+        "source_id": "x-astra-pro-oct16",
+        "url": "https://x.com/OpenAI/status/2111192259073094035",
+        "locator": "Official post body; replies and advertisements excluded",
+        "passage": "The inspected official post says Astra Pro in ChatGPT responds faster, handles plugins and tools better, and can divide a task among parallel agents whose progress and completed work can be reviewed. The post states availability for Pro users in the Chat tab.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-16",
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:08:37.277Z"
+      }
+    ],
+    "qualifiers": [
+      "Official publisher announcement; no independent performance validation.",
+      "This run inspected the official post body only, excluding replies and advertisements.",
+      "Exact product rollout details and current documentation still require review."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Reconsidered using the full official post during this run. Availability and parallel-task workflow are stated by OpenAI, but complete documentation and a source-backed full report remain outstanding; performance claims are not independently validated."
+    ],
+    "reconsideration_run_id": "scan-20261020T160557Z-63b483",
+    "supersedes_claim_id": "x-astra-pro-oct16-claim"
+  },
+  {
+    "claim_id": "x-live11-oct15-claim-reconsidered-20261020",
+    "claim": "The inspected official post announces new voices for French, German, Hindi, Mexican Spanish, Korean and Japanese in ChatGPT, Codex and dots. It describes an all-user rollout beginning on October 15 and says API access is forthcoming.",
+    "source_ids": [
+      "x-live11-oct15",
+      "seed-openai-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "x-live11-oct15",
+        "url": "https://x.com/OpenAI/status/2110797830361436604",
+        "locator": "OpenAI public timeline, Oct15 voice post",
+        "passage": "GPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-18T15:13:55.855771+00:00"
+      },
+      {
+        "source_id": "x-live11-oct15",
+        "url": "https://x.com/OpenAI/status/2110797830361436604",
+        "locator": "Official post body; replies and advertisements excluded",
+        "passage": "The inspected official post announces new voices for French, German, Hindi, Mexican Spanish, Korean and Japanese in ChatGPT, Codex and dots. It describes an all-user rollout beginning on October 15 and says API access is forthcoming.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-20T16:08:37.329Z"
+      }
+    ],
+    "qualifiers": [
+      "Official publisher announcement; no independent performance validation.",
+      "This run inspected the official post body only, excluding replies and advertisements.",
+      "Exact product rollout details and current documentation still require review."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Reconsidered using the full official post during this run. Product rollout and language claims are publisher statements; API availability was described as forthcoming and must not be represented as released. Full rollout/API documentation and report remain outstanding."
+    ],
+    "reconsideration_run_id": "scan-20261020T160557Z-63b483",
+    "supersedes_claim_id": "x-live11-oct15-claim"
   }
 ]

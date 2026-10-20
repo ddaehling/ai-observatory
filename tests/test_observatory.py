@@ -1099,6 +1099,88 @@ class CollectTests(unittest.TestCase):
         self.assertEqual(self.read_json("data/candidates.json")[0]["url"], "https://example.com/older-unseen-story")
         self.assertEqual(self.read_json("data/sources.json")[0]["lastCoverageAt"], "2026-10-20T12:00:00Z")
 
+    def test_partial_manual_success_keeps_older_history_for_next_completed_scan(self):
+        self.source.update(feedUrl=None, status="blocked", lastCoverageAt="2026-10-01T12:00:00Z")
+        self.write_json("data/sources.json", [self.source])
+        self.write_json("data/runs.json", [{
+            "id": "previous-complete", "status": "complete", "finishedAt": "2026-10-15T12:00:00Z",
+            "windowEnd": "2026-10-15T12:00:00Z",
+        }])
+        acquired = observatory.collect(self.root)
+        self.fetch.assert_not_called()
+        note = "Visible listing inspected; archived releases before October 15 were unavailable."
+        result = observatory.record_source(self.root, SimpleNamespace(
+            run_id=acquired["runId"], source_id=self.source["id"], status="success", partial=True, note=note,
+        ))
+        self.assertEqual(result["status"], "success")
+        self.assertIs(result["coverageComplete"], False)
+        saved_source = self.read_json("data/sources.json")[0]
+        self.assertEqual(saved_source["lastCoverageAt"], "2026-10-01T12:00:00Z")
+        self.assertEqual(saved_source["lastCheckedAt"], "2026-10-18T12:00:00Z")
+        self.assertEqual(saved_source["lastSuccessAt"], "2026-10-18T12:00:00Z")
+        self.assertEqual(saved_source["status"], "active")
+        partial_run = self.read_json("data/runs.json")[-1]
+        self.assertEqual(partial_run["sourcesChecked"], 1)
+        self.assertEqual(partial_run["sourcesFailed"], 0)
+        self.assertTrue(any("Partial coverage" in item and note in item for item in partial_run["limitations"]))
+        completed = observatory.complete_run(self.root, SimpleNamespace(
+            run_id=acquired["runId"], coverage_note="Visible listing inspected; older history remains unchecked.", limitation=[],
+        ))
+        self.assertEqual(completed["status"], "complete")
+
+        saved_source["feedUrl"] = "https://example.com/feed.xml"
+        self.write_json("data/sources.json", [saved_source])
+        self.clock.return_value = self.now + timedelta(days=4)
+        self.fetch.return_value = self.feed_response(
+            ["https://example.com/older-unseen-story"], date="Sat, 03 Oct 2026 12:00:00 GMT",
+        )
+        retried = observatory.collect(self.root)
+        self.assertEqual(retried["candidatesAdded"], 1)
+        retry_run = self.read_json("data/runs.json")[-1]
+        self.assertEqual(retry_run["windowStart"], "2026-10-15T12:00:00Z")
+        self.assertEqual(retry_run["sourceResults"][0]["windowStart"], "2026-09-28T12:00:00Z")
+        self.assertEqual(self.read_json("data/candidates.json")[0]["url"], "https://example.com/older-unseen-story")
+
+    def test_partial_manual_success_without_prior_coverage_retains_initial_window(self):
+        self.source["feedUrl"] = None
+        self.write_json("data/sources.json", [self.source])
+        acquired = observatory.collect(self.root)
+        initial_window = self.read_json("data/runs.json")[-1]["sourceResults"][0]["windowStart"]
+        observatory.record_source(self.root, SimpleNamespace(
+            run_id=acquired["runId"], source_id=self.source["id"], status="success", partial=True,
+            note="Only the visible listing was accessible.",
+        ))
+        self.assertIsNone(self.read_json("data/sources.json")[0]["lastCoverageAt"])
+        self.clock.return_value = self.now + timedelta(days=4)
+        observatory.collect(self.root, force=True)
+        self.assertEqual(self.read_json("data/runs.json")[-1]["sourceResults"][0]["windowStart"], initial_window)
+
+    def test_manual_success_without_partial_flag_still_advances_coverage(self):
+        self.source.update(feedUrl=None, lastCoverageAt="2026-10-01T12:00:00Z")
+        self.write_json("data/sources.json", [self.source])
+        acquired = observatory.collect(self.root)
+        result = observatory.record_source(self.root, SimpleNamespace(
+            run_id=acquired["runId"], source_id=self.source["id"], status="success",
+            note="Checked the entire outstanding date window.",
+        ))
+        self.assertIs(result["coverageComplete"], True)
+        self.assertEqual(self.read_json("data/sources.json")[0]["lastCoverageAt"], "2026-10-18T12:00:00Z")
+        self.assertEqual(self.read_json("data/runs.json")[-1]["limitations"], [])
+
+    def test_partial_flag_rejects_failed_status_without_changing_records(self):
+        self.source["feedUrl"] = None
+        self.write_json("data/sources.json", [self.source])
+        acquired = observatory.collect(self.root)
+        before_sources = self.read_json("data/sources.json")
+        before_runs = self.read_json("data/runs.json")
+        with self.assertRaisesRegex(ValueError, "--partial requires --status success"):
+            observatory.record_source(self.root, SimpleNamespace(
+                run_id=acquired["runId"], source_id=self.source["id"], status="failed", partial=True,
+                note="The site could not be accessed.",
+            ))
+        self.assertEqual(self.read_json("data/sources.json"), before_sources)
+        self.assertEqual(self.read_json("data/runs.json"), before_runs)
+
     def test_successful_acquisition_does_not_complete_the_scan_or_reset_cadence(self):
         result = observatory.collect(self.root)
         self.assertEqual(result["status"], "acquisition_complete")
@@ -1131,10 +1213,11 @@ class CollectTests(unittest.TestCase):
         self.assertEqual(self.read_json("data/sources.json")[0]["lastCoverageAt"], "2026-10-01T12:00:00Z")
 
         interrupted_run = self.read_json("data/runs.json")[-1]
-        observatory.record_source(self.root, SimpleNamespace(
+        failed = observatory.record_source(self.root, SimpleNamespace(
             run_id=interrupted_run["id"], source_id=self.source["id"], status="failed",
             note="Candidate persistence failed; the source coverage checkpoint remains unchanged.",
         ))
+        self.assertIs(failed["coverageComplete"], False)
         completed = observatory.complete_run(self.root, SimpleNamespace(
             run_id=interrupted_run["id"], coverage_note="Bounded scan with a recorded persistence failure.", limitation=[],
         ))

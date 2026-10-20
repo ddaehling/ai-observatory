@@ -1,0 +1,33 @@
+{
+  "reportId": "pocket-tts-small",
+  "reviewerId": "/root/edition_20261020_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:27:46Z",
+  "reportHash": "598e21b10269ec99e3e50a06913cd6c56a96767ae66ee01206e899e09d1ce95a",
+  "evidenceHash": "8f15ddaaaaf80fea52ece2cb07e5efc4bbd650144aa2d1e1181b72ed2042f233",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Documented CPU-oriented local speech, CLI/library/server interfaces and six visible small-model variants support practical English narration trials. The report's reviewed passages, pre-rendered website audio and temporary video tracks are concrete uses with appropriate listening and playback checks.",
+    "impact": "Substantially reducing a local TTS family's backbone, head and decoder could broaden deployment options for speech interfaces. The published measurements support meaningful domain impact, but one vendor evaluation setting does not establish field-wide influence or device-level performance.",
+    "novelty": "The component-wise shrinking recipe, very small released sizes and explicit quality/speed frontier provide demonstrated differentiation within local TTS. The source relates the method to existing pruning and distillation work, so the score does not imply all constituent techniques are new.",
+    "maturity": "The current README, configurations and public no-cloning inventories establish a concrete release on an existing package. New variants were not run or listened to, the speed table omits the CPU identity, and community browser routes and precise pause control have documented limits.",
+    "openness": "MIT code, published training and reduction details, CC BY 4.0 weight labels, official configuration revisions and a public no-cloning variant offer strong inspectability and portability. Main weights remain gated and voice assets have separate licenses, so openness is substantial rather than unrestricted."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The 1.9M model's WER and UTMOS degradation is accurately preserved; the source also notes sensitivity to an ASR loop on one unusual word, so these are not comprehensive listener-quality results.",
+    "The one-thread throughput figures identify no CPU and do not establish first-audio latency, concurrency capacity or total RAM. The report keeps these distinctions clear.",
+    "Model availability is documented selectors and visible files, not verified runtime compatibility. The main gate, no-cloning alternative and voice-specific license conditions are correctly separated.",
+    "Reward tuning directly optimizes automatic quality proxies; subjective emphasis and sustained listening quality remain untested."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "pocket-tts-small",
+  "title": "Pocket TTS Small brings local narration down to 6.9M parameters—with a smaller-model tradeoff",
+  "entity": "Kyutai / Pocket TTS Small",
+  "category": "Models",
+  "tags": [
+    "text to speech",
+    "local AI",
+    "educational audio",
+    "video narration",
+    "CPU"
+  ],
+  "summary": "Kyutai's October 20 release adds three compact English speech models. The 6.9M and 18.2M variants merit a narration pilot; the 1.9M option trades measurable quality for size and speed.",
+  "changeType": "new",
+  "publishedAt": "2026-10-20",
+  "discoveredAt": "2026-10-20T16:17:55.359622Z",
+  "updatedAt": "2026-10-20T16:17:55.359622Z",
+  "officialUrl": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "Smaller speech models make a different deployment worth testing",
+      "html": "<p>Kyutai announced Pocket TTS Small on 20 October 2026: three English speech models with 18.2 million, 6.9 million and 1.9 million parameters, each also offered in a reward-fine-tuned version. The practical attraction is local narration on modest computers. A teacher revising a worksheet, a developer adding spoken feedback, or an editor testing a script could potentially generate speech without building a GPU service. That possibility deserves a focused trial, especially where the existing alternative is repeatedly exporting text to a hosted speech tool.</p><p>The release is a substantial size reduction within the existing Pocket TTS family. Kyutai says the largest new model retains the earlier release's quality; its published measurements show that the smallest makes a clearer quality tradeoff. Our judgment is to evaluate the 6.9M and 18.2M models first for sustained narration, and consider 1.9M when a measured device constraint makes further reduction useful. This is an editorial starting point, not a listening-test result. <a href=\"https://kyutai.org/blog/2026-10-20-pocket-tts-small/\">Dated release and evaluation</a>.</p><p>Availability has several layers. The current repository documents the small variants, and the public no-cloning weight repository lists their folders. We did not install the software, download model weights, generate audio, or listen to the demonstration. This report therefore assesses the documented release and proposes applications; it does not certify voice quality, latency, classroom benefit, or compatibility with a particular machine.</p>"
+    },
+    {
+      "id": "measurements",
+      "title": "Read the speed gain alongside the quality loss",
+      "html": "<p>Kyutai trained these models using HiFi-TTS-2, described as 11.3 million audiobook utterances. Its voice-cloning evaluation uses 1,127 LibriSpeech test-clean sentences. Word error rate measures a recognizer's transcription errors; UTMOS estimates naturalness on a five-point scale; speaker similarity compares generated speech with the voice prompt. The student results average three seeds. These are vendor measurements on one evaluation setting, rather than independent evidence about a school's vocabulary or a producer's preferred delivery. <a href=\"https://kyutai.org/blog/2026-10-20-pocket-tts-small/\">Data and evaluation; The models</a>.</p><p>For the earlier approximately 100M model, the article reports 0.92% WER, 4.364 UTMOS and 0.923 similarity. The untuned 18.2M model records 0.85%, 4.339 and 0.918; the 6.9M version records 0.90%, 4.356 and 0.914. The untuned 1.9M version falls to 1.72% WER, 3.906 UTMOS and 0.910 similarity. Its reward-tuned counterpart improves to 1.27% WER and 4.012 UTMOS, while similarity remains 0.910. Neither small variant's size nor a close similarity score establishes equivalent listening quality.</p><p>The same table reports generation speeds of 2.8 times real time for the previous model, then 9.9, 12.6 and 25 times for the three new sizes, with the same speeds listed for their reward-tuned counterparts. It specifies one CPU thread but does not name the processor in the inspected article. The older README's separate MacBook Air M4 claim must not be used to fill that gap. Throughput also does not establish startup time or the delay before the first audible chunk.</p><p>Reward tuning needs particular caution because naturalness is both an optimization target and an evaluation metric. Kyutai describes an internal example where improved UTMOS accompanied a narrower pitch range. For adoption, listen for emphasis and meaning as well as transcription accuracy. A correctly recognized sentence can still sound tiring, flatten a question, or stress the wrong part of an explanation.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "The reduction includes the decoder, but is not a RAM specification",
+      "html": "<p>Pocket TTS produces audio features in 80-millisecond frames and decodes them into 24 kHz sound. The new work shrinks the transformer backbone, sampling head and audio decoder separately. The method combines guided distillation, a narrower representation between components, gradual pruning and decoder distillation. The published parameter totals include the decoder. The voice encoder is described as unnecessary during ongoing generation once the prompt has been encoded. These details make the reduction more informative than a count for one isolated network. <a href=\"https://kyutai.org/blog/2026-10-20-pocket-tts-small/\">Architecture and component distillation</a>.</p><p>Parameter totals still cannot describe a complete installed application or its peak memory. The inspected 6.9M no-cloning folder lists a 66.5 MB model file and a 94.3 MB folder including other assets. Those are repository file listings, not measured RAM requirements. The runtime, cached voice states, temporary tensors and application itself require separate accounting. A deployment evaluation should measure download size, cold startup and resident memory independently, with the chosen version and voice recorded. <a href=\"https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages/english_7m_2026-10\">Inspected 6.9M file inventory</a>.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What can actually be selected today",
+      "html": "<p>The current README names <code>english_18m_2026-10</code>, <code>english_7m_2026-10</code> and <code>english_2m_2026-10</code> for the CLI's language option. Reward-tuned names insert <code>_refl</code>, as in <code>english_7m_refl_2026-10</code>. All six have visible configuration files, and all six appear in the official public no-cloning repository's language inventory. These new variants are English models; the broader family's support for other languages does not establish equivalent small models for those languages. <a href=\"https://github.com/kyutai-labs/pocket-tts\">Current README</a>; <a href=\"https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages\">Published language folders</a>.</p><p>For the Python route, the project specifies Python 3.10 through 3.14 and PyTorch 2.5 or newer. It documents a CLI, a Python library and a local HTTP server, and explains that keeping the model loaded avoids repeated initialization. Linux users should inspect the documented CPU-only installation route to avoid unnecessary CUDA dependencies. These are installation prerequisites and documented interfaces, not evidence that this review executed them. Pin the package and model configuration used in any comparison.</p><p>The linked main Hugging Face card displays a CC BY 4.0 license label and a gate requiring agreement and account-information sharing to access model content. No agreement was accepted during this research. The inspected configuration also specifies a separate no-cloning checkpoint, whose official repository exposes its file inventory publicly. Its model card still repeats older general documentation, so the current README and actual small-model folders are stronger evidence for variant selection. We verified their presence, not successful download or execution. <a href=\"https://huggingface.co/kyutai/pocket-tts\">Main model card and access notice</a>; <a href=\"https://github.com/kyutai-labs/pocket-tts/blob/main/pocket_tts/config/english_7m_2026-10.yaml\">6.9M configuration</a>; <a href=\"https://huggingface.co/kyutai/pocket-tts-without-voice-cloning\">No-cloning model card</a>.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A useful classroom pilot starts with a short, checked passage",
+      "html": "<p>A concrete educational pilot is a reading page that offers spoken versions of teacher-approved explanations. Start with ten short passages, each paired with its exact visible text. Include ordinary prose, names, dates, abbreviations and a few subject-specific terms. Generate the same material with the 6.9M and 18.2M variants, then have an educator check every sentence before learners receive it. This proposal tests whether local speech reduces preparation effort while preserving the material's meaning.</p><p>Keep the audio controls close to the passage: play, pause, replay and an obvious way to continue reading silently. Divide content at meaningful boundaries so a student can revisit one explanation without restarting a chapter. Treat sentence highlighting as a separate alignment feature that must be built and checked; speech generation alone does not provide verified word timing. Likewise, a fluent voice does not make an explanation accurate or prove that a learner understands it.</p><p>For vocabulary activities, the initial goal should be dependable examples within sentences. Proper names, technical terms and unusual spellings deserve explicit listening checks. If a term repeatedly fails, retain the written form and substitute a reviewed recording or a different narration method. This approach makes failure visible and reversible. It also prevents an automatic speech layer from turning a small pronunciation problem into a repeated teaching error.</p><p>Local processing could reduce reliance on an external speech service after the required assets are available. That benefit depends on the actual application: a local model does not prove that analytics, synchronization or other components keep text on the device. An initial school trial can use teacher-authored public material and measure preparation time, corrections and learner control before considering more sensitive content or wider distribution.</p>"
+    },
+    {
+      "id": "apps-websites",
+      "title": "Build the speech interaction around interruption and choice",
+      "html": "<p>For an app, an attractive first task is reading a user-selected explanation or tutorial step. Limit narration to an explicit action, preserve the visible text, and stop promptly when the person moves on. A short application response is easier to inspect than an unrestricted voice conversation. The model supplies sound; the surrounding software still owns queuing, cancellation, playback and the decision about what should be spoken.</p><p>A website has at least two distinct implementation routes. It can serve audio generated in advance for fixed articles, or connect to a speech service for changing text. A local desktop companion could use the documented HTTP server, but distributing that companion adds installation and update work. The README also lists community browser implementations and explicitly says they are not officially supported. Their presence does not establish support for today's small variants, acceptable mobile performance, or an immediately usable browser SDK. <a href=\"https://github.com/kyutai-labs/pocket-tts#in-browser-implementations\">Browser implementation boundary</a>.</p><p>For a museum guide or small educational site, pre-rendering reviewed narration may be the better first experiment. It removes generation delay from the visitor's experience and allows the editor to inspect each clip. Cache by text, model version and voice so changing one paragraph does not regenerate an entire collection. Where dynamic generation is necessary, measure concurrent requests and cancellation under real workload; a single-thread throughput figure does not predict service capacity.</p><p>The product comparison should include the existing operating-system voice or current speech provider. Ask whether the new option improves control, portability or the listener's experience enough to justify maintenance. Smaller weights can make experimentation easier, but they do not remove the cost of packaging, accessibility checks and support.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Use narration drafts to test the edit, then review the final performance",
+      "html": "<p>For video work, a promising use is temporary narration for an explainer, screen recording or lesson. Write a concise script, generate one section at a time, and place those clips against the planned visuals. This can reveal that a demonstration needs more time, a transition is unclear, or a sentence repeats information already shown onscreen. The editorial gain would come from faster iteration; it remains a proposed workflow rather than a measured productivity result.</p><p>Keep narration generation separate from final timing. The README lists explicit silence insertion through text as unsupported. A video editor can place pauses between clips, trim gaps and check pacing directly. Do not promise precise pause control or automatic caption alignment from the model alone. Generate captions from the approved script, then verify their timing against the actual audio and the picture. <a href=\"https://github.com/kyutai-labs/pocket-tts#unsupported-features\">Documented unsupported feature</a>.</p><p>Before publishing, listen to the entire assembled track at normal speed. Check names, numbers, sentence endings, abrupt voice changes and unwanted emphasis. A faster draft can lose its advantage if it creates subtle errors that take longer to find. For expressive storytelling, compare with a human performance rather than assuming a higher automatic naturalness score captures character, humor or emotional progression.</p>"
+    },
+    {
+      "id": "licenses",
+      "title": "Choose the voice as carefully as the model",
+      "html": "<p>The code repository carries an MIT license, while both inspected model cards label their weights CC BY 4.0. Voice assets have their own terms: the catalog identifies volunteer donations and its Voice-Zero selection as CC0, VCTK and Alba MacKenna recordings as CC BY 4.0, and Expresso and EARS as noncommercial-only. Record the exact voice asset and its stated license alongside the chosen checkpoint. A permissive code license cannot stand in for that separate check. <a href=\"https://github.com/kyutai-labs/pocket-tts/blob/main/LICENSE\">Code license</a>; <a href=\"https://huggingface.co/kyutai/tts-voices\">Voice catalog and dataset-specific terms</a>.</p><p>Kyutai's use notice also prohibits unauthorized impersonation and cloning without explicit lawful consent. A classroom character or video narrator can begin with a suitable catalog voice; there is no need to clone a colleague or student to evaluate the model. Where attribution is required, keep it with the deliverable's credits and asset record. This report identifies the published labels and notices; it does not establish clearance for a particular commercial production.</p><p>The adoption decision is therefore bounded: test one English narration task, compare the two larger small models, and retain the smallest only if its measured resource advantage outweighs the observed quality loss. Record initialization time, sustained speed, memory, listening corrections and the exact files used. The release makes that experiment attractive, but the evidence needed to ship belongs to the intended workload.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-reviewed spoken explanations",
+    "Optional narration in apps and websites",
+    "Temporary voice tracks for educational video edits"
+  ],
+  "limitations": [
+    "Vendor metrics on LibriSpeech test-clean; no independent runtime, download, listening or classroom test.",
+    "The new one-thread speed table does not identify the CPU model; throughput is not first-audio latency.",
+    "The 1.9M model loses intelligibility and estimated naturalness relative to the larger variants.",
+    "Parameter counts and published checkpoint file sizes do not establish full application memory requirements.",
+    "New small variants are English; browser ports and support for those variants were not tested.",
+    "Main voice-cloning weights are gated; code, model and voice-asset licensing are separate."
+  ],
+  "sources": [
+    {
+      "id": "pocket-small-release",
+      "title": "The tiny TTS was actually 10x too big",
+      "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+      "accessedAt": "2026-10-20T16:17:55.359622Z",
+      "publishedAt": "2026-10-20",
+      "locator": "Intro; Data and evaluation; The models; component distillation; reward fine-tuning",
+      "supports": "Release date, model sizes, vendor evaluation and architecture"
+    },
+    {
+      "id": "pocket-tts-repository",
+      "title": "Pocket TTS official repository README",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "accessedAt": "2026-10-20T16:15:32.527883Z",
+      "publishedAt": null,
+      "locator": "Trying it with the CLI; CPU-only installation; In-browser implementations; Unsupported features",
+      "supports": "Current small-model selectors, prerequisites, interfaces and support limits"
+    },
+    {
+      "id": "pocket-tts-license",
+      "title": "Pocket TTS code license",
+      "url": "https://github.com/kyutai-labs/pocket-tts/blob/main/LICENSE",
+      "accessedAt": "2026-10-20T16:17:00.856724Z",
+      "publishedAt": null,
+      "locator": "MIT License and complete license text",
+      "supports": "Code licensing"
+    },
+    {
+      "id": "pocket-tts-model-card",
+      "title": "Pocket TTS model card",
+      "url": "https://huggingface.co/kyutai/pocket-tts",
+      "accessedAt": "2026-10-20T16:15:49.117172Z",
+      "publishedAt": null,
+      "locator": "CC BY 4.0 badge; access notice; general model card",
+      "supports": "Model license label and gated access; card's older general scope"
+    },
+    {
+      "id": "pocket-tts-voices",
+      "title": "Kyutai TTS voices",
+      "url": "https://huggingface.co/kyutai/tts-voices",
+      "accessedAt": "2026-10-20T16:16:05.777143Z",
+      "publishedAt": null,
+      "locator": "voice-donations; vctk; expresso; ears; alba-mackenna; voice-zero",
+      "supports": "Separate voice-asset license categories"
+    },
+    {
+      "id": "pocket-tts-small-config",
+      "title": "Pocket TTS 6.9M configuration",
+      "url": "https://github.com/kyutai-labs/pocket-tts/blob/main/pocket_tts/config/english_7m_2026-10.yaml",
+      "accessedAt": "2026-10-20T16:16:47.412486Z",
+      "publishedAt": null,
+      "locator": "weights_path; weights_path_without_voice_cloning; model dimensions",
+      "supports": "Pinned official standard and no-cloning checkpoints"
+    },
+    {
+      "id": "pocket-tts-no-cloning-card",
+      "title": "Pocket TTS without voice cloning model card",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning",
+      "accessedAt": "2026-10-20T16:17:00.883290Z",
+      "publishedAt": null,
+      "locator": "CC BY 4.0 badge and public model card",
+      "supports": "Separate no-cloning repository and license label"
+    },
+    {
+      "id": "pocket-tts-no-cloning-files",
+      "title": "Small English models in the public file inventory",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages",
+      "accessedAt": "2026-10-20T16:17:16.562056Z",
+      "publishedAt": null,
+      "locator": "languages/ folder listing",
+      "supports": "Presence of six small-model folders, not verified execution"
+    },
+    {
+      "id": "pocket-tts-7m-files",
+      "title": "6.9M no-cloning model files",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/main/languages/english_7m_2026-10",
+      "accessedAt": "2026-10-20T16:17:26.722481Z",
+      "publishedAt": null,
+      "locator": "model.safetensors, embeddings and tokenizer listing",
+      "supports": "Published file sizes and assets; no runtime-memory measurement"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a measured English narration pilot using 6.9M and 18.2M variants, with task-specific listening checks, versioned assets and separate voice-license review.",
+  "researchNote": "Official-source Webcrawl on 20 October 2026 using owned Chrome tabs. The dated article, current README, code license, a 6.9M configuration, model cards, voice catalog and public no-cloning file listings were inspected. Main model-card gate was observed without accepting conditions. No installation, model download, audio generation, listening test or voice cloning was performed. Benchmarks are Kyutai's claims; applications and adoption criteria are editorial proposals. Small-model availability means documented selectors and visible files, not verified runtime compatibility. No claim of exhaustive repository review."
+}

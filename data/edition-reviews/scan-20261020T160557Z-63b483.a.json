@@ -1,0 +1,80 @@
+{
+  "runId": "scan-20261020T160557Z-63b483",
+  "reviewerId": "/root/edition_20261020_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:27:46Z",
+  "scope": "Independent bounded semantic sample of one selected report and two excluded candidates. Other reviewers' output and existing published reviews were not consulted. Saved public-source captures were inspected; no model execution or new network collection was performed.",
+  "findings": [
+    {
+      "candidateId": "candidate-e3ff286dbca97504",
+      "reportId": "studentsim",
+      "recordedStatusAtInspection": "needs_review",
+      "selection": "Selected for substantial report; publication still awaits the independent review process.",
+      "assessment": "supported",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+        "https://arxiv.org/abs/2609.01591",
+        "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+        "https://github.com/microsoft/StudentSim",
+        "https://github.com/microsoft/StudentSim/blob/main/TRANSPARENCY.md"
+      ],
+      "findings": [
+        "The saved Microsoft article explicitly dates coverage October 12 and describes a research system, not a deployed classroom product. The arXiv record dates the preprint September 1. Baseline classification and the report's separation of those dates are justified.",
+        "Paper Tables 2 and 3 support all six reported StudentSim/GPT-5.4 fidelity and responsiveness comparisons. The domain-specific metrics are correctly kept distinct.",
+        "Section 6 supports the pooled Stage-1 simulator and additional style/perception heads. Table 26 and the expert-study discussion support the small annotation sample and the interpretation of accuracy as absence of severe misleading tutor errors, rather than student achievement.",
+        "Appendix F.5 supports the omitted Maia2-derived feature in the prompted closed-model comparison. Canonical-correction responsiveness and constructed guidance prevent interpreting the benchmark as observed real-student learning.",
+        "The repository and transparency captures contain the stated contradiction over redistributed chess data. Keeping it explicit is appropriate. The proposed app, website and video uses are reasoned applications, not fabricated deployments."
+      ],
+      "concerns": [
+        "Selection is justified as research coverage; none of these sources establishes classroom learning gains.",
+        "Current candidate status is needs_review, which is consistent with a selected report awaiting publication approval and should not be described as already published."
+      ],
+      "sourceCaptureHashes": {
+        "studentsim-article-text": "0682cddfffe9a36e3e507936eae557d2ac148ff65cdee0628d715b0fe8462e69",
+        "studentsim-arxiv-text": "23e49453adca6d34884cb365dab279eaf424eafd64d84c89290e38162d14afc2",
+        "studentsim-paper-text": "b8908f91ad55433f058b41f03a5c3b86482bbdfffb683bfcdfa26a4d3570408b",
+        "studentsim-repository-text": "0e3917ca270870344aad48df942cb22ca6099a74c0f135d7566fabdb4fa93635",
+        "studentsim-transparency-text": "d301f4f0c1d245a74c39169aa94b8c16c62211905ed684f6d591f0aaf48b8f4f"
+      }
+    },
+    {
+      "candidateId": "candidate-833e9419a34f8836",
+      "title": "Are you a Codex Original?",
+      "sourceUrl": "https://openai.com/form/codex-originals",
+      "recordedDecision": "excluded",
+      "assessment": "supported_with_bounded_confidence",
+      "confidence": "medium",
+      "reviewScope": "Recorded feed title, canonical URL and source-registry metadata only; article/form body not inspected.",
+      "findings": [
+        "The interrogative participation title and /form/codex-originals URL support treating this as a submission solicitation for discovery triage.",
+        "Available metadata identifies no concrete model release, software capability or changed builder workflow. A metadata-only scope exclusion is reasonable.",
+        "The decision explicitly discloses the uninspected body, and the source registry retains unverified status with no successful-access timestamp. Those fields do not falsely imply full-page research."
+      ],
+      "concerns": [
+        "Title and URL cannot prove that the page contains no substantive program details or eligibility changes. Preserve the metadata-only qualification and reconsider if later evidence identifies a relevant capability or workflow change.",
+        "The recorded September 28 publication date is feed metadata, not a newly verified event date."
+      ]
+    },
+    {
+      "candidateId": "repos-release-hugging-face-transformers-v5-20-2",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
+      "recordedDecision": "excluded",
+      "assessment": "supported_with_reasoning_caveat",
+      "confidence": "high",
+      "publishedAtVerified": "2026-10-19T17:45:37Z",
+      "reviewScope": "Saved public GitHub release response, selected v5.20.2 record and complete release body.",
+      "findings": [
+        "The release explicitly describes a patch fixing loss of input types in prepare_inputs_for_generation, with consequences for multimodal models.",
+        "The remaining listed changes fix zero expert gradients in bfloat16 under a particular expert-parallel configuration, correct declared VLM input modalities, and avoid an eager-mask host-to-device copy.",
+        "This is real maintenance with relevant bug fixes, but the saved text does not describe a broad new model capability or workflow. Excluding it from a substantial general-audience report is defensible under a bounded editorial scope."
+      ],
+      "concerns": [
+        "The exclusion reason's desire to preserve existing report hashes should not be the basis for editorial exclusion. The defensible basis is the scoped maintenance nature and limited evidence of a larger change.",
+        "A patch may still be important to users affected by the specific multimodal or gradient defects. Exclusion from substantial reporting must not be presented as proof of no practical significance."
+      ],
+      "sourceCaptureHash": "a8342706c9aee9a432c84ee8f99d027c7e3af19b3895eebd54889777476d9c7d"
+    }
+  ],
+  "overall": "The sampled selection and exclusions are supportable within their explicitly bounded evidence scopes. No sampled decision fabricates a successful full-body inspection. Preserve the Codex form's metadata-only uncertainty and avoid treating immutable review hashes as a reason to suppress a substantively important future update."
+}

@@ -348,5 +348,845 @@
         "coverageComplete": false
       }
     ]
+  },
+  {
+    "id": "scan-20261020T160557Z-63b483",
+    "startedAt": "2026-10-20T16:05:57Z",
+    "finishedAt": "2026-10-20T16:31:14Z",
+    "status": "complete",
+    "windowStart": "2026-10-15T15:20:19Z",
+    "windowEnd": "2026-10-20T16:05:57Z",
+    "sourcesChecked": 69,
+    "sourcesFailed": 6,
+    "candidatesFound": 282,
+    "publishedCount": 11,
+    "coverageNote": "Five new reports added to the six-report library after two independent fresh-context Astra reviews: Voxtral 3, Pocket TTS Small, FLUX 3 Image Klein, StudentSim and the previously unresolved Gemini CLI access transition. All 75 scheduled entrypoints accounted for: four feeds acquired, 65 other entrypoints accessed with partial historical coverage, and six access failures. Recorded 282 new candidates and reconsidered all six prior unresolved leads; unverified leads remain explicit backlog. The ledger now contains 478 sources and 89 recurring entrypoints. Global overlap was October 15–20; incomplete source windows reaching September 18 remain queued. This is a bounded discovery edition, not an exhaustive internet census.",
+    "limitations": [
+      "seed-anthropic-news: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome newsroom listing inspected; current list reaches Oct1 and featured model cards Sep22–Oct7. Initial window not fully paginated.",
+      "seed-google-ai-blog: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome AI landing page rendered with current Gemini4, audio and research cards. Most dates absent from landing cards; All the Latest did not provide a complete dated history.",
+      "seed-google-deepmind: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome News listing inspected; October and September cards found, including EmbeddingGemma2 and Gemini4 Argon. Month-only dates and uninspected pagination prevent a complete 30-day coverage claim.",
+      "seed-meta-ai: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome Meta AI blog readable but displayed July and June cards. This does not prove absence of September/October updates elsewhere or complete current coverage.",
+      "seed-nvidia-developer: Chrome navigation timed out; browser connection changed during the visit. Owned tab recovered but returned an empty document. No NVIDIA article coverage established.",
+      "seed-mistral-ai: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome listing and Voxtral3 article/docs inspected. Listing spans October20 through September8, including Timestral and Large4; featured placement and uninspected pagination limit exhaustiveness.",
+      "seed-cohere: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome blog listing inspected; October20 Rethinking Confidence research lead surfaced. Initial 30-day archive not fully paginated.",
+      "seed-ai21: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome official listing shows Oct15 post-training, Oct14 coding-agent evaluation, Oct6 verifier design and Oct4 GPU scheduling, then August. Listing-only discovery; detailed research reviews deferred.",
+      "seed-together-ai: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome current blog cards inspected, including Together Link and model/inference guides. Featured carousel lacked verified publication dates; no complete 30-day window asserted.",
+      "seed-groq: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome blog listing inspected; Oct15 Muse Spark limited-preview card followed by August entries. Originating Meta model release and license not verified.",
+      "seed-ollama: Task-owned Chrome navigation completed but returned an empty document; no readable listing evidence, no absence claim.",
+      "seed-github-trending: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+      "seed-hugging-face-transformers: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v5.20.2 published 2026-10-19T17:45:37Z. No all-history claim.",
+      "seed-llama-cpp: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item b11756 published 2026-10-20T13:48:11Z. No all-history claim.",
+      "seed-ollama-repository: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.40.7-rc0 published 2026-10-18T00:28:57Z. No all-history claim.",
+      "seed-vllm: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.32.0 published 2026-10-18T06:50:48Z. No all-history claim.",
+      "seed-sglang: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.5.22 published 2026-10-19T02:55:19Z. No all-history claim.",
+      "seed-open-webui: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.12.3 published 2026-10-16T11:46:21Z. No all-history claim.",
+      "seed-dify: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item 1.17.1 published 2026-09-10T10:04:06Z. No all-history claim.",
+      "seed-langchain: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item langchain-core==1.6.12 published 2026-10-16T19:28:44Z. No all-history claim. Initial browser connection became unavailable; fresh task-owned Chrome tab restored read access.",
+      "seed-llamaindex: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.14.25 published 2026-09-21T16:22:27Z. No all-history claim.",
+      "seed-smolagents: Partial coverage at 2026-10-20T16:24:42Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v1.26.0 published 2026-05-29T05:09:47Z. No all-history claim.",
+      "seed-gemini-cli: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.66.0-nightly.20261020.g76e4d7c04 published 2026-10-20T01:33:51Z. No all-history claim.",
+      "seed-openai-codex: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item rust-v0.164.0-alpha.7 published 2026-10-20T13:47:31Z. No all-history claim.",
+      "seed-hugging-face-models: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. First 30-model listing only. Updated labels are not launch dates. Default and explicit trending pages largely duplicate one another.",
+      "seed-hugging-face-trending: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. First 30-model listing only. Updated labels are not launch dates. Default and explicit trending pages largely duplicate one another.",
+      "seed-qwen-hub: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+      "seed-deepseek-hub: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Chrome exposed recent activity header; full HTTP organization page preserved. Primary 1017 model card separately inspected.",
+      "seed-mistral-hub: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+      "seed-google-gemma-hub: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Initial Chrome extraction was a navigation shell; follow-up obtained complete visible organization content.",
+      "seed-stability-ai: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. News redirects to /news-updates. Current first page latest entry Aug25; dated listing inspected, deeper archive not traversed.",
+      "seed-black-forest-labs: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Homepage and blog inspected; Oct15 FLUX3ImageKlein selected and researched. Blog archive not fully traversed.",
+      "seed-runway: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Research redirects to runway.com/research. Changelog inspected through dated Oct and Sep entries; focused integration changes retained, research archive incomplete.",
+      "seed-pika: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Current homepage and dated headlines inspected. Sep24 API club and Sep17 product relaunch visible; detailed blog archive not traversed.",
+      "seed-luma: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Homepage and /news inspected. Oct1 Variants and Oct8 Claude Motion leads retained; many current SEO/comparison posts not followed.",
+      "seed-elevenlabs: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Featured blog and Elevenv4 story inspected; Sep28 publication and Oct19 update verified. Category archives and historical revisions not exhausted.",
+      "seed-fish-audio: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Current homepage shows Drama3 already covered by approved report. No demonstrated material change established; full blog history not traversed.",
+      "seed-typesafe: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Current homepage inspected; published Jev report preserved. Homepage is not a full release archive.",
+      "seed-comfyui: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Current homepage plus FLUX3Klein docs inspected. Approved ComfyUI baseline preserved; full changelog not traversed.",
+      "seed-notebooklm: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Redirects to notebook.google; Gemini Notebook overview consistent with existing report. No complete feature-history audit.",
+      "seed-adobe-firefly: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Chrome body initially empty; Search Service parser retrieved substantive Firefly overview. Current landing page available but no complete dated release-history coverage; browser snapshot gap preserved.",
+      "seed-recraft: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Homepage and Sep23 V4.1Flash announcement inspected; new lead retained. Full news archive and commercial terms not researched.",
+      "seed-krea: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Homepage, Krea3 page and /news→/blog listing inspected. Oct15 Krea3 introduction visible; timing/pricing illustration caveats retained. Full release-note archive not exhausted.",
+      "seed-replicate: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Blog listing inspected, newest visible item Apr15. No relevant new current item shown in this listing; absence of update is not established across product surfaces.",
+      "seed-comfyui-repository: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Current README/master page inspected (v0.42.0 visible). No complete commit/release history compared to existing report.",
+      "seed-fish-speech-hub: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Organization and recent activity inspected; Drama3 serving discussion and demo changes listed. No complete model revision comparison; approved report preserved.",
+      "seed-arxiv-artificial-intelligence: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable recent listing: first 50 of 486 October20 entries, 2078 total listed recent entries. Only the first page was acquired; candidate headings screened, not all abstracts.",
+      "seed-arxiv-computation-and-language: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable recent listing: first 50 of 283 October20 entries, 1173 total listed recent entries. First page only; candidate headings screened, not all abstracts.",
+      "seed-arxiv-computer-vision: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable recent listing: first 50 of 346 October20 entries, 1259 total listed recent entries. First page only; candidate headings screened, not all abstracts.",
+      "seed-hugging-face-papers: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. October20 Daily Papers listing readable; first listing only. Ranked community selection is not exhaustive research coverage.",
+      "seed-papers-with-code: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Redirected to https://huggingface.co/papers/trending; readable ranked selection, not independent Papers with Code coverage or complete history.",
+      "seed-allen-institute-for-ai: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Redirected from /blog to /research. First nine cards range Oct20 to Jul28; AstaBrief, FairStress and TutorMoments noted as deferred leads.",
+      "seed-the-batch: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable issue listing, newest visible Oct16. Only landing page and issue previews screened; no full issues or archive pagination.",
+      "seed-import-ai: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. HTML returned subscription/JavaScript shell. Task-owned Chrome after No thanks showed public previews: Oct19 issue477, Oct12 issue476, Oct5 issue475, Sep28 issue474, Sep21 issue473. No article bodies or full archive.",
+      "seed-latent-space: Feed accessible, supplemental page failed. Current HTML page exposed subscription/JavaScript shell, no inspectable current stories. Collector previously acquired feed; this worker did not duplicate that feed. Body inspection not completed.",
+      "seed-tldr-ai: Landing page exposed newsletter signup and FAQ, without dated story listings. No archive linked in extracted content; coverage failed, not evidence of absent stories.",
+      "seed-ben-s-bites: HTML exposed subscription/JavaScript shell only. No inspectable dated story listing; coverage failed.",
+      "seed-lilian-weng: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable first page; newest visible item is Harness Engineering for Self-Improvement dated Jul4,2026, outside the bootstrap window. No exhaustive archive check or absence inference.",
+      "seed-sebastian-raschka: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. HTML was subscription/JavaScript shell; task-owned Chrome after No thanks exposed public previews. Latest visible chronological card Sep29 classifier-history-and-jev; featured card Jul19,2025. No article body inspection or complete archive.",
+      "seed-chip-huyen: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable blog index; newest visible item Jan16,2025. No in-window candidate observed in this index, but no full-history absence claim.",
+      "seed-techcrunch-ai: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable current category first page; selected headings and relative dates screened. No Load More or full article verification.",
+      "seed-the-verge-ai: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Readable current AI category first page; selected news summaries screened. No full article verification or pagination.",
+      "seed-mit-technology-review-ai: HTML page exposed category shell, navigation and Load more stories without story text. JavaScript required; no inspectable article listing.",
+      "seed-ars-technica-ai: System HTTPS retrieval failed with curl exit56; no current article content inspected. No security controls bypassed.",
+      "seed-openai-on-x: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public X profile's visible posts readable in Chrome; 6 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-anthropic-on-x: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public X profile's visible posts readable in Chrome; 6 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-hugging-face-on-x: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public X profile's visible posts readable in Chrome; 5 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-qwen-on-x: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public X profile's visible posts readable in Chrome; 5 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-reddit-localllama: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-reddit-machinelearning: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-reddit-stablediffusion: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "seed-hacker-news: Partial coverage at 2026-10-20T16:24:43Z; outstanding history was not fully checked at this visit. Public Hacker News front page readable in Chrome; 30 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+      "Public X and Reddit research covered visible profile posts and best-sorted listings, not complete chronological archives; community claims remain discovery leads until primary verification.",
+      "Uninspected feed stories and deferred candidates remain needs_review; metadata-level exclusions are explicitly labeled. Five selected reports received primary-source research and independent review.",
+      "Six scheduled sources failed: NVIDIA Developer, Ollama news, TLDR AI, Ben’s Bites, MIT Technology Review AI and Ars Technica AI. No absence-of-news claim is made for them.",
+      "Four feed acquisitions do not establish that every publisher article exists in its feed. Sixty-five partial page checks preserve older collection watermarks; fourteen newly monitored entrypoints join future scans.",
+      "No advertised software/model installations, model executions, audio listening, benchmark reproductions, paid generations or learner studies were performed.",
+      "Voxtral launch documentation conflicts on TTS price/language coverage; FLUX licensing and runtime requirements vary; StudentSim data documentation conflicts; Pocket performance is vendor-reported. Each report preserves its specific limitations.",
+      "One Chrome connection interruption was recovered; parser and HTTPS retrieval limits were recorded. Full research token counts and monetary billing are unavailable; no cost or savings estimate is claimed.",
+      "Two separate gpt-6-astra high-effort reviewers approved exact report/evidence/rubric hashes and independently checked a sample of inclusion/exclusion decisions. Same-model review is not independent experimental validation."
+    ],
+    "sourceIdsExpected": [
+      "seed-openai-news",
+      "seed-anthropic-news",
+      "seed-google-ai-blog",
+      "seed-google-deepmind",
+      "seed-meta-ai",
+      "seed-microsoft-research",
+      "seed-nvidia-developer",
+      "seed-mistral-ai",
+      "seed-cohere",
+      "seed-ai21",
+      "seed-stability-ai",
+      "seed-black-forest-labs",
+      "seed-runway",
+      "seed-pika",
+      "seed-luma",
+      "seed-elevenlabs",
+      "seed-fish-audio",
+      "seed-typesafe",
+      "seed-comfyui",
+      "seed-notebooklm",
+      "seed-adobe-firefly",
+      "seed-recraft",
+      "seed-krea",
+      "seed-replicate",
+      "seed-together-ai",
+      "seed-groq",
+      "seed-ollama",
+      "seed-github-trending",
+      "seed-hugging-face-transformers",
+      "seed-llama-cpp",
+      "seed-ollama-repository",
+      "seed-vllm",
+      "seed-sglang",
+      "seed-comfyui-repository",
+      "seed-open-webui",
+      "seed-dify",
+      "seed-langchain",
+      "seed-llamaindex",
+      "seed-smolagents",
+      "seed-gemini-cli",
+      "seed-openai-codex",
+      "seed-hugging-face-models",
+      "seed-hugging-face-trending",
+      "seed-qwen-hub",
+      "seed-deepseek-hub",
+      "seed-mistral-hub",
+      "seed-google-gemma-hub",
+      "seed-fish-speech-hub",
+      "seed-arxiv-artificial-intelligence",
+      "seed-arxiv-computation-and-language",
+      "seed-arxiv-computer-vision",
+      "seed-hugging-face-papers",
+      "seed-papers-with-code",
+      "seed-allen-institute-for-ai",
+      "seed-openai-on-x",
+      "seed-anthropic-on-x",
+      "seed-hugging-face-on-x",
+      "seed-qwen-on-x",
+      "seed-reddit-localllama",
+      "seed-reddit-machinelearning",
+      "seed-reddit-stablediffusion",
+      "seed-hacker-news",
+      "seed-the-batch",
+      "seed-import-ai",
+      "seed-latent-space",
+      "seed-tldr-ai",
+      "seed-ben-s-bites",
+      "seed-simon-willison",
+      "seed-lilian-weng",
+      "seed-sebastian-raschka",
+      "seed-chip-huyen",
+      "seed-techcrunch-ai",
+      "seed-the-verge-ai",
+      "seed-mit-technology-review-ai",
+      "seed-ars-technica-ai"
+    ],
+    "sourceResults": [
+      {
+        "sourceId": "seed-openai-news",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:05:57Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "RSS/Atom acquired; article claims still require semantic verification.",
+        "pageObservation": {
+          "sourceId": "seed-openai-news",
+          "status": "success",
+          "checkedAt": "2026-10-20T16:18:00Z",
+          "windowStart": "2026-09-18T15:13:23Z",
+          "note": "Current listing inspected in Chrome. Oct19 low-resource programming article plus Oct15 Rosalind and educator-course entries visible. Oct15 overlap checked; pagination/feed completeness not re-proven.",
+          "coverageComplete": false,
+          "coverageScope": "bounded official listing and selected article inspection"
+        }
+      },
+      {
+        "sourceId": "seed-anthropic-news",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome newsroom listing inspected; current list reaches Oct1 and featured model cards Sep22–Oct7. Initial window not fully paginated.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-google-ai-blog",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome AI landing page rendered with current Gemini4, audio and research cards. Most dates absent from landing cards; All the Latest did not provide a complete dated history.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-google-deepmind",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome News listing inspected; October and September cards found, including EmbeddingGemma2 and Gemini4 Argon. Month-only dates and uninspected pagination prevent a complete 30-day coverage claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-meta-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome Meta AI blog readable but displayed July and June cards. This does not prove absence of September/October updates elsewhere or complete current coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-microsoft-research",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:05:58Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "RSS/Atom acquired; article claims still require semantic verification.",
+        "pageObservation": {
+          "sourceId": "seed-microsoft-research",
+          "status": "success",
+          "note": "Browser and HTML first blog listing inspected through Sept21, with older cards also visible; selected Oct12 StudentSim and Oct7 Agent Lightning articles inspected. Feed previously acquired by collector. No full archive exhaustion.",
+          "coverageComplete": false
+        }
+      },
+      {
+        "sourceId": "seed-nvidia-developer",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome navigation timed out; browser connection changed during the visit. Owned tab recovered but returned an empty document. No NVIDIA article coverage established.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-mistral-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome listing and Voxtral3 article/docs inspected. Listing spans October20 through September8, including Timestral and Large4; featured placement and uninspected pagination limit exhaustiveness.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-cohere",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome blog listing inspected; October20 Rethinking Confidence research lead surfaced. Initial 30-day archive not fully paginated.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-ai21",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome official listing shows Oct15 post-training, Oct14 coding-agent evaluation, Oct6 verifier design and Oct4 GPU scheduling, then August. Listing-only discovery; detailed research reviews deferred.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-stability-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "News redirects to /news-updates. Current first page latest entry Aug25; dated listing inspected, deeper archive not traversed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-black-forest-labs",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Homepage and blog inspected; Oct15 FLUX3ImageKlein selected and researched. Blog archive not fully traversed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-runway",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Research redirects to runway.com/research. Changelog inspected through dated Oct and Sep entries; focused integration changes retained, research archive incomplete.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-pika",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Current homepage and dated headlines inspected. Sep24 API club and Sep17 product relaunch visible; detailed blog archive not traversed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-luma",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Homepage and /news inspected. Oct1 Variants and Oct8 Claude Motion leads retained; many current SEO/comparison posts not followed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-elevenlabs",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Featured blog and Elevenv4 story inspected; Sep28 publication and Oct19 update verified. Category archives and historical revisions not exhausted.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-fish-audio",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Current homepage shows Drama3 already covered by approved report. No demonstrated material change established; full blog history not traversed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-typesafe",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Current homepage inspected; published Jev report preserved. Homepage is not a full release archive.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-comfyui",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Current homepage plus FLUX3Klein docs inspected. Approved ComfyUI baseline preserved; full changelog not traversed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-notebooklm",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Redirects to notebook.google; Gemini Notebook overview consistent with existing report. No complete feature-history audit.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-adobe-firefly",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome body initially empty; Search Service parser retrieved substantive Firefly overview. Current landing page available but no complete dated release-history coverage; browser snapshot gap preserved.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-recraft",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Homepage and Sep23 V4.1Flash announcement inspected; new lead retained. Full news archive and commercial terms not researched.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-krea",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Homepage, Krea3 page and /news→/blog listing inspected. Oct15 Krea3 introduction visible; timing/pricing illustration caveats retained. Full release-note archive not exhausted.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-replicate",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Blog listing inspected, newest visible item Apr15. No relevant new current item shown in this listing; absence of update is not established across product surfaces.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-together-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome current blog cards inspected, including Together Link and model/inference guides. Featured carousel lacked verified publication dates; no complete 30-day window asserted.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-groq",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome blog listing inspected; Oct15 Muse Spark limited-preview card followed by August entries. Originating Meta model release and license not verified.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-ollama",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Task-owned Chrome navigation completed but returned an empty document; no readable listing evidence, no absence claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-github-trending",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hugging-face-transformers",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v5.20.2 published 2026-10-19T17:45:37Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-llama-cpp",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item b11756 published 2026-10-20T13:48:11Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-ollama-repository",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.40.7-rc0 published 2026-10-18T00:28:57Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-vllm",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.32.0 published 2026-10-18T06:50:48Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-sglang",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.5.22 published 2026-10-19T02:55:19Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-comfyui-repository",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Current README/master page inspected (v0.42.0 visible). No complete commit/release history compared to existing report.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-open-webui",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.12.3 published 2026-10-16T11:46:21Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-dify",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item 1.17.1 published 2026-09-10T10:04:06Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-langchain",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item langchain-core==1.6.12 published 2026-10-16T19:28:44Z. No all-history claim. Initial browser connection became unavailable; fresh task-owned Chrome tab restored read access.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-llamaindex",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.14.25 published 2026-09-21T16:22:27Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-smolagents",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:42Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v1.26.0 published 2026-05-29T05:09:47Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-gemini-cli",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item v0.66.0-nightly.20261020.g76e4d7c04 published 2026-10-20T01:33:51Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-openai-codex",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Latest-ten release API entries acquired; first item rust-v0.164.0-alpha.7 published 2026-10-20T13:47:31Z. No all-history claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hugging-face-models",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. First 30-model listing only. Updated labels are not launch dates. Default and explicit trending pages largely duplicate one another.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hugging-face-trending",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. First 30-model listing only. Updated labels are not launch dates. Default and explicit trending pages largely duplicate one another.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-qwen-hub",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-deepseek-hub",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Chrome exposed recent activity header; full HTTP organization page preserved. Primary 1017 model card separately inspected.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-mistral-hub",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-google-gemma-hub",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Chrome landing page inspected; full public HTTP response preserved. Bounded visible page only; no historical or date-window completeness. Initial Chrome extraction was a navigation shell; follow-up obtained complete visible organization content.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-fish-speech-hub",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Organization and recent activity inspected; Drama3 serving discussion and demo changes listed. No complete model revision comparison; approved report preserved.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-arxiv-artificial-intelligence",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable recent listing: first 50 of 486 October20 entries, 2078 total listed recent entries. Only the first page was acquired; candidate headings screened, not all abstracts.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-arxiv-computation-and-language",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable recent listing: first 50 of 283 October20 entries, 1173 total listed recent entries. First page only; candidate headings screened, not all abstracts.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-arxiv-computer-vision",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable recent listing: first 50 of 346 October20 entries, 1259 total listed recent entries. First page only; candidate headings screened, not all abstracts.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hugging-face-papers",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "October20 Daily Papers listing readable; first listing only. Ranked community selection is not exhaustive research coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-papers-with-code",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Redirected to https://huggingface.co/papers/trending; readable ranked selection, not independent Papers with Code coverage or complete history.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-allen-institute-for-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Redirected from /blog to /research. First nine cards range Oct20 to Jul28; AstaBrief, FairStress and TutorMoments noted as deferred leads.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-openai-on-x",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public X profile's visible posts readable in Chrome; 6 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-anthropic-on-x",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public X profile's visible posts readable in Chrome; 6 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hugging-face-on-x",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public X profile's visible posts readable in Chrome; 5 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-qwen-on-x",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public X profile's visible posts readable in Chrome; 5 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-reddit-localllama",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-reddit-machinelearning",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-reddit-stablediffusion",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public Reddit best listing readable in Chrome; 27 titled/text-bearing items captured. 2 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-hacker-news",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Public Hacker News front page readable in Chrome; 30 titled/text-bearing items captured. 0 empty placeholders skipped. Bounded current listing only; no exhaustive history, pagination, full thread, or chronological-window coverage. Initial Chrome connection disconnected and was recovered before the completed inspection; this is a successful partial access, not complete collection coverage.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-the-batch",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable issue listing, newest visible Oct16. Only landing page and issue previews screened; no full issues or archive pagination.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-import-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "HTML returned subscription/JavaScript shell. Task-owned Chrome after No thanks showed public previews: Oct19 issue477, Oct12 issue476, Oct5 issue475, Sep28 issue474, Sep21 issue473. No article bodies or full archive.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-latent-space",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:06:02Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "RSS/Atom acquired; article claims still require semantic verification.",
+        "pageObservation": {
+          "sourceId": "seed-latent-space",
+          "status": "failed",
+          "note": "Current HTML page exposed subscription/JavaScript shell, no inspectable current stories. Collector previously acquired feed; this worker did not duplicate that feed. Body inspection not completed.",
+          "coverageComplete": false
+        }
+      },
+      {
+        "sourceId": "seed-tldr-ai",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Landing page exposed newsletter signup and FAQ, without dated story listings. No archive linked in extracted content; coverage failed, not evidence of absent stories.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-ben-s-bites",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "HTML exposed subscription/JavaScript shell only. No inspectable dated story listing; coverage failed.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-simon-willison",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:06:03Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "RSS/Atom acquired; article claims still require semantic verification.",
+        "pageObservation": {
+          "sourceId": "seed-simon-willison",
+          "status": "success",
+          "note": "Readable first page and selected Oct18 llm-tools-datasette0.1.1 story; release is an httpx dependency compatibility fix. Feed previously acquired. No full archive.",
+          "coverageComplete": false
+        }
+      },
+      {
+        "sourceId": "seed-lilian-weng",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable first page; newest visible item is Harness Engineering for Self-Improvement dated Jul4,2026, outside the bootstrap window. No exhaustive archive check or absence inference.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-sebastian-raschka",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "HTML was subscription/JavaScript shell; task-owned Chrome after No thanks exposed public previews. Latest visible chronological card Sep29 classifier-history-and-jev; featured card Jul19,2025. No article body inspection or complete archive.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-chip-huyen",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable blog index; newest visible item Jan16,2025. No in-window candidate observed in this index, but no full-history absence claim.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-techcrunch-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable current category first page; selected headings and relative dates screened. No Load More or full article verification.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-the-verge-ai",
+        "status": "success",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "Readable current AI category first page; selected news summaries screened. No full article verification or pagination.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-mit-technology-review-ai",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "HTML page exposed category shell, navigation and Load more stories without story text. JavaScript required; no inspectable article listing.",
+        "coverageComplete": false
+      },
+      {
+        "sourceId": "seed-ars-technica-ai",
+        "status": "failed",
+        "checkedAt": "2026-10-20T16:24:43Z",
+        "windowStart": "2026-09-18T15:13:23Z",
+        "note": "System HTTPS retrieval failed with curl exit56; no current article content inspected. No security controls bypassed.",
+        "coverageComplete": false
+      }
+    ],
+    "reportIdsAdded": [
+      "flux3-image-klein",
+      "gemini-cli-access-transition",
+      "pocket-tts-small",
+      "studentsim",
+      "voxtral-3"
+    ],
+    "reviewerInvocations": [
+      {
+        "reviewerId": "/root/edition_20261020_astra_a",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "forkTurns": "none",
+        "reportIds": [
+          "flux3-image-klein",
+          "gemini-cli-access-transition",
+          "pocket-tts-small",
+          "studentsim",
+          "voxtral-3"
+        ]
+      },
+      {
+        "reviewerId": "/root/edition_20261020_astra_b",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "forkTurns": "none",
+        "reportIds": [
+          "flux3-image-klein",
+          "gemini-cli-access-transition",
+          "pocket-tts-small",
+          "studentsim",
+          "voxtral-3"
+        ]
+      }
+    ],
+    "reconsideredBacklogIds": [
+      "x-astra-pro-oct16",
+      "x-live11-oct15",
+      "rosalind-academic-plan",
+      "teaching-questions",
+      "gpt6-everyone",
+      "gemini-cli"
+    ]
   }
 ]

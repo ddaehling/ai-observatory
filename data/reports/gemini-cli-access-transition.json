@@ -1,0 +1,183 @@
+{
+  "id": "gemini-cli-access-transition",
+  "title": "Gemini CLI after the consumer transition: choose a supported path before building",
+  "entity": "Gemini CLI / Antigravity CLI",
+  "category": "Tools",
+  "tags": [
+    "coding agents",
+    "open source",
+    "education",
+    "migration",
+    "developer tools"
+  ],
+  "summary": "Google’s consumer migration notice is confirmed, while enterprise and paid API routes remain documented. A practical guide to account eligibility, the successor CLI, and reviewable education, website and media workflows.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-18T15:20:19.329655+00:00",
+  "updatedAt": "2026-10-20T16:17:07.365079+00:00",
+  "officialUrl": "https://github.com/google-gemini/gemini-cli",
+  "sections": [
+    {
+      "id": "decision",
+      "title": "Choose the access route before choosing the agent",
+      "html": "<p>Gemini CLI remains a usable open-source terminal agent, but its consumer access story has changed. Google's May 19, 2026 announcement said that requests through Gemini Code Assist for individuals, including Google AI Pro and Ultra subscriptions, would stop on June 18. The current repository repeats the replacement notice and directs those users to Antigravity CLI. This is a resolved backlog finding for the Observatory, not an October product launch. For a teacher preparing a coding workshop, or a small team maintaining a website, the practical first question is which account and service will actually power the session.</p><p>The distinction matters because the same announcement preserves access for Code Assist Standard and Enterprise customers and says paid Gemini and Gemini Enterprise Agent Platform API keys remain supported. Meanwhile, the repository still receives changes: an October 20 nightly release lists terminal-scrollback and streamed-text fixes. Continued source activity demonstrates maintenance, not universal account eligibility or compatibility with every model. The useful choice is therefore between a maintained open client with a supported paid or organizational route and Google's successor terminal experience. <a href=\"https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli\">Read the dated transition announcement</a> and the <a href=\"https://github.com/google-gemini/gemini-cli\">current repository notice</a>.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What changed, and what remains uncertain",
+      "html": "<p>There are three separate decisions: client software, authentication, and model availability. Installing Gemini CLI answers only the first. A personal Google account that successfully signs into a browser does not by itself establish a currently eligible CLI service. The consumer transition applies to free individual Code Assist access and Google AI Pro or Ultra access through that service. It does not say every Google developer tool has stopped working. Conversely, an enterprise exception does not mean an arbitrary school email automatically has an eligible enterprise license.</p><p>There is a material documentation mismatch. The authentication guide still recommends personal-account sign-in and describes Pro and Ultra subscriptions. Its instructions explain mechanisms, but the later dated migration announcement and current repository warning are stronger evidence about consumer availability. Builders should not turn the older guide into a promise of free access. The repository also says Gemini CLI is not optimized for Gemini 4 Argon and recommends Antigravity. That qualifies the announcement's broader commitment to enterprise model updates: it does not prove Argon parity in this client.</p><p>For an existing institutional deployment, record the actual license, cloud project, backend, selected model, and a small successful task before scheduling a class. Account-specific eligibility, regional availability, quotas, and billing were not tested here. The report establishes the documented routes and their boundaries. <a href=\"https://www.geminicli.com/docs/get-started/authentication\">Authentication reference</a>.</p>"
+    },
+    {
+      "id": "capabilities",
+      "title": "The open client still has a coherent role",
+      "html": "<p>The repository describes codebase reading and editing, app generation from images or PDFs, debugging, non-interactive execution, and extensions through MCP servers. These are useful building blocks for work where the deliverable is a set of files: a course microsite, an interactive demonstration, a data-cleaning script, or the source behind a video. They are documented capabilities rather than results measured in this review. Generated code still needs the ordinary checks appropriate to the artifact.</p><p>Gemini CLI's distinctive practical advantage is that its client can be inspected and adapted. The code is Apache 2.0 licensed. That does not make the Gemini service, model weights, or training data open, and it does not erase the backend's billing or service terms. A team can study how context and tools are assembled without acquiring a right to reproduce Google's hosted models. For educators, that separation is itself instructive: students can examine an agent's orchestration while treating the model response as a remote dependency.</p><p>The best fit is an existing workflow with a supported account, a reason to retain this client, and modest migration risk. A new consumer workshop should begin from the current Antigravity route instead of republishing a historical Gemini CLI free-tier tutorial. Neither route has been independently compared for coding quality or completion time in this scan. <a href=\"https://github.com/google-gemini/gemini-cli\">Capabilities and license overview</a>.</p>"
+    },
+    {
+      "id": "setup",
+      "title": "Concrete prerequisites for a small pilot",
+      "html": "<p>The installation guide specifies Node.js 20 or newer, an internet connection, and Bash, Zsh, or PowerShell. Its recommended operating systems are macOS 15 or newer, Windows 11 24H2 or newer, and Ubuntu 20.04 or newer. It suggests at least 4 GB RAM for casual use and 16 GB for long sessions or large codebases. These are client recommendations, not a claim that an entire Gemini model runs on a laptop. The backend remains a service, so network and authentication are part of the setup.</p><p>The documented paid API path uses a Gemini API key; the Vertex AI route requires a Google Cloud project with Vertex AI enabled and a selected location. An organization using Code Assist must check its license and project configuration. Keep secrets outside the project and avoid giving a teaching example live production credentials. This is basic setup hygiene for a tool that may inspect files and invoke commands, rather than a new restriction on the project.</p><p>Use a small, disposable repository for the first trial: one page, a known build command, and a clear expected result. Pin the client version used in course material and record the model and authentication route separately. The guide recommends stable releases for most users; preview and nightly channels can contain unvalidated changes. The observed October nightly is maintenance evidence, not the recommended classroom installation. <a href=\"https://www.geminicli.com/docs/get-started/installation\">Installation and release channels</a>.</p>"
+    },
+    {
+      "id": "migration",
+      "title": "What the successor changes in a workflow",
+      "html": "<p>Antigravity CLI is presented as a terminal interface to Antigravity agents. Google's transition announcement describes a shared server-side agent harness, asynchronous work, and retained concepts including skills, hooks, subagents, and extensions renamed as plugins. It explicitly cautions that initial feature parity is incomplete. Therefore, migration should be a short compatibility exercise rather than a blind replacement of one executable name with another.</p><p>The current getting-started guide names the launcher <code>agy</code>. It documents initial terminal preferences and workspace trust, an artifact-review screen for plans and diffs, inspection of tool details, and an interrupt shortcut. The product page describes background subagents and controls for permissions and configuration. These are meaningful for a builder managing several independent tasks, but neither concurrent agents nor a faster client guarantees faster delivery: duplicated investigation and conflicting edits can consume the gain.</p><p>The pricing page currently describes a free individual plan with basic weekly limits, plus Pro, Ultra, and organizational routes. This scan does not establish a numerical allowance or a particular user's model entitlement. Before moving a course or automation, compare required extensions, context files, tool permissions, output parsing, and recovery behavior. Preserve the original workflow until its replacement passes a representative task. This is a proposed migration method, not a claim that configuration files are automatically portable. <a href=\"https://antigravity.google/docs/getting-started?tab=cli\">Setup guide</a>; <a href=\"https://antigravity.google/pricing\">current access tiers</a>.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A lesson built around a reviewable change",
+      "html": "<p>An original educational use case is a debugging lesson where the learning artifact is the student's explanation of a change. Start with a small browser simulation containing a deliberate error: for example, a pendulum whose time step changes when the frame rate changes. Ask the agent to identify the relevant calculation, propose a repair, and describe a falsifiable check. Students predict the effect before reading the proposed diff, then compare two runs at different frame rates. The agent supplies a candidate explanation; the experiment decides whether it is adequate.</p><p>This structure uses documented code inspection and editing without treating generated prose as evidence of learning. Give learners a bounded repository and a known baseline rather than an unrestricted filesystem. For institutions retaining Gemini CLI, the supported account route must be settled before the session. For individual learners, current Antigravity access is the more relevant starting point. Keep the lesson independent of product-specific shortcuts so a later client change does not erase its educational value.</p><p>A successful pilot would produce three reviewable items: the original bug, a minimal patch, and a student-authored explanation tied to observed behavior. Count unexplained changes and failed checks alongside completion time. No student outcomes, accessibility accommodations, or classroom deployment were evaluated in this research. The example is an editorial design proposal, not a vendor demonstration or measured teaching result.</p>"
+    },
+    {
+      "id": "websites",
+      "title": "Use an agent to expose a website's assumptions",
+      "html": "<p>For a website builder, a useful task is to turn a scattered content collection into a source-aware learning site. Supply a few approved lesson files and a simple design system, then request a page map, shared navigation, and explicit references from each claim to its source file. Give a second, independent task the job of checking broken links and missing captions. Parallel work is useful only when ownership is clear: one task can inspect content while another tests navigation, with a single person resolving edits to shared components.</p><p>The acceptance criteria should describe observable behavior: keyboard access to navigation, readable narrow-screen layouts, correct links, and clearly labeled uncertain claims. An agent's ability to write a page does not establish that the page works with assistive technology or that its assertions are accurate. A short manual review of the rendered site remains necessary, particularly for educational material.</p><p>Gemini CLI's repository advertises code editing and multimodal inputs, while Antigravity documents background agents and artifact review. Those capabilities make this workflow plausible, but they do not constitute an end-to-end test of it. Start with a local preview and a handful of pages. Save the content map and verification notes beside the source so the next maintainer can understand why the structure exists, even if the chosen agent or hosted model changes.</p>"
+    },
+    {
+      "id": "automation",
+      "title": "Structured output makes an agent easier to supervise",
+      "html": "<p>Gemini CLI's headless reference documents plain structured output and JSON. A JSON response can contain the final answer, usage statistics, and error details. Streaming JSON emits event types for initialization, messages, tool requests, tool results, errors, and a final result. Exit codes distinguish success, general failure, invalid input, and an exceeded turn limit. This is a more useful foundation for automation than assuming every terminal response is a successful result.</p><p>An original app use case is a nightly documentation checker. Give it a frozen set of public source files and ask it to propose a change list with file locations. A separate deterministic process validates links and the result format; a person accepts the proposed updates. Record the input revision and task outcome so a later run can distinguish a changed source from a changed model answer. Treat missing output, invalid JSON, and a nonzero exit as reviewable failures rather than an empty successful update.</p><p>For video production, the same pattern can prepare a scene inventory from approved scripts: scene identifier, on-screen text, required illustration, citation, and estimated narration length. It can flag terminology inconsistencies or missing assets before an editor begins assembly. Actual voice synthesis, footage generation, timing quality, and rendering depend on other tools and were not tested. The CLI is useful here as a coordinator of files and checks, not evidence that the media itself meets the brief. <a href=\"https://www.geminicli.com/docs/cli/headless\">Headless output and error reference</a>.</p>"
+    },
+    {
+      "id": "boundaries",
+      "title": "Openness, isolation, and a sensible adoption threshold",
+      "html": "<p>The sandbox guide offers process and tool isolation options, including Docker or Podman, macOS Seatbelt, and additional Linux approaches. Container use requires the container runtime to be installed and running. Isolation has configuration-dependent boundaries: the documented default macOS profile restricts writes while permitting broad reads and network access. Calling a session sandboxed is therefore insufficient to establish that all private files or network destinations are inaccessible.</p><p>Inspect the effective permissions for the actual workflow, use ordinary version control, and review proposed changes before applying them to shared material. A documentation agent rarely needs deployment credentials. A lesson-generation task rarely needs access to a student's unrelated files. Service privacy and usage rules also depend on the backend; the Apache license for the client does not settle those questions. <a href=\"https://www.geminicli.com/docs/cli/sandbox\">Sandbox reference</a>; <a href=\"https://www.geminicli.com/docs/resources/tos-privacy\">software and service terms</a>.</p><p>The adoption threshold should be concrete: a supported account, an understood permission boundary, a reproducible small task, and a recovery path when the output is wrong. Gemini CLI remains worth evaluating for organizations and API users who need its inspectable client or established workflows. Antigravity is the documented consumer successor and the recommended destination for Argon. The evidence supports that scoped choice; it does not support declaring the old repository dead, assuming a feature-identical migration, or promising a productivity multiplier.</p>"
+    }
+  ],
+  "useCases": [
+    "Debugging lessons where students defend and test a minimal patch.",
+    "Source-aware course websites with explicit content and verification ownership.",
+    "Documentation-checking apps that validate structured outputs and preserve failures.",
+    "Video preproduction inventories linking scenes, assets and citations."
+  ],
+  "limitations": [
+    "Public documentation and release review only; neither CLI was installed, executed or benchmarked.",
+    "The older Gemini CLI authentication guide conflicts with the later consumer migration notice.",
+    "Account-specific eligibility, regions, numeric quotas and billing were not verified.",
+    "Antigravity migration parity and license/source availability were not established; no open-source claim is made for the successor.",
+    "Repository/model discovery was bounded; first pages and latest-ten release feeds do not establish complete historical coverage."
+  ],
+  "sources": [
+    {
+      "id": "repos-gemini-transition",
+      "title": "Google: transitioning Gemini CLI to Antigravity CLI",
+      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": "2026-05-19",
+      "locator": "Important timeline for Consumers; For enterprise customers",
+      "supports": "Consumer cutoff, continued enterprise/API routes, announced incomplete parity."
+    },
+    {
+      "id": "seed-gemini-cli",
+      "title": "Gemini CLI repository",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "README opening notes; Key Features; Authentication Options; Contributing",
+      "supports": "Current scoped replacement warning, Argon caveat, documented functionality, client license."
+    },
+    {
+      "id": "repos-gemini-auth",
+      "title": "Gemini CLI authentication setup",
+      "url": "https://www.geminicli.com/docs/get-started/authentication",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Choose your authentication method; Use Gemini API key; Use Vertex AI",
+      "supports": "Mechanisms and prerequisites; older consumer recommendations explicitly treated as conflicting."
+    },
+    {
+      "id": "repos-gemini-install",
+      "title": "Gemini CLI installation and releases",
+      "url": "https://www.geminicli.com/docs/get-started/installation",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Recommended system specifications; Releases",
+      "supports": "Client requirements and stable/preview/nightly distinction."
+    },
+    {
+      "id": "repos-antigravity-cli",
+      "title": "Antigravity CLI product page",
+      "url": "https://antigravity.google/product/antigravity-cli",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Subagents; Highly configurable; Slash Commands",
+      "supports": "Documented successor workflow concepts, not measured performance."
+    },
+    {
+      "id": "repos-antigravity-start",
+      "title": "Antigravity getting started — CLI",
+      "url": "https://antigravity.google/docs/getting-started?tab=cli",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Download and install; Start a project; Shortcuts and commands",
+      "supports": "agy launcher, workspace trust, review/interrupt controls."
+    },
+    {
+      "id": "repos-antigravity-pricing",
+      "title": "Antigravity pricing",
+      "url": "https://antigravity.google/pricing",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "For Individuals; Google AI Pro; Google AI Ultra; For Organizations",
+      "supports": "Access categories; no numeric individual quota assumed."
+    },
+    {
+      "id": "repos-gemini-headless",
+      "title": "Gemini CLI headless mode reference",
+      "url": "https://www.geminicli.com/docs/cli/headless",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Output formats; Exit codes",
+      "supports": "JSON/JSONL schema, events and outcome handling."
+    },
+    {
+      "id": "repos-gemini-sandbox",
+      "title": "Gemini CLI sandboxing",
+      "url": "https://www.geminicli.com/docs/cli/sandbox",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "macOS Seatbelt; Container-based; Sandbox expansion",
+      "supports": "Isolation mechanisms and configuration-dependent limits."
+    },
+    {
+      "id": "repos-gemini-terms",
+      "title": "Gemini CLI license, terms and privacy",
+      "url": "https://www.geminicli.com/docs/resources/tos-privacy",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": null,
+      "locator": "Opening paragraphs; Supported authentication methods",
+      "supports": "Client license distinct from backend terms."
+    },
+    {
+      "id": "repos-gemini-nightly-oct20",
+      "title": "Gemini CLI October 20 nightly release",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261020.g76e4d7c04",
+      "accessedAt": "2026-10-20T16:17:07.365079+00:00",
+      "publishedAt": "2026-10-20T01:33:51Z",
+      "locator": "Prerelease badge; What’s Changed",
+      "supports": "Ongoing release activity; explicitly not a stable recommendation."
+    }
+  ],
+  "images": [],
+  "judgment": "Useful as an access and migration decision guide for builders; the important finding is a scoped consumer transition, not a new model capability or the abandonment of an open-source project.",
+  "researchNote": "Resolved the October 18 search-only Gemini CLI lead through the repository and dated Google announcement. May/June migration events are labeled historical; October maintenance evidence is separately dated. The original use cases are editorial proposals. Browser inspection was supplemented by public HTTPS captures and bounded release API responses; no models or advertised commands were run."
+}

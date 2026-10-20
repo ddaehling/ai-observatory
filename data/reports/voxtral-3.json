@@ -1,0 +1,163 @@
+{
+  "id": "voxtral-3",
+  "title": "Voxtral 3 brings voice agents to a coordinated speech stack",
+  "entity": "Mistral AI / Voxtral 3",
+  "category": "Models",
+  "tags": [
+    "voice agents",
+    "speech",
+    "education",
+    "video workflows",
+    "multilingual",
+    "developer tools"
+  ],
+  "summary": "Mistral’s October 20 release combines speech models with a voice-agent SDK. Practical classroom, website and video pilots look promising, while preview status and conflicting launch specifications call for measured adoption.",
+  "changeType": "new",
+  "publishedAt": "2026-10-20",
+  "discoveredAt": "2026-10-20T16:18:00Z",
+  "updatedAt": "2026-10-20T16:18:00Z",
+  "officialUrl": "https://mistral.ai/news/voxtral-3/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "A voice system with an application around it",
+      "html": "<p>Mistral introduced Voxtral 3 on 20 October 2026 as a family of speech models and a voice-agent SDK. The release combines transcription, a separate reasoning model, tool calls and speech generation. Its practical proposition is that a builder can make a spoken interface that also retrieves information or completes an application task, while retaining choices about the models in the pipeline. The dated <a href=\"https://mistral.ai/news/\">publisher listing</a> and <a href=\"https://mistral.ai/news/voxtral-3/\">announcement</a> establish this as a current release.</p>\n<p>That is useful for educational and creative software because a convincing voice is only one part of a working experience. A student must be able to pause, correct a misunderstood word and interrupt an explanation. A production assistant must distinguish a draft instruction from a completed action. A website must show whether the system is listening, working or disconnected. The new SDK supplies documented building blocks for these interactions; it does not establish that a finished application will teach well or act reliably.</p>\n<p>The first adoption decision should therefore be narrow: choose one recurring spoken task and test the complete interaction. The examples below are proposed workflows, not demonstrations we ran. No audio generation, microphone session, API request or benchmark reproduction was performed for this report.</p>"
+    },
+    {
+      "id": "architecture",
+      "title": "Separate models, coordinated conversation",
+      "html": "<p>The <a href=\"https://docs.mistral.ai/studio/audio/voice-agents/overview\">voice-agent guide</a> describes an application that captures and plays audio while Mistral runs transcription, the language model and speech generation. The SDK builds on LiveKit and supplies Python and TypeScript bindings. Transcription converts the speaker’s words and detects the end of a turn; the reasoning model reads the conversation and can request tools; speech generation voices the answer. Users can interrupt the agent while it speaks.</p>\n<p>Tools have two execution locations. Web search, document libraries and workspace connectors run on Mistral’s side; custom client-side functions run in the application. That division changes what a workflow can do on each channel. The documentation explicitly says client-side tools fail on a phone line because the caller is not running the application. A phone deployment needs server-side tools for its actions, and SIP telephony is available to enterprise customers through their account team at launch.</p>\n<p>The guide also separates an agent from a session. An agent is saved, versioned configuration; a session is one live conversation. Sessions normally use the latest version, but a production application can pin a version. This is a useful control for a learning service: a revised tutor instruction or voice can be evaluated before existing classes receive it. Versioning is an operational capability, not proof that the chosen configuration is safe or effective.</p>"
+    },
+    {
+      "id": "capabilities",
+      "title": "Choose the speech component for the job",
+      "html": "<p>Voxtral 3 includes file transcription, realtime transcription and speech synthesis. The <a href=\"https://docs.mistral.ai/studio/audio/specs-and-limits/languages\">language matrix</a> lists 50 languages for both Mini and Small file-transcription models, 45 languages and dialects for the realtime transcription model, and 35 languages with more than 50 dialects for the listed TTS model. These are different coverage sets; support for transcription in a language does not automatically establish equivalent speech synthesis or conversational quality.</p>\n<p>The <a href=\"https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0\">realtime model page</a> marks that model as Public Preview. It documents a configurable streaming delay from 80 to 2,400 milliseconds, end-of-turn detection, vocabulary biasing and speaker diarization in a WebSocket session. The configurable delay should not be presented as an end-to-end response guarantee. It describes one part of a larger interaction.</p>\n<p>For speech output, the <a href=\"https://docs.mistral.ai/studio/audio/text-to-speech/overview\">TTS guide</a> distinguishes a complete script from a live conversation and lists separate offline and realtime model identifiers. Its offline feature table documents preset voices, voice cloning, custom pronunciation, emotion and pace tags, streamed audio and five output formats. Plain-language style instructions are explicitly unavailable at launch. A creator should therefore check the documented controls for the chosen mode instead of assuming every expressive instruction in the announcement is an available API option.</p>"
+    },
+    {
+      "id": "discrepancies",
+      "title": "Launch-day documentation does not fully agree",
+      "html": "<p>Two material conflicts remain visible. The <a href=\"https://mistral.ai/news/voxtral-3/\">announcement</a> lists speech generation at $13 per million characters, while the linked <a href=\"https://docs.mistral.ai/models/voxtral-mini-tts-3-0\">TTS model page</a> displays $16 per million characters. The model page says nine supported languages, while the dedicated language matrix says 35 languages and more than 50 dialects for the same model identifier. The latter agrees more closely with the announcement, but this inspection does not establish which specification an account will actually receive.</p>\n<p>These discrepancies should affect procurement and rollout. Confirm the selected model, applicable endpoint, supported locale and displayed account pricing before committing a budget or promising a language to users. Do not average conflicting prices or silently combine the broadest claims from different pages. The model page also labels TTS as Public Preview, which is relevant when deciding how much production dependence to place on a new speech service.</p>\n<p>The release offers API access and discusses private deployment, with the full private stack routed through Mistral’s sales team. That does not establish a public open-weight download, a permissive model license or a reproducible training recipe. This report found deployment choice, but did not verify open weights or self-service licensing terms for the complete Voxtral 3 stack.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A bounded educational pilot",
+      "html": "<p>A useful first educational application would be an oral practice companion for a teacher-approved reading or science explanation. Give the agent a small reviewed document library and instructions to ask one question, wait for the response and offer a hint before revealing an answer. Show the recognized text alongside the voice so a student can correct a name or technical term. Those behaviors are proposed application design, supported by the documented conversation and retrieval components rather than measured learning results.</p>\n<p>Test whether the student can explain the idea again after the conversation. A fluent exchange alone is a weak success measure: it can hide transcription mistakes, unnecessary hints or answers supplied before the learner has reasoned. Include hesitant speech and long thinking pauses when evaluating turn detection. The <a href=\"https://docs.mistral.ai/studio/audio/concepts/latency\">latency guide</a> explains that shortening the silence threshold makes replies faster but increases the chance of cutting a speaker off.</p>\n<p>Teacher review should compare the actual transcript, cited source and spoken answer. Separate content errors from recognition errors: the remedies differ. A mistaken term may need a vocabulary hint; an invented explanation needs a change to grounding or task design. Keep a text route available when microphones, accents, noise or accessibility requirements make voice unsuitable. These are evaluation and interface recommendations, not claims that Voxtral has already improved classroom outcomes.</p>"
+    },
+    {
+      "id": "websites",
+      "title": "A website that speaks and shows its work",
+      "html": "<p>For a museum, course portal or documentation website, a bounded guide could answer questions from a maintained collection and open the relevant page. The <a href=\"https://docs.mistral.ai/studio/audio/voice-agents/overview\">browser integration path</a> calls for a server-created session so the API key never reaches browser code. The browser then connects using the credentials returned for the session. The product still needs its own controls for microphone permission, connection status and leaving the conversation.</p>\n<p>Session events expose transcripts, state changes, tool calls and disconnection information. Use those events to provide visible feedback: show the question the system heard, the source being consulted and the result of a navigation or lookup. A spoken acknowledgment should not be rendered as a completed transaction. For an appointment or account action, the application should validate the request and show the actual system result before the agent announces success.</p>\n<p>The same approach is useful for hands-free assistance inside a creative app. Start with reversible operations such as finding a project asset or drafting a shot description. Add consequential actions only after the application has clear permission and confirmation behavior. The SDK connects tools; the application defines what those tools are allowed to do.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Recorded lessons and video production",
+      "html": "<p>The batch components are relevant even without a conversational agent. A video team could transcribe a recorded interview, review speaker labels and technical terms, then use the corrected transcript to draft captions and a narration script. That workflow should preserve a link to the original recording: diarization and vocabulary biasing are useful aids, but neither makes the transcript an authoritative record without checking.</p>\n<p>For a narrated lesson, begin with complete, approved text. The TTS guide documents streaming an offline response so playback can begin before the whole file is ready; that is distinct from feeding an evolving conversation through a realtime model. Custom pronunciation is especially relevant to product names and scientific terminology. Evaluate the resulting audio for numbers, acronyms, pacing and emphasis rather than assuming the requested tags were followed.</p>\n<p>Localization needs separate reviews of the translation, pronunciation and cultural register. The model’s language list alone cannot establish suitability for a particular audience. If using a cloned voice, obtain the speaker’s permission and agree on the intended reuse. A preset voice is the simpler initial pilot when a distinctive speaker identity is unnecessary. None of these proposed creative workflows was rendered or listened to during this research.</p>"
+    },
+    {
+      "id": "cost-latency",
+      "title": "Budget and responsiveness need complete measurements",
+      "html": "<p>The announcement lists Mini file transcription at $0.0035 per minute, Small at $0.0040 and realtime Mini at $0.0080; the realtime model page agrees on its rate. At those published transcription rates, 100 hours would cost $21, $24 or $48 respectively. This arithmetic excludes reasoning tokens, generated speech, tool services, network infrastructure and any other applicable charges. A complete voice agent cannot be budgeted from a transcription price alone.</p>\n<p>Mistral’s launch copy claims sub-second turns. Its technical latency guide explains why real applications need their own measurements: turn detection, transcription, reasoning, tools, speech generation and playback all contribute. A tool call may dominate the wait. A filler sound can make a conversation feel responsive without making the useful answer arrive sooner.</p>\n<p>Measure both the first sound and the first useful answer. Record typical and slow-case delays over repeated calls, with the actual region, microphones and network conditions. Compare accuracy and interruption behavior when reducing streaming delay. This is a more actionable test than quoting a single model latency number as the expected experience for every learner or caller.</p>"
+    },
+    {
+      "id": "pilot-checks",
+      "title": "Make the pilot expose its failures",
+      "html": "<p>Build a small evaluation set around the actual task before selecting a preferred voice. For an oral tutor, include an incomplete answer, an incorrect answer, a long pause and a request to repeat the question. For a site guide, include an ambiguous page name, a question outside the document collection and a disconnected retrieval service. For a creative assistant, include a correction halfway through an asset name and an instruction that the user changes before the tool finishes. These examples make different failure types observable.</p>\n<p>Review recognition, factual support and action completion separately. A correct transcript followed by the wrong page is a retrieval or reasoning problem. A correct tool request followed by a failed service must remain a failed action in the spoken response. An excellent narration with a mispronounced identifier is still unsuitable for publication until corrected. The documented transcripts, session events and version controls provide places to collect this evidence, but the builder must define the acceptance criteria.</p>\n<p>Repeat the same recordings and interactions after a configuration change. Keep the model version, language, tool data and test conditions recorded so an apparent improvement can be investigated. This proposed evaluation process does not require assuming that launch benchmarks transfer to a classroom, production studio or public website.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "What would justify adoption",
+      "html": "<p>Voxtral 3 merits a focused trial because its documentation reaches beyond a voice demo into sessions, tool execution, versioning and browser integration. That can reduce the work required to assemble an interactive spoken product. The strongest immediate use cases are bounded ones with a maintained source collection, visible transcripts and outcomes that can be checked.</p>\n<p>Its limits are equally concrete. The reviewed model pages are previews; phone access has an enterprise condition; source claims about price and language coverage conflict; private deployment details require further discussion; and performance comparisons in the announcement remain vendor-reported. No independent evaluation here establishes a best-in-class model or a dependable sub-second application.</p>\n<p>A sensible acceptance test asks whether the system recognizes the intended audience, waits through natural pauses, retrieves the right evidence, survives an interruption and reports a failed tool honestly. Only after that should the pilot expand across languages, channels or irreversible actions. The release is significant as a coordinated voice-building toolkit; its value in a particular educational or creative product still has to be demonstrated in that product.</p>"
+    }
+  ],
+  "useCases": [
+    "A teacher-reviewed oral practice companion with visible transcripts",
+    "A spoken guide for a course or documentation website",
+    "Transcription and narration preparation for educational videos",
+    "Hands-free asset lookup and reversible actions in a creative app"
+  ],
+  "limitations": [
+    "No API execution, listening test, model benchmark or classroom trial was performed.",
+    "Realtime transcription and the inspected TTS model are marked Public Preview.",
+    "The announcement and TTS model page disagree on price and language coverage; confirm model-specific terms before deployment.",
+    "Telephony is available to enterprise customers at launch; client-side tools do not run on phone lines.",
+    "No public open-weight release or permissive license for the complete stack was verified.",
+    "Vendor latency and accuracy claims are not independent performance evidence."
+  ],
+  "sources": [
+    {
+      "id": "voxtral3-release",
+      "title": "Voxtral 3",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "publishedAt": "2026-10-20",
+      "locator": "Highlights; transcription; voice agent; Get started",
+      "supports": "Release, architecture, vendor feature/performance claims, listed prices and deployment options",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-realtime",
+      "title": "Voxtral Mini Transcribe Realtime 3",
+      "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+      "publishedAt": "2026-10-20",
+      "locator": "Model overview, Public Preview, price",
+      "supports": "Preview status, configurable delay, WebSocket capabilities and realtime price",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-tts",
+      "title": "Voxtral TTS 3",
+      "url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+      "publishedAt": "2026-10-20",
+      "locator": "Model overview, Public Preview, price",
+      "supports": "Preview status and conflicting nine-language/$16 specifications",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-agents",
+      "title": "Voice agents",
+      "url": "https://docs.mistral.ai/studio/audio/voice-agents/overview",
+      "publishedAt": null,
+      "locator": "How it works; Agents and sessions; Choose your path; Tools",
+      "supports": "SDK, runtime separation, versioning, session lifecycle, browser keys and enterprise telephony",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-tts-guide",
+      "title": "Text to Speech",
+      "url": "https://docs.mistral.ai/studio/audio/text-to-speech/overview",
+      "publishedAt": null,
+      "locator": "Choose your mode; Choose your model; Features by mode",
+      "supports": "Mode distinctions, supported controls, output formats, style instructions unavailable at launch",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-languages",
+      "title": "Languages",
+      "url": "https://docs.mistral.ai/studio/audio/specs-and-limits/languages",
+      "publishedAt": null,
+      "locator": "Supported languages by model",
+      "supports": "Separate language coverage by model and conflict with TTS model page",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "voxtral3-latency",
+      "title": "Latency",
+      "url": "https://docs.mistral.ai/studio/audio/concepts/latency",
+      "publishedAt": null,
+      "locator": "Model latency and end-to-end latency; Voice agents; Measure from your application",
+      "supports": "Latency definitions, sequential stage costs, fillers, measurement and quality tradeoffs",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    },
+    {
+      "id": "seed-mistral-ai",
+      "title": "Mistral AI news",
+      "url": "https://mistral.ai/news/",
+      "publishedAt": null,
+      "locator": "Voxtral 3 listing dated October 20, 2026",
+      "supports": "Publication date and publisher discovery",
+      "accessedAt": "2026-10-20T16:18:00Z"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded educational or creative pilot where transcripts, tool outcomes and source material can be checked; do not make production price, language or latency promises until the conflicting specifications and real application behavior are verified.",
+  "researchNote": "Official-source Webcrawl on 20 October 2026. Task-owned Chrome visits verified the release and seven supporting documentation/listing pages; public HTML and complete relevant main sections were archived in the ignored run folder. Reported benchmarks remain vendor claims. Proposed workflows and acceptance criteria are editorial analysis. No account was created, no key was requested, and no model or voice generation was executed. The source date was established by the publisher listing and dated model pages. Documentation discrepancies are retained rather than resolved by inference."
+}

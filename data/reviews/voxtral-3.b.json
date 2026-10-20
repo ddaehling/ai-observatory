@@ -1,0 +1,31 @@
+{
+  "reportId": "voxtral-3",
+  "reviewerId": "/root/edition_20261020_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:29:53Z",
+  "reportHash": "9156a06770243e13cfa9e92ba968ddce24b016730bf2cfa7c5821ab78708dac8",
+  "evidenceHash": "f26ee7d2bf6068d4843d98e8f0bf45a99a2d66e2a158be73b7bbe0e2fcc28a26",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented SDK connects transcription, reasoning, tools and speech, with browser session credentials, interruption handling and version pinning. This supports several concrete teaching, website and media pilots. The report makes those proposals actionable without presenting them as executed demonstrations.",
+    "impact": "Coordinating speech components and application lifecycle can meaningfully reduce integration work for voice products. This is a substantial domain release, but vendor comparisons and preview documentation do not establish a field-wide performance advance.",
+    "novelty": "The coordinated stack and broad documented multilingual coverage are useful differentiation. Cascaded voice agents, transcription and TTS are established approaches; the supplied evidence does not justify an exceptional novelty rating.",
+    "maturity": "Detailed guides describe sessions, tool execution and latency tradeoffs, but both inspected model pages say Public Preview. Conflicting TTS pricing and language counts, enterprise-only launch telephony and lack of an executed pilot materially limit readiness confidence.",
+    "openness": "Documented APIs and a private-deployment option provide integration choices. Public weights, a permissive model license and a reproducible training release were not verified; private deployment is routed through sales rather than demonstrated self-service portability."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking: TTS price and language-coverage conflicts remain unresolved in the primary sources; the report explicitly preserves them.",
+    "Nonblocking: No independent audio, latency or classroom evaluation supports the vendor performance claims."
+  ]
+}

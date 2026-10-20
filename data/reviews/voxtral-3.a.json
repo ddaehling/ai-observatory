@@ -1,0 +1,32 @@
+{
+  "reportId": "voxtral-3",
+  "reviewerId": "/root/edition_20261020_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:27:46Z",
+  "reportHash": "9156a06770243e13cfa9e92ba968ddce24b016730bf2cfa7c5821ab78708dac8",
+  "evidenceHash": "f26ee7d2bf6068d4843d98e8f0bf45a99a2d66e2a158be73b7bbe0e2fcc28a26",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The primary voice-agent guide documents browser sessions, versioned agents, interruption, tools and transcripts, making the proposed oral-practice, website-guide and video-preparation pilots actionable. The report supplies task-specific checks and clearly labels these as proposals rather than measured educational benefits.",
+    "impact": "Coordinating multilingual transcription, reasoning, speech and tool execution can materially lower the integration burden for spoken applications. The evidence supports a significant speech-platform release, but neither independent performance validation nor a field-wide methodological advance is established.",
+    "novelty": "The useful differentiation is the coordinated SDK, model-specific language coverage and integrated turn/tool handling. Separate speech and reasoning components and familiar agent functions do not by themselves establish an unprecedented capability, so novelty remains moderate.",
+    "maturity": "Detailed integration and session documentation supports a real pilot. Both inspected model pages say Public Preview, the TTS price and language specifications conflict, and phone access has an enterprise condition. No end-to-end reliability or listening evaluation was performed.",
+    "openness": "The sources support API access and sales-mediated private deployment, but no public weights, permissive complete-stack license or reproducible training package was verified. Deployment choice improves control without establishing broad inspectability or portability."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The $13 versus $16 TTS price and 35 versus nine-language specifications remain unresolved; the report correctly preserves both and does not promise account-specific availability.",
+    "Vendor sub-second and quality claims remain unreplicated. Configurable transcription delay is correctly separated from complete response latency.",
+    "The documented application controls support the proposed use cases, but no student outcome, production service or narrated artifact was tested."
+  ]
+}

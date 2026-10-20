@@ -1,0 +1,190 @@
+{
+  "id": "flux3-image-klein",
+  "title": "FLUX 3 Image Klein brings local image editing into a more controllable workflow",
+  "entity": "Black Forest Labs / FLUX 3 Image Klein",
+  "category": "Models",
+  "tags": [
+    "Image generation",
+    "Image editing",
+    "Open weights",
+    "ComfyUI",
+    "Education",
+    "Creative workflows"
+  ],
+  "summary": "Klein combines downloadable image generation and editing weights with layout controls and a small hosted entry cost. Its practical value depends on prompt expansion, deployment-specific memory needs and a conditional commercial license.",
+  "changeType": "new",
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-10-20T16:19:06.712234Z",
+  "updatedAt": "2026-10-20T16:19:06.712234Z",
+  "officialUrl": "https://bfl.ai/blog/flux-3-image-klein",
+  "sections": [
+    {
+      "id": "release",
+      "title": "An image release with a practical local path",
+      "html": "<p>Black Forest Labs released FLUX 3 Image Klein on October 15, 2026. It combines image generation, editing and composition from up to ten reference images, with base weights for adaptation and a distilled checkpoint for faster inference. Native output reaches 4K. This is a new release, not merely a newly discovered older tool. The interesting change for creative builders is the combination of a compact image generator, explicit layout controls and several deployment choices. It makes a controlled asset pipeline worth evaluating even for teams that cannot operate a large image model. <a href=\"https://bfl.ai/blog/flux-3-image-klein\">Release announcement</a>.</p><p>The strongest immediate use is repeated visual work: illustrations for lessons, product imagery for websites, and stills for video planning. The release does not establish that a model can replace art direction or subject knowledge. Its value depends on how often a team can obtain an acceptable image, preserve the parts that matter and reproduce the process later.</p>"
+    },
+    {
+      "id": "composition",
+      "title": "Describe the picture and its layout",
+      "html": "<p>The product offers generation and editing within one model, including bounding boxes for placing elements and regional instructions. A reference can supply a character, object or appearance, while a layout specifies where important content belongs. This is useful for designing an image around a heading or reserving room for captions. The model remains an image generator; these controls do not turn its output into editable vector artwork or a functioning website. <a href=\"https://bfl.ai/models/flux-3-image-klein\">Model capabilities</a>.</p><p>An important qualification appears in the model card: boxes guide placement and scale rather than imposing a hard pixel mask. Objects may cross their requested boundaries, small objects may disappear, and edits can affect other regions. The BFL API announcement separately describes pixel restoration for preserving unedited areas. Those are different layers of the system. A local checkpoint should not inherit every hosted editing guarantee simply because it has the same family name. <a href=\"https://huggingface.co/black-forest-labs/flux-3-image-klein\">Model-card limitations</a>; <a href=\"https://bfl.ai/blog/flux-3-image-klein\">Hosted pixel restoration</a>.</p>"
+    },
+    {
+      "id": "checkpoints",
+      "title": "Choose the checkpoint for the job",
+      "html": "<p>The distilled checkpoint targets generation and editing with a documented 16-step configuration. The undistilled base checkpoint targets research, fine-tuning and LoRA training, with a 50-step configuration in the model card. The 5.6-billion parameter figure describes the image transformer. Its Qwen3-VL-4B-Instruct text encoder is separate, as are the image autoencoder and prompt expansion component. Downloading a transformer file therefore does not deliver a complete application or describe the total memory requirement. <a href=\"https://huggingface.co/black-forest-labs/flux-3-image-klein-base\">Base model and component inventory</a>.</p><p>BFL documents training a LoRA on Base and loading it into Distilled without conversion. That creates a potentially useful separation between adaptation and everyday rendering. The published example uses twenty public-domain paintings; it is a worked example, not evidence that every brand or character can be learned from twenty images. An educator or studio should begin with references and only consider training when a recurring visual requirement survives ordinary prompting. <a href=\"https://docs.bfl.ml/flux_3/flux3_image_klein\">Training and LoRA guidance</a>.</p>"
+    },
+    {
+      "id": "prompting",
+      "title": "The prompt expansion stage matters",
+      "html": "<p>Klein expects a detailed description of the finished scene. The official prompt upsampler turns a short request and any reference images into that description. BFL's reference interface runs it by default, while the documented Diffusers path requires an explicit separate call. An alternative language model can write the caption using the published system prompts. Treating a one-line edit as the complete image prompt can produce generic results or reframe the scene. <a href=\"https://docs.bfl.ml/flux_3/flux3_image_klein\">Prompt upsampling</a>; <a href=\"https://huggingface.co/black-forest-labs/flux-3-image-klein\">Prompting guidance</a>.</p><p>For a repeatable workflow, keep the original request and expanded caption together. Read the expansion before approving a production run: it can introduce assumptions about setting, appearance or lighting that were absent from the brief. This also makes revisions easier to diagnose. If a character changes between frames, compare the actual captions and reference order before attributing everything to random sampling. Prompt expansion is an additional creative decision that deserves visibility.</p>"
+    },
+    {
+      "id": "local",
+      "title": "Local deployment has distinct requirements",
+      "html": "<p>ComfyUI's maintained guide specifies version 0.41.0 or later, with support also described in the 0.41.1 backport. Its templates cover text-to-image and image editing for both checkpoints. They load INT8 builds, a text encoder, a prompt upsampler and the FLUX.2 VAE. The downloaded weights require the Hugging Face license gate. Local execution then uses the user's hardware without an API key or per-image service credits. Hosted Comfy Cloud remains a separate paid service. <a href=\"https://docs.comfy.org/tutorials/flux/flux-3-klein\">ComfyUI setup and templates</a>.</p><p>The vendor's eight-gigabyte GPU route is specifically the INT8 ComfyUI path. The reference Python repository has no INT8 implementation and reports substantially different memory use: its distilled BF16 run reaches 31 GB at 1024×1024 without the prompt upsampler. Its installation was tested on a B200; NVFP4 requires Blackwell hardware. A small transformer does not imply a small complete stack on every runtime. <a href=\"https://github.com/black-forest-labs/flux-3-image-klein\">Hardware and memory notes</a>.</p>"
+    },
+    {
+      "id": "hardware",
+      "title": "Measure the entire workflow",
+      "html": "<p>The distilled model card reports 26 GB peak memory for its FP8 reference configuration and 25 GB for NVFP4, again without prompt expansion; the upsampler can add about 28 GB on an 80 GB GPU. Those figures and an optimized eight-gigabyte ComfyUI route describe different execution arrangements. They are not interchangeable minimum requirements. <a href=\"https://huggingface.co/black-forest-labs/flux-3-image-klein\">Hardware section</a>.</p><p>BFL also publishes favorable internal quality comparisons and NVIDIA-measured GPU timings. The release states that its GPU generation measurements exclude the additional work included in API latency. These are vendor measurements, not this observatory's experiments. For a useful pilot, record startup, expansion, rendering, transfer and manual correction separately, then measure accepted outputs per hour. A fast rejected image does little for a lesson deadline or production schedule. <a href=\"https://bfl.ai/blog/flux-3-image-klein\">Evaluation and timing methodology</a>.</p>"
+    },
+    {
+      "id": "license",
+      "title": "Open weights with conditional commercial rights",
+      "html": "<p>The weights use FLUX Kommunity License v1.0. Its qualifying-user definition requires gross annualized revenue below US$5 million, including affiliates. Its commercial exception concerns generating and using outputs, with conditions; it is not blanket permission for commercial fine-tuning, model distribution or every production use. The license restricts using the model or its outputs to improve another model performing a similar function. It also requires filtering or output review and applicable AI disclosures. <a href=\"https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md\">Definitions, license grant and restrictions</a>.</p><p>The reference inference repository carries Apache 2.0, which does not replace the weights' terms. This distinction matters for an app builder: readable integration code and downloadable weights offer meaningful inspectability, while the deployment and adaptation rights remain conditional. BFL lists separate self-hosted plans that include fine-tuning and LoRA rights. Teams should match the actual activity and organizational eligibility to the relevant terms before committing to a commercial training workflow. <a href=\"https://github.com/black-forest-labs/flux-3-image-klein\">Code license</a>; <a href=\"https://bfl.ai/pricing\">Self-hosted licensing options</a>.</p>"
+    },
+    {
+      "id": "api",
+      "title": "A small hosted pilot is easier to budget",
+      "html": "<p>At inspection on October 20, BFL lists Klein API prices of $0.009 for a 1K image, $0.014 for 2K and $0.036 for 4K. The tiers represent approximate pixel area, so 4K means roughly sixteen megapixels rather than one fixed frame shape. Text-to-image and editing use the same rates, with reference images included up to the documented limit. The page says rejected requests, failed generations and moderated outputs are not charged. <a href=\"https://bfl.ai/pricing\">Current pricing and billing notes</a>.</p><p>The endpoint requires an API key and returns an asynchronous job identifier and polling URL. It accepts one to ten references; the first is the edited image and supplies the default output size. Builders can set explicit dimensions or resolution and aspect ratio, retain a seed and request PNG instead of default JPEG. These controls make a review queue possible, but they do not verify image accuracy. <a href=\"https://docs.bfl.ai/api-reference/utility/generate-an-image-with-flux-3-klein\">Request and response contract</a>.</p><p>For example, one hundred 1K generations cost $0.90 at the listed rate before other workflow costs. Budget for several attempts per accepted asset and include review time. A sensible first comparison uses the same small brief across hosted and local routes instead of assuming a local GPU becomes economical immediately.</p>"
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching: build a reviewed illustration set",
+      "html": "<p>Consider a lesson about a village adapting to winter. Prepare a written fact sheet and an approved scene containing a river, bridge, houses and a school. Ask for three seasonal variants while retaining the viewpoint and landmark positions. Use references and layout controls to specify the composition, then compare each result against the original. Check water, snow, transport and building details with the lesson's factual goals in mind.</p><p>Keep labels, dates and explanatory arrows in presentation software or HTML so the teacher can edit them reliably. Ask students to identify which visual choices are observations, which are artistic inventions and which need a source. The useful outcome is a consistent set of reviewed illustrations with a visible revision history, not an automatically authoritative diagram.</p><p>A practical pilot could contain six scenes, two revisions per scene and a checklist covering landmark consistency, factual mistakes, readability and unwanted changes. Save rejected examples as well as accepted ones. That small collection can reveal whether the model reduces preparation time or simply moves effort from drawing into correction. This is a proposed workflow, not a classroom result measured in this research.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "Apps and websites: keep assets separate from behavior",
+      "html": "<p>For a museum website, start with one approved object photograph and generate alternative backgrounds that fit the page's composition. Reserve clear space for an HTML heading and provide a plain fallback image. Review the object silhouette, material, markings and scale before using any variant. Generated decoration should never silently replace the evidence photograph that visitors rely on.</p><p>An application could expose a limited set of approved transformations, such as season, backdrop and framing, while preserving the original and placing every new result in a review queue. Store the source references, expanded prompt, model version and chosen image beside the task. Show an honest pending state while the asynchronous request runs, and avoid automatic regeneration on every small interface change.</p><p>These are design recommendations derived from the documented controls, not a tested integration. They focus the model on asset preparation. Layout, text, keyboard access and interactive behavior still need conventional implementation and testing. A site should remain usable when generation fails or when a reviewer decides that the original image communicates the subject better.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Video: useful stills before motion",
+      "html": "<p>Klein can help prepare storyboards and reference frames for a video workflow. For a short educational film, define the narrator's visual world, approve one character sheet and create a handful of key compositions. Review clothing, object placement and camera direction across the stills before sending selected frames into a separate video tool. A consistent starting frame can make later production decisions easier to communicate.</p><p>Do not infer temporal consistency from a good collection of still images. Klein's documented output is an image, and any motion model introduces another set of behavior and licensing questions. Track which tool produced each stage. If a storyboard only needs to communicate staging, a rough approved drawing may be more useful than repeated photorealistic generations. Reserve high-resolution rendering for frames whose composition is already settled.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "What would justify adopting it",
+      "html": "<p>The meaningful advance is the accessible combination of generation, reference editing, layout guidance and downloadable checkpoints. It gives a creative builder room to compare hosted convenience with local control and to inspect more of the production process. The maturity signal is the presence of model cards, reference code, API contracts and maintained workflow instructions. Those documents also reveal differences between implementations that a launch headline obscures.</p><p>Adoption should depend on a short acceptance test using real work: preservation outside edits, reference fidelity, typography errors, memory peaks, full-request latency and the cost of accepted images. Keep resolution, checkpoint, quantization and prompt expansion settings in the record. Favor a route only when its repeatability and maintenance burden fit the project.</p><p>This report is based on public primary documentation and read-only browser inspection. No models were downloaded, installed or run, and no paid generations were created. Vendor examples were visually inspected as demonstrations, not treated as independent quality evidence. Hardware performance, classroom benefits and production reliability remain untested here.</p>"
+    }
+  ],
+  "useCases": [
+    "Build reviewed illustrations for a lesson with consistent scene composition.",
+    "Prepare website image variants while keeping factual source photographs and editable HTML text separate.",
+    "Create storyboard and reference stills before moving into a separate video tool.",
+    "Evaluate a local asset pipeline against a small, metered API pilot."
+  ],
+  "limitations": [
+    "No generation, installation, GPU benchmark or live classroom test was performed.",
+    "Bounding boxes in the checkpoint guide composition; they are not hard masks, and local edits may alter unrelated regions.",
+    "The 5.6B figure excludes the text encoder and prompt upsampler; memory requirements depend strongly on runtime and quantization.",
+    "Weights use a conditional FLUX Kommunity license rather than unrestricted commercial open-source terms.",
+    "Vendor quality rankings and speed claims remain vendor evidence."
+  ],
+  "sources": [
+    {
+      "id": "creative-flux3-announcement",
+      "title": "FLUX 3 Image Klein release",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": "2026-10-15",
+      "locator": "Opening; Leading open weights quality; Get started; License",
+      "supports": "Release date, capabilities and qualified vendor measurements"
+    },
+    {
+      "id": "creative-flux3-product",
+      "title": "FLUX 3 Image Klein product page",
+      "url": "https://bfl.ai/models/flux-3-image-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Compose images; One model; Commercial weights",
+      "supports": "Current product scope and layout/editing presentation"
+    },
+    {
+      "id": "creative-flux3-card",
+      "title": "FLUX 3 Image Klein distilled model card",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Prompting; Limitations; Hardware; License",
+      "supports": "Prompt prerequisites, editing limitations and runtime memory"
+    },
+    {
+      "id": "creative-flux3-base-card",
+      "title": "FLUX 3 Image Klein Base model card",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-base",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Opening; Checkpoint table; Fine-tuning",
+      "supports": "Component scope and base-versus-distilled purpose"
+    },
+    {
+      "id": "creative-flux3-license",
+      "title": "FLUX Kommunity License v1.0",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Sections 1.e, 2.a–e, 3 and 4",
+      "supports": "Conditional commercial-output grant and restrictions"
+    },
+    {
+      "id": "creative-flux3-repo",
+      "title": "FLUX 3 Image Klein reference implementation",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Which model; Local installation; Memory; License",
+      "supports": "Code license, deployment routes and hardware caveats"
+    },
+    {
+      "id": "creative-flux3-overview",
+      "title": "BFL Klein documentation",
+      "url": "https://docs.bfl.ml/flux_3/flux3_image_klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Specs; Prompt upsampling; Train a LoRA; Run a LoRA on Klein Distilled",
+      "supports": "Prompt workflow and documented adaptation path"
+    },
+    {
+      "id": "creative-flux3-comfy-docs",
+      "title": "FLUX 3 Image Klein in ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/flux/flux-3-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "About; Workflows; Model Downloads",
+      "supports": "Version requirement, components and local workflow settings"
+    },
+    {
+      "id": "creative-flux3-api",
+      "title": "Generate an image with FLUX 3 Klein",
+      "url": "https://docs.bfl.ai/api-reference/utility/generate-an-image-with-flux-3-klein",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "Authorizations; Body; Response",
+      "supports": "API prerequisites, inputs, defaults and asynchronous results"
+    },
+    {
+      "id": "creative-flux3-pricing",
+      "title": "BFL pricing",
+      "url": "https://bfl.ai/pricing",
+      "accessedAt": "2026-10-20T16:19:06.712234Z",
+      "publishedAt": null,
+      "locator": "FLUX 3 Image table and footnotes; Open Weights Licensing",
+      "supports": "Current prices and separate self-hosted licenses"
+    }
+  ],
+  "images": [],
+  "judgment": "A meaningful creative-model release for builders who want explicit composition controls and deployment choice. Strong documentation supports a practical pilot, but conditional licensing, prompt-expansion overhead and unverified real-world reliability limit any broader claim.",
+  "researchNote": "Researched on October 20, 2026 using task-owned Chrome tabs and official BFL, Hugging Face and ComfyUI pages. Complete relevant text snapshots, hashes and one inspected vendor-page screenshot are retained in this run's ignored creative/raw folder. This is documentary research; examples and proposed workflows are explicitly separated from measurements. Existing six published reports were not edited."
+}

@@ -1,0 +1,81 @@
+{
+  "reviewerId": "/root/edition_20261020_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:29:53Z",
+  "runId": "scan-20261020T160557Z-63b483",
+  "scope": "Independent bounded semantic sample of one included research report and two excluded candidates; not an exhaustive accounting audit. No other reviewer outputs were consulted.",
+  "findings": [
+    {
+      "itemId": "studentsim",
+      "recordedDecision": "included",
+      "assessment": "supported_with_limits",
+      "confidence": "high",
+      "evidence": [
+        {
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim.pdf",
+          "locator": "Sections 3 and 6; Tables 2–4 and 26; Appendices F.1, F.2 and F.5",
+          "captureSha256": "b8908f91ad55433f058b41f03a5c3b86482bbdfffb683bfcdfa26a4d3570408b"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+          "locator": "October 12 article, research scope"
+        },
+        {
+          "url": "https://github.com/microsoft/StudentSim",
+          "locator": "README data preparation"
+        },
+        {
+          "url": "https://github.com/microsoft/StudentSim/blob/main/TRANSPARENCY.md",
+          "locator": "Data redistribution and scope"
+        }
+      ],
+      "finding": "The accepted report is supported by substantive primary research, code and method documentation. Numerical comparisons match the paper. Inclusion is justified as research with practical evaluation-tool applications, not as established classroom benefit. The report accurately separates recorded-response fidelity from canonical-correction responsiveness, identifies pooled Stage-1 use and extra reward heads, and retains the README/transparency data conflict.",
+      "requiredAction": "none",
+      "limitations": [
+        "No model execution, data audit or independent learner study.",
+        "The September preprint and October blog are different publication events; baseline framing is appropriate."
+      ]
+    },
+    {
+      "itemId": "candidate-833e9419a34f8836",
+      "recordedDecision": "excluded",
+      "assessment": "supported_with_limits",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "url": "https://openai.com/form/codex-originals",
+          "locator": "Saved feed candidate title and URL; corresponding source metadata remains unverified",
+          "observedTitle": "Are you a Codex Original?",
+          "publishedAt": "2026-09-28T00:00:00Z"
+        }
+      ],
+      "finding": "The title and form URL support classifying the available lead as a participation solicitation, with no concrete release or workflow change established by the inspected metadata. The decision explicitly discloses that the body was not inspected, and the source record does not claim successful article access. This is a defensible metadata-level exclusion, not proof about everything the destination page contains.",
+      "requiredAction": "none",
+      "limitations": [
+        "Destination body was not inspected in this independent sample.",
+        "Reconsider if later evidence identifies a substantive technical release or workflow change."
+      ]
+    },
+    {
+      "itemId": "repos-release-hugging-face-transformers-v5-20-2",
+      "recordedDecision": "excluded",
+      "assessment": "supported_with_limits",
+      "confidence": "high",
+      "evidence": [
+        {
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
+          "locator": "Public release body and four listed commits",
+          "publishedAt": "2026-10-19T17:45:37Z",
+          "captureSha256": "a8342706c9aee9a432c84ee8f99d027c7e3af19b3895eebd54889777476d9c7d"
+        }
+      ],
+      "finding": "The saved public release is a stable patch addressing generation input-type preservation for multimodal models, zero expert gradients in a specific bfloat16 parallelism configuration, VLM modality declarations and an eager-mask host-to-device copy. The recorded explanation that this is scoped maintenance is accurate enough to support exclusion from a new general evaluation. The fixes can matter to affected users; preserving existing review hashes is an operational consequence rather than the editorial reason for exclusion.",
+      "requiredAction": "none",
+      "limitations": [
+        "Underlying commits and issue severity were not independently reproduced.",
+        "This sample does not establish whether every downstream application should upgrade."
+      ]
+    }
+  ]
+}

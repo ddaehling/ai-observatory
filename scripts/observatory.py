@@ -882,6 +882,9 @@ def find_run(root, run_id):
 
 
 def record_source(root, args):
+    partial = getattr(args, "partial", False)
+    if partial and args.status != "success":
+        raise ValueError("--partial requires --status success")
     runs, run = find_run(root, args.run_id)
     if run.get("status") == "complete":
         raise ValueError("Completed runs are immutable; create a new scan")
@@ -894,13 +897,16 @@ def record_source(root, args):
     if result is None:
         result = {"sourceId": args.source_id}
         run["sourceResults"].append(result)
-    result.update(status=args.status, checkedAt=timestamp(), note=args.note)
+    result.update(status=args.status, checkedAt=timestamp(), note=args.note, coverageComplete=args.status == "success" and not partial)
     source["lastCheckedAt"] = result["checkedAt"]
     if args.status == "success":
         source["lastSuccessAt"] = result["checkedAt"]
-        source["lastCoverageAt"] = run["windowEnd"]
+        if not partial:
+            source["lastCoverageAt"] = run["windowEnd"]
         source["status"] = "active"
-    else:
+    if partial:
+        run.setdefault("limitations", []).append(args.source_id + ": Partial coverage at " + result["checkedAt"] + "; outstanding history was not fully checked at this visit. " + args.note)
+    elif args.status == "failed":
         run.setdefault("limitations", []).append(args.source_id + ": " + args.note)
     run["sourcesChecked"] = sum(item["status"] == "success" for item in run["sourceResults"])
     run["sourcesFailed"] = sum(item["status"] == "failed" for item in run["sourceResults"])
@@ -1001,6 +1007,7 @@ def main(argv=None):
     recording.add_argument("--run-id", required=True)
     recording.add_argument("--source-id", required=True)
     recording.add_argument("--status", choices=["success", "failed"], required=True)
+    recording.add_argument("--partial", action="store_true", help="With success, record accessible but incomplete history without advancing lastCoverageAt")
     recording.add_argument("--note", required=True)
     completion = commands.add_parser("complete-run")
     completion.add_argument("--run-id", required=True)

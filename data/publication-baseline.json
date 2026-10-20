@@ -3,10 +3,15 @@
   "approvedReportIds": [
     "comfyui",
     "fish-audio",
+    "flux3-image-klein",
+    "gemini-cli-access-transition",
     "notebooklm",
+    "pocket-tts-small",
     "qwen38-27b",
+    "studentsim",
     "transformers",
-    "typesafe-jev"
+    "typesafe-jev",
+    "voxtral-3"
   ],
   "withdrawals": []
 }

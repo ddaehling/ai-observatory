@@ -2,7 +2,7 @@
 
 This is the operational contract for native Codex maintenance runs. The owner has authorized recurring research, the two Astra reviews, and publication of approved AI discovery reports to the configured GitHub Pages repository. Routine scheduled publication does not need a fresh approval. Keep work within the public AI discovery project; this does not authorize importing private accounts, messages or browsing history.
 
-Use the installed **Webcrawl** skill and its workflow, routing and browser instructions. Read the installed skill from its current local path; do not assume this repository contains a copy. Run its router doctor once per run. Use Chrome for source visits; search APIs and parsers may complement acquisition. Report whether SubQ Snap ran or deterministic fallback routing was used. Never fabricate a routing result or claim savings without measurements.
+Use the installed **Webcrawl** skill and its workflow and browser instructions. Read the installed skill from its current local path; do not assume this repository contains a copy. The current skill uses the environment's default model and reasoning settings and does not call external routing services. Use Chrome for source visits; search APIs and parsers may complement acquisition. Report observed resource use and do not claim savings without measurements. The exact publication-review requirements in section 4 remain mandatory.
 
 ## 1. Check and resume
 
@@ -16,7 +16,7 @@ Before an actual collection, inspect repository instructions, working-tree chang
 
 Run `python3 scripts/observatory.py collect`. This makes a bounded, deterministic pass over monitored RSS/Atom sources and persists an `acquisition_complete` run. It never means research or review is complete. The collector retains all feed candidates, marking overflow as backlog instead of discarding it. Its candidate cap controls current research priority.
 
-Use the Webcrawl routing profiles for semantic work: Luna for bounded discovery/extraction, Sol for consolidation and ordinary review, Astra for pivotal uncertain inclusion judgments. Mechanical fetches, canonicalization, hashes and deduplication do not need model routing. Start with at most four discovery workers; send each a bounded fresh-context packet, source constraints, questions and the evidence-return contract. Avoid duplicate investigations across workers.
+Use the environment's default model and reasoning settings for discovery, extraction, consolidation and ordinary review. Use tools/code for mechanical fetches, canonicalization, hashes and deduplication. Start with at most four discovery workers; send each a bounded fresh-context packet, source constraints, questions and the evidence-return contract. Avoid duplicate investigations across workers. Publication still requires the two fresh Astra reviews specified in section 4.
 
 Inspect each monitored source's outcome and `windowStart`. The per-source window uses its last successful coverage plus the configured overlap; a failed feed must not inherit another publisher's newer watermark. Chrome acquisition must cover the outstanding window as far as the source permits. Record an access limitation if the feed, listing, archive or social search cannot expose that history. Source retrieval timestamps are not event dates or launch dates.
 
@@ -28,10 +28,13 @@ For monitored sources requiring Chrome, record the real result:
 
 ```sh
 python3 scripts/observatory.py record-source --run-id RUN_ID --source-id SOURCE_ID --status success --note 'Visited the public releases list and checked the outstanding date window; relevant candidate IDs are recorded.'
+python3 scripts/observatory.py record-source --run-id RUN_ID --source-id SOURCE_ID --status success --partial --note 'Inspected the visible releases listing; the archive could not expose the rest of the outstanding date window.'
 python3 scripts/observatory.py record-source --run-id RUN_ID --source-id SOURCE_ID --status failed --note 'The login wall prevented inspection; no coverage claimed.'
 ```
 
-Use `success` only after actual access and an honest coverage assessment. An inaccessible or rate-limited platform is a recorded failure, not evidence that there were no developments. Avoid retry loops; use at most the skill's one acquisition repair cycle and preserve the unresolved item.
+Use `success` only after actual access and an honest coverage assessment. A success without `--partial` asserts that the source's outstanding window was covered and advances `lastCoverageAt` to the run's `windowEnd`. Use `--partial` when only a visible listing or part of that history was accessible: it records `coverageComplete:false`, updates access timestamps and counts the source as accessible, preserves its existing `lastCoverageAt`, and adds a run limitation. Describe the inspected scope and missing history in `--note`. The next collector retains that source's older coverage window, including the configured overlap; a source with no prior coverage retains its initial window. `--partial` is valid only with `--status success`. A failed visit also preserves the coverage watermark. Neither partial access nor a recorded failure establishes that there were no developments. Avoid retry loops; permit at most one acquisition repair cycle per item and preserve the unresolved item.
+
+The partial flag preserves the watermark present when the command runs. It cannot restore a watermark already advanced by an earlier feed acquisition or full manual success. Retain a successful feed result when adding supplementary page observations.
 
 ## 3. Preserve candidates, evidence and decisions
 
@@ -47,7 +50,7 @@ Use only the safe semantic markup listed in the data contract. All report and im
 
 Run `python3 scripts/observatory.py hashes REPORT_ID` after the report, source records and relevant evidence are final. Send the exact report, the relevant source/claim evidence, `data/rubric.json`, all three returned hashes and the rubric version to **two separately spawned native collaboration agents** with fresh contexts:
 
-- Model exactly `gpt-6-astra`, effort exactly `high`, `fork_turns:"none"` (or the installed `webcrawl-adjudicate` profile with those exact settings).
+- Model exactly `gpt-6-astra`, effort exactly `high`, `fork_turns:"none"`.
 - Distinct agent/task identities recorded as `reviewerId`; record the actual invocation, not invented reviewer labels.
 - Neither agent receives the other's ratings or conclusions. Each independently checks citations, relevance, date claims, limitations, safe presentation and report usefulness.
 - Each returns the complete review object required by the data contract, including `rubricHash`, integer scores 1–10 on every dimension, a rationale for each score, confidence, concerns and `approve`, `revise` or `reject`.
@@ -73,7 +76,7 @@ python3 scripts/observatory.py build --strict
 python3 -m unittest discover -s tests
 ```
 
-The presence of disclosed source failures does not falsely become successful access. Those domains remain in the registry and are retried with their older per-source windows. Only `complete-run` updates the successful-scan cadence; collection alone cannot do so. Reported source counts, failures, review disagreements and unresolved items must agree with the ledger.
+The presence of disclosed source failures does not falsely become successful access. Partial successes count as accessible sources, not complete historical coverage. Both partial and failed sources remain in the registry and are retried with their older per-source windows. A completed run means all sources and candidates were accounted for, not that every source's history was exhausted. Only `complete-run` updates the successful-scan cadence; collection alone cannot do so. Reported source counts, failures, review disagreements and unresolved items must agree with the ledger.
 
 The baseline command adds newly approved IDs and never removes existing protection. Commit the baseline with the reviewed report changes. Strict builds also refuse approved IDs missing from the baseline, so a newly published report cannot silently lose future protection. Do not hand-edit the baseline to bypass pending or failed reviews.
 

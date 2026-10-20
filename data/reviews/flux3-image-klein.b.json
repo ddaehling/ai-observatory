@@ -1,0 +1,32 @@
+{
+  "reportId": "flux3-image-klein",
+  "reviewerId": "/root/edition_20261020_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:29:53Z",
+  "reportHash": "22ea040363c1a10f6167c446c2e19705eb89498a4888031847f2f5d9826af3e8",
+  "evidenceHash": "f981df0898dafc614435a2d50e0104e94ff67b598946278c79211a5e8d2949f8",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 5
+  },
+  "rationale": {
+    "usefulness": "Generation, reference editing, layout guidance, API pricing and local workflow instructions form a practical asset-production toolkit. The original lesson, museum-site and storyboard proposals include sensible acceptance checks and correctly separate image assets from application behavior and video motion.",
+    "impact": "Downloadable generation and editing checkpoints with multi-reference layout control and an optimized consumer-GPU route could substantially widen creative model deployment. Impact remains domain-level: quality, speed and memory figures are vendor measurements and implementation-dependent.",
+    "novelty": "Combining up to ten references, bounding-box guidance, adaptation through Base and inference through Distilled is meaningful differentiation. The evidence supports a useful integrated capability rather than a fundamentally new image-generation paradigm.",
+    "maturity": "Model cards, reference code, API contracts and ComfyUI templates are substantive readiness signals. The young release still has prompt-expansion requirements, imperfect regional preservation and sharply different memory profiles, with no independent generation or production test here.",
+    "openness": "Weights, reference code and adaptation guidance improve inspectability and portability. The weight license is conditional, revocable and restricted, with a qualifying revenue threshold and limits on commercial activities and improving similar models. Apache-licensed code does not make the weights unrestricted."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking: The eight-gigabyte route is specific to optimized ComfyUI INT8 execution; reference memory figures and prompt expansion must remain separately qualified.",
+    "Nonblocking: Bounding boxes are guidance rather than hard masks, and hosted pixel restoration must not be generalized to local checkpoints.",
+    "Nonblocking: Commercial output rights and commercial training or distribution rights are distinct under the inspected license; the report preserves that distinction."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "reportId": "pocket-tts-small",
+  "reviewerId": "/root/edition_20261020_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-20T16:29:53Z",
+  "reportHash": "598e21b10269ec99e3e50a06913cd6c56a96767ae66ee01206e899e09d1ce95a",
+  "evidenceHash": "8f15ddaaaaf80fea52ece2cb07e5efc4bbd650144aa2d1e1181b72ed2042f233",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Compact CPU-oriented English speech models with CLI, Python and local-server routes provide actionable options for narration, spoken explanations and draft video tracks. The report makes model selection, listening checks, caching and unsupported pause/alignment behavior concrete.",
+    "impact": "The documented reductions to 18.2M and 6.9M parameters with close automatic quality metrics can materially broaden local speech use. The evidence remains one vendor evaluation setting with an unspecified CPU, so wider deployment and research impact are promising rather than established.",
+    "novelty": "Component-wise backbone, sampling-head and decoder reduction is a meaningful technical contribution within an existing TTS family. It combines established distillation, pruning and reward-tuning ideas rather than establishing an entirely new speech capability.",
+    "maturity": "Current selectors, configurations and public no-cloning file inventories support documented availability, and the existing package has several integration routes. The new variants lack independent listening/runtime checks here; automatic metrics, English-only scope and unverified browser compatibility constrain readiness.",
+    "openness": "MIT code, CC BY 4.0 model labels, public no-cloning artifacts, pinned configurations and a detailed method description offer strong inspectability and local portability. Main cloning weights are gated, voice licenses vary and full independent training reproduction is unverified, keeping this below exceptional openness."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking: Published CPU throughput is not first-audio latency or device-specific capacity, and the new table does not identify the processor.",
+    "Nonblocking: The smallest model loses quality, and reward tuning optimizes proxies that do not establish listener preference.",
+    "Nonblocking: Code, weights and voice assets have separate terms; public file presence does not establish successful execution."
+  ]
+}
