@@ -1,0 +1,51 @@
+{
+  "runId": "scan-20261022T170517Z-9e6c72",
+  "recordedAt": "2026-10-22T17:39:25Z",
+  "invocations": [
+    {
+      "reviewerId": "/root/edition_20261022_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 1,
+      "inputPacketSha256": "b2f7b77efe6904c2a3b5973211aa774c78a1b648408d3c6a56ef06e85d7fdc63",
+      "scope": "seven reports",
+      "otherReviewerOutputSupplied": false
+    },
+    {
+      "reviewerId": "/root/edition_20261022_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 1,
+      "inputPacketSha256": "b2f7b77efe6904c2a3b5973211aa774c78a1b648408d3c6a56ef06e85d7fdc63",
+      "scope": "seven reports",
+      "otherReviewerOutputSupplied": false
+    },
+    {
+      "reviewerId": "/root/rosalind_20261022_astra_a2",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 2,
+      "inputPacketSha256": "da2bcc4a483aabe2a1b5817170468f02db0ee1b23579df7421e5eded17f7cfd1",
+      "scope": "revised Rosalind report",
+      "otherReviewerOutputSupplied": false
+    },
+    {
+      "reviewerId": "/root/rosalind_20261022_astra_b2",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 2,
+      "inputPacketSha256": "da2bcc4a483aabe2a1b5817170468f02db0ee1b23579df7421e5eded17f7cfd1",
+      "scope": "revised Rosalind report",
+      "otherReviewerOutputSupplied": false
+    }
+  ],
+  "note": "Actual native collaboration invocations. Scores and verdicts originate from each independent reviewer. First-round Rosalind disagreement was resolved by a source-grounded wording revision and two fresh-context reviews; original reviews are retained."
+}

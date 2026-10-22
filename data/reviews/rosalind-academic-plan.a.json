@@ -1,0 +1,31 @@
+{
+  "reportId": "rosalind-academic-plan",
+  "reviewerId": "/root/rosalind_20261022_astra_a2",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:38:14.467608Z",
+  "reportHash": "f9c7ad9f43be2fca09ee59bb7b6058ae9959fa1e380eb4bc4ce75b2f7922b1b7",
+  "evidenceHash": "5e0ade2f09ed6504be63889535575d685c924b081b321ccdeb235067dd1fc96d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 5,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The documented sponsored seats, literature and analysis-code workflows, and scientific viewers offer actionable value for supervised research and education within eligible U.S. university labs. The report makes the institutional route, owner and member activation, same-domain membership, card requirement and API exclusion clear enough to guide a realistic pilot. Website, learning-app and training-video suggestions are explicitly proposed uses of manually reviewed material, not undocumented deployment capabilities. Eligibility and the absence of measured scientific effectiveness prevent a broadly exceptional usefulness rating.",
+    "impact": "Up to 30 sponsored seats for up to 12 months, together with trusted access to a specialized life-sciences environment, can materially lower the cost of evaluating AI across an academic lab. That is a meaningful domain-level access development. The sources do not demonstrate a new technical breakthrough, measured research gains, field-wide adoption or resulting scientific discoveries, so the potential impact remains moderate.",
+    "novelty": "The documented combination of scientific viewers, tool orchestration, connected evidence and researcher-approved analysis plans is distinctive enough to merit attention. However, those Workbench capabilities were described in August, while the October story is principally an academic access and sponsorship program. No comparative evidence establishes a new model capability or uniquely superior workflow in this announcement.",
+    "maturity": "The official program guide provides concrete application, verification, workspace, membership, billing and data-handling instructions, and the Workbench article documents specific workflows and visible UI. This supports a usable but materially constrained research pilot. Workbench remains a research preview, access requires approval, and neither the report nor this review validates runtime behavior, scientific reliability, exports, workload limits or billing in an approved workspace.",
+    "openness": "Public documentation and described reviewable analysis outputs offer limited inspectability, but the academic offer is a managed, gated workspace restricted to eligible U.S. labs and same-domain members. API usage is excluded; the inspected sources establish neither model weights nor a self-hosting license, portable execution environment or reproducible local inference. Documented traceability should not be confused with open model or deployment access."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking evidence limitation: all substantive product claims come from the vendor. The report consistently attributes them and discloses the absence of independent scientific, approved-workspace, billing and export testing; approval is editorial source verification, not product validation.",
+    "Non-blocking temporal limitation: the Help Center archive supplies only a relative update age, correctly retained as a null publication date. Current plan terms are grounded in the October 22 archive; the older August Workbench individual-access statement is correctly separated from current academic eligibility."
+  ]
+}

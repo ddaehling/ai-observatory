@@ -10,17 +10,17 @@
     "video narration",
     "CPU"
   ],
-  "summary": "Kyutai's October 20 release adds three compact English speech models. The 6.9M and 18.2M variants merit a narration pilot; the 1.9M option trades measurable quality for size and speed.",
-  "changeType": "new",
+  "summary": "Pocket TTS Small offers 18.2M, 6.9M and 1.9M English models for local narration. The October 21 v4.0.1 patch fixes a documented small-model pronunciation issue; the original quality and throughput figures remain October 20 vendor measurements.",
+  "changeType": "update",
   "publishedAt": "2026-10-20",
   "discoveredAt": "2026-10-20T16:17:55.359622Z",
-  "updatedAt": "2026-10-20T16:17:55.359622Z",
+  "updatedAt": "2026-10-22T17:26:55.223308Z",
   "officialUrl": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
   "sections": [
     {
       "id": "release",
       "title": "Smaller speech models make a different deployment worth testing",
-      "html": "<p>Kyutai announced Pocket TTS Small on 20 October 2026: three English speech models with 18.2 million, 6.9 million and 1.9 million parameters, each also offered in a reward-fine-tuned version. The practical attraction is local narration on modest computers. A teacher revising a worksheet, a developer adding spoken feedback, or an editor testing a script could potentially generate speech without building a GPU service. That possibility deserves a focused trial, especially where the existing alternative is repeatedly exporting text to a hosted speech tool.</p><p>The release is a substantial size reduction within the existing Pocket TTS family. Kyutai says the largest new model retains the earlier release's quality; its published measurements show that the smallest makes a clearer quality tradeoff. Our judgment is to evaluate the 6.9M and 18.2M models first for sustained narration, and consider 1.9M when a measured device constraint makes further reduction useful. This is an editorial starting point, not a listening-test result. <a href=\"https://kyutai.org/blog/2026-10-20-pocket-tts-small/\">Dated release and evaluation</a>.</p><p>Availability has several layers. The current repository documents the small variants, and the public no-cloning weight repository lists their folders. We did not install the software, download model weights, generate audio, or listen to the demonstration. This report therefore assesses the documented release and proposes applications; it does not certify voice quality, latency, classroom benefit, or compatibility with a particular machine.</p>"
+      "html": "<p>Kyutai announced Pocket TTS Small on 20 October 2026: three English speech models with 18.2 million, 6.9 million and 1.9 million parameters, each also offered in a reward-fine-tuned version. The practical attraction is local narration on modest computers. A teacher revising a worksheet, a developer adding spoken feedback, or an editor testing a script could potentially generate speech without building a GPU service. That possibility deserves a focused trial, especially where the existing alternative is repeatedly exporting text to a hosted speech tool.</p><p>The release is a substantial size reduction within the existing Pocket TTS family. Kyutai says the largest new model retains the earlier release's quality; its published measurements show that the smallest makes a clearer quality tradeoff. Our judgment is to evaluate the 6.9M and 18.2M models first for sustained narration, and consider 1.9M when a measured device constraint makes further reduction useful. This is an editorial starting point, not a listening-test result. <a href=\"https://kyutai.org/blog/2026-10-20-pocket-tts-small/\">Dated release and evaluation</a>.</p><p>Availability has several layers. The current repository documents the small variants, and the public no-cloning weight repository lists their folders. We did not install the software, download model weights, generate audio, or listen to the demonstration. This report therefore assesses the documented release and proposes applications; it does not certify voice quality, latency, classroom benefit, or compatibility with a particular machine.</p><p><strong>Update, 22 October:</strong> Kyutai released <a href=\"https://github.com/kyutai-labs/pocket-tts/releases/tag/v4.0.1\">Pocket TTS v4.0.1 on 21 October</a>. Its release notes say it fixes issue #390 for the sub-20M models and corrects pronunciation in the default demonstration sentence, including “TTS” and “Kyutai.” The changelog also identifies updated small English models and <code>english_2026-10</code> as the default English model. This is a specific documented patch, not evidence that every pronunciation problem is solved. The benchmark table discussed below belongs to the 20 October announcement; we did not rerun it on the patched weights or perform a listening comparison. For a new evaluation, record the package version and actual checkpoint revision, then check the same names, abbreviations and subject vocabulary that your narration will use.</p>"
     },
     {
       "id": "measurements",
@@ -152,9 +152,18 @@
       "publishedAt": null,
       "locator": "model.safetensors, embeddings and tokenizer listing",
       "supports": "Published file sizes and assets; no runtime-memory measurement"
+    },
+    {
+      "id": "creative-pocket-v401",
+      "title": "Pocket TTS v4.0.1 release",
+      "url": "https://github.com/kyutai-labs/pocket-tts/releases/tag/v4.0.1",
+      "accessedAt": "2026-10-22T17:16:28.050Z",
+      "publishedAt": "2026-10-21",
+      "locator": "Highlights; What’s Changed",
+      "supports": "October 21 patch scope and model-selector update"
     }
   ],
   "images": [],
   "judgment": "Worth a measured English narration pilot using 6.9M and 18.2M variants, with task-specific listening checks, versioned assets and separate voice-license review.",
-  "researchNote": "Official-source Webcrawl on 20 October 2026 using owned Chrome tabs. The dated article, current README, code license, a 6.9M configuration, model cards, voice catalog and public no-cloning file listings were inspected. Main model-card gate was observed without accepting conditions. No installation, model download, audio generation, listening test or voice cloning was performed. Benchmarks are Kyutai's claims; applications and adoption criteria are editorial proposals. Small-model availability means documented selectors and visible files, not verified runtime compatibility. No claim of exhaustive repository review."
+  "researchNote": "Official-source Webcrawl on 20 October 2026 using owned Chrome tabs. The dated article, current README, code license, a 6.9M configuration, model cards, voice catalog and public no-cloning file listings were inspected. Main model-card gate was observed without accepting conditions. No installation, model download, audio generation, listening test or voice cloning was performed. Benchmarks are Kyutai's claims; applications and adoption criteria are editorial proposals. Small-model availability means documented selectors and visible files, not verified runtime compatibility. No claim of exhaustive repository review. Follow-up on 22 October 2026 inspected the current README and v4.0.1 release in Chrome. Added a bounded patch note while preserving the original October 20 measurements, section IDs and limitations. No audio generation, listening comparison or benchmark rerun."
 }

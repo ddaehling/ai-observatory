@@ -1,0 +1,32 @@
+{
+  "reportId": "embeddinggemma-2",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "d02eb1e87bcc54246a62c5ba5fe6c6228408b0fa62b6bf9f813edfd1871c6812",
+  "evidenceHash": "f6765a6466b91ff484b9a2c90fe34d04287ac0347c9757119ca3aad01d2ad7fb",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The model card supports a concrete local retrieval component spanning text, code, image, audio and video. The report supplies useful course, media archive, app and website designs while identifying segmentation, prefixes, finite-vector checks, dimension matching and normalization requirements. These details make a bounded prototype actionable without confusing embeddings with generated answers or timestamps.",
+    "impact": "A compact, modular four-modality embedding model with downloadable weights can materially broaden local retrieval applications. The 270M text-only path and adjustable vectors make resource tradeoffs concrete. Impact remains below exceptional because multilingual text gains are small and all retrieval scores, device claims and ecosystem integrations are publisher evidence without independent workload replication.",
+    "novelty": "The demonstrated differentiation is the expansion to a shared four-modality space with selectively loadable encoders and interleaved inputs at this size. Adjustable dimensions and task prefixes are useful engineering rather than wholly new ideas. The report carefully quantifies code improvement and the substantial 128-dimensional multimodal loss instead of turning a relative code gain into a universal claim.",
+    "maturity": "The official card provides practical loading, prompting, precision, context and sampling instructions, benchmark tables and explicit limitations. Published integration paths make evaluation plausible. Float16 failure modes, backend-dependent selective loading, model-specific preprocessing and unmeasured device behavior still require validation; availability of examples does not establish dependable production behavior across runtimes.",
+    "openness": "Weights, architecture details, full-precision results and usage recipes provide substantial inspectability and local portability. The Apache 2.0 label is supported by the linked license, but the same card requires adherence to an older prohibited-use policy whose current applicability is unresolved. The report preserves this tension, and complete training-data reproducibility is not established."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: Apache labeling coexists with a separate policy reference and deprecated documentation; this review does not settle legal precedence.",
+    "Publisher benchmark tables were checked against the archived card; no model execution, device measurement or benchmark reproduction occurred.",
+    "The report correctly treats 8,192 tokens as a shared budget and browser/mobile listings as integration leads rather than tested parity."
+  ]
+}

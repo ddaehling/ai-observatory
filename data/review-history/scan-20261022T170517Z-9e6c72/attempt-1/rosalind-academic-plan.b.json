@@ -1,0 +1,32 @@
+{
+  "reportId": "rosalind-academic-plan",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "8e30db7ec296124e0878bc80f6913f468d1e0574b2dd796ab03fd04ffcc96cf8",
+  "evidenceHash": "9b2e3dc6811df80eeced3c3e4407299d4aecd56234b71878b99c5a9019e2e55a",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "confidence": "high",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 5,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The announcement and detailed help capture make this actionable for a defined audience: eligible US university labs can assess sponsorship, ownership, member-domain, activation, API and retention requirements before applying. The literature, public-data and teaching pilots are concrete, but eligibility excludes much of the broader builder audience and the scientific outcomes remain untested.",
+    "impact": "Up to thirty sponsored seats and access to a specialized research workspace can meaningfully lower the barrier to a domain-specific lab evaluation. The sources establish an access program, not improved discovery rates, scientific correctness or field-wide technical progress, so moderate impact is justified.",
+    "novelty": "The October 15 academic access arrangement is a distinct change, but the Workbench itself was documented on August 28. Sponsorship and lab administration differentiate this offer; no newly demonstrated model capability is established by the plan.",
+    "maturity": "The help guide documents a usable enrollment and administration process, with explicit membership, billing and data-handling conditions. Trusted-access admission, a research-preview Workbench, usage limits and absent performance testing prevent a dependable-production assessment.",
+    "openness": "Access is restricted to approved US university labs and same-domain members in a managed workspace. API usage is excluded and the evidence supplies no weights, self-hosting path or verified export guarantees. Public documentation helps inspection of terms but provides little technical reproducibility."
+  },
+  "concerns": [
+    "Blocking wording correction: the pilot section says that video generation was neither established by these sources nor tested. The archived August 28 Workbench article, under Explore molecular protein structure, expressly describes asking the model to create a movie showing key features of a protein complex. Acknowledge that specific documented example as untested, and narrow the unsupported-capability statement to general video production, export details and end-to-end publishing. No runtime test is required for this correction.",
+    "The archived announcement contains sensitive scientific promotional examples; this report appropriately keeps the public discussion at access, oversight, literature and general analysis level rather than reproducing operational biological instructions.",
+    "Scientific effectiveness, billing behavior and approved-workspace access were not independently tested. The source-backed no-training default must continue to be distinguished from standard retention and unavailable Zero Data Retention."
+  ]
+}

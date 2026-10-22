@@ -1,0 +1,32 @@
+{
+  "reportId": "astabrief",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "1cb81cd6ddf43d5d7fb020c557fe683d4daa664b8fbf52311d80374ebadda594",
+  "evidenceHash": "9c4df262980d773d459d0e610310014af063cd21ca5f6708cd9aeb003f1feb00",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "A downloadable specialized report writer, recommended prompt and linked implementation provide a practical component for bounded literature tools. The report offers strong educational, source-linked website and video-script preparation workflows while keeping retrieval, writing, citation entailment and human review separate. Its proposed acceptance cases cover unanswerable questions and evidentiary scope, making the advice meaningfully actionable.",
+    "impact": "A smaller report writer and simpler one-pass pipeline can make grounded synthesis easier to deploy and inspect. The reported historical gains and citation-focused data recipe are meaningful within research assistance. They do not establish current frontier competitiveness, broad scientific reliability or educational outcomes, and the report correctly limits the 3.5-fold full-pipeline timing claim.",
+    "novelty": "The distinctive contribution is task-specific SFT/DPO with citation-density filtering and a simplified report pipeline, alongside released artifacts. These are known techniques applied carefully to scientific synthesis rather than a fundamentally new learning method. The source admission that more complex filtering did not add meaningful gains makes the focused recipe more informative than broad novelty claims.",
+    "maturity": "The model is documented as powering hosted Fast mode, with prompt constraints, an inference example, benchmark tables and a linked implementation. This supports usable research pilots. Mostly 2025 evaluation, a small human study, incomplete citation recall and separate retrieval/serving responsibilities leave significant reliability work before high-confidence deployment. No installation or generation was performed here.",
+    "openness": "Apache 2.0 weights, model-family identification, training descriptions, preference-data and checkpoint links, a recommended prompt and linked implementation provide strong inspectability and replacement options. These do not include the complete hosted Asta environment, corpus or every dependency, and this review did not reproduce training. Openness is substantial but not complete end-to-end reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: 200-question benchmark scope and the model-card 100-question test set are distinct; the report preserves both.",
+    "The average improves while answer precision falls relative to base Qwen3-8B; the report correctly avoids claiming improvement on every measure.",
+    "Historical timings, judge agreement and a 14-question human comparison are not present-day factual-accuracy or productivity guarantees."
+  ]
+}

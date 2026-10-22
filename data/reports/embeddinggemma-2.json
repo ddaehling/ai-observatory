@@ -1,0 +1,121 @@
+{
+  "id": "embeddinggemma-2",
+  "title": "EmbeddingGemma 2 makes mixed-media libraries searchable on local devices",
+  "entity": "EmbeddingGemma 2",
+  "category": "Models",
+  "tags": [
+    "multimodal retrieval",
+    "local inference",
+    "education",
+    "creative archives",
+    "embeddings"
+  ],
+  "summary": "Google’s compact embedding model connects text, images, audio and video in one search space. Its practical value depends on segmentation, precision, index design and testing on the intended collection.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-06",
+  "discoveredAt": "2026-10-20T16:19:21.282019+00:00",
+  "updatedAt": "2026-10-22T17:26:52.563036Z",
+  "officialUrl": "https://huggingface.co/google/embeddinggemma-2",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A search layer for mixed libraries",
+      "html": "<p>EmbeddingGemma 2 gives builders a compact way to search a library containing documents, pictures, recordings and video clips through one shared representation. A typed question can retrieve an image; a sound can help locate a video segment. The practical opportunity is a local retrieval feature inside an educational app, media browser or creative archive. It still needs indexing, a useful interface and evaluation on the collection that people will actually search.</p>\n<p>Google announced the model on October 6, 2026. This report is a baseline assessment for the Observatory, rather than a claim that the release happened today. The <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2\">launch announcement</a> describes an expansion from the original text embedding model to four modalities. The <a href=\"https://huggingface.co/google/embeddinggemma-2\">model card</a> documents the implementation details and limitations. We inspected those sources; we did not run the weights, measure a device or reproduce the benchmarks.</p>\n<p>An embedding is a numerical representation used to compare items. It does not supply an explanation of a photograph, a transcript or a verified answer. An application can retrieve relevant material and then pass it to a separate generative model, but that second step has its own cost and reliability requirements. For many small libraries, a well-designed results screen with the original source may be useful enough.</p>"
+    },
+    {
+      "id": "architecture",
+      "title": "One space, selectively loaded encoders",
+      "html": "<p>The model maps text, including code, images, audio and video into a shared vector with 768 dimensions. It has 740 million parameters in total: a 270 million parameter text component, a 170 million parameter vision encoder and a 300 million parameter audio encoder. These are modular. The card documents text-only loading at 270 million parameters, text plus images at 440 million and text plus audio at 570 million.</p>\n<p>That choice matters for a small application. A text knowledge base need not load an audio encoder simply because the overall model supports audio. Parameter count, however, does not establish peak memory consumption. Precision, input length, media preprocessing, batching and the serving implementation also matter. Google's phone memory examples concern particular quantized weights and hardware; they are not a universal memory requirement for the ordinary Python checkpoint.</p>\n<p>A single input can combine text and media and produce one embedding for the whole item. A catalog entry could join a title, photograph and demonstration clip. This provides a useful representation of the entry, but one vector cannot also preserve every separately searchable moment. Keep the original files, stable identifiers and source metadata alongside the index. Use smaller indexed segments when users need precise locations. These design implications follow from the <a href=\"https://huggingface.co/google/embeddinggemma-2\">documented input and output behavior</a>.</p>"
+    },
+    {
+      "id": "context",
+      "title": "Plan around the real media budget",
+      "html": "<p>All inputs share an 8,192-token context. At the documented defaults, an image uses 280 tokens, a video frame 140, and audio 25 tokens per second. The approximate single-modality limits are therefore 29 images, 58 video frames or 327 seconds of audio. These are alternative maximums with no accompanying text. Combining modalities consumes the same budget and reduces how much of each fits.</p>\n<p>Video defaults to one sampled frame per second, with a configurable sampling rate. That makes a 58-frame limit roughly a minute at the default, not permission to embed an arbitrary long movie. Fast gestures, brief diagrams and cuts can be missed between samples. Audio should be mono at 16 kHz. The vision token budget can also be changed, trading detail against context consumption and processing cost.</p>\n<p>For a lecture archive, index short scenes or topic segments and retain start and end timestamps. Consider separate representations for the audio, visual sequence and accompanying notes, then compare their usefulness with combined entries. This is a proposed application experiment, not a tested recipe. The <a href=\"https://huggingface.co/google/embeddinggemma-2\">context and sampling documentation</a> supports the need for segmentation; it does not establish the best segment length for a particular course or editing workflow.</p>"
+    },
+    {
+      "id": "benchmarks",
+      "title": "Read the scores as task-specific evidence",
+      "html": "<p>Google reports full-precision benchmark results. Its multilingual MTEB score changes from 61.15 for the predecessor to 61.36, while MTEB Code moves from 68.76 to 78.68. The latter is a 9.92-point increase, approximately 14 percent relative to the earlier score. That is encouraging for semantic code search, but it is not evidence that every text search task improves by 14 percent.</p>\n<p>The card also reports results for image, visual-document, video and audio retrieval. These use different tasks and metrics, so their raw numbers should not be ranked against one another. More useful for deployment planning is the same model's dimension comparison. At 768 dimensions the reported MMEB overall score is 59.01; at 256 it is 56.24; at 128 it falls to 45.65. MSEB retrieval similarly moves from 69.54 to 66.76 and then 56.71.</p>\n<p>Those <a href=\"https://huggingface.co/google/embeddinggemma-2\">publisher measurements</a> argue for testing 256 dimensions before aggressively shrinking a multimodal collection to 128. They do not establish accuracy on classroom diagrams, a particular accent, unusual sound effects or an organization's coding conventions. The multilingual claim covers more than 100 languages, with explicitly unequal performance. A useful pilot includes the languages and uncommon material that matter to its users, rather than relying on an aggregate benchmark rank.</p>"
+    },
+    {
+      "id": "implementation",
+      "title": "Two details that can silently break retrieval",
+      "html": "<p>The first implementation constraint is numerical precision. The model card explicitly calls for bfloat16 on hardware with suitable support or float32 elsewhere, including most CPUs. It warns against float16 because the model's activation range can produce invalid or degraded embeddings without a clear exception. A pipeline that completes successfully can still contain unusable vectors. Check for finite outputs and sensible retrieval before spending time indexing a large archive.</p>\n<p>The second constraint is dimension handling. Matryoshka Representation Learning supports 768, 512, 256 and 128 dimensions. After keeping the leading dimensions, normalize the shortened vector again before cosine comparison. Queries and stored items must use the same dimension. The documented SentenceTransformers interface exposes <code>truncate_dim</code> and <code>normalize_embeddings</code> to handle this deliberately. Changing the model, preprocessing or embedding convention should trigger a versioned index, not a mixture of incompatible representations.</p>\n<p>For storage planning, one million 768-dimensional vectors stored as 32-bit floats occupy about 3.07 gigabytes before metadata and index overhead. At 256 dimensions, the raw vectors occupy about 1.02 gigabytes. This is simple arithmetic, not a measurement of a vector database. Search indexes, thumbnails, original media and cached preprocessing results can dominate the complete application footprint. Reducing vector dimensions also leaves the model weights unchanged; vector storage and inference memory are separate budgets.</p>\n<p>Text instructions matter too. Search queries and documents have distinct prefixes, whereas similarity and clustering tasks use symmetric instructions. The card supplies named prompts such as <code>SearchQuery</code>, <code>Document</code> and <code>CodeRetrieval</code>. Titled documents need the documented manual title format; the generic document prompt uses no title. Media inputs do not take these text prefixes. These are <a href=\"https://huggingface.co/google/embeddinggemma-2\">configuration requirements</a>, not extra prompts that make the model reason through an answer.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A useful first build: search a course",
+      "html": "<p>An educational prototype could combine a teacher's notes, slide images and short lecture clips in one collection. A learner might search for a process described in everyday language and receive the relevant slide, the original explanation and a playable segment. The interface should show the source, page or timestamp and why the item was included in the collection. A generated answer is optional; direct access to the teaching material is the initial product.</p>\n<p>Start with a modest set of authorized course materials and a small hand-written evaluation set. Include paraphrases, visual questions, ambiguous questions and queries for topics absent from the corpus. Compare the top results with ordinary keyword search and with transcript-only retrieval. Count whether the useful source appears near the top, and inspect incorrect but superficially similar matches. A failed visual query may reveal poor segmentation rather than a reason to change the entire model.</p>\n<p>The model's lack of output moderation makes application boundaries relevant. Permission checks must constrain which documents a learner can retrieve; local inference alone does not establish appropriate access. The card also recommends retrieval filtering and fairness testing. This course workflow is our proposed use of the <a href=\"https://huggingface.co/google/embeddinggemma-2\">retrieval capabilities</a>, not an educational effectiveness study or a claim that embedding similarity measures a learner's understanding.</p>"
+    },
+    {
+      "id": "creative",
+      "title": "Find material for an edit or a website",
+      "html": "<p>A video editor could build a searchable collection of B-roll, reference photographs, ambience and production notes. Queries such as a quiet indoor scene or a particular kind of background sound could surface candidates whose filenames are uninformative. Store licensing information and project restrictions as searchable metadata with filters. A semantically close result is useful only if the editor can locate the original, inspect it and confirm that it is suitable for the intended production.</p>\n<p>For an app or website, the same design could support a personal media library or a small visual product catalog. Google points developers toward browser tooling through Transformers.js or WebGPU, and mobile integration through MediaPipe or LiteRT. Those <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2\">announced integration paths</a> warrant exploration, but listing a runtime does not guarantee that every modality, loading option and checkpoint behaves identically across backends.</p>\n<p>A sensible prototype first proves search quality with one documented implementation, then verifies the target browser or device. Measure download size, initial indexing time, query delay and peak memory separately. A fast query after indexing does not imply cheap initial processing. Keep a progress indicator and a way to cancel or rebuild the index. No latency, battery-use or operating-cost measurements were performed for this report.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What is available, and what needs checking",
+      "html": "<p>The weights are available through the official model page, which labels them Apache 2.0, and Google's announcement describes that license as commercially permissive. The linked <a href=\"https://ai.google.dev/gemma/docs/gemma_4_license\">license text</a> contains the familiar redistribution requirements around providing the license, retaining applicable notices and identifying modifications. Availability of weights does not include a hosted service allowance, guaranteed support or rights to the material placed in a user's index.</p>\n<p>There is also wording worth resolving before a production release: the model card's safety section says deployments must adhere to the Gemma Prohibited Use Policy. The <a href=\"https://ai.google.dev/gemma/prohibited_use_policy\">linked policy page</a> was inspected and contains separate use restrictions; it is older and carries a deprecated-documentation banner. We preserve that inconsistency rather than treating the Apache label as proof that the policy reference has no effect. A distributor should check the exact artifact's terms and current official clarification.</p>\n<p>For a first technical trial, the card documents Python installation with SentenceTransformers and Transformers, named prompts and selective loading options. Choose a compatible supported library version, appropriate precision and enough memory for the measured workload. We have not established a universal minimum GPU, RAM requirement or all-backend compatibility matrix. Start with a small corpus before committing a product architecture to a particular deployment target.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "Worth a bounded retrieval pilot",
+      "html": "<p>EmbeddingGemma 2 is most interesting where a collection spans several media types and the application benefits from local processing. Its modular encoders and adjustable vector sizes offer concrete choices for balancing the feature against resources. For a text-only search product that already works well, the benchmark evidence gives less reason to expect a dramatic improvement; migration should be earned by a representative comparison.</p>\n<p>The pilot should separate kinds of failure. An exact filename or unfamiliar technical term may be better served by lexical matching. A broad semantic query can retrieve several plausible items without finding the intended one. A spoken query can fail because of acoustic conditions, while a video query can fail because the relevant frame was never sampled. Keep examples of each failure and test a combination of metadata, keyword and embedding search before assuming a larger model is necessary. Include queries with no valid match, so the interface can communicate uncertainty rather than always presenting the nearest item as correct.</p>\n<p>The strongest next step is a small, inspectable prototype with source previews, timestamps, metadata filters and a repeatable set of user queries. Keep the existing search method as a baseline and measure both relevance and device behavior. Expand only when the mixed-media results help people find material they otherwise miss. That would turn the model's documented flexibility into demonstrated value for a specific educational or creative application.</p>"
+    }
+  ],
+  "useCases": [
+    "Search teaching notes, slides and short lecture segments with visible source references.",
+    "Retrieve B-roll, visual references and sound recordings from a licensed creative archive.",
+    "Prototype local media-library or catalog search for an app or website.",
+    "Compare semantic code retrieval with existing keyword search."
+  ],
+  "limitations": [
+    "Source-based research only: no model execution, benchmark reproduction, hardware or cost measurements.",
+    "The shared 8,192-token budget requires segmentation; sampled video can miss brief events.",
+    "Float16 is explicitly unsuitable; smaller vectors need renormalization and workload validation.",
+    "Benchmark scores are publisher reports, not independent confirmation or guaranteed application accuracy.",
+    "Apache 2.0 labeling coexists with a model-card reference to a separate prohibited-use policy; artifact terms and current clarification require checking.",
+    "Support and behavior across all listed browser, mobile and serving backends were not tested."
+  ],
+  "sources": [
+    {
+      "id": "repos-embeddinggemma2",
+      "title": "Google EmbeddingGemma 2 model card",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "accessedAt": "2026-10-22T17:08:27.432Z",
+      "publishedAt": null,
+      "locator": "Model Overview; Benchmark Results; Best Practices 1–5; Ethics & Safety; Limitations",
+      "supports": "Architecture, modalities, context, instructions, dimensions, precision, publisher benchmarks and limitations."
+    },
+    {
+      "id": "google-embeddinggemma2",
+      "title": "Google: EmbeddingGemma 2 launch",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+      "accessedAt": "2026-10-22T17:08:50.525Z",
+      "publishedAt": "2026-10-06",
+      "locator": "October 6 date; introduction; Getting started",
+      "supports": "Launch date, positioning, Apache 2.0 description and announced integration paths."
+    },
+    {
+      "id": "embeddinggemma2-license",
+      "title": "Google linked Gemma 4 Apache License 2.0",
+      "url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+      "accessedAt": "2026-10-22T17:11:55.854Z",
+      "publishedAt": null,
+      "locator": "Apache License 2.0, sections 2–4, 7; deprecated documentation banner",
+      "supports": "License text and redistribution conditions; documentation status."
+    },
+    {
+      "id": "embeddinggemma2-policy",
+      "title": "Google linked Gemma Prohibited Use Policy",
+      "url": "https://ai.google.dev/gemma/prohibited_use_policy",
+      "accessedAt": "2026-10-22T17:12:23.055Z",
+      "publishedAt": null,
+      "locator": "Policy heading; last modified February 21, 2024; prohibited uses; deprecated documentation banner",
+      "supports": "The distinct linked policy exists and is older; no legal resolution asserted."
+    }
+  ],
+  "images": [],
+  "judgment": "A worthwhile pilot for local search across mixed media. The main opportunity is a useful retrieval interface; readiness must be established on the actual corpus and device.",
+  "researchNote": "Official model card, dated launch blog, linked license and linked policy inspected in Chrome on October 22, 2026. This is a newly covered baseline, with no runtime experiments. Proposed workflows are editorial applications, not demonstrated outcomes. No existing report was changed."
+}

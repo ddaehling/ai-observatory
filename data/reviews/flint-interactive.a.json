@@ -1,0 +1,32 @@
+{
+  "reportId": "flint-interactive",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "6bcc6ea6fcb13f0c4ec3f533da8b4a7f8c141dce5730700b0ef9195d4eccc35b",
+  "evidenceHash": "04eec1ab6b009aa64102fc3722f3fbbe01b43200dd7c3ea66eb6e0c0dfd68ad6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 9
+  },
+  "rationale": {
+    "usefulness": "The interaction API supplies a concrete way to connect chart selections, semantic events and external views, with documented JavaScript and React entry points. The report translates that into educational explorers, research sites, dashboards and recorded explainers, while explaining warning handling, resets and lifecycle cleanup. Explicit Vega-Lite and client-support boundaries make these useful implementation proposals rather than generic inspiration.",
+    "impact": "A compact, inspectable interaction specification can improve the interface between code-generating agents and data applications across a useful domain. The architecture and API justify meaningful potential impact, but no evidence here measures agent reliability, development speed, accessibility or reader comprehension. Backend-limited interactions and evolving server semantics constrain claims of general portability.",
+    "novelty": "The semantic separation of data meaning, styling and interaction is a meaningful synthesis for agent-produced visualizations. Presets and semantic updates differentiate this release from static chart generation. It builds on existing chart/rendering systems and an existing Flint project, so it is an incremental architectural advance rather than a new visualization paradigm.",
+    "maturity": "Released 1.0.x packages, detailed API documentation, named warnings and lifecycle rules support a bounded pilot. The inspected setup guide already describes a stateless server that the changelog marks Unreleased, while 1.0.0 retains server state and scaling constraints. No embedding, MCP connection or accessibility test occurred, so version pinning and behavioral checks remain essential.",
+    "openness": "The MIT source repository, documented public specifications, APIs, changelog and local execution options offer excellent inspectability and portability. The clear released-versus-source distinction allows a builder to investigate exact behavior. External rendering dependencies and client-specific MCP Apps support remain parts of the deployment, so this is not an unconditional guarantee of reproducibility across every host."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: interaction presets currently support Vega-Lite; a static result with interactions_ignored is not successful interactive portability.",
+    "Stateless MCP behavior is marked Unreleased in the inspected changelog despite current setup documentation presenting it; the report explicitly warns to pin matching versions.",
+    "Keyboard, touch, assistive-technology and runtime checks are proposed acceptance work, not verified features."
+  ]
+}

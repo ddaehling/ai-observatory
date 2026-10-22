@@ -1,0 +1,82 @@
+{
+  "runId": "scan-20261022T170517Z-9e6c72",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scope": "Independent documentation review of all seven exact packet reports and three sampled candidate dispositions. This is not an audit of complete source coverage, other candidates, runtime behavior or independent experimental replication. No other reviewer outputs were read.",
+  "reportIds": [
+    "rosalind-academic-plan",
+    "embeddinggemma-2",
+    "cadre-world-models",
+    "pocket-tts-small",
+    "astabrief",
+    "flint-interactive",
+    "claude-duet"
+  ],
+  "candidateReviews": [
+    {
+      "candidateId": "rosalind-academic-plan",
+      "disposition": "included",
+      "verdict": "approve",
+      "confidence": "high",
+      "evidenceInspected": [
+        "official/rosalind-academic-plan.json",
+        "official/rosalind-help.json",
+        "official/rosalind-workbench.json",
+        "official/rosalind-viewer-observation.jpg"
+      ],
+      "rationale": "The October 15 announcement and help guide establish a concrete sponsored lab-access offer with material admission, membership, API, billing and data-handling constraints. This is worthwhile baseline coverage of an older discovery lead. The August 28 Workbench page and original published image support workflow context only; the report does not present them as tested scientific performance or a new October 22 model launch. Proposed educational, website and video uses are explicitly editorial.",
+      "concerns": [
+        "Candidate changeType remains update while the selected report correctly uses baseline; the candidate reason and report text make the editorial baseline interpretation clear. This is a nonblocking ledger-normalization opportunity, not a report factual defect."
+      ]
+    },
+    {
+      "candidateId": "candidate-f60f92689e069107",
+      "disposition": "excluded",
+      "verdict": "approve",
+      "confidence": "high",
+      "evidenceInspected": [
+        "research/archives/ben-affleck.txt"
+      ],
+      "rationale": "The complete archived quotation discusses Affleck’s personal computing, Python and machine-learning/VFX experience. It is relevant to AI and creative work, but contains no specific new deployable artifact or evaluated technical advance warranting a substantial discovery report. The exclusion reason accurately narrows selection value instead of declaring the material unrelated to AI. The linked interview itself was not separately reviewed.",
+      "concerns": []
+    },
+    {
+      "candidateId": "social-candidate-9f8714ed9e446e37",
+      "disposition": "excluded",
+      "verdict": "approve",
+      "confidence": "medium",
+      "evidenceInspected": [
+        "social/anthropic.json, first public-listing article"
+      ],
+      "rationale": "The saved listing states that Anthropic is publishing its annual Public Benefit Report and describes five pillars. It does not expose the full report or establish a released builder tool or completed technical result. Exclusion from this bounded edition is defensible as a preview-based priority judgment, with the unresolved destination and unverified status retained. It would not support a claim that the underlying report has no relevant developments.",
+      "concerns": [
+        "The t.co destination and full Public Benefit Report were not inspected in this review; exclusion is limited to the visible preview.",
+        "The saved listing includes an absolute post timestamp as well as the relative label, but the candidate keeps publishedAt null. This conservative metadata omission is nonblocking and must not be interpreted as an event-date finding."
+      ]
+    }
+  ],
+  "checks": {
+    "allSevenReportBodiesRead": true,
+    "materialClaimsCheckedAgainstArchivedPrimarySources": true,
+    "reportAndRubricCanonicalHashesRecomputed": true,
+    "packetEvidenceHashesPreservedExactly": true,
+    "allowedHtmlTagsAndHttpLinksChecked": true,
+    "archivedImagesInspected": [
+      "official/rosalind-viewer-observation.jpg",
+      "creative/raw/creative-cadre-demo.png"
+    ],
+    "runtimeOrBenchmarkValidationPerformed": false,
+    "otherReviewerOutputsAccessed": false
+  },
+  "blockingCorrections": [],
+  "limitations": [
+    "Approvals certify source-grounded editorial presentation for these exact hashes, not runtime reliability or model performance.",
+    "Older Pocket TTS material was checked in the October 20 pocket source captures; the October 21 release note was checked separately in this scan.",
+    "No new network acquisition, signup, account connection, installation, model download, generation or scientific experiment was performed."
+  ]
+}

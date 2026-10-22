@@ -1,0 +1,31 @@
+{
+  "reportId": "rosalind-academic-plan",
+  "reviewerId": "/root/rosalind_20261022_astra_b2",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:38:29.301699Z",
+  "reportHash": "f9c7ad9f43be2fca09ee59bb7b6058ae9959fa1e380eb4bc4ce75b2f7922b1b7",
+  "evidenceHash": "5e0ade2f09ed6504be63889535575d685c924b081b321ccdeb235067dd1fc96d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 5,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The sponsored workspace and documented literature, analysis-code and scientific-viewer workflows offer useful supervised research and teaching pilots for eligible U.S. university labs. The report gives actionable screening and evaluation steps, including ownership, same-domain membership, usage limits, payment-card setup and institutional data requirements. Its proposed learning-app, website and training-video uses require manual review and transfer into normal production tools; they are not presented as tested product features. Restricted eligibility and the absence of API access materially limit usefulness for the wider educational and creative builder audience.",
+    "impact": "Up to 30 sponsored seats per eligible lab for up to 12 months is a meaningful domain-specific access intervention: it can enable a shared evaluation of a specialized model and integrated scientific workflows. The October 15 announcement and current help guide substantiate that opportunity. They provide no evidence of adoption scale, improved scientific outcomes or a new technical advance attributable to the academic plan, so broader significance to AI development remains moderate and prospective.",
+    "novelty": "The combination of supervised access, laboratory administration and specialized scientific workflow inspection is differentiated from an ordinary consumer subscription. However, the August 28 Workbench documentation predates this October access offer; its viewers and guided analyses are context rather than newly launched capabilities of the academic plan. The sources do not establish a new model method or comparative performance advantage. The report preserves this distinction and accurately limits the movie claim to a documented molecular-viewer example.",
+    "maturity": "Detailed official instructions establish application routes, verification, workspace setup, member activation, support procedures, billing boundaries and data handling. Workbench remains a research preview, while the scientific examples and traceable-output descriptions are vendor documentation rather than independently reproduced results. No approved-workspace, scientific-performance, export or billing test was performed. This supports usable but materially limited readiness, not demonstrated scientific dependability.",
+    "openness": "The offer is a proprietary managed service with trusted-access approval, U.S. university eligibility, same-domain membership and a single-owner workspace. API usage and credits are explicitly excluded, and no model weights, self-hosting license or reproducible model implementation are established. Public documentation and inspectable scientific artifacts provide some transparency, but sponsored seats do not establish open licensing or portability. The report correctly separates the no-training default from standard retention and the lack of Zero Data Retention."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking evidentiary limit: all substantive product and program evidence is first-party documentation. Approval establishes editorial fidelity to the archived sources, not independent scientific-performance, billing or runtime validation; the report makes this distinction explicit.",
+    "Non-blocking temporal limit: eligibility and promotional terms are those observed on October 22, 2026. The report correctly uses October 15 for the announcement, August 28 for the older Workbench article and null for the help-guide publication date."
+  ]
+}

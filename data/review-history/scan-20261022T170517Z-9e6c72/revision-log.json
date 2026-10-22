@@ -1,0 +1,10 @@
+{
+  "runId": "scan-20261022T170517Z-9e6c72",
+  "reportId": "rosalind-academic-plan",
+  "attempt": 2,
+  "beforeReportHash": "8e30db7ec296124e0878bc80f6913f468d1e0574b2dd796ab03fd04ffcc96cf8",
+  "afterReportHash": "f9c7ad9f43be2fca09ee59bb7b6058ae9959fa1e380eb4bc4ce75b2f7922b1b7",
+  "evidenceHash": "5e0ade2f09ed6504be63889535575d685c924b081b321ccdeb235067dd1fc96d",
+  "reason": "Corrected overbroad negative capability statement to acknowledge the documented, untested protein-structure movie example; generalized video-production/export/publishing remains unestablished. First independent reviews preserved. No ratings changed by the coordinator.",
+  "changedAt": "2026-10-22T17:36:24Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "astabrief",
+  "title": "AstaBrief makes cited research reports a component you can run and inspect",
+  "entity": "AstaBrief 8B",
+  "category": "Models",
+  "tags": [
+    "research synthesis",
+    "education",
+    "open weights",
+    "retrieval",
+    "citations"
+  ],
+  "summary": "Ai2’s downloadable 8B report writer offers a practical way to build literature-based teaching and research tools, provided retrieval and citation review remain explicit parts of the workflow.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-02",
+  "discoveredAt": "2026-10-20T16:24:41Z",
+  "updatedAt": "2026-10-22T17:18:06.828314Z",
+  "officialUrl": "https://allenai.org/blog/astabrief",
+  "sections": [
+    {
+      "id": "what-it-is",
+      "title": "A specialized writer with a defined job",
+      "html": "<p>AstaBrief is an eight-billion-parameter model that turns a research question and retrieved scientific excerpts into a cited report. Ai2 announced its open release on October 2, 2026, and says it powers Fast mode in Asta’s Generate a report feature. The useful distinction is between that writing component and the larger service: downloading the checkpoint does not provide Asta’s complete search corpus, retrieval pipeline, interface, or operating environment. For a builder, its appeal is the ability to put a visible, replaceable report writer behind a carefully chosen collection of sources. <a href=\"https://allenai.org/blog/astabrief\">Ai2 announcement</a>.</p><p>This is a baseline discovery for the Observatory, revisited from the earlier research backlog. It should not be read as an October 22 launch. The strongest immediate use is a bounded literature briefing whose evidence a reader can inspect: a teaching preparation tool, a research reading companion, or a small subject-specific application. The report generator can make a first pass through supplied excerpts, while the product keeps source selection and final judgment visible.</p><p>The model card describes supervised fine-tuning followed by offline direct preference optimization, with Qwen3-8B as the underlying model family. These are adaptations to a defined synthesis task, rather than evidence that a small model has become a general autonomous scientist. That narrowness is part of the opportunity: it gives a team a concrete component and a task against which to measure it. <a href=\"https://huggingface.co/allenai/AstaBrief_8B\">Model card</a>.</p>"
+    },
+    {
+      "id": "workflow",
+      "title": "Keep retrieval, writing, and checking separate",
+      "html": "<p>The practical workflow begins before generation. A research question needs a scope: which subject, time period, population, or method matters? A retrieval system then supplies excerpts with enough identifying information to reconnect every reference to its document. AstaBrief writes from those materials. A final review asks whether the report answered the question and whether its citations support the exact claims being made. Each stage can fail independently, so a fluent final answer cannot certify that the earlier stages succeeded.</p><p>For a course-planning application, an instructor might ask how several papers evaluate feedback timing in introductory mathematics. The app could expose the selected papers and passages before generating a comparison. The resulting draft would be useful for preparing a discussion, particularly if the interface places each claim beside its cited passage. This is a proposed use case, not a demonstrated classroom deployment or a claim that AstaBrief improves learning.</p><p>Ai2 links a ScholarQA Lite implementation as a starting point for adapting report generation to a researcher’s own PDFs. The inspected directory contains prompt utilities, response parsing, and a one-shot report-generation implementation. That establishes inspectable code, not a verified turnkey desktop experience. A team still needs to check document extraction, retrieval, reference formatting, model serving, and the destination interface for its own environment. <a href=\"https://github.com/allenai/ai2-scholarqa-lib/tree/main/api/scholarqa/lite\">Linked implementation</a>.</p><p>An educational video producer could use a bounded report to organize a draft script about a scientific debate. Each factual segment would retain its paper reference and source passage in a production worksheet, then a subject reviewer would check the narration before recording. A companion website could publish the reading list and explain where studies disagree. This is a proposed text-preparation workflow: AstaBrief does not generate the video, verify the voiceover, or establish permission to reuse figures. The useful output is a traceable starting point for editorial work, with the evidence trail surviving the move from report to script.</p>"
+    },
+    {
+      "id": "results",
+      "title": "Read the evaluation at its actual scale",
+      "html": "<p>The model card reports results on the ScholarQA-CS2 test set, described there as 100 user-written computer-science research questions. Its table gives the final AstaBrief checkpoint an average of 87.0 across four reported measures, versus 83.7 for the supervised-only checkpoint and 77.3 for base Qwen3-8B. These are publisher-reported benchmark values. They are useful evidence that the particular training recipe improved the measured task; they are not probabilities that any new report will be correct. <a href=\"https://huggingface.co/allenai/AstaBrief_8B#evaluation-results\">Evaluation table</a>.</p><p>The component results matter more than the headline average. The card lists citation precision of 90.5 and citation recall of 78.2 for AstaBrief, compared with 76.2 and 64.6 for the base model. Answer precision is 89.0 for AstaBrief and 90.6 for the base model. That mixed movement makes a blanket claim of improvement on every property inappropriate. A builder should examine the measures that correspond to the product’s failure modes instead of treating the average as a universal quality score.</p><p>Ai2’s blog describes a 200-question benchmark overall, while the card specifies a 100-question test portion. Those scopes should remain distinct. More importantly, Ai2 states that most training and evaluation were completed in 2025 and that the full evaluation has not been rerun against the current frontier. The comparison is evidence about this engineering approach and its historical comparison systems, not a current model leaderboard.</p>"
+    },
+    {
+      "id": "speed",
+      "title": "Two speed claims describe different things",
+      "html": "<p>The announcement discusses a nearly order-of-magnitude reduction in report-generation time compared with the proprietary models the team tracked. It separately gives full-pipeline averages of 51.1 seconds for Asta Fast mode and 178.5 seconds for Thinking mode, approximately a 3.5-fold difference. Those are different measurement boundaries. It would be misleading to advertise the complete research workflow as ten times faster on the basis of the generation-stage claim. Neither figure was independently reproduced for this report. <a href=\"https://allenai.org/blog/astabrief\">Reported system timings</a>.</p><p>The mechanism is understandable: AstaBrief produces a full report in one pass from a question and relevant excerpts. Ai2 says this bypasses the expensive summarization and clustering stages of the Claude-based Thinking pipeline and avoids writing the report section by section. The advantage therefore comes from a combination of specialization and system design. It does not isolate a pure model-speed comparison under otherwise identical conditions.</p><p>For an educational app, the relevant measurement is the time until a usable, checked draft is available. Include document processing, retrieval, generation, citation checking, and human revision. A fast draft that takes longer to repair may not help. The published numbers justify testing an interactive briefing workflow, but they do not establish laptop latency, a minimum GPU requirement, a hosting bill, or a fixed saving for an institution.</p>"
+    },
+    {
+      "id": "training",
+      "title": "The transferable lesson is evidence quality",
+      "html": "<p>Ai2 describes filtering a collection of research queries for quality, relevance, and privacy, then producing synthetic report examples with several backing models. It reports around 47,000 usable supervised examples and roughly 6,000 preference examples after filtering. Two judge models compared report pairs, and the team kept pairs on which both agreed. Ai2 reports 95 percent agreement with human preferences in its alignment check. That describes a training-data selection procedure; it should not be converted into a claim of 95 percent factual accuracy for generated reports. <a href=\"https://allenai.org/blog/astabrief\">Training and data-filtering account</a>.</p><p>The most useful methodological observation is that removing synthetic reports with low citation density produced the strongest gains among the tested filters. More elaborate combinations did not add meaningful improvement in the team’s experiments. For another builder, this suggests a specific hypothesis to test: examples that consistently attach evidence to claims may teach the desired behavior more effectively than simply adding more scientific prose.</p><p>Citation density alone is also easy to mistake for quality. A report can place a citation after every sentence and still misrepresent a source. Ai2 explicitly discusses this problem: a model may broaden a finding from a particular sample to a population, turn a descriptive result into a recommendation, or otherwise strengthen a claim without an obviously fabricated statement. A product needs a check for evidentiary scope, not just a counter for citation markers.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What is open, and what must still be supplied",
+      "html": "<p>The AstaBrief model card identifies Apache 2.0 licensing and states an intended research and educational use in accordance with Ai2’s responsible-use guidance. It links the supervised checkpoint, preference data, and recommended prompt. These are meaningful inspectability advantages: a team can examine the model family and training artifacts and can serve the weights on its own infrastructure. The hosted Asta service and every external dependency should still be evaluated on their own terms; the model’s license does not automatically describe an entire application stack. <a href=\"https://huggingface.co/allenai/AstaBrief_8B#intended-uses-and-limitations\">Access and intended uses</a>.</p><p>The card recommends using the training prompt format with the query and section references, warning that a different interaction format may produce degraded or inconsistent behavior. That is an implementation constraint worth preserving. Dropping the checkpoint into an ordinary chat prompt and assuming comparable results would change an important part of the evaluated setup. The supplied inference example uses Python tooling including Transformers and vLLM; it is documentation, not a tested installation recipe from this scan.</p><p>Local weights also do not by themselves establish local data handling. If a product retrieves from remote services, calls an external parser, or delegates evaluation to another model API, information still leaves the machine at those stages. A locally operated research tool should document the complete data path. No local inference, installation, throughput benchmark, or cost measurement was performed for this report.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "A bounded pilot for a real teaching or research tool",
+      "html": "<p>A useful first pilot would choose a small set of public papers and questions that the team can answer independently. Include comparisons, questions with conflicting evidence, and at least one question the selected corpus cannot answer. Keep the source set fixed across candidate systems so that differences in retrieval do not masquerade as differences in writing quality. Preserve the input excerpts, generated report, model checkpoint, prompt version, and reviewer corrections for each question.</p><p>Reviewers can then assess four separate outcomes: whether the report covers the requested points, whether each point is relevant, whether the attached citation entails the claim, and whether important claims lack support. Add a fifth check for scope: does the text preserve the study’s population, task, date, and uncertainty? This pilot design is an editorial recommendation derived from the documented weaknesses, not a completed experiment.</p><p>The interface can make that discipline usable. Show source passages in a side panel, distinguish disagreements from missing evidence, and let a teacher remove an irrelevant paper before regenerating. For a student-facing reading tool, use the report to help locate and compare evidence, then ask learners to inspect the underlying methods. Those design choices make the draft a starting point for inquiry and give users a practical way to challenge it.</p><p>Set acceptance criteria before reading the outputs. For example, require reviewers to find the supporting passage for every consequential conclusion, flag unsupported comparisons, and record how much editing each draft needs. Keep failed and unanswerable cases in the evaluation set instead of selecting only attractive demonstrations. If a different prompt, retrieval method, or checkpoint is introduced, rerun those same cases so a prettier presentation does not conceal a regression. A pilot should end with a decision about a specific workflow and user group, rather than a general endorsement of the model.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "A promising component with bounded evidence",
+      "html": "<p>The announcement also reports an exploratory human comparison with only 14 questions contributed by three scientific researchers. DR-Tulu led overall preference, while two of the three researchers preferred AstaBrief on citation accuracy. This is useful qualitative context and a small sample, not broad proof of superiority. Early usage and sparse feedback in the hosted service likewise do not establish general research productivity or educational benefit. <a href=\"https://allenai.org/blog/astabrief\">Validation and early-use limitations</a>.</p><p>AstaBrief is worth a measured pilot when a project needs an inspectable, specialized report writer and already has a credible plan for retrieval and source review. Its value is greatest where the same bounded evidence collection is revisited for many questions, making controlled comparisons and correction practical. It is less compelling as a promise that arbitrary scientific questions can now be answered reliably without domain judgment.</p><p>The lasting contribution may be the recipe as much as the checkpoint: align training examples with the desired evidence behavior, simplify the report pipeline, and measure citation support separately from fluent presentation. AstaBrief makes that recipe available for inspection. The next useful evidence would be independent replication on current comparison models and diverse subject areas, plus measurements of the human work required to turn a draft into a dependable research artifact.</p>"
+    }
+  ],
+  "useCases": [
+    "Literature briefing drafts for course preparation with visible source passages",
+    "Research reading companions over a bounded public paper collection",
+    "Experiments comparing citation-focused post-training and report pipelines"
+  ],
+  "limitations": [
+    "Most reported training and evaluation date to 2025; no full comparison against the October 2026 frontier.",
+    "Publisher results and a 14-question, three-researcher human study do not establish broad superiority.",
+    "Retrieval, extraction, hosting, and citation review are separate responsibilities.",
+    "No inference, installation, latency, costs, or learning outcomes were tested in this scan."
+  ],
+  "sources": [
+    {
+      "id": "source-d185427efe0f1914",
+      "title": "Ai2: Open-sourcing AstaBrief",
+      "url": "https://allenai.org/blog/astabrief",
+      "locator": "Training the model; Filtering data; Validating the approach; Where this goes next",
+      "supports": "Announcement date, pipeline, training, timings, evaluation scope and limitations",
+      "accessedAt": "2026-10-22T17:08:42.860Z",
+      "publishedAt": "2026-10-02"
+    },
+    {
+      "id": "research-astabrief-model",
+      "title": "AstaBrief 8B model card",
+      "url": "https://huggingface.co/allenai/AstaBrief_8B",
+      "locator": "Inference and Usage; Evaluation Results; Intended Uses and Limitations",
+      "supports": "Checkpoint, license, prompt constraints, test-set results",
+      "accessedAt": "2026-10-22T17:09:14.020Z",
+      "publishedAt": null
+    },
+    {
+      "id": "research-astabrief-lite",
+      "title": "ScholarQA Lite implementation",
+      "url": "https://github.com/allenai/ai2-scholarqa-lib/tree/main/api/scholarqa/lite",
+      "locator": "Folders and files",
+      "supports": "Linked one-shot report-generation implementation and supporting files",
+      "accessedAt": "2026-10-22T17:09:14.020Z",
+      "publishedAt": null
+    }
+  ],
+  "images": [],
+  "judgment": "A useful open-weights synthesis component for bounded research and education pilots; its evidence supports specialized engineering value, not general scientific reliability.",
+  "researchNote": "Primary announcement, model card, and linked code directory inspected in Chrome on October 22, 2026. Figures were not used as evidence; textual evaluation tables and qualifiers were retained. No installation or model execution was performed. Original workflow suggestions are proposals."
+}

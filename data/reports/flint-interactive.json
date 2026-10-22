@@ -1,0 +1,131 @@
+{
+  "id": "flint-interactive",
+  "title": "Flint Interactive gives AI-built charts a reusable language for interaction",
+  "entity": "Flint Interactive",
+  "category": "Open source",
+  "tags": [
+    "data visualization",
+    "interactive charts",
+    "education",
+    "web development",
+    "MCP"
+  ],
+  "summary": "Microsoft’s open visualization language separates chart meaning, visual style, and interaction behavior, with practical APIs for agent-generated dashboards and teaching tools. Its current interaction presets depend on Vega-Lite.",
+  "changeType": "new",
+  "publishedAt": "2026-10-22T16:00:00Z",
+  "discoveredAt": "2026-10-22T17:08:09Z",
+  "updatedAt": "2026-10-22T17:18:06.828314Z",
+  "officialUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+  "sections": [
+    {
+      "id": "change",
+      "title": "An interaction layer an agent can describe",
+      "html": "<p>Flint Interactive addresses a common weakness in AI-generated data tools: an agent can draw an attractive chart but still struggle to connect a reader’s selection to the right data, update another view, or preserve behavior when the rendering changes. Microsoft’s October 22 research post presents a language for specifying those interactions at a semantic level. The agent describes what data means and what a gesture should do; a compiler handles much of the renderer-specific work. <a href=\"https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/\">Microsoft Research announcement</a>.</p><p>The timing deserves precision. The repository dates Flint 1.0.0 to October 19 and 1.0.1 to October 21. October 22 is the research announcement, not the first appearance of the release. Flint also predates this interaction layer: the repository documents earlier chart and theme releases. This report covers a new, substantive development in an existing project, rather than presenting the entire visualization library as newly invented. <a href=\"https://github.com/microsoft/flint-chart/blob/main/CHANGELOG.md\">Versioned changelog</a>.</p><p>For educational and creative builders, the opportunity is concrete. A chart can become an interface for asking a question of a dataset: selecting a period, comparing a region, or showing the documents behind a point. Flint supplies reusable pieces for that interface. It does not determine which question is worthwhile, whether the data is correct, or whether a reader will interpret the result accurately.</p>"
+    },
+    {
+      "id": "model",
+      "title": "Separate meaning, appearance, and behavior",
+      "html": "<p>A Flint specification describes data, semantic field types, and chart mappings, with optional theme and interaction specifications. A field can be identified as a month, a quantity, a rank, or a temperature rather than being treated as an undifferentiated string or number. The compiler uses this information to infer details such as formatting, scales, and axes. Themes describe the presentation, and interaction specifications describe what users can do. <a href=\"https://github.com/microsoft/flint-chart\">Project overview</a>.</p><p>This separation is especially useful for generated software because it leaves a compact artifact a person can review. An educator can inspect which field supplies the horizontal axis and whether a filter removes records or merely highlights them. A designer can change a theme without rewriting the meaning of the chart. An application developer can connect a selection to another component without depending on an SVG path or a particular renderer’s internal mark index.</p><p>The project advertises 52 chart types, five rendering backends, 14 themes, and 23 interaction presets on its inspected site. Those are project inventory claims, not a compatibility guarantee for every combination. The relevant question for a real app is whether the chosen chart type, data semantics, backend, and interaction work together. A broad catalog is helpful for discovery, but it cannot replace that specific check.</p>"
+    },
+    {
+      "id": "boundary",
+      "title": "The important backend boundary",
+      "html": "<p>The interaction API documentation explicitly says that the presets currently support Vega-Lite. On another backend, the chart renders statically with an interactions_ignored warning. This sharply limits how the general backend portability claim should be read: the same high-level chart description can target several renderers, but the new interaction behavior is not uniformly portable across all of them. A team choosing ECharts, Chart.js, Plotly, or Excel should not assume this release gives it the same interactive runtime. <a href=\"https://microsoft.github.io/flint-chart/#/documentation/interaction-api\">Programming API</a>.</p><p>There is also a difference between a chart that renders successfully and a chart that honors the requested behavior. Unsupported declarative interaction entries may be dropped with a warning. Malformed interaction specifications and unsupported code-defined interactions can fail mounting with a named error. These distinctions belong in a product’s validation and feedback, especially when an agent writes the specification. Silently displaying a static chart after a user requested filtering would otherwise look like success.</p><p>The documentation says tooltips are a separate option and default to off. A chart is not automatically interactive because it is mounted through the React component; a specification or interaction property must request the behavior. For a first implementation, pick one supported chart and one meaningful preset, inspect the warnings, and verify the exact gesture and its reset behavior before expanding the experience.</p>"
+    },
+    {
+      "id": "applications",
+      "title": "Three useful products this could support",
+      "html": "<p>A classroom data explorer is a good bounded use case. Students could examine a public temperature or population dataset, select a range of years, and compare the selected slice with the whole series. The chart should expose units, source dates, and the active selection. Asking students to explain what changed when the range changed would use interaction to support reasoning. This is a proposed teaching design; the release does not provide evidence of learning gains.</p><p>A source-linked research website could connect a chart to a table of studies or documents. Clicking a category would highlight the corresponding records, and choosing a record in the table would update the chart. The API documents semantic events and external updates that make such a two-way connection plausible without manipulating renderer internals. The application still has to define the matching keys and decide what information should remain visible.</p><p>A small editorial dashboard could use one shared theme and a few reusable specifications across multiple reports. An agent might generate candidate charts, while an editor checks the data transformation, axis choice, title, and interactions before publication. The benefit would be a more consistent implementation surface for revision. No workflow-speed, accessibility, or comprehension improvement was measured in this scan, so these examples are implementation proposals rather than demonstrated outcomes.</p><p>For an educational video, a producer could plan a short sequence of chart states and record a browser demonstration: begin with the full dataset, select a period, explain the change, and reset. The script should identify the data source, units, and active filter at each step so the recording does not make a selected subset look like the complete evidence. This is a proposed production method, not a Flint video-export feature. A companion webpage could expose the same chart for exploration, while the finished video preserves the specific state used for narration. Neither screen recording nor video production was tested here.</p>"
+    },
+    {
+      "id": "api",
+      "title": "What embedding actually requires",
+      "html": "<p>The documented JavaScript entry point is mountChart from flint-chart/interactive; the React entry point is FlintChart from flint-chart/react. The programming API accepts a chart input plus a backend and interaction definitions. A host can observe committed state changes and use the selected data to update a table or another view. Bespoke handlers map semantic events to update operators, such as emphasizing a selection or adding an annotation. <a href=\"https://microsoft.github.io/flint-chart/#/documentation/interaction-api\">Embedding and event examples</a>.</p><p>The documentation also makes lifecycle responsibilities explicit. Applications should await the chart’s readiness before dispatching events, clear retained updates when appropriate, and destroy the surface when unmounting. Updates sent by the host are not cleared by canvas reset gestures; the host owns their reset behavior. That matters in a dashboard where a chart selection and an external filter may have different lifetimes. A reset button must have a deliberate meaning.</p><p>Flint’s filter controls distinguish removing excluded rows from keeping them visible but muted. The documentation advises selecting only one or two useful fields rather than adding every available control. It also describes incompatible combinations, including a warning when filter controls are skipped on a chart using certain viewport interactions. These are practical design constraints. A clear small interface is a better pilot than a dense collection of controls whose combined behavior has not been checked.</p>"
+    },
+    {
+      "id": "mcp",
+      "title": "Choose the execution path deliberately",
+      "html": "<p>Flint provides an npm library for application embedding and an MCP server for agent workflows. The setup guide describes local stdio execution and a hosted HTTP endpoint. The local server renders on its host; the hosted server accepts data embedded in tool calls. The documentation also says remote data URLs are not fetched and that the server expects chart-ready rows. Joins, aggregation, derived columns, and reshaping are work for the surrounding agent or application. <a href=\"https://microsoft.github.io/flint-chart/#/documentation/setup-flint-mcp\">MCP setup and data access</a>.</p><p>For a developer evaluating the local path, the documented prerequisites include Node.js tooling and an MCP-compatible client. An interactive chart inside a conversation additionally depends on host support for MCP Apps. The guide provides static rendering as a fallback when the interactive show capability is unavailable. This means a successful server connection does not itself prove that a particular client can display the live interface.</p><p>The data-access boundary is material to choosing a path. By default, the documented local server can read referenced local CSV, TSV, or JSON files. A configuration option disables file references and requires inline data instead. These are documented capabilities, not actions performed here. No server was installed or connected, no files were submitted to the hosted endpoint, and no assertion of end-to-end local privacy follows merely from choosing a local renderer.</p>"
+    },
+    {
+      "id": "versions",
+      "title": "Read the release before copying the current docs",
+      "html": "<p>The inspected source tree contains an important version distinction. The changelog places the move to a stateless MCP server under Unreleased: chart or board specifications are passed to show, and the server keeps nothing between calls. Its 1.0.0 section instead describes charts in server memory and says a scaled HTTP deployment needs one instance or sticky sessions. Current setup documentation already presents the stateless tool set. These are different states of the project, not interchangeable installation instructions. <a href=\"https://github.com/microsoft/flint-chart/blob/main/CHANGELOG.md\">Unreleased and 1.0.0 changes</a>.</p><p>Before integrating, pin the package version or source revision and read documentation that matches it. For released 1.0.x deployments, verify the actual tools and state model rather than assuming that the newest README describes the installed package. For a source build, record the commit and check how its behavior differs from the last release. This is particularly relevant to saved charts, reconnecting sessions, and scaling a remote server.</p><p>The project’s MIT license is visible in the repository, with the standard notice-preservation condition and no warranty. The README describes the Python port as source preview with no released package. The most direct documented application path is therefore the JavaScript or TypeScript library, or a compatible MCP client. The release is inspectable and usable enough for a bounded evaluation, but it is still changing quickly. <a href=\"https://github.com/microsoft/flint-chart/blob/main/LICENSE\">License</a> and <a href=\"https://github.com/microsoft/flint-chart\">repository status</a>.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "A useful acceptance test is behavioral",
+      "html": "<p>A practical pilot can start with a small public dataset and a question that requires one interaction. Preserve the source, units, transformations, and chart specification. Check that the selected data values match the displayed marks; then verify the interaction, clearing the selection, empty results, and a resize. If a selection updates a table, confirm the table and chart agree after a sequence of changes, not only on the initial click.</p><p>For a classroom or public-facing website, also check keyboard operation, touch behavior, visible focus, screen-reader alternatives, and whether the important information is available without using color alone. These are recommended acceptance checks, not verified features of Flint. A useful interactive chart should retain a readable static state and an understandable table or textual explanation when the live interaction is unavailable.</p><p>The main architectural benefit is a smaller, inspectable contract between the agent’s request and the rendered interface. It can make revisions more systematic and give validation a concrete object to inspect. Whether it improves agent reliability in practice still needs measurement on a representative set of tasks. The inspected announcement and documentation support the capabilities and constraints described here; this scan did not run benchmarks or test an embedded application.</p><p>Flint Interactive is worth trying for a new data story, educational explorer, or small dashboard built around supported Vega-Lite interactions. The strongest reason is its reusable separation of chart semantics and behavior. The strongest reason to keep the first project bounded is the combination of backend-specific interaction support and a changing MCP state model. A successful pilot should show that readers can ask a useful question of the data and recover from mistakes, not merely that an agent produced a polished chart.</p>"
+    }
+  ],
+  "useCases": [
+    "Agent-assisted educational data explorers with explicit selections and source tables",
+    "Interactive research websites connecting charts to documents or tabular records",
+    "Consistent dashboards and data stories built from inspectable chart specifications"
+  ],
+  "limitations": [
+    "Interaction presets currently require Vega-Lite; other backends render static with a warning.",
+    "Current source documentation includes a stateless MCP design listed as Unreleased; released 1.0.x behavior differs.",
+    "MCP Apps support depends on the client; the server is not a general data-wrangling engine.",
+    "No software was installed and no interactive application, benchmark, accessibility audit, or learning study was run."
+  ],
+  "sources": [
+    {
+      "id": "source-db007afeffa315be",
+      "title": "Microsoft Research: Flint-interactive",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "locator": "At a glance; How to use; How it works",
+      "supports": "October 22 announcement and AI-agent motivation",
+      "accessedAt": "2026-10-22T17:11:01.191Z",
+      "publishedAt": "2026-10-22T16:00:00Z"
+    },
+    {
+      "id": "research-flint-repository",
+      "title": "Flint repository",
+      "url": "https://github.com/microsoft/flint-chart",
+      "locator": "Updates; Get started; Documentation",
+      "supports": "Prior release dates, package paths, capabilities and Python preview",
+      "accessedAt": "2026-10-22T17:12:26.147Z",
+      "publishedAt": null
+    },
+    {
+      "id": "research-flint-api",
+      "title": "Flint interaction programming API",
+      "url": "https://microsoft.github.io/flint-chart/#/documentation/interaction-api",
+      "locator": "Backend note; Mount an interactive chart; React; Lifecycle and cleanup",
+      "supports": "Vega-Lite boundary, validation behavior, API semantics and lifecycle",
+      "accessedAt": "2026-10-22T17:20:50.300097Z",
+      "publishedAt": null
+    },
+    {
+      "id": "research-flint-mcp",
+      "title": "Flint MCP setup guide",
+      "url": "https://microsoft.github.io/flint-chart/#/documentation/setup-flint-mcp",
+      "locator": "Requirements; Data access; Backend and rendering options",
+      "supports": "Execution paths, host prerequisites and data-access limits",
+      "accessedAt": "2026-10-22T17:13:06.467Z",
+      "publishedAt": null
+    },
+    {
+      "id": "research-flint-changelog",
+      "title": "Flint changelog",
+      "url": "https://github.com/microsoft/flint-chart/blob/main/CHANGELOG.md",
+      "locator": "Unreleased; 1.0.1; 1.0.0",
+      "supports": "Distinct released and unreleased behavior",
+      "accessedAt": "2026-10-22T17:13:06.466Z",
+      "publishedAt": null
+    },
+    {
+      "id": "research-flint-license",
+      "title": "Flint MIT license",
+      "url": "https://github.com/microsoft/flint-chart/blob/main/LICENSE",
+      "locator": "MIT License",
+      "supports": "License terms",
+      "accessedAt": "2026-10-22T17:13:06.467Z",
+      "publishedAt": null
+    }
+  ],
+  "images": [],
+  "judgment": "A substantive open-source interaction layer for AI-built charts, suitable for a bounded Vega-Lite pilot with explicit version pinning and behavioral checks.",
+  "researchNote": "Primary Microsoft announcement, repository, changelog, license, and loaded documentation pages inspected in Chrome on October 22, 2026. Documentation inspection only: no installation, MCP connection, rendering benchmark, or interaction testing. The announcement date is distinct from release dates. Workflow examples and acceptance tests are editorial proposals."
+}

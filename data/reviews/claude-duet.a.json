@@ -1,0 +1,32 @@
+{
+  "reportId": "claude-duet",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "8cbba8553114694b0e35163e94cbe994be430ca2901109e8029597d0e95f9358",
+  "evidenceHash": "bb3042bb13a5598dca52bfea7149c9f8deb2a6b006fb4cf449402d8075ddee6a",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 3,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The launch pages describe a concrete coordination workflow spanning background tasks, connected applications and review requests. The report proposes bounded educational preparation, app prototypes and video-planning pilots with explicit source checks and deliverables. Immediate usefulness is limited by U.S. Pro/Max waitlist access and by the absence of tested outputs, integration walkthroughs or established export controls.",
+    "impact": "Combining persistent account context, periodic observation and cloud execution in a consumer product could make delegated work accessible to independent educators and studios. That is a meaningful product direction. Evidence is limited to two launch pages and selected testimonials, with no reproducible benchmark or demonstrated net productivity, so potential significance should remain moderate.",
+    "novelty": "The distinctive aspect is packaging ongoing background work and decision requests into a continuous user-facing handoff experience. The underlying ideas of cloud agents, connectors, memory, scheduled checks and approval gates are established. The sources do not demonstrate a new technical approach or superior judgment, and forthcoming integrations must not count as delivered novelty.",
+    "maturity": "The product is explicitly a limited research preview with waitlist admission, checks separated by hours, shared usage limits and no browser view at launch. Anthropic acknowledges urgency and interpretation errors. No accounts, workflows or approval enforcement were exercised, and cancellation, recovery, export and detailed retention behavior remain unspecified in the inspected sources.",
+    "openness": "The public announcement and FAQ explain access and broad behavior, but provide no downloadable Duet implementation, weights, reproducible evaluation package or verified portability commitment. Regional/plan gating and dependence on proprietary account context further limit inspection and migration. Connector catalog size does not make the product itself open."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Documented limitation: all product, connector, security and classifier claims come from Anthropic; no enforcement or output-quality validation occurred.",
+    "Waitlist eligibility is not granted access, periodic checks are not continuous monitoring, and the forthcoming 1Password and Shopify editor features are not current capabilities.",
+    "Retention, recovery, cancellation and artifact portability need direct verification before sensitive or production use; the report does not invent answers."
+  ]
+}

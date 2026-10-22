@@ -1,0 +1,32 @@
+{
+  "reportId": "embeddinggemma-2",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "d02eb1e87bcc54246a62c5ba5fe6c6228408b0fa62b6bf9f813edfd1871c6812",
+  "evidenceHash": "f6765a6466b91ff484b9a2c90fe34d04287ac0347c9757119ca3aad01d2ad7fb",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "confidence": "high",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The official model card supplies enough implementation detail to scope mixed-media course search, creative asset retrieval and app prototypes: modular loading, precision, token budgets, text prefixes, truncation and source timestamps. The report turns these into testable workflows without claiming that a search index or product is supplied.",
+    "impact": "One compact representation across text, code, images, audio and video can materially widen local retrieval applications. Publisher results and modular deployment paths support substantial significance for this domain; no independent evaluation or field-wide transformative effect is established.",
+    "novelty": "The concrete differentiation is the combination of four modalities, selectively loaded encoders and adjustable output dimensions in a sub-billion-parameter model. The small multilingual text-score change is correctly separated from the larger code gain, avoiding an inflated claim that every retrieval task advances similarly.",
+    "maturity": "Weights, explicit configurations, documented integration paths and detailed failure warnings support a usable evaluation. Float16 failure, segmentation, sampled video and backend differences remain material, and no runtime or target-device performance has been independently confirmed.",
+    "openness": "Downloadable weights, model architecture, inference instructions and an Apache 2.0 label provide substantial inspectability and portability. The conflicting model-card reference to a separate prohibited-use policy, deprecated linked documentation and lack of a complete reproduced training pipeline keep this below exceptionally open."
+  },
+  "concerns": [
+    "The Apache label and the model card instruction to adhere to the separate Gemma Prohibited Use Policy coexist in the archived sources. The report correctly preserves this unresolved scope rather than asserting legal precedence.",
+    "All performance values are publisher measurements. The 128-dimensional degradation, float16 warning, one-vector output and shared 8,192-token limit must remain visible in later summaries.",
+    "No model run, device memory/latency measurement, application benchmark or license clearance for corpus assets was performed in this review."
+  ]
+}

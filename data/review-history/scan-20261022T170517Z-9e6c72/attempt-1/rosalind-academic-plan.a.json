@@ -1,0 +1,32 @@
+{
+  "reportId": "rosalind-academic-plan",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "8e30db7ec296124e0878bc80f6913f468d1e0574b2dd796ab03fd04ffcc96cf8",
+  "evidenceHash": "9b2e3dc6811df80eeced3c3e4407299d4aecd56234b71878b99c5a9019e2e55a",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The announcement and detailed help guide establish a concrete sponsored evaluation route, and the report turns the eligibility, same-domain membership, sole-owner and API exclusions into actionable selection criteria. Its supervised literature, public-data, teaching, website and script pilots are useful original proposals. Value is concentrated in eligible U.S. university labs rather than broadly available to educational builders.",
+    "impact": "Up to 30 sponsored seats for up to 12 months is a meaningful domain-specific access change that could expand evaluation of integrated life-sciences workflows. The sources do not establish discovery gains, scientific accuracy, adoption scale or API deployment, so the evidence supports moderate potential significance rather than a field-wide technical breakthrough.",
+    "novelty": "The distinctive development is the academic sponsorship and trusted-access arrangement around an existing model and Workbench. The August Workbench source provides earlier workflow context; the October 15 offer does not demonstrate a new underlying method. The report correctly calls this baseline coverage and separates those dates.",
+    "maturity": "The help guide specifies application routes, setup, owner responsibilities, member activation, payment-card requirements and retention clearly enough to plan a controlled pilot. Workbench remains a research preview, admission is conditional, and neither approved-workspace behavior nor scientific or billing reliability was tested. Documentation maturity is stronger than demonstrated operational maturity.",
+    "openness": "This is a proprietary, managed, application-gated service restricted to eligible U.S. university labs, with same-domain membership and no included API access. No model weights, self-hosting license or reproducible evaluation package is established. Public documentation improves inspectability of terms but provides little model or deployment portability."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: sponsor approval, institutional policy and member activation must not be represented as automatic access.",
+    "Scientific accuracy, actual workspace functionality and post-promotion billing remain untested; the report states these limits.",
+    "No-training default and standard retention are distinct; the report correctly preserves that distinction and ZDR unavailability."
+  ]
+}

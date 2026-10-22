@@ -1,0 +1,33 @@
+{
+  "reportId": "astabrief",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "1cb81cd6ddf43d5d7fb020c557fe683d4daa664b8fbf52311d80374ebadda594",
+  "evidenceHash": "9c4df262980d773d459d0e610310014af063cd21ca5f6708cd9aeb003f1feb00",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "confidence": "high",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "A downloadable citation-focused writer and linked implementation offer a defined component for literature-based teaching tools, research websites and script preparation. The report makes retrieval, source-passage inspection and human correction explicit, so its proposed pilots are actionable without implying a complete research service.",
+    "impact": "The open release and evidence-focused post-training recipe are a meaningful advance within scientific synthesis tooling. Mostly 2025 evaluations, a 100-question model-card test portion and a fourteen-question human comparison do not support exceptional or current-frontier impact.",
+    "novelty": "Task-specific SFT/DPO, citation-density filtering and one-pass synthesis form a useful differentiated recipe. They adapt established methods and a Qwen3-8B base; the sources do not demonstrate a fundamentally new scientific reasoning capability.",
+    "maturity": "Hosted Fast-mode use, released checkpoints, inference guidance and measured evaluation support a usable bounded component. Prompt sensitivity, retrieval dependencies, incomplete citation recall and narrow historical evaluation leave substantial work before dependable scientific use.",
+    "openness": "Apache-labeled weights, base-model identity, training-artifact links, prompt guidance and inspectable ScholarQA Lite code provide strong reproducibility and migration opportunities. The full hosted Asta environment and external retrieval/data-service terms are separate, and this review did not execute or reproduce the pipeline."
+  },
+  "concerns": [
+    "The report accurately distinguishes the nearly order-of-magnitude generation-stage claim from full-pipeline averages of 51.1 versus 178.5 seconds, and the 200-question benchmark description from the 100-question test table.",
+    "The final checkpoint improves citation metrics while answer precision is lower than the base model in the cited table; the report retains that mixed result and does not equate scores with factual-accuracy probabilities.",
+    "The fourteen-question, three-researcher study and predominantly 2025 evaluation cannot substantiate broad superiority over current models or educational outcomes.",
+    "No model inference, code execution, latency measurement or complete source-code audit was performed."
+  ]
+}

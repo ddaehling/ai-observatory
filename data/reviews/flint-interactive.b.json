@@ -1,0 +1,32 @@
+{
+  "reportId": "flint-interactive",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "6bcc6ea6fcb13f0c4ec3f533da8b4a7f8c141dce5730700b0ef9195d4eccc35b",
+  "evidenceHash": "04eec1ab6b009aa64102fc3722f3fbbe01b43200dd7c3ea66eb6e0c0dfd68ad6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "confidence": "high",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Concrete JavaScript/React APIs, semantic events, update operators and lifecycle guidance support interactive teaching explorers and research dashboards. The report gives implementable pilot boundaries and useful failure/reset checks while keeping video recording and accessibility validation as proposed application work.",
+    "impact": "An inspectable interaction language can reduce a recurring engineering burden in agent-generated charts and linked data interfaces. The evidence establishes architecture and documented features, not measured improvements in agent reliability, development time or learning outcomes.",
+    "novelty": "The integration of semantic chart types, themes and high-level interaction operators into an agent-facing compiler is meaningfully distinctive. It composes familiar visualization techniques and existing renderers, so novelty is moderate to substantial rather than exceptional.",
+    "maturity": "Versioned releases, extensive API documentation, explicit warnings and error behavior provide a reasonable basis for a bounded implementation. Vega-Lite-only presets and the unreleased stateless MCP transition materially limit assumptions about version compatibility and production readiness.",
+    "openness": "MIT source, reusable chart specifications, JavaScript/React interfaces and local execution paths give strong inspectability and portability. Other renderers do not preserve the current interaction behavior, the Python route is only source preview, and the hosted service is a separate dependency."
+  },
+  "concerns": [
+    "The stateless MCP design is under Unreleased in the archived changelog, while 1.0.0 describes server-memory charts. The report correctly warns that the current setup guide and released package behavior differ.",
+    "Five backends and twenty-three presets are inventory claims, not an interoperability matrix. Interaction presets require Vega-Lite and unsupported requests can warn or fail differently.",
+    "The October 22 announcement is distinguished from October 19 and October 21 releases. No installation, MCP connection, interaction test, accessibility audit or learning study was performed."
+  ]
+}

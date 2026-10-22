@@ -1,0 +1,105 @@
+{
+  "id": "rosalind-academic-plan",
+  "title": "Rosalind Academic Plan: a bounded research pilot for eligible U.S. university labs",
+  "entity": "Rosalind Academic Plan",
+  "category": "Tools",
+  "tags": [
+    "life sciences",
+    "academic research",
+    "scientific workflows",
+    "access"
+  ],
+  "summary": "OpenAI offers eligible U.S. university labs up to 30 sponsored Business Standard seats and approved GPT-Rosalind access. The application, member, API and data-handling limits determine whether a practical research pilot fits.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-10-18T15:13:55.855771+00:00",
+  "updatedAt": "2026-10-22T17:36:24Z",
+  "officialUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+  "sections": [
+    {
+      "id": "offer",
+      "title": "A useful access route with a specific audience",
+      "html": "<p>OpenAI’s Rosalind Academic Plan gives eligible U.S. university laboratories a way to evaluate its life sciences model in a managed research workspace. Announced on October 15, 2026, the offer provides up to 30 Business Standard seats at no cost for up to 12 months, with GPT-Rosalind access dependent on trusted-access approval. This is a baseline examination of an existing announcement, not a new launch on the date of this report. The practical question is whether the offer fits a laboratory’s people, research workflow and institutional requirements.</p><p>The appealing part is the opportunity to test a shared environment without immediately paying for every covered seat. The important boundary is that the offer remains an application-based program. An academic email address, an existing subscription or a successful identity check does not by itself secure admission. The <a href=\"https://help.openai.com/en/articles/20001602-rosalind-academic-plan\">application guide</a> distinguishes eligibility review, approval, workspace setup and model activation. A team should treat those as separate steps before scheduling work that depends on access.</p><p>The sources support an access and workflow assessment. They do not establish that the model produces reliable scientific discoveries, improves clinical decisions or reduces laboratory costs. OpenAI’s examples show intended uses and selected experiences. Our judgment is that this can be a useful, bounded evaluation opportunity for an eligible lab, particularly one interested in connecting literature, data analysis and scientific visualization. The case for adopting it permanently still requires the lab’s own evidence.</p>"
+    },
+    {
+      "id": "eligibility",
+      "title": "Establish the right institutional route first",
+      "html": "<p>The offer is currently limited to academic labs at U.S. universities. A principal investigator or designated lab lead applies for the group. Unaffiliated researchers and commercial organizations are not eligible for this academic offer, and a researcher outside the United States should not interpret the announcement as a global free-access program. OpenAI says it plans broader country availability, but the inspected guide supplies no date or entitlement for that expansion.</p><p>The application path also depends on the institution’s existing arrangement. A lab at a university without an OpenAI Enterprise agreement can use the academic-lab application. If the university already has such an agreement, its administrator or OpenAI account team is the appropriate route for requesting GPT-Rosalind access. Before opening a separate Business workspace, the guide tells applicants to establish whether their university permits one. This matters because an individual lab’s enthusiasm does not decide how institutional research data may be handled.</p><p>The preparation is organizational as well as technical: institutional and lab information, the lead’s role and research focus, intended uses, proposed members, existing workspace arrangements, access locations and data-handling requirements. The process also asks for an institution-designated trained biosafety contact. The guide separates that oversight role from the lead’s day-to-day management of members and model permissions. These are concrete admission conditions, rather than optional practices added by this report.</p>"
+    },
+    {
+      "id": "administration",
+      "title": "Approval does not automatically activate every member",
+      "html": "<p>Once approved, the lab must complete the offer setup and use the workspace linked to its application. The verified PI or lead is the sole workspace owner under the documented program and cannot appoint additional owners or administrators. Eligible members must then be added and their GPT-Rosalind access enabled. Simply joining the workspace is insufficient. This makes the lead an operational dependency: a lab should identify who can resolve access problems before distributing a project across many users.</p><p>The help guide also imposes a same-domain rule. Members need verified institutional email addresses with the same email domain as the approved lead. Visiting researchers or collaborators with a different institution’s domain cannot be added under that rule. For a multi-institution research project, that restriction may matter more than the nominal seat allowance. The plan should not be treated as an automatically shared workspace for every collaborator on a paper.</p><p>The documented ceiling is 30 seats in one workspace. Teams needing more are directed to support; creating a separate paid workspace does not extend the offer or transfer approval. Membership should be reviewed when people leave, change affiliation or no longer need access. Changes to the lead, owner or institutional arrangement require support guidance. Together, these provisions favor a defined lab pilot with a clear owner over a loosely organized collaboration that expects permissions to follow people between organizations.</p>"
+    },
+    {
+      "id": "economics",
+      "title": "Sponsored seats still have usage and billing boundaries",
+      "html": "<p>The <a href=\"https://openai.com/index/introducing-the-rosalind-academic-plan/\">announcement</a> describes covered seats at zero dollars per user per month for up to 12 months. The help guide says a payment card is required during setup and tells approved applicants to review their accepted offer for the covered seats, promotional end date and charges. It does not establish a universal post-promotion price. The right budget assumption is therefore a time-limited sponsored period with subsequent terms to verify, rather than permanent free service.</p><p>ChatGPT and Codex are included in the Standard seat, subject to their usage limits. The promotion does not remove those limits, and this report does not infer a numerical quota from the seat count. A lab planning intensive analysis should check the applicable limits and record whether they constrain its actual workload. A test that completes for one researcher does not establish capacity for thirty simultaneous researchers.</p><p>API credits and API usage are explicitly excluded. Approval for the academic plan does not grant GPT-Rosalind API access. That is decisive for developers: the offer is an opportunity to evaluate the documented workspace experience, not evidence that a lab can deploy a programmatic Rosalind backend under the promotion. Similarly, the inspected material does not establish model weights or a self-hosting license. Teams requiring reproducible local inference, unattended API pipelines or control over model updates need a separate access and deployment assessment.</p>"
+    },
+    {
+      "id": "workbench",
+      "title": "What the documented Workbench makes worth testing",
+      "html": "<p>The <a href=\"https://developers.openai.com/blog/rosalind-workbench\">August 28 Workbench article</a> describes a research-preview environment that connects a biological question, specialized tools, intermediate results and supporting evidence. Its examples include molecular structures, sequence alignment, tissue-slide inspection and sequencing analysis. The useful design idea is that a researcher can inspect a scientific artifact in the same environment as the explanation, rather than accepting a prose answer disconnected from its inputs.</p><p>One published molecular-viewer image places a structure, sequence controls and annotations beside the research conversation. This is documentary UI evidence, not a test of the model or the viewer in an approved workspace. It suggests a concrete teaching exercise: use a well-understood public structure, ask for an explanation, and have students distinguish what is visible in the structure from what the assistant inferred. The instructor can assess the explanation against known material and ask learners to identify unsupported leaps.</p><p>The sequencing example describes a plan prepared for researcher approval and traceable outputs spanning quality control and downstream analysis. For a lab evaluating research assistance, the interesting question is whether those records are complete enough to reproduce and challenge the result. The product article’s existence does not settle that question. A meaningful pilot would inspect the actual inputs, methods, intermediate artifacts and decisions, then compare them with a conventional analysis the team understands.</p><p>The older article distinguishes Explore mode, using available ChatGPT models for general questions, from Research mode for advanced workflows requiring verified organizational access. Its statement that individual access was forthcoming should not be read as the current academic offer’s eligibility rule. The newer program guide is the relevant source for lab admission and activation.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "Build a pilot around evidence that can be checked",
+      "html": "<p>A useful first evaluation can begin with literature review on a narrow topic the lab already knows. Ask the assistant to build an evidence table that separates primary studies from reviews, measured results from predictions, and reported findings from its own interpretation. Have a researcher verify each citation and compare the table with a manually curated reference set. The outcome to measure is the quality of the evidence record and the time spent correcting it, not the polish of the summary.</p><p>A second exercise can examine analysis code against a small public dataset with known expected results. Preserve the input version, requested transformations and generated code, then check the outputs using the team’s existing methods. This is a proposed evaluation design, not a claim that Rosalind automatically performs every preservation step. It tests whether the combination of reasoning and tools makes research more inspectable without hiding errors behind a convenient interface.</p><p>For education, a supervisor could use a documented viewer to help trainees explain a familiar scientific artifact, then ask them to write an independent interpretation without the conversation in view. That exercise evaluates understanding rather than reliance on generated text. Creative scientific communication is another plausible use: annotations or a structure presentation can help explain a result to collaborators, provided the team checks the underlying scientific meaning and labels illustrative choices.</p><p>A lab could also turn reviewed material into a public research website or a companion learning app: a short explanation, a sourced evidence table and questions that link back to the underlying public structure or paper. Treat the assistant’s contribution as draft content for manual review and transfer into the lab’s normal web tools. This proposal does not require, or imply, Rosalind API access. For a training video, use the same checked material to draft a narration script and storyboard, then have a subject expert verify every scientific assertion before recording or assembling the video. The Workbench article documents one specific example: directing the viewer to create a movie showing key features of a protein complex. We did not test that example. Any visual capture or export would need to be checked in the actual tools the lab uses; general video production, export details and end-to-end publishing were not established by the inspected documentation.</p><p>Keep these pilots small enough to review completely. Before beginning, define the acceptable error rate, the required source provenance and who signs off the output. Count researcher correction time and unresolved claims alongside successful tasks. Expansion should follow evidence of dependable work in that lab’s context; the announcement provides no basis for assuming that performance transfers across disciplines or research stages.</p>"
+    },
+    {
+      "id": "data",
+      "title": "Data handling remains a separate decision",
+      "html": "<p>OpenAI says research data shared through the plan is not used to train its models by default. The help guide separately says standard data retention applies and Zero Data Retention is unavailable under this offer. These statements concern different controls. A no-training default does not mean the service stores nothing, and the sponsorship does not change the workspace’s applicable data-handling terms.</p><p>The guide also explains that institutional policy and workspace settings govern use and sharing, and that administrators may have powers to access, export, retain or delete workspace data depending on available controls and applicable law. A lab should therefore choose initial pilot material that its institution permits in the service. An approved account is not evidence that every dataset, unpublished manuscript or collaboration agreement fits the same handling arrangement.</p><p>This affects adoption economics as much as privacy. If the most important workload cannot use the available workspace under the institution’s requirements, a successful public-data demo will not resolve that barrier. Conversely, a lab with a suitable managed-workspace policy can evaluate the offer without assuming that future Enterprise arrangements have identical terms. The program guide explicitly treats existing Enterprise access as governed by its applicable agreement.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "A focused opportunity, with adoption still to prove",
+      "html": "<p>The strongest case for the plan is a U.S. university lab with a verified lead, compatible institutional policies, a same-domain group and a finite set of research-assistance tasks. The offer can make a shared evaluation easier to organize and fund. Its value is weaker for international or unaffiliated researchers, cross-institution groups needing universal membership, and developers whose central requirement is an API deployment. Those limits should guide selection before the team spends effort preparing an application.</p><p>We inspected the public announcement, the program help guide and the earlier developer article, including one original published viewer image. We did not apply, enter an approved workspace, run a scientific analysis, measure model accuracy or test billing. The help guide displayed a relative update age rather than an exact publication date; it is cited as current documentation observed during this research, not assigned an invented launch date.</p><p>The plan deserves attention as a concrete access change, while its scientific promise remains a hypothesis for users to evaluate. Start with verifiable literature and analysis tasks, preserve the corrections as well as the successes, and review the institutional and promotional conditions before committing a longer workflow. A useful result from this pilot would be a clear account of where the system saves work, where it needs expert correction and which tasks should remain with established methods.</p>"
+    }
+  ],
+  "useCases": [
+    "A supervised literature-review pilot with source and claim verification.",
+    "Comparing generated analysis code with established results on a public dataset.",
+    "Teaching scientific interpretation with documented structure and sequence viewers."
+  ],
+  "limitations": [
+    "Only eligible U.S. university labs can apply; trusted-access approval, workspace setup and per-member activation are required.",
+    "Maximum 30 seats in one workspace; members must use verified institutional emails with the same domain as the approved lead.",
+    "No API usage or credits; applicable model usage limits remain.",
+    "Payment card required during setup; post-promotion terms depend on the accepted offer.",
+    "Standard retention applies and Zero Data Retention is unavailable under this offer.",
+    "No approved-workspace, scientific-performance or billing test was performed."
+  ],
+  "sources": [
+    {
+      "id": "rosalind-academic-plan",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+      "accessedAt": "2026-10-22T17:09:38.384Z",
+      "publishedAt": "2026-10-15",
+      "locator": "What the plan includes; Apply on behalf of your lab; Responsible access",
+      "supports": "Announcement date, sponsorship, U.S. lab access, approval and no-training default."
+    },
+    {
+      "id": "official-rosalind-help",
+      "title": "Rosalind Academic Plan — Help Center",
+      "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+      "accessedAt": "2026-10-22T17:10:53.139Z",
+      "publishedAt": null,
+      "locator": "Eligibility; What is included; Manage your lab’s access; Data privacy and security; FAQs",
+      "supports": "Application routes, card requirement, ownership, membership, API exclusions, retention and promotion limits."
+    },
+    {
+      "id": "official-rosalind-workbench",
+      "title": "Meet Rosalind Workbench",
+      "url": "https://developers.openai.com/blog/rosalind-workbench",
+      "accessedAt": "2026-10-22T17:09:51.664Z",
+      "publishedAt": "2026-08-28",
+      "locator": "Exploring scientific workflows; Getting started; Exploring Rosalind Workbench",
+      "supports": "Documented research-preview workflow, viewers, NGS plan approval and Explore/Research distinction."
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a small supervised evaluation for an eligible lab whose institutional policies fit the managed workspace. Access economics and integrated evidence inspection are concrete; scientific effectiveness and workflow savings remain untested.",
+  "researchNote": "Baseline resolution of an older discovery lead. Public source inspection used Chrome; initial in-app-browser acquisition was separately retained and reconfirmed in Chrome. One help-link repair used the observed canonical URL after the short link redirected. Product behavior was not tested."
+}

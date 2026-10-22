@@ -1,32 +1,33 @@
 {
   "reportId": "pocket-tts-small",
-  "reviewerId": "/root/edition_20261020_astra_b",
+  "reviewerId": "/root/edition_20261022_astra_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-20T16:29:53Z",
-  "reportHash": "598e21b10269ec99e3e50a06913cd6c56a96767ae66ee01206e899e09d1ce95a",
-  "evidenceHash": "8f15ddaaaaf80fea52ece2cb07e5efc4bbd650144aa2d1e1181b72ed2042f233",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "5cdabb9dfcf02909a8ab79bbbce7a51020c1670c2ce00aa5a674f368190ab953",
+  "evidenceHash": "cd271bd0cfb93ddcfa73611d1f1173837e7850b420270d2c70d281d73e322f67",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
+  "confidence": "high",
   "scores": {
     "usefulness": 8,
     "impact": 6,
     "novelty": 6,
     "maturity": 6,
-    "openness": 8
+    "openness": 7
   },
   "rationale": {
-    "usefulness": "Compact CPU-oriented English speech models with CLI, Python and local-server routes provide actionable options for narration, spoken explanations and draft video tracks. The report makes model selection, listening checks, caching and unsupported pause/alignment behavior concrete.",
-    "impact": "The documented reductions to 18.2M and 6.9M parameters with close automatic quality metrics can materially broaden local speech use. The evidence remains one vendor evaluation setting with an unspecified CPU, so wider deployment and research impact are promising rather than established.",
-    "novelty": "Component-wise backbone, sampling-head and decoder reduction is a meaningful technical contribution within an existing TTS family. It combines established distillation, pruning and reward-tuning ideas rather than establishing an entirely new speech capability.",
-    "maturity": "Current selectors, configurations and public no-cloning file inventories support documented availability, and the existing package has several integration routes. The new variants lack independent listening/runtime checks here; automatic metrics, English-only scope and unverified browser compatibility constrain readiness.",
-    "openness": "MIT code, CC BY 4.0 model labels, public no-cloning artifacts, pinned configurations and a detailed method description offer strong inspectability and local portability. Main cloning weights are gated, voice licenses vary and full independent training reproduction is unverified, keeping this below exceptional openness."
+    "usefulness": "Documented small English selectors, CLI/Python/server routes and public no-cloning inventories support focused narration pilots for teaching pages, app feedback and draft video tracks. The report gives practical listening and integration checks and correctly treats browser ports and alignment as separate work.",
+    "impact": "The documented reduction from approximately 100M parameters to 18.2M and 6.9M, with encouraging publisher metrics, is meaningful for local speech deployment. The smallest model loses quality, the speed hardware is unspecified, and no measured application benefit supports a stronger field-wide rating.",
+    "novelty": "Component-wise backbone, head and decoder reduction is a substantive extension of an existing speech family. The contribution is an efficiency and quality tradeoff with inspectable methods, not a new speech-generation paradigm, language expansion or independently demonstrated expressive capability.",
+    "maturity": "The existing package interfaces, model configurations, visible artifacts and v4.0.1 maintenance release support usable experimentation. A recent pronunciation fix, untested updated weights, limited English evaluation and no listening or service-capacity tests keep reliability bounded.",
+    "openness": "MIT code, CC BY 4.0 model labels, public no-cloning artifacts and detailed methods give meaningful portability and inspectability. The main model gate, separate prohibited-use notice, mixed voice-asset terms and incomplete independently reproduced training or execution prevent an unrestricted-openness score."
   },
-  "confidence": "high",
   "concerns": [
-    "Nonblocking: Published CPU throughput is not first-audio latency or device-specific capacity, and the new table does not identify the processor.",
-    "Nonblocking: The smallest model loses quality, and reward tuning optimizes proxies that do not establish listener preference.",
-    "Nonblocking: Code, weights and voice assets have separate terms; public file presence does not establish successful execution."
+    "The October 21 v4.0.1 release claim was checked against its archived notes. The report correctly keeps the October 20 benchmark figures separate and does not imply that those figures were rerun on patched weights.",
+    "CPU throughput is not first-audio latency, and listed file size is not resident memory. The original article does not identify the CPU for its one-thread speed table.",
+    "Code, weights and exact voice assets carry separate conditions; community browser implementations do not establish official small-variant browser support.",
+    "No gate was accepted, weights downloaded, audio generated or listening comparison performed during this review."
   ]
 }

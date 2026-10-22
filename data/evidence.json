@@ -3556,5 +3556,2404 @@
     ],
     "reconsideration_run_id": "scan-20261020T160557Z-63b483",
     "supersedes_claim_id": "x-live11-oct15-claim"
+  },
+  {
+    "claim_id": "kitten-tts2-license-boundary-20261022",
+    "claim": "Kitten-TTS code and model weights have separate licenses; the inspected weight license is conditional, while performance and readiness require further verification.",
+    "source_ids": [
+      "kitten-tts2-repo",
+      "kitten-tts2-model",
+      "kitten-tts2-license"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "README / License",
+        "passage": "That covers the code in this repository.",
+        "retrieved_at": "2026-10-22T17:16:37Z",
+        "published_at": null,
+        "event_at": null
+      },
+      {
+        "source_id": "kitten-tts2-license",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2/blob/main/LICENSE.md",
+        "locator": "Sections III and IV; inspected public LICENSE.md",
+        "passage": "Commercial use requires registration, and the text specifies revenue/funding thresholds, attribution and downstream-use restrictions.",
+        "passage_type": "editorial_paraphrase",
+        "retrieved_at": "2026-10-22T17:16:37Z",
+        "published_at": null,
+        "event_at": null
+      }
+    ],
+    "qualifiers": [
+      "Repository and model card are changing independently.",
+      "The README and card disagree on voice count and Python requirement.",
+      "No model was installed, executed or listened to."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML / Stellon Labs",
+    "status": "candidate",
+    "limitations": [
+      "Primary repository and model card inspected after Reddit discovery. Code is Apache 2.0, weights use Stellon Labs Community License with commercial registration, revenue/funding thresholds and attribution. Current docs disagree on 47 versus115 voices and Python3.9 versus3.10 prerequisites; CPU real-time claims not reproduced. Promising multilingual speech candidate retained for focused documentation reconciliation and a full reviewed report; no blanket open-source or latency claim published."
+    ]
+  },
+  {
+    "claim_id": "rosalind-sponsorship",
+    "claim": "Announcement offers up to 30 Business Standard seats at no cost for up to 12 months, with GPT-Rosalind subject to trusted access.",
+    "source_ids": [
+      "rosalind-academic-plan"
+    ],
+    "support": [
+      {
+        "source_id": "rosalind-academic-plan",
+        "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+        "locator": "Opening paragraph / What the plan includes",
+        "passage": "Eligible labs can receive up to 30 Business Standard seats at no cost for up to 12 months, with access to GPT‑Rosalind subject to trusted-access approval.",
+        "published_at": "2026-10-15",
+        "event_at": "2026-10-15",
+        "retrieved_at": "2026-10-22T17:09:38.384Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-academic-plan.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-eligibility",
+    "claim": "Only U.S. university academic labs are currently eligible; PI/lead applies and institutional Enterprise arrangements determine path.",
+    "source_ids": [
+      "official-rosalind-help"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-help",
+        "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+        "locator": "Eligibility; How to apply",
+        "passage": "The Rosalind Academic Plan is currently available only to academic labs at U.S. universities.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:10:53.139Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-help.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "Exact help-guide publication/update timestamp unavailable; relative update age not converted to an invented date."
+    ]
+  },
+  {
+    "claim_id": "rosalind-seats-billing",
+    "claim": "Setup requires a payment card; usage limits remain and post-promotion terms depend on the accepted offer.",
+    "source_ids": [
+      "official-rosalind-help"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-help",
+        "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+        "locator": "What’s included; FAQs: What happens when the complimentary period ends?",
+        "passage": "A payment card is required during setup.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:10:53.139Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-help.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No billing test; no universal post-promotion price stated in inspected source."
+    ]
+  },
+  {
+    "claim_id": "rosalind-owner-members",
+    "claim": "The verified lead is sole owner; members need activation and same-domain verified institutional emails.",
+    "source_ids": [
+      "official-rosalind-help"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-help",
+        "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+        "locator": "Manage your lab’s access; FAQs: Can visiting researchers or collaborators join?",
+        "passage": "All members must use a verified institutional email address with the same email domain as the approved PI or lab lead.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:10:53.139Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-help.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-no-api",
+    "claim": "The academic offer has no API credits or usage and does not grant GPT-Rosalind API access.",
+    "source_ids": [
+      "official-rosalind-help"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-help",
+        "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+        "locator": "FAQs: Does the offer include API credits?",
+        "passage": "No. The offer does not include API credits or API usage. Approval for this plan does not grant GPT-Rosalind access through the API.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:10:53.139Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-help.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-retention",
+    "claim": "Standard retention applies; zero data retention is unavailable and the promotional access does not alter data-handling terms.",
+    "source_ids": [
+      "official-rosalind-help"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-help",
+        "url": "https://help.openai.com/en/articles/20001602-rosalind-academic-plan",
+        "locator": "Data privacy and security",
+        "passage": "Zero Data Retention is not available under this offer.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:10:53.139Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-help.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-no-training-default",
+    "claim": "OpenAI states research data shared through the plan is not used for training by default.",
+    "source_ids": [
+      "rosalind-academic-plan"
+    ],
+    "support": [
+      {
+        "source_id": "rosalind-academic-plan",
+        "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+        "locator": "What the plan includes",
+        "passage": "Research data shared through the Rosalind Academic Plan is not used to train our models by default.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:38.384Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-academic-plan.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-workbench-preview",
+    "claim": "Workbench is documented as a research-preview environment with scientific tools, viewers and guided workflows.",
+    "source_ids": [
+      "official-rosalind-workbench"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-workbench",
+        "url": "https://developers.openai.com/blog/rosalind-workbench",
+        "locator": "Opening; Inspecting the evidence; Exploring Rosalind Workbench",
+        "passage": "Rosalind Workbench is available in research preview through the ChatGPT app",
+        "published_at": "2026-08-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:51.664Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-workbench.json"
+      }
+    ],
+    "qualifiers": [
+      "Earlier Workbench introduction supplies workflow context; newer academic guide controls current plan eligibility."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "rosalind-sequencing-trace",
+    "claim": "The developer article describes researcher plan approval and traceable sequencing-analysis outputs.",
+    "source_ids": [
+      "official-rosalind-workbench"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-workbench",
+        "url": "https://developers.openai.com/blog/rosalind-workbench",
+        "locator": "From sequencing data to a research decision",
+        "passage": "Rosalind prepares a plan for researcher approval, coordinates the selected tools, and returns traceable, reviewable outputs.",
+        "published_at": "2026-08-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:51.664Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-workbench.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No approved-workspace or live product test performed."
+    ]
+  },
+  {
+    "claim_id": "cohere-rerank5-qualification",
+    "claim": "Rerank 5 launch offers Pro/Fast and optional Context Focus; numerical advantages are vendor evaluations.",
+    "source_ids": [
+      "official-source-933b4a45dd1e7b0f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-933b4a45dd1e7b0f",
+        "url": "https://cohere.com/blog/rerank-5",
+        "locator": "Introduction; Performance; Context Focus",
+        "passage": "Both models introduce Context Focus, which pinpoints the most relevant spans of text within documents",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:39.517Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/cohere-rerank5.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Official publisher",
+    "status": "supported",
+    "limitations": [
+      "No independent reproduction; retained candidate, not selected report."
+    ]
+  },
+  {
+    "claim_id": "cohere-confidential-vault-qualification",
+    "claim": "Model Vault confidential-computing beta uses Azure/H100 and customer-side attestation, with explicit residual-risk limits.",
+    "source_ids": [
+      "official-source-39535e3a3c15f5b1"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-39535e3a3c15f5b1",
+        "url": "https://cohere.com/blog/introducing-confidential-computing-on-cohere-model-vault",
+        "locator": "Available now in public beta; limitations",
+        "passage": "Confidential computing does not eliminate all risk, nor does it replace application security, compliance, contractual controls, or data-residency requirements.",
+        "published_at": "2026-10-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:45.871Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/cohere-confidential-vault.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Official publisher",
+    "status": "supported",
+    "limitations": [
+      "No independent reproduction; retained candidate, not selected report."
+    ]
+  },
+  {
+    "claim_id": "ai21-gitlab-review-qualification",
+    "claim": "AI21 case study uses 50 public PRs and list-price token-cost accounting, with same-set tuning and testing.",
+    "source_ids": [
+      "official-source-f75aae3f97b4565f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f75aae3f97b4565f",
+        "url": "https://www.ai21.com/blog/gitlab-case-study/",
+        "locator": "Introduction; Appendix: How we measured",
+        "passage": "Configurations were chosen and tuned on the same 50 pull requests they’re scored on",
+        "published_at": "2026-10-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:47.285Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/ai21-gitlab-review.json"
+      }
+    ],
+    "qualifiers": [
+      "Public official source; not independent performance validation."
+    ],
+    "contradicts": [],
+    "source_family": "Official publisher",
+    "status": "supported",
+    "limitations": [
+      "No independent reproduction; retained candidate, not selected report."
+    ]
+  },
+  {
+    "claim_id": "embeddinggemma2-launch",
+    "claim": "Google announced EmbeddingGemma 2 on October 6, 2026. The report is a newly covered baseline.",
+    "source_ids": [
+      "google-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "google-embeddinggemma2",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+        "locator": "Article date and opening announcement",
+        "passage": "Oct 06, 2026",
+        "published_at": "2026-10-06",
+        "event_at": "2026-10-06",
+        "retrieved_at": "2026-10-22T17:08:50.525Z"
+      }
+    ],
+    "qualifiers": [
+      "Publication date is explicit in the launch article; retrieval is October 22."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/embeddinggemma2-blog.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-architecture",
+    "claim": "EmbeddingGemma 2 encodes text/code, images, audio and video in one 768-dimensional space; 740M total parameters with selectively loaded text/vision/audio components.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Introduction; Model Overview; Best Practices 2",
+        "passage": "Text only {\"vision_config\": None, \"audio_config\": None} 270M",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Text270M; vision170M; audio300M; text+image440M; text+audio570M. Parameter counts are not measured peak memory."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-interleaving",
+    "claim": "Interleaved text/media inputs return one shared embedding; searchable segments and source metadata are application design choices.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Best Practices 5, Interleaving",
+        "passage": "The call returns a single embedding that represents the text, images and video together.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "The report proposes segmentation and metadata storage; it does not claim the model returns transcripts, answers or timestamps."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-context",
+    "claim": "The model has a shared 8192-token context. Default single-modality maxima are approximately29 images,58video frames or327seconds audio.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Best Practices 5, Context Limits; Input Sampling Defaults",
+        "passage": "The maximums above assume a single modality with no accompanying text.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Default costs:280tokens/image,140/frame,25/second audio. Video defaults1fps;audio mono16kHz. Mixed inputs share the budget. Frame sampling can miss brief events; that is an editorial design inference."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-benchmark",
+    "claim": "Publisher full-precision MTEB multilingual scores are61.36 versus61.15; code78.68 versus68.76, a9.92point increase.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Benchmark Results, Overall Evaluation Results (768d)",
+        "passage": "All results reported below use the full-precision checkpoint.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher-reported; neither replicated nor independent. Approx14percent is relative improvement on code score only, not all tasks."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-dimension-scores",
+    "claim": "Publisher dimension table shows MMEB overall59.01/56.24/45.65 and MSEB69.54/66.76/56.71 at768/256/128 dimensions.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Evaluation Results with Vector Truncation",
+        "passage": "128d is best suited to text-only workloads.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Scores use different metrics across benchmarks; not directly comparable as modality rankings. Shorter vectors can reduce search quality materially."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-precision",
+    "claim": "Use bfloat16 or float32; float16 can cause NaN or silently degraded embeddings.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Best Practices 4, Numerical Precision",
+        "passage": "Run inference in bfloat16 or float32. Do not use float16.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Native bfloat16 support is hardware-dependent. float32 recommended elsewhere including most CPUs. No universal memory floor derived."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-index-conventions",
+    "claim": "Truncated vectors need L2 renormalization and matched query/document dimensions; named task prefixes apply to text only.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Best Practices 1 and 3",
+        "passage": "Queries and documents must share a dimension.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Search asymmetric; similarity/clustering symmetric. Document named prompt uses title:none; titled documents manual.768/512/256/128 supported. Rawvector storage arithmetic excludes index/metadata/model weights."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-safety-language",
+    "claim": "The card states no alignment, safety tuning or output moderation and warns of unequal language performance; application retrieval filtering/fairness evaluation remains necessary.",
+    "source_ids": [
+      "repos-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Ethics & Safety; Limitations",
+        "passage": "the model may not exhibit equal performance across languages.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "More than100languages is a publisher capability description, not equal-quality guarantee. Permission filtering and course/creative workflows are editorial proposals, not tested outcomes."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-tooling",
+    "claim": "Google advertises mobile and browser integration paths, including MediaPipe/LiteRT and Transformers.js/WebGPU.",
+    "source_ids": [
+      "google-embeddinggemma2"
+    ],
+    "support": [
+      {
+        "source_id": "google-embeddinggemma2",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+        "locator": "Getting started with EmbeddingGemma 2",
+        "passage": "Build for the browser with transformers.js or WebGPU.",
+        "published_at": "2026-10-06",
+        "event_at": "2026-10-06",
+        "retrieved_at": "2026-10-22T17:08:50.525Z"
+      }
+    ],
+    "qualifiers": [
+      "A listed integration is not tested parity of every modality/backend. No runtime, latency, power or cost tests performed."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/embeddinggemma2-blog.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-license",
+    "claim": "Official card labels the model Apache2.0; linked license contains redistribution notice and modification requirements.",
+    "source_ids": [
+      "embeddinggemma2-license"
+    ],
+    "support": [
+      {
+        "source_id": "embeddinggemma2-license",
+        "url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+        "locator": "Apache License2.0 sections2–4 and7",
+        "passage": "You must give any other recipients of the Work or Derivative Works a copy of this License",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:55.854Z"
+      }
+    ],
+    "qualifiers": [
+      "License text inspected. No blanket permission for corpus media rights or hosted service access; source card also links a prohibited-use policy."
+    ],
+    "contradicts": [],
+    "source_family": "ai.google.dev",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/embeddinggemma2-license.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-policy-ambiguity",
+    "claim": "The model card references a separate Gemma Prohibited Use Policy despite Apache2.0 labeling; scope/applicability was not legally resolved.",
+    "source_ids": [
+      "repos-embeddinggemma2",
+      "embeddinggemma2-policy"
+    ],
+    "support": [
+      {
+        "source_id": "repos-embeddinggemma2",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "locator": "Ethics & Safety final paragraph",
+        "passage": "Deployments must adhere to the Gemma Prohibited Use Policy.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.432Z"
+      }
+    ],
+    "qualifiers": [
+      "Linked policy inspected, older last-modified2024 and deprecated documentation banner. Report accurately preserves the wording rather than asserting legal precedence."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "qualified",
+    "limitations": [
+      "Source inspection only. Current legal scope of the policy reference is unresolved."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-embeddinggemma2.json"
+  },
+  {
+    "claim_id": "embeddinggemma2-policy-page",
+    "claim": "The linked policy page has use restrictions and a February21,2024 last-modified date; a deprecated banner directs readers to current Gemma docs.",
+    "source_ids": [
+      "embeddinggemma2-policy"
+    ],
+    "support": [
+      {
+        "source_id": "embeddinggemma2-policy",
+        "url": "https://ai.google.dev/gemma/prohibited_use_policy",
+        "locator": "Gemma Prohibited Use Policy heading and date; documentation banner",
+        "passage": "Last modified: February 21, 2024",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:23.055Z"
+      }
+    ],
+    "qualifiers": [
+      "Date is policy revision date, not model launch or present applicability determination."
+    ],
+    "contradicts": [],
+    "source_family": "ai.google.dev",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/embeddinggemma2-policy.json"
+  },
+  {
+    "claim_id": "deepinfer-release-scope",
+    "claim": "DeepInfer public release provides offline inference supporting DeepSeekV4.1Flash; complete service components are excluded.",
+    "source_ids": [
+      "social-source-be38b11f937cd76c"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-be38b11f937cd76c",
+        "url": "https://github.com/deepseek-ai/DeepInfer",
+        "locator": "README introduction; Required for a complete inference service",
+        "passage": "A KV cache system",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:23.165Z"
+      }
+    ],
+    "qualifiers": [
+      "Also excludes VE/prefill/decode disaggregation and replica load balancing. Full engine functionality is not a complete hosted service. Launch date not independently established; latest commit is not launch proof."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-deepinfer.json"
+  },
+  {
+    "claim_id": "deepinfer-prerequisites",
+    "claim": "DeepInfer README specifies Linux,GCC>=13,Python3.12 and NVIDIA SM100/CUDA13 or Huawei Ascend950/CANN9.2; Apache2.0.",
+    "source_ids": [
+      "social-source-be38b11f937cd76c"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-be38b11f937cd76c",
+        "url": "https://github.com/deepseek-ai/DeepInfer",
+        "locator": "Supported hardware; Prerequisites; License",
+        "passage": "NVIDIA SM100 GPUs",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:23.165Z"
+      }
+    ],
+    "qualifiers": [
+      "Specialized accelerator requirements; no assertion of broad consumer GPU support. We did not build or execute the project."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-deepinfer.json"
+  },
+  {
+    "claim_id": "deepinfer-performance-limits",
+    "claim": "DeepInfer README benchmark configuration uses4SM100GPUs prefill and64decode within one scale-up domain.",
+    "source_ids": [
+      "social-source-be38b11f937cd76c"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-be38b11f937cd76c",
+        "url": "https://github.com/deepseek-ai/DeepInfer",
+        "locator": "Performance benchmarks",
+        "passage": "Measured on 4 SM100 GPUs for prefill and 64 for decode",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:23.165Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher benchmark environment only. Newsletter financial metrics and generalized performance multipliers were not validated or repeated as facts."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-deepinfer.json"
+  },
+  {
+    "claim_id": "qwen-image-turbo-license",
+    "claim": "Qwen-Image-2.1-Turbo official card is labeled qwen-research; performance and commercial use need separate assessment.",
+    "source_ids": [
+      "repos-qwen-image-turbo"
+    ],
+    "support": [
+      {
+        "source_id": "repos-qwen-image-turbo",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+        "locator": "License badge; Quick Start",
+        "passage": "qwen-research",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:27.433Z"
+      }
+    ],
+    "qualifiers": [
+      "Eight-step inference/CFG1/prefix-cache claims are provider descriptions. No image generation or license grant independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-qwen-image-turbo.json"
+  },
+  {
+    "claim_id": "cloudflare-audit-requirements",
+    "claim": "Cloudflare audit skill requires tool-using parallel agents,Node.js validators,and an OS-enforced sandbox before running target-controlled code.",
+    "source_ids": [
+      "repos-cloudflare-audit"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit",
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "locator": "Requirements",
+        "passage": "An OS-enforced sandbox for target-controlled builds, tests, processes, browsers, emulators, fuzzers, and fixtures.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:12.925Z"
+      }
+    ],
+    "qualifiers": [
+      "MIT repository; six-phase workflow is described, not executed. Fresh verifier and independent review are workflow claims, not proof of finding correctness."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-cloudflare-audit.json"
+  },
+  {
+    "claim_id": "graphify-baseline",
+    "claim": "Graphify distinguishes parsed code from inferred relationships and documents its install package and licensing; token savings remain unverified.",
+    "source_ids": [
+      "repos-graphify"
+    ],
+    "support": [
+      {
+        "source_id": "repos-graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "locator": "README installation; graph schema; license",
+        "passage": "graphifyy",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:13.264Z"
+      }
+    ],
+    "qualifiers": [
+      "Direct repository read; no installation or graph construction. Apache2.0/current license and retained MIT notice require artifact-specific attribution."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Source inspection only; no model or benchmark execution."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/repos/snapshots/repos-graphify.json"
+  },
+  {
+    "claim_id": "cadre-release-20261022",
+    "claim": "Kyutai announced CADRE on October 22; the arXiv paper was submitted October 21. Announcement, submission and artifact upload dates are distinct.",
+    "source_ids": [
+      "creative-cadre-release"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-release",
+        "url": "https://kyutai.org/blog/2026-10-22-cadre/",
+        "locator": "Heading and opening",
+        "passage": "22 October 2026",
+        "published_at": "2026-10-22",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-22T17:11:12.449Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "No independent runtime benchmark or training reproduction."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-release.json"
+  },
+  {
+    "claim_id": "cadre-compression-study",
+    "claim": "CADRE studies seven causal autoencoder compression settings with frozen DINOv3 features and a diffusion decoder, with specialized manipulation and navigation models.",
+    "source_ids": [
+      "creative-cadre-release"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-release",
+        "url": "https://kyutai.org/blog/2026-10-22-cadre/",
+        "locator": "Why we built CADRE; Four findings",
+        "passage": "We trained seven of them",
+        "published_at": "2026-10-22",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-22T17:11:12.449Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "No independent runtime benchmark or training reproduction."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-release.json"
+  },
+  {
+    "claim_id": "cadre-evaluation-scope",
+    "claim": "Main evaluation uses 2 seconds of context and 4.8 seconds of rollout. Human action-recovery scores cover wrist dimensions; the 64-second experiment covers robot manipulation only.",
+    "source_ids": [
+      "creative-cadre-paper-html"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-paper-html",
+        "url": "https://arxiv.org/html/2610.30129v1",
+        "locator": "Section4; AppendixE; AppendixH",
+        "passage": "Human-manipulation ARR uses the 12 wrist dimensions",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-22T17:12:55.609Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Author experiment; action recovery is not physical task-success proof; long-horizon scope is one environment."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-paper-html.json"
+  },
+  {
+    "claim_id": "cadre-generalization-open",
+    "claim": "The paper leaves transfer to generalist world models, policy training and planning open.",
+    "source_ids": [
+      "creative-cadre-paper-html"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-paper-html",
+        "url": "https://arxiv.org/html/2610.30129v1",
+        "locator": "Section7 Conclusion",
+        "passage": "whether these findings carry over to a generalist one",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-22T17:12:55.609Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "No independent runtime benchmark or training reproduction."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-paper-html.json"
+  },
+  {
+    "claim_id": "cadre-serving-limits",
+    "claim": "README shared H100 profile reports 20 FPS and 162 ms for one active user; two users about 14 FPS each and local input p95 207–212 ms, excluding network transit/browser rendering.",
+    "source_ids": [
+      "creative-cadre-repository"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-repository",
+        "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models",
+        "locator": "Shared GPU serving",
+        "passage": "Latency excludes network transit and browser rendering",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:46.520Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Author measurement of a specific serving profile; not independently benchmarked."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-repository.json"
+  },
+  {
+    "claim_id": "cadre-runtime-prerequisites",
+    "claim": "Package requires Python >=3.12 and pins torch 2.8.0, torchvision 0.23.0; demo dependencies include Starlette, Uvicorn and WebSockets.",
+    "source_ids": [
+      "creative-cadre-pyproject"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-pyproject",
+        "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/pyproject.toml",
+        "locator": "project.requires-python; dependencies; optional-dependencies",
+        "passage": "requires-python = \">=3.12\"",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:22.754Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "No independent runtime benchmark or training reproduction."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-pyproject.json"
+  },
+  {
+    "claim_id": "cadre-checkpoint-compatibility",
+    "claim": "Released world models use the 150k original CADRE-2x16x16; further-trained multires latents differ and cannot replace that autoencoder beneath those models.",
+    "source_ids": [
+      "creative-cadre-multires-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-multires-card",
+        "url": "https://huggingface.co/kyutai/cadre-2x16x16-multires",
+        "locator": "Opening recommendation",
+        "passage": "use that one under them",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:15.112Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Documentation inspected, compatibility not experimentally tested."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-multires-card.json"
+  },
+  {
+    "claim_id": "cadre-action-model-scope",
+    "claim": "Four 1.2B world models use environment-specific numeric actions and 288x512 video; card notes training action dropout not retained in release code.",
+    "source_ids": [
+      "creative-cadre-world-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-world-card",
+        "url": "https://huggingface.co/kyutai/cadre-world-models-2x16x16",
+        "locator": "Contents; The world model; Training",
+        "passage": "These weights were trained with 10% action dropout",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:13.817Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Specialized models, no general prompt-to-world interface demonstrated; training not reproduced."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-world-card.json"
+  },
+  {
+    "claim_id": "cadre-code-license",
+    "claim": "CADRE code has an MIT license, separate from weights.",
+    "source_ids": [
+      "creative-cadre-license"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-license",
+        "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/LICENSE",
+        "locator": "License header and conditions",
+        "passage": "MIT License",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:16.965Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "License text inspected; no determination for a particular deployment."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-license.json"
+  },
+  {
+    "claim_id": "cadre-weight-license",
+    "claim": "CADRE model weights carry CC BY-NC 4.0; frozen DINOv3 parts remain under the separate DINOv3 license.",
+    "source_ids": [
+      "creative-cadre-world-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-world-card",
+        "url": "https://huggingface.co/kyutai/cadre-world-models-2x16x16",
+        "locator": "Licence",
+        "passage": "non-commercial use only",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:13.817Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Separate dataset and component conditions remain relevant."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-world-card.json"
+  },
+  {
+    "claim_id": "cadre-dino-conditions",
+    "claim": "DINOv3 terms include redistribution notice, research acknowledgement and use restrictions.",
+    "source_ids": [
+      "creative-cadre-dino-license"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-dino-license",
+        "url": "https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md",
+        "locator": "Section1.b Redistribution and Use",
+        "passage": "provide a copy of this Agreement",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:16:29.989Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Terms inspected; report does not grant permission."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-dino-license.json"
+  },
+  {
+    "claim_id": "cadre-ui-observation",
+    "claim": "Public demo visible UI exposed four environments, keyboard hints, interactive/replay and next clip controls; inspection showed one-user capacity. This differs from the README two-user profile.",
+    "source_ids": [
+      "creative-cadre-demo"
+    ],
+    "support": [
+      {
+        "source_id": "creative-cadre-demo",
+        "url": "https://cadre-wm.kyutai.org/",
+        "locator": "Main and shared GPU status",
+        "passage": "shared gpu · 1 / 1 active · 0 queued",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:11:55.594Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai CADRE",
+    "status": "included",
+    "limitations": [
+      "Visible UI and screenshot only; no action-control testing or counter validation."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-cadre-demo.json"
+  },
+  {
+    "claim_id": "pocket-v401-small-fix",
+    "claim": "October 21 v4.0.1 release says it fixes issue 390 affecting sub-20M models and default-sentence pronunciations; it also updates small English models/default selector. Original October 20 benchmarks were not rerun.",
+    "source_ids": [
+      "creative-pocket-v401"
+    ],
+    "support": [
+      {
+        "source_id": "creative-pocket-v401",
+        "url": "https://github.com/kyutai-labs/pocket-tts/releases/tag/v4.0.1",
+        "locator": "Highlights; What’s Changed",
+        "passage": "This only impacted the sub-20m models.",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-22T17:16:28.050Z"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation or research result; scope and version are identified in the claim."
+    ],
+    "contradicts": [],
+    "source_family": "Kyutai Pocket TTS",
+    "status": "included",
+    "limitations": [
+      "Publisher patch claim; no listening or benchmark validation."
+    ],
+    "archivePath": ".state/scan-20261022T170517Z-9e6c72/creative/raw/creative-pocket-v401.json"
+  },
+  {
+    "claim_id": "astabrief-purpose",
+    "claim": "AstaBrief 8B writes cited reports from a research question and retrieved literature excerpts and powers Asta Fast mode.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Introduction",
+        "passage": "a model that turns a research question and retrieved literature excerpts into a cited report.",
+        "published_at": "2026-10-02",
+        "event_at": "2026-10-02",
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "Writing component is distinct from complete Asta retrieval and hosted service."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-timing",
+    "claim": "Ai2 reports 51.1 versus178.5 seconds across full Asta pipeline, about3.5×, separately from a nearly order-of-magnitude generation-stage reduction.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Introduction: efficiency paragraph",
+        "passage": "Fast mode averages 51.1 seconds per report compared with 178.5 seconds for Thinking mode, about 3.5× faster.",
+        "published_at": "2026-10-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "Publisher measurements; different pipeline boundaries must not be conflated.",
+      "Not independently measured on user hardware."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-historical-eval",
+    "claim": "Most training/evaluation was completed in2025; full evaluation has not been rerun against today’s frontier.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Introduction: evaluation-date qualification",
+        "passage": "Most of the training and evaluation described was completed in 2025",
+        "published_at": "2026-10-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "October2,2026 announcement is not date of underlying experiments."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-training-data",
+    "claim": "Ai2 reports47K supervised examples and about6K DPO examples after filtering, with two-judge agreement used for preference selection.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Collecting SFT training data; Creating DPO pairs",
+        "passage": "After quality filtering, the final DPO dataset came to about 6K examples.",
+        "published_at": "2026-10-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "95% judge-human agreement is not generated-report factual accuracy."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-density",
+    "claim": "Low-citation-density filtering produced strongest reported filter gains; scope preservation remains outside simple citation checks.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Filtering data for better attribution",
+        "passage": "The strongest gains came from filtering out synthetic reports with low citation density",
+        "published_at": "2026-10-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "Citations can still broaden evidentiary scope; article explicitly acknowledges limitations."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-small-human-study",
+    "claim": "Human comparison involved14 questions and3 scientific researchers; DR-Tulu won overall preference,2 researchers favored AstaBrief citation accuracy.",
+    "source_ids": [
+      "source-d185427efe0f1914"
+    ],
+    "support": [
+      {
+        "source_id": "source-d185427efe0f1914",
+        "url": "https://allenai.org/blog/astabrief",
+        "locator": "Validating the approach",
+        "passage": "in a separate 14-question human study, three scientific researchers each contributed 4-5 questions",
+        "published_at": "2026-10-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:08:42.860Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief.txt",
+        "archive_sha256": "a7f9ee8f1ace8387046f5a7f10ed68796fdd5eb06ad99e0020fe92008d8e682e"
+      }
+    ],
+    "qualifiers": [
+      "Small exploratory human study; no learning or broad productivity outcome established."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-card-results",
+    "claim": "Model-card100-question test table reports final average87.0, citation precision90.5, citation recall78.2, and answer precision89.0; base average77.3.",
+    "source_ids": [
+      "research-astabrief-model"
+    ],
+    "support": [
+      {
+        "source_id": "research-astabrief-model",
+        "url": "https://huggingface.co/allenai/AstaBrief_8B",
+        "locator": "Evaluation Results: first table",
+        "passage": "AstaBrief-8B 87 90.2 89 90.5 78.2",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:14.020Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief-model.txt",
+        "archive_sha256": "d5ddbfb334f4c0495d35e00f7038fe4ae90a2b1004010e369393969088820a76"
+      }
+    ],
+    "qualifiers": [
+      "Metrics are publisher-reported benchmark values, not probabilities for an arbitrary report.",
+      "200-question overall benchmark and100-question test subset distinguished."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-prompt-license",
+    "claim": "Model card identifies Apache2.0, intended research/educational use, and recommended prompt format; changed prompt can degrade behavior.",
+    "source_ids": [
+      "research-astabrief-model"
+    ],
+    "support": [
+      {
+        "source_id": "research-astabrief-model",
+        "url": "https://huggingface.co/allenai/AstaBrief_8B",
+        "locator": "Inference and Usage; Intended Uses and Limitations",
+        "passage": "Using a different prompt or interaction format may lead to degraded or inconsistent behavior.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:14.020Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief-model.txt",
+        "archive_sha256": "d5ddbfb334f4c0495d35e00f7038fe4ae90a2b1004010e369393969088820a76"
+      }
+    ],
+    "qualifiers": [
+      "Licensing of external services and datasets is distinct.",
+      "Python example was not executed."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "astabrief-linked-code",
+    "claim": "Linked ScholarQA Lite directory exposes prompt utilities, response parser and one-shot writer implementation.",
+    "source_ids": [
+      "research-astabrief-lite"
+    ],
+    "support": [
+      {
+        "source_id": "research-astabrief-lite",
+        "url": "https://github.com/allenai/ai2-scholarqa-lib/tree/main/api/scholarqa/lite",
+        "locator": "Folders and files",
+        "passage": "scholar_qa_lite.py",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:14.020Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/astabrief-lite.txt",
+        "archive_sha256": "f2e91d0068a902c3b1f228fb9744dc65fb7227a943632a03dbef742d9b339cce"
+      }
+    ],
+    "qualifiers": [
+      "Code directory inspection does not establish turnkey local PDF installation or successful inference."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-ai-purpose",
+    "claim": "Flint-interactive targets AI-agent creation of interactive data visualizations through semantic interaction specifications.",
+    "source_ids": [
+      "source-db007afeffa315be"
+    ],
+    "support": [
+      {
+        "source_id": "source-db007afeffa315be",
+        "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+        "locator": "At a glance; Flint-interactive; How it works",
+        "passage": "AI agents make it easy to analyze data and generate reports with data visualizations.",
+        "published_at": "2026-10-22T16:00:00Z",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-22T17:11:01.191Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-blog.txt",
+        "archive_sha256": "6e9afe6cf0779f681d1bf02955a7886ac0df1511b3aada6144d92483d8762e99"
+      }
+    ],
+    "qualifiers": [
+      "Announcement dateOctober22 distinct from1.0.0 releaseOctober19."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-backend-limit",
+    "claim": "Interaction presets support Vega-Lite; other backends render static with interactions_ignored warning.",
+    "source_ids": [
+      "research-flint-api"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-api",
+        "url": "https://microsoft.github.io/flint-chart/#/documentation/interaction-api",
+        "locator": "Programming API opening backend note",
+        "passage": "Flint's interaction presets currently support Vega-Lite.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:20:50.300097Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-api-loaded.txt",
+        "archive_sha256": "8eac5ed29d9a13ac170d8ac8cca849aa74c3d2827117f1f4821fc9a70e733596"
+      }
+    ],
+    "qualifiers": [
+      "Do not generalize backend portability to interactive behavior."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-errors-lifecycle",
+    "claim": "Flint documents warnings for unsupported declarative entries, mount errors for malformed or unsupported code interactions, and explicit lifecycle/reset responsibilities.",
+    "source_ids": [
+      "research-flint-api"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-api",
+        "url": "https://microsoft.github.io/flint-chart/#/documentation/interaction-api",
+        "locator": "Mount an interactive chart; Lifecycle and cleanup",
+        "passage": "Host-dispatched updates are not cleared by canvas reset gestures; the application owns their reset behavior.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:20:50.300097Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-api-loaded.txt",
+        "archive_sha256": "8eac5ed29d9a13ac170d8ac8cca849aa74c3d2827117f1f4821fc9a70e733596"
+      }
+    ],
+    "qualifiers": [
+      "Documented behavior only; no interaction execution."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-embedding",
+    "claim": "JavaScript mountChart and React FlintChart expose semantic events and host updates for linked charts and tables.",
+    "source_ids": [
+      "research-flint-api"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-api",
+        "url": "https://microsoft.github.io/flint-chart/#/documentation/interaction-api",
+        "locator": "Render the chart in React; Respond to external controls",
+        "passage": "Targets use semantic data keys, not SVG paths or renderer-specific mark indices.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:20:50.300097Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-api-loaded.txt",
+        "archive_sha256": "8eac5ed29d9a13ac170d8ac8cca849aa74c3d2827117f1f4821fc9a70e733596"
+      }
+    ],
+    "qualifiers": [
+      "Named field must be present in semantic data.",
+      "Application still defines linking and reset behavior."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-mcp-data",
+    "claim": "Current MCP documentation offers local stdio and hosted HTTP paths; local-file references are enabled by default; remote URLs not fetched; chart-ready data required.",
+    "source_ids": [
+      "research-flint-mcp"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-mcp",
+        "url": "https://microsoft.github.io/flint-chart/#/documentation/setup-flint-mcp",
+        "locator": "Data access",
+        "passage": "Remote URLs are never fetched.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:06.467Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-mcp.txt",
+        "archive_sha256": "757916593c3deafa1989b4000fcecc4d9e26175c2b218c4b3c2db3f615711b4f"
+      }
+    ],
+    "qualifiers": [
+      "Current documentation may describe unreleased source behavior; inspect matching release.",
+      "Hosted endpoint receives inline data; local rendering alone is not end-to-end privacy."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-mcp-host",
+    "claim": "Interactive display needs MCP Apps host support; static rendering is documented fallback; Node.js/npm needed for local server.",
+    "source_ids": [
+      "research-flint-mcp"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-mcp",
+        "url": "https://microsoft.github.io/flint-chart/#/documentation/setup-flint-mcp",
+        "locator": "Requirements; Verify the setup",
+        "passage": "an MCP client that can run stdio servers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:06.467Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-mcp.txt",
+        "archive_sha256": "757916593c3deafa1989b4000fcecc4d9e26175c2b218c4b3c2db3f615711b4f"
+      }
+    ],
+    "qualifiers": [
+      "No server installed or connected."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-version-state",
+    "claim": "1.0.0October19 used server-memory charts/sticky sessions;1.0.1October21 fixed issues; stateless MCP is under Unreleased.",
+    "source_ids": [
+      "research-flint-changelog"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-changelog",
+        "url": "https://github.com/microsoft/flint-chart/blob/main/CHANGELOG.md",
+        "locator": "Unreleased Changed;1.0.1;1.0.0 Changed",
+        "passage": "Charts now live in server memory between calls, as boards did, so a scaled HTTP deployment needs one instance or sticky sessions.",
+        "published_at": null,
+        "event_at": "2026-10-19",
+        "retrieved_at": "2026-10-22T17:13:06.466Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-changelog.txt",
+        "archive_sha256": "411ba73dba6e0195ccb8452045dbeff064554d6359e7f2ebcb2edb02bcc5c146"
+      }
+    ],
+    "qualifiers": [
+      "Current setup guide already reflects stateless design; do not conflate with released package behavior."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-license",
+    "claim": "Flint repository has MIT license with notice retention and no warranty.",
+    "source_ids": [
+      "research-flint-license"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-license",
+        "url": "https://github.com/microsoft/flint-chart/blob/main/LICENSE",
+        "locator": "LICENSE file",
+        "passage": "MIT License",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:06.467Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-license.txt",
+        "archive_sha256": "556a7aab40127da770e36a26dc87aba6d19d26f1e0ab92d6f7ce78ba53c13030"
+      }
+    ],
+    "qualifiers": [
+      "License is distinct from guarantees of correctness or service support."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "flint-catalog-python",
+    "claim": "Project advertises52chart types,5backends,14themes and23presets; Python port is source preview without a released package.",
+    "source_ids": [
+      "research-flint-repository"
+    ],
+    "support": [
+      {
+        "source_id": "research-flint-repository",
+        "url": "https://github.com/microsoft/flint-chart",
+        "locator": "Introduction; Documentation",
+        "passage": "A Python port is in preview as source",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:12:26.147Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/flint-repo.txt",
+        "archive_sha256": "a3261cced5d05b5ce180fd74309fbfa6fe427e25eb97e2326dddfe8fc5946b69"
+      }
+    ],
+    "qualifiers": [
+      "Catalog counts not proof every backend/chart/interaction combination works."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "included",
+    "limitations": [
+      "Documentation and publisher evidence; no execution or independent experimental replication in this scan."
+    ]
+  },
+  {
+    "claim_id": "tutormoments-preview-boundary",
+    "claim": "TutorMoments preview assesses tutor behavior in model-student replays rather than real student learning.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "Preliminary results and Limitations and next steps",
+        "passage": "The scores measure tutor behavior, not learning.",
+        "published_at": "2026-08-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-22",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/tutormoments.txt",
+        "archive_sha256": "89042bf79a18784652d3fe7860628192830b483bdce259ccf43a46626daec632"
+      }
+    ],
+    "qualifiers": [
+      "Initial article observation used in-app browser; repository observation used Chrome.",
+      "Five-turn simulated continuations; U.S.grades2–7 math scope; no learning efficacy claim."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2",
+    "status": "needs_review",
+    "limitations": [
+      "Bounded inspection; no live execution or independent experiment."
+    ]
+  },
+  {
+    "claim_id": "ben-affleck-exclusion",
+    "claim": "The inspected quotation is autobiographical Python/CNN/VFX commentary rather than a new deployable release or evaluation.",
+    "source_ids": [
+      "source-f60f92689e069107"
+    ],
+    "support": [
+      {
+        "source_id": "source-f60f92689e069107",
+        "url": "https://simonwillison.net/2026/Oct/7/ben-affleck/",
+        "locator": "Complete quoted passage",
+        "passage": "the visual effects workflow for many years has included machine learning.",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-22",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/ben-affleck.txt",
+        "archive_sha256": "d5a50a6b1e524db15a50bc534ec2644da7672db10cc73b30cd3fc88b0317fc37"
+      }
+    ],
+    "qualifiers": [
+      "Source links a YouTube interview; full video not inspected.",
+      "Excluded from substantial report selection, not from AI relevance."
+    ],
+    "contradicts": [],
+    "source_family": "Simon Willison",
+    "status": "excluded",
+    "limitations": [
+      "Bounded inspection; no live execution or independent experiment."
+    ]
+  },
+  {
+    "claim_id": "jev-explainer-context",
+    "claim": "Raschka’s September29article is a historical classification explainer with Jev discussion, retained as existing-report background.",
+    "source_ids": [
+      "source-3c3bfa327de00638"
+    ],
+    "support": [
+      {
+        "source_id": "source-3c3bfa327de00638",
+        "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+        "locator": "Opening explanation and scope",
+        "passage": "not a product endorsement, just a technical article",
+        "published_at": "2026-09-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-22",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/research/archives/jev-backlog.txt",
+        "archive_sha256": "5c42ea82c0025675c1d560936c4941c0c68b5c4364474b9b6d920298aad9223e"
+      }
+    ],
+    "qualifiers": [
+      "Full article archived; selection judgment based on inspected opening scope, not an independent benchmark replication.",
+      "No existing-report activity bump justified by background alone."
+    ],
+    "contradicts": [],
+    "source_family": "Sebastian Raschka",
+    "status": "excluded",
+    "limitations": [
+      "Bounded inspection; no live execution or independent experiment."
+    ]
+  },
+  {
+    "claim_id": "duet-launch-20261022",
+    "claim": "Anthropic announced a new Claude Duet research preview on October 21, 2026, initially by waitlist for US Pro and Max subscribers.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Date field and opening paragraphs",
+        "passage": "October 21, 2026",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      },
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Opening paragraphs; Join the research preview",
+        "passage": "Anthropic announces the preview as starting that day with US Pro and Max users, requiring a waitlist for access.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Preview launch date is distinct from capture/retrieval date.",
+      "Announcement does not establish that an individual subscriber has received access."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-plan-exclusion-20261022",
+    "claim": "The product FAQ excludes Team and Enterprise plans from the research preview.",
+    "source_ids": [
+      "social-source-0336c2290ec14333"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-0336c2290ec14333",
+        "url": "https://claude.com/product/claude-duet",
+        "locator": "FAQ: Who can use Claude Duet and what does it cost?",
+        "passage": "Team and Enterprise plans are not included yet.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:33Z"
+      }
+    ],
+    "qualifiers": [
+      "Scope is the preview inspected on October 22, 2026."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-context-platforms-20261022",
+    "claim": "Anthropic describes Duet as a separate iOS/Android app with web access through claude.ai, powered by Opus 5.5 and carrying over account memory, skills, and connected apps.",
+    "source_ids": [
+      "social-source-0336c2290ec14333",
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-0336c2290ec14333",
+        "url": "https://claude.com/product/claude-duet",
+        "locator": "Header; FAQ: Where can I use Claude Duet?; How is Claude Duet different from Claude?",
+        "passage": "The header names Opus 5.5; the FAQ lists iOS, Android and claude.ai and says memory, skills and connectors come from the Claude account.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:33Z"
+      },
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "How Claude Duet works: Your context from Claude is the foundation; Join the research preview",
+        "passage": "Duet uses one ongoing typed or voice thread and is currently separate from the main Claude app.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Vendor product description.",
+      "No app installation, memory import, or platform behavior was tested."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-background-20261022",
+    "claim": "Anthropic says Duet has its own cloud virtual machine and browser and can work without the user device staying on, notifying at completion or review.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "How Claude Duet works: Work continues when you step away",
+        "passage": "Duet has a virtual machine with its own browser, independent of whether the phone or laptop is on; notifications report task completion or review needs.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "No completion-time or task-reliability measurement supplied by this assessment."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-frequency-20261022",
+    "claim": "Duet checks connected accounts every few hours, so arrivals between checks can be missed until a later check; continuous monitoring is not established.",
+    "source_ids": [
+      "duet-announcement",
+      "social-source-0336c2290ec14333"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "How Claude Duet works: Receive a message when something needs you",
+        "passage": "every few hours",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      },
+      {
+        "source_id": "social-source-0336c2290ec14333",
+        "url": "https://claude.com/product/claude-duet",
+        "locator": "FAQ: What is not ready yet?",
+        "passage": "Anthropic warns that Duet may miss something arriving between check-ins and may misjudge urgency.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:33Z"
+      }
+    ],
+    "qualifiers": [
+      "Checks are periodic, despite broad always-on marketing language.",
+      "Users can tell Duet what to report and how often, but no service-level timing guarantee is described."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-usage-20261022",
+    "claim": "Background checks and task work share the subscriber existing Claude usage limits; larger tasks can require more model turns and background work.",
+    "source_ids": [
+      "social-source-0336c2290ec14333",
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-0336c2290ec14333",
+        "url": "https://claude.com/product/claude-duet",
+        "locator": "FAQ: How does usage work for Claude Duet?",
+        "passage": "background checks count toward those limits",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:33Z"
+      },
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Join the research preview: usage paragraph",
+        "passage": "The preview shares the plan limits used by other Claude activity; financial models and decks are examples of larger jobs requiring more work.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "No numeric task budget, per-task cost, admission date, or unlimited use is established."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-approvals-20261022",
+    "claim": "Anthropic says messages, payments, signatures and deletions await user approval; securities trading and moving money between accounts are disallowed even with approval, and users can disconnect apps.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "How Claude Duet works: Important decisions stay with you",
+        "passage": "The agent reads, drafts and prepares independently, but must show proposed sends, payments, signatures or deletions and wait for approval; securities trades and inter-account transfers remain off-limits.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "These are stated policy/product behaviors, not tested enforcement.",
+      "Approval does not prove the proposed action is correct."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-capabilities-20261022",
+    "claim": "Anthropic advertises more than 6,000 marketplace connectors/plugins and task examples including briefs, dashboards, prototypes, web apps, business administration, Canva campaigns and Shopify management.",
+    "source_ids": [
+      "duet-announcement",
+      "social-source-0336c2290ec14333"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Put your attention where it matters most; Connect with the tools your business runs on",
+        "passage": "The announcement describes scheduling, dashboards, forecasts, prototyping and web apps, plus named business services and a catalog of more than 6,000 connectors/plugins.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      },
+      {
+        "source_id": "social-source-0336c2290ec14333",
+        "url": "https://claude.com/product/claude-duet",
+        "locator": "FAQ: How does Claude Duet work?; What can Claude Duet do?",
+        "passage": "The FAQ describes finished documents, sheets and decks for review, plus morning briefs, draft replies and business preparation.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:13:33Z"
+      }
+    ],
+    "qualifiers": [
+      "Catalog size is a vendor assertion and does not prove operation compatibility for a specific account.",
+      "No generated application, artifact or connector operation was examined."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-future-20261022",
+    "claim": "1Password login support and a richer Shopify visual editor with storefront preview are described as future features, not shipped launch features.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Connect with the tools your business runs on: Shopify bullet and 1Password paragraph",
+        "passage": "Coming soon",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      },
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Connect with the tools your business runs on: Shopify bullet and 1Password paragraph",
+        "passage": "The forthcoming statements separately qualify a richer Shopify visual editor and using saved 1Password logins with permission.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Do not conflate existing Shopify setup/management examples with the forthcoming visual editor."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-payments-20261022",
+    "claim": "Anthropic describes business purchases through Link and checkout through Shop Pay; its Link flow confirms the item and asks the user to approve spending before virtual-card payment.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Connect with the tools your business runs on: purchase paragraph",
+        "passage": "The described Link flow includes item confirmation, approval of the spend, and a virtual card; Shop Pay is listed for checkout.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "The product description does not establish universal merchant support or a complete payment policy.",
+      "No payment attempted."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-launch-limits-20261022",
+    "claim": "At launch Duet cannot show its browser, may misread threads or misjudge urgency, and is described as weaker on personal errands than work tasks.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Join the research preview: first paragraph",
+        "passage": "it can’t yet show you its browser",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      },
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Join the research preview: first paragraph",
+        "passage": "Anthropic calls the version early, acknowledges thread/urgency mistakes, and says personal errands such as booking tickets are less strong.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Product-page visibility into work is not equivalent to a live browser view.",
+      "Detailed cancel/retry/recovery and export behavior was not established by the reviewed pages."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-security-20261022",
+    "claim": "Anthropic asserts credential isolation, action classification, prompt-injection defenses, adversarial and external penetration testing, and bug-bounty coverage for Duet.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Safety and discretion are built in: bullet list",
+        "passage": "The vendor says credential handling prevents direct access to passwords/sign-in tokens, describes an action classifier and injection defenses, and reports internal and external testing with bug-bounty coverage.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Vendor safety/security assertions, not guarantees or independent validation.",
+      "Linked background research was not separately inspected for this report; no Duet-specific failure rate is supplied in the reviewed announcement."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-sensitive-data-20261022",
+    "claim": "Anthropic describes a dedicated message classifier and safety prompt intended to block sharing its strictest information tier and require explicit instructions for other sensitive information.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "Safety and discretion are built in: How Claude Duet handles sensitive information",
+        "passage": "The announced controls are intended to reject sharing credit-card and government-ID numbers and require explicit instructions for sending health or personal-finance information.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Stated intended enforcement, not measured data-leak prevention.",
+      "The announcement says additional safety details will follow.",
+      "Retention and regional processing details were not established."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "Public documentation reviewed; no hands-on validation."
+    ]
+  },
+  {
+    "claim_id": "duet-readiness-20261022",
+    "claim": "The two launch pages provide promotional examples and selected testimonials, but this assessment has no hands-on output-quality, learning-outcome, video-production or productivity evidence.",
+    "source_ids": [
+      "duet-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "duet-announcement",
+        "url": "https://claude.com/resources/articles/claude-duet",
+        "locator": "How testers are using Claude Duet; Join the research preview",
+        "passage": "The announcement presents Anthropic staff and selected business-user examples, alongside its research-preview and reliability caveats.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:14:07Z"
+      }
+    ],
+    "qualifiers": [
+      "Educational, app/website and video pilots in the report are editorial proposals.",
+      "No software installed, accounts connected, waitlist joined, or tasks run."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "No causal learning gains or comparative productivity results can be inferred from the selected examples.",
+      "Absence statements are bounded to the two inspected public pages, not a claim about all Duet documentation."
+    ]
+  },
+  {
+    "claim_id": "rosalind-structure-movie-example",
+    "claim": "The Workbench article documents a specific structure-viewer movie example, without establishing a general video-production or publishing workflow.",
+    "source_ids": [
+      "official-rosalind-workbench"
+    ],
+    "support": [
+      {
+        "source_id": "official-rosalind-workbench",
+        "url": "https://developers.openai.com/blog/rosalind-workbench",
+        "locator": "Explore molecular protein structure",
+        "passage": "The example describes directing the viewer to create a movie of key features of a protein complex.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-22T17:09:51.664Z",
+        "archive_path": ".state/scan-20261022T170517Z-9e6c72/official/rosalind-workbench.json",
+        "archive_sha256": "5a5b1c281d53e92fe6d8cdeaf3a22e55174901addd69290b3ac9788e000a0840"
+      }
+    ],
+    "qualifiers": [
+      "Specific documented example; not hands-on validation or evidence of a general video-production capability."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No runtime test, export validation or end-to-end publishing performed."
+    ]
   }
 ]

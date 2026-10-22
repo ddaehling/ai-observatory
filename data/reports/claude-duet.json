@@ -1,0 +1,99 @@
+{
+  "id": "claude-duet",
+  "title": "Claude Duet: a proactive work agent enters a limited research preview",
+  "entity": "Anthropic Claude Duet",
+  "category": "Tools",
+  "tags": [
+    "agents",
+    "background work",
+    "education",
+    "creative workflows",
+    "prototyping",
+    "research preview"
+  ],
+  "summary": "Claude Duet combines background tasks, connected apps, and approval requests in a new waitlisted preview. It suggests useful coordination workflows for creators, but access, periodic checks, shared limits, and untested quality constrain adoption.",
+  "changeType": "new",
+  "publishedAt": "2026-10-21",
+  "discoveredAt": "2026-10-22T17:13:33Z",
+  "updatedAt": "2026-10-22T17:20:07Z",
+  "officialUrl": "https://claude.com/product/claude-duet",
+  "sections": [
+    {
+      "id": "preview",
+      "title": "A new handoff surface for work between conversations",
+      "html": "<p>Anthropic announced Claude Duet on October 21, 2026, as a research preview of a proactive agent. Its central proposition is that work can continue between conversations: the agent checks connected applications, prepares a morning brief, accepts tasks through messages, and contacts the user when a result or decision needs attention. For educational and creative builders, the interesting development is the combination of persistent context, background execution, and a channel for reviewing work after leaving the computer.</p>\n<p>The <a href=\"https://claude.com/resources/articles/claude-duet\">dated announcement</a> establishes a new product preview, rather than a generally available release. Access starts with a waitlist for US Pro and Max subscribers. The <a href=\"https://claude.com/product/claude-duet\">product FAQ</a> explicitly excludes Team and Enterprise plans at this stage. Duet is a separate iOS and Android app, with web access through claude.ai. Eligibility does not establish that a particular subscriber has been admitted.</p>\n<p>Anthropic says Duet uses Opus 5.5 and carries over Claude account memory, skills, and connected apps. That could reduce the effort of explaining recurring work. It also means the practical result will depend on the quality and relevance of the context already available. Our assessment concerns the announced workflow and its limits. We did not join the waitlist, connect accounts, run a task, or verify output quality.</p>"
+    },
+    {
+      "id": "background-work",
+      "title": "Background work has a schedule and a shared budget",
+      "html": "<p>The <a href=\"https://claude.com/resources/articles/claude-duet\">How Claude Duet works section</a> describes a virtual machine with its own browser. Tasks can therefore continue without the user's laptop or phone remaining on. A user can type or speak into one ongoing thread and receive a notification when work finishes or needs review. The product page describes returning documents, sheets, and decks; these are advertised output formats, not artifacts we produced.</p>\n<p>The same announcement puts a concrete limit on the proactive promise: Duet checks connected accounts every few hours. This is periodic observation. An item arriving after a check can remain unseen until a later pass, and the product FAQ explicitly acknowledges missed arrivals between check-ins. A morning brief may help plan a production day, but these sources do not support using Duet as a time-critical incident monitor or a guarantee that every deadline will be caught.</p>\n<p>Background checks consume the same plan limits used by the rest of Claude. Larger jobs, including financial models and decks, require more turns and background work. The reviewed pages give no numerical per-task allowance or reliable cost forecast. A useful pilot should therefore count the work returned, the corrections required, and the impact on the user's remaining ordinary Claude usage. More connected applications and more frequent requested updates should be treated as experimental choices whose budget effects need observation.</p>\n<p>Users can state what they want to hear about and how often. Anthropic also says it is still tuning the judgment behind interruptions. Preferences are a way to shape the experience; they are not evidence of a guaranteed notification schedule or measured precision.</p>"
+    },
+    {
+      "id": "scope",
+      "title": "What is described now, and what is still promised",
+      "html": "<p>The <a href=\"https://claude.com/resources/articles/claude-duet\">announcement's connector examples</a> span scheduling, invoice reminders, payroll preparation, agreements, sales follow-ups, Canva campaigns, Shopify stores, prototypes, web apps, and dashboards. Anthropic says Duet can use more than 6,000 connectors and plugins in its marketplace. That headline describes the vendor's catalog claim. It does not establish that every integration supports every operation, that all are enabled by default, or that any particular account configuration will work.</p>\n<p>Several examples involve a sequence of preparation and approval: drafting a job posting before publishing it, preparing an agreement before sending it, and reviewing a payment before spending. That sequence is more relevant to a small creative business than the size of the catalog. A team must still determine which application contains authoritative data, which account is connected, and what constitutes an acceptable finished result.</p>\n<p>Two features require careful dating. Signing into websites with saved 1Password logins is described as forthcoming. A richer Shopify visual editor, including a storefront preview before publication, is also forthcoming. They should not be counted as available preview capabilities. Anthropic describes current business purchases through Link and checkout through Shop Pay, but those descriptions do not establish universal merchant support or a complete purchasing policy.</p>\n<p>The launch also has a visibility gap: Anthropic says Duet cannot yet show its browser. Although the product page promises visibility into work performed and in progress, that should not be read as a live browser view. The reviewed sources do not specify detailed cancellation, retry, checkpoint recovery, artifact export, or audit-history behavior. Those remain practical questions for admitted testers.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Proposed pilot: preparing a small educational production",
+      "html": "<p>An educational creator could test Duet on preparation for a workshop or short course. This is an editorial proposal, not a reported deployment. Begin with a calendar containing the workshop dates and a small set of instructor-owned planning documents. Ask for a brief that identifies the next deliverable, unresolved questions, and the material needed for the next session. Request links back to the source items so the instructor can inspect each conclusion.</p>\n<p>The first test should use public or synthetic course material and the minimum connected accounts needed for the task. For example, a calendar and a document location may be sufficient; access to student records or a broad institutional inbox is not a prerequisite for learning whether the brief is useful. The relevant prerequisites are waitlist admission, an eligible plan and location, supported connections, and a clear statement of the work to prepare.</p>\n<p>A meaningful output might be an instructor-reviewed lesson outline, a list of missing assets, and a draft reminder. The instructor should verify subject accuracy and accessibility and approve any communication before it is sent. This proposal tests coordination around learning materials. The announcement provides no evidence that Duet improves learning outcomes, accurately evaluates students, or can replace educational judgment.</p>\n<p>Compare the brief with a checklist prepared independently from the same materials. Record missed dependencies, mistaken urgency, and corrections needed. That produces useful adoption evidence even if the first result looks polished.</p>"
+    },
+    {
+      "id": "apps-websites",
+      "title": "Proposed pilot: a bounded app or website prototype",
+      "html": "<p>Anthropic explicitly includes prototyping and building web apps among Duet's tasks, but the launch pages provide no reproducible benchmark or implementation walkthrough. A suitable editorial experiment is a small course-resource website or internal production dashboard built from sample data. Supply a short specification, a few representative records, required screens, and acceptance criteria. Ask for a reviewable prototype and a list of assumptions before treating the work as ready to use.</p>\n<p>Keep the first task narrow enough to inspect: a resource list with search and clear empty states, for example, rather than an entire learning platform. If an account or development service is needed, use a dedicated sandbox and only the connections necessary for that prototype. The announcement does not establish a general Duet developer API, repository portability, deployment controls, or support for a particular application framework. Do not plan an architecture around those unverified details.</p>\n<p>Human review should cover whether the prototype starts, handles invalid input, remains usable on a small screen, and preserves the supplied data. Verify source files and export options in the actual preview before committing to a workflow. Publishing a website or connecting real customer data should be a separate explicit decision with an inspectable result.</p>\n<p>For a storefront project, the current Shopify description may justify evaluating basic setup or management after access is granted. It does not justify assuming the promised visual editor is already available. A creator who needs precise visual layout control should test that requirement directly rather than infer it from the broader ability to build a website.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Proposed pilot: organizing a video project before editing",
+      "html": "<p>A video creator could use the same handoff pattern for a lesson or product explainer. The proposed task is to turn an approved brief, a source list, and a production calendar into a draft script outline, shot list, asset checklist, and questions for the producer. A small shared document location and calendar could be enough to evaluate this coordination work. Any additional service should have a specific role in the experiment.</p>\n<p>The announcement's Canva campaign example supports investigating preparation for promotional material. It does not demonstrate video generation, timeline editing, frame-accurate control, rendering, or narration quality. Those capabilities are outside what the inspected Duet sources establish. The pilot should measure whether the planning materials help a human editor and subject expert produce the actual video.</p>\n<p>A producer can review factual claims, rights to reference assets, pacing assumptions, and accessibility requirements before approving the next step. Draft outreach to a contributor or a purchase request should remain pending until reviewed. An overnight planning task could be useful because Duet's virtual machine is independent of the creator's local device, but its completion time and reliability remain unmeasured here. Keep the existing production schedule as the reference during the trial.</p>"
+    },
+    {
+      "id": "safety",
+      "title": "Approval boundaries matter; security claims remain claims",
+      "html": "<p>Anthropic says Duet reads, drafts, and prepares work independently, but shows the planned action and waits before sending a message, paying, signing a document, or deleting anything. Securities trading and moving money between accounts are described as unavailable even with approval. Users can disconnect applications. These are stated product boundaries; we have not exercised them or tested what happens after a mistaken approval.</p>\n<p>The <a href=\"https://claude.com/resources/articles/claude-duet\">safety section</a> says credential handling follows Claude Managed Agents and prevents Duet from directly seeing passwords or sign-in tokens. It describes an action classifier, prompt-injection defenses, adversarial testing, external penetration testing, and bug-bounty coverage. It also describes a dedicated message classifier and safety prompt intended to prevent sensitive information from reaching an inappropriate destination.</p>\n<p>According to Anthropic, the strictest information tier, including credit-card and government-identification numbers, should be rejected for sharing. Other sensitive categories, including health and personal finances, require explicit instructions to send. These are vendor statements about design and intended enforcement. The announcement supplies no Duet-specific measured failure rate or independent validation of these protections, and it says additional safety details are still to come.</p>\n<p>For a pilot, write the approval boundary into the task and inspect the proposed recipient, content, amount, or destination at the moment of action. Connecting fewer accounts also makes errors easier to diagnose. The pages establish neither zero information leakage nor immunity to malicious instructions in retrieved material. They also do not settle detailed data-retention or regional processing questions. Educational institutions and businesses would need those answers before choosing a deployment involving sensitive records.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "A useful direction with adoption still constrained",
+      "html": "<p>Duet's potential significance lies in bringing persistent background work, application context, and human decisions into a single consumer-facing workflow. That could make administrative preparation more accessible to independent educators, designers, and small studios. The evidence presently supports trying a constrained coordination task after admission; it does not establish dependable autonomous operation across a business.</p>\n<p>The strongest limitations are concrete: US-only Pro and Max access by waitlist, shared usage limits, checks separated by hours, a separate app, and no browser view at launch. Anthropic also acknowledges that Duet may misread threads, misjudge urgency, and handle personal errands such as ticket booking less well than work tasks. Testimonials selected for the announcement illustrate possible uses, but cannot measure typical success, correction effort, or comparative productivity.</p>\n<p>The inspected launch sources offer no downloadable Duet implementation, reproducible evaluation package, or verified portability commitment. This limits inspectability even if the user-facing service proves useful. A practical adoption decision should follow a short, documented pilot with sample inputs, reviewable outputs, recorded failures, and observed usage. Until that evidence exists, Duet is a meaningful product experiment whose actual creative quality, reliability, and net time savings remain unknown.</p>"
+    }
+  ],
+  "useCases": [
+    "Proposed: preparing instructor-reviewed workshop plans, asset lists, and draft reminders from a small set of course documents.",
+    "Proposed: producing a bounded app or course-resource website prototype from sample data and explicit acceptance criteria.",
+    "Proposed: coordinating a video brief, script outline, shot list, and asset checklist before human production."
+  ],
+  "limitations": [
+    "New research preview, initially waitlisted for US Pro and Max subscribers; Team and Enterprise plans are not included.",
+    "Background checks occur every few hours and share normal Claude plan limits; no continuous or time-critical monitoring guarantee.",
+    "No signup, connected accounts, runtime test, output-quality measurement, security test, or independent productivity validation was performed.",
+    "1Password sign-in and the richer Shopify visual editor are forthcoming; the launch cannot show the agent browser.",
+    "Security, credential isolation, classifier enforcement, connector coverage, and testimonials are vendor claims, not guarantees.",
+    "Only public product and announcement pages were reviewed; detailed retry/cancel, export, retention, and regional-processing behavior remains unverified.",
+    "Education, app/website, and video workflows are editorial proposals; teaching outcomes and video-generation/editing capabilities are not established."
+  ],
+  "sources": [
+    {
+      "id": "social-source-0336c2290ec14333",
+      "title": "Claude Duet product page and FAQ",
+      "url": "https://claude.com/product/claude-duet",
+      "accessedAt": "2026-10-22T17:13:33Z",
+      "publishedAt": null,
+      "locator": "Research preview header; FAQ: Who can use Claude Duet and what does it cost?; How does usage work?; Where can I use it?; What is not ready yet?",
+      "supports": "Preview access, explicit Team/Enterprise exclusion, shared usage, platforms, output descriptions, and acknowledged timing/judgment limits."
+    },
+    {
+      "id": "duet-announcement",
+      "title": "Introducing Claude Duet",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "accessedAt": "2026-10-22T17:14:07Z",
+      "publishedAt": "2026-10-21",
+      "locator": "Dated introduction; Safety and discretion are built in; How Claude Duet works; Connect with the tools your business runs on; Join the research preview",
+      "supports": "October 21 launch date; virtual machine and browser; checks every few hours; approval boundaries; vendor safety assertions; connector examples; forthcoming features and launch limitations."
+    }
+  ],
+  "images": [],
+  "judgment": "A meaningful experiment in consumer background agents and creator coordination, with potential value for independent educators and creative teams. Waitlisted regional access, limited inspectability, incomplete controls documentation, and unmeasured reliability keep this from a mature adoption recommendation.",
+  "researchNote": "Original analysis of two complete public Chrome captures acquired in this scan. The report author reused those captures without new acquisition. All factual product and security claims are attributed to Anthropic; practical education, application, website, and video workflows are editorial proposals. No private account was accessed, signup performed, software installed, task executed, or security/result claim independently reproduced. The icon and empty decorative asset entries were not used as interface evidence."
+}

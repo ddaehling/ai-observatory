@@ -1,0 +1,192 @@
+{
+  "id": "cadre-world-models",
+  "title": "CADRE: choose video compression around how people control the scene",
+  "entity": "Kyutai CADRE",
+  "category": "Research",
+  "tags": [
+    "interactive video",
+    "world models",
+    "education",
+    "open weights",
+    "latency"
+  ],
+  "summary": "Kyutai’s CADRE research treats action delay as a design constraint for interactive video. Released code, specialized models and a public demo make the tradeoff inspectable, with H100 performance claims and noncommercial weight restrictions.",
+  "changeType": "new",
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-22T17:11:12.449Z",
+  "updatedAt": "2026-10-22T17:26:55.223308Z",
+  "officialUrl": "https://kyutai.org/blog/2026-10-22-cadre/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "An interactive picture needs to answer the next action",
+      "html": "<p>A video can look fluid while responding too late to the person controlling it. CADRE makes that distinction the subject of an open research release. Kyutai’s announcement, dated 22 October 2026, introduces a family of causal video autoencoders and four specialized world models for robot manipulation, human manipulation, driving and indoor navigation. A world model predicts the next pictures from earlier pictures and actions. The autoencoder supplies the compact representation in which that prediction happens. <a href=\"https://kyutai.org/blog/2026-10-22-cadre/\">Official announcement</a>.</p><p>The immediate value is a way to study control, compression and visual quality together. Educators can use the public demonstration to explain generated environments. Researchers can inspect training and evaluation recipes. Developers considering an interactive video experiment can see why compression affects the experience before choosing a model. These are research building blocks, with specialized action spaces and noncommercial weights; they do not establish a ready-made general simulator or a production game engine.</p><p>The announcement date is distinct from the paper’s 21 October submission and earlier repository commits and model uploads. Some repository links and citation placeholders still refer to earlier dates or say the preprint is forthcoming. The inspected arXiv record and full HTML paper are available. This report uses the dated announcement as its publication date and does not infer that every artifact first became accessible that day.</p>"
+    },
+    {
+      "id": "compression",
+      "title": "Why frame rate and response delay can move in opposite directions",
+      "html": "<p>Spatial compression reduces the number of visual tokens per frame. Temporal compression groups several frames into one latent frame. Both can reduce computational work, but temporal grouping also makes the model wait for the actions associated with that group. In the paper’s interactive protocol, eight frames at twenty frames per second mean a 400-millisecond grouping delay before generation and decoding. A high maximum frame rate can therefore coexist with an unresponsive control loop.</p><p>CADRE keeps a frozen DINOv3 image encoder, changes a small trained bottleneck to vary compression, and reconstructs video with a causal diffusion decoder. The decoder can run in one or two steps. The researchers study seven compression settings while holding much of the surrounding design constant. This makes compression an experimental choice, rather than simply inheriting whichever autoencoder comes with an existing video generator. <a href=\"https://arxiv.org/html/2610.30129v1#S2\">Paper sections 2–3</a>.</p><p>The paper reports that useful compression depends on camera motion. With relatively stationary manipulation views, grouping time is less costly; when the camera moves through a scene, preserving temporal detail becomes more valuable. Coarser spatial tokens can damage motion and action following even when individual images remain convincing. For a builder, the relevant lesson is to inspect the response to actions and the sequence, alongside attractive still frames.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "What the experiment establishes",
+      "html": "<p>The study compares CADRE with five autoencoder baselines and trains specialized world models for the evaluated environments. The main rollout protocol starts with two seconds of real context and generates another 4.8 seconds from recorded actions. Image fidelity, motion fidelity and action recovery are separate measures. The authors report that CADRE occupies much of the favorable tradeoff between latency and quality, especially in moving-camera environments. These are the authors’ experimental results, not independently reproduced findings.</p><p>Action recoverability asks whether an inverse-dynamics probe can read the commanded actions back from generated video relative to real video. It is more informative about control than a visual-quality score alone, but it is not a task-success or physical-correctness guarantee. The human-manipulation probe scores twelve wrist dimensions because it barely recovers finger-joint actions at the evaluated resolution. A strong score cannot be presented as verified fine-finger control. <a href=\"https://arxiv.org/html/2610.30129v1#A5\">Action-probe definition and limits</a>.</p><p>The paper also evaluates 64-second rollouts on robot manipulation, the environment with enough long episodes for that test. Its findings do not establish equally stable long interactions in all four environments. The conclusion explicitly leaves transfer to generalist models, policy training and planning open. For an educational or creative prototype, generated continuity should remain something to examine, with drift and impossible transitions recorded as outcomes.</p>"
+    },
+    {
+      "id": "performance",
+      "title": "Read the H100 numbers as configurations, not promises",
+      "html": "<p>The headline result concerns selected configurations that sustain interactive video and respond below the paper’s cited 230-millisecond reference threshold on one H100. The timing table shows substantial differences across compression settings and decoding steps; not every CADRE configuration sustains twenty frames per second. The referenced human-perception threshold is context for the study, not a universal usability standard. <a href=\"https://arxiv.org/html/2610.30129v1#A4\">Inference protocol and timing table</a>.</p><p>The current repository documents a separate shared-serving profile. It reports twenty frames per second and 162 milliseconds for one active user, versus about fourteen frames per second per user and local input p95 of 207–212 milliseconds with two active users. It says those latency figures exclude network transit and browser rendering, and explicitly notes that the two-user setup misses its nineteen-FPS/two-hundred-millisecond target. Long rollouts can still drift. <a href=\"https://github.com/kyutai-labs/cadre-autoencoders-and-world-models#shared-gpu-serving\">Shared GPU serving</a>.</p><p>We inspected the public demo’s visible interface and one rendered human-manipulation view. It exposed environment tabs, keyboard hints, interactive/replay choices, a next-clip control and shared-capacity status. At inspection its status showed a one-user capacity, while the README describes a two-user profile. Deployment settings can differ. We did not measure latency, verify the displayed counter, exercise every control, or perform a systematic interaction test.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Choose the matching models before installing",
+      "html": "<p>The easiest inspection route is the <a href=\"https://cadre-wm.kyutai.org/\">public research demo</a>. The repository says extra visitors queue when its configured active-user limit is reached. A class should prepare a recorded or illustrated fallback and use a shared demonstration before depending on simultaneous student sessions. Public accessibility during this visit establishes neither reserved capacity nor an availability commitment.</p><p>For local work, the project specifies Python 3.12 or newer and pins PyTorch 2.8.0 and Torchvision 0.23.0. It documents installation through uv and an optional demo dependency set. The demo downloads world models and prompt clips; its README warns that startup compilation can take several minutes. Remote serving requires an HTTPS proxy with WebSocket support. We did not install these dependencies or establish a minimum consumer-GPU memory requirement. <a href=\"https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/pyproject.toml\">Package requirements</a>.</p><p>A consequential compatibility detail is the autoencoder checkpoint. The released world models use the original 150k-step CADRE-2x16x16 autoencoder at 288 × 512 video resolution. The separately recommended multiresolution autoencoder was trained further and has different latents. It is intended for reconstruction and training new world models; substituting it into the released world models is unsupported. The <a href=\"https://huggingface.co/kyutai/cadre-2x16x16-multires\">multiresolution model card</a> explicitly directs users back to the original checkpoint for those models.</p><p>Training a new environment is a much larger undertaking than opening the demo. The world-model card documents one recipe per environment with 100,000 training steps on sixteen H100s. That describes the authors’ training setup, not a minimum hardware requirement for inference or a measured cost for a new dataset. A team planning an adaptation would also need suitable video paired with the expected actions, dataset permissions, preprocessing and its own evaluation. For a first investigation, the released models and their existing context clips offer a more bounded starting point than assuming the supplied training configuration will transfer to arbitrary footage.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A classroom exercise about prediction and control",
+      "html": "<p>A useful introductory lesson would ask learners to predict what happens when an action arrives faster than a model can update the scene. Begin with the announcement’s compression illustration, count the frames in each group, and calculate the waiting time at a fixed display rate. Then discuss why reducing image detail and grouping more time solve different problems. This exercise needs no model installation and turns an abstract efficiency argument into a concrete interface decision.</p><p>A supervised demonstration can compare a manipulation view with a moving-camera view. Ask students to separate what they observe from what they infer: an image changing after a key press, an object seeming stable, or a scene departing from plausible motion. The interface’s replay option offers a second discussion point about recorded actions versus new controls. These are proposed teaching activities; we did not test learning outcomes or confirm the behavior of every demo state.</p><p>For an advanced course, the paper’s action probe is an opportunity to critique evaluation. Students can explain why recovering a wrist trajectory is different from successfully grasping an object, and why a short rollout score cannot settle long-session reliability. A practical assignment should keep a clear source/version record and avoid treating visually convincing video as ground-truth physics.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "Design an experimental app around explicit boundaries",
+      "html": "<p>A plausible app prototype is a small research viewer for comparing a few known action sequences in a fixed environment. The published model card specifies different inputs: driving uses speed and curvature, robot manipulation uses joint-state changes, and indoor navigation uses camera-motion quantities. These are numeric action interfaces, so a general text prompt cannot simply replace them. A developer must construct and validate the translation from interface controls into the model’s expected inputs. <a href=\"https://huggingface.co/kyutai/cadre-world-models-2x16x16\">World-model action table</a>.</p><p>The website surrounding that experiment should display the selected environment, distinguish real context from predicted continuation, expose connection and queue state, and make restarting with known context straightforward. Those are proposed product requirements. They should be verified against the actual server and client before release, especially cancellation, reconnect behavior and whether abandoned sessions release capacity. The observed public controls do not establish all those failure paths.</p><p>A useful first evaluation would fix the model checkpoint, prompt clip, action sequence and serving settings, then record visual failures and end-to-end response time. Test the intended concurrency rather than extrapolating from a single session. A hardware purchase or production service commitment would need fresh workload measurements; the H100 figures provide a comparison point, not a sizing guarantee.</p>"
+    },
+    {
+      "id": "creative",
+      "title": "Use the release to explain interactive video",
+      "html": "<p>For video creators, CADRE is most immediately useful as the subject of a technical explainer or a noncommercial research demonstration. A short sequence can place the input actions beside the generated view and show how temporal grouping delays feedback. Label any captured material as generated, record the configuration, and keep the narration precise about which claims come from the paper. That makes a more informative story than presenting a smooth sample as proof of a universal virtual world.</p><p>A creative-coding workshop could prototype an installation around one supported environment, provided its licensing and infrastructure fit the use. The compelling design question is how visitors understand a scene that responds probabilistically and may drift. Restrict the action vocabulary, define a short interaction, and make the generated nature of the imagery visible. This is an editorial application idea; CADRE does not document a turnkey installation toolkit, broad scene authoring, or a complete audiovisual production workflow.</p>"
+    },
+    {
+      "id": "licenses",
+      "title": "Inspectability is strong; commercial reuse is restricted",
+      "html": "<p>The code is MIT-licensed. The model cards identify the weights as CC BY-NC 4.0, which carries attribution and noncommercial restrictions. Their frozen DINOv3 component remains subject to Meta’s separate DINOv3 license. These layers matter: a permissive code repository does not grant unrestricted use of the shipped models. The inspected sources do not establish a commercial model license or a priced production API. <a href=\"https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/LICENSE\">Code license</a>; <a href=\"https://huggingface.co/kyutai/cadre-world-models-2x16x16#licence\">weight and DINOv3 notice</a>.</p><p>The DINOv3 terms include redistribution conditions and use restrictions. Training datasets also have their own terms; the repository names them rather than redistributing the full training corpus. The world-model card notes a training option that the released code does not retain, so available recipes should not be equated with an already reproduced training run. A research team has useful material to inspect, with work remaining to establish exact reproducibility.</p><p>CADRE is worth a bounded investigation when the question is how video compression changes interactive control. Start with the paper and demo, then choose one environment and a compatible checkpoint if local experimentation is justified. Retain separate records of author measurements, visible interface observations and your own results. That separation is the most useful way to turn this release into a defensible educational or creative experiment.</p>"
+    }
+  ],
+  "useCases": [
+    "A classroom explanation of frame grouping, throughput and action delay.",
+    "A bounded noncommercial research viewer for a supported action-conditioned environment.",
+    "An annotated technical video explaining generated-world interaction and its failure modes."
+  ],
+  "limitations": [
+    "No installation, model download, independent timing, systematic interaction test or training reproduction was performed.",
+    "Performance depends on compression, decoding and serving configuration; headline figures use an H100 and do not establish consumer-GPU requirements.",
+    "The public demo capacity differed from the README example; queue behavior and availability were not stress-tested.",
+    "World models are specialized; transfer to generalist simulation, policy training and planning remains open.",
+    "The shipped world models cannot simply substitute the newer multiresolution autoencoder.",
+    "Weights are noncommercial under CC BY-NC 4.0, with DINOv3 terms and dataset terms applying separately."
+  ],
+  "sources": [
+    {
+      "id": "creative-cadre-release",
+      "title": "CADRE official announcement",
+      "url": "https://kyutai.org/blog/2026-10-22-cadre/",
+      "accessedAt": "2026-10-22T17:11:12.449Z",
+      "publishedAt": "2026-10-22",
+      "locator": "Opening; Throughput and latency; Four findings",
+      "supports": "Announcement date, architecture and author-reported findings"
+    },
+    {
+      "id": "creative-cadre-paper",
+      "title": "CADRE arXiv record",
+      "url": "https://arxiv.org/abs/2610.30129",
+      "accessedAt": "2026-10-22T17:11:57.334Z",
+      "publishedAt": "2026-10-21",
+      "locator": "Submission history; abstract",
+      "supports": "Paper date and identity"
+    },
+    {
+      "id": "creative-cadre-paper-html",
+      "title": "CADRE full paper",
+      "url": "https://arxiv.org/html/2610.30129v1",
+      "accessedAt": "2026-10-22T17:12:55.609Z",
+      "publishedAt": "2026-10-21",
+      "locator": "Sections 2–5, 7; Appendices D, E, H",
+      "supports": "Evaluation design, timing, action-probe limits and generalization limits"
+    },
+    {
+      "id": "creative-cadre-repository",
+      "title": "CADRE code and serving README",
+      "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models",
+      "accessedAt": "2026-10-22T17:11:46.520Z",
+      "publishedAt": null,
+      "locator": "Interactive demo; Shared GPU serving; Multi-resolution autoencoders; License",
+      "supports": "Access, queue documentation, deployment measurements and checkpoint compatibility"
+    },
+    {
+      "id": "creative-cadre-models",
+      "title": "CADRE model collection",
+      "url": "https://huggingface.co/collections/kyutai/cadre-autoencoders-and-world-models-6abbaa26ed6191f7c975072d",
+      "accessedAt": "2026-10-22T17:11:53.091Z",
+      "publishedAt": null,
+      "locator": "World models; paper autoencoders; multi-resolution autoencoders",
+      "supports": "Published model inventory"
+    },
+    {
+      "id": "creative-cadre-world-card",
+      "title": "CADRE world-model card",
+      "url": "https://huggingface.co/kyutai/cadre-world-models-2x16x16",
+      "accessedAt": "2026-10-22T17:12:13.817Z",
+      "publishedAt": null,
+      "locator": "Contents; The world model; Usage; Training; Licence",
+      "supports": "Action inputs, resolution, model compatibility, training qualifier and license"
+    },
+    {
+      "id": "creative-cadre-multires-card",
+      "title": "CADRE multi-resolution autoencoder card",
+      "url": "https://huggingface.co/kyutai/cadre-2x16x16-multires",
+      "accessedAt": "2026-10-22T17:12:15.112Z",
+      "publishedAt": null,
+      "locator": "Opening; The autoencoder; Licence",
+      "supports": "Different latent space and appropriate checkpoint selection"
+    },
+    {
+      "id": "creative-cadre-pyproject",
+      "title": "CADRE package requirements",
+      "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/pyproject.toml",
+      "accessedAt": "2026-10-22T17:12:22.754Z",
+      "publishedAt": null,
+      "locator": "project.requires-python; dependencies; optional-dependencies",
+      "supports": "Python, PyTorch and demo prerequisites"
+    },
+    {
+      "id": "creative-cadre-license",
+      "title": "CADRE MIT code license",
+      "url": "https://github.com/kyutai-labs/cadre-autoencoders-and-world-models/blob/main/LICENSE",
+      "accessedAt": "2026-10-22T17:12:16.965Z",
+      "publishedAt": null,
+      "locator": "Complete license",
+      "supports": "Code permissions and notice condition"
+    },
+    {
+      "id": "creative-cadre-dino-license",
+      "title": "DINOv3 license",
+      "url": "https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md",
+      "accessedAt": "2026-10-22T17:16:29.989Z",
+      "publishedAt": null,
+      "locator": "Section 1: License Rights and Redistribution; restrictions",
+      "supports": "Separate DINOv3 conditions"
+    },
+    {
+      "id": "creative-cadre-cc-license",
+      "title": "CC BY-NC 4.0 deed",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "accessedAt": "2026-10-22T17:16:31.046Z",
+      "publishedAt": null,
+      "locator": "Attribution; NonCommercial; Notices",
+      "supports": "Plain-language summary of weight-license restrictions"
+    },
+    {
+      "id": "creative-cadre-demo",
+      "title": "CADRE public demo",
+      "url": "https://cadre-wm.kyutai.org/",
+      "accessedAt": "2026-10-22T17:11:55.594Z",
+      "publishedAt": null,
+      "locator": "Environment tabs; action source; next clip; shared GPU status",
+      "supports": "Visible interface only, including observed one-user capacity"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful, inspectable research release for understanding interactive video tradeoffs. Best approached as a bounded educational or noncommercial experiment; specialized control spaces, serving cost and weight restrictions limit immediate product adoption.",
+  "researchNote": "Official-source research in task-owned Chrome on 22 October 2026. Full relevant page snapshots and full paper text retained locally; one public demo screenshot was decoded and inspected. Only the visible demo interface was observed: no key-control experiment, benchmark, installation or model download. The report distinguishes author results, documentation, UI observation and proposed uses. Documentation date placeholders, public demo capacity and checkpoint compatibility are disclosed."
+}

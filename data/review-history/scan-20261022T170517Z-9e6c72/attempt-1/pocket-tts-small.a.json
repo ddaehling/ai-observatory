@@ -1,0 +1,32 @@
+{
+  "reportId": "pocket-tts-small",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "5cdabb9dfcf02909a8ab79bbbce7a51020c1670c2ce00aa5a674f368190ab953",
+  "evidenceHash": "cd271bd0cfb93ddcfa73611d1f1173837e7850b420270d2c70d281d73e322f67",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "Documented small English models, CLI/Python/server paths and public no-cloning files make a local narration pilot actionable. The report develops concrete teacher-reviewed passages, optional app speech, website pre-rendering and temporary video narration, with listening, interruption and alignment checks. The 6.9M versus 18.2M comparison is an appropriately labeled editorial starting point rather than a claimed listening result.",
+    "impact": "The reduction from roughly 100M parameters to 18.2M, 6.9M and 1.9M, including the decoder, is a meaningful deployment advance within local speech synthesis. Potentially lower resource demands could broaden narration use. It is not field-wide evidence of equivalent speech quality: the smallest model loses quality, CPU identity is absent from the speed table, and memory and first-audio latency were not measured.",
+    "novelty": "Component-wise shrinking, a narrow backbone/head interface, gradual pruning, decoder distillation and optional reward tuning combine into a concrete size-quality tradeoff. These build on known compression techniques rather than inventing text-to-speech or a new general paradigm. The v4.0.1 pronunciation patch is a substantive maintenance update, not an additional capability breakthrough.",
+    "maturity": "An established repository exposes versions, model selectors, configuration files and multiple integration routes, while the October 21 patch addresses a specific small-model regression. That supports usable experimentation. English-only small variants, unsupported official browser execution, absent listening validation and unrerun post-patch benchmarks prevent treating the new checkpoints as broadly dependable narration infrastructure.",
+    "openness": "MIT code, CC BY 4.0 model labels, pinned configurations and visible official no-cloning assets enable substantial local inspection and portability. Main voice-cloning weights are gated, use notices impose consent boundaries, and voice datasets have different terms including noncommercial restrictions. The report correctly avoids conflating code permission with model or voice-asset clearance."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: the October 20 benchmark values do not validate the patched October 21 weights; the report explicitly separates them.",
+    "WER and UTMOS are automatic proxies, including an optimization-target risk; no listening or hardware trial was performed.",
+    "Voice assets require separate license and consent assessment, and publicly listed files establish availability rather than successful download or execution."
+  ]
+}

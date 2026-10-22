@@ -1,0 +1,106 @@
+{
+  "runId": "scan-20261022T170517Z-9e6c72",
+  "auditedAt": "2026-10-22T17:33:32.123901+00:00",
+  "status": "bounded_pass",
+  "scope": {
+    "mode": "read-only integration audit; only this ignored audit file written",
+    "networkAcquisition": false,
+    "astraReviewOutputsRead": false,
+    "reportsScored": false,
+    "examined": [
+      "MAINTENANCE.md",
+      "DATA_CONTRACT.md",
+      "data/sources.json",
+      "data/candidates.json",
+      "data/decisions.json",
+      "data/runs.json",
+      "pre-integration backups",
+      "integration-complete.json",
+      "all six category worker bundles/accounting",
+      "feed-accounting.json",
+      "root-supplement.json",
+      "source/report reference and public-safety scan"
+    ],
+    "publicationReviewBoundary": "No report approval, content-scoring, deployment or live-site conclusion. Run remains acquisition_complete pending coordinator publication work."
+  },
+  "counts": {
+    "expectedSources": 89,
+    "sourceResults": 89,
+    "accessible": 87,
+    "failed": 2,
+    "explicitFullCoverage": 22,
+    "partialSuccess": 61,
+    "retainedFeedSuccess": 4,
+    "registrySources": 896,
+    "registryMonitors": 131,
+    "registryCandidates": 643,
+    "newCurrentRunCandidates": 347,
+    "decisions": 876,
+    "priorCandidatesReconsidered": 128,
+    "currentCandidatesReassessed": 12,
+    "reportFiles": 17,
+    "preparedNewReports": 6,
+    "preparedStableIdUpdates": 1
+  },
+  "passes": [
+    "All 89 expected sources have one outcome; reported success/failure counts reconcile.",
+    "Per-source windowStart preserved; partial and failed watermarks preserved; explicit full coverage advances only those source watermarks.",
+    "All partial successes disclose missing history in run limitations; feed repair successes retained.",
+    "Every current-run candidate has a reasoned preserved disposition; candidate statuses match latest decisions.",
+    "All 505 pre-integration source records, 326 candidate IDs and 387 prior decisions retained; existing report associations preserved.",
+    "All worker candidates/suggestions/decisions integrated; no dangling source/candidate/report/revision references.",
+    "No duplicate source/candidate IDs or new canonical URL source duplicates. Forty-two newly monitored sources are recurring resources; dated individual stories are non-monitors.",
+    "Bounded public-file scan found no local user paths, credentials, private source hosts or raw browser traces. Existing localhost documentation refers to development controls.",
+    "Final reconsidered list contains 128 prior candidates only; checkpoint count agrees.",
+    "Duet primary candidate intentionally remains needs_review with reportId claude-duet pending independent publication reviews."
+  ],
+  "resolvedFindings": [
+    {
+      "candidateId": "google-embeddinggemma2",
+      "status": "excluded",
+      "reportId": "embeddinggemma-2",
+      "duplicateOf": "repos-embeddinggemma2",
+      "correction": "Original lead retained; latest explicit duplicate decision and stable report association added."
+    },
+    {
+      "candidateId": "candidate-32165ee6af8945a5",
+      "status": "excluded",
+      "reportId": "rosalind-academic-plan",
+      "duplicateOf": "rosalind-academic-plan",
+      "correction": "Original lead retained; latest explicit duplicate decision and stable report association added."
+    },
+    {
+      "candidateId": "social-candidate-0336c2290ec14333",
+      "status": "excluded",
+      "reportId": "claude-duet",
+      "duplicateOf": "candidate-claude-duet-primary-20261022",
+      "correction": "Original lead retained; latest explicit duplicate decision and stable report association added."
+    },
+    {
+      "candidateId": "candidate-d185427efe0f1914",
+      "correction": "Redundant decision, inspectionLevel and decidedAt now match latest preserved decision."
+    },
+    {
+      "candidateId": "candidate-3c3bfa327de00638",
+      "correction": "Redundant decision, inspectionLevel and decidedAt now match latest preserved decision."
+    },
+    {
+      "candidateId": "candidate-18b72be8afdc4186",
+      "correction": "Redundant decision, inspectionLevel and decidedAt now match latest preserved decision."
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "Audit checks recorded acquisition and integration evidence; it does not independently re-fetch sources or establish exhaustive historical coverage.",
+    "Ignored worker archives contain local provenance paths; those raw archives were not imported into public files.",
+    "The source registry preserves two older Google listing entrypoint URLs whose observed redirect destinations differ; these are existing recurring entrypoints, not missing canonical story records.",
+    "No review-output contents or scores were read, and no publication gate decision is made."
+  ],
+  "snapshotHashes": {
+    "sources": "1f0119b2c13e88b3019e7f21cec97a4492efd038f6efc23f3324c8788971aa23",
+    "candidates": "2e3c72781918ad0027932954d0e73c97b972bab8a83168f35eefede67af32018",
+    "decisions": "6835aa588950413388f5ea623233b74586bb087f4f64569550dcd93b5ae59396",
+    "runs": "b8d3deb60ed77243da38f32427cf8612f43a05d81bccb3d9f2842b7fc47550a4"
+  },
+  "auditorId": "/root/ledger_audit_20261022"
+}

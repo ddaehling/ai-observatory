@@ -1,0 +1,33 @@
+{
+  "reportId": "cadre-world-models",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:34:38.388933Z",
+  "reportHash": "3577dd3bf4ef4efa550d33330aa1c5f446f891c288effa55fa462877bb86d580",
+  "evidenceHash": "f9c7fe78c94057b629b06ab8b065b9475d6d53832bc04156b13c125c1b7925d7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "confidence": "high",
+  "scores": {
+    "usefulness": 6,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 4,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "The paper, specialized checkpoints, public demo and deployment documentation give educators and research builders a concrete way to study action delay and video compression. The report explains useful classroom and prototype exercises, while specialized numerical actions, H100 serving and noncommercial weights limit immediate general product use.",
+    "impact": "The controlled compression study addresses a meaningful design bottleneck in interactive video world models and provides reusable research artifacts. Its four specialized environments, short main rollouts and unresolved transfer to planning or generalist models bound the demonstrated significance.",
+    "novelty": "The frozen DINOv3 representation, variable bottleneck and causal diffusion decoding allow a distinctive study of latency, compression and action recovery. The camera-motion findings and separation of throughput from response delay are substantive methodological differentiation, without establishing a general simulator breakthrough.",
+    "maturity": "The artifacts and visible demo support a research trial, but the release remains specialized and experimental. Documented drift, checkpoint incompatibility, shared-serving target misses, differing public capacity and no independent interaction test or consumer hardware sizing prevent a higher readiness rating.",
+    "openness": "MIT code, downloadable models, the paper and training recipes make much of the approach inspectable. CC BY-NC weights, separate DINOv3 terms, dataset conditions and an omitted training action-dropout option materially constrain reuse and exact reproduction."
+  },
+  "concerns": [
+    "The paper timing and current shared-serving profile are different configurations; the report correctly distinguishes them and excludes network transit and browser rendering from the README latency figures.",
+    "Human action recovery covers twelve wrist dimensions rather than verified finger control, and the 64-second study is robot manipulation only. Neither result establishes task success or physical correctness.",
+    "The visible demo showed one-user capacity. This is an archived interface observation, not a measurement of capacity, response delay, queue reliability or interaction quality.",
+    "No weights were downloaded and no installation, benchmark, training reproduction or licensing clearance for a commercial use was performed."
+  ]
+}

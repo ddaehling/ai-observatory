@@ -1,0 +1,32 @@
+{
+  "reportId": "cadre-world-models",
+  "reviewerId": "/root/edition_20261022_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:33:56.316520Z",
+  "reportHash": "3577dd3bf4ef4efa550d33330aa1c5f446f891c288effa55fa462877bb86d580",
+  "evidenceHash": "f9c7fe78c94057b629b06ab8b065b9475d6d53832bc04156b13c125c1b7925d7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 4,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "The paper, public demo, model cards and repository offer an inspectable teaching and noncommercial research target for interactive video. The report gives original classroom, bounded viewer and technical-video uses and explains numeric action inputs and incompatible autoencoder checkpoints. Specialized environments and H100-oriented serving make this less immediately useful for ordinary app builders than a general interactive content tool.",
+    "impact": "The controlled study connects compression choices to action latency, visual fidelity and recoverable control across manipulation and navigation. That is meaningful research for world-model design. Short evaluated rollouts, the robot-only long-horizon experiment and explicitly open transfer to generalist models, planning and policy training limit claims of broad downstream impact.",
+    "novelty": "Seven causal autoencoder settings around a frozen DINOv3 encoder and causal diffusion decoder enable a distinctive investigation of where spatial versus temporal compression helps interaction. The latency framing and environment-dependent findings are more specific than generic world-model promotion. Existing encoders and self-distillation components mean the contribution is a focused architectural and experimental synthesis.",
+    "maturity": "Released artifacts and the visible demo establish a practical research starting point. However, the shared-serving profile misses its two-user target, latency excludes network and browser costs, long rollouts can drift, and the observed demo capacity differs from the README profile. No installation, comprehensive interaction test or timing validation was performed, so this remains early research tooling.",
+    "openness": "MIT code, downloadable specialized weights, a full paper, action definitions and training recipes support meaningful inspection. Weight licensing is CC BY-NC 4.0 and frozen DINOv3 components have separate restrictions; data permissions also remain separate. An omitted training option and substantial training setup prevent equating released recipes with verified end-to-end reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Documented limitation: the H100 results and visible demo counter are not independent latency measurements or consumer-hardware requirements.",
+    "The human action-recovery probe scores only wrist dimensions; the long-horizon experiment covers robot manipulation, not all four environments.",
+    "Noncommercial weights, separate DINOv3 terms and checkpoint compatibility materially constrain reuse; the report makes these visible."
+  ]
+}

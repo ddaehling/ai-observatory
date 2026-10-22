@@ -1,0 +1,135 @@
+{
+  "runId": "scan-20261022T170517Z-9e6c72",
+  "reviewerId": "/root/edition_20261022_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-22T17:35:34.270140Z",
+  "rubricVersion": "1.0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "reviewInputSha256": "b2f7b77efe6904c2a3b5973211aa774c78a1b648408d3c6a56ef06e85d7fdc63",
+  "verdict": "revise",
+  "scope": "Independent documentation review of all seven exact packet reports and three specified candidate samples. Archived public-source text and relevant model cards, technical documentation and licenses were inspected. No other reviewer files or conclusions were read, no network source acquisition was performed, and no runtime experiment, model download or private-account action was performed.",
+  "reportReviews": [
+    {
+      "reportId": "rosalind-academic-plan",
+      "reportHash": "8e30db7ec296124e0878bc80f6913f468d1e0574b2dd796ab03fd04ffcc96cf8",
+      "evidenceHash": "9b2e3dc6811df80eeced3c3e4407299d4aecd56234b71878b99c5a9019e2e55a",
+      "reviewFile": "rosalind-academic-plan.json",
+      "verdict": "revise"
+    },
+    {
+      "reportId": "embeddinggemma-2",
+      "reportHash": "d02eb1e87bcc54246a62c5ba5fe6c6228408b0fa62b6bf9f813edfd1871c6812",
+      "evidenceHash": "f6765a6466b91ff484b9a2c90fe34d04287ac0347c9757119ca3aad01d2ad7fb",
+      "reviewFile": "embeddinggemma-2.json",
+      "verdict": "approve"
+    },
+    {
+      "reportId": "cadre-world-models",
+      "reportHash": "3577dd3bf4ef4efa550d33330aa1c5f446f891c288effa55fa462877bb86d580",
+      "evidenceHash": "f9c7fe78c94057b629b06ab8b065b9475d6d53832bc04156b13c125c1b7925d7",
+      "reviewFile": "cadre-world-models.json",
+      "verdict": "approve"
+    },
+    {
+      "reportId": "pocket-tts-small",
+      "reportHash": "5cdabb9dfcf02909a8ab79bbbce7a51020c1670c2ce00aa5a674f368190ab953",
+      "evidenceHash": "cd271bd0cfb93ddcfa73611d1f1173837e7850b420270d2c70d281d73e322f67",
+      "reviewFile": "pocket-tts-small.json",
+      "verdict": "approve"
+    },
+    {
+      "reportId": "astabrief",
+      "reportHash": "1cb81cd6ddf43d5d7fb020c557fe683d4daa664b8fbf52311d80374ebadda594",
+      "evidenceHash": "9c4df262980d773d459d0e610310014af063cd21ca5f6708cd9aeb003f1feb00",
+      "reviewFile": "astabrief.json",
+      "verdict": "approve"
+    },
+    {
+      "reportId": "flint-interactive",
+      "reportHash": "6bcc6ea6fcb13f0c4ec3f533da8b4a7f8c141dce5730700b0ef9195d4eccc35b",
+      "evidenceHash": "04eec1ab6b009aa64102fc3722f3fbbe01b43200dd7c3ea66eb6e0c0dfd68ad6",
+      "reviewFile": "flint-interactive.json",
+      "verdict": "approve"
+    },
+    {
+      "reportId": "claude-duet",
+      "reportHash": "8cbba8553114694b0e35163e94cbe994be430ca2901109e8029597d0e95f9358",
+      "evidenceHash": "bb3042bb13a5598dca52bfea7149c9f8deb2a6b006fb4cf449402d8075ddee6a",
+      "reviewFile": "claude-duet.json",
+      "verdict": "approve"
+    }
+  ],
+  "sampleReviews": [
+    {
+      "candidateId": "rosalind-academic-plan",
+      "recordedDisposition": "included",
+      "selectionVerdict": "approve",
+      "publicationVerdict": "revise",
+      "confidence": "high",
+      "rationale": "The October 15 announcement is a concrete access change relevant to academic educational and scientific builders, and the full help guide establishes enough eligibility, administration, billing and data boundaries to justify a substantial baseline report. The published report appropriately calls this a baseline rather than a new October 22 launch. Inclusion is justified even though scientific effectiveness has not been demonstrated.",
+      "checkedCaptures": [
+        "official/rosalind-academic-plan.json",
+        "official/rosalind-help.json",
+        "official/rosalind-workbench.json"
+      ],
+      "findings": [
+        "Up to thirty sponsored Business Standard seats for up to twelve months, approval-dependent GPT-Rosalind access, US university lab eligibility and separate Enterprise routing are directly supported.",
+        "Same-domain member emails, sole ownership, per-member activation, payment-card requirement, API exclusions, standard retention and no Zero Data Retention are directly supported by the help guide.",
+        "The Workbench article describes a molecular-complex movie example, so the report must narrow its categorical statement that video generation is not established by these sources. This is the sole blocking report correction found.",
+        "The packet candidate retains changeType update while its selected report is baseline. The report and decision reason make the editorial treatment clear; aligning the candidate metadata would improve consistency without changing the selection."
+      ],
+      "limitations": [
+        "No application, approved workspace, scientific analysis or billing test was performed. Relative help-page update age was not converted into an invented publication date."
+      ]
+    },
+    {
+      "candidateId": "candidate-f60f92689e069107",
+      "recordedDisposition": "excluded",
+      "selectionVerdict": "approve",
+      "confidence": "high",
+      "rationale": "The complete archived October 7 quotation concerns Ben Affleck's familiarity with Python, tensors, convolutional networks and visual-effects workflows. It is relevant AI commentary but does not identify a specific new deployable tool, evaluated result or sufficiently developed technical change for this edition's substantial builder reports. Exclusion is proportionate and is not based on claiming the item is unrelated to AI.",
+      "checkedCaptures": [
+        "research/archives/ben-affleck.txt"
+      ],
+      "findings": [
+        "The archived article includes the complete short quotation and identifies it as a quotation collected by Simon Willison.",
+        "The source links a YouTube interview, which was not independently watched; the decision does not require treating that interview as evaluated technical evidence."
+      ],
+      "limitations": [
+        "This review establishes the content of the archived quotation, not the full scope or accuracy of the original interview."
+      ]
+    },
+    {
+      "candidateId": "social-candidate-9f8714ed9e446e37",
+      "recordedDisposition": "excluded",
+      "selectionVerdict": "approve",
+      "confidence": "medium",
+      "rationale": "The inspected public-listing item announces Anthropic's annual Public Benefit Report and five pillars, with a shortened outbound link. The visible item does not specify a released builder tool or completed technical result. Bounded nonselection is defensible because the decision explicitly confines its claim to the preview and preserves the unresolved primary destination. It would not support declaring that the underlying report contains no consequential industry information.",
+      "checkedCaptures": [
+        "social/anthropic.json"
+      ],
+      "findings": [
+        "The first listing item matches status 2112966949273801086 and the recorded Public Benefit Report title and shortened link.",
+        "The archive includes an exact post timestamp of 2026-10-21T17:59:12.000Z as well as the relative 23h label. The candidate leaves publishedAt null; preserving the observed post timestamp separately would improve provenance, without inventing a publication date for the linked report.",
+        "The exclusion reason remains qualified as listing-only evidence; it does not validate claims in the unvisited report."
+      ],
+      "limitations": [
+        "The outbound shortened link and full Public Benefit Report were not inspected by this reviewer. Social listing coverage is partial and cannot establish publisher-wide coverage or absence of other developments."
+      ]
+    }
+  ],
+  "checks": {
+    "reportHashes": "All seven canonical report hashes independently recomputed and matched the packet.",
+    "evidenceHashes": "All seven canonical hashes of report source records and packet claims independently recomputed and matched.",
+    "rubricHash": "Canonical packet rubric hash independently recomputed and matched the supplied rubricHash.",
+    "presentation": "Report HTML tags and link schemes were checked against the semantic-markup allowance; no unexpected executable markup or non-HTTP(S) report-body links were found. No images are embedded in these seven reports.",
+    "scoring": "Every dimension was assigned an independent integer score using rubric meaning. Scores were not chosen to preserve an existing word-count band. All seven assigned impact scores fall within the middle band.",
+    "sourceScope": "Official text supports the material claims for the six approved reports. Dates, licenses, benchmark denominators, preview gates, unreleased features and absence of hands-on validation are preserved."
+  },
+  "concerns": [
+    "Resolve the Rosalind video-capability wording against the archived Workbench example and obtain fresh reviews of any changed report/evidence hashes before publication.",
+    "This sampled review does not audit every candidate decision or establish complete historical source coverage. The social exclusion remains a bounded editorial selection, not verification of the full linked report.",
+    "All reviewer approvals assess reporting quality and documented readiness; they are not independent experimental validation."
+  ]
+}
