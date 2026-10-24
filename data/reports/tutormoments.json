@@ -1,0 +1,131 @@
+{
+  "id": "tutormoments",
+  "title": "TutorMoments: testing when an AI tutor should help or hold back",
+  "entity": "TutorMoments",
+  "category": "Research",
+  "tags": [
+    "education",
+    "evaluation",
+    "tutoring",
+    "open research"
+  ],
+  "summary": "A replay benchmark for context-sensitive tutoring, with frozen math conversations, inspectable scoring and important limits on learning claims and reproduction.",
+  "changeType": "baseline",
+  "publishedAt": "2026-08-07",
+  "discoveredAt": "2026-10-20T16:24:41Z",
+  "updatedAt": "2026-10-24T18:02:07.825896Z",
+  "officialUrl": "https://allenai.org/blog/tutormoments",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A benchmark for the moment before the answer",
+      "html": "<p>A tutoring app can produce a correct explanation while making a poor teaching decision. A learner who has nearly solved a fraction problem may need time to justify the answer; another learner may need a diagram or a smaller step. TutorMoments makes that distinction testable. It asks whether an AI tutor selects an appropriate amount of support for a particular point in a conversation, instead of rewarding one universal habit such as always providing hints.</p><p>This is a baseline account of a preview Ai2 announced on August 7, 2026, checked against its public repository and dataset on October 24. It is useful chiefly as an evaluation resource for educational software teams and teachers exploring AI. It is not a classroom tutoring product, a certification of teaching quality, or evidence that students learn more with the models that score highest. The release gives builders a more precise failure to inspect before asking learners to trust their app. <a href=\"https://allenai.org/blog/tutormoments\">Ai2 introduction</a>.</p>"
+    },
+    {
+      "id": "how-it-works",
+      "title": "Freeze a decision, then compare the continuation",
+      "html": "<p>Ai2 describes 462 de-identified text transcripts of real one-to-one math tutoring with US students in grades 2–7. The source program mainly serves Title I schools. Twenty-seven US-based teacher annotators identified important pedagogical moments and described the situation, tutor action and result. The human material anchors the task in actual exchanges, but the subsequent model interaction is synthetic.</p><p>The runnable dataset contains 520 frozen moments, divided evenly between occasions calling for scaffolding and those calling for greater rigor. Each record supplies the conversation before a cut point, the expected direction, a human continuation and a fixed student persona. A tested tutor continues the conversation with an oracle simulated student. The preview uses up to five alternating turns. The dataset preserves 7,280 reference replays: 520 moments multiplied by seven tutor models and two prompt conditions.</p><p>The frozen persona matters. If a developer regenerates the student traits while changing the tutor, both sides of the experiment change. A useful comparison should keep the student and scoring configuration constant, then vary one tutor prompt, model or application policy. The repository records dataset revisions, content hashes, resolved settings and prompt hashes to make those conditions inspectable. <a href=\"https://huggingface.co/datasets/allenai/tutormoments-preview\">Dataset card</a>; <a href=\"https://github.com/allenai/tutormoments\">runtime documentation</a>.</p>"
+    },
+    {
+      "id": "metrics",
+      "title": "Three questions, with a judge between behavior and score",
+      "html": "<p>Appropriate scaffolding measures whether the tutor makes content more accessible when the moment calls for support, without overdoing it. Appropriate rigor measures whether it increases the learner’s cognitive work when that is warranted, again without over-scaffolding. The third measure tracks how often the continuation avoids excessive support across the evaluated moments. These dimensions should remain visible separately: a tutor could improve at helping stuck learners while still interrupting students who are ready to work independently.</p><p>Teacher annotations inform the expected behavior, and model-based annotation passes classify the continuation. This creates a useful operational definition, not an infallible reading of the child’s understanding. The project says rigor detection is noisier than scaffolding detection and that the underlying annotations contain fewer rigor moments. A small leaderboard difference can therefore reflect sampling, model judgment or the chosen student simulation. Inspecting the actual exchanges is more informative than treating a combined rank as a deployment decision. <a href=\"https://allenai.org/blog/tutormoments\">Method and limitations</a>.</p>"
+    },
+    {
+      "id": "results",
+      "title": "What explicit pedagogical guidance changes",
+      "html": "<p>The original comparison uses a plain tutoring instruction and an evaluation-aware prompt that explains the trade-off between support, excessive support and rigor. Ai2 reports higher scores with the explicit prompt for every tested model. For example, the August blog’s appropriate-rigor chart gives Claude Opus 4.8 a change from 0.208 to 0.831 and GPT 5.5 a change from 0.046 to 0.531. Those values are author-reported fractions of relevant moments, not percentages of students whose learning improved.</p><p>The useful lesson is narrower than a model recommendation: the definition of good teaching in the prompt materially changes the behavior the benchmark observes. Even an instruction tuned to these evaluation concepts leaves differences between models and can produce a narrow repertoire of moves. Ai2 says models often rely on asking for explanations, while human tutors use more varied strategies, including stepping back. These are historical preview results; this report does not silently promote them into an October frontier-model ranking.</p><p>The human reference is particularly easy to misread. The authors selected moments containing missed opportunities, so the recorded human tutor was not necessarily demonstrating ideal practice. The blog explicitly warns that a model score above this reference does not establish that AI outperforms human teachers. Synthetic continuation, selected examples and actual classroom learning are different objects of measurement. <a href=\"https://allenai.org/blog/tutormoments\">Preliminary results</a>.</p>"
+    },
+    {
+      "id": "reproduction",
+      "title": "An unusually important reproducibility caveat",
+      "html": "<p>The current repository exposes a limitation that should travel with any reuse. Its README says the original classifications behind the paper’s human action-distribution and KL-divergence analysis no longer exist. The frozen paper human KL figures are 0.179 and 0.177; the current same-moment reference is 0.524 and 0.591. The maintainers preserve the original files as the paper’s record and advise comparing new runs against the current reference computed using the same method and moments.</p><p>The dataset card likewise distinguishes October-regenerated action labels from the smaller classification sample used for the paper. This does not mean the 520 runnable moments or reference replays are missing. It means that reproducing a released replay experiment and reproducing every published analysis figure are different promises. A team presenting a chart should identify which reference it used and avoid mixing a newly generated model distribution with an incompatible historical human value.</p><p>For builders, the practical response is to pin the dataset and repository version, retain the recorded settings, and label figures by their actual analysis source. This disclosure reduces confidence in effortless end-to-end reproduction, while making the gap visible enough to manage. <a href=\"https://github.com/allenai/tutormoments#action-taxonomy\">Action taxonomy</a>; <a href=\"https://huggingface.co/datasets/allenai/tutormoments-preview\">dataset provenance</a>.</p>"
+    },
+    {
+      "id": "try-it",
+      "title": "What a developer can actually try",
+      "html": "<p>The documented runtime requires Python 3.11 or later and installation from a repository checkout. It provides a command-line runner, selectable tutor models and prompt modes, support for local data, a dataset-revision option and small samples. Live replay requires the appropriate model-provider credentials. A developer can begin by reading the existing reference conversations and annotations before spending money on a new run.</p><p>A first experimental pass could compare the application’s present tutor instruction with a version that explicitly distinguishes when to scaffold and when to request deeper reasoning. Keep the same moments, student configuration and scorer. Start with a small sample to discover integration failures, then run the frozen evaluation set for a substantive comparison. The README notes that its sample option takes the first N moments; a tiny sample is therefore a debugging convenience, not a representative headline score.</p><p>The runtime documents resumable completed transcript-and-score pairs, partial-failure summaries and an error when no moments complete. It can aggregate results into tables and generate a self-contained HTML viewer. Custom tutors can be registered in Python, although the README says automatic plugin discovery is not available. These are inspected capabilities, not operations performed in this scan. No model calls, benchmark runs or educational experiments were executed. <a href=\"https://github.com/allenai/tutormoments\">Installation, running and viewers</a>.</p>"
+    },
+    {
+      "id": "build-with-it",
+      "title": "Three concrete educational and creative projects",
+      "html": "<p>A math-practice app could use TutorMoments as a regression check for its hint policy. When a prompt change produces more completed answers, the team could inspect whether it also gives away intermediate steps during moments intended for independent reasoning. The release would supply a repeatable diagnostic; the app would still need its own teacher-reviewed examples and real learning evaluation for its audience.</p><p>A teacher-training website could present a short de-identified context, ask the visitor to choose an intervention, then reveal several tutor continuations with commentary about their trade-offs. It should preserve disagreement and let educators explain why a particular move is appropriate. The design proposal is ours: the project supplies data and evaluation machinery, not a verified training course or an established improvement in teacher practice.</p><p>An educational video maker could build an explainer around one original, clearly labeled fictional math exchange. Animate a helpful diagram, an unnecessary solution reveal and a request for justification to show why the same tutor move can help in one context and hinder in another. Use the benchmark’s conceptual distinction and cited findings, while avoiding the implication that a simulated conversation documents a real child’s outcome. Together, these projects turn the work into inspectable teaching decisions rather than another opaque score badge.</p>"
+    },
+    {
+      "id": "decision-record",
+      "title": "Make the evaluation answer an application question",
+      "html": "<p>A useful local evaluation record would identify the proposed change before running it: for example, a hint policy that asks for one attempt before showing a worked step. Define which failure the change should reduce and which behavior it must preserve. Review matched continuations where the old and new policies disagree, including examples where the apparent winner gives a mathematically correct response but prematurely takes over the reasoning. This is a proposed evaluation practice, not a finding from a run performed here.</p><p>Keep the denominator visible. A dashboard should show completed and failed moments beside each metric, distinguish small debugging samples from the full frozen set, and retain both prompt variants rather than overwriting an unfavorable result. Separate teacher commentary from automated scores. If a teacher disagrees with the benchmark label, preserve the reason; a disagreement may reveal an ambiguous situation, an imperfect judge or a mismatch with the intended curriculum.</p><p>This approach also helps a product team decide what the benchmark cannot answer. A change may improve its replay score yet make a voice interface feel interruptive, or perform poorly for learners whose language and context differ from the release. Those questions need additional examples and direct evaluation. The benchmark is most useful when it narrows the next question, with an inspectable record of how that question arose.</p>"
+    },
+    {
+      "id": "costs-access",
+      "title": "Access, licensing and the cost of a real evaluation",
+      "html": "<p>The repository identifies an Apache 2.0 code license. The dataset card states CC BY 4.0 and describes intended research and educational use under Ai2’s responsible-use guidance. It also says synthetic replays are subject to the respective model providers’ terms. Code permission, dataset attribution and third-party output conditions should be considered separately when packaging a derivative resource. The card warns that de-identification is imperfect and asks that affected records not be redistributed if residual personal information is found.</p><p>Public artifacts do not make hosted inference free. A live benchmark calls tutor, student and scoring systems; a tutor-only cost is not the total research bill. The cost documentation separates measured token usage, lookup rates with an as-of date, and figures that deliberately remove cache effects. Unpriced records are unknown rather than zero. A website value can also be repriced from recorded tokens without rerunning a model, so its price date and measurement date need not match.</p><p>Timing has similar qualifications. Current documentation distinguishes serial probes for the paper’s seven models from full-run timing for later website entries, with source and concurrency metadata. It also separates first and later turns and the first visible token from other timing events. This report offers no verified current provider-price comparison, total budget or independent speed result. Read those method notes before using the charts to choose infrastructure. <a href=\"https://github.com/allenai/tutormoments/blob/main/docs/cost.md\">Cost methodology</a>; <a href=\"https://github.com/allenai/tutormoments/blob/main/docs/latency.md\">timing methodology</a>.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "Useful before a study, insufficient instead of one",
+      "html": "<p>TutorMoments is a worthwhile evaluation component for teams building conversational learning products. Its strongest contribution is a concrete, context-sensitive question: did the tutor supply the kind and amount of help the situation called for? Released contexts, fixed student traits, multiple prompt conditions and inspectable continuations support more useful debugging than a correct-answer count alone.</p><p>The preview’s scope remains narrow: one US tutoring program, primarily elementary and middle-school mathematics, an English-dominant dataset with some Spanish, subjective annotations and model-assisted judgments. It does not establish effectiveness for other subjects, ages or languages, and simulated students cannot settle learning, engagement or accessibility questions. Use the benchmark to identify failures and prioritize changes; then test the resulting teaching experience with educators and the intended learners. Its value is a better experiment to run, accompanied by enough disclosed limitations to interpret that experiment responsibly.</p>"
+    }
+  ],
+  "useCases": [
+    "Compare hint and challenge policies before learner studies.",
+    "Build teacher-review interfaces around alternative tutor continuations.",
+    "Create evidence-based educational explainers about intervention timing."
+  ],
+  "limitations": [
+    "Synthetic students and automated scores measure behavior, not learning outcomes.",
+    "Single US tutoring program; narrow subject, age and language coverage.",
+    "Original human action-distribution classifications are unavailable; current reference differs.",
+    "Hosted calls, current prices and latency were not independently tested."
+  ],
+  "sources": [
+    {
+      "id": "source-18b72be8afdc4186",
+      "title": "Ai2 announcement and preliminary results",
+      "url": "https://allenai.org/blog/tutormoments",
+      "accessedAt": "2026-10-24T17:53:43.931Z",
+      "publishedAt": "2026-08-07",
+      "locator": "How it works; preliminary results; limitations",
+      "supports": "Scope, original results and learning-outcome limits"
+    },
+    {
+      "id": "research-tutormoments-repository",
+      "title": "TutorMoments runtime and reproduction documentation",
+      "url": "https://github.com/allenai/tutormoments",
+      "accessedAt": "2026-10-24T17:54:15.920Z",
+      "publishedAt": null,
+      "locator": "Installation; Running; Action taxonomy",
+      "supports": "Runnable evaluation, provenance and reproduction gap"
+    },
+    {
+      "id": "research-source-fb020bca549affcf",
+      "title": "TutorMoments-Preview data card",
+      "url": "https://huggingface.co/datasets/allenai/tutormoments-preview",
+      "accessedAt": "2026-10-24T17:54:15.949Z",
+      "publishedAt": null,
+      "locator": "Subsets; License; Deidentification",
+      "supports": "Frozen data, license and regenerated labels"
+    },
+    {
+      "id": "research-source-4f4984ce5522886d",
+      "title": "Cost methodology",
+      "url": "https://github.com/allenai/tutormoments/blob/main/docs/cost.md",
+      "accessedAt": "2026-10-24T17:54:40.744Z",
+      "publishedAt": null,
+      "locator": "Usage recording and pricing",
+      "supports": "Cost interpretation"
+    },
+    {
+      "id": "research-source-dd547c0b892e68bd",
+      "title": "Latency methodology",
+      "url": "https://github.com/allenai/tutormoments/blob/main/docs/latency.md",
+      "accessedAt": "2026-10-24T17:54:40.768Z",
+      "publishedAt": null,
+      "locator": "Where figures surface",
+      "supports": "Timing interpretation"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful pre-deployment diagnostic for tutor intervention policy; neither classroom efficacy evidence nor a universal model ranking.",
+  "researchNote": "Primary blog, public repository, dataset card and cost/latency notes inspected in Chrome. No model execution. Optional project-site visit was blocked by an extension UI; linked PDF Chrome navigation timed out and a complementary web parser exposed the paper, but a local full PDF download failed DNS. Report claims rely on fully saved primary HTML text. Independent publication reviews are pending."
+}

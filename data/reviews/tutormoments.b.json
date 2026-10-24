@@ -1,0 +1,32 @@
+{
+  "reportId": "tutormoments",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "d9bf17854c9b02233598c942131e44289b8dcbbfacc0f32e1fb3d7974df89592",
+  "evidenceHash": "b557858f626e03e2af95d63d873bc4f4ab7ac2194fee7251eac0c3fd361f8968",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Frozen tutoring moments, paired prompt conditions, reference conversations and a documented runner provide directly useful diagnostics for educational builders. The report connects these to hint-policy regression checks, teacher review and explanatory media while carefully separating benchmark behavior from learner benefit.",
+    "impact": "Context-sensitive intervention evaluation is a meaningful advance for educational AI development beyond answer correctness. Its single-program math scope, synthetic student and noisy scoring prevent extrapolation to field-wide significance or proven learning improvements.",
+    "novelty": "Evaluating when to scaffold versus require rigor at teacher-selected decision points is a distinctive and well-motivated benchmark design. Frozen personas and replay comparisons add value beyond generic tutor rankings, though synthetic evaluation and model judging remain established techniques.",
+    "maturity": "A documented Python runner, revision/hash provenance, failure accounting and released reference data support reproducible new experiments. The original human action classifications are unavailable, parts of scoring are noisy, and real-student validation is absent, so readiness remains bounded.",
+    "openness": "Apache code, CC BY data, prompts, frozen moments, reference replays and explicit provenance provide strong inspection and reuse. Lost classifications prevent reproduction of particular paper analyses; third-party model terms and hosted replay dependencies keep the release below exceptional full reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The missing original human action classifications affect KL/action-distribution reproduction, not the existence of runnable moments; the report maintains that distinction.",
+    "Historical author-reported rigor figures are verified against the archived blog and appropriately excluded from current-model or learning-effect claims.",
+    "Real-student efficacy, wider curriculum generalization and imperfect de-identification remain explicit limitations."
+  ]
+}

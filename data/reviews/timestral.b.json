@@ -1,0 +1,31 @@
+{
+  "reportId": "timestral",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "7ce83fd4597a9bf1f8f9841a2a82a64e7968b05a41e299916143b2a0749c0cf1",
+  "evidenceHash": "5495fa20f451c2378402e2a7a8d793525bdad22e36efdd36ab6c7a4cd91624c6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "Small CPU-capable checkpoints, quantile outputs, covariates and pinned offline loading provide an actionable numerical component for educational forecast explorers and visual explainers. The rolling-cutoff, baseline and interval-coverage guidance is especially useful, although no installation or forecast is tested.",
+    "impact": "The family meaningfully lowers the resource barrier for probabilistic time-series experiments and supports multivariate conditioning. This is a domain advance supported by a public implementation and vendor benchmarks, not demonstrated exceptional significance across AI development.",
+    "novelty": "The combination of small sizes, target/covariate attention structure, multivariate zero-shot inference and 21 quantiles is distinctive. The compared forecasting models show an established field, and a forthcoming technical report limits verification of deeper training novelty.",
+    "maturity": "Public code, model files, input/output specifications and offline-loading documentation make local evaluation realistic. Missing independent runtime results, machine-specific memory measurements and complete technical reporting keep reliability confidence moderate.",
+    "openness": "Apache inference code, downloadable weights, revision pinning and offline inference provide substantial inspectability and portability. The Modified MIT revenue restriction, separate commercial license and unavailable full training recipe materially reduce openness; the report accurately separates code from weight rights."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Weight eligibility depends on the actual Modified MIT company/employer revenue condition; unrestricted open-source framing would be inaccurate. The report handles this correctly.",
+    "Producer benchmarks, quantile calibration and server CPU timings are not independently verified."
+  ]
+}

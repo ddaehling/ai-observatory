@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261024T174829Z-815900",
+  "auditorId": "/root/accounting_audit_20261024",
+  "auditedAt": "2026-10-24T18:13:51.733342+00:00",
+  "status": "pass_accounting_with_nonblocking_legacy_notes",
+  "scope": "Independent bounded, read-only audit of local public acquisition artifacts, five worker bundles, integration logic and final shared ledgers. No network, private user data, Astra output reading or scoring; shared data unchanged by this auditor. Publication approval is outside this accounting audit.",
+  "counts": {
+    "registrySources": 2378,
+    "newRegistrySourcesSinceIntegration": 1461,
+    "currentMonitors": 142,
+    "monitorsExpectedAtStart": 131,
+    "actualOutcomes": 131,
+    "successes": 131,
+    "failures": 0,
+    "completeManualCoverage": 24,
+    "partialManualCoverage": 103,
+    "retainedRepairedFeeds": 4,
+    "initialFeedErrorsPreserved": 4,
+    "allCandidates": 1231,
+    "currentRunCandidates": 588,
+    "currentCandidateStatuses": {
+      "excluded": 34,
+      "needs_review": 549,
+      "included": 2,
+      "unresolved": 3
+    },
+    "currentRunDecisionRecords": 811,
+    "reconsideredCandidateIds": 202,
+    "preRunCandidatesReconsidered": 202,
+    "newEvidenceClaims": 99,
+    "newEvidenceArchiveSupportsVerified": 106,
+    "exactQuotesChecked": 24,
+    "newSourceURLsMatchedToSavedCaptures": 1461,
+    "acquisitionCaptureFilesUsed": 177,
+    "protectedOldReportAndEvidenceHashesUnchanged": 17,
+    "draftReports": 7,
+    "coordinatorReconciliations": 9,
+    "legacyNonCandidateDecisionRecords": 69,
+    "currentRunRevisitedCandidateIds": 23
+  },
+  "checksPassed": [
+    "All 131 initially expected monitors have one actual dated success outcome and a concrete scope note. Initial expected IDs and per-source windowStart values remain unchanged.",
+    "All 103 partial watermarks equal pre-integration values. All 24 full-manual watermarks equal run.windowEnd. Four successful feed results retain their original repaired results and supplemental Chrome observations.",
+    "All four initial DNS failures are preserved in initial-run.json and run limitations. Final zero failures is explicitly the repaired outcome, not erasure of the attempts.",
+    "Every current candidate has a run-scoped concrete disposition; candidate states agree with final decision records. Current candidate, source, report, revision and claim pointers resolve. All registry URLs pass public HTTP(S) validation.",
+    "All 1,461 new registry URLs are observable in saved acquisition captures; 106 new support archives match SHA256 and all 24 exact quote passages occur in those captures. This verifies saved provenance, not live endpoint behavior.",
+    "New article/evidence records are nonmonitors. New publisher/listing/repository monitors remain separate; inspected entrypoints are active and unvisited publisher entrypoints are unverified. Navigation/page/feed links removed from creative story records; READ MORE names repaired.",
+    "Oldest three unresolved candidates were reread in primary captures. 202 candidates originating before this run have current reconsideration records. Another 23 current-run feed candidates are recorded separately in currentRunRevisitedCandidateIds; no inference that all backlog received deep review.",
+    "Nine coordinator decisions preserve worker histories while restoring primary assessments and consolidating four secondary Kimi records plus the older GPT-6 URL duplicate.",
+    "All 17 prior report hashes, relevant evidence hashes and section-anchor lists are unchanged; old source/candidate/claim IDs and earlier decision/evidence records are retained.",
+    "Seven draft reports pass report/evidence validation excluding the mandatory dual-review requirement. No publication approval inferred."
+  ],
+  "resolvedFindings": [
+    {
+      "severity": "medium",
+      "status": "resolved",
+      "id": "AUDIT-PRIMARY-PRECEDENCE",
+      "candidateIds": [
+        "candidate-db007afeffa315be-dfe976ae8ff4",
+        "candidate-f8c156dba7886826",
+        "x-astra-pro-oct16",
+        "x-live11-oct15"
+      ],
+      "finding": "Sequential worker merge replaced primary assessment with weaker supplementary notes; root appended primary-based final decisions, including Flint exclusion."
+    },
+    {
+      "severity": "medium",
+      "status": "resolved",
+      "id": "AUDIT-KIMI-CONSOLIDATION",
+      "candidateIds": [
+        "social-candidate-bf44de9e544de4cb",
+        "research-candidate-bf44de9e544de4cb",
+        "candidate-5abe8bfea3efe5f5",
+        "candidate-9e0308113d32ae3f"
+      ],
+      "reportId": "kimi-k31-pro",
+      "finding": "Secondary leads still requested reconciliation after primary verification; all four now excluded as duplicate leads and linked to pending report. Hosted access and promised November 4 weights remain distinct."
+    },
+    {
+      "severity": "low",
+      "status": "resolved",
+      "id": "AUDIT-GPT6-DUPLICATE",
+      "candidateIds": [
+        "candidate-a097ef0d441a7216"
+      ],
+      "reportId": "gpt6-intelligent-ui",
+      "finding": "Older identical-URL candidate still claimed the article needed inspection; now excluded as duplicate and linked to baseline draft."
+    },
+    {
+      "severity": "low",
+      "status": "resolved",
+      "id": "AUDIT-CREATIVE-NAVIGATION",
+      "sourceIds": [
+        "creative-story-ae5cd00a09a429d2",
+        "creative-story-68f59b89b4d78cf8",
+        "creative-story-a056268300c5b68e",
+        "creative-story-1b57fa64b28fe529",
+        "creative-story-312b3e0bd3afbd8f",
+        "creative-story-bf54f36d6ecbf3a8",
+        "creative-story-62db58d3bf413e1e",
+        "creative-story-718b9237e27868ac",
+        "creative-story-27e2a86e8a2e49e8",
+        "creative-story-9a0e5e3840a4f42b",
+        "creative-story-dde4a936a47f21fa",
+        "creative-story-f5609f93f0f1e103",
+        "creative-story-8cc48f6fa87ecb82",
+        "creative-story-e9bef4a8d8175ad0",
+        "creative-story-3347f81cd4f6a214",
+        "creative-story-99d81476305fbc74"
+      ],
+      "finding": "Sixteen category, pagination, listing and feed links were represented as articles; removed from story expansion before integration. Generic navigation names repaired on actual article URLs."
+    },
+    {
+      "severity": "low",
+      "status": "resolved",
+      "id": "AUDIT-CANONICAL-TRACKING",
+      "sourceIds": [
+        "research-source-6b29bf0bfcaae7ff",
+        "research-source-6b23072887c79af5",
+        "research-source-4dbd807ebc55ab1f",
+        "research-source-e0a7b4e546b8c416",
+        "research-source-81b5c8e14bdf085c",
+        "research-source-0ab4bc37714c8b7c",
+        "research-source-4ff63c52c3a4c49a",
+        "research-source-96e99cc209ace0e1",
+        "research-source-6bd6e2891fa08848"
+      ],
+      "finding": "Tracking parameters remained in nine new story URLs; integration now canonicalizes URLs before deduplication while archives retain observed original links."
+    }
+  ],
+  "openFindings": [
+    {
+      "severity": "informational",
+      "blocking": false,
+      "status": "preexisting",
+      "id": "AUDIT-LEGACY-DECISION-SCHEMA",
+      "finding": "69 untouched historical decisions describe claims or reports instead of current-contract candidate records. They do not satisfy or count toward any current-run disposition. One preexisting explicit candidate_id is dangling, and eight preexisting claim labels lack evidence entries. Retain history; any future schema cleanup should be additive and outside this publication audit.",
+      "explicitDanglingCandidate": {
+        "decisionArrayIndex": 55,
+        "candidateId": "current-release-label",
+        "claimId": "current-release-label"
+      },
+      "legacyMissingClaimPointers": [
+        {
+          "decisionArrayIndex": 22,
+          "claimId": "creative-cf-fastest",
+          "candidateId": null,
+          "reason": "Vendor superlative fastest is not independently measured in this assignment; preserve as unverified vendor language."
+        },
+        {
+          "decisionArrayIndex": 23,
+          "claimId": "creative-learning-gains",
+          "candidateId": null,
+          "reason": "Marketing describes learning tools but does not establish comparative learning gains."
+        },
+        {
+          "decisionArrayIndex": 24,
+          "claimId": "creative-release-date",
+          "candidateId": null,
+          "reason": "Rename month is July2026; exact day and feature-release dates not verified. Both reports baseline, publishedAt null."
+        },
+        {
+          "decisionArrayIndex": 36,
+          "claimId": "ts-universal-speed",
+          "candidateId": null,
+          "reason": "Homepage workflow cost/speed comparisons are vendor-specific and not a universal benchmark; not repeated as measured general superiority."
+        },
+        {
+          "decisionArrayIndex": 37,
+          "claimId": "fish-editing-universal",
+          "candidateId": null,
+          "reason": "Separate local-model capability from hosted product access; local editing not executed."
+        },
+        {
+          "decisionArrayIndex": 38,
+          "claimId": "fish-license-metadata",
+          "candidateId": null,
+          "reason": "Model hub metadata says research license while body and actual file say Community License. Prefer full artifact file for described terms; retain visible mismatch."
+        },
+        {
+          "decisionArrayIndex": 55,
+          "claimId": "current-release-label",
+          "candidateId": "current-release-label",
+          "reason": "Current artifact/repository existence verified, precise product release event not established. Both reports baseline with publishedAt null."
+        },
+        {
+          "decisionArrayIndex": 79,
+          "claimId": "transformers-runtime-performance",
+          "candidateId": null,
+          "reason": "No runtime measurements exist in packet or this revision. Excluded numerical performance claims and observed educational outcomes; retained practical evaluation proposals."
+        }
+      ]
+    }
+  ],
+  "sampledDecisions": [
+    {
+      "candidateId": "candidate-891b7e0bbf66f86d",
+      "status": "included",
+      "assessment": "Concrete launch and guide evidence supports a pending report; no gate bypass inferred."
+    },
+    {
+      "candidateId": "creative-krea3",
+      "status": "included",
+      "assessment": "Baseline inclusion retains six/eight-reference discrepancy, rights/access caveats and documentary-only scope."
+    },
+    {
+      "candidateId": "kitten-tts2-primary-20261022",
+      "status": "included",
+      "assessment": "Runtime prerequisites, voice-count conflict and license restrictions are retained as consequential qualifiers."
+    },
+    {
+      "candidateId": "candidate-c706b8884b6bc824",
+      "status": "excluded",
+      "assessment": "Full archived web-edit page substantiates limited clipboard utility, making bounded standalone-report exclusion reasonable."
+    },
+    {
+      "candidateId": "candidate-66a8784860f53e77",
+      "status": "excluded",
+      "assessment": "Full roundup contains substantive leads; exclusion is explicitly duplication of roundup vehicle, with individual leads retained."
+    },
+    {
+      "candidateId": "research-candidate-e8fbd857a8b6b0ff",
+      "status": "excluded",
+      "assessment": "Observed founder-event promotion title supports bounded exclusion; no false assertion that full article was inspected."
+    },
+    {
+      "candidateId": "social-candidate-0b2c2bf0e0a56dca",
+      "status": "excluded",
+      "assessment": "Existing Academic Plan report consolidation preserves report identity and activity date."
+    },
+    {
+      "candidateId": "social-candidate-411b856dad9829a2",
+      "status": "unresolved",
+      "assessment": "Consequential security post is expressly unconfirmed pending affected-version/patch/advisory evidence."
+    },
+    {
+      "candidateId": "social-candidate-e16222d83dd92652",
+      "status": "unresolved",
+      "assessment": "Incident date and analysis date separated; primary incident reports still required."
+    },
+    {
+      "candidateId": "social-candidate-72d9d3123615abea",
+      "status": "unresolved",
+      "assessment": "Serving-code pull request is not represented as confirmed model availability or launch."
+    }
+  ],
+  "publicationCaveats": [
+    "Run is still acquisition_complete at audit time; coordinator must write truthful final coverage note and complete-run after gates.",
+    "Registry sourceCount is 2,378, which includes unverified discovery links. It must not be described as 2,378 inspected sources. Run access successes are 131; complete manual coverage is 24, partial access 103, and four feed outcomes retain their own coverage semantics.",
+    "Independent Astra output and final scores were neither read nor assessed; all exact-content publication gates and final live build checks remain required."
+  ],
+  "ledgerSnapshotHashes": {
+    "sources.json": "5da61315246d1df59ab4589dd6c435a5c6c9dd56b8e3d32fa8c49e673615f7ec",
+    "candidates.json": "5fbd0781cf18b43edc2d1921fa8cc3396afade87df5a816e78f585f92b712566",
+    "evidence.json": "1a0bee92a1a739e28cc5388300ed5275bb387b320e3d31512a5e967a9bf256b7",
+    "decisions.json": "d72dee92e58caca2cfce37095c8767f081f79f8cf50ee6aff5c47694de475774",
+    "runs.json": "3bcac7c90fe12ac428696243be65fe89d13bbc8a05a0b1f50759f374ad9f3ae9"
+  }
+}

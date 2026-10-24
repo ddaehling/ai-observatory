@@ -1,0 +1,31 @@
+{
+  "reportId": "krea-3",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "e9f59fadd1cefbb3d25128a9f0ecfee6430218e116a30bae5892ec8bab19205a",
+  "evidenceHash": "954ff72830962a392e35d7fe94f49002adebb5fe6cae6ef471912b0e9c2fc32b",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "Preservation briefs, explicit reference roles and acceptance checks create useful controlled workflows for teaching illustrations, app assets and storyboards. Hosted access and a practical pilot design make it relevant, but no generated result or exact Krea 3 API schema was tested.",
+    "impact": "Reference-driven editing with native 2K output is a meaningful creative-domain improvement if preservation and speed hold. Selected examples, an illustrative comparison and unvalidated competitor pricing do not demonstrate broader field-level impact.",
+    "novelty": "Multi-reference preservation and rapid targeted edits are useful differentiators within an existing image-editing category. The evidence does not establish a fundamentally new method or independently superior output, and the six-versus-eight reference discrepancy limits precise differentiation.",
+    "maturity": "A hosted release, plan listing, prompting guidance and terms support a bounded asset-preparation trial. Conflicting reference limits, no generation test and an API overview showing Krea 2 constrain confidence in production integration and consistency.",
+    "openness": "The inspected route is a proprietary hosted model with plan-dependent commercial rights and submission conditions. There are no verified downloadable weights, self-hosting rights or reproducible model internals; access to the service is not model openness."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Six versus eight reference inputs is unresolved, and the comparison is explicitly pregenerated/illustrative. These limitations are appropriately prominent.",
+    "Commercial rights and submission visibility depend on plan/provider; no blanket Free-plan commercial entitlement is asserted."
+  ]
+}

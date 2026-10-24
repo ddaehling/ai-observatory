@@ -1,0 +1,116 @@
+{
+  "id": "kitten-tts-2",
+  "title": "Kitten-TTS 2: local speech needs more than a small weight file",
+  "entity": "Kitten-TTS 2",
+  "category": "Models",
+  "tags": [
+    "text to speech",
+    "local AI",
+    "voice cloning",
+    "education",
+    "speech synthesis"
+  ],
+  "summary": "Kitten-TTS 2 combines downloadable speech weights, reference-voice conditioning and expression tags. A useful deployment baseline must distinguish weight packing from runtime speed, chunked streaming from quick first audio, and Apache code from conditional model rights.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-22T17:16:37Z",
+  "updatedAt": "2026-10-24T18:06:57.979612Z",
+  "officialUrl": "https://github.com/KittenML/KittenTTS",
+  "sections": [
+    {
+      "id": "scope",
+      "title": "A larger speech model with a local deployment route",
+      "html": "<p>Kitten-TTS 2 is described by its publisher as a 1.7-billion-parameter speech language model with voice cloning and expression control. It sits alongside the older, much smaller ONNX models in the same library. That distinction matters: the existence of a tiny Kitten model does not make the second-generation model equally small in memory, equally quick to start or compatible with every older deployment recipe.</p><p>The <a href=\"https://huggingface.co/KittenML/kitten-tts-2\">model card</a> describes a pipeline that produces S3 codec tokens and converts them into 24 kHz audio. The public repository documents Python use, CPU execution, an optional Apple-silicon MLX backend and a separate C++ implementation. These are meaningful inspectable starting points for a local narration experiment. This report is a baseline of an existing discovery; a precise model launch date was not established and remains unknown.</p><p>We inspected the repository, model card, weight license and package metadata. We did not install the package, download weights, listen to generated samples or benchmark hardware. Claims about quality, similarity and real-time operation remain publisher claims. The practical value is the ability to investigate a speech component with visible deployment choices and documented limitations, provided the application is designed around what the selected configuration can actually deliver.</p>"
+    },
+    {
+      "id": "weights",
+      "title": "Compression does not describe the whole running system",
+      "html": "<p>The card explains that the transformer body uses ternary values, while the default packing leaves the token embedding at higher precision. An optional embedding-quantized variant reduces storage with a stated quality tradeoff. A separate decoder choice can further reduce the audio-decoding footprint. These are different decisions: one changes how language-model weights are stored, another changes the embedding, and another changes the decoding component.</p><p>A headline such as one-bit speech therefore should not be read as a claim that every tensor and every runtime operation uses one bit. Nor is the size of a downloaded file a RAM specification. The process also needs working memory, token generation, reference processing and audio decoding. The <a href=\"https://github.com/KittenML/KittenTTS\">README</a> and card use differing size descriptions for some variants, so this report does not combine their numbers into a supposedly exact total deployment footprint.</p><p>For a pilot, keep the initial configuration simple and record the selected weight and decoder names. Evaluate pronunciation and voice stability before trying the smaller variants. When changing one component, use the same script and voice so the effect can be isolated. Measure peak memory and wall-clock time on the target machine. The card itself cautions that decoder quantization trades footprint against fidelity rather than automatically increasing arithmetic speed. A smaller download can be useful without making the interaction faster.</p>"
+    },
+    {
+      "id": "requirements",
+      "title": "Package metadata resolves one prerequisite conflict",
+      "html": "<p>The README says Python 3.9 or later, while the model card says Python 3.10 or later. The inspected <a href=\"https://github.com/KittenML/KittenTTS/blob/main/pyproject.toml\">package metadata</a>, version 0.9.6, explicitly requires Python 3.10 or newer and declares PyTorch and torchaudio at least 2.6. For this inspected package, use the metadata requirement rather than treating the more permissive README sentence as installation guidance. This is a resolved documentation conflict, not an installation test.</p><p>The README estimates approximately six gigabytes of RAM for a CPU path or roughly eight gigabytes of free CUDA GPU memory for its quick start. Those are publisher estimates, not measurements here, and alternate backends or decoder choices can change the requirement. The optional MLX route targets Apple silicon; the documented vLLM route targets Linux and NVIDIA hardware. Merely owning a Mac or installing Python does not establish support for every acceleration option.</p><p>The repository says the required model components are publicly available without a Hugging Face login. That makes inspection easier, but download access does not waive the license. Start a deployment record with package version, model revision, backend, decoder and voice. The model’s runtime voice enumeration is especially useful: the README lists 47 built-in voices, while the current card says 115. We preserve that disagreement rather than promising either count for every combination of installed package and model revision.</p><p>Separate setup success from deployment readiness. Importing a Python package only proves that a particular environment can load it. Generating one short file is a different check; consistently producing long, correct passages is another. Keep these stages visible in the project record. If a dependency or model revision changes, rerun a small set of difficult sentences before replacing the approved narrator. This is particularly useful for abbreviations, dates and proper nouns that ordinary conversational examples may never exercise.</p>"
+    },
+    {
+      "id": "expression",
+      "title": "Direct a voice, then check the actual delivery",
+      "html": "<p>The documented controls include a leading emotion tag, inline vocal-event tags and emphasized spans. Both the card and README call emotion control beta and state that its effect varies by voice and sentence. This is an instruction interface for steering a performance, not a guarantee that an emotion will be perceived consistently. An expressive delivery can also distort an educational sentence by stressing the wrong word.</p><p>The model card names supported emotion and event tags and warns that unsupported tags may be spoken as ordinary text. Keep the script without markup as the authoritative transcript, then maintain a separate performance version. Preview both the delivery and the literal wording. For an interactive story, write a short line with one emotional intention and compare it with a neutral delivery; stacking several instructions makes it harder to identify why a line failed.</p><p>Multilingual claims need similar care. The README’s language list and the card’s named-voice coverage differ. The card specifically instructs users to disable its English-oriented text normalizer for non-English text, since numbers and dates may otherwise be mishandled. Do not infer fluent performance from the presence of a language label. Test names, dates, abbreviations and mixed-language passages with a competent speaker. A useful voice menu should show only configurations the application has actually checked, while leaving the editable text available alongside the audio.</p>"
+    },
+    {
+      "id": "latency",
+      "title": "Chunked streaming is not a first-audio guarantee",
+      "html": "<p>The README documents sentence-aware chunking for long text because a whole script in one pass can truncate or repeat. Its streaming interface returns audio only after an entire chunk has been generated and decoded. That distinction changes the user experience: playback can eventually stay ahead of generation while the initial wait is still conspicuous. A real-time throughput claim alone cannot tell you when a listener hears the first word.</p><p>The published example is unusually helpful. On an A100, a 936-character passage reportedly produced its first 21 seconds of audio after 17 seconds and completed 54 seconds of audio in 42 seconds. Those are one documented configuration’s figures, not a forecast for a laptop or another backend. They illustrate why this report does not treat CPU real-time marketing as evidence of low-latency conversation. The C++ and MLX paths may behave differently and require their own measurements.</p><p>The README also says short input that fits one chunk does not gain incremental output from the streaming method. Streamed chunks are raw, while ordinary generation can smooth boundaries using information from neighboring segments. For a read-aloud button, make stopping immediate, show a waiting state and keep the text visible. For prerecorded lessons, batch generation followed by review may be simpler than streaming. Test startup delay, sustained generation, interruption and joins separately; each affects a different part of the experience.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A classroom pilot should begin with a checked passage",
+      "html": "<p>A suitable first task is a teacher-prepared paragraph with a few known pronunciation challenges. Use a built-in voice and generate a short listening exercise. Check every word against the script, then ask a second listener whether the pacing and emphasis support the learning objective. Keep a text alternative. The aim is a reusable reviewed resource, not a demonstration that synthetic speech can replace a teacher or solve accessibility for every learner.</p><p>For language practice, create two short performances of the same dialogue, one neutral and one with a documented emotion tag. Learners can explain how emphasis changes the meaning. This works only if the words remain accurate and the delivery is appropriate. Regional pronunciation and register need human review; an expressive voice is not automatically a reliable model for pronunciation instruction. Avoid grading a learner against generated speech without a separate validated assessment method.</p><p>The reference-voice feature accepts a short single-speaker recording, with a supplied transcript able to skip the documented transcription pass. Use it only with a recording and identity the project is authorized to use. A school should start with built-in voices rather than collecting student voice recordings merely to try the model. Local execution can reduce dependence on a hosted speech API, but the complete application still needs a deliberate policy for recordings, generated audio, deletion and who may access them.</p><p>One workable review set contains a plain sentence, a date, a number with units, a proper name and a passage long enough to cross a chunk boundary. Listen while following the text and mark omissions, repetitions and unintended spoken markup. A transcript generated by another speech system can help locate problems but should not be the sole judge. The listener must also assess pacing and meaning, which an exact word match does not capture.</p>"
+    },
+    {
+      "id": "builders",
+      "title": "Build app narration and video drafts around review",
+      "html": "<p>For an app or website, consider optional narration of curated content before an unrestricted speaking agent. Pre-generate approved passages where possible, keep the original text, and expose replay and stop controls. If a user edits the text, invalidate its cached audio so the interface does not play an older version. Store configuration metadata with each file so a change in voice or model can be traced. These are proposed engineering practices, not a ready-made application shipped by the repository.</p><p>A video creator can use the model to test an explanation’s pacing before committing a final voiceover. Break the script at natural sentence boundaries, synthesize drafts, place them against the rough cut and listen for awkward transitions. Once timing works, regenerate or record the final narration and inspect it again. A short expressive sample does not establish consistency over a chapter, and the documented long-input limitations make whole-script listening essential.</p><p>Budget for operational work beyond inference: dependency maintenance, asset storage, queueing and review. A laptop demonstration does not establish concurrent service capacity. If several learners request narration together, measure the resulting queue rather than extrapolating one-request throughput. Provide a text fallback when generation fails. The strongest initial use is a controlled library of approved clips; expand into dynamic speech only after the chosen configuration meets the application’s timing and quality requirements.</p><p>Keep speech quality and content quality separate. A flawless reading of an inaccurate explanation is still an inaccurate lesson. Review the script before synthesis and the audio afterward. For a video, verify the final export with captions enabled so that edits to timing, pronunciation or wording have not left the subtitles behind. The model is one component of that production chain; it does not validate the surrounding educational content.</p>"
+    },
+    {
+      "id": "license",
+      "title": "Open code and model access have different conditions",
+      "html": "<p>The repository explicitly limits its Apache 2.0 statement to the code. Kitten-TTS 2 weights use the <a href=\"https://huggingface.co/KittenML/kitten-tts-2/blob/main/LICENSE.md\">Stellon Labs Community License</a>. That license permits research, noncommercial and limited commercial use subject to its conditions. Commercial use requires registration with Stellon Labs. It includes products, hosted services and internal business operations, so a free-to-download model is not automatically a frictionless commercial dependency.</p><p>The operative commercial clause says that exceeding one million US dollars in annual revenue or total cumulative funding, including the specified affiliate aggregation, terminates the agreement’s grants and requires requesting another license. The introduction uses less-than threshold wording; readers near the boundary should consult the actual agreement rather than infer a guaranteed entitlement at equality. Distribution or provision of a product or service using the materials also carries license-copy, notice and Powered by KittenML attribution requirements.</p><p>There are further reuse restrictions. The agreement limits using the materials or their outputs to create or improve other foundational generative models and to transfer capabilities through training or distillation, with stated fine-tuning and low-rank-adaptation exceptions. Its acceptable-use policy is incorporated but described as available by contacting the publisher; that policy was not separately obtained. This matters for a classroom synthetic-data project as well as a commercial service. A local speech experiment is worth considering, but publication, redistribution and training use each require checking the relevant grant. The documentation is inspectable; unrestricted openness is not an accurate summary.</p>"
+    }
+  ],
+  "useCases": [
+    "Reviewed local read-aloud clips for teaching materials",
+    "Short dialogue and performance experiments",
+    "Narration drafts for video timing",
+    "Controlled speech components in apps and websites"
+  ],
+  "limitations": [
+    "No installation, model inference, audio listening or performance reproduction was performed.",
+    "Voice and language counts differ across README and model card; fixed totals are not promised.",
+    "Package metadata requires Python 3.10+, despite README language saying 3.9+.",
+    "Streaming is chunk-level and may have substantial startup delay.",
+    "Weight rights are conditional and separate from Apache-licensed code; the incorporated AUP was not acquired.",
+    "Exact launch date remains unknown."
+  ],
+  "sources": [
+    {
+      "id": "kitten-tts2-repo",
+      "title": "KittenML/KittenTTS: Open-source State-of-the-art TTS model which runs on a CPU 😻",
+      "url": "https://github.com/KittenML/KittenTTS",
+      "accessedAt": "2026-10-24T17:52:36.951Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Kitten2 is documented as a1.7B speech language model producing S3 codec tokens decoded into24kHz audio, separate from older ONNX family.; Inspected package0.9.6 requires Python>=3.10, resolving the README3.9/card3.10 conflict for this package version.; README documents CPU, Apple-silicon MLX, Linux/NVIDIA vLLM routes and rough memory estimates.; README says47 voices; current model card says115 and has different named-language coverage. Runtime enumeration is appropriate.; Streaming yields completed chunks, and documented A100 example demonstrates substantial first-audio wait despite faster-than-real-time total throughput.; Voice cloning uses5–30 seconds of one speaker, with optional transcript avoiding the documented Whisper pass.; Apache2.0 code and conditional model rights are distinct; commercial registration, thresholds, attribution and training-use limits affect adoption."
+    },
+    {
+      "id": "kitten-tts2-model",
+      "title": "KittenML/kitten-tts-2 · Hugging Face",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2",
+      "accessedAt": "2026-10-24T17:54:15.975Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Kitten2 is documented as a1.7B speech language model producing S3 codec tokens decoded into24kHz audio, separate from older ONNX family.; Inspected package0.9.6 requires Python>=3.10, resolving the README3.9/card3.10 conflict for this package version.; README says47 voices; current model card says115 and has different named-language coverage. Runtime enumeration is appropriate.; Emotion control is beta, recognized markup is limited, and English-tuned normalization should be disabled for non-English text."
+    },
+    {
+      "id": "kitten-tts2-license",
+      "title": "LICENSE.md · KittenML/kitten-tts-2 at main",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2/blob/main/LICENSE.md",
+      "accessedAt": "2026-10-24T17:54:17.683Z",
+      "publishedAt": "2024-07-05",
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Apache2.0 code and conditional model rights are distinct; commercial registration, thresholds, attribution and training-use limits affect adoption."
+    },
+    {
+      "id": "creative-source-c496f37f3a6e5795",
+      "title": "KittenTTS/pyproject.toml at main · KittenML/KittenTTS",
+      "url": "https://github.com/KittenML/KittenTTS/blob/main/pyproject.toml",
+      "accessedAt": "2026-10-24T17:54:50.712Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Inspected package0.9.6 requires Python>=3.10, resolving the README3.9/card3.10 conflict for this package version."
+    }
+  ],
+  "images": [],
+  "judgment": "A useful local speech experiment for builders who can inspect output and manage dependencies. Compression and open code do not establish low latency, consistent multilingual quality or unrestricted model reuse.",
+  "researchNote": "Primary public pages rechecked in Chrome on October 24, 2026 after the October 22 unresolved candidate. Package metadata was the focused repair for the Python mismatch. No weights or audio were downloaded and no terms were accepted."
+}

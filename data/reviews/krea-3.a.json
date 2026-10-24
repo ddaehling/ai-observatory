@@ -1,0 +1,32 @@
+{
+  "reportId": "krea-3",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "e9f59fadd1cefbb3d25128a9f0ecfee6430218e116a30bae5892ec8bab19205a",
+  "evidenceHash": "954ff72830962a392e35d7fe94f49002adebb5fe6cae6ef471912b0e9c2fc32b",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "Targeted editing and multiple references fit concrete illustration, app-asset and storyboard tasks. The preservation brief and explicit acceptance sheet make the workflow actionable even without asserting that preservation is reliable.",
+    "impact": "Faster targeted image iteration could meaningfully improve one creative domain. The supplied evidence is selected publisher examples and service-scoped timing, with no independent quality or production-efficiency demonstration supporting broader impact.",
+    "novelty": "Product and character preservation with reference-driven edits is useful but substantially overlaps established image-editing capabilities. Native resolution and claimed speed are incremental differentiation, and comparative superiority is not demonstrated.",
+    "maturity": "A documented hosted release, available plans and partner access support a trial. The six-versus-eight-reference discrepancy, unverified exact API schema and absence of actual generations or quality measurements prevent a higher readiness assessment.",
+    "openness": "Public product and plan documentation explain access, but no checkpoint or self-hosting rights are established. Hosted dependency, plan-dependent output permissions and submission terms materially limit portability and reproducibility."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Reference limits differ between launch and product pages; actual access-route limits remain unresolved.",
+    "Product playback is illustrative and one competitor price is unvalidated; neither supports a measured ranking.",
+    "Commercial-use and submission conditions depend on plan and rights in source material."
+  ]
+}

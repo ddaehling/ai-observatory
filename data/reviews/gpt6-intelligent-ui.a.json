@@ -1,0 +1,31 @@
+{
+  "reportId": "gpt6-intelligent-ui",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "70bb77f442d95118941f5d92dfe2590aa4d11b8d788656fc96a86bf38586d25e",
+  "evidenceHash": "aae965d9bf52c211446b8c4c40776ba0433c6d2b992da7247f62f2e558bbef1e",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "In-conversation graphics, forms and controls can make educational relationships and design decisions directly explorable. The report turns that capability into bounded prediction exercises, acceptance checks, app briefs and video planning, while explaining what must be verified.",
+    "impact": "Choosing interactive presentations within a widely deployed conversational product could materially change how people learn and prototype. The primary evidence establishes a broad rollout and a concrete component approach, but not learning gains, reliable widget correctness or a field-wide productivity result.",
+    "novelty": "The streamable native-component library and progressive compilation are a meaningful interface integration. Interactive generated content and conversational prototyping are not wholly new, and the saved evidence does not establish a uniquely new algorithm or capability.",
+    "maturity": "The dated Chat rollout and concrete demonstrations support usability for trials, while account eligibility, instance accessibility, correctness and repeatability remain untested. The system-card regressions are acknowledged without confusing adversarial evaluation rates with classroom prevalence.",
+    "openness": "This is a hosted Chat feature. The inspected material establishes neither source export nor embedding, offline operation, downloadable components or portable generated applications; public descriptions alone provide little implementation reproducibility."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Availability is a dated rollout statement rather than a verified entitlement for any particular account.",
+    "No live widget, accessibility test or controlled learning evaluation was performed; the report keeps these limits explicit."
+  ]
+}

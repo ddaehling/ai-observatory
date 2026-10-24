@@ -1,0 +1,56 @@
+{
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "runId": "scan-20261024T174829Z-815900",
+  "publicationBlockers": [],
+  "requiredRepairs": [],
+  "scope": "Independently read MAINTENANCE.md, DATA_CONTRACT.md, the complete frozen rubric, seven reports and all relevant claims. Inspected original saved primary-source passages for material dates, access, licenses, implementation constraints, benchmark qualifiers and reproduction limits. No network, model execution, other reviewer outputs or prior ratings were used.",
+  "integrity": {
+    "allReportHashesMatch": true,
+    "allEvidenceHashesMatch": true,
+    "rubricHashesMatch": true,
+    "referencedArchiveHashesMatch": true,
+    "referencedArchiveFilesChecked": 30,
+    "safeMarkupErrors": [],
+    "wordCounts": {
+      "openai-decisions-api": 1892,
+      "gpt6-intelligent-ui": 1875,
+      "timestral": 1863,
+      "kimi-k31-pro": 1858,
+      "krea-3": 1951,
+      "kitten-tts-2": 1984,
+      "tutormoments": 1927
+    }
+  },
+  "lengthAssessment": "Scores were assigned from capability evidence, not word count. All seven impact ratings from this reviewer fall within 5–7. Their 1858–1984 words fit that 2000-word band. Only the final independent mean impact determines the binding band; reassess length if the other review changes it.",
+  "sampledJudgments": [
+    {
+      "candidateId": "candidate-891b7e0bbf66f86d",
+      "disposition": "included",
+      "judgment": "supported",
+      "evidence": "Saved official October 22 announcement explicitly says generally available and documents native Live integration, caching and expansion from 200 to 400 questions. The report and decision preserve vendor-performance and no-runtime-testing boundaries. Inclusion is well supported."
+    },
+    {
+      "candidateId": "candidate-ee4c22366ef7e7ab",
+      "disposition": "excluded",
+      "judgment": "reasonable editorial exclusion",
+      "evidence": "The saved October 23 engineering article concerns Habitat/Cosmos DB tenancy, reliability, caching, geographic placement, Rust overhead and CDC at OpenAI scale. It offers useful infrastructure lessons but no directly tryable new AI model or tool. Exclusion from this builder-focused edition is defensible; it should remain discoverable as retained infrastructure context."
+    }
+  ],
+  "accountingFindings": {
+    "substantiveProblemsFound": false,
+    "scope": "Only the supplied accepted and rejected samples were audited. This is not an audit of every monitored source, candidate or edition count.",
+    "historicalClaims": "Older candidate/needs_review claims remain in relevant evidence alongside newer supported claims. Their historical timestamps and wording distinguish them from current report support; retention is appropriate and does not establish a present unresolved publication blocker."
+  },
+  "nonblockingEditorialNotes": [
+    {
+      "reportId": "kimi-k31-pro",
+      "note": "The pricing source title is the capture-style string repos-kimi-api-pricing-visible. A future editorial pass could replace it with the human-readable page title, with fresh hashes/reviews as required."
+    },
+    {
+      "reportId": "kimi-k31-pro",
+      "note": "The prose quickstart link uses /docs/overview while the source record and saved canonical page use /docs/get-your-api-key. The primary quickstart content is saved, so this is not a factual blocker; canonicalizing that link in a future revision would improve traceability."
+    }
+  ],
+  "overall": "Approve all seven exact frozen reports. Documentary support is sufficient for cautious publication; approval is not independent validation of vendor performance or proposed educational outcomes."
+}

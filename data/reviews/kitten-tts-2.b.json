@@ -1,0 +1,32 @@
+{
+  "reportId": "kitten-tts-2",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "bcaf620bfcedf575d0958ea2bdbf63b81f7037a2a2045c773a329537715ba83a",
+  "evidenceHash": "30836c5711cd390c3b6e028647d6bc959b6ad12f49742911cccaad6f84367c5b",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The report gives actionable routes for reviewed narration, local read-aloud libraries and video voiceover drafts, including package prerequisites, backend choices, normalization and chunk-boundary tests. Its practical value is evaluation guidance rather than verified audio quality.",
+    "impact": "Downloadable expressive speech and cloning with compressed weights are meaningful for local creative tools. Unverified CPU throughput, significant documented first-audio delay and restrictive weight terms limit evidence of wider impact.",
+    "novelty": "Ternary transformer packing combined with reference-voice conditioning, expression tags and optional decoder/backend choices is meaningfully distinctive. These combine established speech-generation techniques, and the supplied evidence does not demonstrate a new quality or latency frontier.",
+    "maturity": "Public package metadata and substantial runtime documentation make a controlled experiment plausible. Conflicting voice/language descriptions, beta emotion control, long-text failure modes and no listening or hardware test support only moderate readiness.",
+    "openness": "Downloadable weights, visible code and several local backends offer real inspectability and portability. Commercial registration, revenue/funding termination thresholds, attribution and training-use restrictions plus an unacquired incorporated AUP materially limit reuse and prevent an unrestricted-open rating."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The report correctly treats Apache as code-only and discloses the weight license, registration, thresholds, training restrictions and unavailable incorporated AUP.",
+    "Package metadata resolves Python requirements for the inspected version, while voice counts remain unresolved; model revisions and runtime enumeration still matter.",
+    "Chunked streaming and faster-than-real-time throughput do not imply short time to first audio; the original A100 example supports the report’s caution."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "runId": "scan-20261024T174829Z-815900",
+  "recordedAt": "2026-10-24T18:09:04Z",
+  "invocations": [
+    {
+      "reviewerId": "/root/edition_20261024_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 1,
+      "inputPacketSha256": "77f2e3fef57c5d004b17214da982075b43fe55d7dce1dfd83d65a3f3a744a8f8",
+      "scope": "seven frozen reports",
+      "otherReviewerOutputSupplied": false
+    },
+    {
+      "reviewerId": "/root/edition_20261024_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "round": 1,
+      "inputPacketSha256": "77f2e3fef57c5d004b17214da982075b43fe55d7dce1dfd83d65a3f3a744a8f8",
+      "scope": "seven frozen reports",
+      "otherReviewerOutputSupplied": false
+    }
+  ]
+}

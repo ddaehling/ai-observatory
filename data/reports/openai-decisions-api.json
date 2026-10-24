@@ -1,0 +1,110 @@
+{
+  "id": "openai-decisions-api",
+  "title": "Decisions API makes bounded judgments a component of apps and voice experiences",
+  "entity": "OpenAI Decisions API",
+  "category": "Tools",
+  "tags": [
+    "typed decisions",
+    "voice",
+    "developer tools",
+    "education"
+  ],
+  "summary": "A generally available GPT-6 Luna endpoint returns probabilities, choices, and scores, with caching and native voice integration. Its value depends on a narrow question, measured errors, and software-owned actions.",
+  "changeType": "new",
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-24T17:51:17Z",
+  "updatedAt": "2026-10-24T18:04:08.094096Z",
+  "officialUrl": "https://openai.com/index/decisions-api/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "Small decisions get a dedicated interface",
+      "html": "<p>OpenAI made its Decisions API generally available on October 22, 2026. The useful change is a more focused way to put model judgment inside an application: supply evidence, specify a bounded question, and receive a probability, a choice, or a score. A builder can use that result to select a next step without asking a general assistant to produce a prose answer and then interpret the prose. This is a hosted API capability, not a downloadable model or a complete agent.</p>\n<p>The <a href=\"https://openai.com/index/decisions-api/\">launch announcement</a> describes changes since public beta: native GPT-Live integration, prompt caching, native JSON input, images in question instructions, and an increase from 200 to 400 questions per request. These are concrete interface and deployment changes. The announcement's claim of decisions up to ten times faster than GPT-6 Luna through the Responses API remains a vendor comparison. This report does not establish the same speedup for a classroom app, a particular region, or a full voice interaction.</p>\n<p>The architectural idea resembles the small typed judgments discussed in our Jev report, but this release is a separate service with different access, model, and billing constraints. It deserves evaluation when a repeated interpretation step is delaying an otherwise ordinary workflow. Examples include choosing a review queue, deciding whether a request needs clarification, and identifying which visual asset deserves human inspection. Software still owns the resulting action and its permissions.</p>"
+    },
+    {
+      "id": "types",
+      "title": "Choose a question whose answer has a clear meaning",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/guides/decisions\">developer guide</a> specifies POST /v1/decisions and gpt-6-luna as the only currently supported model. Each request provides shared input and named questions. Names matter because the response echoes them in an answers array; applications can map results to specific decisions without depending on position. A predicate estimates whether a condition is true. A choice selects from supplied categories. A score evaluates ordered levels and returns their probability-weighted average.</p>\n<p>A score is therefore not a selected grade or a percentage of correctness. Its levels use indices starting at zero. The guide's example distributes probability across three severity levels and obtains an intermediate score of 1.1. For an application that must choose one category, choice is the more direct fit. For a review queue where the distribution itself matters, retain the per-level probabilities instead of displaying the average as a precise measurement.</p>\n<p>Define observable criteria and a fallback. A lesson-support request might belong to explanation, worked example, practice, or unclear. The unclear option gives the application somewhere useful to send ambiguous inputs. Independent questions can share a request, but questions that depend on an earlier answer require separate requests. Four hundred questions is a request limit, not evidence that a complicated chain of dependent judgments can safely be compressed into one call.</p>"
+    },
+    {
+      "id": "inputs",
+      "title": "Separate evidence from the instructions that interpret it",
+      "html": "<p>Decisions accepts text, images, native JSON, and supported conversation items. The guide distinguishes user messages, developer instructions, assistant messages, and matched tool calls and outputs. JSON input belongs in user-message content. Keys inside that JSON are ordinary evidence: a field named role does not create a higher-priority message, and an image_url field does not fetch an image. This distinction is useful when processing records supplied by a different system.</p>\n<p>Images may be inline base64 data URLs or publicly accessible HTTP or HTTPS URLs. The endpoint does not accept file_id inputs, direct files, audio, or item references. A video workflow must first select frames and prepare text or other supported evidence. A voice workflow uses the separately documented GPT-Live integration. Neither should be described as the Decisions endpoint directly understanding a raw video file or an audio upload.</p>\n<p>Place common evidence in input and candidate-specific material in individual question instructions. For example, a reviewed illustration can be the shared reference while each question contains a different candidate image. Ask whether each candidate depicts the required object or deviates from the approved composition. This is a proposed production check, not proof of copyright clearance, accessibility, or factual accuracy. Those concerns need their own evidence and review. Keep credentials server-side, send only the context needed, and preserve the question version with the result so later failures can be investigated.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A teacher-facing pilot can organize help without grading pupils",
+      "html": "<p>A useful education pilot is a teacher's queue for requests about a lesson. Begin with anonymized or synthetic examples that the teacher has labeled. Ask which resource type would help: a definition, a worked example, a practice question, or manual review. Supply the lesson objective and the actual request, rather than an extensive student profile. Let the application retrieve an approved resource after the classification. The model's job is narrow enough that a teacher can inspect errors directly.</p>\n<p>Keep the first deployment in shadow mode. Record the predicted category and the teacher's choice without changing what learners receive. Review misunderstandings separately: a request for another example may mean confusion about notation, missing prerequisite knowledge, or a desire for more difficult practice. If the categories collapse these distinctions, better instructions alone will not repair the product design. Revise the choices and collect a new evaluation set.</p>\n<p>The returned probability or confidence is a model estimate, not a measured probability of student mastery. The official guide recommends choosing thresholds using labeled application examples and the costs of false positives and false negatives. That advice supports routing assistance; it does not validate automated grading, placement, or decisions about individual learners. Success for this pilot means less time organizing routine requests while preserving the teacher's ability to identify and correct inappropriate routes.</p>"
+    },
+    {
+      "id": "applications",
+      "title": "Make the decision visible in an app or website",
+      "html": "<p>For a creative website, consider the intake step for a design review. A user supplies a screenshot and a short description of the problem. Decisions could classify the issue as text legibility, layout, missing information, or unclear, then suggest the relevant review form. Deterministic checks should still handle matters the software already knows, such as an empty upload, an unsupported file type, or a missing required field. The AI step earns its place only where interpretation is needed.</p>\n<p>The application should show the proposed route and let the user correct it. Preserve the original request instead of replacing it with the model's category. An ambiguous result can open a general review view rather than repeatedly asking the model until it gives a confident answer. Measure both the proportion of useful routes and the time lost when a wrong route sends someone to the wrong form. A faster classifier can still produce a slower service if corrections are expensive.</p>\n<p>There is also a clear API boundary. The guide recommends Structured Outputs through Responses when the desired result is an arbitrary JSON object, extracted fields, or a written explanation. Function calling serves requests to invoke tools with arguments. Decisions is appropriate for the defined answer types. Combining these components can be useful, but a model-selected route never establishes permission to publish a website, send a message, or change a connected account.</p>"
+    },
+    {
+      "id": "voice",
+      "title": "Voice integration changes timing, not responsibility",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/guides/decisions-voice\">voice integration guide</a> offers two patterns. Live can delegate a recognized request to Decisions, or transcript triggers can request decisions while the user or assistant speaks. Native delegation removes an application round trip before the Decisions call. A working GPT-Live connection and api.decisions.write permission are prerequisites; the documented example uses gpt-live-1. It does not establish that the separately announced GPT-Live-1.1 update is available through the API.</p>\n<p>For an educational character, transcript triggers could select an expression, intensity, and gesture from a limited palette. The application animates the character. It should not interpret a selected expression as a diagnosis of the learner's emotion. Keep a neutral option, permit reduced motion, and check whether the animation distracts from the explanation. These are proposed interface choices; no character or conversation was run for this report.</p>\n<p>The event-handling details matter. The guide says pending transcript deltas can be combined and results can arrive out of order. Match source_event_id to the relevant transcript update and apply the newest relevant result for each direction. Mouth movement comes from audio, not a sentiment choice. When a delegated request changes application state, report the confirmed state back rather than announcing an action that only the model selected. These requirements make voice integration an engineering task rather than a switch that automatically creates a reliable character.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Use bounded judgments to shorten a review queue",
+      "html": "<p>In a video-production workflow, Decisions could help organize still frames, title cards, or storyboard alternatives before an editor reviews them. A producer might ask whether a frame contains the specified prop, whether a title card visibly includes required wording, and which scene category best matches a shot. Those questions are different and should remain separate. The system should retain the frame identifier and source timecode, so a reviewer can return to the original clip.</p>\n<p>Start with a small collection that already has human annotations. Include deliberately difficult cases: partially obscured objects, stylized text, near-duplicate shots, and frames that do not fit any category. Review false acceptances and false rejections separately. Missing a required item can be more expensive than asking an editor to inspect an extra frame. A threshold that works for one show, visual style, or language may need adjustment for another.</p>\n<p>The endpoint does not establish motion continuity, speech quality, lip synchronization, or final video rights from individual images. Nor does a favorable result replace viewing the finished edit. Its potential value is arranging material so a human spends attention on the most uncertain candidates. Count time saved across preparation, API calls, review, and correction; do not report the vendor's model-latency comparison as a measured reduction in editing time.</p>"
+    },
+    {
+      "id": "economics",
+      "title": "Count input, caching, and the surrounding workflow",
+      "html": "<p>The launch and guide state an uncached input rate of $0.10 per million tokens for Decisions with GPT-6 Luna and no output-token charge. The launch lists cached reads at $0.01 per million tokens. The guide warns that cache writes are charged and that regional processing premiums and long-context multipliers apply. These rates describe the dedicated endpoint. They do not include a surrounding GPT-Live session, Responses requests, hosting, storage, or human review.</p>\n<p>Prompt caching reuses a matching prefix of shared input. The prefix must contain at least 1,024 tokens, and content in questions does not count toward that threshold. Keeping a reference document stable while changing questions can permit reuse; repeatedly rewriting the shared prefix may defeat it. The guide exposes cached and cache-write token counts inside total input usage. Do not add those subcounts to the total again when calculating consumption.</p>\n<p>Regional processing is documented for the United States and Europe, defined as the EEA plus Switzerland. Data residency, Zero Data Retention, and eligible healthcare arrangements have separate conditions. A regional-processing option is not a general guarantee that every data-handling requirement has been satisfied. Verify the applicable data-control terms before using sensitive material. This assessment used public documentation only, with no API requests, paid sessions, benchmark reproduction, or access to private records.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "Adopt the smallest decision that improves the whole task",
+      "html": "<p>The strongest first use is a frequent, bounded interpretation step with examples a human can label and an inexpensive correction path. Establish the current workflow's latency and error cost, then compare an implementation using Decisions on the same cases. Record timeouts, uncertain outputs, changed prompts, and manual overrides alongside successful classifications. Include the surrounding application in the measurement.</p>\n<p>The release provides a concrete interface, pricing basis, and integration documentation, which makes a pilot practical. It provides no independent validation of this report's proposed education, design-review, or video workflows. The model remains a hosted dependency and its confidence must earn meaning through local evaluation. If a narrow deployment improves the task while leaving human control and the original evidence visible, the API has a defensible role. Broader automation should follow that evidence.</p>"
+    }
+  ],
+  "useCases": [
+    "Route teacher-facing help requests to approved resources.",
+    "Triage design-review screenshots with a correction path.",
+    "Drive a limited avatar expression palette from transcript updates.",
+    "Organize storyboard frames for human review."
+  ],
+  "limitations": [
+    "Vendor latency comparisons are unverified.",
+    "Only gpt-6-luna is currently supported by Decisions.",
+    "No direct audio, files, item references, or file_id inputs.",
+    "Hosted service with conditional caching and regional pricing.",
+    "No runtime workflow or independent educational evaluation performed."
+  ],
+  "sources": [
+    {
+      "id": "source-891b7e0bbf66f86d",
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api/",
+      "accessedAt": "2026-10-24T17:53:15.609Z",
+      "publishedAt": "2026-10-22",
+      "locator": "Launch and Build and evaluate your first decision",
+      "supports": "GA date, beta changes, vendor latency comparison and base pricing."
+    },
+    {
+      "id": "official-source-f6e419d4eb703602",
+      "title": "Decisions API developer guide",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "accessedAt": "2026-10-24T17:53:30.023Z",
+      "publishedAt": null,
+      "locator": "How decisions work; Interpret the answers; Prompt caching; Pricing and availability",
+      "supports": "Endpoint, inputs, answer semantics, limits, pricing and evaluation guidance."
+    },
+    {
+      "id": "official-source-fea78266aba6fd95",
+      "title": "Connect voice to Decisions",
+      "url": "https://developers.openai.com/api/docs/guides/decisions-voice",
+      "accessedAt": "2026-10-24T17:53:32.176Z",
+      "publishedAt": null,
+      "locator": "Configure delegation; Run actions and report results; React to transcripts",
+      "supports": "Voice prerequisites, delegation, transcript events and out-of-order results."
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded pilot for frequent decisions whose categories, errors, and correction costs can be measured.",
+  "researchNote": "Public official pages inspected in Chrome on October 24, 2026. No private account content, API execution, product testing, or independent benchmark reproduction. Proposed workflows are editorial analysis. Exact source and evidence references are attached in the worker bundle; publication requires the two independent Astra reviews."
+}

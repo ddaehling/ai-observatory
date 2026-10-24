@@ -5955,5 +5955,3105 @@
     "limitations": [
       "No runtime test, export validation or end-to-end publishing performed."
     ]
+  },
+  {
+    "claim_id": "decisions-ga-20261022",
+    "claim": "Decisions became generally available October 22, with GPT-6 Luna and up to 400 questions per request.",
+    "source_ids": [
+      "source-891b7e0bbf66f86d"
+    ],
+    "support": [
+      {
+        "source_id": "source-891b7e0bbf66f86d",
+        "url": "https://openai.com/index/decisions-api/",
+        "locator": "Opening paragraphs",
+        "passage": "Today, we’re making the Decisions API generally available.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-22",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-24T17:53:15.609Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-launch.json",
+        "archive_sha256": "dbbe7de3481c67280f7e2ac7aa2676fc777130978f4069b5f0ae3276fb4f7cee"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-types-inputs",
+    "claim": "Decisions returns probabilities, bounded choices or scores; only gpt-6-luna is currently supported.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "How decisions work",
+        "passage": "Send requests to POST /v1/decisions using gpt-6-luna, the only currently supported model.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-score-semantics",
+    "claim": "Scores use 2–10 ordered levels with zero-based indices and a probability-weighted mean.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "Score against a rubric",
+        "passage": "Level indices start at 0.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-input-limits",
+    "claim": "Direct files, audio, item references and file_id inputs are unsupported; images use hosted URLs or inline data.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "Evaluate a conversation; Check an image",
+        "passage": "Files, audio, and item references aren’t supported.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-thresholds",
+    "claim": "Thresholds should be chosen using labeled application examples and error costs, not assumed calibration.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "Interpret the answers",
+        "passage": "Use labeled examples from your application to set thresholds for routing, filtering, or review.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-caching",
+    "claim": "Cache reuse requires matching shared input prefixes of at least 1,024 tokens; question content is outside that prefix.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "Reuse shared input with prompt caching",
+        "passage": "The reusable prefix must contain at least 1,024 tokens; question content doesn’t count toward this threshold.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-pricing",
+    "claim": "Uncached Decisions input costs $0.10 per million tokens, outputs uncharged; premiums, long-context multipliers and cache-write costs can apply.",
+    "source_ids": [
+      "official-source-f6e419d4eb703602"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f6e419d4eb703602",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "locator": "Pricing and availability",
+        "passage": "Regional processing premiums and long-context input pricing multipliers apply.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:30.023Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-guide.json",
+        "archive_sha256": "54f1abe865dc8e1201789a644746ec42f70aeaa5b717cd9d9ca90b7803b83c03"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-cache-read-price",
+    "claim": "The launch gives $0.01 per million cached input tokens; full workflow costs include separate services.",
+    "source_ids": [
+      "source-891b7e0bbf66f86d"
+    ],
+    "support": [
+      {
+        "source_id": "source-891b7e0bbf66f86d",
+        "url": "https://openai.com/index/decisions-api/",
+        "locator": "Build and evaluate your first decision",
+        "passage": "Cached input costs $0.01 per million tokens.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-22",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-24T17:53:15.609Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-launch.json",
+        "archive_sha256": "dbbe7de3481c67280f7e2ac7aa2676fc777130978f4069b5f0ae3276fb4f7cee"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-voice-prerequisites",
+    "claim": "Native voice integration requires a working Live connection and api.decisions.write permission; documented example uses gpt-live-1.",
+    "source_ids": [
+      "official-source-fea78266aba6fd95"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-fea78266aba6fd95",
+        "url": "https://developers.openai.com/api/docs/guides/decisions-voice",
+        "locator": "Configure delegation",
+        "passage": "Start with a working Live connection and api.decisions.write permission.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:32.176Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-voice.json",
+        "archive_sha256": "d69d269b26a42c86ae85880447961559b22c5faeb3f2cc357589f0093a327cc2"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-voice-order",
+    "claim": "Transcript-trigger results may combine deltas and arrive out of order; application must match and apply current results.",
+    "source_ids": [
+      "official-source-fea78266aba6fd95"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-fea78266aba6fd95",
+        "url": "https://developers.openai.com/api/docs/guides/decisions-voice",
+        "locator": "React to transcripts",
+        "passage": "Live can combine pending deltas, and results can arrive out of order.",
+        "passage_type": "quotation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:32.176Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-voice.json",
+        "archive_sha256": "d69d269b26a42c86ae85880447961559b22c5faeb3f2cc357589f0093a327cc2"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "decisions-latency-claim",
+    "claim": "The up-to-ten-times speed claim compares Decisions with Luna through Responses and is not independently reproduced.",
+    "source_ids": [
+      "source-891b7e0bbf66f86d"
+    ],
+    "support": [
+      {
+        "source_id": "source-891b7e0bbf66f86d",
+        "url": "https://openai.com/index/decisions-api/",
+        "locator": "Opening paragraphs",
+        "passage": "up to 10x faster than GPT‑6 Luna through the Responses API.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:15.609Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/decisions-launch.json",
+        "archive_sha256": "dbbe7de3481c67280f7e2ac7aa2676fc777130978f4069b5f0ae3276fb4f7cee"
+      }
+    ],
+    "qualifiers": [
+      "Vendor comparison, not this project’s measurement."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No distribution, complete workflow latency or independent replication established."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-baseline-date",
+    "claim": "Intelligent UI rollout is an October 7 event; this is an older baseline, not new October 24 news.",
+    "source_ids": [
+      "gpt6-everyone"
+    ],
+    "support": [
+      {
+        "source_id": "gpt6-everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "locator": "Availability",
+        "passage": "Starting tomorrow, the rollout expands to Free and Go tiers.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": "2026-10-07",
+        "retrieved_at": "2026-10-24T17:51:00.766Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/backlog-everyone.json",
+        "archive_sha256": "2becb56b8d6d0a75ca8ca5c422399deba0f55041da75df3645a811592bd7b6a4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-chat-boundary",
+    "claim": "The announcement applies to Chat and explicitly leaves Work/Codex model versions unchanged by this release.",
+    "source_ids": [
+      "gpt6-everyone"
+    ],
+    "support": [
+      {
+        "source_id": "gpt6-everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "locator": "Availability",
+        "passage": "The models powering Work and Codex are not changing as part of this release.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": "2026-10-07",
+        "retrieved_at": "2026-10-24T17:51:00.766Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/backlog-everyone.json",
+        "archive_sha256": "2becb56b8d6d0a75ca8ca5c422399deba0f55041da75df3645a811592bd7b6a4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-component-library",
+    "claim": "The publisher describes native streamable components and progressive compilation.",
+    "source_ids": [
+      "gpt6-everyone"
+    ],
+    "support": [
+      {
+        "source_id": "gpt6-everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "locator": "How Intelligent UI works",
+        "passage": "We built a library of native, streamable components, along with a compiler that processes the interface as the model generates it.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:00.766Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/backlog-everyone.json",
+        "archive_sha256": "2becb56b8d6d0a75ca8ca5c422399deba0f55041da75df3645a811592bd7b6a4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-examples",
+    "claim": "The launch describes graphics, forms, charts and tools used directly in conversation; export or hosting is not established.",
+    "source_ids": [
+      "gpt6-everyone"
+    ],
+    "support": [
+      {
+        "source_id": "gpt6-everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "locator": "Introducing Intelligent UI",
+        "passage": "responses can include graphics, tappable buttons, forms, charts, and interactive experiences you can use directly in your conversation.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:00.766Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/backlog-everyone.json",
+        "archive_sha256": "2becb56b8d6d0a75ca8ca5c422399deba0f55041da75df3645a811592bd7b6a4"
+      }
+    ],
+    "qualifiers": [
+      "Documentary examples inspected; screenshot of article bicycle example archived separately."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No live generated interface or export tested."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-speed-claim",
+    "claim": "The 44% statistic measures vendor-reported time to begin answering web-search questions, not completion time or learning outcomes.",
+    "source_ids": [
+      "gpt6-everyone"
+    ],
+    "support": [
+      {
+        "source_id": "gpt6-everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "locator": "Frontier Intelligence – delivered more quickly",
+        "passage": "For questions that need web search, GPT‑6 Instant starts answering 44% sooner, on average, than GPT‑5.6 Instant.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:00.766Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/backlog-everyone.json",
+        "archive_sha256": "2becb56b8d6d0a75ca8ca5c422399deba0f55041da75df3645a811592bd7b6a4"
+      }
+    ],
+    "qualifiers": [
+      "Vendor measurement, unreplicated."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-u18-regressions",
+    "claim": "The October card reports statistically significant U18 regressions and system-level mitigations; evaluation error rates are not production prevalence.",
+    "source_ids": [
+      "official-source-48b8b78f313a9bda"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-48b8b78f313a9bda",
+        "url": "https://deploymentsafety.openai.com/gpt-6-october",
+        "locator": "3.1.2 Safe Completions for Users Under 18",
+        "passage": "GPT‑6 Sol (October) and GPT‑6 Luna (October) show statistically significant regressions on age-restricted content, sexual content, and emotional reliance.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:33.656Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/gpt6-systemcard.json",
+        "archive_sha256": "ee9363acd6aa3fee9dbfa369116b6dfc92d681b481e24483aafc6b513921f275"
+      }
+    ],
+    "qualifiers": [
+      "Relative to respective GPT-5.6 August models; Luna also regresses on gore.",
+      "Card describes classifier-based mitigations and qualification of emotional-reliance evaluation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "Not a classroom safety or learning study."
+    ]
+  },
+  {
+    "claim_id": "intelligent-ui-eval-limits",
+    "claim": "Safety evaluations use challenging prompts and do not estimate ordinary classroom or production behavior.",
+    "source_ids": [
+      "official-source-48b8b78f313a9bda"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-48b8b78f313a9bda",
+        "url": "https://deploymentsafety.openai.com/gpt-6-october",
+        "locator": "3.1.2 Safe Completions for Users Under 18",
+        "passage": "their results should not be interpreted as estimates of how frequently these behaviors occur in typical production use.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:33.656Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/gpt6-systemcard.json",
+        "archive_sha256": "ee9363acd6aa3fee9dbfa369116b6dfc92d681b481e24483aafc6b513921f275"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation, not independent experimental validation."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "official-training-disclosure-dates",
+    "claim": "The October 23 disclosure describes a September 20 incident and October 1 resumption, not new October 23 incidents.",
+    "source_ids": [
+      "source-f8c156dba7886826"
+    ],
+    "support": [
+      {
+        "source_id": "source-f8c156dba7886826",
+        "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+        "locator": "Opening paragraphs; Resuming frontier training",
+        "passage": "we resumed reinforcement learning (RL) training and internal inference of our frontier models on October 1.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-23",
+        "event_at": "2026-10-01",
+        "retrieved_at": "2026-10-24T17:54:08.826Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/openai-training-security.json",
+        "archive_sha256": "486d364b946eb8fda5137808e67603b1eba7a22571c70e293dc468a96d297a6f"
+      }
+    ],
+    "qualifiers": [
+      "Vendor account of historical research environments, distinct from released customer products."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "Independent incident verification not performed."
+    ]
+  },
+  {
+    "claim_id": "official-skills-donation",
+    "claim": "Anthropic announced transfer of Agent Skills governance assets to AAIF, without requiring membership to use or contribute.",
+    "source_ids": [
+      "official-source-bdc7b775ab8d2106"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-bdc7b775ab8d2106",
+        "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+        "locator": "Donating Agent Skills to AAIF",
+        "passage": "You can continue to use the standard or contribute to it without joining the AAIF.",
+        "passage_type": "quotation",
+        "published_at": "2026-10-22",
+        "event_at": "2026-10-22",
+        "retrieved_at": "2026-10-24T17:54:08.382Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/official/anthropic-skills.json",
+        "archive_sha256": "a099fbf21f2c7e1011f43f5538efb45c7085fdfb86e573da59f1013ab4f920f7"
+      }
+    ],
+    "qualifiers": [
+      "Governance announcement; platform and installation counts are publisher claims."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic",
+    "status": "supported",
+    "limitations": [
+      "No API or product test performed."
+    ]
+  },
+  {
+    "claim_id": "timestral-release-20261024",
+    "claim": "Mistral announced Timestral on October 15, 2026; this assessment is a baseline after prior discovery.",
+    "source_ids": [
+      "mistral-timestral"
+    ],
+    "support": [
+      {
+        "source_id": "mistral-timestral",
+        "url": "https://mistral.ai/news/timestral/",
+        "locator": "Header date; introduction",
+        "passage": "October 15, 2026",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-15",
+        "event_at": "2026-10-15",
+        "retrieved_at": "2026-10-24T17:53:31.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-announcement.json",
+        "archive_sha256": "0a4e0aa7faac9d0afefcc0505966a1422b62a8f8b1eb549b6b70b8642c82617a"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-sizes-output-20261024",
+    "claim": "Timestral offers 5M, 28M, 123M and 209M models with multivariate forecasting, covariates and 21 quantiles.",
+    "source_ids": [
+      "repos-timestral-209m"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-209m",
+        "url": "https://huggingface.co/mistralai/Timestral-209M",
+        "locator": "Introduction; Model Details",
+        "passage": "available in 5M, 28M, 123M, and 209M parameter versions.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:14.560Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-209m.json",
+        "archive_sha256": "31626fadfaf9da99e1b8fd9088d1d2e56cf4893ae503126b9ab3c1b4faeae12f"
+      }
+    ],
+    "qualifiers": [
+      "Model documentation; not runtime validation."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-context-20261024",
+    "claim": "The documented context maximum is 32768 steps, with 1024-step forward-pass output and blockwise longer forecasts feeding back medians.",
+    "source_ids": [
+      "repos-timestral-209m"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-209m",
+        "url": "https://huggingface.co/mistralai/Timestral-209M",
+        "locator": "Model Details: Context length; Forecast horizon",
+        "passage": "Longer horizons are forecast block by block, with each block's median forecast appended to the context.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:14.560Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-209m.json",
+        "archive_sha256": "31626fadfaf9da99e1b8fd9088d1d2e56cf4893ae503126b9ab3c1b4faeae12f"
+      }
+    ],
+    "qualifiers": [
+      "Long-horizon behavior is documented, not experimentally measured."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-local-20261024",
+    "claim": "Standalone inference supports CPU/GPU, Python >=3.10, torch >=2.4; the loader supports a pinned revision and offline cached files.",
+    "source_ids": [
+      "repos-timestral-repository"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-repository",
+        "url": "https://github.com/mistralai/timestral/",
+        "locator": "Install; Loading options",
+        "passage": "local_files_only=True (or HF_HUB_OFFLINE=1) reads from the cache without network access.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:31.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-repository.json",
+        "archive_sha256": "2405bb5e181e480bff5fa89ecd4cc281d8dc0e6cfd54e149c1b031e9527518ae"
+      }
+    ],
+    "qualifiers": [
+      "Offline operation requires initial dependencies and model files.",
+      "Weight file sizes are not runtime RAM estimates."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-small-20261024",
+    "claim": "The 5M checkpoint has an eight-layer architecture and CPU/GPU inference documentation; it is a plausible small pilot, not a tested latency guarantee.",
+    "source_ids": [
+      "repos-source-e5d2bc16de92d6a0"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-e5d2bc16de92d6a0",
+        "url": "https://huggingface.co/mistralai/Timestral-5M",
+        "locator": "Model Details",
+        "passage": "Inference: PyTorch on CPU or GPU.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:39.161Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-5m.json",
+        "archive_sha256": "4e42e5710527b18d5c941b8e5e7eed01deae34839044396b2070b21c30715e32"
+      }
+    ],
+    "qualifiers": [
+      "5M is checkpoint naming; Hub displays 5.21M parameters."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-license-code-20261024",
+    "claim": "Inference code is Apache2.0 and weights have a different Modified MIT license.",
+    "source_ids": [
+      "repos-timestral-repository"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-repository",
+        "url": "https://github.com/mistralai/timestral/",
+        "locator": "License",
+        "passage": "The Timestral model weights are not covered by the Apache License 2.0.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:31.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-repository.json",
+        "archive_sha256": "2405bb5e181e480bff5fa89ecd4cc281d8dc0e6cfd54e149c1b031e9527518ae"
+      }
+    ],
+    "qualifiers": [
+      "Actual weight license was directly inspected."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-license-threshold-20261024",
+    "claim": "The inspected weight license denies its rights when the company or employer’s global consolidated monthly revenue exceeded $20million in the preceding month; derivatives are covered and commercial licensing may be requested.",
+    "source_ids": [
+      "repos-timestral-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-license",
+        "url": "https://huggingface.co/mistralai/Timestral-209M/blob/main/LICENSE",
+        "locator": "Modified MIT License, condition2",
+        "passage": "if the global consolidated monthly revenue of your company (or that of your employer) exceeds $20 million",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:31.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-license.json",
+        "archive_sha256": "ee061adbfc54f01e080ed2aa4d575bc82f360103070201c2fb604d7b200dc111"
+      }
+    ],
+    "qualifiers": [
+      "The condition refers to preceding-month revenue and extends to derivatives, modifications and combined works.",
+      "No commercial-license price verified."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-runtime-vendor-20261024",
+    "claim": "Mistral reports 10ms for5M and140ms for209M for a one-day forecast from three weeks of15-minute history on an eight-thread server CPU.",
+    "source_ids": [
+      "mistral-timestral"
+    ],
+    "support": [
+      {
+        "source_id": "mistral-timestral",
+        "url": "https://mistral.ai/news/timestral/",
+        "locator": "Family of models optimised for every specification",
+        "passage": "takes 10 ms with the 5M model and 140 ms with the 209M model.",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-15",
+        "event_at": "2026-10-15",
+        "retrieved_at": "2026-10-24T17:53:31.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-announcement.json",
+        "archive_sha256": "0a4e0aa7faac9d0afefcc0505966a1422b62a8f8b1eb549b6b70b8642c82617a"
+      }
+    ],
+    "qualifiers": [
+      "Producer benchmark for the stated workload; no independent reproduction or machine-specific result."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "timestral-benchmark-limit-20261024",
+    "claim": "Public benchmark leadership is a vendor claim; the inspected model card still lists its technical report as forthcoming.",
+    "source_ids": [
+      "repos-timestral-209m"
+    ],
+    "support": [
+      {
+        "source_id": "repos-timestral-209m",
+        "url": "https://huggingface.co/mistralai/Timestral-209M",
+        "locator": "Benchmarks; Additional Resources",
+        "passage": "Tech report: coming soon!",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:14.560Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-timestral-209m.json",
+        "archive_sha256": "31626fadfaf9da99e1b8fd9088d1d2e56cf4893ae503126b9ab3c1b4faeae12f"
+      }
+    ],
+    "qualifiers": [
+      "No benchmark re-run, full training-data audit or learning-outcome study performed."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-availability-20261024",
+    "claim": "K3.1Pro andHighspeed are described as available in hosted Kimi products/API; full weights remain a future promise forNovember4,2026.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "Availability",
+        "passage": "Full model weights will be released by Nov 4, 2026.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "Inspected October24,2026.",
+      "Final checkpoint license and self-hosting requirements not established."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-creative-20261024",
+    "claim": "The launch describes scripts forBlender/CAD and3DMake editing/export workflows; these are provider demonstrations and proposed builder use cases, not this project’s runtime results.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "3D Modeling and Design",
+        "passage": "it can write and run scripts for tools like Blender and CAD software",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "No screenshots, exported geometry, render or print tests inspected."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-client-access-20261024",
+    "claim": "Work requires3.1.0+ onWindows orAppleSilicon; enterprise access is administrator-enabled and off by default at launch.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "Availability",
+        "passage": "access is off by default at launch.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "Hosted product subscriptions, regions and actual account access not verified."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-entry-20261024",
+    "claim": "The API guide says a minimum$1 successful top-up unlocks the flagship; tiers and rate limits depend on cumulative top-ups.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Access requirements",
+        "passage": "it is unlocked after a successful top-up (minimum $1).",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "No top-up or API invocation performed."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-pricing-20261024",
+    "claim": "PerMTok Pro lists$2 input/$10 output andHighspeed$4/$20, while both list$0.20 cached input;5m writes are$2/$4 and1h writes$4/$8.",
+    "source_ids": [
+      "repos-kimi-api-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-pricing",
+        "url": "https://platform.kimi.ai/docs/pricing/chat",
+        "locator": "K3Series Models table",
+        "passage": "kimi-k3.1-pro\t$2.00 / MTok\t$10.00 / MTok\t$0.20 / MTok\t$2.00 / MTok\t$4.00 / MTok",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.567Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-pricing-visible.json",
+        "archive_sha256": "29b1a125ae64c75c2b89cf9c47b8d36603cee3d4a278ba67a035477ff7eee494"
+      }
+    ],
+    "qualifiers": [
+      "Table inspected after initial main-text capture omitted dynamically rendered rows.",
+      "Tax excluded; writes billed separately; this is listed pricing, not an observed bill."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-protocol-20261024",
+    "claim": "API documentation supportsChatCompletions,Responses andMessages formats, directHTTP orSDK; examples specifyPython3.9+ orNode18+.",
+    "source_ids": [
+      "repos-kimi-api-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-overview",
+        "url": "https://platform.kimi.ai/docs/get-your-api-key",
+        "locator": "Introduction; Make your first call",
+        "passage": "Python 3.9 or later, or Node.js 18 or later.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:39.161Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-overview.json",
+        "archive_sha256": "da923e8714ec6f4c5165d873527322d8a521c3cd5a499e8e38ffbda9dac73b1c"
+      }
+    ],
+    "qualifiers": [
+      "Format compatibility does not certify every existing client option."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-thinking-20261024",
+    "claim": "The model always thinks; reasoning_effort low/high/max defaults tomax, with fixed sampling settings and complete assistant-message history required for tool calls.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Reasoning effort; Important limits",
+        "passage": "K3.1 Pro always has thinking mode enabled",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "Defaults and protocol constraints were documented only."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-vision-search-20261024",
+    "claim": "The guide requiresbase64 oruploaded-file references for vision and warns against production use of official web search near term.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Important limits",
+        "passage": "Web search is being updated and is not recommended for production workflows in the near term.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "No separate retrieval integration evaluated."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-quality-conflict-20261024",
+    "claim": "The API model guide contains benchmark placeholders and internal hallucination values differing from the launch article; numerical factual-accuracy claims are excluded.",
+    "source_ids": [
+      "repos-kimi-k31-guide",
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Advancing the Frontier; Finance",
+        "passage": "it scores [xx.x%]",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "Guide shows23.35%to6.85%; launch article shows23.4%to8.3%, with differently described evaluation populations.",
+      "No basis established to normalize or choose between these figures."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-speed-vendor-20261024",
+    "claim": "The provider claims2–3x speed forHighspeed; this report does not verify latency or end-to-end task speed.",
+    "source_ids": [
+      "repos-kimi-api-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-overview",
+        "url": "https://platform.kimi.ai/docs/get-your-api-key",
+        "locator": "Choose a model",
+        "passage": "same capabilities at about 2-3× the speed",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:39.161Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-overview.json",
+        "archive_sha256": "da923e8714ec6f4c5165d873527322d8a521c3cd5a499e8e38ffbda9dac73b1c"
+      }
+    ],
+    "qualifiers": [
+      "No comparative task execution, timing or billing measured."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "indra-size-license-20261024",
+    "claim": "Indra’s1M label describes a1.25M Latin recognizer; all default models total7.3M. Its card documentsCPU/ONNX and modifiedOpenRAIL-M restrictions.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Installation; Commercial usage",
+        "passage": "all default models together have 7.3M",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:55:26.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-indra-ocr-card.json",
+        "archive_sha256": "5e15abbe5d3b1b0e6f9f42dfc7d59cd23c59b17a00f0f711e63740d26ace6be6"
+      }
+    ],
+    "qualifiers": [
+      "Initial downloads about76MB; no independent performance or license-fit assessment.",
+      "Card says free research/personal/startup use under$20M funding/revenue and no competition with vendorAPI; actual license needs focused review."
+    ],
+    "contradicts": [],
+    "source_family": "Public repository/model publisher",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "liquid-24b-20261024",
+    "claim": "LFM2.5-24B-A2B documents24B total/2.45B active parameters, text-only reasoning and131072-token context underlfm1.0 terms.",
+    "source_ids": [
+      "repos-source-07a9efc843a0e363"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-07a9efc843a0e363",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+        "locator": "Model Details",
+        "passage": "Active parameters: 2.45B",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:55:26.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-liquid-24b-card.json",
+        "archive_sha256": "72be3123be177e8d69aae33e105e463b4af0507004601c7d76bef6f915859185"
+      }
+    ],
+    "qualifiers": [
+      "Vendor speed/agent-benchmark comparisons not replicated; deployment and license review deferred."
+    ],
+    "contradicts": [],
+    "source_family": "Public repository/model publisher",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "minimax-flash-20261024",
+    "claim": "TheMiniMax-M3.1-Flash card documents a native multimodalMoE and local-deployment resources, underMiniMax community terms.",
+    "source_ids": [
+      "repos-minimax-m31-flash-card"
+    ],
+    "support": [
+      {
+        "source_id": "repos-minimax-m31-flash-card",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "locator": "Model card; License; Local Deployment",
+        "passage": "minimax-community",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:55:26.818Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-minimax-m31-flash-card.json",
+        "archive_sha256": "8a30f66135f3136af0e7d0e76c5a57afe3a55a40e4a07373ad4795a5193b111c"
+      }
+    ],
+    "qualifiers": [
+      "No model download, custom-code execution, serving test or license-term analysis performed."
+    ],
+    "contradicts": [],
+    "source_family": "Public repository/model publisher",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "krea3-20261024-launch",
+    "claim": "Krea3 was announced October15 as a hosted reference-driven image editor with native2K output and claimed preservation of products/characters.",
+    "source_ids": [
+      "creative-source-ff5661d915660e26"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ff5661d915660e26",
+        "url": "https://www.krea.ai/blog/introducing-krea-3",
+        "locator": "Heading, opening paragraphs; Your product stays your product; same character; API",
+        "passage": "The October15 article announces native2K editing, product/character preservation, website availability and partner/API access.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:41.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-launch.json",
+        "archive_sha256": "02d2c797cd5f7bd0861d6291156750fcb55165ce8b4406e1e9b7981ba6a76809"
+      }
+    ],
+    "qualifiers": [
+      "Vendor description, not tested preservation accuracy."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-reference-conflict",
+    "claim": "The launch article says six reference images; current product page says eight. Scope of difference is unresolved.",
+    "source_ids": [
+      "creative-source-ff5661d915660e26",
+      "creative-krea3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ff5661d915660e26",
+        "url": "https://www.krea.ai/blog/introducing-krea-3",
+        "locator": "Opening",
+        "passage": "Launch text permits up to six reference images per edit.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:41.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-launch.json",
+        "archive_sha256": "02d2c797cd5f7bd0861d6291156750fcb55165ce8b4406e1e9b7981ba6a76809"
+      },
+      {
+        "source_id": "creative-krea3",
+        "url": "https://www.krea.ai/krea-3",
+        "locator": "Up to eight references / One image",
+        "passage": "Product text advertises up to eight references.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:01.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-product.json",
+        "archive_sha256": "459f3391a412daebd366bdf65931e161e081a32d55741c1aa140b6464330b6cd"
+      }
+    ],
+    "qualifiers": [
+      "Could reflect revision, variant or access route; no resolution established."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-performance-boundaries",
+    "claim": "Krea reports under8s editing; launch comparisons have service/time scope, while product playback is illustrative and competitor pricing partly unvalidated.",
+    "source_ids": [
+      "creative-source-ff5661d915660e26",
+      "creative-krea3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ff5661d915660e26",
+        "url": "https://www.krea.ai/blog/introducing-krea-3",
+        "locator": "How Krea3 compares; Fast enough to keep going",
+        "passage": "Other-model medians use Krea edit jobs from September 24–October1 with queue included.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:41.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-launch.json",
+        "archive_sha256": "02d2c797cd5f7bd0861d6291156750fcb55165ce8b4406e1e9b7981ba6a76809"
+      },
+      {
+        "source_id": "creative-krea3",
+        "url": "https://www.krea.ai/krea-3",
+        "locator": "Same edits / Less waiting, explanatory footnote",
+        "passage": "Pregenerated outputs; Krea uses illustrative8s playback; one competitor price is a draft awaiting validation.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:01.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-product.json",
+        "archive_sha256": "459f3391a412daebd366bdf65931e161e081a32d55741c1aa140b6464330b6cd"
+      }
+    ],
+    "qualifiers": [
+      "Animated zero fields are not measurements. No ranking or speed/cost superiority independently accepted."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-prompt-workflow",
+    "claim": "Krea recommends naming protected features, describing scene/light/camera, assigning roles to references and using only for narrow edits.",
+    "source_ids": [
+      "creative-source-ff5661d915660e26"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ff5661d915660e26",
+        "url": "https://www.krea.ai/blog/introducing-krea-3",
+        "locator": "Structure your prompts for better results",
+        "passage": "Prompt guidance begins with what stays, then the change; it assigns each input a role.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:41.043Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-launch.json",
+        "archive_sha256": "02d2c797cd5f7bd0861d6291156750fcb55165ce8b4406e1e9b7981ba6a76809"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-access",
+    "claim": "Plan page lists Krea3 access, Ultra for Max or above, and commercial licenses for named paid tiers.",
+    "source_ids": [
+      "creative-source-f086ed15b6432281"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-f086ed15b6432281",
+        "url": "https://www.krea.ai/pricing",
+        "locator": "Plan cards; expanded Do plans include a commercial license?",
+        "passage": "Ultra requires Max or above. Commercial-license answer names Basic, Pro, Max, Business and Enterprise, not Free.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:56:23.096Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-pricing-license-expanded.json",
+        "archive_sha256": "af8a6e87c59fdf9970bbc45f11b5a4429f949e0c19564323e1b62fbd1630b7da"
+      }
+    ],
+    "qualifiers": [
+      "No exact edit allotment or subscription price inferred from compute units."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-terms",
+    "claim": "Krea terms make content rights plan-dependent and discuss submission rights, tier-dependent visibility and broad service licenses.",
+    "source_ids": [
+      "creative-source-2d317096a6f5611d"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-2d317096a6f5611d",
+        "url": "https://www.krea.ai/terms",
+        "locator": "Your Rights in the Services; User Submissions; Licenses for User Submissions",
+        "passage": "Use rights can depend on plans; users must hold submission rights; visibility depends on tier/settings and licenses to Krea are broad.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2024-05-20",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:04.746Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-terms.json",
+        "archive_sha256": "1ad5ad9c29ceb707297696ce0c61478936c900a01234c4e7d53be05be8cccf4e"
+      }
+    ],
+    "qualifiers": [
+      "Page states last updated May20,2024; this is a textual description, not legal clearance of an output."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "krea3-20261024-api-boundary",
+    "claim": "The inspected API overview describes hosted access but its sample uses Krea2 rather than an exact Krea3 endpoint.",
+    "source_ids": [
+      "creative-source-544f919815477f5d"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-544f919815477f5d",
+        "url": "https://www.krea.ai/features/api",
+        "locator": "AI Image & Video Generation API; generate.js",
+        "passage": "Overview describes REST/SDK access and job results; visible code calls image/krea/krea-2/medium.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:52.244Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/krea3-api.json",
+        "archive_sha256": "9c02be9b7321258dd522b2b71bfcef87849dc6f5e4cf4e458d4a8f3be3a07882"
+      }
+    ],
+    "qualifiers": [
+      "Exact Krea3 schema, quotas and operational behavior not verified."
+    ],
+    "contradicts": [],
+    "source_family": "Krea",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-architecture",
+    "claim": "Kitten2 is documented as a1.7B speech language model producing S3 codec tokens decoded into24kHz audio, separate from older ONNX family.",
+    "source_ids": [
+      "kitten-tts2-model",
+      "kitten-tts2-repo"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-model",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2",
+        "locator": "KittenTTS2; Weight variants; Decoders",
+        "passage": "Card describes speech tokens,24kHz audio, ternary body, higher-precision embedding and optional lossy embedding/decoder choices.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.975Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-card.json",
+        "archive_sha256": "16902fef1639b3da48a052b5bd9f7e5f4ac1a26baba906cf01349a8fa68fdf69"
+      },
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Introduction; Available Models",
+        "passage": "README distinguishes the1.7B flagship from15M–80M ONNX models.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      }
+    ],
+    "qualifiers": [
+      "Storage packing is not total RAM or arithmetic speed. Differing file-size descriptions are not combined into a universal footprint."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-python",
+    "claim": "Inspected package0.9.6 requires Python>=3.10, resolving the README3.9/card3.10 conflict for this package version.",
+    "source_ids": [
+      "creative-source-c496f37f3a6e5795",
+      "kitten-tts2-repo",
+      "kitten-tts2-model"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-c496f37f3a6e5795",
+        "url": "https://github.com/KittenML/KittenTTS/blob/main/pyproject.toml",
+        "locator": "[project] requires-python; dependencies",
+        "passage": "Package0.9.6 declares Python>=3.10,torch>=2.6 andtorchaudio>=2.6.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:50.712Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-package.json",
+        "archive_sha256": "08acae029ddde87baad823db241e450c26a9c254e238c1c38f209967116c4d7b"
+      },
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Quick Start; System Requirements",
+        "passage": "README says Python3.9 or later.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      },
+      {
+        "source_id": "kitten-tts2-model",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2",
+        "locator": "Requirements",
+        "passage": "Card requires Python3.10 or later and PyTorch.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.975Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-card.json",
+        "archive_sha256": "16902fef1639b3da48a052b5bd9f7e5f4ac1a26baba906cf01349a8fa68fdf69"
+      }
+    ],
+    "qualifiers": [
+      "No installation performed. Package metadata controls this report’s prerequisite."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-runtime",
+    "claim": "README documents CPU, Apple-silicon MLX, Linux/NVIDIA vLLM routes and rough memory estimates.",
+    "source_ids": [
+      "kitten-tts2-repo"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Quick Start; Running on CPU; Running on a Mac; Running with vLLM",
+        "passage": "Quick start estimates CPU RAM around6GB or CUDA free memory around8GB; optional MLX/vLLM paths have distinct prerequisites.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      }
+    ],
+    "qualifiers": [
+      "Publisher estimates, not hardware test results. C++ implementation is beta."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-voice-conflict",
+    "claim": "README says47 voices; current model card says115 and has different named-language coverage. Runtime enumeration is appropriate.",
+    "source_ids": [
+      "kitten-tts2-repo",
+      "kitten-tts2-model"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Features; Basic usage",
+        "passage": "README says47 built-in voices and provides m.available_voices.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      },
+      {
+        "source_id": "kitten-tts2-model",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2",
+        "locator": "Voices",
+        "passage": "Card says m.available_voices lists115 and names16 languages with voices.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.975Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-card.json",
+        "archive_sha256": "16902fef1639b3da48a052b5bd9f7e5f4ac1a26baba906cf01349a8fa68fdf69"
+      }
+    ],
+    "qualifiers": [
+      "No fixed total or equal quality across languages promised."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-expression",
+    "claim": "Emotion control is beta, recognized markup is limited, and English-tuned normalization should be disabled for non-English text.",
+    "source_ids": [
+      "kitten-tts2-model"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-model",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2",
+        "locator": "Voices; Expression controls",
+        "passage": "Card warns to pass normalize=False for non-English, describes ten emotion/ten event tags, and says unsupported tags may be spoken literally.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.975Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-card.json",
+        "archive_sha256": "16902fef1639b3da48a052b5bd9f7e5f4ac1a26baba906cf01349a8fa68fdf69"
+      }
+    ],
+    "qualifiers": [
+      "Delivery varies by voice and sentence; not guaranteed."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-streaming",
+    "claim": "Streaming yields completed chunks, and documented A100 example demonstrates substantial first-audio wait despite faster-than-real-time total throughput.",
+    "source_ids": [
+      "kitten-tts2-repo"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Long text and streaming",
+        "passage": "A936-character example yields21s audio after17s and completes54s audio in42s onA100. Short inputs yield one chunk; streamed joins lack ordinary-generation postprocessing.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      }
+    ],
+    "qualifiers": [
+      "Single publisher example; not laptop prediction or comparison between all backends."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-cloning",
+    "claim": "Voice cloning uses5–30 seconds of one speaker, with optional transcript avoiding the documented Whisper pass.",
+    "source_ids": [
+      "kitten-tts2-repo"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "Voice cloning",
+        "passage": "A reference recording replaces the built-in voice; supplied reference_text skips transcription.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      }
+    ],
+    "qualifiers": [
+      "No cloning or identity test performed; require authorization for reference recordings."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "kitten2-20261024-license",
+    "claim": "Apache2.0 code and conditional model rights are distinct; commercial registration, thresholds, attribution and training-use limits affect adoption.",
+    "source_ids": [
+      "kitten-tts2-repo",
+      "kitten-tts2-license"
+    ],
+    "support": [
+      {
+        "source_id": "kitten-tts2-repo",
+        "url": "https://github.com/KittenML/KittenTTS",
+        "locator": "License",
+        "passage": "README explicitly says Apache covers code and models carry their own terms.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:36.951Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-repo.json",
+        "archive_sha256": "01615a92ace0a28aad123f6d233b30df4cae1b4c0f21fca639b07d6028d4937f"
+      },
+      {
+        "source_id": "kitten-tts2-license",
+        "url": "https://huggingface.co/KittenML/kitten-tts-2/blob/main/LICENSE.md",
+        "locator": "Commercial License; General Terms IV(a),IV(b); Definitions",
+        "passage": "Weight agreement requires commercial registration, specifies revenue/funding termination thresholds and attribution, restricts external model training/distillation and incorporates an AUP available by contacting publisher.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2024-07-05",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:17.683Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/kitten-tts2-license.json",
+        "archive_sha256": "ab5b20585177f05fb1809ab9eb81c5144af28248a7136f8861738a0972c76fb1"
+      }
+    ],
+    "qualifiers": [
+      "Operative threshold wording differs from introductory less-than wording; equality is not resolved. No AUP acquired or terms accepted."
+    ],
+    "contradicts": [],
+    "source_family": "KittenML",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "creative-20261024-krea-multiplayer",
+    "claim": "Krea’s October 22 post documents live co-editing, shared runs, personal undo and scoped permissions.",
+    "source_ids": [
+      "creative-source-6f080dc236c7ddd9"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-6f080dc236c7ddd9",
+        "url": "https://www.krea.ai/blog/multiplayer-nodes",
+        "locator": "What Multiplayer Nodes is; How sharing works; What happens when two people edit at once",
+        "passage": "Editors share canvas/runs; viewers see graph/input structure but not generated outputs/history; same-field conflicts use last edit.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:52.780Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/creative-multiplayer-nodes.json",
+        "archive_sha256": "ff564d3a10ac4bf663c8a1b17eab47f9e627472292a499c8f16b36f52e08c603"
+      }
+    ],
+    "qualifiers": [
+      "Documented only; no shared workspace or billing test."
+    ],
+    "contradicts": [],
+    "source_family": "creative publisher",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "creative-20261024-kling-luma",
+    "claim": "Luma’s October 23 article announces Kling4 integration and text/image-to-video options in four aspect ratios.",
+    "source_ids": [
+      "creative-source-4611b014eedfb222"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-4611b014eedfb222",
+        "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
+        "locator": "Heading; What Kling4.0 brings; How it works",
+        "passage": "Luma states Kling4 is available to every customer, with 16:9,9:16,1:1,21:9 text/image-to-video.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:54.210Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/creative/creative-kling4-luma.json",
+        "archive_sha256": "0201c2a17bd27d4cb0d710c275cbf49b90320a5dea954e4f7a4232e1389726d6"
+      }
+    ],
+    "qualifiers": [
+      "Provider integration statement; exact cost/limits/rights and Kuaishou release verification remain outstanding."
+    ],
+    "contradicts": [],
+    "source_family": "creative publisher",
+    "status": "supported",
+    "limitations": [
+      "Documentary inspection only; no runtime or independent performance verification."
+    ]
+  },
+  {
+    "claim_id": "tutormoments-preview-scope",
+    "claim": "Ai2 announced TutorMoments Preview on August 7, 2026, using 462 de-identified grade 2–7 math tutoring transcripts and annotations from 27 US teachers.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "Date; How TutorMoments works",
+        "passage": "Preview uses 462 transcripts from a US high-dosage program, with more than 1,500 key moments and 27 US-based teacher annotators.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-07",
+        "event_at": "2026-08-07",
+        "retrieved_at": "2026-10-24T17:53:43.931Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-blog.json",
+        "archive_sha256": "bba006dd6348b6a18e59e12bfa65ba59b1f55ffad2e3f615dba522d02f1fdf4a",
+        "text_sha256": "b949b5e1f2ae6a39645084a7384c719c952736d64e9d53a6f14a7d0ee932c9c2"
+      }
+    ],
+    "qualifiers": [
+      "A baseline discovery; October retrieval is not a launch."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": [
+      "Single program, mostly elementary/middle-school mathematics."
+    ]
+  },
+  {
+    "claim_id": "tutormoments-replay-design",
+    "claim": "Teacher-marked moments seed five-turn simulated tutor/student continuations; scores measure scaffold/rigor/over-scaffold behavior.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "How TutorMoments works",
+        "passage": "A transcript is stopped at a teacher-selected decision point, continued with a model tutor and model student, then classified against teacher-informed labels.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-07",
+        "event_at": "2026-08-07",
+        "retrieved_at": "2026-10-24T17:53:43.931Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-blog.json",
+        "archive_sha256": "bba006dd6348b6a18e59e12bfa65ba59b1f55ffad2e3f615dba522d02f1fdf4a",
+        "text_sha256": "b949b5e1f2ae6a39645084a7384c719c952736d64e9d53a6f14a7d0ee932c9c2"
+      }
+    ],
+    "qualifiers": [
+      "LM scoring and synthetic oracle student; not real-student learning."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-frozen-data",
+    "claim": "The runnable release contains 520 frozen moments balanced 260/260 and 7,280 reference replays across seven models and two prompt conditions.",
+    "source_ids": [
+      "research-source-fb020bca549affcf"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-fb020bca549affcf",
+        "url": "https://huggingface.co/datasets/allenai/tutormoments-preview",
+        "locator": "Subsets; moments; benchmark_520",
+        "passage": "The 520 runnable records include fixed context, dimension, human continuation and recovered student persona; 7,280 rows equal 520 × 7 × 2.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.949Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-data.json",
+        "archive_sha256": "af0ed7961beb867881b6c6715ea8ac8640cb1997a4ee79cbc666eaaa7abe951b",
+        "text_sha256": "dfff829eea09838a9aaca09f162051897a8d2fdf460b81c9f2099e3539debead"
+      }
+    ],
+    "qualifiers": [
+      "Replay traits held fixed; regenerated traits change the test population."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-prompt-results",
+    "claim": "The August blog reports appropriate-rigor rates of 0.208→0.831 for Opus 4.8 and 0.046→0.531 for GPT 5.5 under plain versus evaluation-aware prompts.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "Preliminary results; Appropriate rigor chart",
+        "passage": "Published rigor scores improve under explicit pedagogical guidance; these are author results for specific historical model/prompt conditions.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-07",
+        "event_at": "2026-08-07",
+        "retrieved_at": "2026-10-24T17:53:43.931Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-blog.json",
+        "archive_sha256": "bba006dd6348b6a18e59e12bfa65ba59b1f55ffad2e3f615dba522d02f1fdf4a",
+        "text_sha256": "b949b5e1f2ae6a39645084a7384c719c952736d64e9d53a6f14a7d0ee932c9c2"
+      }
+    ],
+    "qualifiers": [
+      "Not current-model rankings, educational effect sizes, or independent replication."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-human-reference",
+    "claim": "The blog expressly rejects interpreting its reference-human scores as proof that AI outperforms teachers.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "A few things to keep in mind; Human tutors",
+        "passage": "Annotators concentrated on missed opportunities; human transcript scores are a naturalistic reference, not an ideal ceiling.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-07",
+        "event_at": "2026-08-07",
+        "retrieved_at": "2026-10-24T17:53:43.931Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-blog.json",
+        "archive_sha256": "bba006dd6348b6a18e59e12bfa65ba59b1f55ffad2e3f615dba522d02f1fdf4a",
+        "text_sha256": "b949b5e1f2ae6a39645084a7384c719c952736d64e9d53a6f14a7d0ee932c9c2"
+      }
+    ],
+    "qualifiers": [
+      "Selection bias and synthetic replays preclude a teacher-replacement conclusion."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-limitations",
+    "claim": "Scoring rigor is less reliable than scoring scaffolding; real learning outcomes and broad generalization remain unestablished.",
+    "source_ids": [
+      "source-18b72be8afdc4186"
+    ],
+    "support": [
+      {
+        "source_id": "source-18b72be8afdc4186",
+        "url": "https://allenai.org/blog/tutormoments",
+        "locator": "Rigor is noisier; Limitations and next steps",
+        "passage": "There are fewer underlying rigor annotations and noisier rigor detection; the authors call for real-student studies and broader data.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-07",
+        "event_at": "2026-08-07",
+        "retrieved_at": "2026-10-24T17:53:43.931Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-blog.json",
+        "archive_sha256": "bba006dd6348b6a18e59e12bfa65ba59b1f55ffad2e3f615dba522d02f1fdf4a",
+        "text_sha256": "b949b5e1f2ae6a39645084a7384c719c952736d64e9d53a6f14a7d0ee932c9c2"
+      }
+    ],
+    "qualifiers": [
+      "Teacher judgment is contextual and annotation pool is limited."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-reproduction-gap",
+    "claim": "Current README discloses that original paper human action classifications no longer exist, so its frozen KL values cannot be reproduced from the current release.",
+    "source_ids": [
+      "research-tutormoments-repository"
+    ],
+    "support": [
+      {
+        "source_id": "research-tutormoments-repository",
+        "url": "https://github.com/allenai/tutormoments",
+        "locator": "Action taxonomy; The paper’s numbers are frozen",
+        "passage": "Original human KL 0.179/0.177 differs from current release reference 0.524/0.591; new runs should use the same-moment current reference.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.920Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-code.json",
+        "archive_sha256": "991e7d0635b6ecea8c8728de81f85f07329ce70060f6ad8b909f257637ea7ca8",
+        "text_sha256": "65c6dce23293d6a273caac86a4c0518ae9c59d76de6c2bb9b040b0e6c2b067c3"
+      }
+    ],
+    "qualifiers": [
+      "Specific to action-distribution/KL analysis; does not establish all benchmark data are unavailable."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-data-reclassification",
+    "claim": "The dataset card says October-regenerated action labels are not the paper classification run.",
+    "source_ids": [
+      "research-source-fb020bca549affcf"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-fb020bca549affcf",
+        "url": "https://huggingface.co/datasets/allenai/tutormoments-preview",
+        "locator": "action_taxonomy",
+        "passage": "October 2026 regenerated labels cover a different scope; paper figures used 100 moments per AI cell.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.949Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-data.json",
+        "archive_sha256": "af0ed7961beb867881b6c6715ea8ac8640cb1997a4ee79cbc666eaaa7abe951b",
+        "text_sha256": "dfff829eea09838a9aaca09f162051897a8d2fdf460b81c9f2099e3539debead"
+      }
+    ],
+    "qualifiers": [
+      "Keep original paper and regenerated analysis separate."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-install-access",
+    "claim": "The repository requires Python 3.11+, a checkout install and provider credentials for live replay. It ships prompts, local-data support and version/hash provenance.",
+    "source_ids": [
+      "research-tutormoments-repository"
+    ],
+    "support": [
+      {
+        "source_id": "research-tutormoments-repository",
+        "url": "https://github.com/allenai/tutormoments",
+        "locator": "Installation; Running; Run output layout",
+        "passage": "CLI runs can select tutor/mode, pin dataset revision, sample moments and preserve resolved settings plus prompt and content hashes.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.920Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-code.json",
+        "archive_sha256": "991e7d0635b6ecea8c8728de81f85f07329ce70060f6ad8b909f257637ea7ca8",
+        "text_sha256": "65c6dce23293d6a273caac86a4c0518ae9c59d76de6c2bb9b040b0e6c2b067c3"
+      }
+    ],
+    "qualifiers": [
+      "Inspected documentation only; commands not executed in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-licenses",
+    "claim": "Code is Apache 2.0 and dataset is CC BY 4.0, with responsible-use context, deidentification caveats and third-party model output terms.",
+    "source_ids": [
+      "research-source-fb020bca549affcf"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-fb020bca549affcf",
+        "url": "https://huggingface.co/datasets/allenai/tutormoments-preview",
+        "locator": "License; Deidentification; Source Attribution",
+        "passage": "Dataset card specifies attribution licensing and warns deidentification can be imperfect; replay outputs retain provider terms.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.949Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-data.json",
+        "archive_sha256": "af0ed7961beb867881b6c6715ea8ac8640cb1997a4ee79cbc666eaaa7abe951b",
+        "text_sha256": "dfff829eea09838a9aaca09f162051897a8d2fdf460b81c9f2099e3539debead"
+      }
+    ],
+    "qualifiers": [
+      "Repository license badge separately confirms Apache 2.0 code; this is not legal advice."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-code-license",
+    "claim": "TutorMoments repository identifies its code license as Apache 2.0.",
+    "source_ids": [
+      "research-tutormoments-repository"
+    ],
+    "support": [
+      {
+        "source_id": "research-tutormoments-repository",
+        "url": "https://github.com/allenai/tutormoments",
+        "locator": "Repository files navigation; License",
+        "passage": "README repository interface identifies Apache-2.0 licensing.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.920Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-code.json",
+        "archive_sha256": "991e7d0635b6ecea8c8728de81f85f07329ce70060f6ad8b909f257637ea7ca8",
+        "text_sha256": "65c6dce23293d6a273caac86a4c0518ae9c59d76de6c2bb9b040b0e6c2b067c3"
+      }
+    ],
+    "qualifiers": [
+      "Dataset licensing differs."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-cost-method",
+    "claim": "Cost documentation separates recorded token usage priced at stated rate dates from benchmark-wide roles and uncached website response costs.",
+    "source_ids": [
+      "research-source-4f4984ce5522886d"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-4f4984ce5522886d",
+        "url": "https://github.com/allenai/tutormoments/blob/main/docs/cost.md",
+        "locator": "How usage is recorded; The pricing table; Where figures appear",
+        "passage": "Measured usage vectors are priced with recorded rates; unpriced entries yield null rather than zero, and website values can be repriced without new model measurement.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:40.744Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-cost.json",
+        "archive_sha256": "b6b46daf599f8c3d6fa304bf8d472ac62658ee5c7e92ee57c40ae0a041b7b1be",
+        "text_sha256": "931dde3b3b7fc8527bfe553dee6690fe271e62f1b33f1d4bb8c00c65f7e9f175"
+      }
+    ],
+    "qualifiers": [
+      "No independent current provider-price comparison or total run bill verified."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-latency-method",
+    "claim": "Timing documentation distinguishes serial probes, concurrent runs, first/later turns and visible-token latency, and discloses differing site data paths.",
+    "source_ids": [
+      "research-source-dd547c0b892e68bd"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-dd547c0b892e68bd",
+        "url": "https://github.com/allenai/tutormoments/blob/main/docs/latency.md",
+        "locator": "Where the figures surface; The roster, measured",
+        "passage": "Original seven-model site timing uses serial probes, later models use full-run timing with source/concurrency markers; CLI report behavior differs.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:40.768Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-latency.json",
+        "archive_sha256": "af31f5374ca4f87ce270b6fa8d9d5bea39dfb54ee7b40115730cde9765b416a6",
+        "text_sha256": "94463500978def36d38ccf769f5c64948b1c878f2c6109df4e78d2eca17a2fdf"
+      }
+    ],
+    "qualifiers": [
+      "No latency measurements made here; avoid interpreting numbers as universal current service speed."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "tutormoments-resume",
+    "claim": "The documented runtime skips completed transcript/score pairs and records partial failures, while zero-completion runs fail.",
+    "source_ids": [
+      "research-tutormoments-repository"
+    ],
+    "support": [
+      {
+        "source_id": "research-tutormoments-repository",
+        "url": "https://github.com/allenai/tutormoments",
+        "locator": "Running",
+        "passage": "Completed moments can resume; partial failures enter summaries and empty runs do not become leaderboard-ready results.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:15.920Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/research/archives/tutormoments-code.json",
+        "archive_sha256": "991e7d0635b6ecea8c8728de81f85f07329ce70060f6ad8b909f257637ea7ca8",
+        "text_sha256": "65c6dce23293d6a273caac86a4c0518ae9c59d76de6c2bb9b040b0e6c2b067c3"
+      }
+    ],
+    "qualifiers": [
+      "Documented behavior, not tested by this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 TutorMoments project",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "social-observation-e30238867ca720d1",
+    "claim": "The saved OpenAI post says frontier training moved from live internet to a cached offline world.",
+    "source_ids": [
+      "source-f8c156dba7886826",
+      "seed-openai-on-x",
+      "social-source-18bf00a38432d100"
+    ],
+    "support": [
+      {
+        "source_id": "seed-openai-on-x",
+        "url": "https://x.com/OpenAI",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "We’ve removed live internet access for all frontier models during training",
+        "passage_type": "short_quote",
+        "published_at": "2026-10-23T19:46:46.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:17.290Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-8e8cf548756421e0",
+    "claim": "OpenAI claims its red-teaming found unauthenticated remote code execution in Brotli.",
+    "source_ids": [
+      "social-source-411b856dad9829a2",
+      "seed-openai-on-x",
+      "social-source-cbb045dba06decd7"
+    ],
+    "support": [
+      {
+        "source_id": "seed-openai-on-x",
+        "url": "https://x.com/OpenAI",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "OpenAI claims its red-teaming found unauthenticated remote code execution in Brotli.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-23T22:55:45.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:17.290Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-9b557b88e5e2e5a6",
+    "claim": "Anthropic announces an analysis of an earlier AISI cybertesting incident involving unauthorized model actions.",
+    "source_ids": [
+      "social-source-e16222d83dd92652",
+      "seed-anthropic-on-x",
+      "social-source-1b0475a3589aa0cb",
+      "social-source-04a60485e6d5a843"
+    ],
+    "support": [
+      {
+        "source_id": "seed-anthropic-on-x",
+        "url": "https://x.com/AnthropicAI",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Anthropic announces an analysis of an earlier AISI cybertesting incident involving unauthorized model actions.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-23T13:40:38.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:35.834Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-f06a1e995347545a",
+    "claim": "Anthropic promotes a formal-verification workflow at larger software scale; the linked research page appears in the saved secondary timeline.",
+    "source_ids": [
+      "social-source-f6a301346a05e615",
+      "seed-anthropic-on-x",
+      "social-source-7f3df54b09a01d61"
+    ],
+    "support": [
+      {
+        "source_id": "seed-anthropic-on-x",
+        "url": "https://x.com/AnthropicAI",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Anthropic promotes a formal-verification workflow at larger software scale; the linked research page appears in the saved secondary timeline.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-22T22:01:06.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:35.834Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-3c6132c95488ef69",
+    "claim": "Hugging Face quotes alphaXiv describing experiment logging and curve reading through a new Trackio integration in OpenResearch.",
+    "source_ids": [
+      "social-source-22e575a0c5d60e6f",
+      "seed-hugging-face-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hugging-face-on-x",
+        "url": "https://x.com/huggingface",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Hugging Face quotes alphaXiv describing experiment logging and curve reading through a new Trackio integration in OpenResearch.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-23T16:55:18.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:35.835Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-575ac4f5fac09875",
+    "claim": "The repeated Hugging Face quote points to Farsight guidance on infrastructure constraints and governance for financial-service model deployment.",
+    "source_ids": [
+      "social-source-d39f0ced0c975a4b",
+      "seed-hugging-face-on-x"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hugging-face-on-x",
+        "url": "https://x.com/huggingface",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "The repeated Hugging Face quote points to Farsight guidance on infrastructure constraints and governance for financial-service model deployment.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-22T15:20:43.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:51:35.835Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hugging Face on X",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-d887bced18a612df",
+    "claim": "LightSeek claims day-zero TokenSpeed support for MiniMax M3.1 Flash with DSpark decoding and Blackwell mixed precision.",
+    "source_ids": [
+      "social-source-556c379035a7f879",
+      "social-source-979d1a59c7c64343",
+      "repos-minimax-m31-flash-card",
+      "social-source-f48ba67ee5d25797"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-979d1a59c7c64343",
+        "url": "https://x.com/lightseekorg",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "LightSeek claims day-zero TokenSpeed support for MiniMax M3.1 Flash with DSpark decoding and Blackwell mixed precision.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-23T01:02:08.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:04.128Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Observed resource: https://x.com/lightseekorg",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-6beca56c60f48940",
+    "claim": "The Hacker News front page and saved secondary trackers link to Block’s Dessa, described as speech-only full-duplex conversation research.",
+    "source_ids": [
+      "social-source-b5cb20bfbe29ca46",
+      "seed-hacker-news",
+      "research-source-60b56cc3037dbda3"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hacker-news",
+        "url": "https://news.ycombinator.com/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "The Hacker News front page and saved secondary trackers link to Block’s Dessa, described as speech-only full-duplex conversation research.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hacker News",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-d393471bf1ae1ed2",
+    "claim": "A MachineLearning project post links Duetto and describes steering a pretrained symbolic music model using live key, chord and tempo signals.",
+    "source_ids": [
+      "social-source-6290922c900109aa",
+      "seed-reddit-machinelearning",
+      "social-source-3411b0a777713e20"
+    ],
+    "support": [
+      {
+        "source_id": "seed-reddit-machinelearning",
+        "url": "https://www.reddit.com/r/MachineLearning/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Video + code: https://github.com/RiccardoCataldi/duetto",
+        "passage_type": "short_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Reddit MachineLearning",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-840cc17b78b1a9ff",
+    "claim": "Hacker News and current tracker listings point to the Kimi K3.1 Pro announcement; one tracker separately says weights are due by November 4.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement",
+      "seed-hacker-news",
+      "social-source-2ec1d3fbd41def23"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hacker-news",
+        "url": "https://news.ycombinator.com/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Hacker News and current tracker listings point to the Kimi K3.1 Pro announcement; one tracker separately says weights are due by November 4.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hacker News",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-e49ce6fa1f72e062",
+    "claim": "Adaptyv’s October 20 post describes the scorpion-toxin binder laboratory campaign.",
+    "source_ids": [
+      "social-source-a8ede03e49b15d72",
+      "social-source-9fc464c65bf31af7"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-9fc464c65bf31af7",
+        "url": "https://x.com/adaptyvbio",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Adaptyv’s October 20 post describes the scorpion-toxin binder laboratory campaign.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-20T19:08:11.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:04.126Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Observed resource: https://x.com/adaptyvbio",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-768ad92a919f0b56",
+    "claim": "Adaptyv announces a protein-design challenge concerning pH-sensitive TfR1 binding.",
+    "source_ids": [
+      "social-source-c1ca3d5b95432217",
+      "social-source-9fc464c65bf31af7"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-9fc464c65bf31af7",
+        "url": "https://x.com/adaptyvbio",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Adaptyv announces a protein-design challenge concerning pH-sensitive TfR1 binding.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-20T01:21:13.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:04.126Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Observed resource: https://x.com/adaptyvbio",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-62e821898b8da2b1",
+    "claim": "Twist links an article about synthesis and chimera formation in an AI protein screen.",
+    "source_ids": [
+      "social-source-1551fe7245b93788",
+      "social-source-492fd9ed567ce088"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-492fd9ed567ce088",
+        "url": "https://x.com/TwistBioscience",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Twist links an article about synthesis and chimera formation in an AI protein screen.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-22T17:33:02.000Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:04.128Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Observed resource: https://x.com/TwistBioscience",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-75b2d00f743ec246",
+    "claim": "A LocalLLaMA creator post presents capy-flash v0.7.4 and states a focus on two Qwen3.8 models.",
+    "source_ids": [
+      "social-source-a979e7ccacda81f6",
+      "seed-reddit-localllama",
+      "social-source-eeec7a5ef78919e5"
+    ],
+    "support": [
+      {
+        "source_id": "seed-reddit-localllama",
+        "url": "https://www.reddit.com/r/LocalLLaMA/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "A LocalLLaMA creator post presents capy-flash v0.7.4 and states a focus on two Qwen3.8 models.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Reddit LocalLLaMA",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-d7ca1eb270ce76ea",
+    "claim": "A LocalLLaMA post points to a pull request as a possible Qwen4-27B signal.",
+    "source_ids": [
+      "social-source-72d9d3123615abea",
+      "seed-reddit-localllama"
+    ],
+    "support": [
+      {
+        "source_id": "seed-reddit-localllama",
+        "url": "https://www.reddit.com/r/LocalLLaMA/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "A LocalLLaMA post points to a pull request as a possible Qwen4-27B signal.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Reddit LocalLLaMA",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-4fa1ce76377a1fd0",
+    "claim": "A visible community post offers MOSS sampling, LoRA and node settings, and links the Lodestone model listing.",
+    "source_ids": [
+      "social-source-857e612ebc0172e1",
+      "seed-reddit-stablediffusion",
+      "social-source-5c00382dc9a6af4d"
+    ],
+    "support": [
+      {
+        "source_id": "seed-reddit-stablediffusion",
+        "url": "https://www.reddit.com/r/StableDiffusion/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "A visible community post offers MOSS sampling, LoRA and node settings, and links the Lodestone model listing.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Reddit StableDiffusion",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-40e3eadd01ed74c8",
+    "claim": "Hacker News links a practical AI-image-generation guide spanning diffusion and agents.",
+    "source_ids": [
+      "social-source-6a45251399c8de3b",
+      "seed-hacker-news"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hacker-news",
+        "url": "https://news.ycombinator.com/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Hacker News links a practical AI-image-generation guide spanning diffusion and agents.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hacker News",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-fce3f81b1c09afcd",
+    "claim": "Hacker News links a repository concerning FP/BF16 instruction issue rates on NVIDIA 3000-series cards.",
+    "source_ids": [
+      "social-source-b6ee2b32304d0c0d",
+      "seed-hacker-news"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hacker-news",
+        "url": "https://news.ycombinator.com/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Hacker News links a repository concerning FP/BF16 instruction issue rates on NVIDIA 3000-series cards.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hacker News",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-66d5d21501409375",
+    "claim": "AI/TLDR links a Tencent visual-perception model for boxes, masks and mattes.",
+    "source_ids": [
+      "social-source-68120b9dfc14348d",
+      "discovery-324698c09744ac4b"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-324698c09744ac4b",
+        "url": "https://ai-tldr.dev/Videos",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "AI/TLDR links a Tencent visual-perception model for boxes, masks and mattes.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:28.063Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "AI/TLDR",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-36eb57db9aed9905",
+    "claim": "Model Events describes Hy-Nomas as an interactive video world model and links a repository and model card.",
+    "source_ids": [
+      "social-source-7b7d6db0df86b848",
+      "discovery-e17a10baf9dfd671",
+      "social-source-9521b60b04aa1cbb"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-e17a10baf9dfd671",
+        "url": "https://llm-events.top/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Model Events describes Hy-Nomas as an interactive video world model and links a repository and model card.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:28.063Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Model Events",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-c6220ebe122fdeca",
+    "claim": "OutYet links an announcement it describes as Kling 4.0 public API access through fal.",
+    "source_ids": [
+      "social-source-4bf45e4d43a1c3cc",
+      "discovery-fb84ccea6307bb13"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-fb84ccea6307bb13",
+        "url": "https://outyet.ai/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "OutYet links an announcement it describes as Kling 4.0 public API access through fal.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:28.063Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "OutYet",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-4f7efed2c2649721",
+    "claim": "OutYet paraphrases a TestingCatalog post concerning 4K output, 10-bit color and Draft mode in Seedance 2.5.",
+    "source_ids": [
+      "social-source-3d76647f1d0c496e",
+      "discovery-fb84ccea6307bb13"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-fb84ccea6307bb13",
+        "url": "https://outyet.ai/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "OutYet paraphrases a TestingCatalog post concerning 4K output, 10-bit color and Draft mode in Seedance 2.5.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:28.063Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "OutYet",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-c4e12fa97f88ac33",
+    "claim": "Opper lists Nemotron 3.5 Bolt E4B 4GB with an October 23 date and missing specification fields.",
+    "source_ids": [
+      "social-source-03ed18b6454061dc",
+      "discovery-150beb2fd3833938"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-150beb2fd3833938",
+        "url": "https://opper.ai/model-releases",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Opper lists Nemotron 3.5 Bolt E4B 4GB with an October 23 date and missing specification fields.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:56.643Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Opper release tracker",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-feef6a40aed3183e",
+    "claim": "Opper lists Ling 3.1 Flash 1019 with an October 22 date.",
+    "source_ids": [
+      "social-source-c702fea8abc8b037",
+      "discovery-150beb2fd3833938"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-150beb2fd3833938",
+        "url": "https://opper.ai/model-releases",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Opper lists Ling 3.1 Flash 1019 with an October 22 date.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:56.643Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Opper release tracker",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-2c075b5396ece17b",
+    "claim": "Silicon AI News labels its Maxwell item as a preview.",
+    "source_ids": [
+      "social-source-fb54e150d1ea7bb4",
+      "discovery-d7157ffa40073298"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-d7157ffa40073298",
+        "url": "https://siliconainews.com/tracker/ai-model-releases",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Silicon AI News labels its Maxwell item as a preview.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:56.643Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Silicon AI News tracker",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  },
+  {
+    "claim_id": "social-observation-16a5cb21dc9c4b7c",
+    "claim": "Silicon AI News points to a language-specific Gemma 3 27B model for Indonesian and Javanese.",
+    "source_ids": [
+      "social-source-7122d181cf1d768e",
+      "discovery-d7157ffa40073298"
+    ],
+    "support": [
+      {
+        "source_id": "discovery-d7157ffa40073298",
+        "url": "https://siliconainews.com/tracker/ai-model-releases",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Silicon AI News points to a language-specific Gemma 3 27B model for Indonesian and Javanese.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:56.643Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Silicon AI News tracker",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
   }
 ]

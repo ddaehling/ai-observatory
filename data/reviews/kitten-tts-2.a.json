@@ -1,0 +1,32 @@
+{
+  "reportId": "kitten-tts-2",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "bcaf620bfcedf575d0958ea2bdbf63b81f7037a2a2045c773a329537715ba83a",
+  "evidenceHash": "30836c5711cd390c3b6e028647d6bc959b6ad12f49742911cccaad6f84367c5b",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "Local narration, voice conditioning and expression tags are useful for reviewed teaching clips, interactive dialogue experiments and video drafts. The report provides concrete dependency, pronunciation, chunk-boundary and cache-invalidation checks instead of assuming that a small download solves deployment.",
+    "impact": "A compressed downloadable speech component with several backend choices is a meaningful speech-domain development. Its contribution is constrained by untested quality, documentation conflicts and significant commercial restrictions; no broader AI-development change is demonstrated.",
+    "novelty": "Ternary-body packing, optional embedding and decoder variants, and expression-conditioned local speech offer meaningful technical differentiation. They do not imply every operation is one-bit or that the model has demonstrated universally faster or better synthesis.",
+    "maturity": "Inspectable package metadata, code paths and detailed chunk behavior make experimentation possible. Conflicting voice/language documentation, beta expression behavior, substantial example first-audio delay and no listening or installation test leave material reliability limits.",
+    "openness": "Code and downloadable model files enable local inspection and several deployment routes. Commercial registration, revenue/funding termination thresholds, attribution, training-use restrictions and an unobtained incorporated AUP substantially reduce the freedom conveyed by Apache code alone."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "The model license and unavailable incorporated AUP are consequential deployment limitations, clearly disclosed.",
+    "Voice/language totals and weight-size descriptions vary across documents; the report does not falsely resolve them.",
+    "The first-audio example is configuration-specific and cannot validate low-latency conversation or CPU throughput."
+  ]
+}

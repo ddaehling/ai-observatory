@@ -1,0 +1,123 @@
+{
+  "id": "kimi-k31-pro",
+  "title": "Kimi K3.1 Pro: a hosted coding and 3D release, with weights still promised",
+  "entity": "Kimi K3.1 Pro",
+  "category": "Models",
+  "tags": [
+    "coding",
+    "3D creation",
+    "multimodal",
+    "API",
+    "agent workflows"
+  ],
+  "summary": "Kimi’s new Pro and Highspeed models are documented as available through its hosted products and API. The consequential details are the pending November 4 weights, paid API access, cache billing and integration constraints.",
+  "changeType": "new",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-24T18:00:00Z",
+  "updatedAt": "2026-10-24T18:00:00Z",
+  "officialUrl": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+  "sections": [
+    {
+      "id": "release",
+      "title": "What is available at the inspection date",
+      "html": "<p>Kimi K3.1 Pro is a newly announced hosted model for coding, multimodal knowledge work and 3D creation. The <a href=\"https://www.kimi.ai/blog/kimi-k3-1-pro\">primary launch article</a> describes a 3T-class model derived through additional post-training from Kimi K3, with a million-token context window. It also introduces a Highspeed variant. As inspected on October 24, 2026, the practical access paths were Kimi’s website, mobile applications, Work desktop application, Code tool and API. This is documentation of provider availability, not a successful account-level test in every region or product.</p><p>The central qualification is easy to lose in an open-model headline: the same article explicitly promises full weights by November 4, 2026. The promise is future-dated relative to this inspection. The report therefore treats K3.1 Pro as a hosted release with a planned weight release; it does not claim that a downloadable checkpoint, its final license or a verified self-hosting recipe is already available. No inference about laptop deployment follows from the eventual availability of a model described at this scale.</p><p>For builders, the immediate question is whether its documented coding and visual workflows deserve a paid, bounded comparison with an existing service. For researchers waiting for inspectable weights, the appropriate next milestone is the actual release and its terms. Those are different decisions, and the launch’s use of open-weight language should not collapse them. The exact primary article publication timestamp was not established in this inspection, so the report leaves that field unknown.</p>"
+    },
+    {
+      "id": "creative-work",
+      "title": "The interesting creative claim is tool-directed construction",
+      "html": "<p>The launch article emphasizes work across game engines, interactive web scenes and parametric 3D modeling. It describes scripts for Blender and CAD software, adjustments to geometry and materials, and examples intended for games, brand films and websites. This is a model-and-tools workflow: the language model proposes or edits executable descriptions and uses an environment capable of building the result. It is not evidence that a bare text API response automatically contains a finished scene, functioning game or rendered video.</p><p>Kimi also says its 3D Make product can preview and edit models online and export forms suitable for printing, videos or Live Photos. That is a documented product pathway worth inspecting separately. This research did not enter the application, verify export formats, inspect geometry, test printability or watch rendered examples frame by frame. A creator should distinguish the provider’s demonstration of a workflow from the reliability of that workflow on an unfamiliar brief with specific dimensions, materials and output requirements.</p><p>An educational pilot could ask the model to produce a parameterized mechanical teaching model or an interactive geometry scene, then have learners inspect the parameters and explain how each changes the result. A game prototype might generate a small environment and a single interaction, with explicit checks for collisions, camera behavior and asset licenses. These are proposed uses grounded in the documented workflow, not measured educational outcomes or production-ready templates. The value would be making editable construction steps visible, followed by human inspection of the artifact.</p>"
+    },
+    {
+      "id": "api-access",
+      "title": "Access and prerequisites are specific",
+      "html": "<p>The <a href=\"https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart\">K3.1 API guide</a> says the flagship unlocks after a successful top-up of at least $1. Cumulative top-ups determine account tiers and rate limits. API access therefore requires an account, a key and paid credit, even if the first experiment is small. The general quickstart documents direct HTTP calls and compatibility with OpenAI or Anthropic API formats. Its examples require Python 3.9 or later, or Node.js 18 or later, and the relevant SDK. These are documented routes, not libraries installed or requests executed during this assessment.</p><p>The launch article says Kimi Work needs version 3.1.0 or later on Windows or Apple silicon Macs. Kimi Code users select the model through its model command. Enterprise administrators must explicitly enable it, with organization access off by default at launch. Product subscriptions and the pay-as-you-go API are distinct offerings; availability through a named application does not establish that an existing subscription includes unlimited use. Subscription prices, regional eligibility and detailed rate limits were not verified for this report.</p><p>A web application should keep the provider key on its server and pass only the data needed for the chosen task. A small coding pilot can instead use an existing supported agent client, but permissions and execution tools remain the client’s responsibility. Compatibility with an API format lowers integration effort; it does not certify every endpoint, option or error-handling behavior of a client built for another provider. The <a href=\"https://platform.kimi.ai/docs/overview\">general quickstart</a> is a starting point for that compatibility check.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Highspeed costs more on some token categories",
+      "html": "<p>The <a href=\"https://platform.kimi.ai/docs/pricing/chat\">official pricing table</a> lists Pro at $2 per million input tokens and $10 per million output tokens. Highspeed is $4 and $20 respectively. Both list cached input at $0.20 per million tokens. Highspeed therefore doubles the base input and output rates, but saying it simply doubles every bill would be inaccurate: repeated cached input has the same listed rate. The mix of reasoning, output, input, cache hits and additional tools determines the actual workload cost.</p><p>Caching is automatic for eligible repeated prefixes, with a default five-minute lifetime and an optional one-hour tier. The table separately lists five-minute cache writes at $2 per million for Pro and $4 for Highspeed; one-hour writes are $4 and $8. The billing explanation says writes are charged separately and cache hits incur no additional write charge. Partial blocks that do not fill a cache block are treated as misses according to the guide. An experiment should therefore inspect reported usage rather than estimate savings solely from repeated text.</p><p>Prices exclude applicable taxes. The API is described as pay-as-you-go without a subscription plan and is billed separately from Kimi memberships and Code. A million-token capacity is not a recommendation to resend a million tokens on each request. Begin with a small representative input, set an output budget appropriate to the task and record the successful task’s total cost, including retries. No paid calls, cache-hit measurements or invoices were produced for this report, and no claim of cost savings over another service is made.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "Several defaults can change the experience",
+      "html": "<p>The guide says thinking is always enabled and exposes low, high and max reasoning effort, with max as the default. It also fixes sampling settings rather than allowing arbitrary temperature or top-p choices. A ported client that sends familiar optional fields may therefore require changes. The documented default maximum completion allocation is 131,072 tokens and can be raised substantially; a builder should select a deliberate budget instead of inheriting a large value for a simple classroom interaction.</p><p>For multi-turn conversations and tool calls, the complete assistant message must be returned to the next request rather than retaining only the final text. Streaming separates reasoning and answer deltas, and strict structured output applies to the final content field. These details matter for an application that expects a typed answer, a tool argument or an editable script. A model can produce syntactically constrained data while still choosing wrong values; schema validation is useful but should be followed by task-specific checks.</p><p>Vision inputs require an array of content objects, and the guide specifically says public image URLs are unsupported: it documents base64 data or uploaded-file identifiers. This differs from some superficially similar APIs. The guide also warns that its official web-search tool is being updated and is not recommended for production workflows in the near term. A demonstration that relies on current sources therefore needs a separately verified retrieval path, or a fixed source pack supplied to the model. The availability of a tool name is not evidence that the entire research workflow is ready.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Read the performance claims with their methodology",
+      "html": "<p>Moonshot claims a two-to-threefold speed increase for Highspeed, while its platform overview uses roughly threefold language. These remain provider claims; no controlled latency test was performed here. Faster token production may shorten part of a task while leaving tool execution, rendering, network delay and retries untouched. The useful comparison for a creative builder is time to an acceptable verified artifact, under the same brief and budget, not a headline throughput ratio.</p><p>The launch reports strong benchmark results and gives methodological footnotes. Those footnotes describe different agent harnesses, selected task subsets, external scores and internal evaluations. For instance, its CAD comparison uses a sampled subset for open models and draws certain comparison scores from other providers’ reports. This is useful disclosure, but it does not make every number an identical-condition contest. The current assessment has not independently reproduced those benchmarks and does not rank the model from them.</p><p>There is also a concrete documentation-quality limitation. The inspected API model guide contained placeholder benchmark values and internal hallucination percentages that differed from the launch article. The report does not choose a favorable number or average incompatible accounts; it omits those numerical factual-accuracy claims. Neither page’s internal stress test should be treated as an everyday error probability. The available evidence supports a promising release and a documented integration surface, while exact comparative quality and the final weight-release package remain unverified.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "Three bounded projects worth evaluating",
+      "html": "<p>A teaching prototype could generate an interactive web explanation of a physical system from a short specification and a few diagrams. Give it a fixed set of equations, insist that the interface expose assumptions, and test several known cases before showing it to learners. Record whether it produces a runnable project, whether the mathematics survives interaction and how much instructor editing is required. This evaluates a concrete instructional artifact; it does not let a visually convincing simulation certify its own scientific correctness.</p><p>An app or website experiment could supply a small existing codebase and ask for one feature with acceptance criteria: a responsive editor, a data visualization or an accessible settings panel. Compare Pro and Highspeed using the same source revision and tasks. Measure completed requirements, regressions, total elapsed time and billed usage. The long context may help keep relevant files available, but it does not eliminate the need to run tests, inspect changes and constrain tools. Larger context capacity alone is not evidence of reliable retrieval across every position.</p><p>For video work, a useful pilot is one editable Blender scene with a parameterized object, camera movement and lighting setup. Render a short preview with the actual production tools, check geometry and timing, and revise before attempting a longer sequence. Kimi’s stated capability is relevant to generating the construction scripts and assets; the renderer, compositing and final audio workflow remain separate. No end-to-end video production, export or asset-rights verification was performed for this report.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "What would change the assessment",
+      "html": "<p>The immediate attraction is a hosted multimodal model whose provider explicitly targets code, 3D and longer tool-driven work, accompanied by public API documentation detailed enough to expose real constraints. The practical cautions are equally specific: paid access, a higher-priced speed tier, always-on reasoning, integration rules, a web-search warning and incomplete consistency in promotional documentation. A tightly scoped pilot can assess these without committing a whole application to the new model.</p><p>The next evidence that would materially improve confidence is a reproducible task comparison with usage records and inspected artifacts. For the openness claim, the needed evidence is the actual promised weight release, its license, files and viable serving instructions. A date on a roadmap does not provide those assets. Until that happens, this report’s recommendation is limited to a hosted evaluation for builders who can check its outputs and costs. It makes no assurance of self-hosting affordability, unrestricted licensing, improved learning or reliable autonomous delivery.</p>"
+    }
+  ],
+  "images": [],
+  "useCases": [
+    "Evaluate a hosted coding model on a bounded web or app feature with explicit acceptance tests.",
+    "Create editable parametric 3D teaching assets or game prototypes, then inspect them in the target tool.",
+    "Generate and revise a short scripted Blender scene for a separately rendered video."
+  ],
+  "limitations": [
+    "Weights were promised by November 4, 2026, not verified as available on October 24. Final checkpoint license and serving requirements remain unknown.",
+    "Provider speed and quality claims were not independently tested.",
+    "API guide has benchmark placeholders and conflicting internal hallucination statistics versus the launch article.",
+    "Official web search is documented as unsuitable for current production workflows.",
+    "API requires top-up and has distinct input/output/cache-write billing; subscription entitlement and regional access were not verified."
+  ],
+  "sources": [
+    {
+      "id": "repos-kimi-k31-pro-announcement",
+      "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "accessedAt": "2026-10-24T17:53:52.644Z",
+      "publishedAt": null,
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-kimi-api-platform",
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "accessedAt": "2026-10-24T17:54:08.739Z",
+      "publishedAt": null,
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-kimi-api-pricing",
+      "title": "repos-kimi-api-pricing-visible",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "accessedAt": "2026-10-24T17:54:49.567Z",
+      "publishedAt": null,
+      "locator": "K3 Series Models table; Billing Logic",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-kimi-api-overview",
+      "title": "Quickstart - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/get-your-api-key",
+      "accessedAt": "2026-10-24T17:54:39.161Z",
+      "publishedAt": null,
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-kimi-k31-guide",
+      "title": "Kimi K3.1 Pro - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "accessedAt": "2026-10-24T17:54:49.569Z",
+      "publishedAt": null,
+      "locator": "Access requirements; Reasoning effort; Vision input; Important limits",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    }
+  ],
+  "judgment": "A worthwhile hosted pilot for coding and editable 3D workflows, with unusually important access and integration caveats. Treat promised open weights as a future milestone and performance as unreplicated vendor evidence.",
+  "researchNote": "Chrome inspection of primary launch, API overview, model guide and rendered pricing table on October 24, 2026. No account, top-up, API call, software install or generated artifact test. Exact article publication date unknown. Proposed workflows are original editorial analysis, and internal accuracy-statistic conflicts are preserved rather than resolved speculatively."
+}

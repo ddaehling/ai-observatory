@@ -1,0 +1,31 @@
+{
+  "reportId": "openai-decisions-api",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "8ee9a295425e81cf7c92d7cf0af51490c4a6563a05c365def2663e18ab064013",
+  "evidenceHash": "9c8ce7724dbf547ffe0a22244049f4c71233cdb97cec9d84bcc09ae156627896",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 7,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Typed probabilities, choices and scores have broad practical value for routing, review queues and voice interfaces. The report supplies concrete teacher, screenshot, avatar and storyboard pilots with evaluation and correction paths, supported by detailed endpoint documentation.",
+    "impact": "A generally available low-cost bounded-judgment endpoint with shared context and native voice integration is a meaningful application-development advance. Its significance is limited by unreplicated latency claims and the lack of evidence of a new general capability or field-wide change.",
+    "novelty": "The dedicated answer types, question batching and voice integration are a useful distinctive packaging of model judgment. Classification, structured output and small typed decisions already exist; the evidence demonstrates integration improvements rather than an exceptional new reasoning method.",
+    "maturity": "The GA announcement, explicit input restrictions, pricing, caching semantics and event-handling documentation support a practical pilot. No API calls, operational reliability study or independent latency reproduction establish mature performance for the proposed workflows.",
+    "openness": "Public API documentation and structured outputs provide some inspectability and a manageable application boundary. The model is hosted, only one model is supported, and there are no downloadable weights or independently reproducible serving stack in the evidence."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Vendor up-to-10x latency is not an end-to-end or independent result; the report correctly says so.",
+    "Probabilities and confidence require local calibration, and the suggested educational workflows have not been evaluated."
+  ]
+}

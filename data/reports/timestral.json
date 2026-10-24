@@ -1,0 +1,123 @@
+{
+  "id": "timestral",
+  "title": "Timestral: small local forecasting models with a consequential weight license",
+  "entity": "Mistral Timestral",
+  "category": "Models",
+  "tags": [
+    "forecasting",
+    "local AI",
+    "education",
+    "CPU",
+    "probabilistic models"
+  ],
+  "summary": "A 5M–209M model family makes numerical forecasting and uncertainty experiments possible on CPUs. The practical story includes covariates, offline inference and a revenue restriction in the weight license.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-10-20T16:19:21.282019+00:00",
+  "updatedAt": "2026-10-24T18:00:00Z",
+  "officialUrl": "https://huggingface.co/mistralai/Timestral-209M",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A numerical model that fits a modest experiment",
+      "html": "<p>Timestral is a family of numerical forecasting models, with checkpoints named 5M, 28M, 123M and 209M. Mistral announced it on October 15, 2026; this Observatory entry is a baseline assessment following earlier discovery, not a claim that the model launched today. Its appeal for educational and creative builders is concrete: a small Python service can turn a historical series into a forecast and a band of uncertainty without first training a separate neural network for that dataset. The <a href=\"https://mistral.ai/news/timestral/\">announcement</a> and <a href=\"https://huggingface.co/mistralai/Timestral-209M\">model card</a> describe zero-shot use, meaning inference on a new series without task-specific fitting of the released weights.</p><p>The useful unit is a time step, not a word token. A series might contain hourly electricity readings, daily library loans or observations from a classroom sensor. A forecast predicts later numerical values; it does not explain why they will occur, establish causal relationships or supply the surrounding application. Timestral therefore complements a charting interface or a teaching exercise. Any prose explanation, interactive website, rendered animation or decision workflow must be built around its outputs.</p><p>The strongest reason to try it is the combination of accessible model sizes, joint forecasting of related series and explicit uncertainty output. The largest checkpoint remains small compared with general language models. That comparison says little by itself about application latency or predictive accuracy, but it lowers the practical barrier to an experiment whose inputs and mistakes can be inspected.</p>"
+    },
+    {
+      "id": "inputs",
+      "title": "What the model expects and returns",
+      "html": "<p>The main card documents up to 32,768 historical steps and a maximum 1,024-step forecast in one forward pass. Longer requested horizons are generated in blocks, with the previous block’s median predictions appended to the context. That extension is consequential: later blocks depend on earlier predictions. A long output is not equivalent to observing a longer history, and confidence should be checked at the actual horizon an application intends to show. The repository also says that inputs longer than the trained context keep their most recent steps.</p><p>Timestral supports a single target series or several related variables forecast jointly. It can also receive past-only covariates and known-future covariates. A completed weather observation belongs in the historical information; an already known timetable or holiday calendar can cover the forecast period. The distinction matters more than the API syntax. Supplying future measurements that would not have been known at prediction time would make an evaluation unrealistically easy. Missing values can be represented by NaN, with an additional observation mask documented for explicit missingness.</p><p>Each future step has 21 quantiles rather than only one estimate. The documented interface exposes a median and individual quantiles, making it straightforward to draw, for example, a band between the 10th and 90th percentiles. Such a band is a model prediction, not a guarantee that 80 percent of future observations will fall inside it on a particular dataset. Calibration is something the builder should measure on held-out history. These input and output details are described in the <a href=\"https://github.com/mistralai/timestral/\">repository’s Forecast and Covariates sections</a>.</p>"
+    },
+    {
+      "id": "local-access",
+      "title": "A realistic local starting point",
+      "html": "<p>The standalone package requires Python 3.10 or later and PyTorch 2.4 or later. The repository names PyTorch, NumPy, safetensors and huggingface_hub as its core inference dependencies and documents both CPU and GPU operation. A GPU is therefore not a documented prerequisite. The four full-precision weight downloads are listed as approximately 21 MB, 111 MB, 490 MB and 837 MB. Those file sizes do not include the Python environment, temporary tensors, runtime memory or the input data, so they should not be read as total installation or RAM requirements.</p><p>The first model load downloads configuration and weights to the Hugging Face cache. The loader can also accept a local directory and supports a pinned revision. Once the necessary files exist locally, the documented local-files-only option or offline environment setting prevents Hub downloads. This makes an offline classroom demonstration plausible after preparation. It does not prove that every surrounding application, dependency or data collection process is offline; that boundary belongs to the deployment the builder actually assembles.</p><p>A useful first run would load the 5M checkpoint, forecast a short public or synthetic series and inspect the returned array shapes. The next comparison would keep the dataset and forecast horizon fixed while moving to 28M or 209M. The repository supplies example code for this path, but no installation or execution was performed for this report. Exact RAM usage, startup time and latency on the reader’s machine remain unknown. The model card showed no Hugging Face Inference Provider deployment when inspected, which is a statement about that listing rather than all possible hosting services.</p>"
+    },
+    {
+      "id": "license",
+      "title": "The code and the weights have different terms",
+      "html": "<p>The Python inference code is Apache 2.0. The model weights are distributed separately under a Modified MIT license, so the repository’s Apache badge does not describe permission to use the whole model. The <a href=\"https://huggingface.co/mistralai/Timestral-209M/blob/main/LICENSE\">209M weight license</a> grants rights without a license fee subject to its conditions, including preserving the attribution and permission notices. It also contains an economic threshold that is absent from a plain MIT license: rights are unavailable when the global consolidated monthly revenue of the user’s company, or employer, exceeded $20 million in the preceding month.</p><p>That restriction also applies to derivatives, modifications and combined works based on the model. The text directs affected organizations to request a commercial license from Mistral or consider its hosted services. This is a material planning constraint for a large institution’s commercial partner, an employee experimenting at work or a product expected to cross the threshold. A personal-looking prototype does not by itself answer which organization’s use is involved. The applicable license text should be checked against the intended organization and deployment.</p><p>For a qualifying local experiment, no per-request model service is needed by the documented inference path. Compute, maintenance and integration still cost time or money. Commercial-license pricing, Forge pricing and hosted forecasting charges were not established by the inspected material. The report therefore does not describe Timestral as unrestricted open source or promise free production operation. The distinction between inspectable inference code and conditional weight access is part of its practical openness.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Promising measurements with a narrow meaning",
+      "html": "<p>Mistral reports strong zero-shot results on GIFT-Eval, TIME and fev-bench. The card includes scores for the four sizes and comparisons with other forecasting models; the announcement says the largest checkpoint leads the compared pretrained and zero-shot entries. Those are producer-reported results. This research did not rerun the benchmarks, audit the datasets or independently inspect each leaderboard. The card still described a detailed technical report as forthcoming, limiting what can be concluded about training and reproducibility from the public package alone.</p><p>The announcement gives a particularly useful latency example: forecasting one day from three weeks of quarter-hour observations on a server CPU using eight threads reportedly takes 10 milliseconds for 5M and 140 milliseconds for 209M. It also reports intermediate speed and accuracy tradeoffs. These timings identify a workload and thread count, but they do not establish a universal interactive response time. Processor model, batching, startup, application overhead and different series lengths could change what a user experiences. A browser interface backed by Python adds its own work.</p><p>The architectural description combines patching, separate prediction tokens and attention rules that distinguish target variables from covariates. The repository explains how information may flow between them. That is useful implementation evidence, not proof that an arbitrary dataset is free of leakage. Similarly, a synthetic-first training account does not mean the model never encountered real data: Mistral describes synthetic pretraining followed by mixed real and synthetic post-training. The complete data recipe and independent reproduction remain open questions.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A classroom exercise about forecasts that can be wrong",
+      "html": "<p>An educational prototype could present a public hourly-demand series up to a chosen cutoff, ask learners to draw their own continuation, then reveal both a simple baseline and Timestral’s median and interval. Sliding the cutoff would show how the same model behaves during quiet periods, seasonal changes and unusual events. The learning objective would be to compare predictions with later observations, not to treat the generated curve as an answer key. This is an editorial proposal enabled by the documented outputs, not a tested learning intervention.</p><p>A second exercise could compare a target-only forecast with one supplied a legitimate known-future calendar. Learners would record which inputs were available at the cutoff and investigate whether the extra information helps. Another group could introduce gaps and compare missing-value handling with an explicitly documented preprocessing choice. The model’s multivariate interface supports comparing related signals, but a useful class would also ask whether including a second signal changes error, calibration or robustness rather than simply assuming more data helps.</p><p>Assessment should focus on the experiment record: data source, cutoff, horizon, baseline, error measure and interval coverage. A simple seasonal or last-observation baseline can expose cases where a larger neural model adds little. The model could support teacher preparation or an interactive statistics lesson; the inspected sources do not demonstrate improved attainment, individual student assessment or pedagogical reliability.</p>"
+    },
+    {
+      "id": "build-and-create",
+      "title": "A small application and an honest visual explanation",
+      "html": "<p>For an app or website builder, a manageable project is a local forecast explorer with a file picker, a preview of timestamps, a target-column choice and a horizon control. A Python backend would validate the numeric series and invoke the forecaster; the interface would show the historical cutoff, median, interval and eventual observed values as distinct layers. Exporting the inputs, model revision and predictions together would make comparisons easier to reproduce. This application architecture is a proposal, not a bundled Timestral feature.</p><p>The same results could feed an explanatory video. A creator might animate the arrival of new observations, widen or narrow the plotted prediction band, and compare a forecast made before an event with the later outcome. Timestral supplies numbers, while separate plotting and editing tools produce frames, captions and sound. It is not a video generator. Labeling forecasts and observed values distinctly would keep a polished animation from implying that the model knew the future.</p><p>A first pilot should remain small enough to inspect: one dataset, a handful of forecast cutoffs and two checkpoint sizes. Record wall-clock inference time and whether intervals miss systematically, then decide if the application benefits from the model. The combination of a small downloadable checkpoint and probabilistic output makes this worth a bounded trial. Its value will come from the quality of that local comparison, while license eligibility, data quality and unverified performance claims remain decisive limits.</p>"
+    },
+    {
+      "id": "pilot-design",
+      "title": "What would make the next review more convincing",
+      "html": "<p>A useful follow-up would publish a small reproducible evaluation rather than another leaderboard summary. Keep several rolling forecast origins instead of choosing only a favorable date, and ensure each origin sees only the history available then. Measure forecast error separately for short and longer horizons, record interval coverage, and compare cold-start and warmed inference times. The same dataset should be evaluated with identical preprocessing across checkpoint sizes. These checks would reveal whether the small model is sufficient and whether a larger one earns its extra runtime.</p><p>Operational questions deserve equal attention. A data import should reject invalid timestamps, explain missing observations and show the frequency assumed by the interface. A saved result should retain the model revision, input cutoff and chosen horizon. When a forecast fails, the application should expose that failure instead of silently drawing an empty or stale curve. None of these safeguards is supplied by downloading weights alone. They are normal application responsibilities that turn an interesting local model into a useful teaching or creative tool.</p>"
+    }
+  ],
+  "images": [],
+  "useCases": [
+    "Teach forecasting, uncertainty and leakage with public time-series data.",
+    "Build a local numerical forecast explorer with explicit cutoffs and baseline comparison.",
+    "Animate forecast-versus-outcome comparisons for an explanatory video using external graphics tools."
+  ],
+  "limitations": [
+    "No inference, latency or benchmark reproduction performed.",
+    "Weight license restricts organizations whose preceding-month global consolidated revenue exceeds $20 million; Apache 2.0 covers code only.",
+    "Technical report and full training-data reproducibility were not established.",
+    "Quantile outputs do not establish calibration on a new dataset.",
+    "Hosted service prices and machine-specific runtime memory are unknown."
+  ],
+  "sources": [
+    {
+      "id": "mistral-timestral",
+      "title": "Timestral: Mistral's time-series foundation models | Mistral",
+      "url": "https://mistral.ai/news/timestral/",
+      "accessedAt": "2026-10-24T17:53:31.818Z",
+      "publishedAt": "2026-10-15",
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-timestral-209m",
+      "title": "mistralai/Timestral-209M · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Timestral-209M",
+      "accessedAt": "2026-10-24T17:53:14.560Z",
+      "publishedAt": null,
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-source-e5d2bc16de92d6a0",
+      "title": "mistralai/Timestral-5M · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Timestral-5M",
+      "accessedAt": "2026-10-24T17:54:39.161Z",
+      "publishedAt": null,
+      "locator": "Main article/model card",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-timestral-repository",
+      "title": "mistralai/timestral: Repository for Timestral, the time-series foundation model by Mistral AI",
+      "url": "https://github.com/mistralai/timestral/",
+      "accessedAt": "2026-10-24T17:53:31.818Z",
+      "publishedAt": null,
+      "locator": "README: Install, Models, Forecast, Loading options, Covariates, License",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    },
+    {
+      "id": "repos-timestral-license",
+      "title": "LICENSE · mistralai/Timestral-209M at main",
+      "url": "https://huggingface.co/mistralai/Timestral-209M/blob/main/LICENSE",
+      "accessedAt": "2026-10-24T17:53:31.818Z",
+      "publishedAt": null,
+      "locator": "Modified MIT License, conditions 1–2",
+      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+    }
+  ],
+  "judgment": "Worth a bounded local educational or app experiment: small CPU-capable numerical models and explicit uncertainty outputs are useful, but licensing and validation determine deployment fit.",
+  "researchNote": "Read official announcement, model cards, repository and actual weight license in Chrome on October 24, 2026. Producer measurements are attributed; use cases and evaluation designs are original editorial proposals. No runtime or commercial-account actions."
+}

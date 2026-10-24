@@ -1,0 +1,31 @@
+{
+  "reportId": "openai-decisions-api",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "8ee9a295425e81cf7c92d7cf0af51490c4a6563a05c365def2663e18ab064013",
+  "evidenceHash": "9c8ce7724dbf547ffe0a22244049f4c71233cdb97cec9d84bcc09ae156627896",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The bounded answer types, documented endpoint, costs, input exclusions and voice event-handling rules make concrete routing, visual-review and avatar pilots actionable. The report explains labeled examples, fallback choices and correction costs; it accurately treats the proposed educational and creative uses as untested.",
+    "impact": "A generally available low-cost judgment endpoint integrated with live voice could materially broaden how applications use model inference. The scope is substantial across applications, but the supplied evidence is interface documentation and producer latency comparisons, not a demonstrated field-wide capability breakthrough.",
+    "novelty": "Native voice delegation, transcript triggers, image-specific questions, caching and 400-question requests distinguish this release. Typed judgments and routing themselves are established ideas, including the prior Jev comparison acknowledged by the report, so differentiation is meaningful rather than exceptional.",
+    "maturity": "GA status plus detailed examples, usage accounting, pricing, input limits and out-of-order event guidance support a usable pilot. No independent execution, latency distribution, reliability study or application calibration is supplied, preventing a higher readiness rating.",
+    "openness": "The public API guide makes behavior and integration inspectable, but the sole supported model is a hosted dependency with no released weights or training recipe. Public documentation and typed outputs offer some integration clarity without reproducibility or provider independence."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No runtime or independent latency verification; model probabilities require local calibration. The report explicitly preserves both limits.",
+    "Final publication length must follow the two independent impact scores; this review does not authorize adjusting ratings to preserve the current length."
+  ]
+}

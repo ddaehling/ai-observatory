@@ -1,0 +1,58 @@
+{
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "runId": "scan-20261024T174829Z-815900",
+  "scope": "Independent exact-packet editorial review; no other reviewer output or prior ratings read. No network, product execution or performance reproduction performed.",
+  "publicationBlockers": [],
+  "requiredRepairs": [],
+  "optionalImprovements": [
+    {
+      "reportId": "kimi-k31-pro",
+      "finding": "Body quickstart link uses /docs/overview while saved source record resolves to /docs/get-your-api-key. Align to the inspected canonical destination when next revising; no evidence here establishes that the alias is broken. Any content change still needs fresh exact-hash reviews."
+    }
+  ],
+  "checks": {
+    "reportsReviewed": 7,
+    "reportHashesMatch": true,
+    "evidenceHashesMatch": true,
+    "rubricHashMatches": true,
+    "uniqueReferencedArchivesHashChecked": 30,
+    "archiveHashFailures": [],
+    "safeMarkupErrors": [],
+    "wordCounts": {
+      "openai-decisions-api": 1892,
+      "gpt6-intelligent-ui": 1875,
+      "timestral": 1863,
+      "kimi-k31-pro": 1858,
+      "krea-3": 1951,
+      "kitten-tts-2": 1984,
+      "tutormoments": 1927
+    },
+    "lengthAssessment": "Independent impact ratings were selected on significance, not word count. Each is in the 5–7 band and every current body is within 1,800–2,200 words. The final two-review mean remains authoritative and could require a new length band and fresh review.",
+    "confidenceMeaning": "High confidence in the editorial match to the saved primary evidence, not in vendor performance or untested workflows."
+  },
+  "sampledJudgments": [
+    {
+      "candidateId": "candidate-891b7e0bbf66f86d",
+      "disposition": "included",
+      "judgment": "uphold",
+      "reason": "Archived October 22 launch explicitly establishes GA, native Live integration, prompt caching, native JSON/image question inputs and 400 questions versus the beta limit of 200. Detailed developer/voice guides support an actionable report. Included means selected for review, not publication before dual approval.",
+      "archive": ".state/scan-20261024T174829Z-815900/official/decisions-launch.json"
+    },
+    {
+      "candidateId": "candidate-ee4c22366ef7e7ab",
+      "disposition": "excluded",
+      "judgment": "uphold",
+      "reason": "Archived October 23 article describes Habitat/Azure Cosmos DB multi-tenancy, partition limits, caching, geographic replication and CDC at vendor scale. It is useful infrastructure background, but does not release a directly tryable AI capability or demonstrate an educational/creative workflow advance. Exclusion from this bounded edition is consistent with the audience; it is not a claim of no engineering significance.",
+      "archive": ".state/scan-20261024T174829Z-815900/official/openai-storage.json"
+    }
+  ],
+  "accountingFindings": {
+    "substantiveProblems": [],
+    "notes": [
+      "Both sampled candidates retain explicit IDs, dates, reasons and source references.",
+      "Historical candidate/needs_review evidence observations remain in the packet alongside current supported claims; this preserves provenance and does not invalidate the newer report support.",
+      "This sample review does not certify exhaustive source-window coverage or every candidate in the full run ledger."
+    ]
+  }
+}

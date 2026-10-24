@@ -1,0 +1,31 @@
+{
+  "reportId": "timestral",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "7ce83fd4597a9bf1f8f9841a2a82a64e7968b05a41e299916143b2a0749c0cf1",
+  "evidenceHash": "5495fa20f451c2378402e2a7a8d793525bdad22e36efdd36ab6c7a4cd91624c6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "CPU-capable 5M–209M checkpoints, multivariate inputs, covariates and quantiles create accessible numerical teaching and small app experiments. Installation requirements, file-size versus RAM distinctions and rolling-origin evaluation advice make the proposed workflows concrete.",
+    "impact": "A small local family with probabilistic outputs and a useful speed/size range is a meaningful forecasting-domain advance. Producer benchmarks and a forthcoming technical report do not establish exceptional significance across AI development.",
+    "novelty": "The combination of small checkpoints, joint forecasting, covariates and long history is useful differentiation. These are recognizable forecasting-model capabilities, and the inspected evidence does not substantiate a fundamentally new class of forecasting approach.",
+    "maturity": "Public cards and repository document a coherent installation, input and output contract, offline loading and version pinning. No inference or calibration was tested, full methodological disclosure is incomplete, and long-horizon behavior must be evaluated locally.",
+    "openness": "Weights and Apache-licensed inference code are inspectable and portable, and offline operation is documented. The Modified MIT weight license excludes organizations over the stated revenue threshold, and full training-data and benchmark reproducibility are not established."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "The weight revenue restriction is material; the report accurately separates it from Apache 2.0 code.",
+    "Prediction intervals and vendor CPU timings are not validated for new data or the reader’s machine."
+  ]
+}

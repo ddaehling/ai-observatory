@@ -1,0 +1,122 @@
+{
+  "id": "krea-3",
+  "title": "Krea 3: make the unchanged parts of an image part of the brief",
+  "entity": "Krea 3",
+  "category": "Models",
+  "tags": [
+    "image editing",
+    "reference images",
+    "creative workflow",
+    "education"
+  ],
+  "summary": "Krea 3 makes targeted, reference-driven image editing worth testing for teaching assets, app artwork and video planning. Its useful controls come with hosted access, plan-dependent rights and documentation discrepancies that matter in production.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-10-20T16:19:06.712234Z",
+  "updatedAt": "2026-10-24T18:06:57.979612Z",
+  "officialUrl": "https://www.krea.ai/krea-3",
+  "sections": [
+    {
+      "id": "brief",
+      "title": "An editing model needs a preservation brief",
+      "html": "<p>Krea 3 is an image editing model announced on October 15, 2026. Its practical proposition is to change a scene while keeping the parts that make the image useful: a product label, a character, an approved composition or a visual style. That makes it relevant to a teacher preparing a sequence of illustrations and to a builder maintaining website artwork. This is a baseline assessment of an already announced model, not a claim that the model launched during this scan.</p><p>The <a href=\"https://www.krea.ai/blog/introducing-krea-3\">launch article</a> describes native 2K edits, multiple reference images, product preservation and character consistency. These are publisher descriptions illustrated with selected examples. We inspected the public material, including the product presentation, but did not submit an image, generate an output or measure consistency. The useful question is therefore whether these controls fit a bounded task that can be checked, rather than whether every advertised preservation claim will hold.</p><p>Start with an image whose important features can be named. For a museum activity, that might be the silhouette of an object, its handle and its engraved date. Write two lists: what may change and what must survive. A background can become a workshop while the artifact stays recognizable. If the generated image alters the inscription, the result fails even if its lighting looks attractive. This turns a subjective request into a reviewable brief.</p>"
+    },
+    {
+      "id": "references",
+      "title": "Give each reference one job",
+      "html": "<p>Krea recommends stating what stays first, then describing the change in terms of scene, light and camera. With several inputs, its examples identify what each image contributes. An interior illustration can use one picture for room geometry, another for furniture and another for a palette. This structure is useful because it separates identity from styling; a vague instruction to combine everything leaves the model to decide which reference governs each detail.</p><p>There is a concrete documentation discrepancy. The October 15 launch article specifies up to six reference images per edit. The <a href=\"https://www.krea.ai/krea-3\">current product page</a> advertises up to eight. The pages do not establish in the inspected material whether this reflects an update, a model variant or a difference between access routes. A first pilot should stay within six and check the actual interface or endpoint before depending on seven or eight. This report does not silently turn the newer marketing number into a universal API limit.</p><p>Keep reference files and their roles with the project. A useful record contains the original, the requested change, the protected details and the accepted result. If a second edit drifts, return to the approved original instead of repeatedly editing an increasingly altered derivative. That is a proposed workflow, not a documented guarantee of deterministic generation. It also gives a teammate enough context to judge whether a revision improved the work or merely changed it.</p><p>Reference selection is also an editorial decision. If an input contains a watermark, another company’s packaging or personal information, a convincing edit does not resolve the right to reuse it. Crop and prepare the reference deliberately, and keep a record of where it came from. For a tutorial, a simple original photograph of a household object is a better starting point than an unexplained image gathered from search. It makes both preservation and provenance easier to inspect.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Treat the speed presentation as a reason to test",
+      "html": "<p>Krea reports that most 2K edits finish in under eight seconds. Its launch comparison describes competitor medians measured on Krea between September 24 and October 1, including queue time. Those observations concern a particular service and time interval. They are not evidence that every provider, workload or account receives the same latency, and they do not establish which output is more accurate for a particular lesson or brand.</p><p>The product page adds a particularly important qualification: its side-by-side display uses pregenerated outputs and an illustrative playback duration for Krea 3. It also labels one competitor price a draft estimate pending validation. We therefore do not reproduce its speed multipliers, ranking or cost advantage as an independently established conclusion. Some animated numerical fields also appeared as zeros during extraction; those values are not measurements. The stable explanatory text provides the usable evidence boundary.</p><p>For a practical comparison, use a small fixed set of edits and count accepted images. Include a face-free illustration, a label-heavy product image and a scene with several protected objects. Measure waiting time, retries and manual repair separately. A quick first result that needs extensive retouching may be less useful than a slower acceptable result. Record the chosen model variant and access provider so a future repeat compares the same configuration. This evaluation plan is original guidance; it has not been executed for this report.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Use controlled variants to teach visual reasoning",
+      "html": "<p>A teacher could begin with a self-created room illustration and ask for three lighting conditions while preserving the arrangement of objects. Students compare which cues communicate morning, evening or an artificial light source. The learning objective is explanation: identify shadows, reflections and color shifts, then check whether the generated image contradicts the proposed light source. Krea provides candidate illustrations; the teacher decides whether they support the concept.</p><p>For language teaching, the same cast and setting can anchor several short dialogues. Change one prop or activity and have learners explain the difference. Avoid treating claimed character consistency as proof that a face will remain identical across a series. Review the set together, because small changes become visible when images are adjacent. A local image editor can restore a protected detail more predictably than another broad generation request.</p><p>Keep factual diagrams, exact labels and assessment text in editable authoring tools. An image model may produce a convincing picture with the wrong number of objects or a plausible but incorrect inscription. For a history lesson, clearly label an imagined reconstruction and retain the real source image separately. Use teacher-owned or appropriately licensed references, and check institutional rules before uploading identifiable students or unpublished work. The published service terms discuss age and submission conditions; classroom suitability is not established by the availability of a free plan.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "Build a small asset workflow before a public generator",
+      "html": "<p>For an app or website, the first useful application is often preparing a coherent asset set. Begin with an approved hero illustration, define allowable changes and create variants for different empty states or onboarding steps. Check that the variants retain recognizable objects at the actual display size. Keep navigation labels, interface text and logos as separate editable elements so the site remains legible and accessible when artwork changes.</p><p>The launch article says Krea 3 is available through Krea and several partners. Krea’s <a href=\"https://www.krea.ai/features/api\">API overview</a> describes hosted REST and SDK access, compute units and job results. Its visible sample uses a Krea 2 route, however, so copying that example does not establish a working Krea 3 integration. We did not verify an exact Krea 3 request schema, quotas or error handling. A developer should obtain those details for the chosen provider before implementing a user-facing feature.</p><p>A proposed integration should separate submission, waiting, review and export. Show the source image beside the result and let a reviewer reject the change without losing the original. Set a generation budget, retain provenance and provide a recoverable failure state. Keep credentials on the server. These are application design recommendations, not features verified in Krea. Hosted access reduces the need to run a local model, but also makes availability, data handling and billing part of the dependency.</p><p>A concrete acceptance sheet can contain four fields: requested change, protected details, visible defects and export decision. For an app mascot, protected details might include the eye shape, clothing emblem and silhouette. For a product, they might include the number of controls and the position of a label. Review those fields before asking whether the image looks polished. This prevents a visually attractive failure from becoming the reference for the rest of the asset set.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Use still edits to make video decisions earlier",
+      "html": "<p>Krea 3 can support video production before the timeline becomes expensive to revise. A creator can prepare a small storyboard from a reference character or product, try several locations and compare wardrobe or background changes. The outputs are still-image proposals. They do not demonstrate motion consistency, camera control over time or a finished video-generation capability of this model.</p><p>For an educational explainer, start from a narration outline and identify only the shots where a visual alternative will change the explanation. A close-up of an object, a contextual scene and a transition card may be enough. Maintain the protected features across those images and record which frames are approved. Then build timing, labels, captions and transitions in the video editor. If another model animates a still, review that output separately; a successful image edit does not validate the later motion.</p><p>The model is also useful as a discussion aid between a writer and designer. Present two clearly labeled visual directions with the same subject and ask which better supports the intended point. Do not generate dozens merely because the advertised turnaround is short. A smaller set with stated differences is easier to evaluate. Preserve the final composition at the intended crop, because a subject that works in a landscape storyboard may be lost in a vertical excerpt.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Check the model variant, plan and submission terms",
+      "html": "<p>The <a href=\"https://www.krea.ai/pricing\">public plan page</a> lists Krea 3 access and says Krea 3 Ultra requires Max or above. Its free tier lists a daily compute-unit allowance, while paid tiers use different allowances. That does not translate into a verified number of Krea 3 edits here. The launch article’s per-image figures are dated publisher list prices, not a quote for an arbitrary plan or provider. No subscription price or savings estimate is necessary to decide whether a small pilot is worthwhile.</p><p>The expanded commercial-license FAQ explicitly names Basic, Pro, Max, Business and Enterprise. It does not include Free in that answer. The <a href=\"https://www.krea.ai/terms\">terms</a> also say content-use rights may depend on purchases or plans, require rights in submitted material and describe broad licenses granted for user submissions. Submission visibility depends on tier and settings. A private reference should therefore not be uploaded on the assumption that every plan has the same privacy or reuse conditions.</p><p>These sources document a hosted product route. They do not establish a downloadable Krea 3 checkpoint or permission to self-host it. A separate model-licensing navigation link is not proof that this specific model is openly licensed. For a commercial client workflow, verify the applicable plan, provider terms and rights in each reference before committing the output. This is a factual description of the inspected terms, not a determination that any particular image is legally cleared.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "Adopt it where preserved details can be checked",
+      "html": "<p>Krea 3 merits a bounded trial when the existing image already carries most of the brief and the desired change is specific. It is less attractive when correctness depends on exact diagrams, exact text or a guaranteed match across many outputs. In those situations, conventional compositing and editable source assets should remain part of the process. The strongest workflow combines a generative proposal with a concrete acceptance check.</p><p>A useful adoption threshold is modest: can the team produce a small set of approved variants with fewer total editing steps, while keeping the protected details and documenting the source material? If yes, expand one task at a time. If reference handling, cost or preservation remains unclear, keep the experiment at the asset-preparation stage. The available evidence supports investigating that workflow; it does not support a universal quality ranking, a performance promise or an assumption that all access routes behave alike.</p><p>Keep the pilot reversible. Save approved source files outside the generation interface and avoid making the model the only place where a client’s visual identity exists. Compare a sample of accepted work at the end of the session, not just each image as it arrives. If colors, proportions or character details drift across the set, narrow the allowed edits or restore those details conventionally. This is a more informative outcome than a large folder of plausible images with no clear standard for acceptance.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-reviewed visual variants for explanation and comparison",
+    "Consistent website and app asset preparation",
+    "Storyboard and campaign still-image exploration"
+  ],
+  "limitations": [
+    "No generation, timing or independent quality test was performed.",
+    "Launch article says six references; current product page says eight without resolving access-route scope.",
+    "Product comparisons include illustrative playback and an explicitly unvalidated competitor price.",
+    "Hosted plan, commercial-use, privacy and reference rights require project-specific checks.",
+    "Exact Krea 3 API schema and quotas were not verified."
+  ],
+  "sources": [
+    {
+      "id": "creative-source-ff5661d915660e26",
+      "title": "Introducing Krea 3 - Krea",
+      "url": "https://www.krea.ai/blog/introducing-krea-3",
+      "accessedAt": "2026-10-24T17:53:41.043Z",
+      "publishedAt": "2026-10-15",
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Krea3 was announced October15 as a hosted reference-driven image editor with native2K output and claimed preservation of products/characters.; The launch article says six reference images; current product page says eight. Scope of difference is unresolved.; Krea reports under8s editing; launch comparisons have service/time scope, while product playback is illustrative and competitor pricing partly unvalidated.; Krea recommends naming protected features, describing scene/light/camera, assigning roles to references and using only for narrow edits."
+    },
+    {
+      "id": "creative-krea3",
+      "title": "Krea 3: an image editing model 4× faster than Nano Banana Pro",
+      "url": "https://www.krea.ai/krea-3",
+      "accessedAt": "2026-10-24T17:54:01.043Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "The launch article says six reference images; current product page says eight. Scope of difference is unresolved.; Krea reports under8s editing; launch comparisons have service/time scope, while product playback is illustrative and competitor pricing partly unvalidated."
+    },
+    {
+      "id": "creative-source-f086ed15b6432281",
+      "title": "Krea Pricing | AI Creative Tools for Everyone",
+      "url": "https://www.krea.ai/pricing",
+      "accessedAt": "2026-10-24T17:56:23.096Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Plan page lists Krea3 access, Ultra for Max or above, and commercial licenses for named paid tiers."
+    },
+    {
+      "id": "creative-source-2d317096a6f5611d",
+      "title": "Terms of Use | Krea",
+      "url": "https://www.krea.ai/terms",
+      "accessedAt": "2026-10-24T17:54:04.746Z",
+      "publishedAt": "2024-05-20",
+      "locator": "See named sections and evidence claim locators",
+      "supports": "Krea terms make content rights plan-dependent and discuss submission rights, tier-dependent visibility and broad service licenses."
+    },
+    {
+      "id": "creative-source-544f919815477f5d",
+      "title": "KREA API - AI Image Generation, Upscaling & Video API | krea.ai",
+      "url": "https://www.krea.ai/features/api",
+      "accessedAt": "2026-10-24T17:54:52.244Z",
+      "publishedAt": null,
+      "locator": "See named sections and evidence claim locators",
+      "supports": "The inspected API overview describes hosted access but its sample uses Krea2 rather than an exact Krea3 endpoint."
+    }
+  ],
+  "images": [],
+  "judgment": "Promising for controlled visual iteration when preservation can be checked. Published examples and timing claims justify a pilot, not a claim of general superiority.",
+  "researchNote": "Public Chrome inspection on October 24, 2026. Older candidate reconsidered before newly discovered leads. No account creation, upload, generation, purchase or installation. Product screenshot inspected as marketing presentation; no performance inference drawn from it."
+}

@@ -1,0 +1,32 @@
+{
+  "reportId": "kimi-k31-pro",
+  "reviewerId": "/root/edition_20261024_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:40.947800Z",
+  "reportHash": "301fba434916a1e564f9f6c035b9ff7685c1a3489b8fc7b97732ca21330eda1f",
+  "evidenceHash": "5060f7f3f3222a37f21318d8afca85dd2fd42aaa768d80314eee416dfdbc4fa0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Detailed paid-access requirements, model rates, caching, reasoning defaults, image transport rules and web-search warnings make the hosted coding and 3D pilots practically useful. Concrete app acceptance tests and editable Blender/CAD workflows are clearly proposals rather than observed production outcomes.",
+    "impact": "A long-context multimodal coding model integrated into several hosted products and 3D workflows could be consequential for agent-based building. Significance remains bounded by heterogeneous vendor evaluations, untested artifact delivery and the pending weight release.",
+    "novelty": "The reported 3D construction focus, product integration and Highspeed variant provide meaningful differentiation. No comparable artifact test or consistent independent benchmark establishes an exceptional new capability; long context and tool-directed coding alone are not novel.",
+    "maturity": "The API is documented sufficiently to plan a pilot, but placeholder benchmark text, differing internal accuracy accounts, production web-search warnings and absent execution verification are material readiness limits. A usable hosted evaluation is supported, broad autonomous reliability is not.",
+    "openness": "Public API documentation and compatibility formats offer some inspectability and migration possibilities. As of the inspection date, weights are only promised for November 4, and their license and viable self-hosting are unknown, so future openness receives no present credit."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Unknown primary publication date correctly stays null; October discovery and a promised November weight release must not become a fabricated exact launch or availability date.",
+    "Provider performance comparisons use different harnesses, subsets and external reports. The report correctly avoids a numerical quality ranking.",
+    "Minor citation hardening opportunity: the body general-quickstart link uses /docs/overview, whereas the inspected source record resolves to /docs/get-your-api-key; use the saved canonical destination on a future substantive revision."
+  ]
+}

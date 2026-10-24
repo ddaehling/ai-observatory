@@ -1,0 +1,32 @@
+{
+  "reportId": "tutormoments",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "d9bf17854c9b02233598c942131e44289b8dcbbfacc0f32e1fb3d7974df89592",
+  "evidenceHash": "b557858f626e03e2af95d63d873bc4f4ab7ac2194fee7251eac0c3fd361f8968",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "Frozen pedagogical moments, matched tutor continuations and separate scaffold/rigor metrics directly address a practical failure in education software. Concrete regression, teacher-review and explainer workflows provide unusually useful next steps without claiming learning efficacy.",
+    "impact": "Context-sensitive evaluation of when to help or hold back is a meaningful contribution to tutor development. The narrow population, synthetic students and model-assisted scoring bound its significance; the evidence does not establish better classroom outcomes or general AI progress.",
+    "novelty": "Replay from teacher-selected decision points with fixed student traits provides meaningful differentiation from answer-correctness scoring. It extends existing simulation and behavior-evaluation methods rather than demonstrating an entirely new evaluation paradigm.",
+    "maturity": "The released runtime, frozen records, prompts, manifests, failure handling and reference replays support practical evaluation. Preview scope, subjective/noisy labels and unrecoverable original human action classifications limit confidence in complete reproduction and external validity.",
+    "openness": "Apache code, CC BY data, fixed contexts and provenance provide strong inspectability and reuse. Third-party model terms and credentials, residual de-identification risk, and the missing historical classification run prevent full openness and end-to-end reproducibility."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Original human action-distribution classifications are unavailable; current reference KL figures are not interchangeable with paper figures.",
+    "Scores measure behavior in selected synthetic replays, not real student learning or superiority to teachers.",
+    "Historical model results, rate dates and timing methods must not be treated as current universal rankings."
+  ]
+}
