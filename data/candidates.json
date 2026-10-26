@@ -1452,13 +1452,14 @@
     "feedFingerprint": "1d8ed8adb147f5b4d718b1ff5d584ac806ccb6a8ea0130af0dcfb6163758a418",
     "discoveredAt": "2026-10-20T16:06:02Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "included",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "reconsideredAt": "2026-10-26T19:21:01Z",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
-    "reportId": "agent-lightning"
+    "reportId": "agent-lightning",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "candidate-a38ad8641743fbf5",
@@ -2748,19 +2749,19 @@
     "officialUrl": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
     "publishedAt": "2026-10-05",
     "changeType": "baseline",
-    "status": "needs_review",
+    "status": "included",
     "reportId": "together-link",
     "sourceIds": [
       "together-link",
       "seed-together-ai"
     ],
-    "reason": "Primary launch article and current beta docs fully acquired. Draft together-link report prepared. Explicitly preserves once-per-session launch routing versus per-request docs conflict; provider billing and fixed-model flag are documented. Pending two independent reviews, not yet included.",
+    "reason": "Consolidated into together-link after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "runId": "scan-20261020T160557Z-63b483",
     "id": "together-link",
     "discoveredAt": "2026-10-20T16:24:41Z",
     "reconsideredAt": "2026-10-26T19:21:01Z",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
-    "decidedAt": "2026-10-22T17:15:00Z"
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "title": "Meta's Muse Spark open-weight release Is Now in Limited Preview on GroqCloud",
@@ -4259,13 +4260,13 @@
     "officialUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models/",
     "publishedAt": null,
     "changeType": "baseline",
-    "status": "needs_review",
+    "status": "included",
     "reportId": "ollama-phonon",
     "sourceIds": [
       "social-source-0c2be6ff8a51eafc",
       "seed-reddit-localllama"
     ],
-    "reason": "Old social Phonon lead reconsidered against Ollama October 24 announcement and Gradium primary model/voice cards. The family predates this integration; default English versus noncommercial 40M licenses and upstream access condition are verified from public cards. Linked to proposed ollama-phonon integration report, pending independent reviews.",
+    "reason": "Consolidated into ollama-phonon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "discoveredAt": "2026-10-20T16:12:59.668Z",
     "runId": "scan-20261020T160557Z-63b483",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
@@ -4277,7 +4278,8 @@
     "locator": "Visible best-listing item 10; story body/comments uninspected",
     "coverageComplete": false,
     "id": "social-candidate-0c2be6ff8a51eafc",
-    "reconsideredAt": "2026-10-26T19:21:01Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "title": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program.",
@@ -6733,13 +6735,13 @@
     "feedFingerprint": "3ae252c25d5578cb7ca77a1a7ce93914c40a55db1d2392ba3984185036b0f051",
     "discoveredAt": "2026-10-22T17:08:09Z",
     "runId": "scan-20261022T170517Z-9e6c72",
-    "status": "needs_review",
+    "status": "included",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-e986592dff42085c",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
-    "decidedAt": "2026-10-22T17:13:57Z",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "decidedAt": "2026-10-26T19:32:09Z",
     "reconsideredAt": "2026-10-26T19:21:01Z",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "reportId": "agent-lightning"
@@ -12795,8 +12797,8 @@
     "id": "repos-candidate-110896d94e289814",
     "title": "datalab-to/indra-ocr",
     "officialUrl": "https://huggingface.co/datalab-to/indra-ocr",
-    "status": "needs_review",
-    "reason": "Primary card, repository, code license and actual weight license verified. Proposed baseline report explains CPU workflow, true default size, limits and materially broader output/competition licensing. Awaiting required independent reviews; no runtime test.",
+    "status": "included",
+    "reason": "Consolidated into indra-ocr after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-110896d94e289814",
@@ -12807,7 +12809,7 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": "indra-ocr",
-    "decidedAt": "2026-10-22T17:27:41Z",
+    "decidedAt": "2026-10-26T19:32:09Z",
     "reconsideredAt": "2026-10-26T19:21:01Z",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
@@ -14015,15 +14017,16 @@
     "feedFingerprint": "3d5208343e84f817fccb694d70775eae5d6516bd9b64f77e08e9c77e76237acd",
     "discoveredAt": "2026-10-24T17:51:20Z",
     "runId": "scan-20261024T174829Z-815900",
-    "status": "needs_review",
+    "status": "included",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-e986592dff42085c-379ad5a2b12b",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "reconsideredAt": "2026-10-26T19:21:01Z",
     "reconsiderationRunId": "scan-20261026T185819Z-680b48",
-    "reportId": "agent-lightning"
+    "reportId": "agent-lightning",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "candidate-5abe8bfea3efe5f5",
@@ -23259,9 +23262,9 @@
     "runId": "scan-20261024T174829Z-815900",
     "researchPriority": "backlog",
     "discoveryMethod": "chrome_listing",
-    "status": "needs_review",
-    "reason": "Primary evidence now inspected and substantial report drafted for independent review. Oct24 eight-video educational course, public official code, CPU/GPU guidance and Apache2 code documented. No execution or learning-effectiveness validation claimed.",
-    "decidedAt": "2026-10-26T19:15:18.510321Z",
+    "status": "included",
+    "reason": "Consolidated into reasoning-from-scratch-course after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "decidedAt": "2026-10-26T19:32:09Z",
     "inspectionLevel": "listing_only",
     "reportId": "reasoning-from-scratch-course",
     "reconsideredAt": "2026-10-26T19:21:01Z",
@@ -23279,9 +23282,9 @@
     "runId": "scan-20261024T174829Z-815900",
     "researchPriority": "backlog",
     "discoveryMethod": "chrome_listing",
-    "status": "needs_review",
-    "reason": "Primary evidence now inspected and substantial report drafted for independent review. Paper first submitted Apr3, revised Sep22, with Oct23 explainer; classified baseline. Small-study grounding results are distinguished from self-reported novelty, and public system access remains unverified.",
-    "decidedAt": "2026-10-26T19:15:18.510321Z",
+    "status": "included",
+    "reason": "Consolidated into litpivot after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "decidedAt": "2026-10-26T19:32:09Z",
     "inspectionLevel": "listing_only",
     "reportId": "litpivot",
     "reconsideredAt": "2026-10-26T19:21:01Z",
@@ -24187,13 +24190,14 @@
     "feedFingerprint": "708614f0fa64c32da95676912c2e49e1455fb9665a9dffc510f40370e110fe7f",
     "discoveredAt": "2026-10-26T18:58:24Z",
     "runId": "scan-20261026T185819Z-680b48",
-    "status": "needs_review",
+    "status": "included",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-e986592dff42085c-80bb784dfc4d",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "Primary article, repository, license and stable1.0.2 guides verified. Draft baseline agent-lightning report covers August release history, architecture, hardware, default logging and evaluation limits; current feed revision is not treated as a new launch. Await exact independent reviews.",
-    "reportId": "agent-lightning"
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "reportId": "agent-lightning",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "candidate-452814709e1615f5",
@@ -24221,9 +24225,10 @@
     "publishedAt": "2026-10-26",
     "discoveredAt": "2026-10-26T19:02:57.060Z",
     "runId": "scan-20261026T185819Z-680b48",
-    "status": "needs_review",
-    "reason": "Full primary launch, model API reference and safety addendum verified. Draft gpt61-terra report covers availability, modality/tool boundaries, pricing conditions, evaluated behavior and proposed practical workflows; await exact independent reviews.",
-    "reportId": "gpt61-terra"
+    "status": "included",
+    "reason": "Consolidated into gpt61-terra after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "reportId": "gpt61-terra",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "official-candidate-45e40aaafa12cf57",
@@ -24234,9 +24239,10 @@
     "publishedAt": "2026-10-26",
     "discoveredAt": "2026-10-26T19:02:30.277Z",
     "runId": "scan-20261026T185819Z-680b48",
-    "status": "needs_review",
-    "reason": "New October26 safety addendum is supporting evidence for the single Terra report; not a separate model launch or duplicate standalone report. Evaluation conditions and disclosed regressions retained.",
-    "reportId": "gpt61-terra"
+    "status": "included",
+    "reason": "Consolidated into gpt61-terra after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "reportId": "gpt61-terra",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "official-candidate-27779e2e3a96ff05",
@@ -24616,10 +24622,11 @@
     "publishedAt": "2026-10-24",
     "discoveredAt": "2026-10-26T19:03:18.954Z",
     "runId": "scan-20261026T185819Z-680b48",
-    "status": "needs_review",
-    "reason": "Dated primary October 24 Ollama integration announcement supported by speech docs and upstream Gradium cards. Proposed ollama-phonon report distinguishes model-family release from integration date and records version, voice and normalization discrepancies; pending independent review.",
+    "status": "included",
+    "reason": "Consolidated into ollama-phonon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "changeType": "new",
-    "reportId": "ollama-phonon"
+    "reportId": "ollama-phonon",
+    "decidedAt": "2026-10-26T19:32:09Z"
   },
   {
     "id": "research-candidate-53aee701d51408d4",

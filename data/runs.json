@@ -3907,15 +3907,15 @@
   {
     "id": "scan-20261026T185819Z-680b48",
     "startedAt": "2026-10-26T18:58:19Z",
-    "finishedAt": null,
-    "status": "acquisition_complete",
+    "finishedAt": "2026-10-26T19:32:49Z",
+    "status": "complete",
     "windowStart": "2026-10-21T17:48:29Z",
     "windowEnd": "2026-10-26T18:58:19Z",
     "sourcesChecked": 142,
     "sourcesFailed": 0,
     "candidatesFound": 71,
-    "publishedCount": 0,
-    "coverageNote": "Feed acquisition finished. Manual sources and candidate decisions must be accounted for before this becomes a complete scan.",
+    "publishedCount": 31,
+    "coverageNote": "October 26 bounded scan: four successful feeds and Chrome visits to all 142 run-start entrypoints. The final outcomes retain four feed results, 29 completed manual date windows and 109 partial windows with earlier coverage dates preserved. Assessed 71 new candidates and reconsidered 92 prior candidates: 12 candidate records consolidate into seven newly published reports, 24 are excluded and 127 remain needs_review. The library contains 31 reports; all 24 previous reports and evidence hashes are unchanged. Added 97 source records, including 10 new recurring entrypoints, seven still unverified for future visits. Four discovery workers and four fresh Astra reviewer invocations produced 18 individual reviews; two reports were compressed and independently re-reviewed to satisfy their impact-based length tier.",
     "limitations": [
       "seed-meta-ai: Partial coverage; Current selective landing page shows July and June stories; cookie notice did not prevent reading. It does not establish an exhaustive September18–October26 chronological archive; old watermark preserved.",
       "seed-nvidia-developer: Partial coverage; Topic landing page plus separate recent archive inspected. Recent chronology reaches October15, not September18; topic selections are not complete history. Old watermark preserved.",
@@ -4093,7 +4093,11 @@
       "The two broad searches are saved with date-only query time. Their snippets are discovery leads, not Chrome primary reads; unknown publication/event dates remain null and apparent update dates were not accepted as launch dates.",
       "Only the two oldest direct X post revisits and the repaired Dessa primary page establish new direct source inspection in this accounting bundle. Exact older HF/Qwen matches were reconsidered only at timeline scope; the remaining old backlog was not claimed as reviewed.",
       "Initial loading-only Astra, Live and Dessa captures are retained, with one successful repair capture authoritative for each. No product, model, repository, media recording, speed claim or API was executed or independently tested.",
-      "GPT-6.1 Terra, Phonon, Duetto and the Cohere Flash-Next investigation belong to other primary workers. Existing GPT-6 Intelligent UI was closed as a ledger duplicate; no new evidence touches existing published report sources or the Qwen3.8-27B report."
+      "GPT-6.1 Terra, Phonon, Duetto and the Cohere Flash-Next investigation belong to other primary workers. Existing GPT-6 Intelligent UI was closed as a ledger duplicate; no new evidence touches existing published report sources or the Qwen3.8-27B report.",
+      "Current-page, social, repository and model-hub visits do not exhaust all outstanding history; 109 partial windows remain explicit. Search snippets, benchmark and launch trackers are discovery leads rather than primary verification.",
+      "No advertised tools, models, training runs or creative outputs were executed or benchmarked. Access, pricing and licensing statements describe the inspected public documentation; conflicting documentation and unknown dates are retained.",
+      "Restricted previews, gated weight files and consequential ambiguous leads remain pending. In particular, Dessa public deployment access and the Cohere Flash-Next incident scope require further evidence; no claim of no news follows from limited access.",
+      "Four discovery workers plus root acquisition and accounting were used. Token usage and monetary costs were not measured; no resource savings are claimed."
     ],
     "sourceIdsExpected": [
       "seed-openai-news",

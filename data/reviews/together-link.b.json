@@ -1,31 +1,31 @@
 {
   "reportId": "together-link",
-  "reviewerId": "/root/edition_20261026_astra_b",
+  "reviewerId": "/root/edition_20261026_r2_astra_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-26T19:25:54.196450Z",
-  "reportHash": "3d34b8724d3abd0945cda1dcb6b4e56830d3128338f694fffe4910cd7a4b81ca",
+  "reviewedAt": "2026-10-26T19:31:24Z",
+  "reportHash": "3798172eba85f81e0fb88a59d1cedb7744e2535bc6ea686291cb2f72a41b8902",
   "evidenceHash": "8f4eb89b00a869fd797b71b87e8dfd63f6e861c0029d59af36c7ac7bbc514494",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 7,
-    "impact": 5,
+    "impact": 4,
     "novelty": 4,
-    "maturity": 4,
+    "maturity": 5,
     "openness": 4
   },
   "rationale": {
-    "usefulness": "Documented integration with established coding surfaces, explicit fixed-model selection and usage accounting enable a practical provider-comparison pilot. The report gives concrete teaching-app, website and production-utility tasks and separates image support by surface. Installation, key handling and actual completion quality remain untested.",
-    "impact": "Reducing provider-switching friction can meaningfully widen model choice for existing agent users. Evidence here establishes a beta integration and advertised economics, not a new model capability or measured ecosystem-wide gain; the impact is moderate and operational.",
-    "novelty": "The integration across several terminal and desktop agents is a useful package, but hosted model routing and compatibility layers are established ideas. The report supplies no controlled evidence of a uniquely better router, and the session-versus-request discrepancy prevents treating routing behavior as a demonstrated innovation.",
-    "maturity": "Detailed setup, pinning, billing and troubleshooting documentation support a real pilot. The beta warning, contradictory primary descriptions of routing frequency and surface-specific configuration make dependable production behavior insufficiently established, especially without an installation or task trial.",
-    "openness": "Provider choice and named open-model endpoints improve optionality, but this path uses a hosted gateway and paid accounts. Neither the connector’s complete licensing nor every model’s deployment rights is established; hosted open-model access does not provide local inspectability or reproducibility of the routing service."
+    "usefulness": "The documented connector lets builders compare hosted models in several existing agents, with explicit pinning, configuration prerequisites and usage accounting. The report turns those features into bounded educational-app, website-image and video-preparation trials with acceptance criteria. These are actionable proposals, although neither task quality nor savings has been measured and image support is limited to named surfaces.",
+    "impact": "The supported contribution is reducing friction when adopting or comparing hosted models within familiar coding tools. This can matter operationally, but the evidence establishes neither a new model capability nor an independently demonstrated improvement in completed-task cost or quality. Its significance to AI development is therefore modest rather than a substantial methodological advance.",
+    "novelty": "Combining existing agent connections, automatic routing, model pinning, usage comparison and selected image workflows is a useful integration. The supplied primary sources do not demonstrate that its mechanisms are technically new or uniquely differentiated against alternatives, so integration convenience warrants only a moderate-low novelty rating.",
+    "maturity": "Detailed prerequisites, supported versions, command syntax, desktop-profile behavior and troubleshooting make a limited trial reasonably approachable. Beta status, contradictory session-versus-request routing descriptions and the absence of execution or reliability testing prevent a stronger readiness rating. The report handles these limitations accurately.",
+    "openness": "Named hosted models and a documented mechanism for changing models offer some choice and portability of the surrounding workflow. However, requests depend on a hosted gateway and API accounts; the supplied evidence does not establish gateway inspectability or all model licenses and deployment rights. Open-model marketing is correctly kept separate from local inference and comprehensive openness."
   },
-  "confidence": "medium",
   "concerns": [
-    "No blocking discrepancy found because the report prominently preserves the unresolved once-per-session versus per-request routing conflict.",
-    "The savings percentage and same-token counterfactual must not become an accepted-task savings claim. The report correctly separates Together, Anthropic and image charges."
-  ]
+    "Non-blocking: actual routing frequency, integration fidelity and accepted-task savings remain unverified; the report explicitly discloses these limitations.",
+    "Non-blocking editorial opportunity: the saved documentation specifically disables native web search in the ChatGPT Desktop profile. Naming that limitation would make the existing warning about surface-specific integrations more concrete."
+  ],
+  "confidence": "high"
 }

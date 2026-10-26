@@ -24397,5 +24397,101 @@
     "reason": "Excluded from this edition: the headline is an anecdotal reliability story with no inspected reproducible case or practical mitigation. Preserve the discovery without treating it as a verified model defect.",
     "runId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-26T19:19:48.769462Z"
+  },
+  {
+    "candidateId": "candidate-e986592dff42085c",
+    "reportId": "agent-lightning",
+    "status": "included",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "together-link",
+    "reportId": "together-link",
+    "status": "included",
+    "reason": "Consolidated into together-link after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "social-candidate-0c2be6ff8a51eafc",
+    "reportId": "ollama-phonon",
+    "status": "included",
+    "reason": "Consolidated into ollama-phonon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "candidate-e986592dff42085c-379ad5a2b12b",
+    "reportId": "agent-lightning",
+    "status": "included",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "repos-candidate-110896d94e289814",
+    "reportId": "indra-ocr",
+    "status": "included",
+    "reason": "Consolidated into indra-ocr after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "candidate-e986592dff42085c-80bb784dfc4d",
+    "reportId": "agent-lightning",
+    "status": "included",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "research-candidate-da8785cc5779f5c9",
+    "reportId": "reasoning-from-scratch-course",
+    "status": "included",
+    "reason": "Consolidated into reasoning-from-scratch-course after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "research-candidate-66bac3e04c35a301",
+    "reportId": "litpivot",
+    "status": "included",
+    "reason": "Consolidated into litpivot after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "candidate-e986592dff42085c-27869b7b91e8",
+    "reportId": "agent-lightning",
+    "status": "included",
+    "reason": "Consolidated into agent-lightning after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "official-candidate-35e334c198740f74",
+    "reportId": "gpt61-terra",
+    "status": "included",
+    "reason": "Consolidated into gpt61-terra after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "official-candidate-45e40aaafa12cf57",
+    "reportId": "gpt61-terra",
+    "status": "included",
+    "reason": "Consolidated into gpt61-terra after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "creative-ollama-speech-20261026",
+    "reportId": "ollama-phonon",
+    "status": "included",
+    "reason": "Consolidated into ollama-phonon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-26T19:32:09Z"
   }
 ]

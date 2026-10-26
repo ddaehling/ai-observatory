@@ -1,10 +1,10 @@
 {
   "reportId": "reasoning-from-scratch-course",
-  "reviewerId": "/root/edition_20261026_astra_a",
+  "reviewerId": "/root/edition_20261026_r2_astra_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-26T19:26:18.634690Z",
-  "reportHash": "6a04f09bea45bf29fbdc4c3ba5970a9cdf9ca1108e5be018fd66ca964bbcc705",
+  "reviewedAt": "2026-10-26T19:31:37.139069Z",
+  "reportHash": "c50d3f69f8a2d5a7226cf6cdc26a990617aec830329ae5770392f26d2d40d4d8",
   "evidenceHash": "c5bdec53e8a20b4864e98fb6d3a4d6d2e752074d681c64e1d64a7d3b8687b87d",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
@@ -17,16 +17,16 @@
     "openness": 8
   },
   "rationale": {
-    "usefulness": "The connected progression from generation and verification through sampling, RLVR and distillation is highly actionable for Python/PyTorch learners and educators. Repository exercises and hardware notes support implementation, while the report gives concrete experiment and interface projects without promising tutoring outcomes.",
-    "impact": "This is an educational synthesis of existing methods with the potential to improve practitioner understanding. The supplied evidence establishes curriculum and materials, not a new AI method, measured learning improvement or field-wide development effect. Its educational usefulness can be high while impact on AI development remains four.",
-    "novelty": "The newly announced video sequence packages known methods around a small pretrained model and existing book/code. Its coherent teaching progression is valuable, but no new reasoning algorithm or demonstrated technical differentiation is claimed, supporting a low novelty score.",
-    "maturity": "Eight substantial videos, existing companion notebooks, exercises and setup/troubleshooting material form a concrete learning resource. No full lecture viewing or numerical reproduction was performed, and GPU/runtime demands vary, so the resource is well developed without being independently validated end to end.",
-    "openness": "The public companion implementation is identified as Apache-2.0, with readable notebooks and exercises suitable for adaptation and reproducible experiments. Separate book, video, pretrained-model, dataset and teacher-data rights prevent treating the complete course stack as uniformly permissive."
+    "usefulness": "The course guide and repository document a coherent, actionable sequence from Qwen3 generation through verification, inference scaling, GRPO and distillation, with notebooks, exercises, setup guidance and chat-interface material. The report turns these components into bounded classroom, app-viewer and educational-video proposals while preserving their untested status. Python/PyTorch requirements and later GPU needs narrow the audience but still leave strong practical value.",
+    "impact": "The new event is an instructional video series accompanying existing book and code. It can improve practitioner understanding and experimental habits, but the supplied evidence establishes neither new AI methods nor measured educational outcomes or wider development effects. Its potential contribution is worthwhile dissemination rather than a demonstrated domain-level technical advance.",
+    "novelty": "The course explains established techniques on a small pretrained model: sampling, voting, refinement, verifiers, GRPO and teacher-response distillation. The new delivery format and connected instructional progression add value, while the companion code and book already existed and no novel algorithmic result is demonstrated.",
+    "maturity": "Eight described videos, chapter notebooks, exercise solutions, troubleshooting, hardware guidance and an established companion repository support a well-developed learning resource. The review does not establish successful execution, exact resource requirements or learning effectiveness, and training remains materially more demanding than early examples. This supports solid educational readiness without implying production reliability.",
+    "openness": "The public official repository identifies Apache-2.0 licensing and exposes chapter code, exercises, model implementation material and optional scripts, enabling study, adaptation and local experimentation. This provides substantial inspectability and portability. The report correctly separates code rights from book, video, model, dataset and teacher-material rights, and no complete end-to-end reproduction was performed, preventing an exceptional score."
   },
-  "confidence": "medium",
   "concerns": [
-    "Non-blocking: no course-completion study, full viewing or notebook reproduction establishes learning effectiveness or runtime reliability; the draft says so.",
-    "Non-blocking: small-model math verification does not establish general reasoning, software-engineering or tutoring gains.",
-    "Separate publication gate: this reviewer rates impact 4; if final mean impact is below 5, the contract requires the 1,000-word tier and fresh review after any substantive revision."
-  ]
+    "Non-blocking: no notebooks or training runs were executed, the full lectures were not watched, and exact GPU memory, runtimes and cloud costs were not established. These limits are explicit in the report.",
+    "Non-blocking: small-model math verification and reward improvements do not establish general reasoning, tutoring quality or learning effectiveness. The report explicitly limits these inferences and identifies its app, classroom and video proposals as editorial adaptations.",
+    "Non-blocking: Apache-2.0 is supported for companion code; other material rights remain separate. The report does not overextend the license."
+  ],
+  "confidence": "high"
 }
