@@ -1,0 +1,94 @@
+{
+  "id": "together-link",
+  "title": "Together Link: evaluate open models inside a familiar coding workflow",
+  "entity": "Together Link",
+  "category": "Tools",
+  "tags": [
+    "coding agents",
+    "model routing",
+    "creative development",
+    "beta"
+  ],
+  "summary": "Together Link connects existing coding tools to hosted open models. Its practical value deserves a task-level trial, especially because the launch post and current beta docs disagree about how often Auto changes models.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-05",
+  "discoveredAt": "2026-10-20T16:24:41Z",
+  "updatedAt": "2026-10-26T19:16:51.381222Z",
+  "officialUrl": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "Keep the workflow, evaluate another model",
+      "html": "<p>Together Link puts hosted open models behind coding tools a builder already uses. Its practical appeal is continuity: the repository, review habits and familiar agent interface can remain the starting point while the model provider changes. For someone maintaining educational apps, interactive websites or creative utilities, that makes a small comparison easier to organize. It does not establish that another model will finish the same work equally well, nor that changing the provider preserves every integration. Those are the questions a useful trial must answer.</p><p>Together's October 5 announcement describes support for Claude Code, Claude Desktop, Codex, OpenCode and Pi. The current documentation additionally spells out desktop profiles, model selection, API-key handling and troubleshooting. It labels the product beta and warns that commands, routing and available models may change. This report is a researched baseline for that beta, based on the announcement and documentation inspected October 26. We have not installed the connector or measured an agent session. <a href=\"https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use\">Together Link announcement</a>; <a href=\"https://docs.together.ai/docs/togetherlink\">beta documentation</a>.</p><p>The strongest reason to investigate is therefore operational: can an existing tool complete your own repeatable tasks through a different inference service? A successful answer would be a reviewed patch or working asset workflow, with its total cost and friction recorded. The headline promise of cheaper tokens is only one input to that decision.</p>"
+    },
+    {
+      "id": "routing",
+      "title": "A material disagreement about routing",
+      "html": "<p>The two primary sources disagree about a central behavior. The launch post says its Auto router chooses from the session's first task and routes once per session, preserving prompt caching. The current beta documentation says a hosted gateway classifies each request and chooses a model for that request. We cannot determine from these pages alone whether this reflects an implementation change, older marketing copy or another qualification. Do not build a budget or cache strategy around a confidently asserted routing frequency. <a href=\"https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use\">launch routing description</a>; <a href=\"https://docs.together.ai/docs/togetherlink\">How the auto router works</a>.</p><p>The documentation also limits the optional Anthropic route to Claude Code and Claude Desktop sessions with an Anthropic API key. Those calls are billed to the Anthropic account behind that key. Codex, OpenCode, Pi and ChatGPT Desktop sessions are documented as staying on Together models, as are Claude sessions without that extra key. This is more specific than treating Auto as a universal menu of every provider.</p><p>For a first comparison, the documented fixed-model option avoids the ambiguity. Use the full command with <code>--main</code> before the tool name; the documentation gives <code>togetherlink --main zai-org/GLM-5.3 claude</code>. It warns that a tool's usual <code>--model</code> flag after its name may be refused or ignored, and that shortcuts place the tool name first. Record the model actually shown in the session banner. These are documented directions for a future test, not commands executed in this research.</p>"
+    },
+    {
+      "id": "setup",
+      "title": "Prerequisites and configuration boundaries",
+      "html": "<p>Together Link requires a Together API key and an already installed supported coding tool or desktop app. Its installer targets macOS or Linux with Bash and curl; Linux installation of Bun also needs unzip. The docs specify OpenCode 2 and Pi Code 0.80.8 or newer, with Node.js 22.19 or newer for Pi. An existing account with a different AI service is not a substitute for the Together key. The installer can add Bun and commands under the user's local binary directory, so this is a software setup step rather than merely opening a website. <a href=\"https://docs.together.ai/docs/togetherlink\">Requirements and Get started</a>.</p><p>The distinctions between terminal and desktop integrations matter. Together says terminal agents receive temporary configuration for each launch. Desktop integrations use persistent profiles owned by Together Link, and those profiles store the Together API key locally. The docs describe a separate ChatGPT Desktop profile and backups for reversible Claude setup. They also say no local proxy or daemon runs: model requests go to the hosted gateway. This is a hosted inference workflow even when the agent edits files on your laptop.</p><p>That documentation is useful but is not a configuration audit. Before a team adopts the connector, inspect where its key and profile are stored, confirm which account receives charges, and check the provider arrangements applicable to the material the agent will send. Our source set does not establish a universal data-retention policy or a license for every hosted model. Preserve the normal launcher as a straightforward comparison and recovery path.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Measure completed work, not a token counterfactual",
+      "html": "<p>Together advertises more than 50 percent savings in the launch post. The current docs describe a session cost estimate alongside what the same tokens would have cost on Claude Opus. That comparison can help explain a bill, but it is not evidence that both models would use identical tokens, make identical tool calls or need the same number of retries to deliver an accepted result. A lower token rate can be erased by failed attempts or expensive human repairs; conversely, an inexpensive model may be entirely adequate for a bounded change. <a href=\"https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use\">savings claim</a>; <a href=\"https://docs.together.ai/docs/togetherlink\">View usage</a>.</p><p>The retrieved price table lists GLM 5.3 at $1.40 per million input tokens, $0.26 for cached input and $4.40 for output. These are documentation prices at retrieval, not a quotation for a future project. Other listed models have different rates, and Auto can change which model supplies a request according to the current documentation. Use the live <code>togetherlink models</code> table and inspect the recorded account usage before making a forecast.</p><p>A practical comparison sheet should count accepted tasks, total billed inference, elapsed time, number of agent attempts and minutes of human repair. Keep image generation separate: the docs explicitly track image spend apart from token usage. Include any Anthropic charges when that route is enabled. Avoid translating a vendor's same-token estimate into a promised percentage reduction for your own website or course-production budget.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A bounded teaching-app exercise",
+      "html": "<p>A useful educational pilot would modify an existing practice app in a disposable branch: add a teacher-controlled hint level to one exercise, preserve keyboard navigation, and ensure the stored answer cannot leak into the student view. Prepare the acceptance criteria before choosing a model. Give each model the same starting repository and task, then review the final diff and exercise the student and teacher paths. This is a proposed evaluation, not a demonstrated Together Link result.</p><p>Such a task contains several kinds of work: understanding a small data model, editing UI copy, tracing an event handler and maintaining an accessibility interaction. It reveals more about practical usefulness than a request for a plausible-looking code sample. A teacher or developer can judge whether the model kept the pedagogical boundary intact without treating a general coding benchmark as evidence about classroom suitability.</p><p>Start with a pinned model. If it succeeds, repeat a few representative changes before trying Auto, and record the route shown by the tool. If it fails, classify the failure: incomplete requirements, bad reasoning, broken integration or a runtime problem. That distinction determines whether changing the model, improving the task or repairing the environment is appropriate. Keep real student information out of an initial synthetic exercise because it adds no value to testing this technical question.</p><p>A fair trial also needs a stopping rule. Define in advance how many attempts the agent gets and which failures make the change unacceptable. Otherwise, an inexpensive model can appear successful only because it received more retries or more human hints. Use a small mixture of familiar tasks and held-out tasks that were not used to tune the brief. Keep the reviewer unaware of the provider where practical, and compare the actual patch against the same checklist. This does not turn a handful of examples into a benchmark; it makes the local adoption decision less vulnerable to one impressive demonstration.</p>"
+    },
+    {
+      "id": "creative-workflows",
+      "title": "Website assets and video planning",
+      "html": "<p>The documentation describes an image-generation skill in Claude Code, Claude Desktop and ChatGPT Desktop sessions launched through Together Link. It says the agent can generate or edit images using Together-hosted image models, with separate image usage accounting. That is relevant to a builder assembling a lesson microsite: the same working session could propose a diagram concept, write the page that uses it and refine the surrounding explanation. It does not mean every supported terminal agent exposes the same image workflow. <a href=\"https://docs.together.ai/docs/togetherlink\">Generate images</a>.</p><p>For a website trial, supply a small asset specification: subject, dimensions, intended placement, accessible description and any facts the image must communicate. Ask the agent to integrate a reviewed image into one responsive page. Evaluate legibility at mobile size and check whether the result actually teaches the intended idea. Keep the source image and its generation details with the project; a successful API response does not settle rights to references or factual accuracy.</p><p>For video work, use the coding agent for surrounding production tasks such as a shot list, a storyboard page, a caption-format converter or an asset manifest. The evidence here does not establish a Together Link video editor or timeline integration. A concrete pilot could produce a browser-based storyboard from a script and approved stills, then export a checklist for the existing editor. Judge whether this reduces preparation work while leaving the actual edit inspectable.</p>"
+    },
+    {
+      "id": "operations",
+      "title": "Operational details that can derail a trial",
+      "html": "<p>Several documented details deserve attention before interpreting a failure as model quality. Together Link does not read a project's <code>.env</code> file for its key. It checks an explicit API-key argument before saved configuration, then the environment variable. A model flag in the wrong position can select a different route than intended. OpenCode 1 and older Pi versions are not supported by the current instructions. Each is a setup variable that should be held fixed during comparison. <a href=\"https://docs.together.ai/docs/togetherlink\">Configure your API key and Troubleshooting</a>.</p><p>For automated jobs, the docs warn that headless Claude Code can block indefinitely when it inherits an open standard input. They show closing stdin as the remedy. This matters for a nightly documentation or storyboard build: a process waiting for input is not necessarily a slow model. Observe completion and error states, set an appropriate job timeout in your own automation, and preserve enough output to tell whether a request failed before or after reaching the model.</p><p>The normal agent's safeguards and approval boundaries still need evaluation. Changing a provider does not demonstrate that every skill, tool call or extension works identically. Check one read-only request, one reversible code change and any required integration before expanding the workload. Restore ordinary behavior by launching the tool directly, as the documentation describes, and verify that recovery instead of assuming it from the product claim.</p><p>Keep a short run record with the connector version, agent version, model selection, acceptance result and recovery outcome. If Auto is tested later, preserve the displayed route and usage record as well. The beta documentation conflict makes that evidence especially valuable when behavior changes between runs. A result without its configuration is difficult to reproduce or compare.</p>"
+    },
+    {
+      "id": "verdict",
+      "title": "Where it earns a place",
+      "html": "<p>Together Link is worth a controlled trial for builders who already know an agent workflow and want to compare hosted open models without redesigning their whole process. It is less compelling as a reason to reorganize a stable production system before measuring anything. The beta label, routing discrepancy and surface-specific behavior put a premium on recording versions and checking actual execution rather than relying on the launch slogan.</p><p>Its openness is also a matter of layers. The models are described as open models, but using them through a hosted gateway is not local inference, and this research did not establish the license or deployment rights of every model in the menu. The useful capability is provider choice inside a familiar workflow. Its value depends on whether that choice produces work you can accept at a better total cost.</p><p>The recommended next step is modest: one pinned model, one representative repository and a short written acceptance checklist. Expand only after reviewing the resulting work and usage. That gives the beta a fair opportunity while preserving the central uncertainty: documentation establishes what the connector is intended to do; only a reproducible trial can establish what it does for your tools and tasks.</p>"
+    }
+  ],
+  "useCases": [
+    "Compare accepted coding changes across fixed models in an existing agent.",
+    "Build a reviewed teaching-app feature with controlled requirements.",
+    "Prepare website artwork and inspectable video-production utilities."
+  ],
+  "limitations": [
+    "Beta behavior and model menus may change.",
+    "Launch post describes session routing; current docs describe request routing.",
+    "Hosted gateway, API accounts and surface-specific integrations are required.",
+    "No installation, code-quality benchmark, savings test or security audit was performed."
+  ],
+  "sources": [
+    {
+      "id": "together-link",
+      "title": "Together Link launch announcement",
+      "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
+      "accessedAt": "2026-10-26T19:00:43.686Z",
+      "publishedAt": "2026-10-05",
+      "locator": "Works where you already work; Getting started",
+      "supports": "Launch date, supported tools and advertised savings/session routing"
+    },
+    {
+      "id": "creative-together-link-docs",
+      "title": "Together Link beta documentation",
+      "url": "https://docs.together.ai/docs/togetherlink",
+      "accessedAt": "2026-10-26T19:03:18.190Z",
+      "publishedAt": null,
+      "locator": "Requirements; routing; model selection; usage; troubleshooting",
+      "supports": "Current documented configuration, billing, pinning and limits"
+    }
+  ],
+  "images": [],
+  "judgment": "Useful for controlled provider comparisons within established workflows; total accepted-task cost matters more than a same-token savings estimate.",
+  "researchNote": "Public primary-source research in Chrome on October 26, 2026. Full relevant page text, retrieval timestamps and SHA256 archives retained for review. Documented behavior and proposed workflows are distinguished from tests; no tool was installed or executed. Publisher benchmark and savings claims were not independently reproduced."
+}

@@ -1,0 +1,32 @@
+{
+  "reportId": "ollama-phonon",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "cc18c9ecb9b6835cc1c9e5ca163581e648753bfe1ce6c4268c639b719d6b7d4d",
+  "evidenceHash": "543c107ba1653f3239d7fede7a93de1cf36b47607e8b9668c59e3a51ec3d1aed",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "A local streaming speech endpoint and WAV export are directly useful for paragraph read-aloud interfaces, app feedback and draft narration. The report supplies concrete format, input-length, voice-discovery and pronunciation checks, while separating local-server integration from browser-native inference.",
+    "impact": "Making speech available through an already familiar local model runtime is a meaningful domain-level integration. The evidence does not show a new speech-generation paradigm or broad downstream adoption, and Apple Silicon launch support limits immediate reach.",
+    "novelty": "Small-model streaming speech through Ollama is a distinctive addition to that workflow, but Phonon builds on existing Pocket TTS/Mimi work and the event is an integration rather than the family’s original release. Vendor throughput results do not alone justify a higher novelty score.",
+    "maturity": "The endpoint, audio formats, input errors and launch requirements are documented, and a bounded vendor intelligibility test exists. Contradictory voice/normalization guidance, platform limits, no listening test and unverified interruption behavior leave material product-readiness questions.",
+    "openness": "The default 31M English weights, tokenizer and voices are documented as Apache 2.0, and local runtimes plus a compatible endpoint provide useful portability. Forty-million-parameter checkpoints instead use noncommercial terms, upstream multilingual files are gated, and full training reproducibility is not established."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: licenses change with the checkpoint; commercial English rights must not be generalized to the 40M language family.",
+    "Non-blocking: throughput is not first-audio latency, and the reported English WER is not evidence of prosody, multilingual classroom reliability or listening quality.",
+    "Non-blocking: the voice-list and formatting discrepancies require installed-version checks; both are disclosed."
+  ]
+}

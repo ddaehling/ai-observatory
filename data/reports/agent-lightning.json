@@ -1,0 +1,146 @@
+{
+  "id": "agent-lightning",
+  "title": "Agent Lightning trains an agent inside the harness it will actually use",
+  "entity": "Agent Lightning v1.0",
+  "category": "Open source",
+  "tags": [
+    "reinforcement learning",
+    "agent harnesses",
+    "Kubernetes",
+    "coding agents",
+    "evaluation"
+  ],
+  "summary": "Microsoft’s MIT-licensed framework connects real agent harnesses to reinforcement learning through a model proxy. The inspectable control plane is small; the documented coding recipe still needs GPUs, Kubernetes, isolated repositories, and carefully designed rewards.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-07T16:00:00Z",
+  "discoveredAt": "2026-10-20T16:06:02Z",
+  "updatedAt": "2026-10-26T19:17:21.706454Z",
+  "officialUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+  "sections": [
+    {
+      "id": "purpose",
+      "title": "Train the whole working loop",
+      "html": "<p>Agent Lightning addresses a mismatch in agent training: the software used to train a model can differ from the software that later gives it tools, manages context, and runs its actions. Microsoft calls its alternative Harnessed Agentic RL. The deployed agent harness participates in training while a proxy captures its model calls. The intended benefit is to improve the policy in the environment it will actually encounter rather than rebuild an approximate agent inside the training framework. <a href=\"https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/\">Microsoft Research explanation</a>.</p><p>This is a baseline report on an existing project, not an October 26 launch. The research blog is dated October 7; the repository records the v1.0 open-source release and technical report in August. At inspection, the stable documentation identified version 1.0.2. Those dates describe different artifacts. A changed feed fingerprint brought the story back into the review queue, but it does not establish a new framework release. <a href=\"https://github.com/microsoft/agent-lightning\">Repository history and overview</a>.</p><p>The practical audience is developers who can already define a task, execute an agent, and evaluate the result. Agent Lightning provides infrastructure for learning from repeated attempts. It does not supply an automatically correct reward, an appropriate dataset, or a reason to train instead of improving the prompt and tools. For many applications, those simpler changes should establish a strong baseline before a team accepts the expense and complexity of reinforcement learning.</p>"
+    },
+    {
+      "id": "architecture",
+      "title": "Three components with different responsibilities",
+      "html": "<p>The documented architecture separates a trainer, an API gateway, and a rollout controller. The trainer uses verl and vLLM, forms training samples, and updates the policy. The gateway proxies model requests and records training data. The controller runs agents locally or as Kubernetes jobs. The harness continues to own its tools and control flow. <a href=\"https://github.com/microsoft/agent-lightning\">Architecture overview</a>.</p><p>This separation is valuable because a real agent often rewrites or summarizes its context, invokes a subagent, or changes the number of model requests from one task to another. Treating every request as an independent training example can accidentally give more influence to tasks that happened to generate more calls. Microsoft discusses retokenization, sample merging, advantage calculation, loss normalization, and scheduling as concrete problems introduced by this setup. The framework’s small control plane makes those choices easier to inspect, but does not make them disappear.</p><p>For an application team, the useful design question is where its agent begins and ends. Write down which process manages conversation state, which component executes a tool, where a reward is calculated, and which model endpoint receives requests. Then check whether the deployed harness can use the proxy without silently changing those behaviors. A compatible endpoint is a connection mechanism; equivalence between training and deployment still needs observation on representative tasks.</p>"
+    },
+    {
+      "id": "requirements",
+      "title": "Small codebase, substantial training environment",
+      "html": "<p>The official installation guide supports CUDA 12.9 or 13.0 and recommends a pinned verl, vLLM, PyTorch, and FlashAttention stack. It explicitly warns that these dependencies are tightly coupled. The local quick start uses one machine with one A100 GPU; native Windows is not supported for its local runner, with a Linux environment suggested instead. <a href=\"https://microsoft.github.io/agent-lightning/stable/00-installation/\">Installation</a> and <a href=\"https://microsoft.github.io/agent-lightning/stable/01-quick-start/\">quick start</a>.</p><p>The coding-agent recipe is larger: its configuration table specifies four B200 GPUs, a Kubernetes controller machine, and a separate GPU training machine. The controller needs Docker, kubectl, and cluster access; rollout pods must reach the gateway. This is a documented example configuration, not a measured minimum for every model or task. <a href=\"https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/\">Coding-agent setup</a>.</p><p>A team estimating cost should therefore distinguish framework size from resource consumption. Budget for dataset preparation, model inference during rollouts, policy updates, repository images, failed runs, and evaluation. Existing Kubernetes capacity may avoid a commercial sandbox service, but it still has a cost and an operational owner. No cloud quotation or dollar-per-training-run estimate was verified in this scan. A useful feasibility check starts with available hardware and a small learning problem before attempting to reproduce the coding result.</p>"
+    },
+    {
+      "id": "results",
+      "title": "A promising result with a reproducible recipe",
+      "html": "<p>Microsoft reports that its Qwen3.5-9B coding pipeline improved SWE-bench Verified Pass@1 from 41.8% to 56.4%, using approximately 6,000 training examples. That is a 14.6 percentage-point gain under the authors’ setup. The repository and technical-report landing page expose the intended route to reproduction. This report did not run it, audit the full benchmark methodology, or independently verify the gain. <a href=\"https://www.microsoft.com/en-us/research/publication/agent-lightning-v1-0-towards-harnessed-agentic-rl/\">Technical-report overview</a>.</p><p>The recipe provides useful context behind the sample count. It filters SWE-smith tasks, removes unusable or excessively expensive cases, probes remaining tasks with the base model, and combines mixed-difficulty examples with a sample of tasks the probes always fail. It also retains a validation split. This means the reported result is attached to a particular selection and preparation process, rather than to any arbitrary collection of 6,000 prompts. <a href=\"https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/\">Data preparation</a>.</p><p>For an internal project, reproduce the baseline before interpreting an improvement. Keep the held-out tasks out of reward design and training selection, record model and harness versions, and evaluate with the same allowed tools. A gain on repository repair does not establish a gain on tutoring, web browsing, or creative production. Those tasks need their own evidence and, often, substantially harder definitions of success.</p>"
+    },
+    {
+      "id": "reward",
+      "title": "The reward is part of the product design",
+      "html": "<p>The coding example calculates rewards from task-specific tests in an isolated repository. Its documentation also describes ways an agent could recover a reference answer instead of solving the task, and recommends repository and network isolation to protect the learning signal. These safeguards are integral to interpreting the result. A high reward obtained through leaked answers teaches the wrong behavior. <a href=\"https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/\">Preventing reward hacking</a>.</p><p>A product team should begin by identifying the easiest shortcut its reward permits. If a website agent earns points for making an error message disappear, deleting the form may score well. If a research agent earns points for including citations, invented citations may satisfy a superficial checker. If a tutoring agent is rewarded only for getting the final answer correct, it may learn to disclose the answer instead of helping the learner reason. These are proposed failure tests, not observed Agent Lightning incidents.</p><p>Use a reward that checks the intended outcome and preserves important constraints. Combine objective checks with carefully reviewed cases where the task requires judgment. Keep adversarial examples and failed trajectories available for analysis. A trained policy should be compared against the original on both the target metric and behavior that the metric omits. Training is useful only if the improvement survives that wider assessment.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "A bounded app or website use case",
+      "html": "<p>A suitable first application is a repair agent for a small, controlled web project. Give it reproducible issues, a disposable checkout, and tests that distinguish the broken behavior from unrelated regressions. The agent might fix an incorrect filter, restore a failing navigation path, or repair a data transformation. Record both the test result and the final diff. The framework’s coding recipe provides an architectural starting point, but adapting it to a different project is engineering work.</p><p>A public website needs checks beyond successful execution. Require the repaired page to retain content, meaningful labels, keyboard behavior, and expected network boundaries. Use a held-out set with different layouts and data sizes. A browser screenshot can support visual review, while tests verify the state changes behind it. Do not let a single screenshot score become a substitute for a working interface. These are recommended acceptance criteria for a proposed pilot.</p><p>For an application assistant, a similar pattern can train a narrow sequence such as preparing a draft export from synthetic records. Keep consequential actions outside the training environment and make the expected artifact machine-checkable. The strongest early candidate is a task with a stable environment and clear correctness conditions. Open-ended office work, changing third-party sites, and ambiguous user goals create a much harder reward-design problem and should not be treated as equivalent to the repository example.</p>"
+    },
+    {
+      "id": "learning-creative",
+      "title": "Educational and creative experiments need different evidence",
+      "html": "<p>Agent Lightning’s repository lists calculator, grade-school mathematics, ScienceWorld, search, sandbox, and coding examples. Those examples offer teaching material about agent training itself. A university lab could inspect how a rollout becomes training data, compare different reward definitions, and study failures on held-out tasks. The one-GPU quick start is a more bounded entry point than the distributed coding recipe, although it still requires suitable hardware and setup. <a href=\"https://github.com/microsoft/agent-lightning\">Examples</a>.</p><p>For an educational app, use synthetic practice tasks before involving learners. A useful experiment might train an agent to select an appropriate hint from a fixed set, with a rubric that penalizes revealing the answer too early. Human educators should inspect the resulting behavior, including unusual or incorrect student responses. Better reward scores would establish performance on that evaluation, not improved learning or safe deployment with children. This distinction should remain visible in any demonstration.</p><p>A creative-video experiment could focus on an objective production task: checking that a subtitle file has valid timestamps, stays within the clip duration, and preserves an approved transcript. A rendering tool could verify the final artifact in a disposable environment. That is a proposed adaptation, not a documented native video-training feature. Artistic quality, factual claims in narration, and editorial intent remain harder to score. Start with mechanical constraints and have an editor review both successful outputs and cases the reward incorrectly accepts.</p>"
+    },
+    {
+      "id": "operations",
+      "title": "Plan for data movement, licensing, and recovery",
+      "html": "<p>The installation guide states that tasks upload logs and trajectories to Weights & Biases by default. This is an important boundary for training on proprietary code, prompts, or documents: a locally run framework does not automatically imply that all recorded information remains local. The scan did not test a configuration that disables or redirects this logging. Inspect the actual logging setup and use non-sensitive data for the first run. <a href=\"https://microsoft.github.io/agent-lightning/stable/00-installation/\">Logging prerequisite</a>.</p><p>The repository’s MIT license permits use, modification, and redistribution subject to preserving the applicable notice, with no warranty. That describes the framework. Models, datasets, repository images, and external services have separate terms that must be checked for the selected experiment; this review did not establish a blanket license for the entire training stack. <a href=\"https://github.com/microsoft/agent-lightning/blob/main/LICENSE\">Framework license</a>.</p><p>Operationally, preserve a manifest of the dataset, model, harness, dependency versions, reward code, and evaluation split. Keep failed runs and their stopping reasons. Check that cancellation actually releases jobs and resources before scaling. The quick start documents a graceful single-interrupt shutdown rather than repeated interruption. A pilot should verify that recovery path as well as the successful training path, because a difficult environment can consume resources even when the model is making no useful progress.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "What would justify adopting it",
+      "html": "<p>Agent Lightning is worth evaluating when a team has a repeatable agent workflow, a trainable model, trustworthy rewards, and access to the required compute. Its strongest contribution is an inspectable connection between the real harness and the training process. That can make it easier to study whether a training gain survives the context management and tools the deployed agent actually uses.</p><p>A first evaluation should keep the scope narrow: run the untrained baseline, confirm that traces and rewards mean what the team thinks they mean, train for a bounded budget, and compare on untouched tasks. Include cases that tempt shortcuts and cases where the correct action is to stop or disclose a limitation. Review output artifacts and trajectories rather than relying exclusively on a dashboard’s aggregate score.</p><p>This report inspected the current repository, license, Microsoft research pages, and stable installation and example guides. It did not install dependencies, connect a training service, execute code, inspect every linked paper, or reproduce a result. The project is more concrete than a conceptual training proposal, but successful adoption still depends on the user’s environment and evaluation design. A measured improvement on one well-defined workflow would be a stronger reason to expand than the framework’s line count or a headline benchmark gain.</p>"
+    }
+  ],
+  "useCases": [
+    "Reinforcement-learning experiments that retain a real agent harness",
+    "Controlled code-repair agents evaluated with isolated repository tests",
+    "Teaching agent training with small examples and explicit reward analysis"
+  ],
+  "limitations": [
+    "No training run or benchmark was reproduced.",
+    "The one-A100 quick start and four-B200 coding recipe are substantial prerequisites, not universal minimums.",
+    "Default installation guidance uploads logs and trajectories to W&B.",
+    "Model, dataset, service and container terms are separate from the framework MIT license.",
+    "Proposed education, website, and video workflows have not been validated."
+  ],
+  "sources": [
+    {
+      "id": "source-e986592dff42085c",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "accessedAt": "2026-10-26T19:02:50.495Z",
+      "publishedAt": "2026-10-07T16:00:00Z",
+      "locator": "Harnessed Agentic RL; architecture; results",
+      "supports": "Research explanation and reported result"
+    },
+    {
+      "id": "official-source-57ca1a039865d0c7",
+      "title": "microsoft/agent-lightning: The absolute trainer to light up AI agents.",
+      "url": "https://github.com/microsoft/agent-lightning",
+      "accessedAt": "2026-10-26T19:03:12.397Z",
+      "publishedAt": null,
+      "locator": "News; architecture; examples",
+      "supports": "Release timing, version context, components and examples"
+    },
+    {
+      "id": "official-source-e45ddceb3bf6d55e",
+      "title": "Agent Lightning v1.0: Towards Harnessed Agentic RL - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/agent-lightning-v1-0-towards-harnessed-agentic-rl/",
+      "accessedAt": "2026-10-26T19:03:17.899Z",
+      "publishedAt": null,
+      "locator": "Abstract; August2026 date",
+      "supports": "Research framing and reported result; precise publication day unknown"
+    },
+    {
+      "id": "official-source-382548fef3deb1c6",
+      "title": "Installation - Agent Lightning v1.0",
+      "url": "https://microsoft.github.io/agent-lightning/stable/00-installation/",
+      "accessedAt": "2026-10-26T19:04:12.192Z",
+      "publishedAt": null,
+      "locator": "GPU stack; W&B Login",
+      "supports": "Dependencies and default logging"
+    },
+    {
+      "id": "official-source-c86f42f7b0204f86",
+      "title": "Quick Start - Agent Lightning v1.0",
+      "url": "https://microsoft.github.io/agent-lightning/stable/01-quick-start/",
+      "accessedAt": "2026-10-26T19:04:12.616Z",
+      "publishedAt": null,
+      "locator": "Before you start; local run",
+      "supports": "A100 prerequisite, platform limit and shutdown behavior"
+    },
+    {
+      "id": "official-source-593d5cd7d2edcd98",
+      "title": "Coding Agent - Agent Lightning v1.0",
+      "url": "https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/",
+      "accessedAt": "2026-10-26T19:04:22.886Z",
+      "publishedAt": null,
+      "locator": "Environment; data; reward hacking",
+      "supports": "Coding recipe hardware, data selection and evaluation controls"
+    },
+    {
+      "id": "official-source-c2f06db1384a32ac",
+      "title": "agent-lightning/LICENSE at main · microsoft/agent-lightning",
+      "url": "https://github.com/microsoft/agent-lightning/blob/main/LICENSE",
+      "accessedAt": "2026-10-26T19:04:23.856Z",
+      "publishedAt": null,
+      "locator": "MIT License",
+      "supports": "Framework terms"
+    }
+  ],
+  "images": [],
+  "judgment": "An inspectable framework for teams ready to train a narrow agent workflow, with concrete recipes but substantial compute, reward-design and operational responsibilities.",
+  "researchNote": "Primary Microsoft blog, repository, MIT license, technical-report landing page and stable1.0.2 guides inspected in Chrome on October 26, 2026. No installation, training, benchmark reproduction, cloud cost estimate, or application test. All adaptation workflows are editorial proposals."
+}

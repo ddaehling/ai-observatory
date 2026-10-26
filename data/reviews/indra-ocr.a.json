@@ -1,0 +1,32 @@
+{
+  "reportId": "indra-ocr",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "9afe748856eaf2e74839288b03afc54bff95fde048a76d2962cce49dcac4bbde",
+  "evidenceHash": "01f70e6f1f2edea3077360b2c77b351a5362b9cf4689cf39f939edca061c3991",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "CPU execution, geometry-rich JSON and a local overlay viewer create a useful path for reviewed document archives and intake applications. The report gives unusually actionable mode, batch-error and reading-order guidance. Weak handwriting/table performance and output-license obligations reduce the range of appropriate teaching and publishing deployments.",
+    "impact": "A compact CPU pipeline can meaningfully lower the operational barrier for a defined document-processing domain. The supplied evidence does not establish a wider change in AI development or an independently confirmed performance advantage, so moderate impact is appropriate.",
+    "novelty": "The small recognizer, combined document routing and inspectable output form a useful package, but OCR, text-layer extraction and page geometry are established capabilities. Producer size and speed figures alone do not establish exceptional methodological differentiation.",
+    "maturity": "The documentation is detailed about platforms, output fields, failures, batch behavior and known document weaknesses. That supports a pilot, but no installation or output inspection was performed and the admitted weak cases rule out a general reliability claim.",
+    "openness": "Apache-2.0 code and downloadable locally usable weights provide real inspectability. The actual weight license imposes revenue/funding restrictions, a broad competition restriction, attribution and share-alike language covering outputs; those materially reduce portability and unrestricted reuse."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: weight-license output and competition clauses are first-order constraints; the draft accurately distinguishes their text from a legal determination for a specific user.",
+    "Non-blocking: historical evidence summarizes the card’s narrower API-competition wording, but the new primary-license evidence and final report explicitly correct that impression.",
+    "Non-blocking: headline parameter/download figures are not peak memory or measured runtime requirements."
+  ]
+}

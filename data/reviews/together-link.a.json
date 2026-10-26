@@ -1,0 +1,32 @@
+{
+  "reportId": "together-link",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "3d34b8724d3abd0945cda1dcb6b4e56830d3128338f694fffe4910cd7a4b81ca",
+  "evidenceHash": "8f4eb89b00a869fd797b71b87e8dfd63f6e861c0029d59af36c7ac7bbc514494",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 4,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "A connector that preserves a familiar coding workflow while permitting model comparisons is useful to app and website builders. The report makes the trial actionable with fixed-model selection, billing boundaries, configuration details and task-level cost accounting; video usefulness is correctly limited to surrounding production tasks.",
+    "impact": "This is an integration and provider-choice improvement, rather than a new model or training method. It could lower switching friction for existing users, but the supplied material does not demonstrate savings per completed task or broad changes to AI development. A four is independent of the current article length.",
+    "novelty": "The combination of multiple agent/desktop surfaces, automatic routing and optional image workflows is a useful integration. Model routing and compatible-provider substitution are established ideas, and no comparative evidence here establishes a distinctly new capability.",
+    "maturity": "The beta has detailed operational documentation, but its launch and current docs disagree about session-versus-request routing. Surface-specific behavior, mutable menus and the absence of any installed trial materially limit confidence in readiness.",
+    "openness": "Hosted open-model choice can reduce dependence on a single model supplier, but access still runs through a hosted gateway and API accounts. The evidence does not establish connector licensing or rights for every model, and model openness cannot be attributed wholesale to the service."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: the routing contradiction remains unresolved; the report prominently discloses it and recommends a fixed-model trial rather than inventing a resolution.",
+    "Non-blocking: advertised savings and same-token Opus estimates do not establish equal-quality task savings.",
+    "Separate publication gate: this reviewer rates impact 4; if final mean impact is below 5, the contract requires the 1,000-word tier and fresh review after any substantive revision."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "reportId": "indra-ocr",
+  "reviewerId": "/root/edition_20261026_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:25:54.196450Z",
+  "reportHash": "9afe748856eaf2e74839288b03afc54bff95fde048a76d2962cce49dcac4bbde",
+  "evidenceHash": "01f70e6f1f2edea3077360b2c77b351a5362b9cf4689cf39f939edca061c3991",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "CPU processing, JSON geometry, reading-order overlays and explicit routing modes provide concrete value for reviewed educational archives and document apps. The report offers an actionable pilot and correctly limits video relevance to source preparation. Weak handwriting/tables and output-license obligations reduce the set of straightforward deployments.",
+    "impact": "An accessible CPU pipeline with text-layer routing and inspectable page structure is a meaningful document-processing option. The evidence does not demonstrate a broad OCR breakthrough: comparisons are producer measurements, workload conditions differ, and difficult document types remain weak.",
+    "novelty": "The combination of a small recognizer, CPU pipeline, uncertainty language models and review geometry is meaningfully distinctive as a practical package. OCR, layout extraction and text-layer reuse are established approaches; the 1M marketing shorthand does not demonstrate an unusually small complete system.",
+    "maturity": "The model card documents modes, failure statuses, worker behavior, platform requirements, output schema and substantial limitations. This supports a bounded pilot, but neither installation nor output quality was tested, and the disclosed handwriting, complex-table and script weaknesses preclude a high reliability score.",
+    "openness": "Apache-2.0 code and available model files support inspection and local operation. The actual weight license sharply limits practical reuse through revenue/funding and competition clauses plus attribution and share-alike wording covering outputs. These terms materially constrain portability and redistribution despite the open code."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No blocking discrepancy found. The report correctly distinguishes the 1.25M recognizer, 7.3M default model set and 76 MB download.",
+    "The archived license supports the report’s broad competition and output-condition warnings. These are material constraints, not a blanket legal finding about a particular output or organization."
+  ]
+}

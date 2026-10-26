@@ -1,0 +1,31 @@
+{
+  "reportId": "reasoning-from-scratch-course",
+  "reviewerId": "/root/edition_20261026_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:25:54.196450Z",
+  "reportHash": "6a04f09bea45bf29fbdc4c3ba5970a9cdf9ca1108e5be018fd66ca964bbcc705",
+  "evidenceHash": "c5bdec53e8a20b4864e98fb6d3a4d6d2e752074d681c64e1d64a7d3b8687b87d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 5,
+    "novelty": 3,
+    "maturity": 7,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The connected Python/PyTorch sequence, public companion code and concrete verifier-to-reward progression are highly actionable for technically prepared educators and builders. The report supplies realistic experiment and interface ideas and distinguishes CPU entry work from later GPU demands. No-code beginners and production teams need additional preparation.",
+    "impact": "A substantial accessible curriculum can meaningfully improve understanding and evaluation of reasoning systems within developer education. Its potential is educational diffusion of established methods; neither a new frontier method nor measured learning effectiveness is demonstrated.",
+    "novelty": "The contribution is the structured teaching sequence and video presentation, not new sampling, verification, GRPO or distillation methods. The companion book/code predate this announcement, and the report correctly avoids treating the new course as a new training breakthrough.",
+    "maturity": "Eight structured videos, an existing companion repository, chapter-level code, setup/troubleshooting material and hardware guidance provide a developed educational artifact. This warrants more readiness than a newly described prototype, while unexecuted notebooks, unwatched portions of the series and unmeasured end-to-end costs preclude a near-perfect score.",
+    "openness": "Apache-2.0 companion code and public course/repository guidance enable inspection and adaptation, with reproducible components and hardware alternatives. The code license does not cover the videos, book, models, datasets or teacher outputs as a whole, and exact experiment environments were not independently reproduced."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking discrepancy found. The October course announcement is separated from the older companion book and repository.",
+    "Small-model math results and a working verifier do not establish general reasoning or tutoring effectiveness; the report explicitly preserves this distinction and the separate asset licenses."
+  ]
+}

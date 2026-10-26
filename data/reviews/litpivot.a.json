@@ -1,0 +1,32 @@
+{
+  "reportId": "litpivot",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "5e43683053833edf0e3f453501fc71176bb8916435ce5c9aab9fb7a07193619c",
+  "evidenceHash": "05d4bb3c9d15d6e5b8205c73a3e5e83ad6a7f0132d4b7ec4ef033238f031ae46",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 6,
+    "maturity": 3,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The facet/evidence/edit connection supplies a useful research-seminar exercise and an implementable interface pattern. The report carefully explains proposal grounding, revision records and evidence selection. Exact-system access is not established, so its immediate value is methodological rather than a ready-to-use tool.",
+    "impact": "The controlled study supports a meaningful improvement in literature-grounded proposal formulation within a narrow setting. Small samples, short assigned tasks and no downstream research or learning outcomes limit claims of broader significance to AI development.",
+    "novelty": "Coupling problem, contribution and evaluation facets with changing evidence sets and inconsistency flags is a differentiated human-AI interaction design. It combines established retrieval, critique and editing techniques, and its operational novelty criterion is incomplete rather than a general novelty detector.",
+    "maturity": "There is a working research implementation and documented studies, but no verified generally available service, code release, operating budget or long-term reliability evidence. A prototype tested in short studies is materially less mature than a documented deployable product.",
+    "openness": "The CC BY 4.0 paper describes architecture, methods and study limitations, enabling inspection of the design. No verified LitPivot software license or release is available in the inspected sources, and external literature/model-service dependencies limit direct reproduction and reuse."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: the study’s experts were paper authors and evaluated grounding, while novelty, feasibility and utility were self-reported; the report preserves these distinctions accurately.",
+    "Non-blocking: fixed-corpus tasks do not establish comprehensive retrieval, and the prototype does not verify experimental feasibility.",
+    "Non-blocking: the paper’s license does not license unreleased software or third-party papers."
+  ]
+}

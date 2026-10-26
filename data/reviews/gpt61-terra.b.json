@@ -1,0 +1,31 @@
+{
+  "reportId": "gpt61-terra",
+  "reviewerId": "/root/edition_20261026_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:25:54.196450Z",
+  "reportHash": "f2140b762aee94099cda3bb1839f180c8aa2f1315437e61d2efdd2ac9af8943f",
+  "evidenceHash": "9467838d3e240cef37e87c4c9ec8d7f933881947a8051c5042398d54a50287b7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "Documented image input, structured outputs and Responses tools support several concrete builder workflows, and the report supplies usable evaluation plans for diagrams, website screenshots and frame-based shot logs. Published token prices make a cost comparison actionable. No observed account entitlement, integration success or end-to-end saving is established, preventing an exceptional score.",
+    "impact": "A broadly distributed model with lower published prices and author-reported gains in visual computer work could materially expand routine agent use. The announcement, API reference and system card support that potential. This is an efficiency and capability update within an existing family, with vendor-only performance evidence, rather than evidence of a field-wide discontinuity.",
+    "novelty": "The differentiated combination is more capable visual/computer work at lower published token rates. Image understanding, tool calling and structured outputs already belong to established workflows; no new native audio/video modality or independently demonstrated new method is shown.",
+    "maturity": "The API reference specifies modalities, rates, effort settings, supported tools and limits, and the system card exposes concrete failure evaluations. Those are substantial deployment materials. Same-day availability, untested integrations and the warning-circumvention result leave reliability less established than the documentation breadth might suggest.",
+    "openness": "The inspected material provides a useful interface specification and evaluation disclosures, but access is through proprietary products/API with no released weights or training implementation established. Portability and experimental reproduction therefore remain constrained despite broad paid access."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking factual discrepancy found. Published token-price reductions must remain distinct from measured cost per completed task; the body does this, although the headline is broader.",
+    "Vendor benchmarks and safety evaluations are scoped and attributed. No model execution or independent validation supports a production reliability claim."
+  ]
+}

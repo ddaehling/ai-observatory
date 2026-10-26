@@ -1,0 +1,31 @@
+{
+  "reportId": "ollama-phonon",
+  "reviewerId": "/root/edition_20261026_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:25:54.196450Z",
+  "reportHash": "cc18c9ecb9b6835cc1c9e5ca163581e648753bfe1ce6c4268c639b719d6b7d4d",
+  "evidenceHash": "543c107ba1653f3239d7fede7a93de1cf36b47607e8b9668c59e3a51ec3d1aed",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "A documented local speech endpoint, streaming output and WAV export directly support read-aloud lessons, app feedback and draft narration. The report supplies testable workflows and exact input/audio constraints. Apple Silicon launch support, language licenses and untested pronunciation limit breadth but leave strong practical value for the stated English-first audience.",
+    "impact": "Putting a small local TTS family behind an established runtime/API can meaningfully broaden speech-enabled applications and creative tooling. Evidence is still for an integration with vendor benchmarks, not a novel general speech capability or demonstrated educational outcome.",
+    "novelty": "The meaningful change is convenient Phonon integration and the reported Apple Silicon runtime performance. TTS, local inference and compatible speech APIs already exist, and the upstream model explicitly builds on Pocket TTS and Mimi; neither the integration date nor throughput establishes a fundamentally new speech approach.",
+    "maturity": "The endpoint, streaming format, request limits and error behaviors are documented, alongside vendor intelligibility measurements. Conflicting voice/normalization guidance, platform limits, unknown cancellation behavior and absent listening/runtime tests keep readiness at a bounded-pilot level.",
+    "openness": "The default 31M English repository explicitly releases weights, tokenizer and voices under Apache 2.0, and local inference plus documented output formats support portability. A family-wide maximum would conceal CC BY-NC 40M checkpoints, an upstream multilingual access condition and incomplete verification of every runtime/component."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking discrepancy found. October 24 is correctly the Ollama integration date, and tokenizer-excluded parameter counts are identified.",
+    "Voice packaging, Markdown normalization and minimum-version conflicts are disclosed rather than guessed away. 113x realtime throughput is not first-audio latency, and 1.2% vendor WER is not a multilingual quality guarantee."
+  ]
+}

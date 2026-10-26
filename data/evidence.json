@@ -9055,5 +9055,3470 @@
       "No linked destination inspected by this accounting helper.",
       "Visible listings and truncated quoted posts do not establish full context or historical completeness."
     ]
+  },
+  {
+    "claim_id": "official-listing-edeae07ffd206303",
+    "claim": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield is listed by the publisher with date 2026-10-26.",
+    "source_ids": [
+      "official-source-edeae07ffd206303",
+      "seed-nvidia-developer"
+    ],
+    "support": [
+      {
+        "source_id": "seed-nvidia-developer",
+        "url": "https://developer.nvidia.com/blog/",
+        "locator": "Dated story card on publisher listing",
+        "passage": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:48.124Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/monitor-seed-nvidia-developer.json",
+        "archive_sha256": "816f64e99ac18b004002ca79f0d45a6d5a652bab268fa90c0a34b245b461b633"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "seed-nvidia-developer",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-c3d6fb64eb5418e8",
+    "claim": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes is listed by the publisher with date 2026-10-26.",
+    "source_ids": [
+      "official-source-c3d6fb64eb5418e8",
+      "official-nvidia-recent"
+    ],
+    "support": [
+      {
+        "source_id": "official-nvidia-recent",
+        "url": "https://developer.nvidia.com/blog/recent-posts/",
+        "locator": "Dated story card on publisher listing",
+        "passage": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:10.908Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/monitor-official-nvidia-recent.json",
+        "archive_sha256": "7f93d108ffec7a9e98928810fb676437ca7bd64f144b98828f6ff9f851171439"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "official-nvidia-recent",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-7f92c8b1f5edddb8",
+    "claim": "PitchBook in North: Private market intelligence for enterprise teams is listed by the publisher with date 2026-10-26.",
+    "source_ids": [
+      "official-source-7f92c8b1f5edddb8",
+      "seed-cohere"
+    ],
+    "support": [
+      {
+        "source_id": "seed-cohere",
+        "url": "https://cohere.com/blog",
+        "locator": "Dated story card on publisher listing",
+        "passage": "PitchBook in North: Private market intelligence for enterprise teams",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:57.383Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/monitor-seed-cohere.json",
+        "archive_sha256": "29c95c210d472c034922d5c6b73d6eca9633454436284cd8f3aa4ede7e8bc475"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "seed-cohere",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-af693a2279953713",
+    "claim": "Why we built a benchmark before training for instruction following is listed by the publisher with date 2026-10-25.",
+    "source_ids": [
+      "official-source-af693a2279953713",
+      "seed-ai21"
+    ],
+    "support": [
+      {
+        "source_id": "seed-ai21",
+        "url": "https://www.ai21.com/blog/",
+        "locator": "Dated story card on publisher listing",
+        "passage": "Why we built a benchmark before training for instruction following",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-25",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:58.950Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/monitor-seed-ai21.json",
+        "archive_sha256": "ecb1122bdcbeeb809d59a66a1855f1377ee0819b7f18777c55376a9b9f2f4e11"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "seed-ai21",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-8cb5fe410e8dbe7e",
+    "claim": "Supercharge your development with the Google Developer Knowledge API ecosystem is listed by the publisher with date 2026-10-07.",
+    "source_ids": [
+      "official-source-8cb5fe410e8dbe7e",
+      "official-google-developers-ai"
+    ],
+    "support": [
+      {
+        "source_id": "official-google-developers-ai",
+        "url": "https://developers.googleblog.com/search/?technology_categories=AI&page=2",
+        "locator": "Dated story card on publisher listing",
+        "passage": "Supercharge your development with the Google Developer Knowledge API ecosystem",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-07",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:50.104Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-developers-ai-page2.json",
+        "archive_sha256": "c16e79cb9fe8bb5315e11959cd57da3d6f74e6b9576c74f0586e6576abbfd139"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "official-google-developers-ai",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-cea8f33fc210d7c8",
+    "claim": "Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs is listed by the publisher with date 2026-09-30.",
+    "source_ids": [
+      "official-source-cea8f33fc210d7c8",
+      "official-google-developers-ai"
+    ],
+    "support": [
+      {
+        "source_id": "official-google-developers-ai",
+        "url": "https://developers.googleblog.com/search/?technology_categories=AI&page=2",
+        "locator": "Dated story card on publisher listing",
+        "passage": "Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs",
+        "passage_type": "direct_quote",
+        "published_at": "2026-09-30",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:50.104Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-developers-ai-page2.json",
+        "archive_sha256": "c16e79cb9fe8bb5315e11959cd57da3d6f74e6b9576c74f0586e6576abbfd139"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "official-google-developers-ai",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-ec3cda622f474943",
+    "claim": "Reproducing Olmo 3 7B Pre-training in MaxText: case study of large scale training on TPUs is listed by the publisher with date 2026-09-24.",
+    "source_ids": [
+      "official-source-ec3cda622f474943",
+      "official-google-developers-ai"
+    ],
+    "support": [
+      {
+        "source_id": "official-google-developers-ai",
+        "url": "https://developers.googleblog.com/search/?technology_categories=AI&page=3",
+        "locator": "Dated story card on publisher listing",
+        "passage": "Reproducing Olmo 3 7B Pre-training in MaxText: case study of large scale training on TPUs",
+        "passage_type": "direct_quote",
+        "published_at": "2026-09-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:55.214Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-developers-ai-page3.json",
+        "archive_sha256": "2da924a143e9a6e3b06f9c4fbcd4d45685826e369fe249890e3b843c2e684515"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "official-google-developers-ai",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "official-listing-f67921b9de44ef35",
+    "claim": "Turn your REST APIs into MCP tools with Google Cloud API Gateway is listed by the publisher with date 2026-09-24.",
+    "source_ids": [
+      "official-source-f67921b9de44ef35",
+      "official-google-developers-ai"
+    ],
+    "support": [
+      {
+        "source_id": "official-google-developers-ai",
+        "url": "https://developers.googleblog.com/search/?technology_categories=AI&page=3",
+        "locator": "Dated story card on publisher listing",
+        "passage": "Turn your REST APIs into MCP tools with Google Cloud API Gateway",
+        "passage_type": "direct_quote",
+        "published_at": "2026-09-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:55.214Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-developers-ai-page3.json",
+        "archive_sha256": "2da924a143e9a6e3b06f9c4fbcd4d45685826e369fe249890e3b843c2e684515"
+      }
+    ],
+    "qualifiers": [
+      "Listing evidence only; destination, implementation and performance claims not verified."
+    ],
+    "contradicts": [],
+    "source_family": "official-google-developers-ai",
+    "status": "unresolved",
+    "limitations": [
+      "No full destination inspection; listed date is not independently verified event date."
+    ]
+  },
+  {
+    "claim_id": "terra-launch-access",
+    "claim": "OpenAI announces GPT-6.1 Terra access in Work, Codex and the API on October26.",
+    "source_ids": [
+      "official-source-35e334c198740f74"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-35e334c198740f74",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "locator": "Pricing and availability",
+        "passage": "GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": "2026-10-26",
+        "retrieved_at": "2026-10-26T19:02:57.060Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-announcement.json",
+        "archive_sha256": "1e4967836fd5764224a893a62ec2f04531f6024fbd8bf50960282e3e41d0b3b0"
+      }
+    ],
+    "qualifiers": [
+      "Official rollout statement; individual account entitlement was not tested."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-coding-benchmark",
+    "claim": "OpenAI reports50.3% on Terminal-Bench4.0 at maximum effort; predecessor published21.5%.",
+    "source_ids": [
+      "official-source-35e334c198740f74"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-35e334c198740f74",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "locator": "A significant step up on factuality and coding",
+        "passage": "At maximum reasoning effort, GPT‑6.1 Terra solves 50.3% of tasks, more than double GPT‑5.6 Terra’s published score of 21.5%.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:57.060Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-announcement.json",
+        "archive_sha256": "1e4967836fd5764224a893a62ec2f04531f6024fbd8bf50960282e3e41d0b3b0"
+      }
+    ],
+    "qualifiers": [
+      "Vendor benchmark comparison; no independent reproduction; not a general task-success guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-api-interface",
+    "claim": "Terra supports text/image input, text output, no native audio/video, 1.05M context and128K max output; tools require Responses.",
+    "source_ids": [
+      "official-source-02941faf3e7dee38"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-02941faf3e7dee38",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "locator": "Overview; Modalities; context limits",
+        "passage": "Tool calling requires the Responses API.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:10.403Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-model-doc.json",
+        "archive_sha256": "4151c5875d12ba813a5cf21454f27f20ee3f2ed1715f1d08a650db69a9effd4c"
+      }
+    ],
+    "qualifiers": [
+      "The complete archived reference also lists modality and token limits; does not guarantee host-tool compatibility."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-api-pricing",
+    "claim": "Standard text rates are$1/M input,$0.05/M cached input,$5/M output; cache writes and long-context/Fast/regional conditions apply.",
+    "source_ids": [
+      "official-source-02941faf3e7dee38"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-02941faf3e7dee38",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "locator": "Pricing",
+        "passage": "Prompts with more than 272K input tokens are priced at 2x input and cache rates and 1.5x output for the full request.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:10.403Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-model-doc.json",
+        "archive_sha256": "4151c5875d12ba813a5cf21454f27f20ee3f2ed1715f1d08a650db69a9effd4c"
+      }
+    ],
+    "qualifiers": [
+      "Model reference inspected October26. Full archived table includes cache-write and Fast-mode rates. Subscription allowance is separate; total task cost unmeasured."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-effort-features",
+    "claim": "Terra documents none/low/medium/high/xhigh/max reasoning, medium default, structured outputs/function calling and no fine-tuning.",
+    "source_ids": [
+      "official-source-02941faf3e7dee38"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-02941faf3e7dee38",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "locator": "Overview; Features",
+        "passage": "reasoning.effort supports none, low, medium (default), high, xhigh, and max.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:10.403Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-model-doc.json",
+        "archive_sha256": "4151c5875d12ba813a5cf21454f27f20ee3f2ed1715f1d08a650db69a9effd4c"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-evaluation-scope",
+    "claim": "Terra safety evaluation environment can differ from production ChatGPT.",
+    "source_ids": [
+      "official-source-45e40aaafa12cf57"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-45e40aaafa12cf57",
+        "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+        "locator": "Section1",
+        "passage": "Evaluations of GPT-6.1 Terra were performed in our research environment or via our API",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:30.277Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-system-card.json",
+        "archive_sha256": "ae649291a9450959923ebd71148779852300eddd6a859418c0093ddfa5058b31"
+      }
+    ],
+    "qualifiers": [
+      "System prompts, tools and reasoning effort can differ from production."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-factuality-caveat",
+    "claim": "The refreshed factuality evaluation targets error-prone conversations and is not a production error-rate estimate.",
+    "source_ids": [
+      "official-source-45e40aaafa12cf57"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-45e40aaafa12cf57",
+        "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+        "locator": "Section6.1",
+        "passage": "should not be interpreted as hallucination rates observed in production.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:30.277Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-system-card.json",
+        "archive_sha256": "ae649291a9450959923ebd71148779852300eddd6a859418c0093ddfa5058b31"
+      }
+    ],
+    "qualifiers": [
+      "Earlier models were rerun; numbers are not directly comparable to previous system cards."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-warning-boundary",
+    "claim": "OpenAI reports29.6% circumvention in maximum-effort environmental-warning tests without system controls.",
+    "source_ids": [
+      "official-source-45e40aaafa12cf57"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-45e40aaafa12cf57",
+        "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+        "locator": "Section7.2 Respecting Warnings",
+        "passage": "In 29.6% of rollouts at maximum reasoning effort, GPT-6.1 Terra saw the barrier but completed the task through an alternative route",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:30.277Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-system-card.json",
+        "archive_sha256": "ae649291a9450959923ebd71148779852300eddd6a859418c0093ddfa5058b31"
+      }
+    ],
+    "qualifiers": [
+      "Deliberately challenging simulated environments without system-level controls; not a production incident rate.",
+      "The full sentence specifies violation of the restriction spirit; card questions external validity."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "terra-safety-classification",
+    "claim": "OpenAI treats Terra as Critical in cybersecurity and High in biological/chemical capability, with shared safeguards and disclosed regressions.",
+    "source_ids": [
+      "official-source-45e40aaafa12cf57"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-45e40aaafa12cf57",
+        "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+        "locator": "Section1; Section3.2",
+        "passage": "Critical in cybersecurity and High for Biological and Chemical capability.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:30.277Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/terra-system-card.json",
+        "archive_sha256": "ae649291a9450959923ebd71148779852300eddd6a859418c0093ddfa5058b31"
+      }
+    ],
+    "qualifiers": [
+      "OpenAI Preparedness classification, not independent certification.",
+      "Section3.2 reports statistically significant image-input regressions in hate/extremism; results are not uniformly improved."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-harness",
+    "claim": "Agent Lightning keeps the deploy-time harness in RL through a model proxy and separates gateway, controller and trainer.",
+    "source_ids": [
+      "source-e986592dff42085c"
+    ],
+    "support": [
+      {
+        "source_id": "source-e986592dff42085c",
+        "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+        "locator": "The limits of traditional agentic RL; Building a complete control plane",
+        "passage": "whichever agent harness is used in deployment is the harness that takes part directly in reinforcement learning during training",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-07T16:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:50.495Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/feed-5.json",
+        "archive_sha256": "b27740f4e69656240d4373a1905a8252d92319d09194dc2f934aed875fbcb1a3"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-dates",
+    "claim": "Repository news dates the v1.0 open-source release and report to August2026; stable docs inspected identify1.0.2.",
+    "source_ids": [
+      "official-source-57ca1a039865d0c7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-57ca1a039865d0c7",
+        "url": "https://github.com/microsoft/agent-lightning",
+        "locator": "News",
+        "passage": "[2026/08] We open source Agent Lightning v1.0!",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:12.397Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-repo.json",
+        "archive_sha256": "834025e0436eb47e88b4cf87f4a484ae287bed47b714bfae167e3d2b2921286b"
+      }
+    ],
+    "qualifiers": [
+      "Month-level source statement only; do not infer a precise initial release day.",
+      "October7 is the Microsoft blog date, not first release; report is baseline."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-components",
+    "claim": "Repository documents trainer, gateway, controller and math/search/science/coding examples.",
+    "source_ids": [
+      "official-source-57ca1a039865d0c7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-57ca1a039865d0c7",
+        "url": "https://github.com/microsoft/agent-lightning",
+        "locator": "Architecture; Examples",
+        "passage": "Trainer: Runs verl and vLLM, builds training samples, and updates the policy.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:12.397Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-repo.json",
+        "archive_sha256": "834025e0436eb47e88b4cf87f4a484ae287bed47b714bfae167e3d2b2921286b"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-results",
+    "claim": "Authors report SWE-bench Verified41.8%→56.4% for Qwen3.5-9B using6K examples.",
+    "source_ids": [
+      "official-source-e45ddceb3bf6d55e"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-e45ddceb3bf6d55e",
+        "url": "https://www.microsoft.com/en-us/research/publication/agent-lightning-v1-0-towards-harnessed-agentic-rl/",
+        "locator": "Abstract",
+        "passage": "RL improves Qwen3.5-9B on SWE-bench Verified from 41.8% to 56.4%, a 14.6-point absolute gain.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:17.899Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-report.json",
+        "archive_sha256": "0c1acf23085ffb2bac0d755533339840342d40326dd79325f1606371ca69a73d"
+      }
+    ],
+    "qualifiers": [
+      "Source displays August2026; precise day unknown.",
+      "Author-reported specific setup; paper landing-page abstract inspected, not a full methodology audit or reproduction."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-stack",
+    "claim": "Installation supports CUDA12.9/13.0 and recommends pinned verl/vLLM/torch/FlashAttention stack.",
+    "source_ids": [
+      "official-source-382548fef3deb1c6"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-382548fef3deb1c6",
+        "url": "https://microsoft.github.io/agent-lightning/stable/00-installation/",
+        "locator": "Installation; Step2",
+        "passage": "The compatible versions of verl, vllm, and torch are tightly coupled",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:12.192Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-install.json",
+        "archive_sha256": "f55b0552156c7067b65469aba8c836b409b9263b2c251d927178ed3294e10ce8"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-logging",
+    "claim": "Default documented tasks upload logs and trajectories to Weights & Biases.",
+    "source_ids": [
+      "official-source-382548fef3deb1c6"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-382548fef3deb1c6",
+        "url": "https://microsoft.github.io/agent-lightning/stable/00-installation/",
+        "locator": "Step3 W&B Login",
+        "passage": "By default, all tasks upload logs and trajectories to Weights & Biases.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:12.192Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-install.json",
+        "archive_sha256": "f55b0552156c7067b65469aba8c836b409b9263b2c251d927178ed3294e10ce8"
+      }
+    ],
+    "qualifiers": [
+      "Configuration to disable or redirect logging was not tested. Local training does not establish local-only data retention."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-local",
+    "claim": "The local quick start requires one A100 and is unsupported on native Windows.",
+    "source_ids": [
+      "official-source-c86f42f7b0204f86"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-c86f42f7b0204f86",
+        "url": "https://microsoft.github.io/agent-lightning/stable/01-quick-start/",
+        "locator": "Before you start",
+        "passage": "This quick start requires only one machine with one A100 GPU.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:12.616Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-quickstart.json",
+        "archive_sha256": "fc26c21eae106e270807f0fbd39c929313c31ba19bb5dac0b6e108df0608953e"
+      }
+    ],
+    "qualifiers": [
+      "Example prerequisite, not minimum hardware for every task; local runner requires Linux environment on Windows."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-coding-hardware",
+    "claim": "The coding example specifies4×B200, Qwen3.5-9B, Kubernetes, separate controller/training roles and reachable gateway.",
+    "source_ids": [
+      "official-source-593d5cd7d2edcd98"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-593d5cd7d2edcd98",
+        "url": "https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/",
+        "locator": "Configuration table; Environment Preparation",
+        "passage": "This example uses two machines:",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.886Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-coding.json",
+        "archive_sha256": "d113ef9e19e69fee9880990c54839010e2ec046e8d13df0c3c8e3b891f230527"
+      }
+    ],
+    "qualifiers": [
+      "Full archived table specifies4×B200; example configuration, not universal requirement."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-data",
+    "claim": "SWE-smith preparation uses filtering/difficulty probes and approximately6K training/400 validation examples.",
+    "source_ids": [
+      "official-source-593d5cd7d2edcd98"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-593d5cd7d2edcd98",
+        "url": "https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/",
+        "locator": "Data Preparation",
+        "passage": "The resulting data contains approximately 6,000 training examples and 400 validation examples.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.886Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-coding.json",
+        "archive_sha256": "d113ef9e19e69fee9880990c54839010e2ec046e8d13df0c3c8e3b891f230527"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-reward",
+    "claim": "The coding recipe isolates repository history and recommends blocking rollout-pod egress except gateway to protect reward validity.",
+    "source_ids": [
+      "official-source-593d5cd7d2edcd98"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-593d5cd7d2edcd98",
+        "url": "https://microsoft.github.io/agent-lightning/stable/75-example-coding-agent/",
+        "locator": "Preventing Reward Hacking",
+        "passage": "The final reward is computed by running the task-specific FAIL_TO_PASS and PASS_TO_PASS tests inside the isolated repository environment.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.886Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-coding.json",
+        "archive_sha256": "d113ef9e19e69fee9880990c54839010e2ec046e8d13df0c3c8e3b891f230527"
+      }
+    ],
+    "qualifiers": [
+      "Controls are documented training design, not audited effectiveness."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "agent-lightning-mit",
+    "claim": "The framework uses MIT terms with notice preservation and no warranty.",
+    "source_ids": [
+      "official-source-c2f06db1384a32ac"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-c2f06db1384a32ac",
+        "url": "https://github.com/microsoft/agent-lightning/blob/main/LICENSE",
+        "locator": "MIT License",
+        "passage": "The above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:23.856Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/agent-lightning-license.json",
+        "archive_sha256": "aa7dc858a0793aba1b09e9ad4361032a16f69e6d7c19633fcce799dc2345ba70"
+      }
+    ],
+    "qualifiers": [
+      "Applies to framework; model/data/service/container terms were not comprehensively audited."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "cohere-qwen-scope",
+    "claim": "Cohere reports blocked synthetic probe upload by Qwen3.8-Flash-Next during a security evaluation; intent and generalizability unresolved.",
+    "source_ids": [
+      "official-source-27779e2e3a96ff05"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-27779e2e3a96ff05",
+        "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "locator": "What Cohere’s sandbox caught",
+        "passage": "Our sandbox had no route out, so the request died at the container wall.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:24.843Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/cohere-qwen-incident.json",
+        "archive_sha256": "75b24e9541a89c3dfc6510daf556ec0b2f89b8e0dc614f693882fa688ccac441"
+      }
+    ],
+    "qualifiers": [
+      "Cohere is a model vendor/competitor.",
+      "Reported frequency fewer than1 in100,000 evaluation calls; same-prompt clean rerun normal.",
+      "Prefill continuation statistics are conditioned experiments, not natural incidence.",
+      "No independent reproduction or Alibaba response examined; no same-upload finding for Qwen3.8-27B."
+    ],
+    "contradicts": [],
+    "source_family": "Concerning behavior from a popular open-weight AI model | Cohere",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "signals-scope",
+    "claim": "OpenAI Signals release covers individual-plan work messages across165 activities; excludes enterprise and Codex.",
+    "source_ids": [
+      "source-27334100e818b985"
+    ],
+    "support": [
+      {
+        "source_id": "source-27334100e818b985",
+        "url": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+        "locator": "Explore the data",
+        "passage": "The data covers work-related messages on individual ChatGPT plans and does not include enterprise messages or Codex use.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:32.667Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/feed-1.json",
+        "archive_sha256": "2020ae43a889c2ed5e2ae47e2a7b5b5620460ac5558b480aec863bc91c095200"
+      }
+    ],
+    "qualifiers": [
+      "Usage composition is not labor-market impact or productivity evidence; underlying data/methodology not yet audited."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "fanatics-case",
+    "claim": "Fanatics case study describes live inventory-aware Shop the Look recommendations and a reported10% engagement lift.",
+    "source_ids": [
+      "source-7e73eebe3e909303"
+    ],
+    "support": [
+      {
+        "source_id": "source-7e73eebe3e909303",
+        "url": "https://openai.com/index/fanatics-streamline-fan-experience/",
+        "locator": "Helping fans complete the look; Building and testing",
+        "passage": "looks are refreshed daily as catalogs change.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:35.104Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/feed-2.json",
+        "archive_sha256": "8be20d58c6236fe94bb6d0e3ed4e0dd3ccdace0d6aecc8bcf53949c595e6a05c"
+      }
+    ],
+    "qualifiers": [
+      "Vendor/customer case study; no experimental method or independent validation examined."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "magnetar-ai-relevance",
+    "claim": "Magnetar article frames AI-agent compliance proofs as a possible application of general-purpose zkVM research.",
+    "source_ids": [
+      "source-2b0a4f23c4eeb155"
+    ],
+    "support": [
+      {
+        "source_id": "source-2b0a4f23c4eeb155",
+        "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+        "locator": "A new form of computing",
+        "passage": "An AI agent acting on someone’s behalf could attach a proof that each action complied with the policy it was given.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-15T16:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:02:48.689Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/feed-4.json",
+        "archive_sha256": "9a6352744186c2b63fa3760916ca4e89ff06a490fe272dec07cd615392f6f167"
+      }
+    ],
+    "qualifiers": [
+      "Conditional example, not a demonstrated released AI-agent integration. Performance/security claims not independently audited."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "polar-peaks-scope",
+    "claim": "Google announces an ages11–14 AI literacy quest; third teacher module remains future.",
+    "source_ids": [
+      "official-source-9a15b40232fdbf82"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-9a15b40232fdbf82",
+        "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+        "locator": "Training modules",
+        "passage": "The training module for Quest #3 will follow next month.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:05.348Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-ai-quest.json",
+        "archive_sha256": "1c3ea50525fa566a878d78848ba95019a4c01e39f6bb9b2879ee7553a3470bd0"
+      }
+    ],
+    "qualifiers": [
+      "Lesson not played; educational effectiveness, accessibility and terms not verified."
+    ],
+    "contradicts": [],
+    "source_family": "Polar Peaks: Google’s new AI quest for brain mapping",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "docs-markdown-availability",
+    "claim": "Google announces native.md editing/collaboration for Google or Workspace accounts.",
+    "source_ids": [
+      "official-source-368b6668ab3ae40a"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-368b6668ab3ae40a",
+        "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+        "locator": "Availability",
+        "passage": "Anyone with a Google or Workspace account can get started today by uploading an .md file to Google Drive",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:56.703Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/google-docs-markdown.json",
+        "archive_sha256": "618ef4174160ea62ca5a435019132ded7a8ac435d12582af093d4166b7e68cde"
+      }
+    ],
+    "qualifiers": [
+      "Announcement only; no upload or file-fidelity/permission/export testing."
+    ],
+    "contradicts": [],
+    "source_family": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive - Google Developers Blog",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "anthropic-s1-status",
+    "claim": "Anthropic announces a proposed IPO filing whose registration statement is not yet effective.",
+    "source_ids": [
+      "official-source-9a064d95901e645e"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-9a064d95901e645e",
+        "url": "https://www.anthropic.com/news/s1-sec",
+        "locator": "Announcement",
+        "passage": "has not yet become effective.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:05:03.923Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/anthropic-s1.json",
+        "archive_sha256": "f628147220cec6ad2fd188ba737c7496b3ee18ee345d2f3b4bc485cf53c82811"
+      }
+    ],
+    "qualifiers": [
+      "Announcement inspected, SEC filing itself not independently retrieved; no investment recommendation."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic files S-1 with the SEC for proposed initial public offering \\ Anthropic",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "official-oldest-1",
+    "claim": "OpenAI describes public MultiLangBench and hidden byte-parity COBOL migration evaluations.",
+    "source_ids": [
+      "source-1dbe22633003a2af"
+    ],
+    "support": [
+      {
+        "source_id": "source-1dbe22633003a2af",
+        "url": "https://openai.com/index/low-resource-programming-languages/",
+        "locator": "Migrating a COBOL codebase",
+        "passage": "we evaluate our models on hidden tests that require byte-for-byte parity on observable outputs.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-19T12:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:00:48.722Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/backlog-01.json",
+        "archive_sha256": "3b0fda1f52d052bcc4b1d95471adf643765b4b8ff504ea170ff3f323dd9b9693"
+      }
+    ],
+    "qualifiers": [
+      "Full primary article read; customer/vendor claims have not been independently validated."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "official-oldest-2",
+    "claim": "Itaú case study separates initial300K customer phase from planned entire-base rollout.",
+    "source_ids": [
+      "source-9732b2763df5a67a"
+    ],
+    "support": [
+      {
+        "source_id": "source-9732b2763df5a67a",
+        "url": "https://openai.com/index/itau-generative-ai/",
+        "locator": "Next steps",
+        "passage": "The bank expects to make the experience available to its entire customer base by the end of 2026.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-16T19:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:01.306Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/backlog-02.json",
+        "archive_sha256": "d64610b96cc322446df086297cdb50004e9794ae41da31d0fbc78d5ae0840986"
+      }
+    ],
+    "qualifiers": [
+      "Full primary article read; customer/vendor claims have not been independently validated."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "official-oldest-3",
+    "claim": "BSP case study retains at least an hour of human review after a20-minute first pass.",
+    "source_ids": [
+      "source-b6756c0a180ee554"
+    ],
+    "support": [
+      {
+        "source_id": "source-b6756c0a180ee554",
+        "url": "https://openai.com/index/benefit-street-partners/",
+        "locator": "Building a credit agreement analyzer",
+        "passage": "An uploaded credit agreement takes about 20 minutes to process into a first-pass analysis, followed by an hour or more of human review.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-16T00:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:03.699Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/backlog-03.json",
+        "archive_sha256": "7abbca1f84598be914c478d575e55144ee318a4e39b04f441becced9a795abb2"
+      }
+    ],
+    "qualifiers": [
+      "Full primary article read; customer/vendor claims have not been independently validated."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "official-oldest-4",
+    "claim": "Stack Overflow signup/agent claims are attributed to its VP; Decisions API use is prospective.",
+    "source_ids": [
+      "source-9e63539289a31c86"
+    ],
+    "support": [
+      {
+        "source_id": "source-9e63539289a31c86",
+        "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/",
+        "locator": "Reducing configuration work with the Decisions API",
+        "passage": "Alex hopes to explore using the Decisions API",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-16T00:00:00Z",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:01:05.898Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/official/backlog-04.json",
+        "archive_sha256": "d0183cb5ffcc05f4626f944b305957ef109eec39b62a913ccf7ca4a827dfa008"
+      }
+    ],
+    "qualifiers": [
+      "Full primary article read; customer/vendor claims have not been independently validated."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "supported",
+    "limitations": [
+      "No product installation, model invocation, training run or benchmark was performed."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-scope",
+    "claim": "Indra OCR documents CPU conversion of PDFs and images into markdown, text and JSON with boxes.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Introduction",
+        "passage": "It turns PDFs and images into markdown, text, or JSON with boxes",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-size",
+    "claim": "The small headline refers to the recognizer, not the full default model set.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Installation",
+        "passage": "The main recognizer, rec.onnx (Latin script), has about 1.25M parameters, and all default models together have 7.3M (the optional math models are extra).",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-download",
+    "claim": "Default download is about 76 MB, including networks and language models.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Installation",
+        "passage": "The default models are about 76 MB: 30 MB of networks and 46 MB of language models for unsure lines.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-requirements",
+    "claim": "Documented requirements are Python 3.10+, ONNX Runtime, OpenCV and pypdfium2; tested platforms are Linux and Apple-silicon macOS.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Installation",
+        "passage": "Python 3.10 or newer, tested on Linux (x86_64 and aarch64, Python 3.10 to 3.13) and macOS (Apple silicon). It installs ONNX Runtime, OpenCV and pypdfium2, and no PyTorch.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-modes",
+    "claim": "Auto mixes accepted text layers and OCR; OCR ignores text layers; text mode uses them even when checks fail.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Usage → CLI Options",
+        "passage": "--mode [auto|ocr|text]: auto reads the text layer where it passes the checks and OCRs elsewhere (default). ocr never reads the text layer. text uses the text layer even when the checks fail",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-viewer",
+    "claim": "The local viewer documents boxes, reading order, rendered and source markdown, confidences, JSON and per-stage timings; publisher says files stay local.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Viewer",
+        "passage": "Files stay on your machine.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [
+      "Statement concerns documented viewer; network behavior not audited."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-output",
+    "claim": "Page output includes line coordinates, blocks, reading order, source, rotation/skew, vertical state, timing and routing note.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Output",
+        "passage": "source: text (PDF text layer), ocr, hybrid (text layer + OCR of text inside images) or error",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-batch",
+    "claim": "Batch conversion returns results in input order and uses a worker per core; unreadable files are errors and the CLI exit status reports failure.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Usage",
+        "passage": "For many pages or files, convert_many runs one single-threaded worker process per core, one page per task, and returns results in input order:",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-math",
+    "claim": "Math is opt-in, downloads additional models, can turn formulas into LaTeX and is slower; producer table score drops when cells are interpreted as math.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Math",
+        "passage": "Tables lose 1.5 points: numbers in some table cells are read as math.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-languages",
+    "claim": "The producer measured 95 languages on held-out printed pages, with 83 at character F1 of at least 0.90.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Languages",
+        "passage": "OCR (scans and images): we measured 95 languages on held-out printed pages: 83 read at character F1 0.90 or higher, and 67 at 0.95 or higher.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [
+      "Producer measurements; not a promise for every language/document."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-limitations",
+    "claim": "The publisher explicitly warns about complex tables, handwriting, degraded scans, some scripts and diacritics, vertical article order, wide pages and small text.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Limitations",
+        "passage": "Handwritten pages read, but not well: 25.2% on the OmniParseBench handwriting tests, and about a third of the words on held-out handwritten pages.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [
+      "Producer benchmark, not independently replicated."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-benchmarks",
+    "claim": "Headline benchmark mixes text/tables/layout and pipeline conditions; OCR-only and auto differ, loading/warm-up excluded from throughput.",
+    "source_ids": [
+      "repos-source-110896d94e289814"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-110896d94e289814",
+        "url": "https://huggingface.co/datalab-to/indra-ocr",
+        "locator": "Benchmarks → OmniParseBench; Throughput",
+        "passage": "Model loading and one warm-up page per worker are not timed.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:43.618Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+        "archive_sha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
+      }
+    ],
+    "qualifiers": [
+      "Vendor comparison; CPU/container/document mix matters; not a measured local speed guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-code-license",
+    "claim": "Repository code is Apache License 2.0.",
+    "source_ids": [
+      "repos-indra-code-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-code-license",
+        "url": "https://github.com/datalab-to/indra/blob/main/LICENSE",
+        "locator": "License header",
+        "passage": "Apache License 2.0",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:16.560Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-code-license.json",
+        "archive_sha256": "541e75f192f951fe761a5c931312b69bc88ea99e0c84469702bf5d21d4ea8401"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-funding",
+    "claim": "Commercial restriction uses prior-year gross revenue over $20M and total equity/debt funding over $20M for user/employer/affiliated entity; those clauses except personal or research use.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Attachment A, Commercial 2(a)–(b)",
+        "passage": "generated more than twenty million US Dollars ($20,000,000) in gross revenue in the prior year, except where Your Use is limited to personal use or research purposes;",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [
+      "Describes the text; no legal determination of a specific organization or use."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-competition",
+    "claim": "The competition clause applies to any product/service of the licensor or affiliates, not only a hosted API.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Attachment A, Commercial 2(c)",
+        "passage": "provides or otherwise makes available any product or service that competes with any product or service offered by or made available by Licensor or any of its affiliates.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [
+      "The clause contains no explicit personal/research exception."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-output",
+    "claim": "Weight license requires attribution in connection with output and says the same license applies to output and its derivatives.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Sections 7 and 8",
+        "passage": "and to the Output and any derivatives, changes or improvements to or of the Output.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [
+      "Section 6 says licensor claims no rights except as set forth in the license; do not infer unrestricted output rights."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-distribution",
+    "claim": "Distribution includes hosted access and requires recipients get terms, restrictions and notices.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Definitions 1(f); Section 4",
+        "passage": "including providing the Model as a hosted service made available by electronic or other remote means, including but not limited to API-based or web access.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no installation, model run, benchmark replication or legal interpretation tested."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-funding-total",
+    "claim": "Funding threshold includes total equity or debt funding, with a personal/research exception.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Attachment A, Commercial 2(b)",
+        "passage": "has raised more than twenty million US dollars ($20,000,000) in total equity or debt funding from any source, except where Your Use is limited to personal use or research purposes;",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [
+      "Description of primary license text; no determination of enforceability or a specific use."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "License not accepted; no model use or legal compliance test."
+    ]
+  },
+  {
+    "claim_id": "indra-ocr-license-attribution",
+    "claim": "Section 7 explicitly applies attribution to outputs as well as model use/distribution.",
+    "source_ids": [
+      "repos-indra-weight-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-indra-weight-license",
+        "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+        "locator": "Section 7",
+        "passage": "In connection with any Output, or use of Distribution of any Model or Derivatives of the Model, You agree to give appropriate credit and attribution to Licensor",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:14.183Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-indra-weight-license.json",
+        "archive_sha256": "5b76caa0cf61dd74ccc6f24a3d862fae9693af0b7147eb8df2e9903b595c90d6"
+      }
+    ],
+    "qualifiers": [
+      "Description of primary license text; no determination of enforceability or a specific use."
+    ],
+    "contradicts": [],
+    "source_family": "Datalab primary documentation",
+    "status": "supported",
+    "limitations": [
+      "License not accepted; no model use or legal compliance test."
+    ]
+  },
+  {
+    "claim_id": "creative-20261026-link-beta",
+    "claim": "Together Link is documented as a beta connector for existing coding agents and desktop apps, using hosted models and requiring a Together API key.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Introduction and Requirements",
+        "passage": "Together Link is currently in beta. Commands, routing behavior, and the available model list may change.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [
+      "Documentation as retrieved October 26, 2026; not independently installed or tested."
+    ],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-requirements",
+    "claim": "Documented prerequisites include macOS/Linux, Bash/curl, an already installed agent, OpenCode 2, and Pi Code 0.80.8+ on Node.js 22.19+.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Requirements",
+        "passage": "macOS or Linux, with Bash and curl to run the installer. On Linux, installing Bun also requires unzip.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Requirements",
+        "passage": "Pi Code 0.80.8 or newer (which requires Node.js 22.19 or newer)",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-routing-conflict",
+    "claim": "The launch announcement says routing happens once per session; current beta documentation instead describes a per-request hosted gateway router. The difference is unresolved without running a pinned version.",
+    "source_ids": [
+      "together-link",
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "together-link",
+        "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
+        "locator": "Getting started",
+        "passage": "Routing happens once per session, so prompt caching keeps working.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-05",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:00:43.686Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/backlog-together-link.json",
+        "archive_sha256": "775f703eda441c117c324d8a8f6764c57a8639e03fbe69bd5895672b782ef6f4"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "How the auto router works",
+        "passage": "For each request, Together Link’s cloud gateway classifies the prompt and routes it to the model best suited to handle it:",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [
+      "Do not present either frequency as experimentally verified.",
+      "Report explicitly discloses the source conflict."
+    ],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-billing",
+    "claim": "Current docs distinguish Together model billing from optional Anthropic API billing; Anthropic routing is described only for Claude sessions.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "How the auto router works",
+        "passage": "Codex, OpenCode, Pi Code, and ChatGPT Desktop sessions always stay on Together AI models, as do Claude sessions without an Anthropic API key.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Requirements",
+        "passage": "billed to the Anthropic account behind the key.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-pinning",
+    "claim": "Docs specify --main before the tool name for a fixed model and warn that agent --model flags may be refused or ignored.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Choose a model",
+        "passage": "togetherlink --main zai-org/GLM-5.3 claude",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Choose a model",
+        "passage": "Together Link refuses or ignores a --model flag placed after the tool name",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-prices",
+    "claim": "Current documentation lists model-specific input, cache, and output token prices; these are a retrieved snapshot and not a guaranteed project cost.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Choose a model: price table",
+        "passage": "GLM 5.3\tzai-org/GLM-5.3\tFable\t1M\t$1.40\t$0.26\t$4.40",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Choose a model",
+        "passage": "Run togetherlink models for the live table.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-config",
+    "claim": "Terminal launches receive temporary configuration, while desktop integrations use persistent separate profiles and store Together keys locally.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "How it works",
+        "passage": "No local proxy or daemon runs, and your normal configuration files remain unchanged.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "How it works",
+        "passage": "Desktop profiles store your Together API key locally.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [
+      "Vendor documentation; no independent configuration or key-handling audit."
+    ],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-headless",
+    "claim": "The documentation warns that a headless Claude Code process with open stdin can block and directs closing stdin.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Run headless",
+        "passage": "A headless process that inherits an open stdin blocks indefinitely waiting for additional input.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-images-usage",
+    "claim": "Image generation is documented for certain launched surfaces and image spend is tracked separately from token usage.",
+    "source_ids": [
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Generate images",
+        "passage": "Claude Code, Claude Desktop, and ChatGPT Desktop sessions launched through Together Link include an image generation skill.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "Generate images",
+        "passage": "Image spend appears in togetherlink usage, tracked separately from token usage.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-link-savings",
+    "claim": "The launch post advertises over 50% savings; the documentation explains its cost comparison as a same-token Opus counterfactual, not measured task-equivalent savings.",
+    "source_ids": [
+      "together-link",
+      "creative-together-link-docs"
+    ],
+    "support": [
+      {
+        "source_id": "together-link",
+        "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
+        "locator": "Summary",
+        "passage": "cuts your spend by over 50%.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-05",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:00:43.686Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/backlog-together-link.json",
+        "archive_sha256": "775f703eda441c117c324d8a8f6764c57a8639e03fbe69bd5895672b782ef6f4"
+      },
+      {
+        "source_id": "creative-together-link-docs",
+        "url": "https://docs.together.ai/docs/togetherlink",
+        "locator": "View usage",
+        "passage": "what the same tokens would cost on Claude Opus.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.190Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/together-link-docs.json",
+        "archive_sha256": "2244bb38de22fb7bce73f713d849e000786242a061e5125e574324a884e6e73b"
+      }
+    ],
+    "qualifiers": [
+      "The Observatory has not measured costs or completion quality."
+    ],
+    "contradicts": [],
+    "source_family": "Together AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-launch",
+    "claim": "Ollama announced speech-model support on October 24, beginning with Gradium Phonon; launch support is Apple Silicon macOS and recommends 0.40.11+.",
+    "source_ids": [
+      "creative-ollama-speech-models"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-models",
+        "url": "https://ollama.com/blog/speech-models",
+        "locator": "Get started",
+        "passage": "Speech models run on Apple Silicon Macs. Download Ollama 0.40.11 or later, then pull Phonon:",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.954Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-models.json",
+        "archive_sha256": "75fd049ff188d599d79655bf48d3a96fa3524f68955b6caeaadb8be250a36810"
+      }
+    ],
+    "qualifiers": [
+      "This dates the Ollama integration, not the original Phonon family release."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-model-license",
+    "claim": "The 31M English checkpoint is Apache 2.0; 40M English and other language checkpoints are CC BY-NC 4.0. Counts exclude the audio tokenizer.",
+    "source_ids": [
+      "creative-phonon-31m-card",
+      "creative-phonon-model"
+    ],
+    "support": [
+      {
+        "source_id": "creative-phonon-31m-card",
+        "url": "https://huggingface.co/gradium/phonon-31m-en",
+        "locator": "Model details",
+        "passage": "Parameters: 31M (excluding the audio tokenizer)",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.941Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-31m-card.json",
+        "archive_sha256": "abde0a40fd7bdc9d63ac2a3e911232884139de0685be2fbb4121d08b4e810232"
+      },
+      {
+        "source_id": "creative-phonon-31m-card",
+        "url": "https://huggingface.co/gradium/phonon-31m-en",
+        "locator": "License",
+        "passage": "The weights, tokenizer and voices in this repository are released under Apache 2.0, which allows commercial use.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.941Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-31m-card.json",
+        "archive_sha256": "abde0a40fd7bdc9d63ac2a3e911232884139de0685be2fbb4121d08b4e810232"
+      },
+      {
+        "source_id": "creative-phonon-model",
+        "url": "https://ollama.com/library/phonon",
+        "locator": "Readme licensing",
+        "passage": "The 40M English, French, German, Spanish, Portuguese, and multilingual checkpoints are released under CC BY-NC 4.0, which limits use to noncommercial purposes.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:34.524Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-model.json",
+        "archive_sha256": "dc83038c80233f8e93e564f571bde72093f967d7f734c569e370f424673a283f"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-access",
+    "claim": "The public 40M multilingual model card is readable but its file access asks for Hugging Face information sharing and acceptance of conditions.",
+    "source_ids": [
+      "creative-phonon-40m-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-phonon-40m-card",
+        "url": "https://huggingface.co/gradium/phonon-40m-multilingual",
+        "locator": "Access notice",
+        "passage": "You need to agree to share your Hugging Face information to access this model",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:45.273Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-40m-card.json",
+        "archive_sha256": "e99bb91268e344439ddb7408b050d3ad49b23f4c60604281d5f6e902aff03a27"
+      }
+    ],
+    "qualifiers": [
+      "No conditions accepted and no weights downloaded; model-card access is not proof of file access."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-voices-conflict",
+    "claim": "The library page says the default has one voice, while speech docs and the launch post document named voices. Users should inspect installed voices; upstream has a separate catalogue.",
+    "source_ids": [
+      "creative-phonon-model",
+      "creative-ollama-speech-docs",
+      "creative-phonon-voices"
+    ],
+    "support": [
+      {
+        "source_id": "creative-phonon-model",
+        "url": "https://ollama.com/library/phonon",
+        "locator": "Readme",
+        "passage": "It includes one voice, named default.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:34.524Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-model.json",
+        "archive_sha256": "dc83038c80233f8e93e564f571bde72093f967d7f734c569e370f424673a283f"
+      },
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Setup",
+        "passage": "Phonon uses Gradium’s 31M English checkpoint and comes with Gradium’s English voices, such as Zoey, Easton, and Freya.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      },
+      {
+        "source_id": "creative-phonon-voices",
+        "url": "https://huggingface.co/gradium/phonon-voices",
+        "locator": "Phonon voices",
+        "passage": "102 voices for Phonon S (31M): 90 Gradium catalogue voices in 7 locales, plus 12 English character voices.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:45.701Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-voices.json",
+        "archive_sha256": "c55ec750d198256702f045e5367b4257274c4b93dd45d314f7b01eddebff5e18"
+      }
+    ],
+    "qualifiers": [
+      "Catalogue size is not a promise that every voice ships in every Ollama package."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-api",
+    "claim": "Speech generation uses /v1/audio/speech and streams 24kHz mono audio as WAV or raw signed 16-bit PCM.",
+    "source_ids": [
+      "creative-ollama-speech-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Generate speech with the API",
+        "passage": "Use the OpenAI-compatible /v1/audio/speech endpoint:",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      },
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Audio formats",
+        "passage": "Raw 16-bit little-endian samples, mono, 24 kHz, with no header.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-limits",
+    "claim": "API requests are capped at 4096 input characters; CLI splits longer text; unsupported options, unknown voices and non-speech routes produce 400 errors.",
+    "source_ids": [
+      "creative-ollama-speech-docs"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Limits",
+        "passage": "input can be up to 4,096 characters per request. ollama run splits longer text at paragraph and sentence breaks for you.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      },
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Limits",
+        "passage": "An unknown voice returns a 400 error that lists the available voices.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      },
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Limits",
+        "passage": "Speech models only generate speech: chat, completion, and embedding requests to them return a 400 error.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-text-processing",
+    "claim": "Speech documentation describes normalization and skipped Markdown markers, whereas the model page warns formatting may be read aloud. Long-input prosody is limited upstream.",
+    "source_ids": [
+      "creative-ollama-speech-docs",
+      "creative-phonon-model",
+      "creative-phonon-31m-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-docs",
+        "url": "https://docs.ollama.com/capabilities/speech",
+        "locator": "Limits",
+        "passage": "Emoji, bullet characters, and markdown markers such as * and # are skipped.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.184Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-docs.json",
+        "archive_sha256": "7088d5deed8b76b6d9110ef3280649a57f9ea0f81c803c90de30ac2587f75dcb"
+      },
+      {
+        "source_id": "creative-phonon-model",
+        "url": "https://ollama.com/library/phonon",
+        "locator": "Readme",
+        "passage": "formatting marks such as Markdown headings may be read aloud.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:34.524Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-model.json",
+        "archive_sha256": "dc83038c80233f8e93e564f571bde72093f967d7f734c569e370f424673a283f"
+      },
+      {
+        "source_id": "creative-phonon-31m-card",
+        "url": "https://huggingface.co/gradium/phonon-31m-en",
+        "locator": "Limitations",
+        "passage": "Very long inputs are split into sentences and spoken one after the other, so prosody does not carry across the whole text.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.941Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-31m-card.json",
+        "archive_sha256": "abde0a40fd7bdc9d63ac2a3e911232884139de0685be2fbb4121d08b4e810232"
+      }
+    ],
+    "qualifiers": [
+      "Clean spoken-text input is a proposed conservative practice amid version/documentation differences."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-performance",
+    "claim": "Ollama reports 113x realtime throughput on M5 Max for a 45-second speech generation test, median ten runs; this is vendor-measured throughput, not first-audio latency.",
+    "source_ids": [
+      "creative-ollama-speech-models"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-models",
+        "url": "https://ollama.com/blog/speech-models",
+        "locator": "Performance on Apple Silicon",
+        "passage": "Measured on a MacBook Pro with M5 Max, generating 45 seconds of speech. Median of 10 runs.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.954Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-models.json",
+        "archive_sha256": "75fd049ff188d599d79655bf48d3a96fa3524f68955b6caeaadb8be250a36810"
+      },
+      {
+        "source_id": "creative-ollama-speech-models",
+        "url": "https://ollama.com/blog/speech-models",
+        "locator": "Throughput chart",
+        "passage": "113×",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.954Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-models.json",
+        "archive_sha256": "75fd049ff188d599d79655bf48d3a96fa3524f68955b6caeaadb8be250a36810"
+      }
+    ],
+    "qualifiers": [
+      "Runtime precision differs among comparison entries; no Observatory benchmark or listening test."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-quality",
+    "claim": "Ollama reports a 1.2% word error rate using 200 Seed-TTS English sentences transcribed by Whisper large-v3; this does not establish prosody or domain reliability.",
+    "source_ids": [
+      "creative-ollama-speech-models"
+    ],
+    "support": [
+      {
+        "source_id": "creative-ollama-speech-models",
+        "url": "https://ollama.com/blog/speech-models",
+        "locator": "Accuracy chart",
+        "passage": "Lower is better. 200 sentences from the Seed-TTS English test set, transcribed with Whisper large-v3.",
+        "passage_type": "direct_quote",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:18.954Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/ollama-speech-models.json",
+        "archive_sha256": "75fd049ff188d599d79655bf48d3a96fa3524f68955b6caeaadb8be250a36810"
+      }
+    ],
+    "qualifiers": [
+      "Vendor evaluation; not a multilingual or real-classroom study."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "creative-20261026-phonon-upstream",
+    "claim": "Gradium documents separate browser, mobile and CPU runtime paths and says Phonon builds on Kyutai Pocket TTS and Mimi; these do not establish Ollama platform support.",
+    "source_ids": [
+      "creative-phonon-31m-card"
+    ],
+    "support": [
+      {
+        "source_id": "creative-phonon-31m-card",
+        "url": "https://huggingface.co/gradium/phonon-31m-en",
+        "locator": "Introduction",
+        "passage": "Phonon builds on Pocket TTS and the Mimi codec, developed by Kyutai.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.941Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-31m-card.json",
+        "archive_sha256": "abde0a40fd7bdc9d63ac2a3e911232884139de0685be2fbb4121d08b4e810232"
+      },
+      {
+        "source_id": "creative-phonon-31m-card",
+        "url": "https://huggingface.co/gradium/phonon-31m-en",
+        "locator": "Introduction",
+        "passage": "it is small enough to run in a browser tab, on a phone, or on a laptop CPU.",
+        "passage_type": "direct_quote",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:44.941Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/creative/archives/phonon-31m-card.json",
+        "archive_sha256": "abde0a40fd7bdc9d63ac2a3e911232884139de0685be2fbb4121d08b4e810232"
+      }
+    ],
+    "qualifiers": [
+      "Model-author documentation; alternate runtimes not installed or tested."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Gradium",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-dates-20261026",
+    "claim": "The October23 Ai2 explainer discusses research first submitted April3 and revised September22; it is baseline research rather than a verified October product launch.",
+    "source_ids": [
+      "research-source-db9c0e7e30f0fafd"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-db9c0e7e30f0fafd",
+        "url": "https://arxiv.org/abs/2604.02600",
+        "locator": "Abstract page; Submission history",
+        "passage": "[Submitted on 3 Apr 2026 (v1), last revised 22 Sep 2026 (this version, v3)]",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:49.572Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-paper.json",
+        "archive_sha256": "8568d9d659b0d59909f517797c9183114affab84f0a36fc14499ce682c79702b"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-announcement-20261026",
+    "claim": "Ai2 describes its collaboration, early-stage research scope, human edit control and planned UIST presentation.",
+    "source_ids": [
+      "research-source-66bac3e04c35a301"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-66bac3e04c35a301",
+        "url": "https://allenai.org/blog/litpivot",
+        "locator": "Introduction; How LitPivot works",
+        "passage": "October 23, 2026",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.087Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-66bac3e04c35a301.json",
+        "archive_sha256": "3b7daefc19ddfd4e50cdb581bc656d76aea6cbc9fd9c388710280b324d7f3b1f"
+      },
+      {
+        "source_id": "research-source-66bac3e04c35a301",
+        "url": "https://allenai.org/blog/litpivot",
+        "locator": "Introduction; How LitPivot works",
+        "passage": "With collaborators at the University of Pennsylvania, we developed LitPivot",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.087Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-66bac3e04c35a301.json",
+        "archive_sha256": "3b7daefc19ddfd4e50cdb581bc656d76aea6cbc9fd9c388710280b324d7f3b1f"
+      },
+      {
+        "source_id": "research-source-66bac3e04c35a301",
+        "url": "https://allenai.org/blog/litpivot",
+        "locator": "Introduction; How LitPivot works",
+        "passage": "Researchers can accept, edit, or reject suggestions",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.087Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-66bac3e04c35a301.json",
+        "archive_sha256": "3b7daefc19ddfd4e50cdb581bc656d76aea6cbc9fd9c388710280b324d7f3b1f"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "allenai.org",
+    "status": "supported",
+    "limitations": [
+      "No hosted access, price or LitPivot code release is established by the inspected explainer."
+    ]
+  },
+  {
+    "claim_id": "research-litpivot-facets-20261026",
+    "claim": "The system connects problem, contribution and evaluation facets with relevant literature and flags inconsistency after edits.",
+    "source_ids": [
+      "research-source-66bac3e04c35a301"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-66bac3e04c35a301",
+        "url": "https://allenai.org/blog/litpivot",
+        "locator": "How LitPivot works",
+        "passage": "LitPivot separates a research idea into its problem, proposed contribution, and evaluation plan.",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.087Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-66bac3e04c35a301.json",
+        "archive_sha256": "3b7daefc19ddfd4e50cdb581bc656d76aea6cbc9fd9c388710280b324d7f3b1f"
+      },
+      {
+        "source_id": "research-source-66bac3e04c35a301",
+        "url": "https://allenai.org/blog/litpivot",
+        "locator": "How LitPivot works",
+        "passage": "Changing one facet of an idea can leave another out of date.",
+        "published_at": "2026-10-23",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.087Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-66bac3e04c35a301.json",
+        "archive_sha256": "3b7daefc19ddfd4e50cdb581bc656d76aea6cbc9fd9c388710280b324d7f3b1f"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "allenai.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-retrieval-20261026",
+    "claim": "The documented retrieval pipeline uses Asta Paper Finder and Semantic Scholar; reranking is user initiated rather than continuous automatic search.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.2 Constructing the literature space",
+        "passage": "LitPivot passes the researcher’s idea as a seed query to Asta Paper Finder",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.2 Constructing the literature space",
+        "passage": "We designed this as a user-initiated interaction to manage system latency and give researchers control over when to reorganize the entire literature space around their revised idea.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-novelty-method-20261026",
+    "claim": "Differentiation is operationalized through a bipartite graph linking contributions and limitations/future work, not a general proof of novelty.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.3.2; 7.1",
+        "passage": "one vertex set represents contributions extracted from selected papers, the other represents their limitations or future work statements",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.3.2; 7.1",
+        "passage": "does not capture novelty that arises from reframing a problem or from work whose limitations are never articulated.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-implementation-20261026",
+    "claim": "Research implementation uses React, Flask, JSON paper storage, GPT-4o, o3 and Sonnet4 with task allocation informed by latency.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.4 Implementation",
+        "passage": "The frontend uses the React framework in JavaScript, while the backend is implemented in Python using Flask.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "4.4 Implementation",
+        "passage": "We assigned models by latency rather than defaulting to the most capable model for every step",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": [
+      "Current compatibility, operational price and measured latency are unverified."
+    ]
+  },
+  {
+    "claim_id": "research-litpivot-study-design-20261026",
+    "claim": "The 17-person counterbalanced user study used two 30-minute assigned tasks and the same roughly100 papers; adding papers was disallowed.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Study1; Participants, Interfaces, Test Tasks",
+        "passage": "We recruited 17 researchers in computer and information sciences",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Study1; Participants, Interfaces, Test Tasks",
+        "passage": "We counterbalanced condition order to control for learning and ordering effects.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Study1; Participants, Interfaces, Test Tasks",
+        "passage": "we did not allow participants to add their own during the study to ensure both conditions used the same paper set.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Study1; Participants, Interfaces, Test Tasks",
+        "passage": "Participants had 30 minutes per task.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Within-subject small research-team study, not independent replication.",
+      "Fixed corpus limits conclusions about open retrieval."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-ratings-20261026",
+    "claim": "Two final authors rated idea grounding blind to condition; reported median rose2to5/7. Novelty, feasibility and utility measures were self-report, not validated discovery outcomes.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Expert evaluation; 5.2",
+        "passage": "The last two authors, who are domain experts in the areas the ideas were from, rated the final ideas, blind to condition.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Expert evaluation; 5.2",
+        "passage": "The median rating rose from 2 to 5 out of 7",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "5 Expert evaluation; 5.2",
+        "passage": "We scope our measures of idea novelty, feasibility, and utility to self-report data.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Ratings concern grounding and argumentation.",
+      "Raters were paper authors; guideline refinement and consensus described."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-followup-limits-20261026",
+    "claim": "Five returning researchers took part in the qualitative follow-up; broader long-term impact and experimental feasibility remain untested.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "6 Study2; 7.1 Limitations",
+        "passage": "Five researchers who had participated in the user study in Section 5 were recruited.",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      },
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "6 Study2; 7.1 Limitations",
+        "passage": "Because LitPivot does not execute code or run experiments, claims about idea feasibility cannot be verified",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-litpivot-license-20261026",
+    "claim": "The paper is CC BY4.0; no LitPivot software license or generally available service price was verified.",
+    "source_ids": [
+      "research-source-79474212a6dd1bf3"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-79474212a6dd1bf3",
+        "url": "https://arxiv.org/html/2604.02600v3",
+        "locator": "Document license; 7.1",
+        "passage": "License: CC BY 4.0",
+        "published_at": "2026-09-22",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:20.696Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/litpivot-full-paper.json",
+        "archive_sha256": "0b6a81afe7db14da1748b71125d966e8657a026fbd7658a55c05c5d418625708"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "arxiv.org",
+    "status": "supported",
+    "limitations": [
+      "Paper license does not establish software or retrieved-publication rights."
+    ]
+  },
+  {
+    "claim_id": "research-course-date-scope-20261026",
+    "claim": "Raschka announced eight coding videos exceeding11hours on October24; they accompany existing book/code and start from a pretrained small model.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Title, date, introduction",
+        "passage": "OCT 24, 2026",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Title, date, introduction",
+        "passage": "Eight videos and over 11 hours of coding",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Title, date, introduction",
+        "passage": "We start with a pre-trained LLM and implement methods to evaluate and improve it in Python and PyTorch.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-prerequisites-20261026",
+    "claim": "Python/PyTorch familiarity recommended; preceding course optional; CPU early examples, GPU practical for later training.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Scope and prerequisites",
+        "passage": "I recommend being comfortable with Python and PyTorch.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Scope and prerequisites",
+        "passage": "recommended but not strictly required.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Scope and prerequisites",
+        "passage": "you can work through the early text-generation and evaluation examples on a CPU.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-generation-20261026",
+    "claim": "Video2 loads Qwen3-0.6B and implements streaming generation, KV caching and compilation.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video2",
+        "passage": "Here, we load the pre-trained weights of a Qwen3 0.6B model.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video2",
+        "passage": "we implement the text-generation process via a streaming text generator and add KV caching and model compilation",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-verifier-20261026",
+    "claim": "Video3 builds answer extraction, normalization/equivalence verification, MATH-500 evaluation and a later RL reward signal.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video3",
+        "passage": "we build a math-answer verifier step by step, from answer extraction to normalization and checking mathematical equivalence.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video3",
+        "passage": "providing the reward signal for reinforcement learning with verifiable rewards (RLVR).",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-inference-20261026",
+    "claim": "Videos4–5 teach sampling/voting, scoring, log probabilities and self-refinement, with accuracy/compute comparison.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos4–5",
+        "passage": "we implement temperature scaling, multinomial sampling, and top-p filtering",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos4–5",
+        "passage": "We then implement a self-refinement loop in which the model critiques an answer and attempts a revision.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos4–5",
+        "passage": "We also examine the tradeoff between answer accuracy and the extra computation needed to generate more candidates.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-rl-20261026",
+    "claim": "Videos6–7 implement simplified GRPO, diagnostics, clipped policy ratios, KL terms and reward-hacking discussion.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos6–7",
+        "passage": "a simplified version of Group Relative Policy Optimization (GRPO)",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos6–7",
+        "passage": "including entropy and advantage statistics, clipped policy ratios, KL loss term values, and formatted rewards.",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Videos6–7",
+        "passage": "Adding a KL loss term and discussing reward hacking",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-distillation-20261026",
+    "claim": "Video8 teaches teacher-response distillation, data splits, supervised training and MATH-500 evaluation, naming DeepSeekR1 for teacher data.",
+    "source_ids": [
+      "research-source-da8785cc5779f5c9"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video8",
+        "passage": "Creating and collecting teacher-generated answers for the MATH dataset (using DeepSeek R1)",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      },
+      {
+        "source_id": "research-source-da8785cc5779f5c9",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+        "locator": "Video8",
+        "passage": "Preparing the distillation dataset, including tokenization and training/validation/test splits",
+        "published_at": "2026-10-24",
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:03:30.902Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/research-candidate-da8785cc5779f5c9.json",
+        "archive_sha256": "c0ebfa6f507c749fd953f7a67914d1e9708420622f93f92da03f581e8bcbd9f7"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "magazine.sebastianraschka.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-code-license-20261026",
+    "claim": "Companion code is Apache2, aimed at educational small-model work, with optional exercises and chat interface material.",
+    "source_ids": [
+      "research-source-1ea9b8bcaf731591"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-1ea9b8bcaf731591",
+        "url": "https://github.com/rasbt/reasoning-from-scratch",
+        "locator": "README; Table of Contents; Bonus material",
+        "passage": "Apache-2.0 license",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:21.516Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-repo.json",
+        "archive_sha256": "37e79b7842cbf485d272cb6b8de7a6beecbaa4798887c75f2401ebf18050f573"
+      },
+      {
+        "source_id": "research-source-1ea9b8bcaf731591",
+        "url": "https://github.com/rasbt/reasoning-from-scratch",
+        "locator": "README; Table of Contents; Bonus material",
+        "passage": "small-but-functional reasoning model for educational purposes.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:21.516Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-repo.json",
+        "archive_sha256": "37e79b7842cbf485d272cb6b8de7a6beecbaa4798887c75f2401ebf18050f573"
+      },
+      {
+        "source_id": "research-source-1ea9b8bcaf731591",
+        "url": "https://github.com/rasbt/reasoning-from-scratch",
+        "locator": "README; Table of Contents; Bonus material",
+        "passage": "Appendix G: Building a Chat Interface",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:21.516Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-repo.json",
+        "archive_sha256": "37e79b7842cbf485d272cb6b8de7a6beecbaa4798887c75f2401ebf18050f573"
+      }
+    ],
+    "qualifiers": [
+      "Repository source code license only.",
+      "Book/video/model/dataset terms require separate checks."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "research-course-hardware-20261026",
+    "claim": "Repository recommends CPU/GPU for chapters2–4 and GPU for reproducing chapters5–6; guide offers cloud alternatives without verified current cost.",
+    "source_ids": [
+      "research-source-1ea9b8bcaf731591"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-1ea9b8bcaf731591",
+        "url": "https://github.com/rasbt/reasoning-from-scratch",
+        "locator": "Hardware Requirements",
+        "passage": "chapters 2-4 will work well on CPUs and GPUs.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:21.516Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-repo.json",
+        "archive_sha256": "37e79b7842cbf485d272cb6b8de7a6beecbaa4798887c75f2401ebf18050f573"
+      },
+      {
+        "source_id": "research-source-1ea9b8bcaf731591",
+        "url": "https://github.com/rasbt/reasoning-from-scratch",
+        "locator": "Hardware Requirements",
+        "passage": "For chapters 5 and 6, it is recommended to use a GPU if you want to replicate the results in the chapter.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:21.516Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-repo.json",
+        "archive_sha256": "37e79b7842cbf485d272cb6b8de7a6beecbaa4798887c75f2401ebf18050f573"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "No exact VRAM/runtime benchmark independently reproduced."
+    ]
+  },
+  {
+    "claim_id": "research-course-cloud-20261026",
+    "claim": "GPU guidance describes Lightning Studio and Colab and says NVIDIA GPUs improve runtimes especially chapters5–7.",
+    "source_ids": [
+      "research-source-b215aaf60d006daf"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-b215aaf60d006daf",
+        "url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch02/02_setup-tips/gpu-instructions.md",
+        "locator": "GPU Cloud Resources; platform sections",
+        "passage": "cloud platforms with NVIDIA GPUs can substantially improve the runtime of the code, especially in chapters 5 to 7.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.134Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-gpu.json",
+        "archive_sha256": "cd973c1672254b8301a677b9374f623ee2c13d2630029894166bd29831c5ad45"
+      },
+      {
+        "source_id": "research-source-b215aaf60d006daf",
+        "url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch02/02_setup-tips/gpu-instructions.md",
+        "locator": "GPU Cloud Resources; platform sections",
+        "passage": "Using Lightning Studio",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.134Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-gpu.json",
+        "archive_sha256": "cd973c1672254b8301a677b9374f623ee2c13d2630029894166bd29831c5ad45"
+      },
+      {
+        "source_id": "research-source-b215aaf60d006daf",
+        "url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch02/02_setup-tips/gpu-instructions.md",
+        "locator": "GPU Cloud Resources; platform sections",
+        "passage": "Using Google Colab",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:04:22.134Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/research/archives/reasoning-course-gpu.json",
+        "archive_sha256": "cd973c1672254b8301a677b9374f623ee2c13d2630029894166bd29831c5ad45"
+      }
+    ],
+    "qualifiers": [
+      "Primary source documentation; not independent execution testing."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "supported",
+    "limitations": [
+      "Cloud prices, quotas and total course cost not verified."
+    ]
+  },
+  {
+    "claim_id": "social-20261026-dessa-access",
+    "claim": "Block describes Dessa early access for a small group of AI safety researchers, and the page says launch links are coming soon.",
+    "source_ids": [
+      "social-source-b5cb20bfbe29ca46"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-b5cb20bfbe29ca46",
+        "url": "https://block.xyz/dessa",
+        "locator": "Calling all safety researchers; final page notice",
+        "passage": "Block describes Dessa early access for a small group of AI safety researchers, and the page says launch links are coming soon.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:11:41.451Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/social/dessa-primary-repair.json",
+        "archive_sha256": "3c92e0277aa639c950a3d260c6ee8b0073be501ee85f4323377e990b68e6dcd0"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher access statement, not proof that access has been granted to any particular applicant."
+    ],
+    "contradicts": [],
+    "source_family": "Block Dessa",
+    "status": "supported",
+    "limitations": [
+      "No public model download, API documentation or mature deployment path established in this capture."
+    ]
+  },
+  {
+    "claim_id": "social-20261026-dessa-training",
+    "claim": "Block says Dessa was trained from scratch on human speech without text or pretrained models and describes full-duplex audio input and output.",
+    "source_ids": [
+      "social-source-b5cb20bfbe29ca46"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-b5cb20bfbe29ca46",
+        "url": "https://block.xyz/dessa",
+        "locator": "Introduction; What is this?!",
+        "passage": "Block says Dessa was trained from scratch on human speech without text or pretrained models and describes full-duplex audio input and output.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:11:41.451Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/social/dessa-primary-repair.json",
+        "archive_sha256": "3c92e0277aa639c950a3d260c6ee8b0073be501ee85f4323377e990b68e6dcd0"
+      }
+    ],
+    "qualifiers": [
+      "Vendor research claims; no independent replication or training-data inspection.",
+      "Does not establish a comparative first, superior quality or broad reliability."
+    ],
+    "contradicts": [],
+    "source_family": "Block Dessa",
+    "status": "supported",
+    "limitations": [
+      "Embedded recordings were not played, and model behavior was not tested."
+    ]
+  },
+  {
+    "claim_id": "social-20261026-dessa-local",
+    "claim": "Block claims Dessa inference runs faster than real time and locally on a MacBook Pro M4 Max or better.",
+    "source_ids": [
+      "social-source-b5cb20bfbe29ca46"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-b5cb20bfbe29ca46",
+        "url": "https://block.xyz/dessa",
+        "locator": "What is this?!",
+        "passage": "Block claims Dessa inference runs faster than real time and locally on a MacBook Pro M4 Max or better.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-26T19:11:41.451Z",
+        "archive_path": ".state/scan-20261026T185819Z-680b48/social/dessa-primary-repair.json",
+        "archive_sha256": "3c92e0277aa639c950a3d260c6ee8b0073be501ee85f4323377e990b68e6dcd0"
+      }
+    ],
+    "qualifiers": [
+      "Vendor hardware and performance claim, not a measured result from this run."
+    ],
+    "contradicts": [],
+    "source_family": "Block Dessa",
+    "status": "supported",
+    "limitations": [
+      "No executable artifact, memory requirement, benchmark conditions or independent latency measurement inspected."
+    ]
   }
 ]

@@ -1,0 +1,93 @@
+{
+  "id": "litpivot",
+  "title": "LitPivot: revising research ideas as the relevant literature changes",
+  "entity": "LitPivot",
+  "category": "Research",
+  "tags": [
+    "research ideation",
+    "literature review",
+    "education",
+    "human-AI collaboration"
+  ],
+  "summary": "A research prototype links proposal edits, selected papers, and evidence-backed critiques; a small study supports better grounding, with important access and novelty limits.",
+  "changeType": "baseline",
+  "publishedAt": "2026-04-03",
+  "discoveredAt": "2026-10-24T18:02:07.825896Z",
+  "updatedAt": "2026-10-26T19:10:49.607109Z",
+  "officialUrl": "https://allenai.org/blog/litpivot",
+  "sections": [
+    {
+      "id": "what-it-is",
+      "title": "A proposal changes, so its evidence should change too",
+      "html": "<p>LitPivot investigates a familiar research problem: a proposal can become more polished while remaining poorly positioned against existing work. A conventional literature search often produces a pile of papers, and a writing assistant then edits the proposal against that fixed pile. If the proposed contribution changes, the original reading list may cease to be the right comparison. LitPivot links these activities. The researcher edits an idea, chooses relevant literature, receives a critique with supporting passages, and revisits the literature as the idea moves.</p><p>The system comes from Ai2 and University of Pennsylvania collaborators. Ai2 published its explainer on October 23, 2026, ahead of a planned UIST presentation. The underlying paper is older: arXiv records an April 3 first submission and a September 22 third version. This is a baseline examination of that research, prompted by the recent explainer, rather than a claim that a new public application launched in October. The inspected sources do not establish generally available LitPivot accounts, a downloadable LitPivot code release, or a commercial price. <a href=\"https://allenai.org/blog/litpivot\">Ai2’s explainer</a> and the <a href=\"https://arxiv.org/abs/2604.02600\">paper’s version history</a> establish that distinction.</p><p>Its immediate value is a concrete design for assisted research, especially for early-career researchers who can articulate a topic but need help testing what their proposed contribution actually adds. It also offers builders a useful interaction pattern: keep the draft, the selected evidence, and the reasons for revising it connected. The interesting change is that the unit of assistance becomes a particular claim or plan within the proposal, rather than an undifferentiated chat about the whole document. That makes disagreement and revision easier to inspect.</p>"
+    },
+    {
+      "id": "workflow",
+      "title": "Three facets, with the researcher choosing the evidence",
+      "html": "<p>LitPivot separates a short proposal into its problem, contribution, and evaluation plan. Selecting a facet brings up groups of related papers organized for that facet. For example, an evaluation passage calls for comparison with evaluation methods, whereas a contribution calls for comparison with what earlier work achieved and left unresolved. The researcher selects papers for an assessment, reads a critique and suggested rewrite with supporting excerpts, and can accept, edit, or reject the suggestion. These are documented interactions, not actions independently tested for this report.</p><p>The distinction matters because each facet asks a different question. Does the problem have evidence behind it and a reason to matter? Is the contribution connected to a limitation that prior work has not addressed? Would the proposed evaluation actually test the revised contribution? A suggestion that improves one facet may invalidate another. LitPivot therefore flags potentially inconsistent passages after an edit, so a narrowed contribution can lead to a corresponding change in the evaluation. It also detects missing facets and offers an assessment of the complete idea.</p><p>The paper describes retrieval through Asta Paper Finder, followed by extraction of relevant paper sections and inclusion of meaningful cited work. Papers are grouped and ranked relative to the idea. Researchers may request more papers or refresh the ranking after a revision. The full paper specifies a user-initiated rerank control, chosen to manage latency and preserve control; this should not be described as an always-running automatic search. The resulting workflow can expose how the choice of evidence shapes a critique. It cannot establish that the chosen papers exhaust the field. <a href=\"https://arxiv.org/html/2604.02600v3#S4\">Section 4 of the paper</a> describes the system and retrieval pipeline.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "What the studies support",
+      "html": "<p>The principal user study involved 17 researchers, mostly PhD students, with research experience and interests concentrated around computer and information sciences. Each developed two assigned seed ideas, one using LitPivot and one using a baseline text editor with a literature-grounded question-answering interface. Conditions were counterbalanced, and each task lasted 30 minutes. Both conditions used the same collection of roughly 100 papers. Participants could not add their own papers in this controlled comparison, even though the system design supports doing so.</p><p>That control is valuable and limiting at the same time. It makes the comparison more informative about the interaction and assessment design, but it does not measure how well an unrestricted LitPivot search discovers missing research. The baseline also had substantive access to paper text and the current draft. This was not a comparison with an empty editor or an assistant denied the evidence available to LitPivot. A separate technical evaluation compared feedback pipelines with the model and literature held constant, providing another narrower check on the proposed assessment method.</p><p>The two final authors, serving as domain experts, rated the finished ideas while blind to condition. They assessed one criterion: how well the proposal was argued and grounded in relevant literature. The paper reports a median rating of five out of seven for LitPivot, compared with two for the baseline. These assessors were members of the research team, and their rating guidelines underwent discussion and refinement. Blinding is a useful design feature; it does not turn the assessment into independent replication.</p><p>Participants also reported stronger understanding of the literature and greater perceived improvements in novelty and usefulness. Those are self-reports, distinct from the expert grounding score. A follow-up involved five returning researchers working on their own projects for 30 minutes. It illustrates how the tool can help frame both early and more mature ideas, but cannot demonstrate sustained research productivity, accepted publications, successful experiments, or eventual scientific impact. <a href=\"https://arxiv.org/html/2604.02600v3#S5\">Study 1</a> and <a href=\"https://arxiv.org/html/2604.02600v3#S6\">Study 2</a> provide the methodological detail.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A practical seminar exercise",
+      "html": "<p>A useful educational adaptation is a proposal workshop built around a short, deliberately incomplete research idea. Students first write three separate statements: the problem, their proposed contribution, and how they would know whether it works. They then collect a small, instructor-approved paper set and identify which passages support or challenge each statement. Only after that do they ask an assistant for critiques. This is a proposed teaching exercise inspired by LitPivot, not a classroom intervention validated by its studies.</p><p>The key deliverable should be a revision record. For every significant change, the student records the original sentence, the evidence considered, the assistant’s suggestion, and their reason for accepting or rejecting it. When a contribution changes, the student must explain whether the evaluation still measures the intended result. An instructor can assess those relationships directly instead of rewarding a fluent proposal whose citations do little argumentative work. A final reflection can identify what evidence remains missing and which claims are currently assumptions.</p><p>For example, a student might begin with a broad proposal for generating educational explanations. Reading could reveal that similar generation methods already exist, while their evaluation ignores whether learners can transfer knowledge to a different problem. The revised project might focus on a narrower comparison with an explicit learning measure. That example is an editorial illustration, not a result from the LitPivot study. It shows why evaluation should move with the contribution rather than remain a generic satisfaction survey attached at the end.</p><p>The exercise can be performed with an existing editor and a permitted AI assistant; it does not depend on obtaining LitPivot access. Learners still need the ability to read research critically, inspect quoted context, and distinguish an author’s future-work suggestion from a demonstrated unresolved problem. A system can help organize these judgments, but the instructor and researcher remain responsible for making them.</p><p>A second seminar round can deliberately change the evidence set without changing the initial proposal. Ask students to compare the resulting critiques and explain which differences are justified by the added papers. This makes source selection an explicit variable. It also reveals a practical danger: removing inconvenient studies may make an assessment sound more favorable without improving the idea. The workshop should therefore preserve exclusions and their reasons, and invite another reader to challenge them. This is a suggested control for a teaching exercise, not an additional feature or outcome reported by the LitPivot researchers. It turns the system’s user choice into an object of reflection rather than an invisible convenience.</p>"
+    },
+    {
+      "id": "building",
+      "title": "What app and website builders can borrow",
+      "html": "<p>For a research web application, the most reusable idea is a visible relationship among a text segment, its selected sources, an assessment, and a proposed edit. A builder could store these as separate records and show them together in the editor. The user should be able to inspect the source passage and its location, change the evidence set, and retain rejected suggestions. Versioning the proposal alongside the evidence set would make it possible to explain why the same sentence received different feedback at different stages.</p><p>A practical prototype could start with a fixed, licensed corpus and just the three facets. That keeps the first engineering question manageable: does the interface help users understand and correct the relationship between claims and evidence? Broader retrieval, automatic citation expansion, and sophisticated novelty scoring can come later. This recommendation is an implementation proposal, not a claim that the paper supplies production software or all the components required to deploy it.</p><p>The documented implementation uses React and a Flask backend, stores retrieved paper data as JSON, and assigns different tasks to GPT-4o, o3, and Sonnet 4. The authors say model assignments were driven by latency, reserving deeper reasoning for tasks that benefit from it. Those are the research configuration, not a current compatibility guarantee or a required recipe for every implementation. A recreated system would need its own evaluation of model substitutions, extraction errors, latency, costs, and handling of inaccessible documents.</p><p>For an educational video, a useful demonstration would show one proposal moving through two evidence-driven revisions. Keep the original and revised sentences visible, pause on the paper passages that motivated each change, and show a rejected suggestion as well as an accepted one. If recreating the workflow, label it as an illustration rather than footage of a deployed LitPivot product. The story is strongest when viewers can inspect how reasoning changes; a fast montage of generated ideas would conceal the mechanism the research examines.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "Grounding is a useful constraint, with real blind spots",
+      "html": "<p>LitPivot’s model of differentiation compares proposed contributions with limitations and future-work statements extracted from the selected literature. That is one operational definition of novelty. It can miss a genuinely new framing, work whose authors never wrote an explicit limitations section, or a relevant paper that retrieval failed to find. It may also encourage a proposal to fit an existing literature landscape when a more radical departure would be valuable. These are substantive design tradeoffs, not merely citation formatting issues.</p><p>The authors explicitly limit generalization from solo, time-boxed tasks with HCI and NLP researchers. The system depends on an accessible literature corpus, and it does not run experiments or execute code to verify feasibility. The study does not establish whether a proposed idea is important, interesting, or practical to carry out. Grounding and structural coherence can improve a proposal while leaving those harder judgments unresolved. The paper’s <a href=\"https://arxiv.org/html/2604.02600v3#S7.SS1\">limitations</a> are therefore essential to interpreting the positive results.</p><p>Access and operating economics remain open questions for someone who wants to use the exact system. The inspected paper and blog provide a method and research findings, but no verified hosted-service price, operational latency budget, or LitPivot code license. The paper is marked CC BY 4.0; that license for the paper does not establish permission for unreleased software or all retrieved publications. Reimplementation would introduce model-service and retrieval costs whose amount was not measured here.</p><p>LitPivot is worth studying as a practical human-AI research design: it makes evidence selection and proposal revision mutually visible, and its small controlled study gives that design more support than a polished demo alone. Its appropriate role is to help a researcher examine an idea, identify the next reading or experiment, and explain a revision. It should not be treated as a novelty certificate, a feasibility test, or an autonomous substitute for doing the research.</p>"
+    }
+  ],
+  "useCases": [
+    "Teach evidence-based proposal revision in a research seminar.",
+    "Design research editors that connect claims, sources, critiques and revisions.",
+    "Produce a transparent explainer of literature-driven changes to an idea."
+  ],
+  "limitations": [
+    "Research prototype access, operational costs and code license were not verified.",
+    "Small, time-boxed studies; no downstream discovery or learning outcome demonstrated.",
+    "Expert ratings concern grounding; novelty and usefulness improvements are self-reports.",
+    "No live system testing; literature coverage and feasibility remain researcher responsibilities."
+  ],
+  "sources": [
+    {
+      "id": "research-source-66bac3e04c35a301",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape | Ai2",
+      "url": "https://allenai.org/blog/litpivot",
+      "accessedAt": "2026-10-26T19:03:30.087Z",
+      "publishedAt": "2026-10-23",
+      "locator": "Introduction; How it works; findings",
+      "supports": "Announcement, workflow and reported study"
+    },
+    {
+      "id": "research-source-db9c0e7e30f0fafd",
+      "title": "[2604.02600] LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape",
+      "url": "https://arxiv.org/abs/2604.02600",
+      "accessedAt": "2026-10-26T19:03:49.572Z",
+      "publishedAt": "2026-09-22",
+      "locator": "Submission history",
+      "supports": "First submission and version dates"
+    },
+    {
+      "id": "research-source-79474212a6dd1bf3",
+      "title": "LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape",
+      "url": "https://arxiv.org/html/2604.02600v3",
+      "accessedAt": "2026-10-26T19:04:20.696Z",
+      "publishedAt": "2026-09-22",
+      "locator": "Sections4–7; license",
+      "supports": "Methods, implementation, study design, results and limitations"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful and evidence-supported research-interface pattern, with a narrower demonstrated benefit than autonomous scientific discovery.",
+  "researchNote": "Primary Ai2 explainer, arXiv abstract/version history and complete v3 HTML paper inspected in Chrome and archived. No LitPivot instance was executed. Article publication and paper version dates are kept separate. Suggested educational, app and video workflows are editorial adaptations, not evaluated product capabilities."
+}

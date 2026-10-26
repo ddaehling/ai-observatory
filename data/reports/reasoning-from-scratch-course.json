@@ -1,0 +1,94 @@
+{
+  "id": "reasoning-from-scratch-course",
+  "title": "Build a Reasoning Model: a coding course for measuring how reasoning methods work",
+  "entity": "Build a Reasoning Model (From Scratch) video course",
+  "category": "Creative workflows",
+  "tags": [
+    "education",
+    "PyTorch",
+    "reasoning",
+    "evaluation",
+    "open code"
+  ],
+  "summary": "Eight coding videos connect Qwen3 generation, answer verification, inference scaling, reinforcement learning and distillation, with public code and realistic compute caveats.",
+  "changeType": "new",
+  "publishedAt": "2026-10-24",
+  "discoveredAt": "2026-10-24T18:02:07.825896Z",
+  "updatedAt": "2026-10-26T19:10:49.607109Z",
+  "officialUrl": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "An inspectable route from a base model to reasoning experiments",
+      "html": "<p>Sebastian Raschka’s October 24, 2026 course announcement gathers eight coding videos covering more than eleven hours of work on reasoning models. The series accompanies Build a Reasoning Model (From Scratch), using Python and PyTorch to move from a pretrained model through evaluation, inference-time scaling, reinforcement learning, and distillation. The recent event is the published video course. The companion repository and book already existed, so neither should be presented as newly launched because of this announcement.</p><p>The scope is unusually concrete for a topic often discussed through product names and benchmark leaderboards. Learners load Qwen3-0.6B, implement generation, build a verifier, vary how answers are produced and selected, and eventually update model weights. That sequence lets them inspect where an apparent improvement comes from. More attempts at inference, a better selection rule, and a trained model are different interventions with different compute and failure patterns. The course puts these distinctions into code that learners can change.</p><p>This is an educational implementation, not a recipe for reproducing a frontier lab’s complete training system. The repository explicitly describes a small functional reasoning model for educational purposes. The value is learning how components interact and how to measure them, rather than expecting the trained checkpoint to replace a commercial assistant. The author’s <a href=\"https://magazine.sebastianraschka.com/p/building-reasoning-models\">course guide</a> defines the sequence, and the <a href=\"https://github.com/rasbt/reasoning-from-scratch\">official repository</a> supplies the corresponding code and exercises.</p><p>For teachers and technically inclined app builders, the strongest feature is continuity. A verifier introduced early becomes a reward source later; log probabilities first used to compare outputs reappear in training; evaluation follows each change. This creates opportunities to trace an error across the whole workflow instead of treating prompting, reinforcement learning, and distillation as unrelated topics.</p>"
+    },
+    {
+      "id": "curriculum",
+      "title": "Eight videos with a measurement thread",
+      "html": "<p>The first video covers motivation, setup, Python dependencies, hardware choices, and common environment issues. The second establishes a working model by loading pretrained Qwen3-0.6B weights and implementing a streaming generator, then adds a key-value cache and model compilation. These are useful preparation for later experiments: a learner needs to distinguish changes in generation speed from changes in answer quality, and to know which compute device actually performed the work.</p><p>The third video constructs a math-answer verifier, including answer extraction, normalization, and equivalence checks, then evaluates on MATH-500. This deserves close attention because the verifier will later determine the reward. A parser mistake can make a correct answer look wrong; an overly permissive check can reward an invalid answer. The course provides a place to examine that mechanism directly. It does not make a general claim that a math verifier can judge open-ended educational explanations or creative work.</p><p>Videos four and five explore improving outputs without changing weights. They cover sampling, temperature, top-p filtering, self-consistency through voting, scoring functions, and a self-refinement loop. The educational question is whether the extra generated candidates and critique steps deliver enough benefit to justify their additional work. An experiment that reports only the best final answer would miss the comparison the course encourages: accuracy alongside inference effort.</p><p>Videos six and seven implement reinforcement learning with verifiable rewards using a simplified Group Relative Policy Optimization procedure, then add training diagnostics and mechanisms such as clipped policy ratios and KL terms. The final video covers distillation from a stronger teacher, preparation of reasoning data, supervised training, and evaluation. The announcement identifies DeepSeek R1 in its teacher-data example. These are documented curriculum topics; this report did not run the notebooks, watch every lecture, or independently reproduce the course’s numerical results.</p>"
+    },
+    {
+      "id": "first-session",
+      "title": "Start small enough to explain every failure",
+      "html": "<p>A sensible first project is an evaluation notebook that records the question, model response, extracted answer, verifier result, elapsed time, and generation settings for a small sample. Run the same sample with one uncomplicated baseline before trying a more elaborate reasoning method. Inspect several failures by hand. This proposed learning workflow uses the course’s components but is not a reported study of student outcomes or an official assignment from the author.</p><p>The first lesson is often about measurement rather than clever prompting. A model can reason toward a useful answer and format it badly; a verifier can reject an equivalent expression; or the final answer can be correct for an unreliable reason. Keep these categories separate. Then make one controlled change, such as adding a fixed number of sampled candidates or turning on self-refinement, and compare the paired examples. Record the number of generations as well as the final correctness score.</p><p>For a class, ask pairs of students to investigate different errors while keeping a common baseline. One pair examines extraction failures, another compares voting outcomes, and another studies cases where refinement damaged an initially correct answer. Their deliverable should include a short error analysis and the exact configuration needed to recreate it. A higher aggregate score is more informative when classmates can explain which cases changed and why.</p><p>Later, reserve a held-out evaluation set and choose a modest training budget before running reinforcement learning. Keep the evaluation procedure stable while comparing checkpoints. Distillation should receive the same discipline: separate training examples from evaluation examples and inspect teacher responses before treating them as targets. The course explicitly covers dataset preparation and train, validation, and test splits. The proposed teaching extension is to make those choices part of the assessed work rather than hiding them inside a training command.</p><p>A useful final assignment is an experiment card rather than a single accuracy number. It can state the hypothesis, the unchanged baseline, the intervention, the evaluation set, the compute budget, and the largest unresolved failure. Students should include a few examples selected before inspecting the outcome, alongside examples chosen to explain errors. That discourages a demonstration built only from flattering cases. When two methods appear tied, the card can still identify differences in response length, runtime, or failure type. These are proposed reporting practices; their benefit has not been measured by the course announcement. They give classmates a concrete basis for questioning and extending one another’s work.</p>"
+    },
+    {
+      "id": "applications",
+      "title": "Turning the code into useful educational interfaces",
+      "html": "<p>An app or website builder can use the early inference chapters to make a small experiment viewer. Present one problem beside candidate answers, the extraction result, and the rule that selected the final answer. A sampling control can let a learner compare a single response with several responses under a fixed budget. The interface should preserve previous settings and results so the user can compare actual runs, rather than continually replacing the evidence with a new answer.</p><p>This would be a proposed application built around the course, not a feature promised by the course itself. The repository also lists optional chat-interface material and example inference code, which can provide a starting point for studying an interface around a model. A production website would still need its own task definition, deployment design, reliability checks, and user experience work. Completing an educational notebook does not establish that a service is ready for unrestricted public use.</p><p>For educational video, the curriculum supports a series organized around visible before-and-after experiments. One episode can show why caching changes runtime without being a reasoning algorithm. Another can follow an answer from raw output through extraction to reward. A third can show a self-refinement attempt that succeeds and another that makes the answer worse. Such examples turn abstract terms into inspectable processes. Label the model, dataset, hardware, and settings on screen so viewers understand what was actually measured.</p><p>The methods also help product teams ask better questions when deciding whether an application needs extra model reasoning. If a task has a dependable verifier, a team can explore sampling and selection before committing to training. If correctness is subjective, a math-verification loop does not transfer automatically. For a tutoring application, a correct final answer would still be an incomplete objective: explanation quality, learner understanding, and the timing of help require separate evaluation. The course supplies technical foundations for those investigations, not evidence that a trained math model produces better learning outcomes.</p>"
+    },
+    {
+      "id": "requirements",
+      "title": "Hardware, access, and the meaning of open code",
+      "html": "<p>Raschka recommends being comfortable with Python and PyTorch. The preceding LLM-from-scratch course is recommended but not required; this series begins with a pretrained model rather than implementing the entire pretraining process. Learners who can read tensor operations, debug an environment, and follow a training loop are better positioned to benefit than beginners looking for a no-code introduction. The announcement also points to a shorter conceptual course, but the eight-video sequence is the substantial coding path assessed here.</p><p>The repository says chapters two through four work on CPUs and GPUs. It recommends a GPU for reproducing the later self-refinement and reinforcement-learning examples, and the setup documentation says cloud NVIDIA GPUs can substantially improve runtime, especially in chapters five through seven. This is guidance from the author, not an independently measured minimum-memory specification. No fixed GPU-memory threshold or complete runtime budget was verified for every notebook and configuration in this review.</p><p>The linked setup material describes Lightning AI Studio and Google Colab as possible cloud environments. Those are options, not a requirement to purchase a particular service. A learner should first verify the selected notebook’s dependencies and model download, then decide whether their local runtime is adequate. Cloud use can introduce charges, quotas, session interruptions, and storage considerations. Current platform prices and an end-to-end cost for the course were not established, so the materials should not be described as zero-cost to execute merely because their public pages are accessible.</p><p>GitHub identifies the companion code as Apache-2.0 licensed. That is useful for studying and adapting the implementation, subject to the license conditions. It does not automatically license the separately published book, the videos, every dataset, downloaded model weights, or teacher-generated material for every intended reuse. Those components retain their own terms. The book is presented as an optional companion for deeper explanations and exercises; this report does not quote a purchase price or claim that it is necessary to access the public course guide and repository.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "The lesson is experimental control, not a model ranking",
+      "html": "<p>The sequence’s main limitation is also what makes it teachable: it focuses on a small model and a tractable math setting. A result on MATH-500 does not establish equivalent gains in software engineering, research assistance, multilingual instruction, or everyday factual reliability. Likewise, a reward increase can reflect the behavior of the verifier rather than a broad improvement in reasoning. The author’s coverage of reward hacking, training diagnostics, and simplified formulations makes these questions available for investigation rather than removing them.</p><p>A careful learner should distinguish the selected response’s quality from the cost of obtaining it. Self-consistency generates multiple answers; refinement adds further model calls; reinforcement learning pays for rollouts and weight updates; distillation depends on teacher data and training. These costs differ in when they occur and how they scale. The course is an opportunity to measure them on a controlled setup. It is not evidence that one method is always cheaper or universally better than another.</p><p>Reproducibility also requires more than a link to the repository’s main branch. Record the code revision, environment, model checkpoint, dataset version, and settings used for an experiment. The live repository may evolve after this review. Its hardware notes and troubleshooting material are useful starting points, but successful installation and numerical reproduction remain untested here. No advertised command was executed during research, and no model, dependency, or training dataset was downloaded.</p><p>The course is most worthwhile for someone who wants to understand and challenge reasoning systems by building measurable pieces of one. Its practical payoff can be a better verifier, a clearer experiment, or a more honest product evaluation even if the learner never deploys the trained model. For an educator, the strongest outcome is a student who can explain why an intervention helped, where it failed, and what it cost. The visible code and connected curriculum make that outcome plausible; the sources do not provide a controlled evaluation of learning effectiveness.</p>"
+    }
+  ],
+  "useCases": [
+    "Build a measurable reasoning-model lab for Python and PyTorch students.",
+    "Create experiment viewers that expose candidate selection and verifier decisions.",
+    "Make educational videos comparing reasoning methods with reproducible examples."
+  ],
+  "limitations": [
+    "No notebooks, training runs or model downloads were executed.",
+    "Small-model math examples do not establish general-purpose or tutoring effectiveness.",
+    "GPU runtime and end-to-end cost depend on experiment settings and were not measured.",
+    "Apache-2.0 code does not establish identical terms for book, videos, models or datasets."
+  ],
+  "sources": [
+    {
+      "id": "research-source-da8785cc5779f5c9",
+      "title": "Build Your Own Reasoning Model: A Full Video Course",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "accessedAt": "2026-10-26T19:03:30.902Z",
+      "publishedAt": "2026-10-24",
+      "locator": "Scope and prerequisites; videos1–8",
+      "supports": "Date, course structure and prerequisites"
+    },
+    {
+      "id": "research-source-1ea9b8bcaf731591",
+      "title": "rasbt/reasoning-from-scratch: Implement a reasoning LLM in PyTorch from scratch, step by step",
+      "url": "https://github.com/rasbt/reasoning-from-scratch",
+      "accessedAt": "2026-10-26T19:04:21.516Z",
+      "publishedAt": null,
+      "locator": "README; hardware; license; contents",
+      "supports": "Educational scope, code license, hardware and optional materials"
+    },
+    {
+      "id": "research-source-b215aaf60d006daf",
+      "title": "reasoning-from-scratch/ch02/02_setup-tips/gpu-instructions.md at main · rasbt/reasoning-from-scratch",
+      "url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch02/02_setup-tips/gpu-instructions.md",
+      "accessedAt": "2026-10-26T19:04:22.134Z",
+      "publishedAt": null,
+      "locator": "GPU Cloud Resources",
+      "supports": "Compute recommendations and cloud options"
+    }
+  ],
+  "images": [],
+  "judgment": "A concrete educational pathway for understanding and evaluating reasoning techniques; useful because its components can be inspected and varied, not because it promises a frontier model.",
+  "researchNote": "Course announcement, official repository README, setup index and GPU guidance inspected in Chrome and archived. Curriculum descriptions are documented rather than independently tested; the full lecture series was not watched. Proposed classroom, interface and video projects are editorial adaptations."
+}

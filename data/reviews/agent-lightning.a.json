@@ -1,0 +1,31 @@
+{
+  "reportId": "agent-lightning",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "25c08cf8505c042ced2e37861df56564c85138b0420ccdcbe14ee662bc8f83f7",
+  "evidenceHash": "2848f35f3a62a2b658e06c9f94fd2670c5c52c81c8c02869b847ecdb618890c4",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The framework has concrete architecture, examples, setup guidance and reward controls that let suitably equipped developers investigate a real agent workflow. Its one-A100 quick start and four-B200 coding recipe limit accessibility for ordinary educators and creative builders; the report makes that distinction and proposes narrower adaptations honestly.",
+    "impact": "Training with the deploy-time harness addresses a consequential mismatch in agent development, and the reported 14.6-point coding gain gives a concrete reason to investigate. The impact remains potential outside the authors’ specific pipeline; neither broad transfer nor independent reproduction is demonstrated.",
+    "novelty": "Keeping the real harness in reinforcement learning through the proxy/control-plane design is a meaningful differentiated approach. The retokenization, sample merging and scheduling issues make this more than a wrapper, while reliance on existing training components and a limited evaluated setup prevent an exceptional novelty score.",
+    "maturity": "Stable 1.0.2 documentation, versioned installation guidance and detailed local/distributed recipes support practical experimentation. Tightly coupled dependencies, substantial infrastructure, reward hacking risks and no reproduced training run keep readiness at a moderate level.",
+    "openness": "The MIT framework, visible architecture, examples and documented data preparation provide strong inspectability and a plausible reproduction path. The score is below the maximum because model, data, container and service terms differ, and default Weights & Biases logging introduces a separately governed data path."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: no full benchmark-methodology audit or reproduced run supports the authors’ reported gain; the report states this.",
+    "Non-blocking: default external trajectory logging and separate stack licenses materially affect adoption and are correctly surfaced."
+  ]
+}

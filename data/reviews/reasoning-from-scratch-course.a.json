@@ -1,0 +1,32 @@
+{
+  "reportId": "reasoning-from-scratch-course",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "6a04f09bea45bf29fbdc4c3ba5970a9cdf9ca1108e5be018fd66ca964bbcc705",
+  "evidenceHash": "c5bdec53e8a20b4864e98fb6d3a4d6d2e752074d681c64e1d64a7d3b8687b87d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 4,
+    "novelty": 3,
+    "maturity": 7,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The connected progression from generation and verification through sampling, RLVR and distillation is highly actionable for Python/PyTorch learners and educators. Repository exercises and hardware notes support implementation, while the report gives concrete experiment and interface projects without promising tutoring outcomes.",
+    "impact": "This is an educational synthesis of existing methods with the potential to improve practitioner understanding. The supplied evidence establishes curriculum and materials, not a new AI method, measured learning improvement or field-wide development effect. Its educational usefulness can be high while impact on AI development remains four.",
+    "novelty": "The newly announced video sequence packages known methods around a small pretrained model and existing book/code. Its coherent teaching progression is valuable, but no new reasoning algorithm or demonstrated technical differentiation is claimed, supporting a low novelty score.",
+    "maturity": "Eight substantial videos, existing companion notebooks, exercises and setup/troubleshooting material form a concrete learning resource. No full lecture viewing or numerical reproduction was performed, and GPU/runtime demands vary, so the resource is well developed without being independently validated end to end.",
+    "openness": "The public companion implementation is identified as Apache-2.0, with readable notebooks and exercises suitable for adaptation and reproducible experiments. Separate book, video, pretrained-model, dataset and teacher-data rights prevent treating the complete course stack as uniformly permissive."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: no course-completion study, full viewing or notebook reproduction establishes learning effectiveness or runtime reliability; the draft says so.",
+    "Non-blocking: small-model math verification does not establish general reasoning, software-engineering or tutoring gains.",
+    "Separate publication gate: this reviewer rates impact 4; if final mean impact is below 5, the contract requires the 1,000-word tier and fresh review after any substantive revision."
+  ]
+}

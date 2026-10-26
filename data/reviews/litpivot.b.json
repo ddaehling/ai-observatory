@@ -1,0 +1,31 @@
+{
+  "reportId": "litpivot",
+  "reviewerId": "/root/edition_20261026_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:25:54.196450Z",
+  "reportHash": "5e43683053833edf0e3f453501fc71176bb8916435ce5c9aab9fb7a07193619c",
+  "evidenceHash": "05d4bb3c9d15d6e5b8205c73a3e5e83ad6a7f0132d4b7ec4ef033238f031ae46",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 6,
+    "maturity": 3,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The facet/source/critique/revision interaction is useful for research teaching and research-editor design, and the report gives adaptations that do not depend on obtaining the prototype. Missing verified public access, code and operating cost reduce immediate utility of the exact system; video relevance is an explainer adaptation rather than a production feature.",
+    "impact": "The controlled 17-person comparison and reported grounding improvement support a meaningful contribution to research-assistance interfaces. Fixed literature, short tasks, author assessors and self-reported novelty/utility prevent extrapolation to sustained discovery, broad productivity or learning gains.",
+    "novelty": "Connecting problem, contribution and evaluation facets to selected literature, targeted critique and inconsistency detection is a meaningful interaction/pipeline differentiation. The paper compares against a substantive literature-based baseline. It does not establish objective novelty detection or a new general reasoning capability.",
+    "maturity": "A functioning research prototype has been used in controlled and small follow-up studies, so it is more than a concept. Generally available accounts, a downloadable code release, operational budgets and longitudinal reliability are unverified; a builder cannot yet assume an accessible, supported product.",
+    "openness": "The CC BY 4.0 paper describes implementation, retrieval and evaluation in useful detail. That enables inspection of the research and informed reimplementation, but no verified LitPivot code license or runnable release is established, and model/retrieval services and publication rights remain separate constraints."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No blocking discrepancy found. April first submission, September v3 and October explainer dates are appropriately distinguished.",
+    "The evidence supports grounding under the study conditions, not independent expert validation, a novelty certificate or downstream scientific success. The report preserves these limits and the user-initiated rerank boundary."
+  ]
+}

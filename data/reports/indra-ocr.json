@@ -1,0 +1,114 @@
+{
+  "id": "indra-ocr",
+  "title": "Indra OCR: a small CPU document pipeline with important output-license limits",
+  "entity": "Indra OCR",
+  "category": "Models",
+  "tags": [
+    "OCR",
+    "Local AI",
+    "Documents",
+    "Education",
+    "CPU"
+  ],
+  "summary": "A CPU OCR pipeline with inspectable page geometry and a roughly 76 MB default download. Clean print is its clearest use; true model size, weak document types and a restrictive weight license determine deployment fit.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-22T17:26:52.563036Z",
+  "updatedAt": "2026-10-26T19:10:56.758223Z",
+  "officialUrl": "https://github.com/datalab-to/indra",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A practical CPU document reader, with consequential terms",
+      "html": "<p>Indra OCR is worth examining when the job is turning ordinary PDFs and scanned pages into inspectable text without maintaining a GPU service. Datalab documents a local Python package that produces Markdown, plain text, or JSON containing recognized lines and page geometry. That combination could support a teaching-material archive, a document review app, or a searchable collection of production notes. Its most useful feature is the ability to connect extracted text back to where it appeared on a page.</p><p>Two qualifications belong near the beginning. The advertised “1M” size describes a small recognizer, not the complete default pipeline. The code and weights also have different licenses, and the weight license reaches outputs as well as model redistribution. A small local deployment is therefore technically approachable without automatically being appropriate for every commercial or publishing workflow. This is a baseline examination of the public documentation checked on October 26, 2026, not a newly verified launch announcement or a hands-on benchmark.</p><p>The strongest prospective use is clean printed material with human review. The publisher itself describes substantial weaknesses on handwriting, damaged scans, complex tables and some scripts. Treating those admissions as design inputs produces a more useful application than presenting OCR as a universal document-understanding step. See the <a href=\"https://huggingface.co/datalab-to/indra-ocr\">primary model card</a>.</p>"
+    },
+    {
+      "id": "what-is-small",
+      "title": "What the small-model claim actually covers",
+      "html": "<p>The model card identifies <code>rec.onnx</code>, its main Latin-script recognizer, as approximately 1.25 million parameters. All default models together contain 7.3 million parameters; optional mathematics models add more. The approximately 76 MB default download comprises about 30 MB of networks and 46 MB of language models used for uncertain lines. These are download and parameter figures, not measurements of peak process memory, installation size, or the resources a batch job consumes.</p><p>The documented stack uses ONNX Runtime, OpenCV and pypdfium2, without PyTorch or a GPU requirement. Python 3.10 or newer is required. Datalab names Linux on x86_64 and aarch64, with Python 3.10–3.13, and Apple-silicon macOS as tested platforms. References elsewhere to Windows process behavior do not establish that every Windows installation path has been tested.</p><p>First use downloads models from Hugging Face and caches them. The package can instead use an explicitly configured local model directory through <code>INDRA_OCR_MODEL_DIR</code> or <code>--model-dir</code>. That offers a documented route for preparing a fixed model set, but this research did not audit network behavior or verify an air-gapped deployment. Pinning the package and model revision would make later comparisons more meaningful than silently accepting whichever files happen to be current. The <a href=\"https://github.com/datalab-to/indra\">repository installation guidance</a> is the starting point.</p>"
+    },
+    {
+      "id": "reading-paths",
+      "title": "Choose the extraction path deliberately",
+      "html": "<p>Indra has three modes. The default <code>auto</code> mode uses a digital PDF’s text layer where it passes checks and applies OCR elsewhere. <code>ocr</code> ignores that layer and recognizes the rendered page. <code>text</code> uses the text layer even when the checks fail. These modes answer different questions: extracting existing characters from a born-digital PDF is not equivalent to recognizing the same characters from pixels.</p><p>A sensible first experiment would process a few representative files in auto mode, save JSON as well as readable output, and record each page’s reported source. The documented source values distinguish text, OCR, hybrid processing and errors. The routing note and stage timings help explain why two pages take different paths. For a scan-only comparison, explicitly choose OCR mode rather than crediting the recognizer for an intact text layer.</p><p>The CLI exposes page limits, PDF rendering resolution, core limits, password handling, headers and footers, and OCR inside images on text-layer pages. Its default resolution is 200 dpi. Headers and footers are omitted from Markdown unless requested. That can clean up prose, but an archival workflow may need those elements as provenance. Batch processing continues beyond unreadable files and returns exit status 1 if any fail; applications should retain that failure information instead of treating an output folder as proof that every document succeeded. These behaviors are described in <a href=\"https://huggingface.co/datalab-to/indra-ocr#usage\">Usage</a>.</p><p>For a Python service, distinguish a single converter from the multi-file helper. The documented <code>convert_many</code> interface returns results in input order, one page per worker task, and can return an <code>InputError</code> for a file. Datalab requires the usual <code>if __name__ == \"__main__\":</code> guard for worker processes on macOS and Windows; without it, the helper warns and falls back to one process. A prototype should surface that warning and preserve failed-file records. Otherwise, a slow or incomplete run could be mistaken for a successful batch whose throughput simply varies.</p>"
+    },
+    {
+      "id": "review-interface",
+      "title": "Build review around geometry and reading order",
+      "html": "<p>The documented local viewer is particularly relevant to teachers and app builders. It can display recognized lines, layout blocks, labels and reading order over a page, alongside rendered Markdown, its source, line confidence, JSON and timing. A reviewer can therefore examine a suspicious passage in its original spatial context. This is more useful than a text-only success message when a heading has become body text or one table column has drifted into another.</p><p>The Python interface returns page objects with Markdown, text, line boxes, block data and processing metadata. Line coordinates are expressed in image pixels. Page records also describe rotation, skew and vertical layout. An application should preserve the page dimensions and coordinate basis when creating overlays; simply stretching a thumbnail without transforming its boxes would make correct extraction appear incorrect.</p><p>A proposed review interface could show one page beside its extracted text, let a person flag missing or misplaced content, and retain corrections separately from the original OCR. Confidence values can prioritize inspection, but they are not a demonstrated probability that a sentence is correct. Reading order needs separate review: a perfectly recognized sentence can still be attached to the wrong paragraph. The viewer documentation says files stay on the machine; that is a publisher statement about the local tool, not an audit of a custom application’s storage or network behavior. See <a href=\"https://huggingface.co/datalab-to/indra-ocr#viewer\">Viewer</a> and <a href=\"https://huggingface.co/datalab-to/indra-ocr#output\">Output</a>.</p>"
+    },
+    {
+      "id": "builder-workflows",
+      "title": "Useful education, website and video workflows",
+      "html": "<p>For education, start with a permitted set of clean handouts or worksheets and build a search index that retains page numbers and links to the originals. Students could search for a term, open the matching page, and compare the extracted passage with the image. Keep any later summarization or question generation as a separate stage. OCR provides text and structure; it does not establish whether the source is correct or whether a generated question teaches the intended concept.</p><p>For a website or internal app, the JSON output could feed a document intake screen with a visible review queue. Preserve unreadable files, unusual layouts and uncertain passages for correction before indexing. Do not publish raw OCR-derived HTML tables directly into an application without treating the content as untrusted input. Rendering and validation are application responsibilities, not documented guarantees of the recognizer.</p><p>For video production, a bounded use would be extracting quotations and page references from research PDFs or typed production notes before writing a script. Editors could verify names, dates and numbers against the page, then use separate authoring tools to make graphics or captions. Indra is not documented here as a video transcriber, subtitle generator or editing system. The connection is preparation of source material, not generation of the finished video.</p><p>These are proposed workflows rather than tested integrations. Before turning their outputs into a public library, paid application, training dataset or production asset, resolve the weight-license conditions described below. Local execution does not remove those conditions, and permission to use the input documents remains a separate question.</p>"
+    },
+    {
+      "id": "where-it-fails",
+      "title": "Match the document type to the limitations",
+      "html": "<p>Datalab is unusually explicit about weak cases. Complex tables can place text in the wrong cells when there are merged cells, wrapping entries, nested headers or missing rules. Handwriting is supported in a narrow technical sense, but the card reports only 25.2% on its OmniParseBench handwriting tests and roughly a third of words on held-out handwritten pages. Cursive and faint pencil are named as particularly difficult. A classroom system should not infer dependable handwritten-assignment transcription from the feature list.</p><p>Language coverage also needs document-specific interpretation. The producer reports testing 95 languages on held-out printed pages, with 83 reaching character F1 of at least 0.90. That does not mean uniform accuracy across every script, typeface or scanning condition. Some listed scripts work only through a digital PDF text layer, and the card warns about certain diacritics, written Cantonese characters and weaker OCR for particular languages. Its per-script benchmark samples are often small.</p><p>Math is off by default. Enabling <code>--math</code> downloads additional models and can produce inline LaTeX, but the producer reports slower processing and a table-score reduction because some cell values are interpreted as mathematics. It is a choice to evaluate on actual worksheets, not a universally better setting. Degraded scans, very wide pages, vertical newspaper reading order and small text on oversized pages also remain explicit limitations. The <a href=\"https://huggingface.co/datalab-to/indra-ocr#limitations\">limitations</a> and <a href=\"https://huggingface.co/datalab-to/indra-ocr#math\">math sections</a> deserve as much attention as the headline.</p>"
+    },
+    {
+      "id": "evaluate",
+      "title": "Evaluate the whole workflow, not the fastest row",
+      "html": "<p>The published speed and accuracy results are Datalab’s measurements. Its benchmark distinguishes auto mode from OCR-only processing and separates text, tables and layout. Comparisons include both text-only engines and a full document pipeline, so one headline does not describe every component’s quality. The throughput figures also exclude model loading and a warm-up page per worker. A short interactive job and a long warmed batch will experience those costs differently.</p><p>A useful pilot would select documents by the problems they contain: ordinary print, digital text, multiple columns, tables, formulas, rotated scans and the languages actually needed. Keep a small manually checked reference set. Record omitted text, changed numbers, reading-order errors and correction time alongside elapsed time. Compare auto and OCR modes on the same files and test mathematics only where relevant. Publish the settings and revisions with the results so a later improvement can be distinguished from a changed input mix.</p><p>Also measure startup, peak memory, failures and the effect of limiting cores. The CLI and batch API use worker processes across usable cores by default, which may be inconvenient on a shared laptop. A pipeline is useful if the time saved exceeds the review and repair it creates. This research ran none of these experiments and makes no independent speed, accuracy or memory-fit claim. The producer’s <a href=\"https://huggingface.co/datalab-to/indra-ocr#benchmarks\">benchmark methodology</a> provides a starting point, not a substitute for this pilot.</p>"
+    },
+    {
+      "id": "licensing",
+      "title": "The weight license reaches applications and outputs",
+      "html": "<p>The repository code uses <a href=\"https://github.com/datalab-to/indra/blob/main/LICENSE\">Apache 2.0</a>. The weights use a separate <a href=\"https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE\">modified OpenRAIL-M license</a>. Its actual language is more consequential than the model card’s short description of free research, personal and small-startup use.</p><p>Attachment A restricts use when the user, employer or affiliated entity exceeded $20 million in prior-year gross revenue, or has raised more than $20 million in total equity or debt funding. Those two clauses explicitly except personal or research use. A separate competition clause covers an entity that offers any product or service competing with one offered by the licensor or its affiliates. It is broader than a competing hosted OCR API and contains no equivalent explicit personal/research exception.</p><p>There are further obligations. Section 7 requires attribution in connection with outputs, model use and distribution. Section 8 says the same license applies to models, derivatives, changes and improvements, and to outputs and their derivatives. Although Section 6 says the licensor claims no output rights except as otherwise provided, it does not erase those later conditions. Distribution also includes hosted access, with obligations to pass along terms, restrictions and notices.</p><p>These observations describe the document rather than settle how it applies to a particular organization or output. They are enough to rule out casually calling the complete system unrestricted open source or assuming extracted text can be redistributed under any chosen terms. The card offers broader commercial licensing, but no price was verified here. Indra’s strongest immediate case is a bounded evaluation of permitted clean documents; a deployed product or published corpus needs both satisfactory extraction results and a clear licensing path.</p>"
+    }
+  ],
+  "useCases": [
+    "Build a reviewed searchable archive of permitted clean teaching materials.",
+    "Prototype a document intake app with page overlays and correction records.",
+    "Extract and verify source quotations from PDFs before scripting educational videos."
+  ],
+  "limitations": [
+    "No software, OCR output, benchmark or network behavior was tested.",
+    "The complete default set is 7.3M parameters; the 1.25M figure concerns the main recognizer.",
+    "Handwriting, degraded scans, complex tables and some scripts or layouts are documented weak cases.",
+    "Weight terms include revenue/funding limits, a broad competition restriction, attribution and share-alike language covering outputs.",
+    "Commercial license pricing and publication date were not verified."
+  ],
+  "images": [],
+  "sources": [
+    {
+      "id": "repos-source-110896d94e289814",
+      "title": "datalab-to/indra-ocr",
+      "url": "https://huggingface.co/datalab-to/indra-ocr",
+      "accessedAt": "2026-10-26T19:03:43.618Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation captured in full; report links identify relevant sections.",
+      "supports": "Documented scope, prerequisites, workflow, benchmark qualifiers and licensing as applicable."
+    },
+    {
+      "id": "repos-indra-repository",
+      "title": "Indra OCR repository",
+      "url": "https://github.com/datalab-to/indra",
+      "accessedAt": "2026-10-26T19:04:15.272Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation captured in full; report links identify relevant sections.",
+      "supports": "Documented scope, prerequisites, workflow, benchmark qualifiers and licensing as applicable."
+    },
+    {
+      "id": "repos-indra-weight-license",
+      "title": "Indra OCR modified weight license",
+      "url": "https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE",
+      "accessedAt": "2026-10-26T19:04:14.183Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation captured in full; report links identify relevant sections.",
+      "supports": "Documented scope, prerequisites, workflow, benchmark qualifiers and licensing as applicable."
+    },
+    {
+      "id": "repos-indra-code-license",
+      "title": "Indra OCR Apache 2.0 code license",
+      "url": "https://github.com/datalab-to/indra/blob/main/LICENSE",
+      "accessedAt": "2026-10-26T19:04:16.560Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation captured in full; report links identify relevant sections.",
+      "supports": "Documented scope, prerequisites, workflow, benchmark qualifiers and licensing as applicable."
+    }
+  ],
+  "judgment": "Worth a small, review-heavy local pilot on clean printed documents. The license, especially its output and competition clauses, is a first-order deployment constraint rather than a footnote.",
+  "researchNote": "Read the model card, repository and actual code/weight licenses in task-owned Chrome on October 26, 2026. Producer measurements remain attributed. Workflows and evaluation design are editorial proposals; no installation, runtime, output-quality or legal-compliance test."
+}

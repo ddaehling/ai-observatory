@@ -12,11 +12,13 @@
       "x-astra-pro-oct16",
       "seed-openai-on-x"
     ],
-    "reason": "Coordinator reconciliation: direct primary inspection takes precedence over supplementary listing/metadata scope. Oldest backlog reconsidered first. Complete October 16 public post again supports Pro Chat access and parallel-agent progress/review. No detailed rollout limits or independent task performance evidence acquired; retain for a future bounded workflow assessment.",
+    "reason": "Oldest backlog directly revisited in its complete originating post after one loading repair. The October 16 post still describes Pro access in the Chat tab and parallel-agent progress/review. It supplies no new rollout limits or independent practical evaluation; keep the existing lead pending, with no new launch or performance claim.",
     "runId": "2026-10-18-bootstrap",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:15:00Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:15:00Z",
+    "lastObservedAt": "2026-10-26T19:02:17.177Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "x-live11-oct15",
@@ -31,11 +33,13 @@
       "x-live11-oct15",
       "seed-openai-on-x"
     ],
-    "reason": "Coordinator reconciliation: direct primary inspection takes precedence over supplementary listing/metadata scope. Oldest backlog reconsidered first. Complete October 15 public post still describes six-language voice rollout and API as coming soon. The new Decisions voice guide uses gpt-live-1 and does not establish GPT-Live-1.1 API availability; no voice-quality testing performed.",
+    "reason": "Oldest backlog directly revisited in its complete originating post after one loading repair. The October 15 post describes six-language voice updates and still says the API is coming soon. This does not establish current GPT-Live-1.1 API availability or measured voice quality; retain for documentation and workflow verification.",
     "runId": "2026-10-18-bootstrap",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:15:00Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:15:00Z",
+    "lastObservedAt": "2026-10-26T19:02:17.176Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "rosalind-academic-plan",
@@ -269,9 +273,9 @@
     "status": "needs_review",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
-    "reason": "Visible publisher listing retained this story. Detailed implementation, access, licensing, or independent outcome evidence was not examined in this bounded pass; prioritize after the oldest three backlog items and two selected reports.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reason": "Primary October19 article read. OpenAI reports MultiLangBench across20 languages and byte-for-byte COBOL migration tests, and links an evaluation setup. Useful baseline benchmark lead; linked code, task construction and independent reproduction remain unchecked. Keep high-priority research backlog, not a new October26 model claim.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-9732b2763df5a67a",
@@ -284,11 +288,12 @@
     "feedFingerprint": "8e5d2d53ae293c1ca74acd5d5e555ec8da223d38d9a37702716da6cda799d158",
     "discoveredAt": "2026-10-20T16:05:58Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
-    "reason": "Customer deployment lead concerning Itaú generative AI. Which customer workflows, rollout population, safeguards and measured results are actually documented? Article body not inspected; feed metadata only.",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reason": "Primary case study read. ia.i first phase covers about300,000 customers; universal rollout and several capabilities are future goals. IARA and legal-document efficiency are bank-reported internal outcomes, with no externally reproducible product or evaluation here. Excluded as a standalone practical discovery report; preserved as an enterprise case study.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-b6756c0a180ee554",
@@ -301,11 +306,12 @@
     "feedFingerprint": "f602966e0718f5960474313ebe315e8df914e2419db0ba7863c914aae14c0ef8",
     "discoveredAt": "2026-10-20T16:05:58Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
-    "reason": "Codex customer workflow lead at Benefit Street Partners. What questions does the workflow answer, with which data access, human checks and measured time savings? Article body not inspected; feed metadata only.",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reason": "Primary case study read. BSP describes a public-SEC-filings valuation tracker and an internal credit-agreement tool: about20 minutes for first-pass analysis followed by at least an hour of human review. Time estimates are attributed to the portfolio manager and tools are company-hosted. No general public release or controlled outcome evidence warrants a standalone report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-9e63539289a31c86",
@@ -321,8 +327,9 @@
     "status": "needs_review",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
-    "reason": "ChatGPT plugin distribution lead concerning Stack Overflow for Agents. What is available to users, and what period, denominator and attribution support the headline signup claim? Article body not inspected; feed metadata only.",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reason": "Primary customer article read. Stack Overflow describes a ChatGPT plugin for setup and distribution, with quoted threefold signups and up-to-tenfold agent creation but no denominator or observation period. Decisions API adoption is prospective. Product access, connector permissions and reproducible utility need direct Stack Overflow documentation before a report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-32165ee6af8945a5",
@@ -1408,11 +1415,12 @@
     "feedFingerprint": "3ebc2d33daa38a461f615c8d048bba426abf9916a32619313581cb1e95d5645e",
     "discoveredAt": "2026-10-20T16:06:02Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "The title signals Magnetar computing research, but its relationship to AI is unresolved from metadata. Article body not inspected. Missing verification: Does Magnetar introduce an AI-relevant proof or verification capability, and what evidence and availability support it?",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reason": "Reconsidered from full primary article. General-purpose zkVM research; AI-agent compliance is a potential example, not an actual released AI integration. Consolidated with current feed revision; no standalone AI discovery report selected.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-e3ff286dbca97504",
@@ -1447,9 +1455,10 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Primary article screened; meaningful framework lead deferred under one-report bound, not rejected as unimportant.",
-    "reconsideredAt": "2026-10-20T16:24:41Z",
-    "reconsiderationRunId": "scan-20261020T160557Z-63b483"
+    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "reportId": "agent-lightning"
   },
   {
     "id": "candidate-a38ad8641743fbf5",
@@ -1612,11 +1621,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Full October 16 roundup read. Headline claim that agents disprove polysemanticity exceeds its own evidence, which describes a working theory/essay and cites disagreements from Nanda, Gao and Mendel. Primary Goodfire analysis and adversarial validation remain unacquired; no alignment breakthrough claimed.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Oldest assigned backlog reconsidered first. Primary-page revisit of the secondary roundup found interpretability claims explicitly contested by Nanda/Gao/Mendel and a not-yet-published-paper caveat. No conclusion that polysemanticity is disproved adopted; original essay/methods require dedicated evaluation. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-fe88897c2a464af3.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-2a289299a4bd88c4",
@@ -1629,14 +1638,14 @@
     "feedFingerprint": "2f7140b56c195cc2d72d692cc3075acf256bb3373fe66b6c49c4fa73626da33a",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title reports material Modal financing and operating metrics that remain unverified. Article body not inspected. Missing verification: What primary disclosure confirms the Series D, valuation, ARR, and usage figures, and what dates and definitions apply?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. The inspected title story is Modal financing and company-reported revenue/scale. Useful infrastructure background, but it does not establish a new educational or creative workflow sufficient for a standalone report in this edition. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-2a289299a4bd88c4.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-247153705736c57d",
@@ -1652,11 +1661,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Observed public listing headline only. Full primary paper/product documentation, methods, access and educational/creative usefulness remain unverified; deferred after prioritizing the oldest relevant backlog. No performance claim adopted.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected full conference report describes scoped identity, proposals versus action and deterministic controls outside the model. Retain a practical architecture lead; underlying conference material and product access were not independently verified. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-247153705736c57d.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-649989f895c2f016",
@@ -1672,11 +1681,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title suggests laboratory automation or AI-assisted biology, but the methods are not specified. Article body not inspected. Missing verification: How does Leash Bio connect computation with experiments, what AI role is documented, and what measured results or accessible tools are new?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected article identifies Minos and an agent sandbox grounded in DNA-encoded-library measurements. Potential scientific teaching/data lead, but primary dataset, preprint, licensing and scientific limits still require verification. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-649989f895c2f016.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-43abc94dd1f0ca28",
@@ -1692,11 +1701,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The event-associated title also names a model and benchmarks, so it cannot be treated as event promotion alone. Article body not inspected. Missing verification: Which Gemini 4 Argon and Vals AI benchmark claims were announced, and are release details and benchmark methods confirmed by primary sources?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected full roundup distinguishes Argon rollout, introductory pricing and anecdotal versus measured evaluations. No standalone model report without primary rollout and price evidence; current primary ownership stays with official worker. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-43abc94dd1f0ca28.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-be997bf718606abb",
@@ -1712,11 +1721,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title identifies Dyna-2 physical agents and an hour-long autonomy claim. Article body not inspected. Missing verification: Which tasks sustain the claimed autonomy, how are interventions and failures counted, and what evidence and access are available?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected podcast article/transcript describes Dyna-2/2.1 and vendor claims about demonstrations and autonomy. Specialized physical hardware and commercial deployments are not independently tested; not promoted as a generally accessible tool. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-be997bf718606abb.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-21096782dd6c13ae",
@@ -1732,11 +1741,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title reports Meta models and a comparative frontier-performance claim. Article body not inspected. Missing verification: What official model releases and access terms are confirmed, and which evaluations justify the comparison with Claude 5.5?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected full roundup records Muse Wonder availability split, launch quota issues and benchmark caveats. Primary current access, prices and safety documentation needed before an actionable report. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-21096782dd6c13ae.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-e71374164f2cb1ad",
@@ -1752,11 +1761,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Observed public listing headline only. Full primary paper/product documentation, methods, access and educational/creative usefulness remain unverified; deferred after prioritizing the oldest relevant backlog. No performance claim adopted.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected conference report explains dynamic workflow orchestration and Claude Console access. Promising app-building pattern, but current primary API documentation, cost controls and limits were not verified here. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-e71374164f2cb1ad.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-e5f022f9be79d8e9",
@@ -1786,14 +1795,14 @@
     "feedFingerprint": "619cca00df2c4b84ed07104337659a63ec6d2b1478d0cbf09dcf3b1677a0ce23",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title connects industrial robotics with reliable AI execution. Article body not inspected. Missing verification: What robotics execution failures, architecture choices, and measured reliability evidence support the stated lessons?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected industrial-robotics interview centers on proprietary robot deployments and claimed perception adaptation. No generally available educational, app or creative workflow demonstrated for this edition; no hardware reliability claim adopted. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-9a2a489d753abcef.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-2e1397672f85f38d",
@@ -1806,14 +1815,14 @@
     "feedFingerprint": "292748b05d85c2fef44e596ae60ddb3f0f75190e705c7d6cf3b6055cac42fce4",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title reports material TypeSafe/Jev revenue and valuation claims. Article body not inspected. Missing verification: What primary disclosure supports the ARR, valuation, and launch-timing figures, and how are those metrics defined?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected roundup centers on funding/revenue claims and repeats typed-decision capabilities already covered by typesafe-jev and openai-decisions-api. No material report update justified by financing coverage alone. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-2e1397672f85f38d.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-68a694837125984e",
@@ -1826,14 +1835,14 @@
     "feedFingerprint": "e31717123735d7cab65f9d91ab7b17b64d217838ce7d0b87ad552d1ff5933ec6",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title frames a substantive discussion of AlphaFold and unresolved protein-folding questions. Article body not inspected. Missing verification: Which specific scientific limitations are described, and what studies or new capabilities distinguish the claims from broad commentary?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected panel article/transcript is a useful conceptual discussion of biological-model limits, not a newly available tool or new validated discovery. Avoids turning the provocative title into a scientific conclusion. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-68a694837125984e.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-9db9af42b7f614ec",
@@ -1849,11 +1858,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The generic AINews title does not reveal the contents and is insufficient for exclusion. Article body not inspected. Missing verification: Which AI releases, research findings, or industry changes appear in this October 8 roundup and have primary-source confirmation?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected broad roundup includes safety allegations and multiple product changes. Retain for primary-specific review; headline does not identify one reportable change, and no allegation or new launch was accepted without primary evidence. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-9db9af42b7f614ec.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-a092f744c7c11572",
@@ -1866,14 +1875,14 @@
     "feedFingerprint": "663426ba6ba499641c84672faa64f65b8fc5c1b7ea9fb86d737b42bc77110c73",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title links Periodic Labs with materials synthesis and superintelligence claims. Article body not inspected. Missing verification: What AI methods and experimental results support the semiconductor or superconductor work, and which claims remain proposed goals?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected founder interview describes Periodic Labs scientific vision and experimental infrastructure. No available general-purpose educational or creative tool established; future science claims remain interview positions. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-a092f744c7c11572.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-c07b5023822db3bc",
@@ -1889,11 +1898,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title reports a Claude Haiku release plus performance and pricing comparisons. Article body not inspected. Missing verification: What official release and pricing details are confirmed, and which comparable benchmarks support the GPT-6 Luna comparison?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected Haiku roundup records pricing tiers, high reasoning-token use and rollout context. Primary current pricing/availability and task-specific cost evidence remain necessary; no benchmark headline adopted as universal superiority. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-c07b5023822db3bc.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-22732f8185e35596",
@@ -1909,11 +1918,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title raises a concrete agent-reliability question about a cloud-native harness. Article body not inspected. Missing verification: What Stacklok harness capabilities are available, and what evidence measures reliability beyond desktop workflows?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected Stacklok article identifies Mecatl as open-source cloud harness and explains lifecycle separation. Strong technical lead, but repository, deployment prerequisites, license and actual runtime remain unverified. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-22732f8185e35596.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-9416b01a853f1769",
@@ -1929,11 +1938,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title contains extraordinary mathematical research claims and a quotation that require primary verification. Article body not inspected. Missing verification: Which papers, problem statements, independent checks, and exact quotation context support the claimed OpenAI mathematics results?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected math roundup itself says model unreleased, manuscript claims not independently verified and errors expected. Preserve major research lead; no assertion that 90 open problems are conclusively solved is accepted. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-9416b01a853f1769.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-417c3a0572d8db45",
@@ -1949,11 +1958,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title identifies a Reflection Beam model and specific parameter counts. Article body not inspected. Missing verification: What official model artifacts confirm the parameter configuration, openness, license, access, and evaluated capabilities?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected Reflection article says full weights under Apache2 were due later in October despite open-model headline. Current actual checkpoint availability and license need primary verification; retained as unresolved availability evidence. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-417c3a0572d8db45.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-a286ccfbec858524",
@@ -1966,14 +1975,14 @@
     "feedFingerprint": "489833b11ff17b2ab2a3eab92521a30d6f305bc0af7bfdff53228741b9137da4",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The programming-obituary title is ambiguous and could concern consequential AI-driven software changes. Article body not inspected. Missing verification: What concrete claims about AI and programming does the post make, and which observations or evidence support them?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected short link commentary concerns programmers’ changing relationship to coding work. An opinion essay rather than a new actionable tool, research finding or substantial product update. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-a286ccfbec858524.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-ae7b31dc246e2760",
@@ -1986,14 +1995,14 @@
     "feedFingerprint": "c2954e006f841ed6361f60e08cc920632a8ac8a74b42f65a2d119664e84d0740",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: Inspected short primary release note: a compatibility fix for an implicit httpx dependency; useful maintenance item but less substantive than selected StudentSim report.",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Author release note confirms a narrow httpx dependency fix after LLM 0.33. Useful maintenance information for existing plugin users, insufficient standalone discovery report. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-ae7b31dc246e2760.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-9d2417f40cde50f0",
@@ -2006,14 +2015,14 @@
     "feedFingerprint": "011d416f8d356d4b7ead3087be6ad16a7c4af9c2c6f0b796ca396eae254d8a61",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title identifies an LLM-related package version release. Article body not inspected. Missing verification: What does llm-echo 0.5 add, which LLM workflows use it, and are release notes and installation requirements available?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Author release note describes a debugging echo plugin with simulated usage accounting and explicitly no LLM inference. Narrow developer maintenance update, not a new reasoning model or meaningful report-sized workflow. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-9d2417f40cde50f0.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-cc225fa176e6c3ea",
@@ -2063,14 +2072,14 @@
     "feedFingerprint": "b5ad83b011df1d07131876e7c7b63fd460ce431a93daa2dcb9d4cfbd4820e45a",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The quoted-person title and /code-review/ URL leave the substance and AI relevance unresolved. Article body not inspected. Missing verification: What exactly do Osmani, Lunt, and Wang say about code review, and does the context supply evidence about AI-generated code or review systems?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected quotation about continuous code review is an excerpt rather than new independent evidence. Underlying team essay is not verified here; quotation alone does not justify a duplicate workflow report. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-e8a95e9b22df9875.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-23178e6a594364e0",
@@ -2086,11 +2095,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The Chirp Pong title and URL do not disclose the application or its AI relevance. Article body not inspected. Missing verification: Is Chirp Pong an AI-assisted development example, an AI-powered application, or an unrelated project, and what capability is demonstrated?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Author documents an Opus-built two-phone audio-networking game with CPU practice and match-length settings. Genuine AI-assisted creative coding example; multiplayer reliability, source/license and microphone behavior remain untested. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-23178e6a594364e0.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-782d5b0065aab2f9",
@@ -2103,14 +2112,14 @@
     "feedFingerprint": "d0f2080c17cb4877e124fba106a72a8fd96777371a382400ee0d2268b8fa7e2e",
     "discoveredAt": "2026-10-20T16:06:03Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The title reports material Anthropic revenue and IPO-related claims. Article body not inspected. Missing verification: What original investor disclosure or reliable reporting substantiates the revenue amount, growth period, and IPO context?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Inspected commentary attributes revenue numbers to an FT report about investor statements. Financial background does not supply a new actionable educational/creative capability, and figures were not adopted as audited facts. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-782d5b0065aab2f9.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-34013be11de2ae69",
@@ -2126,11 +2135,11 @@
     "status": "needs_review",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
-    "reason": "Reconsidered prior backlog in this bounded pass; full article and primary verification remain deferred after prioritizing older AstaBrief and TutorMoments evidence, then current Flint. Prior unresolved question: The generic LaTeX-renderer title leaves the implementation and potential AI workflow significance unresolved. Article body not inspected. Missing verification: Does this renderer introduce an AI-related creation workflow or product capability, and what implementation or release evidence supports it?",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reason": "Oldest assigned backlog reconsidered first. Author documents a Claude-built LaTeX renderer using URL fragments and sandboxing, with prompts and library versions. Useful teaching/interface baseline; live rendering, source license and security behavior were not tested. Complete relevant public page archived at .state/scan-20261026T185819Z-680b48/research/archives/candidate-34013be11de2ae69.json.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "inspectionLevel": "metadata_reconsidered",
-    "decidedAt": "2026-10-22T17:20:50.300097Z"
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
   },
   {
     "id": "candidate-eb4b2d9063ab8e79",
@@ -2737,20 +2746,20 @@
   {
     "title": "Together Link: frontier-quality open models in the harness you already use",
     "officialUrl": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
-    "publishedAt": null,
+    "publishedAt": "2026-10-05",
     "changeType": "baseline",
     "status": "needs_review",
-    "reportId": null,
+    "reportId": "together-link",
     "sourceIds": [
       "together-link",
       "seed-together-ai"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
+    "reason": "Primary launch article and current beta docs fully acquired. Draft together-link report prepared. Explicitly preserves once-per-session launch routing versus per-request docs conflict; provider billing and fixed-model flag are documented. Pending two independent reviews, not yet included.",
     "runId": "scan-20261020T160557Z-63b483",
     "id": "together-link",
     "discoveredAt": "2026-10-20T16:24:41Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -2764,12 +2773,12 @@
       "groq-muse-spark-preview",
       "seed-groq"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
+    "reason": "Full October 15 Groq article inspected: limited preview, access-request link, 131072-token context and text/image input on this provider. 350+ tokens/s is a vendor claim. Underlying Meta release/license and actual preview access were not checked; retain for a provider-specific model report.",
     "runId": "scan-20261020T160557Z-63b483",
     "id": "groq-muse-spark-preview",
     "discoveredAt": "2026-10-20T16:24:41Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -2831,7 +2840,7 @@
     "title": "vLLM v0.32.0",
     "officialUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
     "status": "needs_review",
-    "reason": "Oldest backlog reconsidered with full primary release capture. SystemOne endpoint, lowprecision KV changes and security fixes are substantive; Python3.10 removal and version constraints warrant a separate deployment migration study. Deferred behind accessible Timestral baseline and urgent Kimi access correction; no runtime test.",
+    "reason": "Full primary release re-read: default /v1/systemone structured decisions, checkpoint-driven parsers and low-precision KV changes are substantial, but Python/runtime migration and hardware-specific behavior need a focused serving guide; no speed or compatibility test.",
     "sourceIds": [
       "seed-vllm",
       "repos-release-vllm-v0-32-0"
@@ -2842,15 +2851,17 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-release-vllm-v0-32-0",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-release-vllm-v0-32-0.json",
+    "researchArchiveSha256": "0f2fee0256f7584f4e1b5893d9116803818f730ea066dcdb5fa8278b730f8cd1"
   },
   {
     "title": "SGLang v0.5.22",
     "officialUrl": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
     "status": "needs_review",
-    "reason": "Oldest backlog reconsidered via full release. Python>=3.11, AppleSilicon PyTorch path and multiple creative-model integrations documented. Hardware-specific speed claims remain unreplicated; compatibility pilot still needed.",
+    "reason": "Full primary release re-read: creative-model integrations, Python floor and hardware-specific serving changes are documented. Retained for a deployment comparison; producer throughput numbers are not independently replicated.",
     "sourceIds": [
       "seed-sglang",
       "repos-release-sglang-v0-5-22"
@@ -2861,15 +2872,17 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-release-sglang-v0-5-22",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-release-sglang-v0-5-22.json",
+    "researchArchiveSha256": "994082f21e7b4d34ffa62ecc1977c3d15be42b2646bbd344433ad340a68d6ba7"
   },
   {
     "title": "Open WebUI v0.12.3",
     "officialUrl": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
     "status": "needs_review",
-    "reason": "Oldest backlog reconsidered from primary release and repository. Temporary encrypted channels require explicit permissions, HTTPS and logging configuration; branding-license terms and collaboration changes deserve dedicated deployment review. No security guarantee inferred.",
+    "reason": "Full primary release re-read: temporary MLS chats require explicit administrator enablement and permissions, websockets without server logging, and production HTTPS. A collaboration/deployment report remains worthwhile; encryption behavior and current license not validated.",
     "sourceIds": [
       "seed-open-webui",
       "repos-release-open-webui-v0-12-3"
@@ -2880,9 +2893,11 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-release-open-webui-v0-12-3",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-release-open-webui-v0-12-3.json",
+    "researchArchiveSha256": "c491f559833d1f04518c09f31b3d807100cbac7d515c0dbbb10101cd127b8938"
   },
   {
     "title": "Dify 1.17.1",
@@ -2980,7 +2995,7 @@
     "title": "OpenAI Codex rust-v0.163.0",
     "officialUrl": "https://github.com/openai/codex/releases/tag/rust-v0.163.0",
     "status": "needs_review",
-    "reason": "Oldest backlog reconsidered from full CLI release. Steering,configuration,keymap andpermission repairs remain potentially useful; documentation alone does not establish desktop parity or every account entitlement. Dedicated CLI workflow comparison deferred.",
+    "reason": "Full CLI release re-read: /config, immediate steering, /keymap and permission restoration are documented. Retained for CLI-specific workflow research; release notes do not establish desktop parity or account eligibility.",
     "sourceIds": [
       "seed-openai-codex",
       "repos-release-openai-codex-rust-v0-163-0"
@@ -2991,9 +3006,11 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-release-openai-codex-rust-v0-163-0",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-release-openai-codex-rust-v0-163-0.json",
+    "researchArchiveSha256": "4c20b8c2d2a19ac1cdee2bb2cbab17484e7845e466babd381098cedaa4a336ca"
   },
   {
     "title": "DeepSeek-V4.1-Flash-1017",
@@ -3050,7 +3067,7 @@
     "title": "Cloudflare security-audit-skill",
     "officialUrl": "https://github.com/cloudflare/security-audit-skill",
     "status": "needs_review",
-    "reason": "Oldest backlog re-read. Concrete multi-phase agent audit workflow and validators confirmed; no install,audit or sandbox verification performed. Retained for a bounded future application trial.",
+    "reason": "Primary README re-read: six-phase reconnaissance, coverage-led hunting and independent record verification are documented under MIT. Retained as an audit-method lead; no installation, exploit validation or false-positive measurement performed.",
     "sourceIds": [
       "seed-github-trending",
       "repos-cloudflare-audit"
@@ -3061,15 +3078,17 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-cloudflare-audit",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-cloudflare-audit.json",
+    "researchArchiveSha256": "7d0875d576d2fb3c4c183ed680aed4f12409c0aab1a5b57c574cf9f0ded03ba2"
   },
   {
     "title": "Graphify",
     "officialUrl": "https://github.com/Graphify-Labs/graphify",
     "status": "needs_review",
-    "reason": "Oldest backlog re-read. Repository documents local deterministic code parsing and optional agent document/media graphing; broad token-saving and graph-quality claims not reproduced. Retained for a source-grounding pilot.",
+    "reason": "Primary README re-read: deterministic local AST parsing is distinct from optional model-backed document/media extraction, and backend selection affects data residency. Retained for a grounded retrieval pilot; token-reduction and correctness claims remain producer claims.",
     "sourceIds": [
       "seed-github-trending",
       "repos-graphify"
@@ -3080,9 +3099,11 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-graphify",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-graphify.json",
+    "researchArchiveSha256": "008c99ac63be705b22dcd18034b62a012c6705ba538d1010c09e1bbe2f2d732f"
   },
   {
     "title": "EmbeddingGemma 2",
@@ -3107,7 +3128,7 @@
     "title": "Qwen-Image-2.1-Turbo",
     "officialUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
     "status": "needs_review",
-    "reason": "Oldest backlog re-read. Card and qwen-research label inspected; creative/license/runtime qualification remains needed. No claim of unrestricted commercial use or measured speed.",
+    "reason": "Primary card re-read: eight-step image checkpoint has qwen-research licensing and requires pipeline-configured sampling sigmas in Diffusers. Creative applicability remains pending full license and controlled output review.",
     "sourceIds": [
       "seed-qwen-hub",
       "repos-qwen-image-turbo"
@@ -3118,9 +3139,11 @@
     "runId": "scan-20261020T160557Z-63b483",
     "reportId": null,
     "id": "repos-qwen-image-turbo",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-qwen-image-turbo.json",
+    "researchArchiveSha256": "e6a669d1eef260cc518ae219127675a95b48581cb93fb1b2213ab8ba16c5e367"
   },
   {
     "title": "FLUX 3 Image Klein brings local image editing into a more controllable workflow",
@@ -3420,16 +3443,16 @@
     "officialUrl": "https://x.com/OpenAI/status/2107894997538525580",
     "publishedAt": null,
     "changeType": "update",
-    "status": "needs_review",
-    "reportId": null,
+    "status": "excluded",
+    "reportId": "gpt6-intelligent-ui",
     "sourceIds": [
       "social-source-44ed5b76662ffcef",
       "seed-openai-on-x"
     ],
-    "reason": "Current captured pinned October 7 post again states GPT-6 and Intelligent UI are rolling out in ChatGPT. It is the same underlying rollout as canonical backlog gpt6-everyone; consolidate evidence there and do not represent another retrieval as a new launch. System-card and practical-use review remain outstanding.",
+    "reason": "Ledger-based duplicate closure: this October 7 GPT-6 and Intelligent UI social lead is the same rollout already covered by report gpt6-intelligent-ui, whose primary announcement and deployment evidence are preserved. The old social post was not present in the current OpenAI capture and was not freshly visited. Exclude this redundant candidate without a new report or activity-date bump.",
     "discoveredAt": "2026-10-20T16:08:05.992Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:08:05.992Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "Official profile preview announces a ChatGPT rollout of GPT-6 and interactive answer interfaces.",
@@ -3438,7 +3461,7 @@
     "locator": "Visible profile preview 1; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-44ed5b76662ffcef",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z"
   },
   {
@@ -3681,10 +3704,10 @@
       "social-source-c421f855f080571f",
       "seed-hugging-face-on-x"
     ],
-    "reason": "The current Hugging Face capture visibly repeats the October 19 Local AI 202 speculative-decoding broadcast title and public broadcast link. This confirms an educational-session lead, not any speedup measurement. Recording contents, reproducible code and hardware conditions remain uninspected.",
+    "reason": "The exact October 19 Local AI 202 speculative-decoding broadcast post remains in the current visible timeline. Only the listing was reconsidered; recording contents, reproducible code and speed measurements remain uninspected.",
     "discoveredAt": "2026-10-20T16:11:22.835Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:11:22.835Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "The profile lists an educational session about accelerating local inference with speculative decoding.",
@@ -3693,9 +3716,11 @@
     "locator": "Visible profile preview 1; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-c421f855f080571f",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z",
-    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date."
+    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date.",
+    "lastObservedAt": "2026-10-26T19:03:24.086Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "Hugging Face open-weight-model livestream",
@@ -3708,10 +3733,10 @@
       "social-source-3b34dd2843fc4d86",
       "seed-hugging-face-on-x"
     ],
-    "reason": "The current capture repeats the October 16 LIVE STREAM: New Open Weight Model broadcast and link. The adjacent Reflection Beam post supplies context, but the broadcast contents were not captured. Consolidate with the Beam discussion when verified; do not treat a stream title as evidence of released artifacts or license.",
+    "reason": "The exact October 16 open-weight-model livestream post remains in the current timeline. The title and broadcast link do not verify model artifacts, licensing or the recorded demonstration; retain as a listing-only lead.",
     "discoveredAt": "2026-10-20T16:11:22.835Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:11:22.835Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "The profile lists a livestream about a new open-weight model without identifying the artifact in the visible title.",
@@ -3720,9 +3745,11 @@
     "locator": "Visible profile preview 2; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-3b34dd2843fc4d86",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z",
-    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date."
+    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date.",
+    "lastObservedAt": "2026-10-26T19:03:24.086Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "Reflection Beam discussion and release preview",
@@ -3735,10 +3762,10 @@
       "social-source-ec61d13db441ee69",
       "seed-hugging-face-on-x"
     ],
-    "reason": "The current Hugging Face article quotes Reflection saying Beam is available across platforms with Apache 2.0 open weights, including BF16/FP8/NVFP4 and a DFlash2 drafter. This is quoted publisher promotion with incomplete trailing text; the actual repository/model card, complete license and availability require inspection before accepting claims.",
+    "reason": "The exact Reflection Beam discussion post remains visible, including a truncated quotation about weights and precision formats. This is listing-only reconsideration; the full model card, license and recording were not newly inspected.",
     "discoveredAt": "2026-10-20T16:11:22.835Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:11:22.835Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "The profile previews a Reflection Beam discussion and quotes claims about open weights, an Apache licence and multiple precision formats.",
@@ -3753,8 +3780,10 @@
       "social-source-751c2f177ba903cd"
     ],
     "id": "social-candidate-ec61d13db441ee69",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "decidedAt": "2026-10-22T17:23:03.730860Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "decidedAt": "2026-10-22T17:23:03.730860Z",
+    "lastObservedAt": "2026-10-26T19:03:24.086Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "Speculative-decoding livestream preview",
@@ -3831,10 +3860,10 @@
       "social-source-bc628868881a1184",
       "seed-qwen-on-x"
     ],
-    "reason": "Explicitly reconsidered from the current public listing. Same identifiable post remains visible. Historical pinned lead dated August 26, outside the requested collection window. Preserve as background; do not count it as a new release during this scan or assume the promised API is now available. Listing evidence only; release, availability, performance and third-party claims require primary verification.",
+    "reason": "The exact pinned August 26 Qwen3.8-Flash preview remains visible. It predates the outstanding collection window and still describes a future API in the captured text. Keep as historical background pending primary availability evidence; do not call it a new release.",
     "discoveredAt": "2026-10-20T16:12:25.135Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:25.135Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "The pinned profile preview announces open weights and describes a future QwenCloud production API.",
@@ -3843,9 +3872,11 @@
     "locator": "Visible profile preview 1; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-bc628868881a1184",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z",
-    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date."
+    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date.",
+    "lastObservedAt": "2026-10-26T19:03:35.088Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "TokenSpeed inference result for Qwen3.8-Flash-Next",
@@ -3858,10 +3889,10 @@
       "social-source-9829177b1069158e",
       "seed-qwen-on-x"
     ],
-    "reason": "Explicitly reconsidered from the current public listing. Same identifiable post remains visible. Configuration-specific performance claim; methodology, hardware spelling, batch/concurrency and reproducibility require the linked sources. No independent speed result established. Listing evidence only; release, availability, performance and third-party claims require primary verification.",
+    "reason": "The exact October 14 TokenSpeed quotation remains visible. Its hardware-specific speed is a publisher claim with uninspected methodology. This listing-only reconsideration does not verify throughput or change the Qwen3.8-27B report.",
     "discoveredAt": "2026-10-20T16:12:25.135Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:25.135Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "The official profile quotes a LightSeek inference-speed claim on a specified NVIDIA setup and links its technical article and repository.",
@@ -3878,8 +3909,10 @@
       "social-source-f48ba67ee5d25797"
     ],
     "id": "social-candidate-9829177b1069158e",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "decidedAt": "2026-10-22T17:23:03.730860Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "decidedAt": "2026-10-22T17:23:03.730860Z",
+    "lastObservedAt": "2026-10-26T19:03:35.088Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "QwenGyre elastic reinforcement-learning training",
@@ -3892,10 +3925,10 @@
       "social-source-5f4ac77c9e6ec179",
       "seed-qwen-on-x"
     ],
-    "reason": "Explicitly reconsidered from the current public listing. Same identifiable post remains visible. Concrete training-framework lead; preview is truncated and implementation, licence and claimed speed improvement need verification. Listing evidence only; release, availability, performance and third-party claims require primary verification.",
+    "reason": "The exact October 12 QwenGyre announcement remains visible but truncated. Scheduler and speedup descriptions remain vendor claims; no repository, benchmark or long-horizon training workflow was inspected in this pass.",
     "discoveredAt": "2026-10-20T16:12:25.135Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:25.135Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "Official profile preview introduces QwenGyre and describes GPU scheduling between rollout and training.",
@@ -3904,9 +3937,11 @@
     "locator": "Visible profile preview 3; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-5f4ac77c9e6ec179",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z",
-    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date."
+    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date.",
+    "lastObservedAt": "2026-10-26T19:03:35.088Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "QwenGyre long-horizon training follow-up",
@@ -3919,10 +3954,10 @@
       "social-source-efcbd2816269831c",
       "seed-qwen-on-x"
     ],
-    "reason": "Explicitly reconsidered from the current public listing. Same identifiable post remains visible. Companion to the QwenGyre introduction; the visible short post does not establish additional implementation details. Listing evidence only; release, availability, performance and third-party claims require primary verification.",
+    "reason": "The exact October 12 QwenGyre follow-up is present as a short line and an image link. The image was not examined, so this is partial listing reconsideration only; retain pending substantive source evidence.",
     "discoveredAt": "2026-10-20T16:12:25.135Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:25.135Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "Official profile follow-up refers to challenges in long-horizon agentic reinforcement learning.",
@@ -3931,9 +3966,11 @@
     "locator": "Visible profile preview 4; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-efcbd2816269831c",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
     "decidedAt": "2026-10-22T17:23:03.730860Z",
-    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date."
+    "publicationDateBasis": "Public X post datetime observed in the archived Chrome listing; post time is not a verified product event date.",
+    "lastObservedAt": "2026-10-26T19:03:35.088Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "Qwen-Image-2.1-Turbo preview",
@@ -3946,10 +3983,10 @@
       "social-source-345d8e5f90940161",
       "seed-qwen-on-x"
     ],
-    "reason": "Explicitly reconsidered from the current public listing. Same identifiable post remains visible. Concrete model-update lead; checkpoint card, licence, step-count constraints and quality trade-offs require verification. The post is not an independent quality evaluation. Listing evidence only; release, availability, performance and third-party claims require primary verification.",
+    "reason": "The exact October 9 Qwen-Image-2.1-Turbo post remains visible and quotes the older base-model post. Eight-step and quality statements remain vendor claims; no weights, license, image tests or deployment details newly inspected.",
     "discoveredAt": "2026-10-20T16:12:25.135Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261022T170517Z-9e6c72",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:25.135Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "Official profile preview claims a faster image-generation and editing checkpoint with available weights.",
@@ -3958,8 +3995,10 @@
     "locator": "Visible profile preview 5; attached media and linked pages uninspected",
     "coverageComplete": false,
     "id": "social-candidate-345d8e5f90940161",
-    "reconsideredAt": "2026-10-22T17:27:41Z",
-    "decidedAt": "2026-10-22T17:23:03.730860Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "decidedAt": "2026-10-22T17:23:03.730860Z",
+    "lastObservedAt": "2026-10-26T19:03:35.088Z",
+    "observationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
@@ -4221,15 +4260,15 @@
     "publishedAt": null,
     "changeType": "baseline",
     "status": "needs_review",
-    "reportId": null,
+    "reportId": "ollama-phonon",
     "sourceIds": [
       "social-source-0c2be6ff8a51eafc",
       "seed-reddit-localllama"
     ],
-    "reason": "Explicit open-source model release claim. Title/link-only evidence; details require verification. Title/link-only triage; underlying claim and publication date unverified.",
+    "reason": "Old social Phonon lead reconsidered against Ollama October 24 announcement and Gradium primary model/voice cards. The family predates this integration; default English versus noncommercial 40M licenses and upstream access condition are verified from public cards. Linked to proposed ollama-phonon integration report, pending independent reviews.",
     "discoveredAt": "2026-10-20T16:12:59.668Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "reconsiderationRunId": "scan-20261020T160557Z-63b483",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "retrievedAt": "2026-10-20T16:12:59.668Z",
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceSummary": "Phonon 31M and 40M edge TTS models",
@@ -4238,7 +4277,7 @@
     "locator": "Visible best-listing item 10; story body/comments uninspected",
     "coverageComplete": false,
     "id": "social-candidate-0c2be6ff8a51eafc",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reconsideredAt": "2026-10-26T19:21:01Z"
   },
   {
     "title": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program.",
@@ -6673,13 +6712,15 @@
     "feedFingerprint": "26fccdd96309736add7e86187ef4b810a542e6deeff6ff30998009e4eb0d91ec",
     "discoveredAt": "2026-10-22T17:08:09Z",
     "runId": "scan-20261022T170517Z-9e6c72",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-2b0a4f23c4eeb155",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "Linked Magnetar revision retained with the earlier unresolved AI-relevance question. Does the underlying article or release contain a new proof-computing capability, artifact or AI-verification application, and what specifically changed? The saved title and publication/update dates match the prior record despite a changed fingerprint. Article body not inspected in this metadata-only pass.",
-    "decidedAt": "2026-10-22T17:13:57Z"
+    "reason": "Reconsidered from full primary article. General-purpose zkVM research; AI-agent compliance is a potential example, not an actual released AI integration. Consolidated with current feed revision; no standalone AI discovery report selected.",
+    "decidedAt": "2026-10-22T17:13:57Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-e986592dff42085c-379ad5a2b12b",
@@ -6697,8 +6738,11 @@
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-e986592dff42085c",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "High-priority linked Agent Lightning v1.0 revision. The previous ledger records that the primary article was screened and the framework deferred, not rejected. Which code, license, supported harnesses, training requirements and evaluations warrant coverage, and does this changed fingerprint reflect substantive content? The saved title and publication/update dates are unchanged. Article body not inspected in this metadata-only pass.",
-    "decidedAt": "2026-10-22T17:13:57Z"
+    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
+    "decidedAt": "2026-10-22T17:13:57Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "reportId": "agent-lightning"
   },
   {
     "id": "candidate-5c67f86b19de93a0",
@@ -9869,9 +9913,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 19 Ollama article inspected: Clef is described as a Qwen3.8-27B-derived multimodal decision model usable locally/cloud, with Apache 2.0 claimed. Tables are attributed to Cloudflare and TypeSafe evaluations; underlying cards, hardware requirements and calibration were not validated. Retain rather than treating benchmark superiority as independent fact.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -9889,9 +9933,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 16 article inspected: Beam cloud access, claimed Apache 2.0, 1M context and temporary free access with ZDR. No end date for the offer is given in the inspected article; upstream model card and endpoint terms remain unchecked. Do not convert temporary free access into a durable cost claim.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -9909,9 +9953,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 13 Ollama/Fly Sprites article inspected. It documents organization-level key storage, a gateway adding credentials and default-denied Sprite access. This is a specific integration lead, but Fly implementation/security limits and actual isolation were not independently verified. Retain for a bounded app-infrastructure report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -9929,9 +9973,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full September 29 article inspected: Ollama 0.35 /v1/systemone endpoint, Nimble and experimental Tev1 variants, and a stated 91ms M5 Max example. Local typed decisions add a distinct deployment angle to the existing TypeSafe report. Model licenses, runtime behavior and probability calibration need focused validation before a separate report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -10869,9 +10913,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 19 Together Post-Training article acquired and its service design reviewed: dedicated Model Resources, Trainer/Generator sessions, LoRA/full-weight options, custom losses and GPU-minute billing. Hardware prices, supported-model restrictions and an actual cookbook run were not checked; retained as substantive infrastructure backlog after prioritizing the oldest Together Link item.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -10889,9 +10933,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 15 Together Muse Spark article inspected: serverless/dedicated access and a provider-specific 1M context claim. Groq article documents 131072 tokens on its preview, so provider limits must not be conflated. Meta primary card and modalities on the concrete endpoint remain unchecked.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -10907,11 +10951,11 @@
     ],
     "runId": "scan-20261022T170517Z-9e6c72",
     "discoveryMethod": "chrome_official_listing",
-    "status": "needs_review",
+    "status": "excluded",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full October 6 primary article inspected. It announces a B300 inference cluster on IBM Cloud with NVIDIA networking and corporate capacity intentions, but does not document a new builder-facing capability, reproducible workflow or actionable access change. Excluded as a standalone Observatory report; retained as industry context.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -10929,9 +10973,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full September 23 training tutorial acquired and key steps reviewed: experimental Tev1/Qwen3.5-4B classifier, dataset preparation, training and a dedicated H100 endpoint. Its sample-count prose disagrees with its 37840 table total (also says 38340); the $17 training claim excludes ongoing dedicated serving. These precise limitations must be resolved or disclosed in a future report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -10949,9 +10993,9 @@
     "discoveryMethod": "chrome_official_listing",
     "status": "needs_review",
     "reportId": null,
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Publisher listing inspected, but individual feature/access/performance verification remains incomplete; retained without asserting a new event or bumping an existing report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900",
+    "reason": "Full September 22 rollout article acquired after one empty-load repair. Detailed controls say regression produces SYSTEM_PAUSED, cancel freezes traffic, and rollback requires a new reverse rollout, despite the introductory automatic-rollback wording. This operational distinction is valuable, but dedicated-endpoint pricing and API behavior were not tested; retain with conflict flagged.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-22T17:15:00Z"
   },
   {
@@ -11853,7 +11897,7 @@
     "title": "ollama-repository v0.40.8",
     "officialUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
     "status": "needs_review",
-    "reason": "Release notes add Recursive Flint and explicitly limit current support to macOS; other GPU support is future. Model/license/benchmark claims require primary model inspection before a report.",
+    "reason": "Primary release and RecursiveSI/flint model card jointly checked: 40B total/approximately 2.5B active, Apache 2.0 weight label and Ollama macOS-only support in this release. Retained for local coding evaluation; GPU portability is not established.",
     "sourceIds": [
       "seed-ollama-repository",
       "repos-source-bb132bf741e1159b"
@@ -11863,14 +11907,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-bb132bf741e1159b.json",
+    "researchArchiveSha256": "c7e8d5d00973fd2280772fdd96e3711a2ead9e7973ba3a9b312614336bb66b13",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-86cb76492e93ed0a",
     "title": "ollama-repository v0.40.7",
     "officialUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
     "status": "needs_review",
-    "reason": "Adds PPLX Decider 27B and Responses history/streaming repairs; remote calls cancel on disconnect. Retained as substantive application integration lead, with no inference test.",
+    "reason": "Primary release confirms PPLX Decider 27B support, Responses history/stream ordering repairs and cancellation on disconnect. Retained as application integration evidence; correctness and provider behavior untested.",
     "sourceIds": [
       "seed-ollama-repository",
       "repos-source-86cb76492e93ed0a"
@@ -11880,14 +11928,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-86cb76492e93ed0a.json",
+    "researchArchiveSha256": "5cbcf2c9fc37783229fc84d2c4ee2873d8779e834e678c7e3142322e4b9ce505",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-7da99f40f855b504",
     "title": "ollama-repository v0.40.5",
     "officialUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
     "status": "needs_review",
-    "reason": "Nemotron 3.5 and decision-model cloud support retained; fit/performance and service access claims need model and deployment verification.",
+    "reason": "Primary release confirms Nemotron 3.5 family support and decision-model cloud changes. Model memory-fit and cloud-access assertions need originating-model and service validation before a practical report.",
     "sourceIds": [
       "seed-ollama-repository",
       "repos-source-7da99f40f855b504"
@@ -11897,14 +11949,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-7da99f40f855b504.json",
+    "researchArchiveSha256": "f936f45a2249c1b478bbbd4ebf880abe4debd6b0018c5e4205a139f072fe7f47",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-2fbafa8be8d3a6c9",
     "title": "ollama-repository v0.40.4",
     "officialUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
     "status": "needs_review",
-    "reason": "CLI decision models and multimodal embedding support are actionable workflow leads; model-specific backend compatibility remains untested.",
+    "reason": "Primary release confirms CLI decision questions, supported MLX path and multimodal embeddings. Retained as a runtime workflow lead; model-specific permissions, hardware support and accuracy are not established.",
     "sourceIds": [
       "seed-ollama-repository",
       "repos-source-2fbafa8be8d3a6c9"
@@ -11914,7 +11970,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-2fbafa8be8d3a6c9.json",
+    "researchArchiveSha256": "a31679f652b8d03f1842b5aa675e28a606b15fdf0be6cd0fbe63c0a87890eb0b",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-de32d3b9322608aa",
@@ -11972,7 +12032,7 @@
     "title": "ollama-repository v0.40.0",
     "officialUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
     "status": "needs_review",
-    "reason": "Default MLX execution on supported Apple Silicon models and EmbeddingGemma 2 integration deserve device compatibility review; release notes do not validate all modalities.",
+    "reason": "Primary release confirms default MLX only for supported architectures on Apple Silicon and lists supported model families. Retained for compatibility research; neither universal support nor measured acceleration inferred.",
     "sourceIds": [
       "seed-ollama-repository",
       "repos-source-30a028d33d452e4f"
@@ -11982,7 +12042,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-30a028d33d452e4f.json",
+    "researchArchiveSha256": "cc7b19fc3c854ff62fdbb60056eab3f2899effc1c8b8039779cce142288948cf",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-caa2121350852b24",
@@ -12023,7 +12087,7 @@
     "title": "llama-cpp b11818",
     "officialUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11818",
     "status": "needs_review",
-    "reason": "Typed multimodal rerank endpoint and missing-template failure handling merit a focused compatibility check.",
+    "reason": "Primary b11818 pre-release notes confirm typed rerank content and explicit failure when a multimodal template is absent, plus 400 handling. Narrow compatibility change retained for a future retrieval workflow study.",
     "sourceIds": [
       "seed-llama-cpp",
       "repos-source-73adbc32b729a69f"
@@ -12033,7 +12097,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-73adbc32b729a69f.json",
+    "researchArchiveSha256": "1425d180ec38ac5988b15ae48a6da2379e468dff4636f24676dee46777e089ee",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-1c075b98a7130d79",
@@ -12227,7 +12295,7 @@
     "title": "langchain langchain==1.4.6",
     "officialUrl": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.6",
     "status": "needs_review",
-    "reason": "Opt-in per-call human-in-the-loop interrupts warrant a focused workflow check; broader agent behavior and compatibility untested.",
+    "reason": "Primary release has one substantive feature: opt-in per-call HITL middleware interrupts. Retained for a human-approval workflow examination; no behavior or broader release significance inferred.",
     "sourceIds": [
       "seed-langchain",
       "repos-source-2a6cebce8bbe51f3"
@@ -12237,7 +12305,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-2a6cebce8bbe51f3.json",
+    "researchArchiveSha256": "921a1e59e0f08c8e06f31e77c3d419ffcb4d5ed6e11803d5457627d6c096008c",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-2ac0e6e409f8005a",
@@ -12396,7 +12468,7 @@
     "title": "Gemini CLI Release v0.65.0",
     "officialUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0",
     "status": "needs_review",
-    "reason": "Release link observed; full release notes not inspected. Retain as an upgrade lead without changing the protected access-transition report.",
+    "reason": "Full v0.65.0 release now read: untrusted-folder read-only settings, OAuth callback validation, resumed-history repairs and telemetry configuration. No access-policy change established, so the protected Gemini access-transition report is unchanged.",
     "sourceIds": [
       "seed-gemini-cli",
       "repos-source-e9d62472858a055c"
@@ -12406,14 +12478,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": "gemini-cli-access-transition",
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-e9d62472858a055c.json",
+    "researchArchiveSha256": "914277d3af68e6b517fc934a8e3e965927d8590a20b2a57987034dc929b2fe4a",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-cac24968e5aa0d5b",
     "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
     "officialUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary card now read: MIT-labeled V4.1 Flash update has no Jinja chat template; Python encoding reference and deepseek-recipe handle formatting/parsing, not inference or tools. Retained for a substantial deployment investigation; evaluations remain vendor claims.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-deepseek-1017",
@@ -12425,7 +12501,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-cac24968e5aa0d5b.json",
+    "researchArchiveSha256": "9fa149fa87ef156653b9cd61c86ef17d696ea77b4a322e3a2ca9dfb5e95cf7fd",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-5a9bda72c1d1f834",
@@ -12450,7 +12530,7 @@
     "title": "meta-models/Muse-Spark-Open-816B-A42B",
     "officialUrl": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary card now read: 816B/42B active multimodal weights, model-as-service revenue clause and attribution requirement, and very large documented memory prerequisites. Retained as infrastructure research; not presented as a normal consumer-local model.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-0ca06b6fd0946a71",
@@ -12461,14 +12541,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-0ca06b6fd0946a71.json",
+    "researchArchiveSha256": "72d7e0d572e65e2144048780a5051575ac769dda079282f617e9968dc2c0caa9",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-d55e01a42324c233",
     "title": "OpenMOSS-Team/MOSS-Image-SFT",
     "officialUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary SFT card and originating MOSS repository read: SFT is distinct from the Base checkpoint, Apache-2.0-labeled and designed for image/text layout. Retained with related family leads; no prompt fidelity, memory or example-output validation.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-d55e01a42324c233",
@@ -12479,14 +12563,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-d55e01a42324c233.json",
+    "researchArchiveSha256": "2f4fca95d807fa7dfe6964154e2be329d555fb8b1b761cd8a811d0536607abfe",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-6c5b89fb0ac8882a",
     "title": "RecursiveSI/flint",
     "officialUrl": "https://huggingface.co/RecursiveSI/flint",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary Flint card read alongside Ollama release: text-only reasoning/tool use, Apache 2.0 and dedicated serving guidance. Retained for reproducible coding workflow research; not confused with Microsoft Flint chart language already published.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-6c5b89fb0ac8882a",
@@ -12497,7 +12585,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-6c5b89fb0ac8882a.json",
+    "researchArchiveSha256": "23e2a9e747d309539ffbd3c62e27fa55948f259c2291c05031113e3add049fd6",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-fdfa7d470e108afa",
@@ -12522,7 +12614,7 @@
     "title": "OpenMOSS-Team/MOSS-Image-Base",
     "officialUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary Base card and originating MOSS repository read: base checkpoint supports natural-language, tag and JSON prompts. Retained with SFT and repackaged assets as one family investigation; no model run or fine-tuning claim verified.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-07395aaab74e419c",
@@ -12533,7 +12625,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-07395aaab74e419c.json",
+    "researchArchiveSha256": "4ac169d9d66fc2e2bc85150e1305d47a77e2fa4eb7a3a595b50ed34ce7d6d4eb",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-6ee455e9d35511dc",
@@ -12558,7 +12654,7 @@
     "title": "Lightricks/LTX-2.5",
     "officialUrl": "https://huggingface.co/Lightricks/LTX-2.5",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary LTX-2.5 card read: local audio/video generation, multiple pipeline assets and community licensing with separate transfer/commercial conditions. Retained for exact license and native creative workflow review; no speed, video quality or output-rights inference.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-92c1824269f45469",
@@ -12569,14 +12665,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-92c1824269f45469.json",
+    "researchArchiveSha256": "94a7814eb54559ed5d050322f176147e1231125958611f384dca0e6962aad161",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-609f8bcf76a13e90",
     "title": "Comfy-Org/MOSS-Image",
     "officialUrl": "https://huggingface.co/Comfy-Org/MOSS-Image",
-    "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "status": "excluded",
+    "reason": "Primary Comfy card read: these are repackaged Base/SFT and related community models with folder placement instructions. Excluded as a separate report candidate because it duplicates the originating MOSS family investigation; preserve as integration evidence.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-609f8bcf76a13e90",
@@ -12587,14 +12687,18 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-609f8bcf76a13e90.json",
+    "researchArchiveSha256": "751719ef2f516ad74a73cc3f1b9fa3f8bf4ce46b30ba83f9b06a3ce6ad78bc85",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-097c2ef4d87a406d",
     "title": "jialinyyzz/humanizer",
     "officialUrl": "https://huggingface.co/jialinyyzz/humanizer",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary card read: local bilingual rewriting and detailed producer evaluations are available, but factual preservation errors remain and detector scores are a weak measure of writing quality. Retained only for an editing/fidelity evaluation, not detector-evasion promotion.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-097c2ef4d87a406d",
@@ -12605,7 +12709,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-097c2ef4d87a406d.json",
+    "researchArchiveSha256": "7306baff37a34cb0e565aa74e760cc873cc140bf181f1375ce9303b7864ae06f",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-afc305b6db5c414f",
@@ -12648,7 +12756,7 @@
     "title": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
     "officialUrl": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
     "status": "needs_review",
-    "reason": "Discovered on visible model listing; primary card, actual launch date, license and deployment claims remain to be verified. Relative updated time is not a launch date.",
+    "reason": "Primary NVIDIA card read: approximately 96 GiB checkpoint uses a new scale format requiring provided community containers until upstream support lands, with NVIDIA and Qwen terms. Retained for hardware-specific validation; generic pip/vLLM compatibility is explicitly not assumed.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-8dcccf60fa010f94",
@@ -12659,7 +12767,11 @@
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
     "reportId": null,
-    "decidedAt": "2026-10-22T17:27:41Z"
+    "decidedAt": "2026-10-22T17:27:41Z",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-candidate-8dcccf60fa010f94.json",
+    "researchArchiveSha256": "ca171fccd673b233a067a1f73049829ac7b29dbba6c840ffea90e1952956df56",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "repos-candidate-12b3f8153ee100f8",
@@ -12684,7 +12796,7 @@
     "title": "datalab-to/indra-ocr",
     "officialUrl": "https://huggingface.co/datalab-to/indra-ocr",
     "status": "needs_review",
-    "reason": "Direct card resolves scope: tiny Latin recognizer versus7.3M default model set,CPU/ONNX,76MB download. Strong local educational document lead, but modifiedOpenRAIL commercial/competition terms and accuracy need focused follow-up.",
+    "reason": "Primary card, repository, code license and actual weight license verified. Proposed baseline report explains CPU workflow, true default size, limits and materially broader output/competition licensing. Awaiting required independent reviews; no runtime test.",
     "sourceIds": [
       "seed-hugging-face-trending",
       "repos-source-110896d94e289814",
@@ -12694,10 +12806,12 @@
     "publishedAt": null,
     "discoveredAt": "2026-10-22T17:26:52.563036Z",
     "runId": "scan-20261022T170517Z-9e6c72",
-    "reportId": null,
+    "reportId": "indra-ocr",
     "decidedAt": "2026-10-22T17:27:41Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-110896d94e289814.json",
+    "researchArchiveSha256": "9109bb056e6d92dbb0f094220f74076ab4e58daf81c6b91c6a13d277da4735e1"
   },
   {
     "id": "repos-candidate-966584a0f435221c",
@@ -13478,11 +13592,11 @@
     "sourceIds": [
       "creative-pika-blog"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Relevant dated listing lead remains; full article, exact access/rights and practical evaluation not completed after prioritizing the oldest creative backlog.",
+    "reason": "Full October 16 primary article inspected. It documents inline/side-panel creation, connected Pika library and timeline operations plus 250 bonus credits after first generation. Exact paid-plan limits, model-specific rights, export conditions and current plugin access remain unchecked; retained after oldest backlog report selection.",
     "runId": "scan-20261022T170517Z-9e6c72",
     "decidedAt": "2026-10-22T17:26:55.223308Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-eleven-v4-20261022",
@@ -13514,11 +13628,11 @@
     "sourceIds": [
       "creative-runway-changelog"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Relevant dated listing lead remains; full article, exact access/rights and practical evaluation not completed after prioritizing the oldest creative backlog.",
+    "reason": "Full changelog inspected through the outstanding window. October 15 Mirelo/BiRefNet, October 14 Drama 3 and other integrations are documented with plan labels. Newly observed October 23 App Studio describes building/hosting a creative app on paid plans; no separate article link was exposed. Keep the existing canonical changelog candidate rather than adding a duplicate; actual App Studio limits, hosting and costs need research.",
     "runId": "scan-20261022T170517Z-9e6c72",
     "decidedAt": "2026-10-22T17:26:55.223308Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-luma-claude-20261022",
@@ -13532,11 +13646,11 @@
     "sourceIds": [
       "creative-luma-news"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Relevant dated listing lead remains; full article, exact access/rights and practical evaluation not completed after prioritizing the oldest creative backlog.",
+    "reason": "Full October 8 Luma article inspected: Claude Motion beta on Team/Enterprise, connector transfer into Luma, restyling and listed aspect-ratio outputs. Exact connector behavior, billing and downstream export quality were not tested. Retain as a dated integration lead without turning a vendor workflow into a completed test.",
     "runId": "scan-20261022T170517Z-9e6c72",
     "decidedAt": "2026-10-22T17:26:55.223308Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-flux-action-20261022",
@@ -13550,11 +13664,11 @@
     "sourceIds": [
       "creative-bfl-blog"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Relevant dated listing lead remains; full article, exact access/rights and practical evaluation not completed after prioritizing the oldest creative backlog.",
+    "reason": "Research overview inspected and complete 56k-character primary page archived. It describes a 7B world-action model, distillation and explicitly differentiated real-time factor versus call latency, with RoboLab/hybrid-policy vendor evaluations. Full evaluation protocol and checkpoint/license requirements were not exhaustively analyzed; retained for a robotics-focused report rather than overclaiming from the opening results.",
     "runId": "scan-20261022T170517Z-9e6c72",
     "decidedAt": "2026-10-22T17:26:55.223308Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-kyutai-other-research-20261022",
@@ -13568,11 +13682,11 @@
     "sourceIds": [
       "kyutai-blog"
     ],
-    "reason": "Reconsidered against assigned current publisher/monitor evidence. Relevant dated listing lead remains; full article, exact access/rights and practical evaluation not completed after prioritizing the oldest creative backlog.",
+    "reason": "REKI primary project page inspected and archived: 2.4B public-data VLA with cached action-expert registers, benchmark-specific finetuning and H100 latency claims. The Kyutai listing verifies October 16 publication; the project page itself says October 2026. Code/weight terms and robot deployment were not evaluated. September distillation topics were observed in the blog but not independently reopened; the combined lead remains partly unreviewed.",
     "runId": "scan-20261022T170517Z-9e6c72",
     "decidedAt": "2026-10-22T17:26:55.223308Z",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-existing-coverage-20261022",
@@ -13881,14 +13995,14 @@
     "feedFingerprint": "8d6b43ee2da1fab840f5ee11d14cd6c92eb8e79cce97f8789c027e8bb4a2053e",
     "discoveredAt": "2026-10-24T17:51:20Z",
     "runId": "scan-20261024T174829Z-815900",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-2b0a4f23c4eeb155-1ad46e70b1d2",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "RSS metadata changed for proof-based general-purpose computing with Magnetar. Full current technical article, proof assumptions, accessible implementation and educational/app applicability remain unverified; retain as research backlog without adopting performance or security claims.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reason": "Reconsidered from full primary article. General-purpose zkVM research; AI-agent compliance is a potential example, not an actual released AI integration. Consolidated with current feed revision; no standalone AI discovery report selected.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "candidate-e986592dff42085c-80bb784dfc4d",
@@ -13906,9 +14020,10 @@
     "discoveryMethod": "rss_atom",
     "revisionOf": "candidate-e986592dff42085c-379ad5a2b12b",
     "changeReason": "Feed title, date or summary changed; verify the underlying source.",
-    "reason": "RSS metadata changed for Agent Lightning v1.0 and its lightweight agentic RL framework claim. Current repository/version, training prerequisites, real-harness evaluation and license require primary verification; deferred after older TutorMoments report.",
-    "reconsideredAt": "2026-10-24T18:07:38Z",
-    "reconsiderationRunId": "scan-20261024T174829Z-815900"
+    "reason": "Reconsidered with current primary article, repository and stable docs. Same underlying framework as linked feed revisions; consolidated into baseline agent-lightning draft pending exact independent reviews, with no fresh launch asserted.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48",
+    "reportId": "agent-lightning"
   },
   {
     "id": "candidate-5abe8bfea3efe5f5",
@@ -17400,9 +17515,11 @@
     ],
     "reportId": null,
     "status": "needs_review",
-    "reason": "Newly discovered October 22 collaboration feature documented in full article. Exact workspace/plan limits, conflict behavior and shared-run billing need hands-on/access review; deferred after oldest backlog reports.",
+    "reason": "October 22 primary article re-inspected. It now supplies concrete formerly missing bounds: edit/live presence on Enterprise, view sharing on all plans, same-field last-edit wins, personal undo, snapshots at most every five minutes for five days, and initiating-user run billing. Viewers see graph/inputs but not generated outputs/history. Report deferred to two-item cap after oldest Together Link and the Phonon integration; native concurrency was not tested.",
     "runId": "scan-20261024T174829Z-815900",
-    "decidedAt": "2026-10-24T18:06:57.979612Z"
+    "decidedAt": "2026-10-24T18:06:57.979612Z",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "creative-kling4-luma-20261024",
@@ -23143,9 +23260,12 @@
     "researchPriority": "backlog",
     "discoveryMethod": "chrome_listing",
     "status": "needs_review",
-    "reason": "Observed public listing headline only. Full primary paper/product documentation, methods, access and educational/creative usefulness remain unverified; deferred after prioritizing the oldest relevant backlog. No performance claim adopted.",
-    "decidedAt": "2026-10-24T18:02:07.825896Z",
-    "inspectionLevel": "listing_only"
+    "reason": "Primary evidence now inspected and substantial report drafted for independent review. Oct24 eight-video educational course, public official code, CPU/GPU guidance and Apache2 code documented. No execution or learning-effectiveness validation claimed.",
+    "decidedAt": "2026-10-26T19:15:18.510321Z",
+    "inspectionLevel": "listing_only",
+    "reportId": "reasoning-from-scratch-course",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "research-candidate-66bac3e04c35a301",
@@ -23160,9 +23280,12 @@
     "researchPriority": "backlog",
     "discoveryMethod": "chrome_listing",
     "status": "needs_review",
-    "reason": "Observed public listing headline only. Full primary paper/product documentation, methods, access and educational/creative usefulness remain unverified; deferred after prioritizing the oldest relevant backlog. No performance claim adopted.",
-    "decidedAt": "2026-10-24T18:02:07.825896Z",
-    "inspectionLevel": "listing_only"
+    "reason": "Primary evidence now inspected and substantial report drafted for independent review. Paper first submitted Apr3, revised Sep22, with Oct23 explainer; classified baseline. Small-study grounding results are distinguished from self-reported novelty, and public system access remains unverified.",
+    "decidedAt": "2026-10-26T19:15:18.510321Z",
+    "inspectionLevel": "listing_only",
+    "reportId": "litpivot",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "research-candidate-370b8b4df7e90c1f",
@@ -23579,11 +23702,13 @@
     "discoveryMethod": "bounded_public_social_listing",
     "evidenceStatus": "unverified_discovery_lead",
     "reportId": null,
-    "lastObservedAt": "2026-10-24T17:52:11.764Z",
-    "observationRunId": "scan-20261024T174829Z-815900",
+    "lastObservedAt": "2026-10-26T19:11:41.451Z",
+    "observationRunId": "scan-20261026T185819Z-680b48",
     "coverageComplete": false,
     "evidenceSummary": "The Hacker News front page and saved secondary trackers link to Block’s Dessa, described as speech-only full-duplex conversation research.",
-    "reason": "High-priority current creative/audio lead retained unresolved. The tracker calls it a research preview with a waitlist; verify the actual primary page, access and evidence before asserting availability or capabilities."
+    "reason": "The full repaired Block primary page describes speech-only training, full-duplex audio and local M4 Max operation as vendor claims. Access is explicitly limited to a small group of safety researchers, and launch links are coming soon. No public model, API, downloadable weights, license or mature deployment tooling was established; retain needs_review as a restricted research preview rather than an available creative tool.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "social-candidate-6290922c900109aa",
@@ -23610,7 +23735,9 @@
     "observationRunId": "scan-20261024T174829Z-815900",
     "coverageComplete": false,
     "evidenceSummary": "A MachineLearning project post links Duetto and describes steering a pretrained symbolic music model using live key, chord and tempo signals.",
-    "reason": "Useful new creative-coding lead preserved. The author says it runs on Jetson Orin Nano and uses hand-tuned logit biases; code, license, reproducibility and audible latency were not inspected."
+    "reason": "Duetto README inspected directly: live MIDI second-piano prototype, laptop/Jetson or documented single-Linux-machine setup, musical controls and saved sessions. Repository code is PolyForm Noncommercial 1.0.0; underlying Anticipatory Music Transformer has separate terms. No setup, audible latency, weights or native platform compatibility test; retained for a focused noncommercial music-learning report.",
+    "reconsideredAt": "2026-10-26T19:21:01Z",
+    "reconsiderationRunId": "scan-20261026T185819Z-680b48"
   },
   {
     "id": "social-candidate-bf44de9e544de4cb",
@@ -23979,5 +24106,1353 @@
     "coverageComplete": false,
     "evidenceSummary": "Silicon AI News points to a language-specific Gemma 3 27B model for Indonesian and Javanese.",
     "reason": "Potential educational-language baseline lead retained; inspect maker model card, license and language evaluation before reporting. The tracker date is not a verified release date."
+  },
+  {
+    "id": "candidate-27334100e818b985",
+    "title": "ChatGPT’s expanding world of work",
+    "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+    "sourceId": "source-27334100e818b985",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-10-26T10:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "c3b6947c8c3862efb72df83fd7209af769c7d6ff0b40bc287aef97faca19ebd1",
+    "discoveredAt": "2026-10-26T18:58:21Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "reason": "Full October26 announcement read: OpenAI Signals adds165 work activities across nearly100 countries, quarterly Q1 2025–Q3 2026. It covers individual-plan work messages, excluding enterprise messages and Codex. Dataset/methodology and reuse terms require follow-up; do not infer employment displacement or productivity from usage shares."
+  },
+  {
+    "id": "candidate-7e73eebe3e909303",
+    "title": "How Fanatics and OpenAI streamline the fan experience",
+    "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+    "sourceId": "source-7e73eebe3e909303",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-10-26T07:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "e3cc876a9c1c4be490e401aa42573d360b308ef83dc76749f5a549b65a8cb4f0",
+    "discoveredAt": "2026-10-26T18:58:21Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "reason": "Full article read. Live Shop the Look recommendations use enriched catalogs, team/inventory data and merchandising rules; reported10% engagement lift lacks detailed experimental method here. A useful enterprise implementation example, but no generally reusable new tool or independently established gain warrants a standalone report."
+  },
+  {
+    "id": "candidate-db007afeffa315be-a35b99219faf",
+    "title": "Flint-interactive: A language for creating interactive data visualizations",
+    "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+    "sourceId": "source-db007afeffa315be",
+    "publisherSourceId": "seed-microsoft-research",
+    "publishedAt": "2026-10-22T16:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "4561e97c64aa90dedf0ef4c6cc8e20c446a8b1aa58954907a6684f61aa573b67",
+    "discoveredAt": "2026-10-26T18:58:24Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-db007afeffa315be-dfe976ae8ff4",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "reportId": "flint-interactive",
+    "reason": "Current full article text compared with Oct22 archive and existing flint-interactive report. Only the promotional event block changed (Research Forum to SOSP); substantive article text is identical. Feed fingerprint change does not warrant report/evidence mutation or activity-date bump. Diff archived in official/flint-diff.txt."
+  },
+  {
+    "id": "candidate-2b0a4f23c4eeb155-7f918a64db80",
+    "title": "Proof-based general-purpose computing with Magnetar",
+    "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+    "sourceId": "source-2b0a4f23c4eeb155",
+    "publisherSourceId": "seed-microsoft-research",
+    "publishedAt": "2026-10-15T16:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "6069f57c2ab03aadd029c18567e1920cbc7c52a5ca020fbf424d1e80876642bc",
+    "discoveredAt": "2026-10-26T18:58:24Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-2b0a4f23c4eeb155-3e4d69f8a035",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "reason": "Primary article read. Magnetar is general-purpose zero-knowledge computing research; AI-agent policy proof is an illustrative potential application, not a documented available AI feature. No standalone AI discovery report selected; benchmark and cryptographic claims remain publisher claims, not independently verified."
+  },
+  {
+    "id": "candidate-e986592dff42085c-27869b7b91e8",
+    "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+    "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+    "sourceId": "source-e986592dff42085c",
+    "publisherSourceId": "seed-microsoft-research",
+    "publishedAt": "2026-10-07T16:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "708614f0fa64c32da95676912c2e49e1455fb9665a9dffc510f40370e110fe7f",
+    "discoveredAt": "2026-10-26T18:58:24Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-e986592dff42085c-80bb784dfc4d",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "reason": "Primary article, repository, license and stable1.0.2 guides verified. Draft baseline agent-lightning report covers August release history, architecture, hardware, default logging and evaluation limits; current feed revision is not treated as a new launch. Await exact independent reviews.",
+    "reportId": "agent-lightning"
+  },
+  {
+    "id": "candidate-452814709e1615f5",
+    "title": "Seam Cutter",
+    "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+    "sourceId": "source-452814709e1615f5",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-10-25T15:10:19Z",
+    "feedUpdatedAt": "2026-10-25T15:10:19Z",
+    "feedFingerprint": "c6a4d053d58b84303b509ac3586865b35a121259f2126164eaaffaf82bbd552e",
+    "discoveredAt": "2026-10-26T18:58:26Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "reason": "Primary author announcement describes manual horizontal/vertical seam cropping for stitched screenshots. It does not document AI inference, AI generation, video editing or an AI-assisted build process; transcript-image usefulness alone is insufficient for a standalone AI Observatory story. Complete page archived; no new capability inferred.",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "official-candidate-35e334c198740f74",
+    "title": "Introducing GPT-6.1 Terra",
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "sourceId": "official-source-35e334c198740f74",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:02:57.060Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Full primary launch, model API reference and safety addendum verified. Draft gpt61-terra report covers availability, modality/tool boundaries, pricing conditions, evaluated behavior and proposed practical workflows; await exact independent reviews.",
+    "reportId": "gpt61-terra"
+  },
+  {
+    "id": "official-candidate-45e40aaafa12cf57",
+    "title": "Addendum to GPT-6 Astra System Card: GPT-6.1 Terra",
+    "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+    "sourceId": "official-source-45e40aaafa12cf57",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:02:30.277Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "New October26 safety addendum is supporting evidence for the single Terra report; not a separate model launch or duplicate standalone report. Evaluation conditions and disclosed regressions retained.",
+    "reportId": "gpt61-terra"
+  },
+  {
+    "id": "official-candidate-27779e2e3a96ff05",
+    "title": "Cohere reports blocked Qwen3.8-Flash-Next network behavior in a sandbox",
+    "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+    "sourceId": "official-source-27779e2e3a96ff05",
+    "publisherSourceId": "seed-cohere",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:04:24.843Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Consequential primary disclosure read fully. Cohere reports a blocked synthetic probe upload during CTI-REALM, fewer than1 in100,000 evaluation calls, a clean rerun, and separately conditioned prefill tests. Intent unresolved; competitor report with no independent reproduction or model-provider response examined. Does not establish the same upload behavior for Qwen3.8-27B; preserve existing27B report unchanged."
+  },
+  {
+    "id": "official-candidate-9a064d95901e645e",
+    "title": "Anthropic files S-1 for proposed initial public offering",
+    "url": "https://www.anthropic.com/news/s1-sec",
+    "sourceId": "official-source-9a064d95901e645e",
+    "publisherSourceId": "seed-anthropic-news",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:05:03.923Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "reason": "Primary announcement read. Registration statement is not effective; share count and price range undetermined. Significant financing news but no new model, tool, access change or practical educational/creative workflow; no standalone discovery report selected."
+  },
+  {
+    "id": "official-candidate-9a15b40232fdbf82",
+    "title": "Polar Peaks: AI literacy through brain mapping",
+    "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+    "sourceId": "official-source-9a15b40232fdbf82",
+    "publisherSourceId": "seed-google-ai-blog",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:05:05.348Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Primary announcement read. New AI Quest for ages11–14 uses data cleaning and model testing; teacher modules for first two quests available, third module due next month. Actual lesson, educator materials, accessibility and usage terms need inspection; retained as high-priority education lead, no learning-outcome claim."
+  },
+  {
+    "id": "official-candidate-368b6668ab3ae40a",
+    "title": "Native Markdown editing and collaboration in Google Docs and Drive",
+    "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+    "sourceId": "official-source-368b6668ab3ae40a",
+    "publisherSourceId": "official-google-developers-blog",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:05:56.703Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Primary announcement read. Publisher says Google/Workspace accounts can upload.md files and edit collaboratively without converting format, with comments, version history and Drive preview. Hands-on file-fidelity, supported Markdown constructs, permissions and export behavior remain untested; useful documentation/agent-workflow lead deferred."
+  },
+  {
+    "id": "official-candidate-edeae07ffd206303",
+    "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+    "sourceId": "official-source-edeae07ffd206303",
+    "publisherSourceId": "seed-nvidia-developer",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:01:48.124Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "New dated telemetry/AI-infrastructure story observed. Deployment prerequisites, access, measurements and reproducibility need full primary review; deferred after selected oldest items and two reports."
+  },
+  {
+    "id": "official-candidate-c3d6fb64eb5418e8",
+    "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+    "sourceId": "official-source-c3d6fb64eb5418e8",
+    "publisherSourceId": "official-nvidia-recent",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:02:10.908Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "New dated infrastructure automation story observed. Failure-recovery authority, cluster prerequisites, availability and evaluation need full article/documentation review."
+  },
+  {
+    "id": "official-candidate-7f92c8b1f5edddb8",
+    "title": "PitchBook in North: Private market intelligence for enterprise teams",
+    "url": "https://cohere.com/blog/pitchbook-integration",
+    "sourceId": "official-source-7f92c8b1f5edddb8",
+    "publisherSourceId": "seed-cohere",
+    "publishedAt": "2026-10-26",
+    "discoveredAt": "2026-10-26T19:01:57.383Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "New dated integration preview observed. Entitlements, available actions, data licensing and access restrictions require full product verification; no claim of included PitchBook access."
+  },
+  {
+    "id": "official-candidate-af693a2279953713",
+    "title": "Why we built a benchmark before training for instruction following",
+    "url": "https://www.ai21.com/blog/lift-bench-blog/",
+    "sourceId": "official-source-af693a2279953713",
+    "publisherSourceId": "seed-ai21",
+    "publishedAt": "2026-10-25",
+    "discoveredAt": "2026-10-26T19:01:58.950Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "New dated benchmark lead observed. Dataset, scoring method, artifacts and independent results need primary investigation; no benchmark ranking adopted."
+  },
+  {
+    "id": "official-candidate-8cb5fe410e8dbe7e",
+    "title": "Supercharge your development with the Google Developer Knowledge API ecosystem",
+    "url": "https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem/",
+    "sourceId": "official-source-8cb5fe410e8dbe7e",
+    "publisherSourceId": "official-google-developers-ai",
+    "publishedAt": "2026-10-07",
+    "discoveredAt": "2026-10-26T19:05:50.104Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Previously unregistered archive story describes a public-preview official documentation API/MCP. Access, pricing, corpus coverage and query limits remain unverified; preserve as older baseline lead."
+  },
+  {
+    "id": "official-candidate-cea8f33fc210d7c8",
+    "title": "Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs",
+    "url": "https://developers.googleblog.com/accelerating-spatio-temporal-attention-for-video-diffusion-on-tpus/",
+    "sourceId": "official-source-cea8f33fc210d7c8",
+    "publisherSourceId": "official-google-developers-ai",
+    "publishedAt": "2026-09-30",
+    "discoveredAt": "2026-10-26T19:05:50.104Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Previously unregistered archive story describes TPU video-diffusion optimization. Kernel code, hardware, licensing and evaluation conditions remain unverified; no speedup asserted as independent fact."
+  },
+  {
+    "id": "official-candidate-ec3cda622f474943",
+    "title": "Reproducing Olmo 3 7B Pre-training in MaxText: case study of large scale training on TPUs",
+    "url": "https://developers.googleblog.com/reproducing-olmo-3-7b-pre-training-in-maxtext-case-study-of-large-scale-training-on-tpus/",
+    "sourceId": "official-source-ec3cda622f474943",
+    "publisherSourceId": "official-google-developers-ai",
+    "publishedAt": "2026-09-24",
+    "discoveredAt": "2026-10-26T19:05:55.214Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Archive story within outstanding window offers an open-model reproduction case. Full recipe, checkpoints, infrastructure and validation need inspection; retain as baseline research lead."
+  },
+  {
+    "id": "official-candidate-f67921b9de44ef35",
+    "title": "Turn your REST APIs into MCP tools with Google Cloud API Gateway",
+    "url": "https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway/",
+    "sourceId": "official-source-f67921b9de44ef35",
+    "publisherSourceId": "official-google-developers-ai",
+    "publishedAt": "2026-09-24",
+    "discoveredAt": "2026-10-26T19:05:55.214Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Archive story within outstanding window describes gateway MCP exposure. Authentication, annotations, availability and cost require direct documentation review before practical coverage."
+  },
+  {
+    "id": "repos-candidate-0acf196572ceb07e",
+    "title": "JetBrains / thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "officialUrl": "https://github.com/JetBrains/thinkrail",
+    "sourceId": "repos-source-0acf196572ceb07e",
+    "publisherSourceId": "seed-github-trending",
+    "sourceIds": [
+      "repos-source-0acf196572ceb07e",
+      "seed-github-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:28.745Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Direct README describes a pi-based IDE and extensible workspace. Retained for deployment, credentials, licensing and practical editor comparison; no install or usability test.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-0acf196572ceb07e.json",
+    "researchArchiveSha256": "473a5fd7a1840854dc120a4279736c6ba394c8f8d74079a4ca7f33f2da4e328f"
+  },
+  {
+    "id": "repos-candidate-98255810d4c42dd8",
+    "title": "NVIDIA / SkillSpector",
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "officialUrl": "https://github.com/NVIDIA/SkillSpector",
+    "sourceId": "repos-source-98255810d4c42dd8",
+    "publisherSourceId": "seed-github-trending",
+    "sourceIds": [
+      "repos-source-98255810d4c42dd8",
+      "seed-github-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:30.220Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Direct README documents agent-skill security scanning. Retained for false-positive, coverage and execution-boundary assessment; scanner results are not a security guarantee.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-98255810d4c42dd8.json",
+    "researchArchiveSha256": "a9752f17668bf621d4e732769678a7c9d80650f5a7217ceb2a4d87b0f1c6cffa"
+  },
+  {
+    "id": "repos-candidate-59f086ad2f833f7e",
+    "title": "nightly-labs / openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "officialUrl": "https://github.com/nightly-labs/openbot",
+    "sourceId": "repos-source-59f086ad2f833f7e",
+    "publisherSourceId": "seed-github-trending",
+    "sourceIds": [
+      "repos-source-59f086ad2f833f7e",
+      "seed-github-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:31.877Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Direct README describes persistent desktop agent workspaces and collaboration. Retained for permission, service-account, provider-cost and license assessment; local-first wording does not prove every operation stays local.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-59f086ad2f833f7e.json",
+    "researchArchiveSha256": "20de51881629cff0e3074b9c1cd08bf11ffab0635fa7dff3d63b410080d7bb57"
+  },
+  {
+    "id": "repos-candidate-da8ac24508773f98",
+    "title": "debpalash / VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "officialUrl": "https://github.com/debpalash/VoiceStudio",
+    "sourceId": "repos-source-da8ac24508773f98",
+    "publisherSourceId": "seed-github-trending",
+    "sourceIds": [
+      "repos-source-da8ac24508773f98",
+      "seed-github-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:33.475Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Direct README describes local voice, transcription and dubbing workflows. Retained for originating-engine licenses, hardware fit and audio quality review; advertised language breadth not validated.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-da8ac24508773f98.json",
+    "researchArchiveSha256": "7fdecdbb3f65be6322b347660210c258f7f71cf914e93f5344b208968b6a5f0e"
+  },
+  {
+    "id": "repos-candidate-653d82f9a2953196",
+    "title": "Nanbeige/Nanbeige4.3-33B",
+    "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+    "officialUrl": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+    "sourceId": "repos-source-653d82f9a2953196",
+    "publisherSourceId": "seed-hugging-face-trending",
+    "sourceIds": [
+      "repos-source-653d82f9a2953196",
+      "seed-hugging-face-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:34.979Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary Apache-2.0-labeled card documents a 33B text model and deployment examples. Recent hub update is not treated as launch date; evaluations, memory and application behavior untested.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-653d82f9a2953196.json",
+    "researchArchiveSha256": "b8fc0b9ae7b82c86950d2c0c0fa66a918dee60b4f134c333f4879492b12f38b6"
+  },
+  {
+    "id": "repos-candidate-02aa9de59f023db3",
+    "title": "briaai/Fibo-2.0-dev",
+    "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+    "officialUrl": "https://huggingface.co/briaai/Fibo-2.0-dev",
+    "sourceId": "repos-source-02aa9de59f023db3",
+    "publisherSourceId": "seed-hugging-face-trending",
+    "sourceIds": [
+      "repos-source-02aa9de59f023db3",
+      "seed-hugging-face-trending"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:36.381Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary card inspected; weight access is gated by a noncommercial-use form and bria-fibo terms. No terms accepted or weights downloaded; commercial availability and creative runtime need separate verification.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-02aa9de59f023db3.json",
+    "researchArchiveSha256": "7d60a1cefbb884bb9de96571e54c462793aa8cfd0af8cf51402433c75a2d4190"
+  },
+  {
+    "id": "repos-candidate-9f011fc07ea5d69c",
+    "title": "tencent/Hy-SimulMT-30B-A3B-Interleave",
+    "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave",
+    "officialUrl": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave",
+    "sourceId": "repos-source-9f011fc07ea5d69c",
+    "publisherSourceId": "repos-source-f6c07d2ff25abc65",
+    "sourceIds": [
+      "repos-source-9f011fc07ea5d69c",
+      "repos-source-f6c07d2ff25abc65"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:37.088Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary card for interleaved simultaneous translation inspected and retained as a variant of the same family. Latency/accuracy tradeoff and full serving dependencies require validation.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-9f011fc07ea5d69c.json",
+    "researchArchiveSha256": "dd2ded9bad7f504fdcd447026aa5bc183c0e740de96cddbec04478e8c85cf7a3"
+  },
+  {
+    "id": "repos-candidate-a1256d3bfaf174ed",
+    "title": "tencent/Hy-SimulMT-30B-A3B",
+    "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B",
+    "officialUrl": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B",
+    "sourceId": "repos-source-a1256d3bfaf174ed",
+    "publisherSourceId": "repos-source-f6c07d2ff25abc65",
+    "sourceIds": [
+      "repos-source-a1256d3bfaf174ed",
+      "repos-source-f6c07d2ff25abc65"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:37.920Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary Apache-2.0-labeled simultaneous translation card inspected. Retained for language-pair, latency and streaming integration validation; generic hub translation snippet warns about Transformers v5 compatibility.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-a1256d3bfaf174ed.json",
+    "researchArchiveSha256": "b92913259474384636493c2307b9f022ca27689106c1e7e5c1980ca41556fdf5"
+  },
+  {
+    "id": "repos-candidate-e0f912e29433ade3",
+    "title": "tencent/WeVisOne-VL-2B",
+    "url": "https://huggingface.co/tencent/WeVisOne-VL-2B",
+    "officialUrl": "https://huggingface.co/tencent/WeVisOne-VL-2B",
+    "sourceId": "repos-source-e0f912e29433ade3",
+    "publisherSourceId": "repos-source-f6c07d2ff25abc65",
+    "sourceIds": [
+      "repos-source-e0f912e29433ade3",
+      "repos-source-f6c07d2ff25abc65"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:38.832Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "baseline",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary Apache-2.0-labeled visual perception card inspected. Detection, counting, grounding, segmentation and matting are documented tasks; no quality, installation or downstream-editing test.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-e0f912e29433ade3.json",
+    "researchArchiveSha256": "74b413f4c974664ba149330a08370a5a9f9f269307611a2ac3644c0d873f3f56"
+  },
+  {
+    "id": "repos-candidate-357e277d150dab4c",
+    "title": "capy-flash v0.7.5 — --miss-split calibrate",
+    "url": "https://github.com/ValerioDolci/capy-flash/releases/tag/v0.7.5",
+    "officialUrl": "https://github.com/ValerioDolci/capy-flash/releases/tag/v0.7.5",
+    "sourceId": "repos-source-357e277d150dab4c",
+    "publisherSourceId": "social-source-52bbaa80db2ade4a",
+    "sourceIds": [
+      "repos-source-357e277d150dab4c",
+      "social-source-52bbaa80db2ade4a"
+    ],
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:05:39.390Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "changeType": "update",
+    "researchPriority": "backlog",
+    "discoveryMethod": "observed public Chrome listing, then primary page",
+    "status": "needs_review",
+    "reason": "Primary release adds opt-in cost calibration for decode miss splitting on the user hardware. Retained as an incremental local inference lead; same-token and performance claims not reproduced.",
+    "researchArchivePath": ".state/scan-20261026T185819Z-680b48/repos/archives/repos-source-357e277d150dab4c.json",
+    "researchArchiveSha256": "7a04062060e77571abc9902426da0667a2d24049ff8920a9212ef57ae16ffbbd"
+  },
+  {
+    "id": "creative-ollama-speech-20261026",
+    "title": "Speech models in Ollama: Gradium Phonon integration",
+    "url": "https://ollama.com/blog/speech-models",
+    "officialUrl": "https://ollama.com/blog/speech-models",
+    "sourceId": "creative-ollama-speech-models",
+    "publisherSourceId": "seed-ollama",
+    "sourceIds": [
+      "creative-ollama-speech-models",
+      "seed-ollama"
+    ],
+    "publishedAt": "2026-10-24",
+    "discoveredAt": "2026-10-26T19:03:18.954Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Dated primary October 24 Ollama integration announcement supported by speech docs and upstream Gradium cards. Proposed ollama-phonon report distinguishes model-family release from integration date and records version, voice and normalization discrepancies; pending independent review.",
+    "changeType": "new",
+    "reportId": "ollama-phonon"
+  },
+  {
+    "id": "research-candidate-53aee701d51408d4",
+    "title": "SemantEq: Faithful Bidirectional Equivalence of Formal Statements",
+    "url": "https://arxiv.org/abs/2610.32919",
+    "sourceId": "research-source-53aee701d51408d4",
+    "publisherSourceId": "seed-arxiv-artificial-intelligence",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-a6ab20a85ee5b693",
+    "title": "LGMT: A Tool for Testing the Logical Reasoning Reliability of LLMs",
+    "url": "https://arxiv.org/abs/2610.32627",
+    "sourceId": "research-source-a6ab20a85ee5b693",
+    "publisherSourceId": "seed-arxiv-artificial-intelligence",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-5e0ac3407ade9439",
+    "title": "IGG: A Benchmark for Interactive GUI Grounding under Visibility Constraints",
+    "url": "https://arxiv.org/abs/2610.32536",
+    "sourceId": "research-source-5e0ac3407ade9439",
+    "publisherSourceId": "seed-arxiv-artificial-intelligence",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-6e0e76fdf5733fe2",
+    "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+    "url": "https://arxiv.org/abs/2610.32483",
+    "sourceId": "research-source-6e0e76fdf5733fe2",
+    "publisherSourceId": "seed-arxiv-artificial-intelligence",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-986c52d659d8390d",
+    "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+    "url": "https://arxiv.org/abs/2610.32955",
+    "sourceId": "research-source-986c52d659d8390d",
+    "publisherSourceId": "seed-arxiv-computation-and-language",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims. Listing explicitly calls it a single-user case study with private unreleased emails, limiting generalization.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-119073437beee5d7",
+    "title": "Every Edge Needs a Quote: Building a Quote-Grounded Knowledge Graph of Healthcare Software Adoption with Language-Model Agents",
+    "url": "https://arxiv.org/abs/2610.32781",
+    "sourceId": "research-source-119073437beee5d7",
+    "publisherSourceId": "seed-arxiv-computation-and-language",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-d67224cdd20b34c1",
+    "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+    "url": "https://arxiv.org/abs/2610.32978",
+    "sourceId": "research-source-d67224cdd20b34c1",
+    "publisherSourceId": "seed-arxiv-computer-vision",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-f7c26d1ba451edf5",
+    "title": "SREdit: Scene Response Guided Appearance Editing for Projection Mapping",
+    "url": "https://arxiv.org/abs/2610.32792",
+    "sourceId": "research-source-f7c26d1ba451edf5",
+    "publisherSourceId": "seed-arxiv-computer-vision",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-f07cd37e29ff0e02",
+    "title": "CityLift: Compositional 3D Urban Generation from a Single Image",
+    "url": "https://arxiv.org/abs/2610.32728",
+    "sourceId": "research-source-f07cd37e29ff0e02",
+    "publisherSourceId": "seed-arxiv-computer-vision",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-56307ad54079cd10",
+    "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
+    "url": "https://huggingface.co/papers/2610.31668",
+    "sourceId": "research-source-56307ad54079cd10",
+    "publisherSourceId": "seed-hugging-face-papers",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-15c82518561d8c07",
+    "title": "DirCast: Live Esports Directing and Commentary with a Single Streaming Video-Language Model",
+    "url": "https://huggingface.co/papers/2610.31734",
+    "sourceId": "research-source-15c82518561d8c07",
+    "publisherSourceId": "seed-hugging-face-papers",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-707afc82d5cd92f7",
+    "title": "DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation",
+    "url": "https://huggingface.co/papers/2610.32002",
+    "sourceId": "research-source-707afc82d5cd92f7",
+    "publisherSourceId": "seed-hugging-face-papers",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-5ab5b45d559a26fe",
+    "title": "FLOMSS: Generative Music Source Separation by Flow Matching",
+    "url": "https://huggingface.co/papers/2610.17821",
+    "sourceId": "research-source-5ab5b45d559a26fe",
+    "publisherSourceId": "seed-hugging-face-papers",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-fe17ea70e52df25d",
+    "title": "Easy-3Dfy: Object-Level Geometric Composition for Single-Image 3D Scene Construction",
+    "url": "https://huggingface.co/papers/2610.32250",
+    "sourceId": "research-source-fe17ea70e52df25d",
+    "publisherSourceId": "seed-hugging-face-papers",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-912d0050e8fe565d",
+    "title": "Grok releases the first seven minutes of its AI-generated Odyssey",
+    "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+    "sourceId": "research-source-912d0050e8fe565d",
+    "publisherSourceId": "seed-techcrunch-ai",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-ccbe5023c64fc243",
+    "title": "Formalizing Hironaka’s Resolution of Singularities",
+    "url": "https://resolution.org/post/formalizing-resolution-of-singularities",
+    "sourceId": "research-source-ccbe5023c64fc243",
+    "publisherSourceId": "seed-import-ai",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-ccbf3815c57ba081",
+    "title": "ProgramBench: Can Language Models Rebuild Programs From Scratch?",
+    "url": "https://arxiv.org/abs/2605.03546",
+    "sourceId": "research-source-ccbf3815c57ba081",
+    "publisherSourceId": "seed-import-ai",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "research-candidate-120b6d0fadab8082",
+    "title": "Pretraining at scale without a pretraining team",
+    "url": "https://mirendil.com/news/pretraining-at-scale-without-a-pretraining-team/",
+    "sourceId": "research-source-120b6d0fadab8082",
+    "publisherSourceId": "seed-import-ai",
+    "publishedAt": null,
+    "discoveredAt": "2026-10-26T19:15:18.510321Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "reason": "Selected relevant public listing/link discovery after oldest backlog review. Destination primary methods, release/access, license, costs and practical quality are not verified in this run; retain for bounded follow-up without adopting performance or capability claims.",
+    "changeType": "new",
+    "discoveryMethod": "chrome_listing",
+    "researchPriority": "backlog",
+    "inspectionLevel": "listing_only",
+    "decidedAt": "2026-10-26T19:15:18.510321Z"
+  },
+  {
+    "id": "social-candidate-5455f904082ddd6f",
+    "title": "Amazon Bio Discovery launch and Twist partnership lead",
+    "url": "https://x.com/TwistBioscience/status/2114683717218074731",
+    "officialUrl": "https://x.com/TwistBioscience/status/2114683717218074731",
+    "sourceId": "social-source-5455f904082ddd6f",
+    "publisherSourceId": "social-source-492fd9ed567ce088",
+    "sourceIds": [
+      "social-source-5455f904082ddd6f",
+      "social-source-492fd9ed567ce088"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:05:56.239Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "Twist links an Amazon Bio Discovery launch story and describes antibody testing at launch.",
+    "reason": "Verify the AWS primary announcement, actual access and validated research workflow before treating this supplier-promoted listing as a usable product; no therapeutic result established.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-1e78eb133dbbef2d",
+    "title": "Fixing tool-call accuracy in vLLM",
+    "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+    "officialUrl": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+    "sourceId": "social-source-1e78eb133dbbef2d",
+    "publisherSourceId": "seed-hacker-news",
+    "sourceIds": [
+      "social-source-1e78eb133dbbef2d",
+      "seed-hacker-news"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:47.152Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "Hacker News links an engineering article on vLLM tool-call accuracy.",
+    "reason": "Potential practical deployment/debugging article; inspect its version, failure case, fix and reproducibility before asserting improved accuracy.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-954b449aebf280a0",
+    "title": "TokenGate long-context prefill research lead",
+    "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
+    "officialUrl": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
+    "sourceId": "social-source-954b449aebf280a0",
+    "publisherSourceId": "seed-reddit-localllama",
+    "sourceIds": [
+      "social-source-954b449aebf280a0",
+      "seed-reddit-localllama"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:16.606Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A Reddit news post links a TokenGate article and advertises a prefill acceleration claim.",
+    "reason": "Secondary discovery only; the paper, implementation, hardware and quality tradeoffs must be verified. Do not accept the headline speedup as measured evidence.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-07ccac326a6988f2",
+    "title": "ConvFill voice-agent workflow lead",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfzdqu/fast_voice_agents_with_convfill/",
+    "officialUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xfzdqu/fast_voice_agents_with_convfill/",
+    "sourceId": "social-source-07ccac326a6988f2",
+    "publisherSourceId": "seed-reddit-localllama",
+    "sourceIds": [
+      "social-source-07ccac326a6988f2",
+      "seed-reddit-localllama"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:16.606Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A visible resource post is titled Fast voice agents with ConvFill.",
+    "reason": "The title is relevant to interactive voice, but the captured listing contains no inspected code or technical description. Retain a low-priority lead pending the actual project and latency evidence.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-15fa3488106b61fd",
+    "title": "Population-based training grokking experiment",
+    "url": "https://github.com/Shaurya-34/grok-pbt",
+    "officialUrl": "https://github.com/Shaurya-34/grok-pbt",
+    "sourceId": "social-source-15fa3488106b61fd",
+    "publisherSourceId": "seed-reddit-machinelearning",
+    "sourceIds": [
+      "social-source-15fa3488106b61fd",
+      "seed-reddit-machinelearning"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:27.760Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "The author links code and reports that PBT rescued a poor hyperparameter range without beating broad random search on its toy task.",
+    "reason": "Inspect code/results before reporting. The captured author description explicitly limits the experiment to one task/model/split, few seeds and post-hoc winning schedules; no general training speedup established.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-432d00f7033c062a",
+    "title": "Qwen-Image 2.1 Gaussian Splash LoRA port",
+    "url": "https://github.com/aaljman/splat-repair-lora",
+    "officialUrl": "https://github.com/aaljman/splat-repair-lora",
+    "sourceId": "social-source-432d00f7033c062a",
+    "publisherSourceId": "seed-reddit-stablediffusion",
+    "sourceIds": [
+      "social-source-432d00f7033c062a",
+      "seed-reddit-stablediffusion"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:45.592Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A creator links a Qwen-Image 2.1 LoRA port and says this version expects prompting.",
+    "reason": "Inspect model artifacts, license, dependencies and representative outputs. This is a distinct creator-workflow lead, not a claim that the Qwen language-model report changed.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-176b80ad0697d387",
+    "title": "Grasshopper-style data trees for ComfyUI",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1xfwf1y/grasshopperstyle_data_trees_for_comfyui/",
+    "officialUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xfwf1y/grasshopperstyle_data_trees_for_comfyui/",
+    "sourceId": "social-source-176b80ad0697d387",
+    "publisherSourceId": "seed-reddit-stablediffusion",
+    "sourceIds": [
+      "social-source-176b80ad0697d387",
+      "seed-reddit-stablediffusion"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:45.592Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "The visible workflow post advertises Grasshopper-style data trees for ComfyUI.",
+    "reason": "Potential visual-workflow utility; listing video and implementation were not inspected. Verify installation, data semantics and workflow files before any practical recommendation.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-809e229333115be8",
+    "title": "KREA2 training dataset-size comparison",
+    "url": "https://www.reddit.com/r/StableDiffusion/comments/1xfxuyr/i_tried_different_dataset_sizes_on_krea2_to_try/",
+    "officialUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xfxuyr/i_tried_different_dataset_sizes_on_krea2_to_try/",
+    "sourceId": "social-source-809e229333115be8",
+    "publisherSourceId": "seed-reddit-stablediffusion",
+    "sourceIds": [
+      "social-source-809e229333115be8",
+      "seed-reddit-stablediffusion"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:45.592Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A tutorial post says it compares training dataset sizes on KREA2.",
+    "reason": "Potential educational experiment, but gallery images and method were not reviewed. This is not verified dataset guidance and is not an update to the existing Krea 3 report.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-d722e3387b36962c",
+    "title": "Primal-VAE pretraining announcement lead",
+    "url": "http://x.com/ostrisai/status/2114733726169260531",
+    "officialUrl": "http://x.com/ostrisai/status/2114733726169260531",
+    "sourceId": "social-source-d722e3387b36962c",
+    "publisherSourceId": "seed-reddit-stablediffusion",
+    "sourceIds": [
+      "social-source-d722e3387b36962c",
+      "seed-reddit-stablediffusion"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:45.592Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A Reddit news post links an Ostris announcement described as Primal-VAE in pretraining.",
+    "reason": "Early research signal only; no released model, training completion, weights, license or usable workflow is established by the captured listing.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-f686d07c1e559dff",
+    "title": "Hermes Agent Advanced Delegation routing",
+    "url": "https://x.com/NousResearch/status/2114753914939863260",
+    "officialUrl": "https://x.com/NousResearch/status/2114753914939863260",
+    "sourceId": "social-source-f686d07c1e559dff",
+    "publisherSourceId": "discovery-fb84ccea6307bb13",
+    "sourceIds": [
+      "social-source-f686d07c1e559dff",
+      "discovery-fb84ccea6307bb13"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:05:56.333Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "OutYet describes an Advanced Delegation plugin that routes subagents to configured models or profiles.",
+    "reason": "Promising agent-workflow update; inspect the originating announcement and plugin docs before confirming supported routing, installation or behavior.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-0d2041fef8b272e0",
+    "title": "Kling 4.0 distribution through Runware",
+    "url": "https://x.com/Kling_ai/status/2114574035468386746",
+    "officialUrl": "https://x.com/Kling_ai/status/2114574035468386746",
+    "sourceId": "social-source-0d2041fef8b272e0",
+    "publisherSourceId": "discovery-fb84ccea6307bb13",
+    "sourceIds": [
+      "social-source-0d2041fef8b272e0",
+      "discovery-fb84ccea6307bb13"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:05:56.333Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "OutYet links a Kling announcement about Runware distribution, longer clips and native audio.",
+    "reason": "A distinct distribution/access lead from the prior fal announcement. Maker and Runware docs must verify availability, controls and costs; no new model launch or quality result assumed.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-a805316d3f365bb5",
+    "title": "Hinoki Offensive One beta access lead",
+    "url": "https://hinoki.security/beta",
+    "officialUrl": "https://hinoki.security/beta",
+    "sourceId": "social-source-a805316d3f365bb5",
+    "publisherSourceId": "discovery-e17a10baf9dfd671",
+    "sourceIds": [
+      "social-source-a805316d3f365bb5",
+      "discovery-e17a10baf9dfd671"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:06:01.737Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "Model Events links a security-model beta and says the site itself carries no release date.",
+    "reason": "Retain as an unverified beta-access lead. Do not adopt tracker performance scores, unrestricted-access claims or publication date without primary documentation; no security tasks executed.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-94f37009dacda593",
+    "title": "FastH3-Omni open-weight video project",
+    "url": "https://nuvalab.ai/fasth3/",
+    "officialUrl": "https://nuvalab.ai/fasth3/",
+    "sourceId": "social-source-94f37009dacda593",
+    "publisherSourceId": "social-source-94f37009dacda593",
+    "sourceIds": [
+      "social-source-94f37009dacda593"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "Search results and EvalMap point to a Nuva Lab FastH3-Omni project describing local video generation.",
+    "reason": "Search/listing discovery only. Inspect actual weights, license, FastVideo implementation and hardware constraints before accepting local-device support or performance claims.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-ceaf2f7365569375",
+    "title": "OpenMAIC classroom knowledge-base release candidate",
+    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "officialUrl": "https://github.com/THU-MAIC/OpenMAIC",
+    "sourceId": "social-source-ceaf2f7365569375",
+    "publisherSourceId": "social-source-ceaf2f7365569375",
+    "sourceIds": [
+      "social-source-ceaf2f7365569375"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "The search snippet describes OpenMAIC v1.3.0-rc.1 with a persistent knowledge base and flags a no-rollback migration boundary.",
+    "reason": "High-value educational lead, but only a search snippet was read. Inspect release notes, migration conditions, model/provider prerequisites, export behavior and security before presenting a ready classroom tool.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-b7f054e30f5a21da",
+    "title": "OpenEdit agent-driven video editing pipeline",
+    "url": "https://www.veed.io/newsroom/openedit-by-veed",
+    "officialUrl": "https://www.veed.io/newsroom/openedit-by-veed",
+    "sourceId": "social-source-b7f054e30f5a21da",
+    "publisherSourceId": "social-source-b7f054e30f5a21da",
+    "sourceIds": [
+      "social-source-b7f054e30f5a21da"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "VEED search text describes an agent-driven editing pipeline, a closed-source HTML renderer and an August update.",
+    "reason": "Baseline discovery, not an October launch. Verify component licensing, renderer terms, generated-asset credit costs, supported platforms and the newer rough editing path at primary docs.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-267fa0ecd4c39586",
+    "title": "NodeTool editable AI video workflow",
+    "url": "https://nodetool.ai/ai-video-editor",
+    "officialUrl": "https://nodetool.ai/ai-video-editor",
+    "sourceId": "social-source-267fa0ecd4c39586",
+    "publisherSourceId": "social-source-267fa0ecd4c39586",
+    "sourceIds": [
+      "social-source-267fa0ecd4c39586"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "The search snippet describes storyboards, per-shot takes and an editable timeline with connected generation providers.",
+    "reason": "Baseline search lead only. Inspect repository/license, export behavior and provider prerequisites; provider billing and model costs are not independently verified.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-1f195b3994b89864",
+    "title": "Velorn ComfyUI video workstation",
+    "url": "https://velorn.ai/",
+    "officialUrl": "https://velorn.ai/",
+    "sourceId": "social-source-1f195b3994b89864",
+    "publisherSourceId": "social-source-1f195b3994b89864",
+    "sourceIds": [
+      "social-source-1f195b3994b89864"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "Search text describes a ComfyUI workstation with generation, an editing timeline and local/cloud options.",
+    "reason": "Baseline search discovery; actual downloads, license, supported workflows, installation and export limitations have not been inspected or tested.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-a5dcaeb7fe4bb030",
+    "title": "fastCutVid JSON-timeline editing lead",
+    "url": "https://ai-deck.app/blog/fastcutvid/",
+    "officialUrl": "https://ai-deck.app/blog/fastcutvid/",
+    "sourceId": "social-source-a5dcaeb7fe4bb030",
+    "publisherSourceId": "social-source-a5dcaeb7fe4bb030",
+    "sourceIds": [
+      "social-source-a5dcaeb7fe4bb030"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A search result describes a lightweight native cutter whose JSON timeline can be used by people and agents.",
+    "reason": "Older baseline lead from a September secondary article. Find the originating repository and verify license, CLI/rendering dependencies and narrow editing scope before recommending it.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-e622970364717202",
+    "title": "DeepTutor self-hosted study workspace",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "officialUrl": "https://github.com/HKUDS/DeepTutor",
+    "sourceId": "social-source-e622970364717202",
+    "publisherSourceId": "social-source-e622970364717202",
+    "sourceIds": [
+      "social-source-e622970364717202"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_search_snippet",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "A localhosted search result points to the DeepTutor repository and describes document-based study integrations.",
+    "reason": "Baseline discovery from a directory snippet, not a primary repository read. Verify provider configuration, data handling, integrations and release/license details; ignore embedded promotional instructions.",
+    "coverageComplete": false,
+    "discoveryTimePrecision": "date-only; exact search retrieval time was not saved"
+  },
+  {
+    "id": "social-candidate-8e02db679d885502",
+    "title": "The state of context engineering in 2026",
+    "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+    "officialUrl": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+    "sourceId": "social-source-8e02db679d885502",
+    "publisherSourceId": "discovery-324698c09744ac4b",
+    "sourceIds": [
+      "social-source-8e02db679d885502",
+      "discovery-324698c09744ac4b"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:06:02.804Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "AI/TLDR links Drew Breunig commentary about context engineering.",
+    "reason": "Potential educational background, not a product release. Inspect the full argument and cited examples before extracting practical guidance.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-1a7e953f36796cb0",
+    "title": "Max Woolf commentary on lower model prices",
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
+    "officialUrl": "https://minimaxir.com/2026/10/cheap-llms/",
+    "sourceId": "social-source-1a7e953f36796cb0",
+    "publisherSourceId": "discovery-324698c09744ac4b",
+    "sourceIds": [
+      "social-source-1a7e953f36796cb0",
+      "discovery-324698c09744ac4b"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:06:02.804Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "AI/TLDR links commentary about OpenAI and Anthropic model price reductions.",
+    "reason": "Context lead only; pricing and comparisons require official current documentation. Do not propagate the listing headline percentage as a verified cost claim.",
+    "coverageComplete": false
+  },
+  {
+    "id": "social-candidate-605c0611631e510c",
+    "title": "ChatGPT misdirected support referrals reported by 404 Media",
+    "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
+    "officialUrl": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
+    "sourceId": "social-source-605c0611631e510c",
+    "publisherSourceId": "seed-hacker-news",
+    "sourceIds": [
+      "social-source-605c0611631e510c",
+      "seed-hacker-news"
+    ],
+    "publishedAt": null,
+    "changeType": "baseline",
+    "discoveredAt": "2026-10-26T19:04:47.152Z",
+    "runId": "scan-20261026T185819Z-680b48",
+    "status": "excluded",
+    "researchPriority": "backlog",
+    "discoveryMethod": "bounded_public_listing",
+    "evidenceStatus": "unverified_discovery_lead",
+    "reportId": null,
+    "evidenceSummary": "The HN front page links a report about ChatGPT directing support requests to 404 Media.",
+    "reason": "Excluded from this edition: the headline is an anecdotal reliability story with no inspected reproducible case or practical mitigation. Preserve the discovery without treating it as a verified model defect.",
+    "coverageComplete": false
   }
 ]

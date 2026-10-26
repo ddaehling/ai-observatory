@@ -1,0 +1,31 @@
+{
+  "reportId": "gpt61-terra",
+  "reviewerId": "/root/edition_20261026_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-26T19:26:18.634690Z",
+  "reportHash": "f2140b762aee94099cda3bb1839f180c8aa2f1315437e61d2efdd2ac9af8943f",
+  "evidenceHash": "9467838d3e240cef37e87c4c9ec8d7f933881947a8051c5042398d54a50287b7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented image input, structured output and Responses tools support several concrete builder tasks, and the lower published rates make repeatable visual checks plausible. The report gives useful acceptance criteria for diagram guides, interface review and frame-based video preparation while correctly withholding claims of tested integrations or improved learning.",
+    "impact": "A broadly available model with lower published API prices and substantial publisher-reported gains in visual/computer work could materially expand practical agent use. Seven reflects that reach, while same-day release evidence and unreplicated benchmarks fall short of exceptional field-wide impact.",
+    "novelty": "The demonstrated differentiation in the supplied launch is a capability/cost improvement over GPT-5.6 Terra, including the reported Terminal-Bench change. It is not a new native modality or independently demonstrated new paradigm; the report correctly treats media production as tool-mediated.",
+    "maturity": "The model has a detailed API contract, established product delivery channels and a substantial safety addendum. However, no integration, account entitlement, latency or artifact reliability was checked, and the safety card documents limits and regressions. Production dependability is not established by benchmark scores.",
+    "openness": "Public API specifications, prices and evaluation caveats offer useful transparency, and function/structured interfaces offer some integration portability. The supplied evidence establishes hosted access rather than released weights or reproducible training, and explicitly rules out fine-tuning; openness is therefore low."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking: performance and safety results remain publisher evaluations, with no independent runtime validation; the report discloses this adequately.",
+    "Non-blocking: API token rates are not total workflow costs, and actual account access remains unverified."
+  ]
+}

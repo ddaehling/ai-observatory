@@ -1,0 +1,132 @@
+{
+  "id": "ollama-phonon",
+  "title": "Phonon in Ollama: a local voice for apps, with checkpoint-specific limits",
+  "entity": "Phonon in Ollama",
+  "category": "Tools",
+  "tags": [
+    "text to speech",
+    "local AI",
+    "education",
+    "audio",
+    "licensing"
+  ],
+  "summary": "Ollama now streams speech from Gradium Phonon on Apple Silicon. The default English checkpoint is permissively licensed; multilingual variants, voice packaging and API limits require more deliberate choices.",
+  "changeType": "new",
+  "publishedAt": "2026-10-24",
+  "discoveredAt": "2026-10-26T19:16:51.381222Z",
+  "updatedAt": "2026-10-26T19:16:51.381222Z",
+  "officialUrl": "https://ollama.com/blog/speech-models",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A local speech output path for Ollama",
+      "html": "<p>Ollama's October 24 announcement adds text-to-speech support, starting with Gradium's Phonon family. For builders already using Ollama, the useful change is a familiar way to turn written output into streamed audio through a terminal command or a speech API. It could support read-aloud lessons, voiced app prototypes and draft narration without putting a cloud speech request into each interaction. This report dates the Ollama integration; it does not claim that Phonon itself was first released on October 24. <a href=\"https://ollama.com/blog/speech-models\">Ollama announcement</a>.</p><p>The launch instructions are specific: Apple Silicon Macs and Ollama 0.40.11 or later. The model page and speech guide mention 0.40.9 as a minimum, so using the newer launch recommendation is the conservative starting point. Windows and Linux support is described as coming later in the launch post. Generic player instructions in the speech guide should not be read as proof that these particular Ollama model packages already run on every operating system.</p><p>We inspected the announcement, speech guide, model listing and Gradium's public model and voice cards. We did not install weights, generate audio, compare voices or measure latency. The opportunity is practical and inspectable, but conclusions about intelligibility, responsiveness and classroom reliability remain proposals for testing rather than reported results.</p>"
+    },
+    {
+      "id": "models-and-rights",
+      "title": "Choose the checkpoint before choosing the workflow",
+      "html": "<p>The default English checkpoint is Phonon 31M. Gradium counts 31 million parameters excluding the audio tokenizer, so it is not a complete count of every component involved in speech generation. Its model card identifies a flow-matching transformer that predicts audio latents and a Mimi decoder that turns those into audio. Gradium says the family builds on Kyutai's Pocket TTS and Mimi work. The attractive small-model label should therefore be understood with that component boundary. <a href=\"https://huggingface.co/gradium/phonon-31m-en\">31M model card</a>.</p><p>The license distinction is more consequential than the size distinction. Gradium releases the 31M English repository's weights, tokenizer and voices under Apache 2.0, with commercial use allowed. The 40M family—including 40M English, French, German, Spanish, Portuguese and the multilingual checkpoint—is listed under CC BY-NC 4.0. A prototype that changes from the default English model to a multilingual tag has changed its permitted-use conditions, not merely its language. <a href=\"https://ollama.com/library/phonon\">Ollama model and license table</a>.</p><p>The public multilingual card also displays a requirement to share Hugging Face information and accept conditions before accessing its files. We read the card but did not accept those conditions or download the model. Treat model-card visibility, an Ollama package listing and upstream file access as separate observations. A commercial multilingual product needs an appropriate licensing path established before adopting a noncommercial checkpoint. This report does not infer a separate commercial grant from the availability of a download.</p>"
+    },
+    {
+      "id": "first-run",
+      "title": "A small first experiment and a documentation mismatch",
+      "html": "<p>For an eligible Mac, the documented sequence is to obtain a suitable Ollama version, pull Phonon and ask it to speak a short passage. Start with clean prose and the default voice, then inspect <code>ollama show phonon</code> for the voices your installed model actually exposes. Save the exact version, model tag and spoken passage with the output. A tiny reproducible sample is more useful than immediately feeding in a whole course. <a href=\"https://docs.ollama.com/capabilities/speech\">Speech setup and terminal guide</a>.</p><p>There is an explicit discrepancy in the public material. The library README says the default includes one voice named <code>default</code>. The speech guide says the same 31M checkpoint comes with named English voices such as Zoey, Easton and Freya, and the announcement demonstrates them. Gradium's separate catalogue lists 102 embeddings across languages and character voices. We cannot resolve package contents from these descriptions alone, so the installed voice listing should decide which names a trial uses. The upstream total is not a promise that all voices are packaged in every Ollama tag. <a href=\"https://ollama.com/library/phonon\">library README</a>; <a href=\"https://huggingface.co/gradium/phonon-voices\">voice catalogue</a>.</p><p>That difference can be handled without guessing. The guide says an unknown voice produces a 400 error listing available voices. Build a selector from actual capabilities rather than a copied marketing list, preserve a default choice and display a comprehensible error if a saved voice disappears. None of this requires assuming voice cloning is exposed by the Ollama integration.</p>"
+    },
+    {
+      "id": "api",
+      "title": "The speech API has a narrow contract",
+      "html": "<p>Ollama documents an OpenAI-compatible <code>/v1/audio/speech</code> endpoint accepting a model, input text and optional voice. Compatibility here is about that endpoint's documented request and response behavior. It does not imply support for every option another speech provider accepts. The guide says unsupported formats, speed controls or instructions return a 400 error rather than silently taking effect. Speech models also reject chat, completion and embedding requests. <a href=\"https://docs.ollama.com/capabilities/speech\">Generate speech with the API and Limits</a>.</p><p>The response streams while generation continues. Output is mono audio at 24 kHz: WAV by default, or raw signed 16-bit little-endian PCM with no header. The guide notes that a streamed WAV header is written before the final length is known, so its size fields use a maximum value. An app must therefore verify that its decoder or player handles that form, rather than assuming every library that accepts a finished WAV file will accept the live stream.</p><p>The input limit is 4,096 characters per API request. The CLI splits longer material at paragraph and sentence boundaries, but an application calling the endpoint should manage its own request units and playback sequence. Keep text chunks associated with the paragraph they voice so a learner can replay a section. When users stop playback or leave a page, the application should discard stale audio and define how pending work is cancelled; cancellation semantics were not established by the pages reviewed here.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Make read-aloud support part of the lesson",
+      "html": "<p>A concrete educational pilot is a reading panel with a play button beside each reviewed paragraph. The page displays the original text, requests that paragraph's audio and highlights which passage is playing. Students should be able to stop, replay or continue without losing their place. The point is to add an optional presentation of the same material, not let a speech model invent the lesson or silently replace its wording. This is a proposed design, not a product capability we tested.</p><p>Begin with a small passage set containing the vocabulary the course actually uses: proper names, decimals, measurements, dates and abbreviations. Listen while following the source text and mark omissions, substitutions and awkward pauses. A chemistry lesson or a coding tutorial can be damaged by a single misread symbol even when ordinary prose sounds fluent. Preserve a text-only path and invite corrections so speech remains supplementary.</p><p>The guide describes normalization for numbers, currency, symbols, addresses and URLs, and recommends writing dates out for natural reading. It says Markdown markers are skipped, while the library page warns they may be read aloud. Given that discrepancy, provide a deliberately prepared spoken-text version instead of depending on formatting cleanup. Expand ambiguous notation yourself when meaning matters, and check whether the spoken form still matches the visible explanation. <a href=\"https://docs.ollama.com/capabilities/speech\">text limits and normalization</a>; <a href=\"https://ollama.com/library/phonon\">input guidance</a>.</p><p>Language expansion changes both testing and rights. A noncommercial French practice exercise might investigate the 40M French checkpoint, subject to its terms, but that does not establish suitability for a paid language-learning service. Test with proficient listeners in each language and keep pronunciation findings separate from English results.</p>"
+    },
+    {
+      "id": "creative-workflows",
+      "title": "App feedback, websites and draft video narration",
+      "html": "<p>For a local app, Phonon could voice brief status messages or reviewed assistant answers. Keep output concise and tie playback to explicit user intent; an application that repeatedly interrupts its user is not improved simply because synthesis is fast. When another model generates the answer, strip internal reasoning and markup before speech. Ollama's example pipes a chat model's reply into Phonon and says playback can begin after a sentence or two. That describes a pipeline, not an end-to-end guarantee of safe or correct answers. <a href=\"https://docs.ollama.com/capabilities/speech\">Speak from the terminal</a>.</p><p>For a website prototype, distinguish a local speech server from browser-native inference. Ollama's documented example calls a local HTTP endpoint. It does not make an arbitrary public website automatically able to speak through every visitor's computer. Gradium separately documents browser and mobile runtime paths in its model card, but adopting those is a different engineering project. Choose the deployment boundary early: a local development tool, a managed server or an explicitly packaged client experience. <a href=\"https://huggingface.co/gradium/phonon-31m-en\">Other platforms</a>.</p><p>For video, the simplest trial is draft narration from an approved script. Redirecting the CLI output writes a WAV file, which can then be reviewed and placed in an existing editing workflow. Listen for phrase boundaries, terminology and pacing before designing shots around the recording. The 24 kHz mono output is a concrete technical format, not evidence of finished mastering quality. Keep editing and mixing decisions in the production tools you already trust.</p><p>Use short sections when revising narration. Gradium warns that long text is split into sentences and prosody does not carry across the entire text. A sequence that sounds acceptable sentence by sentence may still lack a coherent delivery across a scene. Recheck adjacent sections after any replacement rather than treating a regenerated sentence as an isolated asset.</p>"
+    },
+    {
+      "id": "performance",
+      "title": "Throughput is useful, but it is not interaction latency",
+      "html": "<p>Ollama reports throughput of 113 times realtime on an M5 Max when generating 45 seconds of speech, using the median of ten runs. The comparison includes several runtimes with different hardware paths and weight precisions. Those measurements are vendor evidence for one described setup; they are not our benchmark and do not predict the result on every Mac. In particular, high sustained throughput does not tell a builder how long the first playable audio takes after a button press. <a href=\"https://ollama.com/blog/speech-models\">Performance on Apple Silicon</a>.</p><p>The announcement also reports matching the Transformers reference's 1.2 percent word error rate on 200 English Seed-TTS sentences transcribed with Whisper large-v3. That is a bounded intelligibility measure. It does not measure emotional delivery, speaker similarity, multilingual educational accuracy, long-form pacing or a listener's comprehension. Gradium publishes additional preference and error-rate tables, but those remain model-author evaluations rather than independent validation by this Observatory.</p><p>Measure the whole product path in a pilot: cold start, warmed first-audio delay, continuous playback, resource usage while other work runs and the response to stop or replay. Record the machine and software versions, the exact text and model tag. A course-authoring tool might value quick batch generation; an interactive app may care much more about interruption and startup. The same model can be useful in one setting and frustrating in the other.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "A promising component with a clearly bounded next step",
+      "html": "<p>Phonon through Ollama is most immediately interesting for Apple Silicon builders who want a local, programmable speech-output component and can begin with the permissively licensed English checkpoint. The existing endpoint pattern, streaming output and small model family make it straightforward to frame a realistic experiment. There is no hosted per-character price quoted for this local path, but hardware, download, integration and quality-review work still have costs; local inference should not be described as costless.</p><p>The main adoption constraints are concrete: macOS launch support, different licenses across checkpoints, upstream access conditions, short API input limits and conflicting voice and normalization descriptions. We have not tested voice quality, file access, interruption behavior or the alternate runtimes listed by Gradium. Nor does this research establish arbitrary voice cloning through Ollama. Those limits should shape a first prototype rather than disappear behind a general claim of open speech AI.</p><p>The next useful step is a reviewed sample pack: several plain-English paragraphs, difficult domain terms and one short narration scene, all with saved versions and text. Add a small playback interface only after the audio passes inspection. If that works, expand language and deployment scope deliberately, checking the relevant checkpoint's rights and runtime requirements each time.</p>"
+    }
+  ],
+  "useCases": [
+    "Prototype paragraph-level read-aloud lessons with visible source text.",
+    "Add optional local speech to app feedback or reviewed assistant replies.",
+    "Produce reviewable WAV narration drafts for an existing video edit."
+  ],
+  "limitations": [
+    "Ollama launch support is Apple Silicon macOS; alternate runtime paths are separate.",
+    "40M checkpoints use CC BY-NC 4.0 and the multilingual upstream files display an access condition.",
+    "API input is limited to 4096 characters; long-form prosody remains limited.",
+    "Voice packaging and formatting guidance differ between public pages.",
+    "No weights, synthesis, listening test or performance benchmark were run."
+  ],
+  "sources": [
+    {
+      "id": "creative-ollama-speech-models",
+      "title": "Speech models in Ollama",
+      "url": "https://ollama.com/blog/speech-models",
+      "accessedAt": "2026-10-26T19:03:18.954Z",
+      "publishedAt": "2026-10-24",
+      "locator": "Launch; performance; languages; API; Get started",
+      "supports": "Ollama integration date, launch platform and vendor measurements"
+    },
+    {
+      "id": "creative-ollama-speech-docs",
+      "title": "Ollama speech guide",
+      "url": "https://docs.ollama.com/capabilities/speech",
+      "accessedAt": "2026-10-26T19:03:44.184Z",
+      "publishedAt": null,
+      "locator": "Setup; terminal; formats; limits",
+      "supports": "Documented request limits, streaming and error behavior"
+    },
+    {
+      "id": "creative-phonon-model",
+      "title": "Ollama Phonon library",
+      "url": "https://ollama.com/library/phonon",
+      "accessedAt": "2026-10-26T19:03:34.524Z",
+      "publishedAt": null,
+      "locator": "Readme and model table",
+      "supports": "Checkpoint choices, license distinctions and documentation conflicts"
+    },
+    {
+      "id": "creative-phonon-31m-card",
+      "title": "Gradium Phonon 31M English model card",
+      "url": "https://huggingface.co/gradium/phonon-31m-en",
+      "accessedAt": "2026-10-26T19:03:44.941Z",
+      "publishedAt": null,
+      "locator": "Details; license; limitations; platforms",
+      "supports": "Architecture, parameter qualifier, permissive license and long-text limits"
+    },
+    {
+      "id": "creative-phonon-40m-card",
+      "title": "Gradium Phonon 40M Multilingual model card",
+      "url": "https://huggingface.co/gradium/phonon-40m-multilingual",
+      "accessedAt": "2026-10-26T19:03:45.273Z",
+      "publishedAt": null,
+      "locator": "Access notice; details; license",
+      "supports": "Noncommercial license, languages and upstream access condition"
+    },
+    {
+      "id": "creative-phonon-voices",
+      "title": "Gradium Phonon voice catalogue",
+      "url": "https://huggingface.co/gradium/phonon-voices",
+      "accessedAt": "2026-10-26T19:03:45.701Z",
+      "publishedAt": null,
+      "locator": "Phonon voices and Files",
+      "supports": "Upstream catalogue scope, distinguished from Ollama package contents"
+    }
+  ],
+  "images": [],
+  "judgment": "A promising local speech component for bounded English prototypes; language expansion and production use require checking checkpoint rights and testing actual playback behavior.",
+  "researchNote": "Public primary-source research in Chrome on October 26, 2026. Full relevant page text, retrieval timestamps and SHA256 archives retained for review. Documented behavior and proposed workflows are distinguished from tests; no tool was installed or executed. Publisher benchmark and savings claims were not independently reproduced."
+}
