@@ -5515,15 +5515,15 @@
   {
     "id": "scan-20261028T193734Z-788cac",
     "startedAt": "2026-10-28T19:37:34Z",
-    "finishedAt": null,
-    "status": "acquisition_complete",
+    "finishedAt": "2026-10-28T20:15:34Z",
+    "status": "complete",
     "windowStart": "2026-10-23T18:58:19Z",
     "windowEnd": "2026-10-28T19:37:34Z",
     "sourcesChecked": 150,
     "sourcesFailed": 2,
     "candidatesFound": 132,
-    "publishedCount": 0,
-    "coverageNote": "Feed acquisition finished. Manual sources and candidate decisions must be accounted for before this becomes a complete scan.",
+    "publishedCount": 38,
+    "coverageNote": "Accounted for all 152 monitored sources: 150 accessible (4 successful feeds, 31 complete manual windows, 115 partial windows) and 2 failed visits. All 26 new feed candidates and 106 additional discoveries have dispositions: 132 current candidates total; 97 prior candidates were reconsidered, including each assigned oldest backlog group. Eight included candidate records consolidate into seven new reports; 31 existing reports remain unchanged. Current candidates: 6 included, 41 excluded, 85 needing review. Reconsidered prior candidates: 2 included, 14 excluded, 81 needing review. Four discovery workers, coordinator research and offline accounting/integrity checks supported the scan. Four separate fresh-context gpt-6-astra/high invocations produced 18 independent reviews, including fresh reviews after two report revisions. All final gates pass; 100 project tests passed. No advertised product execution or independent benchmark replication; token usage and monetary cost were not measured.",
     "limitations": [
       "seed-meta-ai: Partial coverage; Visible latest-news cards were June/July 2026; this stale/sparse landing page did not establish September 18 onward historical coverage.",
       "seed-nvidia-developer: Partial coverage; Topic landing page and recent-post supplement inspected. Recent chronological list ended October 21; September 18 onward history not exhausted.",
@@ -5697,7 +5697,10 @@
       "No unchanged published report is edited. New evidence uses only new quantum and null-space source IDs, checked against published-report source IDs; reports array is intentionally empty.",
       "Broad discovery query and four snippet-only URLs were supplied by root in search-history.json. Three are proposed as unverified recurring release entrypoints; the Daily Launch day URL is a non-monitored dated listing, with no invented publisher homepage.",
       "New stories are a bounded editorial selection, not exhaustive coverage of every visible link. Navigation, account links, recommended communities, ads, unrelated politics, standalone hardware news and office/event chatter were not converted into story records.",
-      "seed-elevenlabs: Partial coverage; Inspected the public Featured listing and visible article cards. Its order is nonchronological and45 additional pages were not traversed; the outstanding historical window is incomplete. Integrity review corrected the initial full-window classification and restored the previous coverage watermark."
+      "seed-elevenlabs: Partial coverage; Inspected the public Featured listing and visible article cards. Its order is nonchronological and45 additional pages were not traversed; the outstanding historical window is incomplete. Integrity review corrected the initial full-window classification and restored the previous coverage watermark.",
+      "Novelty-judge-bench paper: The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected.",
+      "OpenAI Developer Blog was blocked by a Vercel checkpoint; OutYet returned Cloudflare 1033. Neither failure nor partial social/listing access establishes no news. All 115 partial and 2 failed source watermarks remain unchanged.",
+      "Carbon methodology remained uninspected after one focused recovery attempt; general Carbon access remains unconfirmed. NVIDIA FP8/NVFP4 card links returned 404. The available novelty-paper HTML ended in Appendix A.1.1 with a conversion error; no PDF was inspected. These limits remain explicit in the reports."
     ],
     "sourceIdsExpected": [
       "seed-openai-news",

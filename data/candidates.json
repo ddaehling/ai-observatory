@@ -10126,12 +10126,12 @@
     ],
     "runId": "scan-20261022T170517Z-9e6c72",
     "discoveryMethod": "chrome_official_listing",
-    "status": "needs_review",
+    "status": "included",
     "reportId": "ollama-fly-sprites",
-    "reason": "October 13 release plus current Fly connector documentation, storage/compute pricing and Ollama token rates acquired. Draft report now covers default-denied access, provider-path filtering, credential isolation limits, concrete educational/app/video workflows and separate costs; pending exact dual editorial review.",
+    "reason": "Consolidated into ollama-fly-sprites after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "reconsideredAt": "2026-10-28T19:59:59Z",
     "reconsiderationRunId": "scan-20261028T193734Z-788cac",
-    "decidedAt": "2026-10-22T17:15:00Z"
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "official-candidate-bbefdaefb76473f7",
@@ -23519,9 +23519,9 @@
     "runId": "scan-20261024T174829Z-815900",
     "researchPriority": "backlog",
     "discoveryMethod": "chrome_listing",
-    "status": "needs_review",
-    "reason": "Primary documentation, complete release changelog, operational FAQ and licenses inspected; baseline report proposed for alpha0.0.18, pending independent editorial reviews. No inference run.",
-    "decidedAt": "2026-10-28T19:55:09.339427Z",
+    "status": "included",
+    "reason": "Consolidated into pytorch-pointcloud after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "decidedAt": "2026-10-28T20:15:16Z",
     "inspectionLevel": "primary_page_inspected",
     "reportId": "pytorch-pointcloud",
     "reconsideredAt": "2026-10-28T19:59:59Z",
@@ -26384,9 +26384,10 @@
     "publishedAt": "2026-10-27",
     "discoveredAt": "2026-10-28T19:56:30.107652Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Primary launch, Express specification, SDK changelog and repository inspected. Distinct A2UI protocol story, with version/streaming cautions and experimental Jev illustration. Draft requires two fresh independent reviews.",
-    "reportId": "a2ui-express"
+    "status": "included",
+    "reason": "Consolidated into a2ui-express after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "reportId": "a2ui-express",
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "official-candidate-a92d7b7ef0e2da4d",
@@ -26397,9 +26398,10 @@
     "publishedAt": "2026-10-28",
     "discoveredAt": "2026-10-28T19:56:30.107652Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Primary launch and expanded pricing footnote inspected; current Fairwind page remains Argon-specific. Draft distinguishes announced restricted rollout, vendor benchmarks and future general access; awaits two independent reviews.",
-    "reportId": "gemini4-carbon"
+    "status": "included",
+    "reason": "Consolidated into gemini4-carbon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "reportId": "gemini4-carbon",
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "repos-lfm3-family",
@@ -26410,12 +26412,13 @@
     "publishedAt": "2026-10-27",
     "discoveredAt": "2026-10-28T19:43:38.107Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Full primary article, six posttrained cards, base card, files and exact license inspected. Draft report ready for independent reviews; no inference tests.",
+    "status": "included",
+    "reason": "Consolidated into liquid-lfm3-specialized-multimodal after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "changeType": "new",
     "reportId": "liquid-lfm3-specialized-multimodal",
     "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-blog.dom.json",
-    "researchArchiveSha256": "bc696b6ebeae6d47929c93be0d7d866bc8467981ef9d4013ecfb3b8082269246"
+    "researchArchiveSha256": "bc696b6ebeae6d47929c93be0d7d866bc8467981ef9d4013ecfb3b8082269246",
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "repos-fibo-edit-turbo",
@@ -26591,10 +26594,11 @@
     "publishedAt": "2026-10-28",
     "discoveredAt": "2026-10-28T19:55:27.596510Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Primary announcement, full model/dataset cards, license, actual BF16 file listing, vLLM guide and hosted price inspected. FP8/NVFP4 links returned 404 despite card availability wording; draft foregrounds offline scope and deployment gap. Pending two independent editorial reviews.",
+    "status": "included",
+    "reason": "Consolidated into nemotron35-transcribe after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "changeType": "new",
-    "reportId": "nemotron35-transcribe"
+    "reportId": "nemotron35-transcribe",
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "creative-candidate-745d9b9bc70db35e",
@@ -27118,13 +27122,13 @@
     "publishedAt": "2026-10-27",
     "discoveredAt": "2026-10-28T19:55:09.339427Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Primary paper v3, announcement, code and dataset inspected; substantial report proposed, subject to two independent reviews.",
+    "status": "included",
+    "reason": "Consolidated into novelty-judge-bench after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "changeType": "new",
     "discoveryMethod": "chrome_listing",
     "researchPriority": "current",
     "inspectionLevel": "primary",
-    "decidedAt": "2026-10-28T19:55:09.339427Z",
+    "decidedAt": "2026-10-28T20:15:16Z",
     "reportId": "novelty-judge-bench"
   },
   {
@@ -27594,8 +27598,8 @@
     "publishedAt": null,
     "discoveredAt": "2026-10-28T19:42:58.825Z",
     "runId": "scan-20261028T193734Z-788cac",
-    "status": "needs_review",
-    "reason": "Consolidate the LFM3 family discovery with the report based on the directly inspected LiquidAI release and model cards. This alternate Liquid AI blog URL was observed in a listing, not opened, and is not used as verified evidence. Publication remains subject to both current Astra approvals.",
+    "status": "included",
+    "reason": "Consolidated into liquid-lfm3-specialized-multimodal after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "researchPriority": "backlog",
     "discoveryMethod": "bounded_public_listing",
     "evidenceStatus": "unverified_discovery_lead",
@@ -27610,7 +27614,8 @@
         "archiveSha256": "3a812965031d3132211627569084f121c6ba361fefc748a4c204ae995d969f2f",
         "scope": "Rendered public main/listing; bounded visible scope, historical window incomplete."
       }
-    ]
+    ],
+    "decidedAt": "2026-10-28T20:15:16Z"
   },
   {
     "id": "social-candidate-dcad83d827337ce8",

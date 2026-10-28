@@ -1,11 +1,11 @@
 {
   "reportId": "novelty-judge-bench",
-  "reviewerId": "/root/edition_20261028_astra_a",
+  "reviewerId": "/root/edition_20261028_r2_astra_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:49.176604Z",
-  "reportHash": "d1f407ad9d5792471cbd1a1fd99e194b1b86e7ac9f3324dd7b5a0cae1669291b",
-  "evidenceHash": "41615f37fe16f0c58bfa1a900b6e3ee0c6af90a8e1be1e2e6f863943f0fe8830",
+  "reviewedAt": "2026-10-28T20:14:24.378405Z",
+  "reportHash": "cd078667ed2a2f179b5f093bb7785781d940c7d9bc1f57ff580dcbbc0d359e2f",
+  "evidenceHash": "a51776d73f38866ba23918c34554795f2cf9ccbb70fb390b176a7f6714ae443a",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
@@ -13,20 +13,21 @@
     "usefulness": 7,
     "impact": 6,
     "novelty": 6,
-    "maturity": 6,
+    "maturity": 5,
     "openness": 7
   },
   "rationale": {
-    "usefulness": "Released data, prompt/configuration scripts and clearly described sensitivity tests give research-app builders and educators an actionable way to question novelty scores. The report preserves human review, distinguishes label accuracy from disagreement and proposes reasonable classroom, website and explainer uses.",
-    "impact": "The controlled study addresses an important component of automated research and exposes large same-input verdict reversals. One conference, extreme case selection, weak generated labels and limited configuration interactions bound how far the findings can reshape general AI evaluation practice.",
-    "novelty": "A reusable review-mining pipeline and controlled comparison on human versus generated ideas meaningfully extend the study of novelty judges. General judge prompt sensitivity and presentation bias are already established issues, so the new contribution is a focused benchmark and empirical characterization.",
-    "maturity": "The paper, public benchmark, scripts and documented aggregation/metric rules support a usable research evaluation artifact. It is not a validated production novelty oracle; generated labels, small expert checks, proprietary model dependence and missing released judge traces constrain reliability and replication.",
-    "openness": "Apache-2.0 code, ODC-BY data, explicit OpenReview attribution and visible configuration/reproduction instructions provide substantial transparency. Provider API costs and terms, absent raw judge outputs and limited original annotation validation prevent an exceptional reproducibility rating."
+    "usefulness": "The released examples, evaluation configurations and controlled prompt comparisons support concrete research-methods teaching and sensitivity audits of idea-screening apps. The report translates these into actionable website and video explanations while distinguishing labels, judgments and observed disagreement. Practical value is substantial for this defined audience, although educational and product outcomes have not been measured.",
+    "impact": "A controlled six-backbone study exposes a consequential weakness in a component used by scientific ideation systems, including author-reported large same-pair verdict reversals. That can change evaluation practice within AI-for-science. One conference, selected extremes, weak generated labels and no independent reproduction limit any claim of field-wide significance.",
+    "novelty": "The study combines review-text-derived novelty signals, generated-idea comparisons and systematic configuration changes in a reusable benchmark pipeline. This is meaningful differentiation within novelty evaluation. Prompt and presentation sensitivity of LLM judges are established prior concerns acknowledged by the paper, so the contribution is a focused extension rather than an entirely new evaluation paradigm.",
+    "maturity": "The paper, public data card and repository provide a usable research resource with setup and reproduction instructions. Reliability remains limited by weak generated labels, small single-expert checks, selected ICLR cases, limited interactions and missing released judge traces; no benchmark was executed for this review. It is suitable as a stress test, not a dependable novelty decision service.",
+    "openness": "Apache-2.0 evaluation code, ODC-BY data, explicit field provenance and documented configurations offer strong inspectability. Proprietary model APIs, paid reproduction, OpenReview attribution and model-output terms constrain portability. No judge verdicts, prompt/response logs, reasoning traces or retrieval transcripts are included, and the captured paper HTML omits later appendix material."
   },
-  "confidence": "high",
+  "confidence": "medium",
   "concerns": [
-    "No publication-blocking factual issue found. The report avoids presenting prompt variants as semantically identical and explicitly qualifies generated labels, single-call retrieval comparisons and unequal aggregation in cost comparisons.",
-    "Source limitation: the archived arXiv HTML conversion ends during Appendix A.1.1 and reports conversion errors. Main claims used in the report are supported by visible main text plus the release post/repository/dataset card; the archive should not be treated as a complete appendix or experimental-log record.",
-    "The repository README describes 28 difficult pairs plus 2 controls while the paper main text describes 25 plus 5. The report safely states 30 pairs concentrated on difficult errors without asserting either inconsistent split."
+    "Author-reported experiments have not been independently reproduced; model/configuration rankings should not be transferred directly to other domains or current production systems.",
+    "The generated negatives are weakly labeled and human pools come from selected extremes of one conference; the report appropriately separates label-dependent accuracy from observable disagreement.",
+    "The paper capture ends during Appendix A.1.1 with a conversion-error footer, and no PDF was inspected; the report explicitly discloses this access limit.",
+    "The archived repository describes the 30-pair expert sample as 28 errors plus two controls, while the paper describes 25 plus five. The report avoids that disputed breakdown and accurately states only the shared total and concentration on difficult cases; this is non-blocking for its present claims."
   ]
 }

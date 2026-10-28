@@ -47138,7 +47138,7 @@
     "feedUrl": null,
     "monitor": false,
     "lastCoverageAt": null,
-    "notes": "Public Chrome inspection archived."
+    "notes": "Public Chrome inspection archived. The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected."
   },
   {
     "id": "research-source-dd00ecfcf61554ff",

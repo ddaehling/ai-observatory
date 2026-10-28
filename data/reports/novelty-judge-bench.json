@@ -66,7 +66,8 @@
     "Generated lower-novelty labels are weak assumptions, not exhaustive expert judgments.",
     "One conference and extreme review selections; limited configuration interactions.",
     "No independent benchmark execution or learning-outcome study in this review.",
-    "API costs are historical experimental totals; no live reproduction quote."
+    "API costs are historical experimental totals; no live reproduction quote.",
+    "The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected."
   ],
   "sources": [
     {
@@ -117,5 +118,5 @@
   ],
   "images": [],
   "judgment": "A valuable inspectable stress test for research evaluators, with a narrower claim than automatic measurement of creativity.",
-  "researchNote": "Full primary paper, arXiv history, Ai2 announcement, repository and dataset card inspected in Chrome and archived. Study results are author-reported. Suggested educational, app, website and video uses are editorial proposals, not measured outcomes. No benchmark or advertised tool was executed."
+  "researchNote": "Primary paper’s available HTML, arXiv history, Ai2 announcement, repository and dataset card inspected in Chrome and archived. The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected. Study results are author-reported. Suggested educational, app, website and video uses are editorial proposals, not measured outcomes. No benchmark or advertised tool was executed."
 }

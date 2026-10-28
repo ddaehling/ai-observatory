@@ -15730,7 +15730,8 @@
         "event_at": null,
         "retrieved_at": "2026-10-28T19:42:57.205Z",
         "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
-        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8",
+        "capture_scope": "Main text, references, limitations, ethical considerations and Appendix A through A.1.1; subsequent appendix unavailable in rendered HTML; no PDF inspection."
       }
     ],
     "qualifiers": [
@@ -15740,7 +15741,8 @@
     "source_family": "Ai2 novelty evaluation",
     "status": "supported",
     "limitations": [
-      "Source documentation or author-reported research; no independent execution in this run."
+      "Source documentation or author-reported research; no independent execution in this run.",
+      "The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected."
     ]
   },
   {
@@ -15790,7 +15792,8 @@
         "event_at": null,
         "retrieved_at": "2026-10-28T19:42:57.205Z",
         "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
-        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8",
+        "capture_scope": "Main text, references, limitations, ethical considerations and Appendix A through A.1.1; subsequent appendix unavailable in rendered HTML; no PDF inspection."
       }
     ],
     "qualifiers": [
@@ -15800,7 +15803,8 @@
     "source_family": "Ai2 novelty evaluation",
     "status": "supported",
     "limitations": [
-      "Source documentation or author-reported research; no independent execution in this run."
+      "Source documentation or author-reported research; no independent execution in this run.",
+      "The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected."
     ]
   },
   {
@@ -15820,7 +15824,8 @@
         "event_at": null,
         "retrieved_at": "2026-10-28T19:42:57.205Z",
         "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
-        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8",
+        "capture_scope": "Main text, references, limitations, ethical considerations and Appendix A through A.1.1; subsequent appendix unavailable in rendered HTML; no PDF inspection."
       }
     ],
     "qualifiers": [
@@ -15830,7 +15835,8 @@
     "source_family": "Ai2 novelty evaluation",
     "status": "supported",
     "limitations": [
-      "Source documentation or author-reported research; no independent execution in this run."
+      "Source documentation or author-reported research; no independent execution in this run.",
+      "The available arXiv HTML covered the main text and Appendix A through A.1.1, then showed a conversion-error footer. Later appendix material was unavailable in that capture; no PDF was inspected."
     ]
   },
   {

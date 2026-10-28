@@ -1,31 +1,32 @@
 {
   "reportId": "ollama-fly-sprites",
-  "reviewerId": "/root/edition_20261028_astra_b",
+  "reviewerId": "/root/edition_20261028_r2_astra_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:22.833427Z",
-  "reportHash": "ae510eded2a4f6907d414887e9a9ca44dfa43789774112eafe0277262f80f866",
+  "reviewedAt": "2026-10-28T20:14:59.724469Z",
+  "reportHash": "5478da49ef49a8ddea9534acec1e1552e26e5529913622bd2310c32fcc6950ed",
   "evidenceHash": "95f22ea7fc7031e84d480390d7796742f89b3e3892f8a00f2b09789b792bd210",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 7,
-    "impact": 5,
+    "impact": 4,
     "novelty": 4,
-    "maturity": 6,
+    "maturity": 5,
     "openness": 4
   },
   "rationale": {
-    "usefulness": "The connector addresses a concrete need in educational coding labs and application workers: authorized model calls without distributing the provider key into every agent environment. Documented denial, identity and path-policy behavior plus separate compute/model prices make a bounded pilot practical; video examples appropriately concern surrounding software rather than media generation.",
-    "impact": "This is a meaningful operational integration within agent tooling, reducing one credential-management burden while preserving persistent work environments. It does not establish a new model capability or a general solution to agent safety, and no measured reliability or adoption effect is available.",
-    "novelty": "The Ollama-specific integration is useful, but a credential-holding gateway with identity-based policy is an established architecture. The distinctive value is how it fits persistent Sprites and model access, rather than a new isolation or inference method.",
-    "maturity": "Two provider sources describe a coherent setup flow, access policies, failure codes, billing and persistence behavior. That is reasonably developed operational documentation. No actual authorization, revocation, checkpoint, isolation or billing test was performed, so dependable end-to-end operation remains unverified.",
-    "openness": "Public REST documentation, OpenAI-compatible requests and ordinary Linux workloads help inspectability and some portability. The actual environment and gateway are hosted services requiring accounts, provider credentials and separate cloud usage; no open implementation or offline equivalent is established by the reviewed evidence."
+    "usefulness": "The archived Ollama walkthrough and Fly connector documentation support a concrete way to avoid distributing provider keys among agent environments. The report turns that into an actionable deny/grant/revoke trial, a constrained programming lab, application validation and retry considerations, private/public website access choices, and a human-reviewed transcript workflow. It correctly distinguishes proposed educational and video uses from tested outcomes. These are useful building blocks, although they require accounts, engineering and paid services rather than being ready-made teaching or production applications.",
+    "impact": "This is a practical integration between an existing hosted execution platform and model inference service. Central credential management and default-denied access can improve agent operations, but the evidence demonstrates no new model capability, measured reliability gain, adoption, or experimentally verified security improvement. Its potential significance is therefore limited to a defined infrastructure workflow rather than a major advance in AI development.",
+    "novelty": "The particular Ollama-to-Sprites integration and documented combination of persistent environments with identity-aware model access are distinctive product additions. The underlying credential gateway, encrypted storage and access policies are conventional infrastructure patterns, and the archives contain no comparative evidence establishing technical uniqueness or superiority.",
+    "maturity": "Primary sources document setup, policy precedence, API-only path restrictions, concrete gateway errors, SDK usage, persistence and pricing, which makes a bounded trial plausible. No advertised software was executed, and the report appropriately leaves isolation, revocation latency, recovery, SDK edge cases and bills unverified. Documentation establishes usability with material limits, not dependable production behavior.",
+    "openness": "Public documentation, ordinary HTTP endpoints and an OpenAI-compatible client pattern provide meaningful inspectability of the interface. The reviewed evidence does not supply the hosted gateway implementation or a reproducible self-hosted equivalent; usage depends on Fly and Ollama accounts and paid cloud services. The report correctly separates model-weight rights from access to a service, so openness should remain below the midpoint despite the Ollama name."
   },
   "confidence": "high",
   "concerns": [
-    "Credential concealment does not prevent an authorized agent from spending inference or sending data through the gateway. The report correctly separates these authorities.",
-    "Pricing, idle compute behavior and filesystem checkpoints are documentary claims; no account or service behavior was exercised."
+    "Non-blocking: security, recovery and billing behavior are vendor-documented and untested; the report explicitly discloses that boundary and does not repeat the vendor claim that agents cannot leak keys as an independently audited guarantee.",
+    "Non-blocking: prices and concurrency are October 28 snapshots. Continued accuracy requires later rechecking; the present report dates them and distinguishes storage and inference from compute.",
+    "The archive byte hashes and all three current canonical input hashes match the supplied packet. This establishes input consistency, not independent verification of the service."
   ]
 }

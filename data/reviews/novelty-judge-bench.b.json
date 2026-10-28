@@ -1,11 +1,11 @@
 {
   "reportId": "novelty-judge-bench",
-  "reviewerId": "/root/edition_20261028_astra_b",
+  "reviewerId": "/root/edition_20261028_r2_astra_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:22.833427Z",
-  "reportHash": "d1f407ad9d5792471cbd1a1fd99e194b1b86e7ac9f3324dd7b5a0cae1669291b",
-  "evidenceHash": "41615f37fe16f0c58bfa1a900b6e3ee0c6af90a8e1be1e2e6f863943f0fe8830",
+  "reviewedAt": "2026-10-28T20:14:59.724469Z",
+  "reportHash": "cd078667ed2a2f179b5f093bb7785781d940c7d9bc1f57ff580dcbbc0d359e2f",
+  "evidenceHash": "a51776d73f38866ba23918c34554795f2cf9ccbb70fb390b176a7f6714ae443a",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
@@ -17,15 +17,17 @@
     "openness": 7
   },
   "rationale": {
-    "usefulness": "The benchmark and configuration comparisons offer a concrete classroom evidence-literacy exercise and a useful audit of idea-screening applications. The report keeps uncertainty, ties, literature evidence and human follow-up visible and treats its video explainer as a proposed use rather than an observed educational result.",
-    "impact": "Testing the novelty judge itself addresses an important weakness in automated research pipelines. Large same-input verdict reversals are consequential even with imperfect labels. One conference, extreme case selection and limited configuration interactions bound how far the results generalize.",
-    "novelty": "The explicit review-signal construction and controlled comparison on human and generated ideas add a meaningful domain-specific test. Prompt and presentation sensitivity of LLM judges were already known; the new contribution is the structured novelty-evaluation evidence and reusable benchmark.",
-    "maturity": "There is a paper, public dataset, reproduction scripts and clearly described scoring/aggregation. Weak generated labels, a single expert sanity check and absent released judge logs constrain validation. It is ready as a research stress test, not as a dependable novelty oracle.",
-    "openness": "Apache-2.0 code and ODC-BY evaluation data expose prompts, fields and reconstruction paths. OpenReview attribution, proprietary output terms, API dependencies and unavailable judgment/retrieval traces prevent full reproducibility and unrestricted reuse."
+    "usefulness": "The release supplies inspectable benchmark instances, configurations and reproduction instructions for auditing novelty judges. The report gives concrete classroom exercises separating labels from predictions, sensitivity checks for idea-screening apps, evidence-oriented research website presentation and an accurately qualified video demonstration. It explicitly labels these adaptations as proposals and avoids automated student grading or claims of improved learning outcomes. Actual use still requires domain judgment and, for new judgments, provider access and budget.",
+    "impact": "The author-reported large same-input prompt reversals target an important component of AI research assistants and expose why novelty scores can be unreliable evidence of progress. That is a meaningful contribution within scientific-agent evaluation. Its significance is bounded by one conference, deliberately extreme human pools, weak labels for generated negatives, limited configuration interactions and no independent replication; the report does not establish field-wide effectiveness or transfer.",
+    "novelty": "Mining explicit review passages rather than only acceptance labels, pairing the resulting human pools with generated ideas, and systematically varying novelty-judge configurations provide a meaningful differentiated benchmark. The paper itself situates this alongside prior novelty evaluation and known LLM-judge sensitivity, so the contribution is a focused empirical and methodological extension rather than an entirely new capability.",
+    "maturity": "The repository README and dataset card document formats, configurations, API requirements and reproduction paths, supporting research use. Weak generated labels, single-expert checking of 30 selected pairs, unavailable judge-output traces and no independent execution limit confidence in readiness beyond bounded evaluation. The HTML capture ends during Appendix A.1.1, which the report explicitly discloses; no unavailable appendix details are needed to sustain its main claims.",
+    "openness": "The code is documented as Apache 2.0 and the public benchmark as ODC-BY 1.0, with OpenReview CC BY 4.0 attribution and model-output terms clearly identified. Data provenance, format alternatives and reconstruction instructions make the release substantially inspectable. Proprietary API dependencies, absent judge verdicts/logs/retrieval transcripts, third-party dedicated evaluators outside the repository and layered data terms prevent a near-maximal reproducibility score."
   },
   "confidence": "high",
   "concerns": [
-    "The expert sanity check covers only 30 deliberately selected pairs, and generated labels remain weak assumptions. The report appropriately separates accuracy from label-independent disagreement.",
-    "The captured arXiv HTML ends within Appendix A.1.1; the main-method findings and exact headline values are corroborated by the release article and dataset/repository, but the capture is not a complete rendering of all appendices or run artifacts."
+    "Non-blocking source discrepancy: the paper describes the 30 expert-checked pairs as 25 judge errors plus five controls, while the repository README says 28 errors plus two controls. The report responsibly states only the common supported total and concentration on difficult cases; it should not later add either precise split without resolving the discrepancy.",
+    "Non-blocking: benchmark-label accuracy is not independently established. The report correctly separates label-free disagreement from accuracy, identifies the substantive framing difference, preserves tie handling and discloses unequal aggregation in the dedicated-system cost comparison.",
+    "Non-blocking: the archived paper HTML includes main text and Appendix A through A.1.1, then a conversion-error footer. The report explicitly discloses that limitation and the absence of PDF inspection.",
+    "All three current canonical input hashes and the five referenced archive byte hashes match. This editorial approval is not experimental validation or independent reproduction of the reported results."
   ]
 }

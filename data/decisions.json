@@ -26295,5 +26295,69 @@
     "reason": "Preserved duplicate or secondary discovery of the same model as repos-beam-501b. The directly inspected primary model-card candidate remains deferred for the documented license, runtime and evaluation questions; this record does not independently establish availability or comparative performance.",
     "runId": "scan-20261028T193734Z-788cac",
     "decidedAt": "2026-10-28T20:01:14Z"
+  },
+  {
+    "candidateId": "official-candidate-82663ba79a1c687c",
+    "reportId": "ollama-fly-sprites",
+    "status": "included",
+    "reason": "Consolidated into ollama-fly-sprites after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "research-candidate-910b67410e3bc2a7",
+    "reportId": "pytorch-pointcloud",
+    "status": "included",
+    "reason": "Consolidated into pytorch-pointcloud after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "official-candidate-00217b8f4c7c46b7",
+    "reportId": "a2ui-express",
+    "status": "included",
+    "reason": "Consolidated into a2ui-express after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "official-candidate-a92d7b7ef0e2da4d",
+    "reportId": "gemini4-carbon",
+    "status": "included",
+    "reason": "Consolidated into gemini4-carbon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "repos-lfm3-family",
+    "reportId": "liquid-lfm3-specialized-multimodal",
+    "status": "included",
+    "reason": "Consolidated into liquid-lfm3-specialized-multimodal after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "creative-nemotron-transcribe-20261028",
+    "reportId": "nemotron35-transcribe",
+    "status": "included",
+    "reason": "Consolidated into nemotron35-transcribe after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "research-candidate-c92eee09f8eb0137",
+    "reportId": "novelty-judge-bench",
+    "status": "included",
+    "reason": "Consolidated into novelty-judge-bench after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
+  },
+  {
+    "candidateId": "social-candidate-d8989963e8e03233",
+    "reportId": "liquid-lfm3-specialized-multimodal",
+    "status": "included",
+    "reason": "Consolidated into liquid-lfm3-specialized-multimodal after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:15:16Z"
   }
 ]
