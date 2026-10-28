@@ -1,0 +1,121 @@
+{
+  "id": "novelty-judge-bench",
+  "title": "Old Ideas, Novel Problems: stress-testing the AI judge of originality",
+  "entity": "Ai2 novelty-judge-bench",
+  "category": "Research",
+  "tags": [
+    "research evaluation",
+    "LLM judges",
+    "education",
+    "scientific discovery"
+  ],
+  "summary": "An open benchmark shows novelty judgments changing with prompts and evaluation design, while weak labels limit what its accuracy scores can establish.",
+  "changeType": "new",
+  "publishedAt": "2026-10-27",
+  "discoveredAt": "2026-10-28T19:55:09.339427Z",
+  "updatedAt": "2026-10-28T19:55:09.339427Z",
+  "officialUrl": "https://allenai.org/blog/novelty-bench",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A benchmark for the judge itself",
+      "html": "<p>Ai2’s Old Ideas, Novel Problems asks a practical question for anyone building a research assistant: how much of an idea’s apparent originality comes from the idea, and how much comes from the evaluator? The October 27 announcement accompanies a public benchmark and code. The paper first appeared on October 1 and reached version three on October 26. This is a new Observatory report on that release, not a claim that the underlying research began this week.</p><p>The authors find that plausible changes to a novelty judge’s instructions can reverse many decisions on identical inputs. Their central contribution is a controlled way to expose that sensitivity. It is useful for developers who use model scores to filter brainstorming output, compare research agents, or choose which ideas deserve expensive experiments. A convincing explanation and a confident score are not enough to establish that the evaluation procedure is dependable.</p><p>This report is based on the paper, release post, repository and dataset card. We did not run the benchmark or independently verify the novelty of its ideas. The measured results below are the authors’ findings; the suggested educational and product workflows are our applications of those findings. The study does not establish that every model, every research field or every retrieval system behaves the same way.</p><p>Sources: <a href=\"https://allenai.org/blog/novelty-bench\">Can we trust LLMs to judge whether a research idea is novel? | Ai2</a>; <a href=\"https://arxiv.org/abs/2610.02022\">[2610.02022] Old Ideas, Novel Problems: The Instability of LLM-Based Novelty Evaluation</a>.</p>"
+    },
+    {
+      "id": "study-design",
+      "title": "What the benchmark actually measures",
+      "html": "<p>The researchers mined ICLR 2026 reviews for passages explicitly praising or disputing a contribution’s originality. The stronger human pool contains 154 ideas from accepted papers in the top rating decile of their research area, with positive novelty signals and no negative signal. The weaker pool contains 145 ideas from rejected papers near the opposite end of the ratings, with negative signals and no positive one. Additional contribution-score criteria apply. These are deliberately separated cases, not a representative sample of ordinary borderline submissions.</p><p>The Human-Only setting compares those two pools. Human+Generated instead compares the 154 stronger human ideas with 154 ideas from a simple Claude Sonnet 4.5 generator. That generator receives a research area and an instruction to propose an idea, without literature access, tools, iterative feedback or an elaborate agent scaffold. The assumption that its ideas are less novel supplies weak labels. It is not a comprehensive human judgment of every generated proposal, nor a test of the strongest contemporary discovery agents.</p><p>Claude Opus 4.6 also helps construct the benchmark: it selects reviewer excerpts, removes experimental-result claims from human abstracts and creates common-format research plans. That processing is documented rather than hidden behind a supposedly pristine human dataset. A separate check agreed with the polarity of 47 out of 50 sampled review signals. A single expert reviewed 30 human/generated pairs, concentrated on difficult judge errors, and preferred the human idea in all thirty. Those checks increase confidence in parts of the construction without validating every label or eliminating dependence on one conference’s judgments.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>; <a href=\"https://huggingface.co/datasets/allenai/novelty-judge-bench\">allenai/novelty-judge-bench · Datasets at Hugging Face</a>.</p>"
+    },
+    {
+      "id": "results",
+      "title": "Read the prompt result with its conditions",
+      "html": "<p>The six main judge backbones are GPT-5.1, GPT-5.2, GPT-5.4, Claude Sonnet 4.5, Claude Opus 4.5 and Claude Opus 4.6. The authors vary one design choice at a time around a reference configuration. They test individual binary judgments and comparisons between two ideas; these are different tasks with different metrics. The study also examines reasoning effort, related-work retrieval, idea formatting, the generator supplying weaker ideas and aggregation of repeated judgments.</p><p>The most striking example compares two pairwise prompts on Human+Generated. One says reviewers found exactly one idea novel; the other simply asks which idea is novel. For GPT-5.4, reported accuracy moves from 93.5 percent to 40.9 percent, a 52.6 percentage-point difference. The paper reports that 55.8 percent of actual verdicts change. The wording supplies different framing, so this should not be described as a meaningless punctuation change. It is a consequential design choice that a builder could plausibly make without realizing its effect.</p><p>Accuracy depends on the benchmark labels; disagreement between two judgments of the same pair can be observed without trusting those labels. That distinction is especially valuable here. Weak labels limit confidence in a precise ranking of configurations, while the reversals still demonstrate instability. Common-format rewrites do not make the effect disappear in the authors’ tests. Nor does a prompt that works well for one judge reliably improve another. Validation therefore belongs to the complete configuration and input distribution, not just the model’s name.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>.</p>"
+    },
+    {
+      "id": "retrieval",
+      "title": "Why extra machinery needs its own evaluation",
+      "html": "<p>The reference pointwise decision aggregates three calls. Pairwise judging uses three calls in each presentation order, producing six votes; an even split becomes a tie. Strict pairwise accuracy gives ties no credit, while a separate soft metric gives half credit. A product team can materially change apparent quality by omitting uncertain cases or changing this rule, even without improving any individual judgment. Keep abstentions and ties visible when comparing your own systems.</p><p>Standard retrieval supplies five related abstracts with a publication cutoff. In the reported study it helps some configurations, does little for others and can hurt. A stronger agentic retrieval comparison uses GPT-5.6 Sol with extra-high reasoning and iterative search restricted to arXiv; all judges in that comparison run once per idea. Its reported 0.78 macro-F1 trails the 0.89 Claude Opus 4.6 comparison. This is evidence about those setups, not proof that literature search is unnecessary or that additional inference never pays off.</p><p>The authors also compare Idea Novelty Checker and AI Scientist under their original settings. In the Human+Generated example with Opus 4.6, a low-reasoning prompted baseline with three-call voting reaches 0.854 macro-F1 for a reported total of $2.59, against 0.642 for $30.66 and 0.772 for $82.05 for the dedicated systems. These are experiment totals under the paper’s configurations and prices, not current service quotes or per-idea charges. The unequal aggregation and different pipelines matter. No saving for a reader’s workload has been measured.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>; <a href=\"https://allenai.org/blog/novelty-bench\">Can we trust LLMs to judge whether a research idea is novel? | Ai2</a>.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What is available to inspect and reproduce",
+      "html": "<p>The public repository contains the evaluation implementation, configuration files, controlled-change scripts and instructions for reconstructing the dataset from another conference cycle. The released data is also available through the Hugging Face dataset interface in abstract and purpose/mechanism plan formats, with pointwise and pairwise configurations. Each configuration has one test split. The card explicitly says it is evaluation data, not material for training or fine-tuning a judge.</p><p>Code is licensed under Apache 2.0. The dataset is under ODC-BY 1.0, with reviewer excerpts attributed to OpenReview under CC BY 4.0. The card states that proprietary model outputs may also be subject to Anthropic and OpenAI terms, and describes intended research and educational use. These layers should travel with any redistribution. A permissive code license does not erase the provenance of the data fed into it.</p><p>Re-running model judgments requires access to the chosen provider APIs and a budget for those calls. Rebuilding the benchmark or adding retrieval introduces additional services and configuration. Reading the paper and inspecting the released rows can happen before making those commitments. The released dataset does not contain judge verdicts, prompt/response logs, reasoning traces or retrieval transcripts. The repository documents reproduction paths, but our review did not establish an independently reproduced result or complete archival access to every experimental run.</p><p>Sources: <a href=\"https://github.com/allenai/novelty-eval\">allenai/novelty-eval: Benchmark and controlled study of LLM-based novelty judges for research ideas. Code and data for &quot;Old Ideas, Novel Problems&quot; (arXiv 2610.02022)</a>; <a href=\"https://huggingface.co/datasets/allenai/novelty-judge-bench\">allenai/novelty-judge-bench · Datasets at Hugging Face</a>.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A useful classroom exercise",
+      "html": "<p>For a research-methods class, use a small set of released examples to teach the difference between a label, a prediction and an explanation. First show students the idea text without reviewer signals or model provenance. Ask them to identify what prior work they would need before deciding whether the contribution is new. Then reveal the dataset’s rationale and have the class discuss which evidence supports the label and which questions remain open. This avoids treating the benchmark as an answer key for all scientific creativity.</p><p>A second exercise can compare two judge prompts while holding the examples, model version and inference settings fixed. Students record the original verdict, the changed verdict and the reason supplied each time. Count changes separately from correctness. Preserve the items where the system ties or declines to decide; removing them would teach the wrong lesson about reliability. If an instructor actually runs the exercise, record its cost and settings rather than importing the paper’s budget figures.</p><p>These are proposed activities, not learning-outcome findings from the study. The paper evaluates research-idea judgments, not student attainment, grading fairness or the quality of classroom feedback. A student’s proposal should not be rejected because an automated score is low. The educational value lies in examining evidence and measurement choices, with human assessment of the work itself.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>; <a href=\"https://huggingface.co/datasets/allenai/novelty-judge-bench\">allenai/novelty-judge-bench · Datasets at Hugging Face</a>.</p>"
+    },
+    {
+      "id": "builder-workflows",
+      "title": "Applications for apps, websites and video",
+      "html": "<p>For an idea-screening app, a useful prototype would store the candidate idea, the literature consulted, the exact judge configuration and an explicit uncertainty state. Run a small sensitivity panel before using scores to prioritize work: change framing, swap presentation order and compare a second reasonable configuration. If a proposal’s status changes, route it for review instead of silently choosing the most flattering result. This is a design proposal grounded in the failure mode; the paper does not validate a particular routing rule.</p><p>For a research website, present novelty as a claim with supporting comparisons. A reader should be able to open the relevant prior work, see the date boundary of the search and distinguish missing evidence from evidence of overlap. Display separate assessments for feasibility, usefulness and novelty rather than combining them into an unexplained overall score. An old idea can still make an excellent educational implementation; an apparently new idea may be impractical. The study focuses on novelty and does not measure those other dimensions.</p><p>A video producer could turn the same-pair prompt experiment into an explainer: introduce two ideas, show the initial decision, reveal the altered framing, then explain the label assumptions and unresolved literature questions. Use a reproducible local run if presenting fresh results, or label the numbers as the paper’s. Obtain appropriate permissions and preserve attribution for reused text. Such a video illustrates evaluator sensitivity; it should not imply that a dramatic reversal proves the machine understands creativity or proves one vendor universally unreliable.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "A research tool with a narrow, valuable lesson",
+      "html": "<p>The strongest use of this release is to audit a component that many research agents currently treat as authoritative. The benchmark makes it possible to ask whether a claimed improvement survives reasonable choices of prompt, input format and aggregation. That is a better engineering target than collecting a higher novelty number from a single convenient judge. Keep a separate set of domain-expert cases when adapting the method beyond machine learning research.</p><p>There are substantial limits: one conference supplies the human material, the selected extremes make this unlike routine peer review, generated negatives rely on an assumption, and only a small fraction of the full configuration space is tested. The authors acknowledge novelty is only one dimension of an idea. Their models and tasks also differ from a current production assistant using a newer model, curated sources and specialized human feedback.</p><p>Our judgment is to use the release as an inspectable stress test and teaching resource. It offers a concrete way to challenge an evaluation pipeline and a clear reason to retain human judgment for consequential research decisions. It does not provide a dependable automatic novelty oracle. The next useful step for a builder is a bounded evaluation on their actual ideas, with recorded disagreements and expert follow-up, rather than assuming the published ranking will transfer.</p><p>Sources: <a href=\"https://arxiv.org/html/2610.02022v3\">Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation</a>.</p>"
+    }
+  ],
+  "useCases": [
+    "Audit the sensitivity of a research-idea screening app.",
+    "Teach the difference between labels, judgments and source evidence.",
+    "Create a research website or video that exposes evaluator disagreement."
+  ],
+  "limitations": [
+    "Generated lower-novelty labels are weak assumptions, not exhaustive expert judgments.",
+    "One conference and extreme review selections; limited configuration interactions.",
+    "No independent benchmark execution or learning-outcome study in this review.",
+    "API costs are historical experimental totals; no live reproduction quote."
+  ],
+  "sources": [
+    {
+      "id": "research-source-c92eee09f8eb0137",
+      "title": "Can we trust LLMs to judge whether a research idea is novel? | Ai2",
+      "url": "https://allenai.org/blog/novelty-bench",
+      "accessedAt": "2026-10-28T19:41:59.651Z",
+      "publishedAt": "2026-10-27",
+      "locator": "Announcement; Building a benchmark; Small changes",
+      "supports": "Release timing and reported study"
+    },
+    {
+      "id": "research-source-3fe3be08c01d2021",
+      "title": "[2610.02022] Old Ideas, Novel Problems: The Instability of LLM-Based Novelty Evaluation",
+      "url": "https://arxiv.org/abs/2610.02022",
+      "accessedAt": "2026-10-28T19:42:45.624Z",
+      "publishedAt": "2026-10-26",
+      "locator": "Submission history",
+      "supports": "v1 and v3 dates"
+    },
+    {
+      "id": "research-source-3f7ecd7eb9145a30",
+      "title": "Old Ideas, Novel Problems:The Instability of LLM-Based Novelty Evaluation",
+      "url": "https://arxiv.org/html/2610.02022v3",
+      "accessedAt": "2026-10-28T19:42:57.205Z",
+      "publishedAt": "2026-10-26",
+      "locator": "Sections3–5; Limitations; AppendixA",
+      "supports": "Methods, results, selection and label limitations"
+    },
+    {
+      "id": "research-source-dd00ecfcf61554ff",
+      "title": "allenai/novelty-eval: Benchmark and controlled study of LLM-based novelty judges for research ideas. Code and data for \"Old Ideas, Novel Problems\" (arXiv 2610.02022)",
+      "url": "https://github.com/allenai/novelty-eval",
+      "accessedAt": "2026-10-28T19:42:47.703Z",
+      "publishedAt": null,
+      "locator": "README: evaluation, reproduction, License",
+      "supports": "Code, API setup and reproduction scope"
+    },
+    {
+      "id": "research-source-1337281acb3b4b0b",
+      "title": "allenai/novelty-judge-bench · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/allenai/novelty-judge-bench",
+      "accessedAt": "2026-10-28T19:42:46.508Z",
+      "publishedAt": null,
+      "locator": "Dataset card: Intended use; Fields; Model-generated content; License",
+      "supports": "Configurations, licensing, provenance and missing judge traces"
+    }
+  ],
+  "images": [],
+  "judgment": "A valuable inspectable stress test for research evaluators, with a narrower claim than automatic measurement of creativity.",
+  "researchNote": "Full primary paper, arXiv history, Ai2 announcement, repository and dataset card inspected in Chrome and archived. Study results are author-reported. Suggested educational, app, website and video uses are editorial proposals, not measured outcomes. No benchmark or advertised tool was executed."
+}

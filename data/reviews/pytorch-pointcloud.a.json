@@ -1,0 +1,31 @@
+{
+  "reportId": "pytorch-pointcloud",
+  "reviewerId": "/root/edition_20261028_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:49.176604Z",
+  "reportHash": "402f27d2e407dc7ba3e27de113de2f4d01d6a89ce205e715ba95e6ebf51acc9f",
+  "evidenceHash": "1b6c7dba584a56903e0afbddb95802b247346813e741dd734694490e825173a6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "A shared model factory, registry, checkpoint transforms, packed batches and scene inferers reduce concrete setup work for teaching and 3D prototypes. The report accurately explains CPU/CUDA prerequisites, point-to-output mapping and separate viewer/rendering requirements for app, web and video uses.",
+    "impact": "Consolidating heterogeneous 3D research models behind inspectable preprocessing and data conventions is a meaningful potential improvement within point-cloud experimentation. The small independent alpha project and lack of executed interoperability tests limit the case for a larger AI-development impact.",
+    "novelty": "The project explicitly builds on timm, PyTorch Geometric and existing research architectures. Its contribution is integration, reusable transforms and registry convenience rather than a demonstrated new learning method.",
+    "maturity": "Version 0.0.18 is explicitly alpha, and the changelog records recent corrections to checkpoint preprocessing, architecture compatibility and octree collation. CPU CI and detailed documentation support experimentation, but do not establish broad GPU/kernel coverage or production dependability.",
+    "openness": "Apache-2.0 library code, public documentation, model metadata and detailed provenance notices support inspection and reuse. Gated downloads, noncommercial weights, research-limited datasets and compiled-kernel dependencies restrict universal portability and commercial reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No publication-blocking factual issue found. Baseline discovery, October 20 version date and independent stewardship are clear.",
+    "The third-party notice inventory does not itself settle every upstream permission. The report correctly retains separate checkpoint/data terms and does not claim a uniformly permissive model collection."
+  ]
+}

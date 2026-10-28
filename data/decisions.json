@@ -24493,5 +24493,1807 @@
     "reason": "Consolidated into ollama-phonon after two genuine independent gpt-6-astra/high approvals of the current report, evidence and rubric hashes; disagreement and length gates pass. Original candidate date and provenance remain preserved.",
     "runId": "scan-20261026T185819Z-680b48",
     "decidedAt": "2026-10-26T19:32:09Z"
+  },
+  {
+    "candidateId": "candidate-00427e47df5ef306",
+    "status": "needs_review",
+    "reason": "Read October 6 article and October 15 update: public mathematics outputs, some Lean formalizations, and $5M Simons initiative. A research-governance lead remains worthwhile, but proof manuscripts, correctness and expert response were not verified; internal-model results are not an available product.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-00427e47df5ef306.json",
+    "archiveSha256": "ea673fd145b74b77820af4b88403ec0ad32ed254332ccaeea04fa8c1d9b2e53d"
+  },
+  {
+    "candidateId": "candidate-004cd593adabcd24",
+    "status": "excluded",
+    "reason": "Read full SentinelOne case study. Eight hours versus four-to-six weeks is attributed to its executive, with human accountability emphasized; no reproducible comparison or newly available tool is established. Excluded as a testimonial rather than evidence of general performance.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-004cd593adabcd24.json",
+    "archiveSha256": "6399ecd5179a9a7bb039927c8818b0bd658b19c0568e737acd6492ee40a70ef6"
+  },
+  {
+    "candidateId": "candidate-061338e668ed6974",
+    "status": "needs_review",
+    "reason": "Read SBDC partnership announcement: initial plan to train about 150 advisors and reach at least 1,000 small businesses, with three-hour workshops and follow-up. Actual regional availability, workshop materials and outcomes still require primary program inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-061338e668ed6974.json",
+    "archiveSha256": "6ffb2a42defb252bbfd5fbc9ed0d33fd22ca708de8ed27d9ef29317fb704b155"
+  },
+  {
+    "candidateId": "candidate-0765deb144589280",
+    "status": "excluded",
+    "reason": "Read Airbnb agreement: expanded internal access through OpenAI APIs and Bedrock, with anecdotal iteration counts and executive feature-shipping claims. Does not document a public developer release or controlled effect.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-0765deb144589280.json",
+    "archiveSha256": "65f90856f90757ae71499039ee9e6faf1683bd732c81985b5502c3eb7d35cb5b"
+  },
+  {
+    "candidateId": "candidate-08ffdb24bebd9aa2",
+    "status": "needs_review",
+    "reason": "Read independent mathematics advisory-group announcement. It describes unpaid membership and advice on communication, not validation of all mathematical claims or oversight of internal training pace. Retain with later scientific-understanding release for a substantive research-governance investigation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-08ffdb24bebd9aa2.json",
+    "archiveSha256": "5249bf79563e6979b575c75cd7905bc2e46977cc687c2f893da0875156fd5166"
+  },
+  {
+    "candidateId": "official-candidate-27779e2e3a96ff05",
+    "status": "needs_review",
+    "reason": "Read full Cohere disclosure and released dataset card. Claim concerns Qwen3.8-Flash-Next, blocked synthetic probe upload, fewer than one in 100,000 evaluation calls and clean rerun. Separate prefill tests and released script condition on a 2,323-token prefix already containing the attempted upload command; they do not estimate ordinary deployment frequency. Script uses paid HF inference/Featherless and was not run. Intent, bucket ownership, independent reproduction and provider response remain unverified. Do not transfer the upload allegation to Qwen3.8-27B. Strong lead retained for dedicated review, not rejected because it is rare.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-27779e2e3a96ff05.json",
+    "archiveSha256": "60823de50d37851840c2e7504197db2bf49299bc801098e0884daddef37b5175"
+  },
+  {
+    "candidateId": "official-candidate-9a15b40232fdbf82",
+    "status": "needs_review",
+    "reason": "Read Polar Peaks announcement: ages 11–14, data cleaning/model testing, ten localized languages across AI Quests, teacher modules for first two quests while third follows next month. Actual activity, accessibility, terms and independent learning outcomes remain uninspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-9a15b40232fdbf82.json",
+    "archiveSha256": "0c6eeafdef768e017ef9767060586facf7e30e19863549031f9d0a9a83013f3d"
+  },
+  {
+    "candidateId": "official-candidate-368b6668ab3ae40a",
+    "status": "needs_review",
+    "reason": "Read native Markdown launch: upload .md to Drive; Google/Workspace accounts; Docs collaboration and version history without conversion. Article is clear, but file-fidelity round trip, supported constructs and permissions remain untested; retain as practical documentation lead.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-368b6668ab3ae40a.json",
+    "archiveSha256": "298268a59f286e65b3123f9ff40b234cd855f88b4e2b36469ac4c6152047438c"
+  },
+  {
+    "candidateId": "official-candidate-8cb5fe410e8dbe7e",
+    "status": "needs_review",
+    "reason": "Read Knowledge API ecosystem article: official documentation retrieval, grounded answers, gcloud commands, MCP skill, client libraries and batches up to20 documents. Access, quotas, costs and coverage require reference-document verification before a tutorial; no commands executed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-8cb5fe410e8dbe7e.json",
+    "archiveSha256": "a7195fdc046f1b1682a4982b9891fb264755ebfb9e2342a031317b9a3e9fea71"
+  },
+  {
+    "candidateId": "official-candidate-cea8f33fc210d7c8",
+    "status": "needs_review",
+    "reason": "Read video-diffusion attention case study. Article distinguishes isolated synthetic BF16 single-TPU kernel timings from routing/permutation/communication and explains sparse masks can initially be slower. Hardware-specific optimization needs code, licensing and end-to-end quality evaluation before a practical report; no broad speedup inferred.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-cea8f33fc210d7c8.json",
+    "archiveSha256": "539c81e3fe6ece6eaeafc8223956e74d506e4c88c32501caf2ad08d4ad52098e"
+  },
+  {
+    "candidateId": "candidate-2f8d9b98fc157bb3",
+    "status": "needs_review",
+    "reason": "Read four Academy learning pathways and assessment badges, including educators/students and developers. Direct course access, cost, duration and materials are still unverified; retain useful older education lead instead of asserting learning benefits.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-2f8d9b98fc157bb3.json",
+    "archiveSha256": "c163176fd22c71ab938bb7fbbec295796f5c56ed014e58a817be2195b3f9e95a"
+  },
+  {
+    "candidateId": "candidate-1dbe22633003a2af",
+    "status": "needs_review",
+    "reason": "Read MultiLangBench and COBOL migration announcement. SQLite-compatible implementation over20 languages differs from hidden byte-for-byte migration tests. Vendor scores and costs are not independently validated; repository recipe, license and practical integration need inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-1dbe22633003a2af.json",
+    "archiveSha256": "a182f8d0da71e21aa3a80bacad2cfbf537e7c176427e765ce54689c5fb6e7190"
+  },
+  {
+    "candidateId": "candidate-661f64ddb5f472a2",
+    "status": "needs_review",
+    "reason": "Read teen tools announcement. College Planner is described as coming soon for US grades10–12 and four-year colleges; multi-photo iOS capture is available and Android planned. Flashcards/quizzes described, but access and educational outcomes not tested. Preserve feature-specific timing instead of calling all features launched.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-661f64ddb5f472a2.json",
+    "archiveSha256": "8f60e9017d8fdcda13f1871058bf64b8ae61ac6196c76b28636a4b03dece9fb7"
+  },
+  {
+    "candidateId": "candidate-3d7b9aab56c8f4fe",
+    "status": "needs_review",
+    "reason": "Read benchmark announcement: synthetic conversations, more than80 licensed experts in22 countries, expert rubric and automated GPT-5.6 Sol grading. Benchmark scenario mixture is not usage prevalence or clinical outcome evidence. Paper, dataset license and grading validation remain required for coverage.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-3d7b9aab56c8f4fe.json",
+    "archiveSha256": "e7c22c272ffe57c4a7ea0354b986408a1f95c49ce873dd03df8aa09892605e36"
+  },
+  {
+    "candidateId": "official-candidate-f67921b9de44ef35",
+    "status": "needs_review",
+    "reason": "Read API Gateway MCP public-preview tutorial. Requires OpenAPI3.x; tools/list unauthenticated by default and JWT needed to protect discovery; tools/call inherits REST authentication. Resources/prompts, response streaming and Model Armor inspection are described as roadmap. Verify current docs and cost before publishing setup advice.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/official-candidate-f67921b9de44ef35.json",
+    "archiveSha256": "e9603d3bdda8ca756582d36c6e14ad25dc4c48aed6a37d0220fc04a5dc0d88ce"
+  },
+  {
+    "candidateId": "candidate-e2ed7680c50ae3f0",
+    "status": "excluded",
+    "reason": "Read authors’ scenario essay, explicitly their views rather than OpenAI institutional position. Speculative organizational futures do not establish a new product, capability or measured employment effect.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-e2ed7680c50ae3f0.json",
+    "archiveSha256": "3b7b4b16dcf7fa8ded6c625c962196cbcf5bf90a5c926ec79deea6e67e26573c"
+  },
+  {
+    "candidateId": "candidate-709cc8e2bd467b79",
+    "status": "excluded",
+    "reason": "Read Legora customer study. Time/ROI metrics are attributed customer observations, and the text chiefly illustrates existing legal workflows and prospective roadmap. No independently verified launch or controlled productivity effect established.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-709cc8e2bd467b79.json",
+    "archiveSha256": "19eb4c47c6ffba9947bbcd2fb2aed68867ea8e52fd022f60e4ab230d0b2934e8"
+  },
+  {
+    "candidateId": "candidate-1e3ebf94e41ebe19",
+    "status": "needs_review",
+    "reason": "Read Retell case study: voice-agent harness, human handoffs, vCX vendor benchmark, and account/region tooling. Useful product lead, but independent benchmark method, current product access and full costs require Retell primary documentation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-1e3ebf94e41ebe19.json",
+    "archiveSha256": "07eb68fa207c164ac4e258558d595b1f71b13d6b694db73f540596015d448d97"
+  },
+  {
+    "candidateId": "candidate-c417f8e3d39d0b89",
+    "status": "needs_review",
+    "reason": "Read Oracle partnership. AI Workspace is developing and other products described as designed to; U.S. Marketplace procurement is available. Avoid treating proposed integration workflows as generally launched. Verify Oracle docs, availability and permissions.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-c417f8e3d39d0b89.json",
+    "archiveSha256": "b3e703a0f856c7f907e8596fc22b9766ed446630a9dff11c5d98c4a75703d5e1"
+  },
+  {
+    "candidateId": "candidate-c44dc9ed271ff418",
+    "status": "excluded",
+    "reason": "Read Check Point Daybreak case study. Minutes-versus-hours is attributed to CTO; autonomous orchestration and remediation are future work. Excluded as testimonial without reproducible comparison or newly available general tool.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-c44dc9ed271ff418.json",
+    "archiveSha256": "b4d4112b96cee8167c68c696fdaa52e0d02fa9cd57db9e72ae7945595a9b98a2"
+  },
+  {
+    "candidateId": "candidate-a9c488820a62ac4a",
+    "status": "needs_review",
+    "reason": "Read Greptile case study: browser testing on PR development servers and MCP knowledge-base context are potentially useful. Actual product docs, access, pricing and representative failure cases need inspection; no customer outcome generalized.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-a9c488820a62ac4a.json",
+    "archiveSha256": "3a242a005376d58c310d6df6fdc98bfc6b564124ca6c42b8ea9f77bbdf649459"
+  },
+  {
+    "candidateId": "candidate-8eb6001a836a6e50",
+    "status": "needs_review",
+    "reason": "Read scientific-understanding release: distinct external shepherding for math, ETH and physics; public mathematical/ETH artifacts versus delayed physics materials. Claims are consequential and require manuscript/external-group review; no independent theorem validation performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-8eb6001a836a6e50.json",
+    "archiveSha256": "2cb66cf6d8a3244a8ca897fc39c51031cae70715f7e332adc7adb8af594f0f52"
+  },
+  {
+    "candidateId": "candidate-7d972df501d01ba1",
+    "status": "needs_review",
+    "reason": "Read CodeRabbit Secure description: cross-repository investigation, user-selected isolated exploit verification and proposed-fix PRs for human review. Vendor page supports workflow intent, but product prerequisites, access, costs and real false-positive burden remain unverified.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-7d972df501d01ba1.json",
+    "archiveSha256": "c6d2ef477573d2b275a8580ae571ef3b8599a8f370350c60081fafc9ff39ed55"
+  },
+  {
+    "candidateId": "candidate-742d30efdc4090c1",
+    "status": "excluded",
+    "reason": "Read Ultrafast internal-use article, which labels examples illustrative and internal. Response/investigation speed reports are staff anecdotes, not a new release or reproducible benchmark.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-742d30efdc4090c1.json",
+    "archiveSha256": "33afaaf2d08393cc8f5a88f4cf2d29bf114ac6d03b3cb7a31276a9d51ae5636b"
+  },
+  {
+    "candidateId": "candidate-35e334c198740f74",
+    "status": "excluded",
+    "reason": "Read Terra announcement and compared existing gpt61-terra report. Same availability, pricing and computer-use claims already covered; newly acquired feed entry does not warrant new ID, evidence, date bump or review invalidation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "reportId": "gpt61-terra",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-35e334c198740f74.json",
+    "archiveSha256": "17daaf7093f314e59d264eaf0af493b824eb89a3f234424a3610db10fbc2a3a4"
+  },
+  {
+    "candidateId": "candidate-db007afeffa315be-4a3ef1a8657b",
+    "status": "excluded",
+    "reason": "Read current Flint article and compared existing flint-interactive coverage. MCP, semantic events, external application updates and compiler separation remain within published story. Changed feed metadata alone provides no material update; retain report unchanged.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "reportId": "flint-interactive",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-db007afeffa315be-4a3ef1a8657b.json",
+    "archiveSha256": "0a8e90d2fb50447a9edcfc4847899ee660b0dfd0149298fc4e86ed6154fd104b"
+  },
+  {
+    "candidateId": "candidate-2b0a4f23c4eeb155-51b3c8b66ae3",
+    "status": "needs_review",
+    "reason": "Read Magnetar article: RISC-V zkVM, ordinary languages and vendor performance numbers. Feed revision is not a new launch; repository, paper, cryptographic assumptions and benchmark settings need deeper inspection before a practical report.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-2b0a4f23c4eeb155-51b3c8b66ae3.json",
+    "archiveSha256": "fd5c2e707ec8e728bd51766d5297f2448c91544a11987f9a1e2e5f206b75478f"
+  },
+  {
+    "candidateId": "candidate-e986592dff42085c-e862e2b89b0c",
+    "status": "excluded",
+    "reason": "Read Agent Lightning article and compared existing agent-lightning report. Same v1.0 proxy, real-harness training, Kubernetes and coding recipe covered. No material new claim identified from this metadata revision; preserve report and its approvals.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "reportId": "agent-lightning",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/candidate-e986592dff42085c-e862e2b89b0c.json",
+    "archiveSha256": "f02a8ed283a82bd205506ba752114e7383c13e9648bf571d496c288d8e763d31"
+  },
+  {
+    "candidateId": "official-candidate-dcad83d827337ce8",
+    "status": "needs_review",
+    "reason": "New primary listing describes six medicine-development partnerships. Outcomes, access and research methods not inspected; do not claim validated clinical acceleration.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-anthropic-news.json",
+    "listingArchiveSha256": "bd23564b77f44c07b13ce35c2799c7bd0f402927db215f7904b106f612012831"
+  },
+  {
+    "candidateId": "official-candidate-550f4d88633d4245",
+    "status": "needs_review",
+    "reason": "Listing announces40% government discount. Eligibility, terms and product exclusions need direct agreement inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-anthropic-news.json",
+    "listingArchiveSha256": "bd23564b77f44c07b13ce35c2799c7bd0f402927db215f7904b106f612012831"
+  },
+  {
+    "candidateId": "official-candidate-9a064d95901e645e",
+    "status": "excluded",
+    "reason": "Publisher listing is a corporate-financing announcement; outside practical tool/report selection in this edition. No securities inference.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-anthropic-news.json",
+    "listingArchiveSha256": "bd23564b77f44c07b13ce35c2799c7bd0f402927db215f7904b106f612012831"
+  },
+  {
+    "candidateId": "official-candidate-e97319d8730a2e80",
+    "status": "needs_review",
+    "reason": "New research listing offers knowledge-retention approach. Full paper, experimental design, code and deployment cost not inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/official-google-research-blog.json",
+    "listingArchiveSha256": "3e1f825199cf211158d4229ec02e336fbf1647f1d3fbefc3b11af5f743a5f7c7"
+  },
+  {
+    "candidateId": "official-candidate-56e9dcbcfbad0236",
+    "status": "needs_review",
+    "reason": "Primary listing describes prompt regression tests, model comparisons and scheduled evaluations. Detailed commands, grading validity and costs require primary tutorial/repository review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/official-google-developers-blog.json",
+    "listingArchiveSha256": "bfa6ee41c4be6942c6d713ab2dca34f632c1dc7ecddd680d96df48ad62d9997f"
+  },
+  {
+    "candidateId": "official-candidate-28c8d9a2bd9952a5",
+    "status": "needs_review",
+    "reason": "Observed listing summary oddly describes a publication template; full article needed to establish whether it is a usable prototype or editorial placeholder.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/official-google-developers-blog.json",
+    "listingArchiveSha256": "bfa6ee41c4be6942c6d713ab2dca34f632c1dc7ecddd680d96df48ad62d9997f"
+  },
+  {
+    "candidateId": "official-candidate-449070727cbfb984",
+    "status": "needs_review",
+    "reason": "Listing suggests GPU-sharing controls in Kubernetes. Hardware compatibility, enforcement guarantees and prerequisites unverified.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-a9a41b70941237e4",
+    "status": "needs_review",
+    "reason": "Relevant game/creative developer lead from NVIDIA listing. Hardware requirements, software release state and practical rendering examples need direct inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-5ed14fffd1748be8",
+    "status": "needs_review",
+    "reason": "Listing describes local-rules fine-tuning. Dataset, license, cultural evaluation and reproducibility not inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-b836eb939c37ffa5",
+    "status": "needs_review",
+    "reason": "Listing cites batch-size1 Ling evaluation; preserve conditions and verify article/hardware before any performance claim.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-edeae07ffd206303",
+    "status": "needs_review",
+    "reason": "AI-factory operations lead from listing; product availability, architecture and validation uninspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-c3d6fb64eb5418e8",
+    "status": "needs_review",
+    "reason": "Operations lead from listing; recovery boundaries, access and failure handling need direct documentation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-nvidia-developer.json",
+    "listingArchiveSha256": "213067655127f6c68d932b8495b87777872a27ee598e0585319e19ba1958ed91"
+  },
+  {
+    "candidateId": "official-candidate-1cb235fae63983df",
+    "status": "needs_review",
+    "reason": "Actual listing displays October29, later than scan windowEnd October28. Preserve future-dated publication field; do not present as an already occurred launch. Tutorial uninspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-cohere.json",
+    "listingArchiveSha256": "adc1a64ff71ff01a6d59d95fcc2d2ceeb4d68e093098b51ebb30cf8a9f3c5441"
+  },
+  {
+    "candidateId": "official-candidate-7f92c8b1f5edddb8",
+    "status": "needs_review",
+    "reason": "Publisher listing describes private-market data access. Licensing, entitlement and integration restrictions need direct inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-cohere.json",
+    "listingArchiveSha256": "adc1a64ff71ff01a6d59d95fcc2d2ceeb4d68e093098b51ebb30cf8a9f3c5441"
+  },
+  {
+    "candidateId": "official-candidate-af693a2279953713",
+    "status": "needs_review",
+    "reason": "New listing explains benchmark-first training. Dataset, methodology, release/license and baseline comparison uninspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "listingArchivePath": ".state/scan-20261028T193734Z-788cac/official/seed-ai21.json",
+    "listingArchiveSha256": "2e68e1495ae6f28fa5d473e6c16d996a1813e250402e736862aeba1633a8f2ab"
+  },
+  {
+    "candidateId": "official-candidate-0940a8b448fd6c4a",
+    "status": "needs_review",
+    "reason": "Broad discovery query surfaced an open coding-agent harness with terminal/SDK modes. Search result only; Chrome source inspection, license and current behavior not verified.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z"
+  },
+  {
+    "candidateId": "official-candidate-00217b8f4c7c46b7",
+    "status": "needs_review",
+    "reason": "Primary launch, Express specification, SDK changelog and repository inspected. Distinct A2UI protocol story, with version/streaming cautions and experimental Jev illustration. Draft requires two fresh independent reviews.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "reportId": "a2ui-express",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+    "archiveSha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+  },
+  {
+    "candidateId": "official-candidate-a92d7b7ef0e2da4d",
+    "status": "needs_review",
+    "reason": "Primary launch and expanded pricing footnote inspected; current Fairwind page remains Argon-specific. Draft distinguishes announced restricted rollout, vendor benchmarks and future general access; awaits two independent reviews.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:56:30.107652Z",
+    "reportId": "gemini4-carbon",
+    "archivePath": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+    "archiveSha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+  },
+  {
+    "candidateId": "repos-cloudflare-audit",
+    "status": "needs_review",
+    "reason": "Current README documents six phases, coverage-led hunting, independent record verification and zero-dependency validators. Eligible baseline report deferred in favor of the new LFM3 family; latest observed commit does not establish an October launch. No exploit validation or false-positive test performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-cloudflare-audit.json",
+    "researchArchiveSha256": "37e3abd1c8c286adbb138e401b41c4ae46d363b2be3198c457992500409a1a07"
+  },
+  {
+    "candidateId": "repos-graphify",
+    "status": "needs_review",
+    "reason": "Current README separates deterministic code AST parsing from semantic document/media processing, with local transcription and optional external model backends. Useful baseline deferred for LFM3; claims of cost savings, completeness and privacy were not tested, and mixed license labels require exact-term review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-graphify.json",
+    "researchArchiveSha256": "1eac5aa42f6129e48ee41bd6b6e84035b1a5a780c338492021223e6bf1d8b77a"
+  },
+  {
+    "candidateId": "repos-qwen-image-turbo",
+    "status": "needs_review",
+    "reason": "Card documents an eight-step, CFG-1 image pipeline with source Diffusers and version-specific requirements under qwen-research licensing. Preserve for a licensing and practical image-quality evaluation; no model execution.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-qwen-image-turbo.json",
+    "researchArchiveSha256": "dabd7fe83fa9706ac7ae2dd308a2288f431759da3c51c8c485012823dd669c6f"
+  },
+  {
+    "candidateId": "repos-release-open-webui-v0-12-3",
+    "status": "needs_review",
+    "reason": "Primary release describes temporary encrypted collaboration with setup prerequisites and limits. This is an October 16 historical release, not a new October 28 launch; no security audit, deployment or exact license assessment performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-open-webui-v0-12-3.json",
+    "researchArchiveSha256": "c7306c35b203b72e3eb84bafc5793922a53d1fccb352ba5a15c2d8842f71705f"
+  },
+  {
+    "candidateId": "repos-release-openai-codex-rust-v0-163-0",
+    "status": "needs_review",
+    "reason": "Release documents /config, steering, parallel reads and permission restoration. Preserve as a historical October 15 version-specific lead; no claim of parity with the current app and no execution.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-openai-codex-rust-v0-163-0.json",
+    "researchArchiveSha256": "d2fbb6e00131ce84e4e000b8328cda27cfd1b65aa5efa80c292c63098d4d1e8b"
+  },
+  {
+    "candidateId": "repos-release-sglang-v0-5-22",
+    "status": "needs_review",
+    "reason": "Release documents serving integrations, Python 3.11 floor and a hybrid-state correctness fix. Retain for a deployment comparison; publisher performance claims are not replicated and this earlier release is not evidence of LFM3-VL readiness.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-sglang-v0-5-22.dom.json",
+    "researchArchiveSha256": "5bbb8e19e4e17b44ec58dbc0384f212a89779058144ef80b8f4aa09e7890262d"
+  },
+  {
+    "candidateId": "repos-release-vllm-v0-32-0",
+    "status": "needs_review",
+    "reason": "Release documents System One endpoint, Python 3.10 removal, CORS/security and serving changes. Retain for a concrete deployment comparison; no runtime compatibility or benchmark reproduction performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-vllm-v0-32-0.dom.json",
+    "researchArchiveSha256": "ee572d6146a4425f5a8755c0e4308f24635a401a6e24e9d1c1a6fcf42312b52d"
+  },
+  {
+    "candidateId": "repos-candidate-07a9efc843a0e363",
+    "status": "needs_review",
+    "reason": "LFM2.5-24B-A2B card describes a 24B total, 2.45B active MoE with 128K context. Retain as a distinct larger deployment option; the new dense LFM3 family does not automatically supersede it. Hardware and quality untested.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-07a9efc843a0e363.dom.json",
+    "researchArchiveSha256": "df56434f0683f31fad66e5dcc786f824d15124f6b0650e54fe1d0b048d7e369e"
+  },
+  {
+    "candidateId": "repos-candidate-8bb4b5c800d43116",
+    "status": "needs_review",
+    "reason": "Reflection Beam card describes 501B total and 23B active parameters with long context and Apache-2 labeling. Retain pending realistic hardware, exact license and task-quality assessment; benchmark claims remain publisher-reported.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-8bb4b5c800d43116.dom.json",
+    "researchArchiveSha256": "f36fe9161c2289ab2be63b67443eb45b4d3896dc66894c350665120076b585ca"
+  },
+  {
+    "candidateId": "repos-candidate-2993e723595704db",
+    "status": "needs_review",
+    "reason": "Qwen3Guard-Stream requires Qwen3 token IDs or incremental retokenization for other tokenizers. Retain pending false-positive and integration testing; language coverage is a publisher claim, not safety validation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-2993e723595704db.dom.json",
+    "researchArchiveSha256": "fe8caaf393a8f0e4d07c713ce5eb85b7c8ef4e007426733348ee8d4c41fd35a6"
+  },
+  {
+    "candidateId": "repos-candidate-3cc50d0356230bcb",
+    "status": "needs_review",
+    "reason": "Qwen Image 2.1 card describes unified generation/editing, reference images and RGBA under qwen-research licensing. Retain pending exact license and output-quality assessment; no inference performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-3cc50d0356230bcb.dom.json",
+    "researchArchiveSha256": "6b391cf9036a61c32899380a661f3754de98bd7456cc41390843a22626025f00"
+  },
+  {
+    "candidateId": "repos-candidate-413e4ee860ab5e96",
+    "status": "needs_review",
+    "reason": "PE-I2I is a 9B prompt rewriter that produces JSON for a downstream image-editing model, not a standalone renderer. Retain pending end-to-end comparison and license review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-413e4ee860ab5e96.dom.json",
+    "researchArchiveSha256": "73182519e922cd948c147a5d953d984483fdabdce8fd732fef1cc7cae43ab34a"
+  },
+  {
+    "candidateId": "repos-candidate-5eedd09eb4922e0c",
+    "status": "needs_review",
+    "reason": "PE-T2I is a 9B prompt rewriter producing English prompts and aspect-ratio guidance for another image model. Retain pending downstream benefit and license assessment.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-5eedd09eb4922e0c.dom.json",
+    "researchArchiveSha256": "99a770d68115e432585ccf50926b70789263580dd39a02ecd588074d5e12aefc"
+  },
+  {
+    "candidateId": "repos-candidate-12b3f8153ee100f8",
+    "status": "needs_review",
+    "reason": "HyMemory is a memory-writing model integrated with external memory frameworks; fixed-subsample producer benchmarks do not establish a complete memory product. Retain pending retention, correctness and system integration review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-12b3f8153ee100f8.dom.json",
+    "researchArchiveSha256": "94facc5de5ed407546fc54fe639c05399d2a18e0fdc6b7325ffd20dafa21f515"
+  },
+  {
+    "candidateId": "repos-candidate-653d82f9a2953196",
+    "status": "needs_review",
+    "reason": "Nanbeige 4.3-33B card documents long context and reasoning controls; a forthcoming 3B model is not treated as available. Retain pending harness-specific performance and deployment verification.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-653d82f9a2953196.dom.json",
+    "researchArchiveSha256": "f12ea44047c1651223869633a5986d1022d4704a24363a2d158b8c1634a866ae"
+  },
+  {
+    "candidateId": "repos-candidate-02aa9de59f023db3",
+    "status": "needs_review",
+    "reason": "Fibo 2.0 dev card describes the full non-distilled image model; gated noncommercial access was not accepted. Planned multi-turn capabilities remain planned. Retain with access and licensing unresolved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-02aa9de59f023db3.dom.json",
+    "researchArchiveSha256": "30ba79055ca8fe430d374f7aa2938668cb91cb970cc588f0d55df7515e96c336"
+  },
+  {
+    "candidateId": "repos-candidate-9f011fc07ea5d69c",
+    "status": "needs_review",
+    "reason": "HySimulMT Interleave is an October 26 Chinese/English simultaneous translation release. Its advertised StreamLAAL lag is not time to first synthesized speech; voice output requires TTS integration. Retain pending full runtime and licensing evaluation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-9f011fc07ea5d69c.dom.json",
+    "researchArchiveSha256": "87b0196412148ff0335955f488fc5181e73dc285e8eff6b277883a12ee331fa8"
+  },
+  {
+    "candidateId": "repos-candidate-a1256d3bfaf174ed",
+    "status": "needs_review",
+    "reason": "HySimulMT card documents Chinese/English simultaneous speech translation and external TTS service requirements. Retain pending complete speech-path evaluation; no independent latency or voice-cloning test.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-a1256d3bfaf174ed.dom.json",
+    "researchArchiveSha256": "220128b1f434dbb4197baf90c4c838c08379e6438833d3f6531d900842fb974a"
+  },
+  {
+    "candidateId": "repos-candidate-e0f912e29433ade3",
+    "status": "needs_review",
+    "reason": "WeVis-One-VL-2B requires the separate mask decoder for pixel outputs and documents single-turn image use, with video grids rejected. Retain pending localization/matting quality and dependency licensing assessment.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-e0f912e29433ade3.dom.json",
+    "researchArchiveSha256": "23a9753edd003820c8231796941f18de9cd9f16c9f62f504c13ab67e37e11e0a"
+  },
+  {
+    "candidateId": "repos-candidate-357e277d150dab4c",
+    "status": "needs_review",
+    "reason": "capy-flash v0.7.5 offers opt-in hardware calibration; its notes report no meaningful win on two tested GPU configurations and potential token changes. Retain as historical context; newer v0.7.7 engine-stability fixes are the priority new lead.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:59:35.293480Z",
+    "reportId": null,
+    "researchArchivePath": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-357e277d150dab4c.dom.json",
+    "researchArchiveSha256": "9cad0cc7516f1adf1033bfe6c284fac5a90d7ab60cf9e311bbfa05724d80fca5"
+  },
+  {
+    "candidateId": "repos-lfm3-family",
+    "status": "needs_review",
+    "reason": "Full primary article, six posttrained cards, base card, files and exact license inspected. Draft report ready for independent reviews; no inference tests.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": "liquid-lfm3-specialized-multimodal",
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-fibo-edit-turbo",
+    "status": "needs_review",
+    "reason": "Card describes four-step edit-only inference and up to four reference images. Noncommercial gated weights were not accepted; planned multi-turn features remain unavailable claims. Retain for exact license and editing-quality evaluation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-ltx2-marking",
+    "status": "needs_review",
+    "reason": "Optional postprocessing watermark pack needs code from LTX-2 plus all required files; detector claims are not cryptographic provenance, and absent marks do not establish human origin. Retain for robustness and HDR-path assessment.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-muse-glimmer-30b",
+    "status": "needs_review",
+    "reason": "Card describes a 29.6B dense image/text model and quantized deployment targets. Retain pending exact license, memory and task-quality evaluation; paper date is not assumed to be model launch date.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-unlimited-ocr2",
+    "status": "needs_review",
+    "reason": "Card dates model release October 27 and training support October 28. Unlimited horizon is an architecture claim, not guaranteed accuracy at infinite context; documented hardware and custom serving requirements need evaluation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-minicpm-ocr",
+    "status": "needs_review",
+    "reason": "Chinese/English OCR model uses a document-layout pipeline and SDK. Retain for pipeline readiness and real-document tests; publisher RTX 5090 throughput depends on its concurrency and region-processing setup.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-qwen35-3d-coder",
+    "status": "needs_review",
+    "reason": "Independent community Three.js fine-tune, not an official Qwen release. Quantized preview is documented; October 28 full-FP16/report plans are not treated as completed. Retain pending data licensing, output quality and runtime assessment.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-ai-design-skills",
+    "status": "needs_review",
+    "reason": "Repository currently contains a landing-page design skill with intake and review guidance. Retain as a workflow baseline pending actual design-output comparison; roadmap skills are not counted as shipped.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-macro-workspace",
+    "status": "needs_review",
+    "reason": "Large AGPL-labeled workspace combines email, docs, tasks and agents with a substantial service stack. Retain pending exact licensing, deployment cost and access-boundary analysis; no accounts connected or services installed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-expo-skills",
+    "status": "needs_review",
+    "reason": "Official repository documents build, deployment and upgrade skills. Retain pending workflow validation and permissions review; external EAS service costs and entitlements remain separate from repository licensing.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "repos-capy-v0-7-7",
+    "status": "needs_review",
+    "reason": "Primary release fixes two engine-wide failures after a default-enabled reasoning-close retry, including repeated-prompt reuse. Maintainer reproduction is documented but unreplicated; priority operational lead over v0.7.5 calibration.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "reportId": null,
+    "decidedAt": "2026-10-28T19:59:35.293480Z"
+  },
+  {
+    "candidateId": "groq-muse-spark-preview",
+    "status": "needs_review",
+    "reason": "Reopened October 15 release and access page. Groq still describes limited preview requiring a use-case request and team contact; 131,072-token provider context must not be conflated with Together 1M. No access requested, endpoint exercised or price established. Retain for model/provider comparison after upstream license and endpoint verification.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-749c72ec6fc3d966",
+    "status": "needs_review",
+    "reason": "Reopened release and current post-training overview. Documented ModelResourcesClient allocations, downloadable checkpoints, SFT/DPO/GRPO, custom losses and GPU billing substantiate a real developer workflow. Exact model-mode restrictions, current GPU rates and resource teardown behavior still need focused research; no job provisioned. Deferred after two report selection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-82663ba79a1c687c",
+    "status": "needs_review",
+    "reason": "October 13 release plus current Fly connector documentation, storage/compute pricing and Ollama token rates acquired. Draft report now covers default-denied access, provider-path filtering, credential isolation limits, concrete educational/app/video workflows and separate costs; pending exact dual editorial review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z",
+    "reportId": "ollama-fly-sprites"
+  },
+  {
+    "candidateId": "official-candidate-af8f36dd91657736",
+    "status": "needs_review",
+    "reason": "Reopened article and current Clef model page: local requires Ollama 0.35.1+, cloud 0.40.6+; local table shows 18–20GB/256K while cloud shows 64K, and prose headline says 64K. Pricing lists $0.24/million input tokens. Distinguish deployment scopes; Apache 2.0 is provider-stated, upstream license not separately verified. Calibration and runtime remain untested; retain.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-bbefdaefb76473f7",
+    "status": "needs_review",
+    "reason": "Reopened September 29 release and Nimble model card. Card documents 1–64 questions, 2–26 choice/score options, 9.3–9.5GB displayed size, and explicitly says confidence measures probability concentration rather than chance of correctness. This narrows earlier calibration uncertainty; upstream license and real local performance untested. Retain for distinct local decision-model report.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-bed122782e163a9e",
+    "status": "needs_review",
+    "reason": "October 15 Together release still documents serverless/dedicated Muse Spark with 1M provider context. Groq limited preview currently offers 131,072 context, so endpoints cannot be generalized. Upstream model/license and actual modalities/access remain not validated; deferred provider comparison.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-e71412d1c91c0fe9",
+    "status": "needs_review",
+    "reason": "Reopened full September 23 tutorial: experimental Tev1 classification fine-tune and dedicated serving remain distinct expenses; article still contains inconsistent sample-count prose versus table total. No training executed or current dedicated cost established. Retain, with $17 only an attributed example training figure.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-f29a90bccdef39cc",
+    "status": "needs_review",
+    "reason": "Reopened October 16 Beam announcement. Temporary free cloud/ZDR offer remains described without a fixed end date. No endpoint call or upstream terms verification performed; cannot call access durably free. Retain as unresolved commercial-access boundary.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "official-candidate-f7259be819f33652",
+    "status": "needs_review",
+    "reason": "Reopened full canary article. Summary now explicitly describes a gate pausing, user cancellation, and reverse rollout after a 137% p95 regression demo; introductory automatic-rollback wording still requires careful reading. No endpoint deployment or API verification performed. Retain for operations-focused treatment.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-flux-action-20261022",
+    "status": "needs_review",
+    "reason": "Reopened complete 56,779-character September FLUX 3 Action primary overview. Links expose weights/code; claims concern 7B world-action robotics and task-specific training, not generic creative video. Benchmark protocol, embodiment adaptation and checkpoint license were not fully evaluated. Retain robotics research backlog.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-kyutai-other-research-20261022",
+    "status": "needs_review",
+    "reason": "Reopened full REKI project page and Kyutai dated listing. October 16 lead remains 2.4B public-data VLA with task fine-tuning, cached registers and benchmark-specific evidence. No robot, code or weight license evaluated; September distillation subtopics remain not separately reconsidered. Retain with combined-lead coverage limit.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-luma-claude-20261022",
+    "status": "needs_review",
+    "reason": "Reopened October 8 primary partnership: Motion beta on Team/Enterprise, Luma connector handoff and aspect-ratio transformations remain documented. Exact transfer, billing/export fidelity and present Anthropic access not independently tested. Retain narrow integration lead.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-pika-plugin-20261022",
+    "status": "needs_review",
+    "reason": "Reopened full October 16 plugin article. Desktop/web inline and side-panel tools, shared library, timeline operations and first-generation 250-credit promotion are vendor documentation. Current plan/model-specific rights and promotion eligibility not checked; no plugin activated. Retain.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-runway-integrations-20261022",
+    "status": "needs_review",
+    "reason": "Current complete changelog adds October 27 Runway Ads and dates App Studio October 26 (prior capture said October 23). Ads label says All Plans while copy says included with every paid plan. Existing canonical changelog candidate retained; access, hosting/export limits, ad account permissions and prices require focused research. No duplicate candidate added.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-multiplayer-nodes-20261024",
+    "status": "needs_review",
+    "reason": "Reopened October 22 full article, current pricing and terms. Enterprise live co-editing; all-plan view links expose graph/inputs but hide outputs/history; initiating-user billing, personal undo, last-edit-wins and five-day/five-minute snapshots remain concrete. No concurrent session tested. Ready for future collaboration report but two slots used for oldest Fly connector and today’s NVIDIA ASR; pricing/terms evidence not mutated because shared with unchanged krea-3 report.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-nemotron-transcribe-20261028",
+    "status": "needs_review",
+    "reason": "Primary announcement, full model/dataset cards, license, actual BF16 file listing, vLLM guide and hosted price inspected. FP8/NVFP4 links returned 404 despite card availability wording; draft foregrounds offline scope and deployment gap. Pending two independent editorial reviews.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z",
+    "reportId": "nemotron35-transcribe"
+  },
+  {
+    "candidateId": "creative-candidate-745d9b9bc70db35e",
+    "status": "needs_review",
+    "reason": "Broad discovery query led to public repository and release. Release documents Node.js 22+, provider-free local editing/browser MP4 export, FFmpeg prerequisites for MCP rendering, 30 tools and explicit marketplace separation. No installation, generation, export, license-file audit or paid provider-price check performed; preserve practical baseline lead.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-ab7f05d7f8820e73",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-2b5a65bb2d7b261c",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-3f7a02f61baa0f6f",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-86d5c961c2555e64",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-21dba7d7aef9326e",
+    "status": "needs_review",
+    "reason": "Full October 27 mini-app article inspected; eight task-specific operations, Solutions entry and Plus/Pro pricing are vendor-stated. Preservation and one-click speed claims untested; plan billing and current terms not separately checked. Strong workflow follow-up, deferred after two report cap.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-4b52e8b504a3ea89",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-5f0da083cf6cf6f8",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-33ac22b1cbde65ce",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-b6d2b8acaf2b4218",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-d4e4f6b416d848f3",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-db3c7d076df6fcfc",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-595831ce61ab3280",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-21b20e7a5d255c57",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-7f1654a8503ba934",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-3fb2259ab3e4a1f5",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-2085a4ee2a59a3dc",
+    "status": "excluded",
+    "reason": "Dated listing title is a practical guide, prompt list or vendor comparison, not evidence of a distinct new capability. Excluded from standalone launch coverage this edition; full article and comparative claims not evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-38369b763c4ac289",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-b6c52879eabc4fc5",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-9ab846d51748aaac",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-304241661cdb25ef",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-e7cedc9e55a0cf66",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-23addd04d5c68588",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-138699a478369f24",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-d6d02002ac1f5644",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-bfa11f6a7f71f6cf",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "creative-candidate-f458843fdf49319c",
+    "status": "excluded",
+    "reason": "Dated listing is a how-to, pricing explainer or vendor comparison of existing image/video capabilities. Excluded as a standalone launch report; not a judgment that the guide is inaccurate. Full article and any benchmark/commercial claims not independently evaluated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:27.596510Z"
+  },
+  {
+    "candidateId": "candidate-1d5fd2024caedd1b",
+    "status": "excluded",
+    "reason": "Read Oct9 link post: Deno acquisition/runtime maintenance is general infrastructure context; this bounded edition prioritizes a directly usable research evaluation release and point-cloud library. No AI capability validated by the post.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-21096782dd6c13ae",
+    "status": "needs_review",
+    "reason": "Read full secondary digest and launch/access discussion. Meta Muse Wonder is potentially material, but primary model access, safety documentation, benchmark conditions and current prices were not inspected; keep for primary follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-22732f8185e35596",
+    "status": "needs_review",
+    "reason": "Read Stacklok/Mecatl architecture interview. Cloud harness decoupling is a useful lead, but repository maturity, license and operational reliability still need primary verification; interview claims are not tests.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-23178e6a594364e0",
+    "status": "needs_review",
+    "reason": "Read creator description: static phone game exchanges state through audible chirps, with practice and duel modes. Device compatibility, microphone reliability and repository license were not tested; retain as a creative workflow lead.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-247153705736c57d",
+    "status": "excluded",
+    "reason": "Read conference report: finance-agent controls and predictions, without a newly verified general-purpose tool or evaluated educational workflow. Excluded editorially from this edition, not treated as false.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-2f5855ec66718315",
+    "status": "excluded",
+    "reason": "Read creator release note: Datasette process/port discovery and PID display. Narrow maintenance utility with no substantive AI capability or new educational workflow demonstrated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-305ba874f36ffe29",
+    "status": "needs_review",
+    "reason": "Read creator voice-driven Django feature-building account. Useful workflow anecdote, but not a controlled coding evaluation; exact product prerequisites and reusable implementation remain to verify.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-34013be11de2ae69",
+    "status": "needs_review",
+    "reason": "Read LaTeX tool description and prompt history. Shareable fragment-based document rendering is educationally relevant; runtime correctness, security and dependency licensing were not tested.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-39b03f627696e97f",
+    "status": "needs_review",
+    "reason": "Read llm-gemini release post. Plugin and Argon pricing claims need official release/pricing verification; anecdotal SVG output is not broad model validation.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-417c3a0572d8db45",
+    "status": "needs_review",
+    "reason": "Read Reflection Beam secondary digest. It describes promised open weights and benchmark claims; actual release artifacts, availability and license require primary inspection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-43abc94dd1f0ca28",
+    "status": "needs_review",
+    "reason": "Read AI Engineer NYC digest. It corrects earlier Argon-access reporting and states temporary pricing; primary dates/access and evaluation methodology still need verification.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-4531aaeb11d6a46b",
+    "status": "excluded",
+    "reason": "Read ttok1.0 creator note: default tokenizer changes, with GPT6 compatibility explicitly inferred rather than vendor-confirmed. Useful maintenance, insufficient standalone report value here.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-5af1a93eb20fb54c",
+    "status": "needs_review",
+    "reason": "Read collected NYT quotation about reported incomplete visa submissions. This secondary excerpt is insufficient to establish incident scope; preserve for original reporting/vendor containment follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-649989f895c2f016",
+    "status": "needs_review",
+    "reason": "Read Leash Bio interview introduction and Minos release description. Potential scientific evaluation lead, but primary preprint/dataset, assay design and licenses were not inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-7af93f3f2c1476c3",
+    "status": "excluded",
+    "reason": "Read cryptography quotation: author probabilities and preparedness argument, not a verified break or concrete released tool. Speculative commentary excluded from this report selection.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-7e80df2842c6c98c",
+    "status": "excluded",
+    "reason": "Read quoted pre-commit-hook workflow. One practitioner anecdote, without a reusable artifact or controlled success evidence sufficient for a standalone report.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-818cf62a3bb0a7f8",
+    "status": "needs_review",
+    "reason": "Read web-edit alpha description: private-network file editor motivated by keeping credentials outside an LLM. Current code, access controls and threat model need primary inspection before recommending.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-8b2cab1489374fa7",
+    "status": "needs_review",
+    "reason": "Read game-decompilation commentary. Preservation and commercial concerns are substantial, but broad capability and permission claims cannot be established from a quotation; retain original-source follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-9416b01a853f1769",
+    "status": "needs_review",
+    "reason": "Read math-manuscript digest, which explicitly calls results unverified commentator claims and model unreleased. Independent mathematical assessment and primary artifacts required; no breakthrough adopted as fact.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-9c11d7169c7fa53a",
+    "status": "excluded",
+    "reason": "Read profiling account: narrow Python3.15/web-edit workload with agent-generated measurements. Useful example but no independently reproduced or broadly applicable AI finding; retain as excluded sample.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-910b67410e3bc2a7",
+    "status": "needs_review",
+    "reason": "Primary documentation, complete release changelog, operational FAQ and licenses inspected; baseline report proposed for alpha0.0.18, pending independent editorial reviews. No inference run.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z",
+    "reportId": "pytorch-pointcloud"
+  },
+  {
+    "candidateId": "research-candidate-ccbf3815c57ba081",
+    "status": "needs_review",
+    "reason": "Read primary arXiv abstract/version history: May5 benchmark of 200 reconstruction tasks and9 models. Current publicity does not make it a new release; full methods, licenses and present relevance remain to verify.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-e07af33a171f3d04",
+    "status": "needs_review",
+    "reason": "Read digest. Headline extrapolates one hiring manager’s coding-interview practice; do not treat as company-wide policy. Other launches are secondary leads needing primary verification.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-d1002f7bd460f710",
+    "status": "needs_review",
+    "reason": "Read article/transcript describing managed-agent separation, API scaling and launch practices. Detailed first-person engineering account; primary architecture documents and current access need follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-519a2ea3479c3ef8",
+    "status": "excluded",
+    "reason": "Podcast version of the same Lesse/Jiang conversation as candidate-d1002f7bd460f710; retained as a separate feed record but not a second independent story or corroborating source.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-fd2619caa7d8b605",
+    "status": "needs_review",
+    "reason": "Read offline OpenCode/Ollama/Qwen walkthrough. Practical first-person case, with local dependencies and hardware constraints; exact model licensing, offline execution and output quality were not verified here.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-7f181e7a6811af55",
+    "status": "excluded",
+    "reason": "Read IPO digest. Financial/corporate headline is outside the selected practical educational/creative reports; quoted financial numbers have not been independently verified and are not adopted.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-e9a7a10b5a66f3aa",
+    "status": "needs_review",
+    "reason": "Read Octoverse summary and observed primary report link. Activity counts and LLM-assisted industry classification need methodology review; repository volume cannot itself establish productivity or code quality.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-7f577f4b01c6fc58",
+    "status": "needs_review",
+    "reason": "Read creator game-development essay. Four enjoyable browser games are a useful workflow lead, explicitly not an exhaustive study; game quality, licenses and transferable build costs need primary/demo review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-2cf23206607f40da",
+    "status": "excluded",
+    "reason": "Read collected engineering-leadership quote. Valuable adoption principle, but not a concrete new tool or empirically evaluated workflow for a standalone report.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-8333c89d9d7c203a",
+    "status": "needs_review",
+    "reason": "Read conference badge emulator account and creator links. Hardware-specific creative lead; source code, ROM prerequisites and reproducibility not independently checked.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-c15b1e3c66d84564",
+    "status": "excluded",
+    "reason": "Read secondary GPT6.1Terra post. Already represented by published gpt61-terra; anecdotal SVG examples and commentary do not establish a material report update. Existing evidence untouched.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-de56fb996b09bd29",
+    "status": "excluded",
+    "reason": "Read quotation about ChatGPT misrouting support requests. No primary incident sample or product change investigated; standalone quotation excluded from this bounded report edition.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-db71bb0ca35a8120",
+    "status": "needs_review",
+    "reason": "Read webframe evaluation summary: system WebView runner with CSP, viewport, hanging-load and metadata limitations. Original repository/security model and full experimental conditions still need review.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "candidate-e0e7f9f0f4ba064a-ff8cfb4ddb20",
+    "status": "needs_review",
+    "reason": "Read current Panache page for changed feed record. Creator describes an aesthetic French/steampunk fork and Apache2 origin; no independent comparison proving material new content since the prior candidate. Retain revision without publishing an activity bump.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-c92eee09f8eb0137",
+    "status": "needs_review",
+    "reason": "Primary paper v3, announcement, code and dataset inspected; substantial report proposed, subject to two independent reviews.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z",
+    "reportId": "novelty-judge-bench"
+  },
+  {
+    "candidateId": "research-candidate-b872ef868ca5f9e7",
+    "status": "needs_review",
+    "reason": "Broad domain search surfaced an October2026 peer-reviewed paper; primary abstract inspected. Hidden-state probing is potentially complementary, but full methods, access and cross-benchmark comparability remain unresolved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-631d06e03441509a",
+    "status": "needs_review",
+    "reason": "Article read as practitioner analysis; linked primary claims and generality remain to verify. Not treated as controlled validation or a new product launch.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-a9466646661807b3",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-4d751da36420117d",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-9b8a04c573ff3eb4",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-5dab8d862cc79034",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-a112ef51623eba48",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-c9930e2bbe338168",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-32119d4df56e27bb",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-c881629864a25b55",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-b296baf5aea9478c",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-dc18a5971029518a",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-ba0a3efaa982ad66",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-6f98f387b7ba33cf",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-516ddd3780520c81",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-aef86c944dbd2439",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-9c3cfb0a6c1e6349",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-bb1f2f07f5994d40",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-83a93c348b55de58",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-257d2044442d252a",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-490073e57670269a",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "research-candidate-a128891378e42ce0",
+    "status": "needs_review",
+    "reason": "Relevant observed listing lead. Primary methods, access, license and practical quality remain unverified; retained for bounded follow-up.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:55:09.339427Z"
+  },
+  {
+    "candidateId": "x-astra-pro-oct16",
+    "status": "needs_review",
+    "reason": "Complete October 16 originating post revisited after one loading repair: it announces faster Astra Pro responses, better plugin/tool use, parallel agents and Pro access in the Chat tab. Retain for a practical access/workflow investigation; the post does not establish current rollout limits or measured productivity, and its older announcement is not a fresh launch.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "x-live11-oct15",
+    "status": "needs_review",
+    "reason": "Complete October 15 originating post revisited after one loading repair: six language/voice updates are named for ChatGPT, Codex and dots, with rollout to all users and API still described as coming soon. Retain for current API/access documentation and audio evaluation; do not promote that future-tense API statement into present availability.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-40aea5f27156272b",
+    "status": "needs_review",
+    "reason": "Complete originating post and the October 19 primary article inspected. OpenAI reports MultiLangBench across 20 languages (Astra 87.4% average pass rate) and byte-for-byte COBOL migration tests (Sol 86.6% at low effort, 97.9% higher effort), and links its test suite. This is substantive vendor evidence for a migration workflow story; retain pending repository/test-design review and external replication, with production behavior parity and expert review required. No independent testing was performed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-3f941b6733db61b3",
+    "status": "needs_review",
+    "reason": "Complete originating post and primary research blog inspected. Anthropic describes eight computational primitives optimized with automated correctness/resource evaluators, including a 12-fold decoder gate reduction, and acknowledges search-broadening interventions. Retain as a substantive research lead; the linked paper, evaluator artifacts and circuit correctness/resource assumptions were not inspected, and this is not a demonstrated practical quantum computer or independently reproduced result.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-a6f105b638bfbfe6",
+    "status": "needs_review",
+    "reason": "Complete originating post and primary article inspected. Anthropic describes three access tiers and six embedded METR employees with employee-like access; publication cannot be vetoed but Anthropic retains defined redaction rights and decides category membership. Retain for an oversight/access analysis with evaluator-side documents; the arrangement is a restricted team under agreements, not a broad public evaluator programme or unrestricted publication guarantee.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-c421f855f080571f",
+    "status": "excluded",
+    "reason": "The current Hugging Face listing repeats the October 19 Local AI 202 speculative-decoding broadcast link. Exclude a standalone report this edition because the inspected material is an event listing without a transcript, runnable example or transferable lesson; the broadcast itself was not reviewed, so this is an editorial scope decision rather than a claim that it lacks useful content.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-345d8e5f90940161",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Qwen repeats the October 9 Qwen-Image-2.1-Turbo claim of eight denoising steps and open weights on the 7B architecture. Retain for primary weights, license and comparable quality/runtime checks; the unexpanded post and quoted earlier release do not establish these independently.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-5f4ac77c9e6ec179",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Qwen describes elastic GPU allocation between rollout and training, uninterrupted live executions and an up-to-1.85x claim. Retain for QwenGyre code, workload and training-scheduler analysis; only the visible opening of the October 12 post was inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-9829177b1069158e",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: the Qwen repost supplies meaningful conditions for TokenSpeed’s 685 output tokens/s per user—four NVIDIA GB300 GPUs and NVFP4—and names its blog/repository. Retain for serving configuration, workload and reproducibility checks; the figure is not evidence of consumer-hardware speed or an independent benchmark.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-b5cb20bfbe29ca46",
+    "status": "needs_review",
+    "reason": "The complete Dessa primary page was revisited. Block describes native full-duplex speech trained from conversation, faster-than-real-time inference and local use on an M4 Max or better, but offers early access to a small safety-research group. Retain as a restricted research preview; public weights, a general API, license terms, memory requirements and independently measured latency remain unestablished. Audio examples were not listened to or tested.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-e16222d83dd92652",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Anthropic’s October 23 posts explicitly acknowledge unauthorized internet actions during AISI cyber testing and point to both Anthropic and AISI analyses. Retain for paired primary-report review; the unexpanded post cannot establish incident causes, full chronology or safeguard effectiveness.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-f6a301346a05e615",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: the October 23 Anthropic post presents Claude-assisted formal verification as extending proof work to larger codebases. Retain for the actual verified properties, trusted components, code and human effort; the visible preview does not demonstrate that arbitrary generated software is bug-free.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-22e575a0c5d60e6f",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Hugging Face quotes OpenResearch integrating Trackio experiment logs and curves that an agent can read to decide subsequent experiments. Retain for repository, local-first setup, supported remote runners and practical reproduction; only the quoted preview was inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-c1ca3d5b95432217",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Adaptyv’s challenge 04 asks for a pH-sensitive TfR1 binder to support brain drug delivery. Retain for actual challenge rules, assay readouts and permitted uses; a mechanistic motivation in a truncated announcement is not evidence of drug delivery or clinical efficacy.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-1551fe7245b93788",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Twist reposts the October 22 chimera-formation article, claiming silicon-based synthesis can avoid pooled-assembly recombination errors. Retain for the linked experimental comparison and relevance to AI protein-screen interpretation; the article and assay data were not inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-556c379035a7f879",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: LightSeek’s October 23 post states day-zero MiniMax M3.1 Flash support using DSpark speculative decoding and MXFP8/NVFP4 mixed precision on Blackwell, with a deployment-guide link. Retain for the actual repository revision and reproducible serving setup; neither was opened or benchmarked.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-37fd1996ffd2859e",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: the iPhone-as-second-GPU post is visible again with a 29–44% Qwen 3.8 27B prefill claim. Retain for implementation, network overhead, baseline and full hardware details; no full post, code or timing experiment was inspected, so the percentage remains an author claim.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-5d7ccd3e1b0174be",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: the current LocalLLaMA listing again names Google Harness2 for self-improving agents. Retain for the actual repository, license and evaluation design; the title alone cannot verify the release, improvement claims or a usable agent workflow.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-6290922c900109aa",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Duetto’s author explains live MIDI accompaniment through hand-tuned logit biases, about one second of lookahead and replanning on chord changes, reportedly on Jetson Orin Nano. Retain for code, dependency/license and latency inspection; this is concrete author-described workflow evidence, not a reviewed performance demonstration.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-485266b93f66539b",
+    "status": "needs_review",
+    "reason": "Listing-preview assessment: Carbon-X is described as a 14.8B DNA/text model with an 80GB bfloat16 hardware footprint and explicit lack of clinical validation; the post directs exact sequence operations to code. Retain for the model card, license and benchmark methodology. The current capture substantiates the lead, not its comparative accuracy or biological reliability.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-4a05518eaee58548",
+    "status": "needs_review",
+    "reason": "Primary model card inspected after discovery in both Reddit listings. This is a third-party adaptation of frozen EmbeddingGemma 2 with a 2.37MB PCA/null-space audio head, not a new Google base-model release. Retain for independent reproduction and task-specific selection: all 30 MAEB tasks are single-run measurements, mode/gamma were chosen using test scores, SIBFLEURS and NMSQA regress sharply, full 768d audio is required and Gemma terms apply. No model code was executed; no existing EmbeddingGemma report update is proposed.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-a92d7b7ef0e2da4d",
+    "status": "excluded",
+    "reason": "Preserved independent community rediscovery of the same canonical article as official-candidate-a92d7b7ef0e2da4d. The primary-source candidate owns the evidence and editorial disposition; a second report is not warranted. The original listing observation remains preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z",
+    "duplicateOf": "official-candidate-a92d7b7ef0e2da4d"
+  },
+  {
+    "candidateId": "social-candidate-ec733f799e1aaee3",
+    "status": "excluded",
+    "reason": "Preserved independent community rediscovery of the same canonical article as creative-nemotron-transcribe-20261028. The primary-source candidate owns the evidence and editorial disposition; a second report is not warranted. The original listing observation remains preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z",
+    "duplicateOf": "creative-nemotron-transcribe-20261028"
+  },
+  {
+    "candidateId": "social-candidate-d8989963e8e03233",
+    "status": "needs_review",
+    "reason": "Consolidate the LFM3 family discovery with the report based on the directly inspected LiquidAI release and model cards. This alternate Liquid AI blog URL was observed in a listing, not opened, and is not used as verified evidence. Publication remains subject to both current Astra approvals.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z",
+    "reportId": "liquid-lfm3-specialized-multimodal"
+  },
+  {
+    "candidateId": "social-candidate-dcad83d827337ce8",
+    "status": "excluded",
+    "reason": "Preserved independent community rediscovery of the same canonical article as official-candidate-dcad83d827337ce8. The primary-source candidate owns the evidence and editorial disposition; a second report is not warranted. The original listing observation remains preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z",
+    "duplicateOf": "official-candidate-dcad83d827337ce8"
+  },
+  {
+    "candidateId": "social-candidate-550f4d88633d4245",
+    "status": "excluded",
+    "reason": "Preserved independent community rediscovery of the same canonical article as official-candidate-550f4d88633d4245. The primary-source candidate owns the evidence and editorial disposition; a second report is not warranted. The original listing observation remains preserved.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z",
+    "duplicateOf": "official-candidate-550f4d88633d4245"
+  },
+  {
+    "candidateId": "social-candidate-e960e8891f7d7ad8",
+    "status": "needs_review",
+    "reason": "The October 27 tracker entry describes native audio and live text steering, with trusted-tester access and later waitlist routes. Retain for the primary announcement and demonstrations; the tracker does not establish open access, measured consistency or a shipping general-purpose video tool.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-af8e72e013cbe8cf",
+    "status": "needs_review",
+    "reason": "The October 28 digest links a model-routing announcement and describes single-model, cascade and draft/review options. Retain for primary product scope, rollout, costs and controls; the destination was not opened and no behavior tested.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-6d6987e4078baa83",
+    "status": "needs_review",
+    "reason": "The digest says private tests carry 60% of the new index; Reddit also discusses changed rankings. Retain for the actual methodology and weighting, rather than adopting either the tracker’s framing or community accusations as findings.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-723372c8dc681795",
+    "status": "needs_review",
+    "reason": "The October 28 listing describes a randomized analyst study and an 86% alignment-with-agent-preference figure. Retain for study design, sample, tasks, intervention and denominator in the primary article; the statistic is not validated by this preview.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-b9b5de18e9156d54",
+    "status": "needs_review",
+    "reason": "HN and AI/TLDR describe a local assistant bundled with an offline emergency library. Retain for model, source provenance, update process and offline testing; no emergency-advice accuracy, safety or runtime claim is validated.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-ea41a986fe715307",
+    "status": "needs_review",
+    "reason": "The HN front page links Cursor’s Agent SDK announcement. Retain for primary API, sandboxing, billing and runnable examples; only the title and originating URL were inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-17a75de37df03bf6",
+    "status": "needs_review",
+    "reason": "The HN title describes evaluation on 50 professional tax assignments. Retain for task construction, scoring, expert baselines and jurisdiction; title-level evidence does not establish tax reliability or a usable professional service.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-9310336c0e60a4b8",
+    "status": "needs_review",
+    "reason": "The digest reports desktop plugins and a redesigned app. Retain for the tagged release notes, plugin permissions, migration issues and practical setup; no source code, binaries or UI were inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-6a406b3ef76720ef",
+    "status": "needs_review",
+    "reason": "The digest claims agent-assisted formalization of the Classification of Finite Simple Groups in 24 days. Retain for the actual proof repository, axiom/trust boundary, coverage and expert review; a tracker summary cannot establish the theorem has been fully verified.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-ed18f8ab0f26929a",
+    "status": "needs_review",
+    "reason": "The digest describes local PDF merge, compression, OCR and extraction through CLI/browser/agent surfaces. Retain for repository, license, platform support, OCR dependencies and document-quality tests; these capabilities were not tried.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-dc8a856f8c6596f8",
+    "status": "needs_review",
+    "reason": "The digest reports gateway OIDC options, hook limits and a file-overwrite fix. Retain for tagged release notes and migration relevance; no security-fix severity or correctness inferred from the listing.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-bd138645120f03ef",
+    "status": "needs_review",
+    "reason": "The digest describes a built-in Vertex AI provider and GPT-6.1 Terra support. Retain for exact tagged changes, authentication setup and platform availability; this is a release-note lead, not a tested integration.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-317a5d0e43830d0f",
+    "status": "needs_review",
+    "reason": "The public October 28 post links a release describing high-throughput full-length IgG characterization for AI/ML discovery. Retain for the full product specifications, assay turnaround conditions and costs; this is relevant wet-lab infrastructure rather than demonstrated AI model performance.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-8938477b06c48869",
+    "status": "needs_review",
+    "reason": "The October 26 public post links Challenge 05 KRAS G12D pMHC after an immunotherapy preview. Retain for exact competition instructions, deadline, assay and biological constraints; no submission was made and no clinical efficacy inferred.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-0e2691c4b1901f90",
+    "status": "needs_review",
+    "reason": "The visible Reddit post links the model card but says its author is only downloading it. Retain for actual architecture, weights/license, resolution and hardware requirements; no model performance is established by this discovery post.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-5ca8a1dd35781504",
+    "status": "needs_review",
+    "reason": "The visible release title links this model card. Retain for the primary card, intended role, dependencies, license and example quality; the title alone does not establish image-generation utility.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-f082afd87ecd7581",
+    "status": "needs_review",
+    "reason": "The author’s listing preview describes a minimal transformer-classifier implementation with manual gradients for learning attention/backward passes. Retain for code correctness, license and an executable teaching walkthrough; repository and linked notebook were not opened.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-4ff910e814416bc5",
+    "status": "needs_review",
+    "reason": "The author describes recording provenance before tool execution and probing argument copying from third-party text. Retain for harness design, threat model and reproducibility; this is not validated prompt-injection prevention.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-fbeadd81959a725b",
+    "status": "needs_review",
+    "reason": "The author describes 20 exploratory studies with source/results and mixed or negative outcomes, and discloses heavy AI help in planning/code. Retain for methodological and reproducibility review; the preview explicitly does not claim a performance breakthrough.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-a0d49b24cd3e2ace",
+    "status": "needs_review",
+    "reason": "The author reports that a fixed generic feedback line matches self-written critique gains on GPT-OSS-20B multi-step financial reasoning. Retain for paper/code, controls and uncertainty; the approximately three-point gain and token comparison are author claims from a listing preview.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-3e0bd91f6b4c2a8c",
+    "status": "needs_review",
+    "reason": "The detailed listing preview reports 40 synthetic clips, 18 human sessions and eight model configurations, with a narrow human advantage and insufficient separation for its intended CAPTCHA. Retain for primary protocol/data review; do not present the experiment as a robust security mechanism or general speech-model comparison.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-1ba9e5829d80ad66",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: a community post announces character references for Anima. Retain for actual adapter weights, license, supported pipeline and reproducible reference-consistency examples; no full post or assets inspected.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-65a3602450f0b103",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: the author claims a 0.5-to-2MP anime upscaler with roughly fourfold speed improvement and a full first pass. Retain for workflow graph, baseline, GPU, dependencies and image-quality comparison; neither speed nor fidelity was measured.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-929c05c39ed8af18",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: a community post says Krea2 BBOX training finished and models were released. Retain for actual weights, license and layout-conditioning documentation; the title does not establish a general Krea update or usable checkpoint.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "social-candidate-b2740093ffa81e9e",
+    "status": "needs_review",
+    "reason": "Listing-title assessment: an author reports successful character-LoRA training on RX 7900 XT 20GB with Windows/Fizgig. Retain for training settings, memory/time measurements and workflow files; no general AMD compatibility or reproducibility claim is verified.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T19:54:36.737680Z"
+  },
+  {
+    "candidateId": "repos-candidate-8bb4b5c800d43116",
+    "status": "excluded",
+    "duplicateOf": "repos-beam-501b",
+    "reason": "Preserved duplicate or secondary discovery of the same model as repos-beam-501b. The directly inspected primary model-card candidate remains deferred for the documented license, runtime and evaluation questions; this record does not independently establish availability or comparative performance.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:01:14Z"
+  },
+  {
+    "candidateId": "social-candidate-345d8e5f90940161",
+    "status": "excluded",
+    "duplicateOf": "repos-qwen-image-turbo",
+    "reason": "Preserved duplicate or secondary discovery of the same model as repos-qwen-image-turbo. The directly inspected primary model-card candidate remains deferred for the documented license, runtime and evaluation questions; this record does not independently establish availability or comparative performance.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:01:14Z"
+  },
+  {
+    "candidateId": "candidate-417c3a0572d8db45",
+    "status": "excluded",
+    "duplicateOf": "repos-beam-501b",
+    "reason": "Preserved duplicate or secondary discovery of the same model as repos-beam-501b. The directly inspected primary model-card candidate remains deferred for the documented license, runtime and evaluation questions; this record does not independently establish availability or comparative performance.",
+    "runId": "scan-20261028T193734Z-788cac",
+    "decidedAt": "2026-10-28T20:01:14Z"
   }
 ]

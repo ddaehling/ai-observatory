@@ -1,0 +1,31 @@
+{
+  "reportId": "liquid-lfm3-specialized-multimodal",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "9a1ff8f6b494714989a58fa0fb42d39ee44867f86554ed277486e39937c34ae6",
+  "evidenceHash": "8646344042e03478139c2498b7708d54e863daf2de2adfbb3b6df2ae2fcce6cf",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 5,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "The family provides actionable choices for text, worksheet images, short audiovisual review and typed routing. The report identifies exact context limits, dependencies, soundtrack flags and separate decision outputs, making a narrow educational or creative prototype concrete without claiming measured learning or editing outcomes.",
+    "impact": "A shared compact backbone spanning generative modalities and typed decisions is a meaningful advance for specialized and edge applications. The published checkpoints and recipes support experimentation, while publisher-only efficiency evidence and backend gaps do not establish a field-wide shift.",
+    "novelty": "The tri-hybrid backbone, small multimodal family and non-generative typed decision variants offer a distinctive combination. Omni soundtrack interleaving and the separate d1 answer schema are specific capabilities, but the components extend existing hybrid and decision-model approaches rather than establishing an unprecedented general capability.",
+    "maturity": "Public weights, detailed cards and Transformers examples provide a viable starting point. The VL serving detail explicitly says SGLang is in review and vLLM support is in progress; Omni SGLang is text-only, and d1 documents long-context and audio weaknesses. Those limits support an experimental-use rating rather than production confidence.",
+    "openness": "Weights, custom runtime code, parameter details and fine-tuning recipes are public and permit local inspection. The LFM Open License has a revenue-linked commercial restriction, and the report does not establish fully reproducible training data or equal runtime support across formats."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No inference, memory measurement or benchmark reproduction was performed. Warm compiled decision-model timings are not application cold-start latency.",
+    "The custom license and variant-specific runtime/modality limits remain adoption constraints, already clearly described in the report."
+  ]
+}

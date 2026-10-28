@@ -1,0 +1,154 @@
+{
+  "id": "nemotron35-transcribe",
+  "title": "Nemotron 3.5 Transcribe: turn recordings into reviewable learning and editing material",
+  "entity": "NVIDIA Nemotron 3.5 Transcribe",
+  "category": "Models",
+  "tags": [
+    "speech recognition",
+    "education",
+    "video editing",
+    "open weights",
+    "Granary v2"
+  ],
+  "summary": "A promptable offline speech model combines transcription, speaker labels, translation and audio questions. The public BF16 checkpoint is concrete; quantized download links remain unresolved at launch.",
+  "changeType": "new",
+  "publishedAt": "2026-10-28",
+  "discoveredAt": "2026-10-28T19:55:27.596510Z",
+  "updatedAt": "2026-10-28",
+  "officialUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A recording can produce several useful artifacts",
+      "html": "<p>NVIDIA released Nemotron 3.5 Transcribe and Granary v2 on October 28, 2026. The useful change for builders is a promptable checkpoint that can transcribe recorded speech, distinguish speakers, translate supported languages and answer questions about audio. A lecture replay, interview archive or video editing tool can ask for a particular written result instead of accepting one fixed transcript format. The accompanying data release exposes labels and preparation methods for adapting speech recognition. These are documented capabilities; this report did not run the model or upload a recording.</p><p>The <a href=\"https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B\">model card</a> describes 34 billion total parameters including the audio encoder, with approximately 4.3 billion active. Its product name contains 30B-A4B, which describes the family more loosely than the complete parameter table. The distinction matters when planning deployment: a small active count does not mean a four-billion-parameter download. The public file listing showed a 67.5 GB model.safetensors file. NVIDIA’s concrete BF16 quickstart uses one H100 with 80 GB of memory.</p><p>This is an offline recording model. Its one-hour audio support and 65,536-token context are training limits, not a promise that every hour-long recording will be processed without memory or quality problems. The internal encoder’s chunking does not make it a live streaming transcription service. A website should therefore present upload, processing and review states, and an app requiring immediate conversational captions should evaluate a different streaming path.</p>"
+    },
+    {
+      "id": "access",
+      "title": "What can actually be accessed today",
+      "html": "<p>The announcement, public checkpoint, files and deployment instructions were accessible without signing in. The <a href=\"https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B\">DeepInfra model page</a> also listed a hosted route at $0.002 per minute, marked BF16, with login required to use its demo. At that displayed rate, sixty minutes is $0.12 in model charges by simple multiplication. This is a provider-specific snapshot, not a full project budget: repeated attempts, storage, application hosting and human review are additional considerations. No hosted request was made, and account eligibility or billing minimums were not tested.</p><p>There is a material launch-day inconsistency. The announcement says quantized versions and the NeMo-Speech.cpp local route are coming soon. The model card says FP8 and NVFP4 variants are available and lists consumer-device combinations. Both quantized model links exposed by that card returned public 404 pages during this scan. Consequently, this report treats those specific download routes as unresolved. It does not present an RTX 5090, Jetson or small local device as a verified ready-to-run route.</p><p>The documented BF16 path is more concrete: vLLM 0.32.0, the current NeMo Speech main branch and the SpeechLM plugin, with model-specific serving flags. The card’s example disables the V2 model runner for word timestamps and adds timestamp middleware. Those details make this more involved than installing a generic speech package. A team should pin the model and runtime revisions it evaluates, record its configuration, and begin with one short authorized recording before increasing duration or concurrency.</p>"
+    },
+    {
+      "id": "prompting",
+      "title": "Specify the artifact before choosing the prompt",
+      "html": "<p>The most productive initial experiment is to decide what the recording should become. A research interview may need fillers and repetitions preserved. A lesson transcript may need readable punctuation while keeping the speaker’s words. Subtitles need timing and manageable display segments. A search index needs a stable text representation linked back to the original audio. These are different acceptance tests even when they originate from the same file.</p><p>The <a href=\"https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B#prompt-guide\">prompt guide</a> distinguishes verbatim and cleaned transcription, contextual vocabulary, speaker tags, translation and audio questions. It recommends leaving the system prompt empty for transcription and translation, with temperature zero and reasoning disabled. Audio understanding instead has a reasoning-enabled preset. A product can expose a few named modes and generate the corresponding instructions consistently; it need not ask every user to invent a sophisticated prompt.</p><p>For an educational recording, one proposed workflow is to request a faithful transcript first, review names and technical terms, then generate a separate concise answer to a specific question. Store the reviewed transcript and question response as different artifacts. An answer such as “what did the instructor conclude?” is an interpretation, so a reviewer should be able to replay the relevant audio. Do not silently replace the transcript with a fluent paraphrase just because the paraphrase reads better.</p><p>Vocabulary hints deserve a controlled test. Give the model a short list of relevant names or specialist terms and compare against the same audio without that list. Include examples where a tempting term is absent. The card warns that misleading context can push the output toward incorrect words. A useful evaluation records whether hints fix a spelling, introduce a false term, or merely change formatting. That establishes whether a glossary helps this particular archive.</p>"
+    },
+    {
+      "id": "languages-speakers",
+      "title": "Language support and speaker labels have boundaries",
+      "html": "<p>NVIDIA’s announcement specifies transcription in 40 languages, translation between English and 31 languages, and speaker attribution in 13. These scopes should remain separate in interface copy. The card’s task-by-language matrix is more useful than a single multilingual badge: for example, support for recognizing a language does not establish support for translating it or labeling its speakers. Audio understanding and spoken instruction following were evaluated only in English, so non-English question answering remains a separate validation task.</p><p>The release describes up to eight speakers, but a tag represents a voice within one recording rather than a verified person. In a classroom replay, label participants neutrally until an editor maps them to known names. Do not automatically carry “speaker 2” from one session into the next as though it were the same student. For a documentary interview, check overlaps, interruptions and off-microphone comments before assigning a quote to a person.</p><p>A concrete website prototype could show the recording beside a searchable transcript with clickable word times, a speaker filter and a visible correction control. Retain the original recognized text alongside corrections for the editor. For accessibility, test whether navigation lands close enough to the intended utterance and whether keyboard users can reach the audio controls. These are proposed application checks; the source’s timestamp support alone does not establish the usability of a finished player.</p>"
+    },
+    {
+      "id": "video-workflow",
+      "title": "Use it as an assistant to the edit",
+      "html": "<p>For video production, the strongest first use is an assistant editor’s transcript. Ingest a short interview, request speaker-tagged text and word times, inspect the results, then select candidate moments for a rough cut. An application can use approved selections to build markers or a subtitle draft. Keep the source video and its timing authoritative: transcription is evidence for finding material, not proof that an automatically chosen edit preserves the speaker’s meaning.</p><p>For a course author, try two outputs from one recorded lesson: a detailed transcript for reference and a reviewed list of topics for navigation. The topic list should link back to the recording, and the exported captions should be checked at natural pauses. A model’s word-level alignment is not itself an editorial subtitle policy; line lengths, reading speed, punctuation and speaker labeling still need product rules. This separation also makes errors easier to repair without regenerating an entire video.</p><p>For an app builder, begin with a job record containing the source identifier, selected task, language, vocabulary list, model revision and review status. Keep incomplete or failed jobs visible and let users retry deliberately. An hour-long file can be expensive to reprocess even when the per-minute price appears small. A short preview task before processing a collection can catch an unsupported language mode, a poor microphone or an unsuitable transcript convention early.</p>"
+    },
+    {
+      "id": "data-adaptation",
+      "title": "Granary v2 is a training resource with separate rights",
+      "html": "<p>The <a href=\"https://huggingface.co/datasets/nvidia/Granary-v2\">Granary v2 card</a> describes label manifests for multilingual speech, with a public release covering 463,062 hours, 48 languages and 16 source corpora. It does not bundle those source recordings. Users obtain audio separately from its distributors, under each source’s access terms. The release size is also not the model’s entire training mixture. Treating it as a complete reproduction kit would overstate what has been published.</p><p>Three transcript fields make the release instructive: a normalized verbatim form, an inverse-normalized form retaining disfluencies, and a cleaner inverse-normalized form. An educational exercise could take one authorized short recording and compare how those target conventions change the usefulness of its transcript. For an application, choosing the convention in advance can reduce apparent errors caused by scoring a readable transcript against a reference that spells out every number and hesitation.</p><p>The model uses OpenMDW-1.1. That agreement grants broad rights, requires preserving the agreement and applicable origin notices when distributing model materials, and does not add restrictions on generated outputs. It also leaves responsibility for other necessary rights and permissions with the user. Granary’s released materials generally use that license, with a People_Speech subset exception under CC BY-SA 4.0; source-audio licenses remain separate. An implementation should retain provenance by subset instead of flattening everything into a single “open data” label.</p><p>The launch article presents a domain-adaptation case study and links NeMo fine-tuning recipes. The sensible next step for a course platform is not to train immediately. Collect representative error cases, establish a fixed prompt baseline and hold out recordings from different speakers. Train only if recurring mistakes justify the extra data preparation and compute. Evaluate technical names, numbers and speaker attribution separately from aggregate word error rate, because a small error in a central concept can matter more than several harmless fillers.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "What the evidence does and does not establish",
+      "html": "<p>NVIDIA publishes extensive evaluations, but this scan did not reproduce them or independently verify the external leaderboards. Even the launch materials use different English WER summaries: the <a href=\"https://huggingface.co/blog/nvidia/nemotron-transcribe-granary\">announcement</a> reports 5.33%, while the inspected card presents a 4.71% mean across nine public sets with results captured October 12. This report does not reconcile those evaluation snapshots into one definitive score. The practical conclusion is that there is substantial disclosed evaluation material worth examining, not that every new recording will achieve a headline error rate.</p><p>The speed claims need the same care. The card attributes its highest throughput to an optimized NIM implementation using quantization and speculative decoding, and says those optimizations are not yet part of the open-source release. It expects the launch-day development integration to be slower. High-concurrency throughput on short clips should therefore not be promised as response time for a single long lecture, and neither number establishes performance on an ordinary laptop.</p><p>A practical evaluation should include clean speech, a noisy room, an interruption, an unfamiliar name and a recording with no useful speech. Choose examples from the actual application instead of assembling only easy demo clips. Have a reviewer mark omissions, invented words, wrong speaker assignments and timing errors. Record how long correction takes, because an apparently better transcript can still be a worse editing aid if its errors are difficult to find. Keep the original audio available while reviewing each correction.</p><p>Compare the same small set across the plain transcription preset, the contextual-vocabulary preset and any proposed cleaned-text mode. Use a separate set for the final decision so prompt tuning does not become the test itself. For a website, measure upload and queue time as well as model processing; for an internal video tool, measure the time to an approved subtitle draft. These product-level measures determine whether the integration is worth keeping. They are an evaluation proposal, not results obtained in this research.</p><p>The release is useful now for teams willing to evaluate an offline transcription service or operate a substantial GPU deployment. Its combination of task instructions, speaker information and adaptation materials could simplify the processing of educational recordings and editorial footage. The current deployment gap limits the immediate local-device story. A worthwhile trial would produce a reviewed transcript and navigation prototype from a small collection, with measured processing time, correction effort and per-job cost. No accuracy, export quality or operational reliability was tested for this report.</p>"
+    }
+  ],
+  "useCases": [
+    "Reviewed lesson transcripts with replay navigation",
+    "Speaker-tagged interview search and subtitle drafts",
+    "Domain-specific speech evaluation and adaptation"
+  ],
+  "limitations": [
+    "Documentation-based assessment; no inference or paid request performed.",
+    "Offline recordings only; task and language support differ.",
+    "FP8 and NVFP4 links returned 404 despite availability claims in the card.",
+    "Highest throughput belongs to optimizations not yet in the open release.",
+    "Granary manifests do not include source audio or the full training mixture."
+  ],
+  "sources": [
+    {
+      "id": "creative-source-ec733f799e1aaee3",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "accessedAt": "2026-10-28T19:43:24.444Z",
+      "publishedAt": "2026-10-28",
+      "locator": "Release; task coverage; access; Granary; evaluation qualifiers",
+      "supports": "Launch date and release scope"
+    },
+    {
+      "id": "creative-source-029f4f6cd7936fd2",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "accessedAt": "2026-10-28T19:43:54.542Z",
+      "publishedAt": null,
+      "locator": "Model Summary; Quick Start; Prompt Guide; language matrix; Efficiency; risks",
+      "supports": "Task behavior, deployment, scope and conflicts"
+    },
+    {
+      "id": "creative-source-4432158d51f28590",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B at main",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B/tree/main",
+      "accessedAt": "2026-10-28T19:45:45.810Z",
+      "publishedAt": null,
+      "locator": "Repository file listing",
+      "supports": "Visible BF16 artifact and size"
+    },
+    {
+      "id": "creative-source-430e69afd2eb5069",
+      "title": "Speech/docs/source/speechlm2/vllm_serving.rst at main · NVIDIA-NeMo/Speech",
+      "url": "https://github.com/NVIDIA-NeMo/Speech/blob/main/docs/source/speechlm2/vllm_serving.rst",
+      "accessedAt": "2026-10-28T19:43:56.785Z",
+      "publishedAt": null,
+      "locator": "Serving SpeechLM with vLLM",
+      "supports": "Timestamp and serving prerequisites"
+    },
+    {
+      "id": "creative-source-665652d89d229c0a",
+      "title": "nvidia/Granary-v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nvidia/Granary-v2",
+      "accessedAt": "2026-10-28T19:43:55.646Z",
+      "publishedAt": null,
+      "locator": "Hours by corpus; Getting the audio; License",
+      "supports": "Data composition and rights"
+    },
+    {
+      "id": "creative-source-b5bf1806465c82b3",
+      "title": "OpenMDW-1.1 | OpenMDW",
+      "url": "https://openmdw.ai/license/1-1/",
+      "accessedAt": "2026-10-28T19:44:18.808Z",
+      "publishedAt": null,
+      "locator": "OpenMDW-1.1 agreement",
+      "supports": "License obligations and output terms"
+    },
+    {
+      "id": "creative-source-ad9d5e90bb5000f6",
+      "title": "NVIDIA Nemotron 3.5 Transcribe 30B A4B API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "accessedAt": "2026-10-28T19:43:57.776Z",
+      "publishedAt": null,
+      "locator": "Price; demo; model information",
+      "supports": "Hosted rate and login boundary"
+    },
+    {
+      "id": "creative-source-bb2ac232217cee6f",
+      "title": "404 – Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+      "accessedAt": "2026-10-28T19:44:34.228Z",
+      "publishedAt": null,
+      "locator": "Public 404 response",
+      "supports": "Quantized route availability gap"
+    },
+    {
+      "id": "creative-source-67defea75217c222",
+      "title": "404 – Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4",
+      "accessedAt": "2026-10-28T19:44:34.651Z",
+      "publishedAt": null,
+      "locator": "Public 404 response",
+      "supports": "Quantized route availability gap"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded trial for recorded educational and editorial audio. Published deployment instructions and data transparency are useful, but unresolved quantized access and untested quality prevent a general local-device recommendation.",
+  "researchNote": "Primary pages inspected and archived in Chrome on October 28, 2026. Source publication dates differ from retrieval dates. No model, training recipe or example command executed; application workflows are original proposed uses."
+}

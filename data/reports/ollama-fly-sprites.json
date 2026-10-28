@@ -1,0 +1,117 @@
+{
+  "id": "ollama-fly-sprites",
+  "title": "Ollama and Fly.io Sprites: cloud model access without copying keys into agent computers",
+  "entity": "Ollama Connector for Fly.io Sprites",
+  "category": "Tools",
+  "tags": [
+    "agents",
+    "education",
+    "cloud inference",
+    "developer tools",
+    "credentials"
+  ],
+  "summary": "A documented gateway keeps an Ollama API key outside the agent’s Linux environment. Default-denied policies and separate compute and inference billing make this useful for bounded app and teaching workflows.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-13",
+  "discoveredAt": "2026-10-22T17:15:00Z",
+  "updatedAt": "2026-10-28",
+  "officialUrl": "https://ollama.com/blog/fly-io-sprites",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "Give an agent a computer without copying its model key into it",
+      "html": "<p>Ollama’s October 13 announcement adds an Ollama Connector to Fly.io Sprites: persistent Linux environments that can call cloud models through a gateway. The practical benefit is specific. Code running inside a Sprite can use an authorized model connection without possessing the provider’s long-lived API key. For a developer building a learning app, a test harness or a media-processing assistant, that separates the working environment from one important credential. It does not make every agent action harmless.</p><p>The <a href=\"https://ollama.com/blog/fly-io-sprites\">Ollama announcement</a> describes adding an API key to a Fly.io organization, selecting which Sprites may use it and calling the resulting gateway URL. Current <a href=\"https://docs.fly.io/sprites/concepts/connectors\">Fly connector documentation</a> explains the broader mechanism: encrypted organization-level credential storage, deny-by-default policies and identity checks on the requesting Sprite. Those documents provide enough detail for a reproducible evaluation plan. This report did not create an organization, install the CLI, configure a connector or execute an agent.</p><p>A Sprite is a hosted computer with persistent files, not a local Ollama model running on your laptop. The connector sends authorized inference requests to Ollama Cloud. That means local model privacy, zero cloud cost and offline operation should not be inferred from the Ollama name. The interesting workflow is a remote execution environment paired with remote inference, with separate choices about permissions, persistence, model selection and spending.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "Follow the request and the authority",
+      "html": "<p>The connector has three parts: a provider credential, an access policy and a gateway endpoint. The key stays in the organization’s encrypted storage. A Sprite receives a connection identifier and a URL; Fly identifies the caller and checks the policy before forwarding the request with the stored credential attached. Ollama’s example deliberately has no Authorization header in the code running inside the Sprite. Its OpenAI-compatible Python example supplies an unused placeholder API key because the gateway performs authentication.</p><p>This changes which secret an agent can accidentally print or copy, but it does not remove its ability to spend through an authorized connection. An agent that can call the gateway can still send permitted prompts and consume inference. Likewise, hiding a key does not stop a poorly designed application from placing sensitive information in a prompt. A useful design review distinguishes possession of the credential, permission to invoke the provider and permission to access the source data.</p><p>New connections refuse every Sprite until an access policy grants entry. The documented controls include a name prefix, a set of labels, or all Sprites in the organization. Prefix and label conditions can be combined, while allow-all overrides the narrower conditions. For a classroom prototype, a prefix for that project and a dedicated label provide a more explicit boundary than enabling every environment. This is a proposed configuration pattern, not a claim that the naming scheme itself prevents misuse.</p><p>Provider-path allow- and block-lists add another layer. Fly documents exact paths and trailing-wildcard prefixes, with block rules taking precedence. These lists are currently configured through the API rather than the dashboard. They restrict reachable paths; the inspected documentation does not establish a rule that limits a model named inside a request body or enforces a per-student token budget. Application limits and provider account controls therefore remain separate concerns.</p>"
+    },
+    {
+      "id": "first-trial",
+      "title": "A small first trial has a clear result",
+      "html": "<p>The documented prerequisites are an Ollama API key, a Fly.io organization and at least one Sprite. Ollama’s walkthrough directs an administrator to add the connector, select permitted Sprites and test reachability. The current Fly guide also exposes a gateway playground for issuing a real request from a chosen Sprite. Because those actions configure access and may incur usage, the research here stopped at reading the instructions. A real deployment should be performed by someone authorized to administer the relevant accounts.</p><p>A bounded first trial could use a disposable project containing synthetic text and a tiny program. First confirm that an unapproved Sprite cannot call the connector. Grant access to the intended environment and verify one short model request. Then remove that environment’s eligibility and repeat the check. The useful artifact is a small record of expected and observed access behavior, not a screenshot of one successful response. This would test the project’s policy rather than relying on the word “sandbox.”</p><p>The source documents concrete error distinctions. A 403 can mean that the calling Sprite is not granted access, or that its provider path is disallowed. A gateway 401 can mean the request did not arrive with valid Fly identity headers; calls must originate inside a running Sprite, not a developer’s laptop or ordinary CI process. These differences belong in the application’s diagnostics. Replacing a credential repeatedly would not fix a wrong execution location.</p><p>Ollama’s example sends chat-completion requests through an Ollama-specific gateway path and says native /api/* routes also work. The current generic Fly guide describes automatic connector discovery for supported coding agents. Compatibility should still be tested with the exact SDK, agent and endpoint your project uses. A generic statement that an OpenAI SDK works does not establish support for every feature, streaming mode, tool-calling convention or SDK version.</p>"
+    },
+    {
+      "id": "education",
+      "title": "An educational programming lab with controlled model access",
+      "html": "<p>One practical teaching project is an agent-assisted programming exercise. Give each team a separate environment containing the same small application, tests and synthetic fixture data. Let a modest model propose edge cases, run the tests inside the Sprite, and ask a second model to explain failures. Students can compare a model’s confident explanation with an actual failing test. The educational value comes from preserving the code, inputs and observed output so the class can inspect the chain of reasoning.</p><p>Ollama’s announcement offers fuzzing as an example: one model writes malformed inputs, the Sprite runs them, and another model examines crashes. A teacher could adapt that into a safe parser exercise with a deliberately constrained program. The agent should work against that disposable target. A successful test proves something about the parser and test case; it does not validate the accuracy of every model-generated explanation or demonstrate that a deployment can safely run arbitrary software.</p><p>Persistence makes iterative lessons plausible because files survive between sessions. It also means the next session can inherit mistakes. Preserve a known starting point and make the reset procedure explicit. Fly’s current product page describes filesystem checkpoints and says restoring a checkpoint rewinds disk contents rather than resuming a paused process mid-instruction. A teacher should therefore verify that the application starts correctly after restoration instead of assuming that every running process returns exactly as before.</p><p>For assessment, keep the student’s submitted work, generated suggestions and test results distinguishable. Do not award a correct result merely because an agent reports completion. A useful rubric asks whether the code passes the specified cases, whether the student can explain a failure and whether the saved record is reproducible. Sprites can host the environment for this exercise; the assessment policy and pedagogical design are still the instructor’s work.</p>"
+    },
+    {
+      "id": "apps-websites-video",
+      "title": "Use the environment around a concrete application",
+      "html": "<p>For an app builder, a contained background worker is a sensible first target. It can accept a small authorized task, call a cloud model through the connector, run deterministic processing and return a result for review. Keep job states such as queued, running, failed and ready for review in the application. Model access through a gateway does not supply retry limits, deduplication or a durable application-level record automatically. Those remain important when an interrupted worker might repeat an expensive request.</p><p>For a website prototype, Fly’s product page describes a per-Sprite HTTPS URL that wakes the environment on a request, with a service listening on port 8080. It also distinguishes private organizational access from a setting that makes a URL public. That is useful for a team reviewing an agent-built prototype, but public exposure should be a deliberate deployment choice. The connector is about outbound provider calls; it is not a substitute for deciding who can open the application itself.</p><p>For a video team, a proposed workflow is to process a transcript and edit decision list with an agent, validate filenames and timings in code, then return a proposed sequence for an editor. Keep the source footage and approved cuts under the team’s control. Nothing in the inspected Ollama integration establishes native video generation, GPU rendering or compatibility with a particular nonlinear editor. The Sprite can organize a surrounding workflow, but those media capabilities need their own tools and checks.</p><p>A useful division of work is to let the model draft chapter names or identify candidate sections, while code checks that every referenced segment exists and falls within the source duration. The human editor then approves the selection and meaning. This gives an educational video or product demo a reviewable handoff. It also limits the cost of correcting one mistaken suggestion: the editor can change the selection without rerunning an entire generative production pipeline.</p>"
+    },
+    {
+      "id": "costs",
+      "title": "Budget the computer and the model separately",
+      "html": "<p>The <a href=\"https://sprites.dev/\">Sprites product page</a> displayed $0.0385 per CPU-hour and $0.021875 per GB-hour of memory, with hot storage at $0.000683 and cold storage at $0.000027 per GB-hour. One CPU-hour plus two GB-hours of memory therefore totals $0.08225 before storage and inference. This arithmetic illustrates the units; it is not a benchmark of what an agent task will consume. The source’s example sessions use their own assumed utilization, which may differ substantially from your workload.</p><p>Idle behavior is also important. Fly’s documentation says idle environments stop accruing compute charges while keeping their filesystem. Storage remains a separate billed resource. A long-lived project with little activity is consequently different from a continuously busy worker. The product page lists trial credits, but a trial is not a durable operating budget and eligibility was not checked. Measure active time and storage during the first trial before estimating a class or production workload.</p><p><a href=\"https://ollama.com/pricing\">Ollama pricing</a> separately lists pay-as-you-go cloud usage without a subscription, a three-request concurrency allowance and per-million-token rates. At inspection, GLM-5.3 was $1.40 for input, $0.26 for cached input and $4.40 for output per million tokens; Kimi K3 was $3.00, $0.30 and $15.00 respectively. These are the models used in the integration examples, not recommendations for every task. Context reuse, response length and repeated agent turns can change cost more than the price of one short call.</p><p>The Ollama connector described in the release uses a key you supply. Fly’s generic connector guide also discusses managed providers, with OpenRouter specifically available through that arrangement. Do not assume that the Ollama path inherits another provider’s included usage or consolidated billing. Before scaling, confirm the chosen provider, account plan, budgets and model terms. Connecting to an open-weight model service does not by itself grant a license to redistribute every model’s weights.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "A useful boundary, with a testable scope",
+      "html": "<p>The strongest evidence here is the agreement between Ollama’s integration walkthrough and Fly’s current connector reference about identity, encrypted credentials and default denial. The operational documentation also exposes path restrictions, error cases and the difference between brought credentials and managed providers. That makes the feature more useful than an unexplained claim that agents run “safely.” Its scope is an access mechanism that can be evaluated, combined with a persistent hosted execution environment.</p><p>This scan did not test isolation, credential leakage, revocation latency, checkpoint recovery, an SDK call or a bill. Nor did it verify any model’s output quality inside an agent workflow. The first worthwhile implementation is therefore a narrow proof of behavior with synthetic data, explicit permissions and measured usage. For educational labs, application workers and editorial automation, the connector can remove repeated key distribution while keeping the actual job inspectable. Whether the complete system is reliable depends on the surrounding application and the tests it passes.</p>"
+    }
+  ],
+  "useCases": [
+    "Agent-assisted programming labs with synthetic fixtures",
+    "Contained application workers with centrally configured model access",
+    "Transcript and edit-list preparation for human video editors"
+  ],
+  "limitations": [
+    "No connector, account, agent, checkpoint or paid inference tested.",
+    "Credential isolation does not prevent authorized misuse or inference spending.",
+    "Provider-path policy is not documented as per-model or per-student budgeting.",
+    "Cloud inference and persistent storage have separate costs; model licenses remain model-specific."
+  ],
+  "sources": [
+    {
+      "id": "official-source-82663ba79a1c687c",
+      "title": "Run AI agents safely with Ollama and Fly.io · Ollama Blog",
+      "url": "https://ollama.com/blog/fly-io-sprites",
+      "accessedAt": "2026-10-28T19:39:52.303Z",
+      "publishedAt": "2026-10-13",
+      "locator": "How it works; Get started; Python; Coding agents; fuzzing",
+      "supports": "Ollama-specific integration and release date"
+    },
+    {
+      "id": "creative-source-25e6b96c2499c78e",
+      "title": "Connectors - Fly.io",
+      "url": "https://docs.fly.io/sprites/concepts/connectors",
+      "accessedAt": "2026-10-28T19:44:17.486Z",
+      "publishedAt": null,
+      "locator": "Access configuration; endpoint lists; common errors; managed providers",
+      "supports": "Gateway policies and operational limits"
+    },
+    {
+      "id": "creative-source-83cd00f3d252ea03",
+      "title": "Sprites | Linux computers for agents",
+      "url": "https://fly.io/sprites/",
+      "accessedAt": "2026-10-28T19:43:13.700Z",
+      "publishedAt": null,
+      "locator": "Persistence; Checkpoints; Sprite URLs; Pricing",
+      "supports": "Filesystem behavior, HTTP access and observed rates"
+    },
+    {
+      "id": "creative-source-980b755e9374dfbf",
+      "title": "Sprites Overview - Fly.io",
+      "url": "https://docs.fly.io/sprites",
+      "accessedAt": "2026-10-28T19:43:52.898Z",
+      "publishedAt": null,
+      "locator": "Core concepts; idle behavior",
+      "supports": "Persistent environment and idle compute boundary"
+    },
+    {
+      "id": "creative-source-df15d1f61a5712e6",
+      "title": "Ollama Pricing",
+      "url": "https://ollama.com/pricing",
+      "accessedAt": "2026-10-28T19:43:14.773Z",
+      "publishedAt": null,
+      "locator": "Pay as you go; Model pricing",
+      "supports": "Cloud concurrency and token-rate snapshot"
+    }
+  ],
+  "images": [],
+  "judgment": "A practical infrastructure integration for teams already building agents. It deserves a small access-and-recovery trial; documentation alone does not establish end-to-end safety or production reliability.",
+  "researchNote": "Oldest assigned backlog reconsidered before report selection. October 13 launch article and current primary docs/prices inspected in Chrome October 28. No installs, model calls, account changes or native testing performed. Educational, application and video examples are proposed workflows."
+}

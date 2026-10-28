@@ -1,0 +1,31 @@
+{
+  "reportId": "nemotron35-transcribe",
+  "reviewerId": "/root/edition_20261028_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:49.176604Z",
+  "reportHash": "e06fd30d111f39ff934908c30b78171a691548e7744d05a9f250d5e0e0ed36e0",
+  "evidenceHash": "de5141b0d664f2947f8e29fdc696111bccdfb3b634f02a2614485c6fb66074fc",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "Prompt-controlled transcripts, translation, speaker tags and word timing have direct educational and editorial value. The report offers specific reviewed-transcript and navigation workflows while documenting a substantial BF16 deployment, a provider-priced route and task-specific language limits.",
+    "impact": "Combining multiple recorded-audio tasks with adaptation resources can simplify a meaningful class of speech applications. It is still a domain-specific release, with unreplicated benchmark claims, a substantial memory requirement and unresolved launch-day quantized distribution limiting immediate broader impact.",
+    "novelty": "The integrated promptable speech model, speaker-aware path, timestamp head and explicit transcript-convention data provide useful differentiation. Transcription, translation, diarization and speech-language modeling already exist, so the evidence supports a strong integration improvement rather than a wholly new capability.",
+    "maturity": "The model card, 67.5 GB BF16 artifact listing, one-H100 quickstart and serving guide are concrete. New-release status, inconsistent FP8/NVFP4 availability, development-serving limitations and the absence of execution or quality tests prevent a stronger readiness score.",
+    "openness": "OpenMDW-1.1 weights, public serving/training tooling and Granary label manifests offer substantial inspection and adaptation access. The manifests omit source audio and the full training mixture; subset and upstream licenses differ, and highest-throughput serving optimizations are not yet in the open release."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No publication-blocking factual issue found. The report correctly retains the 404-route uncertainty, differing WER snapshots, offline-only boundary and separation of active parameter count from total checkpoint size.",
+    "No external leaderboard, transcription quality, timestamp accuracy, hosted billing or complete training reproduction was independently validated."
+  ]
+}

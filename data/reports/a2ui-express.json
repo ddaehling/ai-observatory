@@ -1,0 +1,122 @@
+{
+  "id": "a2ui-express",
+  "title": "A2UI Express makes generated screens cheaper to describe, with version limits to check",
+  "entity": "A2UI",
+  "category": "Open source",
+  "tags": [
+    "generative UI",
+    "developer tools",
+    "A2UI",
+    "education",
+    "web development"
+  ],
+  "summary": "A2UI separates compact model output from its UI transport protocol. Express and controlled layout decisions offer different tradeoffs, while SDK versions, streaming and prototype boundaries need careful checking.",
+  "changeType": "update",
+  "publishedAt": "2026-10-27",
+  "discoveredAt": "2026-10-28T19:56:30.107652Z",
+  "updatedAt": "2026-10-28T19:56:30.107652Z",
+  "officialUrl": "https://developers.googleblog.com/fast-reliable-a2ui/",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A smaller language between the model and the screen",
+      "html": "<p>A2UI Express addresses a practical frustration in generated interfaces: the model spends time writing a large description before the user sees something useful. Google’s October 27 announcement separates the format the model produces from the format the application transports. A model can describe a screen in compact Express syntax; deterministic SDK code translates that description into ordinary A2UI messages. The existing component catalog and renderer can remain in place. This is an update to the A2UI platform, first examined here as its own entity, rather than a new model release.</p><p>The useful architectural idea is to preserve a stable contract with the frontend while experimenting with how a model fills it. A developer can compare direct JSON, Express, or another intermediate language without rebuilding the application’s visual components for each experiment. The <a href=\"https://developers.googleblog.com/fast-reliable-a2ui/\">announcement</a> also describes a second route: use a decision model to choose among known layouts, then construct the messages in code. That route trades breadth of possible layouts for more predetermined structure.</p><p>Neither route delivers a finished application by itself. The host still owns components, data, actions and the experience around errors. My assessment is that Express deserves a focused trial where a team already uses, or has a clear reason to adopt, a component-based generated interface. A faster description is valuable when it helps a user complete a task; reduced token counts alone do not establish that benefit.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "What the compiler and catalog actually control",
+      "html": "<p>A2UI lets an agent request interfaces assembled from components the client advertises. The developer defines the catalog, and the renderer maps its descriptions onto actual widgets. Express changes the authoring syntax: component assignments, references and data bindings replace much of the surrounding JSON structure. Its variable names become component identifiers, and positional arguments map to properties defined by the schema. The announcement’s example builds a notification card with ordinary text and button components.</p><p>This separation can make an application easier to inspect. A product team can ask which components exist, which properties they accept and which actions are permitted, then test the generator against that contract. The <a href=\"https://github.com/a2ui-project/a2ui\">repository</a> describes A2UI as declarative data rather than arbitrary generated code, while explicitly leaving custom-component security to developers. A schema-valid interface can still contain misleading text, an inappropriate control or an action that needs authorization. Validation does not settle those semantic questions.</p><p>The announcement also describes Python macros that let the model name a record while application code fetches its values. In a proposed workshop-booking interface, that could mean identifying a session and displaying its actual capacity from the booking system. It would be preferable to asking the model to invent the capacity. The lookup still needs appropriate access checks, missing-record behavior and a clear response if the data changes before submission. Those are application responsibilities, not automatic consequences of a compact syntax.</p>"
+    },
+    {
+      "id": "versions",
+      "title": "Pin the implementation, especially for streaming",
+      "html": "<p>There are several version labels to keep separate. The launch names Python package a2ui-agent-sdk 0.9.0, the TypeScript package @a2ui/agent and a work-in-progress Dart package. The repository describes the stable protocol family as v0.9, with v0.9.1 its current production release and v1.0 a release candidate. An SDK version is not the same thing as a protocol version. Use a tested combination of package, catalog, protocol and renderer instead of assuming that similar numbers imply compatibility.</p><p>Two details require particular care. The blog presents Express as the new default, but the inspected <a href=\"https://github.com/a2ui-project/a2ui/blob/main/python/a2ui_agent/CHANGELOG.md\">Python changelog</a> places the default switch under Unreleased. Explicitly selecting ExpressFormatFactory is therefore a clearer starting point than relying on whatever a newly installed default happens to be. The same changelog contains breaking changes and unreleased fixes; its current main branch should not be read as a promise about an already installed package.</p><p>Streaming has a similar boundary. The <a href=\"https://a2ui.org/specification/proposals/express/a2ui_express/\">technical specification</a> describes a line-oriented grammar compatible with progressive rendering. The October 27 announcement says the Python and TypeScript SDKs compile Express from the complete reply, while they can stream Direct JSON incrementally. A grammar’s potential and a particular SDK’s implementation are different facts. Measure time to a usable screen in the chosen version. A smaller complete response can still be useful, but it should not be sold as verified token-by-token rendering.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "What the performance examples establish",
+      "html": "<p>Google reports an evaluation of four inference formats on 51 tasks using gemini-3.5-flash, with thinking on and off. It says Express can use up to three times fewer output tokens than Direct JSON and reduce latency by up to three times. These are publisher measurements on a defined comparison, not an independent result from this research. Different catalogs, prompts, models, network conditions and repair rates may change the outcome. The announcement supports a reason to benchmark Express locally, not a universal saving.</p><p>The controlled-generation example is Apparite, also called jev2ui. In the announced design, Jev answers typed layout questions, code assembles the component tree and a smaller Gemini model writes text. The project’s <a href=\"https://github.com/dglazkov/jev2ui\">Results so far</a> table records one run on 11 prompts with jev-1.13.0, gemini-3.5-flash-lite and a paid-tier Gemini key. It distinguishes first components, first text and completion. Early components took 92–298 milliseconds across its two Jev pipelines; completed screens took 0.8–1.7 seconds.</p><p>That small experiment does not establish that every screen is useful, that all controls work or that the current project retains the same timing. The README says the direct-generation baseline used a handwritten prompt and characterizes the results as preliminary. Its current design tool has also evolved toward a richer mock interface using a fork. Treat the historical A2UI comparison as an inspectable example of division of labor, with its own conditions, rather than a performance warranty for the entire current application.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A teacher-facing resource chooser",
+      "html": "<p>A useful educational pilot would be a teacher’s resource-selection panel, not an unconstrained student tutor. Define a small catalog containing a resource card, subject filter, duration selector, source link and confirmation control. Give the generator a clear task: help the teacher compare already approved resources for a lesson. Keep curriculum data and resource availability in ordinary application storage. The generated interface can arrange and explain those records while the teacher makes the selection.</p><p>Begin with examples that have known answers: an empty collection, several similar resources, a long title, a missing description and a resource unavailable in the requested language. Compare Express with the existing presentation using the same content. Measure whether teachers find the intended resource and understand why it appears. A visually convincing interface that silently drops a prerequisite has failed even if compilation succeeds. This is a proposed evaluation workflow, not evidence of classroom deployment or improved learning outcomes.</p><p>Include keyboard navigation, focus behavior, readable labels and a static list alternative in the acceptance criteria. Test whether errors leave the teacher with a recoverable choice instead of a blank panel. The launch does not establish accessibility for every generated composition, and no live interface was tested for this report. Because the host owns the components, the team has a concrete place to implement those requirements; it must still verify the combinations that generation produces.</p>"
+    },
+    {
+      "id": "apps-web",
+      "title": "Choose expressive generation only where it earns its place",
+      "html": "<p>For an app or website, start with a screen whose decision is easy to describe, such as comparing appointment slots or reviewing a change before submission. Keep the catalog intentionally small. Define which values come from trusted records and which text the model may draft. Give the user a visible way to change a selection and inspect the underlying information. The generated screen should support the existing task flow, with permissions and state transitions enforced by application code.</p><p>Known settings pages may be better candidates for controlled layout selection. A decision model can choose among developer-authored patterns, while code determines order, required fields and the final tree. The announcement makes clear that A2UI’s agent SDKs do not yet include a decision-model inference format; Apparite is an example of assembling messages from decisions. Adopting that pattern therefore requires integration work. It is not an option that can simply be enabled in every SDK installation.</p><p>For more open-ended screens, Express retains the expressive range of the configured catalog. Compare its output against a fixed template before expanding the component set. Record compilation failures, repairs, unusable screens and user corrections as well as latency. A template may already serve a repetitive task well. The case for generated composition becomes stronger when it handles varied information without making users learn a new arrangement unnecessarily on every visit.</p>"
+    },
+    {
+      "id": "video",
+      "title": "A review interface around a video workflow",
+      "html": "<p>A video team could use the same architecture for a transcript-review panel. The host would supply verified timecodes and clip identifiers, while generated cards organize candidate passages by topic or review status. Selecting a card could open the corresponding clip through application code. A producer might compare two alternative outlines without asking the model to construct an entire editing application. This is a proposed surrounding workflow; Express does not itself generate video, understand footage or export an editable timeline.</p><p>Separate source facts from editorial suggestions. A timecode should come from the transcript or media index, while a suggested title can be visibly labeled as a draft. Test clips with repeated phrases, missing transcripts and unusually long captions. The interface should make it possible to return to the original passage and correct the selection. A small saved state may be more useful than an impressive screen that cannot reproduce the producer’s decision later.</p><p>Apparite is particularly relevant as a prototype reference, but its README explicitly describes an apparition as a mock with no application data or logic behind it. Its comparison pipelines log button and form events rather than implementing the business action. That distinction matters when showing a prototype to a production team. A convincing review screen is evidence of a design possibility; connecting it to media storage, edit decisions and publishing remains separate engineering work.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "Access, cost and a bounded adoption decision",
+      "html": "<p>The A2UI repository and Apparite repository display Apache-2.0 licensing. That makes their code inspectable and reusable under that license, while hosted model calls and third-party services retain their own access and billing requirements. The documented A2UI restaurant demo requires Node.js 18 or later, uv and a Gemini API key. Apparite’s current README asks for Node 20 or later and both Gemini and Jev keys. These are documented prerequisites; neither demo was installed or run in this research.</p><p>No complete current model-price comparison was established here. Budget for input as well as output tokens, retries, refinement calls, hosting and review. The Apparite example reduces text generation partly by adding decision calls; counting only the Gemini output would omit part of the workflow. Likewise, a smaller Express response may require additional attempts on a difficult catalog. Compare the cost of a successfully completed user task, with the same quality threshold, rather than comparing only one request.</p><p>A sensible first trial has one catalog, one model configuration and a small set of representative tasks. Preserve the generated description, compiled messages and observed user result so failures can be traced to syntax, data, layout or application behavior. Expand only after the screen is usable and the measured benefit survives error handling and accessibility checks. The evidence supports a promising way to separate interface inference from transport; practical reliability and economics still have to be earned in the application that adopts it.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-facing resource selection",
+    "Generated app and website review panels",
+    "Transcript and clip review interfaces"
+  ],
+  "limitations": [
+    "No SDK installation, product execution or independent latency benchmark.",
+    "Launch and current implementation sources differ on defaults and streaming; pin and verify the exact version.",
+    "Apparite measurements are a small historical comparison; its current main branch has evolved.",
+    "No complete current hosted-model cost schedule verified."
+  ],
+  "sources": [
+    {
+      "id": "official-source-00217b8f4c7c46b7",
+      "title": "Fast, reliable A2UI, with swappable inference formats - Google Developers Blog",
+      "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+      "accessedAt": "2026-10-28T19:41:45.310Z",
+      "publishedAt": "2026-10-27",
+      "locator": "Announcement; how formats work; controlled generation; availability",
+      "supports": "Launch, syntax, SDK behavior and attributed evaluation"
+    },
+    {
+      "id": "official-source-1a5b0421a1c3c860",
+      "title": "A2UI Express technical specification - A2UI",
+      "url": "https://a2ui.org/specification/proposals/express/a2ui_express/",
+      "accessedAt": "2026-10-28T19:43:29.998Z",
+      "publishedAt": null,
+      "locator": "Core design goals; syntax; compilation pipeline",
+      "supports": "Express grammar and streaming design"
+    },
+    {
+      "id": "official-source-972a322ad2c1a420",
+      "title": "a2ui/python/a2ui_agent/CHANGELOG.md at main · a2ui-project/a2ui",
+      "url": "https://github.com/a2ui-project/a2ui/blob/main/python/a2ui_agent/CHANGELOG.md",
+      "accessedAt": "2026-10-28T19:44:11.475Z",
+      "publishedAt": null,
+      "locator": "Unreleased and0.9.0 (2026-10-17)",
+      "supports": "Default-switch and version qualification"
+    },
+    {
+      "id": "official-source-79a9fc50a0fa02aa",
+      "title": "a2ui-project/a2ui",
+      "url": "https://github.com/a2ui-project/a2ui",
+      "accessedAt": "2026-10-28T19:44:12.618Z",
+      "publishedAt": null,
+      "locator": "README Status, philosophy, dependencies, getting started; license tab",
+      "supports": "Protocol maturity, host responsibility, prerequisites and license"
+    },
+    {
+      "id": "official-source-4e1812c5f1719b90",
+      "title": "dglazkov/jev2ui: Jev + A2UI = ?",
+      "url": "https://github.com/dglazkov/jev2ui",
+      "accessedAt": "2026-10-28T19:43:32.651Z",
+      "publishedAt": null,
+      "locator": "README introduction, Run it, Results so far, Known limits; license tab",
+      "supports": "Experimental controlled-generation architecture and qualifications"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded developer pilot where generated composition solves a real task. Do not infer complete apps, universal speedups or streaming support from the language design alone.",
+  "researchNote": "Primary public pages inspected in owned Chrome tab and archived with timestamps and hashes. No code from the sources was executed; all proposed workflows are editorial suggestions."
+}

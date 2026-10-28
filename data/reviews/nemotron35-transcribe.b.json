@@ -1,0 +1,31 @@
+{
+  "reportId": "nemotron35-transcribe",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "e06fd30d111f39ff934908c30b78171a691548e7744d05a9f250d5e0e0ed36e0",
+  "evidenceHash": "de5141b0d664f2947f8e29fdc696111bccdfb3b634f02a2614485c6fb66074fc",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Prompted offline transcription, speaker tags, word alignment and task-specific text outputs directly fit lecture replay and assistant-editing workflows. The report provides an accessible hosted-price reference and a concrete BF16 deployment route while keeping transcript review, subtitle policy and source timing under application control.",
+    "impact": "Combining multilingual speech tasks and adaptation materials in an accessible checkpoint can simplify recording-processing systems. The extensive publisher evaluations support domain significance, but conflicting launch-day WER summaries and unreproduced performance limit broader claims.",
+    "novelty": "Task-controlled transcription, diarization, translation and audio questions in one checkpoint are useful differentiation. The contribution is primarily a stronger integrated speech workflow with adaptation resources, rather than the first demonstration of these individual capabilities.",
+    "maturity": "The card gives detailed serving instructions, language-task boundaries, failure modes and timestamp handling, and a hosted provider lists the model. The large BF16 requirement, broken quantized links, offline-only operation and non-public peak-throughput optimizations materially limit immediate readiness.",
+    "openness": "Public weights, NeMo integration, detailed task prompts and Granary manifests under broad OpenMDW terms provide substantial inspectability and adaptation access. Granary excludes source audio and the full training mixture, has a CC BY-SA subset exception, and peak-serving optimizations are not yet in the open release."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The FP8/NVFP4 routes were captured as 404 pages despite card availability claims; the report correctly treats consumer-device deployment as unresolved.",
+    "Provider pricing is an observed public snapshot, and the highest-throughput implementation is not the released open integration. Neither operational reliability nor transcription quality was independently tested."
+  ]
+}

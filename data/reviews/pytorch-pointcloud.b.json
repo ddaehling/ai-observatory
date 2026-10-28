@@ -1,0 +1,31 @@
+{
+  "reportId": "pytorch-pointcloud",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "402f27d2e407dc7ba3e27de113de2f4d01d6a89ce205e715ba95e6ebf51acc9f",
+  "evidenceHash": "1b6c7dba584a56903e0afbddb95802b247346813e741dd734694490e825173a6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The common factory, registry, packed batches and checkpoint transforms can save substantial setup work for a 3D learning course or scoped analysis worker. The report is particularly useful about mapping predictions back to original points and about the separate viewer or renderer required for websites and video explainers.",
+    "impact": "Unifying existing point-cloud methods and preprocessing is a meaningful enabling contribution within 3D ML experimentation. There is no independent throughput, accuracy, interoperability or deployment evidence establishing wider AI impact.",
+    "novelty": "The library applies familiar timm-style registries, PyG layouts and reusable transforms/inferers to an existing model collection. This is useful integration differentiation, with no claimed new learning algorithm or independently demonstrated capability breakthrough.",
+    "maturity": "The project explicitly remains alpha. The changelog records recent transform, model-structure and octree correctness fixes; CI covers a narrower CPU setup than the CUDA benchmark environment. Detailed docs help evaluation, but universal compatibility and production reliability are not demonstrated.",
+    "openness": "Apache-2.0 code, explicit source attribution, weight metadata, pinned checkpoint revisions and documented offline caching make the system inspectable. Noncommercial checkpoint licenses, research-only datasets, gated downloads and separately compiled dependencies constrain the complete reproducible workflow."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Code, checkpoint and dataset permissions differ; a permissive package license alone does not settle the selected commercial workflow. The report accurately calls out these distinctions.",
+    "No installation or inference was performed, and alpha fixes show why output mapping and preprocessing must be validated for the chosen version."
+  ]
+}

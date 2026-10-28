@@ -1,0 +1,170 @@
+{
+  "id": "liquid-lfm3-specialized-multimodal",
+  "title": "LFM3 gives small applications a choice of text, vision, speech and typed decisions",
+  "entity": "Liquid AI LFM3",
+  "category": "Models",
+  "tags": [
+    "small models",
+    "multimodal",
+    "local AI",
+    "education",
+    "video",
+    "structured decisions"
+  ],
+  "summary": "Liquid AI released six 2B-class LFM3 variants on October 27. The useful distinction is between generation and typed decisions, with different context limits, deployment readiness and a revenue-threshold license.",
+  "changeType": "new",
+  "publishedAt": "2026-10-27",
+  "discoveredAt": "2026-10-28T19:43:38.107Z",
+  "updatedAt": "2026-10-28T19:59:35.293480Z",
+  "officialUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A small family with different jobs",
+      "html": "<p>Liquid AI announced LFM3 on October 27, 2026: six posttrained models in the roughly two-billion-parameter range, sharing a base but exposing different inputs and outputs. The release includes text, vision, audio and combined multimodal generation, plus two models that return typed decisions instead of generating an answer. That choice matters for a builder deciding whether a feature needs a paragraph, spoken feedback, an extracted date or a routing probability. The weights and model cards are available; this assessment covers their documentation, without running them. <a href=\"https://huggingface.co/blog/LiquidAI/lfm3\">Release article</a>.</p><p>The text backbone has 1.73 billion parameters and mixes gated short convolutions, sliding-window attention and global attention. Liquid AI describes this architecture as a way to improve capability and efficiency at a small size. Its advertised roughly 1 GB footprint applies to four-bit text weights, not the working memory of every variant, context length and concurrent workload. The observed BF16 text weight file is 3.46 GB. A useful deployment estimate must also include the runtime, state and media processing. <a href=\"https://huggingface.co/LiquidAI/LFM3-1.7B\">Text card</a>; <a href=\"https://huggingface.co/LiquidAI/LFM3-1.7B/tree/main\">files</a>.</p>"
+    },
+    {
+      "id": "choose-variant",
+      "title": "Choose the output before the model",
+      "html": "<table><thead><tr><th>Model</th><th>Inputs and outputs</th><th>Documented context</th></tr></thead><tbody><tr><td>LFM3-1.7B</td><td>Text to text</td><td>256K</td></tr><tr><td>LFM3-VL-2B</td><td>Text, images and video to text</td><td>128K</td></tr><tr><td>LFM3-Audio-2B</td><td>Text and audio to text and speech</td><td>32K</td></tr><tr><td>LFM3-Omni-2B</td><td>Text, images, video and audio to text and speech</td><td>32K</td></tr><tr><td>d1-2B</td><td>Text, images and video to typed answers</td><td>128K</td></tr><tr><td>d1-Omni-2B</td><td>Text, images, video and audio to typed answers</td><td>128K</td></tr></tbody></table><p>These limits come from the individual cards and are not interchangeable. Audio and Omni accept 16 kHz audio and generate 24 kHz speech. Video sampling is documented at two frames per second. The VL model reasons before answering, whereas Omni is a non-reasoning model and does not support enabling thinking. A larger advertised context also does not establish reliable use of every token: the d1 card reports declining reliability beyond roughly 64K.</p><p>For a website help panel, text generation may be enough. A worksheet image needs VL; a spoken exchange needs Audio; a question combining a visible scene and its soundtrack needs Omni. Choose d1 when application code needs a defined answer type rather than prose. The separate Base checkpoint is intended for substantial fine-tuning or continued pretraining, while the posttrained text model is the starting point for a conversational feature. <a href=\"https://huggingface.co/LiquidAI/LFM3-1.7B-Base\">Base card</a>.</p>"
+    },
+    {
+      "id": "deployment",
+      "title": "Integration readiness varies by variant",
+      "html": "<p>Start a prototype with one named checkpoint and the instructions on its own card. The documented Transformers dependencies differ: VL specifies version 5.21.0 or later, Audio and Omni specify 5.20.2 or later, and the d1 examples specify 5.19 or later. Media paths add libraries for images, decoding, sound or video. The examples use custom model code through <code>trust_remote_code=True</code>; a production evaluation should inspect that code and pin an evaluated revision rather than silently following future repository changes.</p><p>The serving tables need careful reading. Although VL lists vLLM and SGLang and supplies example commands, its detailed GPU section says SGLang support is still in review and vLLM support is in progress. Those commands therefore do not establish working support in a released backend. Omni lists SGLang for text output only. Quantized and local-runtime options are documented across the family, but a format appearing in a table is not proof of equivalent modality support everywhere. <a href=\"https://huggingface.co/LiquidAI/LFM3-VL-2B\">VL card</a>; <a href=\"https://huggingface.co/LiquidAI/LFM3-Omni-2B\">Omni card</a>.</p><p>For the first test, fix the runtime, precision, device and input sizes. Measure cold startup separately from warmed requests, then record peak memory and latency under the intended concurrency. Keep successful and failed prompts together. Liquid AI supplies performance tables, but this review has not reproduced them; the decision-model latency methodology includes warmed, compiled execution and should not be treated as an application's cold-start response time.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A lesson assistant with inspectable source material",
+      "html": "<p>A concrete educational prototype could accept a teacher-selected diagram or worksheet, retrieve the relevant curriculum passage and ask VL to draft an explanation grounded in both. The interface could show the image, retrieved passage and draft side by side, letting the teacher correct the explanation before students see it. A second action could produce practice questions from approved content. These are proposed workflows based on the documented visual inputs, not demonstrated teaching outcomes.</p><p>Keep each task short and inspectable. The text card recommends retrieval for knowledge-heavy work and discourages agentic coding or complex multistep reasoning. The VL card also discourages coding, complex reasoning and multi-turn conversations. A lesson interface should therefore send the complete relevant context for a bounded question, rather than assuming an extended tutor conversation will stay coherent. It should preserve source references separately instead of relying on the model to invent reliable citations.</p><p>Evaluate legibility, diagram labels, numeric transcription, unsupported statements and response usefulness on the actual lesson materials. Include ambiguous scans and questions that cannot be answered from the supplied content. Have the application offer a teacher-review state for those cases. Local deployment may help a school control where inference runs, but the surrounding app still needs explicit handling of uploads, logs and external retrieval; a downloadable model alone does not establish an offline or private workflow.</p><p>Before integrating the lesson prototype, assemble a small set of teacher-approved examples with the expected evidence span, acceptable explanation and known failure condition. Keep image resizing and retrieved text consistent across model comparisons. Ask reviewers to distinguish a wrong reading of the image from an unsupported factual addition and an unclear explanation: these require different fixes. The first may need better inputs, the second stronger grounding, and the third better task instructions. This proposal makes the evaluation useful even if LFM3 is eventually rejected for that feature.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Short video review needs an explicit soundtrack path",
+      "html": "<p>A creative prototype could use Omni to inspect a short rough-cut excerpt and draft searchable scene notes, identify a possible mismatch between visible activity and narration, or suggest questions an editor should check. Keep the original clip alongside those notes and let the editor verify each observation. Because the documented sampling rate is two frames per second, rapid action and brief visual details can be missed. The 32K context limit is not a promise that an hour-long lecture or film fits usefully in one request.</p><p>The soundtrack has a consequential setup detail. The card's video example passes both <code>load_audio_from_video=True</code> and <code>processor_kwargs={\"use_audio_in_video\": True}</code>. The first extracts the track; the second interleaves it with frames. Without these settings the model receives frames only. A test should deliberately compare a clip with misleading narration against the same frames without sound, so the builder can verify that the intended audio path is active. <a href=\"https://huggingface.co/LiquidAI/LFM3-Omni-2B\">Video-with-soundtrack example</a>.</p><p>Use text output first if the product needs editorial notes. Speech output introduces codec, playback and streaming behavior to evaluate separately. The Audio card documents a causal speech path and multilingual speech capabilities, but language coverage does not establish equal intelligibility across accents, recording conditions or every supported locale. Neither the voice examples nor video demonstrations were quality-tested for this report.</p><p>For an editing workflow, store candidate notes as annotations on the source clip rather than immediately rewriting the edit. Record which excerpt was supplied and which output mode was requested. Check silent clips, music-only clips and overlapping speech, as well as ordinary narration. If a scene description is correct while its claimed sound is wrong, the product should expose that uncertainty instead of presenting a combined confident summary. This test design follows the model’s distinct visual and audio inputs; no timestamp accuracy or editorial reliability has been established here.</p>"
+    },
+    {
+      "id": "decisions",
+      "title": "Typed decisions can simplify an application boundary",
+      "html": "<p>The d1 variants accept a state, such as text or JSON, together with named questions. Supported answers include yes/no probabilities, single or multiple choices, ordered scores, extracted text, numbers and dates, quantity intervals, and image boxes. They return these answers in one forward pass without generating tokens. For a creative asset library, an application could ask whether an item appears relevant to a brief, extract a date from an approved document, or choose among a fixed list of review queues. <a href=\"https://huggingface.co/LiquidAI/d1-2B\">d1-2B card</a>.</p><p>This interface can remove some free-text parsing, but it does not remove the need to validate the answer. The card's extraction wrapper uses a found probability to represent missing values and explicitly recommends calibrating thresholds on one's own data. A builder could reserve uncertain cases for manual review, check extracted values against an application schema, and allow only predefined downstream actions. A probability should not silently become permission to delete an asset, publish a page or grade a student.</p><p>d1-Omni adds audio questions and clips, making a short spoken routing command a plausible prototype. It does not produce a transcript or speech response. Its card warns that long spoken passages lose substantial accuracy, particularly outside Latin-script languages, and recommends d1-2B when audio is unnecessary because several text, localization and calibration behaviors are stronger there. Test missing information, contradictory requests and unfamiliar speakers before choosing an operating threshold. <a href=\"https://huggingface.co/LiquidAI/d1-Omni-2B\">d1-Omni card</a>.</p><p>A routing endpoint should return the model result alongside the application’s final disposition. For example, a proposed queue and confidence can be stored separately from whether the item was automatically routed, held for review or rejected by schema validation. That separation lets a team compare thresholds later without rerunning every request. It also reveals whether improvements come from the model or from simpler product rules. Evaluate each question type independently: a useful classifier does not by itself establish reliable dates, quantities or object boxes.</p>"
+    },
+    {
+      "id": "specialization",
+      "title": "Fine-tuning requires a measurable target",
+      "html": "<p>Liquid AI presents specialization as the family’s central use case and publishes recipes covering areas such as structured text, visual extraction and audio adaptation. Its single-GPU fine-tuning statement is a publisher claim, not a universal memory requirement for any batch size, context length or training method. A team should first establish whether prompting and retrieval already solve the task, then compare a specialized checkpoint against that baseline.</p><p>For a worksheet assistant, split held-out data by document source or template so near-duplicate pages do not inflate results. For speech, separate speakers and recording conditions. For an asset-routing model, include both common classes and deliberately unsupported requests. Measure useful answers, errors, abstentions, latency and memory together. A model that confidently misroutes fewer routine items but mishandles missing information may still need a different interface or threshold.</p><p>Maintain a small regression set that runs whenever the checkpoint, runtime, quantization or processor changes. This proposed evaluation process is more decision-useful than selecting a family member from an aggregate benchmark ranking. It also produces a concrete stopping rule: if the compact model cannot meet the application's quality target, keep the narrower feature or retain the existing fallback.</p>"
+    },
+    {
+      "id": "license-and-cost",
+      "title": "The license and total cost are part of the choice",
+      "html": "<p>The models carry the LFM Open License v1.0, a custom license with a commercial-use restriction linked to annual revenue. Its definition sets a $10 million threshold, and section 5 conditions commercial rights on the revenue limitation. Qualified nonprofit organizations have a specific exception for noncommercial or research purposes. Redistribution also requires retaining applicable notices and providing the license, with notices for modified files. This is not an unrestricted Apache-style commercial grant. <a href=\"https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE\">Exact license text</a>.</p><p>The license supplies no-charge rights subject to its terms; running the system still incurs hardware or hosting, storage, integration and maintenance costs. This report verified no hosted-inference price and makes no per-request cost estimate. The practical opportunity is a small, specialized feature whose behavior can be measured on the intended device. Start with the narrowest suitable variant, confirm its actual runtime path and license fit, and expand modalities only when they improve the application under test.</p><p>Budget the pilot around a specific workload: how many items arrive, their typical media length, the number processed together, and the delay users can tolerate. Include a fallback for unsupported inputs and a review queue for uncertain ones. Those product choices can change total cost more than the checkpoint’s nominal parameter count. They also make a fair comparison possible between an on-device build, a privately hosted service and an existing API workflow without assuming that the smallest weight download is automatically cheapest.</p>"
+    }
+  ],
+  "useCases": [
+    "Prototype a source-grounded visual lesson assistant using LFM3-VL-2B.",
+    "Review short video excerpts with LFM3-Omni-2B, explicitly enabling soundtrack input.",
+    "Use d1 models for typed routing and extraction behind application validation.",
+    "Compare a small specialized model with an existing cloud workflow on held-out examples."
+  ],
+  "limitations": [
+    "Documentation review only: no model was installed or executed.",
+    "LFM Open License v1.0 includes a $10 million annual-revenue commercial-use threshold and specific nonprofit/research terms.",
+    "The VL card says SGLang support is in review and vLLM support is in progress.",
+    "Audio and Omni have 32K context; d1 reliability may degrade before its nominal 128K limit.",
+    "Long spoken passages are a documented weakness of d1-Omni, particularly outside Latin-script languages."
+  ],
+  "sources": [
+    {
+      "id": "repos-lfm3-release",
+      "title": "Liquid AI: Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "accessedAt": "2026-10-28T19:43:38.107Z",
+      "publishedAt": "2026-10-27",
+      "locator": "Article, publication header and family overview",
+      "supports": "October 27 launch, six variants and specialization resources"
+    },
+    {
+      "id": "repos-lfm3-text",
+      "title": "LFM3-1.7B model card",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "accessedAt": "2026-10-28T19:43:48.907Z",
+      "publishedAt": null,
+      "locator": "Model description, specifications, recommended use and inference",
+      "supports": "Text architecture, context, limitations and deployment formats"
+    },
+    {
+      "id": "repos-lfm3-vl",
+      "title": "LFM3-VL-2B model card",
+      "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+      "accessedAt": "2026-10-28T19:43:49.802Z",
+      "publishedAt": null,
+      "locator": "Specifications, recommended use and collapsed inference details",
+      "supports": "Vision/video input, context and incomplete serving integrations"
+    },
+    {
+      "id": "repos-lfm3-audio",
+      "title": "LFM3-Audio-2B model card",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+      "accessedAt": "2026-10-28T19:43:50.427Z",
+      "publishedAt": null,
+      "locator": "Specifications, use cases and speech deployment",
+      "supports": "Speech input/output rates and 32K context"
+    },
+    {
+      "id": "repos-lfm3-omni",
+      "title": "LFM3-Omni-2B model card",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "accessedAt": "2026-10-28T19:44:05.457Z",
+      "publishedAt": null,
+      "locator": "Specifications, limitations and video soundtrack example",
+      "supports": "Omni inputs/outputs, 32K context, non-reasoning behavior and soundtrack flags"
+    },
+    {
+      "id": "repos-lfm3-d1",
+      "title": "d1-2B model card",
+      "url": "https://huggingface.co/LiquidAI/d1-2B",
+      "accessedAt": "2026-10-28T19:44:06.133Z",
+      "publishedAt": null,
+      "locator": "Question types, system_one usage and limitations",
+      "supports": "Typed decisions, context and threshold calibration"
+    },
+    {
+      "id": "repos-lfm3-d1-omni",
+      "title": "d1-Omni-2B model card",
+      "url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+      "accessedAt": "2026-10-28T19:44:06.911Z",
+      "publishedAt": null,
+      "locator": "Overview, supported question types and limitations",
+      "supports": "Audio decisions without token generation and speech limitations"
+    },
+    {
+      "id": "repos-lfm3-base",
+      "title": "LFM3-1.7B-Base model card",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-Base",
+      "accessedAt": "2026-10-28T19:44:16.166Z",
+      "publishedAt": null,
+      "locator": "Base model recommended use",
+      "supports": "Continued pretraining and substantial specialization"
+    },
+    {
+      "id": "repos-lfm3-files",
+      "title": "LFM3-1.7B repository files",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/tree/main",
+      "accessedAt": "2026-10-28T19:44:15.643Z",
+      "publishedAt": null,
+      "locator": "Files and versions, main branch",
+      "supports": "Observed downloadable weight file, custom code and exact license link"
+    },
+    {
+      "id": "repos-lfm3-license",
+      "title": "LFM Open License v1.0",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+      "accessedAt": "2026-10-28T19:44:28.021Z",
+      "publishedAt": null,
+      "locator": "Definitions and sections 2, 4 and 5",
+      "supports": "Revenue-limited commercial permission, nonprofit exception and redistribution terms"
+    }
+  ],
+  "images": [],
+  "judgment": "A substantial new small-model family with unusually distinct generation and decision interfaces. Worth evaluating for bounded educational and creative applications; deployment readiness and licensing should determine the selected variant before benchmark rankings.",
+  "researchNote": "Primary release article, all six posttrained cards, the base card, weight listing, exact LICENSE file and relevant collapsed examples were inspected in Chrome on October 28. The generic license link returned 404; the LICENSE file was reached through the observed Files listing. Benchmarks and deployment examples are publisher documentation, not independent experiments. Proposed workflows below are editorial designs, not tested demonstrations."
+}

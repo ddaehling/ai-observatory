@@ -1,0 +1,31 @@
+{
+  "reportId": "novelty-judge-bench",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "d1f407ad9d5792471cbd1a1fd99e194b1b86e7ac9f3324dd7b5a0cae1669291b",
+  "evidenceHash": "41615f37fe16f0c58bfa1a900b6e3ee0c6af90a8e1be1e2e6f863943f0fe8830",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 7
+  },
+  "rationale": {
+    "usefulness": "The benchmark and configuration comparisons offer a concrete classroom evidence-literacy exercise and a useful audit of idea-screening applications. The report keeps uncertainty, ties, literature evidence and human follow-up visible and treats its video explainer as a proposed use rather than an observed educational result.",
+    "impact": "Testing the novelty judge itself addresses an important weakness in automated research pipelines. Large same-input verdict reversals are consequential even with imperfect labels. One conference, extreme case selection and limited configuration interactions bound how far the results generalize.",
+    "novelty": "The explicit review-signal construction and controlled comparison on human and generated ideas add a meaningful domain-specific test. Prompt and presentation sensitivity of LLM judges were already known; the new contribution is the structured novelty-evaluation evidence and reusable benchmark.",
+    "maturity": "There is a paper, public dataset, reproduction scripts and clearly described scoring/aggregation. Weak generated labels, a single expert sanity check and absent released judge logs constrain validation. It is ready as a research stress test, not as a dependable novelty oracle.",
+    "openness": "Apache-2.0 code and ODC-BY evaluation data expose prompts, fields and reconstruction paths. OpenReview attribution, proprietary output terms, API dependencies and unavailable judgment/retrieval traces prevent full reproducibility and unrestricted reuse."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The expert sanity check covers only 30 deliberately selected pairs, and generated labels remain weak assumptions. The report appropriately separates accuracy from label-independent disagreement.",
+    "The captured arXiv HTML ends within Appendix A.1.1; the main-method findings and exact headline values are corroborated by the release article and dataset/repository, but the capture is not a complete rendering of all appendices or run artifacts."
+  ]
+}

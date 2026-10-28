@@ -1,0 +1,31 @@
+{
+  "reportId": "liquid-lfm3-specialized-multimodal",
+  "reviewerId": "/root/edition_20261028_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:49.176604Z",
+  "reportHash": "9a1ff8f6b494714989a58fa0fb42d39ee44867f86554ed277486e39937c34ae6",
+  "evidenceHash": "8646344042e03478139c2498b7708d54e863daf2de2adfbb3b6df2ae2fcce6cf",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 5,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "Six documented small variants cover generation, visual interpretation, speech and typed decisions with concrete downloadable weights and per-card integration paths. The report’s model-selection table, soundtrack flags, long-context cautions and teacher/editor review proposals help builders choose an appropriate bounded feature.",
+    "impact": "A shared small backbone spanning these modalities and specialization recipes can meaningfully broaden deployable local AI. The significance remains potential: runtime support is uneven, application quality was not tested and efficiency claims are publisher measurements rather than independently demonstrated operating benefits.",
+    "novelty": "The family combines a tri-hybrid text backbone, new media encoders, an initial Omni model and non-generative typed decision heads at roughly 2B scale. This is substantive differentiated engineering, although several ingredients and decision-model patterns predate this release.",
+    "maturity": "Detailed model cards and executable-looking examples provide a usable evaluation starting point. The VL card explicitly says SGLang support is in review and vLLM support in progress; custom code, modality-specific runtimes and documented d1-Omni weaknesses impose material integration limits.",
+    "openness": "Weights, model code, architecture descriptions and specialization recipes are inspectable and portable. The custom LFM Open License’s revenue-linked commercial restriction, separate nonprofit exception and incomplete training-data reproducibility materially limit openness relative to an unrestricted permissive release."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No publication-blocking factual issue found. The report appropriately distinguishes weight footprint from working memory, nominal context from reliability, and a backend listed in a table from released working support.",
+    "The $10 million threshold language is a summary of the archived custom license; it should not be simplified into an unconditional commercial-use grant."
+  ]
+}

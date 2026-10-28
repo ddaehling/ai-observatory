@@ -1,0 +1,31 @@
+{
+  "reportId": "ollama-fly-sprites",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "ae510eded2a4f6907d414887e9a9ca44dfa43789774112eafe0277262f80f866",
+  "evidenceHash": "95f22ea7fc7031e84d480390d7796742f89b3e3892f8a00f2b09789b792bd210",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 4,
+    "maturity": 6,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The connector addresses a concrete need in educational coding labs and application workers: authorized model calls without distributing the provider key into every agent environment. Documented denial, identity and path-policy behavior plus separate compute/model prices make a bounded pilot practical; video examples appropriately concern surrounding software rather than media generation.",
+    "impact": "This is a meaningful operational integration within agent tooling, reducing one credential-management burden while preserving persistent work environments. It does not establish a new model capability or a general solution to agent safety, and no measured reliability or adoption effect is available.",
+    "novelty": "The Ollama-specific integration is useful, but a credential-holding gateway with identity-based policy is an established architecture. The distinctive value is how it fits persistent Sprites and model access, rather than a new isolation or inference method.",
+    "maturity": "Two provider sources describe a coherent setup flow, access policies, failure codes, billing and persistence behavior. That is reasonably developed operational documentation. No actual authorization, revocation, checkpoint, isolation or billing test was performed, so dependable end-to-end operation remains unverified.",
+    "openness": "Public REST documentation, OpenAI-compatible requests and ordinary Linux workloads help inspectability and some portability. The actual environment and gateway are hosted services requiring accounts, provider credentials and separate cloud usage; no open implementation or offline equivalent is established by the reviewed evidence."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Credential concealment does not prevent an authorized agent from spending inference or sending data through the gateway. The report correctly separates these authorities.",
+    "Pricing, idle compute behavior and filesystem checkpoints are documentary claims; no account or service behavior was exercised."
+  ]
+}

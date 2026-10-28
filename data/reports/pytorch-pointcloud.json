@@ -1,0 +1,149 @@
+{
+  "id": "pytorch-pointcloud",
+  "title": "PyTorch PointCloud: a shared starting point for 3D learning experiments",
+  "entity": "PyTorch PointCloud",
+  "category": "Open source",
+  "tags": [
+    "3D",
+    "point clouds",
+    "PyTorch",
+    "education",
+    "computer vision"
+  ],
+  "summary": "An independent alpha library unifies point-cloud models and preprocessing, with clear CPU/CUDA boundaries and separate licenses for pretrained assets.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-20",
+  "discoveredAt": "2026-10-24T18:02:07.825896Z",
+  "updatedAt": "2026-10-28T19:55:09.339427Z",
+  "officialUrl": "https://pytorch-pointcloud.org/latest/",
+  "sections": [
+    {
+      "id": "what-it-is",
+      "title": "A common interface for point-cloud models",
+      "html": "<p>PyTorch PointCloud packages models, pretrained weights, datasets, transforms and inference helpers for three-dimensional point clouds behind a shared Python interface. The practical attraction is reducing the integration work involved in trying architectures that normally arrive in separate research repositories. A student comparing object classifiers or a developer testing scene segmentation can start with a common registry and data convention instead of translating every model’s surrounding pipeline from scratch.</p><p>This is baseline coverage of an existing alpha project. The inspected documentation identifies version 0.0.18, dated October 20, 2026 in the changelog; the first listed version dates to August 29. It is an independent project by Arthur Dujardin and explicitly has no affiliation with the PyTorch team. Its name describes the framework it uses, not official stewardship or a production-readiness guarantee.</p><p>We inspected the public documentation, installation requirements, quick start, data format, operational FAQ, changelog and third-party notices. We did not install the package, download weights, accept dataset terms or run inference. All capability descriptions here are documented behavior, and proposed uses are prospective. In particular, illustrative outputs and benchmark values in the documentation are not measurements performed by the Observatory.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/\">PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/about/\">About - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/changelog/\">Changelog - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "interface",
+      "title": "What the shared interface buys you",
+      "html": "<p>The central entry point is create_model, with a model name, task and optional pretrained flag. Names identify an architecture and may also encode size, training dataset and source author. The registry exposes list_models and model_info, so callers can inspect available configurations and weight metadata before constructing a model. This separation is useful when designing an experiment: discovering an entry should not require allocating a GPU or downloading a large checkpoint.</p><p>The returned information includes the transform expected by that checkpoint. Preprocessing is part of the model’s operating contract, not an interchangeable convenience. Sampling, normal handling, feature construction and label mapping can change the meaning of a prediction. The quick start therefore obtains the registered transform, applies it through the dataset, packs the resulting sample and then calls the model. A common factory does not mean every architecture takes identical raw sensor fields.</p><p>There is an important naming trap. A configuration without an author tag can define architecture hyperparameters and a transform while having no pretrained weights. The FAQ gives pointnet.modelnet40 as an example. Requesting pretrained weights for such a name produces an error; the documented solution is to choose an entry that actually advertises a checkpoint or construct the architecture without pretrained weights. An app should expose this distinction clearly instead of making every registry result look immediately usable.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/about/\">About - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/get-started/\">Quick Start - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "hardware",
+      "title": "Plan the environment around the model family",
+      "html": "<p>The installation page requires Python 3.10 or newer and torch 2.8 or newer. Installing torch-pointcloud also installs torch-geometric, but several architectures need separately installed compiled kernels. Those wheels must match the selected PyTorch and CUDA build. The documentation provides a selector and dependency table, which is more useful than assuming one universal installation command covers the complete model collection.</p><p>Point-based families such as PointNet, PointNet++, DGCNN, PointNeXt and RandLA-Net have documented CPU paths. Sparse-voxel and flash-attention families including Point Transformer V3, Sonata, Concerto, Utonia and several detectors require CUDA. CPU availability for one family therefore should not be generalized into support for every laptop or accelerator. Our inspection did not establish Apple Silicon acceleration, a minimum memory recommendation for each model or acceptable interactive latency.</p><p>The optional dependencies are significant engineering choices. Many point models use pyg-lib for sampling and neighbor searches; other families require spconv, flash-attn, octree or sparse-convolution packages. Some alternatives exist, such as disabling flash attention for documented models, but that does not remove every other hardware dependency. The project says its CI tests run on CPU with torch 2.8.0 and its benchmarks use torch 2.10.0 with CUDA 12.8. That is useful scope information, not evidence that every listed combination has identical coverage.</p><p>For a first evaluation, choose one documented CPU model and a small permitted example before provisioning a larger GPU environment. Record package versions and the exact checkpoint. If a kernel import fails after a torch upgrade, the FAQ points to rebuilding the version match; changing the neural architecture to make the error disappear would confound the experiment.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/installation/\">Installation - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "data",
+      "title": "Packed batches are the main integration contract",
+      "html": "<p>A sample is a dictionary of tensors. Point positions have shape N by 3; optional input features, colors, normals and other fields have their own documented shapes and meanings. Batching concatenates clouds and adds an index identifying which cloud each point belongs to. It does not pad all samples into a rectangular batch-by-points array. This convention, inherited from PyTorch Geometric, accommodates differently sized clouds while keeping the model interface consistent.</p><p>Classification generally returns one vector per cloud, segmentation returns one vector per point, and detection has its own box representation and decoding step. A website that expects a single class label cannot simply substitute a segmentation model and display the same output. The input_keys metadata and select_inputs helper document how to pick the required tensors. Inspect these before writing upload validation or a worker-service schema.</p><p>Transformations may alter the number or ordering of points. The documented inverse and index mappings help reconnect predictions to the input cloud. That matters when an interface colors the original scan: a plausible-looking overlay attached to the wrong points is still wrong. Unlabeled values also vary between datasets and checkpoints, so loss functions and confusion matrices need the appropriate ignore index. These details are reasons to preserve the supplied preprocessing and inspect outputs, not just compare a model’s headline score.</p><p>For scenes too large for one forward pass, the library documents reusable inferers, including windows, voxel partitions and repeated spheres. They are building blocks for splitting and recombining inference. They do not establish that an arbitrarily large scan will fit a particular machine, nor that boundary artifacts disappear. Measure memory, runtime and output continuity on representative scenes before claiming large-scale readiness.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/data-format/\">Data Format - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "license",
+      "title": "Code, weights and data have separate terms",
+      "html": "<p>The library’s code is Apache 2.0. Pretrained weights retain their originating licenses, which the registry and third-party notice table identify. Sonata, Concerto and Utonia checkpoints are listed under CC BY-NC 4.0. Several other sources use MIT or Apache 2.0, while the detailed table also includes an Etalab-2.0 source. Selecting the package does not select one uniform license for everything it can load.</p><p>Training datasets bring another layer. The notice table identifies academic or research-only terms for resources such as ModelNet40 and ScanObjectNN, noncommercial research or educational terms for ScanNet and ShapeNet, and Creative Commons noncommercial variants for several driving datasets. These entries are a useful starting inventory, not an individualized legal assessment of downstream use. A commercial prototype needs a review of the chosen checkpoint and relevant source data, not just the repository’s top-level badge.</p><p>Some downloads are gated. The FAQ specifically identifies a DALES checkpoint whose Hub repository requires accepted terms and authentication; certain datasets require the caller to acknowledge their terms. The release notes explain that downloads can use a Hugging Face token from the environment. Our review did not accept any agreement or verify access to a gated checkpoint. Treat an access error as a prerequisite to resolve through the provider, not evidence that the model is broken.</p><p>The documented offline path is to populate the weight cache first or provide a local checkpoint path. That can be useful for a classroom or a field workstation, but dependencies, data and any other required assets must also be available. There is no verified per-inference hosted price in the reviewed material. Local experiments still incur hardware, storage and execution costs; permissive software access does not make those resources free.</p><p>Sources: <a href=\"https://github.com/arthurdjn/pytorch-pointcloud/blob/main/THIRD_PARTY_NOTICES.md\">pytorch-pointcloud/THIRD_PARTY_NOTICES.md at main · arthurdjn/pytorch-pointcloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "teaching",
+      "title": "An approachable teaching experiment",
+      "html": "<p>A useful course project would compare two permitted object classifiers on the same held-out examples. Begin with the documented ModelNet-style workflow only if its terms fit the course, or supply appropriately licensed data. Have students record model names, transforms, class mappings and package versions before examining predictions. The lesson should be how representations and preprocessing affect behavior, rather than which model produces the prettiest one-example output.</p><p>Next introduce a controlled disturbance: reduce point density, remove a region or rotate an object within a declared protocol. Measure changes using the same test items and preserve failures for discussion. Keep the original coordinates and transformed inputs so students can explain what the model actually saw. These activities are proposed uses of the library; we have not tested whether they improve learning or whether every named model handles each perturbation appropriately.</p><p>The shared interface also makes a practical software-engineering exercise. Ask students to build a small adapter that validates required fields and reports unsupported tasks before inference. Then test it with missing normals, inconsistent point counts and a model configuration that lacks weights. Such an exercise connects machine-learning assumptions to ordinary interface design, while making clear that good error handling is different from strong predictive accuracy.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/get-started/\">Quick Start - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/data-format/\">Data Format - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "creative-workflows",
+      "title": "Apps, websites and video production",
+      "html": "<p>For an app working with scanned objects, the library could supply a classification or segmentation worker behind a separate viewer. A narrow prototype might accept one known file format, validate coordinates and features, run one selected checkpoint and return labels with provenance. Show the model and class vocabulary alongside the output. A scan of an unfamiliar object should not acquire a confident product label simply because the network must choose from its training categories.</p><p>For a website exploring a building or landscape scan, a prospective workflow is to preprocess and run inference on a suitable backend, then publish a lightweight point-cloud view with toggles between original color and predicted classes. The Python package does not itself provide that viewer, web API or hosting. A browser-facing application must supply those pieces and decide whether to process user uploads or serve precomputed examples. Preserve a path to the unmodified scan so users can inspect segmentation mistakes.</p><p>For educational video, turn one scene into a sequence showing raw points, transformed input, predicted segments and selected failures. The library could produce analysis data used by a separate rendering or editing system. It is not a text-to-video model, an automatic rigging package or a renderer for finished shots. A clear explainer can nevertheless make the invisible preprocessing steps tangible: show which points were sampled, how windows overlap and where a class boundary becomes uncertain.</p><p>For creative research, feature extraction may help compare scanned assets or explore similarity within a permitted collection. The documented num_classes=0 option exposes representations beneath a classification head, and pretrained encoders can be reused with a new head. That is an implementation starting point, not a demonstrated semantic-search product. Validate retrieval quality against human expectations and review the selected weights’ terms before offering the feature to customers.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/about/\">About - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/data-format/\">Data Format - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>.</p>"
+    },
+    {
+      "id": "readiness",
+      "title": "What to establish before depending on it",
+      "html": "<p>The changelog is useful evidence of active alpha development and also a record of why version pinning matters. Version 0.0.18 fixes activation and input-transform alignment for several RandLA-Net checkpoints and an intermittent octree collation error. Earlier releases repair example notebooks, model naming and architectural details. These are substantive compatibility changes; a previously saved result may not remain comparable after an apparently small upgrade.</p><p>A bounded adoption test should therefore answer specific questions: can the selected model load on the intended hardware, does preprocessing preserve the required fields, do outputs map back to the correct points, and does the chosen task meet accuracy and latency needs? Run representative failure cases as well as the quick start. The documentation offers seeds and determinism controls, but repeatability still needs checking for the selected kernels and environment.</p><p>Our judgment is that PyTorch PointCloud is worth evaluating for teaching, model comparison and carefully scoped 3D prototypes. Its value is an inspectable common interface around existing methods, with unusually visible preprocessing and provenance details. The present evidence supports exploration, not a claim of universal interoperability or production reliability. Start with one model, one licensed dataset and one measurable task; expand only after that combination works and its limits are understood.</p><p>Sources: <a href=\"https://pytorch-pointcloud.org/latest/changelog/\">Changelog - PyTorch PointCloud</a>; <a href=\"https://pytorch-pointcloud.org/latest/faq/#models\">FAQ - PyTorch PointCloud</a>.</p>"
+    }
+  ],
+  "useCases": [
+    "Teach point-cloud classification and preprocessing with a bounded CPU experiment.",
+    "Prototype a 3D scene-analysis app or browser viewer with backend inference.",
+    "Produce educational video showing sampled points and segmentation failures."
+  ],
+  "limitations": [
+    "Alpha project; no package installation or inference testing performed.",
+    "Many model families require CUDA and matching compiled kernels.",
+    "Weights and training datasets have separate, sometimes noncommercial or gated terms.",
+    "No verified deployment latency, memory budget or hosted inference price."
+  ],
+  "sources": [
+    {
+      "id": "research-source-910b67410e3bc2a7",
+      "title": "PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/",
+      "accessedAt": "2026-10-28T19:42:35.233Z",
+      "publishedAt": null,
+      "locator": "Overview; In a few lines",
+      "supports": "Common factory and model/task scope"
+    },
+    {
+      "id": "research-source-12ba5a204846f5b5",
+      "title": "About - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/about/",
+      "accessedAt": "2026-10-28T19:42:48.632Z",
+      "publishedAt": null,
+      "locator": "Scope; Design; License",
+      "supports": "Independence, interfaces and code license"
+    },
+    {
+      "id": "social-source-9d68d1bf1d7ba18f",
+      "title": "Installation - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/installation/",
+      "accessedAt": "2026-10-28T19:42:48.244Z",
+      "publishedAt": null,
+      "locator": "Dependency table; Compatibility",
+      "supports": "Python, PyTorch, kernel, CPU and CUDA requirements"
+    },
+    {
+      "id": "research-source-6ecf316a7eb1fa72",
+      "title": "Changelog - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/changelog/",
+      "accessedAt": "2026-10-28T19:43:17.915Z",
+      "publishedAt": "2026-10-20",
+      "locator": "0.0.18; earlier releases",
+      "supports": "Release date and documented alpha repairs"
+    },
+    {
+      "id": "research-source-e122d5603b83be28",
+      "title": "Data Format - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/data-format/",
+      "accessedAt": "2026-10-28T19:43:18.883Z",
+      "publishedAt": null,
+      "locator": "Packed batches; Keys; Sampling keys; Ignore index",
+      "supports": "Data layout and prediction mapping"
+    },
+    {
+      "id": "research-source-59fbb4d5de128f8a",
+      "title": "FAQ - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/faq/",
+      "accessedAt": "2026-10-28T19:43:44.789Z",
+      "publishedAt": null,
+      "locator": "Installation; Pretrained weights; Models; Data",
+      "supports": "Gated access, offline cache, inference, reproducibility and weights"
+    },
+    {
+      "id": "social-source-fef71de214af1dad",
+      "title": "pytorch-pointcloud/THIRD_PARTY_NOTICES.md at main · arthurdjn/pytorch-pointcloud",
+      "url": "https://github.com/arthurdjn/pytorch-pointcloud/blob/main/THIRD_PARTY_NOTICES.md",
+      "accessedAt": "2026-10-28T19:42:49.386Z",
+      "publishedAt": null,
+      "locator": "Pretrained weights; Training data; Source code",
+      "supports": "Separate code, weight and dataset licenses"
+    },
+    {
+      "id": "research-source-97366d67284b18da",
+      "title": "Quick Start - PyTorch PointCloud",
+      "url": "https://pytorch-pointcloud.org/latest/get-started/",
+      "accessedAt": "2026-10-28T19:43:45.196Z",
+      "publishedAt": null,
+      "locator": "Run a pretrained model",
+      "supports": "Documented first inference workflow"
+    }
+  ],
+  "images": [],
+  "judgment": "Promising integration infrastructure for teaching and scoped 3D prototypes; validate one model and data path before relying on broad interoperability.",
+  "researchNote": "Primary public docs, expanded operational FAQ, release changelog and third-party notices inspected in Chrome. Version0.0.18 release date is Oct20; baseline coverage is not an Oct28 launch. Documentation outputs and benchmarks were not reproduced. Proposed applications require separate viewers, services or video tools."
+}

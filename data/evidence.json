@@ -12520,5 +12520,3797 @@
     "limitations": [
       "No executable artifact, memory requirement, benchmark conditions or independent latency measurement inspected."
     ]
+  },
+  {
+    "claim_id": "a2ui-oct28-format",
+    "claim": "A2UI Express separates a compact inference format from the standard JSON transport; SDK compilation preserves existing catalogs/renderers.",
+    "source_ids": [
+      "official-source-00217b8f4c7c46b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-00217b8f4c7c46b7",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+        "locator": "Opening and How swappable inference formats work",
+        "passage": "rely on deterministic code in A2UI's Agent SDKs to translate it into the JSON-based transport protocol.",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:45.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+        "archive_sha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+      }
+    ],
+    "qualifiers": [
+      "Publisher implementation description, not execution verification."
+    ],
+    "contradicts": [],
+    "source_family": "developers.googleblog.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-schema",
+    "claim": "Prompt instructions and compiler derive from the catalog schema; macros can fetch record values in code.",
+    "source_ids": [
+      "official-source-00217b8f4c7c46b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-00217b8f4c7c46b7",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+        "locator": "How swappable inference formats work; macros",
+        "passage": "The model writes a call with only an ID, such as OrderStatus(\"ord_42\"), and your macro fetches the order and fills in the values",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:45.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+        "archive_sha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+      }
+    ],
+    "qualifiers": [
+      "Does not establish application authorization or semantic correctness."
+    ],
+    "contradicts": [],
+    "source_family": "developers.googleblog.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-streaming",
+    "claim": "Launch says Python/TypeScript stream Direct JSON but compile Express from a complete reply.",
+    "source_ids": [
+      "official-source-00217b8f4c7c46b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-00217b8f4c7c46b7",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+        "locator": "SDK availability paragraph",
+        "passage": "The Python and TypeScript SDKs can both stream Direct JSON chunk by chunk, and they compile Express from the complete reply.",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:45.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+        "archive_sha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+      }
+    ],
+    "qualifiers": [
+      "Version-specific announcement; distinguish grammar design potential."
+    ],
+    "contradicts": [],
+    "source_family": "developers.googleblog.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-eval",
+    "claim": "Google describes51 tasks on gemini-3.5-flash comparing four formats and thinking modes; savings are attributed.",
+    "source_ids": [
+      "official-source-00217b8f4c7c46b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-00217b8f4c7c46b7",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+        "locator": "How we devised A2UI Express",
+        "passage": "We ran all four formats through the same 51-task eval on gemini-3.5-flash",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:45.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+        "archive_sha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+      }
+    ],
+    "qualifiers": [
+      "No independent reproduction; up-to performance claims not universal."
+    ],
+    "contradicts": [],
+    "source_family": "developers.googleblog.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-decision",
+    "claim": "Decision-model assembly is an example, not an included SDK inference format.",
+    "source_ids": [
+      "official-source-00217b8f4c7c46b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-00217b8f4c7c46b7",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+        "locator": "Controlled generation with Jev",
+        "passage": "A2UI Agent SDKs, don’t include a decision model inference format yet",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:45.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-article.json",
+        "archive_sha256": "e98ac323b884fd884c86b20ba1c86f76b1bdecec4ec5ddeb326d699788b3ec10"
+      }
+    ],
+    "qualifiers": [
+      "Known-shape grammar constrains possible screens."
+    ],
+    "contradicts": [],
+    "source_family": "developers.googleblog.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-default",
+    "claim": "Current main changelog puts Express default switch under Unreleased.",
+    "source_ids": [
+      "official-source-972a322ad2c1a420"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-972a322ad2c1a420",
+        "url": "https://github.com/a2ui-project/a2ui/blob/main/python/a2ui_agent/CHANGELOG.md",
+        "locator": "Unreleased, BREAKING entry",
+        "passage": "A2uiGenerator and A2uiRequestProcessor now default to ExpressFormatFactory",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:11.475Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-sdk-changelog.json",
+        "archive_sha256": "c76e5f3d7b88ceaf782b77edb0891dd45c2288034211f2b0c3e32e5161e457d2"
+      }
+    ],
+    "qualifiers": [
+      "Located under Unreleased; not proof of installed-package default."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-spec",
+    "claim": "Express specification describes progressive line-oriented rendering as a design goal.",
+    "source_ids": [
+      "official-source-1a5b0421a1c3c860"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-1a5b0421a1c3c860",
+        "url": "https://a2ui.org/specification/proposals/express/a2ui_express/",
+        "locator": "Core design goals, Streaming compatibility",
+        "passage": "The line-oriented grammar allows the client host to parse and build the component hierarchy line-by-line",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:29.998Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-express-spec.json",
+        "archive_sha256": "b6e18559923736188cf683a9f07d2852a5c5e25fdc1fef71aeb66408417a41d3"
+      }
+    ],
+    "qualifiers": [
+      "Potential does not override launch-specific SDK behavior."
+    ],
+    "contradicts": [],
+    "source_family": "a2ui.org",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-maturity",
+    "claim": "A2UI is early public preview; stable protocol v0.9.1 versus v1.0 release candidate.",
+    "source_ids": [
+      "official-source-79a9fc50a0fa02aa"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-79a9fc50a0fa02aa",
+        "url": "https://github.com/a2ui-project/a2ui",
+        "locator": "README Status",
+        "passage": "current production release is v0.9.1, a patch release in the stable v0.9 protocol family.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:12.618Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-repository.json",
+        "archive_sha256": "a3ef2708bcbf81ed9c7d6913085b82ba31b0e8e3996604f0bcc540bd783945bd"
+      }
+    ],
+    "qualifiers": [
+      "Protocol and package version numbers differ."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-control",
+    "claim": "Client catalog and custom-component security remain developer responsibilities.",
+    "source_ids": [
+      "official-source-79a9fc50a0fa02aa"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-79a9fc50a0fa02aa",
+        "url": "https://github.com/a2ui-project/a2ui",
+        "locator": "High-level philosophy",
+        "passage": "your client application maintains a \"catalog\" of trusted, pre-approved UI components",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:12.618Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-repository.json",
+        "archive_sha256": "a3ef2708bcbf81ed9c7d6913085b82ba31b0e8e3996604f0bcc540bd783945bd"
+      }
+    ],
+    "qualifiers": [
+      "Declarative data is not a complete authorization or accessibility guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-access",
+    "claim": "A2UI repo displays Apache-2.0 and restaurant demo prerequisites; model access billed separately.",
+    "source_ids": [
+      "official-source-79a9fc50a0fa02aa"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-79a9fc50a0fa02aa",
+        "url": "https://github.com/a2ui-project/a2ui",
+        "locator": "License tab; Restaurant Finder prerequisites",
+        "passage": "Node.js 18+ (with Corepack enabled), uv, and a Gemini API key.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:12.618Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-repository.json",
+        "archive_sha256": "a3ef2708bcbf81ed9c7d6913085b82ba31b0e8e3996604f0bcc540bd783945bd"
+      }
+    ],
+    "qualifiers": [
+      "No demo run or model billing check."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-apparite",
+    "claim": "Apparite now presents a mock-design tool; its A2UI comparison is an earlier experimental pipeline.",
+    "source_ids": [
+      "official-source-4e1812c5f1719b90"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-4e1812c5f1719b90",
+        "url": "https://github.com/dglazkov/jev2ui",
+        "locator": "README introduction; Known limits",
+        "passage": "An apparition is not an app and does not become one: no data, no logic, nothing behind the glass.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:32.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-apparite.json",
+        "archive_sha256": "de0de1d5e20788bbf0fe0bf7ab46552cc8c00c0ad13e1a55da7052753f426e23"
+      }
+    ],
+    "qualifiers": [
+      "Current repository has evolved; do not apply old timing table to all current features."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-apparite-measurements",
+    "claim": "Apparite reports one11-prompt run, paid Gemini tier, jev1.13.0; first components92–298ms, fullscreens0.8–1.7s across pipelines.",
+    "source_ids": [
+      "official-source-4e1812c5f1719b90"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-4e1812c5f1719b90",
+        "url": "https://github.com/dglazkov/jev2ui",
+        "locator": "Results so far table",
+        "passage": "One run of npm run eval (11 prompts, gemini-3.5-flash-lite, jev-1.13.0, a paid-tier Gemini key).",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:32.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-apparite.json",
+        "archive_sha256": "de0de1d5e20788bbf0fe0bf7ab46552cc8c00c0ad13e1a55da7052753f426e23"
+      }
+    ],
+    "qualifiers": [
+      "Small sample, handwritten baseline, no independent benchmark; schema validity not UX quality."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "a2ui-oct28-apparite-prereq",
+    "claim": "Apparite requires Node20+ and Gemini/Jev keys; events in comparison pipelines log without business handling.",
+    "source_ids": [
+      "official-source-4e1812c5f1719b90"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-4e1812c5f1719b90",
+        "url": "https://github.com/dglazkov/jev2ui",
+        "locator": "Run it; Known limits",
+        "passage": "Requires Node 20+ and a .env with GEMINI_API_KEY and JEV_API_KEY.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:32.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/a2ui-apparite.json",
+        "archive_sha256": "de0de1d5e20788bbf0fe0bf7ab46552cc8c00c0ad13e1a55da7052753f426e23"
+      }
+    ],
+    "qualifiers": [
+      "Apache-2.0 code does not cover hosted model fees; no live use."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-access",
+    "claim": "Carbon starts with selected cyber defenders this week; broader trusted partners follow, general products coming soon.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Opening rollout paragraphs",
+        "passage": "Starting this week, we will make Carbon available to a subset of cyber defenders",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Announced staged access; not observed account entitlement."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-cyber",
+    "claim": "Google reports88.2% SEC-bench Pro,54.8% ExploitGym,71.0% CWE-bench, evaluated without guardrails.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Cybersecurity performance section",
+        "passage": "Carbon excels across key external benchmarks (evaluated without guardrails)",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Vendor benchmark claims; deployed restrictions may differ; methodology page not inspected."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-longtasks",
+    "claim": "Google reports internal multi-day engineering work including root-causing and patching large codebases.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Improving coding and reasoning",
+        "passage": "our teams have seen Carbon run for days to persist through dead ends",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Internal observation, not public unattended runtime promise."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-safety",
+    "claim": "Launch reports0% successful cheating with0.4% attempts and0% evaluated GraySwan attack success.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Advancing frontier model safety & security",
+        "passage": "successful cheating on Terminal-Bench 4.0 to 0.0%, with attempts to cheat dropping to 0.4%",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Finite evaluations do not prove universal immunity; Argon report is not a Carbon-specific full card."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-pricing",
+    "claim": "Introductory input/output2/10 dollars per million later becomes4/20; current launch gives no expiry date.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Opening pricing and expanded More Information footnote",
+        "passage": "After the introductory period expires, the price of $4 per 1M input tokens and $20 per 1M output tokens will apply.",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Cached-input95% discount in opening paragraph; complete billing/quotas not verified."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-fairwind",
+    "claim": "Fairwind documents controlled partner access, due diligence and defense/research purposes.",
+    "source_ids": [
+      "official-source-25d1ad479660a440"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-25d1ad479660a440",
+        "url": "https://deepmind.google/fairwind-program/",
+        "locator": "Governance; access FAQ",
+        "passage": "We conduct background checks on organizations that apply",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.836Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-fairwind.json",
+        "archive_sha256": "4267b114da6dc4d80ed0e6bc368788917502b358677eeeb0fcab7b865b11da6e"
+      }
+    ],
+    "qualifiers": [
+      "Public page still describes Argon; context only, not final Carbon contractual terms."
+    ],
+    "contradicts": [],
+    "source_family": "deepmind.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-fairwind-boundary",
+    "claim": "Current Fairwind page names Argon in technology/access/retention answers, welcomes defensive-benchmarking labs and directs student use to CodeMender.",
+    "source_ids": [
+      "official-source-25d1ad479660a440"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-25d1ad479660a440",
+        "url": "https://deepmind.google/fairwind-program/",
+        "locator": "Technology and FAQ",
+        "passage": "We welcome applications from academic labs that focus on defensive benchmarking.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.836Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-fairwind.json",
+        "archive_sha256": "4267b114da6dc4d80ed0e6bc368788917502b358677eeeb0fcab7b865b11da6e"
+      }
+    ],
+    "qualifiers": [
+      "Do not transfer Argon model entitlement or zero-retention promise to Carbon."
+    ],
+    "contradicts": [],
+    "source_family": "deepmind.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "cohere-oct28-rare",
+    "claim": "Cohere reports blocked synthetic-probe upload in Qwen3.8-Flash-Next evaluation, rare frequency and clean rerun.",
+    "source_ids": [
+      "official-source-27779e2e3a96ff05"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-27779e2e3a96ff05",
+        "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "locator": "What Cohere’s sandbox caught",
+        "passage": "less than one call in 100,000 across our evaluation runs",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:34.413Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/official-candidate-27779e2e3a96ff05.json",
+        "archive_sha256": "60823de50d37851840c2e7504197db2bf49299bc801098e0884daddef37b5175"
+      }
+    ],
+    "qualifiers": [
+      "Cohere is a competing vendor; blocked attempt not completed disclosure; no intent established; notQwen3.8-27B."
+    ],
+    "contradicts": [],
+    "source_family": "cohere.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "cohere-oct28-prefill",
+    "claim": "Released reproduction script truncates recorded token prefix to2323 before URL completion and requires paidHF inference.",
+    "source_ids": [
+      "official-source-899c105a226048cf"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-899c105a226048cf",
+        "url": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
+        "locator": "Reproduction code and notes",
+        "passage": "ids = ids[:2323]  # stop just before the URL",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:06.232Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/cohere-traces.json",
+        "archive_sha256": "5c1da5398268510b6683b44c9640f442ce3b9cc086a428769bc296477d9f6863"
+      }
+    ],
+    "qualifiers": [
+      "Conditioned continuation, not unconditional prevalence; Featherless throughHF; not executed; trace export timestamps are not event timestamps."
+    ],
+    "contradicts": [],
+    "source_family": "huggingface.co",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-table-boundary",
+    "claim": "Google’s benchmark table shows Carbon below GPT-6 Astra on FrontierSWE2 and below Claude Opus5.5 on OSWorld2.1 offline subset; no uniform task leadership.",
+    "source_ids": [
+      "official-source-de9a9990f704ecc1"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-de9a9990f704ecc1",
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.original.png",
+        "locator": "FrontierSWE2 and OSWorld-2.1 offline-subset rows",
+        "passage": "FrontierSWE2: Carbon61.2%, Astra65.5%; OSWorld2.1 offline: Carbon81.5%, Opus5.5 87.2%.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:42.641948+00:00",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-benchmarks-view.png",
+        "archive_sha256": "0e333f4f192134f30779d79f1c5d8b044231524ce0399e1838b62a6953ca81db"
+      }
+    ],
+    "qualifiers": [
+      "Visually inspected publisher table in Chrome, not independent measurement.",
+      "Archive is a complete screenshot of the displayed original asset, not original image bytes. Attempt to preserve original bytes failed with DNS resolution error."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "Benchmark methodology page was not inspected."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-family-20261028",
+    "claim": "Liquid AI announced six 2B-class LFM3 variants on October 27, 2026.",
+    "source_ids": [
+      "repos-lfm3-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-release",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+        "locator": "Overview",
+        "passage": "six 2B-class models (text, vision, audio, omni, and decision) trained from LFM3-1.7B-Base, including our first omni model and video input for our vision model.",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:38.107Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-blog.dom.json",
+        "archive_sha256": "bc696b6ebeae6d47929c93be0d7d866bc8467981ef9d4013ecfb3b8082269246"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-text-20261028",
+    "claim": "Text model is 1.73B parameters with 256K context; four-bit footprint is not an all-workloads guarantee.",
+    "source_ids": [
+      "repos-lfm3-text"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-text",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+        "locator": "Specifications",
+        "passage": "256K-token context window. Designed for the edge: at 4-bit precision, it takes about 1 GB of memory, so it fits on any phone or",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:48.907Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-1-7b.dom.json",
+        "archive_sha256": "48af6a9dc94e94b9d8282f69ef32733ed078ec0e1e5669f73a54f4ab7436388b"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-vl-20261028",
+    "claim": "VL accepts images and video; its card discourages coding, complex reasoning and multi-turn conversations.",
+    "source_ids": [
+      "repos-lfm3-vl"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-vl",
+        "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+        "locator": "Recommended use",
+        "passage": "not recommended for coding, multi-turn conversations, or complex reasoning. Inference Choose a checkpoint variant for your inference framework and hardware. Checkpoint Framework Description BF16",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:49.802Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-vl-2b.dom.json",
+        "archive_sha256": "ddc83dcbbd1cb93af09d5c86043d3b5b0b98287f8d5355b919c0acd41901a886"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-audio-20261028",
+    "claim": "Audio model documents 32K context, 16 kHz audio input and 24 kHz speech output.",
+    "source_ids": [
+      "repos-lfm3-audio"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-audio",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+        "locator": "Specifications",
+        "passage": "32K tokens (input + output) Streaming Causal audio encoding, incremental prefill, and streaming speech generation Speech languages / locales Arabic, Danish, German, Greek, British",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:50.427Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-audio-2b.dom.json",
+        "archive_sha256": "c6af456ac3c270d3da2a69dd3061454724ceaa74313099299e992277075ccd41"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-omni-20261028",
+    "claim": "Omni documents 32K context and is non-reasoning.",
+    "source_ids": [
+      "repos-lfm3-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-omni",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+        "locator": "Description and limitations",
+        "passage": "non-reasoning model. enable_thinking=True is not supported. Inference Choose a checkpoint variant for your inference framework and hardware. Checkpoint Framework Description BF16 SGLang, Transformers BF16",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:05.457Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-omni-2b.dom.json",
+        "archive_sha256": "d5f1236d9828a0a5489eda372e5824ed776f40e233f0e3381743863aad9fc8e9"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-20261028",
+    "claim": "d1 returns typed answers without generating tokens and recommends calibrating extraction thresholds.",
+    "source_ids": [
+      "repos-lfm3-d1"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1",
+        "url": "https://huggingface.co/LiquidAI/d1-2B",
+        "locator": "Overview, question types and limitations",
+        "passage": "without generating tokens. Best-in-class: it leads the open d1 models on average and on our board of over a hundred decision benchmarks, ahead of",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.133Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-2b.dom.json",
+        "archive_sha256": "197b0b5dbdecf1178142912605a667a20e143acc30f941476d24f0e0a783b500"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-omni-20261028",
+    "claim": "d1-Omni is an audio decision model; long spoken passages are a documented weakness.",
+    "source_ids": [
+      "repos-lfm3-d1-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1-omni",
+        "url": "https://huggingface.co/LiquidAI/d1-omni-2B",
+        "locator": "Limitations",
+        "passage": "Long spoken passages lose much of their accuracy, most of all outside Latin-script languages. Without audio, use d1-2B: it is stronger on text and",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.911Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-omni-2b.dom.json",
+        "archive_sha256": "3f85bc5db27ae723377d3098cd050e6262d5b7ce7f443537bab3ee2fed85b426"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-base-20261028",
+    "claim": "The base model is intended for continued pretraining and substantial fine-tuning.",
+    "source_ids": [
+      "repos-lfm3-base"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-base",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-Base",
+        "locator": "Recommended use",
+        "passage": "continued pre-training and your own post-training. Find more information about the LFM3 family in our release blog post. Model details The LFM3 family includes",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:16.166Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-base.dom.json",
+        "archive_sha256": "172e2406a2ac2a75f29217ce746dee988950ff2bdf9c1c78a93774a693a9f541"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-files-20261028",
+    "claim": "The text model repository exposes a 3.46 GB safetensors weight file and custom model code.",
+    "source_ids": [
+      "repos-lfm3-files"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-files",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/tree/main",
+        "locator": "Files and versions",
+        "passage": "3.46 GB xet LFM3-1.7B 1 day ago modeling_lfm3.py 42.4 kB LFM3-1.7B 1 day ago special_tokens_map.json Safe 92 Bytes LFM3-1.7B 1 day ago tokenizer.json 17.9",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:15.643Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-files.dom.json",
+        "archive_sha256": "ab123a59a0e3dad362bf20cf3f1a7c4e2d30b74241746d4327bca3a4266c1bf2"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-license-20261028",
+    "claim": "LFM Open License v1.0 has a $10M annual-revenue commercial-use threshold and qualified nonprofit exception.",
+    "source_ids": [
+      "repos-lfm3-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-license",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+        "locator": "Definitions and section 5",
+        "passage": "\"Threshold\" shall mean annual revenue of 10 million United States dollars ($10,000,000) or more. 2. Grant of Copyright License. Subject to the terms and",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:28.021Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-license-file.dom.json",
+        "archive_sha256": "77d5b75d890d166d0fc7e235f304821103a47cad0b4e46d29abe9f38e39c1969"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-vl-serving-20261028",
+    "claim": "VL GPU serving documentation says SGLang is in review and vLLM is in progress.",
+    "source_ids": [
+      "repos-lfm3-vl"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-vl",
+        "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+        "locator": "GPU inference with vLLM and SGLang",
+        "passage": "Support for LFM3-VL in SGLang is in review in sgl-project/sglang#46858, and support in vLLM is in progress. We will update this card when their",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:41.149Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/LFM3-VL-2B-details.json",
+        "archive_sha256": "99c2ccf4478e43335b61d31fc9ee9f18103759bbaa1b2419b7cf49e40eb7e303"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-omni-soundtrack-20261028",
+    "claim": "Omni video soundtrack requires both load_audio_from_video and use_audio_in_video; otherwise only frames enter the model.",
+    "source_ids": [
+      "repos-lfm3-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-omni",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+        "locator": "Video with its soundtrack",
+        "passage": "Without them, the model gets the frames only. conversation = [ {\"role\": \"system\", \"content\": \"Answer questions about the video using what you see and",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:42.464Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/LFM3-Omni-2B-details.json",
+        "archive_sha256": "9e50ab2051f85cc755ff9ee1a1366305137bdabcf707879a1e26ba84f4550be0"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-runtime-20261028",
+    "claim": "The d1 setup specifies Transformers 5.19 or later and the system_one interface.",
+    "source_ids": [
+      "repos-lfm3-d1"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1",
+        "url": "https://huggingface.co/LiquidAI/d1-2B",
+        "locator": "Using d1-2B",
+        "passage": "5.19\" torch torchvision pillow import torch from transformers import AutoModel device = \"cuda\" if torch.cuda.is_available() else \"mps\" if torch.backends.mps.is_available() else \"cpu\" dtype = torch.float32",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.133Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-2b.dom.json",
+        "archive_sha256": "197b0b5dbdecf1178142912605a667a20e143acc30f941476d24f0e0a783b500"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-audio-runtime-20261028",
+    "claim": "The audio setup specifies Transformers 5.20.2 or later and custom model code.",
+    "source_ids": [
+      "repos-lfm3-audio"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-audio",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+        "locator": "Transformers setup",
+        "passage": "5.20.2\" torch accelerate librosa soundfile Load the model and processor directly from the Hugging Face Hub: import torch import soundfile as sf from transformers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:50.427Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-audio-2b.dom.json",
+        "archive_sha256": "c6af456ac3c270d3da2a69dd3061454724ceaa74313099299e992277075ccd41"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-vl-runtime-20261028",
+    "claim": "The VL setup specifies Transformers 5.21.0 or later and custom model code.",
+    "source_ids": [
+      "repos-lfm3-vl"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-vl",
+        "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+        "locator": "Transformers setup",
+        "passage": "5.21.0): pip install \"transformers>=5.21.0\" torch torchvision pillow import torch from transformers import AutoModelForImageTextToText, AutoProcessor model_id = \"LiquidAI/LFM3-VL-2B\" model = AutoModelForImageTextToText.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\", trust_remote_code=True",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:49.802Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-vl-2b.dom.json",
+        "archive_sha256": "ddc83dcbbd1cb93af09d5c86043d3b5b0b98287f8d5355b919c0acd41901a886"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-launch-date-20261028",
+    "claim": "Publisher article explicitly dates launch announcement October 27, 2026.",
+    "source_ids": [
+      "repos-lfm3-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-release",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+        "locator": "Publication header",
+        "passage": "Published October 27, 2026 Leonie Monigatti iamleonie Follow LiquidAI Jimmy T.H. Smith jimmysmith1919 Follow LiquidAI Anthony Maltsev amaltsev Follow LiquidAI Maxime Labonne mlabonne Follow",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:38.107Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-blog.dom.json",
+        "archive_sha256": "bc696b6ebeae6d47929c93be0d7d866bc8467981ef9d4013ecfb3b8082269246"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-text-architecture-20261028",
+    "claim": "Text backbone mixes 13 gated short convolutions, five sliding-window and six global attention layers.",
+    "source_ids": [
+      "repos-lfm3-text"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-text",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+        "locator": "Specifications",
+        "passage": "13 gated short convolutions, 5 sliding-window attention, 6 global attention Context length 256K tokens (input + output) Vocabulary 128,000 tokens Languages English, Arabic, Chinese,",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:48.907Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-1-7b.dom.json",
+        "archive_sha256": "48af6a9dc94e94b9d8282f69ef32733ed078ec0e1e5669f73a54f4ab7436388b"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-text-retrieval-20261028",
+    "claim": "Text card recommends retrieval for knowledge-heavy work and discourages complex multistep reasoning.",
+    "source_ids": [
+      "repos-lfm3-text"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-text",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+        "locator": "Recommended use",
+        "passage": "Use retrieval or search for knowledge-heavy tasks. It is not recommended for agentic coding or complex multi-step reasoning due to its small size. Inference",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:48.907Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-1-7b.dom.json",
+        "archive_sha256": "48af6a9dc94e94b9d8282f69ef32733ed078ec0e1e5669f73a54f4ab7436388b"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-vl-context-20261028",
+    "claim": "VL samples video at 2 fps and documents 128K input-plus-output context.",
+    "source_ids": [
+      "repos-lfm3-vl"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-vl",
+        "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+        "locator": "Specifications",
+        "passage": "Video is sampled at 2 fps. Context length 128K tokens (input + output) Vocabulary 128,000 tokens Languages English, Arabic, Chinese, French, German, Italian, Japanese,",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:49.802Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-vl-2b.dom.json",
+        "archive_sha256": "ddc83dcbbd1cb93af09d5c86043d3b5b0b98287f8d5355b919c0acd41901a886"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-audio-rates-20261028",
+    "claim": "Audio uses 16 kHz input and 24 kHz output with 32K context.",
+    "source_ids": [
+      "repos-lfm3-audio"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-audio",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+        "locator": "Specifications",
+        "passage": "audio encoder operates at 16 kHz Output Text, 24 kHz speech, or interleaved text and speech Context length 32K tokens (input + output) Streaming",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:50.427Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-audio-2b.dom.json",
+        "archive_sha256": "c6af456ac3c270d3da2a69dd3061454724ceaa74313099299e992277075ccd41"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-omni-context-20261028",
+    "claim": "Omni context is 32K input plus output.",
+    "source_ids": [
+      "repos-lfm3-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-omni",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+        "locator": "Specifications",
+        "passage": "Context length 32K tokens (input + output) Vocabulary 128,000 text tokens Text languages English, Arabic, Chinese, French, German, Italian, Japanese, Korean, Portuguese, Spanish, Vietnamese,",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:05.457Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-omni-2b.dom.json",
+        "archive_sha256": "d5f1236d9828a0a5489eda372e5824ed776f40e233f0e3381743863aad9fc8e9"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-omni-serving-20261028",
+    "claim": "Omni SGLang table promises text output, while speech modes need their own runtime evaluation.",
+    "source_ids": [
+      "repos-lfm3-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-omni",
+        "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+        "locator": "Inference table",
+        "passage": "SGLang serves text output. GGUF llama.cpp Local inference on CPUs and GPUs, including a realtime speech server. Sampling parameters Text output: greedy decoding works",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:05.457Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-lfm3-omni-2b.dom.json",
+        "archive_sha256": "d5f1236d9828a0a5489eda372e5824ed776f40e233f0e3381743863aad9fc8e9"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-context-20261028",
+    "claim": "d1 reliability declines past about 64K tokens despite nominal 128K context.",
+    "source_ids": [
+      "repos-lfm3-d1"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1",
+        "url": "https://huggingface.co/LiquidAI/d1-2B",
+        "locator": "Limitations",
+        "passage": "answers get less reliable past about 64K tokens of state. Estimates are reliable on counts and scores, less so on free quantities. Inference d1-2B",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.133Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-2b.dom.json",
+        "archive_sha256": "197b0b5dbdecf1178142912605a667a20e143acc30f941476d24f0e0a783b500"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-types-20261028",
+    "claim": "d1 documentation recommends calibrating thresholds on data from the intended use.",
+    "source_ids": [
+      "repos-lfm3-d1"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1",
+        "url": "https://huggingface.co/LiquidAI/d1-2B",
+        "locator": "Question types",
+        "passage": "Calibrate any decision threshold on data from your own use. Evaluation details All four models are scored on the same items with the same",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:43.057Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/d1-2B-details.json",
+        "archive_sha256": "75a2badfcff305fb35678eda3574ae2d1d3415ddde9925be5b7bc35e4e21267d"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-speed-20261028",
+    "claim": "Decision-model latency figures use warm compiled calls; compilation takes about a minute initially.",
+    "source_ids": [
+      "repos-lfm3-d1"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1",
+        "url": "https://huggingface.co/LiquidAI/d1-2B",
+        "locator": "Speed methodology",
+        "passage": "Warm calls after model.compile() in bf16, median of 20 calls, and best of three runs on the H100 and the M5 Pro. Compiling takes",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.133Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-2b.dom.json",
+        "archive_sha256": "197b0b5dbdecf1178142912605a667a20e143acc30f941476d24f0e0a783b500"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-d1-omni-output-20261028",
+    "claim": "d1-Omni generates neither transcript nor speech.",
+    "source_ids": [
+      "repos-lfm3-d1-omni"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-d1-omni",
+        "url": "https://huggingface.co/LiquidAI/d1-omni-2B",
+        "locator": "Recommended use and limitations",
+        "passage": "It is not a chat model and writes no transcript or speech. Long spoken passages lose much of their accuracy, most of all outside",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:06.911Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-card-d1-omni-2b.dom.json",
+        "archive_sha256": "3f85bc5db27ae723377d3098cd050e6262d5b7ce7f443537bab3ee2fed85b426"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-license-commercial-20261028",
+    "claim": "Commercial permission is conditioned on the revenue threshold.",
+    "source_ids": [
+      "repos-lfm3-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-license",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+        "locator": "Section 5",
+        "passage": "5. Commercial Use Limitation. (a) The rights granted under this License for Commercial Use are conditioned upon You or Your Legal Entity not exceeding",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:28.021Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-license-file.dom.json",
+        "archive_sha256": "77d5b75d890d166d0fc7e235f304821103a47cad0b4e46d29abe9f38e39c1969"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-lfm3-license-redistribute-20261028",
+    "claim": "Redistribution requires a copy of the license and prominent notices of modified files.",
+    "source_ids": [
+      "repos-lfm3-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-lfm3-license",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+        "locator": "Section 4",
+        "passage": "You must give any other recipients of the Work or Derivative Works a copy of this License; and (b) You must cause any modified",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:28.021Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/lfm3-license-file.dom.json",
+        "archive_sha256": "77d5b75d890d166d0fc7e235f304821103a47cad0b4e46d29abe9f38e39c1969"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "documented",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-cloudflare-audit-reconsideration-20261028",
+    "claim": "Current README documents six phases, coverage-led hunting, independent record verification and zero-dependency validators. Eligible baseline report deferred in favor of the new LFM3 family; latest observed commit does not establish an October launch. No exploit validation or false-positive test performed.",
+    "source_ids": [
+      "repos-cloudflare-audit"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit",
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "locator": "Primary README, release notes or model card",
+        "passage": "six phases: 136 content list 137 container 138 AXListMarker 1. 139 text Reconnaissance -- map architecture, trust boundaries, input surfaces, prior evidence, and deterministic",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:42.689Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-cloudflare-audit.json",
+        "archive_sha256": "37e3abd1c8c286adbb138e401b41c4ae46d363b2be3198c457992500409a1a07"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-graphify-reconsideration-20261028",
+    "claim": "Current README separates deterministic code AST parsing from semantic document/media processing, with local transcription and optional external model backends. Useful baseline deferred for LFM3; claims of cost savings, completeness and privacy were not tested, and mixed license labels require exact-term review.",
+    "source_ids": [
+      "repos-graphify"
+    ],
+    "support": [
+      {
+        "source_id": "repos-graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "locator": "Primary README, release notes or model card",
+        "passage": "tree-sitter AST: deterministic, no LLM, nothing leaves your machine. (Docs, PDFs, images and video use your assistant's model, or a configured API key, for",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:51.292Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-graphify.json",
+        "archive_sha256": "1eac5aa42f6129e48ee41bd6b6e84035b1a5a780c338492021223e6bf1d8b77a"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-qwen-image-turbo-reconsideration-20261028",
+    "claim": "Card documents an eight-step, CFG-1 image pipeline with source Diffusers and version-specific requirements under qwen-research licensing. Preserve for a licensing and practical image-quality evaluation; no model execution.",
+    "source_ids": [
+      "repos-qwen-image-turbo"
+    ],
+    "support": [
+      {
+        "source_id": "repos-qwen-image-turbo",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+        "locator": "Primary README, release notes or model card",
+        "passage": "8 denoising steps . It uses the same 7B visual generation architecture and loads directly with QwenImage21Pipeline in Diffusers. 75 text The checkpoint includes",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:52.617Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-qwen-image-turbo.json",
+        "archive_sha256": "dabd7fe83fa9706ac7ae2dd308a2288f431759da3c51c8c485012823dd669c6f"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-release-open-webui-v0-12-3-reconsideration-20261028",
+    "claim": "Primary release describes temporary encrypted collaboration with setup prerequisites and limits. This is an October 16 historical release, not a new October 28 launch; no security audit, deployment or exact license assessment performed.",
+    "source_ids": [
+      "repos-release-open-webui-v0-12-3"
+    ],
+    "support": [
+      {
+        "source_id": "repos-release-open-webui-v0-12-3",
+        "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
+        "locator": "Primary README, release notes or model card",
+        "passage": "encrypted chats. Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:54.038Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-open-webui-v0-12-3.json",
+        "archive_sha256": "c7306c35b203b72e3eb84bafc5793922a53d1fccb352ba5a15c2d8842f71705f"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-release-openai-codex-rust-v0-163-0-reconsideration-20261028",
+    "claim": "Release documents /config, steering, parallel reads and permission restoration. Preserve as a historical October 15 version-specific lead; no claim of parity with the current app and no execution.",
+    "source_ids": [
+      "repos-release-openai-codex-rust-v0-163-0"
+    ],
+    "support": [
+      {
+        "source_id": "repos-release-openai-codex-rust-v0-163-0",
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0",
+        "locator": "Primary README, release notes or model card",
+        "passage": "config to search preferences across categories, change supported settings immediately, and see which changes require a restart. ( 64 link Description: #52990, Value: github.com/openai/c…",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:57.253Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-openai-codex-rust-v0-163-0.json",
+        "archive_sha256": "d2fbb6e00131ce84e4e000b8328cda27cfd1b65aa5efa80c292c63098d4d1e8b"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-release-sglang-v0-5-22-reconsideration-20261028",
+    "claim": "Release documents serving integrations, Python 3.11 floor and a hybrid-state correctness fix. Retain for a deployment comparison; publisher performance claims are not replicated and this earlier release is not evidence of LFM3-VL readiness.",
+    "source_ids": [
+      "repos-release-sglang-v0-5-22"
+    ],
+    "support": [
+      {
+        "source_id": "repos-release-sglang-v0-5-22",
+        "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
+        "locator": "Primary README, release notes or model card",
+        "passage": "Python 3.11 or newer. uv pip install --prerelease=allow sglang==0.5.22 Platform Docker NVIDIA (CUDA 13) docker pull lmsysorg/sglang:v0.5.22 AMD MI35x docker pull lmsysorg/sglang:v0.5.22-rocm10-mi35x AMD MI30x",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:56.540Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-sglang-v0-5-22.dom.json",
+        "archive_sha256": "5bbb8e19e4e17b44ec58dbc0384f212a89779058144ef80b8f4aa09e7890262d"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-release-vllm-v0-32-0-reconsideration-20261028",
+    "claim": "Release documents System One endpoint, Python 3.10 removal, CORS/security and serving changes. Retain for a concrete deployment comparison; no runtime compatibility or benchmark reproduction performed.",
+    "source_ids": [
+      "repos-release-vllm-v0-32-0"
+    ],
+    "support": [
+      {
+        "source_id": "repos-release-vllm-v0-32-0",
+        "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+        "locator": "Primary README, release notes or model card",
+        "passage": "Python and Rust frontends (#59005). Low-precision KV cache everywhere: NVFP4 KV cache now runs on SM8x and SM12x (#46963), SM90 (#60620) and with XQA",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:59.021Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-release-vllm-v0-32-0.dom.json",
+        "archive_sha256": "ee572d6146a4425f5a8755c0e4308f24635a401a6e24e9d1c1a6fcf42312b52d"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-07a9efc843a0e363-reconsideration-20261028",
+    "claim": "LFM2.5-24B-A2B card describes a 24B total, 2.45B active MoE with 128K context. Retain as a distinct larger deployment option; the new dense LFM3 family does not automatically supersede it. Hardware and quality untested.",
+    "source_ids": [
+      "repos-source-07a9efc843a0e363"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-07a9efc843a0e363",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "2.45B Number of layers: 40 (30 double-gated short convolution blocks + 10 GQA) Experts: 64 per MoE block, top-4 routing Training budget: 36 trillion",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:59.801Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-07a9efc843a0e363.dom.json",
+        "archive_sha256": "df56434f0683f31fad66e5dcc786f824d15124f6b0650e54fe1d0b048d7e369e"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Liquid AI",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-8bb4b5c800d43116-reconsideration-20261028",
+    "claim": "Reflection Beam card describes 501B total and 23B active parameters with long context and Apache-2 labeling. Retain pending realistic hardware, exact license and task-quality assessment; benchmark claims remain publisher-reported.",
+    "source_ids": [
+      "repos-beam-501b"
+    ],
+    "support": [
+      {
+        "source_id": "repos-beam-501b",
+        "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "501B-A23B Like 285 Follow Reflection 562 Text Generation Safetensors English beam mixture-of-experts reasoning code tool-use conversational Eval Results License: apache-2.0 Model card Files and",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:01.017Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-8bb4b5c800d43116.dom.json",
+        "archive_sha256": "f36fe9161c2289ab2be63b67443eb45b4d3896dc66894c350665120076b585ca"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-2993e723595704db-reconsideration-20261028",
+    "claim": "Qwen3Guard-Stream requires Qwen3 token IDs or incremental retokenization for other tokenizers. Retain pending false-positive and integration testing; language coverage is a publisher claim, not safety validation.",
+    "source_ids": [
+      "repos-source-2993e723595704db"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-2993e723595704db",
+        "url": "https://huggingface.co/Qwen/Qwen3Guard-Stream-0.6B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "Tokenizer, AutoModel tokenizer = AutoTokenizer.from_pretrained(\"Qwen/Qwen3Guard-Stream-0.6B\", trust_remote_code=True) model = AutoModel.from_pretrained(\"Qwen/Qwen3Guard-Stream-0.6B\", trust_remote_code=True, device_map=\"auto\") Notebooks Google Colab Kaggle Qwen3Guard-Stream-0.6B Qwen3Guard is a series of safety moderation models",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:01.750Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-2993e723595704db.dom.json",
+        "archive_sha256": "fe8caaf393a8f0e4d07c713ce5eb85b7c8ef4e007426733348ee8d4c41fd35a6"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-3cc50d0356230bcb-reconsideration-20261028",
+    "claim": "Qwen Image 2.1 card describes unified generation/editing, reference images and RGBA under qwen-research licensing. Retain pending exact license and output-quality assessment; no inference performed.",
+    "source_ids": [
+      "repos-source-3cc50d0356230bcb"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-3cc50d0356230bcb",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+        "locator": "Primary README, release notes or model card",
+        "passage": "rgba License: qwen-research Model card Files and versions xet Community 64 Deploy Copy to bucket Use this model Instructions to use Qwen/Qwen-Image-2.1 with libraries,",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:02.485Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-3cc50d0356230bcb.dom.json",
+        "archive_sha256": "6b391cf9036a61c32899380a661f3754de98bd7456cc41390843a22626025f00"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-413e4ee860ab5e96-reconsideration-20261028",
+    "claim": "PE-I2I is a 9B prompt rewriter that produces JSON for a downstream image-editing model, not a standalone renderer. Retain pending end-to-end comparison and license review.",
+    "source_ids": [
+      "repos-source-413e4ee860ab5e96"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-413e4ee860ab5e96",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
+        "locator": "Primary README, release notes or model card",
+        "passage": "json import torch from PIL import Image from transformers import AutoModelForImageTextToText, AutoProcessor model_id = \"Qwen/Qwen-Image-2.1-PE-I2I\" processor = AutoProcessor.from_pretrained(model_id) model = AutoModelForImageTextToText.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\"",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:03.005Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-413e4ee860ab5e96.dom.json",
+        "archive_sha256": "73182519e922cd948c147a5d953d984483fdabdce8fd732fef1cc7cae43ab34a"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-5eedd09eb4922e0c-reconsideration-20261028",
+    "claim": "PE-T2I is a 9B prompt rewriter producing English prompts and aspect-ratio guidance for another image model. Retain pending downstream benefit and license assessment.",
+    "source_ids": [
+      "repos-source-5eedd09eb4922e0c"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-5eedd09eb4922e0c",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
+        "locator": "Primary README, release notes or model card",
+        "passage": "aspect ratio. For more details, see the GitHub repo and Blog. Quick Start Installation pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow Usage with Transformers import",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:03.473Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-5eedd09eb4922e0c.dom.json",
+        "archive_sha256": "99a770d68115e432585ccf50926b70789263580dd39a02ecd588074d5e12aefc"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-12b3f8153ee100f8-reconsideration-20261028",
+    "claim": "HyMemory is a memory-writing model integrated with external memory frameworks; fixed-subsample producer benchmarks do not establish a complete memory product. Retain pending retention, correctness and system integration review.",
+    "source_ids": [
+      "repos-source-12b3f8153ee100f8"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-12b3f8153ee100f8",
+        "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "Memory-30B-A3B Like 317 Follow Tencent 12.8k Text Generation Transformers Safetensors English Chinese hy_v3 conversational arxiv: 2610.22196 License: apache-2.0 Model card Files and versions xet",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:14.276Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-12b3f8153ee100f8.dom.json",
+        "archive_sha256": "94facc5de5ed407546fc54fe639c05399d2a18e0fdc6b7325ffd20dafa21f515"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-653d82f9a2953196-reconsideration-20261028",
+    "claim": "Nanbeige 4.3-33B card documents long context and reasoning controls; a forthcoming 3B model is not treated as available. Retain pending harness-specific performance and deployment verification.",
+    "source_ids": [
+      "repos-source-653d82f9a2953196"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-653d82f9a2953196",
+        "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "512K). We recommend adjusting the inference settings according to the target scenario: Scenario Temperature Top_p Max New Tokens Agentic and tool-use tasks 1.0 0.95",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:15.006Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-653d82f9a2953196.dom.json",
+        "archive_sha256": "f12ea44047c1651223869633a5986d1022d4704a24363a2d158b8c1634a866ae"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-02aa9de59f023db3-reconsideration-20261028",
+    "claim": "Fibo 2.0 dev card describes the full non-distilled image model; gated noncommercial access was not accepted. Planned multi-turn capabilities remain planned. Retain with access and licensing unresolved.",
+    "source_ids": [
+      "repos-source-02aa9de59f023db3"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-02aa9de59f023db3",
+        "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+        "locator": "Primary README, release notes or model card",
+        "passage": "Non-Commercial (CC BY-NC 4.0) The model is released under a CC BY-NC 4.0 license for non-commercial use. Commercial use is subject to a commercial",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:15.670Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-02aa9de59f023db3.dom.json",
+        "archive_sha256": "30ba79055ca8fe430d374f7aa2938668cb91cb970cc588f0d55df7515e96c336"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-9f011fc07ea5d69c-reconsideration-20261028",
+    "claim": "HySimulMT Interleave is an October 26 Chinese/English simultaneous translation release. Its advertised StreamLAAL lag is not time to first synthesized speech; voice output requires TTS integration. Retain pending full runtime and licensing evaluation.",
+    "source_ids": [
+      "repos-source-9f011fc07ea5d69c"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-9f011fc07ea5d69c",
+        "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave",
+        "locator": "Primary README, release notes or model card",
+        "passage": "StreamLAAL of approximately 3 seconds, the lowest among the systems shown in the comparison. Its GEMBA score exceeded those of the compared open-source models",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:16.358Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-9f011fc07ea5d69c.dom.json",
+        "archive_sha256": "87b0196412148ff0335955f488fc5181e73dc285e8eff6b277883a12ee331fa8"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-a1256d3bfaf174ed-reconsideration-20261028",
+    "claim": "HySimulMT card documents Chinese/English simultaneous speech translation and external TTS service requirements. Retain pending complete speech-path evaluation; no independent latency or voice-cloning test.",
+    "source_ids": [
+      "repos-source-a1256d3bfaf174ed"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-a1256d3bfaf174ed",
+        "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "TTS service. You can also try Hy-SimulMT in the Hy Translate App. Scan to download the Hy Translate App Android iOS News 2026.10.26 |",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:17.011Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-a1256d3bfaf174ed.dom.json",
+        "archive_sha256": "220128b1f434dbb4197baf90c4c838c08379e6438833d3f6531d900842fb974a"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-e0f912e29433ade3-reconsideration-20261028",
+    "claim": "WeVis-One-VL-2B requires the separate mask decoder for pixel outputs and documents single-turn image use, with video grids rejected. Retain pending localization/matting quality and dependency licensing assessment.",
+    "source_ids": [
+      "repos-source-e0f912e29433ade3"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-e0f912e29433ade3",
+        "url": "https://huggingface.co/tencent/WeVisOne-VL-2B",
+        "locator": "Primary README, release notes or model card",
+        "passage": "mask_decoder.pt (9,609,764 parameters) is a required core component that combines: A Visual Feature Adapter over multi-level Qwen3-VL pre-merging ViT features; A Box-Guided Query Decoder",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:17.507Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-e0f912e29433ade3.dom.json",
+        "archive_sha256": "23a9753edd003820c8231796941f18de9cd9f16c9f62f504c13ab67e37e11e0a"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-candidate-357e277d150dab4c-reconsideration-20261028",
+    "claim": "capy-flash v0.7.5 offers opt-in hardware calibration; its notes report no meaningful win on two tested GPU configurations and potential token changes. Retain as historical context; newer v0.7.7 engine-stability fixes are the priority new lead.",
+    "source_ids": [
+      "repos-source-357e277d150dab4c"
+    ],
+    "support": [
+      {
+        "source_id": "repos-source-357e277d150dab4c",
+        "url": "https://github.com/ValerioDolci/capy-flash/releases/tag/v0.7.5",
+        "locator": "Primary README, release notes or model card",
+        "passage": "calibrate Compare ValerioDolci released this · 2 commits to main since this release v0.7.5 86cc0cc A small opt-in release: the decode miss split can",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:18.626Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/repos-candidate-357e277d150dab4c.dom.json",
+        "archive_sha256": "9cad0cc7516f1adf1033bfe6c284fac5a90d7ab60cf9e311bbfa05724d80fca5"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-fibo-edit-turbo-lead-20261028",
+    "claim": "Card describes four-step edit-only inference and up to four reference images. Noncommercial gated weights were not accepted; planned multi-turn features remain unavailable claims. Retain for exact license and editing-quality evaluation.",
+    "source_ids": [
+      "repos-fibo-edit-turbo-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-fibo-edit-turbo-source",
+        "url": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo",
+        "locator": "Primary model card or repository README/release",
+        "passage": "4 steps with no classifier-free guidance, so it delivers Fibo 2.0 editing quality at a fraction of the latency and cost. Turbo is for",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:47.526Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/bria-fibo-edit-turbo.dom.json",
+        "archive_sha256": "f1d4f46d0f922d5431321dbaa9828a63e6d561ca2021b041fb250a6b0f911df8"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-ltx2-marking-lead-20261028",
+    "claim": "Optional postprocessing watermark pack needs code from LTX-2 plus all required files; detector claims are not cryptographic provenance, and absent marks do not establish human origin. Retain for robustness and HDR-path assessment.",
+    "source_ids": [
+      "repos-ltx2-marking-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-ltx2-marking-source",
+        "url": "https://huggingface.co/Lightricks/LTX-2-Marking",
+        "locator": "Primary model card or repository README/release",
+        "passage": "AudioSeal watermarking video audio videoseal pixelseal ltx-2 arxiv: 2412.09492 License: mit Model card Files and versions xet Community Deploy Copy to bucket Use this",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:48.142Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/ltx-marking.dom.json",
+        "archive_sha256": "44de83c92cf075a78aaf9f9293d83ea35ad6384dd57eea2b2f498d5048a905d6"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-muse-glimmer-30b-lead-20261028",
+    "claim": "Card describes a 29.6B dense image/text model and quantized deployment targets. Retain pending exact license, memory and task-quality evaluation; paper date is not assumed to be model launch date.",
+    "source_ids": [
+      "repos-muse-glimmer-30b-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-muse-glimmer-30b-source",
+        "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "locator": "Primary model card or repository README/release",
+        "passage": "29.6B Language Model Architecture Dense Causal Transformer Number of Parameters 29.6B (including vision encoder) Hidden dimension 6656 Layers 52 Attention pattern [Local, Local, Local,",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:49.126Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/muse-glimmer.dom.json",
+        "archive_sha256": "b8850e6fed269e7748a936e173eda5673a08bc2659776fff4ec983440a7bbbab"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-unlimited-ocr2-lead-20261028",
+    "claim": "Card dates model release October 27 and training support October 28. Unlimited horizon is an architecture claim, not guaranteed accuracy at infinite context; documented hardware and custom serving requirements need evaluation.",
+    "source_ids": [
+      "repos-unlimited-ocr2-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-unlimited-ocr2-source",
+        "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+        "locator": "Primary model card or repository README/release",
+        "passage": "We release Unlimited OCR 2, achieving unlimited-horizon parsing with SR-SWA. [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:49.679Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/unlimited-ocr2.dom.json",
+        "archive_sha256": "0cb9b20d57de05367702484b862356de91ebe4e2b030ec3f41160845c989d243"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-minicpm-ocr-lead-20261028",
+    "claim": "Chinese/English OCR model uses a document-layout pipeline and SDK. Retain for pipeline readiness and real-document tests; publisher RTX 5090 throughput depends on its concurrency and region-processing setup.",
+    "source_ids": [
+      "repos-minicpm-ocr-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-minicpm-ocr-source",
+        "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+        "locator": "Primary model card or repository README/release",
+        "passage": "1.3B) is the first OCR-specific model in the MiniCPM-V/o family. It focuses on text-centric document understanding — text, tables, formulas, charts, seals, and structured",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:50.693Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/minicpm-ocr.dom.json",
+        "archive_sha256": "3d0344d341e7e42cdb48f620dbee340f663d6dd86512b05134dbdbfdb40a71af"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-qwen35-3d-coder-lead-20261028",
+    "claim": "Independent community Three.js fine-tune, not an official Qwen release. Quantized preview is documented; October 28 full-FP16/report plans are not treated as completed. Retain pending data licensing, output quality and runtime assessment.",
+    "source_ids": [
+      "repos-qwen35-3d-coder-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-qwen35-3d-coder-source",
+        "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+        "locator": "Primary model card or repository README/release",
+        "passage": "Early preview · General coding with a focus on 3D An experiment exploring the feasibility of small language models for general-purpose coding and high-quality",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:51.327Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/qwen-3d-coder.dom.json",
+        "archive_sha256": "581e35ae484e49ab4599416a44bfe1c84db024b05628dad4ea079f8356b542bc"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-ai-design-skills-lead-20261028",
+    "claim": "Repository currently contains a landing-page design skill with intake and review guidance. Retain as a workflow baseline pending actual design-output comparison; roadmap skills are not counted as shipped.",
+    "source_ids": [
+      "repos-ai-design-skills-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-ai-design-skills-source",
+        "url": "https://github.com/elayadesign/ai-design-skills",
+        "locator": "Primary model card or repository README/release",
+        "passage": "landing-page-design Move design-to-motion to its own repo .gitignore Create .gitignore LICENSE Add files via upload README.md Move design-to-motion to its own repo Repository files",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:52.510Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/ai-design-skills.dom.json",
+        "archive_sha256": "81eddf7c96c09617d1a732204edf1dd40513e49068915414a214b1bbba40d679"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-macro-workspace-lead-20261028",
+    "claim": "Large AGPL-labeled workspace combines email, docs, tasks and agents with a substantial service stack. Retain pending exact licensing, deployment cost and access-boundary analysis; no accounts connected or services installed.",
+    "source_ids": [
+      "repos-macro-workspace-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-macro-workspace-source",
+        "url": "https://github.com/macro-inc/macro",
+        "locator": "Primary model card or repository README/release",
+        "passage": "AGPLv3 and update README (#3669 README.md docs(agents): reorganize agent rules, skills, guides, and docs (#8002) VERSION chore: bump version + update changelog (#2929) biome.base.jsonc",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:53.906Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/macro-workspace.dom.json",
+        "archive_sha256": "80e8bd81881575b81c36dd2ea88a89e724259964c942cebdea639d0fa21b64d6"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-expo-skills-lead-20261028",
+    "claim": "Official repository documents build, deployment and upgrade skills. Retain pending workflow validation and permissions review; external EAS service costs and entitlements remain separate from repository licensing.",
+    "source_ids": [
+      "repos-expo-skills-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-expo-skills-source",
+        "url": "https://github.com/expo/skills",
+        "locator": "Primary model card or repository README/release",
+        "passage": "skills Type / to search Repository navigation Code Issues 25 (25) Pull requests 74 (74) Actions Security and quality Insights skills Public Watch 21",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:46:54.887Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/expo-skills.dom.json",
+        "archive_sha256": "636bc567f87986911afa23a865dc23e865819307f2639199cee90ebd2346ebcf"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "repos-capy-v0-7-7-lead-20261028",
+    "claim": "Primary release fixes two engine-wide failures after a default-enabled reasoning-close retry, including repeated-prompt reuse. Maintainer reproduction is documented but unreplicated; priority operational lead over v0.7.5 calibration.",
+    "source_ids": [
+      "repos-capy-v0-7-7-source"
+    ],
+    "support": [
+      {
+        "source_id": "repos-capy-v0-7-7-source",
+        "url": "https://github.com/ValerioDolci/capy-flash/releases/tag/v0.7.7",
+        "locator": "Primary model card or repository README/release",
+        "passage": "two engine-wide failures after a reasoning-close retry Latest Compare ValerioDolci released this v0.7.7 c2d9e4b A fix release for two engine-wide failures that a repeated",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:51:44.774Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/repos/archives/capy-v0-7-7.dom.json",
+        "archive_sha256": "42539eb2c6980f67fb1dd9a6d2fd590f7bf7a729ef6726c185255fa0eb4c9f36"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; not independently tested."
+    ],
+    "contradicts": [],
+    "source_family": "Primary repository or model publisher",
+    "status": "candidate",
+    "limitations": [
+      "No model execution, installation, benchmark reproduction, or generated-output quality inspection performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-launch",
+    "claim": "NVIDIA announced Nemotron 3.5 Transcribe and Granary v2 on October 28; offline transcription, translation, speaker attribution and audio Q&A have task-specific language coverage.",
+    "source_ids": [
+      "creative-source-ec733f799e1aaee3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ec733f799e1aaee3",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "locator": "Publication header; introduction; Guide transcription",
+        "passage": "The announcement dates the release October 28 and states 40 transcription, 31 English-pair translation and 13 speaker-attribution languages, up to an hour and eight speakers.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-28",
+        "event_at": "2026-10-28",
+        "retrieved_at": "2026-10-28T19:43:24.444Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/discovery-nvidia-transcribe.json",
+        "archive_sha256": "c898157f4a0397449e800d0dc6d62ae03256c2d1fc075b3cd688513d9eed778a"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-size",
+    "claim": "The model card specifies 34B total and 4.3B active including audio, one-hour/65,536-token training limits and a one-H100-80GB BF16 quickstart.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Model Summary; Quick Start; Inputs",
+        "passage": "The card distinguishes total/active parameters and serves the reference BF16 checkpoint with vLLM 0.32.0 and current NeMo Speech on one H100 80 GB.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": "2026-10-28",
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-files",
+    "claim": "The public checkpoint repository displays a 67.5 GB model.safetensors artifact; it was inspected but not downloaded.",
+    "source_ids": [
+      "creative-source-4432158d51f28590"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-4432158d51f28590",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B/tree/main",
+        "locator": "Files and versions / main",
+        "passage": "The file listing shows model.safetensors at 67.5 GB. No inference or local installation performed.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:45:45.810Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-files.json",
+        "archive_sha256": "f5ee5665921c31abcfd454a58e421fc1e4e0e5663d96a6e3fe72aa82462e180e"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-quant-gap",
+    "claim": "The card claims FP8/NVFP4 availability but the announcement says forthcoming and both linked public routes returned 404 at retrieval.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2",
+      "creative-source-bb2ac232217cee6f",
+      "creative-source-67defea75217c222",
+      "creative-source-ec733f799e1aaee3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Model Summary; quantized model links",
+        "passage": "Card text lists FP8/NVFP4 as available; observed linked routes did not resolve to public model pages.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      },
+      {
+        "source_id": "creative-source-bb2ac232217cee6f",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+        "locator": "Model Summary; quantized model links",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:34.228Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-fp8.json",
+        "archive_sha256": "268e5aeb867802444c9f2361400931247fe76308425e396f0258d75f32fe35eb"
+      },
+      {
+        "source_id": "creative-source-67defea75217c222",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4",
+        "locator": "Model Summary; quantized model links",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:34.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-nvfp4.json",
+        "archive_sha256": "6470170a832ffb9404d18632bca067c502ccc5f148595c42f677af7ac96cdd1f"
+      },
+      {
+        "source_id": "creative-source-ec733f799e1aaee3",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "locator": "Model Summary; quantized model links",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:24.444Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/discovery-nvidia-transcribe.json",
+        "archive_sha256": "c898157f4a0397449e800d0dc6d62ae03256c2d1fc075b3cd688513d9eed778a"
+      }
+    ],
+    "qualifiers": [
+      "Launch documentation is inconsistent; specific linked-route availability was checked, not every possible distribution.",
+      "A public 404 does not establish permanent nonexistence."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "conflicting",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-serving",
+    "claim": "Documented deployment uses a SpeechLM-enabled vLLM setup and timestamp-specific configuration; offline chunking is not a live streaming service.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2",
+      "creative-source-430e69afd2eb5069"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Quick Start; Prompt Guide; Inputs; Software Integration",
+        "passage": "The quickstart uses vLLM 0.32.0, NeMo Speech, V1 runner for word timestamps and CTC middleware; internal chunking does not change offline scope.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": "2026-10-28",
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      },
+      {
+        "source_id": "creative-source-430e69afd2eb5069",
+        "url": "https://github.com/NVIDIA-NeMo/Speech/blob/main/docs/source/speechlm2/vllm_serving.rst",
+        "locator": "Quick Start; Prompt Guide; Inputs; Software Integration",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:56.785Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-serving.json",
+        "archive_sha256": "3545fc946747901c903967244f956286447166aa4759e3b46515c5fbea7853eb"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-prompts",
+    "claim": "The card documents verbatim/clean/contextual/speaker-tagged prompts; task-specific reasoning settings; speaker tags are not real-world identity.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Prompt Guide; Use Case; Language Support Matrix",
+        "passage": "Transcription uses user instructions with an empty system prompt, zero temperature and reasoning disabled; audio understanding has a reasoning preset and English-only evaluation.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": "2026-10-28",
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-risks",
+    "claim": "NVIDIA discloses transcription and speaker errors, misleading-context risk, and English-only evaluation for audio understanding.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Limitations & Mitigation; Potential Known Risks",
+        "passage": "Names, overlaps, noise, code-switching and misleading vocabulary require targeted tests; tags can attribute speech incorrectly.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": "2026-10-28",
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-rate",
+    "claim": "DeepInfra publicly lists this BF16 model at $0.00200 per minute and requires login for its demo.",
+    "source_ids": [
+      "creative-source-ad9d5e90bb5000f6"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-ad9d5e90bb5000f6",
+        "url": "https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Price; demo login; Model summary",
+        "passage": "The page displays $0.00200 / minute, bfloat16, and a login-required demo. Sixty minutes multiplied by the displayed rate is $0.12 before other costs.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:57.776Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-deepinfra.json",
+        "archive_sha256": "a0c97b86ad45fcc1a4ec53749b82da40bf35d9c5c68067d5fc10ffe0cd7ff96b"
+      }
+    ],
+    "qualifiers": [
+      "Price snapshot October 28; no API call or actual charge measured.",
+      "Arithmetic is illustrative; account terms, billing minimums and taxes were not checked."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-granary",
+    "claim": "Granary v2 distributes manifests for 463,062 hours, 48 languages and 16 corpora, with three transcript conventions; source audio and full training mixture are separate.",
+    "source_ids": [
+      "creative-source-665652d89d229c0a",
+      "creative-source-ec733f799e1aaee3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-665652d89d229c0a",
+        "url": "https://huggingface.co/datasets/nvidia/Granary-v2",
+        "locator": "Overview; Hours by corpus; Getting the audio; manifest schema",
+        "passage": "The dataset distributes label manifests, including tn_raw, itn_raw and itn_clean, and directs users to obtain source audio under upstream terms.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:55.646Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-granary-card.json",
+        "archive_sha256": "04f0c26268fea170c8fc5d0a9c46e267746b15fc907983f1d6cb59f36780680c"
+      },
+      {
+        "source_id": "creative-source-ec733f799e1aaee3",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "locator": "Overview; Hours by corpus; Getting the audio; manifest schema",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:24.444Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/discovery-nvidia-transcribe.json",
+        "archive_sha256": "c898157f4a0397449e800d0dc6d62ae03256c2d1fc075b3cd688513d9eed778a"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-data-license",
+    "claim": "Granary labels generally use OpenMDW-1.1; People_Speech is CC BY-SA 4.0, with source audio separately licensed.",
+    "source_ids": [
+      "creative-source-665652d89d229c0a"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-665652d89d229c0a",
+        "url": "https://huggingface.co/datasets/nvidia/Granary-v2",
+        "locator": "License; License/Terms of Use",
+        "passage": "OpenMDW governs released materials except People_Speech under CC BY-SA 4.0; upstream source-audio terms remain applicable.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:55.646Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-granary-card.json",
+        "archive_sha256": "04f0c26268fea170c8fc5d0a9c46e267746b15fc907983f1d6cb59f36780680c"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-license",
+    "claim": "OpenMDW-1.1 grants broad rights, requires agreement/origin notices on redistribution, leaves other rights with users and places no output-use restrictions.",
+    "source_ids": [
+      "creative-source-b5bf1806465c82b3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-b5bf1806465c82b3",
+        "url": "https://openmdw.ai/license/1-1/",
+        "locator": "OpenMDW License Agreement 1.1",
+        "passage": "Permission is broad; redistribution retains the agreement and applicable notices; generated-output use has no additional restrictions from this agreement.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:18.808Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-license.json",
+        "archive_sha256": "8f361e4f46a7b5c8de4e4560e7bdc4fd6ae5015c257f89e5cd614949cd9b780d"
+      }
+    ],
+    "qualifiers": [
+      "Summary of inspected license text, not a claim that third-party rights or permissions disappear."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-nv-evaluation-conflict",
+    "claim": "Launch blog and card report different English WER summaries, and peak throughput uses NIM optimizations not yet in the open release.",
+    "source_ids": [
+      "creative-source-029f4f6cd7936fd2",
+      "creative-source-ec733f799e1aaee3"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-029f4f6cd7936fd2",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "locator": "Results at a Glance; Efficiency",
+        "passage": "Card presents 4.71% mean English WER across nine public sets captured October 12; launch article states 5.33%. Card says top NIM optimizations are not yet open-source.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:54.542Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/nvidia-card.json",
+        "archive_sha256": "717ce26f4f2295e8b0ad52b074c772a2179f2213393174232fa5499df153697a"
+      },
+      {
+        "source_id": "creative-source-ec733f799e1aaee3",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "locator": "Results at a Glance; Efficiency",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:24.444Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/discovery-nvidia-transcribe.json",
+        "archive_sha256": "c898157f4a0397449e800d0dc6d62ae03256c2d1fc075b3cd688513d9eed778a"
+      }
+    ],
+    "qualifiers": [
+      "Different evaluation snapshots/protocols not reconciled; no independent benchmark verification.",
+      "Do not equate batched short-clip throughput with single-recording response time."
+    ],
+    "contradicts": [],
+    "source_family": "NVIDIA",
+    "status": "conflicting",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-launch",
+    "claim": "Ollama October 13 connector walkthrough keeps provider credentials in the Fly organization while agents call a gateway from Sprites.",
+    "source_ids": [
+      "official-source-82663ba79a1c687c"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-82663ba79a1c687c",
+        "url": "https://ollama.com/blog/fly-io-sprites",
+        "locator": "Publication date; How it works; Get started",
+        "passage": "The walkthrough requires an Ollama API key and Sprite, organization setup, access selection and reachability testing.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-13",
+        "event_at": "2026-10-13",
+        "retrieved_at": "2026-10-28T19:39:52.303Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/backlog-official-candidate-82663ba79a1c687c.json",
+        "archive_sha256": "a63a088e9f3e3c8fe25c6e7b91220498f73745d3db1839584e307a26d6ee2b12"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-credentials",
+    "claim": "Fly stores credentials encrypted, identifies calling Sprites at the gateway and denies access without a policy.",
+    "source_ids": [
+      "creative-source-25e6b96c2499c78e"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-25e6b96c2499c78e",
+        "url": "https://docs.fly.io/sprites/concepts/connectors",
+        "locator": "How it works; Calling a connector",
+        "passage": "A connector has encrypted credentials, a default-denied policy and a gateway that attaches the provider token after authenticating the Sprite.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:17.486Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-connectors.json",
+        "archive_sha256": "dc6898766c3e012764eb16633ecd67d4abac9ac3624d6da322dd4d5376bae52c"
+      }
+    ],
+    "qualifiers": [
+      "Vendor-described architecture, not an independent isolation audit.",
+      "Hiding a key does not prevent authorized invocation, spending or data exposure through prompts."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-policies",
+    "claim": "Fly documents name-prefix and label conditions, allow-all precedence and API-only path lists with block-before-allow behavior.",
+    "source_ids": [
+      "creative-source-25e6b96c2499c78e"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-25e6b96c2499c78e",
+        "url": "https://docs.fly.io/sprites/concepts/connectors",
+        "locator": "Configuring access; Endpoint allow- and block-lists",
+        "passage": "Name prefix and labels can both apply; allow-all overrides them. Path restrictions use exact paths or trailing wildcards; block rules win.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:17.486Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-connectors.json",
+        "archive_sha256": "dc6898766c3e012764eb16633ecd67d4abac9ac3624d6da322dd4d5376bae52c"
+      }
+    ],
+    "qualifiers": [
+      "The documented controls do not establish per-model request-body constraints or per-student budgets.",
+      "No policy created or tested."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-errors",
+    "claim": "Documented 403 errors distinguish Sprite denial and path denial; 401 can indicate a request outside a running Sprite.",
+    "source_ids": [
+      "creative-source-25e6b96c2499c78e"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-25e6b96c2499c78e",
+        "url": "https://docs.fly.io/sprites/concepts/connectors",
+        "locator": "Common errors",
+        "passage": "Gateway calls require Fly identity headers from inside a running Sprite; local laptop and ordinary CI calls do not meet that origin requirement.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:17.486Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-connectors.json",
+        "archive_sha256": "dc6898766c3e012764eb16633ecd67d4abac9ac3624d6da322dd4d5376bae52c"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-sdk",
+    "claim": "Ollama documents OpenAI-compatible chat calls, an unused SDK key placeholder, native API routes and a multi-model fuzzing example.",
+    "source_ids": [
+      "official-source-82663ba79a1c687c"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-82663ba79a1c687c",
+        "url": "https://ollama.com/blog/fly-io-sprites",
+        "locator": "Python; Coding agents; Example: fuzzing",
+        "passage": "Gateway URL replaces direct provider URL; gateway supplies authentication; the fuzzing example separates malformed-input generation, execution and crash interpretation.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-13",
+        "event_at": "2026-10-13",
+        "retrieved_at": "2026-10-28T19:39:52.303Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/backlog-official-candidate-82663ba79a1c687c.json",
+        "archive_sha256": "a63a088e9f3e3c8fe25c6e7b91220498f73745d3db1839584e307a26d6ee2b12"
+      }
+    ],
+    "qualifiers": [
+      "Compatibility described by publisher; no SDK version, streaming or agent feature tested."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-persistence",
+    "claim": "Sprites preserve files, support filesystem checkpoints and expose an HTTPS service URL with private/public access choices.",
+    "source_ids": [
+      "creative-source-83cd00f3d252ea03"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-83cd00f3d252ea03",
+        "url": "https://fly.io/sprites/",
+        "locator": "Persistence; Checkpoints; Sprite URLs",
+        "passage": "Current product page describes persistent disk, disk rather than process restoration, HTTPS URLs, request wakeup and port 8080.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:13.700Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-home.json",
+        "archive_sha256": "59265a59ec7109a887772e221c010b44864544c850eae5068f5a3066301e9937"
+      }
+    ],
+    "qualifiers": [
+      "Current documented platform behavior, not tested recovery or application hosting."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-idle",
+    "claim": "Idle Sprites have no compute charge while their filesystem persists; storage is separate.",
+    "source_ids": [
+      "creative-source-980b755e9374dfbf",
+      "creative-source-83cd00f3d252ea03"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-980b755e9374dfbf",
+        "url": "https://docs.fly.io/sprites",
+        "locator": "Automatic Idle Behavior",
+        "passage": "Warm/cold idle transitions preserve the filesystem and stop compute billing; current product page separately prices storage.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:52.898Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-docs.json",
+        "archive_sha256": "3c8b8df0fda58637371a7606c50c12589273820fadcc6dd94e94684b598032c3"
+      },
+      {
+        "source_id": "creative-source-83cd00f3d252ea03",
+        "url": "https://fly.io/sprites/",
+        "locator": "Automatic Idle Behavior",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:13.700Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-home.json",
+        "archive_sha256": "59265a59ec7109a887772e221c010b44864544c850eae5068f5a3066301e9937"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-compute-prices",
+    "claim": "Sprites displays CPU, memory and hot/cold storage rates; illustrated arithmetic excludes inference and other costs.",
+    "source_ids": [
+      "creative-source-83cd00f3d252ea03"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-83cd00f3d252ea03",
+        "url": "https://fly.io/sprites/",
+        "locator": "Pricing",
+        "passage": "CPU $0.0385/CPU-hour; memory $0.021875/GB-hour; hot storage $0.000683/GB-hour; cold $0.000027/GB-hour. One CPU-hour plus two GB-hours memory is $0.08225.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:13.700Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-home.json",
+        "archive_sha256": "59265a59ec7109a887772e221c010b44864544c850eae5068f5a3066301e9937"
+      }
+    ],
+    "qualifiers": [
+      "Observed October 28 rates, not actual measured usage or total project cost."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-model-prices",
+    "claim": "Ollama pay-as-you-go has three concurrent requests and token rates separate from Sprite resource usage.",
+    "source_ids": [
+      "creative-source-df15d1f61a5712e6"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-df15d1f61a5712e6",
+        "url": "https://ollama.com/pricing",
+        "locator": "Pay as you go; Model pricing",
+        "passage": "Displayed GLM-5.3 input/cached/output rates are $1.40/$0.26/$4.40; Kimi K3 $3.00/$0.30/$15.00 per million tokens.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:14.773Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/ollama-pricing.json",
+        "archive_sha256": "b0458da5eee4cb70e39ec5fbfeacbf8ffcac8a7da5091235f317d3ab608027f6"
+      }
+    ],
+    "qualifiers": [
+      "October 28 price snapshot; no inference charge or account eligibility tested."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "creative-20261028-sp-managed",
+    "claim": "The documented Ollama connection brings a user key; Fly generic docs identify OpenRouter as a managed provider.",
+    "source_ids": [
+      "creative-source-25e6b96c2499c78e",
+      "official-source-82663ba79a1c687c"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-25e6b96c2499c78e",
+        "url": "https://docs.fly.io/sprites/concepts/connectors",
+        "locator": "Providers; Managed providers",
+        "passage": "Managed-provider spending can roll into Fly billing, with OpenRouter specifically identified; this does not establish included Ollama usage.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:17.486Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/sprites-connectors.json",
+        "archive_sha256": "dc6898766c3e012764eb16633ecd67d4abac9ac3624d6da322dd4d5376bae52c"
+      },
+      {
+        "source_id": "official-source-82663ba79a1c687c",
+        "url": "https://ollama.com/blog/fly-io-sprites",
+        "locator": "Providers; Managed providers",
+        "passage": "See complete archived source for the explicitly discussed conflict.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:39:52.303Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/creative/archives/backlog-official-candidate-82663ba79a1c687c.json",
+        "archive_sha256": "a63a088e9f3e3c8fe25c6e7b91220498f73745d3db1839584e307a26d6ee2b12"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; not a live execution test."
+    ],
+    "contradicts": [],
+    "source_family": "Ollama / Fly.io",
+    "status": "supported",
+    "limitations": [
+      "No model execution, paid access, installation, native concurrency or independent performance replication performed."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-release",
+    "claim": "Ai2 announced the release Oct27; paper v1 was Oct1 and v3 Oct26.",
+    "source_ids": [
+      "research-source-3fe3be08c01d2021",
+      "research-source-c92eee09f8eb0137"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-3fe3be08c01d2021",
+        "url": "https://arxiv.org/abs/2610.02022",
+        "locator": "Submission history",
+        "passage": "[Submitted on 1 Oct 2026 (v1), last revised 26 Oct 2026 (this version, v3)]",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:45.624Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper.json",
+        "archive_sha256": "31ee3aeced4d6d7a5df3a75ae8f21f811ae55cb3eb8487484a0cae402158cc43"
+      },
+      {
+        "source_id": "research-source-c92eee09f8eb0137",
+        "url": "https://allenai.org/blog/novelty-bench",
+        "locator": "Article date and opening release paragraph",
+        "passage": "October 27, 2026\n\nAi2\n\nShare\nPaper\nData\nCode\n\nToday we’re releasing Old Ideas, Novel Problems, a new study of how reliably large language models can evaluate the novelty of scientific research ideas.",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-27",
+        "event_at": "2026-10-27",
+        "retrieved_at": "2026-10-28T19:41:59.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-blog.json",
+        "archive_sha256": "251298b104f6827ab6fed624add12d7d661791169fef64343856b5ab56a382de"
+      }
+    ],
+    "qualifiers": [
+      "Announcement date is distinct from initial paper publication."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-pools",
+    "claim": "Dataset includes154 high-novelty human ideas,145 lower-novelty human ideas and154 weakly labeled generated ideas.",
+    "source_ids": [
+      "research-source-dd00ecfcf61554ff"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-dd00ecfcf61554ff",
+        "url": "https://github.com/allenai/novelty-eval",
+        "locator": "Novelty Evaluation Data",
+        "passage": "Human-Only (data/human-only/)\t154 validated-novel\t145 validated-lower-novelty\nHuman+Generated (data/human-plus-generated/)\t154 validated-novel\t154 weakly-labeled-lower-novelty",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:47.703Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-code.json",
+        "archive_sha256": "7e67e8fa845b036fab7d8d83a98b0455ac169f99f7ddb9021ff7299121132531"
+      }
+    ],
+    "qualifiers": [
+      "ICLR2026 extremes, explicit reviewer novelty signals; not representative peer-review sample."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-weak-labels",
+    "claim": "Generated labels are assumptions; one expert checked30 selected pairs, not every label.",
+    "source_ids": [
+      "research-source-3f7ecd7eb9145a30"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-3f7ecd7eb9145a30",
+        "url": "https://arxiv.org/html/2610.02022v3",
+        "locator": "Limitations: Weak labels for generated ideas",
+        "passage": "The lower-novelty side of Human+Generated carries no observed novelty label.",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:57.205Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+      }
+    ],
+    "qualifiers": [
+      "Single broad-domain expert and deliberately simple generator; difficult-case sample does not establish all labels."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-framing",
+    "claim": "Reported GPT5.4 Human+Generated pairwise accuracy changes93.5% to40.9% across two reviewer-framing prompts.",
+    "source_ids": [
+      "research-source-c92eee09f8eb0137"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-c92eee09f8eb0137",
+        "url": "https://allenai.org/blog/novelty-bench",
+        "locator": "Small changes can produce very different verdicts",
+        "passage": "accuracy dropped from 93.5% to 40.9%",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:59.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-blog.json",
+        "archive_sha256": "251298b104f6827ab6fed624add12d7d661791169fef64343856b5ab56a382de"
+      }
+    ],
+    "qualifiers": [
+      "Same pairs; framing is substantively different; label accuracy and label-free disagreement must be separated."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-protocol",
+    "claim": "Reference pointwise uses3 votes; pairwise uses3 votes for each order and ties are explicit.",
+    "source_ids": [
+      "research-source-3f7ecd7eb9145a30"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-3f7ecd7eb9145a30",
+        "url": "https://arxiv.org/html/2610.02022v3",
+        "locator": "Section4 Experimental Setup",
+        "passage": "Pointwise judges take the majority vote of three calls. Pairwise judges are called three times per presentation order (\n𝐴\n vs. \n𝐵\n and \n𝐵\n vs. \n𝐴\n) to mitigate position bias (Wang et al., 2023), and the idea selected in more of the six calls wins. An even split is recorded as a tie, i.e., the judge cannot distinguish the two ideas.",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:57.205Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+      }
+    ],
+    "qualifiers": [
+      "Strict and soft pairwise metrics treat ties differently."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-retrieval",
+    "claim": "In the authors’ single-call Human+Generated comparison, agentic retrieval reaches0.78 macro-F1 and costs approximately10x.",
+    "source_ids": [
+      "research-source-3f7ecd7eb9145a30"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-3f7ecd7eb9145a30",
+        "url": "https://arxiv.org/html/2610.02022v3",
+        "locator": "Section5.1 Stronger retrieval",
+        "passage": "The agentic judge reaches \n0.78\n macro-F1, \n11\n points behind claude-opus-4-6 and within noise of claude-opus-4-5 and gpt-5.4, at \n10\n×\n the cost.",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:57.205Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-paper-full.json",
+        "archive_sha256": "19ef26a9b335cabb6436d63043e087842b767d6283fddb7d4b47a459462ee8b8"
+      }
+    ],
+    "qualifiers": [
+      "GPT5.6Sol xhigh with iterative arXiv-restricted search; conditional result, not universal anti-retrieval conclusion."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-costs",
+    "claim": "Reported dedicated-system comparison has0.854/$2.59 baseline,0.642/$30.66 Idea Novelty Checker and0.772/$82.05 AI Scientist.",
+    "source_ids": [
+      "research-source-c92eee09f8eb0137"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-c92eee09f8eb0137",
+        "url": "https://allenai.org/blog/novelty-bench",
+        "locator": "Purpose-built evaluators",
+        "passage": "On the Human+Generated set, a simple Claude Opus 4.6 prompt using low reasoning and majority voting across three calls achieved 0.854 macro-F1 at a total evaluation cost of $2.59. By comparison, Idea Novelty Checker, a literature-grounded retrieval and reranking pipeline, scored 0.642 at $30.66, while Sakana AI’s AI Scientist, whose novelty evaluator iteratively searches Semantic Scholar, scored 0.772 at $82.05. (Both dedicated evaluators used Claude Opus 4.6, with one call per decision.)",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-27",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:41:59.651Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-blog.json",
+        "archive_sha256": "251298b104f6827ab6fed624add12d7d661791169fef64343856b5ab56a382de"
+      }
+    ],
+    "qualifiers": [
+      "Human+Generated Opus4.6; baseline3-call aggregation versus dedicated1-call decisions; experimental totals, not current per-idea prices."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-code-license",
+    "claim": "Code Apache2.0; dataset ODC-BY with attribution and model-output qualifications.",
+    "source_ids": [
+      "research-source-dd00ecfcf61554ff"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-dd00ecfcf61554ff",
+        "url": "https://github.com/allenai/novelty-eval",
+        "locator": "License",
+        "passage": "The code is licensed under Apache 2.0.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:47.703Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-code.json",
+        "archive_sha256": "7e67e8fa845b036fab7d8d83a98b0455ac169f99f7ddb9021ff7299121132531"
+      }
+    ],
+    "qualifiers": [
+      "No proprietary model/API license granted by repository license."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-novelty-data-terms",
+    "claim": "Dataset is a test-only evaluation resource; judge outputs are not released.",
+    "source_ids": [
+      "research-source-1337281acb3b4b0b"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-1337281acb3b4b0b",
+        "url": "https://huggingface.co/datasets/allenai/novelty-judge-bench",
+        "locator": "Intended use; Model-generated content; License",
+        "passage": "No judge outputs are part of this release: no verdicts, prompt/response logs, reasoning traces, or retrieval transcripts.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:46.508Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/novelty-data.json",
+        "archive_sha256": "6f0cbde4897ef0565a784317c2891395c6f4d54221ab1a008b897f090579ea56"
+      }
+    ],
+    "qualifiers": [
+      "Single test split; not for training/fine-tuning; ODC-BY, OpenReviewCC-BY and provider-output terms."
+    ],
+    "contradicts": [],
+    "source_family": "Ai2 novelty evaluation",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-independence",
+    "claim": "PointCloud is an independent alpha project providing model, data and inference interfaces.",
+    "source_ids": [
+      "research-source-12ba5a204846f5b5"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-12ba5a204846f5b5",
+        "url": "https://pytorch-pointcloud.org/latest/about/",
+        "locator": "About; Scope",
+        "passage": "This project is independent and has no affiliation with the PyTorch team.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:48.632Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-about.json",
+        "archive_sha256": "86f307c811e588d9ddda0de36aee6dc0ec0a49c5d41804013c6d56faeefbddda"
+      }
+    ],
+    "qualifiers": [
+      "Scope is integration around existing research codebases."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-version",
+    "claim": "Inspected0.0.18 release datedOct20; changelog records specific transform and octree fixes.",
+    "source_ids": [
+      "research-source-6ecf316a7eb1fa72"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-6ecf316a7eb1fa72",
+        "url": "https://pytorch-pointcloud.org/latest/changelog/",
+        "locator": "0.0.18",
+        "passage": "0.0.18 (2026-10-20)",
+        "passage_type": "verbatim",
+        "published_at": "2026-10-20",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:17.915Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-changelog.json",
+        "archive_sha256": "dab5b49bf6138e5c8a4ad866fa308145eaaed95ab05e550e3fd5956bce915a01"
+      }
+    ],
+    "qualifiers": [
+      "Baseline discovery, not a new launch on scan date."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-hardware",
+    "claim": "Python3.10+ and torch2.8+; CPU subset differs from CUDA families.",
+    "source_ids": [
+      "social-source-9d68d1bf1d7ba18f"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-9d68d1bf1d7ba18f",
+        "url": "https://pytorch-pointcloud.org/latest/installation/",
+        "locator": "Compatibility",
+        "passage": "Python 3.10+ and torch>=2.8. CI runs the tests on CPU with torch==2.8.0; the benchmarks use torch==2.10.0 with CUDA 12.8.\nThe point-based families (PointNet, PointNet++, DGCNN, PointNeXt, RandLA-Net, ...) run on CPU. The sparse-voxel and flash-attention families (Point Transformer V3, Sonata, Concerto, Utonia, SpUNet, SPVCNN, OctFormer, the voxel-based detectors) need a CUDA device.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:48.244Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-install.json",
+        "archive_sha256": "b2d1f7c6a4e03b8721e9d28921130f2b9af3722daea1ef053e6dde9c918b880b"
+      }
+    ],
+    "qualifiers": [
+      "CPU CI torch2.8 versus CUDA12.8/torch2.10 benchmarks; optional kernel compatibility required."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-format",
+    "claim": "Models use packed PyG-style batches with per-point mapping and checkpoint-specific inputs.",
+    "source_ids": [
+      "research-source-e122d5603b83be28"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-e122d5603b83be28",
+        "url": "https://pytorch-pointcloud.org/latest/data-format/",
+        "locator": "Packed batches; Sampling keys",
+        "passage": "Nothing is padded, so clouds of different sizes batch together",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:18.883Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-data.json",
+        "archive_sha256": "d54b51178e85c2dd7b3148109b70ab9bc3713e95c2b2818d8bc85b15069f80fd"
+      }
+    ],
+    "qualifiers": [
+      "Classification, segmentation and detection outputs differ; preserve transform/index mapping."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-access",
+    "claim": "Offline use needs cached weights; some Hub weights and datasets require terms/authentication.",
+    "source_ids": [
+      "research-source-59fbb4d5de128f8a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-59fbb4d5de128f8a",
+        "url": "https://pytorch-pointcloud.org/latest/faq/",
+        "locator": "Pretrained weights",
+        "passage": "Yes, once the files are in the cache:",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:44.789Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-faq-expanded.json",
+        "archive_sha256": "f8bdb4a0cbf7fb4238d7806eb2be4c8af7df5b46333a318949badc1376e67e68"
+      }
+    ],
+    "qualifiers": [
+      "Documented offline path not tested; no agreements accepted or credentials used."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-licenses",
+    "claim": "Apache2.0 library code does not cover all weight and dataset permissions.",
+    "source_ids": [
+      "social-source-fef71de214af1dad"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-fef71de214af1dad",
+        "url": "https://github.com/arthurdjn/pytorch-pointcloud/blob/main/THIRD_PARTY_NOTICES.md",
+        "locator": "Pretrained weights; Training data",
+        "passage": "Pointcept/Concerto\tpointcept\tCC BY-NC 4.0\t5\tnot stated upstream\nZrrSkywalker/Point-M2AE\trenrui-zhang\tMIT\t5\tCopyright (c) 2022 Renrui Zhang\nLMD0311/PointMamba\tdingkang-liang\tApache-2.0\t5\tnot stated upstream\nHuguesTHOMAS/KPConv-PyTorch\thugues-thomas\tMIT\t4\tCopyright (c) 2019 HuguesTHOMAS\nmit-han-lab/pvcnn, mit-han-lab/spvnas\tmit-han-lab\tMIT\t4\tCopyright (c) 2018 Zhijian Liu, Haotian Tang, Yujun Lin; Copyright (c) 2020 Zhijian Liu, Haotian Tang, Yujun Lin, Song Han\nma-xu/pointMLP-pytorch\txu-ma\tApache-2.0\t4\tnot stated upstream\nPointcept/Pointcept\tpointcept\tMIT\t4\tCopyright (c) 2023 Pointcept\noctree-nn/octformer\toctree-nn\tMIT\t3\tCopyright (c) 2023 Peng-Shuai Wang\nyanx27/Pointnet_Pointnet2_pytorch\txu-yan\tMIT\t3\tCopyright (c) 2019 benny\nfacebookresearch/3detr\tfair\tApache-2.0\t3\tCopyright (c) Facebook, Inc. and its affiliates\nPointcept/Utonia\tpointcept\tCC BY-NC 4.0\t2\tnot stated upstream\nfacebookresearch/sonata\tfair\tCC BY-NC 4.0\t2\tCopyright (c) Meta Platforms, Inc. and affiliates",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:42:49.386Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-notices.json",
+        "archive_sha256": "d194da52dee12b3cb68be55a22962b2ed765a6539f63298c108e47489adbb37a"
+      }
+    ],
+    "qualifiers": [
+      "Sonata/Utonia also noncommercial; multiple datasets research/academic-only; consult exact source terms."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-prototype",
+    "claim": "Documented quick start uses pretrained PointNet++ with its transform and packed batch.",
+    "source_ids": [
+      "research-source-97366d67284b18da"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-97366d67284b18da",
+        "url": "https://pytorch-pointcloud.org/latest/get-started/",
+        "locator": "Run a pretrained model",
+        "passage": "The example reads one object of the ModelNet40 test set",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:45.196Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-start.json",
+        "archive_sha256": "97371ef7edca9039ad9bf8f3a663a50bc36266508a721a7ca191bf655d4dbc16"
+      }
+    ],
+    "qualifiers": [
+      "Illustrative output is not this run’s test; dataset prerequisites apply."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "research-20261028-pointcloud-inferers",
+    "claim": "Reusable inferers split larger scenes and return per-input-point predictions.",
+    "source_ids": [
+      "research-source-59fbb4d5de128f8a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-59fbb4d5de128f8a",
+        "url": "https://pytorch-pointcloud.org/latest/faq/",
+        "locator": "How do I run a model on a scene that does not fit in memory?",
+        "passage": "Each returns one prediction per input point.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:44.789Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/research/archive/pointcloud-faq-expanded.json",
+        "archive_sha256": "f8bdb4a0cbf7fb4238d7806eb2be4c8af7df5b46333a318949badc1376e67e68"
+      }
+    ],
+    "qualifiers": [
+      "No measured VRAM, scene-size ceiling, latency or boundary quality in this review."
+    ],
+    "contradicts": [],
+    "source_family": "PyTorch PointCloud",
+    "status": "supported",
+    "limitations": [
+      "Source documentation or author-reported research; no independent execution in this run."
+    ]
+  },
+  {
+    "claim_id": "social-20261028-nullspace-method",
+    "claim": "The author describes a frozen 256-dimensional head that injects PCA-reduced intermediate audio features into the base model’s null space; the base weights remain frozen.",
+    "source_ids": [
+      "social-source-4a05518eaee58548"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-4a05518eaee58548",
+        "url": "https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio",
+        "locator": "Architecture; Why the null space",
+        "passage": "The author describes a frozen 256-dimensional head that injects PCA-reduced intermediate audio features into the base model’s null space; the base weights remain frozen.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:44.895Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/social/social-primary-nullspace-20261028.json",
+        "archive_sha256": "d4c3de29337181a00dab9991734760b22bdd4de1d387d7d82b842cd783812970"
+      }
+    ],
+    "qualifiers": [
+      "Third-party description of an EmbeddingGemma 2 adaptation, not a Google release."
+    ],
+    "contradicts": [],
+    "source_family": "BrunoHays model card",
+    "status": "supported",
+    "limitations": [
+      "No implementation or numerical equivalence test was run."
+    ]
+  },
+  {
+    "claim_id": "social-20261028-nullspace-benchmark-limits",
+    "claim": "The card reports all 30 MAEB tasks as single-run measurements and discloses selecting mode and gamma using a small test-score grid, so the results may be optimistic.",
+    "source_ids": [
+      "social-source-4a05518eaee58548"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-4a05518eaee58548",
+        "url": "https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio",
+        "locator": "Limitations",
+        "passage": "The card reports all 30 MAEB tasks as single-run measurements and discloses selecting mode and gamma using a small test-score grid, so the results may be optimistic.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:44.895Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/social/social-primary-nullspace-20261028.json",
+        "archive_sha256": "d4c3de29337181a00dab9991734760b22bdd4de1d387d7d82b842cd783812970"
+      }
+    ],
+    "qualifiers": [
+      "External PCA fitting data does not remove test-set selection bias."
+    ],
+    "contradicts": [],
+    "source_family": "BrunoHays model card",
+    "status": "supported",
+    "limitations": [
+      "Leaderboard placement and reproducibility were not independently verified."
+    ]
+  },
+  {
+    "claim_id": "social-20261028-nullspace-regressions",
+    "claim": "The card reports sizable regressions: SIBFLEURS falls from 57.19 to 21.30 and NMSQA pair classification from 98.14 to 78.67 with the selected head.",
+    "source_ids": [
+      "social-source-4a05518eaee58548"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-4a05518eaee58548",
+        "url": "https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio",
+        "locator": "Per-task scores; Where it helps and where it hurts",
+        "passage": "The card reports sizable regressions: SIBFLEURS falls from 57.19 to 21.30 and NMSQA pair classification from 98.14 to 78.67 with the selected head.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:44.895Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/social/social-primary-nullspace-20261028.json",
+        "archive_sha256": "d4c3de29337181a00dab9991734760b22bdd4de1d387d7d82b842cd783812970"
+      }
+    ],
+    "qualifiers": [
+      "Author-measured base and adapted scores; task-specific outcomes, not universal audio gains."
+    ],
+    "contradicts": [],
+    "source_family": "BrunoHays model card",
+    "status": "supported",
+    "limitations": [
+      "Single-run results; no uncertainty intervals or replication inspected."
+    ]
+  },
+  {
+    "claim_id": "social-20261028-nullspace-access",
+    "claim": "The card requires full 768-dimensional audio embeddings, says Matryoshka audio truncation is unsupported, and retains the Gemma license and base-model terms.",
+    "source_ids": [
+      "social-source-4a05518eaee58548"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-4a05518eaee58548",
+        "url": "https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio",
+        "locator": "Why the null space; Usage; License",
+        "passage": "The card requires full 768-dimensional audio embeddings, says Matryoshka audio truncation is unsupported, and retains the Gemma license and base-model terms.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:44.895Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/social/social-primary-nullspace-20261028.json",
+        "archive_sha256": "d4c3de29337181a00dab9991734760b22bdd4de1d387d7d82b842cd783812970"
+      }
+    ],
+    "qualifiers": [
+      "A smaller frozen head does not remove the base model’s access or runtime requirements."
+    ],
+    "contradicts": [],
+    "source_family": "BrunoHays model card",
+    "status": "supported",
+    "limitations": [
+      "License text and downstream redistribution terms were not independently reviewed; code not executed."
+    ]
+  },
+  {
+    "claim_id": "social-20261028-quantum-evaluator",
+    "claim": "Anthropic describes optimizing eight quantum computational primitives through automated correctness and resource evaluators, with occasional human prompts to broaden the search.",
+    "source_ids": [
+      "social-source-d0817155767aa3ab"
+    ],
+    "support": [
+      {
+        "source_id": "social-source-d0817155767aa3ab",
+        "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+        "locator": "Main research explanation; What we learned",
+        "passage": "Anthropic describes optimizing eight quantum computational primitives through automated correctness and resource evaluators, with occasional human prompts to broaden the search.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-16",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:44.232Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/social/social-primary-quantum-20261028.json",
+        "archive_sha256": "b8203aef518c51211933f7e0f2f13454b9f09537e857b296d55135592eff26e7"
+      }
+    ],
+    "qualifiers": [
+      "Vendor research description; circuit-design optimization rather than deployment of a practical quantum computer."
+    ],
+    "contradicts": [],
+    "source_family": "Anthropic research",
+    "status": "supported",
+    "limitations": [
+      "Linked arXiv paper and evaluator/circuit artifacts were not inspected or reproduced."
+    ]
   }
 ]

@@ -1,0 +1,31 @@
+{
+  "reportId": "gemini4-carbon",
+  "reviewerId": "/root/edition_20261028_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:49.176604Z",
+  "reportHash": "52b7569b3dc479c19ccb1336e9b24a447ad6b108fb1632c30d42fbd938dbce5b",
+  "evidenceHash": "5edb1a3e8f69a28cb5f1a7c060eb451b3822beda39992f4cef2749d173afb377",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 5,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 4,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The report provides a useful evaluation plan for authorized engineering teams and an evidence-literacy activity for educators. Immediate hands-on value for ordinary app, website and video builders is restricted because the launch promises selected cyber-defender access first and general product access only later.",
+    "impact": "Reported gains across sustained engineering and cybersecurity tasks, together with a frontier-scale model rollout, could materially affect AI-assisted development. The table also shows non-leading tasks, and missing methodology inspection and restricted access prevent an exceptional or experimentally established significance rating.",
+    "novelty": "The launch reports better long-horizon work, patching and several alignment behaviors relative to Argon. These are consequential improvements, but public evidence chiefly establishes a performance update rather than a disclosed new architecture or qualitatively verified new capability.",
+    "maturity": "Selected partner rollout, internal multi-day use and a published price schedule provide more than a speculative announcement. Carbon-specific service entitlements and operating limits remain unverified, Fairwind’s FAQ still names Argon, and no model execution or deployment-reliability test is available here.",
+    "openness": "The model is closed and initially accessible only through a controlled partner program. Public claims, a benchmark table and pricing improve transparency somewhat, but no weights, reproducible training package or freely accessible Carbon evaluation surface is established."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No publication-blocking factual issue found. The report preserves the without-guardrails benchmark condition, the Argon/Carbon documentation distinction, the temporary introductory rates and the inability to inspect methodology.",
+    "This is an editorial check of public claims and their qualifications, not validation of Carbon performance, safety or entitlement."
+  ]
+}

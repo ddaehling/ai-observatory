@@ -1,0 +1,31 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/edition_20261028_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-28T20:08:22.833427Z",
+  "reportHash": "d2476c0a467252b742401deb397c2756fb9978732b327e6ec1e50d0c067b042b",
+  "evidenceHash": "f8d8d47810667e7b5ae6af9a12fa413455f17253b21dec6a0bc248bae9ebe0eb",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The schema-derived compiler, reusable component catalog and explicit ExpressFormatFactory example offer a concrete trial for educational resource panels and app interfaces. The report usefully distinguishes generated layouts from implemented actions and proposes a realistic transcript-review use. Current version and streaming differences still require developer integration.",
+    "impact": "Separating the inference syntax from the transport contract is a meaningful infrastructure improvement for generative interfaces. The 51-task publisher comparison gives a reason to investigate lower output overhead, but no broad adoption, independent latency reproduction or user-task improvement is established.",
+    "novelty": "The compact schema-driven syntax and swappable inference formats are a distinct implementation contribution. Controlled Jev layout selection is a useful complementary example, but the 11-prompt Apparite experiment is preliminary and does not establish a new general interface-generation capability.",
+    "maturity": "The repository describes an early public preview despite a stable v0.9 protocol family. The launch compiles Express only after a complete reply, and the default switch appears under Unreleased in the Python changelog. These are material readiness limits, accurately distinguished in the report.",
+    "openness": "Apache-2.0 repositories, a public grammar, compiler design, examples and evaluation conditions make the approach inspectable and relatively portable across models and renderers. Hosted Gemini/Jev access and the evolving implementation prevent a maximum openness rating."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking source inconsistency: the launch names @a2ui/agent on npm, while the captured repository package table marks that TypeScript package Not published yet. The report attributes the package listing to the launch and already requires exact-version verification; it should not be read as an independently verified package-installation claim.",
+    "The documented latency measurements and same-model editorial reviews are not independent performance validation."
+  ]
+}
