@@ -1,0 +1,126 @@
+{
+  "id": "cohere-rerank5",
+  "title": "Rerank 5 adds focused evidence to retrieval — with defaults worth checking",
+  "entity": "Cohere Rerank 5",
+  "category": "Tools",
+  "tags": [
+    "retrieval",
+    "RAG",
+    "education",
+    "search",
+    "ContextFocus"
+  ],
+  "summary": "Pro and Fast variants add optional evidence spans to reranking. The useful adoption questions are truncation, citation preservation, local relevance tests and total workflow cost.",
+  "changeType": "new",
+  "publishedAt": "2026-10-21",
+  "discoveredAt": "2026-10-22T17:15:00Z",
+  "updatedAt": "2026-10-30T21:11:30.207359Z",
+  "officialUrl": "https://cohere.com/blog/rerank-5",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A retrieval upgrade with two separate jobs",
+      "html": "<p>Cohere released Rerank 5 on October 21, 2026, in Pro and Fast variants. It sits between an initial search and the system that presents or generates an answer. Give it a question and candidate documents; it returns an ordering intended to put useful evidence first. An optional feature, ContextFocus, also selects relevant spans inside those documents. That second step can reduce the material sent to a downstream language model, but it changes what evidence the model gets to see. The important product decision is therefore whether to improve ranking, compress context, or do both. These should be evaluated separately. <a href=\"https://cohere.com/blog/rerank-5\">The launch announcement</a> describes both capabilities; neither was executed for this report.</p><p>The attraction for an existing education site, knowledge base or research assistant is incremental adoption. Rerank can work after keyword, vector or hybrid retrieval without requiring a replacement index. A team can preserve its current corpus and search system, add the new stage behind a feature flag, and compare the resulting answers. This does not rescue documents that the first search never retrieved. If a question depends on a missing syllabus, an unindexed caption or a permission-filtered page, a better ordering cannot manufacture the missing evidence.</p><p>Treat Pro and Fast as alternatives to evaluate against the same labeled questions. The vendor positions them differently on quality and efficiency, but a model name is not a service-level guarantee. A small course collection with highly distinctive titles may need little reranking. A mixed archive of similar policy versions, lecture notes and technical manuals may benefit more. The meaningful outcome is whether people reach the correct source and understand its limits, not whether the application displays a sophisticated relevance score.</p>"
+    },
+    {
+      "id": "request-contract",
+      "title": "The API default can hide the passage you need",
+      "html": "<p>The documented request supplies a model identifier, query and document list to the Rerank endpoint. The current identifiers are <code>rerank-v5.0-pro</code> and <code>rerank-v5.0-fast</code>. Results identify the original document index and its relevance score. Keep an explicit mapping from that index to a stable document ID, version, title, permission record and citation URL; relying on an array position after subsequent sorting or filtering invites incorrect attribution. For structured records, the reference recommends a YAML representation. That is a serialization choice, not a substitute for deciding which fields the model should evaluate. <a href=\"https://docs.cohere.com/reference/rerank\">The API reference</a> is the operational source of truth.</p><p>A crucial distinction appears between the model announcement and the request defaults. The changelog advertises a 32K context window, while the reference sets <code>max_tokens_per_doc</code> to 4,096 by default and says longer documents are automatically truncated. Uploading a long handbook and asking a question about its last appendix may therefore exclude the answer before relevance is assessed. Set the limit deliberately within supported constraints, or split documents into meaningful sections while carrying their source and heading metadata. Measure whether a question requires adjacent sections rather than assuming arbitrary fixed chunks are adequate.</p><p>The <code>top_n</code> parameter controls how many ranked results are returned. It does not reduce the number of submitted candidates the service must consider. The reference recommends against sending more than 1,000 documents in one call. For a first experiment, hold initial retrieval depth constant and vary the final result count. Then test candidate depth separately. Otherwise a change in latency or answer quality can come from several moving parts, and the team will not know which adjustment earned its cost. <a href=\"https://docs.cohere.com/v2/changelog\">The current changelog</a> provides the model-level context claim.</p>"
+    },
+    {
+      "id": "focus-and-citations",
+      "title": "ContextFocus needs a reversible path back to the source",
+      "html": "<p>ContextFocus is disabled by default. The reference exposes a <code>relevant_spans</code> configuration with an explicit mode, a threshold whose default is 0.1, and an optional maximum span count. Returned spans identify character boundaries and carry scores. These fields allow an application to keep compact evidence while retaining a route back to the original document. They do not establish that the selected passage contains every qualifier, date or exception needed for an answer. The endpoint documentation and launch description support the mechanism; the preservation rules below are implementation recommendations. <a href=\"https://docs.cohere.com/reference/rerank\">Inspect the span request fields</a> before enabling them.</p><p>Store the exact text version that was reranked. If the application normalizes whitespace, repairs OCR or converts markup after receiving character offsets, those offsets may no longer point to the same passage. Retain original document IDs, extraction versions and source page references alongside each span. For transcripts, keep the association between text segments and timestamps outside the model response. A citation should lead readers to the underlying source, with the compact passage presented as an aid to navigation rather than as a replacement for the source.</p><p>Table-heavy material deserves a separate evaluation. A number may be meaningless without its column heading, reporting period, unit or footnote. Similarly, a lecture transcript can quote a misconception before correcting it several sentences later. An aggressive span threshold may retain the attractive sentence and remove the correction. Provide an expansion path to surrounding text and, where necessary, the complete page. A downstream answer can request that larger context when evidence is ambiguous. The safest initial rollout is to compare full retrieved passages with focused passages on the same difficult questions, recording omitted qualifiers and incorrect citations as failures even when the generated answer sounds fluent.</p>"
+    },
+    {
+      "id": "relevance-is-not-certainty",
+      "title": "Calibrated relevance still needs a local test set",
+      "html": "<p>Cohere describes the new scores as calibrated relevance estimates and suggests starting cutoffs of 0.50 for Pro and 0.45 for Fast. These are publisher findings from its evaluation setup. They are not a universal statement that a document above a threshold is correct, authorized, current or sufficient to answer a question. A highly relevant page can be outdated or factually wrong. A low-scoring page can contain a critical exception. Treat a cutoff as an initial tuning choice and assess it against the questions and document types that the application actually serves. <a href=\"https://cohere.com/blog/rerank-5\">The launch evaluation</a> should be read with those boundaries.</p><p>Build a modest labeled set before changing production behavior. Include ordinary questions, vague queries, requests with no answer in the corpus, conflicting document versions, multilingual questions and questions requiring more than one passage. Have a person identify the minimum evidence needed and acceptable sources. Compare the current retrieval system, reranking alone, and reranking plus ContextFocus. Check source recall, incorrect exclusions, citation accuracy, no-answer behavior, latency and total cost. This separates the ranking contribution from the compression contribution instead of treating them as one upgrade.</p><p>Use explicit failure handling in the interface. When no suitable evidence survives, a course assistant can say that the collection does not establish the answer and offer a broader search. It should not turn a low-confidence retrieval result into an authoritative statement about an assignment or deadline. For website search, preserve a path to the unfiltered results so users can investigate. For an agent, returning a relevance score is not permission to take an action on the document. Access controls, source freshness and authorization belong to the surrounding application and must be enforced independently of the model's ranking.</p>"
+    },
+    {
+      "id": "cost-and-access",
+      "title": "Count the whole retrieval request",
+      "html": "<p>The launch quotes token pricing of $0.05 per million tokens for Pro and $0.02 for Fast. Those rates are only one component of the workflow. Parsing or OCR, embeddings, vector storage, initial search and answer generation may dominate the bill. ContextFocus adds value financially only if the downstream savings and quality effects justify its processing and operational complexity. The report does not establish cloud marketplace equivalence, regional prices, discounts or a universal saving. Check the current account and deployment offer before using these numbers in a budget. <a href=\"https://cohere.com/blog/rerank-5\">Launch pricing</a> and <a href=\"https://cohere.com/pricing\">Cohere pricing</a> were inspected on October 30.</p><p>Cohere's deployment explanation emphasizes request shape: the query contributes work across query-document pairs, candidate depth matters, and steady traffic can have different economics from intermittent requests. Sending fewer results onward does not necessarily mean paying to evaluate fewer candidates. Measure realistic query lengths and document lengths, including bursts and retries. A useful comparison records cost per successfully answered question, together with latency percentiles and failures, rather than reporting only the unit price of the reranker. <a href=\"https://cohere.com/blog/shared-or-dedicated-inference-for-embed-rerank\">The shared versus dedicated guide</a> explains why utilization changes the decision.</p><p>The pricing page distinguishes trial access from production: free trial keys are rate-limited and not permitted for production or commercial use. Production requires the appropriate account and billing setup. Dedicated deployment introduces another cost structure; the inspected Model Vault table lists a medium instance at $4 per hour or $2,500 per month for the relevant variants. Those are alternative published billing options, not a guaranteed break-even calculation. Hardware allocation, idle time, capacity and support requirements still matter. The checked materials do not offer downloadable Rerank 5 weights or an open redistribution license. Private deployment availability should therefore not be described as freely self-hostable open-source software.</p>"
+    },
+    {
+      "id": "practical-workflows",
+      "title": "Where to use it in a course, website or production archive",
+      "html": "<p>For an educational application, start with a bounded collection such as module notes, assignment instructions and approved reference material. Preserve version dates and restrict retrieval to documents the learner may access. Use reranking to choose passages for an explanation, then show their titles and citations. Test questions whose correct response is that the answer is absent. This is an evidence-navigation workflow; the model's relevance score should not become a student grade or a judgment about a learner. An instructor can review recurring failures and improve either document structure or retrieval depth.</p><p>For a website, test a difficult support category rather than replacing every search at once. Compare click-through to genuinely resolving pages, duplicate-version selection and unanswered queries. A useful interface can show ranked results immediately and let users expand the excerpt or open the original page. For video production, index transcripts, interview notes and approved research with timecodes and rights metadata. Rerank can help an editor find material for a factual segment or locate a relevant interview passage. It does not generate video, establish usage rights or verify that a quote remains accurate when removed from its surrounding conversation.</p><p>The <a href=\"https://cohere.com/blog/financial-research-assistant-cohere-aws\">Cohere-on-AWS tutorial</a> illustrates a more demanding architecture: retrieve 30 vector candidates, rerank to five, and optionally send page images to the answer model when layout matters. The image stage is a downstream fallback, not evidence that text reranking understands every chart or scanned table. Its financial-document example can inspire educational PDF search, but adopting it requires cloud endpoints, ingestion, storage, extraction and an appropriate generator. None of those services were provisioned here. Broad summarization may need whole pages, while narrow factual lookup may tolerate focused spans; the tutorial does not remove that design choice.</p>"
+    },
+    {
+      "id": "adoption-judgment",
+      "title": "A small controlled integration is the useful next step",
+      "html": "<p>Rerank 5 is a concrete, documented way to change an existing retrieval pipeline without rebuilding the corpus. Its strongest practical differentiator in the inspected material is the combination of ranking and optional source-span selection. The integration remains conditional on careful document handling: explicit truncation limits, stable citations, a way to recover omitted context, and a local evaluation that includes absent answers. Teams already operating retrieval systems can isolate that change. Teams without reliable ingestion and access control should establish those foundations before expecting a reranker to deliver trustworthy answers.</p><p>The evidence here consists of Cohere's launch article, live API reference, pricing and deployment documentation, changelog and an AWS tutorial. It establishes the advertised interface and publisher-stated terms. It does not independently validate benchmark improvements, latency, calibration or production savings. No requests were sent to the model, no documents were uploaded, and no cloud workflow was deployed. The practical recommendations in this report are an implementation and evaluation plan derived from those documented mechanisms, not a claim that the proposed educational, website or video workflows have already succeeded.</p>"
+    }
+  ],
+  "useCases": [
+    "Course-material search with source citations and no-answer handling",
+    "Website support retrieval with controlled ranking experiments",
+    "Transcript and research navigation for factual video production"
+  ],
+  "limitations": [
+    "Vendor documentation and claims; no API execution or independent benchmark replication.",
+    "32K advertised model context differs from the 4,096-token default per-document request limit.",
+    "ContextFocus can omit necessary qualifiers; scores are not factual or safety confidence.",
+    "Trial access is not licensed for production/commercial use; no downloadable weights verified."
+  ],
+  "sources": [
+    {
+      "id": "official-source-933b4a45dd1e7b0f",
+      "title": "Cohere — Rerank 5 launch",
+      "url": "https://cohere.com/blog/rerank-5",
+      "accessedAt": "2026-10-30T20:54:19.859Z",
+      "publishedAt": "2026-10-21",
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-b0ea6b6a0addb14f",
+      "title": "Cohere — Rerank API reference",
+      "url": "https://docs.cohere.com/reference/rerank",
+      "accessedAt": "2026-10-30T20:58:51.686Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-73e03ec6d5cd9983",
+      "title": "Cohere — pricing and production access",
+      "url": "https://cohere.com/pricing",
+      "accessedAt": "2026-10-30T20:55:27.559Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-f64cbf7f3d1da5b7",
+      "title": "Cohere — shared or dedicated inference",
+      "url": "https://cohere.com/blog/shared-or-dedicated-inference-for-embed-rerank",
+      "accessedAt": "2026-10-30T20:54:21.863Z",
+      "publishedAt": "2026-10-09",
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-1cb235fae63983df",
+      "title": "Cohere — financial research assistant on AWS",
+      "url": "https://cohere.com/blog/financial-research-assistant-cohere-aws",
+      "accessedAt": "2026-10-30T20:54:43.493Z",
+      "publishedAt": "2026-10-29",
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-08dff83d05a8531a",
+      "title": "Cohere — changelog",
+      "url": "https://docs.cohere.com/v2/changelog",
+      "accessedAt": "2026-10-30T20:58:52.959Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    }
+  ],
+  "images": [],
+  "judgment": "A worthwhile incremental retrieval experiment for teams with a working corpus and evaluation set. Enable ranking and span compression separately, preserve full-source recovery, and judge total cost per useful answer.",
+  "researchNote": "Primary pages inspected in Chrome on October 30, 2026. This is a researched implementation analysis, not a hands-on product test. Benchmark and price statements remain publisher claims; future account and cloud terms may differ."
+}

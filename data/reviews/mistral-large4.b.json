@@ -1,0 +1,28 @@
+{
+  "reportId": "mistral-large4",
+  "reviewerId": "/root/edition_20261030_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:26Z",
+  "reportHash": "959d5d86114821786f74b58126c07a82f841c1613e73fb06ab5be789398347d9",
+  "evidenceHash": "ee88da7c6a5e6a94c2f354ab6c067a143a5d6037abbe28bc9001ac7dc8142fe6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "Text/image input, tool calls and schema output support useful coding, website maintenance and document workflows, and hosted evaluation gives builders a route that does not require buying a GPU cluster. The report makes the reasoning budget, model-specific container, 256K recipe validation and custom license operationally meaningful; proposed classroom and video uses are correctly presented as proposals.",
+    "impact": "Releasing an improved trillion-parameter checkpoint after the preview materially expands deployment control and study of a capable general multimodal model. The public artifacts, two precisions and serving routes justify substantial significance, while restricted commercial boundaries, large infrastructure requirements and publisher-led performance evidence keep the case below exceptional field-wide impact.",
+    "novelty": "The weight release, post-preview reinforcement-learning improvement, configurable reasoning and embedded DSpark offer a meaningful new deployment package. This is evolution of an existing preview rather than demonstrated invention of a new general capability, and the report appropriately avoids treating selected coding/security benchmark claims as independent proof.",
+    "maturity": "Model cards and the vLLM recipe supply detailed serving configurations and explicit validation boundaries. Support requiring a model-specific image, validation only to 256K in the inspected recipe, hardware-specific limitations and absence of a hands-on deployment make this usable but still demanding infrastructure rather than a universally dependable drop-in model.",
+    "openness": "Downloadable FP8/NVFP4 weights, architecture descriptions and multiple serving integrations provide real inspectability and portability. The actual modified-MIT ecosystem license adds a consequential Model-as-a-Service commercial restriction, and complete training data/process reproduction is not established; these materially limit openness despite the weight release."
+  },
+  "confidence": "high",
+  "concerns": []
+}

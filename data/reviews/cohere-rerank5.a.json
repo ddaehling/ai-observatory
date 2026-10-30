@@ -1,0 +1,28 @@
+{
+  "reportId": "cohere-rerank5",
+  "reviewerId": "/root/edition_20261030_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:07.190748Z",
+  "reportHash": "995e6c405ea7e70273a97ad74aea77bd1976b4f7d7471c3f1533b0ecfea6c96a",
+  "evidenceHash": "6822d467d9f505c74e450c0ae3fbd0e042d7df36ecef002af19319cdf4dc8cda",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The documented API can be inserted into an existing retrieval pipeline, and optional character spans create concrete value for course search, support sites and transcript navigation. The report gives actionable separate ranking/compression evaluations, explicit truncation handling and stable-citation design. Value depends on already having sound ingestion, access control and a labeled corpus; no integration outcome was demonstrated.",
+    "impact": "Ranking plus source-span selection is a meaningful improvement in a widely used retrieval stage and could reduce downstream context work. The evidence supports domain-level significance, not a field-wide breakthrough: benchmark, calibration and savings claims remain Cohere-authored, and no independent end-to-end comparison establishes their magnitude.",
+    "novelty": "The combination of Pro/Fast variants, calibrated relevance claims and optional scored character spans is a concrete differentiated interface. Reranking and context selection themselves are established techniques, and the packet does not establish that Cohere originated them or uniquely solves lost qualifiers. Six reflects meaningful product differentiation rather than unprecedented research.",
+    "maturity": "The captured endpoint has a specific request/response contract, documented defaults and errors, current pricing, production-key rules and deployment guidance. These support a usable service above the rubric midpoint. Actual latency, calibration, citation preservation and reliability were not exercised, so documentary completeness cannot justify an exceptional readiness score.",
+    "openness": "The API is documented, but the inspected sources establish neither downloadable weights nor a permissive redistribution license. Trial keys exclude production/commercial use and private deployment remains a vendor arrangement. Interface visibility provides limited inspectability while training reproducibility and independent model portability remain unestablished."
+  },
+  "confidence": "high",
+  "concerns": []
+}

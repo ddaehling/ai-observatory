@@ -1,0 +1,179 @@
+{
+  "id": "mecatl",
+  "title": "Mecatl: an agent harness with a life beyond one machine",
+  "entity": "Mecatl",
+  "category": "Open source",
+  "tags": [
+    "agent infrastructure",
+    "durable sessions",
+    "Kubernetes",
+    "TypeScript",
+    "education"
+  ],
+  "summary": "Mecatl separates an agent’s loop, client, execution and state so builders can operate their own service. Its documented recovery limits and unfinished identity boundaries matter as much as its deployment flexibility.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "officialUrl": "https://github.com/stacklok/mecatl",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "An agent session is more than a running process",
+      "html": "<p>Mecatl is worth investigating when an agent becomes part of an application that other people depend on. A classroom authoring assistant, a website maintenance service or a video production coordinator needs somewhere to keep its work when a client disconnects or a worker is replaced. Stacklok’s open harness supplies a structure for that problem: the reasoning loop is separate from its client, model provider, execution environment and durable state. This is a baseline assessment of the repository and documentation inspected on October 30, 2026, not a claim that the project launched today.</p><p>The useful distinction is operational. The same engine can run locally, behind a standalone service or in Kubernetes, while applications choose the surrounding services. The documentation names a terminal client, standalone daemon, Kubernetes runtime and application integrations. That gives developers several entry points without requiring the agent loop to be rewritten at each deployment stage. It does not mean an existing proprietary coding agent can simply be placed on top: the project’s architecture guide explicitly says a dedicated integration would be necessary. <a href=\"https://github.com/stacklok/mecatl/blob/main/user-docs/cloud-native-harness.md\">Architecture and compatibility boundaries</a>.</p><p>The strongest reason to try it is control over how sessions, tools and workspaces fit your service. The weakest reason is an expectation that infrastructure alone will make a model correct. This research did not execute Mecatl, reproduce its recovery examples or compare task performance. The following workflows are proposed uses of documented interfaces, with acceptance checks a builder should perform.</p>"
+    },
+    {
+      "id": "components",
+      "title": "Choose the smallest deployment that answers your question",
+      "html": "<p>The repository describes a streaming loop with tool dispatch, permissions, compaction, hooks, subagents and teams. It also exposes gRPC and HTTP/SSE interfaces and a TypeScript SDK. Its offline demo exercises scripted tool calls, an approval, delegation and usage accounting without an API key. That makes the demo a useful first inspection of control flow, although it cannot tell you whether a real model will complete your workload. The demo is run from a checkout and is not included in the Homebrew package. <a href=\"https://github.com/stacklok/mecatl\">Repository overview and offline demo</a>.</p><p>For a small prototype, the standalone <code>mecated</code> service is the simpler starting point. Homebrew and Conda-forge installation paths are documented; release archives cover macOS and Linux on amd64 and arm64. Building from source requires Go 1.27 or later and Task v3. Crucially, the minimal server starts with loopback listeners, in-memory sessions and no authentication. Persistent sessions require a configured store; remote exposure requires authentication and transport protection. A running default server is therefore not evidence of a durable shared deployment. <a href=\"https://mecatl.dev/docs/operating/mecated\">Standalone installation and defaults</a>.</p><p>A sensible first exercise is deliberately small: ask for an explanation of a disposable project, inspect the result, reconnect, then restart the service after enabling persistence. Record which conversation state survives. Only after that should the application add tools that change files or call external services. This separates basic integration mistakes from model behavior and gives the team a reproducible starting configuration.</p>"
+    },
+    {
+      "id": "recovery",
+      "title": "Durability has a precise boundary",
+      "html": "<p>The Kubernetes runtime, <code>mecak8s</code>, puts session snapshots and event history in Redis and uses Kubernetes Leases to enforce one writer per session. Its chart defaults to two replicas, with a supported one-replica option. A replacement worker can recover persisted conversation state. The key qualification is that recovery starts at the last saved turn boundary: an interrupted operation is not resumed in place, and work since the last successful save can be lost. <a href=\"https://mecatl.dev/docs/operating/mecak8s\">Kubernetes runtime</a> and <a href=\"https://github.com/stacklok/mecatl/blob/main/user-docs/cloud-native-harness.md\">recovery boundary</a>.</p><p>The operator guide also says external model and tool effects are not exactly once. A tool may already have performed an action when a connection or worker fails. The application cannot treat an absent final response as proof that nothing happened. For a website assistant, that means a publishing tool should retain an operation identifier and check the resulting version before retrying. For a render coordinator, it means looking up the submitted render job before submitting another. These are application design recommendations, not guarantees supplied by the harness.</p><p>Deployment acceptance should include graceful worker replacement, a hard stop, a Redis interruption and a client reconnect during an approval. Check saved state, duplicate effects, recoverable approvals and the user-visible status separately. The documented disposable Redis fixture has no persistence, while production Redis availability and backup choices belong to the operator. One replica can preserve saved state without preserving service availability. <a href=\"https://mecatl.dev/docs/operating/mecak8s/scale-recover-and-upgrade\">Scaling, failover and shutdown documentation</a>.</p>"
+    },
+    {
+      "id": "application-controls",
+      "title": "Build a client that can explain what happened",
+      "html": "<p>The TypeScript package supports Node.js, Bun, Deno and browser applications through different entry points and transports. The SDK handles typed requests and event streams; the server owns session state and permissions. This is useful for a custom educational or creative interface because the application can present progress in terms familiar to its users while leaving runtime state on the service. Transport capabilities still differ: the SDK overview identifies guardrail inspection methods available through gRPC but unavailable over HTTP. <a href=\"https://mecatl.dev/docs/building/typescript-sdk/\">SDK workflows and transport limits</a>.</p><p>A session is a durable conversation handle, and each run has its own identity. The run can be consumed once through event iteration or a terminal-result method. Cancellation, limits and budget exhaustion are server-declared results; transport failures are typed errors. Those states should produce different messages in an application. A request that exceeded a budget should not look like a broken network connection, and a disconnected stream should not be displayed as a successful completion.</p><p>The run interface documents cancellation, steering and permission resolution. Cancellation is requested, then the client continues consuming events to obtain the terminal result. A delayed steer is refused rather than silently becoming a new task. The distinction between closing and deleting a session also matters: closing releases runtime resources, while deleting removes stored session state. These controls support a clear interface with stop, retry and retained history, but the developer must implement their presentation and retention policy. <a href=\"https://mecatl.dev/docs/building/typescript-sdk/sessions-and-runs\">Session lifecycle and controls</a>.</p>"
+    },
+    {
+      "id": "education-workflow",
+      "title": "A practical classroom authoring pilot",
+      "html": "<p>An educational pilot could help an instructor prepare a lesson from approved materials. Start with a bounded task: outline a session, draft exercises and identify statements that need citations. Give the agent a read-only source tool and a separate draft-writing tool. Keep student records and assessment decisions outside the pilot. The point of this workflow is to evaluate whether the harness preserves an understandable working record, not to assume the model’s educational judgment is reliable.</p><p>Mecatl’s execution choices make this boundary concrete. Kubernetes sessions have no filesystem access by default. An optional Redis virtual workspace supplies basic file operations but no shell, executable-file semantics, Git worktrees or branch-and-merge workflow. The operator can instead configure a mounted workspace or per-session Kubernetes execution. These options serve different needs: a draft-and-outline tool may need only lightweight files, while a coding exercise builder needs an environment that can actually execute its checks. <a href=\"https://mecatl.dev/docs/operating/mecak8s/state-and-execution\">Filesystem and state choices</a>.</p><p>For the instructor-facing interface, show the lesson brief, sources consulted, proposed changes and remaining questions. Require review before making the lesson available to learners. Test whether the same saved session can be resumed after the browser closes and whether rejected tool requests remain intelligible in the record. A successful pilot would produce a reviewable lesson draft and a clear account of unfinished work. It would not establish effectiveness in teaching, accessibility, age suitability or protection of sensitive student information.</p>"
+    },
+    {
+      "id": "creative-workflow",
+      "title": "Website and video workflows need their own tools",
+      "html": "<p>A website maintenance application could divide work into inspection, draft changes and review. The agent reads a bounded repository, proposes a patch, invokes a preview or test tool and returns the resulting artifacts to an editor. The editor should see the exact patch and checks before publishing. Mecatl supplies orchestration interfaces; it does not supply the site’s design system, deployment policy or acceptance criteria. Evaluate one concrete change, such as correcting a broken lesson navigation path, before trying broad autonomous maintenance.</p><p>A video production workflow could use the same pattern around an existing render service. Supply a storyboard, licensed assets and a defined output format. Let the agent prepare a scene plan and request a draft render through a purpose-built tool. Store the render identifier and artifact location outside the model’s conversational summary. On recovery, inspect that job before retrying. Human review would still assess pacing, factual accuracy, continuity, captions and asset rights. Mecatl is infrastructure for coordinating such work, not a video generator or a verified integration with a particular editor.</p><p>Workspace configuration is a material constraint for both examples. A shared mounted root does not isolate one caller’s files from another’s. The Redis file mode has no shell, so it cannot itself run a browser build or a local renderer. An external tool service or an appropriate execution environment must perform those operations. The project introduction also states that multi-user support for <code>mecak8s</code> is being developed. Treat a multi-tenant product as a separate engineering undertaking, not a consequence of installing two replicas. <a href=\"https://mecatl.dev/docs\">Current deployment scope</a>.</p>"
+    },
+    {
+      "id": "access-costs",
+      "title": "Open code still has operating costs",
+      "html": "<p>The repository is licensed under Apache 2.0. That makes the harness inspectable and reusable under the license’s conditions, but it does not provide a model subscription, compute or a service-level guarantee. Model providers, infrastructure and external tools retain their own access conditions. No end-to-end workload cost was measured for this report. <a href=\"https://github.com/stacklok/mecatl/blob/main/LICENSE\">Mecatl license</a>.</p><p>Production Kubernetes prerequisites include the cluster and its management tools, reachable Redis, caller authentication, transport protection and model-provider credentials. The chart does not create the production Redis service, general network policies, provider secrets or gateway. The documented default unattended permission mode requires an enforcing guardrails checker; the subagent permission reviewer can also spend model tokens. Budget both the main task and auxiliary model activity. A nominally inexpensive generation call is not the full cost of a persistent service. <a href=\"https://mecatl.dev/docs/operating/mecak8s\">Deployment prerequisites and checker behavior</a>.</p><p>Provider flexibility also has boundaries. Changing models can create a peer session that carries visible conversation while dropping provider-private replay state; replaying long history can be costly. Remote clients use the server’s configured model access. The Kubernetes runtime does not support the local Codex subscription-token entry, and its documentation directs operators to API-key providers instead. Check the exact deployment and account path before estimating costs or promising a model picker. <a href=\"https://mecatl.dev/docs/features/choose-models\">Provider selection and switching behavior</a>.</p>"
+    },
+    {
+      "id": "assessment",
+      "title": "A useful foundation for a bounded prototype",
+      "html": "<p>Mecatl’s appeal is the specificity of its boundaries. It documents where state lives, what survives a restart, how clients control runs and which parts remain the application’s responsibility. That is useful material for builders who already know they need a service around an agent. The project also calls itself early. Its README explicitly distinguishes current attribution and audit building blocks from complete tenant isolation, with cross-process cryptographic authority work still in progress.</p><p>The next step should be a contained evaluation with a fixed repository or small artifact workflow, a recorded configuration and a spending limit. Compare normal completion, refusal, timeout, cancellation and recovery. Keep model quality and runtime reliability as separate results. This report establishes that the documented components warrant that evaluation; it does not establish production reliability, security assurance, lower costs or improved model accuracy.</p><p>Define the evaluation artifact before choosing a model: a lesson draft with traceable citations, a patch that passes the existing build, or a render plan whose referenced assets all exist. Save the input brief, model selection, tool permissions and observed usage for each attempt. Run the same task with a deliberately unavailable tool, then with a permission denied, to see whether the client explains the failure and preserves useful intermediate work. These cases reveal integration quality more clearly than a polished happy-path demo.</p><p>For recovery testing, choose a tool action that is safe to repeat, then separately test one with an external job identifier. Confirm that the application can distinguish a missing response from a missing effect. Finally, have someone unfamiliar with the implementation review the transcript and resulting artifact. If they cannot tell what happened, what remains unfinished and what requires approval, the service needs better presentation before more autonomy.</p>"
+    }
+  ],
+  "useCases": [
+    "Instructor-reviewed lesson drafting with approved source and draft tools",
+    "Website patch preparation with separate preview and publication review",
+    "Video storyboard and render-job coordination through an external tool service",
+    "Custom agent applications with retained sessions and explicit run controls"
+  ],
+  "limitations": [
+    "Documentation review only; no installation, provider calls, fault injection or benchmarks were performed.",
+    "Recovery uses persisted turn boundaries and external side effects are not exactly once.",
+    "The project is early; multi-user support and cross-process cryptographic authority boundaries remain incomplete or active work.",
+    "Standalone defaults are loopback-only, unauthenticated and in-memory; a production deployment requires explicit persistence and access configuration.",
+    "No end-to-end operating cost was measured. Model, checker, infrastructure and external-tool costs remain deployment-specific.",
+    "No documentary screenshots or diagrams were used; visual product behavior was not tested."
+  ],
+  "images": [],
+  "judgment": "Worth a bounded prototype for builders who need control over agent sessions, tools and service deployment. Its explicit recovery and execution limits are useful; a production or multi-tenant rollout requires further engineering and validation.",
+  "researchNote": "Primary repository and documentation inspected in Chrome on October 30, 2026. The oldest unresolved Stacklok/Latent Space lead prompted this baseline assessment. Documentation dates are not treated as a project launch. Proposed classroom, website and video workflows are editorial applications of documented interfaces, not tested integrations. Source snapshots and hashes are retained locally for review.",
+  "discoveredAt": "2026-10-30T21:05:14.585796Z",
+  "updatedAt": "2026-10-30T21:05:14.585796Z",
+  "sources": [
+    {
+      "id": "research-source-667df3eaf1a7ee1a",
+      "title": "stacklok/mecatl: Open source agent harness, built from the ground up for cloud-native production workloads on infrastructure you control. Run the same provider-agnostic loop locally, remotely, or on Kubernetes, with durable state, permissions, and gRPC/HTTP-SSE APIs.",
+      "url": "https://github.com/stacklok/mecatl",
+      "accessedAt": "2026-10-30T20:56:38.132Z",
+      "publishedAt": null,
+      "locator": "README and linked documentation headings",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-a652bd13c3b62b0a",
+      "title": "mecatl/user-docs/cloud-native-harness.md at main · stacklok/mecatl",
+      "url": "https://github.com/stacklok/mecatl/blob/main/user-docs/cloud-native-harness.md",
+      "accessedAt": "2026-10-30T20:56:47.039Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-c52bbe96d0185ebb",
+      "title": "Run mecated standalone | Mecatl",
+      "url": "https://mecatl.dev/docs/operating/mecated",
+      "accessedAt": "2026-10-30T20:56:50.818Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-96f90c9e30d37754",
+      "title": "Cloud-native k8s with mecak8s | Mecatl",
+      "url": "https://mecatl.dev/docs/operating/mecak8s",
+      "accessedAt": "2026-10-30T20:56:55.642Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-be1a34ea4a6431fc",
+      "title": "Scale, recover, and upgrade mecak8s | Mecatl",
+      "url": "https://mecatl.dev/docs/operating/mecak8s/scale-recover-and-upgrade",
+      "accessedAt": "2026-10-30T20:58:23.211Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-6a930aa2a48dcfa2",
+      "title": "TypeScript SDK | Mecatl",
+      "url": "https://mecatl.dev/docs/building/typescript-sdk/",
+      "accessedAt": "2026-10-30T20:57:06.216Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-ed2a4fc514af93a4",
+      "title": "Work with sessions and runs | Mecatl",
+      "url": "https://mecatl.dev/docs/building/typescript-sdk/sessions-and-runs",
+      "accessedAt": "2026-10-30T20:58:17.088Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-8b31f77f335cbd4d",
+      "title": "Configure mecak8s state and execution | Mecatl",
+      "url": "https://mecatl.dev/docs/operating/mecak8s/state-and-execution",
+      "accessedAt": "2026-10-30T20:58:23.996Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-9513e59d85a987fd",
+      "title": "Choose models and providers | Mecatl",
+      "url": "https://mecatl.dev/docs/features/choose-models",
+      "accessedAt": "2026-10-30T20:58:24.860Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-216b862dfe919f71",
+      "title": "mecatl/LICENSE at main · stacklok/mecatl",
+      "url": "https://github.com/stacklok/mecatl/blob/main/LICENSE",
+      "accessedAt": "2026-10-30T20:57:08.975Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    },
+    {
+      "id": "research-source-83f6024c9e6ae111",
+      "title": "Mecatl",
+      "url": "https://mecatl.dev/docs",
+      "accessedAt": "2026-10-30T20:59:28.406Z",
+      "publishedAt": null,
+      "locator": "Rendered primary documentation; section headings cited in the report",
+      "supports": "Current documented behavior and explicit limits; editorial workflows are proposed applications, not product tests."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "reportId": "mistral-large4",
+  "reviewerId": "/root/edition_20261030_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:07.190748Z",
+  "reportHash": "959d5d86114821786f74b58126c07a82f841c1613e73fb06ab5be789398347d9",
+  "evidenceHash": "ee88da7c6a5e6a94c2f354ab6c067a143a5d6037abbe28bc9001ac7dc8142fe6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 6
+  },
+  "rationale": {
+    "usefulness": "Text/image input, structured output, tool calling and hosted access make bounded coding, website-maintenance and document experiments practical. The article usefully explains reasoning-token budgets and a concrete model-specific serving path. Self-hosting is substantially less accessible to small builders because full weights require multi-accelerator capacity and application-specific license review.",
+    "impact": "Releasing improved trillion-parameter multimodal MoE weights outside a single hosted endpoint is a substantial development for organizations studying or operating capable models. Seven recognizes broad potential without accepting vendor benchmark leadership as independent evidence. The custom commercial restriction, expensive deployment and incomplete training disclosure constrain claims of exceptional field-wide significance.",
+    "novelty": "The improved checkpoint, FP8/NVFP4 options, reasoning settings and embedded DSpark component are identifiable changes from the earlier preview. The inspected material does not demonstrate a wholly new capability category, and generic long-context, tool-use and multimodal features alone do not establish novelty. Unreproduced benchmark gains warrant moderate-above-midpoint differentiation.",
+    "maturity": "Actual weight artifacts, detailed model cards, hosted documentation and a vLLM recipe supply a concrete path to use. Readiness is qualified by model-specific images, support absent from normal release/nightly wheels, a 256K validated recipe versus advertised 1M capacity, and no deployment reproduced for this report. Those limits prevent a stronger dependability rating.",
+    "openness": "Downloadable weights, configurations, multiple precision variants and documented external serving improve inspectability and portability materially. The full captured license nevertheless adds a Model as a Service commercial condition, and the full training process/data are not available in the evidence. Open weights therefore merit a middle-to-high score, not permissive fully reproducible openness."
+  },
+  "confidence": "medium",
+  "concerns": []
+}

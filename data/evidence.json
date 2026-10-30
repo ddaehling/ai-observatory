@@ -16318,5 +16318,2097 @@
     "limitations": [
       "Linked arXiv paper and evaluator/circuit artifacts were not inspected or reproduced."
     ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-release",
+    "claim": "Rerank 5 launched October 21 with Pro/Fast variants and optional ContextFocus, operating after existing retrieval.",
+    "source_ids": [
+      "official-source-933b4a45dd1e7b0f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-933b4a45dd1e7b0f",
+        "url": "https://cohere.com/blog/rerank-5",
+        "locator": "Introduction; ContextFocus; availability",
+        "passage": "Cohere introduces two rerank-v5.0 variants, describes an additional ranking stage over retrieved candidates and an optional feature that selects relevant document spans.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-30T20:54:19.859Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-933b4a45dd1e7b0f.json",
+        "archive_sha256": "e0643e5fe13b44b7a41e31ea6e093feacf00ab528542f836562a4871a3c4dc7c"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-interface",
+    "claim": "The request accepts model, query and documents; results map to document indices, and top_n limits returned results.",
+    "source_ids": [
+      "official-source-b0ea6b6a0addb14f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b0ea6b6a0addb14f",
+        "url": "https://docs.cohere.com/reference/rerank",
+        "locator": "Request; response schema",
+        "passage": "The endpoint requires model, query and documents. Its response identifies each ranked document by index and relevance score; top_n determines how many results are returned.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:51.686Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-rerank-reference-expanded.json",
+        "archive_sha256": "f75dcd463b6930f1bde80acefdfc503905de94d2668cbac60a386ccf822d05c4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-truncation",
+    "claim": "Default max_tokens_per_doc is 4096, long documents are automatically truncated, and documentation recommends at most 1000 documents per request.",
+    "source_ids": [
+      "official-source-b0ea6b6a0addb14f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b0ea6b6a0addb14f",
+        "url": "https://docs.cohere.com/reference/rerank",
+        "locator": "Request: documents, max_tokens_per_doc",
+        "passage": "The reference recommends not submitting more than 1,000 documents in one request; the default per-document token limit is 4,096 and longer documents are truncated.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:51.686Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-rerank-reference-expanded.json",
+        "archive_sha256": "f75dcd463b6930f1bde80acefdfc503905de94d2668cbac60a386ccf822d05c4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-context",
+    "claim": "The release changelog advertises 32K model context, distinct from the request default.",
+    "source_ids": [
+      "official-source-08dff83d05a8531a"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-08dff83d05a8531a",
+        "url": "https://docs.cohere.com/v2/changelog",
+        "locator": "October 21, 2026 — Rerank 5",
+        "passage": "The release entry describes Rerank 5 Pro and Fast with 32K context and ContextFocus.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": "2026-10-21",
+        "retrieved_at": "2026-10-30T20:58:52.959Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-changelog.json",
+        "archive_sha256": "14df468e555be368d47c7fe65b297e8ac3f656aa8d986212e2d48bb3ba2281c0"
+      }
+    ],
+    "qualifiers": [
+      "Model-level capacity does not override the separate 4,096-token per-document API default."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-spans",
+    "claim": "ContextFocus is disabled by default and relevant_spans has enabled/disabled modes, threshold default 0.1 and optional max_spans.",
+    "source_ids": [
+      "official-source-b0ea6b6a0addb14f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b0ea6b6a0addb14f",
+        "url": "https://docs.cohere.com/reference/rerank",
+        "locator": "Expanded relevant_spans properties; response example",
+        "passage": "The request exposes mode, threshold and max_spans. Only spans above the threshold are returned; default threshold is 0.1. Response spans include start, end and score.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:51.686Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-rerank-reference-expanded.json",
+        "archive_sha256": "f75dcd463b6930f1bde80acefdfc503905de94d2668cbac60a386ccf822d05c4"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-offsets",
+    "claim": "ContextFocus supplies scored character spans, so citation systems need the original document text and version.",
+    "source_ids": [
+      "official-source-933b4a45dd1e7b0f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-933b4a45dd1e7b0f",
+        "url": "https://cohere.com/blog/rerank-5",
+        "locator": "ContextFocus explanation",
+        "passage": "Cohere describes scored character-level spans that identify the parts of a document relevant to the query.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:19.859Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-933b4a45dd1e7b0f.json",
+        "archive_sha256": "e0643e5fe13b44b7a41e31ea6e093feacf00ab528542f836562a4871a3c4dc7c"
+      }
+    ],
+    "qualifiers": [
+      "Offset preservation and full-source recovery in the report are editorial implementation recommendations, not a tested vendor guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-calibration",
+    "claim": "Cohere proposes score cutoffs of 0.50 Pro and 0.45 Fast, based on its relevance calibration evaluation.",
+    "source_ids": [
+      "official-source-933b4a45dd1e7b0f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-933b4a45dd1e7b0f",
+        "url": "https://cohere.com/blog/rerank-5",
+        "locator": "Calibrated relevance; threshold guidance",
+        "passage": "The launch proposes Pro 0.50 and Fast 0.45 as starting relevance thresholds and describes its calibration evaluation.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:19.859Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-933b4a45dd1e7b0f.json",
+        "archive_sha256": "e0643e5fe13b44b7a41e31ea6e093feacf00ab528542f836562a4871a3c4dc7c"
+      }
+    ],
+    "qualifiers": [
+      "Publisher evaluation only; relevance is distinct from factual correctness, source authorization or universal probability."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-price",
+    "claim": "Launch token prices are $0.05 per million for Pro and $0.02 for Fast.",
+    "source_ids": [
+      "official-source-933b4a45dd1e7b0f"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-933b4a45dd1e7b0f",
+        "url": "https://cohere.com/blog/rerank-5",
+        "locator": "Pricing and availability",
+        "passage": "The launch lists Pro at $0.05 and Fast at $0.02 per million tokens.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-21",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:19.859Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-933b4a45dd1e7b0f.json",
+        "archive_sha256": "e0643e5fe13b44b7a41e31ea6e093feacf00ab528542f836562a4871a3c4dc7c"
+      }
+    ],
+    "qualifiers": [
+      "Publisher list prices observed October 30; parsing, search, storage and generation costs are additional."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-deployment-economics",
+    "claim": "Query-document request shape, candidate depth and traffic utilization affect shared-versus-dedicated inference economics.",
+    "source_ids": [
+      "official-source-f64cbf7f3d1da5b7"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-f64cbf7f3d1da5b7",
+        "url": "https://cohere.com/blog/shared-or-dedicated-inference-for-embed-rerank",
+        "locator": "Request shape and utilization discussion",
+        "passage": "The guide explains query repetition across candidate documents, input shape and utilization as factors in choosing shared or dedicated inference.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-09",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:21.863Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-f64cbf7f3d1da5b7.json",
+        "archive_sha256": "fe2bd6c264be1585b5c89035948990d1db04921fbe7108d8b3ce82768ba04868"
+      }
+    ],
+    "qualifiers": [
+      "No universal break-even or measured customer saving is claimed."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-production-access",
+    "claim": "Trial API keys are free but rate-limited and cannot be used for production or commercial purposes; production requires onboarding and billing.",
+    "source_ids": [
+      "official-source-73e03ec6d5cd9983"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-73e03ec6d5cd9983",
+        "url": "https://cohere.com/pricing",
+        "locator": "FAQ: trial and production keys",
+        "passage": "The pricing FAQ prohibits production or commercial use of trial keys and describes the owner-level billing workflow for obtaining a production key.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:55:27.559Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-pricing.json",
+        "archive_sha256": "f81678c719d15b4a9ad439d18eb8fe69375dae6cc91e2375d4dbcad2efcae5a1"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-dedicated-price",
+    "claim": "Published dedicated medium-instance options include $4 hourly or $2500 monthly pricing for the Rerank 5 variants.",
+    "source_ids": [
+      "official-source-73e03ec6d5cd9983"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-73e03ec6d5cd9983",
+        "url": "https://cohere.com/pricing",
+        "locator": "Model Vault pricing table",
+        "passage": "The inspected dedicated pricing table lists medium-instance options at $4 per hour or $2,500 per month for the relevant Rerank variants.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:55:27.559Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/cohere-pricing.json",
+        "archive_sha256": "f81678c719d15b4a9ad439d18eb8fe69375dae6cc91e2375d4dbcad2efcae5a1"
+      }
+    ],
+    "qualifiers": [
+      "Alternative published billing options; capacity, utilization, contract terms and total cost remain deployment-specific."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-rerank-aws",
+    "claim": "The AWS tutorial retrieves 30 vector candidates, reranks to five and optionally adds page images for layout-sensitive answering.",
+    "source_ids": [
+      "official-source-1cb235fae63983df"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-1cb235fae63983df",
+        "url": "https://cohere.com/blog/financial-research-assistant-cohere-aws",
+        "locator": "Retrieval and reranking pipeline; multimodal answer generation",
+        "passage": "The tutorial narrows vector search candidates from 30 to five, offers optional ContextFocus, and describes page images as answer-model context when layout matters.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:43.493Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/official-candidate-1cb235fae63983df.json",
+        "archive_sha256": "eaf5f722dbb74be4e8f5183b53a30ccdb3a3175e0005ca0087f48dd5bacec56c"
+      }
+    ],
+    "qualifiers": [
+      "Publisher tutorial, not an executed deployment; text reranking and downstream image interpretation are separate stages."
+    ],
+    "contradicts": [],
+    "source_family": "Cohere",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-weight-event",
+    "claim": "The October 29 Le Chonk event releases improved Large 4 weights after the earlier public preview.",
+    "source_ids": [
+      "official-source-5a25565ab71a8d06"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-5a25565ab71a8d06",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "locator": "Introduction; open weights",
+        "passage": "Mistral says that after the earlier public preview and additional reinforcement learning, it is releasing improved Large 4 weights in FP8 and NVFP4.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": "2026-10-29",
+        "retrieved_at": "2026-10-30T20:57:48.792Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-weights.json",
+        "archive_sha256": "4428a90cac8eee8f838d2530e475f41807051875d9529078fc9df27b8c06bf63"
+      }
+    ],
+    "qualifiers": [
+      "Publication date is corroborated by the dated Mistral news listing; this is the weight release, not the first model-family launch."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ],
+    "publication_date_basis": {
+      "url": "https://mistral.ai/news/",
+      "locator": "Le Chonk dated news card: October 29, 2026",
+      "retrieved_at": "2026-10-30T20:51:38.787Z",
+      "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/seed-mistral-ai.json",
+      "archive_sha256": "ab8ff9d3639204f507c14ba6ff34911b6d99d4c822e840aec480a51a0d019e6b"
+    }
+  },
+  {
+    "claim_id": "official-20261030-mistral-preview-date",
+    "claim": "The model documentation identifies October 6 as the public preview date.",
+    "source_ids": [
+      "official-source-6c37fbb22f2f9770"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-6c37fbb22f2f9770",
+        "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "locator": "Model overview; release information",
+        "passage": "The model documentation dates the Large 4 public preview October 6, 2026.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": "2026-10-06",
+        "retrieved_at": "2026-10-30T20:58:05.491Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-docs.json",
+        "archive_sha256": "2515f1e1a9f821fca92ec312bbfd1e5225007cb2f489b2980b8b2a97733edf44"
+      }
+    ],
+    "qualifiers": [
+      "Publisher documentation; no independent execution in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-architecture",
+    "claim": "Large 4 is approximately 1T total parameters, with 49B active per token or 52B including embeddings and output layers.",
+    "source_ids": [
+      "official-source-b01f77c6a7adbb6b"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b01f77c6a7adbb6b",
+        "url": "https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Overview; model description",
+        "passage": "The serving recipe distinguishes one trillion total parameters from 49 billion active per token, or 52 billion when embeddings and output layers are included.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:09.081Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-vllm.json",
+        "archive_sha256": "30d5c30ce381f78ca2b8bda746e3c51ef1c556101d4ed7b4cb91c3aa86ddcb8b"
+      }
+    ],
+    "qualifiers": [
+      "Active computation is distinct from memory required to hold all model weights."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-modalities",
+    "claim": "The card documents text/image inputs, text outputs, function calling, structured output and an advertised 1M context capacity.",
+    "source_ids": [
+      "official-source-da867975a5a80708"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-da867975a5a80708",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Capabilities; model information",
+        "passage": "The model card describes image and text input, text output, tool calling and structured outputs, with a 1,048,576-token context capacity.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:51.287Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-card.json",
+        "archive_sha256": "5a638f906061653c614b87cf3c15e70fb20afcfe7b1c86ad3a80abcf7e9ca620"
+      }
+    ],
+    "qualifiers": [
+      "Advertised model capacity is not the same as validated capacity of each serving configuration."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-reasoning",
+    "claim": "Reasoning supports low, medium and high with high default; recommended sampling is temperature 1 and top_p 0.95, and completion limits include reasoning tokens.",
+    "source_ids": [
+      "official-source-da867975a5a80708"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-da867975a5a80708",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Usage recommendations; reasoning; serving notes",
+        "passage": "The card lists three effort modes, recommends temperature 1 and top_p 0.95, and states that max_completion_tokens counts reasoning and visible output.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:51.287Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-card.json",
+        "archive_sha256": "5a638f906061653c614b87cf3c15e70fb20afcfe7b1c86ad3a80abcf7e9ca620"
+      }
+    ],
+    "qualifiers": [
+      "Recommended configuration; latency and completion behavior were not tested."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-low-mode",
+    "claim": "The release announcement identifies low effort as the replacement for the previous none reasoning mode.",
+    "source_ids": [
+      "official-source-5a25565ab71a8d06"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-5a25565ab71a8d06",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "locator": "Reasoning modes table",
+        "passage": "The announcement recommends low for simpler tasks and identifies it as replacing the previous none mode.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:48.792Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-weights.json",
+        "archive_sha256": "4428a90cac8eee8f838d2530e475f41807051875d9529078fc9df27b8c06bf63"
+      }
+    ],
+    "qualifiers": [
+      "Documented model-interface change; no comparative latency or behavior test performed."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-license-grant",
+    "claim": "The custom ecosystem license requires retention of notices and includes an additional Model as a Service condition.",
+    "source_ids": [
+      "official-source-02460f490ff9e341"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-02460f490ff9e341",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE",
+        "locator": "License: permission grant; sections 1–2",
+        "passage": "The license permits use, modification and distribution subject to its conditions, requires retention of notices, and adds a separate commercial-license condition for certain Model as a Service operators.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:03.247Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-license.json",
+        "archive_sha256": "1c8a66b4bc5c748df3373b12441cb5a98b2aac3498e235229ae7e3e0c7db4419"
+      }
+    ],
+    "qualifiers": [
+      "Direct reading of license; not a determination of any particular organization’s eligibility."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-license-boundary",
+    "claim": "The MaaS condition applies when the licensee or an affiliate operates such a business, before any commercial use of the model or derivatives; definitions and exceptions are material.",
+    "source_ids": [
+      "official-source-02460f490ff9e341"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-02460f490ff9e341",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE",
+        "locator": "Sections 2–3 and Model as a Service definition",
+        "passage": "The condition covers licensees or affiliates operating a MaaS business. The definition concerns meaningful third-party control over inference or post-training and excludes embedded-feature products and mere relaying; section 3 exempts internal use and official Mistral-product use.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:03.247Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-license.json",
+        "archive_sha256": "1c8a66b4bc5c748df3373b12441cb5a98b2aac3498e235229ae7e3e0c7db4419"
+      }
+    ],
+    "qualifiers": [
+      "Full license wording controls; the report does not declare a specific service exempt."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-runtime-image",
+    "claim": "The inspected vLLM prerequisites require the mistral-large-4 image and say release/nightly wheels do not yet include support.",
+    "source_ids": [
+      "official-source-b01f77c6a7adbb6b"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b01f77c6a7adbb6b",
+        "url": "https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Prerequisites",
+        "passage": "The recipe requires vllm/vllm-openai:mistral-large-4 and says no release or nightly wheel yet includes the model support.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:09.081Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-vllm.json",
+        "archive_sha256": "30d5c30ce381f78ca2b8bda746e3c51ef1c556101d4ed7b4cb91c3aa86ddcb8b"
+      }
+    ],
+    "qualifiers": [
+      "The same page displays a 0.34.0+ heading; specific prerequisite text is more restrictive than the heading. Documentation may change."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-validated-context",
+    "claim": "The vLLM recipe validates up to 256K and sets max-model-len 262144 despite the checkpoint advertising 1048576 positions.",
+    "source_ids": [
+      "official-source-b01f77c6a7adbb6b"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b01f77c6a7adbb6b",
+        "url": "https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Overview; validation; command example",
+        "passage": "The recipe distinguishes the checkpoint’s 1,048,576 positions from validation up to 256K and uses that shorter maximum in its commands.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:09.081Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-vllm.json",
+        "archive_sha256": "30d5c30ce381f78ca2b8bda746e3c51ef1c556101d4ed7b4cb91c3aa86ddcb8b"
+      }
+    ],
+    "qualifiers": [
+      "Does not prove that longer contexts cannot work; it bounds the inspected recipe’s stated validation."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-hardware",
+    "claim": "Documented serving targets are multi-GPU configurations, with approximately 128 GiB FP8 weights or 76 GiB NVFP4 weights per GPU on eight GPUs.",
+    "source_ids": [
+      "official-source-b01f77c6a7adbb6b"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-b01f77c6a7adbb6b",
+        "url": "https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "Prerequisites: Hardware",
+        "passage": "Validated examples include a four-GPU GB300 tray for NVFP4, eight Blackwell GPUs and two eight-GPU H200 nodes for FP8. Per-GPU weight estimates on eight GPUs are about 128 GiB FP8 and 76 GiB NVFP4.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:09.081Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-vllm.json",
+        "archive_sha256": "30d5c30ce381f78ca2b8bda746e3c51ef1c556101d4ed7b4cb91c3aa86ddcb8b"
+      }
+    ],
+    "qualifiers": [
+      "Weight memory only; KV cache, runtime overhead and concurrency add capacity requirements."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-nvfp4",
+    "claim": "NVFP4 is a separately released model variant with Blackwell-oriented serving guidance.",
+    "source_ids": [
+      "official-source-201bb3937ca1d219"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-201bb3937ca1d219",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+        "locator": "Model overview; deployment",
+        "passage": "The NVFP4 card provides a quantized checkpoint and deployment instructions targeting compatible NVIDIA Blackwell infrastructure.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:53.555Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-nvfp4.json",
+        "archive_sha256": "a70db3d187a74717c84581fd12f7c66409e1f231c05d55d3dcba57896b93cacc"
+      }
+    ],
+    "qualifiers": [
+      "No precision-equivalence or local hardware performance tested."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-hosted-price",
+    "claim": "Hosted prices shown are $0.70 input, $0.07 cached input and $2.10 output per million tokens.",
+    "source_ids": [
+      "official-source-6c37fbb22f2f9770"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-6c37fbb22f2f9770",
+        "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "locator": "Pricing",
+        "passage": "The model documentation lists per-million-token prices of $0.70 input, $0.07 cached input and $2.10 output.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:05.491Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-docs.json",
+        "archive_sha256": "2515f1e1a9f821fca92ec312bbfd1e5225007cb2f489b2980b8b2a97733edf44"
+      }
+    ],
+    "qualifiers": [
+      "Publisher list prices at retrieval; not a total workload cost or guarantee of future pricing."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-release-limits",
+    "claim": "A specialist cybersecurity variant remains a selected-enterprise preview, and a fuller technical report is forthcoming.",
+    "source_ids": [
+      "official-source-5a25565ab71a8d06"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-5a25565ab71a8d06",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "locator": "Cybersecurity; technical report and availability",
+        "passage": "The announcement describes a specialist variant preview for selected enterprise partners and says a fuller technical report will follow.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:48.792Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-weights.json",
+        "archive_sha256": "4428a90cac8eee8f838d2530e475f41807051875d9529078fc9df27b8c06bf63"
+      }
+    ],
+    "qualifiers": [
+      "The general weight release does not establish access to the specialist variant or complete training reproducibility."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "official-20261030-mistral-dspark",
+    "claim": "The release and cards describe DSpark speculative drafting as a serving acceleration component.",
+    "source_ids": [
+      "official-source-da867975a5a80708"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-da867975a5a80708",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "locator": "DSpark; serving guidance",
+        "passage": "The card describes an integrated speculative drafter and framework-specific serving options.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:51.287Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/official/mistral-large4-card.json",
+        "archive_sha256": "5a638f906061653c614b87cf3c15e70fb20afcfe7b1c86ad3a80abcf7e9ca620"
+      }
+    ],
+    "qualifiers": [
+      "Acceleration depends on implementation, hardware and workload; no speed multiplier is claimed as independently measured here."
+    ],
+    "contradicts": [],
+    "source_family": "Mistral / serving project documentation",
+    "status": "supported",
+    "limitations": [
+      "Model and advertised workflow were not executed; outcomes require local evaluation."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-six-phases",
+    "claim": "The repository defines a six-phase audit workflow with structured findings and coverage tracking.",
+    "source_ids": [
+      "repos-cloudflare-audit"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit",
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "locator": "README: workflow and requirements",
+        "passage": "The README sequences reconnaissance, hunting, candidate validation, structured output, independent record verification and report generation. It requires an agent with tool use and delegation, and Node.js for validators.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:50:46.921Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/repos-cloudflare-audit.json",
+        "archive_sha256": "e7fbec344821ae9726dd00dbab74c4d0b857ff1cd03cf967e212f15da6b26991"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "No comparative effectiveness or runtime test; repository is a baseline, not a verified October launch."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-mode-scope",
+    "claim": "Guidance is the default; full audits create explicit scoped records and artifacts.",
+    "source_ids": [
+      "repos-cloudflare-audit-skill"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+        "locator": "Operating modes; full audit planning; outputs",
+        "passage": "Guidance handles focused questions without automatic full-run files. Full audit mode uses source_ref/profile/scope metadata, a parent-owned ledger and an external output directory by default.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:48.291Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-skill.json",
+        "archive_sha256": "29228e6a37dca8f159617f76fb9f3d928752264a4dca1b8f7e05d56fd68f4769"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "A host must implement the workflow; prompt text does not enforce permissions."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-coverage",
+    "claim": "Coverage is planned by stable units and prior unresolved work is reconsidered.",
+    "source_ids": [
+      "repos-cloudflare-audit-recon"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-recon",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/RECONNAISSANCE.md",
+        "locator": "Coverage ledger; prior runs; reconnaissance",
+        "passage": "The coverage plan records surfaces, trust boundaries, attack classes, source paths, checks, candidates and unresolved states. A scoped or quick run cannot imply untouched areas are safe.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:53.438Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-recon.json",
+        "archive_sha256": "33b0a9dc6d83c98716b0fffc40953ea0e4dfb09d11bd0554b3735165e4a36223"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "No exhaustive repository or vulnerability coverage established."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-profiles",
+    "claim": "Quick, standard and deep profiles have different review and hunting budgets.",
+    "source_ids": [
+      "repos-cloudflare-audit-skill"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+        "locator": "Run profiles and scope; budget",
+        "passage": "Quick performs one hunter wave and one final critic, using one fresh reviewer for candidate and record checks. Standard keeps separate passes; deep adds granularity and review. A strict invocation budget cannot silently remove required verification; unfinished candidates remain visible in an incomplete run.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:48.291Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-skill.json",
+        "archive_sha256": "29228e6a37dca8f159617f76fb9f3d928752264a4dca1b8f7e05d56fd68f4769"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "Agent invocation limits do not establish token, wall-time or monetary caps."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-sandbox",
+    "claim": "Execution requires explicit OS isolation and safe artifact retention.",
+    "source_ids": [
+      "repos-cloudflare-audit-skill"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+        "locator": "Execution boundary; Write isolation",
+        "passage": "Target-controlled execution requires no external network, an allowlisted environment, read-only source/toolchain, scratch-only writes and resource limits. Without every control, execution is blocked and source-grounded work remains unresolved. Only trusted parent-side logic can retain minimal validated artifacts.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:48.291Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-skill.json",
+        "archive_sha256": "29228e6a37dca8f159617f76fb9f3d928752264a4dca1b8f7e05d56fd68f4769"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "No sandbox implementation or host compatibility was tested."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-verdicts",
+    "claim": "Confirmed, needs_validation and rejected records have distinct evidence rules.",
+    "source_ids": [
+      "repos-cloudflare-audit-validation"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-validation",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/VALIDATION-AND-REPORTING.md",
+        "locator": "Phases3–5; report-schema branches",
+        "passage": "Confirmed requires source-grounded local execution evidence and demonstrated conditions/impact. Needs_validation requires an exact blocker and an applicable local or owner-observed plan, without severity. Rejected retains disproved claims to avoid repeating them.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:50.872Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-validation.json",
+        "archive_sha256": "b973f01b754179399fe8110316e9088dd946ff4209c82e0c64325ce6eca53f8c"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "The research did not produce or verify any vulnerability finding."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-independent-review",
+    "claim": "Fresh verifiers re-read current source and review structured records.",
+    "source_ids": [
+      "repos-cloudflare-audit-validation"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-validation",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/VALIDATION-AND-REPORTING.md",
+        "locator": "Independently validate every candidate; independently verify every record",
+        "passage": "A candidate verifier did not hunt the issue, re-reads cited source and tries to refute it. Standard/deep keep a separate final structured-record check; material replacements need fresh independent verification. Schema validation checks consistency and shape, not security correctness.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:50.872Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-validation.json",
+        "archive_sha256": "b973f01b754179399fe8110316e9088dd946ff4209c82e0c64325ce6eca53f8c"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "Separate agent passes can share model blind spots; no empirical false-positive reduction established."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-reporting",
+    "claim": "Final prose must stay within verified records and disclose coverage gaps.",
+    "source_ids": [
+      "repos-cloudflare-audit-validation"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-validation",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/VALIDATION-AND-REPORTING.md",
+        "locator": "Phase6: Write reports; incomplete-run rule",
+        "passage": "Reports derive from final findings and coverage ledger. Unvalidated candidates remain in the ledger rather than gaining a findings verdict; reports cannot strengthen evidence, hide incomplete coverage or promise a clean target is secure.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:50.872Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-validation.json",
+        "archive_sha256": "b973f01b754179399fe8110316e9088dd946ff4209c82e0c64325ce6eca53f8c"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "Applications in the report are editorial evaluation proposals, not tested integrations."
+    ]
+  },
+  {
+    "claim_id": "cloudflare-audit-mit",
+    "claim": "The inspected repository license is MIT.",
+    "source_ids": [
+      "repos-cloudflare-audit-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-cloudflare-audit-license",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/LICENSE",
+        "locator": "LICENSE: permission and warranty paragraphs",
+        "passage": "MIT permits use, copying, modification, distribution, sublicensing and sale subject to preserving the copyright and permission notice in copies or substantial portions; software is provided without warranty.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:45.575Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/repos/archives/cloudflare-license.json",
+        "archive_sha256": "95649292d8ceb96a1f2beeea41daa1d4d009812f424c2dd3e434e0f9f7984ef0"
+      }
+    ],
+    "qualifiers": [
+      "Documentation describes intended agent behavior; this scan did not execute an audit."
+    ],
+    "contradicts": [],
+    "source_family": "Cloudflare security-audit-skill repository",
+    "status": "supported",
+    "limitations": [
+      "Host agents, model services, dependencies and compute may have separate terms and costs."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-release",
+    "claim": "Pika announced H3 Flex on October 29 as a six-step MiniMax H3 adaptation; API access is advertised now, while the creator product is scheduled for November 2.",
+    "source_ids": [
+      "creative-source-0a7ab440828d4f6c"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-0a7ab440828d4f6c",
+        "url": "https://pika.art/blog/pika-h3-flex",
+        "locator": "Date; More making; Start with an idea",
+        "passage": "The October 29 launch describes post-training MiniMax H3 from 50 steps to six, links API Club access and schedules the creation product for November 2.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:43.670Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-launch.json",
+        "archive_sha256": "8f3cec9ca9b2af939956df7bff6f21d23a26f5ad5ddcfa7434a91c2b0365a45e"
+      }
+    ],
+    "qualifiers": [
+      "November 2 availability is a future vendor commitment as of October 30."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-scope",
+    "claim": "Downloadable Flex covers native 480p/768p synchronized audio-video; upscaling, stems, prompt enhancement and accelerated serving are separate hosted features.",
+    "source_ids": [
+      "creative-source-0a7ab440828d4f6c",
+      "repos-pika-h3-flex"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-0a7ab440828d4f6c",
+        "url": "https://pika.art/blog/pika-h3-flex",
+        "locator": "Open weights; Draft fast; Your soundtrack",
+        "passage": "Native generation is 480p or 768p. Pika lists the 1080p/2K/4K upsampler, five-stem separation, prompt enhancement and accelerated serving as hosted features.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:43.670Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-launch.json",
+        "archive_sha256": "8f3cec9ca9b2af939956df7bff6f21d23a26f5ad5ddcfa7434a91c2b0365a45e"
+      },
+      {
+        "source_id": "repos-pika-h3-flex",
+        "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+        "locator": "Input and output specifications; Pika API extensions",
+        "passage": "The local model produces mixed 32 kHz stereo audio in 24 fps H.264/AAC MP4 plus JSON metadata. Hosted endpoints add upscaling and stems.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:58.796Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-card.json",
+        "archive_sha256": "bd365b61769c98562ead2924c97883790de5e92465349220998c3bf5919b19b8"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-references",
+    "claim": "Flex exposes endpoint-frame and multimodal-reference workflows with explicit input and frame-grid limits.",
+    "source_ids": [
+      "repos-pika-h3-flex"
+    ],
+    "support": [
+      {
+        "source_id": "repos-pika-h3-flex",
+        "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+        "locator": "Input and output specifications; Generation modes and reference limits",
+        "passage": "FL2VA covers text and first/last frames; Ref2VA allows up to nine images, three videos and three standalone audio files, twelve total, requiring an image or video. Each video/audio reference is 2–15 seconds, with each duration pool capped at fifteen seconds. Requests span integer 5–15 seconds and eleven aspect ratios; five seconds rounds to 124 frames and fifteen to 362 frames.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:58.796Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-card.json",
+        "archive_sha256": "bd365b61769c98562ead2924c97883790de5e92465349220998c3bf5919b19b8"
+      }
+    ],
+    "qualifiers": [
+      "Accepted reference limits are not a guarantee that maximum combinations fit memory."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-stems",
+    "claim": "Hosted audio stems are an added separation stage; native generation remains a mixed soundtrack.",
+    "source_ids": [
+      "creative-source-e428e2c0eba79e69",
+      "creative-source-27f86bcbb8e7e5ef"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-e428e2c0eba79e69",
+        "url": "https://pika.art/blog/pika-h3-flex-research",
+        "locator": "Audio separation / hosted features",
+        "passage": "The technical discussion separates synchronized mixed-audio generation from the hosted audio-separation capability.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:48.064Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-research.json",
+        "archive_sha256": "d9aa8be2707ea16cd57a808e7e526d54d17f08ea0e5177d87ba6a03608e8a317"
+      },
+      {
+        "source_id": "creative-source-27f86bcbb8e7e5ef",
+        "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video",
+        "locator": "Request body: output_mode and channel_mode",
+        "passage": "Audio-stems mode returns the original video plus Dialogue, Score, SFX, Foley and Ambience WAV files. Stereo preserves two channels; mono downmixes separation inputs while video audio remains unchanged.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:17.204Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-t2v-docs.json",
+        "archive_sha256": "08372aeada7a080fa5a8338c8d81c555e947765ef13b92dfba2ccbe7741b2455"
+      }
+    ],
+    "qualifiers": [
+      "No separation-quality or leakage test performed."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-api",
+    "claim": "The REST API requires a server-held key, queued-job polling and explicit output/default handling; deletion is documented as erasure.",
+    "source_ids": [
+      "creative-source-27f86bcbb8e7e5ef"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-27f86bcbb8e7e5ef",
+        "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video",
+        "locator": "Authentication; Endpoint; Request body; Poll status",
+        "passage": "Use a secret X-API-Key server-side. POST returns a queued job ID; poll until completed/failed and retrieve the output URL. DELETE erases stored media and submitted prompt/parameters. Rewriting defaults true, duration defaults five, and fixed aspect ratio overrides auto. Native 480p/768p or 768p followed by one upscale are documented.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:17.204Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-t2v-docs.json",
+        "archive_sha256": "08372aeada7a080fa5a8338c8d81c555e947765ef13b92dfba2ccbe7741b2455"
+      }
+    ],
+    "qualifiers": [
+      "Deletion is not documented here as cancellation of generation.",
+      "No account, request or deletion was executed."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-prices",
+    "claim": "Listed prices distinguish native/upscaled output, reference input, prompt rewriting and stem-duration billing.",
+    "source_ids": [
+      "creative-source-3f3c276112b05fa6",
+      "creative-source-27f86bcbb8e7e5ef",
+      "creative-source-f4a74ed20d6b9e21"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-3f3c276112b05fa6",
+        "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video/pricing",
+        "locator": "Pricing and per-model table",
+        "passage": "Text/image output costs $0.01/s at 480p, $0.02/s at 768p and $0.08/s at 4K; reference output costs $0.06/s at 768p with video input separately billed at that rate. Prompt rewriting is $0.02/request and stems $0.001/s. Only successful runs are charged.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:14.441Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-t2v-pricing.json",
+        "archive_sha256": "2e3ef5291a2f6d33e7a59d36b73c1536ebdc3ba41fbd49ed66f0fe07b16e522f"
+      },
+      {
+        "source_id": "creative-source-27f86bcbb8e7e5ef",
+        "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video",
+        "locator": "Request body: output_mode",
+        "passage": "Flex separation bills the sum of decoded output-stem durations without multiplying by channel count.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:17.204Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-t2v-docs.json",
+        "archive_sha256": "08372aeada7a080fa5a8338c8d81c555e947765ef13b92dfba2ccbe7741b2455"
+      },
+      {
+        "source_id": "creative-source-f4a74ed20d6b9e21",
+        "url": "https://dev.pika.art/pricing",
+        "locator": "API Club membership",
+        "passage": "API Club is advertised at $10/month with $10 monthly API credits.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:00.354Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-api-pricing.json",
+        "archive_sha256": "cfc49cef32327386681cd7e221af7f0427d85e1c4c3704591b324e2ccfa8fd6b"
+      }
+    ],
+    "qualifiers": [
+      "Rates are the October 30 published snapshot, not a measured invoice.",
+      "Ten-second examples are arithmetic before membership/add-ons and actual billable duration/rounding."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-hardware",
+    "claim": "The downloadable implementation is a substantial single-GPU deployment with representative H100 results, not a consumer-device performance promise.",
+    "source_ids": [
+      "creative-source-37be7f9c7b5e219c",
+      "creative-source-379456b57e87a052"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-37be7f9c7b5e219c",
+        "url": "https://github.com/Pika-Labs/Pika-H3-Flex/blob/main/docs/hardware.md",
+        "locator": "Hardware and tested configurations; Memory and performance",
+        "passage": "One GPU handles each request. H100 80GB representative 480p/5s sampling uses 66–69 GiB; 768p/15s requires CPU offload in tested conditions. Offloaded sampling uses 29–32 GiB GPU and around 94 GiB host including page cache, excluding separate encoder/VAE requirements. Allow at least 211 GB base plus approximately 5.5 GB adapters. Python 3.12, supported NVIDIA driver and pinned dependencies are required; H200/B300 are not qualified for this package.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:26.421Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-hardware.json",
+        "archive_sha256": "fc9f42798760e4ac4ccc82b9a5dcca72a2e2cc970438eb4f1a4b005db6befc7b"
+      },
+      {
+        "source_id": "creative-source-379456b57e87a052",
+        "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+        "locator": "Quickstart prerequisites",
+        "passage": "Installation documents git, patch, ffmpeg and a C compiler, with pip/Conda/Docker routes and the pika-h3-pro command.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:55:01.062Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-repo.json",
+        "archive_sha256": "b9ffe738412b33abe4aabe7a9593a967f4558d3d0fbd8a3c8e247e4ea6abf432"
+      }
+    ],
+    "qualifiers": [
+      "Figures are Pika’s representative tests, not minimum system requirements or tests performed in this scan."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-license",
+    "claim": "The code and weights carry different licenses; the pinned MiniMax community grant excludes four major territories and adds commercial/output restrictions.",
+    "source_ids": [
+      "creative-source-379456b57e87a052",
+      "creative-source-b523096bbc6779b1"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-379456b57e87a052",
+        "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+        "locator": "Licensing",
+        "passage": "Repository code is Apache 2.0 while the model/adapters follow the MiniMax H3 community terms.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:55:01.062Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-repo.json",
+        "archive_sha256": "b9ffe738412b33abe4aabe7a9593a967f4558d3d0fbd8a3c8e247e4ea6abf432"
+      },
+      {
+        "source_id": "creative-source-b523096bbc6779b1",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+        "locator": "I.3/I.5; II; IV.1–2; V.3–4",
+        "passage": "The August 2 community license excludes the EU, UK, Republic of Korea and USA. It requires prior written authorization above $20 million annual commercial products/services revenue, commercial UI attribution, and restricts using model outputs to improve unrelated AI models; use of Works or outputs outside the applicable territory is not authorized under this agreement.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-08-02",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:28.808Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-license.json",
+        "archive_sha256": "4ab4a69cf301feb904a153fca43a10022d507de2ed3cb953838dc18f82187067"
+      }
+    ],
+    "qualifiers": [
+      "This describes the retrieved community license, not a determination of Pika’s separately negotiated hosted-service rights.",
+      "No individualized legal conclusion is offered."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-training",
+    "claim": "Pika describes supervised post-training, distribution-matching distillation and preference/reward refinement; evaluation remains vendor-authored.",
+    "source_ids": [
+      "creative-source-e428e2c0eba79e69"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-e428e2c0eba79e69",
+        "url": "https://pika.art/blog/pika-h3-flex-research",
+        "locator": "Post-training; PDMD; ReFL; DPO; Evaluation",
+        "passage": "Pika describes supervised training on curated proprietary data, distillation from fifty to six generator steps, then reward/preference refinement using adapters. It reports mixed comparative outcomes: visual quality strengths coexist with weaker physics, multi-scene narrative and difficult control cases.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:48.064Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-research.json",
+        "archive_sha256": "d9aa8be2707ea16cd57a808e7e526d54d17f08ea0e5177d87ba6a03608e8a317"
+      }
+    ],
+    "qualifiers": [
+      "Reported improvements were not independently replicated; proprietary data and hosted components limit complete reproduction."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-speed",
+    "claim": "Advertised seven-second performance is transformer computation, while another serving experiment uses eight B300 GPUs; neither is a local end-to-end latency promise.",
+    "source_ids": [
+      "creative-source-0a7ab440828d4f6c",
+      "creative-source-e428e2c0eba79e69",
+      "creative-source-37be7f9c7b5e219c"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-0a7ab440828d4f6c",
+        "url": "https://pika.art/blog/pika-h3-flex",
+        "locator": "Benchmark footnote",
+        "passage": "The seven-second number covers DiT computation for a fifteen-second 768p clip in controlled conditions, excluding end-to-end API overhead.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:43.670Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-launch.json",
+        "archive_sha256": "8f3cec9ca9b2af939956df7bff6f21d23a26f5ad5ddcfa7434a91c2b0365a45e"
+      },
+      {
+        "source_id": "creative-source-e428e2c0eba79e69",
+        "url": "https://pika.art/blog/pika-h3-flex-research",
+        "locator": "Serving optimization benchmark",
+        "passage": "The optimization comparison uses five-second 768p audio-video and eight B300 GPUs, reporting full inference reduction from 3.409 to 2.129 seconds.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-10-29",
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:54:48.064Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-research.json",
+        "archive_sha256": "d9aa8be2707ea16cd57a808e7e526d54d17f08ea0e5177d87ba6a03608e8a317"
+      },
+      {
+        "source_id": "creative-source-37be7f9c7b5e219c",
+        "url": "https://github.com/Pika-Labs/Pika-H3-Flex/blob/main/docs/hardware.md",
+        "locator": "Hardware and tested configurations",
+        "passage": "The public local package uses one GPU per request and does not shard a request across multiple GPUs.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:26.421Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-hardware.json",
+        "archive_sha256": "fc9f42798760e4ac4ccc82b9a5dcca72a2e2cc970438eb4f1a4b005db6befc7b"
+      }
+    ],
+    "qualifiers": [
+      "Different workloads and serving implementations must not be compared as equivalent latency measurements."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "creative-h3-flex-fit",
+    "claim": "Pika’s API explicitly excludes precision compositing, frame-exact rotoscoping, feature-length rendering and precise on-screen text from its intended uses.",
+    "source_ids": [
+      "creative-source-27f86bcbb8e7e5ef"
+    ],
+    "support": [
+      {
+        "source_id": "creative-source-27f86bcbb8e7e5ef",
+        "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video",
+        "locator": "Capabilities: BEST FOR / NOT FOR",
+        "passage": "The endpoint describes cinematic/social short clips and look development as intended use cases, while identifying precise text, pixel-perfect compositing, frame-exact rotoscoping and feature-length rendering as unsuitable.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:17.204Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/creative/pika-h3-t2v-docs.json",
+        "archive_sha256": "08372aeada7a080fa5a8338c8d81c555e947765ef13b92dfba2ccbe7741b2455"
+      }
+    ],
+    "qualifiers": [
+      "Educational, app, website and edit workflows in the report are editorial proposals, not demonstrations."
+    ],
+    "contradicts": [],
+    "source_family": "Pika primary documentation / MiniMax base-model terms",
+    "status": "supported",
+    "limitations": [
+      "Documentation reviewed; generation and billing were not tested."
+    ]
+  },
+  {
+    "claim_id": "mecatl-architecture-20261030",
+    "claim": "Mecatl separates loop, clients, execution, model providers and durable state; it is not a drop-in backend for another harness.",
+    "source_ids": [
+      "research-source-a652bd13c3b62b0a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-a652bd13c3b62b0a",
+        "url": "https://github.com/stacklok/mecatl/blob/main/user-docs/cloud-native-harness.md",
+        "locator": "Separate the harness into services; Frequently asked questions",
+        "passage": "Not as a drop-in backend.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:47.039Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-cloud-native.json",
+        "archive_sha256": "478d826673fed22609c7a1656db6fbe4b4aa72794fa7211b9092acec5956822b"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-recovery-boundary-20261030",
+    "claim": "Recovery occurs at the last persisted turn boundary; an in-flight operation is not resumed and unsaved work can be lost.",
+    "source_ids": [
+      "research-source-a652bd13c3b62b0a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-a652bd13c3b62b0a",
+        "url": "https://github.com/stacklok/mecatl/blob/main/user-docs/cloud-native-harness.md",
+        "locator": "Keep sessions beyond a worker",
+        "passage": "It does not resume an in-flight operation",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:47.039Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-cloud-native.json",
+        "archive_sha256": "478d826673fed22609c7a1656db6fbe4b4aa72794fa7211b9092acec5956822b"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-runtime-20261030",
+    "claim": "The repository documents streaming tools, permissions, compaction, hooks, subagents, teams and an offline scripted demo.",
+    "source_ids": [
+      "research-source-667df3eaf1a7ee1a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-667df3eaf1a7ee1a",
+        "url": "https://github.com/stacklok/mecatl",
+        "locator": "What it provides; Try it locally",
+        "passage": "The offline demo runs a scripted session",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:38.132Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-repository.json",
+        "archive_sha256": "55c66575a300349e8e9ed126e82722725ef11281cb0dd65a2d92389c84606b2d"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-identity-20261030",
+    "claim": "Caller identity and audit records do not establish complete tenant isolation; cross-process cryptographic authority is active design work.",
+    "source_ids": [
+      "research-source-667df3eaf1a7ee1a"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-667df3eaf1a7ee1a",
+        "url": "https://github.com/stacklok/mecatl",
+        "locator": "Control and execution",
+        "passage": "not a complete tenant-isolation boundary",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:38.132Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-repository.json",
+        "archive_sha256": "55c66575a300349e8e9ed126e82722725ef11281cb0dd65a2d92389c84606b2d"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-server-20261030",
+    "claim": "Standalone minimal startup uses loopback listeners, in-memory sessions and no authentication; durable remote use requires explicit configuration.",
+    "source_ids": [
+      "research-source-c52bbe96d0185ebb"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-c52bbe96d0185ebb",
+        "url": "https://mecatl.dev/docs/operating/mecated",
+        "locator": "Start the server",
+        "passage": "loopback-only server with in-memory sessions and no authentication",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:50.818Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-server.json",
+        "archive_sha256": "340131429d9f76e218679ccb43fb8017382f49b42f07efc4d310542349ecf4b4"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-install-20261030",
+    "claim": "Documented installation includes Homebrew, Conda-forge and macOS/Linux release archives; source build needs Go 1.27+ and Task v3.",
+    "source_ids": [
+      "research-source-c52bbe96d0185ebb"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-c52bbe96d0185ebb",
+        "url": "https://mecatl.dev/docs/operating/mecated",
+        "locator": "Install mecated; Build from source",
+        "passage": "Go 1.27 or later and Task v3",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:50.818Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-server.json",
+        "archive_sha256": "340131429d9f76e218679ccb43fb8017382f49b42f07efc4d310542349ecf4b4"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-k8s-state-20261030",
+    "claim": "mecak8s uses Redis state, Kubernetes single-writer leases, and defaults to two replicas; production prerequisites include identity, transport and model access.",
+    "source_ids": [
+      "research-source-96f90c9e30d37754"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-96f90c9e30d37754",
+        "url": "https://mecatl.dev/docs/operating/mecak8s",
+        "locator": "Before you deploy; Deployment defaults",
+        "passage": "session snapshots and the event log live in Redis",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:55.642Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-kubernetes.json",
+        "archive_sha256": "277780133e0073c90c460b057eda86a44ba1cb8ed493a486b4e53616d58efb99"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-k8s-cost-20261030",
+    "claim": "Unattended auto mode requires an enforcing guardrails checker, and the subagent ask reviewer can spend model tokens.",
+    "source_ids": [
+      "research-source-96f90c9e30d37754"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-96f90c9e30d37754",
+        "url": "https://mecatl.dev/docs/operating/mecak8s",
+        "locator": "Choose a guardrails checker",
+        "passage": "each decision spends tokens",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:55.642Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-kubernetes.json",
+        "archive_sha256": "277780133e0073c90c460b057eda86a44ba1cb8ed493a486b4e53616d58efb99"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-effects-20261030",
+    "claim": "Failover does not provide exactly-once external model/tool effects; single-replica persisted state does not assure availability; disposable Redis lacks persistence.",
+    "source_ids": [
+      "research-source-be1a34ea4a6431fc"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-be1a34ea4a6431fc",
+        "url": "https://mecatl.dev/docs/operating/mecak8s/scale-recover-and-upgrade",
+        "locator": "Scaling; Session affinity is an infrastructure contract",
+        "passage": "external model and tool effects are not exactly once",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:23.211Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-recovery.json",
+        "archive_sha256": "9de81a4cd4b7f49b7f3a46fdb87e5f558b2c1a9ec09828a142fa330bfebaeb58"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-sdk-20261030",
+    "claim": "The SDK supports Node.js, Bun, Deno and browsers with transport-dependent capabilities; server owns state and permissions.",
+    "source_ids": [
+      "research-source-6a930aa2a48dcfa2"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-6a930aa2a48dcfa2",
+        "url": "https://mecatl.dev/docs/building/typescript-sdk/",
+        "locator": "TypeScript SDK; Workflow ownership",
+        "passage": "The package supports Node.js, Bun, Deno, and browser applications.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:06.216Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-sdk.json",
+        "archive_sha256": "cbfb7b4a8a09d8090ac614134f6268e9c978aa566d108142d2a4fa1b3e5f375c"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-sdk-transport-20261030",
+    "claim": "Some guardrail inspection methods are unsupported over HTTP.",
+    "source_ids": [
+      "research-source-6a930aa2a48dcfa2"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-6a930aa2a48dcfa2",
+        "url": "https://mecatl.dev/docs/building/typescript-sdk/",
+        "locator": "Choose a workflow",
+        "passage": "HTTP connections raise UnsupportedFeatureError",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:06.216Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-sdk.json",
+        "archive_sha256": "cbfb7b4a8a09d8090ac614134f6268e9c978aa566d108142d2a4fa1b3e5f375c"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-run-controls-20261030",
+    "claim": "Each run has a single consumption lifecycle; cancellation and budget exhaustion are results, transport errors differ, and cancel requests must be followed to terminal outcome.",
+    "source_ids": [
+      "research-source-ed2a4fc514af93a4"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-ed2a4fc514af93a4",
+        "url": "https://mecatl.dev/docs/building/typescript-sdk/sessions-and-runs",
+        "locator": "Choose one run-consumption mode; Send controls to a live run",
+        "passage": "Continue consuming the run to receive its terminal result.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:17.088Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-runs.json",
+        "archive_sha256": "60cfa6dc279f1be0504094a8c076aafeff70eec83d7a3c2baab868872af77ce7"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-session-retention-20261030",
+    "claim": "Closing releases resources; deleting permanently removes stored state; late steering is refused rather than starting a new run.",
+    "source_ids": [
+      "research-source-ed2a4fc514af93a4"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-ed2a4fc514af93a4",
+        "url": "https://mecatl.dev/docs/building/typescript-sdk/sessions-and-runs",
+        "locator": "Create or load a session; Send controls to a live run",
+        "passage": "A late steer is refused instead of becoming a new run.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:17.088Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-runs.json",
+        "archive_sha256": "60cfa6dc279f1be0504094a8c076aafeff70eec83d7a3c2baab868872af77ce7"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-file-options-20261030",
+    "claim": "Kubernetes sessions have no filesystem access by default; Redis virtual workspaces are file-lite and have no shell or Git workflow.",
+    "source_ids": [
+      "research-source-8b31f77f335cbd4d"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-8b31f77f335cbd4d",
+        "url": "https://mecatl.dev/docs/operating/mecak8s/state-and-execution",
+        "locator": "Choose filesystem access; Redis virtual workspace",
+        "passage": "By default, new sessions have no filesystem access.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:23.996Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-state.json",
+        "archive_sha256": "9ac153a1e169b014382462380582972556c51c602304413f790ca759684ebf9d"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-file-isolation-20261030",
+    "claim": "A shared mounted workspace is not per-caller file isolation.",
+    "source_ids": [
+      "research-source-8b31f77f335cbd4d"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-8b31f77f335cbd4d",
+        "url": "https://mecatl.dev/docs/operating/mecak8s/state-and-execution",
+        "locator": "Mounted workspace (shared filesystem root)",
+        "passage": "Caller identity does not isolate one caller's files",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:23.996Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-state.json",
+        "archive_sha256": "9ac153a1e169b014382462380582972556c51c602304413f790ca759684ebf9d"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-provider-switch-20261030",
+    "claim": "Provider switching creates a peer session retaining visible conversation, drops provider-private state and can incur long-history replay costs.",
+    "source_ids": [
+      "research-source-9513e59d85a987fd"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-9513e59d85a987fd",
+        "url": "https://mecatl.dev/docs/features/choose-models",
+        "locator": "Select a model in mecatui",
+        "passage": "Replaying a long history may be costly.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:58:24.860Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-models.json",
+        "archive_sha256": "0b3f3f747c120300e4547b4f6612ad27507419d1077d358f1386a952967c4a4f"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-provider-k8s-20261030",
+    "claim": "The Kubernetes runtime does not support the local Codex subscription-token entry and directs users to an API-key provider.",
+    "source_ids": [
+      "research-source-96f90c9e30d37754"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-96f90c9e30d37754",
+        "url": "https://mecatl.dev/docs/operating/mecak8s",
+        "locator": "Differences from mecated",
+        "passage": "Use an API-key provider",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:56:55.642Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-kubernetes.json",
+        "archive_sha256": "277780133e0073c90c460b057eda86a44ba1cb8ed493a486b4e53616d58efb99"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-license-20261030",
+    "claim": "Mecatl is Apache-2.0 licensed, without a model service or operating-cost guarantee.",
+    "source_ids": [
+      "research-source-216b862dfe919f71"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-216b862dfe919f71",
+        "url": "https://github.com/stacklok/mecatl/blob/main/LICENSE",
+        "locator": "License header and warranty terms",
+        "passage": "Licensed under the Apache License, Version 2.0",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:57:08.975Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-license.json",
+        "archive_sha256": "96f05b5350756b27ce4100f32bea47eefd1ca524693896a3da61b7df76ce49f1"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
+  },
+  {
+    "claim_id": "mecatl-maturity-20261030",
+    "claim": "Project introduction says multi-user support is being developed for mecak8s.",
+    "source_ids": [
+      "research-source-83f6024c9e6ae111"
+    ],
+    "support": [
+      {
+        "source_id": "research-source-83f6024c9e6ae111",
+        "url": "https://mecatl.dev/docs",
+        "locator": "Kubernetes",
+        "passage": "Multi-user support is being developed for mecak8s.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-30T20:59:28.406Z",
+        "archive_path": ".state/scan-20261030T204748Z-f31b7f/research/archives/mecatl-docs-publisher.json",
+        "archive_sha256": "f62a511f58ef9b060068f79260681e3bdee8e53312bf095004ee41efb21c6f87"
+      }
+    ],
+    "qualifiers": [
+      "Primary project documentation as observed on October 30, 2026; not independently tested.",
+      "Documentation page update dates are not release or launch dates."
+    ],
+    "contradicts": [],
+    "source_family": "Stacklok/Mecatl",
+    "status": "candidate",
+    "limitations": [
+      "No installation, runtime verification, fault injection, model calls or cost measurement."
+    ]
   }
 ]

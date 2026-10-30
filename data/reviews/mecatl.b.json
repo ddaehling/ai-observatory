@@ -1,0 +1,28 @@
+{
+  "reportId": "mecatl",
+  "reviewerId": "/root/edition_20261030_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:26Z",
+  "reportHash": "4826318d39eed564e0ca6b71567089ccb8f61da217f4626cbc490b224bc2b2a0",
+  "evidenceHash": "864f424f4ab936bda3f3882ddc02b83a737d53686089449ab7f07e4223fbd281",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The documented session/run lifecycle, durable storage choices and TypeScript/gRPC/HTTP interfaces are useful foundations for builders embedding agents into educational, website and production-coordination applications. The report identifies concrete client behavior and retry hazards instead of assuming model quality, but integrations and reliability require substantial application work.",
+    "impact": "Separating the agent loop from clients, providers and persisted state addresses a meaningful deployment problem and can improve control over application infrastructure. It remains an early harness without measured reliability, adoption or cost advantages; the evidence supports domain-level significance rather than a major change to AI capability.",
+    "novelty": "Mecatl combines familiar service patterns—Redis persistence, single-writer coordination, typed run controls and provider abstraction—into a coherent agent harness. The operational contracts are a useful distinction, but the inspected material offers no comparative evidence of a fundamentally new architectural capability.",
+    "maturity": "Detailed installation, recovery and SDK documentation supports a contained prototype. The project calls itself early; multi-user support and cross-process cryptographic authority work remain in progress, default standalone state is in-memory and unauthenticated, and neither recovery nor execution isolation was tested, warranting below-middle production maturity.",
+    "openness": "Apache-2.0 source, documented APIs, an offline demo and multiple deployment/provider choices support substantial inspection and portability. Real model behavior depends on separately licensed providers and credentials, while a complete reproduction of production operation was not performed; open harness code does not make all of its dependencies reproducible or free."
+  },
+  "confidence": "high",
+  "concerns": []
+}

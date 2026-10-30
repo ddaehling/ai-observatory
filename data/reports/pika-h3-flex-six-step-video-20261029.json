@@ -1,0 +1,170 @@
+{
+  "id": "pika-h3-flex-six-step-video-20261029",
+  "title": "Pika H3 Flex: six-step video drafts, with hosted finishing and a restrictive local license",
+  "entity": "Pika H3 Flex",
+  "category": "Creative workflows",
+  "tags": [
+    "video generation",
+    "audio stems",
+    "open weights",
+    "creative APIs",
+    "MiniMax H3"
+  ],
+  "summary": "Pika’s October 29 release brings six-step synchronized audio-video generation, reference control and downloadable adapters. Its 4K finishing and stems are hosted features, local inference needs substantial hardware, and the base-model community license excludes several major territories.",
+  "changeType": "new",
+  "publishedAt": "2026-10-29",
+  "discoveredAt": "2026-10-30T20:54:43.670Z",
+  "updatedAt": "2026-10-30T21:09:25.425594Z",
+  "officialUrl": "https://pika.art/blog/pika-h3-flex",
+  "sections": [
+    {
+      "id": "what-shipped",
+      "title": "A faster draft model, with two different delivery surfaces",
+      "html": "<p>Pika H3 Flex, announced on October 29, is a post-trained version of MiniMax H3 that generates synchronized video and audio in six steps instead of its teacher’s fifty. Its useful promise is more affordable iteration around a shot: test a composition, change the references, then finish the selected version. Pika advertises API Club access now and schedules its main creation product for November 2. As of this October 30 review, that future product date is not evidence of availability in every Pika interface. See the <a href=\"https://pika.art/blog/pika-h3-flex\">launch announcement</a>.</p><p>The distinction that matters is between the downloadable model and the hosted workflow. Local Flex generates native 480p or 768p clips with mixed stereo audio. Pika hosts the higher-resolution finishing, five-stem audio separation, optional prompt rewriting and accelerated serving stack separately. Downloading the adapters therefore does not reproduce the full launch-page experience. This is a meaningful release for developers who can use its terms and infrastructure, but it is not a complete self-hosted 4K production suite.</p>"
+    },
+    {
+      "id": "references",
+      "title": "Choose the reference strategy before generating",
+      "html": "<p>The <a href=\"https://huggingface.co/Pika-Labs/Pika-H3-Flex\">model card</a> separates two adapters. FL2VA handles a prompt alone, a first frame, a last frame or both endpoints. Ref2VA handles multiple image and video references with optional audio. For a product shot, an opening product photograph can establish composition; for a more exploratory sequence, separate references can describe the object, environment and movement. Those are proposed workflows, not proof that identity or choreography will survive every generation.</p><p>The published reference limits are nine images, three videos and three standalone audio clips, with twelve files overall. Reference mode requires at least one image or video. Each video or audio clip must last two to fifteen seconds; total video duration and total standalone-audio duration each have a fifteen-second ceiling. These are acceptance limits, not a memory guarantee. Begin with a small, clearly assigned reference set rather than treating twelve files as a target.</p><p>Requests cover integer durations from five to fifteen seconds and eleven aspect ratios. Local output is 24 fps video with 32 kHz stereo audio, packaged as H.264/AAC MP4 plus generation metadata. The frame grid matters in an edit: a five-second request becomes 124 frames, approximately 5.17 seconds. Use the actual file duration when placing clips, narration or transitions.</p>"
+    },
+    {
+      "id": "finishing",
+      "title": "Audio control is useful, but it follows generation",
+      "html": "<p>The model generates a mixed soundtrack. Hosted separation then supplies Dialogue, Score, SFX, Foley and Ambience WAV files alongside the original video. That can make a clip more usable in an editor: lower the score beneath narration, replace dialogue, or rebuild the ambience across cuts. It does not establish that each component was synthesized independently or that separation is clean. No stem leakage, dialogue intelligibility or phase test was performed for this report.</p><p>Higher resolutions likewise represent a finishing step. The <a href=\"https://dev.pika.art/models/pika/pika-h3-flex/text-to-video\">API reference</a> says 1080p, 2K and 4K requests generate at 768p and then upscale once while preserving audio and frame rate. A sensible proposed workflow is to compare native drafts, reject unstable motion, then finish the winner. Upscaling should not be treated as a repair for wrong physics, a changed product shape or an incorrect explanation.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "Build a job workflow around the API",
+      "html": "<p>A website integration needs a server-held X-API-Key. The documented REST request returns a queued job identifier, not the final video. Persist that identifier, show progress, poll until completion or failure, then fetch the output URL. Keep the prompt, references and chosen settings beside the result so an editor can understand what produced it. This is an implementation design derived from the documentation; no request was submitted.</p><p>Two defaults deserve explicit controls. Prompt rewriting is enabled by default, and duration defaults to five seconds. For a reproducible comparison, turn rewriting off and specify an aspect ratio rather than relying on automatic selection. For exploration, let users opt into rewriting while recording the requested settings. A fixed aspect ratio overrides auto behavior, and keyframes may be resized and cropped to the selected canvas.</p><p>Handle failed jobs separately from HTTP validation errors, and show a clear retry path. The documented DELETE operation erases stored media and submitted prompt parameters; it should not be labeled “cancel generation” without a cancellation contract. A learning app could offer a small approved queue of visual drafts for an instructor, with publication as a separate editorial action.</p>"
+    },
+    {
+      "id": "costs",
+      "title": "Price the whole experiment, including references and stems",
+      "html": "<p>At retrieval, the <a href=\"https://dev.pika.art/models/pika/pika-h3-flex/text-to-video/pricing\">endpoint price table</a> lists text/image-to-video at $0.01 per output second for 480p, $0.02 for 768p and $0.08 for 4K. A nominal ten-second 768p generation therefore represents $0.20 of listed output charges; ten such attempts represent $2. These are arithmetic examples, not invoices or guaranteed billable durations. The page says only successful runs are charged.</p><p>Reference-to-video is priced differently: 768p output is $0.06 per second, and video-reference input is charged separately at the same listed rate. A nominal ten-second output plus a five-second input video would therefore represent $0.90 before other additions. Comparing that with a text-only run without accounting for its input charge would understate the reference workflow’s cost.</p><p>Prompt rewriting adds $0.02 per request. Stem separation is listed at $0.001 per second, but the API defines its unit as the sum of all decoded output-stem durations, without a channel multiplier. Five ten-second stems would nominally add $0.05, not $0.01. <a href=\"https://dev.pika.art/pricing\">API Club membership</a> is advertised at $10 monthly with $10 in API credits. Validate current rates, billable duration and account terms before setting a user-facing spending cap; membership, optional processing and unsuccessful creative attempts all affect practical budgeting.</p>"
+    },
+    {
+      "id": "local",
+      "title": "Local deployment is a substantial infrastructure choice",
+      "html": "<p>The <a href=\"https://github.com/Pika-Labs/Pika-H3-Flex\">inference repository</a> offers installation routes using Python 3.12, a supported NVIDIA driver and pinned dependencies, with tools including git, patch, ffmpeg and a C compiler. Its command remains named pika-h3-pro. The <a href=\"https://github.com/Pika-Labs/Pika-H3-Flex/blob/main/docs/hardware.md\">hardware document</a> calls for at least 211 GB for base components plus roughly 5.5 GB for the adapters, before dependency and staging space.</p><p>Pika’s representative tests used H100 80GB hardware. Default 480p, five-second sampling allocated roughly 66–69 GiB. A 768p, fifteen-second request exceeded that GPU’s memory without CPU offload. With offload, representative sampling used about 29–32 GiB on the GPU and around 94 GiB of host memory including page cache. These are not minimum system requirements: encoder and VAE stages have separate needs, and references and buffers require headroom.</p><p>The package runs one request on one GPU; extra GPUs can process independent requests rather than shard one request. Pika has not qualified H200 or B300 for this local package. It also does not promise bit-identical output across devices, kernels, processes or offload modes. A laboratory planning local experiments should preserve versions, parameters and actual outputs, and budget for operational setup before assuming the six-step count means inexpensive desktop inference.</p>"
+    },
+    {
+      "id": "license",
+      "title": "Open weights do not provide a worldwide community grant",
+      "html": "<p>The repository’s code is Apache 2.0, while the model and adapters follow MiniMax H3 community terms. The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE\">pinned August 2 license</a> excludes the European Union, United Kingdom, Republic of Korea and United States from its applicable territory. It also states that use of the covered works or outputs outside that territory is not authorized by this agreement. That is a material constraint on self-hosting and downstream distribution.</p><p>The same text requires prior written authorization when commercial products and services generate more than $20 million in yearly revenue, specifies commercial-interface attribution, and restricts using outputs to improve unrelated AI models. Read the complete terms before planning deployment or a training dataset. These observations describe the published community agreement; they do not establish what separate rights Pika has negotiated for its hosted service, or whether a particular customer has another license. This report did not verify those arrangements.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Six steps are real documentation; speed and quality need careful comparison",
+      "html": "<p>The <a href=\"https://pika.art/blog/pika-h3-flex-research\">technical report</a> describes supervised post-training on curated proprietary data, distribution-matching distillation from fifty steps to six, then reward and preference refinement through adapters. This explains an inspectable inference recipe, while the proprietary data and hosted components limit reproduction of the entire training and serving system.</p><p>The headline fifteen-second clip in seven seconds measures transformer computation in a controlled benchmark, not API completion time. Another optimization experiment uses a five-second 768p workload on eight B300 GPUs and reports full inference falling from 3.409 to 2.129 seconds. Neither number is a promise for the single-GPU downloadable package. Uploads, queueing, encoding, references, upscaling and separation can all change the practical wait.</p><p>Pika’s comparisons also show a tradeoff rather than universal superiority. Its vendor-authored evaluations describe visual-quality strengths alongside harder physics, multi-scene narrative and control cases where alternatives can be preferred. No leaderboard, human study or benchmark was independently reproduced here. Evaluate the intended scenes with the same prompts, reference permissions and finishing settings before replacing an established model.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "A pilot should measure usable edits, not just generation speed",
+      "html": "<p>Consider a proposed twenty-second classroom introduction to a craft process. Start with an approved still of the materials and a short storyboard describing two ten-second shots. The first shot establishes the workspace; the second illustrates a broad motion. Keep the actual instructional sequence and safety-critical details in verified footage or still diagrams. Flex’s role in this experiment is visual context, and the instructor remains responsible for what the finished lesson teaches.</p><p>Create several native-resolution versions of each shot using the same aspect ratio. Give each reference one job: the still sets the materials and layout, while a separately permitted motion reference suggests the camera movement. Record whether the result preserves the object, follows the action and leaves enough quiet space for captions. A beautiful result that silently changes the tool or sequence fails this particular brief. Keep rejected attempts in the evaluation log because they still consumed production time and may have generated successful-run charges.</p><p>For the selected pair, request the hosted stems and place the original video, original mix and separate tracks into an editing project. Listen to dialogue with the score muted, then to effects without ambience. Check whether a cut exposes an abrupt sound-bed change or whether removing one component damages another. Preserve the original mix as a fallback. Only after the edit works should the team compare a finished upscale with its native draft and decide whether the extra detail improves the destination viewing experience.</p><p>Measure elapsed time from submission to usable downloaded media, then separately measure the human time spent choosing, repairing and assembling the result. Report the cost per accepted shot alongside the per-second list price. Compare a text-only batch with a reference-guided batch rather than pooling their different charges. This proposed protocol makes the adoption decision about completed work. It also reveals whether the expensive part is model inference, repeated creative rejection or the downstream edit. None of those measurements has been collected for this report.</p>"
+    },
+    {
+      "id": "practice",
+      "title": "Where a cautious pilot can produce useful work",
+      "html": "<p>For education, use short clips as illustrations around an instructor-approved explanation. Generate a physical setting or historical atmosphere, then add verified labels and narration in an editor. Keep a still fallback and reject invented mechanisms or misleading motion. The API itself lists precise on-screen text and pixel-perfect compositing among unsuitable uses, so mathematical notation and factual captions belong in deterministic overlays.</p><p>For a website, a designer could test several short hero-video directions in a fixed landscape ratio, choose a readable composition, and create a separately reviewed portrait variant. For a creative app, expose reference roles, request status, estimated charges and downloadable original audio/video rather than hiding those decisions behind one generate button. For a video team, compare drafts before paying for finishing and listen to every separated stem before replacing the original mix.</p><p>The adoption test is small and concrete: choose several representative shots, define acceptable identity, motion and audio quality, record costs and completion times, and count usable results. Include a difficult scene and an unchanged baseline model. Flex is worth that evaluation where the hosted controls or accessible weights solve a real production need. The published evidence does not yet establish reliable precision editing, low-end local deployment or universally faster end-to-end delivery.</p>"
+    }
+  ],
+  "useCases": [
+    "Instructor-reviewed visual drafts with factual text added in an editor",
+    "Short product and website-video concepts using approved references",
+    "Async creative applications with explicit generation costs and downloadable stems",
+    "Licensed research into six-step video inference on substantial NVIDIA hardware"
+  ],
+  "limitations": [
+    "No hosted generation, local installation, benchmark replication or invoice validation was performed.",
+    "Native local generation is 480p/768p with mixed stereo audio; hosted upscaling, separation, rewriting and accelerated serving are separate.",
+    "Community-license territory, revenue, attribution and output-use restrictions materially limit local use; separately negotiated hosted rights were not verified.",
+    "H100 memory figures and speed/quality results are vendor measurements, not minimum hardware requirements or independent tests.",
+    "November 2 creator-product availability remains a future announcement as of October 30."
+  ],
+  "sources": [
+    {
+      "id": "creative-source-0a7ab440828d4f6c",
+      "title": "Pika H3 Flex launch",
+      "url": "https://pika.art/blog/pika-h3-flex",
+      "accessedAt": "2026-10-30T20:54:43.670Z",
+      "publishedAt": "2026-10-29",
+      "locator": "Open weights; soundtrack; availability; benchmark footnote",
+      "supports": "Launch timing, local/hosted feature boundary, API availability and planned November 2 creator-product release."
+    },
+    {
+      "id": "creative-source-e428e2c0eba79e69",
+      "title": "Pika H3 Flex technical deep dive",
+      "url": "https://pika.art/blog/pika-h3-flex-research",
+      "accessedAt": "2026-10-30T20:54:48.064Z",
+      "publishedAt": "2026-10-29",
+      "locator": "Post-training; distillation; serving; evaluation sections",
+      "supports": "Vendor-reported six-step training process, accelerated serving benchmark design, comparative strengths and limitations."
+    },
+    {
+      "id": "repos-pika-h3-flex",
+      "title": "Pika H3 Flex model card",
+      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+      "accessedAt": "2026-10-30T20:54:58.796Z",
+      "publishedAt": null,
+      "locator": "Input/output specifications; generation modes; API extensions; license",
+      "supports": "Native resolutions, media/reference limits, adapters, frame grid, packaging and hosted extensions."
+    },
+    {
+      "id": "creative-source-379456b57e87a052",
+      "title": "Pika H3 Flex inference repository",
+      "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+      "accessedAt": "2026-10-30T20:55:01.062Z",
+      "publishedAt": null,
+      "locator": "README quickstart, package scope and licensing",
+      "supports": "Installation prerequisites, downloadable inference package and code/model license separation."
+    },
+    {
+      "id": "creative-source-37be7f9c7b5e219c",
+      "title": "Pika H3 Flex hardware and tested configurations",
+      "url": "https://github.com/Pika-Labs/Pika-H3-Flex/blob/main/docs/hardware.md",
+      "accessedAt": "2026-10-30T20:56:26.421Z",
+      "publishedAt": null,
+      "locator": "Tested requests; Memory and performance",
+      "supports": "Representative H100 memory figures, single-GPU scope, CPU offload, disk and dependency requirements."
+    },
+    {
+      "id": "creative-source-b523096bbc6779b1",
+      "title": "Pinned MiniMax H3 community license",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+      "accessedAt": "2026-10-30T20:56:28.808Z",
+      "publishedAt": "2026-08-02",
+      "locator": "Definitions 3/5; Grant of Rights; IV; V.3–4",
+      "supports": "Territory exclusions, separate-authorization threshold, attribution and output-use restrictions."
+    },
+    {
+      "id": "creative-source-3f3c276112b05fa6",
+      "title": "Pika H3 Flex endpoint pricing",
+      "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video/pricing",
+      "accessedAt": "2026-10-30T20:57:14.441Z",
+      "publishedAt": null,
+      "locator": "Pricing and per-model pricing table",
+      "supports": "Listed native/upscaled, reference-input, rewriting and stem-separation rates; successful-run policy."
+    },
+    {
+      "id": "creative-source-f4a74ed20d6b9e21",
+      "title": "Pika API Club pricing",
+      "url": "https://dev.pika.art/pricing",
+      "accessedAt": "2026-10-30T20:57:00.354Z",
+      "publishedAt": null,
+      "locator": "API Club membership and credit allowance",
+      "supports": "Monthly membership and included API credits; listed rates are a retrieval-time snapshot."
+    },
+    {
+      "id": "creative-source-27f86bcbb8e7e5ef",
+      "title": "Pika H3 Flex text-to-video API reference",
+      "url": "https://dev.pika.art/models/pika/pika-h3-flex/text-to-video",
+      "accessedAt": "2026-10-30T20:57:17.204Z",
+      "publishedAt": null,
+      "locator": "Capabilities; Authentication; Request body; Poll status; Errors",
+      "supports": "Async API contract, defaults, aspect ratios, hosted stems/upscaling, billing-unit details and documented limitations."
+    }
+  ],
+  "images": [],
+  "judgment": "A worthwhile production-oriented release to evaluate for short video iteration, especially where reference inputs and hosted audio finishing remove manual steps. Openness and maturity are constrained by the base license, substantial local hardware and the gap between downloadable and hosted capabilities.",
+  "researchNote": "Public primary pages inspected through owned Chrome tabs on October 30, 2026, with complete relevant DOM text/links and hashes retained in the ignored run directory. The model, API and example media were not executed or experimentally evaluated. Workflows and cost examples are labeled editorial proposals/arithmetic. No independent benchmark validation is claimed."
+}

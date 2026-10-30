@@ -1,0 +1,28 @@
+{
+  "reportId": "pika-h3-flex-six-step-video-20261029",
+  "reviewerId": "/root/edition_20261030_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:07.190748Z",
+  "reportHash": "469312cb0438cd16eb86dff5016bbb51d773c49596d4e2d7a5d3ce22e8f15ac7",
+  "evidenceHash": "ca5a8234c2ed067570ec42ffb4814a3b331baa0c1cb8c6b43d3367d27738cbe6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Six-step synchronized audio/video, endpoint or multimodal references and hosted finishing offer actionable short-shot iteration for creative builders. The report adds useful API defaults, job-state handling, stem-billing arithmetic and a cost-per-accepted-shot evaluation. Precision text/compositing limits, untested output quality, substantial local hardware and licensing exclusions materially narrow who can use it.",
+    "impact": "Reducing a video teacher from fifty steps to six while offering creative reference and finishing workflows is meaningful in video production. Significance beyond that domain remains conditional: speed figures use specific transformer or multi-GPU benchmarks, the hosted stack differs from local inference, and quality/latency claims were not independently reproduced. Six avoids treating a launch as field-wide validation.",
+    "novelty": "The release demonstrates a specific six-step adaptation with two task adapters and a practical hosted combination of reference control, upscaling and five audio stems. Distillation, LoRA adapters and post-generation finishing are known approaches; stem separation is not independent native stem synthesis. The evidence supports meaningful packaging and efficiency differentiation, not an unprecedented generation paradigm.",
+    "maturity": "The captured API and inference repository document limits, defaults, pricing and tested hardware sufficiently for a pilot. This is a very recent release with the main creator-product rollout still scheduled after the review, no hands-on generation, no stem-quality checks and no end-to-end latency verification. Five represents usable documented access with material reliability and workflow uncertainty.",
+    "openness": "Apache-2.0 inference code and downloadable adapters improve inspectability, but the pinned base-model license excludes the EU, UK, Republic of Korea and US and restricts commercial and output uses. Proprietary training data and hosted-only finishing/acceleration further limit reproduction. Accessible files cannot offset those substantial permission and system-completeness limits."
+  },
+  "confidence": "medium",
+  "concerns": []
+}

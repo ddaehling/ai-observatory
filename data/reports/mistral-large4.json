@@ -1,0 +1,126 @@
+{
+  "id": "mistral-large4",
+  "title": "Mistral releases Large 4 weights: what Le Chonk changes for builders",
+  "entity": "Mistral Large 4 / Le Chonk",
+  "category": "Models",
+  "tags": [
+    "open weights",
+    "coding",
+    "multimodal",
+    "deployment",
+    "licensing"
+  ],
+  "summary": "The October 29 release follows the October 6 preview with improved FP8 and NVFP4 checkpoints. Custom licensing, multi-GPU capacity and model-specific serving support define the practical adoption path.",
+  "changeType": "new",
+  "publishedAt": "2026-10-29",
+  "discoveredAt": "2026-10-30T20:57:48.792Z",
+  "updatedAt": "2026-10-30T21:11:30.207359Z",
+  "officialUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+  "sections": [
+    {
+      "id": "release-and-scope",
+      "title": "October 29 is the weights release, after the preview",
+      "html": "<p>Mistral's October 29 Le Chonk announcement releases weights for an improved Mistral Large 4 after the public preview introduced earlier in October. The distinction matters: this is a newly available checkpoint and deployment option, not the first appearance of the model family. Mistral says it continued reinforcement learning after the preview and is now offering FP8 and NVFP4 versions. The release gives qualified operators more control over where inference runs and which serving infrastructure they use, while also exposing the hardware, licensing and maintenance responsibilities that a hosted API normally absorbs. <a href=\"https://mistral.ai/news/mistral-large-4-oss/\">The release announcement</a> is the primary account of that change.</p><p>Large 4 is a mixture-of-experts model with about a trillion parameters. The card distinguishes roughly 49 billion active parameters per token from 52 billion when embeddings and the output layer are included. That active count helps describe computation; it is not the amount of memory needed to store the complete checkpoint. Its supported interface accepts text and images and produces text, with native function calling and structured output. The advertised context capacity is one million tokens. Those capabilities make it relevant to coding agents, document workflows and visual reasoning, but they do not imply that every serving recipe implements the full advertised capacity.</p><p>The public weight release is also distinct from the announcement's specialized cybersecurity variant, which remains a preview for selected enterprise partners. This report evaluates the general Large 4 artifacts and deployment documentation, not privileged access to that separate variant. No model was downloaded or run. The practical question is whether the released checkpoint, its actual license and a reproducible serving path fit a particular project, rather than whether a vendor benchmark makes it a universal replacement for an existing model.</p>"
+    },
+    {
+      "id": "model-interface",
+      "title": "Budget for reasoning and preserve the application boundary",
+      "html": "<p>The model card offers low, medium and high reasoning settings, with high as the default. Low replaces the earlier none setting. Its recommended sampling settings are temperature 1 and top-p 0.95. These are useful starting points for reproducing the publisher's intended configuration, not proof that every application should use the same latency or reasoning budget. The documented completion-token budget includes reasoning as well as the visible response, so an application can exhaust its allowance before producing the amount of user-facing text expected. Test that behavior with long coding tasks and deliberately constrained requests. <a href=\"https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B\">The main model card</a> describes the controls.</p><p>For a website builder, the meaningful test is a bounded change: supply the relevant files, ask for a patch, run the project's checks, and inspect the result in the browser. For a visual task, include a screenshot and explicit acceptance criteria such as spacing, text overflow or keyboard behavior. Image input can support an analysis of a page, but a text response is still a proposed diagnosis or edit. It is not visual proof that the final site works. Keep screenshots of the actual resulting interface and review them alongside the code changes.</p><p>Function calling and schema-constrained output can make integration easier by producing a predictable request structure. The surrounding application must still validate arguments and decide whether an operation is allowed. A syntactically correct command can be destructive, and a valid JSON object can contain incorrect values. Limit tools to those needed for the task, separate test data from production credentials, and keep consequential actions behind the application's existing authorization boundary. These are recommended controls for a deployed agent; they were not demonstrated or certified by this source review.</p>"
+    },
+    {
+      "id": "license",
+      "title": "The downloadable weights carry a custom commercial boundary",
+      "html": "<p>The repository includes the Mistral Ecosystem Open-Weight License, a modified MIT-style text with an additional Model as a Service restriction. It grants broad permissions subject to its conditions and requires retention of the copyright and permission notices. It should not be summarized as ordinary MIT licensing or as unrestricted open-source software. A team considering redistribution or a commercial service needs to read the actual text, including how it applies to affiliates and derivative works. <a href=\"https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE\">The repository license</a> was inspected directly, rather than inferred from a model-hub tag.</p><p>The additional condition says that a licensee, or an affiliate, operating a Model as a Service business must obtain a separate commercial license before using the model or its derivatives for any commercial purpose. The definition concerns third-party inference or post-training access with meaningful control over inputs, parameters or training data. The text excludes certain end-user products where model capabilities are embedded solely within particular features or harnesses, and mere relaying to models hosted by others. It also states that the additional section does not apply to internal use without third-party access or use through official Mistral products.</p><p>Those distinctions are material for an educational platform, model gateway or agency that hosts tools for clients. A narrow classroom feature, an internal coding deployment and a general inference service have different designs, but their labels alone do not settle eligibility. Map the actual service, affiliates and commercial activity against the full terms before relying on an exception; obtain clarification from the licensor when the boundary is uncertain. This report describes the published conditions and does not determine a particular organization's legal status. Download availability is established. Unconditional permission to resell arbitrary model access is not.</p>"
+    },
+    {
+      "id": "serving-readiness",
+      "title": "Use the model-specific recipe, not a generic install assumption",
+      "html": "<p>The inspected vLLM recipe contains an important readiness qualification. Although its heading refers to vLLM 0.34.0 or later, its prerequisites say that the necessary model support is not yet included in a release or nightly wheel. It directs users to the model-specific <code>vllm/vllm-openai:mistral-large-4</code> image. Generic install snippets shown around a model-hub page should therefore not be treated as evidence that an arbitrary current package installation can serve this checkpoint. Record the actual container digest, model revision, drivers and configuration when building a reproducible deployment. <a href=\"https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B\">The deployment recipe</a> provides the specific supported route inspected here.</p><p>The same recipe distinguishes the checkpoint's one-million-token capacity from what its setup has validated. Its examples set a maximum sequence length of 262,144 tokens and describe validation up to 256K. A project needing more should treat that as a separate infrastructure and quality experiment, not silently change the setting and advertise the full million-token experience. Context memory, concurrency and usable throughput interact; a server that accepts one long prompt may still be unsuitable for the expected number of simultaneous users. Test the target workload and failure behavior before making promises to a class or customer.</p><p>Both cards provide deployment guidance, including tensor-parallel configurations, and the release describes a speculative draft component called DSpark. Claimed acceleration depends on serving support, hardware and workload. It is not a fixed multiplier to apply to a capacity plan. An operator should first establish correct baseline responses, then compare acceleration with identical tasks and output checks. The inspected instructions are enough to identify an implementation route and its caveats. They are not evidence that this report's author reproduced compatibility, numerical behavior or published speedups.</p>"
+    },
+    {
+      "id": "hardware-and-cost",
+      "title": "Sparse computation does not make this a desktop download",
+      "html": "<p>The hardware examples place self-hosting firmly in multi-accelerator infrastructure. The vLLM recipe lists validated configurations including NVFP4 on a four-GPU GB300 tray or eight Blackwell-class GPUs, and FP8 examples using larger configurations such as two eight-GPU H200 nodes. For an eight-GPU setup it estimates roughly 128 GiB of FP8 weights per GPU or about 76 GiB of NVFP4 weights per GPU. Those are weight-storage figures, before allowing for key-value cache and other runtime needs. The lower active-parameter count does not eliminate the need to hold the full expert weights. <a href=\"https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B\">Hardware requirements</a> should precede any procurement assumption.</p><p>NVFP4 is consequently a meaningful alternative for compatible infrastructure, not a promise that a typical workstation can run the model. Its card targets Blackwell hardware and supplies its own serving instructions. Quantization can change capacity and numerical behavior, so compare the actual FP8 and NVFP4 deployments on the work that matters. Include long prompts, tool-call sequences, structured output and image tasks where relevant. The report did not measure quality differences between precisions, and it does not infer that a smaller representation preserves every behavior. <a href=\"https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4\">The NVFP4 card</a> defines the released variant.</p><p>For teams without this infrastructure, the hosted API is the more immediate evaluation route. The inspected announcement and model documentation list $0.70 per million input tokens, $0.07 per million cached input tokens and $2.10 per million output tokens. These are publisher prices observed on October 30, not a total project estimate. A comparison should include reasoning usage, retries, tool execution, storage and monitoring; a self-hosted comparison additionally needs idle capacity, staffing and maintenance. Calculate cost per completed, reviewed task. Low token prices or owned GPUs alone do not establish which route is cheaper for a specific workload. <a href=\"https://docs.mistral.ai/models/mistral-large-4-0\">Current model documentation</a> records the hosted option.</p>"
+    },
+    {
+      "id": "builder-workflows",
+      "title": "Practical uses start with a constrained evaluation",
+      "html": "<p>An educational coding workshop can use the model to propose fixes in a small teaching repository, explain test failures and compare alternative implementations. Give learners an explicit source set and ask them to inspect the patch and run the tests. Keep the evaluation about the artifact: whether it compiles, meets the brief and remains understandable. Do not treat fluency as evidence of student learning or use model output alone for consequential assessment. An institution interested in internal inference can investigate deployment and licensing separately from the teaching experiment, which does not require immediate ownership of a large GPU cluster.</p><p>For an app or website, select a maintenance task with a clear acceptance condition: repair a form error, implement a documented endpoint, or correct a responsive layout. Test with the current repository and realistic tool permissions. Record whether the model finds the right files, produces a limited patch, preserves existing behavior and recovers when tests fail. A comparison against the existing assistant should use the same initial state and review standard. This is more informative than running unrelated prompts and choosing whichever answer looks more confident. Large context may help supply relevant material, but indiscriminately adding files can also increase cost and distract the task.</p><p>For video work, the text-and-image interface can assist with script structure, shot-list reasoning, selected-frame analysis or code that automates an editing workflow. The released model is not documented here as a native video generator. Use actual footage, timestamps, rights information and human review to judge whether a proposed edit or factual narration is appropriate. Structured output may help transfer a shot list into an application, but the application still needs validation and a preview. These are proposed uses of documented modalities and tool interfaces, not demonstrated results from a production trial.</p>"
+    },
+    {
+      "id": "evidence-and-judgment",
+      "title": "More deployment control, with substantial operational work",
+      "html": "<p>The release is significant because the improved checkpoint is available for inspection and deployment outside a single hosted endpoint. That increases portability and allows organizations with suitable infrastructure to study its behavior under their own operating conditions. It does not provide complete training reproducibility: the announcement says a fuller technical report is forthcoming, and this review did not establish access to the complete training data and process. Publisher evaluations remain publisher evaluations. The general model's safety or coding performance should not be inferred from a specialist preview, a private benchmark, or a single selected success.</p><p>The useful next step is a small, representative test through an available deployment route, followed by a separate infrastructure decision if the results justify it. Freeze model and serving revisions, keep tool permissions explicit, measure reviewed task completion and retain failures. Check the custom license before expanding a service business around the weights. The sources establish an actual October 29 release, documented variants, a concrete serving path and clear limitations. They do not establish that every team should self-host, that million-token production service is already validated by the inspected recipe, or that benchmark gains transfer unchanged to educational, web or creative work.</p>"
+    }
+  ],
+  "useCases": [
+    "Controlled coding and website-maintenance evaluations",
+    "Internal text-and-image workflows on appropriate multi-GPU infrastructure",
+    "Script, shot-list and editing-automation assistance with human review"
+  ],
+  "limitations": [
+    "No model download, serving deployment, GPU benchmark or API test performed.",
+    "Custom ecosystem license includes Model as a Service conditions; not plain MIT or unrestricted open source.",
+    "Inspected vLLM recipe needs a model-specific container and validates 256K context rather than the advertised 1M maximum.",
+    "Performance and safety claims are publisher evidence; complete training reproducibility not established."
+  ],
+  "sources": [
+    {
+      "id": "official-source-5a25565ab71a8d06",
+      "title": "Mistral — Le Chonk weight release",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "accessedAt": "2026-10-30T20:57:48.792Z",
+      "publishedAt": "2026-10-29",
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-da867975a5a80708",
+      "title": "Mistral — Large 4 FP8 model card",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "accessedAt": "2026-10-30T20:57:51.287Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-201bb3937ca1d219",
+      "title": "Mistral — Large 4 NVFP4 model card",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+      "accessedAt": "2026-10-30T20:57:53.555Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-02460f490ff9e341",
+      "title": "Mistral Ecosystem Open-Weight License",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE",
+      "accessedAt": "2026-10-30T20:58:03.247Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-6c37fbb22f2f9770",
+      "title": "Mistral — Large 4 model documentation",
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "accessedAt": "2026-10-30T20:58:05.491Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    },
+    {
+      "id": "official-source-b01f77c6a7adbb6b",
+      "title": "vLLM — Mistral Large 4 deployment recipe",
+      "url": "https://recipes.vllm.ai/mistralai/Mistral-Large-4-1T-A52B",
+      "accessedAt": "2026-10-30T20:58:09.081Z",
+      "publishedAt": null,
+      "locator": "Rendered article or documentation body",
+      "supports": "Documented features, requirements and limits described in this report."
+    }
+  ],
+  "images": [],
+  "judgment": "A material weight-release event for organizations able to evaluate a trillion-parameter model and its custom terms. Hosted evaluation can precede a hardware decision; self-hosting requires explicit compatibility, capacity and license work.",
+  "researchNote": "Mistral listing dates the Le Chonk release October 29, 2026; the model family had a public preview on October 6. Announcement, both cards, full repository license, model documentation and vLLM recipe were read in Chrome on October 30. No advertised tools or model were executed."
+}

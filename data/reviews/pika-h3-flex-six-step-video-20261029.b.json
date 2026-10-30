@@ -1,0 +1,28 @@
+{
+  "reportId": "pika-h3-flex-six-step-video-20261029",
+  "reviewerId": "/root/edition_20261030_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:26Z",
+  "reportHash": "469312cb0438cd16eb86dff5016bbb51d773c49596d4e2d7a5d3ce22e8f15ac7",
+  "evidenceHash": "ca5a8234c2ed067570ec42ffb4814a3b331baa0c1cb8c6b43d3367d27738cbe6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Short synchronized audio-video, endpoint and multimodal references, and hosted audio stems offer actionable tools for visual drafting and editing. The report gives a useful accepted-shot pilot and correct price arithmetic, but precision-text/compositing limits, territorial rights constraints and heavy local hardware prevent broad uncomplicated usefulness.",
+    "impact": "A six-evaluation adaptation of an existing video model with downloadable adapters and a practical hosted finishing path could materially improve iteration within creative production. Evidence is still vendor-authored, and the hosted latency measurements and local package differ substantially; the record does not establish a general breakthrough in reliable video creation.",
+    "novelty": "The combination of six-step H3 post-training, reference controls and separately hosted stem/finishing options is meaningfully differentiated for the described workflow. Distillation and preference refinement build on existing methods, and the full hosted stack is not reproduced by the release, so exceptional novelty is not demonstrated.",
+    "maturity": "The model card, API defaults, queued-job lifecycle, rate tables and representative hardware tests establish a usable but newly released path. No generation, billing or audio-quality trial was performed, the main creator-product availability remains future-dated, and the vendor identifies harder physics and control cases, supporting a middle maturity score.",
+    "openness": "Apache-licensed inference code and downloadable adapters/base components permit some inspection and controlled experimentation. The pinned community agreement excludes the EU, UK, Korea and US, restricts commercial and output uses, while proprietary data and hosted finishing/acceleration remain unavailable; this is far from permissive, reproducible openness."
+  },
+  "confidence": "high",
+  "concerns": []
+}

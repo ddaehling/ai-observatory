@@ -1,0 +1,125 @@
+{
+  "id": "cloudflare-security-audit-workflow",
+  "title": "Cloudflare’s audit skill makes AI security findings traceable to evidence",
+  "entity": "Cloudflare / security-audit-skill",
+  "category": "Open source",
+  "tags": [
+    "security review",
+    "agent workflows",
+    "structured evidence",
+    "developer tools",
+    "education"
+  ],
+  "summary": "An MIT-licensed six-phase workflow separates hunting, local validation, independent review and reporting. Its practical value is an explicit record of evidence and unfinished coverage, provided the host can enforce the required isolation.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-10-20T16:19:21.282019+00:00",
+  "updatedAt": "2026-10-30T21:06:23.165981Z",
+  "officialUrl": "https://github.com/cloudflare/security-audit-skill",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "An audit claim should carry its evidence",
+      "html": "<p>Cloudflare’s security-audit-skill is an inspectable method for making an AI-assisted code audit easier to question. Its central idea is to separate finding a suspicious path, demonstrating a concrete boundary violation, independently checking the record, and writing the final explanation. That separation matters for builders whose agents can produce persuasive security prose faster than a person can verify it. A long list of alarming possibilities is useful only when each item names an affected principal, a resource, the relevant conditions and what actually happened.</p><p>This is a baseline review of the public repository as inspected on October 30, 2026. The inspected material does not establish a new October launch. The project supplies instructions, companion documents, a report schema and validators; it is not evidence that an audit has been run on your application. We did not install it, execute target code, measure discovery rates or compare its findings against a human audit.</p><p>The useful proposition is a repeatable record of decisions: what was examined, what remains blocked, why a candidate was rejected, and which evidence supports a confirmed result. Teams could apply that record to repeated reviews as source and deployment assumptions change. The practical value therefore depends as much on the surrounding agent platform and reviewer discipline as on the prompt files. The <a href=\"https://github.com/cloudflare/security-audit-skill\">README</a> describes a workflow to implement and evaluate, rather than a security assurance to inherit.</p>"
+    },
+    {
+      "id": "workflow",
+      "title": "Six phases, with explicit ownership",
+      "html": "<p>The documented full workflow starts by mapping architecture, inputs and trust boundaries. Hunting then works against a coverage plan, with critics identifying gaps. Candidate validation comes before structured findings are written; another verification stage checks those records; reports are generated from the final records and ledger. The order puts evidence ahead of narrative. It also gives a reviewer places to stop a weak claim before it becomes a confident recommendation.</p><p>The coordinating agent owns shared files, while delegated agents use separate work areas. The expected outputs include run metadata, architecture notes, a coverage ledger, machine-readable findings and separate report/detail/validation documents. Keeping these distinct makes a review navigable: a developer can follow a conclusion back to a source path and an observed result, while a project owner can inspect unfinished work without confusing it with confirmed defects.</p><p>Loading the skill alone is guidance mode. Focused security questions can use relevant parts without launching all six phases or creating a full report directory. Full audit mode applies to explicit comprehensive codebase reviews or requested report artifacts. Its default retained output sits outside the target repository. This is a helpful operational distinction for a builder asking a narrow question about an upload handler: the method need not turn every question into an expensive audit. These are prescribed behaviors in the <a href=\"https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md\">workflow file</a>; their enforcement depends on the host.</p>"
+    },
+    {
+      "id": "coverage",
+      "title": "Coverage survives an unfinished run",
+      "html": "<p>A coverage ledger makes the limits of a review visible. The reconnaissance document organizes work around stable units covering exposed surfaces, boundaries and attack classes, with paths and checks attached. A unit can remain deferred or blocked. Those states describe unfinished work; they are not negative findings. For a small website, the ledger could separate account access, uploaded content, preview rendering and export delivery instead of letting repeated inspection of the easiest route stand in for breadth.</p><p>Prior runs are inputs to the next plan. An old confirmation is reusable only after checking that the relevant current source and conditions still match. Prior unresolved, deferred and changed-source work becomes current work again. A prior rejection can prevent repetition of the same unsupported claim without declaring the surrounding code safe. This is especially useful in an agent-built product where small edits may change several assumptions between releases.</p><p>The profiles deliberately trade depth for bounded effort. Quick uses one hunting wave and one final critic, with one fresh reviewer performing the candidate and record checks. Standard separates those verification passes. Deep adds finer coverage and further review. A scoped run still covers only its declared subset. A strict agent-invocation budget must preserve mandatory checks or produce an incomplete run; it cannot quietly relabel an unvalidated candidate. The <a href=\"https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/RECONNAISSANCE.md\">ledger guidance</a> offers an accountability mechanism, not proof that all vulnerabilities have been searched.</p>"
+    },
+    {
+      "id": "execution",
+      "title": "Isolation is a prerequisite",
+      "html": "<p>The execution boundary is one of the most consequential parts of the design. Target-controlled tests, builds and fixtures require an operating-system-enforced sandbox: external networking blocked, an empty environment populated from a safe allowlist, read-only source and toolchain, writes confined to assigned scratch space, and explicit resource limits. An isolated local client/server connection may be used when necessary. The workflow forbids fetching dependencies during validation and requires dummy identities, data and secrets.</p><p>If the host cannot enforce every required control, the prescribed response is source review with a specific validation blocker. A coding agent’s permission prompt is not automatically equivalent to that sandbox. Before trying this method, a team needs an environment that can demonstrate the actual file, network and process boundaries. That infrastructure work may dominate adoption for a small project.</p><p>Retaining evidence also has a boundary. The trusted coordinator promotes only minimal non-secret results through checks intended to reject unsafe filesystem objects and paths. A delegated process does not receive unrestricted access to the shared report directory. This is relevant when the repository under review can control test output or fixtures: an audit should not treat its own outputs as trustworthy merely because a test wrote them. We inspected the <a href=\"https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md\">documented isolation requirements</a>, not an implementation of them. No claim is made that a particular desktop agent or deployment satisfies the contract.</p>"
+    },
+    {
+      "id": "findings",
+      "title": "Three outcomes and a fresh challenge",
+      "html": "<p>The distinction between confirmed, needs_validation and rejected is stricter than a generic confidence label. Confirmed requires a complete source-grounded account and bounded local execution evidence of the concrete result. Needs_validation identifies a real source path and an exact missing fact, alongside a suitable local check or a fact for the deployment owner to observe. It does not receive a severity score. Rejected retains the disproved claim so a later run does not rediscover the same mistake without changed evidence.</p><p>Only confirmed records receive severity, tied to demonstrated likelihood and impact; the overall rating cannot exceed demonstrated impact. This prevents an unresolved configuration assumption from quietly becoming a high-severity vulnerability. A missing production policy can remain an actionable question without being described as an observed breach.</p><p>The fresh candidate verifier did not hunt the issue and must reread current source, attempt to refute the claim and reproduce decisive checks safely where possible. Standard and deep profiles then use separate record verification; quick merges the two checks into one fresh review. Material replacement records need renewed independent checking. The JSON validators check structure and consistency, not security truth. Separate agents may still share a model’s blind spots or make correlated mistakes. The <a href=\"https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/VALIDATION-AND-REPORTING.md\">validation contract</a> makes the challenge process explicit, but this inspection provides no measured false-positive reduction, discovery advantage or substitute for accountable human judgment.</p>"
+    },
+    {
+      "id": "teaching-apps",
+      "title": "A teachable record for apps",
+      "html": "<p>An educational pilot could use a deliberately small, disposable teaching application with synthetic users and a documented authorization rule. Learners would first draw the boundary: which user owns which resource, which action is allowed, and which source path enforces that rule. They would compare a hunter’s hypothesis with the verifier’s final record, including a rejected hypothesis. Assessment could reward a precise explanation of why a claim failed, rather than the number of vulnerabilities reported. This is a proposed classroom exercise, not a tested educational integration or an invitation to probe a deployed system.</p><p>For an application team, consider a classroom workspace that stores student projects and produces downloadable exports. A useful initial scope would be the source path connecting user identity, project ownership, job creation and result retrieval. The team could prepare dummy fixtures and identify what can be checked locally. If a decisive fact exists only in a hosted access policy, the record should name that fact and the owner-observed check instead of asserting a cross-user failure.</p><p>The adoption measure would be whether a developer can reproduce and resolve each accepted item, with fewer rounds of interpretation. Record the source revision, relevant configuration, reviewed paths, missing facts and rejected alternatives. On the next change, compare those assumptions with the current implementation. A team could also track reviewer effort: how many records lack a reproducible input, how often a missing assumption is answered by source already available, and which questions require a deployment owner. These are suggested evaluation measures, not reported results. Keeping the rejected records allows a reviewer to see whether a later pass merely repeats familiar suspicions. Keeping incomplete coverage separately prevents a quiet budget cutoff from looking like a completed review. A useful pilot would make those omissions easier to inspect as well as making accepted findings easier to act on. Neither faster writing nor a longer findings list would by itself establish better security. These suggested evaluations follow the workflow’s evidence rules; they have not been performed here.</p>"
+    },
+    {
+      "id": "web-video",
+      "title": "Website and video boundaries worth mapping",
+      "html": "<p>A website workflow could focus on file uploads and generated previews. The proposed ledger would trace the transition from an uploaded document, through parsing and storage, to the preview shown to another user. A review should distinguish file handling, authorization and browser-facing output as different boundaries. A bounded local fixture could establish one narrow behavior while leaving a hosting configuration question unresolved. The resulting report would state that scope instead of generalizing from one preview path to the entire site.</p><p>A video application has similarly concrete boundaries: a user submits media, a job worker transforms it, and a delivery route returns the rendered result. A practical pilot could inspect job ownership, temporary-file handling and artifact delivery using synthetic media and a disposable local setup. Resource limits matter because media processing can consume substantial CPU, memory and disk even without a security defect. The method’s safe-execution requirements therefore belong in the test plan before any renderer or parser runs.</p><p>These examples are editorial proposals, not integrations advertised as working out of the box. No video was rendered and no website was tested during this research. Their common benefit is a review that records a specific assumption and an observable result. An owner can then decide which local check to reproduce, which deployment fact to supply, and which unanswered question should block a release. That is more actionable than an undifferentiated warning that uploads or background jobs are risky.</p>"
+    },
+    {
+      "id": "adoption",
+      "title": "License, costs and a sensible first evaluation",
+      "html": "<p>The inspected repository uses the MIT license, permitting broad reuse and modification with the copyright and permission notice retained in copies or substantial portions. It includes an as-is warranty disclaimer. That permission applies to this material; it does not make a chosen model provider, host platform, dependency or compute environment free. The <a href=\"https://github.com/cloudflare/security-audit-skill/blob/main/LICENSE\">license file</a> is the relevant source for the repository terms.</p><p>The README expects an agent with tool use and parallel delegation, plus Node.js for its validators. Model selection, context handling, sandbox availability and the size of the codebase will shape cost and completion time. An invocation budget is not a dollar budget: one agent call can consume very different amounts of work. No cost, token saving or elapsed-time advantage was measured in this scan.</p><p>A reasonable first evaluation would use a small owned repository, a fixed source revision, a declared quick or scoped profile, known local dependencies and a reviewer who can check the resulting records. Track whether confirmed claims reproduce, whether rejected claims stay rejected for sound reasons, and whether unresolved questions are precise enough for an owner to answer. A zero-finding run should still produce an honest account of inspected and untouched work. The project is most promising as a discipline for making AI audit output reviewable; its effectiveness remains something a team must measure on its own authorized target.</p>"
+    }
+  ],
+  "useCases": [
+    "Teaching source-grounded security reasoning with synthetic fixtures",
+    "Reviewing authorization and export paths in an owned app",
+    "Mapping upload-to-preview boundaries on a website",
+    "Reviewing job ownership and artifact delivery in a video workflow"
+  ],
+  "limitations": [
+    "Documentation-only baseline; no October launch date established.",
+    "No skill installation, target execution, vulnerability validation or comparative audit performed.",
+    "Host-enforced filesystem/network/process isolation is required and was not tested.",
+    "Fresh agent review can share model blind spots; schema checks do not prove security correctness.",
+    "Scoped, quick, blocked and incomplete coverage cannot establish absence of vulnerabilities.",
+    "Model/provider costs, host compatibility and end-to-end runtime were not measured."
+  ],
+  "sources": [
+    {
+      "id": "repos-cloudflare-audit",
+      "title": "Cloudflare security-audit-skill README",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "accessedAt": "2026-10-30T20:50:46.921Z",
+      "publishedAt": null,
+      "locator": "Rendered repository README or file preview; current main branch",
+      "supports": "Documented workflow, prerequisites or licensing; no runtime validation."
+    },
+    {
+      "id": "repos-cloudflare-audit-license",
+      "title": "MIT license",
+      "url": "https://github.com/cloudflare/security-audit-skill/blob/main/LICENSE",
+      "accessedAt": "2026-10-30T20:57:45.575Z",
+      "publishedAt": null,
+      "locator": "Rendered repository README or file preview; current main branch",
+      "supports": "Documented workflow, prerequisites or licensing; no runtime validation."
+    },
+    {
+      "id": "repos-cloudflare-audit-skill",
+      "title": "Security Audit workflow",
+      "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+      "accessedAt": "2026-10-30T20:57:48.291Z",
+      "publishedAt": null,
+      "locator": "Rendered repository README or file preview; current main branch",
+      "supports": "Documented workflow, prerequisites or licensing; no runtime validation."
+    },
+    {
+      "id": "repos-cloudflare-audit-validation",
+      "title": "Validation, structured output and reporting",
+      "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "accessedAt": "2026-10-30T20:57:50.872Z",
+      "publishedAt": null,
+      "locator": "Rendered repository README or file preview; current main branch",
+      "supports": "Documented workflow, prerequisites or licensing; no runtime validation."
+    },
+    {
+      "id": "repos-cloudflare-audit-recon",
+      "title": "Reconnaissance and coverage ledger",
+      "url": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/RECONNAISSANCE.md",
+      "accessedAt": "2026-10-30T20:57:53.438Z",
+      "publishedAt": null,
+      "locator": "Rendered repository README or file preview; current main branch",
+      "supports": "Documented workflow, prerequisites or licensing; no runtime validation."
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a small, authorized evaluation for teams that need traceable audit records and can enforce the execution boundary. The main contribution is review discipline; security effectiveness remains unmeasured.",
+  "researchNote": "Webcrawl in owned Chrome tab on October30,2026 inspected the repository README, MIT license, SKILL.md, RECONNAISSANCE.md and VALIDATION-AND-REPORTING.md. Full rendered text and provenance hashes retained locally. This is an editorial baseline, not a new-release claim or an audit of the repository. No advertised software was executed. Application examples are proposed evaluations, not observed integrations. Companion attack-domain files and validator implementation/tests were not comprehensively reviewed. Report requires independent editorial review before inclusion."
+}

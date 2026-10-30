@@ -1,0 +1,28 @@
+{
+  "reportId": "cohere-rerank5",
+  "reviewerId": "/root/edition_20261030_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-30T21:19:26Z",
+  "reportHash": "995e6c405ea7e70273a97ad74aea77bd1976b4f7d7471c3f1533b0ecfea6c96a",
+  "evidenceHash": "6822d467d9f505c74e450c0ae3fbd0e042d7df36ecef002af19319cdf4dc8cda",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The documented query/document interface and optional scored character spans are directly useful to course-material search, website support and transcript navigation. The report adds actionable distinctions between candidate recall, ranking, compression, stable citation offsets and no-answer handling, with a practical comparison plan; gains remain untested on the proposed collections.",
+    "impact": "Combining relevance ranking and source-span selection in a generally available retrieval stage can materially affect context cost and answer grounding across many RAG applications. The inspected evidence supports an incremental retrieval advance, not field-wide transformation: quality, calibration and latency claims are vendor evaluations and the stage cannot recover documents omitted by initial search.",
+    "novelty": "The meaningful differentiator is optional ContextFocus in the same reranking call, together with the publisher-described calibration. Existing retrieval pipelines and compression ideas are not new, and no independent comparative experiment establishes exceptional differentiation, so a moderately above-middle score is justified.",
+    "maturity": "The live API reference, named Pro/Fast identifiers, explicit truncation and result controls, pricing and deployment guidance provide a concrete usable interface. The captured 4,096-token default, off-by-default span feature and documented account restrictions support the report; no API execution or production reliability measurement warrants a top maturity score.",
+    "openness": "Public interface documentation and several managed/private deployment routes make integration possible, but the inspected material supplies no downloadable weights, model license permitting independent redistribution, training data or reproducible training process. Private deployment is commercial access rather than evidence of open-source availability."
+  },
+  "confidence": "high",
+  "concerns": []
+}
