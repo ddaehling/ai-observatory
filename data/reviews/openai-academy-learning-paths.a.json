@@ -1,0 +1,32 @@
+{
+  "reportId": "openai-academy-learning-paths",
+  "reviewerId": "/root/astra_review_20261106_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:20:40.142203Z",
+  "reportHash": "9f2c964987a9aadf858de26f92af810b4a78df3f662bdfce2b5aa256ae0c5800",
+  "evidenceHash": "f7d21189f0d989e0303d35f8f64d4b0ff89d28c8b75d0cfc731a27a8a036a951",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 4,
+    "novelty": 3,
+    "maturity": 6,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The archived educator and evaluation-course pages identify prerequisites, intended artifacts and guided practice, while the help and deployment pages resolve concrete account, assessment and rollout questions. The report translates these into bounded teaching and application-evaluation pilots with meaningful acceptance checks. That is useful across several builder roles, although neither enrollment nor improvement in learner work was observed.",
+    "impact": "The September 21 expansion plausibly broadens practical AI training across workforce, technical and educational roles. The evidence establishes a portfolio expansion and implementation guidance, not improved learning outcomes, productivity or a technical advance in AI. Its potential significance is therefore a useful adoption increment below a demonstrated domain-wide advance.",
+    "novelty": "Role-specific pathways, guided exercises and badges form a coherent offering, but the supplied sources do not demonstrate a new teaching method or distinctive AI capability. The report correctly avoids treating the vendor announcement or credential machinery as evidence of exceptional differentiation.",
+    "maturity": "Public course descriptions, explicit prerequisites, assessment thresholds, credential support and detailed completion troubleshooting support an operational offering. Conflicting course-duration estimates and the absence of enrollment, assessment or learning-outcome testing limit confidence in dependable delivery and practical effectiveness. A score above the usable midpoint is warranted by documentation, not by independently established educational quality.",
+    "openness": "Public course browsing, free global access and direct linking reduce access barriers. However, progress requires a ChatGPT identity; accounts cannot currently be merged; organizational LMS export/import is unavailable; and no permissive course-content reuse license is established. Access is meaningful, but portability and reproducibility are materially constrained."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "All decisive evidence is vendor-authored, and no course or assessment was completed; these limits are disclosed and are not blockers for this documentary baseline.",
+    "November 3 support and course details must not be represented as all having existed on September 21 or as freshly checked on November 6. The frozen report preserves this distinction.",
+    "Planned SCORM availability, organizational reporting, demonstrated product entitlements and learning effectiveness remain unverified; the report appropriately avoids guarantees."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "reportId": "claw-ed",
+  "reviewerId": "/root/astra_final_20261106_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:29:00.849862Z",
+  "reportHash": "f097850cd066016d76d49e83bcacd858567bddcb82e9054309384301650675c8",
+  "evidenceHash": "fc61dabfc66e61f25b01b028adb5d4534d169417fbd761ddfef4480e7cb965ea",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 4,
+    "novelty": 3,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The README and getting-started archive support a defined teacher workflow from familiar curriculum files to editable DOCX/PPTX artifacts, with an explicit source-review step and a separate queued worker. The report gives actionable history/science trials and measures correction time rather than prose fluency. This is useful for a technically capable individual teacher, but no completed lesson, export inspection, classroom outcome or measured time saving is available, so broad practical effectiveness is not demonstrated.",
+    "impact": "The potential benefit is reducing preparation and recovery effort within a narrow teaching workflow. Saved phases, source manifests and editable artifacts are meaningful implementation improvements, but the packet establishes neither adoption at scale nor improved pedagogical outcomes or a substantial advance in underlying AI methods. A below-moderate impact score reflects this evidence boundary rather than the article length.",
+    "novelty": "Curriculum retrieval, provider adapters, document generation and phase checkpointing form a coherent combination, but the primary documents do not demonstrate a new model, a new orchestration method or comparative differentiation from other lesson-authoring systems. The recoverable teacher-specific workflow gives some distinctiveness; the absence of comparative evaluation prevents a stronger novelty rating.",
+    "maturity": "The project documents Python prerequisites, installation, a working interface contract, worker lifecycle, five-minute recovery eligibility and cancellation limitations. Nevertheless it explicitly remains a single-teacher beta with experimental student functions, and its evaluation protocol says mocked/synthetic tests cannot establish teaching quality. No execution or output inspection in this packet supports dependable end-to-end behavior. The report accurately preserves those limits instead of treating documented commands as an observed successful run.",
+    "openness": "The archived MIT license explicitly permits inspection, modification and redistribution subject to notice conditions, and the README documents development installation, tests, provider choices and portable editable exports. These are strong openness signals for the original application code. They do not open third-party model weights, training data or provider infrastructure, and the packet does not reproduce a complete live workflow; those separate dependencies keep this below exceptional reproducibility."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking editorial defect found. The substantive workflow, version, beta, recovery, local-versus-hosted and licensing statements are supported by the four primary archives. Illustrative teaching, educational-app and video uses are explicitly proposed; the report does not invent a video renderer or observed classroom benefit.",
+    "Nonblocking evidence limit: all product behavior remains publisher documentation. Preserve the explicit no-execution limitation and the distinction between a proposed teacher rubric and completed evaluation when publishing or excerpting.",
+    "Date and markup checks pass: the version label is not converted into a release date; publication remains null; discovery is November 3 and integration November 6 within the saved November 2 run. Section markup uses balanced p/a tags with HTTPS source links and no executable attributes.",
+    "Independently recomputed report, evidence and rubric hashes match the frozen packet. The body count is 985 words under the packet-compatible word-token rule, within 900–1100 for my impact rating of 4. Publication must still apply the word band to the eventual independent mean; this review has not seen another rating."
+  ]
+}

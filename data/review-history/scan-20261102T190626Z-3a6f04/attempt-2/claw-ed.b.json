@@ -1,0 +1,31 @@
+{
+  "reportId": "claw-ed",
+  "reviewerId": "/root/astra_final_20261106_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:29:05.518682Z",
+  "reportHash": "f097850cd066016d76d49e83bcacd858567bddcb82e9054309384301650675c8",
+  "evidenceHash": "fc61dabfc66e61f25b01b028adb5d4534d169417fbd761ddfef4480e7cb965ea",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 4,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The README and getting-started capture support a concrete import-to-editable-DOCX/PPTX workflow, source review, and recoverable queued drafts. The report makes this actionable for an individual teacher by proposing a small permitted source packet and measuring correction effort. Value is narrower than a broadly ready educational platform: installation, live generation, export quality, and teacher time savings were not tested. Proposed website and video uses are correctly separated from established product functions.",
+    "impact": "A coherent preparation workflow with checkpoint recovery could materially help individual teachers, but the packet establishes neither adoption at scale nor improved learning, productivity, or AI methodology. This is a useful incremental application rather than a demonstrated domain-wide advance, warranting 4. The report accurately treats November 3 as discovery of an existing beta, leaves the release date unknown, and does not turn the version label or November 6 editorial update into a launch. Its approximately 980-word body fits the 900–1100 range associated with this impact assessment; the final mean impact must still determine publication length.",
+    "novelty": "The distinctive documented combination is curriculum ingestion, a teaching-style profile, editable teacher/student/slides exports, and explicit phase recovery with a source manifest. None of retrieval, document generation, queues, or checkpoints is shown here to be a new AI technique, and no comparative evaluation establishes superiority over other lesson tools. A modest differentiation score is therefore appropriate.",
+    "maturity": "There are usable setup instructions, a Python 3.11+ requirement, provider adapters, worker commands, a five-minute recovery threshold, and explicit cancellation and resumption limits. However, the README calls this a single-teacher beta, student functions remain experimental, and synthetic/mocked tests do not establish classroom or live-provider reliability. The report consistently preserves those distinctions instead of treating its evaluation protocol as completed validation.",
+    "openness": "The captured MIT license permits inspection, modification, and redistribution of the original code subject to notices; documented local files, editable standard-format outputs, and multiple provider choices support portability. This is materially open software. It is not complete reproducibility of the AI stack: model availability, weights, provider terms, hardware, and live outputs are separate and unverified. The report correctly avoids equating local storage with wholly local processing."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking evidence boundary: all four captures come from the project itself. Documentary support is strong for what is documented, but no independent operation, recovery result, generated lesson, or classroom outcome is established; the report discloses this.",
+    "The source captures are dated November 3, following the saved November 2 run. November 6 is editorial integration only. Approval does not establish fresh November 6 product status or benchmarks."
+  ]
+}

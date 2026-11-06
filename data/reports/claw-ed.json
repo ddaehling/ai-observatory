@@ -1,0 +1,103 @@
+{
+  "id": "claw-ed",
+  "title": "Claw-ED: editable lesson drafts with a recovery plan",
+  "entity": "Claw-ED",
+  "category": "Tools",
+  "tags": [
+    "Education",
+    "Lesson preparation",
+    "Open source",
+    "Local workflows"
+  ],
+  "summary": "A single-teacher Python beta turns existing curriculum materials into editable lesson bundles. Its documented recovery and evaluation boundaries make it suitable for a controlled trial, while classroom quality remains untested.",
+  "changeType": "baseline",
+  "publishedAt": null,
+  "discoveredAt": "2026-11-03T19:39:55.871483Z",
+  "updatedAt": "2026-11-06T05:23:10.037688Z",
+  "officialUrl": "https://github.com/SirhanMacx/Claw-ED",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A lesson draft that stays editable",
+      "html": "<p>Claw-ED connects a teacher's existing materials to a practical output: a lesson plan, a student document and slides that can be edited in familiar applications. Its appeal is the continuity between importing source material, generating a draft, reviewing it and exporting files. A teacher can keep the curriculum and revise the result without rebuilding the lesson inside a proprietary authoring interface.</p><p>This is a baseline assessment of an existing project, discovered in November 2026. The inspected README identifies v9.18.2026.1 as a beta requiring Python 3.11 or newer. It describes a single teacher per instance; student-facing functions remain experimental. Those boundaries make it a candidate for an individual teacher's controlled preparation workflow. They do not establish readiness for deployment across a school.</p><p>The documentation is candid about uncertainty: a polished lesson can still have missing evidence, unsupported answers or unsuitable pacing. The value to assess is whether its structured workflow reduces the teacher's total editing effort. No lesson generation or classroom evaluation was performed for this report. <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/README.md\">Project README</a></p>"
+    },
+    {
+      "id": "source-to-bundle",
+      "title": "From source folder to lesson bundle",
+      "html": "<p>The documented ingestion path accepts PDF, DOCX, PPTX, text and Markdown files. It extracts text, builds a retrieval index and derives a teaching-style profile. A request can then specify the topic, class, learning objective and required materials. This gives the generator a defined source context, although the getting-started guide warns that extraction can lose layout or source-location information.</p><p>The bundle tool is intended to produce teacher and student DOCX documents plus PPTX slides. Optional extensions add differentiated materials, games and other formats. The README explicitly avoids guaranteeing a fixed file count: successful outputs depend on the request, selected model, installed extras and exports. The right completion check is therefore to open the actual files and compare them with the requested bundle.</p><p>For an initial trial, a small permitted source packet offers a useful advantage: the teacher already knows the material well enough to spot invented quotations, missing context and answer-key errors. Inspecting the extracted text before generation also separates an ingestion problem from a model's reasoning mistake. <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/docs/GETTING_STARTED.md\">Getting started</a></p>"
+    },
+    {
+      "id": "recoverable-work",
+      "title": "Recovery has a defined boundary",
+      "html": "<p>The documented v9.18.2026.1 revision consolidates entry points around Python and adds queued lesson jobs with saved generation phases. The dashboard's Jobs page can submit a bundle, but a separate worker must be running for the queue to progress. This is an operational requirement, not a background service that the existence of a dashboard guarantees.</p><p>The getting-started guide says an interrupted worker can be recovered after five minutes without a heartbeat. A resumed draft reuses matching completed phases. This could save repeated work when a long bundle stops between stages, though the amount of time or model spend saved has not been measured here. The README also distinguishes this recovery from arbitrary chat sessions and external publishing, which are not automatically resumed.</p><p>Cancellation has a second limit: it cannot undo a request already running at the model provider. A useful evaluation should therefore include a deliberately interrupted draft and compare the saved phase, resumed result and total billed work. The feature is valuable precisely when its boundaries are visible to the person operating it. <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/docs/GETTING_STARTED.md\">Recovery instructions</a></p>"
+    },
+    {
+      "id": "models-and-access",
+      "title": "Local files, separate inference choices",
+      "html": "<p>Claw-ED documents adapters for Anthropic, OpenAI, Google Gemini, Ollama and OpenRouter. Provider support and tool behavior vary by task. Hosted model usage is billed separately, while local inference requires a downloaded model and enough memory. The inspected documents do not establish a universal RAM or GPU requirement: hardware fit depends on the chosen model and its runtime.</p><p>Keeping configuration and working data locally does not make every request local. Hosted providers receive selected content; search, image retrieval and configured integrations can contact additional services. A local inference workflow requires a local model and deliberate choices about network-dependent features. This distinction matters when deciding which teaching materials can enter a trial.</p><p>The original project code carries an MIT license, allowing modification and redistribution subject to its notice conditions. That permission does not supply model access, pay API charges or replace third-party component terms. Its openness is useful for inspecting and adapting the workflow, while deployment and provider choices remain separate responsibilities. <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/README.md\">Provider boundaries</a>; <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/LICENSE\">MIT license</a></p>"
+    },
+    {
+      "id": "practical-uses",
+      "title": "Where a small trial could help",
+      "html": "<p>A history teacher could import a short source collection, request a lesson with a supported question set, then edit the teacher plan and student handout together. Reviewing both artifacts against the same evidence is more informative than judging the fluency of either one in isolation. A science teacher could use the same process for a worked explanation, checking notation and every answer before distribution.</p><p>For an educational website or application, the local dashboard and API offer an integration surface to investigate. The documented student embed features should be treated as experimental, with authentication and sharing setup examined before any student use. For a teaching video, reviewed slide exports could become presentation material; the sources do not establish a video renderer, narration engine or automatic production pipeline.</p><p>These are proposed applications of the documented workflow. They are not observed examples of teaching effectiveness, export fidelity or integration reliability. Keeping the first trial small makes those questions answerable.</p>"
+    },
+    {
+      "id": "evaluation",
+      "title": "Measure the correction work",
+      "html": "<p>The project's evaluation protocol separates software tests from teaching quality. Default tests use synthetic curriculum examples and mocked providers. They can check request contracts, cancellation and checkpoint behavior without showing whether a live model produces a usable lesson.</p><p>The protocol instead asks a teacher to assess factual accuracy, source fidelity, answer support, reading level, classroom use, editing effort and recovery. For comparisons, it holds the source packet, objective, grade, prompt, schema and token budget fixed, and records model identity, date, failures and costs. This is a useful evaluation design, not evidence that such a comparison has already passed.</p><p>Claw-ED is worth a bounded trial for teachers who can manage a Python application and want editable artifacts. Its strongest documented qualities are a coherent preparation workflow and explicit limits. Adoption should turn on the correctness of the files and the time needed to repair them. <a href=\"https://github.com/SirhanMacx/Claw-ED/blob/main/docs/EVALUATION.md\">Evaluation protocol</a></p>"
+    }
+  ],
+  "useCases": [
+    "Draft teacher plans, student documents and slides from a permitted source packet.",
+    "Compare model-generated lessons using teacher correction time and source fidelity.",
+    "Explore local educational-app integration after checking authentication and experimental sharing limits."
+  ],
+  "limitations": [
+    "No software installed or executed; no model inference, generated files, classroom outcomes or performance tested.",
+    "Single-teacher beta; student-facing features are experimental.",
+    "Hosted model use and integrations can transmit selected content and carry separate costs.",
+    "No universal hardware minimum established; local model memory needs vary.",
+    "Existing version-labelled beta; its release date is unknown, so no November launch is inferred."
+  ],
+  "sources": [
+    {
+      "id": "repos-claw-ed-connector",
+      "title": "Claw-ED README",
+      "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/README.md",
+      "accessedAt": "2026-11-03T19:36:37.723Z",
+      "publishedAt": null,
+      "locator": "README: Start with one lesson; available features; recovery; models and privacy; development",
+      "supports": "Documented workflow, beta status, provider boundaries and limits."
+    },
+    {
+      "id": "claw-ed-docs-getting-started-md",
+      "title": "Claw-ED getting-started guide",
+      "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/docs/GETTING_STARTED.md",
+      "accessedAt": "2026-11-03T19:36:57.132Z",
+      "publishedAt": null,
+      "locator": "Steps 1–5; worker recovery and cancellation paragraphs",
+      "supports": "Prerequisites, source extraction caveats and recovery behavior."
+    },
+    {
+      "id": "claw-ed-docs-evaluation-md",
+      "title": "Claw-ED evaluation protocol",
+      "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/docs/EVALUATION.md",
+      "accessedAt": "2026-11-03T19:36:56.913Z",
+      "publishedAt": null,
+      "locator": "Opening paragraph; comparison design; teacher rubric",
+      "supports": "Distinction between synthetic software tests and teacher-scored outcomes."
+    },
+    {
+      "id": "claw-ed-license",
+      "title": "Claw-ED MIT license",
+      "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/LICENSE",
+      "accessedAt": "2026-11-03T19:36:56.633Z",
+      "publishedAt": null,
+      "locator": "Grant, notice condition and warranty disclaimer",
+      "supports": "Code permissions and notice conditions; not model/provider rights."
+    }
+  ],
+  "images": [],
+  "judgment": "Promising for a narrow teacher-led trial focused on editable outputs and measurable correction effort; insufficient evidence for a school-wide readiness or teaching-quality claim.",
+  "researchNote": "Public README and maintainer profile inspected in Chrome on November 3, 2026. Repeated browser transport failures prevented complete README DOM archival, so its exact text and three linked documents were preserved through GitHub connector supplements. This is documentary evaluation only. Report dates describe discovery, not a new product launch."
+}

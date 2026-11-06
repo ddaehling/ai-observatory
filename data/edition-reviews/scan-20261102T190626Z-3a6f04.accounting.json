@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261102T190626Z-3a6f04",
+  "recordedAt": "2026-11-06T05:35:05Z",
+  "status": "reconciled",
+  "window": {
+    "start": "2026-10-27T20:47:48Z",
+    "end": "2026-11-02T19:06:26Z"
+  },
+  "acquisitionDates": [
+    "2026-11-02",
+    "2026-11-03"
+  ],
+  "editorialIntegrationDate": "2026-11-06",
+  "freshResearchOnIntegrationDate": false,
+  "sources": {
+    "expected": 177,
+    "accessSuccesses": 171,
+    "accessFailures": 6,
+    "originalFeedAcquisitions": 4,
+    "browserListingWindowsComplete": 13,
+    "primaryManualPartialResults": 154,
+    "partialBrowserObservationsIncludingFeedSupplements": 158,
+    "newLedgerRecords": 43,
+    "newRecurringMonitors": 6,
+    "newStoryAndReferenceRecords": 37,
+    "failedSources": [
+      {
+        "id": "seed-fish-audio",
+        "name": "Fish Audio",
+        "url": "https://fish.audio/",
+        "reason": "Public homepage redirected to an authentication page. No model catalogue/history was accessible; no login attempted."
+      },
+      {
+        "id": "seed-hugging-face-trending",
+        "name": "Hugging Face Trending",
+        "url": "https://huggingface.co/models?sort=trending",
+        "reason": "Chrome transport failed on initial visit and one focused repair; no successful source capture. No absence inference."
+      },
+      {
+        "id": "social-source-52bbaa80db2ade4a",
+        "name": "Observed resource: https://github.com/ValerioDolci/capy-flash/releases",
+        "url": "https://github.com/ValerioDolci/capy-flash/releases",
+        "reason": "Chrome transport failed on initial visit and one focused repair; no successful source capture. No absence inference."
+      },
+      {
+        "id": "repos-publisher-273f198fd33e006c",
+        "name": "VoiceStudio developer repositories",
+        "url": "https://github.com/debpalash",
+        "reason": "Chrome transport failed on initial visit and one focused repair; no successful source capture. No absence inference."
+      },
+      {
+        "id": "social-publisher-5749d953377766f0",
+        "name": "ReelStack Lab",
+        "url": "https://thereelstack.com/lab",
+        "reason": "ReelStack Lab navigation failed, then focused final repair batch timed out/reset browser runtime. No complete content capture available; access failure is not evidence of no updates. Actual retrieval is November 3; saved run ends November 2."
+      },
+      {
+        "id": "social-source-e5c2ee5b43634f18",
+        "name": "ToolRank new releases",
+        "url": "https://www.gettoolrank.com/new-releases/",
+        "reason": "GetToolRank new-releases navigation/extraction failed; final repair batch ended in browser reset and rebind failure before usable capture. No absence claim. Actual retrieval is November 3; saved run ends November 2."
+      }
+    ],
+    "originalCollectorSourceAdditions": 11,
+    "resumedBrowserSourceAdditions": 32
+  },
+  "candidates": {
+    "newlyDiscovered": 27,
+    "feed": 15,
+    "browser": 12,
+    "selectedEarlierUnresolved": 25,
+    "additionalEarlierCreativeReconsiderations": 4,
+    "officialListingReobservations": 4,
+    "distinctCandidatesAssessedWithDecisions": 56,
+    "distinctCandidatesTouchedIncludingReobservations": 60,
+    "finalAssessedDispositions": {
+      "needs_review": 41,
+      "included": 3,
+      "excluded": 12
+    },
+    "newRunCandidateDispositions": {
+      "excluded": 8,
+      "needs_review": 17,
+      "included": 2
+    }
+  },
+  "publishers": {
+    "considered": 26,
+    "added": 8,
+    "updated": 4,
+    "rejected": 1,
+    "deferred": 13,
+    "excludedUnspecifiedMirrorClasses": 1,
+    "catalogueSize": 32,
+    "discoveryQueue": 9
+  },
+  "reports": {
+    "new": [
+      "openai-academy-learning-paths",
+      "claw-ed",
+      "elevenlabs-cue-alignment"
+    ],
+    "revised": [],
+    "protectedReportsUnchanged": 43,
+    "approvedTotal": 46,
+    "reviewInvocations": 4,
+    "currentReviewRecords": 6,
+    "reviewModel": "gpt-6-astra",
+    "reviewEffort": "high",
+    "reviewContexts": "separate fresh contexts, blind to the other reviewer"
+  },
+  "verification": {
+    "independentAccountingAgent": "/root/accounting_audit_20261106",
+    "ledgerScriptSha256": "f196e934ad993f0198f45262a6f8e1569466a434a273dd72ef3a7518f11f0c86",
+    "ledgerPlanInputHash": "9ed0f83641fbf726f7fba07e5d6b3f7f1f28a22252231ccd8975cc517bb5b70b",
+    "cataloguePrimaryCaptureChecks": 41,
+    "catalogueSupportingCaptureChecks": 4,
+    "allExistingReportAndEvidenceHashesPreserved": true,
+    "reportGateValid": true,
+    "runCompleted": true,
+    "strictBuildApprovedReports": 46,
+    "catalogueValidatorWithCaptures": true,
+    "unitTestsPassed": 100,
+    "renderedInspection": [
+      "index",
+      "all three new report routes",
+      "Cue full text, citations, section anchor and both reviewer rationales",
+      "edition source and candidate counts"
+    ]
+  },
+  "materialLimits": [
+    "Sources were acquired November 2–3; editorial work on November 6 does not refresh them.",
+    "Six monitored entrypoints failed access; most browser histories remain partial. Complete listing windows do not establish verification of every linked article.",
+    "Post-window leads remain explicitly dated after the saved November 2 window.",
+    "New reports use documentary evidence; no product installation, endpoint execution, classroom outcome or independent vendor benchmark replication was performed.",
+    "Unvisited publisher leads remain provisional; posting cadence is limited to observed examples."
+  ],
+  "resources": {
+    "tokenUsage": null,
+    "monetaryCost": null,
+    "reason": "Exact usage and cost accounting are not exposed by the available research/review tools."
+  },
+  "sourceAdditionComparison": "Compared with previously published commit e9db377c9e73b1df06b855624a5e96d68cf61217; 11 initial collector records plus 32 resumed-browser records."
+}

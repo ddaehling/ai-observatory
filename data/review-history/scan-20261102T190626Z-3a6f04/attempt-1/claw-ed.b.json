@@ -1,0 +1,33 @@
+{
+  "reportId": "claw-ed",
+  "reviewerId": "/root/astra_review_20261106_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:21:30.165230Z",
+  "reportHash": "37c315436fbb2b9304ed62ee77b1d33bbf63f1d14fdf0ebd35307979ab644dc1",
+  "evidenceHash": "fc61dabfc66e61f25b01b028adb5d4534d169417fbd761ddfef4480e7cb965ea",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 6,
+    "impact": 4,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The README and getting-started archive document a coherent import, retrieve, draft, review and editable-export workflow for individual teachers. Recovery instructions and a teacher-scored evaluation protocol make a bounded trial actionable. Python operation, model configuration and unmeasured correction effort constrain broader accessibility; no generated artifact was inspected.",
+    "impact": "Editable lesson bundles, provider choice and resumable phases could improve a defined preparation workflow. The evidence remains an existing single-teacher beta with synthetic/mocked software tests, no measured classroom benefit and no established wider adoption. It is a potentially useful domain application rather than demonstrated substantial progress in AI development.",
+    "novelty": "The combination of curriculum retrieval, teaching-style context, editable bundles and saved generation phases is meaningfully tailored to teaching. The archives do not show that these components or orchestration methods are new relative to alternatives, nor provide controlled comparative outcomes. Differentiation is mostly workflow integration.",
+    "maturity": "Documentation specifies Python requirements, worker operation, recovery thresholds, authentication boundaries and known experimental areas. However, this is explicitly beta and single-teacher, exports and provider behavior can vary, and no installation, live generation, interruption test or classroom assessment was performed. Synthetic tests cannot establish dependable pedagogical output.",
+    "openness": "The original code has a supplied MIT license, documented local operation, multiple provider adapters and editable DOCX/PPTX outputs. These offer strong inspectability, adaptation and portability. Model weights/access, provider charges and third-party terms remain separate, and a fully local deployment still requires deliberate inference and network choices."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Required bounded date fix: in sections[id=recoverable-work].html replace “The documented September revision” with “The documented v9.18.2026.1 revision”. The supplied README provides that version identifier and its changes, but no dated release/changelog archive establishes when the revision shipped.",
+    "Required matching qualifier fix: replace the limitations item “Existing September-version baseline, not a November launch.” with “Existing v9.18.2026.1 baseline; the inspected sources do not establish its initial release date.” Keep publishedAt null. This removes calendar inference without requiring new research.",
+    "Apart from the version-to-date inference, substantive capabilities and limitations are supported by the supplied README, getting-started guide, evaluation protocol and MIT license. Proposed education/app/video uses remain clearly separated from observed results.",
+    "The packet reports 982 body words. Apply the final paired-mean impact length rule independently of the date repair and retain documentary-only and November 3 acquisition qualifications."
+  ]
+}

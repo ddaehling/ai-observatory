@@ -1,0 +1,31 @@
+{
+  "reportId": "elevenlabs-cue-alignment",
+  "reviewerId": "/root/astra_final_20261106_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:29:05.519461Z",
+  "reportHash": "169bb493522be7b905c86d5701a3dc5d201aa37662f5e21c69ca045d19b459c1",
+  "evidenceHash": "6c3b8f594e46f1d066f17dac15013e56bcea922381a125b8ab99dee1a1f1634f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The API capture verifies audio-plus-text input and word/character timing output with loss fields, while the quickstart establishes an accessible hosted integration path. This is a useful component for lesson navigation, captions, and narrated vocabulary. The report gives a concrete small pilot, revision handling, playback checks, and correction-time comparisons, explicitly identifying these as proposed application responsibilities rather than tested Cue features. Corrected text, human review, and separate presentation/export implementation remain necessary.",
+    "impact": "The research capture describes deployment throughout Scribe and reports substantially improved alignment accuracy and processing speed on long recordings, making a meaningful advance within speech tooling plausible. That supports domain-level significance of 5, not field-wide significance: the measurements are vendor claims, with unresolved benchmark-language wording and no independent replication or end-to-end test. October 28 is properly described as the research publication date, not first availability. Approximately 1960 body words fit the 1800–2200 range associated with this assessment, subject to the final independent mean impact.",
+    "novelty": "The vendor describes a single character-level model handling long recordings in one pass, with reported comparisons against other aligners and a bounded multilingual song experiment. This is meaningful differentiation within an established forced-alignment task. The report appropriately avoids treating word-level benchmark labels as proof of character-level accuracy, does not turn architectural arbitrary-length language into unlimited API access, and preserves the conflicting 29 versus more-than-90 language descriptions. Undisclosed internals and unreplicated tests limit a higher novelty score.",
+    "maturity": "Production use is explicitly described by ElevenLabs, and the saved reference and quickstart provide a concrete endpoint, request and response schema, authentication workflow, and operational limits. These support more than a speculative prototype. Material uncertainty remains: the overview allows 3 GB while the endpoint says less than 1 GB, language coverage is inconsistent, diarization is unsupported, and no API or audio test was performed. The report accurately gives conservative pilot guidance without claiming that it proves accepted limits or reliability.",
+    "openness": "The public API contract and timing arrays offer interface transparency and some application-level portability, but the inspected path is a hosted API requiring service access. No Cue weights, local runtime, model license, or reproducible training package is supplied in the captures. SDK availability does not provide model openness. The report keeps these distinctions explicit and correctly avoids presenting the Scribe v2 price of $0.22 per hour as a verified standalone Cue quote."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking product uncertainties are accurately exposed: 3 GB versus less-than-1-GB file limits, ambiguous language scope, unsupported diarization, and an unconfirmed Cue-specific billing basis. None should be silently resolved from the vendor benchmark narrative.",
+    "All five primary captures are vendor material dated November 3. Vendor production and benchmark descriptions are not independent validation; the report explicitly says that API behavior, audio quality, and benchmarks were not tested. November 6 editorial integration adds no fresh research evidence."
+  ]
+}

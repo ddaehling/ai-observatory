@@ -1,0 +1,32 @@
+{
+  "reportId": "claw-ed",
+  "reviewerId": "/root/astra_review_20261106_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:20:40.142203Z",
+  "reportHash": "37c315436fbb2b9304ed62ee77b1d33bbf63f1d14fdf0ebd35307979ab644dc1",
+  "evidenceHash": "fc61dabfc66e61f25b01b028adb5d4534d169417fbd761ddfef4480e7cb965ea",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 3,
+    "novelty": 4,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The README and getting-started guide support a concrete import, draft, review and editable-export workflow for a teacher, including the separate worker requirement and recovery boundaries. The report gives a credible small trial and focuses on source fidelity and correction effort rather than polished prose. Practical value remains prospective because no generated bundle or classroom use was inspected.",
+    "impact": "This is a narrowly scoped single-teacher beta that integrates existing model providers and document workflows. Saved generation phases and editable bundles may improve preparation work, but no adoption scale, measured time savings or educational outcomes substantiate a wider effect on AI development. The evidence supports a useful niche increment.",
+    "novelty": "The combination of curriculum ingestion, a teaching-style profile, editable lesson bundles and bounded phase recovery offers some practical differentiation. The sources do not establish a new model, general orchestration breakthrough or comparative advantage over other teaching tools. Its distinctive contribution is integration and workflow discipline.",
+    "maturity": "Installation requirements, provider boundaries, worker recovery and an evaluation protocol are documented in detail. The same sources explicitly identify beta status, one teacher per instance, experimental student features and default tests using synthetic material and mocked providers. With no execution, export inspection or live-model evaluation, readiness remains below the rubric midpoint for demonstrated usable reliability.",
+    "openness": "The archived MIT license explicitly allows modification and redistribution subject to notice conditions, and the repository documents development commands, provider choices and editable DOCX/PPTX outputs. These provide strong inspectability and portability. The score does not imply access to hosted-model weights, training data or reproducible model behavior; third-party and provider terms remain separate, and the report did not audit the full implementation."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No installation, model inference, checkpoint-recovery test or teacher-reviewed lesson was performed; the report states this clearly and treats its examples as proposals.",
+    "The repository links point to a moving main branch. The frozen primary captures preserve the reviewed text and their hashes were verified, but future readers may see changed documentation.",
+    "The available sources justify a teacher-led controlled trial, not school-wide readiness, reliable student delivery or a fully offline workflow. Those limits are accurately presented."
+  ]
+}

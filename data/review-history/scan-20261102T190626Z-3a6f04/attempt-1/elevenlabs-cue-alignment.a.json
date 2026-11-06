@@ -1,0 +1,33 @@
+{
+  "reportId": "elevenlabs-cue-alignment",
+  "reviewerId": "/root/astra_review_20261106_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:20:40.142203Z",
+  "reportHash": "d5e1062bc8e77c735eac02931525bf3e8bb85cdadbce2832b4067a16a6c5188c",
+  "evidenceHash": "6c3b8f594e46f1d066f17dac15013e56bcea922381a125b8ab99dee1a1f1634f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The API schema and quickstart support a clearly defined component: supplied audio and transcript in, word and character timings out. The report identifies useful lesson-player, vocabulary, caption and archive applications while explaining the remaining transcription, caption grouping, editing and playback work. These are actionable integration choices, tempered by untested latency, billing and language-specific quality.",
+    "impact": "The vendor documents Cue as a deployed component behind Scribe and reports improved full-recording alignment with much faster processing than its tested alternatives. If those results hold for intended material, the component can meaningfully improve the cost and quality of speech-timing workflows across several products. That supports domain-level significance at the rubric midpoint, while missing independent replication, unclear benchmark language scope and absent end-to-end measurements rule out a broader or stronger impact claim.",
+    "novelty": "Single-pass long-recording alignment, character-level output and the reported combination of speed and multilingual accuracy constitute a potentially meaningful distinctive capability within forced alignment. Forced alignment itself is established, and the packet provides neither released model internals nor independently reproduced comparisons. The score credits the documented combination without treating promotional precision or unlimited-length language as proven.",
+    "maturity": "The explicit request/response contract, SDK quickstart and vendor-described deployment behind Scribe support an available operational service. Confidence is materially reduced by the 3 GB versus less-than-1 GB conflict, inconsistent language descriptions, unsettled text-format wording and absence of an API trial. The report presents these limitations candidly instead of inferring dependable production behavior from benchmark scores.",
+    "openness": "Public documentation, an accessible API and structured timing output allow integration and some output portability. The inspected sources provide no downloadable Cue weights, local runtime, model license, training package or reproducible benchmark artifacts. The hosted service dependency and unverified private-deployment options keep inspectability and reproducibility low despite a usable client interface."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Vendor timing and GPU-speed claims are not independently reproduced; the report correctly separates these from end-to-end latency and avoids claiming character-level benchmark validation.",
+    "The unresolved file-size and language statements are genuine conflicts in the captured official sources. Retain the conservative integration advice and do not silently reconcile them without new evidence.",
+    "The $0.22 per hour figure is documented for Scribe v2, not an explicit Cue pricing row; retaining the report's billing qualification is essential.",
+    "My independent impact score is 5. The final two-reviewer mean, not the current draft length, must determine the publication word band. If that mean is at least 5, expand this 944-word body to the required band and obtain reviews of the resulting new hashes before publication."
+  ]
+}

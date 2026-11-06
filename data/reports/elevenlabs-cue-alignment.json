@@ -1,0 +1,113 @@
+{
+  "id": "elevenlabs-cue-alignment",
+  "title": "Cue puts trusted transcripts on a timeline, with API limits that matter",
+  "entity": "ElevenLabs Cue",
+  "category": "Creative workflows",
+  "tags": [
+    "forced alignment",
+    "audio",
+    "captions",
+    "education",
+    "hosted API"
+  ],
+  "summary": "A documented hosted aligner can turn corrected transcripts into word and character timing data for lessons, players and video captions. The promising vendor results come with unresolved file-size and language documentation.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-28",
+  "discoveredAt": "2026-11-03T19:23:16.484Z",
+  "updatedAt": "2026-11-06T05:26:23.618577Z",
+  "officialUrl": "https://elevenlabs.io/blog/cue-aligner",
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "A useful timing layer, already in production",
+      "html": "<p>A good transcript can still make a bad viewing experience if its words appear late or highlights jump ahead of the speaker. Cue addresses that timing problem. ElevenLabs’ October 28 research article describes a forced aligner already serving its Scribe transcription pipeline and available through a separate API. This is a newly researched entry in this observatory, not evidence that Cue first became available that day.</p><p>The distinction matters for builders: transcription supplies the words; forced alignment places a supplied transcript against the recording. A teacher can correct a transcript once, then obtain word and character timings for captions, read-along text or navigation. Cue does not establish that the transcript is factually correct, identify every speaker, or turn an inaccurate script into an accurate account of what was said. Its practical value is a reusable timing layer between audio and the interface that presents it. <a href=\"https://elevenlabs.io/blog/cue-aligner\">Research disclosure</a> explains the deployed role.</p>"
+    },
+    {
+      "id": "interface",
+      "title": "What a developer actually receives",
+      "html": "<p>The documented endpoint accepts an audio file and text as a multipart request. Its response contains character and word arrays with text, start and end values, plus an overall alignment loss and a word-level loss field. These are building blocks for a player, not a finished subtitle file or edited video. An application still has to group words into readable captions, choose line breaks, implement playback and export its chosen format.</p><p>The <a href=\"https://elevenlabs.io/docs/eleven-api/guides/cookbooks/forced-alignment\">official quickstart</a> uses an account API key and a hosted request through the SDK. Installing that client does not make Cue a local model. The inspected sources provide no downloadable Cue weights, model license, local inference instructions or reproducible training package. They also do not establish a Cue-specific private deployment option. Keep those access questions separate from the fact that a Python or TypeScript application can call the service. We reviewed the <a href=\"https://elevenlabs.io/docs/api-reference/forced-alignment/create\">API contract</a> but submitted no request.</p><p>A proposed integration should preserve three things together: the exact recording, the exact submitted text and the returned alignment. Give that combination a revision identifier in the application. This is an application design recommendation, not a Cue versioning feature. It makes a later error explainable: a reviewer can distinguish a questionable boundary from a timestamp accidentally attached to a different recording or transcript. Keep the original response available alongside any manual corrections rather than silently replacing the evidence of what the service returned.</p><p>The loss fields deserve similar care. Their presence does not by itself establish a probability that a word is correct or a threshold for automatic publication. The inspected reference supplies no decision rule for accepting captions from those values. A pilot could retain them as diagnostics and compare them with reviewed errors before deciding whether they help prioritize inspection. Until then, a low-looking number should not bypass listening.</p><p>Presentation adds a separate layer. Several words might form one caption, while a sentence link could jump to its first word. The application would need an explicit mapping from displayed text to returned timing entries. If it removes repetitions or rewrites a sentence for readability, it should preserve the spoken transcript separately instead of assuming the rewritten text has the same alignment.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "Three documentation gaps affect implementation",
+      "html": "<p>File limits conflict. The capability overview permits 3 GB, while the endpoint reference requires a file smaller than 1 GB. The overview also lists a ten-hour audio limit and 675,000 text characters. Until the provider reconciles these pages, a conservative integration would stay below the smaller file threshold and validate representative uploads before promising a production limit. The research article’s single-pass, arbitrary-length language is an architectural claim, not an unlimited service contract.</p><p>Language coverage is similarly unsettled. The research article describes a 29-language benchmark, then later says more than 90 benchmark languages. Meanwhile, the overview still labels its 29-language list as multilingual v2. These statements cannot support a clean, current Cue language guarantee. Finally, the overview requests plain text, while the endpoint uses broader wording about text format. Both reject diarization support. Keep speaker labels and structured subtitle metadata outside the text supplied for alignment. These discrepancies are visible in the <a href=\"https://elevenlabs.io/docs/overview/capabilities/forced-alignment\">capability overview</a> and endpoint reference.</p><p>These gaps change the order of evaluation. First choose a small recording and language representative of the actual project, then check whether the documented request produces a usable response. Only after that should the pilot approach longer files or more varied material. Staying under the smaller file limit reduces one uncertainty; it does not guarantee acceptance. File size, duration and text length are distinct constraints, so checking one cannot stand in for the others.</p><p>For interviews or classroom discussion, retain speaker identities in a separate reviewed layer if the product needs them. The standalone request should contain the words to align, following the overview’s plain-text guidance. Any relationship between those returned times and a separate speaker annotation would be the application’s responsibility. The sources do not promise that alignment alone can resolve overlapping speakers or repair a mistaken speaker assignment.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Promising vendor results, with boundaries",
+      "html": "<p>ElevenLabs reports an average timing error of 179 milliseconds on full recordings, using a benchmark built from real requests and counting unplaced words as errors. That is useful evidence of the problem the team optimized, but the article is the vendor’s account, not an independent replication. Its character-level output also should not be mistaken for character-level accuracy established by a word-labeled benchmark.</p><p>The reported half-second processing time for one hour of audio refers to the company’s production GPU. It does not specify a complete client upload, queue, processing and download budget, nor establish throughput on a developer’s laptop. The song experiment is narrower still: 22 songs across four named languages, rather than arbitrary music. These results justify a targeted trial with difficult recordings; they do not settle performance for noisy classrooms, unfamiliar names, overlapping speakers or every language. We did not listen to generated examples, run the API or reproduce any benchmark. The <a href=\"https://elevenlabs.io/blog/cue-aligner\">research article</a> remains the source of these claims.</p><p>The benchmark’s treatment of missing words matters because a system that produces timings only for easy passages could otherwise look accurate while leaving important gaps. Counting omissions as errors is a useful safeguard in the reported methodology. It still does not reveal the distribution of failures in the intended application. A mean error can conceal a small set of badly misplaced words; conversely, a noticeable average offset may matter differently for sentence navigation and word-by-word highlighting. Those are interpretation limits, not evidence that Cue exhibits either pattern.</p><p>A local evaluation plan should therefore retain both coverage and boundary error. Ask how much approved text received usable timings, where the most disruptive mistakes occurred, and whether errors clustered around particular speakers, languages or recording conditions. Review boundaries near the beginning, middle and end rather than inspecting only an appealing opening passage. Such checks would test the vendor’s claims against the builder’s material without turning the vendor’s aggregate number into an acceptance threshold. The saved article does not provide an independent result for this proposed pilot.</p>"
+    },
+    {
+      "id": "uses",
+      "title": "Four concrete building opportunities",
+      "html": "<p>A concrete first pilot could use one ten-minute lesson recorded by its instructor, with permission to process the audio through the hosted service. The teacher would first check the transcript against the recording, including names, numbers, repeated phrases and corrections spoken aloud. Save that approved version before alignment. The proposed output would be a lesson player with a readable transcript, sentence replay and optional word highlighting, plus a caption export for the same lesson video. This is a suggested evaluation, not a workflow executed for this report.</p><p>Start by reviewing the returned timings in context. Choose passages with ordinary narration, pauses and the most difficult pronunciation in the lesson. Listen around each selected boundary and record whether the displayed word begins too early, too late or at an acceptable point for the intended presentation. Also inspect the full lesson for missing or unusable segments. Define tolerances before judging the output; a navigation link and a word highlight serve different purposes and need not share one timing threshold.</p><p>The player then needs its own acceptance checks. Clicking a sentence should reach the intended spoken passage, seeking through the recording should update the displayed position coherently, and highlighting should remain understandable during pauses. These are application checks rather than capabilities guaranteed by Cue. Preserve a usable plain transcript and normal playback when a timing needs correction, so an alignment problem does not hide the lesson itself. Have the teacher review the completed experience, not just a table of timestamp values.</p><p>The same pilot can test revision handling. Correct a transcription mistake in a saved copy and create a new alignment for the changed text. Compare the new result with the earlier approved version before replacing it. By contrast, changing only caption line breaks may be handled in the presentation layer when the words and underlying recording remain identical. That is a proposed separation of responsibilities: spoken text, alignment and caption layout should have independently reviewable changes.</p><p>For the video version, generate caption groups from the reviewed timings and inspect the exported result in the final edit. A trim or rearrangement changes the timeline against which those times were meaningful. Either remap retained passages through the edit decisions and check every join, or align the finished audio again. Remapping is an editing operation the application must implement; no such Cue facility was established in the inspected sources. Re-recording narration should be treated as a new audio input, even if its script is unchanged.</p><p>Useful failure cases for this pilot include a mismatched transcript revision, a passage with missing timings and a response whose values cannot be placed sensibly on the recording. The proposed application should hold those passages for review rather than quietly publish them. A request failure should remain distinguishable from a successful response that needs correction. Document the fallback used and the time spent fixing each case; this report does not claim the API returns any particular failure pattern.</p><p>Once the lesson workflow is understood, a vocabulary app could use short licensed narration and checked text to make replayable examples. Character timings may support finer highlighting, but they do not establish phoneme accuracy. A searchable audio archive could similarly open a reviewed passage from a phrase match. In both extensions, the application still owns the search index, player, export format and accessible presentation. The documented response supplies timing data; these proposed products require their own implementation and validation.</p>"
+    },
+    {
+      "id": "decision",
+      "title": "When the hosted dependency is worth evaluating",
+      "html": "<p>Cue is most interesting when a project already has reliable text and needs timing at scale. If the text is missing, transcription remains an upstream task. If speaker identity is essential, the standalone alignment contract is insufficient. If audio must stay entirely on a local device, the inspected access path does not meet that requirement.</p><p>The overview ties alignment pricing to Speech to Text API rates; the November 3 <a href=\"https://elevenlabs.io/pricing/api?price.section=speech_to_text#pricing-table\">pricing page</a> displays $0.22 per hour for Scribe v2 and excludes taxes. Because it does not show a distinct Cue line, confirm which billing basis applies before treating that figure as a Cue quote. Upload permissions and rights to recordings remain the builder’s responsibility; API access grants no rights to third-party audio.</p><p>A useful evaluation would measure end-to-end delay and word-boundary errors on the intended material, record language-specific failures, and keep a human correction path. That focused test would establish whether Cue saves editing time. The documentation alone cannot.</p><p>Judge the pilot against the work it would replace. Record teacher review time, manual boundary corrections, failed or repeated requests, processing delay and the effort required to rebuild captions after an edit. Compare those with the existing captioning or transcript-navigation process on the same material. A fast alignment step is valuable only if the total preparation and correction burden improves. Keep the result specific to that recording, language and application; one successful lesson would support a next trial, not an assurance about an entire course or archive.</p>"
+    }
+  ],
+  "useCases": [
+    "Clickable lesson transcripts and read-along highlighting",
+    "Vocabulary replay from approved narrated material",
+    "Caption timing and edit-aware video finishing",
+    "Searchable audio archives with passage playback"
+  ],
+  "limitations": [
+    "Documentary review only; no API call, audio test or model execution.",
+    "Official pages disagree on file-size and language scope; diarization is unsupported.",
+    "Hosted API access is documented; no Cue weights or local runtime package were identified in inspected sources.",
+    "Vendor benchmark results do not establish end-to-end latency or independent quality."
+  ],
+  "sources": [
+    {
+      "id": "creative-cue-aligner",
+      "title": "How your transcript knows where each word is spoken",
+      "url": "https://elevenlabs.io/blog/cue-aligner",
+      "accessedAt": "2026-11-03T19:23:16.484Z",
+      "publishedAt": "2026-10-28",
+      "locator": "Introduction; What is forced alignment?; How Cue is different; Aligning songs",
+      "supports": "Deployed role, publication date and vendor benchmark claims"
+    },
+    {
+      "id": "creative-cue-docs",
+      "title": "Forced Alignment capability overview",
+      "url": "https://elevenlabs.io/docs/overview/capabilities/forced-alignment",
+      "accessedAt": "2026-11-03T19:24:07.137Z",
+      "publishedAt": null,
+      "locator": "Usage; Supported languages; FAQ limits and pricing",
+      "supports": "Public limits, language wording, unsupported diarization and pricing relation"
+    },
+    {
+      "id": "creative-cue-api",
+      "title": "Create Forced Alignment API reference",
+      "url": "https://elevenlabs.io/docs/api-reference/forced-alignment/create",
+      "accessedAt": "2026-11-03T19:27:02.585Z",
+      "publishedAt": null,
+      "locator": "Request; Response; Errors",
+      "supports": "Request/response schema and conflicting file limit"
+    },
+    {
+      "id": "creative-cue-cookbook",
+      "title": "Forced Alignment quickstart",
+      "url": "https://elevenlabs.io/docs/eleven-api/guides/cookbooks/forced-alignment",
+      "accessedAt": "2026-11-03T19:27:20.943Z",
+      "publishedAt": null,
+      "locator": "Using the Forced Alignment API",
+      "supports": "Hosted API-key workflow and SDK boundary"
+    },
+    {
+      "id": "creative-cue-pricing",
+      "title": "ElevenAPI pricing",
+      "url": "https://elevenlabs.io/pricing/api?price.section=speech_to_text#pricing-table",
+      "accessedAt": "2026-11-03T19:27:47.159Z",
+      "publishedAt": null,
+      "locator": "Scribe v2 card; Speech to Text API pricing table; tax note",
+      "supports": "Current displayed speech-to-text price, without distinct Cue quote"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful specialized timing component for builders who can use a hosted service, with adoption confidence limited by documentation conflicts and unreplicated vendor evidence.",
+  "researchNote": "Primary documentation observed November 3, 2026 while resuming the saved November 2 run. October 28 is the research publication date, not an established initial product launch. This documentary review did not call the API, run the model or reproduce benchmarks."
+}

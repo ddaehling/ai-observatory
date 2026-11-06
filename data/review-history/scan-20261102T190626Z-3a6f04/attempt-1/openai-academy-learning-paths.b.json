@@ -1,0 +1,32 @@
+{
+  "reportId": "openai-academy-learning-paths",
+  "reviewerId": "/root/astra_review_20261106_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:21:30.165230Z",
+  "reportHash": "9f2c964987a9aadf858de26f92af810b4a78df3f662bdfce2b5aa256ae0c5800",
+  "evidenceHash": "f7d21189f0d989e0303d35f8f64d4b0ff89d28c8b75d0cfc731a27a8a036a951",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 3,
+    "novelty": 3,
+    "maturity": 6,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "The public course and support archives give concrete entry points for educators and application builders, prerequisites, assessment mechanics and account/LMS constraints. The proposed source-backed teaching pilot and regression-evaluation exercise have identifiable outputs and acceptance checks. That is strong practical value, although no course was completed and no learning or productivity gain was measured.",
+    "impact": "The evidence establishes an expanded role-specific training portfolio and deployment guidance, not a technical advance in AI or demonstrated improvement in adoption outcomes. Potential benefit is accessible education and shared review habits. With no independent effectiveness evidence, its significance to AI development is modest.",
+    "novelty": "Role-based packaging, guided practice and badges provide a useful combination, but the archives do not demonstrate a novel pedagogy, new AI capability or differentiated measured outcome. The report correctly presents this as a September baseline rather than fresh November innovation.",
+    "maturity": "The sources describe available courses, prerequisites, support ownership, randomized assessments and credential recovery in considerable operational detail. That supports a documented usable offering. Unexplained duration discrepancies, no enrolled-course inspection and untested account/completion behavior prevent a high reliability judgment.",
+    "openness": "Free global access and public course descriptions provide meaningful entry and inspection. Enrollment is tied to a ChatGPT account, guidance is vendor-centered, and the help archive explicitly disallows current course export/LMS import with undated SCORM plans. Free access does not establish an open content license or portable course package."
+  },
+  "confidence": "high",
+  "concerns": [
+    "No blocking citation or scope defect found. The November 3 acquisition date, September 21 announcement date, documentary-only inspection and lack of independent outcomes are disclosed; November 6 updatedAt is editorial integration rather than a fresh scan.",
+    "The short evidence excerpts alone do not show every numerical/access detail, but the full supplied Help Center and course archives support the report. Preserve those archives and the acquisition-date qualifiers.",
+    "The packet reports 910 body words. Apply the final paired-mean impact length rule after independent ratings are combined; this review did not choose scores to fit the existing length."
+  ]
+}

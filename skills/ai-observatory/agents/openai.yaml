@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Observatory"
+  short_description: "Research AI news and grow an evidence-backed source catalogue"
+  default_prompt: "Use $ai-observatory to maintain the selected AI research observatory, expand its public source catalogue, and publish only reports that pass its review gates."

@@ -1,0 +1,119 @@
+{
+  "id": "openai-academy-learning-paths",
+  "title": "OpenAI Academy: choose a practical learning path and verify what completion means",
+  "entity": "OpenAI Academy",
+  "category": "Tools",
+  "tags": [
+    "education",
+    "evaluation",
+    "workflows",
+    "training"
+  ],
+  "summary": "A baseline review of the September learning-path expansion, with verified access, assessment and LMS limits, plus bounded exercises for educators and builders.",
+  "changeType": "baseline",
+  "publishedAt": "2026-09-21",
+  "discoveredAt": "2026-10-20T16:05:58Z",
+  "updatedAt": "2026-11-06T05:16:45.085075Z",
+  "officialUrl": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A practical learning portfolio, revisited",
+      "html": "<p>OpenAI expanded its Academy learning paths on September 21, 2026, adding role-specific learning for developers, leaders, educators and college students alongside workplace foundations. This is a baseline assessment of that older announcement, checked against public course and support pages on November 3. It is useful when a team needs a concrete starting exercise and shared review habits; it is not evidence that taking a course improves productivity. The portfolio is designed around OpenAI products, so its guidance also reflects a vendor's perspective. <a href=\"https://openai.com/index/expanding-openai-academy-with-new-learning-paths/\">Read the announcement.</a></p>"
+    },
+    {
+      "id": "access",
+      "title": "What you can access and what it costs",
+      "html": "<p>The <a href=\"https://help.openai.com/en/articles/20001270-openai-academy-courses\">current Help Center article</a> describes Academy courses as free, globally available to anyone with a ChatGPT account, and independent of workspace membership. Course browsing is public; starting a course and saving progress require ChatGPT sign-in. Gradual hosts enrollment and progress. This review inspected public pages without enrolling, completing activities or testing account behavior.</p><p>Choose the account deliberately before starting. The help page associates progress and credentials with the Academy signup email or the ChatGPT email used for sign-in, and says accounts cannot currently be linked or merged after beginning a course. Free course access should not be read as a promise of unlimited access to every product feature or API used in an exercise. Those entitlements and any execution costs need a separate check.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Start with one teaching task",
+      "html": "<p><a href=\"https://academy.openai.com/public/courses/ai-for-educators-lc8j1\">AI for Educators</a> is an intermediate, self-paced offering with content advertised in English and Portuguese. It expects some experience with ChatGPT and prompting, recommends AI Foundations first, and does not require prior Projects, Voice or Work experience. Learners bring a ChatGPT account, a lesson to improve and permitted source materials, or use the supplied school or higher-education example. Listed outputs include a session plan, a checked activity or assessment, and a reusable ChatGPT Project.</p><p>A useful pilot would begin with one learning objective and an attributable source passage. Draft a lesson and a short assessment, then ask a teacher to check each answer against the passage and the objective. Retain the original, the generated draft and the corrections. Success means the final activity tests the intended skill and has a verifiable answer key; a polished worksheet that rewards unsupported answers is a failure. This is a proposed application, not a completed course exercise.</p>"
+    },
+    {
+      "id": "builders",
+      "title": "Turn an application into an evaluation exercise",
+      "html": "<p><a href=\"https://academy.openai.com/public/courses/evaluate-ai-applications-pxds7\">Evaluate AI Applications</a> targets developers with software and API experience and an AI task or behavior they can evaluate. The public description covers representative test cases, evaluation choices, failure diagnosis and regression prevention through lessons and a guided lab. It offers a more concrete starting point than asking everyone to learn prompting without a product question.</p><p>For an app team, choose a document-question-answering feature and assemble a small, permission-cleared set of questions, sources and expected evidence. Compare the existing behavior with one proposed change. Save answers, supporting passages, failure categories and latency observations. The integration work remains yours: the course description does not provide a verified connector to your application. A credible acceptance check should include unanswered questions and misleading documents, so a model that guesses fluently does not pass simply by matching familiar examples.</p>"
+    },
+    {
+      "id": "web-video",
+      "title": "Make the learning useful on a website and in video",
+      "html": "<p>For a website, build a small internal learning page linking each role to the official course, its prerequisites and a local practice task. The <a href=\"https://academy.openai.com/public/clubs/champions-ecqup/resources/openai-academy-courses-champion-deployment-guide-2026-06-11\">deployment guide</a> recommends direct links and an identified support contact. Keep an accessible text version and check links periodically. Avoid promising embedded course delivery: the help page says content cannot currently be exported or imported into an organizational LMS. SCORM packages are planned, with no estimated availability date.</p><p>For video, a team could produce an original three-minute walkthrough of its own permitted teaching example: source material, first draft, teacher corrections and final activity. Pair the recording with reviewed captions and a transcript. The success check is whether viewers can trace each correction to the learning objective. This is a proposed communication artifact, not an Academy video-generation feature or permission to republish its course media. Recording, editing and accessible playback require separate tools.</p>"
+    },
+    {
+      "id": "badges",
+      "title": "Understand what completion proves",
+      "html": "<p>The <a href=\"https://help.openai.com/en/articles/20001270-openai-academy-courses\">assessment guidance</a> specifies 10–20 questions drawn from a 50-question bank, with a newly randomized selection for a retry. A badge requires completing the course and passing its matching assessment at 80% or higher; learners may take a course without the assessment. Accredible issues the credentials. Eligible Foundations, Codex and API pathways can also yield certificates of completion. Neither badges nor completion certificates are certifications or guarantees of future certification eligibility.</p><p>Completion has a workflow detail worth checking: finishing an activity or seeing 100% progress can still leave a completion action outstanding. The support guidance distinguishes the course, its assessment and the matching learning path. A missing badge should trigger those checks before treating it as a failed assessment. None of these credentials independently demonstrates that a learner can safely operate a particular production system.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "Run a bounded pilot and measure the work",
+      "html": "<p>Allow flexible learning time. The educator overview says 45 minutes while its pathway panel estimates 1 hour 5 minutes; the evaluation overview says approximately 70 minutes while its panel estimates 1 hour 40 minutes. The public pages do not explain the differences. Budget time for practice and review instead of presenting either number as a measured completion time.</p><p>The deployment guide suggests protected learning time, follow-up discussion and examples of application. Organizational reporting availability requires an account-team check; it is not a promised universal dashboard. Its explicit warning against treating usage growth as proof of course impact is sound. Judge a pilot by the quality of the revised lesson, evaluation set or workflow, recording reviewer effort and remaining failures alongside completion. Expand only when those artifacts justify the next step.</p>"
+    }
+  ],
+  "useCases": [
+    "Education: turn permitted lesson material into a teacher-reviewed activity and answer key.",
+    "Apps: compare an AI feature change against a small source-backed evaluation set.",
+    "Websites: provide role-specific official course links and local practice tasks.",
+    "Video: record an original example showing source material, corrections and final output."
+  ],
+  "limitations": [
+    "Public documentary inspection only; no enrollment, assessment completion or learning-outcome test.",
+    "All decisive sources are OpenAI-owned; no independent course-effectiveness evidence was obtained.",
+    "Course pages and support guidance were observed November 3; their current contents do not establish historical availability of every detail on September 21.",
+    "Overview durations differ from pathway estimates; reasons are unknown.",
+    "Free course access does not establish included API usage or entitlement to every demonstrated product feature.",
+    "LMS export/import is currently unavailable; planned SCORM availability has no date."
+  ],
+  "sources": [
+    {
+      "id": "source-2f8d9b98fc157bb3",
+      "title": "Expanding OpenAI Academy with new learning paths",
+      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+      "accessedAt": "2026-11-03T19:10:29.029Z",
+      "publishedAt": "2026-09-21",
+      "locator": "Choose a learning path; Bring OpenAI Academy courses to your organization",
+      "supports": "September portfolio expansion and role-specific learning intentions"
+    },
+    {
+      "id": "official-source-93e40782ed252621",
+      "title": "AI for Educators",
+      "url": "https://academy.openai.com/public/courses/ai-for-educators-lc8j1",
+      "accessedAt": "2026-11-03T19:19:51.549Z",
+      "publishedAt": null,
+      "locator": "Overview; Who this course is for; What you will need; badge requirements",
+      "supports": "Educator prerequisites, outputs, language support, timing discrepancy and badge threshold"
+    },
+    {
+      "id": "official-source-862fa68f8c97806a",
+      "title": "Evaluate AI Applications",
+      "url": "https://academy.openai.com/public/courses/evaluate-ai-applications-pxds7",
+      "accessedAt": "2026-11-03T19:23:23.534Z",
+      "publishedAt": null,
+      "locator": "Overview; What you will need; How the course works",
+      "supports": "Technical audience, representative evaluations, lab format, stated duration and pathway estimate"
+    },
+    {
+      "id": "official-source-c074cdc849e9e967",
+      "title": "OpenAI Academy courses",
+      "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "accessedAt": "2026-11-03T19:24:21.180Z",
+      "publishedAt": null,
+      "locator": "Availability; Access; Assessments; Pathway certificates; FAQ",
+      "supports": "Free course access, identity association, assessments, completion mechanics, certification distinction and LMS limits"
+    },
+    {
+      "id": "official-source-2e5f43c9747b1ba1",
+      "title": "OpenAI Academy courses: Champion deployment guide",
+      "url": "https://academy.openai.com/public/clubs/champions-ecqup/resources/openai-academy-courses-champion-deployment-guide-2026-06-11",
+      "accessedAt": "2026-11-03T19:21:49.617Z",
+      "publishedAt": "2026-06-12",
+      "locator": "Prepare access and support; Reinforce and measure; Use the signals available",
+      "supports": "Organizational rollout, reporting limits and caution against causal inference from usage"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful, bounded training starting point when a team evaluates the resulting work. Credential completion should not be mistaken for production competence or measured productivity.",
+  "researchNote": "Resumed an older learning-path candidate. Original event and discovery dates are retained; course and support details were observed November 3, 2026. Public pages were inspected without enrollment, assessment completion or software installation."
+}

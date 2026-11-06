@@ -1,0 +1,68 @@
+{
+  "runId": "scan-20261102T190626Z-3a6f04",
+  "recordedAt": "2026-11-06T05:18:47.244987+00:00",
+  "mechanism": "native collaboration.spawn_agent",
+  "packetSha256": "49ca4f1b11ad94e5729b1e8298da4835eb4ca873175682cccd4406b8e6caa447",
+  "reports": [
+    "openai-academy-learning-paths",
+    "claw-ed",
+    "elevenlabs-cue-alignment"
+  ],
+  "invocations": [
+    {
+      "reviewerId": "/root/astra_review_20261106_a",
+      "taskName": "astra_review_20261106_a",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "forkTurns": "none",
+      "blindToOtherReview": true,
+      "status": "reviews_received",
+      "reviewOutputSha256": "897ff65f37f73055b9bee181703f1a625a4d14ce2ec3c18404f96859de4325ac",
+      "attempt": 1
+    },
+    {
+      "reviewerId": "/root/astra_review_20261106_b",
+      "taskName": "astra_review_20261106_b",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "forkTurns": "none",
+      "blindToOtherReview": true,
+      "status": "reviews_received",
+      "reviewOutputSha256": "1731e9304d2e8321acaf01d6e8e367f0368e2eacca929b8e75cb80b1693e854a",
+      "attempt": 1
+    },
+    {
+      "reviewerId": "/root/astra_final_20261106_a",
+      "taskName": "astra_final_20261106_a",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "forkTurns": "none",
+      "blindToOtherReview": true,
+      "status": "reviews_received",
+      "attempt": 2,
+      "reports": [
+        "claw-ed",
+        "elevenlabs-cue-alignment"
+      ],
+      "packetSha256": "23f1e81b7e389dba24c4af32c0822035d9e4bbec66327cea5fac71da9e147bc6",
+      "reviewOutputSha256": "256b896a1f29f3ee1ccea7c93c8646734c3f2ebd67fe701e15c76a907f50d57d"
+    },
+    {
+      "reviewerId": "/root/astra_final_20261106_b",
+      "taskName": "astra_final_20261106_b",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "forkTurns": "none",
+      "blindToOtherReview": true,
+      "status": "reviews_received",
+      "attempt": 2,
+      "reports": [
+        "claw-ed",
+        "elevenlabs-cue-alignment"
+      ],
+      "packetSha256": "23f1e81b7e389dba24c4af32c0822035d9e4bbec66327cea5fac71da9e147bc6",
+      "reviewOutputSha256": "06b6c26daee547c4305955eb8daa7e84438d02cb801aabe6e4fc7d78666b8557"
+    }
+  ],
+  "updatedAt": "2026-11-06T05:32:22Z"
+}

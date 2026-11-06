@@ -1,0 +1,33 @@
+{
+  "reportId": "elevenlabs-cue-alignment",
+  "reviewerId": "/root/astra_review_20261106_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:21:30.165230Z",
+  "reportHash": "d5e1062bc8e77c735eac02931525bf3e8bb85cdadbce2832b4067a16a6c5188c",
+  "evidenceHash": "6c3b8f594e46f1d066f17dac15013e56bcea922381a125b8ab99dee1a1f1634f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented word/character timestamp response is directly useful for interactive lessons, vocabulary replay, captions and archive navigation. The report identifies the work an application still owns, distinguishes transcription from alignment and gives practical input and edit-handling advice. Actual quality, end-to-end delay and editing-time savings remain untested.",
+    "impact": "A deployed timing component with reported long-recording accuracy and production-GPU speed improvements has meaningful potential within speech and media workflows. The domain-wide value of better timing supports a moderate impact rating. Vendor-only comparisons, unclear language coverage and no independent reproduction prevent a larger significance claim.",
+    "novelty": "The vendor describes a single-pass long-recording system, character-level output and speed/accuracy improvements relative to tested aligners, with a limited song evaluation. This is a meaningful specialized differentiation, but forced alignment itself is established and the supplied material does not expose a reproducible architecture, dataset or training method. The 29-versus-90 language discrepancy is correctly retained as uncertainty.",
+    "maturity": "The research archive describes use in Scribe production, and the API reference plus SDK quickstart give a concrete request/response contract. This supports an available integration surface. Conflicting file limits and language wording, uncertain Cue-specific billing and the absence of live API validation prevent a stronger reliability rating; benchmark speed is not service latency.",
+    "openness": "Public API documentation and structured timing outputs make integration and downstream reuse possible. The inspected access path is hosted and API-key based; no Cue weights, model license, local runtime or reproducible training package is supplied. SDK access does not make the model open, and provider/billing dependence constrains portability."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking citation or factual-support defect found in the supplied corpus. Benchmark claims are attributed to ElevenLabs; October 28 is identified as disclosure rather than proven initial launch; November 3 acquisition and lack of live validation are explicit.",
+    "The operational uncertainty is material but honestly disclosed: less-than-1-GB versus 3-GB limits, 29 versus more-than-90 benchmark-language wording, multilingual-v2 labels, and pricing tied to Speech to Text without a distinct Cue quote. Preserve these limits in any expansion.",
+    "Length reconciliation is still required: the packet reports 944 body words and my independent impact rating is 5. If the final paired mean is 5 or above, this exact text cannot pass the publication length gate and must be expanded to 1,800–2,200 substantive words (for a mean of 5–7), then reviewed under new hashes. My approve verdict concerns the current evidence and editorial support, not an override of the final paired-mean length rule.",
+    "If expansion is needed, use the existing archives to develop the vendor benchmark design and its absent controls, separate upload/queue/compute timing, explain word/character/loss fields without treating loss as calibrated confidence, specify a human-reviewed timing pilot, and compare the documented role with separate transcription/diarization tasks. Do not invent measurements or resolve documentation conflicts by assumption."
+  ]
+}

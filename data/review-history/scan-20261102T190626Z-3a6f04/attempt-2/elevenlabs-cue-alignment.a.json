@@ -1,0 +1,35 @@
+{
+  "reportId": "elevenlabs-cue-alignment",
+  "reviewerId": "/root/astra_final_20261106_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-06T05:29:00.849862Z",
+  "reportHash": "169bb493522be7b905c86d5701a3dc5d201aa37662f5e21c69ca045d19b459c1",
+  "evidenceHash": "6c3b8f594e46f1d066f17dac15013e56bcea922381a125b8ab99dee1a1f1634f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The endpoint and cookbook establish a practical hosted interface taking audio plus supplied text and returning word/character timings and loss fields. The report turns that contract into a useful, explicitly proposed lesson-player/caption pilot with revision provenance, inspection, correction and edit-aware timing checks. It also identifies implementation blockers before readers rely on the service. Utility is substantial across educational and creative interfaces, but timing quality and total labor saved on their material remain untested.",
+    "impact": "A reusable alignment component reportedly deployed in every Scribe request can improve the timing layer of transcription, captions and read-along applications. Vendor-reported whole-recording accuracy and processing speed support potentially meaningful progress within speech tooling. Forced alignment remains a specialized established task, and this packet supplies no independent replication or broader effects on AI development, so a moderate domain-impact rating is warranted.",
+    "novelty": "The research archive reports a single multilingual model, single-pass long-recording alignment, finer character output and comparative timing improvements; together these offer meaningful differentiation from the tested alternatives. These are vendor demonstrations rather than a disclosed reproducible method, and the 29-versus-more-than-90 benchmark-language inconsistency limits how broadly to interpret them. Nothing here establishes a wholly new task or exceptional algorithmic novelty.",
+    "maturity": "A documented public endpoint, SDK quickstart and claimed deployment in the Scribe pipeline are stronger readiness evidence than a research-only proposal. The response schema and unsupported diarization boundary are concrete. Conflicting file-size limits, stale or conflicting language wording, uncalibrated loss fields and lack of an independent API run materially constrain reliability confidence. The report handles those disagreements directly and distinguishes production GPU processing time from client-observed latency.",
+    "openness": "The hosted API is documented and its ordinary timing arrays can be retained and used in another application, so access and output portability are meaningful. The inspected sources offer no Cue weights, model license, local runtime or reproducible training package. A Python/TypeScript SDK is only a service client, and the model behavior and deployment remain provider-controlled. The report appropriately bounds absence claims to inspected sources, including the unresolved private-deployment question."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "No blocking editorial defect found. All material numeric and contract claims are supported by the five archived primary pages: October 28 publication, 179 ms mean full-recording error, approximately half a second per hour on the production GPU, 22-song scope, word/character/loss schema, contradictory 3 GB versus less-than-1 GB limits, and the displayed Scribe price with tax exclusion.",
+    "Nonblocking evidence limits are appropriately prominent: deployed role and benchmark results remain vendor claims; no audio was evaluated or endpoint called. Character output does not establish character-level accuracy, and loss is not treated as a calibrated acceptance probability. Preserve these qualifications in any public summary.",
+    "The 29-versus-more-than-90 language wording and multilingual-v2 overview are unresolved source discrepancies, not a supported complete Cue language guarantee. The report correctly recommends a representative pilot without asserting that staying under the smaller file threshold guarantees success. Pricing is dated November 3 and explicitly not a firm Cue quote.",
+    "The detailed revision tracking, caption grouping, edit remapping, fallback and player checks are application design recommendations, consistently labeled as proposed behavior. They must remain distinguishable from Cue features; no implementation or measured benefit is established.",
+    "Date and markup checks pass: October 28 is treated as the research article date, not launch; discovery is November 3 within the resumed November 2 run and editorial integration is November 6. Section markup uses balanced p/a tags, HTTPS source links and no executable attributes.",
+    "Independently recomputed report, evidence and rubric hashes match the frozen packet. The body count is 1959 words under the packet-compatible word-token rule, within 1800–2200 for my impact rating of 5. Final publication must use the eventual independent mean and disagreement gate; no other reviewer scores were consulted."
+  ]
+}

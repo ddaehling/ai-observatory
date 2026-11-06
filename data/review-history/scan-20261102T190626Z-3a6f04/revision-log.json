@@ -1,0 +1,23 @@
+{
+  "runId": "scan-20261102T190626Z-3a6f04",
+  "attempts": [
+    {
+      "attempt": 1,
+      "reports": [
+        "openai-academy-learning-paths",
+        "claw-ed",
+        "elevenlabs-cue-alignment"
+      ],
+      "outcome": "Academy approved at mean impact3.5. Claw-ED needs exact version wording instead of inferred September timing. Cue approved editorially at mean impact5.0 but fails the2000wordband until substantively expanded and independently re-reviewed."
+    },
+    {
+      "attempt": 2,
+      "reports": [
+        "claw-ed",
+        "elevenlabs-cue-alignment"
+      ],
+      "status": "approved",
+      "outcome": "Two fresh independent gpt-6-astra/high reviewers approve both current hashes. Claw-ED mean impact 4.0 and 985 words; Cue mean impact 5.0 and 1959 words. Every dimension differs by at most one point. No further revision required."
+    }
+  ]
+}

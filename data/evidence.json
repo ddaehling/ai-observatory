@@ -18410,5 +18410,569 @@
     "limitations": [
       "No installation, runtime verification, fault injection, model calls or cost measurement."
     ]
+  },
+  {
+    "id": "academy-expansion",
+    "claim": "September 21 expansion adds role-specific developer, leader, educator and student learning.",
+    "source_ids": [
+      "source-2f8d9b98fc157bb3"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "source-2f8d9b98fc157bb3",
+        "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+        "locator": "Choose a learning path; Bring OpenAI Academy courses to your organization",
+        "text": "Role-based learning helps employees, developers, leaders, educators, and students"
+      }
+    ],
+    "publication_date": "2026-09-21",
+    "event_date": "2026-09-21",
+    "retrieved_at": "2026-11-03T19:10:29.029Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Announcement, not proof of course effectiveness."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/candidate-2f8d9b98fc157bb3.json",
+    "captureSha256": "f46c8e63e037df095a7bfde0a308bd76e4fb3e7850b59f5fdfae06e9f991afaa"
+  },
+  {
+    "id": "academy-access",
+    "claim": "Courses are documented as free and global; enrollment and progress require a ChatGPT account.",
+    "source_ids": [
+      "official-source-c074cdc849e9e967"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-c074cdc849e9e967",
+        "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+        "locator": "Availability; Access; Assessments; Pathway certificates; FAQ",
+        "text": "Courses are free and do not require a workspace membership."
+      }
+    ],
+    "publication_date": null,
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:24:21.180Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Current guidance observed November 3; no sign-in performed."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-help.json",
+    "captureSha256": "7daeb29d9a87fee2d128071dc74170c5f04c08eac18d2cf02e0d38d2b7a77e4d"
+  },
+  {
+    "id": "academy-credential",
+    "claim": "Badge requires course completion and score of 80% or higher; it is not a certification.",
+    "source_ids": [
+      "official-source-c074cdc849e9e967"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-c074cdc849e9e967",
+        "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+        "locator": "Availability; Access; Assessments; Pathway certificates; FAQ",
+        "text": "These badges and certificates of completion are not certifications"
+      }
+    ],
+    "publication_date": null,
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:24:21.180Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Completion and assessment are distinct; does not establish workplace competence."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-help.json",
+    "captureSha256": "7daeb29d9a87fee2d128071dc74170c5f04c08eac18d2cf02e0d38d2b7a77e4d"
+  },
+  {
+    "id": "academy-lms",
+    "claim": "Course export/import into an organizational LMS is unavailable; SCORM is planned without a date.",
+    "source_ids": [
+      "official-source-c074cdc849e9e967"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-c074cdc849e9e967",
+        "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+        "locator": "Availability; Access; Assessments; Pathway certificates; FAQ",
+        "text": "There is no estimated availability date yet."
+      }
+    ],
+    "publication_date": null,
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:24:21.180Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "No LMS integration tested."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-help.json",
+    "captureSha256": "7daeb29d9a87fee2d128071dc74170c5f04c08eac18d2cf02e0d38d2b7a77e4d"
+  },
+  {
+    "id": "academy-educator-scope",
+    "claim": "Educator offering lists English/Portuguese, intermediate prerequisites and reviewed teaching artifacts.",
+    "source_ids": [
+      "official-source-93e40782ed252621"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-93e40782ed252621",
+        "url": "https://academy.openai.com/public/courses/ai-for-educators-lc8j1",
+        "locator": "Overview; Who this course is for; What you will need; badge requirements",
+        "text": "Permitted source materials for the task"
+      }
+    ],
+    "publication_date": null,
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:19:51.549Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Overview 45 minutes differs from panel 1h 5m."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-educators.json",
+    "captureSha256": "27d3b3f7c85b850d67c539a829fe20c17d0a1ac9b7baaca0cc339d6bef20613d"
+  },
+  {
+    "id": "academy-app-scope",
+    "claim": "Evaluation course expects software/API experience and includes lessons plus guided lab.",
+    "source_ids": [
+      "official-source-862fa68f8c97806a"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-862fa68f8c97806a",
+        "url": "https://academy.openai.com/public/courses/evaluate-ai-applications-pxds7",
+        "locator": "Overview; What you will need; How the course works",
+        "text": "Hands-on software development and API experience"
+      }
+    ],
+    "publication_date": null,
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:23:23.534Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Overview approximately 70 minutes differs from panel 1h 40m; no lab completed."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-evaluate-applications.json",
+    "captureSha256": "2eecbc78f5162155818a880e0f72b055ca2774af5e5ca83eea414e996a73a716"
+  },
+  {
+    "id": "academy-measurement",
+    "claim": "Deployment guide cautions against attributing usage growth to courses alone.",
+    "source_ids": [
+      "official-source-2e5f43c9747b1ba1"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "official-source-2e5f43c9747b1ba1",
+        "url": "https://academy.openai.com/public/clubs/champions-ecqup/resources/openai-academy-courses-champion-deployment-guide-2026-06-11",
+        "locator": "Prepare access and support; Reinforce and measure; Use the signals available",
+        "text": "Do not treat a change in usage alone as proof that the courses caused it."
+      }
+    ],
+    "publication_date": "2026-06-12",
+    "event_date": null,
+    "retrieved_at": "2026-11-03T19:21:49.617Z",
+    "qualifiers": [
+      "Official public documentation; vendor authored."
+    ],
+    "limitations": [
+      "Guide displayed last update September 11, 2026; URL slug June 11 differs from displayed June 12 publication."
+    ],
+    "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/academy-deployment-guide.json",
+    "captureSha256": "a983cbff0435f0e68e7899f18fc091bef55877915251135979bee6da896387ed"
+  },
+  {
+    "claim_id": "claw-ed-workflow",
+    "claim": "The documented beta is single-teacher software producing editable teacher/student documents and slides.",
+    "source_ids": [
+      "repos-claw-ed-connector"
+    ],
+    "support": [
+      {
+        "source_id": "repos-claw-ed-connector",
+        "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/README.md",
+        "locator": "What is available today; Start with one lesson",
+        "passage": "The release is intended for a single teacher per instance.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-03T19:36:37.723Z"
+      }
+    ],
+    "qualifiers": [
+      "Output count and success vary with request, model, extras and exports."
+    ],
+    "contradicts": [],
+    "source_family": "Claw-ED / MacxLabs",
+    "status": "candidate",
+    "limitations": [
+      "Publisher documentation only; no native execution or independent classroom evaluation."
+    ]
+  },
+  {
+    "claim_id": "claw-ed-local-boundary",
+    "claim": "Local working files do not establish that all processing remains local.",
+    "source_ids": [
+      "repos-claw-ed-connector"
+    ],
+    "support": [
+      {
+        "source_id": "repos-claw-ed-connector",
+        "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/README.md",
+        "locator": "Models and privacy",
+        "passage": "Local storage does not mean all processing stays on the device.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-03T19:36:37.723Z"
+      }
+    ],
+    "qualifiers": [
+      "Hosted provider and integration behavior depends on configuration."
+    ],
+    "contradicts": [],
+    "source_family": "Claw-ED / MacxLabs",
+    "status": "candidate",
+    "limitations": [
+      "Publisher documentation only; no native execution or independent classroom evaluation."
+    ]
+  },
+  {
+    "claim_id": "claw-ed-recovery",
+    "claim": "A running worker processes queued drafts; matching completed phases can be reused after recovery, but cancellation cannot undo provider requests already running.",
+    "source_ids": [
+      "claw-ed-docs-getting-started-md"
+    ],
+    "support": [
+      {
+        "source_id": "claw-ed-docs-getting-started-md",
+        "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/docs/GETTING_STARTED.md",
+        "locator": "Recovery paragraph",
+        "passage": "Matching completed phases are reused.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-03T19:36:57.132Z"
+      }
+    ],
+    "qualifiers": [
+      "Five-minute heartbeat threshold documented; no recovery test performed."
+    ],
+    "contradicts": [],
+    "source_family": "Claw-ED / MacxLabs",
+    "status": "candidate",
+    "limitations": [
+      "Publisher documentation only; no native execution or independent classroom evaluation."
+    ]
+  },
+  {
+    "claim_id": "claw-ed-evidence-limits",
+    "claim": "Default automated tests use synthetic material and mocked providers and do not establish teaching quality.",
+    "source_ids": [
+      "claw-ed-docs-evaluation-md"
+    ],
+    "support": [
+      {
+        "source_id": "claw-ed-docs-evaluation-md",
+        "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/docs/EVALUATION.md",
+        "locator": "Opening paragraph",
+        "passage": "They verify software behavior; they do not establish teaching quality.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-03T19:36:56.913Z"
+      }
+    ],
+    "qualifiers": [
+      "Teacher rubric is a proposed evaluation protocol, not published outcomes."
+    ],
+    "contradicts": [],
+    "source_family": "Claw-ED / MacxLabs",
+    "status": "candidate",
+    "limitations": [
+      "Publisher documentation only; no native execution or independent classroom evaluation."
+    ]
+  },
+  {
+    "claim_id": "claw-ed-license",
+    "claim": "Original code is MIT licensed with copyright and permission notice conditions.",
+    "source_ids": [
+      "claw-ed-license"
+    ],
+    "support": [
+      {
+        "source_id": "claw-ed-license",
+        "url": "https://github.com/SirhanMacx/Claw-ED/blob/main/LICENSE",
+        "locator": "MIT grant and notice condition",
+        "passage": "MIT License",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-03T19:36:56.633Z"
+      }
+    ],
+    "qualifiers": [
+      "Third-party components and model/provider terms are separate."
+    ],
+    "contradicts": [],
+    "source_family": "Claw-ED / MacxLabs",
+    "status": "candidate",
+    "limitations": [
+      "Publisher documentation only; no native execution or independent classroom evaluation."
+    ]
+  },
+  {
+    "id": "cue-deployed-role",
+    "source_ids": [
+      "creative-cue-aligner"
+    ],
+    "claim": "Cue is described as already serving Scribe and separately accessible through Forced Alignment API.",
+    "passages": [
+      "Every Scribe request"
+    ],
+    "locator": "What is forced alignment?; Try Cue today",
+    "event_date": null,
+    "publication_date": "2026-10-28",
+    "retrieved_at": {
+      "creative-cue-aligner": "2026-11-03T19:23:16.484Z"
+    },
+    "qualifiers": [
+      "Vendor description of deployed role; article dated October28."
+    ],
+    "limitations": [
+      "Initial launch date not established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-aligner.json"
+    ]
+  },
+  {
+    "id": "cue-schema",
+    "source_ids": [
+      "creative-cue-api"
+    ],
+    "claim": "Multipart audio plus text returns word/character timing and loss fields.",
+    "passages": [
+      "characters",
+      "words",
+      "loss"
+    ],
+    "locator": "Request; Response",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "creative-cue-api": "2026-11-03T19:27:02.585Z"
+    },
+    "qualifiers": [
+      "Schema inspection only."
+    ],
+    "limitations": [
+      "No endpoint request or confidence calibration performed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-api.json"
+    ]
+  },
+  {
+    "id": "cue-hosted",
+    "source_ids": [
+      "creative-cue-cookbook",
+      "creative-cue-api"
+    ],
+    "claim": "Documented use is an API-key hosted request; SDK is a client.",
+    "passages": [
+      "Create an API key",
+      "https://api.elevenlabs.io"
+    ],
+    "locator": "Quickstart steps1–3; endpoint URL",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "creative-cue-cookbook": "2026-11-03T19:27:20.943Z",
+      "creative-cue-api": "2026-11-03T19:27:02.585Z"
+    },
+    "qualifiers": [
+      "No downloadable weights/local runtime found in inspected sources."
+    ],
+    "limitations": [
+      "Not an exhaustive claim that no private offering exists; no package installed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-cookbook.json",
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-api.json"
+    ]
+  },
+  {
+    "id": "cue-file-conflict",
+    "source_ids": [
+      "creative-cue-docs",
+      "creative-cue-api"
+    ],
+    "claim": "Overview says3GB; endpoint requires less than1GB, so service boundary unresolved.",
+    "passages": [
+      "3GB",
+      "The file size must be less than 1GB."
+    ],
+    "locator": "FAQ file size; Request file",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "creative-cue-docs": "2026-11-03T19:24:07.137Z",
+      "creative-cue-api": "2026-11-03T19:27:02.585Z"
+    },
+    "qualifiers": [
+      "Overview separately lists ten hours and675000characters."
+    ],
+    "limitations": [
+      "Actual enforcement untested; report recommends conservative trial rather than claims guaranteed limit."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-docs.json",
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-api.json"
+    ]
+  },
+  {
+    "id": "cue-language-conflict",
+    "source_ids": [
+      "creative-cue-aligner",
+      "creative-cue-docs"
+    ],
+    "claim": "Research uses both29 and more-than90 benchmark languages; overview has multilingual-v2 wording and29languages.",
+    "passages": [
+      "29 languages",
+      "90 benchmark languages"
+    ],
+    "locator": "Research intro and How Cue is different; overview Supported languages",
+    "event_date": null,
+    "publication_date": "2026-10-28",
+    "retrieved_at": {
+      "creative-cue-aligner": "2026-11-03T19:23:16.484Z",
+      "creative-cue-docs": "2026-11-03T19:24:07.137Z"
+    },
+    "qualifiers": [
+      "Retained as source discrepancy."
+    ],
+    "limitations": [
+      "Cannot establish current complete Cue language support."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-aligner.json",
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-docs.json"
+    ]
+  },
+  {
+    "id": "cue-diarization",
+    "source_ids": [
+      "creative-cue-docs",
+      "creative-cue-api"
+    ],
+    "claim": "Both sources do not support diarization; text-format wording differs.",
+    "passages": [
+      "diarization is not supported at this time."
+    ],
+    "locator": "Overview FAQ; endpoint text field",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "creative-cue-docs": "2026-11-03T19:24:07.137Z",
+      "creative-cue-api": "2026-11-03T19:27:02.585Z"
+    },
+    "qualifiers": [
+      "Plain-string input recommended from overview."
+    ],
+    "limitations": [
+      "No transcript formatting experiment performed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-docs.json",
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-api.json"
+    ]
+  },
+  {
+    "id": "cue-benchmarks",
+    "source_ids": [
+      "creative-cue-aligner"
+    ],
+    "claim": "Vendor reports179ms average full-recording timing error and about half-second for an hour on production GPU.",
+    "passages": [
+      "179 milliseconds",
+      "production GPU"
+    ],
+    "locator": "Where traditional aligners fall short; How Cue is different",
+    "event_date": null,
+    "publication_date": "2026-10-28",
+    "retrieved_at": {
+      "creative-cue-aligner": "2026-11-03T19:23:16.484Z"
+    },
+    "qualifiers": [
+      "Real-request benchmark; unplaced words counted as error; word labels for character-level system."
+    ],
+    "limitations": [
+      "No independent replication; GPU details and end-to-end timing not established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-aligner.json"
+    ]
+  },
+  {
+    "id": "cue-song-scope",
+    "source_ids": [
+      "creative-cue-aligner"
+    ],
+    "claim": "Song evidence is limited to22songs and four named languages.",
+    "passages": [
+      "22 songs"
+    ],
+    "locator": "Aligning songs",
+    "event_date": null,
+    "publication_date": "2026-10-28",
+    "retrieved_at": {
+      "creative-cue-aligner": "2026-11-03T19:23:16.484Z"
+    },
+    "qualifiers": [
+      "English, French, Spanish and German; subset of JamendoLyrics."
+    ],
+    "limitations": [
+      "Dataset source not separately inspected; no general music-quality guarantee."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-aligner.json"
+    ]
+  },
+  {
+    "id": "cue-pricing",
+    "source_ids": [
+      "creative-cue-docs",
+      "creative-cue-pricing"
+    ],
+    "claim": "Overview ties alignment cost to Speech to Text; pricing displays0.22USD/hour forScribev2.",
+    "passages": [
+      "$0.22",
+      "Prices exclude all taxes, levies and duties."
+    ],
+    "locator": "Overview pricing FAQ; Speech to Text API table",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "creative-cue-docs": "2026-11-03T19:24:07.137Z",
+      "creative-cue-pricing": "2026-11-03T19:27:47.159Z"
+    },
+    "qualifiers": [
+      "No separate Cue pricing row seen."
+    ],
+    "limitations": [
+      "Not a firm Cue quote; plan/billing interpretation unverified."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-docs.json",
+      ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-pricing.json"
+    ]
   }
 ]
