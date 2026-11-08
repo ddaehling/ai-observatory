@@ -1,6 +1,6 @@
 {
   "id": "kimi-k31-pro",
-  "title": "Kimi K3.1 Pro: a hosted coding and 3D release, with weights still promised",
+  "title": "Kimi K3.1 Pro releases its weights, with datacenter serving and custom license limits",
   "entity": "Kimi K3.1 Pro",
   "category": "Models",
   "tags": [
@@ -10,17 +10,27 @@
     "API",
     "agent workflows"
   ],
-  "summary": "Kimi’s new Pro and Highspeed models are documented as available through its hosted products and API. The consequential details are the pending November 4 weights, paid API access, cache billing and integration constraints.",
-  "changeType": "new",
+  "summary": "The promised K3.1 Pro checkpoint is now publicly listed. Its 2.8T total parameters, model-specific deployment recipes and custom commercial terms make self-hosting a different decision from trying the paid API.",
+  "changeType": "update",
   "publishedAt": null,
   "discoveredAt": "2026-10-24T18:00:00Z",
-  "updatedAt": "2026-10-24T18:00:00Z",
+  "updatedAt": "2026-11-08T19:23:15.971576Z",
   "officialUrl": "https://www.kimi.ai/blog/kimi-k3-1-pro",
   "sections": [
     {
       "id": "release",
-      "title": "What is available at the inspection date",
-      "html": "<p>Kimi K3.1 Pro is a newly announced hosted model for coding, multimodal knowledge work and 3D creation. The <a href=\"https://www.kimi.ai/blog/kimi-k3-1-pro\">primary launch article</a> describes a 3T-class model derived through additional post-training from Kimi K3, with a million-token context window. It also introduces a Highspeed variant. As inspected on October 24, 2026, the practical access paths were Kimi’s website, mobile applications, Work desktop application, Code tool and API. This is documentation of provider availability, not a successful account-level test in every region or product.</p><p>The central qualification is easy to lose in an open-model headline: the same article explicitly promises full weights by November 4, 2026. The promise is future-dated relative to this inspection. The report therefore treats K3.1 Pro as a hosted release with a planned weight release; it does not claim that a downloadable checkpoint, its final license or a verified self-hosting recipe is already available. No inference about laptop deployment follows from the eventual availability of a model described at this scale.</p><p>For builders, the immediate question is whether its documented coding and visual workflows deserve a paid, bounded comparison with an existing service. For researchers waiting for inspectable weights, the appropriate next milestone is the actual release and its terms. Those are different decisions, and the launch’s use of open-weight language should not collapse them. The exact primary article publication timestamp was not established in this inspection, so the report leaves that field unknown.</p>"
+      "title": "The promised checkpoint is now visible",
+      "html": "<p>Kimi K3.1 Pro now has a publicly accessible weight repository. On November 8, 2026, the <a href=\"https://huggingface.co/moonshotai/Kimi-K3.1-Pro/tree/main\">Hugging Face file listing</a> exposed all 96 numbered safetensors shards, a model README, configuration and license; the listing reports 1.56 TB. This materially changes the October 24 assessment, when the launch article only promised weights by November 4. Repository commit dates do not establish when files first became publicly downloadable, so the exact public-release timestamp remains unconfirmed.</p><p>The <a href=\"https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md\">versioned model README</a> describes a multimodal mixture-of-experts model with 2.8T total parameters, 104B activated parameters and a 1,048,576-token context. It lists MXFP4 weights and MXFP8 activations with quantization-aware training. Activated parameters describe computation per token, not the weight storage a deployment must accommodate. Neither that number nor the checkpoint size establishes total runtime memory.</p><p>The hosted Pro and Highspeed routes remain documented through Kimi products and API. The weight release adds inspectability and an infrastructure-controlled option; it does not demonstrate affordable laptop deployment, universal account access or parity between every hosted and self-hosted configuration.</p>"
+    },
+    {
+      "id": "self-hosting",
+      "title": "Self-hosting requires a specific serving configuration",
+      "html": "<p>The README links dedicated vLLM, SGLang and TokenSpeed recipes. This assessment inspected the first two. The <a href=\"https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro\">vLLM recipe</a> describes a basic NVIDIA setup using eight GPUs across two GB300 trays or one B300 node, and an MI355X path. These are documented configurations, not measured minimum requirements. The author says the baseline throughput was not tuned. Generic hub installation snippets omit consequential hardware, parser and parallelism settings.</p><p>Support also varies within one runtime. The vLLM page says its TPU path is text-only, does not load the vision tower, and currently requires a staging branch because support remains under review; no published image or wheel carries that path yet. Its Rubin preview has not been verified on Rubin. A version badge therefore cannot certify every hardware option underneath it.</p><p>The <a href=\"https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3.1-Pro\">SGLang cookbook</a> distinguishes verified combinations from recipes awaiting final-weight measurement and unverified playground settings. Its agentic long-context campaign records custom images, patches and measured versus derived router and cache choices. Those boundaries matter more than an isolated throughput number. A deployment evaluation should pin the actual recipe, image, checkpoint and parsers, then test tool calls, image handling, concurrent sessions and recovery under its own workload. No checkpoint download, installation or inference run was performed here.</p>"
+    },
+    {
+      "id": "weight-license",
+      "title": "Read the custom license before choosing a distribution model",
+      "html": "<p>The <a href=\"https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/LICENSE\">Kimi K3.1-Pro license at the inspected revision</a> grants broad use, modification, deployment and redistribution rights subject to conditions. It is a custom license, rather than an unrestricted MIT or Apache release. Copyright and permission notices must accompany copies, and use must comply with applicable laws.</p><p>Section 2 requires a separate Moonshot agreement before any commercial use when the licensee or any affiliate operates a Model as a Service business and their aggregate revenue exceeds US$20 million over any consecutive twelve months. Its service definition concerns third-party inference or fine-tuning access with meaningful control of inputs, parameters or training data. It excludes capabilities embedded solely in specific product features or harnesses, and mere relaying to models hosted elsewhere. The trigger considers affiliates and aggregate revenue; it is not simply a threshold on one endpoint's revenue.</p><p>Section 3 separately requires prominent Kimi K3.1-Pro branding for a commercial product or service above 100 million monthly active users or US$20 million monthly revenue. Sections 2 and 3 exempt internal use and access through official Moonshot products or certified inference partners. The internal-use definition excludes making the software, its outputs or underlying capabilities available to third parties. These distinct thresholds and exemptions should be mapped to the intended deployment; publishing weights does not remove them.</p>"
     },
     {
       "id": "creative-work",
@@ -30,12 +40,12 @@
     {
       "id": "api-access",
       "title": "Access and prerequisites are specific",
-      "html": "<p>The <a href=\"https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart\">K3.1 API guide</a> says the flagship unlocks after a successful top-up of at least $1. Cumulative top-ups determine account tiers and rate limits. API access therefore requires an account, a key and paid credit, even if the first experiment is small. The general quickstart documents direct HTTP calls and compatibility with OpenAI or Anthropic API formats. Its examples require Python 3.9 or later, or Node.js 18 or later, and the relevant SDK. These are documented routes, not libraries installed or requests executed during this assessment.</p><p>The launch article says Kimi Work needs version 3.1.0 or later on Windows or Apple silicon Macs. Kimi Code users select the model through its model command. Enterprise administrators must explicitly enable it, with organization access off by default at launch. Product subscriptions and the pay-as-you-go API are distinct offerings; availability through a named application does not establish that an existing subscription includes unlimited use. Subscription prices, regional eligibility and detailed rate limits were not verified for this report.</p><p>A web application should keep the provider key on its server and pass only the data needed for the chosen task. A small coding pilot can instead use an existing supported agent client, but permissions and execution tools remain the client’s responsibility. Compatibility with an API format lowers integration effort; it does not certify every endpoint, option or error-handling behavior of a client built for another provider. The <a href=\"https://platform.kimi.ai/docs/overview\">general quickstart</a> is a starting point for that compatibility check.</p>"
+      "html": "<p>The <a href=\"https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart\">K3.1 API guide</a> says the flagship unlocks after a successful top-up of at least $1. Cumulative top-ups determine account tiers and rate limits. API access therefore requires an account, a key and paid credit, even if the first experiment is small. The general quickstart documents direct HTTP calls and compatibility with OpenAI or Anthropic API formats. Its examples require Python 3.9 or later, or Node.js 18 or later, and the relevant SDK. These are documented routes, not libraries installed or requests executed during this assessment.</p><p>The launch article says Kimi Work needs version 3.1.0 or later on Windows or Apple silicon Macs. Kimi Code users select the model through its model command. Enterprise administrators must explicitly enable it, with organization access off by default at launch. Product subscriptions and the pay-as-you-go API are distinct offerings; availability through a named application does not establish that an existing subscription includes unlimited use. Subscription prices, regional eligibility and detailed rate limits were not verified for this report.</p><p>A web application should keep the provider key on its server and pass only the data needed for the chosen task. A small coding pilot can instead use an existing supported agent client, but permissions and execution tools remain the client’s responsibility. Compatibility with an API format lowers integration effort; it does not certify every endpoint, option or error-handling behavior of a client built for another provider. The <a href=\"https://platform.kimi.ai/docs/get-your-api-key\">general quickstart</a> is a starting point for that compatibility check.</p>"
     },
     {
       "id": "cost",
       "title": "Highspeed costs more on some token categories",
-      "html": "<p>The <a href=\"https://platform.kimi.ai/docs/pricing/chat\">official pricing table</a> lists Pro at $2 per million input tokens and $10 per million output tokens. Highspeed is $4 and $20 respectively. Both list cached input at $0.20 per million tokens. Highspeed therefore doubles the base input and output rates, but saying it simply doubles every bill would be inaccurate: repeated cached input has the same listed rate. The mix of reasoning, output, input, cache hits and additional tools determines the actual workload cost.</p><p>Caching is automatic for eligible repeated prefixes, with a default five-minute lifetime and an optional one-hour tier. The table separately lists five-minute cache writes at $2 per million for Pro and $4 for Highspeed; one-hour writes are $4 and $8. The billing explanation says writes are charged separately and cache hits incur no additional write charge. Partial blocks that do not fill a cache block are treated as misses according to the guide. An experiment should therefore inspect reported usage rather than estimate savings solely from repeated text.</p><p>Prices exclude applicable taxes. The API is described as pay-as-you-go without a subscription plan and is billed separately from Kimi memberships and Code. A million-token capacity is not a recommendation to resend a million tokens on each request. Begin with a small representative input, set an output budget appropriate to the task and record the successful task’s total cost, including retries. No paid calls, cache-hit measurements or invoices were produced for this report, and no claim of cost savings over another service is made.</p>"
+      "html": "<p>The November 8 <a href=\"https://platform.kimi.ai/docs/pricing/chat\">official pricing table</a> lists Pro at $2 per million input tokens and $10 per million output tokens. Highspeed is $4 and $20 respectively. Both list cached input at $0.20 per million tokens. Highspeed therefore doubles the base input and output rates, but saying it simply doubles every bill would be inaccurate: repeated cached input has the same listed rate. The mix of reasoning, output, input, cache hits and additional tools determines the actual workload cost.</p><p>Caching is automatic for eligible repeated prefixes, with a default five-minute lifetime and an optional one-hour tier. The table separately lists five-minute cache writes at $2 per million for Pro and $4 for Highspeed; one-hour writes are $4 and $8. The billing explanation says writes are charged separately and cache hits incur no additional write charge. Partial blocks that do not fill a cache block are treated as misses according to the guide. An experiment should therefore inspect reported usage rather than estimate savings solely from repeated text.</p><p>Prices exclude applicable taxes. The API is described as pay-as-you-go without a subscription plan and is billed separately from Kimi memberships and Code. A million-token capacity is not a recommendation to resend a million tokens on each request. Begin with a small representative input, set an output budget appropriate to the task and record the successful task’s total cost, including retries. No paid calls, cache-hit measurements or invoices were produced for this report, and no claim of cost savings over another service is made.</p>"
     },
     {
       "id": "integration",
@@ -45,7 +55,7 @@
     {
       "id": "evidence",
       "title": "Read the performance claims with their methodology",
-      "html": "<p>Moonshot claims a two-to-threefold speed increase for Highspeed, while its platform overview uses roughly threefold language. These remain provider claims; no controlled latency test was performed here. Faster token production may shorten part of a task while leaving tool execution, rendering, network delay and retries untouched. The useful comparison for a creative builder is time to an acceptable verified artifact, under the same brief and budget, not a headline throughput ratio.</p><p>The launch reports strong benchmark results and gives methodological footnotes. Those footnotes describe different agent harnesses, selected task subsets, external scores and internal evaluations. For instance, its CAD comparison uses a sampled subset for open models and draws certain comparison scores from other providers’ reports. This is useful disclosure, but it does not make every number an identical-condition contest. The current assessment has not independently reproduced those benchmarks and does not rank the model from them.</p><p>There is also a concrete documentation-quality limitation. The inspected API model guide contained placeholder benchmark values and internal hallucination percentages that differed from the launch article. The report does not choose a favorable number or average incompatible accounts; it omits those numerical factual-accuracy claims. Neither page’s internal stress test should be treated as an everyday error probability. The available evidence supports a promising release and a documented integration surface, while exact comparative quality and the final weight-release package remain unverified.</p>"
+      "html": "<p>Moonshot claims a two-to-threefold speed increase for Highspeed. This remains a provider claim; no controlled latency test was performed here. Faster token production may shorten part of a task while leaving tool execution, rendering, network delay and retries untouched. For a creative builder, the useful comparison is time to an acceptable verified artifact under the same brief and budget.</p><p>The launch reports strong benchmark results with methodological footnotes covering different agent harnesses, selected task subsets, external scores and internal evaluations. Its CAD comparison uses a sampled subset for open models and certain scores from other providers' reports. This disclosure does not make every number an identical-condition contest. This assessment has not reproduced those benchmarks and does not rank the model from them.</p><p>The earlier October 24 inspection recorded placeholder benchmark values and inconsistent internal hallucination figures in the API guide. On November 8, the inspected guide no longer showed those placeholders and its described hallucination figures agreed with the launch article. That is a documentation correction, not independent validation of factual accuracy. The internal stress test still cannot be read as an everyday error probability. The checkpoint's availability and deployment documentation are now established documentary facts; quality, operational reliability and cost remain workload-dependent evaluation questions.</p>"
     },
     {
       "id": "pilot",
@@ -55,7 +65,7 @@
     {
       "id": "judgment",
       "title": "What would change the assessment",
-      "html": "<p>The immediate attraction is a hosted multimodal model whose provider explicitly targets code, 3D and longer tool-driven work, accompanied by public API documentation detailed enough to expose real constraints. The practical cautions are equally specific: paid access, a higher-priced speed tier, always-on reasoning, integration rules, a web-search warning and incomplete consistency in promotional documentation. A tightly scoped pilot can assess these without committing a whole application to the new model.</p><p>The next evidence that would materially improve confidence is a reproducible task comparison with usage records and inspected artifacts. For the openness claim, the needed evidence is the actual promised weight release, its license, files and viable serving instructions. A date on a roadmap does not provide those assets. Until that happens, this report’s recommendation is limited to a hosted evaluation for builders who can check its outputs and costs. It makes no assurance of self-hosting affordability, unrestricted licensing, improved learning or reliable autonomous delivery.</p>"
+      "html": "<p>The weight release changes the available choices. Builders can continue a bounded hosted pilot, while infrastructure teams can inspect the checkpoint, license and runtime-specific recipes before evaluating self-hosting. The substantial storage footprint and partially verified serving matrix make the latter an engineering project. A small institution need not operate this model merely to test its creative workflows.</p><p>The next useful evidence is a reproducible task comparison with usage records and inspected artifacts. Evaluate completed requirements, failure recovery and total cost, including retries and operational work. The report makes no assurance of self-hosting savings, unrestricted commercial licensing, improved learning or reliable autonomous delivery. Its practical recommendation is to match the access route to the task and require checkable outputs before expanding the pilot.</p>"
     }
   ],
   "images": [],
@@ -65,21 +75,22 @@
     "Generate and revise a short scripted Blender scene for a separately rendered video."
   ],
   "limitations": [
-    "Weights were promised by November 4, 2026, not verified as available on October 24. Final checkpoint license and serving requirements remain unknown.",
-    "Provider speed and quality claims were not independently tested.",
-    "API guide has benchmark placeholders and conflicting internal hallucination statistics versus the launch article.",
-    "Official web search is documented as unsuitable for current production workflows.",
-    "API requires top-up and has distinct input/output/cache-write billing; subscription entitlement and regional access were not verified."
+    "Public weight files and the versioned README/license were inspected; no weights were downloaded or executed. The exact first public-release timestamp remains unknown.",
+    "The 2.8T total / 104B activated model has a 1.56 TB listed repository. Active parameters and file size do not establish runtime memory or a minimum hardware configuration.",
+    "The custom license has distinct MaaS/affiliate-revenue and product-branding conditions, with specifically defined exemptions; it is not an unrestricted MIT or Apache release.",
+    "vLLM and SGLang recipes disclose hardware-specific staging, custom-image and verification limits. Documentation is not this project’s deployment test.",
+    "Provider speed, benchmark and quality claims were not independently tested. The earlier API documentation inconsistencies were corrected in the November 8 pages, without validating the underlying benchmarks.",
+    "Official web search remains documented as unsuitable for current production workflows. API top-up, separate cache-write billing and unverified subscription/regional entitlement remain relevant."
   ],
   "sources": [
     {
       "id": "repos-kimi-k31-pro-announcement",
       "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
       "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "accessedAt": "2026-10-24T17:53:52.644Z",
+      "accessedAt": "2026-11-08T19:14:42.893Z",
       "publishedAt": null,
       "locator": "Main article/model card",
-      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+      "supports": "Current primary documentation of the hosted access, workflow, pricing or integration facts discussed in the report."
     },
     {
       "id": "repos-kimi-api-platform",
@@ -92,32 +103,77 @@
     },
     {
       "id": "repos-kimi-api-pricing",
-      "title": "repos-kimi-api-pricing-visible",
+      "title": "Model Inference Pricing - Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "accessedAt": "2026-10-24T17:54:49.567Z",
+      "accessedAt": "2026-11-08T19:15:03.593Z",
       "publishedAt": null,
       "locator": "K3 Series Models table; Billing Logic",
-      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+      "supports": "Current primary documentation of the hosted access, workflow, pricing or integration facts discussed in the report."
     },
     {
       "id": "repos-kimi-api-overview",
       "title": "Quickstart - Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/get-your-api-key",
-      "accessedAt": "2026-10-24T17:54:39.161Z",
+      "accessedAt": "2026-11-08T19:15:05.095Z",
       "publishedAt": null,
       "locator": "Main article/model card",
-      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+      "supports": "Current primary documentation of the hosted access, workflow, pricing or integration facts discussed in the report."
     },
     {
       "id": "repos-kimi-k31-guide",
       "title": "Kimi K3.1 Pro - Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
-      "accessedAt": "2026-10-24T17:54:49.569Z",
+      "accessedAt": "2026-11-08T19:14:45.799Z",
       "publishedAt": null,
       "locator": "Access requirements; Reasoning effort; Vision input; Important limits",
-      "supports": "Capabilities, access, prerequisites and limitations discussed in the report."
+      "supports": "Current primary documentation of the hosted access, workflow, pricing or integration facts discussed in the report."
+    },
+    {
+      "id": "repos-kimi-k31-files",
+      "title": "moonshotai/Kimi-K3.1-Pro at main",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/tree/main",
+      "accessedAt": "2026-11-08T19:17:10.021Z",
+      "publishedAt": null,
+      "locator": "File listing, fully expanded through model-00096-of-000096.safetensors",
+      "supports": "Public checkpoint files, 96 numbered shards and displayed repository size; no full download test."
+    },
+    {
+      "id": "repos-kimi-k31-readme",
+      "title": "README.md · moonshotai/Kimi-K3.1-Pro at d9e99b0",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+      "accessedAt": "2026-11-08T19:15:29.458Z",
+      "publishedAt": null,
+      "locator": "Model Introduction; Model Summary; Deployment and Availability; Model Usage",
+      "supports": "2.8T total and 104B active parameters, quantization, context and runtime-specific documentation links."
+    },
+    {
+      "id": "repos-kimi-k31-license",
+      "title": "LICENSE · moonshotai/Kimi-K3.1-Pro at d9e99b0",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/LICENSE",
+      "accessedAt": "2026-11-08T19:15:25.904Z",
+      "publishedAt": null,
+      "locator": "Kimi K3.1-Pro License, sections 1–5 at d9e99b0",
+      "supports": "Actual versioned custom license, service definition, revenue/affiliate thresholds, branding and exemptions."
+    },
+    {
+      "id": "repos-kimi-k31-vllm",
+      "title": "moonshotai/Kimi-K3.1-Pro | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro",
+      "accessedAt": "2026-11-08T19:15:43.514Z",
+      "publishedAt": null,
+      "locator": "Overview; TPU serving; hardware-specific qualifications",
+      "supports": "Documented datacenter configurations and specific staging/verification limits."
+    },
+    {
+      "id": "repos-kimi-k31-sglang",
+      "title": "Kimi-K3.1-Pro - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3.1-Pro",
+      "accessedAt": "2026-11-08T19:15:45.462Z",
+      "publishedAt": null,
+      "locator": "Deployment badge definitions; Agentic Long-Context Deployment",
+      "supports": "Verified versus provisional runtime recipes and measured-versus-derived configuration limits."
     }
   ],
-  "judgment": "A worthwhile hosted pilot for coding and editable 3D workflows, with unusually important access and integration caveats. Treat promised open weights as a future milestone and performance as unreplicated vendor evidence.",
-  "researchNote": "Chrome inspection of primary launch, API overview, model guide and rendered pricing table on October 24, 2026. No account, top-up, API call, software install or generated artifact test. Exact article publication date unknown. Proposed workflows are original editorial analysis, and internal accuracy-statistic conflicts are preserved rather than resolved speculatively."
+  "judgment": "Public weights make K3.1 Pro inspectable and self-hostable in principle, with substantial infrastructure requirements and custom license conditions. The hosted API remains the simpler bounded pilot; either route needs output, usage and reliability checks.",
+  "researchNote": "Original October 24 assessment revised after November 8 Chrome inspection of the full weight-file listing, versioned README and license at d9e99b0792a5e93b78ea9bea62a68167e36ddd9e, model-specific vLLM/SGLang recipes and current primary API documentation. The standalone model landing page failed after one repair; the linked versioned README was separately inspected successfully. No account, top-up, API call, software installation, full checkpoint download or generated-artifact test. Original discovery date and section anchors preserved; exact original publication and first public-weight-release dates remain unknown."
 }

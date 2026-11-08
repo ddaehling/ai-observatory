@@ -1,0 +1,130 @@
+{
+  "id": "images26-creative-controls",
+  "title": "Images 2.6 adds annotated edits, SVG and GIF output—with controls worth separating",
+  "entity": "OpenAI Images 2.6",
+  "category": "Creative workflows",
+  "tags": [
+    "image generation",
+    "image editing",
+    "SVG",
+    "animated GIF",
+    "creative APIs"
+  ],
+  "summary": "Images 2.6 brings separate planning and rendering controls, markup-guided edits, vector exports and short GIFs to a documented Image API workflow. Its useful production options still need acceptance tests, careful endpoint selection and usage-based budgeting.",
+  "changeType": "new",
+  "publishedAt": "2026-11-04",
+  "discoveredAt": "2026-11-08T18:58:51Z",
+  "updatedAt": "2026-11-08T19:18:04.469957Z",
+  "officialUrl": "https://openai.com/index/introducing-images-2-6",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "An image release that reaches further into production",
+      "html": "<p>Images 2.6 adds a useful set of production choices: separate planning and rendering controls, annotated regional edits, editable SVG output and short animated GIFs. OpenAI announced the release on November 4, 2026, with global availability in ChatGPT and Codex across subscription tiers, plus two API models. This report evaluates the public announcement and developer documentation as inspected on November 8. It does not establish the entitlement or generation limits of an individual account. See the <a href=\"https://openai.com/index/introducing-images-2-6\">launch announcement</a>.</p><p>The practical opportunity is a more inspectable path from a visual idea to an asset someone can finish. A teacher might correct one region of an illustration; a designer might take generated paths into a vector editor; a developer might create a small character loop. Those uses require different acceptance checks. A successful request or attractive preview does not show that an image preserves every product detail, that its text is correct, or that an animation explains the intended concept.</p>"
+    },
+    {
+      "id": "model-choice",
+      "title": "Choose a model, then define the thing it must preserve",
+      "html": "<p>The documented identifiers are <code>gpt-image-2.6-flare</code> and <code>gpt-image-2.6-sunburst</code>. Both model references list text and image inputs, image output, and image generation and editing endpoints. Flare is positioned for fast iteration; Sunburst for detailed visual work. The retrieved references list the model names themselves as their current snapshots, without a dated snapshot identifier. Record the returned model information and your settings with each experiment. See the <a href=\"https://developers.openai.com/api/docs/models/gpt-image-2.6-flare\">Flare</a> and <a href=\"https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst\">Sunburst</a> references.</p><p>OpenAI claims a 50% generation speed improvement and says low-quality Flare can produce an image in as little as six seconds. Those are vendor statements, not measured latency for this report. The announcement associates medium or high-quality Sunburst with improved detail and edit consistency. A useful comparison would hold the brief and references fixed, count rejected outputs, and measure time to an accepted asset. That evaluates the actual production task rather than treating the fastest successful response as the winner.</p>"
+    },
+    {
+      "id": "complexity",
+      "title": "Planning effort and image quality are separate controls",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/guides/image-generation#gpt-image-26\">2.6 guide</a> describes <code>complexity</code> as the amount of planning before rendering. Its levels are <code>low</code>, <code>medium</code> and <code>high</code>; omitting it selects high for both models. The separate <code>quality</code> field governs rendering quality. That default deserves attention: a small edit can inherit more planning than its author intended if the application never sends the parameter.</p><p>For a focused color change, the launch advice favors low complexity paired with the required visual quality. Dense layouts or several relationships between objects may justify medium or high complexity. The guide also warns that higher complexity can increase latency and introduce unwanted changes. More planning is therefore a choice to evaluate, not a universal quality upgrade.</p><p>A proposed pilot should compare one factor at a time. Keep quality fixed while varying complexity, then inspect the requested change and the surrounding details that should remain stable. Only afterward compare rendering quality. Save the prompt, model, references, both settings, elapsed time and rejection reason. This produces a decision the team can reuse when it encounters the same kind of edit again.</p>"
+    },
+    {
+      "id": "markup",
+      "title": "Annotated edits need a separate, aligned layer",
+      "html": "<p>Markup-guided editing uses <code>POST /v1/images/edits</code>. The first input is the original image; a separate transparent PNG carries circles, sketches or other annotations. After orientation, the two must have identical width and height. The PNG must contain transparent pixels, so flattening a red circle into the original photograph does not follow the documented markup workflow. Additional input images act as references. The <a href=\"https://developers.openai.com/api/docs/guides/image-generation#guide-an-edit-with-markup\">markup instructions</a> distinguish this from regional edits with a mask in the Responses API.</p><p>The first image and annotation layer can each contain at most 16,777,216 pixels, and the annotation file has a 50 MB limit. Do not combine <code>markup</code> and <code>mask</code>. Multipart requests accept the annotation file; JSON requests accept a markup object with exactly one of <code>image_url</code> or <code>file_id</code>, and use <code>images</code> for the input array.</p><p>A lesson illustrator could circle an incorrect object and ask for its replacement while specifying which labels, colors and spatial relationships must remain. The review should compare those preserved regions against the original and check the corrected object against the lesson source. An annotation directs attention; it does not certify that the result obeyed the instruction.</p><p>Consider a classroom diagram with six labeled objects. The teacher could first list the six required labels and their correct relationships, then annotate one object that needs changing. Compare the returned diagram against that inventory, including the five untouched objects. If the model fixes the selected region while silently changing a label elsewhere, the output fails the task. This makes preservation a measurable requirement and gives a student a concrete way to explain why a visually convincing revision can still be incorrect.</p>"
+    },
+    {
+      "id": "svg",
+      "title": "SVG gives designers paths to inspect and finish",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/guides/image-generation#generate-svg-output\">SVG workflow</a> uses the generation endpoint with <code>output_format: \"svg\"</code> and <code>n: 1</code>. The service first makes a reference image, then produces SVG from it. Quality controls that reference image. Decode the returned <code>b64_json</code> into UTF-8 XML bytes and save an SVG file. The documented output is static vector content, without scripts, external resources or embedded raster images.</p><p>This is a specific export path with meaningful boundaries. SVG output does not support streaming, partial images or output compression. The edit endpoint cannot return SVG, and SVG is not a supported raster input for image edits. A team should not assume it can round-trip an exported vector through the same raster editing request.</p><p>For a website illustration, a proposed workflow is brief → generated SVG → inspection in a vector editor → cleaned, accessible asset. Check path structure, unwanted shapes, legibility at the final size and whether colors can be changed without damaging the design. Keep essential interface text in HTML when appropriate. Editable geometry offers a useful handoff, but the documentation does not establish clean layer organization or suitability for every print or design system requirement.</p>"
+    },
+    {
+      "id": "gif",
+      "title": "Treat GIFs as a small animation format",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/guides/image-generation#generate-animated-gif-output\">GIF instructions</a> cover both generation and editing with <code>output_format: \"gif\"</code>. A prompt describes the subject, movement and desired loop; the edit endpoint accepts still reference images. The response already contains the finished animation, so the documented API path does not require the developer to assemble a sprite sheet.</p><p><code>frame_count</code> accepts 2–16 frames and defaults to nine. <code>frame_duration_ms</code> accepts 20–2000 milliseconds per frame, rounded to 10 ms, with a 200 ms default. The default combination represents a 1.8-second cycle. That arithmetic describes timing, not smoothness or successful continuity. <code>size</code> describes each finished frame, using auto or positive dimensions divisible by 16.</p><p>Frame count, dimensions and the number of animations must fit the model limits and total request pixel budget. Reduce those values when a request exceeds its limits; GIF output also excludes streaming, partial images and custom compression. A small mascot reaction or motion study is a sensible proposed test. Inspect every frame, the last-to-first transition, silhouette changes and unwanted flicker. For an educational process, also verify that the order of events is correct. This release does not establish a complete long-form video production workflow.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Budget accepted assets, including edits and export work",
+      "html": "<p>The <a href=\"https://developers.openai.com/api/docs/pricing\">Standard pricing table</a>, inspected November 8, lists the same USD token rates for both 2.6 models: $5 per million text input tokens, $8 per million image input tokens and $30 per million image output tokens. It also displays cached-input rates, but the nearby eligibility explanation explicitly discusses earlier versions. This report therefore does not assume a particular 2.6 caching benefit or Batch discount; the retrieved Batch image table did not list these two 2.6 models.</p><p>The guide states that complexity has no separate fee and markup edits use ordinary edit token rates without an extra charge. That does not make an edit free. Inputs and outputs still contribute to consumption, and extra attempts increase the project total. SVG has an additional distinction: billing combines the reference image at the image model rate with the authoring model tokens used to produce the SVG. The captured section does not identify a complete authoring-rate calculation.</p><p>A practical budget records actual usage per request and divides total spend by accepted deliverables. Keep discarded attempts and finishing work in that calculation. No fixed cost per illustration, GIF or SVG was measured here, and equal token prices alone do not establish equal cost for the same finished task.</p><p>For scale only, 100,000 billable image output tokens at the displayed rate would cost $3 for output. Text input, reference images, any SVG authoring work and further requests would add to that figure. This is an arithmetic illustration, not a price for a particular number of assets. A team evaluating ten approved illustrations should preserve all the intermediate usage records; counting only the final ten responses would hide the cost of corrections and rejected attempts.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "Make the request and recovery path explicit",
+      "html": "<p>The inspected 2.6 section establishes these features through the Image API. Much of the surrounding guide still shows 2.5 examples, and its opening overview names 2.5 models. Read the feature-specific section and exact model reference before adapting a sample. An older Responses API example is not sufficient evidence that every new format or parameter works through that route. Organization verification may also be required for GPT Image access, according to the guide.</p><p>For an app that lets users annotate images, validate dimensions and transparency before sending the request, retain the original, and display the returned asset as a proposed revision. Preserve a version history so a rejected edit does not replace an approved asset. Keep credentials on the application server and enforce the application’s own usage budget. These are implementation recommendations, not an integration tested for this report.</p><p>The guide recommends checking error status or exception type and recording request IDs. Transient rate-limit and server failures can use backoff; quota errors and request problems requiring a changed input should not be retried automatically. Give the user a useful failure state and a way to revise the request. The documentation warns that complex prompts may take up to two minutes, so a six-second marketing example is an unsuitable universal timeout.</p>"
+    },
+    {
+      "id": "evaluation",
+      "title": "A useful release, with acceptance criteria still doing the work",
+      "html": "<p>A compact evaluation can cover three jobs: correct one region without changing the rest, create an SVG that a designer can edit, and animate a short reference-based loop. Use several representative inputs for each, including difficult text, repeated objects and character details. Agree on pass conditions before viewing results. Record whether failures concern meaning, preservation, geometry, timing or latency; a single preference score can conceal those differences.</p><p>For classroom material, require a source-backed answer key and teacher review. For a website, inspect the final asset at actual display sizes and provide meaningful alternative text or a static motion fallback. For an editing team, keep accepted stills and loops linked to their prompts and reference assets so the next person can reproduce the decision. These are proposed workflows, not demonstrated outcomes from this scan.</p><p>The evidence supports a meaningful expansion of hosted image tooling. It does not establish flawless text, recurring-character consistency, precise layout control or a measured productivity gain. OpenAI’s guide names those remaining limitations. The reviewed sources provide API access and portable output formats, but no downloadable 2.6 weights or training recipe. Adopt it through a bounded comparison of accepted work, retaining human editing and review where the asset carries factual or brand meaning.</p><p>Separate the initial generation test from the finishing test. For SVG, a reviewer should actually attempt a color change and remove an unwanted shape in the intended editor. For GIF, another reviewer should watch the loop at its delivered size and timing. For a regional edit, compare the accepted result with the original at sufficient detail to notice altered text or product geometry. These checks test whether the output survives its next handoff. They also reveal whether a faster generation simply moved work into cleanup.</p>"
+    }
+  ],
+  "useCases": [
+    "Correct a lesson illustration with a separate annotation layer, then check the changed object and preserved facts.",
+    "Generate an SVG illustration, inspect its paths in a vector editor, and prepare an accessible website asset.",
+    "Create a short mascot loop or storyboard motion study and inspect every frame and loop boundary.",
+    "Build an image-editing feature with explicit request validation, version history, cost tracking and actionable failures."
+  ],
+  "limitations": [
+    "Documentary evaluation only: no image-generation request, paid workflow, account entitlement test or independent speed/quality benchmark was performed.",
+    "The guide mixes 2.6 feature sections with 2.5 examples; this report establishes the described new features through the Image API.",
+    "Vendor speed claims are not latency guarantees. Text accuracy, layout precision and recurring-character consistency remain documented limitations.",
+    "SVG authoring costs are additional to the reference image; the captured documentation does not establish a complete authoring-rate calculation.",
+    "The retrieved Batch and caching explanation does not establish 2.6 eligibility, and no fixed cost per accepted asset was measured.",
+    "Hosted access and exported artifacts do not establish access to model weights, training data or a reproducible training recipe."
+  ],
+  "sources": [
+    {
+      "id": "source-295354ff422b0d4d",
+      "title": "Introducing Images 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "accessedAt": "2026-11-08T19:12:58.681Z",
+      "publishedAt": "2026-11-04",
+      "locator": "Pricing and availability; Faster iteration and more professional visuals",
+      "supports": "Announcement date, hosted availability and vendor speed claims"
+    },
+    {
+      "id": "nov8-images26-guide",
+      "title": "Image generation guide",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "accessedAt": "2026-11-08T19:08:40.322Z",
+      "publishedAt": null,
+      "locator": "GPT Image 2.6; Set image complexity; Guide an edit with markup; Generate SVG output; Generate animated GIF output; GPT Image 2.6 costs; Limitations",
+      "supports": "Documented request controls, constraints, costs and known limitations"
+    },
+    {
+      "id": "nov8-images26-sunburst",
+      "title": "GPT-Image-2.6 Sunburst model reference",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst",
+      "accessedAt": "2026-11-08T19:14:01.676Z",
+      "publishedAt": null,
+      "locator": "Model ID; Current snapshot details",
+      "supports": "Exact model identifier and image generation/editing endpoint support"
+    },
+    {
+      "id": "nov8-images26-flare",
+      "title": "GPT-Image-2.6 Flare model reference",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+      "accessedAt": "2026-11-08T19:14:03.694Z",
+      "publishedAt": null,
+      "locator": "Model ID; Current snapshot details",
+      "supports": "Exact model identifier and image generation/editing endpoint support"
+    },
+    {
+      "id": "nov8-images26-pricing",
+      "title": "OpenAI API pricing",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "accessedAt": "2026-11-08T19:14:04.714Z",
+      "publishedAt": null,
+      "locator": "Image generation models, Standard and Batch tables",
+      "supports": "Standard token rates; limits of the retrieved Batch and caching documentation"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded creative-production pilot where annotated edits, editable vector output or short loops remove a concrete handoff. The case is strongest for documented controls and output formats; speed, consistency and savings still require task-specific measurement.",
+  "researchNote": "Based on OpenAI public launch content captured in Chrome and official developer documentation retrieved through the OpenAI documentation connector on November 8, 2026. This is a documentary assessment. Proposed workflows were not executed, vendor examples are not independent validation, and account-specific access, output quality, latency and charges remain untested."
+}

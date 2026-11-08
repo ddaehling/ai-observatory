@@ -18974,5 +18974,1176 @@
       ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-docs.json",
       ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/creative-cue-pricing.json"
     ]
+  },
+  {
+    "id": "pdd-prototype-scope",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "Microsoft describes PDD Kit as a research prototype that currently verifies Rust.",
+    "passages": [
+      "PDD Kit is a research prototype, and it only verifies Rust today"
+    ],
+    "locator": "What to Expect from PDD Kit",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "A research account, not proof of a generally available toolkit release."
+    ],
+    "limitations": [
+      "The captured article did not establish public installation, pricing, licensing, or a supported PDD distribution."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-intent-workflow",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "The described workflow runs in Chopin, converts reviewed intent into formal specifications and empirical checks, and uses Verus to check proofs.",
+    "passages": [
+      "It runs as a partner inside Chopin",
+      "an intent artifact"
+    ],
+    "locator": "How PDD Kit works",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "Formal results apply to the derived specifications and accepted assumptions.",
+      "Human acceptance of assumptions remains necessary."
+    ],
+    "limitations": [
+      "No workflow execution or independent reproduction performed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-login-demonstration",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "The reported capstone focuses on login in a roughly 5,000-line Rust full-stack application; it does not establish verification of every app feature.",
+    "passages": [
+      "Together they come to about 5,000 lines of Rust.",
+      "we focus on formally verifying the login logic"
+    ],
+    "locator": "The capstone: a full-stack web app",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "Author-reported demonstration; claims about uncovered existing bugs are not independently reproduced."
+    ],
+    "limitations": [
+      "Other functions and the complete application were not shown verified in this report."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-trusted-boundary",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "The reported login proof leaves third-party operations and request unpacking under assumed contracts supported by tests, and assumes the verification toolchain.",
+    "passages": [
+      "sit outside the proof, each behind an assumed contract the developer accepted.",
+      "The Verus, Rust compiler and Z3"
+    ],
+    "locator": "What the proof does and doesn’t say: Trusted and tested; Assumed",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "Dependencies include database lookups, password verification, token signing, clock, database error mapping and request unpacking.",
+      "Verus, Rust compiler, Z3 and vstd remain assumed."
+    ],
+    "limitations": [
+      "Empirical checks do not prove dependencies.",
+      "An incorrect specification can be proved without meeting human intent."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-mutants-ci",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "The described process deliberately mutates scratch code to test specification strength and adds Verus checks alongside empirical tests in CI.",
+    "passages": [
+      "plants one bug per ensures clause in a scratch copy",
+      "adds the Verus check to CI"
+    ],
+    "locator": "Step 6: Prove, check, close the gaps; Step 7: Review intent alongside verified code",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "Mutation rejection probes clauses; it does not establish specification completeness.",
+      "Language-model gap review is distinct from mathematical proof checking."
+    ],
+    "limitations": [
+      "No mutation test, CI run, or measured maintenance result independently reproduced."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-omissions",
+    "source_ids": [
+      "source-b28ecfb79591f96a"
+    ],
+    "claim": "The demonstrated login specification leaves termination, timing, attempt rate, and role interpretation at other endpoints outside its promises.",
+    "passages": [
+      "the login future ever completes",
+      "how other endpoints read the role"
+    ],
+    "locator": "Step 4: Where proof stops",
+    "event_date": null,
+    "publication_date": "2026-11-05",
+    "retrieved_at": {
+      "source-b28ecfb79591f96a": "2026-11-08T19:05:40.968Z"
+    },
+    "qualifiers": [
+      "The async postcondition characterizes a returned result, not a guarantee that a result arrives."
+    ],
+    "limitations": [
+      "A proof of the login contracts is not a whole-system security, availability, accessibility or usability guarantee."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+    ]
+  },
+  {
+    "id": "pdd-component-chopin",
+    "source_ids": [
+      "official-source-pdd-chopin"
+    ],
+    "claim": "GitHub Next describes the planning environment as an unfinished research prototype and discourages use at the time of the captured page.",
+    "passages": [
+      "Chopin is neither a product nor a finished prototype.",
+      "We don’t recommend you attempt to use it today."
+    ],
+    "locator": "Introducing Chopin; What to Expect from Chopin",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-pdd-chopin": "2026-11-08T19:10:23.766Z"
+    },
+    "qualifiers": [
+      "Observed component documentation, not a verified PDD Kit distribution or reproduction.",
+      "Publication date of this page was not established."
+    ],
+    "limitations": [
+      "No component installed or run; linked playground/install paths not inspected in this writing task."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/pdd-chopin.json"
+    ]
+  },
+  {
+    "id": "pdd-component-verus",
+    "source_ids": [
+      "official-source-pdd-verus"
+    ],
+    "claim": "The public verifier supports a subset of Rust, links learning and installation routes, and explicitly warns of missing or broken features and incomplete documentation.",
+    "passages": [
+      "Verus currently supports a subset of Rust",
+      "Features may be broken and/or missing"
+    ],
+    "locator": "README: Status; Try Verus",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-pdd-verus": "2026-11-08T19:10:29.224Z"
+    },
+    "qualifiers": [
+      "Observed component documentation, not a verified PDD Kit distribution or reproduction.",
+      "Publication date of this page was not established."
+    ],
+    "limitations": [
+      "No component installed or run; linked playground/install paths not inspected in this writing task."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/official/pdd-verus.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-availability",
+    "source_ids": [
+      "source-295354ff422b0d4d"
+    ],
+    "claim": "OpenAI announced Images 2.6 on November 4, 2026, with global ChatGPT/Codex access across subscription tiers and two API models.",
+    "passages": [
+      "November 4, 2026",
+      "all subscription tiers"
+    ],
+    "locator": "Pricing and availability",
+    "event_date": "2026-11-04",
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "source-295354ff422b0d4d": "2026-11-08T19:12:58.681Z"
+    },
+    "qualifiers": [
+      "Vendor availability statement; desktop, mobile and web are named."
+    ],
+    "limitations": [
+      "No individual account entitlement or usage-limit verification."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-launch-chrome.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-models",
+    "source_ids": [
+      "nov8-images26-sunburst",
+      "nov8-images26-flare"
+    ],
+    "claim": "Exact documented model IDs are gpt-image-2.6-sunburst and gpt-image-2.6-flare, with text/image inputs and image generation/editing endpoints.",
+    "passages": [
+      "gpt-image-2.6-sunburst",
+      "gpt-image-2.6-flare"
+    ],
+    "locator": "Model ID; Current snapshot details",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-sunburst": "2026-11-08T19:14:01.676Z",
+      "nov8-images26-flare": "2026-11-08T19:14:03.694Z"
+    },
+    "qualifiers": [
+      "Sunburst is positioned for detailed visual work; Flare for fast iteration. Current snapshot lists are not dated."
+    ],
+    "limitations": [
+      "No API call or dated snapshot pin was verified."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-sunburst.json",
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-flare.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-vendor-speed",
+    "source_ids": [
+      "source-295354ff422b0d4d"
+    ],
+    "claim": "OpenAI claims 50% faster generation and low-quality Flare generation in as little as six seconds; it associates medium/high-quality Sunburst with detail and consistency improvements.",
+    "passages": [
+      "50% faster",
+      "as little as six seconds"
+    ],
+    "locator": "Faster iteration and more professional visuals",
+    "event_date": null,
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "source-295354ff422b0d4d": "2026-11-08T19:12:58.681Z"
+    },
+    "qualifiers": [
+      "Vendor claims; six seconds is an as-little-as example at low quality."
+    ],
+    "limitations": [
+      "No independently measured distribution, task-matched baseline or acceptance-adjusted production timing."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-launch-chrome.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-complexity",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "Complexity controls planning, with low/medium/high and default high; quality separately controls rendering. Higher complexity may add latency and unwanted edits, without a separate complexity fee.",
+    "passages": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "locator": "Set image complexity",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "Applies to both 2.6 Sunburst and Flare."
+    ],
+    "limitations": [
+      "Documented behavior; no quality/latency or consumption experiment."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-markup",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "Markup-guided edits use the Image API, a separate transparent PNG aligned to the first image, and cannot be combined with mask. Each first image/overlay is capped at 16,777,216 pixels; the annotation file also has a 50 MB limit.",
+    "passages": [
+      "16,777,216",
+      "50 MB"
+    ],
+    "locator": "Guide an edit with markup",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "Additional images are references. JSON markup takes exactly one of image_url/file_id; JSON input array is images. The overlay must contain transparent pixels and match oriented dimensions."
+    ],
+    "limitations": [
+      "No regional preservation or validation behavior was tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-svg",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "SVG is generated through the generation endpoint with n=1; a reference image is converted to static vector XML without scripts, external resources or embedded raster content. SVG editing output, streaming, partial images and compression are unsupported.",
+    "passages": [
+      "static vector content"
+    ],
+    "locator": "Generate SVG output",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "quality controls the reference image; b64_json decodes to UTF-8 XML. SVG is not a supported raster edit input."
+    ],
+    "limitations": [
+      "No vector export was generated or edited for this report; layer organization and print readiness are unestablished."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-gif",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "GIF generation/editing returns the completed animation. Frame count is 2–16 with default 9; duration is 20–2000 ms rounded to 10 ms with default 200; sizes are auto or positive multiples of 16.",
+    "passages": [
+      "2–16 frames",
+      "200"
+    ],
+    "locator": "Generate animated GIF output",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "Frame count, frame size and n must fit model limits and total request pixel budget. No streaming, partial images or custom compression. 9×200 ms = 1.8 seconds is arithmetic, not measured motion quality."
+    ],
+    "limitations": [
+      "No animation generated; no promise of smoothness, correct looping or long-form video."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-pricing",
+    "source_ids": [
+      "nov8-images26-pricing"
+    ],
+    "claim": "The inspected Standard table lists both 2.6 models at USD 5/M text input, 8/M image input and 30/M image output tokens. Cached rates are shown, but nearby caching explanation names earlier versions; the retrieved Batch table omits 2.6.",
+    "passages": [
+      "$8.00",
+      "$30.00",
+      "$5.00"
+    ],
+    "locator": "Image generation models, Standard and Batch tables",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-pricing": "2026-11-08T19:14:04.714Z"
+    },
+    "qualifiers": [
+      "Rates inspected November 8; not per-image quotes. Omission does not prove that a feature is categorically unavailable."
+    ],
+    "limitations": [
+      "2.6 cache/Batch eligibility not established by the captured sections; no usage or invoice measured."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-pricing.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-extra-costs",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "Complexity has no separate fee; markup has ordinary edit token rates. SVG billing combines the reference image with authoring-model token usage.",
+    "passages": [
+      "no extra fee"
+    ],
+    "locator": "GPT Image 2.6 costs; Set image complexity",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "The extra SVG authoring charge is separate from image-model generation."
+    ],
+    "limitations": [
+      "Captured section does not identify a complete authoring-rate formula; accepted-asset costs remain unknown."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-docs-boundaries",
+    "source_ids": [
+      "nov8-images26-guide",
+      "nov8-images26-sunburst",
+      "nov8-images26-flare"
+    ],
+    "claim": "The 2.6 section documents features through the Image API while many surrounding examples still use 2.5. Organization verification may be required.",
+    "passages": [
+      "Image API"
+    ],
+    "locator": "GPT Image 2.6; Overview; Current snapshot details",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z",
+      "nov8-images26-sunburst": "2026-11-08T19:14:01.676Z",
+      "nov8-images26-flare": "2026-11-08T19:14:03.694Z"
+    },
+    "qualifiers": [
+      "Do not infer that an older Responses example supports every 2.6 format/parameter."
+    ],
+    "limitations": [
+      "No account access, API schema execution or SDK compatibility testing."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json",
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-sunburst.json",
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-flare.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-limitations",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "The guide warns about latency, text clarity/placement, recurring-character consistency and composition control; it recommends request-ID/error inspection and selective backoff rather than automatic retries for quota/input errors.",
+    "passages": [
+      "2 minutes"
+    ],
+    "locator": "Limitations; error-handling guidance",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "Complex prompts may take up to two minutes; these are vendor-documented limits."
+    ],
+    "limitations": [
+      "No independent reliability or error-recovery test."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "id": "nov8-images26-editorial-workflows",
+    "source_ids": [
+      "nov8-images26-guide"
+    ],
+    "claim": "Proposed lesson correction, editable website illustration, GIF motion study and app recovery workflows are editorial designs derived from documented controls.",
+    "passages": [],
+    "locator": "Report proposed workflows, grounded in the feature sections",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov8-images26-guide": "2026-11-08T19:08:40.322Z"
+    },
+    "qualifiers": [
+      "Recommendations are explicitly separated from observed behavior.",
+      "The USD 3 illustration is 100,000 × USD 30 / 1,000,000 and excludes all other charges."
+    ],
+    "limitations": [
+      "No proposed workflow was executed; success checks and preservation criteria require local validation."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261108T185850Z-56c6d8/research/creative/images-guide.json"
+    ]
+  },
+  {
+    "claim_id": "kimi-weight-availability-20261108",
+    "claim": "On November 8 the public Kimi-K3.1-Pro repository listed 96 numbered safetensors shards and 1.56 TB, replacing the earlier future-weight availability premise.",
+    "source_ids": [
+      "repos-kimi-k31-files"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-files",
+        "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/tree/main",
+        "locator": "Expanded file listing; model-00001 through model-00096",
+        "passage": "The fully expanded public listing contains all 96 numbered safetensors shard names and displays repository size 1.56 TB.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:17:10.021Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-files-expanded.json",
+        "archive_sha256": "6986425d45f9a18c839901d0dfcbed717458ff302de5e58eb0bb59b57ad2665c"
+      }
+    ],
+    "qualifiers": [
+      "Observed availability only; commit dates do not establish first public availability."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": [
+      "No full checkpoint download, checksum verification or execution."
+    ]
+  },
+  {
+    "claim_id": "kimi-checkpoint-architecture-20261108",
+    "claim": "The versioned model README specifies 2.8T total parameters, 104B activated, 1,048,576-token context and MXFP4 weights/MXFP8 activations from quantization-aware training.",
+    "source_ids": [
+      "repos-kimi-k31-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-readme",
+        "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+        "locator": "2. Model Summary",
+        "passage": "Model Summary distinguishes total and activated parameters, lists the exact context and quantization, and describes a multimodal MoE.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:29.458Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-readme.json",
+        "archive_sha256": "d47bf9da6be0785a2528555afa958953fe122ff60f5b49654b0ea3578b92be22"
+      }
+    ],
+    "qualifiers": [
+      "Pinned revision d9e99b0792a5e93b78ea9bea62a68167e36ddd9e."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": [
+      "Active parameters and file size are not runtime memory estimates."
+    ]
+  },
+  {
+    "claim_id": "kimi-license-maas-20261108",
+    "claim": "The custom weight license requires a separate agreement before any commercial use when the licensee or any affiliate operates a MaaS business and aggregate licensee/affiliate revenue exceeds US$20m in any consecutive twelve months.",
+    "source_ids": [
+      "repos-kimi-k31-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-license",
+        "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/LICENSE",
+        "locator": "Section 2",
+        "passage": "Section 2 defines MaaS using meaningful third-party control over inference or fine-tuning inputs, parameters or training data. It excludes embedded specific features/harnesses and mere relay to others’ hosted models; the revenue condition covers affiliates and aggregate revenue.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:25.904Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-license.json",
+        "archive_sha256": "c9d71d5897a8e815e22b45bb9d0731395cccf17c37a5f385f33325482b36ae09"
+      }
+    ],
+    "qualifiers": [
+      "License text at pinned revision; preserve separate definition, trigger and consequence."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": [
+      "This describes the document, not a determination of a particular business’s legal status."
+    ]
+  },
+  {
+    "claim_id": "kimi-license-branding-exemptions-20261108",
+    "claim": "The license separately specifies branding above 100m MAU or US$20m monthly product/service revenue, with sections 2–3 exemptions for defined internal use and official/certified-partner access.",
+    "source_ids": [
+      "repos-kimi-k31-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-license",
+        "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/LICENSE",
+        "locator": "Sections 1, 3–5",
+        "passage": "Section 3 calls for prominent Kimi K3.1-Pro naming at either product threshold. Internal use in section 4 excludes making software, outputs or capabilities available to third parties. Section 1 retains notices and applicable-law conditions; section 5 disclaims warranties.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:25.904Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-license.json",
+        "archive_sha256": "c9d71d5897a8e815e22b45bb9d0731395cccf17c37a5f385f33325482b36ae09"
+      }
+    ],
+    "qualifiers": [
+      "Do not call this MIT or Apache. The twelve-month MaaS revenue threshold is distinct from monthly product revenue."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-vllm-deployment-20261108",
+    "claim": "The model-specific vLLM recipe documents an eight-GPU NVIDIA baseline, an MI355X route and hardware-specific limitations; these are not minimum hardware measurements.",
+    "source_ids": [
+      "repos-kimi-k31-vllm"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-vllm",
+        "url": "https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro",
+        "locator": "Overview; TPU serving; Rubin preview",
+        "passage": "NVIDIA baseline is two GB300 trays or one B300 node and throughput is not tuned. TPU is text-only, skips the vision tower and requires staging code pending review, with no published wheel/image. Rubin preview is unverified.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:43.514Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-vllm.json",
+        "archive_sha256": "0214275632c3c686390e5803a62d18786de9dc7db68a68cf1995ea12889db77f"
+      }
+    ],
+    "qualifiers": [
+      "Recipe inspected November 8; hardware variants differ."
+    ],
+    "contradicts": [],
+    "source_family": "vLLM project",
+    "status": "supported",
+    "limitations": [
+      "No deployment or benchmark reproduced."
+    ]
+  },
+  {
+    "claim_id": "kimi-sglang-qualification-20261108",
+    "claim": "SGLang distinguishes verified, awaiting-final-weight-measurement and unverified recipes and discloses campaign-specific images and measured versus derived configurations.",
+    "source_ids": [
+      "repos-kimi-k31-sglang"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-sglang",
+        "url": "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3.1-Pro",
+        "locator": "Deployment badge definitions; Agentic Long-Context Deployment",
+        "passage": "Cookbook labels exact hardware/commands by verification status and distinguishes measured router/cache/image setups from derived or unchecked combinations.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:45.462Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-sglang.json",
+        "archive_sha256": "549f5590dfb130ec468c8e66195f93b9d5165b0a3fd13f182257383fab61a539"
+      }
+    ],
+    "qualifiers": [
+      "Model-specific recipe outranks generic hub-generated installation snippets."
+    ],
+    "contradicts": [],
+    "source_family": "SGLang project",
+    "status": "supported",
+    "limitations": [
+      "No configuration executed here; documentary verification only."
+    ]
+  },
+  {
+    "claim_id": "kimi-api-docs-correction-20261108",
+    "claim": "The November 8 API guide no longer shows the previously captured benchmark placeholders and now agrees with the launch article’s described internal hallucination figures.",
+    "source_ids": [
+      "repos-kimi-k31-guide",
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Advancing the Frontier; Finance",
+        "passage": "The current guide gives concrete benchmark values and the internal stress-test figures 23.4% to 8.3%, matching the inspected launch article, while warning these do not represent everyday rates.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:14:45.799Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-guide.json",
+        "archive_sha256": "06de0e311d5e70730b458dc644349b8472b3dbca15e7fcce8b56a002ce9b557d"
+      }
+    ],
+    "qualifiers": [
+      "Historical October 24 inconsistency remains preserved in earlier evidence.",
+      "Correction is documentation alignment, not independent factual-accuracy validation."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-price-recheck-20261108",
+    "claim": "November 8 official pricing still lists Pro at $2 input/$10 output per MTok, Highspeed $4/$20, both $0.20 cached input, with separate TTL-specific cache writes.",
+    "source_ids": [
+      "repos-kimi-api-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-pricing",
+        "url": "https://platform.kimi.ai/docs/pricing/chat",
+        "locator": "K3 Series Models; Billing Logic",
+        "passage": "Pro and Highspeed prices differ for base input/output and cache writes; cached input is the same. Five-minute writes are $2/$4 and one-hour writes $4/$8. Tax is excluded and usage is billed separately from memberships/Code.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:03.593Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-api-pricing.json",
+        "archive_sha256": "fde3df41f5d4a7c0c2e1728552ac29d1999846142cb493980ea00520346a8bb6"
+      }
+    ],
+    "qualifiers": [
+      "Documented prices, not observed invoices."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-integration-recheck-20261108",
+    "claim": "Current API documentation retains paid top-up access, always-enabled thinking, complete assistant-message history, fixed sampling and base64/file-ID vision inputs, and the web-search production warning.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Access requirements; Reasoning effort; Important limits",
+        "passage": "Minimum top-up is $1; effort low/high/max defaults max; completion default 131072 and maximum 1048576. Fixed sampling settings should be omitted; return full assistant messages, use array-form vision with base64 or ms file references. Official web search is not recommended for production near term.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:14:45.799Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-guide.json",
+        "archive_sha256": "06de0e311d5e70730b458dc644349b8472b3dbca15e7fcce8b56a002ce9b557d"
+      }
+    ],
+    "qualifiers": [
+      "No account creation, top-up, API call or regional entitlement verification."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-protocol-recheck-20261108",
+    "claim": "The current quickstart documents Chat Completions, Responses and Messages API routes with OpenAI/Anthropic formats and Python 3.9+/Node18+ examples.",
+    "source_ids": [
+      "repos-kimi-api-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-overview",
+        "url": "https://platform.kimi.ai/docs/get-your-api-key",
+        "locator": "Choose an integration method; Make your first call",
+        "passage": "HTTP and SDK integration routes are documented; framework-level compatibility does not establish every client option.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:15:05.095Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-api-overview.json",
+        "archive_sha256": "69f120aada4d17fd69ab13aae46ddd19370ac8dcee4b2df81abb93a82a9bddc9"
+      }
+    ],
+    "qualifiers": [
+      "No package installation or endpoint call executed."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-hosted-creative-recheck-20261108",
+    "claim": "The launch article still documents hosted Work/Code/API and tool-directed coding/3D workflows, while its future-tense weight sentence remains stale relative to observed files.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "Coding; 3D Modeling and Design; Availability",
+        "passage": "Provider describes Blender/CAD scripting, 3D Make previews/exports, Work3.1+ on Windows/Apple silicon, and administrator enablement for Enterprise at launch. The article retains a promise for weights by November4 despite the public files inspected November8.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-08T19:14:42.893Z",
+        "archive_path": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "e7c5d9866b74e6fc32a55cec9e0b5df9b72e1b5ffafd73c1a293d71d14f227d1"
+      }
+    ],
+    "qualifiers": [
+      "Hosted products, generated artifact quality, exact output formats and regional access not tested.",
+      "Use direct file evidence for present checkpoint availability."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "id": "datasette-integration-announcement-dates",
+    "source_ids": [
+      "source-abbb96cf14716a16",
+      "source-8265b69742e725ba"
+    ],
+    "claim": "The author announced Datasette Agent 0.5a0 on November 3, 2026 and Datasette Apps 0.3a0 on November 4, 2026.",
+    "passages": [
+      "Posted 3rd November 2026 at 11:13 pm",
+      "Posted 4th November 2026 at 12:29 am"
+    ],
+    "locator": "Each author post: RELEASE heading and Posted line",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "source-abbb96cf14716a16": "2026-11-08T19:16:42.837Z",
+      "source-8265b69742e725ba": "2026-11-08T19:16:41.865Z"
+    },
+    "qualifiers": [
+      "Dates are author publication dates, not inferred from GitHub timestamps."
+    ],
+    "limitations": [
+      "Captured release pages did not render a release timestamp; local post times have no timezone stated in the capture."
+    ]
+  },
+  {
+    "id": "datasette-agent-panel-references",
+    "source_ids": [
+      "social-datasette-agent-release"
+    ],
+    "claim": "Agent 0.5a0 adds a Datasette-page panel and permission-checked table, database and stored-query references; conversations pin their selected model.",
+    "passages": [
+      "New panel next to the chat that shows Datasette pages.",
+      "Permission checks run as the user sending the message.",
+      "The model is pinned for the life of that conversation"
+    ],
+    "locator": "0.5a0 release notes: model chooser, # references and panel bullets",
+    "event_date": "2026-11-03",
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z"
+    },
+    "qualifiers": [
+      "Event date is associated with the dated author announcement."
+    ],
+    "limitations": [
+      "Documentation observation only; no UI interaction or framing compatibility test."
+    ]
+  },
+  {
+    "id": "datasette-apps-integration-grants",
+    "source_ids": [
+      "social-datasette-apps-release",
+      "source-8265b69742e725ba"
+    ],
+    "claim": "Apps 0.3a0 adds app references, query-grant tools, creation-time query visibility/existence checks and approval for write-query grants; app links open in the Agent panel and tool results include relative paths.",
+    "passages": [
+      "Granting a write query requires approval from the user first.",
+      "app_create() now checks that each requested stored query exists and that the user can view it",
+      "App tool results now include the app's relative path"
+    ],
+    "locator": "0.3a0 release notes: integration bullets; author release post",
+    "event_date": "2026-11-04",
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z",
+      "source-8265b69742e725ba": "2026-11-08T19:16:41.865Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "These access and approval mechanisms do not establish generated SQL correctness; no working integration was tested."
+    ]
+  },
+  {
+    "id": "datasette-agent-stop-boundary",
+    "source_ids": [
+      "social-datasette-agent-release"
+    ],
+    "claim": "Agent 0.5a0 Stop keeps streamed text, allows an already-started tool to finish and stops before the next step; conversations continue after navigation.",
+    "passages": [
+      "A tool that has already started is allowed to finish",
+      "Conversations keep running if you navigate away."
+    ],
+    "locator": "0.5a0 release notes: Stop button and continuing-conversation bullets",
+    "event_date": "2026-11-03",
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z"
+    },
+    "qualifiers": [
+      "Not an assertion of rollback or cancellation of an in-flight write."
+    ],
+    "limitations": [
+      "No cancellation experiment was performed."
+    ]
+  },
+  {
+    "id": "datasette-current-write-semantics",
+    "source_ids": [
+      "social-datasette-agent-readme"
+    ],
+    "claim": "As documented on November 8, execute_write_sql analyzes ordered statements before explicit approval, executes with actor permissions, and retains earlier successes if a later statement fails; saving queries requires approval.",
+    "passages": [
+      "asks the user for explicit approval in chat before anything runs.",
+      "later statements are skipped and earlier successes are not rolled back.",
+      "Saving always requires human approval"
+    ],
+    "locator": "Current README: Executing write SQL; Saving queries",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-readme": "2026-11-08T19:17:26.545Z"
+    },
+    "qualifiers": [
+      "Current main-branch README observation on November 8, not exclusively attributed to 0.5a0."
+    ],
+    "limitations": [
+      "No runtime or transaction-behavior test; permissions and approval do not certify query intent."
+    ]
+  },
+  {
+    "id": "datasette-release-prerequisites",
+    "source_ids": [
+      "social-datasette-agent-release",
+      "social-datasette-apps-release"
+    ],
+    "claim": "Agent 0.5a0 requires Python 3.11+, Datasette 1.0a41+, datasette-llm 0.1a9+ and llm 0.37.1+; Apps 0.3a0 requires Datasette 1.0a41+ and drops Python 3.10.",
+    "passages": [
+      "Minimum versions are now datasette>=1.0a41, datasette-llm>=0.1a9 and llm>=0.37.1.",
+      "Now requires Python 3.11 or later",
+      "Now requires Datasette 1.0a41 or higher.",
+      "dropped support for Python 3.10."
+    ],
+    "locator": "Dependency and Python bullets at end of tagged release notes",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z",
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z"
+    },
+    "qualifiers": [
+      "Documented minima, not a certified tested environment."
+    ],
+    "limitations": [
+      "Package installation and cross-version compatibility were not tested."
+    ]
+  },
+  {
+    "id": "datasette-current-model-availability",
+    "source_ids": [
+      "social-datasette-agent-readme"
+    ],
+    "claim": "The current README installs Agent into the Datasette environment and describes model availability as API-key availability filtered by configured allowlists/blocklists and tool-calling support.",
+    "passages": [
+      "Install this plugin in the same environment as Datasette.",
+      "models whose API key is available",
+      "minus any that cannot call tools"
+    ],
+    "locator": "Current README: Installation; Choosing a model",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-readme": "2026-11-08T19:17:26.545Z"
+    },
+    "qualifiers": [
+      "Observed November 8, 2026; provider model examples were not treated as an independently verified availability list."
+    ],
+    "limitations": [
+      "No provider sign-in, API call, billing or model-capability test."
+    ]
+  },
+  {
+    "id": "datasette-llm-allowlist-fix",
+    "source_ids": [
+      "social-datasette-llm-release",
+      "source-6b1c4708310c50a0"
+    ],
+    "claim": "datasette-llm 0.1a10 fixes overriding previously configured model allowlists; the author reported that model restrictions on his demo had been affected.",
+    "passages": [
+      "Fixed a bug where this plugin over-rode previously configured allow-lists of models.",
+      "Fixes a bug that affected my agent.datasette.io demo site"
+    ],
+    "locator": "0.1a10 release note; November 4 author post",
+    "event_date": "2026-11-04",
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "social-datasette-llm-release": "2026-11-08T19:17:37.871Z",
+      "source-6b1c4708310c50a0": "2026-11-08T19:16:41.143Z"
+    },
+    "qualifiers": [
+      "Author-reported bug and fix; the patch is newer than Agent 0.5a0 minimum datasette-llm 0.1a9."
+    ],
+    "limitations": [
+      "No reproduction or verification that the combined installation enforces the intended model set."
+    ]
+  },
+  {
+    "id": "datasette-app-types-sandbox-scope",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "The current Apps README distinguishes sandboxed managed HTML/JavaScript apps from unrestricted Python plugin apps; managed apps require configured HTTPS origins for direct network access.",
+    "passages": [
+      "Stored apps are rendered inside a sandboxed iframe.",
+      "Apps provided by other plugins that are written in Python and HTML/JavaScript which are unrestricted",
+      "Direct network access is blocked unless the app has exact https:// origins configured."
+    ],
+    "locator": "Current README: Usage; Sandboxed apps; External apps from plugins",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Observed current README on November 8, 2026; sandbox claims apply to managed HTML apps only."
+    ],
+    "limitations": [
+      "No isolation audit; explicitly allowed origins can receive app requests."
+    ]
+  },
+  {
+    "id": "datasette-app-data-bridge-and-errors",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "Managed app data requests use app-scoped endpoints and app allowlists while preserving current-actor Datasette permissions; failed queries and JavaScript/resource failures are exposed in the error panel.",
+    "passages": [
+      "the parent page forwards them to an app-scoped query endpoint.",
+      "Datasette's normal SQL and query permissions still apply.",
+      "Failed stored-query attempts"
+    ],
+    "locator": "Current README: Data access; Sandboxed apps",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Current documentation observed November 8; grants do not establish result correctness."
+    ],
+    "limitations": [
+      "No query, error-display or access-control test."
+    ]
+  },
+  {
+    "id": "datasette-app-reference-source-access",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "Current app tags expose identifier, URL and editability; reading HTML source separately with app_view requires edit-app permission.",
+    "passages": [
+      "The agent is told the tagged app's ID and URL and whether you can edit it.",
+      "app_view tool, which requires edit-app permission."
+    ],
+    "locator": "Current README: Tagging apps in datasette-agent",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Current main-branch documentation observed November 8, 2026."
+    ],
+    "limitations": [
+      "No source-access permission test was performed."
+    ]
+  },
+  {
+    "id": "datasette-code-licenses",
+    "source_ids": [
+      "social-datasette-agent-license",
+      "social-datasette-apps-license"
+    ],
+    "claim": "The actual current LICENSE files for Agent and Apps contain the Apache License, Version 2.0.",
+    "passages": [
+      "Apache License",
+      "Version 2.0, January 2004"
+    ],
+    "locator": "Both inspected LICENSE files: opening title and full terms",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-license": "2026-11-08T19:17:50.520Z",
+      "social-datasette-apps-license": "2026-11-08T19:17:51.639Z"
+    },
+    "qualifiers": [
+      "Current main-branch code licenses observed November 8, 2026."
+    ],
+    "limitations": [
+      "This does not establish dataset, provider-service or generated-output rights; tagged-version license history was not separately compared."
+    ]
+  },
+  {
+    "id": "datasette-alpha-and-evaluation-scope",
+    "source_ids": [
+      "social-datasette-agent-release",
+      "social-datasette-apps-release",
+      "social-datasette-llm-release"
+    ],
+    "claim": "All three inspected version pages mark their releases as prereleases.",
+    "passages": [
+      "0.5a0 Pre-release",
+      "0.3a0 Pre-release",
+      "0.1a10 Pre-release"
+    ],
+    "locator": "Release headings",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z",
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z",
+      "social-datasette-llm-release": "2026-11-08T19:17:37.871Z"
+    },
+    "qualifiers": [
+      "Release status is not an independent reliability measurement."
+    ],
+    "limitations": [
+      "Report contains no installation, native execution, benchmark, compatibility or cost validation; proposed uses are editorial exercises."
+    ]
   }
 ]

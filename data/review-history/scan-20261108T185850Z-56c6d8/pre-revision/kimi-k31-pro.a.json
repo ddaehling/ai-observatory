@@ -1,0 +1,32 @@
+{
+  "reportId": "kimi-k31-pro",
+  "reviewerId": "/root/edition_20261024_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-10-24T18:12:23.862175Z",
+  "reportHash": "301fba434916a1e564f9f6c035b9ff7685c1a3489b8fc7b97732ca21330eda1f",
+  "evidenceHash": "5060f7f3f3222a37f21318d8afca85dd2fd42aaa768d80314eee416dfdbc4fa0",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Documented hosted coding, visual input and scripted 3D workflows offer useful app, teaching-scene and video-preparation pilots. Access, token categories, client constraints and output verification are explained sufficiently to design a bounded comparison.",
+    "impact": "A major hosted model update targeting longer coding and 3D work is potentially meaningful within model-assisted development. Current evidence is provider-reported, benchmarks use differing conditions, and the future weight release cannot contribute present-day openness or reproducible impact.",
+    "novelty": "Enhanced coding and 3D construction across tools are useful capabilities, but this is explicitly post-training of an existing model and the evidence demonstrates incremental improvements more clearly than a new approach. No independent artifacts establish exceptional differentiation.",
+    "maturity": "Public API access, pricing and detailed protocol guidance make a pilot feasible. Benchmark placeholders, inconsistent internal accuracy figures, the production web-search warning and absence of runtime tests leave substantial readiness uncertainty.",
+    "openness": "Public hosted APIs and format compatibility offer some integration portability. As of the inspection date the weights, final license and serving recipe remain promised, so an open-weight label cannot justify a high openness score."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "The November 4 weight release is a promise; no available checkpoint or license was verified.",
+    "Guide placeholders and differently described factuality evaluations limit quality confidence; the report appropriately omits those numeric claims.",
+    "The exact announcement publication date is unknown and remains null."
+  ]
+}

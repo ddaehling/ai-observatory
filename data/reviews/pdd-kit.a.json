@@ -1,0 +1,31 @@
+{
+  "reportId": "pdd-kit",
+  "reviewerId": "/root/astra_nov8_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-08T19:39:56.821461Z",
+  "reportHash": "1a4ad7f5013946bf33cd3d2727026e35c20c2e502ab0cadf14f0063cf9e40407",
+  "evidenceHash": "329e41070eab54f3d6de807dc864b8478d4cb695bd80e2091264b356e17c4fa4",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 5,
+    "impact": 4,
+    "novelty": 6,
+    "maturity": 2,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The requirements-to-evidence map and login truth-table example give educators and Rust builders a concrete review method. The proposed exercises have checkable outputs, but the integrated kit is not established as publicly installable.",
+    "impact": "Connecting intent review to checked Rust proofs is promising software-assurance research, but the evidence is one author-reported login slice and no reproduced distribution or scale result. This supports bounded potential rather than an established domain-wide advance.",
+    "novelty": "The combined intent artifact, explicit trust decisions, clause-targeted mutation checks and CI integration form a meaningfully differentiated workflow. The verifier and formal-method principles themselves are existing components, and broader superiority is not demonstrated.",
+    "maturity": "Microsoft explicitly calls it a research prototype, Chopin discourages present use, and no complete reproducible PDD package or run is established. Verus component access does not make the integrated workflow dependable.",
+    "openness": "The account exposes specifications, assumptions and public component routes, which permits conceptual inspection. Integrated toolkit code, license, distribution and reproducible artifacts remain unverified; component openness cannot be transferred to PDD Kit."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: adoption, proof-maintenance effort and bug findings remain unreplicated vendor observations. The report correctly makes these limits explicit.",
+    "Length check: 1,056 independently counted body words fits the 900–1,100 range corresponding to my impact 4; the final two-reviewer mean must still be checked."
+  ]
+}

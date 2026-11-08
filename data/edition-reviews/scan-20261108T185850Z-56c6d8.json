@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261108T185850Z-56c6d8",
+  "recordedAt": "2026-11-08T19:47:16Z",
+  "status": "validated-awaiting-deployment",
+  "expectedSources": 183,
+  "accessibleSources": 181,
+  "failedSources": 2,
+  "completeWindowBrowserSources": 32,
+  "partialBrowserSources": 145,
+  "preservedPrimaryFeeds": 4,
+  "supplementaryStoryOutcomes": 18,
+  "supplementaryStoryFailures": 2,
+  "newSourcesBeyondFeedCollector": 52,
+  "newFeedSourceRecords": 44,
+  "newCandidates": 74,
+  "feedCandidates": 51,
+  "browserCandidates": 23,
+  "priorCandidatesReconsidered": 32,
+  "priorCandidatesDeferred": 1152,
+  "uniqueCandidatesConsidered": 106,
+  "finalCandidateStatuses": {
+    "needs_review": 87,
+    "included": 6,
+    "excluded": 12,
+    "unresolved": 1
+  },
+  "catalogue": {
+    "considered": 19,
+    "added": 9,
+    "updated": 5,
+    "rejected": 0,
+    "deferred": 4,
+    "unchanged": 1,
+    "actualEntryAdditions": 9,
+    "actualEntryUpdates": 4,
+    "resolvedLeadUpdates": 1,
+    "rawAssessments": 20,
+    "excludedDuplicateRejections": 1,
+    "before": {
+      "entries": 32,
+      "directlyInspectedSocialAccounts": 13,
+      "communities": 4,
+      "discoveryQueue": 9,
+      "statuses": {
+        "verified": 21,
+        "specialist": 11
+      }
+    },
+    "after": {
+      "entries": 41,
+      "directlyInspectedSocialAccounts": 15,
+      "communities": 4,
+      "discoveryQueue": 4,
+      "statuses": {
+        "verified": 22,
+        "specialist": 19
+      }
+    },
+    "resolvedLeads": 5
+  },
+  "reportGates": {
+    "pdd-kit": {
+      "reportHash": "1a4ad7f5013946bf33cd3d2727026e35c20c2e502ab0cadf14f0063cf9e40407",
+      "evidenceHash": "329e41070eab54f3d6de807dc864b8478d4cb695bd80e2091264b356e17c4fa4",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1056,
+      "meanScores": {
+        "usefulness": 5.0,
+        "impact": 4.0,
+        "novelty": 5.5,
+        "maturity": 2.5,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "images26-creative-controls": {
+      "reportHash": "f44023d4e4b46fc6346e41ee3906d845abd8f8caa8a1824788e6dd3134867ced",
+      "evidenceHash": "0eb5586a8ac93cf51def1fc771883bd138af91db72baa6c07509b24e8c442b9e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1911,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "kimi-k31-pro": {
+      "reportHash": "b5989f1ff02479d9b65ab61566e5a0fc28d3e4438a77e73c97000d8108951be8",
+      "evidenceHash": "b8cce51c0c6bcc1a449c55998e6692795652f83f9c25daa36df6674a6a2f4912",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 2158,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 6.5,
+        "novelty": 6.0,
+        "maturity": 5.5,
+        "openness": 6.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "datasette-agent-apps": {
+      "reportHash": "81a17da32362b662caa5110a97fd6f6f6a140a8856a49c96a3493f6d7d971648",
+      "evidenceHash": "077e349f0fbbb3f6449f62d8e25f32b3f1942034144d3533f27997b6a48fd9cf",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1042,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 4.0,
+        "novelty": 4.5,
+        "maturity": 4.5,
+        "openness": 8.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    }
+  },
+  "independentAccountingAuditor": "/root/nov8_accounting_audit",
+  "auditResult": "Preapply source/candidate/catalogue accounting and 45 unaffected protected report/evidence hashes passed.",
+  "reviewAttempt": 1,
+  "substantiveDisagreements": 0,
+  "newReports": 3,
+  "updatedReports": 1,
+  "publicReportTotalExpected": 49,
+  "limitations": [
+    "Most repository, hub and social listing histories were partial; partial/failed coverage watermarks were preserved.",
+    "Adobe Firefly and Anthropic X expected entrypoints failed; two additional repository story captures failed outside the 183-source denominator.",
+    "No advertised tool or model was installed or executed. API performance, costs per completed task, model benchmarks and vendor quality claims were not experimentally verified.",
+    "The older October 24 Kimi guide capture could not be re-read by either reviewer; current decisive captures and historical claims were reviewed.",
+    "Optional creative visual-asset export stalled and was interrupted; no documentary output assets were inspected."
+  ],
+  "observedResourceUse": {
+    "tokens": null,
+    "cost": null,
+    "measurement": "No reliable token/cost measurement available; no savings claimed.",
+    "handsOnModelOrToolTests": 0,
+    "newDocumentaryVisualAssets": 0,
+    "visualAssetLimitation": "An optional page-asset export stalled after page capture; it was interrupted. No downloaded output image, SVG or GIF was inspected or used as validation."
+  },
+  "validation": {
+    "reportValidation": {
+      "valid": 49,
+      "invalid": 0
+    },
+    "catalogueCaptureValidation": "passed",
+    "strictBuildReports": 49,
+    "unitTestsPassed": 100,
+    "localBrowserInspection": [
+      "49-report index",
+      "complete Datasette report",
+      "source citations and locators",
+      "both independent reviewer rationale panels",
+      "edition counts and access limits"
+    ],
+    "interfaceChanges": false
+  }
+}

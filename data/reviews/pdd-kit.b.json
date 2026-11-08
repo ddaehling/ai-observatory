@@ -1,0 +1,30 @@
+{
+  "reportId": "pdd-kit",
+  "reviewerId": "/root/astra_nov8_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-08T19:40:35.670664Z",
+  "reportHash": "1a4ad7f5013946bf33cd3d2727026e35c20c2e502ab0cadf14f0063cf9e40407",
+  "evidenceHash": "329e41070eab54f3d6de807dc864b8478d4cb695bd80e2091264b356e17c4fa4",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 5,
+    "impact": 4,
+    "novelty": 5,
+    "maturity": 3,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The intent map, implication-versus-converse login example and explicit trusted boundary provide concrete learning and review techniques. The proposed permission-rule exercise is actionable separately, but the integrated PDD workflow is not established as publicly installable.",
+    "impact": "The evidence establishes one reported login slice, not a scalable assurance system or a replicated improvement over existing verification practice. Connecting agent planning to machine-checked obligations has credible potential, but demonstrated significance remains a bounded research contribution.",
+    "novelty": "The distinctive element is the integration of human intent decisions, specification links, mutation checks and proof/test reporting. Formal specifications and Verus proofs are established component ideas; no comparative evidence establishes a new verification capability.",
+    "maturity": "Microsoft explicitly calls PDD Kit a Rust research prototype. Chopin discourages use and Verus warns of incomplete features/documentation. A reported application example supports more than speculation, but availability, setup reproducibility and reliability of the integrated toolkit remain unverified.",
+    "openness": "The article exposes the process and its assumptions and links publicly inspectable component projects. It does not establish a complete PDD distribution, license or reproducible example package, so component openness cannot be credited to the integrated kit."
+  },
+  "confidence": "high",
+  "concerns": [
+    "The integrated toolkit remains unavailable as a verified reproducible public package; the report clearly retains this boundary. No publication-blocking factual or safety issue found."
+  ]
+}

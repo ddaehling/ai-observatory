@@ -868,45 +868,97 @@
         "ratePerWeek": null,
         "basis": "Captured daily-briefing entries October 27–30, 2026; the label is publisher-declared, not a measured long-term rate."
       },
-      "lastAssessedAt": "2026-10-31T07:04:08Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
       "access": {
         "entrypointInspected": true,
-        "captureUrl": "https://latent.space/",
+        "captureUrl": "https://www.latent.space/",
         "coverageComplete": false,
         "limitations": [
           "Curated homepage alone is partial; recovered RSS result is a separate successful acquisition.",
-          "Interviews and release roundups can repeat vendor claims; verify technical and availability details at origin."
+          "Interviews and release roundups can repeat vendor claims; verify technical and availability details at origin.",
+          "Supplementary homepage inspection found current daily briefings and podcast summaries; curated sections do not exhaust the outstanding archive. Preserve the original successful RSS acquisition and its watermark."
         ],
         "coverageWindow": {
-          "runId": "scan-20261030T204748Z-f31b7f",
-          "windowStart": "2026-10-25T19:37:34Z",
-          "windowEnd": "2026-10-30T20:47:48Z",
-          "scope": "Listing/profile acquisition only; complete applies solely to this stated window, never to independent verification of every linked article."
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": "2026-10-30T19:06:26Z",
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Supplementary homepage inspection found current daily briefings and podcast summaries; curated sections do not exhaust the outstanding archive. Preserve the original successful RSS acquisition and its watermark."
         }
       },
       "evidence": [
         {
-          "url": "https://latent.space/p/elorian/",
-          "publishedAt": "2026-10-29",
-          "observedAt": "2026-10-30T20:51:25.259Z",
-          "observation": "Current lead story discussed visual reasoning and a decoy benchmark.",
-          "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
+          "url": "https://www.latent.space/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:11:26.124Z",
+          "observation": "Current homepage presents daily briefing, analysis and podcast sections. www and non-www routes belong to the same publisher; this visit does not establish independent corroboration or complete archive coverage.",
+          "inspection": "Current public landing/listing page inspected; no independent validation of linked claims."
         }
       ],
       "provenance": {
-        "runId": "scan-20261030T204748Z-f31b7f",
-        "capturePath": ".state/scan-20261030T204748Z-f31b7f/research/archives/seed-latent-space.json",
-        "captureSha256": "1f41123340e6ebca5ed2d5f198306fbf53764c5a63ecef1e834c76054bbd2161",
-        "sourceResultPath": ".state/scan-20261030T204748Z-f31b7f/research/bundle.json"
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-latent-space.json",
+        "captureSha256": "0710bb90b4c1264b1562477fafed5643c9b371dfdbbdf1426e2987290a298be4",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
       },
       "assessmentHistory": [
         {
           "assessedAt": "2026-10-31",
           "basis": "Retrospective curation from saved public research, not a new access check.",
           "status": "verified"
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "verified",
+          "reason": "Reassessed current homepage and assigned articles; migrated www/non-www URLs represent one publisher family, not independent corroboration."
         }
       ],
-      "lastObservedAt": "2026-10-30T20:51:25.259Z"
+      "lastObservedAt": "2026-11-08T19:11:26.124Z",
+      "observationHistory": [
+        {
+          "record": {
+            "lastObservedAt": "2026-10-30T20:51:25.259Z",
+            "lastAssessedAt": "2026-10-31T07:04:08Z",
+            "access": {
+              "entrypointInspected": true,
+              "captureUrl": "https://latent.space/",
+              "coverageComplete": false,
+              "limitations": [
+                "Curated homepage alone is partial; recovered RSS result is a separate successful acquisition.",
+                "Interviews and release roundups can repeat vendor claims; verify technical and availability details at origin."
+              ],
+              "coverageWindow": {
+                "runId": "scan-20261030T204748Z-f31b7f",
+                "windowStart": "2026-10-25T19:37:34Z",
+                "windowEnd": "2026-10-30T20:47:48Z",
+                "scope": "Listing/profile acquisition only; complete applies solely to this stated window, never to independent verification of every linked article."
+              }
+            },
+            "evidence": [
+              {
+                "url": "https://latent.space/p/elorian/",
+                "publishedAt": "2026-10-29",
+                "observedAt": "2026-10-30T20:51:25.259Z",
+                "observation": "Current lead story discussed visual reasoning and a decoy benchmark.",
+                "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
+              }
+            ],
+            "provenance": {
+              "runId": "scan-20261030T204748Z-f31b7f",
+              "capturePath": ".state/scan-20261030T204748Z-f31b7f/research/archives/seed-latent-space.json",
+              "captureSha256": "1f41123340e6ebca5ed2d5f198306fbf53764c5a63ecef1e834c76054bbd2161",
+              "sourceResultPath": ".state/scan-20261030T204748Z-f31b7f/research/bundle.json"
+            },
+            "status": "verified",
+            "whyMonitor": "Discover model launches, implementation interviews and engineering workflows through public articles and the known feed.",
+            "cadence": {
+              "ratePerWeek": null,
+              "basis": "Captured daily-briefing entries October 27–30, 2026; the label is publisher-declared, not a measured long-term rate."
+            }
+          },
+          "scope": "Previous catalogue observation retained before this dated reassessment."
+        }
+      ]
     },
     {
       "id": "seed-ben-s-bites",
@@ -993,44 +1045,38 @@
         "ratePerWeek": null,
         "basis": "Multiple dated weekday issues visible October 7–November 3; no full publication-rate measurement."
       },
-      "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
       "access": {
         "entrypointInspected": true,
-        "captureUrl": "https://tldr.tech/ai/archives",
+        "captureUrl": "https://tldr.tech/ai",
         "coverageComplete": false,
         "limitations": [
           "Homepage signup splash and public archive are distinct routes.",
           "Visible issue links establish archive availability; do not establish each issue body was inspected.",
-          "Earlier source-specific history predating October 7 remains unchecked."
+          "Earlier source-specific history predating October 7 remains unchecked.",
+          "Public landing page plus its observed archive link inspected. Archive exposes November 6 back to October 12, leaving this source’s September 18–October 11 history uncovered. Publisher claimed daily cadence was not independently measured."
         ],
         "coverageWindow": {
-          "runId": "scan-20261102T190626Z-3a6f04",
+          "runId": "scan-20261108T185850Z-56c6d8",
           "windowStart": "2026-09-18T15:13:23Z",
-          "windowEnd": "2026-11-02T19:06:26Z",
-          "scope": "Listing/archive capture retrieved November 3; saved run window remains November 2."
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Public landing page plus its observed archive link inspected. Archive exposes November 6 back to October 12, leaving this source’s September 18–October 11 history uncovered. Publisher claimed daily cadence was not independently measured."
         }
       },
       "evidence": [
         {
-          "url": "https://tldr.tech/ai",
-          "publishedAt": null,
-          "observedAt": "2026-10-30T20:51:27.329Z",
-          "observation": "Retain as a public newsletter lead, with its observed archive link queued for inspection before quality/cadence promotion.",
-          "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
-        },
-        {
           "url": "https://tldr.tech/ai/archives",
           "publishedAt": null,
-          "observedAt": "2026-11-03T19:17:54.213Z",
-          "observation": "Visible issues span October 7–November 3, including October 27–30 and November 2.",
-          "inspection": "Archive listing inspected; linked issue bodies not separately opened."
+          "observedAt": "2026-11-08T19:11:27.621Z",
+          "observation": "Landing page links the exact public TLDR AI archive and claims a daily email; this does not establish a measured cadence.",
+          "inspection": "Current public landing/listing page inspected; no independent validation of linked claims."
         }
       ],
       "provenance": {
-        "runId": "scan-20261102T190626Z-3a6f04",
-        "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/lead-4ad1bf72f9e5bbeb.json",
-        "captureSha256": "6fbf32da7d9baabfd154af0e283966e3129c2c588a6ce06275604472769b05bf",
-        "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/bundle.json"
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-tldr-ai.json",
+        "captureSha256": "6aaf449858ce2ad5e26a7f0085abc3adf6765e2566648dcaa76eeb704febff13",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
       },
       "assessmentHistory": [
         {
@@ -1042,15 +1088,89 @@
           "assessedAt": "2026-11-03T19:38:50.939910Z",
           "basis": "Actual public TLDR AI archive inspected and dated issue links confirmed. Update existing newsletter identity; do not create a second publisher identity for its archive route.",
           "status": "verified"
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "verified",
+          "reason": "Observed the archive link and inspected November 6–October 12 issues. Correct scope is partial relative to this source’s September 18 window; same publisher as its X account."
         }
       ],
-      "lastObservedAt": "2026-11-03T19:17:54.213Z",
+      "lastObservedAt": "2026-11-08T19:17:22.196Z",
       "provenanceHistory": [
         {
           "runId": "scan-20261030T204748Z-f31b7f",
           "capturePath": ".state/scan-20261030T204748Z-f31b7f/research/archives/seed-tldr-ai.json",
           "captureSha256": "97228c98912ca5c52e602b40cb10b52493f3b82371279e9e6b769a43166a7100",
           "sourceResultPath": ".state/scan-20261030T204748Z-f31b7f/research/bundle.json"
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://tldr.tech/ai/archives",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:17:22.196Z",
+          "observation": "Archive listing exposes issue links from November 6 through October 12, 2026; individual linked issue bodies and older September history were not inspected in this pass.",
+          "inspection": "Rendered public archive index inspected; listed issue links are not independent full-issue inspections.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/tldr-ai-archive.json",
+            "captureSha256": "0fb025cad37a500e567058d278fa0b5f86fa14d7c643032b128a4e1bc34539c9",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ],
+      "observationHistory": [
+        {
+          "record": {
+            "lastObservedAt": "2026-11-03T19:17:54.213Z",
+            "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
+            "access": {
+              "entrypointInspected": true,
+              "captureUrl": "https://tldr.tech/ai/archives",
+              "coverageComplete": false,
+              "limitations": [
+                "Homepage signup splash and public archive are distinct routes.",
+                "Visible issue links establish archive availability; do not establish each issue body was inspected.",
+                "Earlier source-specific history predating October 7 remains unchecked."
+              ],
+              "coverageWindow": {
+                "runId": "scan-20261102T190626Z-3a6f04",
+                "windowStart": "2026-09-18T15:13:23Z",
+                "windowEnd": "2026-11-02T19:06:26Z",
+                "scope": "Listing/archive capture retrieved November 3; saved run window remains November 2."
+              }
+            },
+            "evidence": [
+              {
+                "url": "https://tldr.tech/ai",
+                "publishedAt": null,
+                "observedAt": "2026-10-30T20:51:27.329Z",
+                "observation": "Retain as a public newsletter lead, with its observed archive link queued for inspection before quality/cadence promotion.",
+                "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
+              },
+              {
+                "url": "https://tldr.tech/ai/archives",
+                "publishedAt": null,
+                "observedAt": "2026-11-03T19:17:54.213Z",
+                "observation": "Visible issues span October 7–November 3, including October 27–30 and November 2.",
+                "inspection": "Archive listing inspected; linked issue bodies not separately opened."
+              }
+            ],
+            "provenance": {
+              "runId": "scan-20261102T190626Z-3a6f04",
+              "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/lead-4ad1bf72f9e5bbeb.json",
+              "captureSha256": "6fbf32da7d9baabfd154af0e283966e3129c2c588a6ce06275604472769b05bf",
+              "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/bundle.json"
+            },
+            "status": "verified",
+            "whyMonitor": "Retain as a public newsletter lead, with its observed archive link queued for inspection before quality/cadence promotion.",
+            "cadence": {
+              "ratePerWeek": null,
+              "basis": "Multiple dated weekday issues visible October 7–November 3; no full publication-rate measurement."
+            }
+          },
+          "scope": "Previous catalogue observation retained before this dated reassessment."
         }
       ]
     },
@@ -1379,7 +1499,7 @@
         "ratePerWeek": null,
         "basis": "Dated snapshot/update observed November 3; actual maintenance frequency unmeasured."
       },
-      "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
       "access": {
         "entrypointInspected": true,
         "captureUrl": "https://noometry.com/model-releases",
@@ -1387,29 +1507,30 @@
         "limitations": [
           "Noometry table captured. It still attributes Nemotron 3.5 to Thinking Machines and labels MiniMax/Mistral proprietary. Retain low-authority secondary discovery role; no release/licensing claim accepted from this table.",
           "Secondary discovery only; official artifacts must establish release/access/license/performance claims.",
-          "Listing is not independently verified exhaustive history."
+          "Listing is not independently verified exhaustive history.",
+          "Noometry release log inspected; site states last verified November 3 and contains a Nemotron row attributed to Thinking Machines. Treat attribution/openness/date fields as unverified leads; outstanding window not fully reliable or current."
         ],
         "coverageWindow": {
-          "runId": "scan-20261102T190626Z-3a6f04",
+          "runId": "scan-20261108T185850Z-56c6d8",
           "windowStart": "2026-09-22T17:16:37Z",
-          "windowEnd": "2026-11-02T19:06:26Z",
-          "scope": "Listing/archive capture retrieved November 3; saved run window remains November 2."
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Noometry release log inspected; site states last verified November 3 and contains a Nemotron row attributed to Thinking Machines. Treat attribution/openness/date fields as unverified leads; outstanding window not fully reliable or current."
         }
       },
       "evidence": [
         {
           "url": "https://noometry.com/model-releases",
           "publishedAt": null,
-          "observedAt": "2026-10-30T20:54:47.565Z",
-          "observation": "Use a broad release index for candidate discovery only, then verify provider, license and release stage at origin.",
-          "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
+          "observedAt": "2026-11-08T19:13:43.046Z",
+          "observation": "Release log says last verified November 3, 2026 and continues to attribute a Nemotron row to Thinking Machines. Dates, vendors and openness remain secondary leads requiring origin checks.",
+          "inspection": "Current public landing/listing page inspected; no independent validation of linked claims."
         }
       ],
       "provenance": {
-        "runId": "scan-20261102T190626Z-3a6f04",
-        "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-7d39dd84797568b6.json",
-        "captureSha256": "ffd5cac0f417df6a48ef61c0ca0c71b13550da8bbdac03a705cd6cad97cb8913",
-        "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/bundle.json"
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-7d39dd84797568b6.json",
+        "captureSha256": "85e1ea25459d6ecfb0aed7d23e95a3751448fbed74c1d414d03af62d564b9dca",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
       },
       "assessmentHistory": [
         {
@@ -1421,15 +1542,67 @@
           "assessedAt": "2026-11-03T19:38:50.939910Z",
           "basis": "Noometry table captured. It still attributes Nemotron 3.5 to Thinking Machines and labels MiniMax/Mistral proprietary. Retain low-authority secondary discovery role; no release/licensing claim accepted from this table.",
           "status": "verified"
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "verified",
+          "reason": "Reassessment: November 3 verification date and Nemotron vendor-attribution issue persist; keep a secondary tracker role and verify dates, provider and openness at origin."
         }
       ],
-      "lastObservedAt": "2026-11-03T19:27:25.299Z",
+      "lastObservedAt": "2026-11-08T19:13:43.046Z",
       "provenanceHistory": [
         {
           "runId": "scan-20261030T204748Z-f31b7f",
           "capturePath": ".state/scan-20261030T204748Z-f31b7f/social/discovery-7d39dd84797568b6.json",
           "captureSha256": "5cbfaf6cad12c2a6fb5f74ab008d55f9cc0f6c3f947702b0abd75f27e418df33",
           "sourceResultPath": ".state/scan-20261030T204748Z-f31b7f/social/accounting/bundle.json"
+        }
+      ],
+      "observationHistory": [
+        {
+          "record": {
+            "lastObservedAt": "2026-11-03T19:27:25.299Z",
+            "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
+            "access": {
+              "entrypointInspected": true,
+              "captureUrl": "https://noometry.com/model-releases",
+              "coverageComplete": false,
+              "limitations": [
+                "Noometry table captured. It still attributes Nemotron 3.5 to Thinking Machines and labels MiniMax/Mistral proprietary. Retain low-authority secondary discovery role; no release/licensing claim accepted from this table.",
+                "Secondary discovery only; official artifacts must establish release/access/license/performance claims.",
+                "Listing is not independently verified exhaustive history."
+              ],
+              "coverageWindow": {
+                "runId": "scan-20261102T190626Z-3a6f04",
+                "windowStart": "2026-09-22T17:16:37Z",
+                "windowEnd": "2026-11-02T19:06:26Z",
+                "scope": "Listing/archive capture retrieved November 3; saved run window remains November 2."
+              }
+            },
+            "evidence": [
+              {
+                "url": "https://noometry.com/model-releases",
+                "publishedAt": null,
+                "observedAt": "2026-10-30T20:54:47.565Z",
+                "observation": "Use a broad release index for candidate discovery only, then verify provider, license and release stage at origin.",
+                "inspection": "Observed in captured listing/profile; article or post body independently verified only where explicitly stated."
+              }
+            ],
+            "provenance": {
+              "runId": "scan-20261102T190626Z-3a6f04",
+              "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-7d39dd84797568b6.json",
+              "captureSha256": "ffd5cac0f417df6a48ef61c0ca0c71b13550da8bbdac03a705cd6cad97cb8913",
+              "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/bundle.json"
+            },
+            "status": "verified",
+            "whyMonitor": "Use a broad release index for candidate discovery only, then verify provider, license and release stage at origin.",
+            "cadence": {
+              "ratePerWeek": null,
+              "basis": "Dated snapshot/update observed November 3; actual maintenance frequency unmeasured."
+            }
+          },
+          "scope": "Previous catalogue observation retained before this dated reassessment."
         }
       ]
     },
@@ -1730,54 +1903,55 @@
       "kind": "social_account",
       "platform": "GitHub",
       "topics": [
-        "Local inference",
-        "GPU runtimes"
+        "local inference",
+        "GPU memory",
+        "agent infrastructure"
       ],
       "editorialRole": "independent implementation specialist",
       "status": "specialist",
-      "whyMonitor": "Independent local-inference maintainer with explicit GPU/RAM scope in capy-flash and related local tools. Profile and representative README inspected; claims remain developer-authored and hardware-specific.",
+      "whyMonitor": "Independent local-inference maintainer with inspected profile, current capy-flash README and v0.9.0 release notes. Details on concurrent requests, KV cache in RAM and reproducibility conditions add practical depth; hardware-specific author benchmarks remain unreplicated.",
       "cadence": {
         "ratePerWeek": null,
-        "basis": "Profile and representative repository inspected; posting cadence not measured."
+        "basis": "Current public profile and selected representative documentation inspected; no measured publication-rate window."
       },
-      "lastObservedAt": "2026-11-03T19:24:57.014Z",
-      "lastAssessedAt": "2026-11-03T19:38:33.581793Z",
+      "lastObservedAt": "2026-11-08T19:12:28.946Z",
+      "lastAssessedAt": "2026-11-08T19:23:08.052Z",
       "access": {
         "entrypointInspected": true,
         "captureUrl": "https://github.com/ValerioDolci",
         "coverageComplete": false,
         "coverageWindow": {
-          "runId": "scan-20261102T190626Z-3a6f04",
-          "windowStart": null,
-          "windowEnd": "2026-11-03T19:24:57.014Z",
-          "scope": "Current public profile and representative repository documentation only"
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": "2026-09-24T17:52:11Z",
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public identity and selected representative examples, retrieved after the run window end; no complete activity or publication history."
         },
         "limitations": [
-          "Pinned/public overview only; no exhaustive activity history.",
-          "Publisher-authored descriptions; software was not executed."
+          "Profile, README and visible release notes inspected; release pagination and full activity history were not exhausted.",
+          "Performance figures and validation are maintainer-reported and hardware-specific; software was not executed.",
+          "capy-flash is a fork of Neroued/ninfer and is not affiliated with Qwen or NVIDIA."
         ]
       },
       "evidence": [
         {
-          "url": "https://github.com/ValerioDolci",
-          "publishedAt": null,
-          "observedAt": "2026-11-03T19:24:57.014Z",
-          "observation": "Independent local-inference maintainer with explicit GPU/RAM scope in capy-flash and related local tools. Profile and representative README inspected; claims remain developer-authored and hardware-specific.",
-          "inspection": "Chrome public page"
-        },
-        {
           "url": "https://github.com/ValerioDolci/capy-flash",
           "publishedAt": null,
-          "observedAt": "2026-11-03T19:20:00.667Z",
-          "observation": "Representative project documentation inspected.",
-          "inspection": "Chrome public page"
+          "observedAt": "2026-11-08T19:12:28.946Z",
+          "observation": "Pinned profile identifies capy-flash and related local GPU tooling.",
+          "inspection": "Observed pinned project on actual maintainer profile.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-4741f70e5a1d8eb4.json",
+            "captureSha256": "7028fb554fe8d4c091e57691cf5fed680ad21e68aad620def6f628d59cac3388",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
         }
       ],
       "provenance": {
-        "runId": "scan-20261102T190626Z-3a6f04",
-        "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/repositories/captures/social-source-4741f70e5a1d8eb4.json",
-        "captureSha256": "de3960a5b6510289ea10f435ad7c18c8a7bc5a2e89accca0848a174d95b143a4",
-        "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/repositories/bundle.json"
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-4741f70e5a1d8eb4.json",
+        "captureSha256": "7028fb554fe8d4c091e57691cf5fed680ad21e68aad620def6f628d59cac3388",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
       },
       "assessmentHistory": [
         {
@@ -1785,6 +1959,92 @@
           "runId": "scan-20261102T190626Z-3a6f04",
           "status": "specialist",
           "reason": "Independent local-inference maintainer with explicit GPU/RAM scope in capy-flash and related local tools. Profile and representative README inspected; claims remain developer-authored and hardware-specific."
+        },
+        {
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Independent local-inference maintainer with inspected profile, current capy-flash README and v0.9.0 release notes. Details on concurrent requests, KV cache in RAM and reproducibility conditions add practical depth; hardware-specific author benchmarks remain unreplicated."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://github.com/ValerioDolci/capy-flash",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:09:50.044Z",
+          "observation": "Current README describes v0.9.0 inference server hardware/RAM scope, compatible APIs and limitations.",
+          "inspection": "Rendered README inspected; software and benchmarks untested.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-a979e7ccacda81f6.json",
+            "captureSha256": "1b65b36234ee067c9ce1da6cab280b62655bc9624c0a8d3cacd8db14e5d06f5c",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        },
+        {
+          "url": "https://github.com/ValerioDolci/capy-flash/releases/tag/v0.9.0",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:09:52.862Z",
+          "observation": "Visible v0.9.0 release notes describe opt-in concurrent KV cache in RAM and maintainer-reported validation on specified hardware.",
+          "inspection": "Release text inspected within release listing; not an independent performance test.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-52bbaa80db2ade4a.json",
+            "captureSha256": "9a89ff0632b5c31296e7d3fa3e8b36883b11c5315c61d38b7ff6998eae73d6ac",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        }
+      ],
+      "observationHistory": [
+        {
+          "record": {
+            "lastObservedAt": "2026-11-03T19:24:57.014Z",
+            "lastAssessedAt": "2026-11-03T19:38:33.581793Z",
+            "access": {
+              "entrypointInspected": true,
+              "captureUrl": "https://github.com/ValerioDolci",
+              "coverageComplete": false,
+              "coverageWindow": {
+                "runId": "scan-20261102T190626Z-3a6f04",
+                "windowStart": null,
+                "windowEnd": "2026-11-03T19:24:57.014Z",
+                "scope": "Current public profile and representative repository documentation only"
+              },
+              "limitations": [
+                "Pinned/public overview only; no exhaustive activity history.",
+                "Publisher-authored descriptions; software was not executed."
+              ]
+            },
+            "evidence": [
+              {
+                "url": "https://github.com/ValerioDolci",
+                "publishedAt": null,
+                "observedAt": "2026-11-03T19:24:57.014Z",
+                "observation": "Independent local-inference maintainer with explicit GPU/RAM scope in capy-flash and related local tools. Profile and representative README inspected; claims remain developer-authored and hardware-specific.",
+                "inspection": "Chrome public page"
+              },
+              {
+                "url": "https://github.com/ValerioDolci/capy-flash",
+                "publishedAt": null,
+                "observedAt": "2026-11-03T19:20:00.667Z",
+                "observation": "Representative project documentation inspected.",
+                "inspection": "Chrome public page"
+              }
+            ],
+            "provenance": {
+              "runId": "scan-20261102T190626Z-3a6f04",
+              "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/repositories/captures/social-source-4741f70e5a1d8eb4.json",
+              "captureSha256": "de3960a5b6510289ea10f435ad7c18c8a7bc5a2e89accca0848a174d95b143a4",
+              "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/repositories/bundle.json"
+            },
+            "status": "specialist",
+            "whyMonitor": "Independent local-inference maintainer with explicit GPU/RAM scope in capy-flash and related local tools. Profile and representative README inspected; claims remain developer-authored and hardware-specific.",
+            "cadence": {
+              "ratePerWeek": null,
+              "basis": "Profile and representative repository inspected; posting cadence not measured."
+            }
+          },
+          "scope": "Previous catalogue observation retained before this dated reassessment."
         }
       ]
     },
@@ -2115,6 +2375,768 @@
           "status": "specialist"
         }
       ]
+    },
+    {
+      "id": "publisher-alex-lavaee",
+      "sourceId": "publisher-alex-lavaee",
+      "name": "Alex Lavaee",
+      "url": "https://alexlavaee.me/",
+      "kind": "research_listing",
+      "platform": "personal website",
+      "topics": [
+        "formal verification",
+        "coding agents",
+        "computer vision",
+        "AI for science"
+      ],
+      "editorialRole": "specialist research",
+      "status": "specialist",
+      "whyMonitor": "Original research engineer and PDD Kit coauthor; portfolio provides code links for edge inference, small-model reasoning and other projects. Microsoft affiliation is explicit; employer article is not independent corroboration.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "No measured posting window; dates absent or selected highlights only."
+      },
+      "lastObservedAt": "2026-11-08T19:12:50.902Z",
+      "lastAssessedAt": "2026-11-08T19:19:30.492340Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://alexlavaee.me/",
+        "coverageComplete": false,
+        "limitations": [
+          "No measured cadence or project publication dates.",
+          "Individual portfolio repositories and personal X profile not inspected.",
+          "Original PDD work is Microsoft-affiliated."
+        ],
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public identity and selected examples; no chronological completeness."
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://alexlavaee.me/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:12:50.902Z",
+          "observation": "Public homepage identifies the AI/ML researcher and Microsoft affiliation, and links the projects portfolio. Full project and employer examples have separate supporting provenance.",
+          "inspection": "Actual public personal homepage inspected; portfolio listing and employer pages were inspected separately."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee-home.json",
+        "captureSha256": "d6d70161a3b6236f435d4dab001257c3135ae2eb76dbbdc9b33dfbd08e77df81",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "assessment": "Original research engineer and PDD Kit coauthor; portfolio provides code links for edge inference, small-model reasoning and other projects. Microsoft affiliation is explicit; employer article is not independent corroboration.",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee-home.json"
+          ]
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+          "publishedAt": "2026-11-05",
+          "observedAt": "2026-11-08T19:05:40.968Z",
+          "observation": "Coauthor attribution and full PDD Kit research article actually inspected.",
+          "inspection": "full public article",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json",
+            "captureSha256": "06666a80db8d429b37d09b68d809606f7c920fe8b7c4a27382aee84ab6a94b4a",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "url": "https://alexlavaee.me/projects/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:13:14.869Z",
+          "observation": "Portfolio lists DINOv2.cpp, DAPO small-language-model case study and source-code links. Individual linked project artifacts were not tested.",
+          "inspection": "project listing",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee-projects.json",
+            "captureSha256": "1590c39e308758a45ae0b8bba0e121061742337d0605616121e51465ea5b2cf1",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/research/people/alexlavaee/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:11:41.927Z",
+          "observation": "Microsoft Research biography identifies research/software focus and links this exact personal homepage.",
+          "inspection": "public professional profile",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee.json",
+            "captureSha256": "8410de72151569a979014eab5c9c127f2e13f93d574d569fd53aa6d48cb81032",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "publisher-jose-hernandez-orallo",
+      "sourceId": "publisher-jose-hernandez-orallo",
+      "name": "José Hernández-Orallo",
+      "url": "https://jorallo.github.io/",
+      "kind": "research_listing",
+      "platform": "personal website",
+      "topics": [
+        "AI evaluation",
+        "psychometrics",
+        "capabilities",
+        "AI safety"
+      ],
+      "editorialRole": "specialist research",
+      "status": "specialist",
+      "whyMonitor": "Public researcher homepage links original AI evaluation papers, protocols and teaching. It is the same author/publisher family as the existing AI Evaluation Substack and must not be counted as independent corroboration.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "No measured posting window; dates absent or selected highlights only."
+      },
+      "lastObservedAt": "2026-11-08T19:13:16.533Z",
+      "lastAssessedAt": "2026-11-08T19:19:30.492340Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://jorallo.github.io/",
+        "coverageComplete": false,
+        "limitations": [
+          "Selected highlights are not a complete dated publishing window.",
+          "Substack profile exposed no post body; linked papers not independently reviewed.",
+          "Same-owner relationship to existing AI Evaluation newsletter."
+        ],
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public identity and selected examples; no chronological completeness."
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://jorallo.github.io/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:13:16.533Z",
+          "observation": "Recent Highlights lists The next Turing Tests, PREP-Eval preregistration and general scales research with primary links. Individual papers not revalidated this run.",
+          "inspection": "public research listing",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json",
+            "captureSha256": "949b46cb389d0a33959704a420beee0787ec33945abec46980e192b4f4bab4bd",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json",
+        "captureSha256": "949b46cb389d0a33959704a420beee0787ec33945abec46980e192b4f4bab4bd",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "assessment": "Public researcher homepage links original AI evaluation papers, protocols and teaching. It is the same author/publisher family as the existing AI Evaluation Substack and must not be counted as independent corroboration.",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json"
+          ]
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://jorallo.github.io/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:13:16.533Z",
+          "observation": "Recent Highlights lists The next Turing Tests, PREP-Eval preregistration and general scales research with primary links. Individual papers not revalidated this run.",
+          "inspection": "public research listing",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json",
+            "captureSha256": "949b46cb389d0a33959704a420beee0787ec33945abec46980e192b4f4bab4bd",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "url": "https://substack.com/@aievaluation",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:12:52.140Z",
+          "observation": "Existing backlog Substack profile inspected; it links the exact jorallo.github.io homepage and existing AI Evaluation publication.",
+          "inspection": "public author profile",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/lead-5b179972f5144d12.json",
+            "captureSha256": "d532d07da2621b81687a6b4157280691e901ef6dd9245e966da64f4f997c7cbd",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        }
+      ],
+      "relatedCatalogueEntryIds": [
+        "research-source-e808d3bcbbe94149"
+      ],
+      "ownershipRelationship": "Author/contributor family of the existing AI Evaluation newsletter; not independent corroboration."
+    },
+    {
+      "id": "repos-ripple-publisher",
+      "sourceId": "repos-ripple-publisher",
+      "name": "Ricursive Intelligence on Hugging Face",
+      "url": "https://huggingface.co/ricursiveAI",
+      "kind": "social_account",
+      "platform": "Hugging Face",
+      "topics": [
+        "open-weight models",
+        "agentic coding",
+        "model deployment"
+      ],
+      "editorialRole": "official model announcements",
+      "status": "verified",
+      "whyMonitor": "Primary model publisher with an inspected company hub, distinct Ripple instruction/base/quantized model listings and a detailed instruction-tuned model card. Useful for model releases and deployment documentation; vendor benchmarks are unreplicated claims.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Current public profile and selected representative documentation inspected; no measured publication-rate window."
+      },
+      "lastObservedAt": "2026-11-08T19:14:41.072Z",
+      "lastAssessedAt": "2026-11-08T19:23:08.052Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://huggingface.co/ricursiveAI",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": "2026-10-30T19:06:26Z",
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public identity and selected representative examples, retrieved after the run window end; no complete activity or publication history."
+        },
+        "limitations": [
+          "Current hub and one model card inspected; organization activity and all model variants were not exhaustively inspected.",
+          "Instruction-tuned Ripple-65B-Preview is distinct from its Base Preview sibling.",
+          "Model quality, benchmark and hardware performance claims are publisher-authored; inference was not run."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:14:41.072Z",
+          "observation": "Public organization hub lists Ripple-65B-Preview alongside separate Base, NVFP4 and DFlash2 variants.",
+          "inspection": "Observed model links in actual company hub; model card content has separate provenance.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-ripple-publisher.json",
+            "captureSha256": "ba40d0d9ea59713781f830114e3a4b06fce8f204d91b707e0cb7692baa5e3fd1",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-ripple-publisher.json",
+        "captureSha256": "ba40d0d9ea59713781f830114e3a4b06fce8f204d91b707e0cb7692baa5e3fd1",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "verified",
+          "reason": "Primary model publisher with an inspected company hub, distinct Ripple instruction/base/quantized model listings and a detailed instruction-tuned model card. Useful for model releases and deployment documentation; vendor benchmarks are unreplicated claims."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:14:01.635Z",
+          "observation": "Instruction-tuned preview card describes architecture, release variants, Apache-2.0 labeling, deployment guidance and evaluation caveats. Benchmarks not independently reproduced.",
+          "inspection": "Rendered public model card text inspected.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-ripple65b-card.json",
+            "captureSha256": "a9138ea0d8bd5bb89358b38f4af5f748af286cf4a3de4c7843056b6fa61c48f2",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "publisher-riccardo-cataldi",
+      "sourceId": "social-source-7f4ce282553cedf1",
+      "name": "Riccardo Cataldi",
+      "url": "https://github.com/RiccardoCataldi",
+      "kind": "social_account",
+      "platform": "GitHub",
+      "topics": [
+        "AI music",
+        "MIDI",
+        "creative education"
+      ],
+      "editorialRole": "independent implementation specialist",
+      "status": "specialist",
+      "whyMonitor": "Independent mixed-topic creator whose inspected Duetto repository documents real-time MIDI collaboration and controls useful for creative and educational experimentation. Specialist scope; noncommercial app terms and separate model licensing limit reuse.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Current public profile and selected representative documentation inspected; no measured publication-rate window."
+      },
+      "lastObservedAt": "2026-11-08T19:12:22.615Z",
+      "lastAssessedAt": "2026-11-08T19:23:08.052Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://github.com/RiccardoCataldi",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": "2026-09-24T17:52:11Z",
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public identity and selected representative examples, retrieved after the run window end; no complete activity or publication history."
+        },
+        "limitations": [
+          "Mixed-topic public profile; not a general AI news source.",
+          "Duetto README and profile inspected; audio/video demos were not played and software was not executed.",
+          "README states PolyForm Noncommercial app terms; Anticipatory Music Transformer model has separate licensing."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://github.com/RiccardoCataldi/duetto",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:12:22.615Z",
+          "observation": "Pinned Duetto description identifies a transformer-based real-time second piano controlled by MIDI performance.",
+          "inspection": "Observed pinned project on actual public creator profile.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-7f4ce282553cedf1.json",
+            "captureSha256": "211845d36e8eea73d56847d6d743e8fc4c58051de40cfa8fddda164abd4dc66f",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-7f4ce282553cedf1.json",
+        "captureSha256": "211845d36e8eea73d56847d6d743e8fc4c58051de40cfa8fddda164abd4dc66f",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Independent mixed-topic creator whose inspected Duetto repository documents real-time MIDI collaboration and controls useful for creative and educational experimentation. Specialist scope; noncommercial app terms and separate model licensing limit reuse."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://github.com/RiccardoCataldi/duetto",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:16:01.079Z",
+          "observation": "README documents MIDI setup, role/preset controls, Jetson or laptop execution, saved performances and explicit noncommercial/separate-model licensing.",
+          "inspection": "Rendered README inspected; demos and execution untested.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-6290922c900109aa.json",
+            "captureSha256": "40f16bf94568ed36b3eee091ed3d1b0eca2c259d5e01c2842661e96faf019599",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nov8-creative-publisher-ludwig-editor",
+      "sourceId": "nov8-creative-publisher-ludwig-editor",
+      "name": "AI Video Production Editor",
+      "url": "https://github.com/LudwigKienle/ai-video-production-editor",
+      "kind": "research_listing",
+      "platform": "GitHub",
+      "topics": [
+        "creative workflows",
+        "local video",
+        "AI production"
+      ],
+      "editorialRole": "specialist research",
+      "status": "specialist",
+      "whyMonitor": "Originating local creative workstation repository with inspectable model-routing and project workflow documentation; Rainline example identifies continuity/re-film/export checks.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Current entrypoint and one representative workflow inspected; no complete dated observation window."
+      },
+      "lastObservedAt": "2026-11-08T19:13:41.763Z",
+      "lastAssessedAt": "2026-11-08T19:40:29.272520Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://github.com/LudwigKienle/ai-video-production-editor",
+        "coverageComplete": false,
+        "limitations": [
+          "README and public Rainline walkthrough inspected. Example is a proposed walkthrough without generated media; binaries, release history, license text and end-to-end operation were not independently tested. GPL3 badge/README observed only."
+        ],
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public project entrypoint and one representative workflow document; no complete chronological activity or release history."
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://github.com/LudwigKienle/ai-video-production-editor",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:13:41.763Z",
+          "observation": "Repository README documents the local creative workstation, model routing and production workflow. The separate Rainline walkthrough is retained with its own supporting provenance.",
+          "inspection": "Rendered public entrypoint text and links inspected."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-ai-video-editor.json",
+        "captureSha256": "dd5e4cad8c9154a01ef6da6a729ac1a1e1cb7f26e1ebed39a63a631fe4b9b8a1",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+      },
+      "supportingEvidence": [
+        {
+          "url": "https://github.com/LudwigKienle/ai-video-production-editor/blob/main/examples/demo-project/README.md",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:15:18.211Z",
+          "observation": "Representative workflow page separately inspected; documentary coverage only.",
+          "inspection": "Full rendered public example text inspected.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-editor-example.json",
+            "captureSha256": "e66a08bc9cd80b967b0f21105cea0fe4abc1611da388f6b220276366ada4960f",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+          }
+        }
+      ],
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Originating local creative workstation repository with inspectable model-routing and project workflow documentation; Rainline example identifies continuity/re-film/export checks."
+        }
+      ]
+    },
+    {
+      "id": "nov8-creative-publisher-aftertake",
+      "sourceId": "nov8-creative-publisher-aftertake",
+      "name": "Aftertake",
+      "url": "https://itssnowmobile.github.io/aftertake/",
+      "kind": "blog",
+      "platform": "website",
+      "topics": [
+        "creative workflows",
+        "local video",
+        "AI production"
+      ],
+      "editorialRole": "specialist research",
+      "status": "specialist",
+      "whyMonitor": "Originating local video workspace publication with linked editable projects, scoped model/GPU caveats and an inspectable narrated-cut walkthrough.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Current entrypoint and one representative workflow inspected; no complete dated observation window."
+      },
+      "lastObservedAt": "2026-11-08T19:13:44.860Z",
+      "lastAssessedAt": "2026-11-08T19:40:29.272520Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://itssnowmobile.github.io/aftertake/",
+        "coverageComplete": false,
+        "limitations": [
+          "Homepage and narrated-cuts documentation inspected; recordings and editable downloads not played/imported. RTX5080/16GB local rendering and optional cloud validation are author claims; model licenses apply separately; no native test."
+        ],
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Current public project entrypoint and one representative workflow document; no complete chronological activity or release history."
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://itssnowmobile.github.io/aftertake/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:13:44.860Z",
+          "observation": "Project homepage documents a local video workspace, links editable projects and workflow examples, and states model/GPU caveats. The narrated-cut walkthrough has separate supporting provenance.",
+          "inspection": "Rendered public entrypoint text and links inspected."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-aftertake.json",
+        "captureSha256": "5a1260e8824704bde373d2a059b858014d3ce9c39de9409c9940f94fbe329d2f",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+      },
+      "supportingEvidence": [
+        {
+          "url": "https://itssnowmobile.github.io/aftertake/ads/workflow.html",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:15:20.773Z",
+          "observation": "Representative workflow page separately inspected; documentary coverage only.",
+          "inspection": "Full rendered public example text inspected.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-aftertake-example.json",
+            "captureSha256": "445515a8585f6d1e7bce72ef2c22d9a1f5c823d52ee6329993d20fe56ab14707",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+          }
+        }
+      ],
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Originating local video workspace publication with linked editable projects, scoped model/GPU caveats and an inspectable narrated-cut walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "social-publisher-leash-bio",
+      "sourceId": "social-monitor-leash-bio",
+      "name": "Leash",
+      "url": "https://leashbio.substack.com/",
+      "kind": "newsletter",
+      "platform": "Substack",
+      "topics": [
+        "AI for chemistry",
+        "evaluation",
+        "experimental data"
+      ],
+      "editorialRole": "originating specialist research / vendor publication",
+      "status": "specialist",
+      "whyMonitor": "Originating Leash research newsletter links concrete datasets and a preprint; Minos article describes replaying measured molecular experiments. Useful for following benchmark leakage and experimental controls, with company ownership explicit.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "No measured publication-frequency window; cadence unknown."
+      },
+      "lastObservedAt": "2026-11-08T19:19:35.754Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://leashbio.substack.com/",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Public recurring identity and one representative relevant article; not exhaustive history."
+        },
+        "limitations": [
+          "Company-authored research claims, not independent validation.",
+          "Preprint, data license and scientific-transfer claims not fully reviewed.",
+          "Latest homepage and one example only; cadence unknown."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://leashbio.substack.com/p/making-reality-replayable",
+          "publishedAt": "2026-10-14",
+          "observedAt": "2026-11-08T19:19:35.754Z",
+          "observation": "Leash newsletter homepage lists Making reality replayable among original medicinal-chemistry research posts. Article content was inspected separately.",
+          "inspection": "Observed representative article link and description on actual recurring entrypoint; full article has separate supporting provenance."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/leash-bio-newsletter.json",
+        "captureSha256": "c14e52e5bea61fcd6596c3be326a279fb36b6e8246c94d9611cd0e05fa0ae4ce",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "note": "Originating Leash research newsletter links concrete datasets and a preprint; Minos article describes replaying measured molecular experiments. Useful for following benchmark leakage and experimental controls, with company ownership explicit."
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Originating Leash research newsletter links concrete datasets and a preprint; Minos article describes replaying measured molecular experiments. Useful for following benchmark leakage and experimental controls, with company ownership explicit."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://leashbio.substack.com/p/making-reality-replayable",
+          "publishedAt": "2026-10-14",
+          "observedAt": "2026-11-08T19:18:50.105Z",
+          "observation": "Originating Leash research newsletter links concrete datasets and a preprint; Minos article describes replaying measured molecular experiments. Useful for following benchmark leakage and experimental controls, with company ownership explicit.",
+          "inspection": "Public article text inspected; limits below distinguish synthesis from experimental validation.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/leash-bio-example.json",
+            "captureSha256": "40d383810429f511ae60233117f872dfa7f2d4a080bb82d66250bdfb2c3a46df",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "social-publisher-aied-knowledge-base",
+      "sourceId": "social-monitor-aied-knowledge-base",
+      "name": "AI in Education Knowledge Base",
+      "url": "https://edtechdev.github.io/aied/",
+      "kind": "research_listing",
+      "platform": "web",
+      "topics": [
+        "AI in education",
+        "evaluation",
+        "pedagogical safety"
+      ],
+      "editorialRole": "AI-assisted secondary research synthesis",
+      "status": "specialist",
+      "whyMonitor": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "No measured publication-frequency window; cadence unknown."
+      },
+      "lastObservedAt": "2026-11-08T19:18:29.202Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://edtechdev.github.io/aied/",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Public recurring identity and one representative relevant article; not exhaustive history."
+        },
+        "limitations": [
+          "Secondary AI-written synthesis; original ACM paper not inspected.",
+          "Page-added date is not paper publication date.",
+          "No measured cadence or systematic accuracy assessment."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://edtechdev.github.io/aied/articles/liu-educational-sycophancy-2026/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:18:29.202Z",
+          "observation": "Homepage explicitly describes AI-written synthesis with developer editorial guidance and lists the educational-sycophancy article among recently added pages. Article content was inspected separately.",
+          "inspection": "Observed representative article link and description on actual recurring entrypoint; full article has separate supporting provenance."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-lead-e2e1160912db5078.json",
+        "captureSha256": "c53ee971b08659a67f8b31b072f2246004f22f1b06debab44bb3448550a99877",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "note": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers."
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://edtechdev.github.io/aied/articles/liu-educational-sycophancy-2026/",
+          "publishedAt": null,
+          "observedAt": "2026-11-08T19:20:29.487Z",
+          "observation": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers.",
+          "inspection": "Public article text inspected; limits below distinguish synthesis from experimental validation.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/education-sycophancy-example.json",
+            "captureSha256": "8fd3fa318e93d3fab330cf2cc521db32064a68a8c9514882adfee5ba7207486b",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "social-publisher-nature-commsaicomp",
+      "sourceId": "social-monitor-nature-commsaicomp",
+      "name": "Communications AI & Computing",
+      "url": "https://www.nature.com/commsaicomp",
+      "kind": "research_listing",
+      "platform": "Nature",
+      "topics": [
+        "AI research",
+        "reproducibility",
+        "evaluation"
+      ],
+      "editorialRole": "originating peer-reviewed research",
+      "status": "specialist",
+      "whyMonitor": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "No measured publication-frequency window; cadence unknown."
+      },
+      "lastObservedAt": "2026-11-08T19:21:08.052Z",
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://www.nature.com/commsaicomp",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "windowStart": null,
+          "windowEnd": "2026-11-08T18:58:50Z",
+          "scope": "Public recurring identity and one representative relevant article; not exhaustive history."
+        },
+        "limitations": [
+          "Only homepage and one article inspected; supplements/data not audited.",
+          "Homepage curation is not complete publication history.",
+          "Cadence unknown."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.nature.com/articles/s44488-026-00015-x",
+          "publishedAt": "2026-10-22",
+          "observedAt": "2026-11-08T19:21:08.052Z",
+          "observation": "Journal homepage lists The shift toward open and reproducible AI research as an October 22, 2026 article. Full article content was inspected separately.",
+          "inspection": "Observed representative article link and description on actual recurring entrypoint; full article has separate supporting provenance."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/nature-commsaicomp.json",
+        "captureSha256": "6cad687da790f3064f004ddf75377d2bd80a21b368df48f8e12bb2e5ade8d0d1",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "note": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated."
+        },
+        {
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "runId": "scan-20261108T185850Z-56c6d8",
+          "status": "specialist",
+          "reason": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "url": "https://www.nature.com/articles/s44488-026-00015-x",
+          "publishedAt": "2026-10-22",
+          "observedAt": "2026-11-08T19:18:30.911Z",
+          "observation": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated.",
+          "inspection": "Public article text inspected; limits below distinguish synthesis from experimental validation.",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-lead-7cb01e7febdd9ca5.json",
+            "captureSha256": "cfeee2189058f3d20b3992b6511b6741834fb368d32aacdb53df0948af3bdac6",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ]
     }
   ],
   "discoveryQueue": [
@@ -2126,9 +3148,9 @@
       "status": "deferred",
       "discoveredAt": "2026-10-30T20:51:27.329Z",
       "discoveredFrom": "https://tldr.tech/ai",
-      "reason": "Direct public profile visit returned empty main content; later runtime reset blocked further useful repair. AI relevance/representative content unverified. No sign-in or private navigation used.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/lead-6a963705f80eaba3.json",
-      "captureSha256": "55b8aa80023de0232eb254bcca8f917d62952ef51e586550f6bb515647cf1c44",
+      "reason": "Public Instagram profile still returned no main-content text after one focused repair. No identity examples, cadence or content verification claimed.",
+      "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/lead-6a963705f80eaba3.json",
+      "captureSha256": "6b2750c042d9b8adcb05d362dfbb0aaae3015406234905e705ac1c50428c1adc",
       "nextAction": "Inspect public profile/archive and relevant recent examples through Webcrawl; add or link a monitor record before promotion. Do not infer publishing frequency from a mention.",
       "observationHistory": [
         {
@@ -2146,36 +3168,62 @@
             "nextAction": "Inspect public profile/archive and relevant recent examples through Webcrawl; add or link a monitor record before promotion. Do not infer publishing frequency from a mention."
           },
           "scope": "Original discovery record retained before access-attempt reassessment."
+        },
+        {
+          "record": {
+            "id": "lead-6a963705f80eaba3",
+            "name": "TLDR on Instagram",
+            "url": "https://www.instagram.com/tldr_newsletter/",
+            "sourceId": null,
+            "status": "deferred",
+            "discoveredAt": "2026-10-30T20:51:27.329Z",
+            "discoveredFrom": "https://tldr.tech/ai",
+            "reason": "Direct public profile visit returned empty main content; later runtime reset blocked further useful repair. AI relevance/representative content unverified. No sign-in or private navigation used.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/lead-6a963705f80eaba3.json",
+            "captureSha256": "55b8aa80023de0232eb254bcca8f917d62952ef51e586550f6bb515647cf1c44",
+            "nextAction": "Inspect public profile/archive and relevant recent examples through Webcrawl; add or link a monitor record before promotion. Do not infer publishing frequency from a mention.",
+            "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
+            "lastAttemptAt": "2026-11-03T19:17:29.268Z"
+          },
+          "scope": "Prior unresolved lead retained before reassessment."
         }
       ],
-      "lastAssessedAt": "2026-11-03T19:38:50.939910Z",
-      "lastAttemptAt": "2026-11-03T19:17:29.268Z"
-    },
-    {
-      "id": "lead-5b179972f5144d12",
-      "name": "José H. Orallo",
-      "url": "https://substack.com/@aievaluation",
-      "sourceId": null,
-      "status": "unverified",
-      "discoveredAt": "2026-11-03T19:20:41.709Z",
-      "discoveredFrom": "https://aievaluation.substack.com/about",
-      "reason": "Named contributor profile linked on About; inspect original research and profile before adding another recurring identity.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-ai-evaluation-about.json",
-      "captureSha256": "1ede8e597f20770f5c078a25e97d43118a9852ee94d03a9b4c33d2d66cd7f5f3",
-      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+      "lastAssessedAt": "2026-11-08T19:28:27.183193Z",
+      "lastAttemptAt": "2026-11-08T19:21:11.629Z"
     },
     {
       "id": "lead-829728392a69ba33",
       "name": "Lexin Zhou",
       "url": "https://substack.com/@lexinzhou",
       "sourceId": null,
-      "status": "unverified",
+      "status": "partial_inspection",
       "discoveredAt": "2026-11-03T19:20:41.709Z",
       "discoveredFrom": "https://aievaluation.substack.com/about",
-      "reason": "Named contributor with evaluation/generalization interests; profile itself unvisited.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-ai-evaluation-about.json",
-      "captureSha256": "1ede8e597f20770f5c078a25e97d43118a9852ee94d03a9b4c33d2d66cd7f5f3",
-      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+      "reason": "Identity/topical relevance inspected; representative full original posts and current cadence remain unverified.",
+      "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/lead-829728392a69ba33.json",
+      "captureSha256": "4829574d5ef2208470407d0cafb0a338e84b829bf541a62b361b6458d7e4be0b",
+      "nextAction": "Inspect observed personal homepage https://lexzhou.github.io/ and one relevant original publication; do not infer activity from restacks.",
+      "lastAttemptAt": "2026-11-08T19:13:19.913Z",
+      "observationNote": "Public profile inspected and relevant AI-evaluation restacks/one comment visible from Aug–Nov 2025. Current 2026 activity and full original items not established; personal homepage link is a concrete next step. Same AI Evaluation publication family, not independent corroboration.",
+      "lastAssessedAt": "2026-11-08T19:19:30.492340Z",
+      "observationHistory": [
+        {
+          "record": {
+            "id": "lead-829728392a69ba33",
+            "name": "Lexin Zhou",
+            "url": "https://substack.com/@lexinzhou",
+            "sourceId": null,
+            "status": "unverified",
+            "discoveredAt": "2026-11-03T19:20:41.709Z",
+            "discoveredFrom": "https://aievaluation.substack.com/about",
+            "reason": "Named contributor with evaluation/generalization interests; profile itself unvisited.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-ai-evaluation-about.json",
+            "captureSha256": "1ede8e597f20770f5c078a25e97d43118a9852ee94d03a9b4c33d2d66cd7f5f3",
+            "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+          },
+          "scope": "Prior unresolved lead retained before reassessment."
+        }
+      ]
     },
     {
       "id": "lead-06011951fa7f2bae",
@@ -2188,7 +3236,26 @@
       "reason": "Search exposes a specialist agent-evaluation symposium; inspect its originating recurring publication and representative work. Event URL alone is not a recurring publisher.",
       "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
       "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
-      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion.",
+      "lastAssessedAt": "2026-11-08T19:19:30.492340Z",
+      "observationHistory": [
+        {
+          "record": {
+            "id": "lead-06011951fa7f2bae",
+            "name": "EvalScience",
+            "url": "https://evalscience.org/2026fall-nyc/",
+            "sourceId": null,
+            "status": "unverified",
+            "discoveredAt": "2026-11-03T19:18:44.013Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+agent+evaluation+education+independent+research+October+2026",
+            "reason": "Search exposes a specialist agent-evaluation symposium; inspect its originating recurring publication and representative work. Event URL alone is not a recurring publisher.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
+            "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
+            "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+          },
+          "scope": "Prior unresolved lead retained before reassessment."
+        }
+      ]
     },
     {
       "id": "lead-08594d3fa8aad6ba",
@@ -2201,68 +3268,26 @@
       "reason": "Search result suggests evaluation center and open testbed; article and recurring research surface unvisited.",
       "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
       "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
-      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
-    },
-    {
-      "id": "creative-discovery-ai-video-editor",
-      "name": "Ludwig Kienle AI Video Production Editor",
-      "url": "https://github.com/LudwigKienle/ai-video-production-editor",
-      "sourceId": null,
-      "status": "deferred",
-      "discoveredAt": "2026-11-03T19:32:24.303931Z",
-      "discoveredFrom": "https://www.google.com/search?q=AI+audio+video+creative+workflow+independent+tutorial+open+source+October+2026",
-      "reason": "Originating repository appeared in the single broad search. Recurring releases, license and representative workflow still uninspected.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/discovery-search-note.json",
-      "captureSha256": "f3aec66711bd81e4690fca8c38e22ee34663df8e32536085b2cb44426205a79d",
-      "nextAction": "Inspect originating README/release history and one representative example before considering a recurring monitor.",
-      "discoveryQuery": "AI audio video creative workflow independent tutorial open source October 2026",
-      "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
-    },
-    {
-      "id": "creative-discovery-aftertake",
-      "name": "Aftertake",
-      "url": "https://itssnowmobile.github.io/aftertake/",
-      "sourceId": null,
-      "status": "deferred",
-      "discoveredAt": "2026-11-03T19:32:24.303931Z",
-      "discoveredFrom": "https://www.google.com/search?q=AI+audio+video+creative+workflow+independent+tutorial+open+source+October+2026",
-      "reason": "Originating local-video workflow site appeared in bounded search. Maintainer identity, GPU requirements, releases and examples remain uninspected.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/discovery-search-note.json",
-      "captureSha256": "f3aec66711bd81e4690fca8c38e22ee34663df8e32536085b2cb44426205a79d",
-      "nextAction": "Inspect originating README/release history and one representative example before considering a recurring monitor.",
-      "discoveryQuery": "AI audio video creative workflow independent tutorial open source October 2026",
-      "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
-    },
-    {
-      "id": "discovery-lead-e2e1160912db5078",
-      "name": "AI in Education Knowledge Base",
-      "url": "https://edtechdev.github.io/aied/",
-      "sourceId": null,
-      "status": "unvisited",
-      "discoveredAt": "2026-11-03T19:38:50.939910Z",
-      "discoveredFrom": "https://www.google.com/search?q=AI+educational+creative+tools+research+independent+November+2026+October+2026+open+source",
-      "reason": "Potential specialist education/reproducibility source; actual source page inspection pending.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-query.json",
-      "captureSha256": "6d8aef7dc27cd3a1a4f4e1df6266dcce2e0135e00c0dff656a4bb3f3d0bd4b14",
-      "nextAction": "Visit publisher/author entrypoint and representative original material; assess provenance, human oversight and practical relevance before promotion.",
-      "discoveryQuery": "Public broad search: AI educational creative tools research independent November 2026 October 2026 open source",
-      "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
-    },
-    {
-      "id": "discovery-lead-7cb01e7febdd9ca5",
-      "name": "Nature article lead s44488-026-00015-x (publisher identity unverified)",
-      "url": "https://www.nature.com/articles/s44488-026-00015-x",
-      "sourceId": null,
-      "status": "unvisited",
-      "discoveredAt": "2026-11-03T19:38:50.939910Z",
-      "discoveredFrom": "https://www.google.com/search?q=AI+educational+creative+tools+research+independent+November+2026+October+2026+open+source",
-      "reason": "Potential specialist education/reproducibility source; actual source page inspection pending. Saved query evidence contains the article URL only; publisher identity, title and topical interpretation remain unverified.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-query.json",
-      "captureSha256": "6d8aef7dc27cd3a1a4f4e1df6266dcce2e0135e00c0dff656a4bb3f3d0bd4b14",
-      "nextAction": "Visit publisher/author entrypoint and representative original material; assess provenance, human oversight and practical relevance before promotion.",
-      "discoveryQuery": "Public broad search: AI educational creative tools research independent November 2026 October 2026 open source",
-      "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited.",
-      "unverifiedSearchAttribution": "Communications AI & Computing"
+      "nextAction": "Visit public origin/profile and inspect representative evidence before promotion.",
+      "lastAssessedAt": "2026-11-08T19:19:30.492340Z",
+      "observationHistory": [
+        {
+          "record": {
+            "id": "lead-08594d3fa8aad6ba",
+            "name": "UC San Diego Today",
+            "url": "https://today.ucsd.edu/story/uc-san-diego-launches-center-for-principled-agentic-intelligence",
+            "sourceId": null,
+            "status": "unverified",
+            "discoveredAt": "2026-11-03T19:18:44.013Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+agent+evaluation+education+independent+research+October+2026",
+            "reason": "Search result suggests evaluation center and open testbed; article and recurring research surface unvisited.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
+            "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
+            "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+          },
+          "scope": "Prior unresolved lead retained before reassessment."
+        }
+      ]
     }
   ],
   "rejectedOrLowerPriorityNotes": [
@@ -2290,19 +3315,41 @@
         "captureSha256": "f3aec66711bd81e4690fca8c38e22ee34663df8e32536085b2cb44426205a79d",
         "sourceResultPath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/bundle.json"
       }
+    },
+    {
+      "id": "duplicate-latent-space-nonwww",
+      "url": "https://latent.space/",
+      "disposition": "rejected",
+      "reason": "Rejected as an additional catalogue identity: actual visit shows the same Latent Space publisher already represented at www.latent.space. Preserve existing acquisition-ledger provenance rather than add a duplicate recurring identity.",
+      "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-a4df7cd9a9c0760a.json",
+      "captureSha256": "022abc01a44f57f6f49b4ded61ce1d6c18eeb8a7ca078b95ea5300ee6fd4bd1c",
+      "checkedAt": "2026-11-08T19:14:28.127Z",
+      "lane": "research_social",
+      "assessedAt": "2026-11-08T19:28:27.183193Z",
+      "name": "Latent Space non-www alias",
+      "excludedFromIdentityCounts": true,
+      "canonicalCatalogueEntryId": "seed-latent-space",
+      "provenance": {
+        "runId": "scan-20261108T185850Z-56c6d8",
+        "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-a4df7cd9a9c0760a.json",
+        "captureSha256": "022abc01a44f57f6f49b4ded61ce1d6c18eeb8a7ca078b95ea5300ee6fd4bd1c",
+        "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+      },
+      "runId": "scan-20261108T185850Z-56c6d8",
+      "recordedAt": "2026-11-08T19:28:27.183193Z"
     }
   ],
   "counts": {
-    "entries": 32,
-    "directlyInspectedSocialAccounts": 13,
+    "entries": 41,
+    "directlyInspectedSocialAccounts": 15,
     "communities": 4,
-    "discoveryQueue": 9,
+    "discoveryQueue": 4,
     "statuses": {
-      "verified": 21,
-      "specialist": 11
+      "verified": 22,
+      "specialist": 19
     }
   },
-  "updatedAt": "2026-11-06T05:32:56Z",
+  "updatedAt": "2026-11-08T19:42:45.993Z",
   "discoveryRuns": [
     {
       "id": "catalogue-bootstrap-20261031",
@@ -3035,6 +4082,475 @@
       "excludedDuplicateClassIds": [
         "creative-discovery-beatdesign-mirrors"
       ]
+    },
+    {
+      "id": "scan-20261108T185850Z-56c6d8-catalogue",
+      "runId": "scan-20261108T185850Z-56c6d8",
+      "recordedAt": "2026-11-08T19:42:45.993Z",
+      "purpose": "Bounded recurring-identity discovery and reassessment from public captures collected during this research run.",
+      "evidenceRunIds": [
+        "scan-20261108T185850Z-56c6d8"
+      ],
+      "considered": 19,
+      "added": 9,
+      "updated": 5,
+      "rejected": 0,
+      "deferred": 4,
+      "reason": "9 recurring identities added; 4 existing recurring identities reassessed; 1 queued profile target resolved to an added or existing entry; 4 targets deferred; 0 distinct targets rejected; 1 unchanged. 1 rejected canonical alias is preserved outside distinct-identity counts. Cadence remains unknown unless independently bounded.",
+      "consideredItems": [
+        {
+          "id": "publisher-alex-lavaee",
+          "url": "https://alexlavaee.me/",
+          "disposition": "added",
+          "reason": "Original research engineer and PDD Kit coauthor; portfolio provides code links for edge inference, small-model reasoning and other projects. Microsoft affiliation is explicit; employer article is not independent corroboration.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee-home.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-alex-lavaee-projects.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/official/candidate-b28ecfb79591f96a.json"
+          ]
+        },
+        {
+          "id": "publisher-jose-hernandez-orallo",
+          "url": "https://jorallo.github.io/",
+          "disposition": "added",
+          "reason": "Public researcher homepage links original AI evaluation papers, protocols and teaching. It is the same author/publisher family as the existing AI Evaluation Substack and must not be counted as independent corroboration.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/official/lead-5b179972f5144d12.json"
+          ]
+        },
+        {
+          "id": "lead-5b179972f5144d12",
+          "url": "https://substack.com/@aievaluation",
+          "disposition": "updated",
+          "reason": "Old discovery lead actually visited and identity resolved to José Hernández-Orallo, linked to existing AI Evaluation newsletter and newly inspected personal research homepage. Profile itself showed no post bodies; do not add a second empty-profile monitor or infer cadence.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/lead-5b179972f5144d12.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/official/publisher-jose-orallo.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/lead-5b179972f5144d12.json",
+            "captureSha256": "d532d07da2621b81687a6b4157280691e901ef6dd9245e966da64f4f997c7cbd",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "id": "lead-829728392a69ba33",
+          "url": "https://substack.com/@lexinzhou",
+          "disposition": "deferred",
+          "reason": "Public profile inspected and relevant AI-evaluation restacks/one comment visible from Aug–Nov 2025. Current 2026 activity and full original items not established; personal homepage link is a concrete next step. Same AI Evaluation publication family, not independent corroboration.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/official/lead-829728392a69ba33.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/official/lead-829728392a69ba33.json",
+            "captureSha256": "4829574d5ef2208470407d0cafb0a338e84b829bf541a62b361b6458d7e4be0b",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "id": "lead-06011951fa7f2bae",
+          "url": "https://evalscience.org/2026fall-nyc/",
+          "disposition": "deferred",
+          "reason": "Existing discovery lead reconsidered but not visited within the bounded catalogue pass after oldest José/Lexin identity checks and PDD originator follow-through. Event/story route is not itself a recurring publisher identity; inspect actual organizer/publisher entrypoint and a representative item before promotion.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261102T190626Z-3a6f04",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
+            "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "id": "lead-08594d3fa8aad6ba",
+          "url": "https://today.ucsd.edu/story/uc-san-diego-launches-center-for-principled-agentic-intelligence",
+          "disposition": "deferred",
+          "reason": "Existing discovery lead reconsidered but not visited within the bounded catalogue pass after oldest José/Lexin identity checks and PDD originator follow-through. Event/story route is not itself a recurring publisher identity; inspect actual organizer/publisher entrypoint and a representative item before promotion.",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261102T190626Z-3a6f04",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
+            "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/official/bundle.json"
+          }
+        },
+        {
+          "id": "repos-ripple-publisher",
+          "url": "https://huggingface.co/ricursiveAI",
+          "disposition": "added",
+          "reason": "Primary model publisher with an inspected company hub, distinct Ripple instruction/base/quantized model listings and a detailed instruction-tuned model card. Useful for model releases and deployment documentation; vendor benchmarks are unreplicated claims.",
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-ripple-publisher.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-ripple65b-card.json"
+          ]
+        },
+        {
+          "id": "publisher-riccardo-cataldi",
+          "url": "https://github.com/RiccardoCataldi",
+          "disposition": "added",
+          "reason": "Independent mixed-topic creator whose inspected Duetto repository documents real-time MIDI collaboration and controls useful for creative and educational experimentation. Specialist scope; noncommercial app terms and separate model licensing limit reuse.",
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-7f4ce282553cedf1.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-6290922c900109aa.json"
+          ]
+        },
+        {
+          "id": "publisher-valerio-dolci",
+          "url": "https://github.com/ValerioDolci",
+          "disposition": "updated",
+          "reason": "Independent local-inference maintainer with inspected profile, current capy-flash README and v0.9.0 release notes. Details on concurrent requests, KV cache in RAM and reproducibility conditions add practical depth; hardware-specific author benchmarks remain unreplicated.",
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-4741f70e5a1d8eb4.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-a979e7ccacda81f6.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/social-source-52bbaa80db2ade4a.json"
+          ]
+        },
+        {
+          "id": "publisher-sirhanmacx",
+          "url": "https://github.com/SirhanMacx",
+          "disposition": "unchanged",
+          "reason": "Public profile still identifies Claw-ED and other educational tools; preserve the existing specialist assessment. This bounded profile observation establishes no fresh product/update claim and no posting cadence.",
+          "assessedAt": "2026-11-08T19:23:08.052Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-publisher-sirhanmacx.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/captures/repos-publisher-sirhanmacx.json",
+            "captureSha256": "78064c9899169510e0f3278e8847453702a276a104b2d9be2aea8a333d87d3c6",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/repositories/bundle.json"
+          }
+        },
+        {
+          "id": "nov8-creative-publisher-ludwig-editor",
+          "url": "https://github.com/LudwigKienle/ai-video-production-editor",
+          "disposition": "added",
+          "reason": "Originating local creative workstation repository with inspectable model-routing and project workflow documentation; Rainline example identifies continuity/re-film/export checks.",
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-ai-video-editor.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-editor-example.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-ai-video-editor.json",
+            "captureSha256": "dd5e4cad8c9154a01ef6da6a729ac1a1e1cb7f26e1ebed39a63a631fe4b9b8a1",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+          },
+          "assessmentId": "creative-discovery-ai-video-editor"
+        },
+        {
+          "id": "nov8-creative-publisher-aftertake",
+          "url": "https://itssnowmobile.github.io/aftertake/",
+          "disposition": "added",
+          "reason": "Originating local video workspace publication with linked editable projects, scoped model/GPU caveats and an inspectable narrated-cut walkthrough.",
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-aftertake.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-aftertake-example.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/creative/discovery-aftertake.json",
+            "captureSha256": "5a1260e8824704bde373d2a059b858014d3ce9c39de9409c9940f94fbe329d2f",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/creative/bundle.json"
+          },
+          "assessmentId": "creative-discovery-aftertake"
+        },
+        {
+          "id": "social-publisher-leash-bio",
+          "url": "https://leashbio.substack.com/",
+          "disposition": "added",
+          "reason": "Originating Leash research newsletter links concrete datasets and a preprint; Minos article describes replaying measured molecular experiments. Useful for following benchmark leakage and experimental controls, with company ownership explicit.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/leash-bio-newsletter.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/leash-bio-example.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/leash-bio-newsletter.json",
+            "captureSha256": "c14e52e5bea61fcd6596c3be326a279fb36b6e8246c94d9611cd0e05fa0ae4ce",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+          },
+          "assessmentId": "social-publisher-leash-bio"
+        },
+        {
+          "id": "social-publisher-aied-knowledge-base",
+          "url": "https://edtechdev.github.io/aied/",
+          "disposition": "added",
+          "reason": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-lead-e2e1160912db5078.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/education-sycophancy-example.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-lead-e2e1160912db5078.json",
+            "captureSha256": "c53ee971b08659a67f8b31b072f2246004f22f1b06debab44bb3448550a99877",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+          },
+          "assessmentId": "discovery-lead-e2e1160912db5078"
+        },
+        {
+          "id": "social-publisher-nature-commsaicomp",
+          "url": "https://www.nature.com/commsaicomp",
+          "disposition": "added",
+          "reason": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/nature-commsaicomp.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-lead-7cb01e7febdd9ca5.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/nature-commsaicomp.json",
+            "captureSha256": "6cad687da790f3064f004ddf75377d2bd80a21b368df48f8e12bb2e5ade8d0d1",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-results.json"
+          },
+          "assessmentId": "discovery-lead-7cb01e7febdd9ca5"
+        },
+        {
+          "id": "lead-6a963705f80eaba3",
+          "url": "https://www.instagram.com/tldr_newsletter/",
+          "disposition": "deferred",
+          "reason": "Public Instagram profile still returned no main-content text after one focused repair. No identity examples, cadence or content verification claimed.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/lead-6a963705f80eaba3.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/lead-6a963705f80eaba3.json",
+            "captureSha256": "6b2750c042d9b8adcb05d362dfbb0aaae3015406234905e705ac1c50428c1adc",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        },
+        {
+          "id": "seed-tldr-ai",
+          "url": "https://tldr.tech/ai",
+          "disposition": "updated",
+          "reason": "Observed the archive link and inspected November 6–October 12 issues. Correct scope is partial relative to this source’s September 18 window; same publisher as its X account.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceId": "seed-tldr-ai",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-tldr-ai.json",
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/tldr-ai-archive.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-tldr-ai.json",
+            "captureSha256": "6aaf449858ce2ad5e26a7f0085abc3adf6765e2566648dcaa76eeb704febff13",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        },
+        {
+          "id": "discovery-7d39dd84797568b6",
+          "url": "https://noometry.com/model-releases",
+          "disposition": "updated",
+          "reason": "Reassessment: November 3 verification date and Nemotron vendor-attribution issue persist; keep a secondary tracker role and verify dates, provider and openness at origin.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceId": "discovery-7d39dd84797568b6",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-7d39dd84797568b6.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/discovery-7d39dd84797568b6.json",
+            "captureSha256": "85e1ea25459d6ecfb0aed7d23e95a3751448fbed74c1d414d03af62d564b9dca",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        },
+        {
+          "id": "seed-latent-space",
+          "url": "https://www.latent.space/",
+          "disposition": "updated",
+          "reason": "Reassessed current homepage and assigned articles; migrated www/non-www URLs represent one publisher family, not independent corroboration.",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "sourceId": "seed-latent-space",
+          "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json",
+          "evidencePaths": [
+            ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-latent-space.json"
+          ],
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/seed-latent-space.json",
+            "captureSha256": "0710bb90b4c1264b1562477fafed5643c9b371dfdbbdf1426e2987290a298be4",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ],
+      "resolvedLeads": [
+        {
+          "lead": {
+            "id": "lead-5b179972f5144d12",
+            "name": "José H. Orallo",
+            "url": "https://substack.com/@aievaluation",
+            "sourceId": null,
+            "status": "unverified",
+            "discoveredAt": "2026-11-03T19:20:41.709Z",
+            "discoveredFrom": "https://aievaluation.substack.com/about",
+            "reason": "Named contributor profile linked on About; inspect original research and profile before adding another recurring identity.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-ai-evaluation-about.json",
+            "captureSha256": "1ede8e597f20770f5c078a25e97d43118a9852ee94d03a9b4c33d2d66cd7f5f3",
+            "nextAction": "Visit public origin/profile and inspect representative evidence before promotion."
+          },
+          "disposition": "updated",
+          "catalogueEntryId": "publisher-jose-hernandez-orallo",
+          "assessedAt": "2026-11-08T19:19:30.492340Z",
+          "integratedAt": "2026-11-08T19:42:45.993Z",
+          "reason": "Old discovery lead actually visited and identity resolved to José Hernández-Orallo, linked to existing AI Evaluation newsletter and newly inspected personal research homepage. Profile itself showed no post bodies; do not add a second empty-profile monitor or infer cadence."
+        },
+        {
+          "lead": {
+            "id": "creative-discovery-ai-video-editor",
+            "name": "Ludwig Kienle AI Video Production Editor",
+            "url": "https://github.com/LudwigKienle/ai-video-production-editor",
+            "sourceId": null,
+            "status": "deferred",
+            "discoveredAt": "2026-11-03T19:32:24.303931Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+audio+video+creative+workflow+independent+tutorial+open+source+October+2026",
+            "reason": "Originating repository appeared in the single broad search. Recurring releases, license and representative workflow still uninspected.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/discovery-search-note.json",
+            "captureSha256": "f3aec66711bd81e4690fca8c38e22ee34663df8e32536085b2cb44426205a79d",
+            "nextAction": "Inspect originating README/release history and one representative example before considering a recurring monitor.",
+            "discoveryQuery": "AI audio video creative workflow independent tutorial open source October 2026",
+            "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
+          },
+          "disposition": "added",
+          "catalogueEntryId": "nov8-creative-publisher-ludwig-editor",
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "integratedAt": "2026-11-08T19:42:45.993Z",
+          "reason": "Originating local creative workstation repository with inspectable model-routing and project workflow documentation; Rainline example identifies continuity/re-film/export checks."
+        },
+        {
+          "lead": {
+            "id": "creative-discovery-aftertake",
+            "name": "Aftertake",
+            "url": "https://itssnowmobile.github.io/aftertake/",
+            "sourceId": null,
+            "status": "deferred",
+            "discoveredAt": "2026-11-03T19:32:24.303931Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+audio+video+creative+workflow+independent+tutorial+open+source+October+2026",
+            "reason": "Originating local-video workflow site appeared in bounded search. Maintainer identity, GPU requirements, releases and examples remain uninspected.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/creative/discovery-search-note.json",
+            "captureSha256": "f3aec66711bd81e4690fca8c38e22ee34663df8e32536085b2cb44426205a79d",
+            "nextAction": "Inspect originating README/release history and one representative example before considering a recurring monitor.",
+            "discoveryQuery": "AI audio video creative workflow independent tutorial open source October 2026",
+            "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
+          },
+          "disposition": "added",
+          "catalogueEntryId": "nov8-creative-publisher-aftertake",
+          "assessedAt": "2026-11-08T19:40:29.272520Z",
+          "integratedAt": "2026-11-08T19:42:45.993Z",
+          "reason": "Originating local video workspace publication with linked editable projects, scoped model/GPU caveats and an inspectable narrated-cut walkthrough."
+        },
+        {
+          "lead": {
+            "id": "discovery-lead-e2e1160912db5078",
+            "name": "AI in Education Knowledge Base",
+            "url": "https://edtechdev.github.io/aied/",
+            "sourceId": null,
+            "status": "unvisited",
+            "discoveredAt": "2026-11-03T19:38:50.939910Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+educational+creative+tools+research+independent+November+2026+October+2026+open+source",
+            "reason": "Potential specialist education/reproducibility source; actual source page inspection pending.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-query.json",
+            "captureSha256": "6d8aef7dc27cd3a1a4f4e1df6266dcce2e0135e00c0dff656a4bb3f3d0bd4b14",
+            "nextAction": "Visit publisher/author entrypoint and representative original material; assess provenance, human oversight and practical relevance before promotion.",
+            "discoveryQuery": "Public broad search: AI educational creative tools research independent November 2026 October 2026 open source",
+            "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited."
+          },
+          "disposition": "added",
+          "catalogueEntryId": "social-publisher-aied-knowledge-base",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "integratedAt": "2026-11-08T19:42:45.993Z",
+          "reason": "Transparent AI-assisted educational research synthesis with original-paper citations and dated pages; useful for finding tutoring evaluation questions. Its developer states an AI agent writes and updates pages with editorial guidance, so statistics require checks against papers."
+        },
+        {
+          "lead": {
+            "id": "discovery-lead-7cb01e7febdd9ca5",
+            "name": "Nature article lead s44488-026-00015-x (publisher identity unverified)",
+            "url": "https://www.nature.com/articles/s44488-026-00015-x",
+            "sourceId": null,
+            "status": "unvisited",
+            "discoveredAt": "2026-11-03T19:38:50.939910Z",
+            "discoveredFrom": "https://www.google.com/search?q=AI+educational+creative+tools+research+independent+November+2026+October+2026+open+source",
+            "reason": "Potential specialist education/reproducibility source; actual source page inspection pending. Saved query evidence contains the article URL only; publisher identity, title and topical interpretation remain unverified.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/research_social/discovery-query.json",
+            "captureSha256": "6d8aef7dc27cd3a1a4f4e1df6266dcce2e0135e00c0dff656a4bb3f3d0bd4b14",
+            "nextAction": "Visit publisher/author entrypoint and representative original material; assess provenance, human oversight and practical relevance before promotion.",
+            "discoveryQuery": "Public broad search: AI educational creative tools research independent November 2026 October 2026 open source",
+            "discoveryLocatorScope": "Reconstructed public query locator for the archived search-note query; this exact search URL and the lead destination were not independently visited.",
+            "unverifiedSearchAttribution": "Communications AI & Computing"
+          },
+          "disposition": "added",
+          "catalogueEntryId": "social-publisher-nature-commsaicomp",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "integratedAt": "2026-11-08T19:42:45.993Z",
+          "reason": "Journal entrypoint and original October 22 reproducibility article inspected. The article distinguishes improved documentation from inferred reproducibility, giving a useful methodological source rather than evidence that all experiments were replicated."
+        }
+      ],
+      "excludedDuplicateAssessments": [
+        {
+          "id": "duplicate-latent-space-nonwww",
+          "url": "https://latent.space/",
+          "disposition": "rejected",
+          "reason": "Rejected as an additional catalogue identity: actual visit shows the same Latent Space publisher already represented at www.latent.space. Preserve existing acquisition-ledger provenance rather than add a duplicate recurring identity.",
+          "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-a4df7cd9a9c0760a.json",
+          "captureSha256": "022abc01a44f57f6f49b4ded61ce1d6c18eeb8a7ca078b95ea5300ee6fd4bd1c",
+          "checkedAt": "2026-11-08T19:14:28.127Z",
+          "lane": "research_social",
+          "assessedAt": "2026-11-08T19:28:27.183193Z",
+          "name": "Latent Space non-www alias",
+          "excludedFromIdentityCounts": true,
+          "canonicalCatalogueEntryId": "seed-latent-space",
+          "provenance": {
+            "runId": "scan-20261108T185850Z-56c6d8",
+            "capturePath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/source-a4df7cd9a9c0760a.json",
+            "captureSha256": "022abc01a44f57f6f49b4ded61ce1d6c18eeb8a7ca078b95ea5300ee6fd4bd1c",
+            "sourceResultPath": ".state/scan-20261108T185850Z-56c6d8/research/research_social/bundle.json"
+          }
+        }
+      ],
+      "actualEntryAdditions": 9,
+      "actualEntryUpdates": 4,
+      "resolvedLeadUpdates": 1
     }
   ]
 }

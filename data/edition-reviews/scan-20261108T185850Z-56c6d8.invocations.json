@@ -1,0 +1,129 @@
+{
+  "runId": "scan-20261108T185850Z-56c6d8",
+  "attempt": 1,
+  "recordedAt": "2026-11-08T19:36:34.732514+00:00",
+  "mechanism": "native collaboration.spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "fork_turns": "none",
+  "blind": true,
+  "reviewerIds": [
+    "/root/astra_nov8_a",
+    "/root/astra_nov8_b"
+  ],
+  "invocationStatus": "Both distinct native agents returned independent complete approval reviews for all four exact frozen reports.",
+  "packetSha256": "55840364fe95f2dfcc35a0b981c82b8fd2c950261e58a8d7702d39706cbfc466",
+  "reports": {
+    "pdd-kit": {
+      "reportHash": "1a4ad7f5013946bf33cd3d2727026e35c20c2e502ab0cadf14f0063cf9e40407",
+      "evidenceHash": "329e41070eab54f3d6de807dc864b8478d4cb695bd80e2091264b356e17c4fa4",
+      "rubricVersion": "1.0",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "wordCount": 1056
+    },
+    "images26-creative-controls": {
+      "reportHash": "f44023d4e4b46fc6346e41ee3906d845abd8f8caa8a1824788e6dd3134867ced",
+      "evidenceHash": "0eb5586a8ac93cf51def1fc771883bd138af91db72baa6c07509b24e8c442b9e",
+      "rubricVersion": "1.0",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "wordCount": 1911
+    },
+    "kimi-k31-pro": {
+      "reportHash": "b5989f1ff02479d9b65ab61566e5a0fc28d3e4438a77e73c97000d8108951be8",
+      "evidenceHash": "b8cce51c0c6bcc1a449c55998e6692795652f83f9c25daa36df6674a6a2f4912",
+      "rubricVersion": "1.0",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "wordCount": 2158
+    },
+    "datasette-agent-apps": {
+      "reportHash": "81a17da32362b662caa5110a97fd6f6f6a140a8856a49c96a3493f6d7d971648",
+      "evidenceHash": "077e349f0fbbb3f6449f62d8e25f32b3f1942034144d3533f27997b6a48fd9cf",
+      "rubricVersion": "1.0",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "wordCount": 1042
+    }
+  },
+  "limitations": [
+    "Editorial review is not independent experimental validation.",
+    "Both reviewers could not re-read the older October 24 Kimi guide archive because local access stalled; frozen historical claim records and decisive current captures were reviewed. This non-blocking audit limitation remains disclosed in the reviews and run record."
+  ],
+  "resultsRecordedAt": "2026-11-08T19:47:16Z",
+  "publicationGates": {
+    "pdd-kit": {
+      "reportHash": "1a4ad7f5013946bf33cd3d2727026e35c20c2e502ab0cadf14f0063cf9e40407",
+      "evidenceHash": "329e41070eab54f3d6de807dc864b8478d4cb695bd80e2091264b356e17c4fa4",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1056,
+      "meanScores": {
+        "usefulness": 5.0,
+        "impact": 4.0,
+        "novelty": 5.5,
+        "maturity": 2.5,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "images26-creative-controls": {
+      "reportHash": "f44023d4e4b46fc6346e41ee3906d845abd8f8caa8a1824788e6dd3134867ced",
+      "evidenceHash": "0eb5586a8ac93cf51def1fc771883bd138af91db72baa6c07509b24e8c442b9e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1911,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "kimi-k31-pro": {
+      "reportHash": "b5989f1ff02479d9b65ab61566e5a0fc28d3e4438a77e73c97000d8108951be8",
+      "evidenceHash": "b8cce51c0c6bcc1a449c55998e6692795652f83f9c25daa36df6674a6a2f4912",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 2158,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 6.5,
+        "novelty": 6.0,
+        "maturity": 5.5,
+        "openness": 6.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "datasette-agent-apps": {
+      "reportHash": "81a17da32362b662caa5110a97fd6f6f6a140a8856a49c96a3493f6d7d971648",
+      "evidenceHash": "077e349f0fbbb3f6449f62d8e25f32b3f1942034144d3533f27997b6a48fd9cf",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov8_a",
+        "/root/astra_nov8_b"
+      ],
+      "wordCount": 1042,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 4.0,
+        "novelty": 4.5,
+        "maturity": 4.5,
+        "openness": 8.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    }
+  }
+}

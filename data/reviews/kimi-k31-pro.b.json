@@ -1,32 +1,30 @@
 {
   "reportId": "kimi-k31-pro",
-  "reviewerId": "/root/edition_20261024_astra_b",
+  "reviewerId": "/root/astra_nov8_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-24T18:12:40.947800Z",
-  "reportHash": "301fba434916a1e564f9f6c035b9ff7685c1a3489b8fc7b97732ca21330eda1f",
-  "evidenceHash": "5060f7f3f3222a37f21318d8afca85dd2fd42aaa768d80314eee416dfdbc4fa0",
+  "reviewedAt": "2026-11-08T19:40:35.670664Z",
+  "reportHash": "b5989f1ff02479d9b65ab61566e5a0fc28d3e4438a77e73c97000d8108951be8",
+  "evidenceHash": "b8cce51c0c6bcc1a449c55998e6692795652f83f9c25daa36df6674a6a2f4912",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
-    "usefulness": 8,
-    "impact": 7,
+    "usefulness": 7,
+    "impact": 6,
     "novelty": 6,
-    "maturity": 5,
-    "openness": 3
+    "maturity": 6,
+    "openness": 6
   },
   "rationale": {
-    "usefulness": "Detailed paid-access requirements, model rates, caching, reasoning defaults, image transport rules and web-search warnings make the hosted coding and 3D pilots practically useful. Concrete app acceptance tests and editable Blender/CAD workflows are clearly proposals rather than observed production outcomes.",
-    "impact": "A long-context multimodal coding model integrated into several hosted products and 3D workflows could be consequential for agent-based building. Significance remains bounded by heterogeneous vendor evaluations, untested artifact delivery and the pending weight release.",
-    "novelty": "The reported 3D construction focus, product integration and Highspeed variant provide meaningful differentiation. No comparable artifact test or consistent independent benchmark establishes an exceptional new capability; long context and tool-directed coding alone are not novel.",
-    "maturity": "The API is documented sufficiently to plan a pilot, but placeholder benchmark text, differing internal accuracy accounts, production web-search warnings and absent execution verification are material readiness limits. A usable hosted evaluation is supported, broad autonomous reliability is not.",
-    "openness": "Public API documentation and compatibility formats offer some inspectability and migration possibilities. As of the inspection date, weights are only promised for November 4, and their license and viable self-hosting are unknown, so future openness receives no present credit."
+    "usefulness": "Hosted coding and tool-directed 3D workflows, protocol details and concrete pilot acceptance checks make this useful to builders. Public checkpoint access adds an infrastructure option, but the 1.56 TB listing, serving complexity and untested artifact quality constrain direct educational adoption.",
+    "impact": "The visible multimodal checkpoint and model-specific serving recipes materially expand deployment choices for a substantial model. That is meaningful AI infrastructure progress; heterogeneous vendor benchmarks and no independent task or cost results do not establish a field-changing capability jump.",
+    "novelty": "The documented architecture, long-context support and tool-directed creative workflows offer a differentiated combination. A post-trained successor and provider-selected benchmark evidence do not establish a wholly new capability or independently demonstrated superiority.",
+    "maturity": "The paid API has detailed access, history, thinking, vision and billing contracts. Dedicated serving documentation distinguishes exact tested configurations from pending or unverified paths. These support usable routes with material operational limits rather than dependable deployment across the advertised matrix.",
+    "openness": "All 96 numbered checkpoint shards are publicly listed, with a pinned model README and actual custom license, enabling more inspection and portability than API-only access. Commercial MaaS/affiliate and branding conditions, substantial compute demands and no established full training reproduction prevent a high permissive-openness score."
   },
-  "confidence": "high",
+  "confidence": "medium",
   "concerns": [
-    "Unknown primary publication date correctly stays null; October discovery and a promised November weight release must not become a fabricated exact launch or availability date.",
-    "Provider performance comparisons use different harnesses, subsets and external reports. The report correctly avoids a numerical quality ranking.",
-    "Minor citation hardening opportunity: the body general-quickstart link uses /docs/overview, whereas the inspected source record resolves to /docs/get-your-api-key; use the saved canonical destination on a future substantive revision."
+    "The exact first public checkpoint date and full download integrity are unestablished; the report correctly uses November 8 observation and preserves October 24 claims as history. No publication-blocking issue found."
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "reportId": "images26-creative-controls",
+  "reviewerId": "/root/astra_nov8_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-08T19:39:56.821461Z",
+  "reportHash": "f44023d4e4b46fc6346e41ee3906d845abd8f8caa8a1824788e6dd3134867ced",
+  "evidenceHash": "0eb5586a8ac93cf51def1fc771883bd138af91db72baa6c07509b24e8c442b9e",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Documented markup edits, static SVG export and finished GIF output address concrete teaching, web-asset and animation handoffs. The report supplies useful preservation, vector-editability, loop and accepted-asset cost checks rather than treating attractive output as success.",
+    "impact": "A widely accessible hosted image workflow gaining explicit planning controls and additional editable or animated formats is a meaningful creative-tooling expansion. Documentary evidence does not establish field-wide quality or productivity gains.",
+    "novelty": "Separating complexity from quality and combining aligned markup with SVG and GIF output meaningfully differentiates this release. These are integration and control improvements, with no demonstrated fundamentally new generative capability or matched competitor study.",
+    "maturity": "The two model references and detailed endpoint, format, limit and pricing documentation support usable hosted access. Mixed 2.5/2.6 documentation, unresolved SVG authoring-cost details and the lack of executed requests or reliability tests keep readiness moderate.",
+    "openness": "Exported SVG/XML and GIF are portable artifacts and the API is documented, but model weights, training data and a reproducible training recipe are absent from the reviewed evidence. Hosted access and output portability are narrower than model openness."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Non-blocking: the six-second and 50% speed statements remain vendor claims; no image, SVG or GIF was generated or inspected as an experimental result. The report preserves this boundary.",
+    "Non-blocking: cached-input eligibility, Batch availability and the full SVG authoring-rate calculation remain unresolved; the report avoids unsupported discounts or per-asset prices.",
+    "Length check: 1,911 independently counted body words fits 1,800–2,200 for my impact 6; validate the final mean before publication."
+  ]
+}

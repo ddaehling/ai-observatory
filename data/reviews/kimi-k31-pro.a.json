@@ -1,32 +1,33 @@
 {
   "reportId": "kimi-k31-pro",
-  "reviewerId": "/root/edition_20261024_astra_a",
+  "reviewerId": "/root/astra_nov8_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-24T18:12:23.862175Z",
-  "reportHash": "301fba434916a1e564f9f6c035b9ff7685c1a3489b8fc7b97732ca21330eda1f",
-  "evidenceHash": "5060f7f3f3222a37f21318d8afca85dd2fd42aaa768d80314eee416dfdbc4fa0",
+  "reviewedAt": "2026-11-08T19:39:56.821461Z",
+  "reportHash": "b5989f1ff02479d9b65ab61566e5a0fc28d3e4438a77e73c97000d8108951be8",
+  "evidenceHash": "b8cce51c0c6bcc1a449c55998e6692795652f83f9c25daa36df6674a6a2f4912",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 7,
-    "impact": 6,
-    "novelty": 5,
+    "impact": 7,
+    "novelty": 6,
     "maturity": 5,
-    "openness": 3
+    "openness": 6
   },
   "rationale": {
-    "usefulness": "Documented hosted coding, visual input and scripted 3D workflows offer useful app, teaching-scene and video-preparation pilots. Access, token categories, client constraints and output verification are explained sufficiently to design a bounded comparison.",
-    "impact": "A major hosted model update targeting longer coding and 3D work is potentially meaningful within model-assisted development. Current evidence is provider-reported, benchmarks use differing conditions, and the future weight release cannot contribute present-day openness or reproducible impact.",
-    "novelty": "Enhanced coding and 3D construction across tools are useful capabilities, but this is explicitly post-training of an existing model and the evidence demonstrates incremental improvements more clearly than a new approach. No independent artifacts establish exceptional differentiation.",
-    "maturity": "Public API access, pricing and detailed protocol guidance make a pilot feasible. Benchmark placeholders, inconsistent internal accuracy figures, the production web-search warning and absence of runtime tests leave substantial readiness uncertainty.",
-    "openness": "Public hosted APIs and format compatibility offer some integration portability. As of the inspection date the weights, final license and serving recipe remain promised, so an open-weight label cannot justify a high openness score."
+    "usefulness": "Hosted API routes and editable coding/3D construction workflows provide useful bounded creative and educational pilots. Precise paid-access, protocol, cache and hardware constraints make the report actionable, while the 1.56 TB checkpoint excludes casual local deployment.",
+    "impact": "A publicly listed 2.8T multimodal checkpoint with a million-token context and model-specific serving routes is a substantial addition to infrastructure-controlled model access. Custom commercial conditions, partial serving verification and unreplicated quality claims prevent an exceptional field-wide rating.",
+    "novelty": "The checkpoint architecture, quantization and combination of long-context agentic and parametric 3D workflows provide meaningful differentiation. Release of weights is chiefly an access change; claimed benchmark superiority and creative reliability are not independently established.",
+    "maturity": "The API guide is concrete and the vLLM/SGLang recipes disclose genuinely tested cells as well as staging and derived configurations. Custom images, unfinished verification, official search warnings and no executed workload support usable-with-limits rather than dependable production readiness.",
+    "openness": "Publicly inspectable weights, a versioned README/license and runtime recipes materially improve portability and inspection. The custom MaaS/affiliate-revenue and branding conditions, infrastructure burden and absent complete training reproducibility limit openness below a permissive reproducible release."
   },
   "confidence": "medium",
   "concerns": [
-    "The November 4 weight release is a promise; no available checkpoint or license was verified.",
-    "Guide placeholders and differently described factuality evaluations limit quality confidence; the report appropriately omits those numeric claims.",
-    "The exact announcement publication date is unknown and remains null."
+    "Non-blocking: first public download date is unknown, and observing the complete shard listing does not verify successful download or execution. The report correctly dates the observation and avoids a November 4 release assertion.",
+    "Non-blocking audit limitation: the October 24 guide archive referenced inside historical evidence stalled on local read and was interrupted; I reviewed the frozen historical claim records but did not independently re-read that old capture. November 8 captures, including current guide, announcement, versioned license and serving recipes, were inspected and hash-verified.",
+    "Non-blocking: exact training-data/code completeness, practical self-hosting costs and quality remain unestablished. Neither the license definition of Software nor public weights proves a fully reproducible training release.",
+    "Length check: 2,158 independently counted body words fits 1,800–2,200 for my impact 7. If the final mean exceeds 7, expansion to 2,700–3,300 words and fresh hash-bound review are required."
   ]
 }

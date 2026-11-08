@@ -1,0 +1,320 @@
+[
+  {
+    "claim_id": "kimi-availability-20261024",
+    "claim": "K3.1Pro andHighspeed are described as available in hosted Kimi products/API; full weights remain a future promise forNovember4,2026.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "Availability",
+        "passage": "Full model weights will be released by Nov 4, 2026.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "Inspected October24,2026.",
+      "Final checkpoint license and self-hosting requirements not established."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-creative-20261024",
+    "claim": "The launch describes scripts forBlender/CAD and3DMake editing/export workflows; these are provider demonstrations and proposed builder use cases, not this project’s runtime results.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "3D Modeling and Design",
+        "passage": "it can write and run scripts for tools like Blender and CAD software",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "No screenshots, exported geometry, render or print tests inspected."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-client-access-20261024",
+    "claim": "Work requires3.1.0+ onWindows orAppleSilicon; enterprise access is administrator-enabled and off by default at launch.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-pro-announcement",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "locator": "Availability",
+        "passage": "access is off by default at launch.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:53:52.644Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-pro-announcement.json",
+        "archive_sha256": "a4d537257bd3620309f6b56b89b5deb97da36ff98ba98ccd901b0d937192ec2d"
+      }
+    ],
+    "qualifiers": [
+      "Hosted product subscriptions, regions and actual account access not verified."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-entry-20261024",
+    "claim": "The API guide says a minimum$1 successful top-up unlocks the flagship; tiers and rate limits depend on cumulative top-ups.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Access requirements",
+        "passage": "it is unlocked after a successful top-up (minimum $1).",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "No top-up or API invocation performed."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-pricing-20261024",
+    "claim": "PerMTok Pro lists$2 input/$10 output andHighspeed$4/$20, while both list$0.20 cached input;5m writes are$2/$4 and1h writes$4/$8.",
+    "source_ids": [
+      "repos-kimi-api-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-pricing",
+        "url": "https://platform.kimi.ai/docs/pricing/chat",
+        "locator": "K3Series Models table",
+        "passage": "kimi-k3.1-pro\t$2.00 / MTok\t$10.00 / MTok\t$0.20 / MTok\t$2.00 / MTok\t$4.00 / MTok",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.567Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-pricing-visible.json",
+        "archive_sha256": "29b1a125ae64c75c2b89cf9c47b8d36603cee3d4a278ba67a035477ff7eee494"
+      }
+    ],
+    "qualifiers": [
+      "Table inspected after initial main-text capture omitted dynamically rendered rows.",
+      "Tax excluded; writes billed separately; this is listed pricing, not an observed bill."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-api-protocol-20261024",
+    "claim": "API documentation supportsChatCompletions,Responses andMessages formats, directHTTP orSDK; examples specifyPython3.9+ orNode18+.",
+    "source_ids": [
+      "repos-kimi-api-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-overview",
+        "url": "https://platform.kimi.ai/docs/get-your-api-key",
+        "locator": "Introduction; Make your first call",
+        "passage": "Python 3.9 or later, or Node.js 18 or later.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:39.161Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-overview.json",
+        "archive_sha256": "da923e8714ec6f4c5165d873527322d8a521c3cd5a499e8e38ffbda9dac73b1c"
+      }
+    ],
+    "qualifiers": [
+      "Format compatibility does not certify every existing client option."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-thinking-20261024",
+    "claim": "The model always thinks; reasoning_effort low/high/max defaults tomax, with fixed sampling settings and complete assistant-message history required for tool calls.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Reasoning effort; Important limits",
+        "passage": "K3.1 Pro always has thinking mode enabled",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "Defaults and protocol constraints were documented only."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-vision-search-20261024",
+    "claim": "The guide requiresbase64 oruploaded-file references for vision and warns against production use of official web search near term.",
+    "source_ids": [
+      "repos-kimi-k31-guide"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Important limits",
+        "passage": "Web search is being updated and is not recommended for production workflows in the near term.",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "No separate retrieval integration evaluated."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-quality-conflict-20261024",
+    "claim": "The API model guide contains benchmark placeholders and internal hallucination values differing from the launch article; numerical factual-accuracy claims are excluded.",
+    "source_ids": [
+      "repos-kimi-k31-guide",
+      "repos-kimi-k31-pro-announcement"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-k31-guide",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+        "locator": "Advancing the Frontier; Finance",
+        "passage": "it scores [xx.x%]",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:49.569Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-k31-guide.json",
+        "archive_sha256": "c134d2b8293d77b54b6218ca8bed72336cc0b0a39f549fdb992e76c0b9f543bd"
+      }
+    ],
+    "qualifiers": [
+      "Guide shows23.35%to6.85%; launch article shows23.4%to8.3%, with differently described evaluation populations.",
+      "No basis established to normalize or choose between these figures."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "kimi-speed-vendor-20261024",
+    "claim": "The provider claims2–3x speed forHighspeed; this report does not verify latency or end-to-end task speed.",
+    "source_ids": [
+      "repos-kimi-api-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-kimi-api-overview",
+        "url": "https://platform.kimi.ai/docs/get-your-api-key",
+        "locator": "Choose a model",
+        "passage": "same capabilities at about 2-3× the speed",
+        "passage_type": "verbatim",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:54:39.161Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/repos/archive/repos-kimi-api-overview.json",
+        "archive_sha256": "da923e8714ec6f4c5165d873527322d8a521c3cd5a499e8e38ffbda9dac73b1c"
+      }
+    ],
+    "qualifiers": [
+      "No comparative task execution, timing or billing measured."
+    ],
+    "contradicts": [],
+    "source_family": "Moonshot AI",
+    "status": "supported",
+    "limitations": []
+  },
+  {
+    "claim_id": "social-observation-840cc17b78b1a9ff",
+    "claim": "Hacker News and current tracker listings point to the Kimi K3.1 Pro announcement; one tracker separately says weights are due by November 4.",
+    "source_ids": [
+      "repos-kimi-k31-pro-announcement",
+      "seed-hacker-news",
+      "social-source-2ec1d3fbd41def23"
+    ],
+    "support": [
+      {
+        "source_id": "seed-hacker-news",
+        "url": "https://news.ycombinator.com/",
+        "locator": "Saved public listing; selected story preview/link",
+        "passage": "Hacker News and current tracker listings point to the Kimi K3.1 Pro announcement; one tracker separately says weights are due by November 4.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-24T17:52:11.764Z",
+        "archive_path": ".state/scan-20261024T174829Z-815900/social/captures.json",
+        "archive_sha256": "4616689cb6e6e9ef0a86373eb90aa84b42c1ecfb99fa5e55cdfb934a22be139f"
+      }
+    ],
+    "qualifiers": [
+      "Records what the saved listing says; underlying release, performance, license and availability claims are unverified.",
+      "Post or tracker date is not a confirmed product event date."
+    ],
+    "contradicts": [],
+    "source_family": "Hacker News",
+    "status": "unresolved",
+    "limitations": [
+      "No linked destination inspected by this accounting helper.",
+      "Visible listings and truncated quoted posts do not establish full context or historical completeness."
+    ]
+  }
+]

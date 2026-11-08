@@ -1,0 +1,30 @@
+{
+  "reportId": "datasette-agent-apps",
+  "reviewerId": "/root/astra_nov8_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-08T19:40:35.670664Z",
+  "reportHash": "81a17da32362b662caa5110a97fd6f6f6a140a8856a49c96a3493f6d7d971648",
+  "evidenceHash": "077e349f0fbbb3f6449f62d8e25f32b3f1942034144d3533f27997b6a48fd9cf",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 4,
+    "novelty": 4,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The shared app/chat panel, permission-checked references and query-grant tooling make a concrete database-to-interface loop easier to evaluate. The teaching dataset and searchable collection proposals include checkable outputs and realistic failure cases. Value is strongest for existing Datasette users.",
+    "impact": "This is a focused integration improvement within a specific database tool ecosystem, not evidence of a major change to AI capability or general agent reliability. The explicit approval and permission behavior is useful engineering, but no measured broad adoption or productivity effect is established.",
+    "novelty": "Panel-based app revision and contextual references are familiar interaction patterns. Their combination with Datasette stored queries and permissions is a useful product-specific refinement, with no evidence supporting a substantially new AI technique.",
+    "maturity": "Tagged prereleases, installation prerequisites and detailed operational documentation support a bounded trial. The allowlist fix, current-README versus tagged-release distinction, partial-commit write behavior and untested combined-version compatibility keep the assessment at usable with material limits.",
+    "openness": "Actual Agent and Apps LICENSE captures establish Apache 2.0 code terms, and repositories, releases, SQL and HTML artifacts are inspectable. Model services and dataset rights remain separate dependencies, and no complete working environment was reproduced, so exceptional end-to-end reproducibility is not established."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Current README behavior may exceed the tagged releases, and approval is not rollback or per-invocation consent for an already granted query. The report states these distinctions adequately. No publication-blocking issue found."
+  ]
+}

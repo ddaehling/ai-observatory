@@ -1,0 +1,30 @@
+{
+  "reportId": "images26-creative-controls",
+  "reviewerId": "/root/astra_nov8_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-08T19:40:35.670664Z",
+  "reportHash": "f44023d4e4b46fc6346e41ee3906d845abd8f8caa8a1824788e6dd3134867ced",
+  "evidenceHash": "0eb5586a8ac93cf51def1fc771883bd138af91db72baa6c07509b24e8c442b9e",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Separate planning/rendering controls, aligned markup edits, editable SVG and finished GIF output address specific creative handoffs. The report turns them into original acceptance procedures for lessons, web illustrations and short loops, with useful request and cost constraints. Their practical benefit remains unmeasured.",
+    "impact": "The documented additions meaningfully broaden a widely accessible hosted image workflow, especially vector and animation handoffs. They support a domain-level advance, while provider speed claims and absent comparative production measurements do not justify exceptional field-wide significance.",
+    "novelty": "The combined feature set offers meaningful differentiation in output formats and regional editing control. The evidence does not establish that these underlying capabilities are first-of-kind, nor that fidelity or speed improvements survive task-matched comparisons.",
+    "maturity": "Exact model identifiers, endpoints, defaults, input limits and failure guidance support a usable API offering. Mixed-generation documentation, unresolved complete SVG billing and documented text/consistency limits temper readiness; no generation, account or recovery test was performed.",
+    "openness": "Portable SVG/GIF artifacts and public API documentation help downstream editing and integration. The inspected material provides no downloadable weights, training data or reproducible training method, and the hosted service remains the execution dependency."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Quality, speed, account entitlement and complete per-asset costs remain documentary or vendor claims; the report adequately separates them from its proposed workflows. No publication-blocking issue found."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "pdd-kit",
+  "title": "PDD Kit: review the intended behavior, then check what the proof actually covers",
+  "entity": "PDD Kit",
+  "category": "Research",
+  "tags": [
+    "formal verification",
+    "coding agents",
+    "Rust",
+    "Verus",
+    "software assurance"
+  ],
+  "summary": "Microsoft’s Rust research prototype links human intent review to Verus proofs and tests. Its login demonstration is useful to study, but public toolkit access and a reproducible PDD workflow remain unverified.",
+  "changeType": "new",
+  "publishedAt": "2026-11-05T16:00:00Z",
+  "discoveredAt": "2026-11-08T18:58:56Z",
+  "updatedAt": "2026-11-08T19:11:24.488845Z",
+  "officialUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A proof attached to a reviewed intention",
+      "html": "<p>Microsoft Research’s November 5 account of PDD Kit describes a way to make a coding agent’s plan checkable. A developer settles the intended behavior, the agent translates suitable requirements into formal specifications, and Verus checks proofs that the Rust implementation satisfies them. Requirements outside that proof receive tests. The useful distinction is between a mathematical result about specified behavior and observations from running particular examples. <a href=\"https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/\">Research account</a>.</p><p>This is a research prototype demonstrated on the login portion of one full-stack application. The article does not establish a generally available PDD Kit release, a production support commitment, or independent replication. Its immediate value is a detailed design for reviewing agent-written software. A team can study that design now without assuming it can install the demonstrated workflow or transfer its guarantees to an existing JavaScript application.</p>"
+    },
+    {
+      "id": "intent",
+      "title": "The difficult review moves into the specification",
+      "html": "<p>PDD Kit runs inside GitHub Next’s Chopin planning environment. Its planning stage asks questions, explains relevant code, and keeps an intent artifact linking decisions to specifications and planned tests. The example exposes an easy mistake: requiring valid credentials whenever login succeeds also permits a system that refuses everyone. The developer must decide whether legitimate login should succeed, and which operational failures remain permitted. <a href=\"https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/\">Questions before code and intent map</a>.</p><p>That is useful educational material. Give learners a small access-control requirement, ask them to describe allowed and forbidden outcomes, and compare their descriptions with a truth table. The inspectable output is the table and the resulting specification, with a teacher checking whether the formal statement captures the original intention. This is a proposed classroom exercise, not evidence that PDD Kit improves learning. The lesson is that a correct proof can still establish an inadequate requirement.</p>"
+    },
+    {
+      "id": "boundary",
+      "title": "What the demonstrated proof covers",
+      "html": "<p>The authors’ Pet Store combines a Rust backend with a WebAssembly storefront. Their report concentrates on login, including account selection, password gating, token claims, and the surrounding asynchronous flow. It does not demonstrate verification of every feature in the roughly 5,000-line application. Microsoft reports that the exercise uncovered existing bugs; this scan did not reproduce that finding. <a href=\"https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/\">The capstone and proof scope</a>.</p><p>The result depends on accepted assumptions. Database lookups, password checking, token signing, the clock, error handling, and request unpacking cross the trusted boundary. Tests exercise those dependencies, but the proof does not establish their implementations’ correctness. The verifier, compiler, solver, and verification library also remain assumed. A useful review therefore identifies each dependency, the property assumed about it, and the evidence supporting that assumption. A green proof result cannot erase an incorrect database model or a missing requirement.</p>"
+    },
+    {
+      "id": "checks",
+      "title": "Use different checks for different promises",
+      "html": "<p>The described build stage has an agent generate implementation and proof, checks trusted components empirically, and uses an LLM reviewer to look for gaps between intent and results. The mathematical verifier and that language-model review serve different roles. Agreement from the latter does not establish a proof’s correctness. The workflow also introduces deliberate mistakes in scratch copies to check that relevant specification clauses reject them. <a href=\"https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/\">Prove, check, close the gaps</a>.</p><p>Microsoft describes adding verification to continuous integration and retaining tests for the trusted boundary. That provides a useful maintenance model: later edits must continue satisfying the approved specification. It still leaves substantial omissions. The login contract does not guarantee completion of a pending asynchronous operation, response time, resistance to repeated attempts, or correct role handling elsewhere. Usability and accessibility need their own checks. Coverage should be explained property by property, instead of treating the entire website as verified.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "A bounded app or website evaluation",
+      "html": "<p>For a builder, the transferable idea is an explicit requirements-to-evidence map. Start with a small deterministic permission rule in a disposable application using synthetic accounts. List permitted outcomes, refusals, dependency assumptions, and behavior deliberately outside scope. Review that list before implementation. Produce a table mapping each requirement to a formal obligation, a test, or an unresolved gap. This is an editorial pilot design, not a documented ready-made PDD integration.</p><p>If exploring a verification tool separately, keep its language and version constraints visible. PDD Kit’s demonstrated verifier works with Rust; the authors discuss porting code or using bindings for other languages. Those changes require engineering and do not automatically extend proof coverage across the boundary. Measure setup effort, specification revisions, proof failures, and the tests still required. Include a harmless deliberate logic error to check that the intended obligation catches it. Preserve a failing case rather than weakening the requirement to obtain a passing result. <a href=\"https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/\">Why Rust and prototype expectations</a>.</p>"
+    },
+    {
+      "id": "readiness",
+      "title": "What would make the prototype ready to adopt",
+      "html": "<p>Component access has different limits. At inspection, GitHub Next’s Chopin page describes an unfinished prototype and advises against using it; no publication date was established for that guidance. The public Verus README links a playground and installation instructions, while warning that it supports a subset of Rust and has incomplete documentation and potentially broken or missing features. These are routes for separate study, not a reproducible PDD Kit package. <a href=\"https://githubnext.com/projects/chopin/\">Chopin status</a> and <a href=\"https://github.com/verus-lang/verus\">Verus README</a>.</p><p>The user-facing application still needs observation. For a proposed website pilot, submit allowed and denied synthetic requests through the real interface, inspect the resulting state, and verify that errors preserve useful explanations. Include a dependency timeout and a cancelled request. These exercises test behavior beyond a local decision function and help expose mismatches between the assumed wrapper and its actual integration. Record the exact software revision with each result, so an old successful test cannot silently justify a changed implementation. A proof, a browser observation, and a unit-test result should appear as different evidence types. None should be summarized simply as “verified” without stating what it establishes.</p><p>A practical adoption decision needs information beyond this demonstration: access to the actual toolkit, its terms, supported agent and verifier versions, reproducible example artifacts, resource requirements, and failure recovery. This scan verified none of those as a complete public PDD Kit distribution. Availability of a linked component alone would not establish availability of the integrated planning, proof, mutation-checking, and shipping workflow. No installation, proof execution, runtime measurement, or cost comparison was performed.</p><p>The promising contribution is the connection between human intent review, machine-checked properties, and explicitly retained uncertainty. Its significance remains bounded by a Rust research prototype and one reported application slice. Before expanding, a team should demand a reproducible run in which a meaningful requirement survives code changes, dependencies remain visible, and an intentionally wrong implementation fails for the expected reason. That would provide stronger adoption evidence than a broad claim that agent-written applications are now automatically correct.</p>"
+    }
+  ],
+  "useCases": [
+    "Teach the difference between a requirement, a formal specification, a proof, and an empirical check.",
+    "Design a requirements-to-evidence map for a small application permission rule.",
+    "Evaluate a bounded Rust verification experiment before considering broader adoption."
+  ],
+  "limitations": [
+    "PDD Kit is described as a research prototype that verifies Rust; a complete public distribution, license, pricing, and production support were not verified.",
+    "The reported demonstration covers login logic in one application, not every application feature.",
+    "Proof conclusions depend on the chosen specifications, trusted wrappers and toolchain; tests support the trusted boundary without proving it.",
+    "No installation, proof execution, benchmark replication, resource measurement, or cost comparison was performed.",
+    "Educational and application pilots are editorial proposals, not tested integrations or outcome studies.",
+    "Chopin describes itself as unfinished and discourages use; Verus supports a subset of Rust and warns of incomplete features and documentation."
+  ],
+  "sources": [
+    {
+      "id": "source-b28ecfb79591f96a",
+      "title": "Formally verifying agent-written full-stack web apps with PDD Kit - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "accessedAt": "2026-11-08T19:05:40.968Z",
+      "publishedAt": "2026-11-05T16:00:00Z",
+      "locator": "How PDD Kit works; Steps 1–7; What the proof does and doesn’t say; What to Expect from PDD Kit",
+      "supports": "Prototype status, Rust scope, described workflow, reported login demonstration, proof assumptions and limits. Publication hour comes from feed metadata; page shows November 5."
+    },
+    {
+      "id": "official-source-pdd-chopin",
+      "title": "Chopin",
+      "url": "https://githubnext.com/projects/chopin/",
+      "accessedAt": "2026-11-08T19:10:23.766Z",
+      "publishedAt": null,
+      "locator": "Introducing Chopin; What to Expect from Chopin",
+      "supports": "GitHub Next describes the planning environment as an unfinished research prototype and discourages use at the time of the captured page."
+    },
+    {
+      "id": "official-source-pdd-verus",
+      "title": "verus-lang/verus: Verified Rust for low-level systems code",
+      "url": "https://github.com/verus-lang/verus",
+      "accessedAt": "2026-11-08T19:10:29.224Z",
+      "publishedAt": null,
+      "locator": "README: Status; Try Verus",
+      "supports": "The public verifier supports a subset of Rust, links learning and installation routes, and explicitly warns of missing or broken features and incomplete documentation."
+    }
+  ],
+  "images": [],
+  "judgment": "A useful research demonstration of intent review connected to formal verification, with narrow demonstrated scope and unresolved toolkit availability.",
+  "researchNote": "Primary Microsoft Research article, GitHub Next Chopin project page, and Verus public README captured in Chrome on November 8, 2026. This is documentary assessment, not hands-on testing. The report distinguishes the PDD prototype from its component technologies; proposed learning and pilot activities are editorial recommendations. No review scores or approval are asserted."
+}
