@@ -1,0 +1,32 @@
+{
+  "reportId": "claude-fable-52",
+  "reviewerId": "/root/astra_nov11_fable_date_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-11T05:57:08Z",
+  "reportHash": "52fcac76b42cc99d2a977f369f6dde6a4d81f289c9c0ac4073ed4064012fbdd9",
+  "evidenceHash": "577374231718f512158cd2e547d8d71e1deeeaa114eb2f9b8d5799c6a4bd6622",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 8,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "High practical value for difficult coding and creative work: the report connects the documented text/image-to-text interface to concrete education, app maintenance, website, and video-planning pilots, each with inspectable outputs, review criteria, and likely failures. Pricing arithmetic, uncached advisor reads, model-specific retention, and preserved-thinking migration checks make adoption decisions actionable. It correctly presents these pilots as proposals, not executed integrations or measured learning gains. Premium pricing, access conditions, and the absence of hands-on results prevent an exceptional score.",
+    "impact": "The captured announcement reports substantial advances across long-horizon coding, formal mathematics, scientific work, and visual/robotic tasks, while the official documentation establishes hosted availability, lower listed token rates, and integration changes affecting existing API histories. Together these support high potential significance beyond a single narrow workflow. The report appropriately attributes demonstrations and benchmarks to Anthropic, preserves the roughly 1,000-agent single-run qualification, and does not infer a cross-vendor ranking. Impact remains potential rather than independently established field-wide transformation; the system card and replications were not examined. At this independently chosen impact rating, the verified 2,858 body words fall within the 2,700–3,300 band.",
+    "novelty": "Meaningful incremental differentiation is documented in model behavior, broad vendor-reported improvements, lower 5.2 prices, and the extension of strict preserved-thinking behavior to all Fable 5.2 accounts. The report does not claim that the one-million-token context, text/image interface, advisor pattern, or underlying safeguards are newly invented here. No architecture, training-method breakthrough, or independently reproduced new capability is established by these seven sources, so novelty is moderate rather than exceptional.",
+    "maturity": "An active released model, explicit API identifiers, provider listings, detailed pricing, error semantics, account-binding rules, and migration guidance support usable readiness. The report accurately distinguishes API high effort from app/Code medium effort, the ordinary-request prefix error from the batch exception, and the advisor’s experimental status and possible fallback without consultation. However, launch recency, no model execution or production measurements, unacquired system-card detail, private-beta EFS, and eligibility/platform constraints leave material reliability questions.",
+    "openness": "The evidence establishes commercially accessible hosted services with public documentation and some provider choice, but no downloadable weights, training artifacts, or local deployment license. Commercial terms retain significant restrictions; preserved reasoning is opaque and account-bound unless accounts are linked, and some model access requires verification. Clear output-right allocation and public API documentation provide limited inspectability and integration access without establishing open or readily reproducible model operation."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking evidence limitation: all seven inspected captures are primary vendor-controlled sources. The report clearly discloses that it did not acquire the system card, run the models, replicate benchmarks, measure costs, or test deployment workflows. Approval certifies documentary consistency and editorial suitability, not experimental validation.",
+    "Non-blocking date clarification verified: the model specifications explicitly give November 9, 2026 as the release date; the announcement capture does not establish a publication date or launch hour. The report and source publication fields appropriately remain null, and the evidence distinguishes the June 17, 2025 commercial-terms effective date from publication. November 11 timestamps are retrieval dates.",
+    "Non-blocking provenance improvement for a future evidence refresh: several public claim passages are very abbreviated, such as the currency sentence for the multi-model pricing claim. Their locators and complete saved captures do substantiate the claims, but short table-row excerpts would make standalone evidence records easier to audit."
+  ]
+}

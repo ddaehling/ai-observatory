@@ -1,0 +1,235 @@
+[
+  {
+    "claim_id": "carbon-oct28-access",
+    "claim": "Carbon starts with selected cyber defenders this week; broader trusted partners follow, general products coming soon.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Opening rollout paragraphs",
+        "passage": "Starting this week, we will make Carbon available to a subset of cyber defenders",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Announced staged access; not observed account entitlement."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-cyber",
+    "claim": "Google reports88.2% SEC-bench Pro,54.8% ExploitGym,71.0% CWE-bench, evaluated without guardrails.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Cybersecurity performance section",
+        "passage": "Carbon excels across key external benchmarks (evaluated without guardrails)",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Vendor benchmark claims; deployed restrictions may differ; methodology page not inspected."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-longtasks",
+    "claim": "Google reports internal multi-day engineering work including root-causing and patching large codebases.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Improving coding and reasoning",
+        "passage": "our teams have seen Carbon run for days to persist through dead ends",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Internal observation, not public unattended runtime promise."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-safety",
+    "claim": "Launch reports0% successful cheating with0.4% attempts and0% evaluated GraySwan attack success.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Advancing frontier model safety & security",
+        "passage": "successful cheating on Terminal-Bench 4.0 to 0.0%, with attempts to cheat dropping to 0.4%",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Finite evaluations do not prove universal immunity; Argon report is not a Carbon-specific full card."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-pricing",
+    "claim": "Introductory input/output2/10 dollars per million later becomes4/20; current launch gives no expiry date.",
+    "source_ids": [
+      "official-source-a92d7b7ef0e2da4d"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-a92d7b7ef0e2da4d",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "locator": "Opening pricing and expanded More Information footnote",
+        "passage": "After the introductory period expires, the price of $4 per 1M input tokens and $20 per 1M output tokens will apply.",
+        "published_at": "2026-10-28",
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.310Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/gemini4-carbon-expanded.json",
+        "archive_sha256": "c7994cf1f2fe357ea5c5c6e25b9287ca75fea33d746defe56e6c46dadcb1c3fc"
+      }
+    ],
+    "qualifiers": [
+      "Cached-input95% discount in opening paragraph; complete billing/quotas not verified."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-fairwind",
+    "claim": "Fairwind documents controlled partner access, due diligence and defense/research purposes.",
+    "source_ids": [
+      "official-source-25d1ad479660a440"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-25d1ad479660a440",
+        "url": "https://deepmind.google/fairwind-program/",
+        "locator": "Governance; access FAQ",
+        "passage": "We conduct background checks on organizations that apply",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.836Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-fairwind.json",
+        "archive_sha256": "4267b114da6dc4d80ed0e6bc368788917502b358677eeeb0fcab7b865b11da6e"
+      }
+    ],
+    "qualifiers": [
+      "Public page still describes Argon; context only, not final Carbon contractual terms."
+    ],
+    "contradicts": [],
+    "source_family": "deepmind.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-fairwind-boundary",
+    "claim": "Current Fairwind page names Argon in technology/access/retention answers, welcomes defensive-benchmarking labs and directs student use to CodeMender.",
+    "source_ids": [
+      "official-source-25d1ad479660a440"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-25d1ad479660a440",
+        "url": "https://deepmind.google/fairwind-program/",
+        "locator": "Technology and FAQ",
+        "passage": "We welcome applications from academic labs that focus on defensive benchmarking.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:43:46.836Z",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-fairwind.json",
+        "archive_sha256": "4267b114da6dc4d80ed0e6bc368788917502b358677eeeb0fcab7b865b11da6e"
+      }
+    ],
+    "qualifiers": [
+      "Do not transfer Argon model entitlement or zero-retention promise to Carbon."
+    ],
+    "contradicts": [],
+    "source_family": "deepmind.google",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no product execution or independent performance test."
+    ]
+  },
+  {
+    "claim_id": "carbon-oct28-table-boundary",
+    "claim": "Google’s benchmark table shows Carbon below GPT-6 Astra on FrontierSWE2 and below Claude Opus5.5 on OSWorld2.1 offline subset; no uniform task leadership.",
+    "source_ids": [
+      "official-source-de9a9990f704ecc1"
+    ],
+    "support": [
+      {
+        "source_id": "official-source-de9a9990f704ecc1",
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.original.png",
+        "locator": "FrontierSWE2 and OSWorld-2.1 offline-subset rows",
+        "passage": "FrontierSWE2: Carbon61.2%, Astra65.5%; OSWorld2.1 offline: Carbon81.5%, Opus5.5 87.2%.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-10-28T19:44:42.641948+00:00",
+        "archive_path": ".state/scan-20261028T193734Z-788cac/official/carbon-benchmarks-view.png",
+        "archive_sha256": "0e333f4f192134f30779d79f1c5d8b044231524ce0399e1838b62a6953ca81db"
+      }
+    ],
+    "qualifiers": [
+      "Visually inspected publisher table in Chrome, not independent measurement.",
+      "Archive is a complete screenshot of the displayed original asset, not original image bytes. Attempt to preserve original bytes failed with DNS resolution error."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "Benchmark methodology page was not inspected."
+    ]
+  }
+]

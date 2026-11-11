@@ -1,0 +1,28 @@
+{
+  "reportId": "claude-fable-52",
+  "reviewerId": "/root/astra_nov11_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-11T05:24:55.306759Z",
+  "reportHash": "1d40800c1c4cf2eab5e1943fb7a74449458897a96ac5250ab63b7dbadc2db098",
+  "evidenceHash": "e44fa19a75af5e7759d68467ef367c5cb36b81aa7335487eeaec3775cb1ee819",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 8,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The documented hosted model, text/image interface, exact token rates and unusually consequential preserved-thinking migration rules make this actionable for difficult coding and research pilots. The report translates those rules into restart, compaction, gateway and model-switch checks, and supplies concrete educational, website and production-planning acceptance criteria. Access, retention and cost constraints prevent an unrestricted recommendation.",
+    "impact": "The primary announcement reports substantial improvements across demanding coding, scientific reasoning, visual work and prolonged agent investigations, alongside lower base token rates and broad Fable distribution. That breadth makes the potential significance high. The score reflects potential rather than a verified capability ranking: demonstrations are vendor-authored, some require large agent systems, the full system card was not acquired, and the announcement explicitly limits advances in some AI-development research tasks.",
+    "novelty": "The combination of documented reasoning/interface changes, reported gains on difficult technical tasks and preserved-thinking enforcement is meaningfully differentiated from the preceding release. It remains an advance within an existing model family and agent paradigm; the evidence does not establish a fundamentally new architecture or independently reproduced breakthrough.",
+    "maturity": "Active status, precise API and provider documentation, pricing, replay semantics and advisor prerequisites support a real usable service. The new release, account-bound reasoning, history-edit failures, experimental advisor, restricted Mythos access and untested workflows leave material operating limits. Vendor benchmarks do not establish dependable completion on the reader's tasks.",
+    "openness": "The inspected sources establish commercial hosted access and several cloud routes, but no downloadable weights or local model license. Restricted Mythos programs, commercial use restrictions and account-bound thinking constrain inspectability and portability. Detailed documentation helps integration without making the underlying model reproducible."
+  },
+  "confidence": "medium",
+  "concerns": []
+}

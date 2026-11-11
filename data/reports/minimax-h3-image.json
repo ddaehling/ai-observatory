@@ -1,0 +1,125 @@
+{
+  "id": "minimax-h3-image",
+  "title": "MiniMax-H3-Image brings 16 MP generation and editing to a restricted open-weights release",
+  "entity": "MiniMax-H3-Image",
+  "category": "Models",
+  "tags": [
+    "image generation",
+    "image editing",
+    "open weights",
+    "ComfyUI",
+    "creative workflows"
+  ],
+  "summary": "MiniMax-H3-Image combines native large-format stills, six-step generation and up to 16 references. Its documented local and API workflows are useful to inspect, but substantial hardware needs and geographic, revenue and hosted-service license conditions define who can deploy it.",
+  "changeType": "new",
+  "publishedAt": "2026-11-10",
+  "discoveredAt": "2026-11-11T05:08:50.675Z",
+  "updatedAt": "2026-11-11T05:13:06.750Z",
+  "officialUrl": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+  "sections": [
+    {
+      "id": "change",
+      "title": "One checkpoint for large stills and reference edits",
+      "html": "<p>MiniMax-H3-Image combines text-to-image generation and image editing in one downloadable checkpoint. Its <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3-Image\">model card</a> describes native output around 16 megapixels, a distilled six-step sampler and up to 16 reference images. The accompanying license identifies November 10, 2026 as the release and license date. <a href=\"https://blog.comfy.org/p/minimax-h3-image-is-now-available\">Comfy’s November 10 announcement</a> also documents native support and a separate API route through Partner Nodes. These are substantial capabilities to investigate for detailed illustrations, product compositions and film concept stills, although this scan did not generate images or measure quality.</p><p>The architecture follows MiniMax H3 with its audio branch removed. A 33.1-billion-parameter diffusion transformer produces the image, while a separate text encoder interprets prompts and references. This is an image model: its family name does not establish video or audio generation. The practical change is being able to generate a starting composition and then revise it through the same checkpoint, with documented local and hosted interfaces.</p><p>Access conditions shape that promise. The public weights carry a geographically restricted community license, and ordinary access to the files is not permission to deploy them everywhere. MiniMax also documents a hosted API, but those service instructions do not establish regional entitlement, account approval or the terms applicable to a particular customer. Choose the permitted access route before designing a workflow around the model.</p>"
+    },
+    {
+      "id": "license",
+      "title": "The community license has consequential boundaries",
+      "html": "<p>The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE\">MiniMax-H3-Image Community License Agreement</a> inspected on November 11 excludes the European Union, United Kingdom, Republic of Korea and United States of America from its applicable territory. Section II grants rights only within that territory; Section V.4 also restricts use, reproduction, modification, distribution and display of the works and their outputs outside it. This is broader than a restriction on downloading weights. Someone in an excluded territory needs a separately granted basis for deployment; the agreement invites requests for a license.</p><p>Section IV.1 separately requires prior written authorization from MiniMax when the annualized revenue of the user and/or affiliates exceeds US$1 million, <em>or</em> when the user provides a hosted service to any third party. The hosted-service condition is not limited to businesses above the revenue threshold. A small public image-generation website therefore cannot treat low revenue as sufficient authorization under this agreement.</p><p>The artifact governs MiniMax-H3-Image materials, derivatives and specified uses, including prompt-enhancement models. The model card expressly places MiniMax-H3-Image-PE under it too. It also contains redistribution duties, commercial interface attribution and a restriction on using the works or outputs to improve other AI models outside the permitted derivative family. MiniMax's statement that it claims no rights over generated outputs does not erase the agreement's other output restrictions.</p><p>These are descriptions of the inspected weights-license artifact, not a determination of every customer's hosted-service contract. The separately documented MiniMax API should not be described as a workaround, globally available, or governed by identical terms without checking its service terms and entitlement. Every proposed use below is conditional on permission covering the operator, audience, outputs and deployment route. Publicly inspectable weights make the system more examinable; they do not make this an unrestricted open-source release.</p>"
+    },
+    {
+      "id": "resources",
+      "title": "Download size is not a hardware requirement",
+      "html": "<p>The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3-Image#download\">official download table</a> lists a 68.65 GB image-model package and a separate 66.7 GB text encoder drawn from MiniMax-H3. The optional prompt expander is another 17.9 GB in the model zoo. These are artifact sizes, not measured peak GPU memory requirements. Encoders, image dimensions, intermediate buffers and serving configuration all matter, and no minimum workable GPU or tested throughput is established by this report.</p><p><a href=\"https://docs.comfy.org/tutorials/image/minimax/minimax-h3-image\">Comfy's integration guide</a> offers a different preparation path. Its four listed files comprise a 21 GB pruned INT8 diffusion model, a 25.28 GB INT8 text encoder, a 7.34 GB W4A8 prompt expander and a 1.17 GB FP16 VAE. Together those listed files are 54.79 GB by arithmetic. They are not the original BF16 deployment, and the total should not be marketed as a VRAM figure or proof that a particular consumer machine will run the full workflow.</p><p>The guide requires ComfyUI 0.45.0 or later and template pack 0.11.104 or later. Missing templates can mean an older installation; missing nodes can reflect version or import problems. Its text-to-image template opens at roughly 4 MP to reduce memory pressure, despite the model's higher native target. For an edit that runs out of memory, the documented recovery is to enable the Resize Image/Mask node and reduce megapixels before sampling.</p><p>A permitted pilot should record the exact model files, template versions, canvas size, reference count, peak memory and elapsed time. A successful low-resolution example is useful evidence for that configuration, not validation of 16 MP editing with many references.</p>"
+    },
+    {
+      "id": "canvas",
+      "title": "Resolution and reference ordering are explicit controls",
+      "html": "<p>The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3-Image#sizes\">model card's size guidance</a> describes an effective working range around 4–20 MP and says results are generally best around 16 MP. Examples include 4096 × 4096 for square output, 5472 × 3072 for 16:9 and 6272 × 2688 for 21:9. These are native-generation claims, distinct from generating a small image and applying an upscaler. They do not establish that every detail is accurate or that every prompt benefits equally from a larger canvas.</p><p>The local serving recipe fixes the distilled settings: omit the step count or use six; omit guidance or use one. Other values return HTTP 400, and negative prompts are unsupported. Comfy's templates use Euler sampling, the simple scheduler, six steps, guidance one and denoise one. Describe desired and unwanted content in the positive prompt rather than importing a familiar negative-prompt workflow unchanged.</p><p>For editing, reference order carries meaning. Comfy labels the first source as <code>&lt;Picture 1&gt;</code>, with additional references numbered through 16. The first is the picture being edited; others can supply identity, materials, props or composition. Its guide connects added references to both prompt generation and conditioning. A useful brief should identify each reference's role and list what must survive the edit.</p><p>Comfy’s launch article adds a wiring distinction: connect the VAE for editing so references condition the model as image latents as well as through the text encoder. Without it, they condition only the text encoder. The conditioning node’s automatic width and height values produce 2048 × 2048 for text-to-image; editing instead follows the first image. Explicitly set dimensions when those defaults do not match the intended output.</p><p>For example, replacing a chair while preserving a room's windows, camera position and wall art creates inspectable criteria. Compare the output with the original, checking the requested replacement and unchanged regions separately. Sixteen available slots increase conditioning options; they do not prove faithful preservation of sixteen objects.</p>"
+    },
+    {
+      "id": "prompts",
+      "title": "Prompt expansion is part of the experiment",
+      "html": "<p>The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3-Image#full-workflow\">documented full workflow</a> expects a detailed English description of the finished image. MiniMax's API can convert a short request into that description using H3-Image-Context-IR. The card offers MiniMax-H3-Image-PE as a local text-to-image alternative. Consequently, comparing a short local prompt directly with a hosted result can compare two different instructions as well as two deployment paths.</p><p>The <a href=\"https://platform.minimax.io/docs/guides/image-generation\">API guide</a> says text-to-image enhancement is enabled by default and can be disabled, while image edits always apply it. Each result returns <code>revised_prompt</code>. With text-to-image enhancement disabled, explicit dimensions or a fixed aspect ratio are required. The documented prompt limit is 32,000 characters, but only about the first 4,096 tokens take effect when enhancement is off.</p><p>Comfy's templates use a lighter Qwen3.5 9B W4A8 expander instead of the official Qwen3.8-27B FP4 model named in its guide. Expansion starts off in the text-to-image template and on in the editing template. Those defaults should be recorded with any evaluation.</p><p>Keep both the user's brief and the expanded caption. If an edit introduces an unwanted stylistic choice, inspect whether it appeared during expansion or only in rendering. That distinction can guide the next revision and prevent a team from attributing all failures to the image checkpoint.</p>"
+    },
+    {
+      "id": "api",
+      "title": "A successful request can contain failed images",
+      "html": "<p>The <a href=\"https://platform.minimax.io/docs/guides/image-generation\">hosted image guide</a> documents generation and editing endpoints, with 1–10 requested outputs and 1–16 editing references. It lists JPEG, PNG and WebP output, with URLs as the default response format. Preview images, masked edits and transparent backgrounds are unsupported. A website requiring transparent product cutouts or brush-defined regional edits needs a separate, verified finishing step rather than assuming these are native API features.</p><p>Output sizing uses either explicit width and height or an aspect-ratio/area combination. Combining both schemes returns 400. The service documents output area up to 20 million pixels; its 1K, 2K and 4K area labels refer to target pixel areas, not a fixed width for every aspect ratio. An application should retain the actual returned dimensions rather than deriving them from the label.</p><p>Editing inputs have a 64 MiB total request-body limit, dimensions from 128 to 8192 pixels and an aspect ratio no more extreme than 4:1. Base64 encoding expands the transmitted data, so validating original file sizes alone is insufficient. These limits belong to the hosted guide and should not be silently applied to every local server.</p><p>HTTP 200 means at least one image succeeded. Each requested item still needs inspection for an error, and <code>usage.generated_images</code> gives the success count. Streaming sends completed images through server-sent events in completion order; use <code>image_index</code> to associate them with the request. It is not progressive image preview. Preserve successful results and present failed slots explicitly. Neither a dropped connection nor a partial failure should trigger an unexamined rerun of every output. Pricing, account-specific rate limits, cancellation and duplicate-request protection were not verified here.</p>"
+    },
+    {
+      "id": "uses",
+      "title": "Four bounded creative trials",
+      "html": "<p>These are proposed workflows, not demonstrations performed for this report. They require an access route and output use that are permitted under the applicable agreement; a third-party generation service additionally needs the authorization described above when using the community-licensed works.</p><p><strong>Teaching illustration:</strong> start with an attributable reference scene and a teacher-written inventory of objects and spatial relationships. Request a stylistic revision, then compare the returned still with that inventory. Students can explain which facts survived and which were invented. The acceptance criterion is factual preservation, with teacher review before classroom distribution. Attractive text or convincing perspective is insufficient evidence of correctness.</p><p><strong>Creative application:</strong> a permitted internal tool could accept a base composition and a separately identified prop reference, request a replacement and show an original/result comparison. Integration work includes reference ordering, request validation, retained expanded prompts and per-image failure states. Test a small set of difficult materials and occlusions; reject changes to protected geometry. A public version would need an independently established service authorization.</p><p><strong>Website assets:</strong> after resolving audience and distribution rights, generate candidate hero illustrations from a brand brief at the required aspect ratio. A designer should check the final crop, product details and text before creating optimized web derivatives. Keep essential interface labels in HTML and supply meaningful alternative text. The larger source canvas can support crop exploration, but does not guarantee typography, transparent assets or accurate brand reproduction.</p><p><strong>Video preparation:</strong> use permitted character and environment references to propose storyboard stills or a film's visual treatment. Review costume, scale, lighting and camera intent across the sequence before handing the stills to an editor or animator. This is a still-image planning workflow. Motion continuity, animation, audio and final video delivery require other tools and separate evaluation.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "Evaluate accepted work, not advertised resolution",
+      "html": "<p>The evidence supports a technically detailed release: one checkpoint for generation and editing, large native canvases, multiple references and documented integration behavior. Its usefulness is constrained by substantial local resources and a restrictive license. The available documentation is more informative than a launch slogan, but it is still first-party and integration-partner evidence rather than independent testing.</p><p>A sensible permitted evaluation records original and expanded prompts, references, model artifacts, settings, time, memory and every rejected output. Check meaning, preservation, composition and finishing effort separately. Compare cost per accepted deliverable only after verifying current pricing or measuring infrastructure consumption. No price-per-image, speed advantage or productivity saving was measured here.</p><p>For teams whose permission and hardware requirements are satisfied, this is worth a bounded trial focused on detailed stills or reference-based edits. For others, the next actionable step is establishing a valid access route and its terms. Download availability alone does not resolve that decision, and model-card showcases do not establish readiness for a particular classroom, product or production pipeline.</p>"
+    }
+  ],
+  "useCases": [
+    "Teach visual verification with a source-backed illustration and explicit preservation criteria, where generation and distribution are permitted.",
+    "Build an authorized reference-editing tool with before/after review, request validation and per-image failures.",
+    "Prepare permitted website hero illustrations, then review factual details, crops and accessibility.",
+    "Develop permitted storyboard and concept stills, keeping animation and audio as separate production steps."
+  ],
+  "limitations": [
+    "Documentary assessment only: no models installed, images generated, API request submitted, hardware benchmark run or paid workflow tested.",
+    "The inspected community license excludes the EU, UK, Republic of Korea and USA, and restricts specified uses of works and outputs outside its applicable territory.",
+    "Separate prior written authorization is required under the weights license for annualized revenue of the user and/or affiliates above US$1 million or any third-party hosted service.",
+    "Hosted API regional entitlement, service terms, prices, account rate limits, cancellation and duplicate-request handling were not verified. The weights license does not establish those service-specific conditions.",
+    "Artifact sizes are not measured VRAM requirements. Comfy templates use quantized/pruned components and a lighter prompt expander; equivalence with the official BF16 workflow was not tested.",
+    "First-party claims about realism, instruction following and native output were not independently benchmarked. No performance, productivity or cost saving is established."
+  ],
+  "sources": [
+    {
+      "id": "nov11-minimax-h3-image-card",
+      "title": "MiniMax-H3-Image model card",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "accessedAt": "2026-11-11T05:08:50.675Z",
+      "publishedAt": null,
+      "locator": "Introduction; Model Zoo; Model Architecture; Download; Request parameters; Sizes; Full Workflow; License",
+      "supports": "Architecture, native resolution, reference capacity, model artifacts, local request constraints and prompt expansion."
+    },
+    {
+      "id": "nov11-minimax-h3-image-license",
+      "title": "MiniMax-H3-Image Community License Agreement",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE",
+      "accessedAt": "2026-11-11T05:09:15.363Z",
+      "publishedAt": "2026-11-10",
+      "locator": "Release date/License date; Sections I–VI, especially I.5, II, IV.1 and V.3–V.4",
+      "supports": "Release/license date, territorial exclusions, separate authorization triggers, artifact scope and use restrictions."
+    },
+    {
+      "id": "nov11-minimax-h3-image-comfy",
+      "title": "MiniMax-H3-Image in ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/image/minimax/minimax-h3-image",
+      "accessedAt": "2026-11-11T05:09:13.426Z",
+      "publishedAt": null,
+      "locator": "Templates; Model downloads; Sampling and canvas size; Reference images in image editing; Prompt expander",
+      "supports": "Template versions and defaults, quantized components, reference wiring, resize recovery and expander differences."
+    },
+    {
+      "id": "nov11-minimax-h3-image-guide",
+      "title": "MiniMax Image Generation Guide",
+      "url": "https://platform.minimax.io/docs/guides/image-generation",
+      "accessedAt": "2026-11-11T05:09:15.722Z",
+      "publishedAt": null,
+      "locator": "Model Specifications; Output Size; Image Edit; Prompt Enhancement; Partial Failures; Streaming Output",
+      "supports": "Hosted request limits, unsupported features, prompt expansion, per-image failure and streaming semantics."
+    },
+    {
+      "id": "nov11-minimax-h3-image-comfy-launch",
+      "title": "MiniMax H3 Image is now available in ComfyUI",
+      "url": "https://blog.comfy.org/p/minimax-h3-image-is-now-available",
+      "accessedAt": "2026-11-11T05:13:44.816Z",
+      "publishedAt": "2026-11-10",
+      "locator": "Article date; Model Introduction; MiniMax H3 Image Conditioning node notes",
+      "supports": "Dated Comfy integration announcement, native versus Partner Nodes routes, automatic dimensions and VAE conditioning distinction."
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded trial for permitted large-format still generation and reference editing. Native resolution and documented controls are meaningful; restrictive deployment rights, substantial resources and untested output quality prevent a general recommendation to adopt.",
+  "researchNote": "Based on four public primary or integration-partner pages captured in Chrome on November 11, 2026, plus Comfy’s dated launch article retrieved through a supplementary web connector after browser interruption. The LICENSE page explicitly identifies November 10 as the release/license date and displayed short commit fbde899; its URL points to mutable main. Comfy separately dates its integration announcement November 10. Proposed use cases were not executed. No account entitlement, service agreement, pricing, generated image quality, latency or hardware requirement was tested. Vendor showcases have not been treated as independent validation."
+}

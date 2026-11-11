@@ -1,31 +1,28 @@
 {
   "reportId": "gemini4-carbon",
-  "reviewerId": "/root/edition_20261028_astra_a",
+  "reviewerId": "/root/astra_nov11_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:49.176604Z",
-  "reportHash": "52b7569b3dc479c19ccb1336e9b24a447ad6b108fb1632c30d42fbd938dbce5b",
-  "evidenceHash": "5edb1a3e8f69a28cb5f1a7c060eb451b3822beda39992f4cef2749d173afb377",
+  "reviewedAt": "2026-11-11T05:24:55.306759Z",
+  "reportHash": "aec38e673470a90ede96fd7c31f1f44f4db7b57b043e0579b09eb84d4d7ab4b4",
+  "evidenceHash": "665cf517c7c7cc388b3b1da434250526643d539485e041a68aac2b3a185c12cf",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
-    "usefulness": 5,
+    "usefulness": 7,
     "impact": 7,
     "novelty": 6,
-    "maturity": 4,
+    "maturity": 6,
     "openness": 2
   },
   "rationale": {
-    "usefulness": "The report provides a useful evaluation plan for authorized engineering teams and an evidence-literacy activity for educators. Immediate hands-on value for ordinary app, website and video builders is restricted because the launch promises selected cyber-defender access first and general product access only later.",
-    "impact": "Reported gains across sustained engineering and cybersecurity tasks, together with a frontier-scale model rollout, could materially affect AI-assisted development. The table also shows non-leading tasks, and missing methodology inspection and restricted access prevent an exceptional or experimentally established significance rating.",
-    "novelty": "The launch reports better long-horizon work, patching and several alignment behaviors relative to Argon. These are consequential improvements, but public evidence chiefly establishes a performance update rather than a disclosed new architecture or qualitatively verified new capability.",
-    "maturity": "Selected partner rollout, internal multi-day use and a published price schedule provide more than a speculative announcement. Carbon-specific service entitlements and operating limits remain unverified, Fairwind’s FAQ still names Argon, and no model execution or deployment-reliability test is available here.",
-    "openness": "The model is closed and initially accessible only through a controlled partner program. Public claims, a benchmark table and pricing improve transparency somewhat, but no weights, reproducible training package or freely accessible Carbon evaluation surface is established."
+    "usefulness": "The November announcement makes paid API and eligible subscription trials actionable, and the report correctly separates those routes from Carbon for cyber and selective researcher access. Dated promotion expiry, illustrative token arithmetic and concrete bug-repair, teaching and creative-code checks help readers plan. Unverified model identifiers, quotas, entitlements and full billing details still require follow-up before implementation.",
+    "impact": "Broader access to a frontier coding and reasoning model, with documented agent coordination demonstrations and research routes, is a significant practical development. Historical benchmarks and vendor demonstrations indicate substantial potential without proving uniform leadership or reliable unattended work. The current change is access expansion rather than independently demonstrated new model capability.",
+    "novelty": "The new paid-user route and orchestration preview meaningfully change what readers can evaluate, while the historical model evidence shows differentiated long-task and cybersecurity potential. An availability expansion is not itself a new technical method, and the linked demonstrations were not independently reproduced.",
+    "maturity": "Announced paid API availability, multiple product surfaces and new Carbon-specific document links improve readiness beyond the initial restricted launch. Rollout status remains account-dependent, cyber access remains separate, and neither current model/safety documents nor live operations were tested. The report appropriately preserves October benchmark conditions and avoids turning finite safety results into general immunity.",
+    "openness": "The packet establishes hosted paid access, subscription surfaces and controlled specialist programs, not downloadable weights, an open model license or reproducible training. Public announcements and documentation links aid evaluation, but incomplete current contractual details and limited inspection of underlying methodology leave inspectability and portability low."
   },
-  "confidence": "high",
-  "concerns": [
-    "No publication-blocking factual issue found. The report preserves the without-guardrails benchmark condition, the Argon/Carbon documentation distinction, the temporary introductory rates and the inability to inspect methodology.",
-    "This is an editorial check of public claims and their qualifications, not validation of Carbon performance, safety or entitlement."
-  ]
+  "confidence": "medium",
+  "concerns": []
 }

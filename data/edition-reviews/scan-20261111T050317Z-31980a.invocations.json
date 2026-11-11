@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261111T050317Z-31980a",
+  "recordedAt": "2026-11-11T05:21:02Z",
+  "reviewAttempt": 1,
+  "invocationStatus": "Both separately spawned fresh-context gpt-6-astra high-effort reviewers returned complete independent approvals for all five exact frozen reports.",
+  "invocations": [
+    {
+      "reviewerId": "/root/astra_nov11_a",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "blindToOtherReview": true
+    },
+    {
+      "reviewerId": "/root/astra_nov11_b",
+      "tool": "collaboration.spawn_agent",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "blindToOtherReview": true
+    }
+  ],
+  "inputs": [
+    {
+      "id": "claude-fable-52",
+      "reportHash": "1d40800c1c4cf2eab5e1943fb7a74449458897a96ac5250ab63b7dbadc2db098",
+      "evidenceHash": "e44fa19a75af5e7759d68467ef367c5cb36b81aa7335487eeaec3775cb1ee819",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "rubricVersion": "1.0",
+      "wordCount": 2858
+    },
+    {
+      "id": "muse-ember",
+      "reportHash": "03e8fe7da9adda72126361ac7047980fd0612510c54fcecc98766e4ab30b1701",
+      "evidenceHash": "bc8ae583873ab9864f2d742de6bf070b2b6b62165e84e250f99319b9edee3cfc",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "rubricVersion": "1.0",
+      "wordCount": 1915
+    },
+    {
+      "id": "astryx-agent-design-system",
+      "reportHash": "239ce8a4a7620afa213db11d9926fbd182544e780296cb0cfc637db3494bf5ea",
+      "evidenceHash": "849ca8ae28fe93578f565eef58e6f097f1e7f3a2a198f6cb668622974b7a462e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "rubricVersion": "1.0",
+      "wordCount": 1933
+    },
+    {
+      "id": "minimax-h3-image",
+      "reportHash": "4f2b60dc40acaefb18036fb56e9f60150bad48b8f32ff7a0ed525fc7949d5497",
+      "evidenceHash": "ada7cf451351768b9e3f3b8fe7afb53e98f420d58e9a43649c1b652ca119ad32",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "rubricVersion": "1.0",
+      "wordCount": 2002
+    },
+    {
+      "id": "gemini4-carbon",
+      "reportHash": "aec38e673470a90ede96fd7c31f1f44f4db7b57b043e0579b09eb84d4d7ab4b4",
+      "evidenceHash": "665cf517c7c7cc388b3b1da434250526643d539485e041a68aac2b3a185c12cf",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "rubricVersion": "1.0",
+      "wordCount": 1884
+    }
+  ],
+  "limitations": [
+    "Independent same-model editorial review does not establish independent experimental replication."
+  ],
+  "resultsRecordedAt": "2026-11-11T05:26:05Z",
+  "publicationGates": {
+    "claude-fable-52": {
+      "reportHash": "1d40800c1c4cf2eab5e1943fb7a74449458897a96ac5250ab63b7dbadc2db098",
+      "evidenceHash": "e44fa19a75af5e7759d68467ef367c5cb36b81aa7335487eeaec3775cb1ee819",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 2858,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 8.0,
+        "novelty": 7.0,
+        "maturity": 6.5,
+        "openness": 2.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "muse-ember": {
+      "reportHash": "03e8fe7da9adda72126361ac7047980fd0612510c54fcecc98766e4ab30b1701",
+      "evidenceHash": "bc8ae583873ab9864f2d742de6bf070b2b6b62165e84e250f99319b9edee3cfc",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1915,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.5,
+        "novelty": 5.5,
+        "maturity": 6.0,
+        "openness": 2.5
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "astryx-agent-design-system": {
+      "reportHash": "239ce8a4a7620afa213db11d9926fbd182544e780296cb0cfc637db3494bf5ea",
+      "evidenceHash": "849ca8ae28fe93578f565eef58e6f097f1e7f3a2a198f6cb668622974b7a462e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1933,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 5.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 9.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "minimax-h3-image": {
+      "reportHash": "4f2b60dc40acaefb18036fb56e9f60150bad48b8f32ff7a0ed525fc7949d5497",
+      "evidenceHash": "ada7cf451351768b9e3f3b8fe7afb53e98f420d58e9a43649c1b652ca119ad32",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 2002,
+      "meanScores": {
+        "usefulness": 6.0,
+        "impact": 6.5,
+        "novelty": 7.0,
+        "maturity": 5.0,
+        "openness": 3.5
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "gemini4-carbon": {
+      "reportHash": "aec38e673470a90ede96fd7c31f1f44f4db7b57b043e0579b09eb84d4d7ab4b4",
+      "evidenceHash": "665cf517c7c7cc388b3b1da434250526643d539485e041a68aac2b3a185c12cf",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1884,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 7.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 2.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    }
+  },
+  "finalGateOverrides": {
+    "claude-fable-52": {
+      "reportHash": "52fcac76b42cc99d2a977f369f6dde6a4d81f289c9c0ac4073ed4064012fbdd9",
+      "evidenceHash": "577374231718f512158cd2e547d8d71e1deeeaa114eb2f9b8d5799c6a4bd6622",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_fable_date_a",
+        "/root/astra_nov11_fable_date_b"
+      ],
+      "wordCount": 2858,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 8.0,
+        "novelty": 6.5,
+        "maturity": 6.0,
+        "openness": 2.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    }
+  },
+  "additionalReviewRounds": [
+    {
+      "reportId": "claude-fable-52",
+      "attempt": 2,
+      "reason": "Rendered inspection found a stale draft-only sentence. Removed it and independently reviewed the new exact hash.",
+      "invocations": [
+        {
+          "reviewerId": "/root/astra_nov11_fable_final_a",
+          "tool": "collaboration.spawn_agent",
+          "model": "gpt-6-astra",
+          "reasoning_effort": "high",
+          "fork_turns": "none",
+          "blindToOtherReview": true
+        },
+        {
+          "reviewerId": "/root/astra_nov11_fable_final_b",
+          "tool": "collaboration.spawn_agent",
+          "model": "gpt-6-astra",
+          "reasoning_effort": "high",
+          "fork_turns": "none",
+          "blindToOtherReview": true
+        }
+      ],
+      "inputHashes": {
+        "reportHash": "0c5cf75d0d44bb2de3e4e354b6cd0e2844f43a87664fe3fe40dc38f76ac4a9d1",
+        "evidenceHash": "e44fa19a75af5e7759d68467ef367c5cb36b81aa7335487eeaec3775cb1ee819",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "rubricVersion": "1.0"
+      },
+      "results": [
+        {
+          "reviewerId": "/root/astra_nov11_fable_final_a",
+          "verdict": "approve",
+          "reviewedAt": "2026-11-11T05:52:49Z"
+        },
+        {
+          "reviewerId": "/root/astra_nov11_fable_final_b",
+          "verdict": "revise",
+          "reviewedAt": "2026-11-11T05:53:10Z"
+        }
+      ]
+    },
+    {
+      "reportId": "claude-fable-52",
+      "attempt": 3,
+      "reason": "One reviewer required separating the documented release date from an unobserved announcement publication date. Corrected report, source and claim date fields; preserved release/event date and prior reviews.",
+      "invocations": [
+        {
+          "reviewerId": "/root/astra_nov11_fable_date_a",
+          "tool": "collaboration.spawn_agent",
+          "model": "gpt-6-astra",
+          "reasoning_effort": "high",
+          "fork_turns": "none",
+          "blindToOtherReview": true
+        },
+        {
+          "reviewerId": "/root/astra_nov11_fable_date_b",
+          "tool": "collaboration.spawn_agent",
+          "model": "gpt-6-astra",
+          "reasoning_effort": "high",
+          "fork_turns": "none",
+          "blindToOtherReview": true
+        }
+      ],
+      "inputHashes": {
+        "reportHash": "52fcac76b42cc99d2a977f369f6dde6a4d81f289c9c0ac4073ed4064012fbdd9",
+        "evidenceHash": "577374231718f512158cd2e547d8d71e1deeeaa114eb2f9b8d5799c6a4bd6622",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "rubricVersion": "1.0"
+      },
+      "results": [
+        {
+          "reviewerId": "/root/astra_nov11_fable_date_a",
+          "verdict": "approve",
+          "reviewedAt": "2026-11-11T05:57:08Z"
+        },
+        {
+          "reviewerId": "/root/astra_nov11_fable_date_b",
+          "verdict": "approve",
+          "reviewedAt": "2026-11-11T05:57:49Z"
+        }
+      ]
+    }
+  ],
+  "finalResultsRecordedAt": "2026-11-11T05:58:42.019511+00:00"
+}

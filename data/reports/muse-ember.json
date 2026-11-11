@@ -1,0 +1,137 @@
+{
+  "id": "muse-ember",
+  "title": "Muse Ember makes repeated agent tasks cheaper to try, with a full-request long-context premium",
+  "entity": "Muse Ember 1.0",
+  "category": "Models",
+  "tags": [
+    "Meta",
+    "Muse Ember",
+    "AI agents",
+    "multimodal",
+    "education",
+    "API pricing"
+  ],
+  "summary": "Meta’s hosted execution model accepts text, images, audio, video and PDFs, with text output and a million-token context. Its low base price makes bounded processing experiments plausible, while full-request pricing above 200K input tokens, tool integration and unverified performance claims shape the decision.",
+  "changeType": "new",
+  "publishedAt": "2026-11-09",
+  "discoveredAt": "2026-11-11T05:07:00.879Z",
+  "updatedAt": "2026-11-11T05:15:07.139878Z",
+  "officialUrl": "https://research.meta.ai/blog/muse-ember",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A smaller worker for repeated tasks",
+      "html": "<p>Meta introduced Muse Ember on November 9, 2026 as an efficient model for repeated agent work: extracting fields, classifying records, calling tools and completing bounded coding tasks. The practical opportunity is a workflow in which expensive reasoning defines a job and a cheaper model processes its many small units. That could make a collection of documents or media easier to organize, provided the surrounding software checks the result. It is a proposal worth testing, rather than evidence that an unattended agent can reliably finish an entire project.</p>\n<p>The <a href=\"https://dev.meta.ai/docs/muse-ember\">model documentation</a> identifies <code>muse-ember-1.0</code>, available through Meta Model API and Muse Code. It accepts text, images, video, audio and PDF, and returns text. The documented context window is 1,048,576 tokens and maximum output is 524,288 tokens. Those are capacity limits, not recommendations to send every available file or promises of accurate recall across that much material.</p>\n<p>Its reasoning effort ranges from minimal to max, with max as the documented default. A lightweight classification feature therefore needs an explicit effort choice and measurement; simply choosing the smaller model does not establish low latency. The same docs recommend Muse Spark or Muse Wonder for hard single-shot coding, knowledge-heavy questions and visual coding. Ember's intended role is narrower, and that division gives a pilot a useful starting boundary.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "The model call and the working agent",
+      "html": "<p>The documented API base is <code>https://api.meta.ai/v1</code>. An application needs a Model API account and key; the <a href=\"https://dev.meta.ai/docs/quickstart\">quickstart</a> demonstrates an OpenAI-compatible client with the key supplied explicitly. Ember supports Responses, Chat Completions and Messages endpoints. Its page says that most Muse Spark examples can be adapted by changing the model ID, while directing readers to the model comparison for differences. This research did not verify every client or endpoint combination.</p>\n<p>A direct API response does not itself edit a repository, rename a photograph or update a database. Meta's <a href=\"https://dev.meta.ai/resources/blog/build-with-muse-ember\">developer article</a> makes the integration boundary explicit: the application runs requested tools and returns their results. Muse Code supplies a ready-made environment for file editing, checks and agent coordination. A custom website still needs its own server-side calls, tool permissions, storage and review interface.</p>\n<p>For parallel work, define each unit's input, owned files or records, expected output and acceptance check. A worker discovering a dependency outside that unit should return the finding for replanning. This is particularly useful for coding migrations: isolated changes can be tested separately, but shared interfaces and final integration still require coordination. Meta provides migration and photo-organization recipes illustrating that pattern; no recipe was installed or executed for this report.</p>\n<p>The model page lists structured output as a supported feature, which is relevant to routing and extraction. A valid response shape still cannot establish that a value was present in the source. A useful proposed extraction contract includes the original record ID, requested field, extracted value and a status distinguishing present, missing and unreadable. Application checks can catch missing keys, invalid categories or impossible formats; a reference set and source review are needed to catch confidently wrong values. The exact structured-output request syntax and failure behavior were not inspected here.</p>"
+    },
+    {
+      "id": "costs",
+      "title": "The 200K boundary changes the whole request",
+      "html": "<p>The <a href=\"https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing\">pricing page</a>, inspected November 11, lists the following US-dollar rates per million tokens. The input-token total selects the tier, including cached tokens. Continuing a stored conversation also counts its history toward that input total.</p>\n<table><thead><tr><th>Token type</th><th>Up to 200K input tokens</th><th>Over 200K input tokens</th></tr></thead><tbody><tr><td>Input</td><td>$0.10</td><td>$0.30</td></tr><tr><td>Cached input</td><td>$0.004</td><td>$0.012</td></tr><tr><td>Output</td><td>$0.50</td><td>$1.50</td></tr></tbody></table>\n<p>The higher tier applies to the request in full, rather than only the tokens beyond 200K. This makes context management a product decision: a short current task inside a very long conversation may carry a different price from the same task sent with a concise brief. Cache savings do not remove the threshold calculation.</p>\n<p>As an arithmetic scenario, 1,000 requests with 2,000 uncached input tokens and 300 billed output tokens each would cost $0.35: $0.20 input plus $0.15 output. This assumes every request remains in the lower tier and excludes search, retries, other models and infrastructure. It is not a measured invoice. Reasoning tokens count toward output usage, so 300 visible answer tokens alone would not establish the assumed billed total.</p>\n<p>Search grounding adds $2.50 per 1,000 search queries. For a real pilot, compare cost per accepted item after validation and retries, alongside response time and correction effort. A cheaper failed extraction can become more expensive than a stronger model's first usable answer.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Hosted access and operating limits",
+      "html": "<p>Ember runs in Standard mode only on Model API. Meta says Standard-mode content is not used to train its models. Its pricing page separately says Muse Code subscriptions default to Contributor mode, which exchanges permission to use submitted content for training for discounted pricing or more usage, with a setting to turn it off. These are distinct access paths; the API statement should not be generalized to every subscription session. Training use also does not, by itself, settle retention or every contractual question.</p>\n<p>The published Ember limits are 3,000 requests and 4,000,000 tokens per minute, shared across a team's keys. Those are service ceilings, not measured throughput or a guarantee that a particular workload will finish within a deadline. Background response creation has an additional 600-submission-per-minute limit. Meta documents rate-limit headers and backoff with jitter for HTTP 429 responses, respecting any Retry-After value.</p>\n<p>A batch-processing app therefore needs a queue, per-item status and a recoverable failure state. Record which items completed before retrying a batch. Any tool that changes files or records should also prevent a repeated request from accidentally applying the same change twice. These are proposed integration safeguards, not capabilities verified in Ember itself.</p>\n<p>The reviewed material establishes hosted access. No downloadable Ember checkpoint or weight license was inspected, and this report makes no local-deployment or open-weight claim. Parameter count, independent latency, account-specific eligibility and regional availability were not established.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "What the comparisons actually establish",
+      "html": "<p>Meta's <a href=\"https://research.meta.ai/blog/muse-ember\">announcement</a> presents a favorable efficiency comparison using Artificial Analysis Intelligence Index v5 results dated November 9. It gives Ember a score of 35.8 at max effort with an estimated $0.136 cost per task. Those are Meta's presentation of the benchmark, with estimated cost at its pricing; the underlying benchmark was not independently inspected in this run. They should guide test selection rather than become an expected score or bill for a different application.</p>\n<p>The table also shows tradeoffs. Ember's reported FrontierCode 2.0-AA score is 27.2, below Haiku 5.5's 34.9. Terminal-Bench 4.0 uses each model's best published harness: mini-swe-agent for Ember, Claude Code for Haiku and Codex for Luna. Such a comparison measures model-and-harness combinations, not an isolated model substitution under identical tooling. Other results are internal Meta evaluations; OSWorld's displayed 69.5 uses partial credit, while the table separately lists 33.8 binary credit.</p>\n<p>The linked evaluation report could not be inspected because its browser viewer was blocked. Meta's developer article also gives inconsistent totals for its photo example, first $1.59 and later $1.33. No exact photo-batch saving is adopted here. <a href=\"https://simonwillison.net/2026/Nov/10/muse-ember/\">Simon Willison's November 10 note</a> adds a small independent observation: one SVG request at high reasoning failed to return a complete SVG. That is a useful reminder to validate outputs, not a representative reliability benchmark.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Education: turn sources into a checked exercise",
+      "html": "<p>A teacher could supply a small set of public-domain textbook pages and diagrams, then ask Ember to extract a glossary and draft questions tied to supplied page labels. The inspectable output would be a table containing each term, proposed explanation, supporting page and an explicit missing-or-unreadable status. A teacher would review the answers before they enter a lesson. This is an editorial use-case proposal, not a tested classroom result.</p>\n<p>The integration work is a document uploader, stable page identifiers, a constrained response format and a review screen showing the source beside each generated row. Start with twenty manually checked concepts, including blurry diagrams and a deliberately absent term. A useful acceptance check is whether every retained definition is supported and every missing answer remains missing. Grammatical plausibility is insufficient.</p>\n<p>Learners could then compare accepted and rejected extractions to see how evidence constrains an explanation. The likely failure is a convincing definition based on general knowledge that the supplied material does not support. Keeping source references visible makes that error teachable and correctable. A million-token limit does not remove the need to choose manageable documents or establish an answer key.</p>"
+    },
+    {
+      "id": "apps-websites",
+      "title": "Apps and websites: reviewable collection processing",
+      "html": "<p>For an app, a concrete first feature is routing incoming requests into a small set of supported categories. Input is a message and a documented category list; output is a category, reason and source identifier, with an unresolved state when the available information is insufficient. Ember supplies the classification. Application code validates the result, applies deterministic rules and sends uncertain cases to a person. A held-out set should include overlapping categories, irrelevant material and requests that quote misleading instructions.</p>\n<p>For a website, the same pattern could organize a museum or teaching collection. Send a licensed image with its existing catalogue record; request a draft caption and suggested tags. Store the original record, model version and proposed edits separately, then publish only accepted changes. The public page can retain the source link and distinguish catalogued facts from generated descriptions.</p>\n<p>Success means that search results become useful without losing provenance or inventing attributes. Test a fixed set of queries before and after adding reviewed tags, and inspect wrongly retrieved items. Likely failures include inferring an object's material from appearance or copying a misleading date from a nearby label. Image input supports this experiment, but it does not establish domain expertise, rights clearance or accessibility quality. Human review of captions and alt text remains part of the proposed workflow.</p>"
+    },
+    {
+      "id": "video-pilot",
+      "title": "Video: generate an editing aid, then measure the pilot",
+      "html": "<p>For a video workflow, use short, rights-cleared clips with stable clip IDs and supplied time ranges. Ask Ember to describe the visible action and suggest which clips illustrate a specified lesson or narration. The deliverable is a text shot log for an editor, linked to the original clips. Ember's documented output is text: this does not generate finished video, audio stems or a rendered timeline.</p>\n<p>The application must prepare the clips, keep their time labels intact and expose a playback link for each suggestion. Check the log against the footage, especially fast cuts, small text and sounds whose source is unclear. Do not treat a generated timestamp as frame-accurate alignment. The likely failure is a plausible description of an event that was never visible, or a correct description attached to the wrong clip.</p>\n<p>Across these examples, begin with a small frozen acceptance set and compare Ember with the model already serving the task. Record model ID, effort, billed tokens, elapsed time, retries and reviewer corrections. Keep the larger model or a human as an escalation path, and count that work in the result. Ember earns a larger deployment if it lowers the total cost of accepted output while preserving the quality the application needs. The current evidence supports that bounded experiment; it does not yet establish its outcome.</p>\n<p>Make the acceptance set reflect the intended workload rather than only the easiest examples. Include short and long inputs, clear and degraded media, ordinary cases and known exceptions. Keep a separate holdout for the final comparison so prompt revisions do not quietly fit the entire test set. Compare more than one effort setting on the same records: a slower setting may reduce corrections, while a cheaper setting may suffice for routine labels. Report those outcomes separately instead of hiding rare but consequential failures inside a single average.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-reviewed glossary and question drafts with source-page references",
+    "Validated request routing with an unresolved path",
+    "Reviewed image captions and tags for a public collection website",
+    "A source-linked text shot log for a human video editor"
+  ],
+  "limitations": [
+    "Documentation review only: no API call, installation, native execution, account signup, benchmark, invoice or latency test was performed.",
+    "The linked evaluation report was inaccessible in its browser viewer; the Artificial Analysis results were read as presented by Meta, not independently inspected.",
+    "Vendor comparisons use mixed internal/external evaluations and different agent harnesses; small independent SVG examples do not establish reliability.",
+    "The developer article gives conflicting photo-example totals of $1.59 and $1.33; no exact batch saving is adopted.",
+    "No downloadable Ember weights, weight license, parameter count, regional eligibility or full service terms were established.",
+    "Ember outputs text; the video use case does not imply video generation or frame-accurate timestamps.",
+    "Pricing and service limits are documented observations from November 11, 2026, not account-specific guarantees.",
+    "Educational, app, website and video workflows are editorial proposals that require validation and human review."
+  ],
+  "sources": [
+    {
+      "id": "social-muse-ember-announcement",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "accessedAt": "2026-11-11T05:07:27.932Z",
+      "publishedAt": "2026-11-09",
+      "locator": "November 9, 2026; Availability; evaluation tables and footnotes",
+      "supports": "Launch date, API availability, benchmark scope and methodology qualifications"
+    },
+    {
+      "id": "social-muse-ember-developer",
+      "title": "Start building with Muse Ember, our smallest, most efficient model",
+      "url": "https://dev.meta.ai/resources/blog/build-with-muse-ember",
+      "accessedAt": "2026-11-11T05:08:54.676Z",
+      "publishedAt": null,
+      "locator": "Natively multimodal; Multiple models, one workflow; both worked examples",
+      "supports": "Application/tool boundary, bounded-task workflow, illustrative recipes and inconsistent photo-cost totals"
+    },
+    {
+      "id": "social-muse-ember-docs",
+      "title": "Muse Ember - Meta Model API",
+      "url": "https://dev.meta.ai/docs/muse-ember",
+      "accessedAt": "2026-11-11T05:09:15.470Z",
+      "publishedAt": null,
+      "locator": "At a glance; Build with Muse Ember; Availability",
+      "supports": "Model ID, modalities, token limits, default effort, endpoints, access and intended workload"
+    },
+    {
+      "id": "social-muse-ember-pricing",
+      "title": "Pricing and rate limits - Meta Model API",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing",
+      "accessedAt": "2026-11-11T05:09:18.687Z",
+      "publishedAt": null,
+      "locator": "Pricing modes; Muse Ember; Token pricing notes; Rate limits; Background responses",
+      "supports": "Current price tiers, full-request threshold, training-mode distinction, search fees and rate limits"
+    },
+    {
+      "id": "social-muse-ember-quickstart",
+      "title": "Quickstart — Meta Model API - Meta Model API",
+      "url": "https://dev.meta.ai/docs/quickstart",
+      "accessedAt": "2026-11-11T05:09:21.420Z",
+      "publishedAt": null,
+      "locator": "Make your first API call; Pass the API key explicitly; Read the response",
+      "supports": "Account and key requirements, API base and reasoning-token accounting"
+    },
+    {
+      "id": "source-c80838f46e535c12",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "accessedAt": "2026-11-11T05:07:00.879Z",
+      "publishedAt": "2026-11-10",
+      "locator": "Reasoning-effort SVG observation; Posted line",
+      "supports": "Independent small-example observation and November 10 publication date"
+    }
+  ],
+  "images": [],
+  "judgment": "A credible candidate for a small, measured pilot of repeated extraction, classification or coding work. The documented API is concrete and inexpensive at the lower tier; task-level quality, reasoning usage, long-context costs and review effort must determine whether it replaces an existing model.",
+  "researchNote": "Prepared from six public page captures acquired in Chrome on November 11, 2026. The November 9 launch date comes from Meta’s announcement; Simon Willison’s November 10 post is a later independent observation. Current documentation supplies limits and prices. No model execution or independent benchmark replication occurred. The evaluation-report browser viewer was blocked. Use cases, acceptance checks and the token-cost scenario are explicitly editorial proposals or arithmetic, not measured results."
+}

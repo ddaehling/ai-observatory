@@ -1,0 +1,28 @@
+{
+  "reportId": "minimax-h3-image",
+  "reviewerId": "/root/astra_nov11_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-11T05:24:55.306759Z",
+  "reportHash": "4f2b60dc40acaefb18036fb56e9f60150bad48b8f32ff7a0ed525fc7949d5497",
+  "evidenceHash": "ada7cf451351768b9e3f3b8fe7afb53e98f420d58e9a43649c1b652ca119ad32",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 5,
+    "openness": 4
+  },
+  "rationale": {
+    "usefulness": "A unified generation/editing checkpoint, native large canvases, multiple references and documented Comfy/API behavior offer concrete value for detailed stills and reference edits. The report usefully covers prompt expansion, reference wiring, sizing, partial successes and realistic acceptance checks. Territorial exclusions, third-party hosting authorization and substantial artifacts sharply narrow who can act on that value.",
+    "impact": "The documented combination of approximately 16 MP native stills, six-step sampling and multi-reference editing is a meaningful advance for creative pipelines. Independent quality, speed and cost evidence is absent, and restricted deployment rights and demanding local resources limit the case for broader AI-development impact.",
+    "novelty": "Large native canvases, a six-step unified generation/editing checkpoint and up to sixteen references form a distinctive documented capability package. The architecture derives from the existing H3 family, and no generated outputs or comparative tests were inspected to validate claims of superior realism or instruction following.",
+    "maturity": "Weights, local recipes, Comfy templates and precise hosted request/error semantics make a permitted pilot feasible. It is a fresh release with no executed workflow, measured hardware requirement or verified API entitlement and pricing. Quantized Comfy components and differing prompt expanders also prevent assuming equivalence across deployment paths.",
+    "openness": "Downloadable weights, architecture details and local serving interfaces provide meaningful inspectability and reproducibility. The actual community license excludes the EU, UK, Republic of Korea and USA, restricts specified output uses, requires separate authorization above the revenue threshold or for any third-party hosted service, and limits other-model improvement. Those substantial restrictions keep the release below moderate overall openness despite accessible weights."
+  },
+  "confidence": "high",
+  "concerns": []
+}

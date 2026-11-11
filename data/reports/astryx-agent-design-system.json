@@ -1,0 +1,134 @@
+{
+  "id": "astryx-agent-design-system",
+  "title": "Astryx gives people and coding agents a shared, inspectable design system",
+  "entity": "Astryx",
+  "category": "Open source",
+  "tags": [
+    "React",
+    "design systems",
+    "agent workflows",
+    "education",
+    "UI"
+  ],
+  "summary": "Meta’s beta design system combines reusable React components with queryable docs, templates and themes. Its practical promise is consistent, reviewable interfaces—with version and package limits to check.",
+  "changeType": "baseline",
+  "publishedAt": "2026-06-18",
+  "discoveredAt": "2026-11-11T05:07:39.361Z",
+  "updatedAt": "2026-11-11T05:16:59.484100Z",
+  "officialUrl": "https://github.com/meta/astryx",
+  "sections": [
+    {
+      "id": "shared-reference",
+      "title": "Give the agent a component library it can inspect",
+      "html": "<p>Astryx is a React design system whose components, themes, documentation and command-line interface are intended to serve both developers and coding agents. The useful proposition is concrete: when an assistant needs a form, settings screen or dashboard, it can look up the actual component contract and start from an existing pattern. A team can then review the resulting interface against a shared reference, instead of accepting a plausible button or input that happens to compile.</p><p>This is a baseline assessment of an existing project. Its <a href=\"https://astryx.atmeta.com/blog/introducing-astryx\">official introduction</a> is dated June 18, 2026; finding it on GitHub Trending in November does not establish a new launch. The <a href=\"https://github.com/meta/astryx\">current repository README</a> still labels the project beta. Meta describes a system developed internally over eight years and used across more than 13,000 apps. Those are publisher claims about its internal history, not independent evidence that the public packages will fit a different organization.</p><p>The distinction matters for a small educational or creative team. A broad component set may reduce the amount of routine interface behavior it must invent, while a beta dependency still requires ownership of upgrades, visual decisions and acceptance tests. Astryx provides material to make the work inspectable. It does not establish that a generated lesson is correct, that a workflow is usable, or that a finished application is accessible.</p>"
+    },
+    {
+      "id": "agent-tooling",
+      "title": "A discoverable interface, with version boundaries",
+      "html": "<p>The <a href=\"https://github.com/meta/astryx/blob/main/packages/cli/README.md\">CLI README</a> describes searches across components, hooks, documentation, templates and themes, with follow-up commands for the matching entries. It also documents a machine-readable capability manifest, typed JSON responses and programmatic functions. This makes the library a resource an agent can query during implementation. The value is the smaller gap between the component a model imagines and the one the installed package actually exports.</p><p>Version selection deserves attention. The documented global installation delegates to a project’s own CLI when it is present, while successful JSON responses identify the answering CLI and Core versions. An integration can retain this information alongside generated changes. That creates a more useful debugging record than a prompt alone: a reviewer can see which reference answered when an agent chose a component. These are documented interfaces; this assessment did not execute them.</p><p>The <a href=\"https://github.com/meta/astryx/blob/main/packages/core/README.md\">Core guide</a> says initialization writes a component index into the project’s agent instruction files. Review that generated change as project configuration. It also warns that the unscoped npm name <code>astryx</code> can resolve to an unrelated package before the intended CLI is installed. Use the documented scoped package, <code>@astryxdesign/cli</code>, and pin the project dependency. Neither a familiar command name nor a copied example proves which package will run.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "The adoption work is mostly ordinary frontend work",
+      "html": "<p>Astryx requires React 19 or later. Its normal consumption path uses prebuilt JavaScript and CSS, so a team does not need to introduce a StyleX compilation pipeline merely to consume the components. The published setup still includes the listed dependencies, a theme provider and stylesheet imports. “No build plugin” should not be read as “no dependencies” or as compatibility with every existing application.</p><p>The <a href=\"https://github.com/meta/astryx/blob/main/packages/core/README.md\">setup examples</a> cover Next.js, Tailwind, Vite and a CDN prototype. Their details are consequential: stylesheet order controls the cascade, and the existing Tailwind application recipe has a different placement requirement from a fresh application. The CDN route uses pinned ES modules and an import map, with explicit React and font handling. It is a useful prototyping option, but remote assets and module resolution remain integration dependencies.</p><p>Before changing a full product, isolate one representative page. Include a short form, a detail view and a small navigation flow using synthetic content. Check the existing framework version, rendering setup, theme imports and typography before evaluating the agent’s visual choices. If the framework cannot move to the required React version, the documentation may still offer design-system ideas, but the component dependency is not a drop-in fit. No installation, build or browser behavior test was performed for this report.</p>"
+    },
+    {
+      "id": "customization",
+      "title": "Theme first; own source when that is necessary",
+      "html": "<p>The <a href=\"https://github.com/meta/astryx\">repository overview</a> separates component behavior from branding through CSS custom properties and ships seven named themes. It describes exported building blocks and a <code>swizzle</code> command that copies component source into the consuming project. These are different maintenance choices. Token overrides keep a team close to the shared library; taking ownership of source gives it more freedom and more responsibility for future changes.</p><p>For a distinctive teaching site, start with the content hierarchy: reading width, mathematical notation, captions, answers and feedback. Then set typography, contrast, spacing and emphasis tokens around that content. A neutral component library will not choose which explanation belongs first or whether an exercise has too many controls. Ask an agent to preserve those decisions when generating subsequent pages, and review the theme against real long labels and dense material.</p><p>Source customization becomes reasonable when a required interaction cannot be expressed through the documented API or composition. Record why the fork exists, what upstream behavior it must retain, and who checks it after upgrades. A source copy should not quietly become a second design system. Keep the original interaction cases—keyboard navigation, focus return, disabled states and errors—in the local review set so visual customization does not erase useful behavior.</p>"
+    },
+    {
+      "id": "education",
+      "title": "An exercise for teaching interface reasoning",
+      "html": "<p>A practical classroom pilot would begin with a teacher-written worksheet, an answer key and a small set of learner actions. Ask students or an assistant to turn these into an interactive practice page using the installed component documentation. The inspectable outputs are the page source, its component choices and a short record of how an incorrect answer, an empty answer and a completed exercise are displayed. The teacher remains responsible for the subject content and feedback.</p><p>The learning objective can extend beyond generating a working screen. Require students to explain why each control has its label, where focus moves after submission, how feedback remains understandable without color, and whether a learner can revise an answer. A second student should complete the exercise using a keyboard and enlarged text. The teacher can compare the result with a fixed acceptance set rather than judging only the first screenshot.</p><p>Success would mean that the exercise preserves the answer key, makes progress and errors understandable, and survives the intended input methods. Likely failures include decorative progress indicators, missing labels, feedback that reveals the answer too early, and a layout that breaks on long explanations. These are proposed evaluation tasks, not outcomes demonstrated by Astryx. Its documented components give the class a common starting point; they do not replace pedagogical review.</p>"
+    },
+    {
+      "id": "apps-and-websites",
+      "title": "Use a bounded workflow to judge the system",
+      "html": "<p>For an application, a useful pilot is a review queue for generated lesson drafts. Inputs are synthetic draft records with title, author, status and outstanding corrections. The agent builds a table, a detail panel and a revision form from the available patterns. The inspectable output is a complete review flow, including loading, an empty queue, failed saving and a successful correction. Backend persistence, authentication and authorization remain separate implementation work.</p><p>Measure whether reviewers can find a flagged draft, understand what changed and recover from a failed save without losing their edits. Test long titles, duplicate names, narrow screens and rapid navigation. If a generated table looks polished but cannot express the real state transitions, a theme change will not repair it. The pilot should expose the gap between reusable display controls and the application’s own behavior.</p><p>For a website, use a small, attributed research library as the trial. Supply a dozen records with source links and deliberately include missing dates and long abstracts. Build search, filters and a readable detail page, then verify that every record remains reachable and uncertainty is represented honestly. The content and search logic must be implemented explicitly. A reusable interface can help maintain consistency across pages, but it does not supply trustworthy research, a search index or correct citations.</p><p>Keep a written comparison between the starting implementation and the pilot. Count the component APIs the agent invented, the manual corrections needed before review, and the interaction cases that still fail. Repeat the same task with the same content after changing the documentation or template. This does not need to become an elaborate benchmark: its purpose is to discover whether the shared reference removes a recurring problem in this team’s workflow. Record model, package versions and reviewer time so a promising screenshot does not stand in for the whole experiment.</p>"
+    },
+    {
+      "id": "creative-production",
+      "title": "A review surface for video work",
+      "html": "<p>Astryx can support the interface around a creative process. One plausible example is a shot-review board for a short explainer. Inputs would be already-created proxy clips, thumbnails, timecodes, licensing notes and comments. The application could present the shot list, filtering controls and approval forms, with links to the actual media. The inspectable output is a review decision tied to the right clip and revision, not a new video generated by the design system.</p><p>The integration must provide media playback, storage, access controls and any editing-system export. Test whether a reviewer can distinguish two similar takes, return to the same timecode and retain comments after a clip is replaced. Keep required audio or caption checks visible in the review process. A polished card is insufficient if its approval applies to the wrong asset. No timeline editor, video rendering pipeline or native editing integration is established by the inspected sources.</p><p>For a teaching video about interface design, the same prototype could become demonstration material: show a confusing state, explain its correction and record the revised interaction. That is an editorial production idea requiring separate screen capture and editing tools. It should not be described as an Astryx export feature or a tested reduction in production time.</p>"
+    },
+    {
+      "id": "limits-and-license",
+      "title": "Open code with beta maintenance obligations",
+      "html": "<p>The inspected <a href=\"https://github.com/meta/astryx/blob/main/LICENSE\">MIT license</a> permits use, modification, distribution and sale subject to retaining its copyright and permission notice; it also disclaims warranty. This is an openness claim about software and documentation. Astryx is not a model-weight release, and its license does not determine the terms of a coding assistant, external service, font, media asset or third-party package used alongside it.</p><p>The <a href=\"https://github.com/meta/astryx\">README</a> makes package limits explicit: experimental Lab components are not published to npm, and the Vega wrapper and Charts packages are available only under the canary tag, without a stable release. Do not let a prototype depend on those packages by accident. The site and repository also advertise different component counts—over 180 and over 150 respectively—so the installed version’s inventory is a more useful planning reference than either marketing total.</p><p>The CLI documents health checks, migration codemods and stable error identifiers. Those can help an adoption process, but a passing environment check is not a usability or accessibility audit. Pin versions, inspect migration changes, and retain a small set of representative pages for visual and interaction review. The project’s internal-use history and documentation depth justify investigation; they do not eliminate the costs of a public beta.</p><p>The strongest reason to evaluate Astryx is that it makes reusable interface knowledge available in a form both a person and an agent can inspect. A successful pilot should show fewer invented APIs and more consistent behavior while preserving the product’s own identity. Evidence here consists of current public documentation and the actual license, not native execution, independent performance measurements or a comparative user study. Adoption should turn on those concrete local outcomes, rather than repository popularity.</p><p>Read diagnostics at their stated scope. The documented doctor command can exit successfully while retaining warnings, and integration checks distinguish invalid declarations from some naming or property differences. A team that needs a stricter rule must decide which findings block its own release. Likewise, a machine-readable error is useful because a caller can branch on its stable identifier, not because the failed operation has become safe to retry automatically. Keep file-changing initialization and migrations reviewable, preserve the working version, and verify recovery on a disposable project before incorporating those operations into unattended agent work.</p>"
+    }
+  ],
+  "useCases": [
+    "Build a teacher-reviewed exercise from an answer key and test its feedback states.",
+    "Prototype a draft-review queue with explicit loading, saving and recovery behavior.",
+    "Create an attributed research library with searchable records and readable source detail.",
+    "Build a shot-review interface around existing clips; media generation and editing remain separate."
+  ],
+  "limitations": [
+    "Documentary evaluation only: no dependency installation, application build, runtime test, accessibility audit or video output.",
+    "Public beta requires upgrade planning; Lab is unpublished and chart packages are canary-only.",
+    "React 19+ required; the described component library does not establish a native mobile implementation.",
+    "Internal scale and quality claims are publisher-authored, not independently replicated.",
+    "Repository README and website component totals differ; inspect the installed release inventory.",
+    "Chrome interruption required GitHub connector and public web complements for decisive documents."
+  ],
+  "sources": [
+    {
+      "id": "nov11-meta-astryx",
+      "title": "Astryx repository overview",
+      "url": "https://github.com/meta/astryx",
+      "accessedAt": "2026-11-11T05:07:39.361Z",
+      "publishedAt": null,
+      "locator": "README: Overview, Getting Started, Packages, Principles",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    },
+    {
+      "id": "nov11-astryx-core",
+      "title": "Astryx Core README",
+      "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md",
+      "accessedAt": "2026-11-11T05:13:02.788Z",
+      "publishedAt": null,
+      "locator": "Component Docs; Page Layouts; Quick Start",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    },
+    {
+      "id": "nov11-astryx-cli",
+      "title": "Astryx CLI README",
+      "url": "https://github.com/meta/astryx/blob/main/packages/cli/README.md",
+      "accessedAt": "2026-11-11T05:12:42.407Z",
+      "publishedAt": null,
+      "locator": "Search; manifest; JSON API; Doctor; Integrations",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    },
+    {
+      "id": "nov11-astryx-license",
+      "title": "Astryx MIT license",
+      "url": "https://github.com/meta/astryx/blob/main/LICENSE",
+      "accessedAt": "2026-11-11T05:13:02.776Z",
+      "publishedAt": null,
+      "locator": "Entire license",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    },
+    {
+      "id": "nov11-astryx-introduction",
+      "title": "Introducing Astryx",
+      "url": "https://astryx.atmeta.com/blog/introducing-astryx",
+      "accessedAt": "2026-11-11T05:13:28.791Z",
+      "publishedAt": "2026-06-18",
+      "locator": "Date and beta introduction",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    },
+    {
+      "id": "nov11-astryx-home",
+      "title": "Astryx public website",
+      "url": "https://astryx.atmeta.com/",
+      "accessedAt": "2026-11-11T05:10:56.107Z",
+      "publishedAt": null,
+      "locator": "Beta banner; component inventory",
+      "supports": "Documented identity, availability, implementation constraints or license; no native testing."
+    }
+  ],
+  "images": [],
+  "judgment": "A useful candidate for a bounded React prototype where people and coding agents need a common component reference. Judge it by the resulting workflow and maintenance burden, with beta and package constraints explicit.",
+  "researchNote": "Public repository README captured in Chrome; full Core/CLI README and license retrieved through the GitHub connector after a browser connection interruption. Public web retrieval supplied the introduction and website. No advertised code or demo was run. Use cases are editorial proposals."
+}

@@ -1,0 +1,479 @@
+[
+  {
+    "id": "fable52-date",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Claude Fable 5.2 is listed active with release date November 9, 2026.",
+    "passages": [
+      "Released\nNovember 9, 2026"
+    ],
+    "locator": "Availability",
+    "event_date": "2026-11-09",
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Known calendar date; no launch hour established."
+    ],
+    "limitations": [],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-interface",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "The documented interface is text and images to text, with 1M context and 128K maximum output.",
+    "passages": [
+      "Text and images → text"
+    ],
+    "locator": "Capabilities",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Interface limits do not establish accuracy at full context."
+    ],
+    "limitations": [
+      "No native image, video, or audio generation established by this page."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-api-behavior",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Adaptive thinking is always on; API default effort is high; forced tool use returns a 400 error and the page instructs omitting temperature, top_p, and top_k.",
+    "passages": [
+      "Adaptive (always on)"
+    ],
+    "locator": "Specifications; good to know",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Apps and Code defaults are separate from API defaults."
+    ],
+    "limitations": [
+      "No API request was executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-release-scope",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Fable and Mythos share an underlying model; Fable has stronger cyber/biology safeguards, while Mythos is available through organizational verification programs.",
+    "passages": [
+      "same underlying model"
+    ],
+    "locator": "Introduction; safeguards; availability",
+    "event_date": "2026-11-09",
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Verification application is not immediate entitlement."
+    ],
+    "limitations": [
+      "Individual program eligibility and user access were not tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-effort-surfaces",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "The release describes medium as the default effort in Claude apps and Claude Code.",
+    "passages": [
+      "Medium effort"
+    ],
+    "locator": "Effort and efficiency",
+    "event_date": null,
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "API specifications separately list high."
+    ],
+    "limitations": [
+      "Actual user settings were not inspected."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-vendor-evidence",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Demonstrations and comparisons remain vendor reports; formalization figure describes roughly 1,000 agents and one run per model; external evaluators did not review or endorse the release text.",
+    "passages": [
+      "a single run per model"
+    ],
+    "locator": "Mathematics figure; evaluations table notes; footnote 4",
+    "event_date": null,
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "No direct model ranking inferred from differing effort settings or cyber task sets."
+    ],
+    "limitations": [
+      "System card was linked but not acquired; no independent replication performed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-retention",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Fable 5.2 requires 30-day retention and zero-retention access needs Anthropic authorization.",
+    "passages": [
+      "requires 30-day data retention"
+    ],
+    "locator": "Good to know",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Authorization exception is narrower than a universal zero-retention option."
+    ],
+    "limitations": [
+      "No account-specific authorization checked."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-efs",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Enterprise Frontier Safeguards is in private beta and described as monitoring prompts/responses in customer infrastructure; authorized eligible customers have a zero-retention path.",
+    "passages": [
+      "in private beta"
+    ],
+    "locator": "Data privacy and Enterprise Frontier Safeguards",
+    "event_date": null,
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Other customers are described as having 30-day safety-monitoring retention."
+    ],
+    "limitations": [
+      "Private-beta configuration and customer eligibility untested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-fallback",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "The announcement describes fallback responses for blocked cyber/biology requests and limited AI-development topics.",
+    "passages": [
+      "transparent fallbacks"
+    ],
+    "locator": "Safeguards",
+    "event_date": null,
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Retain actual serving-model information and refusal outcomes."
+    ],
+    "limitations": [
+      "No fallback was invoked or inspected live."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-selection",
+    "source_ids": [
+      "official-source-fable-model-overview"
+    ],
+    "claim": "Anthropic recommends starting with Opus 5.5 for most work and escalating to Fable for demanding reasoning or when higher-effort Opus evaluations fall short.",
+    "passages": [
+      "start with Claude Opus 5.5"
+    ],
+    "locator": "Compare models",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-model-overview": "2026-11-11T05:06:35.153Z"
+    },
+    "qualifiers": [
+      "Vendor selection guidance, not a measured recommendation for every workload."
+    ],
+    "limitations": [
+      "No comparative evaluation executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-model-overview.json"
+    ]
+  },
+  {
+    "id": "fable52-base-pricing",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "First-party pricing lists Fable/Mythos 5.2 at USD $8/$40 per million input/output tokens, versus 5.1 at $10/$50, a 20% rate reduction.",
+    "passages": [
+      "All prices are in USD."
+    ],
+    "locator": "Model pricing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "20% is arithmetic on listed rates, not task-cost measurement.",
+      "Rates observed November 11, 2026."
+    ],
+    "limitations": [
+      "Partner-operated cloud prices and extras can differ."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-cost-options",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "Five-minute and one-hour cache writes are $10/$16 per MTok; reads $0.20. Batch rates are $4/$20. Fast mode is $16/$80, incompatible with batch, and can stack modifiers.",
+    "passages": [
+      "Fast mode is not available with the Batch API."
+    ],
+    "locator": "Model pricing; fast mode; batch; long context",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "Full context at standard per-token pricing; actual totals depend on request history and applicable modifiers."
+    ],
+    "limitations": [
+      "No billing measurements or invoices reviewed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-cost-scenario",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "At base uncached rates, 100,000 input tokens plus 10,000 billed output tokens cost $1.20 in token charges.",
+    "passages": [
+      "$8 / MTok"
+    ],
+    "locator": "Model pricing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "Illustrative arithmetic: 0.1×8 + 0.01×40 = 1.20.",
+      "Includes all billed output in the hypothetical output count; excludes tools, additional requests, taxes and modifiers."
+    ],
+    "limitations": [
+      "Not a real project quotation or measured usage."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-prefix-check",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Thinking binds to earlier system, tools and messages; ordinary Fable/Mythos 5.2 API prefix mismatches default to 400 errors for all accounts, while unset batch items drop affected blocks.",
+    "passages": [
+      "Make your integration append-only"
+    ],
+    "locator": "Who the prefix check affects; keeping the prefix unchanged; batch behavior",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "A first successful turn does not test replay compatibility."
+    ],
+    "limitations": [
+      "No integration was executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-drop-cost",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Explicit drop_block mode is a stopgap that discards invalidated reasoning, restarts caching at the edit, and can increase output-token use and latency.",
+    "passages": [
+      "a stopgap with an output-token cost"
+    ],
+    "locator": "What the API does with an invalid block; output-token cost",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "Effects vary with harness and frequency of edits."
+    ],
+    "limitations": [
+      "No measured overhead established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-state-portability",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Model-incompatible reasoning may be dropped without error; Fable/Mythos 5.2 thinking is account-bound unless accounts are linked.",
+    "passages": [
+      "tied to the account"
+    ],
+    "locator": "Model and account checks",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "Not equivalent to portable cross-account conversation state."
+    ],
+    "limitations": [
+      "Linked-account configuration untested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-advisor-access",
+    "source_ids": [
+      "official-source-fable-advisor"
+    ],
+    "claim": "Advisor is experimental on the Anthropic API and Claude Platform on AWS, with version/access/pairing constraints; Fable 5.2 needs Code v2.1.321+.",
+    "passages": [
+      "Fable 5.2 requires Claude Code v2.1.321 or later"
+    ],
+    "locator": "Choose an advisor model; requirements",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-advisor": "2026-11-11T05:06:42.102Z"
+    },
+    "qualifiers": [
+      "Not available through Bedrock, Google Cloud Agent Platform or Foundry according to this page.",
+      "Some plans require Fable usage-credit consent."
+    ],
+    "limitations": [
+      "No advisor configuration changed or executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-advisor.json"
+    ]
+  },
+  {
+    "id": "fable52-advisor-cost",
+    "source_ids": [
+      "official-source-fable-advisor"
+    ],
+    "claim": "Advisor reads full conversation and adds token usage; its reads are not cached across consultations, and rejected pairings may cause a retry without an advisor.",
+    "passages": [
+      "full conversation"
+    ],
+    "locator": "Cost; impact on prompt caching; pairing validation",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-advisor": "2026-11-11T05:06:42.102Z"
+    },
+    "qualifiers": [
+      "Model-driven timing; task completion is not proof that advice occurred."
+    ],
+    "limitations": [
+      "No measured savings or advisor success rate established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-advisor.json"
+    ]
+  },
+  {
+    "id": "fable52-terms",
+    "source_ids": [
+      "official-source-anthropic-commercial-terms"
+    ],
+    "claim": "Commercial service terms permit customer products subject to terms, allocate content rights between parties, require output checks, and retain restrictions; consumer terms are separate.",
+    "passages": [
+      "not for consumer use"
+    ],
+    "locator": "Sections A, B, D",
+    "event_date": "2025-06-17",
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-commercial-terms": "2026-11-11T05:07:00.854Z"
+    },
+    "qualifiers": [
+      "Contractual allocation between parties is not a model-weight license or a guarantee of third-party rights.",
+      "June 17, 2025 is the displayed effective date, not an established publication date."
+    ],
+    "limitations": [
+      "No downloadable weights or local deployment license established; not individualized legal advice."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-commercial-terms.json"
+    ]
+  }
+]

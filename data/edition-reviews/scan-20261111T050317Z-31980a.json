@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261111T050317Z-31980a",
+  "recordedAt": "2026-11-11T05:44:58Z",
+  "status": "validated-awaiting-deployment",
+  "expectedSources": 191,
+  "accessibleSources": 127,
+  "failedOrUnvisitedSources": 64,
+  "individualFailedAttempts": 8,
+  "unvisitedAfterBrowserInterruption": 56,
+  "completeWindowBrowserSources": 19,
+  "partialBrowserSources": 104,
+  "preservedPrimaryFeeds": 4,
+  "sourceLedgerAdditionsBeyondCollector": 57,
+  "collectorAddedSourceRecords": 27,
+  "totalNewSourceRecords": 84,
+  "newCandidates": 59,
+  "feedCandidates": 36,
+  "browserCandidates": 23,
+  "priorCandidatesReconsidered": 27,
+  "priorCandidatesDeferred": 1213,
+  "uniqueCandidatesConsidered": 86,
+  "finalCandidateStatuses": {
+    "needs_review": 48,
+    "excluded": 31,
+    "unresolved": 2,
+    "included": 5
+  },
+  "catalogue": {
+    "considered": 22,
+    "added": 9,
+    "deferred": 8,
+    "rejected": 2,
+    "unchanged": 0,
+    "updated": 3,
+    "rawAssessments": 23,
+    "actualEntryAdditions": 9,
+    "actualEntryUpdates": 3,
+    "resolvedLeadUpdates": 0
+  },
+  "reportGates": {
+    "claude-fable-52": {
+      "reportHash": "52fcac76b42cc99d2a977f369f6dde6a4d81f289c9c0ac4073ed4064012fbdd9",
+      "evidenceHash": "577374231718f512158cd2e547d8d71e1deeeaa114eb2f9b8d5799c6a4bd6622",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_fable_date_a",
+        "/root/astra_nov11_fable_date_b"
+      ],
+      "wordCount": 2858,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 8.0,
+        "novelty": 6.5,
+        "maturity": 6.0,
+        "openness": 2.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "muse-ember": {
+      "reportHash": "03e8fe7da9adda72126361ac7047980fd0612510c54fcecc98766e4ab30b1701",
+      "evidenceHash": "bc8ae583873ab9864f2d742de6bf070b2b6b62165e84e250f99319b9edee3cfc",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1915,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.5,
+        "novelty": 5.5,
+        "maturity": 6.0,
+        "openness": 2.5
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "astryx-agent-design-system": {
+      "reportHash": "239ce8a4a7620afa213db11d9926fbd182544e780296cb0cfc637db3494bf5ea",
+      "evidenceHash": "849ca8ae28fe93578f565eef58e6f097f1e7f3a2a198f6cb668622974b7a462e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1933,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 5.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 9.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "minimax-h3-image": {
+      "reportHash": "4f2b60dc40acaefb18036fb56e9f60150bad48b8f32ff7a0ed525fc7949d5497",
+      "evidenceHash": "ada7cf451351768b9e3f3b8fe7afb53e98f420d58e9a43649c1b652ca119ad32",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 2002,
+      "meanScores": {
+        "usefulness": 6.0,
+        "impact": 6.5,
+        "novelty": 7.0,
+        "maturity": 5.0,
+        "openness": 3.5
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "gemini4-carbon": {
+      "reportHash": "aec38e673470a90ede96fd7c31f1f44f4db7b57b043e0579b09eb84d4d7ab4b4",
+      "evidenceHash": "665cf517c7c7cc388b3b1da434250526643d539485e041a68aac2b3a185c12cf",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/astra_nov11_a",
+        "/root/astra_nov11_b"
+      ],
+      "wordCount": 1884,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 7.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 2.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    }
+  },
+  "independentAccountingAuditor": "/root/nov11_accounting_audit",
+  "auditResult": "Independent source, candidate, catalogue and unchanged protected-hash audit passed for exact proposal bytes.",
+  "reviewAttempt": 3,
+  "substantiveDisagreements": 1,
+  "newReports": 4,
+  "updatedReports": 1,
+  "publicReportTotalExpected": 53,
+  "limitations": [
+    "Chrome connection interruptions caused failed individual visits and explicit unvisited monitored entrypoints; neither establishes an absence of news.",
+    "Most accessible source histories were partial; corresponding coverage watermarks remain unchanged. Four successful feed-primary records are preserved separately from supplementary browser checks.",
+    "No advertised tools or models were installed or executed. Benchmarks, hardware requirements, runtime performance and costs per accepted task were not independently tested.",
+    "Muse Ember evaluation-report viewer was blocked; Carbon-linked new safety/model-card documents and Fable system card were not inspected. Their contents are not claimed as verified.",
+    "MiniMax-H3-Image showcase assets were not independently decoded or evaluated; its territorial, revenue and hosted-service license constraints are explicit."
+  ],
+  "observedResourceUse": {
+    "tokens": null,
+    "cost": null,
+    "measurement": "No reliable complete-workflow token or monetary measurement is available; no savings claimed.",
+    "discoveryWorkers": 4,
+    "independentPublicationReviewers": 6,
+    "publicationReviews": 14,
+    "handsOnModelOrToolTests": 0,
+    "archiveJsonFiles": 312,
+    "archiveCountMeaning": "Archived JSON includes capture, bundle and provenance records, not a count of unique sources or successful visits.",
+    "visualAssetLimitation": "No generated-output or runtime-quality test was performed; MiniMax showcase originals were not decoded before interrupted access. No documentary report images were added."
+  },
+  "interfaceChange": "Corrected stale hourly-check text to the authorized daily 20:00 Europe/Berlin heartbeat and changed the unknown-date label to Source publication date not established. Research eligibility configuration was not changed.",
+  "editorialNotes": [
+    "Repository backlog choices were equally old; the worker input-order tie-break wording was corrected in the run selection record.",
+    "Astryx final writer packet added a redundant second source-ID annotation to the component-count claim after the review freeze. The published evidence retains the exact frozen, independently reviewed claim; both full supporting sources were available to both reviewers.",
+    "Rendered review found and removed a stale pre-review sentence. The next independent pair disagreed on whether release-date evidence established announcement publication; the stricter distinction was adopted. Announcement and report publication fields are null, the verified November 9 event date remains, and a third fresh pair approved the exact corrected report and evidence. All prior review outcomes are archived."
+  ],
+  "reviewAttemptsByReport": {
+    "claude-fable-52": 3,
+    "muse-ember": 1,
+    "astryx-agent-design-system": 1,
+    "minimax-h3-image": 1,
+    "gemini4-carbon": 1
+  },
+  "resolvedSubstantiveDisagreements": 1,
+  "lastReviewRecordedAt": "2026-11-11T05:58:42.019511+00:00",
+  "validation": {
+    "reportAndReviewGate": "53 valid reports, no errors after final Fable correction",
+    "strictBuild": "53 reports, zero excluded or withdrawn",
+    "unitTests": "100 tests passed after final date, copy and accounting corrections (2.650 seconds).",
+    "catalogue": "Valid with capture checks: 50 entries, 17 inspected social accounts, four communities, eight queued leads",
+    "javascriptSyntax": "node --check src/app.js passed",
+    "browserInspection": [
+      "Index: 53 reports and all new titles",
+      "Full Fable body, citations, five ratings and both independently expanded rationale panels",
+      "Edition coverage: 127 accessible, eight failed attempts, 56 unvisited; partial history disclosed",
+      "Mobile settings at390×844: daily20:00 Europe/Berlin copy visible and wrapping",
+      "Keyboard index navigation and queue dismissal",
+      "Unmatched search:0of53; reset restored53",
+      "Empty queue and unavailable-report route observed; no synthetic report data added",
+      "Reloaded final Fable build and verified unknown publication dates, retained November9 release/event date and final approvals",
+      "Reloaded rebuilt report and verified exact Source publication date not established label."
+    ],
+    "skillReferenceValidation": {
+      "checkedAt": "2026-11-11T05:42:40.768729+00:00",
+      "changedFiles": [
+        "references/publication-checks.md",
+        "references/research-lessons.md"
+      ],
+      "installedAndVersionedCopiesMatch": true,
+      "skillFrontmatterUnchanged": true,
+      "relativeReferenceLinksResolve": true,
+      "quickValidator": "Could not run: installed python3 lacks PyYAML (ModuleNotFoundError: yaml). No dependency installed; focused standard-library validation passed for reference-only edits.",
+      "dateDistinctionLessonAddedAt": "2026-11-11T05:58:13.995029+00:00"
+    }
+  },
+  "finalDeltaAudit": {
+    "reviewerId": "/root/nov11_accounting_audit",
+    "result": "pass",
+    "checks": 15,
+    "sha256": "1031220c735d212907d539f390fe5bfdb8941c24790025be9b78a5c20b0cd7db",
+    "scope": "Date correction, preserved historical reviews, all other 52 report/evidence hashes, and history-row versus distinct-candidate counts."
+  }
+}

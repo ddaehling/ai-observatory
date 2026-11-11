@@ -8,6 +8,8 @@ Record current hashes for protected reports. Evidence hashes include the report'
 
 Use one coordinator for mutations, including catalogue integration and Git. Run every observatory CLI command sequentially, even hashing. Workers write only their assigned checkpoint files. Inspect structured packets and actual evidence artifacts before merging worker claims.
 
+When relocating saved evidence, check provenance paths recursively, including preserved worker assessments and assessment history. A valid top-level entry and matching digest do not prove that a nested `capturePath`, `archive_path` or `sourceResultPath` resolves. Normalize through the actual archive map, verify the destination and bytes, and retain the frozen original worker packet.
+
 ## Reviews that prove what was reviewed
 
 Prepare a frozen report/evidence/rubric packet with current CLI hashes. Spawn two distinct native collaboration agents using exactly `gpt-6-astra`, `high`, and `fork_turns:"none"`. Each sees the report and underlying evidence, never the other review. Save actual invocation metadata and canonical returned agent identities; a model name typed into JSON is not proof of invocation.

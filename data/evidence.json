@@ -20145,5 +20145,1730 @@
     "limitations": [
       "Report contains no installation, native execution, benchmark, compatibility or cost validation; proposed uses are editorial exercises."
     ]
+  },
+  {
+    "id": "fable52-date",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Claude Fable 5.2 is listed active with release date November 9, 2026.",
+    "passages": [
+      "Released\nNovember 9, 2026"
+    ],
+    "locator": "Availability",
+    "event_date": "2026-11-09",
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Known calendar date; no launch hour established."
+    ],
+    "limitations": [],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-interface",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "The documented interface is text and images to text, with 1M context and 128K maximum output.",
+    "passages": [
+      "Text and images → text"
+    ],
+    "locator": "Capabilities",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Interface limits do not establish accuracy at full context."
+    ],
+    "limitations": [
+      "No native image, video, or audio generation established by this page."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-api-behavior",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Adaptive thinking is always on; API default effort is high; forced tool use returns a 400 error and the page instructs omitting temperature, top_p, and top_k.",
+    "passages": [
+      "Adaptive (always on)"
+    ],
+    "locator": "Specifications; good to know",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Apps and Code defaults are separate from API defaults."
+    ],
+    "limitations": [
+      "No API request was executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-release-scope",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Fable and Mythos share an underlying model; Fable has stronger cyber/biology safeguards, while Mythos is available through organizational verification programs.",
+    "passages": [
+      "same underlying model"
+    ],
+    "locator": "Introduction; safeguards; availability",
+    "event_date": "2026-11-09",
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Verification application is not immediate entitlement.",
+      "The announcement capture has no observed publication date; the model specification separately establishes the November 9 release/event date."
+    ],
+    "limitations": [
+      "Individual program eligibility and user access were not tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-effort-surfaces",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "The release describes medium as the default effort in Claude apps and Claude Code.",
+    "passages": [
+      "Medium effort"
+    ],
+    "locator": "Effort and efficiency",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "API specifications separately list high.",
+      "The announcement capture has no observed publication date; the model specification separately establishes the November 9 release/event date."
+    ],
+    "limitations": [
+      "Actual user settings were not inspected."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-vendor-evidence",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Demonstrations and comparisons remain vendor reports; formalization figure describes roughly 1,000 agents and one run per model; external evaluators did not review or endorse the release text.",
+    "passages": [
+      "a single run per model"
+    ],
+    "locator": "Mathematics figure; evaluations table notes; footnote 4",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "No direct model ranking inferred from differing effort settings or cyber task sets.",
+      "The announcement capture has no observed publication date; the model specification separately establishes the November 9 release/event date."
+    ],
+    "limitations": [
+      "System card was linked but not acquired; no independent replication performed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-retention",
+    "source_ids": [
+      "official-source-fable-52-specs"
+    ],
+    "claim": "Fable 5.2 requires 30-day retention and zero-retention access needs Anthropic authorization.",
+    "passages": [
+      "requires 30-day data retention"
+    ],
+    "locator": "Good to know",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-52-specs": "2026-11-11T05:06:53.418Z"
+    },
+    "qualifiers": [
+      "Authorization exception is narrower than a universal zero-retention option."
+    ],
+    "limitations": [
+      "No account-specific authorization checked."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-52-specs.json"
+    ]
+  },
+  {
+    "id": "fable52-efs",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "Enterprise Frontier Safeguards is in private beta and described as monitoring prompts/responses in customer infrastructure; authorized eligible customers have a zero-retention path.",
+    "passages": [
+      "in private beta"
+    ],
+    "locator": "Data privacy and Enterprise Frontier Safeguards",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Other customers are described as having 30-day safety-monitoring retention.",
+      "The announcement capture has no observed publication date; the model specification separately establishes the November 9 release/event date."
+    ],
+    "limitations": [
+      "Private-beta configuration and customer eligibility untested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-fallback",
+    "source_ids": [
+      "official-source-anthropic-fable-mythos-52"
+    ],
+    "claim": "The announcement describes fallback responses for blocked cyber/biology requests and limited AI-development topics.",
+    "passages": [
+      "transparent fallbacks"
+    ],
+    "locator": "Safeguards",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-fable-mythos-52": "2026-11-11T05:06:18.216Z"
+    },
+    "qualifiers": [
+      "Retain actual serving-model information and refusal outcomes.",
+      "The announcement capture has no observed publication date; the model specification separately establishes the November 9 release/event date."
+    ],
+    "limitations": [
+      "No fallback was invoked or inspected live."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-fable-mythos-52.json"
+    ]
+  },
+  {
+    "id": "fable52-selection",
+    "source_ids": [
+      "official-source-fable-model-overview"
+    ],
+    "claim": "Anthropic recommends starting with Opus 5.5 for most work and escalating to Fable for demanding reasoning or when higher-effort Opus evaluations fall short.",
+    "passages": [
+      "start with Claude Opus 5.5"
+    ],
+    "locator": "Compare models",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-model-overview": "2026-11-11T05:06:35.153Z"
+    },
+    "qualifiers": [
+      "Vendor selection guidance, not a measured recommendation for every workload."
+    ],
+    "limitations": [
+      "No comparative evaluation executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-model-overview.json"
+    ]
+  },
+  {
+    "id": "fable52-base-pricing",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "First-party pricing lists Fable/Mythos 5.2 at USD $8/$40 per million input/output tokens, versus 5.1 at $10/$50, a 20% rate reduction.",
+    "passages": [
+      "All prices are in USD."
+    ],
+    "locator": "Model pricing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "20% is arithmetic on listed rates, not task-cost measurement.",
+      "Rates observed November 11, 2026."
+    ],
+    "limitations": [
+      "Partner-operated cloud prices and extras can differ."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-cost-options",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "Five-minute and one-hour cache writes are $10/$16 per MTok; reads $0.20. Batch rates are $4/$20. Fast mode is $16/$80, incompatible with batch, and can stack modifiers.",
+    "passages": [
+      "Fast mode is not available with the Batch API."
+    ],
+    "locator": "Model pricing; fast mode; batch; long context",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "Full context at standard per-token pricing; actual totals depend on request history and applicable modifiers."
+    ],
+    "limitations": [
+      "No billing measurements or invoices reviewed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-cost-scenario",
+    "source_ids": [
+      "official-source-fable-pricing"
+    ],
+    "claim": "At base uncached rates, 100,000 input tokens plus 10,000 billed output tokens cost $1.20 in token charges.",
+    "passages": [
+      "$8 / MTok"
+    ],
+    "locator": "Model pricing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-pricing": "2026-11-11T05:06:56.077Z"
+    },
+    "qualifiers": [
+      "Illustrative arithmetic: 0.1×8 + 0.01×40 = 1.20.",
+      "Includes all billed output in the hypothetical output count; excludes tools, additional requests, taxes and modifiers."
+    ],
+    "limitations": [
+      "Not a real project quotation or measured usage."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-pricing.json"
+    ]
+  },
+  {
+    "id": "fable52-prefix-check",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Thinking binds to earlier system, tools and messages; ordinary Fable/Mythos 5.2 API prefix mismatches default to 400 errors for all accounts, while unset batch items drop affected blocks.",
+    "passages": [
+      "Make your integration append-only"
+    ],
+    "locator": "Who the prefix check affects; keeping the prefix unchanged; batch behavior",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "A first successful turn does not test replay compatibility."
+    ],
+    "limitations": [
+      "No integration was executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-drop-cost",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Explicit drop_block mode is a stopgap that discards invalidated reasoning, restarts caching at the edit, and can increase output-token use and latency.",
+    "passages": [
+      "a stopgap with an output-token cost"
+    ],
+    "locator": "What the API does with an invalid block; output-token cost",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "Effects vary with harness and frequency of edits."
+    ],
+    "limitations": [
+      "No measured overhead established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-state-portability",
+    "source_ids": [
+      "official-source-fable-preserved-thinking"
+    ],
+    "claim": "Model-incompatible reasoning may be dropped without error; Fable/Mythos 5.2 thinking is account-bound unless accounts are linked.",
+    "passages": [
+      "tied to the account"
+    ],
+    "locator": "Model and account checks",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-preserved-thinking": "2026-11-11T05:06:38.374Z"
+    },
+    "qualifiers": [
+      "Not equivalent to portable cross-account conversation state."
+    ],
+    "limitations": [
+      "Linked-account configuration untested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-preserved-thinking.json"
+    ]
+  },
+  {
+    "id": "fable52-advisor-access",
+    "source_ids": [
+      "official-source-fable-advisor"
+    ],
+    "claim": "Advisor is experimental on the Anthropic API and Claude Platform on AWS, with version/access/pairing constraints; Fable 5.2 needs Code v2.1.321+.",
+    "passages": [
+      "Fable 5.2 requires Claude Code v2.1.321 or later"
+    ],
+    "locator": "Choose an advisor model; requirements",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-advisor": "2026-11-11T05:06:42.102Z"
+    },
+    "qualifiers": [
+      "Not available through Bedrock, Google Cloud Agent Platform or Foundry according to this page.",
+      "Some plans require Fable usage-credit consent."
+    ],
+    "limitations": [
+      "No advisor configuration changed or executed."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-advisor.json"
+    ]
+  },
+  {
+    "id": "fable52-advisor-cost",
+    "source_ids": [
+      "official-source-fable-advisor"
+    ],
+    "claim": "Advisor reads full conversation and adds token usage; its reads are not cached across consultations, and rejected pairings may cause a retry without an advisor.",
+    "passages": [
+      "full conversation"
+    ],
+    "locator": "Cost; impact on prompt caching; pairing validation",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-fable-advisor": "2026-11-11T05:06:42.102Z"
+    },
+    "qualifiers": [
+      "Model-driven timing; task completion is not proof that advice occurred."
+    ],
+    "limitations": [
+      "No measured savings or advisor success rate established."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/fable-advisor.json"
+    ]
+  },
+  {
+    "id": "fable52-terms",
+    "source_ids": [
+      "official-source-anthropic-commercial-terms"
+    ],
+    "claim": "Commercial service terms permit customer products subject to terms, allocate content rights between parties, require output checks, and retain restrictions; consumer terms are separate.",
+    "passages": [
+      "not for consumer use"
+    ],
+    "locator": "Sections A, B, D",
+    "event_date": "2025-06-17",
+    "publication_date": null,
+    "retrieved_at": {
+      "official-source-anthropic-commercial-terms": "2026-11-11T05:07:00.854Z"
+    },
+    "qualifiers": [
+      "Contractual allocation between parties is not a model-weight license or a guarantee of third-party rights.",
+      "June 17, 2025 is the displayed effective date, not an established publication date."
+    ],
+    "limitations": [
+      "No downloadable weights or local deployment license established; not individualized legal advice."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/official/anthropic-commercial-terms.json"
+    ]
+  },
+  {
+    "id": "muse-ember-launch",
+    "source_ids": [
+      "social-muse-ember-announcement"
+    ],
+    "claim": "Meta announced Muse Ember on November 9, 2026 and named muse-ember-1.0 as available on Meta Model API and Muse Code.",
+    "passages": [
+      "November 9, 2026",
+      "Muse Ember is available today on Muse Code and Meta Model API as muse-ember-1.0."
+    ],
+    "locator": "Announcement date and Availability",
+    "event_date": "2026-11-09",
+    "publication_date": "2026-11-09",
+    "retrieved_at": {
+      "social-muse-ember-announcement": "2026-11-11T05:07:27.932Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Documentation observation only; not tested behavior."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-announcement",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-announcement.json",
+        "captureSha256": "84be382874fe75d9747add62fd59a29e9f2b966db02b082405fd3f59392ec19e",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "retrievedAt": "2026-11-11T05:07:27.932Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-specs",
+    "source_ids": [
+      "social-muse-ember-docs"
+    ],
+    "claim": "Ember supports text, image, video, audio and PDF input, text output, 1,048,576-token context and 524,288-token maximum output. Default reasoning is max; endpoints include Responses, Chat Completions and Messages.",
+    "passages": [
+      "Input\tText, image, video, audio, and PDF",
+      "Output\tText",
+      "Context window\t1,048,576 tokens",
+      "Max output\t524,288 tokens"
+    ],
+    "locator": "At a glance",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-docs": "2026-11-11T05:09:15.470Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Capacity and endpoint support are documented, not exercised; no latency or long-context accuracy measured."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-docs",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-docs.json",
+        "captureSha256": "282a95ad4e36077dd9ebdab6ed3fc86c0072c1d957747196b54af6e48d0458c7",
+        "url": "https://dev.meta.ai/docs/muse-ember",
+        "retrievedAt": "2026-11-11T05:09:15.470Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-structured-output",
+    "source_ids": [
+      "social-muse-ember-docs"
+    ],
+    "claim": "Meta lists structured output among supported Ember features. The report proposes validating shape and facts separately; exact schema syntax and failure behavior were not inspected.",
+    "passages": [
+      "structured output"
+    ],
+    "locator": "Build with Muse Ember; Next steps",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-docs": "2026-11-11T05:09:15.470Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Only support listing inspected; no structured-output request or error handling tested."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-docs",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-docs.json",
+        "captureSha256": "282a95ad4e36077dd9ebdab6ed3fc86c0072c1d957747196b54af6e48d0458c7",
+        "url": "https://dev.meta.ai/docs/muse-ember",
+        "retrievedAt": "2026-11-11T05:09:15.470Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-effort-and-role",
+    "source_ids": [
+      "social-muse-ember-docs"
+    ],
+    "claim": "Reasoning ranges from minimal to max with default max; Meta positions Ember for repeated bounded tasks and recommends Spark/Wonder for hard single-shot coding, knowledge-heavy questions or visual coding.",
+    "passages": [
+      "\"minimal\" to \"max\"; the default is \"max\""
+    ],
+    "locator": "At a glance; Build with Muse Ember",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-docs": "2026-11-11T05:09:15.470Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Documentation observation only; not tested behavior."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-docs",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-docs.json",
+        "captureSha256": "282a95ad4e36077dd9ebdab6ed3fc86c0072c1d957747196b54af6e48d0458c7",
+        "url": "https://dev.meta.ai/docs/muse-ember",
+        "retrievedAt": "2026-11-11T05:09:15.470Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-tool-boundary",
+    "source_ids": [
+      "social-muse-ember-developer"
+    ],
+    "claim": "The application executes requested tools for a direct API call; Muse Code provides tools and coordination. A bounded worker handoff specifies context, ownership and acceptance checks.",
+    "passages": [
+      "A direct API call returns model output; your application runs any requested tools and returns their results."
+    ],
+    "locator": "Multiple models, one workflow",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-developer": "2026-11-11T05:08:54.676Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Neither direct API nor Muse Code was run."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-developer",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-developer.json",
+        "captureSha256": "29bd4b624efebc4d70e00d63d4f773fe8d08338fa780c9ebd59c62f47bd4cfe1",
+        "url": "https://dev.meta.ai/resources/blog/build-with-muse-ember",
+        "retrievedAt": "2026-11-11T05:08:54.676Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-price-tier",
+    "source_ids": [
+      "social-muse-ember-pricing"
+    ],
+    "claim": "Up to 200K input tokens Ember costs $0.10 input, $0.004 cached input and $0.50 output per million tokens. Above 200K these are $0.30, $0.012 and $1.50. Cached input and stored conversation history count toward the tier; the higher tier applies to the entire request.",
+    "passages": [
+      "A request with more is billed at the long-context rates in full, not only for the tokens past 200K."
+    ],
+    "locator": "Muse Ember pricing table and preceding paragraph",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-pricing": "2026-11-11T05:09:18.687Z"
+    },
+    "qualifiers": [
+      "USD per million tokens; documented November 11, 2026."
+    ],
+    "limitations": [
+      "No invoice or account-specific billing verified."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-pricing",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-pricing.json",
+        "captureSha256": "8244e6eaa457a353111ccc76fe8fc1f7bcd376e37f3acccf978e56288ae59ec8",
+        "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing",
+        "retrievedAt": "2026-11-11T05:09:18.687Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-access-training",
+    "source_ids": [
+      "social-muse-ember-docs",
+      "social-muse-ember-pricing"
+    ],
+    "claim": "Ember on Model API is Standard-only. Meta says Standard content is not used for training; Muse Code subscriptions separately default to Contributor mode with an on/off setting.",
+    "passages": [
+      "Model: muse-ember-1.0, in Standard mode only."
+    ],
+    "locator": "Ember Availability; Pricing modes",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-docs": "2026-11-11T05:09:15.470Z",
+      "social-muse-ember-pricing": "2026-11-11T05:09:18.687Z"
+    },
+    "qualifiers": [
+      "API mode and Muse Code subscription settings are different access paths."
+    ],
+    "limitations": [
+      "Training use does not establish retention terms; full legal terms and region eligibility not reviewed."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-docs",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-docs.json",
+        "captureSha256": "282a95ad4e36077dd9ebdab6ed3fc86c0072c1d957747196b54af6e48d0458c7",
+        "url": "https://dev.meta.ai/docs/muse-ember",
+        "retrievedAt": "2026-11-11T05:09:15.470Z"
+      },
+      {
+        "sourceId": "social-muse-ember-pricing",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-pricing.json",
+        "captureSha256": "8244e6eaa457a353111ccc76fe8fc1f7bcd376e37f3acccf978e56288ae59ec8",
+        "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing",
+        "retrievedAt": "2026-11-11T05:09:18.687Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-limits",
+    "source_ids": [
+      "social-muse-ember-pricing"
+    ],
+    "claim": "Published Ember limits are 3,000 requests/minute and 4,000,000 tokens/minute per team; background submissions have an additional 600/minute cap. Search grounding costs $2.50 per 1,000 queries.",
+    "passages": [
+      "Rate limits apply per team, not per API key"
+    ],
+    "locator": "Rate limits; Background responses; Token pricing notes",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-pricing": "2026-11-11T05:09:18.687Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Published ceilings are not measured throughput or account guarantees."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-pricing",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-pricing.json",
+        "captureSha256": "8244e6eaa457a353111ccc76fe8fc1f7bcd376e37f3acccf978e56288ae59ec8",
+        "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing",
+        "retrievedAt": "2026-11-11T05:09:18.687Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-setup-accounting",
+    "source_ids": [
+      "social-muse-ember-quickstart",
+      "social-muse-ember-docs"
+    ],
+    "claim": "Direct requests need a Model API account/key; documented base URL is https://api.meta.ai/v1. Reasoning tokens count in output_tokens.",
+    "passages": [
+      "its tokens count toward output_tokens"
+    ],
+    "locator": "Make your first API call; Read the response; Ember Make your first call",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-quickstart": "2026-11-11T05:09:21.420Z",
+      "social-muse-ember-docs": "2026-11-11T05:09:15.470Z"
+    },
+    "qualifiers": [
+      "Quickstart examples use Muse Spark; Ember docs specify model change and its own limits."
+    ],
+    "limitations": [
+      "Documentation observation only; not tested behavior."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-docs",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-docs.json",
+        "captureSha256": "282a95ad4e36077dd9ebdab6ed3fc86c0072c1d957747196b54af6e48d0458c7",
+        "url": "https://dev.meta.ai/docs/muse-ember",
+        "retrievedAt": "2026-11-11T05:09:15.470Z"
+      },
+      {
+        "sourceId": "social-muse-ember-quickstart",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-quickstart.json",
+        "captureSha256": "26f3d85d4be7b5c9d027d9aec441d0a610b2295e013c1bacbd1523ca80d70dc7",
+        "url": "https://dev.meta.ai/docs/quickstart",
+        "retrievedAt": "2026-11-11T05:09:21.420Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-benchmark-scope",
+    "source_ids": [
+      "social-muse-ember-announcement"
+    ],
+    "claim": "Meta presents Ember max at Intelligence Index 35.8 and estimated $0.136/task; other presented scores mix internal and attributed Artificial Analysis results. Terminal-Bench uses different best published harnesses, and OSWorld separates partial-credit 69.5 from binary 33.8.",
+    "passages": [
+      "Each model in its best published harness. See footnote 1."
+    ],
+    "locator": "Intelligence vs. Cost Per Task; Evaluation results; Footnote 1",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-announcement": "2026-11-11T05:07:27.932Z"
+    },
+    "qualifiers": [
+      "Meta presentation; AA v5 results dated November 9; benchmark not independently inspected."
+    ],
+    "limitations": [
+      "Linked evaluation report browser viewer inaccessible; no experimental validation."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-announcement",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-announcement.json",
+        "captureSha256": "84be382874fe75d9747add62fd59a29e9f2b966db02b082405fd3f59392ec19e",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "retrievedAt": "2026-11-11T05:07:27.932Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-comparison-limit",
+    "source_ids": [
+      "social-muse-ember-announcement"
+    ],
+    "claim": "Meta’s comparison gives Ember 27.2 on FrontierCode 2.0-AA versus Haiku 5.5 at 34.9; the table does not show a uniform win.",
+    "passages": [
+      "FrontierCode 2.0-AA"
+    ],
+    "locator": "Evaluation results and FrontierCode chart",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-announcement": "2026-11-11T05:07:27.932Z"
+    },
+    "qualifiers": [
+      "Reported values read from Meta’s table, not a separately acquired benchmark."
+    ],
+    "limitations": [
+      "Documentation observation only; not tested behavior."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-announcement",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-announcement.json",
+        "captureSha256": "84be382874fe75d9747add62fd59a29e9f2b966db02b082405fd3f59392ec19e",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "retrievedAt": "2026-11-11T05:07:27.932Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-photo-cost-conflict",
+    "source_ids": [
+      "social-muse-ember-developer"
+    ],
+    "claim": "The developer article inconsistently gives $1.59 and $1.33 as the total cost of its 10,000-photo workflow. The report does not adopt a precise saving.",
+    "passages": [
+      "for $1.59 in total",
+      "The whole job cost $1.33"
+    ],
+    "locator": "Example: Scale multimodal work with one planner and many small agents",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-developer": "2026-11-11T05:08:54.676Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "Cannot reconcile the conflicting totals from the captured text; recipe not run."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-developer",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/muse-ember-developer.json",
+        "captureSha256": "29bd4b624efebc4d70e00d63d4f773fe8d08338fa780c9ebd59c62f47bd4cfe1",
+        "url": "https://dev.meta.ai/resources/blog/build-with-muse-ember",
+        "retrievedAt": "2026-11-11T05:08:54.676Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-independent-anecdote",
+    "source_ids": [
+      "source-c80838f46e535c12"
+    ],
+    "claim": "Simon Willison’s November 10 note reports one incomplete SVG response at high reasoning effort. This is an anecdote, not a representative evaluation.",
+    "passages": [
+      "The \"high\" reasoning level failed to return a full SVG"
+    ],
+    "locator": "Reasoning-effort discussion and Posted line",
+    "event_date": null,
+    "publication_date": "2026-11-10",
+    "retrieved_at": {
+      "source-c80838f46e535c12": "2026-11-11T05:07:00.879Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "The linked generated artifacts were not independently inspected in this report."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "source-c80838f46e535c12",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/candidate-c80838f46e535c12.json",
+        "captureSha256": "7e06b8825b4a0e8c4731464902d2d473662cac66ea7987994b3491cb13cc4528",
+        "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+        "retrievedAt": "2026-11-11T05:07:00.879Z"
+      }
+    ]
+  },
+  {
+    "id": "muse-ember-cost-scenario",
+    "source_ids": [
+      "social-muse-ember-pricing",
+      "social-muse-ember-quickstart"
+    ],
+    "claim": "Editorial arithmetic: 1,000 lower-tier calls at 2,000 uncached input and 300 total billed output tokens cost $0.35, excluding search, retries, other models and infrastructure.",
+    "passages": [],
+    "locator": "Pricing table and output-token accounting; arithmetic in report",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-muse-ember-pricing": "2026-11-11T05:09:18.687Z",
+      "social-muse-ember-quickstart": "2026-11-11T05:09:21.420Z"
+    },
+    "qualifiers": [
+      "2M input × $0.10/M + 0.3M output × $0.50/M = $0.35.",
+      "The output assumption includes reasoning; visible answer length alone does not establish it."
+    ],
+    "limitations": [
+      "Hypothetical calculation, not a measured workload or invoice."
+    ],
+    "capture_provenance": [
+      {
+        "sourceId": "social-muse-ember-pricing",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-pricing.json",
+        "captureSha256": "8244e6eaa457a353111ccc76fe8fc1f7bcd376e37f3acccf978e56288ae59ec8",
+        "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing",
+        "retrievedAt": "2026-11-11T05:09:18.687Z"
+      },
+      {
+        "sourceId": "social-muse-ember-quickstart",
+        "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/meta-quickstart.json",
+        "captureSha256": "26f3d85d4be7b5c9d027d9aec441d0a610b2295e013c1bacbd1523ca80d70dc7",
+        "url": "https://dev.meta.ai/docs/quickstart",
+        "retrievedAt": "2026-11-11T05:09:21.420Z"
+      }
+    ]
+  },
+  {
+    "claim_id": "astryx-baseline-date-20261111",
+    "claim": "Astryx was introduced publicly in beta on June 18, 2026; November discovery is not a new launch.",
+    "source_ids": [
+      "nov11-astryx-introduction"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-astryx-introduction",
+        "url": "https://astryx.atmeta.com/blog/introducing-astryx",
+        "locator": "Date; introduction; final beta paragraph",
+        "passage": "Introduction is dated Jun 18, 2026 and states the project is available in beta.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": "2026-06-18",
+        "event_at": "2026-06-18",
+        "retrieved_at": "2026-11-11T05:13:28.791Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/astryx-introduction-web.json",
+        "archive_sha256": "21003c8d99f25e38eee9b4346466b0e25c5cb3767b4c6c0f7231c8141fe6dd20"
+      }
+    ],
+    "qualifiers": [
+      "Publication date is visible; current beta status is also shown in repository README."
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-reference-20261111",
+    "claim": "Astryx combines typed React components, prebuilt CSS, themes, exported internals and source ejection tooling; the repository calls it beta.",
+    "source_ids": [
+      "nov11-meta-astryx"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-meta-astryx",
+        "url": "https://github.com/meta/astryx",
+        "locator": "Overview; Getting Started; Packages",
+        "passage": "The README describes prebuilt CSS, CSS-variable theming, exported building blocks and swizzle source ejection.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:07:39.361Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/captures/nov11-meta-astryx.json",
+        "archive_sha256": "5d60da073c26d84ca29531deae885d0fe4957c15a11fa86452d2605cfed9051c"
+      }
+    ],
+    "qualifiers": [
+      "Vendor description; beta; no comparative quality claim."
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-core-integration-20261111",
+    "claim": "The Core guide requires React 19+, documents prebuilt CSS setups and warns to use the scoped CLI package; init changes agent instruction files.",
+    "source_ids": [
+      "nov11-astryx-core"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-astryx-core",
+        "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md",
+        "locator": "Opening agent note; Quick Start; Next.js + Tailwind; CDN",
+        "passage": "React 19 is required. Init writes an index to AGENTS.md/CLAUDE.md. Scoped @astryxdesign/cli avoids an unrelated unscoped npm package. CSS order and CDN import maps are documented.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:13:02.788Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/astryx-core-connector.json",
+        "archive_sha256": "8ff8d692009774c1d3e4a4d358962db2237b9be706835ea7fcab685afabdea21"
+      }
+    ],
+    "qualifiers": [
+      "Read-only source review. Core source blob SHA c4c656d48e41462bb7064654c2ac03a3a17ab9bb"
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-cli-contract-20261111",
+    "claim": "CLI docs describe search, typed responses, capability manifest, answering-version metadata, project version delegation, doctor and migration tooling.",
+    "source_ids": [
+      "nov11-astryx-cli"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-astryx-cli",
+        "url": "https://github.com/meta/astryx/blob/main/packages/cli/README.md",
+        "locator": "Finding things; JSON API; Capability manifest; Doctor; Commands",
+        "passage": "Search spans multiple domains; JSON envelopes identify versions; installed project CLI takes precedence over global; doctor checks setup and codemods support migration.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:12:42.407Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/astryx-cli-connector.json",
+        "archive_sha256": "4d37dd602077805f8868aebdddaabb3009dd59377d1965dd161b714b4ff9dbcb"
+      }
+    ],
+    "qualifiers": [
+      "Documented behavior only; not all commands support JSON: consult jsonSupported manifest. CLI source blob SHA 72def0a8b3a865136df091a0898a0f7579070a4b"
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-package-limits-20261111",
+    "claim": "Lab is unpublished; Vega and Charts have canary npm packages but no stable release, according to the current repository README.",
+    "source_ids": [
+      "nov11-meta-astryx"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-meta-astryx",
+        "url": "https://github.com/meta/astryx",
+        "locator": "Packages",
+        "passage": "Lab is used internally and is not published to npm. Vega and Charts are published only under canary, with no stable release yet.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:07:39.361Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/captures/nov11-meta-astryx.json",
+        "archive_sha256": "5d60da073c26d84ca29531deae885d0fe4957c15a11fa86452d2605cfed9051c"
+      }
+    ],
+    "qualifiers": [
+      "No package installation or registry execution verification."
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-mit-license-20261111",
+    "claim": "Astryx software and associated documentation use an MIT license requiring notice retention and disclaiming warranty.",
+    "source_ids": [
+      "nov11-astryx-license"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-astryx-license",
+        "url": "https://github.com/meta/astryx/blob/main/LICENSE",
+        "locator": "Entire license",
+        "passage": "Copyright 2026 Meta Platforms. Permission covers use, copying, modification, distribution and sale with notices preserved; software is provided without warranty.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:13:02.776Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/astryx-license-connector.json",
+        "archive_sha256": "d8579f532c0ace94be5c598a46908a022970fa167013c968e0aa54867e4d6089"
+      }
+    ],
+    "qualifiers": [
+      "Applies to this software license, not model weights or unrelated third-party services. License blob SHA 72c89ba095197227858894e8e6ce5e9be9e25515"
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "claim_id": "astryx-component-count-20261111",
+    "claim": "The public website advertises over 180 components while the repository README says over 150.",
+    "source_ids": [
+      "nov11-astryx-home"
+    ],
+    "support": [
+      {
+        "source_id": "nov11-astryx-home",
+        "url": "https://astryx.atmeta.com/",
+        "locator": "Over 180 components",
+        "passage": "The website displays Over 180 components.",
+        "passage_type": "editorial_paraphrase",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-11T05:10:56.107Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/repositories/astryx-web-complement.json",
+        "archive_sha256": "782acfee5fa461cfa13ea554b87306f3e65095ccbffbbe38a1a78745e3628ddc"
+      }
+    ],
+    "qualifiers": [
+      "Repository overview separately says 150+; neither inspected as a release-specific complete inventory."
+    ],
+    "contradicts": [],
+    "source_family": "Meta Astryx",
+    "status": "supported",
+    "limitations": [
+      "Documentation inspected; no native execution or independent empirical validation."
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-release",
+    "source_ids": [
+      "nov11-minimax-h3-image-license",
+      "nov11-minimax-h3-image-comfy-launch"
+    ],
+    "claim": "The inspected MiniMax-H3-Image license identifies November 10, 2026 as its release and license date. Comfy published its integration announcement on the same date.",
+    "passages": [
+      "MiniMax-H3-Image release date/License date: November 10, 2026.",
+      "Nov 10, 2026"
+    ],
+    "locator": "License preamble; Comfy launch article date",
+    "event_date": "2026-11-10",
+    "publication_date": "2026-11-10",
+    "retrieved_at": {
+      "nov11-minimax-h3-image-license": "2026-11-11T05:09:15.363Z",
+      "nov11-minimax-h3-image-comfy-launch": "2026-11-11T05:13:44.816Z"
+    },
+    "qualifiers": [
+      "Page displayed short commit fbde899 when captured."
+    ],
+    "limitations": [
+      "The captured public URL is mutable main. This date is not independently established as a press announcement date."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-license.json",
+      ".state/scan-20261111T050317Z-31980a/research/creative/web-comfy-h3-image.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-capabilities",
+    "source_ids": [
+      "nov11-minimax-h3-image-card"
+    ],
+    "claim": "MiniMax documents one image generation/editing checkpoint, about 16 MP native generation, six sampling steps without classifier-free guidance, up to 16 references and a 33.1B diffusion transformer with the audio branch removed.",
+    "passages": [
+      "Generation and editing are unified in one checkpoint",
+      "supports up to 16 reference images",
+      "33.1B parameters"
+    ],
+    "locator": "Introduction; Highlights; Model Architecture",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-card": "2026-11-11T05:08:50.675Z"
+    },
+    "qualifiers": [
+      "First-party model description; native output examples include 4096x4096 and 6272x2688."
+    ],
+    "limitations": [
+      "No images generated or independent quality benchmark performed. It does not establish video or audio output."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-card.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-territory",
+    "source_ids": [
+      "nov11-minimax-h3-image-license"
+    ],
+    "claim": "The community license excludes the EU, UK, Republic of Korea and USA from its applicable territory; its grant is limited to the applicable territory and Section V.4 restricts specified uses of the works and outputs outside that territory.",
+    "passages": [
+      "the European Union, the United Kingdom, the Republic of Korea and the United States of America",
+      "Solely within the Applicable Territory"
+    ],
+    "locator": "Definitions I.3 and I.5; Grant of Rights II; Use Restrictions V.4",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-license": "2026-11-11T05:09:15.363Z"
+    },
+    "qualifiers": [
+      "This is the inspected MiniMax-H3-Image community-license artifact; Section II invites requests for deployment licenses in excluded territories."
+    ],
+    "limitations": [
+      "No conclusion is drawn about separately negotiated rights or the entitlement and terms of an individual hosted API account."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-license.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-commercial",
+    "source_ids": [
+      "nov11-minimax-h3-image-license"
+    ],
+    "claim": "Section IV.1 requires separate prior written authorization when annualized revenue of the user and/or affiliates exceeds US$1 million or when the user provides a hosted service to any third party.",
+    "passages": [
+      "a separate, prior written authorization",
+      "exceeds 1 Million USD, or, you provide Hosted Service(s) to any Third Parties"
+    ],
+    "locator": "Additional Commercial Terms IV.1; Hosted Service definition I.8",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-license": "2026-11-11T05:09:15.363Z"
+    },
+    "qualifiers": [
+      "The two triggers are alternatives, not a combined test; the definition includes APIs and web access."
+    ],
+    "limitations": [
+      "No license application was submitted and no separately granted authorization inspected."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-license.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-scope",
+    "source_ids": [
+      "nov11-minimax-h3-image-card",
+      "nov11-minimax-h3-image-license"
+    ],
+    "claim": "The license covers the named model materials and derivatives, including prompt-enhancement models; the model card explicitly subjects H3-Image-PE to the same agreement. Redistribution, commercial attribution, recipient and model-improvement restrictions remain relevant.",
+    "passages": [
+      "The T2I PE Model (MiniMax-H3-Image-PE) is part of MiniMax-H3-Image",
+      "MiniMax claims no rights over the Outputs you generate."
+    ],
+    "locator": "Card License; license I.6–I.11, III, IV.2, V.2–V.4, VI.4",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-card": "2026-11-11T05:08:50.675Z",
+      "nov11-minimax-h3-image-license": "2026-11-11T05:09:15.363Z"
+    },
+    "qualifiers": [
+      "The output-rights statement does not remove other conditions in the agreement."
+    ],
+    "limitations": [
+      "Summary of the inspected artifact rather than an individualized interpretation of legal rights."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-card.json",
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-license.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-artifacts",
+    "source_ids": [
+      "nov11-minimax-h3-image-card",
+      "nov11-minimax-h3-image-comfy"
+    ],
+    "claim": "The card lists a 68.65 GB package plus a separate 66.7 GB text encoder and optional 17.9 GB expander. Comfy lists four quantized/pruned components of 21, 25.28, 7.34 and 1.17 GB, totaling 54.79 GB by arithmetic.",
+    "passages": [
+      "BF16 (DiT)\t68.65 GB",
+      "Text encoder\tNot in this repository.",
+      "Pruned INT8 DiT, 21 GB."
+    ],
+    "locator": "Card Model Zoo and Download; Comfy Model downloads",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-card": "2026-11-11T05:08:50.675Z",
+      "nov11-minimax-h3-image-comfy": "2026-11-11T05:09:13.426Z"
+    },
+    "qualifiers": [
+      "Artifact sizes, with deployment-dependent component precisions; arithmetic sum of Comfy listed file sizes."
+    ],
+    "limitations": [
+      "No peak memory, minimum GPU, throughput or equivalence of quantized and BF16 outputs was tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-card.json",
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-comfy.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-comfy-setup",
+    "source_ids": [
+      "nov11-minimax-h3-image-comfy"
+    ],
+    "claim": "Comfy documents version requirements, a 4 MP starting template, six-step Euler/simple sampling at guidance and denoise one, and lower-megapixel resize recovery for edits that run out of memory.",
+    "passages": [
+      "Both need ComfyUI 0.45.0+ and template pack 0.11.104+.",
+      "The template opens at 4 MP on a square canvas",
+      "lower its megapixels before sampling."
+    ],
+    "locator": "Templates; Sampling and canvas size; Reference images in image editing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-comfy": "2026-11-11T05:09:13.426Z"
+    },
+    "qualifiers": [
+      "Missing templates can indicate outdated software; missing nodes can also reflect failed imports."
+    ],
+    "limitations": [
+      "No installation or workflow execution performed. A 4 MP default is not a guarantee for low-memory hardware."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-comfy.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-local-settings",
+    "source_ids": [
+      "nov11-minimax-h3-image-card"
+    ],
+    "claim": "The documented local recipe requires steps omitted or six, guidance omitted or one, and rejects negative prompts; other step/guidance values return HTTP 400. Its stated working range is about 4–20 MP with around 16 MP preferred.",
+    "passages": [
+      "num_inference_steps\tOmit or 6",
+      "guidance_scale\tOmit or 1",
+      "negative_prompt\tNot supported"
+    ],
+    "locator": "Request parameters; Sizes",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-card": "2026-11-11T05:08:50.675Z"
+    },
+    "qualifiers": [
+      "Local serving recipe settings must be distinguished from hosted API parameters."
+    ],
+    "limitations": [
+      "No local server behavior or native detail quality independently tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-card.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-reference-workflow",
+    "source_ids": [
+      "nov11-minimax-h3-image-comfy"
+    ],
+    "claim": "Comfy identifies the first image as the edited picture and subsequent numbered references as identity, prop, material or composition sources. Added references connect to prompt generation and conditioning.",
+    "passages": [
+      "The first picture is the one being edited",
+      "connect it to both the prompt generation step and the conditioning node."
+    ],
+    "locator": "Reference images in image editing",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-comfy": "2026-11-11T05:09:13.426Z"
+    },
+    "qualifiers": [
+      "Up to 16 numbered references, with internal resizing documented."
+    ],
+    "limitations": [
+      "Capacity does not establish perfect preservation or faithful composition of every reference."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-comfy.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-expansion",
+    "source_ids": [
+      "nov11-minimax-h3-image-card",
+      "nov11-minimax-h3-image-comfy",
+      "nov11-minimax-h3-image-guide"
+    ],
+    "claim": "The model expects detailed English image descriptions. Hosted text-to-image uses prompt enhancement by default and permits disabling it; hosted edits always apply enhancement and return revised_prompt. Comfy uses a lighter Qwen3.5 9B W4A8 expander instead of the official Qwen3.8-27B FP4 expander, off by default for text-to-image and on for editing.",
+    "passages": [
+      "Image edits always apply prompt enhancement.",
+      "The text-to-image template ships with the expander switched off",
+      "The image editing template ships with it on."
+    ],
+    "locator": "Card Full Workflow; API Prompt Enhancement and Model Specifications; Comfy Prompt expander",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-card": "2026-11-11T05:08:50.675Z",
+      "nov11-minimax-h3-image-comfy": "2026-11-11T05:09:13.426Z",
+      "nov11-minimax-h3-image-guide": "2026-11-11T05:09:15.722Z"
+    },
+    "qualifiers": [
+      "When hosted text-to-image enhancement is disabled, explicit dimensions or fixed aspect ratio are required; about the first 4096 tokens take effect."
+    ],
+    "limitations": [
+      "Cross-route equivalence and effects of prompt rewriting were not tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-card.json",
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-comfy.json",
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-guide.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-api-constraints",
+    "source_ids": [
+      "nov11-minimax-h3-image-guide"
+    ],
+    "claim": "The hosted API documents 1–10 outputs, 1–16 edit references, JPEG/PNG/WebP output and unsupported previews, masks and transparency; image editing has a 64 MiB total body limit, 128–8192 px dimensions and reference aspect ratio up to 4:1.",
+    "passages": [
+      "Preview images, masked edits, transparent backgrounds",
+      "total request body ≤ 64 MiB",
+      "Images per request\t1 to 10, default 1"
+    ],
+    "locator": "Model Specifications; Output Size; Image Edit",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-guide": "2026-11-11T05:09:15.722Z"
+    },
+    "qualifiers": [
+      "Hosted API guide; 20,000,000-pixel output area maximum; explicit size and aspect/area sizing schemes cannot be combined."
+    ],
+    "limitations": [
+      "No account access, regional entitlement, service terms, pricing or request validation was tested."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-guide.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-api-failure",
+    "source_ids": [
+      "nov11-minimax-h3-image-guide"
+    ],
+    "claim": "HTTP 200 can include per-image failures if at least one image succeeds. SSE streams completed images in completion order using image_index; it is not progressive preview.",
+    "passages": [
+      "The request returns 200 as long as at least one image succeeds.",
+      "Events arrive in completion order; use image_index to identify each image."
+    ],
+    "locator": "Partial Failures; Streaming Output",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "nov11-minimax-h3-image-guide": "2026-11-11T05:09:15.722Z"
+    },
+    "qualifiers": [
+      "Successful count is usage.generated_images; URL response format is required for streaming."
+    ],
+    "limitations": [
+      "No request submitted. No claim of automatic cancellation, duplicate-request protection or safe blanket retry."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/minimax-h3-image-guide.json"
+    ]
+  },
+  {
+    "id": "nov11-minimax-h3-image-comfy-node",
+    "source_ids": [
+      "nov11-minimax-h3-image-comfy-launch"
+    ],
+    "claim": "Comfy distinguishes native local weights and API Partner Nodes. Its conditioning node automatically uses 2048x2048 for text-to-image or follows image_1 for edits; connecting the VAE anchors references as latents in addition to text-encoder conditioning.",
+    "passages": [
+      "it is also available via Partner Nodes.",
+      "Connect the VAE when you edit."
+    ],
+    "locator": "Model Introduction; MiniMax H3 Image Conditioning node notes, lines 23–43",
+    "event_date": "2026-11-10",
+    "publication_date": "2026-11-10",
+    "retrieved_at": {
+      "nov11-minimax-h3-image-comfy-launch": "2026-11-11T05:13:44.816Z"
+    },
+    "qualifiers": [
+      "Integration-partner article; zero width/height is automatic in the described node."
+    ],
+    "limitations": [
+      "No workflow run. API listing is not account or regional entitlement verification."
+    ],
+    "evidence_paths": [
+      ".state/scan-20261111T050317Z-31980a/research/creative/web-comfy-h3-image.json"
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-paid-api-access",
+    "claim": "Google announces Carbon API availability for all paying developers and enterprises through AI Studio and Gemini for business; the getting-started section specifies the Gemini API paid tier.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 256–262 and 310–314, availability and Getting started",
+        "passage": "for all paying developers",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Published November 10; announced access, not an observed account entitlement.",
+      "Does not establish free-tier availability, regional reach, quotas or the exact API model identifier."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-ultra-rollout",
+    "claim": "Google says Carbon is rolling out to Google AI Ultra subscribers in Antigravity, the Gemini app and AI Mode in Search; getting-started guidance also names AI Studio for Ultra subscribers.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 262 and 313–315",
+        "passage": "Google AI Ultra subscribers",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Rollout wording is retained; no claim every eligible account already exposes Carbon.",
+      "Product access through a subscription is not API token pricing."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-cyber-route",
+    "claim": "The November update distinguishes Carbon for cyber, accessed through the Fairwind Program, and invites defenders to apply for rolling access.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 278–284 and 317",
+        "passage": "Carbon for cyber",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "General public Carbon availability does not itself confer specialist cyber entitlement.",
+      "Fairwind terms were not revisited; historic Argon-specific retention statements cannot establish Carbon terms."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-researcher-program",
+    "claim": "Google expands the existing scientist program to Carbon and offers selected researchers six months through Antigravity’s highest usage tier; rolling onboarding depends on eligibility, capacity and selection.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 296–297 and 316",
+        "passage": "subject to eligibility",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Application opportunity, not universal teacher/student access or guaranteed acceptance.",
+      "Six-month term is a program offer; no account, eligibility decision or start date was tested."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-public-pricing-expiry",
+    "claim": "The public-access Carbon model is announced at introductory rates of $2 per million input tokens and $10 per million output tokens; the introductory period expires November 30, 2026, after which $4/$20 apply.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Line 261 and expanded footnote at line 336",
+        "passage": "November 30, 2026",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Footnote explicitly applies to the Carbon model intended for public access only; does not establish Fairwind or Ultra pricing.",
+      "This supplies the missing expiry date in the October 28 capture without rewriting that historical evidence.",
+      "Illustrative $3/$6 cost uses one million uncached input and 100,000 output tokens, excludes other charges and is not an invoice."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-orchestration-and-creative-examples",
+    "claim": "Google previews Antigravity /swarm and describes Carbon workflows that combine agent coordination, web build-and-check loops, Blender and Three.js; the Atlantis example starts from a Gemini Omni video reference.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 260, 267–277",
+        "passage": "/swarm",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Vendor-described preview and demonstrations, not an inspected integration, independent reproduction or ordinary API entitlement.",
+      "Multi-tool workflows do not establish native Carbon video generation, speech synthesis, timeline export or asset licensing."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "carbon-nov10-safety-document-links",
+    "claim": "The November announcement links a Carbon-specific Safety and Security report and model card, and acknowledges remaining prompt-injection weaknesses under sophisticated attacks.",
+    "source_ids": [
+      "official-story-gemini-carbon-availability"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini-carbon-availability",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "locator": "Lines 298–309 and 318",
+        "passage": "Safety and Security report",
+        "published_at": "2026-11-10",
+        "event_at": "2026-11-10",
+        "retrieved_at": "2026-11-11T05:11:19.524Z",
+        "archive_path": ".state/scan-20261111T050317Z-31980a/research/official/gemini-carbon-availability.json",
+        "archive_sha256": "20fc685e47f34d97d683ddddcf0da888376caeca92106d301b61e832fffce373",
+        "acquisition": "web.open parsed full page, supplement after shared Chrome transport unavailable; not Chrome success"
+      }
+    ],
+    "qualifiers": [
+      "Only the article’s links and statements were observed; linked documents were not inspected.",
+      "Historical zero attack-success observations remain bounded to the earlier benchmark; no universal immunity or certification is inferred."
+    ],
+    "contradicts": [],
+    "source_family": "blog.google",
+    "status": "candidate",
+    "limitations": [
+      "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
+      "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
   }
 ]

@@ -1,31 +1,28 @@
 {
   "reportId": "gemini4-carbon",
-  "reviewerId": "/root/edition_20261028_astra_b",
+  "reviewerId": "/root/astra_nov11_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:22.833427Z",
-  "reportHash": "52b7569b3dc479c19ccb1336e9b24a447ad6b108fb1632c30d42fbd938dbce5b",
-  "evidenceHash": "5edb1a3e8f69a28cb5f1a7c060eb451b3822beda39992f4cef2749d173afb377",
+  "reviewedAt": "2026-11-11T05:24:38Z",
+  "reportHash": "aec38e673470a90ede96fd7c31f1f44f4db7b57b043e0579b09eb84d4d7ab4b4",
+  "evidenceHash": "665cf517c7c7cc388b3b1da434250526643d539485e041a68aac2b3a185c12cf",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
-    "usefulness": 5,
+    "usefulness": 7,
     "impact": 7,
     "novelty": 6,
-    "maturity": 4,
+    "maturity": 6,
     "openness": 2
   },
   "rationale": {
-    "usefulness": "The report is useful for preparing bounded engineering evaluations and teaching evidence literacy, and it correctly separates possible app or video-pipeline coding work from native media creation. Immediate practical value is limited because selected defender access is announced and broad developer access is still forthcoming.",
-    "impact": "Google reports material improvements in frontier engineering and cybersecurity tasks, including SEC-bench Pro, ExploitGym and sustained internal investigations. That could influence AI-assisted software development substantially. Restricted rollout, unavailable methodology inspection and publisher-only evidence constrain the significance that can presently be substantiated.",
-    "novelty": "The release presents measurable improvements over Argon, rather than an entirely new publicly inspectable architecture or interaction paradigm. The archived comparison table also shows task-specific losses to Astra and Opus, supporting a meaningful but qualified differentiation score.",
-    "maturity": "Internal usage and published evaluations provide more evidence than a purely speculative announcement, but general availability, service limits and Carbon-specific operating agreements are unresolved. No execution was performed, and finite zero-success attack evaluations do not establish general safety or dependable unattended operation.",
-    "openness": "Access is controlled through selected partners; no weights, training data or reproducible full evaluation package are established. Public launch prices and benchmark figures provide some transparency, while Fairwind FAQ retention and entitlement answers remain Argon-specific."
+    "usefulness": "The new paid-API route, Ultra rollout distinction and dated introductory-price expiry make the report materially more actionable. Historical-bug, teaching-source, website and caption-pipeline trials specify inputs and acceptance checks. Utility is tempered by unverified model identifiers, quotas, regions and account entitlement, and specialist cyber access remains separate.",
+    "impact": "Broader access to a frontier coding and reasoning model is a meaningful expansion for builders and researchers, with potential across sustained software and scientific workflows. A 7 reflects substantial adoption significance grounded in the announced routes and reported capabilities; this revision is chiefly an access expansion, and historical benchmarks plus uninspected new demonstrations do not establish an exceptional new field-wide capability gain.",
+    "novelty": "The sustained-work positioning, specialist cyber route and previewed multi-agent creative workflows are meaningfully differentiated. Public access itself is not a new technical capability, /swarm is an orchestration preview, and the historical benchmark image shows mixed leadership. The report appropriately avoids claiming native video generation from multi-tool demonstrations.",
+    "maturity": "Paid API availability and named subscription/product routes improve readiness over the original selected-defender launch. The rollout is still an announcement rather than an observed account test; model-card and safety-report contents, methodology, integrations and billing were not inspected. Historical finite safety evaluations and internal multi-day runs cannot establish general reliability.",
+    "openness": "The inspected offering is hosted and access-controlled. Public announcements and visible benchmark results provide limited transparency, but no downloadable weights, model license, reproducible training details or portable execution environment are established. Fairwind adds separate selection and use constraints, while Carbon retention terms remain unverified."
   },
-  "confidence": "medium",
-  "concerns": [
-    "The linked benchmark methodology was not inspected; model selection and deployment conclusions must remain conditional on the disclosed publisher evidence.",
-    "Carbon-specific access, retention, quota and billing terms are not established by the Argon-focused Fairwind page. The report preserves this distinction and includes the post-introductory price increase."
-  ]
+  "confidence": "high",
+  "concerns": []
 }

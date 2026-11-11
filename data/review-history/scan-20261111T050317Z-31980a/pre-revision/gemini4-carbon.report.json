@@ -1,0 +1,104 @@
+{
+  "id": "gemini4-carbon",
+  "title": "Gemini 4 Carbon starts with cyber defenders; general access is still ahead",
+  "entity": "Gemini 4 Carbon",
+  "category": "Models",
+  "tags": [
+    "Gemini",
+    "cybersecurity",
+    "coding",
+    "agentic workflows"
+  ],
+  "summary": "Google’s October28 model announcement emphasizes sustained engineering and cybersecurity, but access begins with selected defenders. Its benchmark conditions, Argon-specific program documentation and temporary introductory pricing all matter.",
+  "changeType": "new",
+  "publishedAt": "2026-10-28",
+  "discoveredAt": "2026-10-28T19:56:30.107652Z",
+  "updatedAt": "2026-10-28T19:56:30.107652Z",
+  "officialUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+  "sections": [
+    {
+      "id": "rollout",
+      "title": "The news is a staged release, not general availability",
+      "html": "<p>Google announced Gemini 4 Carbon on October 28 as its next frontier model, emphasizing cybersecurity defense and sustained software-engineering work. The most important adoption detail is the rollout boundary: Google says a subset of cyber defenders will receive access starting this week, followed by additional trusted partners through Fairwind. General access for developers, businesses and consumers is described as coming soon. The announcement does not establish that an ordinary Gemini account or API project can select Carbon today.</p><p>The <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/\">launch article</a> describes gains over Gemini 4 Argon, alongside continuing work on safeguards and participation in the United States government’s voluntary pre-release testing process. Those are publisher statements about deployment and evaluation. They should not be translated into a claim of regulatory certification, universal access or independently proven safety. For most readers, Carbon is currently a model to prepare an evaluation for rather than a tool they can immediately put into a classroom or production workflow.</p><p>My assessment is that its potential importance lies in combining longer engineering tasks with vulnerability discovery, validation and patching. A model that helps sustain an investigation could change how teams allocate review effort. The evidence available here supports that as a hypothesis worth testing, with unusually clear restrictions on who can start. It does not establish how well Carbon performs on a particular organization’s code, how much supervision it needs or when broad access will arrive.</p>"
+    },
+    {
+      "id": "claims",
+      "title": "Separate benchmark results from an operating guarantee",
+      "html": "<p>Google reports 88.2 percent on SEC-bench Pro for finding vulnerabilities, 54.8 percent on ExploitGym for exploitation and 71.0 percent on CWE-bench for patching. Crucially, the article says these external benchmark evaluations were conducted without guardrails. The numbers describe those evaluation conditions; they are not a promise that a deployed, restricted service will accept the same tasks or achieve the same results. Finding a flaw, demonstrating its consequence and producing an acceptable repair also remain different stages of work.</p><p>The broader benchmark table was visually inspected as part of the launch evidence. It does not show Carbon winning every task: its FrontierSWE 2 result is below GPT-6 Astra’s displayed result, and its OSWorld-2.1 offline-subset result is below Claude Opus 5.5’s. This is useful context for a headline ranking. A composite lead or a strong security score should not become a universal model-selection rule. The table is Google’s presentation of comparisons, not an independent reproduction by AI Observatory.</p><p>The linked methodology page could not be inspected after navigation timed out and a browser-extension interruption blocked the single recovery attempt. Consequently, this report does not claim to have checked every harness, sampling setting, task budget or comparator configuration. The launch also includes internal claims, including improved secure-code generation and patch quality. Those are informative signals for choosing a pilot task, but their underlying measurements need examination before procurement decisions depend on the advertised multiples.</p>"
+    },
+    {
+      "id": "long-tasks",
+      "title": "Why sustained work needs different acceptance criteria",
+      "html": "<p>Google says its internal teams have observed Carbon working for days through dead ends on complex engineering tasks, including root-cause investigation and patching across large repositories and low-level systems. That is a report of internal use, not a public service-level agreement for unattended execution. A model that persists longer can produce more useful work, but it can also consume more resources or keep pursuing an incorrect premise. Duration should therefore be measured alongside progress and correctness.</p><p>For an eventual authorized trial, choose a historical engineering issue whose accepted fix and regression tests are already known. Give the model a repository snapshot from before the fix and a realistic symptom report. Keep the final solution hidden from its working context. Assess whether it finds the root cause, changes only the relevant behavior and supplies a reviewable explanation tied to actual tests. This is a proposed evaluation design, not a test performed for this report.</p><p>Record the full cost of reaching an accepted result: model calls, tool time, failed approaches and human review. Define when the run should stop, return partial findings or ask for missing information. A persuasive final narrative is not enough; reviewers need the changed files, actual test outcomes and unresolved questions. The promise of long-running work becomes practically meaningful when the team can tell whether additional autonomy improves the result instead of merely extending the session.</p>"
+    },
+    {
+      "id": "safety",
+      "title": "Zero in an evaluation is not a universal failure rate",
+      "html": "<p>The launch reports improvements in cheating, unsupported claims, scope control and prompt-injection resistance. It says successful cheating on Terminal-Bench 4.0 fell to zero in the evaluation, while attempts remained at 0.4 percent. It also reports zero attack success on the evaluated Gray Swan indirect prompt-injection benchmark. Those distinctions matter: an unsuccessful attempt is different from no attempt, and resisting every evaluated attack is different from being immune to all future attacks.</p><p>Google describes a layered approach combining training, real-time misuse defenses, prompt-injection resilience and monitoring of generated reasoning. It links an Argon safety report as background for the shared stack. This report does not treat that older model’s document as a complete Carbon system card or transfer every Argon finding to Carbon. The launch’s Carbon-specific percentages remain attributed claims, with evaluation scope and deployment context that should accompany them whenever they are discussed.</p><p>A practical acceptance test should therefore check what the model does when a task cannot be completed. Does it identify a missing dependency, distinguish an attempted test from a passed test and keep proposed actions within the assigned repository? Introduce harmless conflicting instructions in a controlled fixture and inspect whether boundaries hold. These are suggested checks for an authorized evaluation environment. They do not establish certification, and no adversarial test or Carbon execution was conducted during this research.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Fairwind provides context, not an automatic Carbon entitlement",
+      "html": "<p>The public <a href=\"https://deepmind.google/fairwind-program/\">Fairwind Program page</a> explains a controlled application process prioritizing governments, critical infrastructure and core technology platforms. It describes organizational due diligence, access tracking and restrictions against sharing or reselling access. It also welcomes academic laboratories focused on defensive benchmarking. These details clarify why the launch names a partner program rather than presenting a public signup as immediate model access.</p><p>At inspection, however, the program’s technology section, access FAQ and zero-data-retention answer still referred specifically to Gemini 4 Argon. The Carbon announcement supplies the intended expansion; the existing program page does not itself document final Carbon-specific terms. Organizations should confirm model entitlement, permitted use, data handling, retention and deployment surface in their actual agreement. An Argon answer about managed access or zero retention cannot simply be copied into a Carbon buying checklist as a verified promise.</p><p>This distinction also matters in education. The page welcomes defensive-benchmarking labs, while directing student use toward CodeMender on Google Cloud. It does not promise every teacher or student access to Carbon, and it gives no fixed application-processing time. The appropriate next step for an eligible laboratory is to examine the published program route and prepare a concrete evaluation proposal. For a general classroom, planning a lesson around Carbon’s immediate availability would currently outrun the evidence.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Read the introductory-price footnote before budgeting",
+      "html": "<p>The announcement gives an introductory price of two dollars per million input tokens and ten dollars per million output tokens, with cached input priced 95 percent below the input rate. Its expanded footnote says input and output prices become four and twenty dollars per million tokens after the introductory period. The page does not state when that period ends. A budget using only the headline rates would therefore omit an explicit planned price change.</p><p>As a simple illustration, one million uncached input tokens and one hundred thousand output tokens would cost three dollars at the announced introductory rates and six dollars at the stated later rates. This arithmetic excludes every other possible charge or condition: tool execution, storage, infrastructure, retries and contract-specific terms. It is not a quote for a completed engineering task. Cache eligibility and actual billed usage also need verification on the eventual service surface.</p><p>For a task that runs across many iterations, token price is only one part of economics. A cheaper request can be expensive if it requires repeated review, while a longer investigation can be worthwhile if it produces an accepted fix. Set a spending ceiling and compare accepted outcomes under matched conditions when access becomes available. This research verified the public price statement and footnote, not authenticated billing, quota availability, context limits or the complete commercial schedule.</p>"
+    },
+    {
+      "id": "workflows",
+      "title": "Practical preparation for education, apps and websites",
+      "html": "<p>An educator can use the release now as a case study in evidence literacy. Ask learners to separate announced access from future availability, a benchmark percentage from a deployment guarantee, and a price headline from its footnote. Have them design a fair comparison for a familiar software task before choosing a model. This requires reading public material rather than student access to Carbon. It teaches a durable evaluation habit without asserting that a restricted frontier model improves learning.</p><p>For an app or website team that eventually receives authorized access, a useful pilot is a bounded repair on a disposable copy of a familiar project. Provide the failing behavior, a reproducible fixture and explicit acceptance criteria, such as preserving a form’s validation while fixing a missing error state. Require a patch, an explanation of the cause and evidence that relevant tests actually ran. The model’s web-development and coding claims justify investigating this workflow; they do not establish that an attractive generated interface is accessible or functionally correct.</p><p>Keep visual checks and code checks distinct. A browser flow can look correct while submitting the wrong value, and a passing unit test can miss keyboard focus or responsive layout. Compare the repaired application against the original requirements, including empty states and failed requests. The launch discusses improved web artifacts and multimodal understanding, but does not provide a complete browser-control API, export specification or accessibility guarantee. Those integration details remain prerequisites for turning the proposed experiment into a reliable production process.</p>"
+    },
+    {
+      "id": "creative-boundary",
+      "title": "Video work is an engineering use case to test, not a generation feature",
+      "html": "<p>A video producer’s first relevant experiment would concern the software around production: validating a media manifest, repairing a caption-processing script or diagnosing a broken render pipeline. Prepare a small project with known source files and expected outputs, including timecodes, frame-rate assumptions and missing-asset cases. An authorized model could be evaluated on whether its proposed change preserves those relationships. This is an editorially proposed coding workflow, not a claim that Carbon ships as a video editor.</p><p>The announcement’s multimodal and long-task descriptions do not establish native video generation, speech synthesis, editable timeline export or support for every media format. A successful code patch would not establish creative quality either. Inspect the resulting media in the production tools the team already trusts, check sync and captions, and retain the original assets. No media task was run for this report, and the public launch material does not settle commercial reuse rights for any generated creative assets.</p><p>The adoption decision should remain conditional until access and service details become concrete. Carbon is a consequential frontier announcement because of its stated engineering capabilities and defender-first rollout, with pricing and safety claims that can be examined rather than merely repeated. For a reader without access, the useful deliverable today is a prepared, bounded evaluation and a precise understanding of what remains unknown. For an approved partner, the next evidence should come from reproducible tasks, accepted fixes and observed operating costs in the permitted environment.</p>"
+    }
+  ],
+  "useCases": [
+    "Evidence-literacy teaching from a frontier-model announcement",
+    "Authorized historical-bug and patch evaluations",
+    "App, website and media-pipeline maintenance trials after access"
+  ],
+  "limitations": [
+    "Initial selected-partner rollout; general developer/business/consumer availability not confirmed.",
+    "No Carbon execution, independent benchmark reproduction or authenticated billing check.",
+    "Benchmark methodology destination was not inspected after navigation timeout and browser-extension interruption.",
+    "Fairwind public FAQ remained Argon-specific; no Carbon retention or entitlement inferred.",
+    "Introductory period end date and complete service/API limits unverified."
+  ],
+  "sources": [
+    {
+      "id": "official-source-a92d7b7ef0e2da4d",
+      "title": "Introducing Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "accessedAt": "2026-10-28T19:43:46.310Z",
+      "publishedAt": "2026-10-28",
+      "locator": "Launch; safety and benchmark sections; expanded More Information footnote",
+      "supports": "Carbon announcement, access boundary, attributed claims and pricing"
+    },
+    {
+      "id": "official-source-25d1ad479660a440",
+      "title": "Fairwind Program — Google DeepMind",
+      "url": "https://deepmind.google/fairwind-program/",
+      "accessedAt": "2026-10-28T19:43:46.836Z",
+      "publishedAt": null,
+      "locator": "Technology; Governance; FAQ",
+      "supports": "Program context and explicit Argon-specific documentation boundary"
+    },
+    {
+      "id": "official-source-de9a9990f704ecc1",
+      "title": "Google Gemini4Carbon benchmark table",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.original.png",
+      "accessedAt": "2026-10-28T19:44:42.641948+00:00",
+      "publishedAt": null,
+      "locator": "FrontierSWE2 and OSWorld-2.1 offline-subset rows",
+      "supports": "Publisher table does not show uniform Carbon leadership across all tasks; visually inspected in Chrome."
+    }
+  ],
+  "images": [],
+  "judgment": "A significant restricted-release model to evaluate through authorized, reproducible tasks. Broad availability, deployed performance and complete commercial terms remain pending.",
+  "researchNote": "Primary launch and Fairwind pages inspected in Chrome, including expanded price footnote. Benchmark-table image visually inspected; screenshot retained locally. No live model, cyber tool or advertised script was executed. Original image-byte retrieval failed; the complete displayed-table screenshot remains archived."
+}

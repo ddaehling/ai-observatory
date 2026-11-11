@@ -1,0 +1,33 @@
+{
+  "reportId": "claude-fable-52",
+  "reviewerId": "/root/astra_nov11_fable_date_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-11T05:57:49Z",
+  "reportHash": "52fcac76b42cc99d2a977f369f6dde6a4d81f289c9c0ac4073ed4064012fbdd9",
+  "evidenceHash": "577374231718f512158cd2e547d8d71e1deeeaa114eb2f9b8d5799c6a4bd6622",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 8,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 2
+  },
+  "rationale": {
+    "usefulness": "The report turns seven primary-source captures into concrete evaluation decisions: stable conversation replay, explicit mismatch handling, verified advisor consultation, total-session billing, access and retention prerequisites. Education, repository maintenance, interactive exhibition and video edit-planning proposals each identify inputs, inspectable outputs, human checks and likely failures. These are actionable, well-bounded proposals rather than claims of tested integrations. Utility is high, but neither learning outcomes nor cost per accepted result has been measured.",
+    "impact": "The potential significance extends across technical coding, agent coordination, scientific investigation, formal verification and visual/physical workflows, with a generally available hosted model and 20 percent lower documented token rates than its immediate predecessor. The announcement supplies unusually substantial engineering and mathematical demonstrations, including about 1,000 agents formalizing Fermat’s Last Theorem, while the report correctly preserves the single-run and coordination qualifications. Extending prefix enforcement to all Fable 5.2 accounts also has a concrete ecosystem-wide integration consequence. I rate potential impact 8; this is not a finding of independently established performance, and absent replication and the unacquired system card prevent a higher score.",
+    "novelty": "The sources provide meaningful differentiation in demanding long-horizon technical work and the new version’s stricter preserved-thinking/account boundaries. The report does not confuse larger context or multimodal inputs with newly demonstrated reliability, nor treat unequal benchmark settings as a ranking. Most interfaces, advisor concepts and agent workflows are continuations of an existing family, and vendor demonstrations have not been independently reproduced, so the evidence supports substantial but not exceptional novelty.",
+    "maturity": "An active model identifier, detailed documented specifications, multiple hosted routes, prices and extensive migration guidance support practical pilot readiness. Readiness is materially limited by experimental advisor behavior, pairing retries that can silently disable consultation, restrictive replay rules, private-beta retention arrangements and verification-dependent Mythos access. The report documents these well but performs no model calls or recovery tests. A score of 6 reflects usable documented access rather than demonstrated production dependability.",
+    "openness": "The inspected materials establish hosted commercial use and conditional output rights, not downloadable weights, a local deployment license, training data or reproducible training methods. Account-bound reasoning and model compatibility limits constrain portability, while organizational verification and commercial use restrictions further limit access. Public API documentation and an inspectable application layer offer some transparency, but neither the model nor its performance claims are independently reproducible from this evidence; 2 is appropriate."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Non-blocking evidence limit: all seven inspected captures are primary vendor pages. The system card and external evaluators’ original reports were not acquired, and no model execution, benchmark replication, billing measurement or account eligibility check was performed. The report clearly discloses these limits; approval applies to its documentary account and proposed pilots.",
+    "Date audit passed: the model specifications explicitly list Released November 9, 2026; the announcement capture provides no observed publication date or launch hour. Report/source publication fields correctly remain null, and the evidence separates the release event from retrieval on November 11. The commercial terms’ June 17, 2025 date is correctly treated as effective rather than publication.",
+    "Claim and citation audit passed against the full text of all seven referenced public captures: modality, token limits, surface-specific effort defaults, parameter restrictions, prices and arithmetic, retention exception, preserved-thinking batch exception, account/model binding and advisor uncached full-history billing are supported. No blocking factual correction identified.",
+    "Length gate: the supplied current CLI body count of 2,858 words fits the 2,700–3,300 band for impact above 7. The coordinator must independently apply the final mean-impact length and reviewer-disagreement gates; this reviewer has not inspected any other review."
+  ]
+}

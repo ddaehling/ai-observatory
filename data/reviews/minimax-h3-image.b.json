@@ -1,0 +1,28 @@
+{
+  "reportId": "minimax-h3-image",
+  "reviewerId": "/root/astra_nov11_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-11T05:24:38Z",
+  "reportHash": "4f2b60dc40acaefb18036fb56e9f60150bad48b8f32ff7a0ed525fc7949d5497",
+  "evidenceHash": "ada7cf451351768b9e3f3b8fe7afb53e98f420d58e9a43649c1b652ca119ad32",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 7,
+    "novelty": 7,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Native large-format generation, a shared editing checkpoint and up to 16 references offer concrete value for still illustrations, compositions and storyboard planning. The report explains artifact sizes, expansion differences, reference wiring and per-image API failures particularly well. Territorial restrictions, third-party hosting authorization, substantial resources and unverified service entitlement materially narrow who can act on these workflows.",
+    "impact": "A downloadable six-step image/editing model targeting roughly 16 MP with multiple references and both local and hosted documentation is a significant development in creative image systems. Its potential is substantial within that domain, but restrictive deployment rights, untested quality and absent measured hardware or cost results do not establish exceptional field-wide impact.",
+    "novelty": "The documented combination of native high-resolution output, a distilled sampler, unified generation/editing and many references is meaningfully differentiated. It builds on H3 with its audio branch removed, and showcase superiority, speed advantage and cross-route equivalence have not been independently demonstrated.",
+    "maturity": "The model card, API guide and Comfy integration document practical settings, versions, supported outputs and failure semantics. The release is very recent; no generated output, installation or API request was tested, no reliable minimum hardware requirement is established, and service pricing and entitlement are unknown. This supports usable-with-material-limits rather than proven production dependability.",
+    "openness": "Downloadable model artifacts, architecture details and local serving instructions provide more inspectability than a hosted-only model. The actual community license excludes the EU, UK, Republic of Korea and USA, restricts specified output uses, requires separate authorization for any third-party hosted service or revenue above US$1 million, and limits other-model improvement. These substantial restrictions preclude a high openness score or an unrestricted open-source characterization."
+  },
+  "confidence": "high",
+  "concerns": []
+}

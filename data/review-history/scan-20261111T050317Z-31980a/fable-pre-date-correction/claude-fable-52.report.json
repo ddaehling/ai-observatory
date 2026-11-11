@@ -1,0 +1,154 @@
+{
+  "id": "claude-fable-52",
+  "title": "Claude Fable 5.2: stronger technical work needs a compatible conversation and a measured budget",
+  "entity": "Claude Fable 5.2 and Claude Mythos 5.2",
+  "category": "Models",
+  "tags": [
+    "coding agents",
+    "reasoning",
+    "multimodal",
+    "API integration",
+    "creative workflows"
+  ],
+  "summary": "Anthropic’s November 9 release lowers token rates and targets difficult technical work. Builders should test the new model alongside preserved-thinking migration, hosted-access limits, retention requirements, and the full cost of long conversations.",
+  "changeType": "new",
+  "publishedAt": "2026-11-09T00:00:00Z",
+  "discoveredAt": "2026-11-11T05:06:18.216Z",
+  "updatedAt": "2026-11-11T05:15:05.728Z",
+  "officialUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A stronger escalation model, with a migration attached",
+      "html": "<p>Claude Fable 5.2 and Claude Mythos 5.2 arrived on November 9, 2026, as Anthropic’s models for difficult technical work that benefits from extended investigation. The practical change combines a new model version, lower advertised token rates than 5.1, and stricter requirements for applications that replay earlier reasoning. A team evaluating the release should examine those three changes together: an improvement on a hard task can be valuable even when its integration needs repair, while a cheaper token does not guarantee a cheaper completed job. <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\">Release announcement</a> and <a href=\"https://platform.claude.com/docs/en/models/fable-5-2/overview\">model specifications</a>.</p><p>Anthropic positions Fable as an escalation beyond Opus 5.5, which it still recommends as the starting point for most coding and knowledge work. That gives builders a concrete comparison: collect tasks where the current model’s higher-effort attempts remain inadequate, then test whether Fable produces a result that survives review. Routine extraction or a short rewrite is a weak demonstration of the proposed advantage. A stalled migration, a difficult visual reconstruction, or a research question with conflicting evidence is more relevant. <a href=\"https://platform.claude.com/docs/en/models/overview\">Model selection guidance</a>.</p><p>The two new names describe the same underlying model with different safeguards and access. Fable is the generally available option; Mythos serves verified organizations working in sensitive cybersecurity or life-science applications. Neither this report nor the announcement establishes that every user can access every model, feature, or deployment route. This is a documentary assessment of the announcement and six supporting pages, captured on November 11. No model calls, installations, performance measurements, or benchmark replications were performed.</p>"
+    },
+    {
+      "id": "capabilities",
+      "title": "The model interface sets the creative boundary",
+      "html": "<p>The model page identifies <code>claude-fable-5-2</code>, a one-million-token context window, and a maximum output of 128K tokens. Its documented interface accepts text and images and produces text. It supports always-on adaptive thinking, controlled through effort. These limits describe the interface; they do not demonstrate reliable recall across every part of a million-token collection or guarantee that a long output remains internally consistent. <a href=\"https://platform.claude.com/docs/en/models/fable-5-2/overview\">Specifications and good-to-know notes</a>.</p><p>That modality matters for creative work. Fable can examine supplied images, propose a design, write application code, or prepare an editing plan. It is not documented here as a native video renderer, speech synthesizer, or image generator. Producing those assets would require separate tools and their own access, terms, costs, and quality checks. A generated script for a 3D scene is an inspectable intermediate artifact, not proof that the rendered scene matches the reference.</p><p>Defaults also depend on the surface. The API specifications list high effort; the release describes medium as the default in Claude apps and Claude Code. A comparison that leaves each surface at its default therefore changes more than the model name. Record the actual effort, tool access, prompt, stop conditions, and output budget. The model page also says adaptive thinking cannot be disabled, forced tool selection returns a 400 error, and developers should omit temperature, top_p, and top_k. A wrapper that assumes those controls work identically across models needs a compatibility check before a pilot.</p><p>Available platform identifiers include the Claude API, Amazon Bedrock, Google-managed and Anthropic-managed Google Cloud routes, Microsoft Foundry, and Claude Platform on AWS. Platform support does not imply feature parity: advisor and fast-mode requirements are narrower. Use the specifications to establish model access, then check the documentation for each feature the application actually requires.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Promising demonstrations are still demonstrations",
+      "html": "<p>Anthropic reports improvements in coding, reasoning, vision, and extended agent work. Its examples include a production-service migration, hardware designs, mathematical formalization, and prototype operating-system development. These accounts make the release relevant to ambitious builders, but they do not establish an unattended success rate for a new project. The environments, tools, human contributions, and acceptance criteria differ. Treat each demonstration as a reason to design an evaluation, rather than a substitute for that evaluation. <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\">Coding, science, and evaluation sections</a>.</p><p>One particularly useful qualification appears in the formalization example. The announcement describes roughly 1,000 agents and a single run per model, with progress measured over a fixed period. That is materially different from asking one conversational assistant to produce a correct proof. The engineering needed to coordinate work and check results remains part of the system. A smaller team should first test a modest task with an existing verifier and a result it can inspect.</p><p>The benchmark table also combines different effort settings and evaluation conditions. Some cybersecurity scores are for Mythos; several Opus comparisons remove safeguards; the cyber scenario tasks differ between labs. The report does not rank models from those rows. Nor does the mention of outside evaluators establish their endorsement: Anthropic explicitly says those organizations did not review the blog or system-card contents and need not agree with their claims.</p><p>Safety is similarly conditional. The announcement acknowledges unresolved evaluation gaps and reports that some behavioral measures did not improve over Opus 5.5. It describes safeguards and monitoring, not a guarantee against mistakes or unauthorized actions. The linked system card was not acquired for this report, so detailed methodology and its broader findings remain outside the verified evidence here. Keep consequential actions behind the application’s own permissions and review process.</p>"
+    },
+    {
+      "id": "access",
+      "title": "Fable and Mythos require different access decisions",
+      "html": "<p>Fable’s safeguards block high-risk cyber activities and much research biology. The announcement describes fallback responses from older Opus models for blocked categories and further limited fallbacks in some AI-development topics. Builders should therefore preserve which model actually handled a request and how refusals appear. A workflow can continue with a response that has a different capability profile from the model initially selected. <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\">Safeguards and availability</a>.</p><p>Mythos access requires organizational verification through an applicable program, such as the Cyber or Life Sciences Verification Program. An application is a request for access, not an entitlement or an immediate endpoint. The release also describes Mythos use through Claude Security for Enterprise customers, which is a product route rather than unrestricted general Mythos access. Avoid planning an ordinary education or creative application around approval that has not been obtained.</p><p>Data retention is a separate prerequisite. The model documentation says Fable 5.2 requires 30-day retention unless Anthropic expressly authorizes zero data retention. The announcement describes Enterprise Frontier Safeguards as a private beta that places automated monitoring over prompts and responses stored in customer infrastructure, with eligible customers able to continue authorized zero-retention use before implementing it. This is not a general zero-retention switch available to every account. <a href=\"https://platform.claude.com/docs/en/models/fable-5-2/overview\">Model-specific retention note</a> and <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\">Data privacy section</a>.</p><p>The inspected sources document hosted access and commercial service terms, not downloadable model weights or a local deployment license. Anthropic’s commercial terms permit powering customer products subject to their conditions and allocate output rights between the parties, while retaining use restrictions and obligations to check factual assertions. Consumer offerings have separate terms. A builder should review the terms that govern the chosen route; this report does not establish portability or unrestricted reuse rights for the underlying model. <a href=\"https://www.anthropic.com/legal/commercial-terms\">Commercial terms, sections A–D</a>.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Budget for the whole conversation",
+      "html": "<p>The first-party price list, inspected November 11, specifies USD $8 per million input tokens and $40 per million output tokens for Fable 5.2 and Mythos 5.2. The same page lists 5.1 at $10 and $50, so the new base rates are 20% lower. That arithmetic compares listed token prices, not measured task costs. Thinking, repeated investigation, retries, and tools can change how much a completed job consumes. <a href=\"https://platform.claude.com/docs/en/about-claude/pricing\">Model pricing</a>.</p><p>For an illustrative uncached request with 100,000 input tokens and 10,000 billed output tokens, those base rates produce $0.80 plus $0.40, or $1.20. This is a token-only scenario, not a quotation for a real project. It excludes tools, extra requests, taxes, and other modifiers; the billed output assumption must include the output tokens charged by the service. A long agent session must sum every request rather than apply this estimate once to its final answer.</p><p>Prompt caching has distinct rates: $10 per million tokens for a five-minute write, $16 for a one-hour write, and $0.20 for reads. The Batch API lists a 50% input/output discount, giving $4/$20 for asynchronous workloads. Standard pricing applies across Fable’s full context window. The value of caching depends on actual reuse; writing a cache once and never reading it is not equivalent to receiving the read price. <a href=\"https://platform.claude.com/docs/en/models/fable-5-2/overview\">Model pricing details</a> and <a href=\"https://platform.claude.com/docs/en/about-claude/pricing\">Batch and long-context pricing</a>.</p><p>Fast mode costs $16/$80 per million input/output tokens. It cannot be combined with the Batch API, and caching and residency modifiers can still apply. Anthropic’s advertised speedup concerns output generation, not total end-to-end task duration. Provider-operated cloud routes may set separate prices. For a pilot, record billed usage and wall-clock completion time alongside accepted outcomes; only then compare cost per usable result.</p>"
+    },
+    {
+      "id": "preserved-thinking",
+      "title": "Conversation history becomes an integration contract",
+      "html": "<p>Preserved thinking is the migration issue most likely to surprise an existing harness. A thinking block is bound to the preceding system prompt, tools, and messages. Editing that prefix can invalidate the block and later reasoning. For Fable 5.2 and Mythos 5.2, ordinary Claude API requests that leave mismatch behavior unset receive a 400 error when the prefix check fails, regardless of account creation date. Message batches have a documented exception: with the field unset, affected blocks are dropped instead. <a href=\"https://platform.claude.com/docs/en/build-with-claude/preserved-thinking\">Who the prefix check affects</a>.</p><p>Seemingly harmless housekeeping can trigger the check: rebuilding the system prompt with a new date, shortening an old tool result, re-encoding an earlier image, changing a tool list, or reconstructing a saved session from templates. The recommended design is append-only conversation history with stable system and tool definitions, using the documented mechanisms for later changes and compaction. Persist what was sent and returned, rather than recreating an approximation after restart.</p><p>The documentation offers an explicit drop-block mode through its beta controls, but describes it as a stopgap. Invalidated reasoning is discarded, the prompt cache restarts at the edit, and the model may recreate work with additional output tokens and latency. An application that drops reasoning on every turn can appear operational while losing both efficiency and continuity. Monitor the returned transformations and repair the underlying history edit.</p><p>There are other boundaries: unsupported model-to-model thinking blocks can be silently dropped, and these new models’ blocks are tied to their producing account unless accounts are linked. Cross-account replay is therefore not ordinary portable state. Test a normal multi-turn conversation, a tool change, compaction, restart, and model switch with synthetic data. Record the accepted request and transformation result for each case. A successful first turn does not exercise the migration risk.</p><p>A small migration acceptance table can make this review concrete. For each representative session, record the intended history change, the documented supported mechanism, the actual response status, and any dropped reasoning. Keep expected failures in the table as well as successful calls. Confirm that the user-facing application explains an interrupted request and preserves the last accepted result. If a gateway rewrites messages or tool definitions, run the same cases through that gateway; testing only a direct API call misses the actual deployment path. These are proposed engineering checks derived from the documented prefix rules, not results obtained in this scan.</p>"
+    },
+    {
+      "id": "advisor",
+      "title": "Use escalation carefully, and verify that it happened",
+      "html": "<p>Claude Code’s experimental advisor lets a main model consult another model at decision points. This can support a focused comparison: let a smaller model execute routine work and ask Fable to help with a difficult plan or recurring failure. The advisor receives the full conversation, including tool calls and results. It returns guidance; it does not replace the application’s tests or a human acceptance decision. <a href=\"https://code.claude.com/docs/en/advisor\">Advisor behavior and requirements</a>.</p><p>The feature is documented for the Anthropic API and Claude Platform on AWS, not Amazon Bedrock, Google Cloud’s Agent Platform, or Microsoft Foundry. Fable 5.2 requires Claude Code v2.1.321 or later; access and permitted model pairings also matter. Some plans require explicit consent to charge Fable usage to credits. Those prerequisites must be checked before treating a saved advisor setting as an active feature.</p><p>The API can refuse a pairing, after which Claude Code retries without the advisor and continues the conversation. Consequently, a completed task is not proof that consultation occurred. Inspect the transcript’s advisor status and the recorded usage. Timing remains model-driven, and the documentation does not provide a setting that caps or forces consultation calls.</p><p>Advisor billing adds its input and output to the main model’s consumption. Crucially, the advisor’s own read of the full transcript is not cached between consultations. A long session repeatedly escalated to Fable can therefore spend substantially more than the apparent size of each new question suggests. Compare main-model-only, full-Fable, and advisor-assisted runs on the same acceptance set. Keep successes, failures, and all usage; selecting only the successful inexpensive examples would conceal the actual tradeoff.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A lesson that makes the model’s reasoning checkable",
+      "html": "<p>A practical education pilot can start with a teacher-authored problem set, an answer key, and a few deliberately inconsistent worked solutions. Ask Fable to identify the exact step where each solution fails and propose a small interactive explanation. The inspectable outputs are a claim-to-source table, corrected derivations, and a local demonstration whose calculations can be compared with the key. This is an editorial proposal, not a learning-outcome claim or a documented classroom integration.</p><p>The teacher should approve the explanations before students use them. Include a case with insufficient information, where the desired result is an explicit question or unresolved answer. Include another where a visually persuasive chart has a wrong scale. Those cases test whether the model respects the supplied evidence instead of merely producing a fluent lesson. Use synthetic learner examples initially, so retention requirements do not become an accidental part of a classroom experiment.</p><p>For an advanced computing course, use a bounded program and an existing test suite as the input. Have learners compare Fable’s proposed repair with an Opus baseline, inspect the diff, and add a test that would fail on the original bug. The evidence of success is the behavior change and test result, not the model’s declaration that it has finished. Record the prompts and effort settings so the comparison is reproducible.</p><p>A likely failure is a polished explanation built on an incorrect premise. Another is silently changing the assignment while making the example easier to solve. Require the output to preserve the original problem and label any proposed change. The educational value lies in examining that distinction; the model’s larger context window and advertised reasoning improvements do not remove it.</p>"
+    },
+    {
+      "id": "apps-websites",
+      "title": "Two builder pilots with observable acceptance criteria",
+      "html": "<p>For an application, choose one troublesome maintenance task in an isolated copy of a repository: for example, replacing a dependency while preserving a small documented API. Supply the current code, relevant documentation, a fixed list of behaviors, and known failing tests. Ask for a plan, a patch, and evidence for each behavior. Human review should check scope and assumptions before accepting the code; execution and test results should establish what actually works.</p><p>Measure whether the result handles the edge cases the earlier model missed, how many interventions were needed, and the total billed usage. Keep a hard boundary around external side effects. A long-running model’s ability to coordinate tools does not establish exactly-once execution or safe recovery of an interrupted operation. A useful failure case is a tool that returns an error after partially completing work: the application should expose the uncertainty rather than let a retry duplicate the action.</p><p>For a website, use a small rights-cleared image collection and a written visual brief to build an interactive exhibition. Ask Fable to create the structure, captions with source links, and code for navigation and comparison views. The inspectable output is a working local site plus its source and attribution list. Test keyboard access, narrow-screen layout, missing images, and a deliberately incorrect caption. These checks belong to the website evaluation; they are not established by Anthropic’s visual or coding benchmarks.</p><p>A likely website failure is a convincing visual approximation that invents details or loses accessibility during iteration. Preserve the source images and a short acceptance checklist, then review both the rendered result and underlying content. If the work does not outperform a cheaper model on those criteria, the stronger model has not justified its premium for that project.</p>"
+    },
+    {
+      "id": "video",
+      "title": "A production assistant upstream of rendering",
+      "html": "<p>For video, a useful bounded role is preparing a reviewable edit plan. Provide a rights-cleared storyboard, selected frame images, a transcript, and a target duration. Ask Fable to produce a shot list with source references, proposed narration, timing assumptions, and continuity questions. Its text-and-image interface supports studying those inputs, but the inspected documentation does not establish native video understanding for an arbitrary uploaded movie or generation of finished audiovisual output.</p><p>The resulting plan should identify which facts need checking and which assets still need creation. An editor can compare every proposed shot with the available material, check narration timing, and reject invented actions between supplied frames. If the plan becomes a script for animation or 3D software, render a short sample and inspect it before committing the whole sequence. Rendering, voice generation, and music remain separate systems with separate costs and rights.</p><p>The same discipline supplies a general adoption test. Start with a small collection of hard tasks, preserve an existing-model baseline, and define usable output before running the new model. Review failures as carefully as successes. Track whether Fable improves completion, reduces human repair, or merely produces longer attempts. The available documentation makes a credible case for a bounded evaluation of difficult work; it does not justify automatically replacing every model in a creative or educational workflow.</p>"
+    }
+  ],
+  "useCases": [
+    "Evaluate hard coding or research tasks that remain inadequate with a cheaper model.",
+    "Build teacher-reviewed explanations whose calculations and sources can be checked.",
+    "Create a source-linked interactive exhibition with browser and accessibility acceptance checks.",
+    "Prepare a storyboard and edit plan for a separate rendering and production workflow."
+  ],
+  "limitations": [
+    "Documentary assessment only: no model calls, installation, live workflow tests, benchmark replication, or measured costs.",
+    "Announcement performance and demonstration claims are vendor reports; the linked system card was not acquired.",
+    "Fable and Mythos have different safeguards and access; Mythos requires applicable organizational verification.",
+    "Fable has text/image input and text output; native video, image, or audio generation is not established here.",
+    "The model requires 30-day data retention unless Anthropic expressly authorizes zero retention; Enterprise Frontier Safeguards is a private beta.",
+    "Hosted service terms were inspected; downloadable weights and a local model license were not established.",
+    "Preserved-thinking checks can break edited histories; advisor behavior and cloud feature availability have provider-specific limits."
+  ],
+  "sources": [
+    {
+      "id": "official-source-anthropic-fable-mythos-52",
+      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2 \\ Anthropic",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "accessedAt": "2026-11-11T05:06:18.216Z",
+      "publishedAt": "2026-11-09T00:00:00Z",
+      "locator": "Introduction; evaluations; coding; safeguards; data privacy; availability; footnotes",
+      "supports": "November 9 release scope, vendor-reported examples and benchmark qualifications, access distinction, fallbacks and monitoring."
+    },
+    {
+      "id": "official-source-fable-52-specs",
+      "title": "Claude Fable 5.2 - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "accessedAt": "2026-11-11T05:06:53.418Z",
+      "publishedAt": null,
+      "locator": "Overview; specifications; availability; good to know",
+      "supports": "Release date, model identifiers, modality, token limits, effort, pricing, parameter restrictions and retention."
+    },
+    {
+      "id": "official-source-fable-model-overview",
+      "title": "Models overview - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/models/overview",
+      "accessedAt": "2026-11-11T05:06:35.153Z",
+      "publishedAt": null,
+      "locator": "Compare models; choosing a model",
+      "supports": "Opus starting-point guidance, Fable escalation positioning, API defaults and interface."
+    },
+    {
+      "id": "official-source-fable-preserved-thinking",
+      "title": "Preserved thinking - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/preserved-thinking",
+      "accessedAt": "2026-11-11T05:06:38.374Z",
+      "publishedAt": null,
+      "locator": "Who the prefix check affects; keeping the prefix unchanged; invalid blocks; output-token cost; account binding",
+      "supports": "History-binding requirements, errors, batch exception, drop-block cost, and account/model boundaries."
+    },
+    {
+      "id": "official-source-fable-pricing",
+      "title": "Pricing - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "accessedAt": "2026-11-11T05:06:56.077Z",
+      "publishedAt": null,
+      "locator": "Model pricing; prompt caching; fast mode pricing; batch processing; long context pricing",
+      "supports": "USD token rates, comparison with 5.1, modifiers, fast/batch incompatibility and long-context pricing."
+    },
+    {
+      "id": "official-source-fable-advisor",
+      "title": "Escalate hard decisions with the advisor tool - Claude Code Docs",
+      "url": "https://code.claude.com/docs/en/advisor",
+      "accessedAt": "2026-11-11T05:06:42.102Z",
+      "publishedAt": null,
+      "locator": "Choose an advisor model; Fable advisor and usage credits; when Claude consults; cost; caching; requirements",
+      "supports": "Experimental feature, versions, provider constraints, pairing fallbacks, full-history access, additional billing and uncached advisor reads."
+    },
+    {
+      "id": "official-source-anthropic-commercial-terms",
+      "title": "Commercial Terms of Service \\ Anthropic",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "accessedAt": "2026-11-11T05:07:00.854Z",
+      "publishedAt": null,
+      "locator": "Effective date; sections A, B, D",
+      "supports": "Hosted commercial use, customer-content provisions, output-review responsibility, and use restrictions; consumer terms separate."
+    }
+  ],
+  "images": [],
+  "judgment": "A consequential model release worth testing on difficult technical work, with concrete migration and cost controls needed before adopting it broadly.",
+  "researchNote": "Seven public primary pages captured in Chrome on November 11, 2026. Publication day is established by the model page; midnight is a date-only convention and no launch hour is claimed. Source observations, vendor reports, illustrative arithmetic, and proposed educational/creative pilots are distinguished. The system card, model execution, and deployment workflows were not tested."
+}
