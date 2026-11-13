@@ -1,8 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Parallax">
   <title>Parallax</title>
-  <rect width="32" height="32" rx="7" fill="#13172a"/>
-  <path d="M7 25 16 8.5 25 25" fill="none" stroke="#efe9dc" stroke-width="1.3" stroke-dasharray="1.8 1.8" stroke-linecap="round"/>
-  <circle cx="7" cy="25" r="2.6" fill="#e2502c"/>
-  <circle cx="25" cy="25" r="2.6" fill="#6f84ff"/>
-  <path d="M16 3.6l1.15 3.75 3.75 1.15-3.75 1.15L16 13.4l-1.15-3.75L11.1 8.5l3.75-1.15z" fill="#efe9dc"/>
+  <!-- The mark is the measurement: one baseline, two readings of the same object.
+       Run A is the caret above the line, run B the caret below it; the offset between
+       them is the parallax. Authored for this site; no third-party artwork. -->
+  <rect width="32" height="32" rx="7.5" fill="#14181F"/>
+  <g fill="#F2F4F8">
+    <rect x="5.5" y="15.1" width="21" height="1.8" rx=".9" opacity=".95"/>
+    <g opacity=".42">
+      <rect x="7.6" y="12.6" width="1.2" height="1.6" rx=".6"/>
+      <rect x="11.8" y="12.6" width="1.2" height="1.6" rx=".6"/>
+      <rect x="16" y="12.6" width="1.2" height="1.6" rx=".6"/>
+      <rect x="20.2" y="12.6" width="1.2" height="1.6" rx=".6"/>
+      <rect x="24.4" y="12.6" width="1.2" height="1.6" rx=".6"/>
+    </g>
+    <path d="M8.6 5.6h9.2L13.2 13.6z"/>
+    <path d="M23.4 26.4h-9.2l4.6-8z"/>
+  </g>
 </svg>

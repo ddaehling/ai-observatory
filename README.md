@@ -64,7 +64,7 @@ Configure the GitHub repository's Pages source as **GitHub Actions**. Pushing re
 python3 scripts/observatory.py publish
 ```
 
-This verifies the local gate and remote commit before requesting the workflow. It does not silently commit or push unrelated files. The Actions gate runs again, and the Pages upload contains only `dist/`. The site also exposes `feed.xml` and a small `manifest.json` of approved report revisions. Git history preserves earlier report and review revisions.
+This verifies the local gate and remote commit before requesting the workflow. It does not silently commit or push unrelated files. The Actions gate runs again, and the Pages upload contains only `dist/`. The site also exposes `feed.xml` and a small `manifest.json` of approved report revisions. Besides the complete `data.json`, each build publishes a compact `catalog.json` for the first page load, one `reports/<id>.json` per published report, and `sources.json` and `editions.json` for the source ledger and edition notes. Git history preserves earlier report and review revisions.
 
 Before publishing newly approved reports, run `python3 scripts/observatory.py baseline --include-approved` and commit `data/publication-baseline.json` with the reviewed changes. This adds protection for the new IDs and never removes existing IDs. A strict build refuses to drop a baseline report or publish an approved report that has not been added to the baseline. Finish revisions and both fresh reviews before deploying; a normal development build may omit pending reports for local inspection, but cannot be published through the strict workflow.
 
@@ -73,6 +73,8 @@ Intentional editorial withdrawal is explicit and audited: `python3 scripts/obser
 ## Files and limits
 
 `src/` is the static interface. `scripts/observatory.py` owns acquisition, validation and public builds. `data/reports/`, `data/reviews/`, `data/rubric.json`, `data/evidence.json`, `data/sources.json`, `data/candidates.json`, `data/decisions.json`, `data/runs.json` and `data/publication-baseline.json` form the public audit trail. Do not put credentials, private browsing material, agent prompts or raw browser traces there. Keep source passages short and attributable.
+
+`build` assembles `dist/` in a staging folder and replaces the previous output only when every file is ready. `data.json` is the complete public payload, kept for compatibility. `catalog.json` is the small first-load file: report cards with scores and review verdicts, edition summaries and source counts, without report bodies, review rationales or review hashes. `reports/<id>.json` holds one full published report; pending, unapproved and withdrawn reports get no file. `sources.json` and `editions.json` hold the full source ledger and edition notes. These split files repackage `data.json` and add no private fields.
 
 The collector accepts public HTTP(S) URLs, refuses private network destinations and credentials, checks redirect destinations, pins the resolved public address, verifies TLS, limits response size and applies finite fetch/run budgets. If Python's default CA store is absent, it can load a root-owned OS certificate bundle that cannot be written by group or other users; certificate and hostname checks remain required. Source content remains untrusted. The report sanitizer allows only a small semantic HTML vocabulary and safe links. It does not establish that a claim is true; that is the research and review responsibility.
 

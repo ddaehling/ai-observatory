@@ -5,6 +5,7 @@ Python standard library only. Acquisition is deterministic; all interpretation,
 source-backed reporting, and Astra review happen in the Codex maintenance run.
 """
 import argparse
+from collections import Counter
 import contextlib
 import datetime as dt
 import email.utils
@@ -609,6 +610,61 @@ def publication_baseline(root, args):
     return baseline
 
 
+def is_monitoring_source(source):
+    return source.get("monitor", True) is not False and source.get("status") != "retired"
+
+
+def item_count(value):
+    return len(value) if isinstance(value, list) else 0
+
+
+def catalog_entry(entry):
+    """Card-level view of a public entry; bodies, rationale and hashes stay in reports/<id>.json."""
+    keys = ("id", "title", "entity", "category", "tags", "summary", "changeType", "publishedAt", "discoveredAt", "updatedAt", "officialUrl", "judgment", "scores", "score", "wordCount", "readMinutes")
+    review_keys = ("reviewerId", "verdict", "confidence", "reviewedAt", "scores")
+    result = {key: entry[key] for key in keys if key in entry}
+    if "sections" in entry:
+        result["sections"] = [{key: section[key] for key in ("id", "title") if key in section} for section in entry["sections"]]
+    if "reviews" in entry:
+        result["reviews"] = [{key: review[key] for key in review_keys if key in review} for review in entry["reviews"]]
+    result.update(sourceCount=item_count(entry.get("sources")), useCaseCount=item_count(entry.get("useCases")), limitationCount=item_count(entry.get("limitations")))
+    return result
+
+
+def tally(sources, field):
+    counts = Counter()
+    for source in sources:
+        value = source.get(field)
+        counts[value if isinstance(value, str) and value else "unknown"] += 1
+    return dict(sorted(counts.items()))
+
+
+def catalog_payload(payload):
+    """Small first-load payload derived only from the already public data.json payload."""
+    sources = payload["sources"]
+    return {
+        "schemaVersion": 1,
+        "metadata": payload["metadata"],
+        "entries": [catalog_entry(entry) for entry in payload["entries"]],
+        "runs": [dict({key: value for key, value in run.items() if key != "limitations"}, limitationCount=item_count(run.get("limitations"))) for run in payload["runs"]],
+        "sourceStats": {"total": len(sources), "monitored": sum(is_monitoring_source(source) for source in sources), "checked": sum(bool(source.get("lastCheckedAt")) for source in sources), "byKind": tally(sources, "kind"), "byStatus": tally(sources, "status")},
+    }
+
+
+def report_detail_path(directory, report_id):
+    # IDs were validated with their reports; check again before one becomes a filename.
+    if not isinstance(report_id, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,99}", report_id):
+        raise ValueError("Unsafe public report ID: %r" % (report_id,))
+    return directory / (report_id + ".json")
+
+
+def save_compact_json(path, value):
+    # Browsers reject NaN/Infinity, so fail the build rather than publish unparsable JSON.
+    text = json.dumps(value, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+    with path.open("x", encoding="utf-8") as handle:  # Exclusive: never overwrite another staged output.
+        handle.write(text)
+
+
 def build(root, strict=False):
     config = config_for(root)
     entries, rejected = reports_with_validation(root)
@@ -636,7 +692,7 @@ def build(root, strict=False):
     last_scan = last["finishedAt"] if last else None
     next_scan = timestamp(parse_date(last_scan) + dt.timedelta(hours=config.get("intervalHours", 48))) if last_scan and config.get("enabled", True) else None
     allowed_run_keys = {"id", "startedAt", "finishedAt", "status", "windowStart", "windowEnd", "sourcesChecked", "sourcesFailed", "candidatesFound", "publishedCount", "coverageNote", "limitations"}
-    payload = {"metadata": {"title": "AI Observatory", "generatedAt": timestamp(), "lastScanAt": last_scan, "nextScanAt": next_scan, "intervalHours": config.get("intervalHours", 48), "enabled": config.get("enabled", True), "timezone": config.get("timezone", "Europe/Berlin"), "coverageNote": (last or {}).get("coverageNote", "Initial research is in progress. Coverage is bounded; no claim of internet-wide completeness."), "repository": config.get("repository"), "siteUrl": config.get("siteUrl"), "rubricVersion": RUBRIC_VERSION, "rubricHash": RUBRIC_HASH, "sourceCount": len(sources), "monitoringSourceCount": sum(source.get("monitor", True) is not False and source.get("status") != "retired" for source in sources), "reportCount": len(entries), "pendingReportCount": len(rejected)}, "entries": sorted(entries, key=lambda item: item.get("discoveredAt", ""), reverse=True), "sources": sources, "runs": [{key: value for key, value in run.items() if key in allowed_run_keys} for run in runs]}
+    payload = {"metadata": {"title": "AI Observatory", "generatedAt": timestamp(), "lastScanAt": last_scan, "nextScanAt": next_scan, "intervalHours": config.get("intervalHours", 48), "enabled": config.get("enabled", True), "timezone": config.get("timezone", "Europe/Berlin"), "coverageNote": (last or {}).get("coverageNote", "Initial research is in progress. Coverage is bounded; no claim of internet-wide completeness."), "repository": config.get("repository"), "siteUrl": config.get("siteUrl"), "rubricVersion": RUBRIC_VERSION, "rubricHash": RUBRIC_HASH, "sourceCount": len(sources), "monitoringSourceCount": sum(is_monitoring_source(source) for source in sources), "reportCount": len(entries), "pendingReportCount": len(rejected)}, "entries": sorted(entries, key=lambda item: item.get("discoveredAt", ""), reverse=True), "sources": sources, "runs": [{key: value for key, value in run.items() if key in allowed_run_keys} for run in runs]}
     staging = Path(tempfile.mkdtemp(prefix=".dist-stage-", dir=str(root)))
     backup = root / (".dist-backup-" + uuid.uuid4().hex)
     try:
@@ -653,6 +709,15 @@ def build(root, strict=False):
                     destination.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(str(source), str(destination))
         save_json(staging / "data.json", payload)
+        # Split copies of data.json let the interface render a small catalog first and fetch details on demand.
+        generated_at = payload["metadata"]["generatedAt"]
+        save_compact_json(staging / "catalog.json", catalog_payload(payload))
+        save_compact_json(staging / "sources.json", {"schemaVersion": 1, "generatedAt": generated_at, "sources": payload["sources"]})
+        save_compact_json(staging / "editions.json", {"schemaVersion": 1, "generatedAt": generated_at, "runs": payload["runs"]})
+        reports = staging / "reports"
+        reports.mkdir()
+        for entry in payload["entries"]:
+            save_compact_json(report_detail_path(reports, entry.get("id")), {"schemaVersion": 1, "entry": entry})
         save_json(staging / "manifest.json", {"schemaVersion": 1, "generatedAt": payload["metadata"]["generatedAt"], "reports": [{"id": entry["id"], "updatedAt": entry["updatedAt"], "reportHash": report_hash({key: value for key, value in entry.items() if key not in {"scores", "score", "wordCount", "readMinutes", "reviews"}})} for entry in entries]})
         feed = ET.Element("rss", version="2.0")
         channel = ET.SubElement(feed, "channel")

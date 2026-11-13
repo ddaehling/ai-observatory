@@ -598,8 +598,34 @@ class BuildTests(unittest.TestCase):
             for suffix, review in zip(("a", "b"), make_reviews(report, self.evidence)):
                 self.write_json("data/reviews/" + report["id"] + "." + suffix + ".json", review)
 
+    def built_json(self, relative):
+        return json.loads((self.root / "dist" / relative).read_text(encoding="utf-8"))
+
     def built_data(self):
-        return json.loads((self.root / "dist/data.json").read_text(encoding="utf-8"))
+        return self.built_json("data.json")
+
+    def build_library(self):
+        """Publish two reports with a mixed source ledger and edition history; return data.json."""
+        newer = make_report()
+        # Sorts after test-tool by filename but first by discovery date, so order checks are meaningful.
+        newer.update(id="visual-notebook", title="Café notebook", discoveredAt="2026-10-19T10:00:00Z")
+        for optional in ("tags", "publishedAt", "useCases", "limitations"):
+            del newer[optional]
+        self.save_report(newer, approved=True)
+        self.write_json("data/publication-baseline.json", {"schemaVersion": 1, "approvedReportIds": ["test-tool", "visual-notebook"], "withdrawals": []})
+        self.write_json("data/sources.json", [
+            {"id": "source-one", "name": "Example documentation", "url": "https://example.com/tool/documentation", "kind": "official", "status": "active", "lastCheckedAt": "2026-10-18T09:00:00Z"},
+            {"id": "story-one", "name": "Example story", "url": "https://example.com/story", "kind": "news", "status": "unverified", "monitor": False, "lastCheckedAt": None},
+            {"id": "retired-blog", "name": "Retired blog", "url": "https://blog.example.com/", "kind": "blog", "status": "retired", "lastCheckedAt": "2026-10-10T09:00:00Z"},
+            {"id": "unclassified", "name": "Unclassified page", "url": "https://other.example.com/", "lastCheckedAt": ""},
+            {"id": "private-host", "name": "Private host", "url": "http://127.0.0.1/", "kind": "official", "status": "active"},
+        ])
+        self.write_json("data/runs.json", [
+            {"id": "scan-one", "startedAt": "2026-10-18T08:00:00Z", "finishedAt": "2026-10-18T12:00:00Z", "status": "complete", "windowStart": "2026-09-18T08:00:00Z", "windowEnd": "2026-10-18T08:00:00Z", "sourcesChecked": 2, "sourcesFailed": 1, "candidatesFound": 3, "publishedCount": 2, "coverageNote": "Bounded scan.", "limitations": ["story-one: blocked", "retired-blog: unavailable"], "sourceIdsExpected": ["source-one"], "sourceResults": [{"sourceId": "source-one", "status": "success", "note": "Checked."}]},
+            {"id": "scan-two", "startedAt": "2026-10-20T08:00:00Z", "finishedAt": None, "status": "collecting", "coverageNote": "Acquisition in progress."},
+        ])
+        observatory.build(self.root, strict=True)
+        return self.built_data()
 
     def mark_previous_dist(self):
         (self.root / "dist").mkdir(exist_ok=True)
@@ -612,6 +638,10 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(sorted(path.name for path in marker.parent.iterdir()), [marker.name])
         self.assertEqual(list(self.root.glob(".dist-stage-*")), [])
         self.assertEqual(list(self.root.glob(".dist-backup-*")), [])
+
+    def snapshot(self, directory):
+        """Every path below directory with its bytes (None for folders)."""
+        return {path.relative_to(directory).as_posix(): None if path.is_dir() else path.read_bytes() for path in directory.rglob("*")}
 
     def test_valid_report_is_published_but_unreviewed_report_is_excluded(self):
         unreviewed = make_report()
@@ -631,12 +661,16 @@ class BuildTests(unittest.TestCase):
     def test_edited_formerly_approved_report_is_removed_on_next_build(self):
         observatory.build(self.root, strict=True)
         self.assertEqual(len(self.built_data()["entries"]), 1)
+        self.assertTrue((self.root / "dist/reports/test-tool.json").is_file())
         self.report["summary"] += " A change made after review."
         self.save_report(self.report)
         result = observatory.build(self.root)
         self.assertEqual(result["publishedReports"], 0)
         self.assertIn("test-tool", result["excludedReports"])
         self.assertEqual(self.built_data()["entries"], [])
+        # The rebuilt dist must not carry the previous release's report file.
+        self.assertEqual(list((self.root / "dist/reports").iterdir()), [])
+        self.assertEqual(self.built_json("catalog.json")["entries"], [])
 
     def test_strict_zero_approved_reports_preserves_previous_dist(self):
         marker = self.mark_previous_dist()
@@ -776,15 +810,159 @@ class BuildTests(unittest.TestCase):
         for relative in (".hidden-design-prompt.md", "src/.hidden-design-prompt.md", "src/assets/design-prompt.txt"):
             (self.root / relative).write_text("PRIVATE_DESIGN_PROMPT_SENTINEL", encoding="utf-8")
         self.write_json("data/candidates.json", [{"internalPrompt": "PRIVATE_CANDIDATE_SENTINEL"}])
+        self.write_json("data/runs.json", [{
+            "id": "scan-one", "status": "collecting", "startedAt": "2026-10-18T08:00:00Z", "finishedAt": None, "limitations": [],
+            "sourceIdsExpected": ["source-one"], "sourceResults": [{"sourceId": "source-one", "note": "PRIVATE_RUN_TRACE_SENTINEL"}],
+        }])
+        draft = make_report()
+        draft.update(id="draft-tool", summary="UNAPPROVED_DRAFT_SENTINEL")
+        self.save_report(draft)
         observatory.build(self.root, strict=True)
         output_paths = {path.relative_to(self.root / "dist").as_posix() for path in (self.root / "dist").rglob("*") if path.is_file()}
-        self.assertTrue({"index.html", "styles.css", "app.js", "data.json", ".nojekyll"}.issubset(output_paths))
-        for forbidden_path in ("evidence.json", "data/evidence.json", "data/candidates.json", ".hidden-design-prompt.md", "assets/design-prompt.txt"):
+        # rglob descends into reports/, so the sentinel scan below reads every split file too.
+        self.assertTrue({"index.html", "styles.css", "app.js", "data.json", "catalog.json", "sources.json", "editions.json", "reports/test-tool.json", "manifest.json", "feed.xml", ".nojekyll"}.issubset(output_paths))
+        for forbidden_path in ("evidence.json", "data/evidence.json", "data/candidates.json", ".hidden-design-prompt.md", "assets/design-prompt.txt", "reports/draft-tool.json"):
             self.assertNotIn(forbidden_path, output_paths)
         serialized_output = "\n".join((self.root / "dist" / path).read_text(encoding="utf-8") for path in output_paths)
-        for sentinel in ("RAW_EVIDENCE_SENTINEL", "PRIVATE_DESIGN_PROMPT_SENTINEL", "PRIVATE_BROWSER_TRACE_SENTINEL", "PRIVATE_CANDIDATE_SENTINEL"):
+        for sentinel in ("RAW_EVIDENCE_SENTINEL", "PRIVATE_DESIGN_PROMPT_SENTINEL", "PRIVATE_BROWSER_TRACE_SENTINEL", "PRIVATE_CANDIDATE_SENTINEL", "PRIVATE_RUN_TRACE_SENTINEL", "UNAPPROVED_DRAFT_SENTINEL"):
             self.assertNotIn(sentinel, serialized_output)
         self.assertNotIn("evidence", self.built_data())
+
+    def test_split_outputs_exist_and_are_compact_utf8_json(self):
+        self.build_library()
+        for relative in ("catalog.json", "sources.json", "editions.json", "reports/visual-notebook.json", "reports/test-tool.json"):
+            with self.subTest(file=relative):
+                text = (self.root / "dist" / relative).read_text(encoding="utf-8")
+                value = json.loads(text)
+                self.assertEqual(value["schemaVersion"], 1)
+                self.assertEqual(text, json.dumps(value, ensure_ascii=False, separators=(",", ":")))
+        self.assertIn("Café notebook", (self.root / "dist/catalog.json").read_text(encoding="utf-8"))
+
+    def test_catalog_entries_follow_data_order_without_bodies_rationale_or_hashes(self):
+        data = self.build_library()
+        catalog = self.built_json("catalog.json")
+        self.assertEqual(list(catalog), ["schemaVersion", "metadata", "entries", "runs", "sourceStats"])
+        self.assertEqual(catalog["metadata"], data["metadata"])
+        self.assertEqual([entry["id"] for entry in data["entries"]], ["visual-notebook", "test-tool"])
+        self.assertEqual([entry["id"] for entry in catalog["entries"]], [entry["id"] for entry in data["entries"]])
+        card_fields = ("id", "title", "entity", "category", "tags", "summary", "changeType", "publishedAt", "discoveredAt", "updatedAt", "officialUrl", "judgment", "scores", "score", "wordCount", "readMinutes")
+        for card, entry in zip(catalog["entries"], data["entries"]):
+            with self.subTest(report=entry["id"]):
+                expected = {key: entry[key] for key in card_fields if key in entry}
+                expected.update(
+                    sections=[{"id": section["id"], "title": section["title"]} for section in entry["sections"]],
+                    reviews=[{key: review[key] for key in ("reviewerId", "verdict", "confidence", "reviewedAt", "scores")} for review in entry["reviews"]],
+                    sourceCount=len(entry["sources"]), useCaseCount=len(entry.get("useCases", [])), limitationCount=len(entry.get("limitations", [])),
+                )
+                self.assertEqual(card, expected)
+        newer, original = catalog["entries"]
+        self.assertNotIn("tags", newer)
+        self.assertNotIn("publishedAt", newer)
+        self.assertEqual((newer["useCaseCount"], newer["limitationCount"]), (0, 0))
+        self.assertIsNone(original["publishedAt"])
+        self.assertEqual(original["sections"], [{"id": "assessment", "title": "Assessment"}])
+        self.assertEqual((original["sourceCount"], original["useCaseCount"], original["limitationCount"]), (1, 1, 1))
+        keys, pending = set(), list(catalog["entries"])
+        while pending:
+            value = pending.pop()
+            if isinstance(value, dict):
+                keys.update(value)
+                pending.extend(value.values())
+            elif isinstance(value, list):
+                pending.extend(value)
+        self.assertEqual(keys & {"html", "rationale", "concerns", "reportHash", "evidenceHash", "rubricHash"}, set())
+        serialized_entries = json.dumps(catalog["entries"], ensure_ascii=False)
+        self.assertNotIn("<p>", serialized_entries)
+        self.assertNotIn("The cited documentation supports this rating.", serialized_entries)
+
+    def test_catalog_summarizes_editions_and_source_ledger(self):
+        data = self.build_library()
+        catalog = self.built_json("catalog.json")
+        expected_runs = [dict({key: value for key, value in run.items() if key != "limitations"}, limitationCount=len(run.get("limitations", []))) for run in data["runs"]]
+        self.assertEqual(catalog["runs"], expected_runs)
+        self.assertEqual([(run["id"], run["limitationCount"]) for run in catalog["runs"]], [("scan-one", 2), ("scan-two", 0)])
+        self.assertEqual(catalog["sourceStats"], {
+            "total": 4, "monitored": 2, "checked": 2,
+            "byKind": {"blog": 1, "news": 1, "official": 1, "unknown": 1},
+            "byStatus": {"active": 1, "retired": 1, "unknown": 1, "unverified": 1},
+        })
+        self.assertEqual(catalog["sourceStats"]["total"], data["metadata"]["sourceCount"])
+        self.assertEqual(catalog["sourceStats"]["monitored"], data["metadata"]["monitoringSourceCount"])
+
+    def test_report_files_repeat_each_published_entry_exactly(self):
+        data = self.build_library()
+        self.assertEqual(sorted(path.name for path in (self.root / "dist/reports").iterdir()), ["test-tool.json", "visual-notebook.json"])
+        for entry in data["entries"]:
+            with self.subTest(report=entry["id"]):
+                self.assertEqual(self.built_json("reports/" + entry["id"] + ".json"), {"schemaVersion": 1, "entry": entry})
+
+    def test_sources_and_editions_files_repeat_data_json(self):
+        data = self.build_library()
+        generated_at = data["metadata"]["generatedAt"]
+        self.assertEqual([source["id"] for source in data["sources"]], ["source-one", "story-one", "retired-blog", "unclassified"])
+        self.assertEqual(self.built_json("sources.json"), {"schemaVersion": 1, "generatedAt": generated_at, "sources": data["sources"]})
+        self.assertEqual(self.built_json("editions.json"), {"schemaVersion": 1, "generatedAt": generated_at, "runs": data["runs"]})
+
+    def test_unreviewed_and_withdrawn_reports_get_no_report_file(self):
+        unreviewed = make_report()
+        unreviewed["id"] = "unreviewed-tool"
+        self.save_report(unreviewed)
+        withdrawn = make_report()
+        withdrawn["id"] = "withdrawn-tool"
+        self.save_report(withdrawn, approved=True)
+        self.write_json("data/publication-baseline.json", {"schemaVersion": 1, "approvedReportIds": ["test-tool"], "withdrawals": [
+            {"reportId": "withdrawn-tool", "reason": "Superseded by a newer report.", "withdrawnAt": "2026-10-18T12:00:00Z"},
+        ]})
+        result = observatory.build(self.root, strict=True)
+        self.assertIn("unreviewed-tool", result["excludedReports"])
+        self.assertEqual(result["intentionallyWithdrawnReports"], ["withdrawn-tool"])
+        self.assertEqual([path.name for path in (self.root / "dist/reports").iterdir()], ["test-tool.json"])
+        self.assertEqual([entry["id"] for entry in self.built_json("catalog.json")["entries"]], ["test-tool"])
+
+    def test_split_outputs_are_complete_in_staging_before_the_atomic_swap(self):
+        self.mark_previous_dist()
+        original_replace = observatory.os.replace
+        staged_releases = []
+
+        def record_staged_release(source, destination, *args, **kwargs):
+            if Path(source).name.startswith(".dist-stage-") and Path(destination) == self.root / "dist":
+                staged_releases.append(self.snapshot(Path(source)))
+            return original_replace(source, destination, *args, **kwargs)
+
+        with patch.object(observatory.os, "replace", side_effect=record_staged_release):
+            data = self.build_library()
+        self.assertEqual(len(staged_releases), 1)
+        staged = staged_releases[0]
+        reports = {"reports/" + entry["id"] + ".json" for entry in data["entries"]}
+        self.assertEqual(reports, {"reports/test-tool.json", "reports/visual-notebook.json"})
+        self.assertEqual(({"catalog.json", "sources.json", "editions.json"} | reports) - set(staged), set())
+        # Nothing may be added, rewritten or removed once the staged release is live.
+        self.assertEqual(self.snapshot(self.root / "dist"), staged)
+        self.assertEqual(list(self.root.glob(".dist-*")), [])
+
+    def test_unsafe_report_ids_fail_closed_without_writing_anything(self):
+        marker = self.mark_previous_dist()
+        before = self.snapshot(self.root)
+        accepted, rejected = observatory.reports_with_validation(self.root)
+        # Several probes begin with a valid slug, so only a whole-ID match rejects them.
+        unsafe_ids = ("../../escaped-report", "test-tool/../../escaped-report", "test-tool\n", "test-tool?x", "Test-Tool", "-test-tool", "a" * 101, "", None)
+        for unsafe_id in unsafe_ids:
+            with self.subTest(report_id=unsafe_id):
+                tampered = ([dict(accepted[0], id=unsafe_id)], rejected)
+                with patch.object(observatory, "reports_with_validation", return_value=tampered):
+                    with self.assertRaisesRegex(ValueError, "Unsafe public report ID"):
+                        observatory.build(self.root)
+                self.assert_previous_dist_preserved(marker)
+                self.assertEqual(self.snapshot(self.root), before)
+
+    def test_non_finite_number_fails_split_output_and_preserves_previous_dist(self):
+        marker = self.mark_previous_dist()
+        sources = json.loads((self.root / "data/sources.json").read_text(encoding="utf-8"))
+        sources[0]["notes"] = float("nan")
+        self.write_json("data/sources.json", sources)
+        with self.assertRaisesRegex(ValueError, "not JSON compliant"):
+            observatory.build(self.root, strict=True)
+        self.assert_previous_dist_preserved(marker)
 
 
 class FeedTests(unittest.TestCase):
