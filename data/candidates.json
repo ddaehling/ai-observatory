@@ -65,7 +65,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "x-live11-oct15",
@@ -133,7 +135,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "rosalind-academic-plan",
@@ -410,7 +414,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-9732b2763df5a67a",
@@ -1421,7 +1427,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-f57eff9c23a4454b",
@@ -1494,7 +1502,7 @@
     "feedFingerprint": "196a9fce1730af195957878568999706327c8ac7c28aeef42578b2e5ff952de7",
     "discoveredAt": "2026-10-20T16:05:58Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "current",
     "discoveryMethod": "rss_atom",
     "reason": "Body verifies Atlassian/Teamwork Graph plugins and recently launched prompt extension subject to permissions. Deeper Jira assignment/tracking integrations are exploratory; exact connector scopes and availability require Atlassian documentation.",
@@ -1540,7 +1548,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-d2b5b29b4c815525",
@@ -2312,7 +2322,9 @@
         "decisionId": "scan-20261111T050317Z-31980a-ledger-integration:candidate-2fc54b690d7b20a2",
         "observedAt": "2026-11-11T05:17:48.364Z"
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-0adf5bb2a473897d",
@@ -2325,7 +2337,7 @@
     "feedFingerprint": "51dd809277f6402d5908ad1b1f1f8386349a59a1f72b73e7280a6c0d45eb76f4",
     "discoveredAt": "2026-10-20T16:05:58Z",
     "runId": "scan-20261020T160557Z-63b483",
-    "status": "needs_review",
+    "status": "excluded",
     "researchPriority": "backlog",
     "discoveryMethod": "rss_atom",
     "reason": "Joint September 28 expansion reread. Reusable tools are a future program objective; public access/licensing to Dewey and Scrape remains unestablished. Follow originating Lenfest implementation resources.",
@@ -2371,7 +2383,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-eb674100bb687fff",
@@ -2976,7 +2990,9 @@
     "discoveryMethod": "rss_atom",
     "reason": "Read benchmark announcement: synthetic conversations, more than80 licensed experts in22 countries, expert rubric and automated GPT-5.6 Sol grading. Benchmark scenario mixture is not usage prevalence or clinical outcome evidence. Paper, dataset license and grading validation remain required for coverage.",
     "reconsideredAt": "2026-10-28T19:59:59Z",
-    "reconsiderationRunId": "scan-20261028T193734Z-788cac"
+    "reconsiderationRunId": "scan-20261028T193734Z-788cac",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "candidate-bb71e409dd7f29f7",
@@ -6249,7 +6265,9 @@
           }
         ]
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "title": "Recraft V4.1 Flash",
@@ -8880,7 +8898,9 @@
     "locator": "Visible best-listing item 4; story body/comments uninspected",
     "coverageComplete": false,
     "id": "social-candidate-949ec3f1338d58c8",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reconsideredAt": "2026-10-20T16:24:41Z",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "title": "Why",
@@ -9397,7 +9417,9 @@
     "coverageComplete": false,
     "id": "social-candidate-6ae4116d7f299f0d",
     "reconsideredAt": "2026-10-22T17:27:41Z",
-    "decidedAt": "2026-10-22T17:23:03.730860Z"
+    "decidedAt": "2026-10-22T17:23:03.730860Z",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "title": "Flux 3 klein is one of the models of all time.",
@@ -9460,7 +9482,7 @@
     "officialUrl": "https://www.reddit.com/r/StableDiffusion/comments/1x76buu/krea2_realism_is_back_this_time_as_a_full/",
     "publishedAt": null,
     "changeType": "baseline",
-    "status": "needs_review",
+    "status": "excluded",
     "reportId": null,
     "sourceIds": [
       "social-source-9384097176464c24",
@@ -9478,7 +9500,9 @@
     "locator": "Visible best-listing item 27; story body/comments uninspected",
     "coverageComplete": false,
     "id": "social-candidate-9384097176464c24",
-    "reconsideredAt": "2026-10-20T16:24:41Z"
+    "reconsideredAt": "2026-10-20T16:24:41Z",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "title": "DeepSeek just open-sourced its inference engine",
@@ -27458,7 +27482,9 @@
         "decisionId": "scan-20261108T185850Z-56c6d8-ledger-integration:social-candidate-6290922c900109aa",
         "observedAt": "2026-11-08T19:16:01.079Z"
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "social-candidate-bf44de9e544de4cb",
@@ -27651,7 +27677,9 @@
         "decisionId": "scan-20261108T185850Z-56c6d8-ledger-integration:social-candidate-a979e7ccacda81f6",
         "observedAt": "2026-11-08T19:09:52.862Z"
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "social-candidate-72d9d3123615abea",
@@ -27721,7 +27749,9 @@
         "integrationId": "scan-20261108T185850Z-56c6d8-ledger-integration",
         "decisionId": "scan-20261108T185850Z-56c6d8-ledger-integration:social-candidate-72d9d3123615abea"
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "social-candidate-857e612ebc0172e1",
@@ -27843,7 +27873,9 @@
         "decisionId": "scan-20261108T185850Z-56c6d8-ledger-integration:social-candidate-b6ee2b32304d0c0d",
         "observedAt": "2026-11-08T19:16:05.373Z"
       }
-    ]
+    ],
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   },
   {
     "id": "social-candidate-68120b9dfc14348d",
@@ -44351,5 +44383,707 @@
         "observedAt": "2026-11-11T05:14:55.920Z"
       }
     ]
+  },
+  {
+    "id": "candidate-7d4d71d056da0286",
+    "title": "Introducing ChatGPT Wallet",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "sourceId": "source-7d4d71d056da0286",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-13T15:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "de2ebb3197e9208b6702bc29eba267111eb9e6121df29a9cabd0b2c1055f46b2",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-a99dfdd20d85acbb",
+    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "url": "https://openai.com/business/customer-stories/shield",
+    "sourceId": "source-a99dfdd20d85acbb",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-13T08:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "6fbbf8466cb453913b5e4ddb886737fea630a0790757b9f43958a8ed97fd1718",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-67672a694e389b29",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "url": "https://openai.com/business/customer-stories/amplitude",
+    "sourceId": "source-67672a694e389b29",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-12T20:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "e13b70a98a7a94b25d74f5627e4ae7bc6f6ebe5006e3f873ffa69d70861e2bbd",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-b9840fd67063a36a",
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "sourceId": "source-b9840fd67063a36a",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-12T12:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "ab2cc81bea0fbd75875807511ecb29745e71d21f8e522a2def3f1a3fac18d2c4",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-4922ca6fb0dd9299",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "sourceId": "source-4922ca6fb0dd9299",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-12T09:30:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "0ce867605c954b54f57274277728003da7a8f8ca8d18c45e433647b631f29f72",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-d7c1da8cb7dc41da",
+    "title": "Supporting research on AI and children’s safety",
+    "url": "https://openai.com/index/children-first-declaration",
+    "sourceId": "source-d7c1da8cb7dc41da",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-12T00:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "cabd9e0bbbee867cded5dcbc1cf535aaf8c161030a2b8f3b8b33c9033c3c56e5",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-ac94b61a25ade5ed",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "sourceId": "source-ac94b61a25ade5ed",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-11T08:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "92f3a5e4956a5fa57b0958cd13e9cdc1e78709d5893003b983480ac995bc1ede",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-55ff14dc4213127d",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "sourceId": "source-55ff14dc4213127d",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-11T00:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "825d028a2a07d1963f783ac5def6c8a48a8edfa1c97d621c3922a122d6364c17",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-9092d5eb66f29547",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "url": "https://openai.com/index/singapore-airlines-travel-work",
+    "sourceId": "source-9092d5eb66f29547",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-10T08:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "6de566b0fda44b7ff4924aaf29a9629839ffe02dace14025daa6cb01e864f74e",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-37e4452e64c861cf",
+    "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+    "url": "https://openai.com/index/cogent-security",
+    "sourceId": "source-37e4452e64c861cf",
+    "publisherSourceId": "seed-openai-news",
+    "publishedAt": "2026-11-10T00:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "9c505afdc30a2b417ce669550235fc7e5e67f2d673aff84e8fe26ff3ac13d76f",
+    "discoveredAt": "2026-11-14T05:55:37Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-16dbc3338bdcccff",
+    "title": "Microsoft Research Focus – Edition #98",
+    "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+    "sourceId": "source-16dbc3338bdcccff",
+    "publisherSourceId": "seed-microsoft-research",
+    "publishedAt": "2026-11-12T21:31:57Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "da9d7d04209b870b618983696bd6496750ef7d0a8f39767b2fc44ce304a28ac1",
+    "discoveredAt": "2026-11-14T05:55:41Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-db007afeffa315be-410ff82946ec",
+    "title": "Flint-interactive: A language for creating interactive data visualizations",
+    "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+    "sourceId": "source-db007afeffa315be",
+    "publisherSourceId": "seed-microsoft-research",
+    "publishedAt": "2026-10-22T16:00:00Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "fd0e5580b028e2e8697f14225f1e0f177827991dfc1b3516c23600b8a0aa8ab7",
+    "discoveredAt": "2026-11-14T05:55:41Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-db007afeffa315be-75141ea2827f",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "reportId": "flint-interactive",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-f55817b72e9782bd",
+    "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+    "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+    "sourceId": "source-f55817b72e9782bd",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-13T09:04:13Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "398a1a04b3a96738e3c292750f00d70cd46150c7d9af64a5651a3ef1320f7dab",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-68811c4e6ccf667c",
+    "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+    "url": "https://latent.space/p/artcraft/",
+    "sourceId": "source-68811c4e6ccf667c",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-13T04:17:25Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "4d8ad07822644b672ef20d099aba8b591c87fae2396a407e0ef89a26cade1cbb",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-51cca3e361b05b7b",
+    "title": "[AINews] D-Day (Decision Models Day)",
+    "url": "https://latent.space/p/ainews-d-day-decision-models-day/",
+    "sourceId": "source-51cca3e361b05b7b",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-12T05:26:54Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "e9abd36946dba184c557c58741dcb024ea15009577a8c857adc0bd775422dc4b",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-43655ce3c34369b0",
+    "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+    "url": "https://latent.space/p/jev-revolution/",
+    "sourceId": "source-43655ce3c34369b0",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-12T05:08:20Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "c7bc017cd612780cc8054ed5a0432025192e2cc28f0cf35534dce15ff667ef85",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "typesafe-jev"
+  },
+  {
+    "id": "candidate-f0a5ad843b934f7d",
+    "title": "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",
+    "url": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
+    "sourceId": "source-f0a5ad843b934f7d",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-11T09:34:28Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "82727d95a45bcae749cad9e9d6d724b8910655fe8320c5504e03fb0d6f047d26",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-a545d27a2f90bfa6-076b8b466dd8",
+    "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+    "url": "https://latent.space/p/codex-work/",
+    "sourceId": "source-a545d27a2f90bfa6",
+    "publisherSourceId": "seed-latent-space",
+    "publishedAt": "2026-11-11T04:49:48Z",
+    "feedUpdatedAt": null,
+    "feedFingerprint": "4d8d7074dd48dd143eeddf5f6c7a19412c6317bd01bbb71c269f51675f0b0ea5",
+    "discoveredAt": "2026-11-14T05:55:42Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-a545d27a2f90bfa6",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-4cb58a6ed2a63999",
+    "title": "datasette-cluster-map 0.19",
+    "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+    "sourceId": "source-4cb58a6ed2a63999",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-13T23:02:45Z",
+    "feedUpdatedAt": "2026-11-13T23:02:45Z",
+    "feedFingerprint": "1bc1913610edd215f6be6d7a87226f213fe1289d8005b320abc4c6a28bff63b7",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-e1058067669e2b5f",
+    "title": "datasette-leaflet 0.3",
+    "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+    "sourceId": "source-e1058067669e2b5f",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-13T22:30:54Z",
+    "feedUpdatedAt": "2026-11-13T22:30:54Z",
+    "feedFingerprint": "fa54b35ba94b578ab32063fe677f1f14f6de0e29f372bee1246ff6efdc19432a",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-5b86eed0286e0e3b",
+    "title": "llm-gemini 0.37",
+    "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+    "sourceId": "source-5b86eed0286e0e3b",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-12T22:55:19Z",
+    "feedUpdatedAt": "2026-11-12T22:55:19Z",
+    "feedFingerprint": "0db76df46b2817b8069499f4e930240e5c12e830fce839509519c1e25eae1f6c",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "gemini4-hydrogen"
+  },
+  {
+    "id": "candidate-485ec329c8b74027",
+    "title": "Gemini Decisions API",
+    "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "sourceId": "source-485ec329c8b74027",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-11T22:03:25Z",
+    "feedUpdatedAt": "2026-11-11T22:03:25Z",
+    "feedFingerprint": "a41544cb12e3460e4942edf250e980a07c9b4bb7e1f9bb165621d29f90939d68",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "gemini-decisions-api"
+  },
+  {
+    "id": "candidate-967141e571a3a88a",
+    "title": "aws-emulator",
+    "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+    "sourceId": "source-967141e571a3a88a",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-11T21:18:30Z",
+    "feedUpdatedAt": "2026-11-11T21:18:30Z",
+    "feedFingerprint": "bf50992479257b449c21008eb902932e88fb66680b7d3bf18a9848a062d8b458",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "aws-emulator"
+  },
+  {
+    "id": "candidate-8ba32157965a133a",
+    "title": "Browse tools.simonwillison.net by tag",
+    "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+    "sourceId": "source-8ba32157965a133a",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-11T18:42:50Z",
+    "feedUpdatedAt": "2026-11-11T18:42:50Z",
+    "feedFingerprint": "0ce746183d937bf5276c4e317230373587506b2bac8b7ba87644de311a2e9e7c",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-460872e68e9eeabb",
+    "title": "llm 0.37.2",
+    "url": "https://simonwillison.net/2026/Nov/11/llm/",
+    "sourceId": "source-460872e68e9eeabb",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-11T17:19:52Z",
+    "feedUpdatedAt": "2026-11-11T17:19:52Z",
+    "feedFingerprint": "7d6b78dc34d83531136831e6949ddcbac8af98b04df317c215d687e5f042cde2",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "llm-credential-routing"
+  },
+  {
+    "id": "candidate-6e96a802abbc1d38",
+    "title": "Anthropic's IPO roadshow video",
+    "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+    "sourceId": "source-6e96a802abbc1d38",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-11T15:11:59Z",
+    "feedUpdatedAt": "2026-11-11T15:11:59Z",
+    "feedFingerprint": "9d4a4275ca4dcd28f2c8761a86707b60cb1dae1c91749ed44c09fb6e686d9858",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-e5607ea9b3456678-dc0a05c268ba",
+    "title": "llm-gemini 0.36",
+    "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+    "sourceId": "source-e5607ea9b3456678",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-10T20:09:44Z",
+    "feedUpdatedAt": "2026-11-10T20:09:44Z",
+    "feedFingerprint": "aeacf947fd26914eaa83c313d6424e71cda245f1ab12b7469c03001c4e5580c1",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-e5607ea9b3456678",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "candidate-f932ce86887297f1-123be5d53cb0",
+    "title": "Quoting Prompting Claude Fable 5.2",
+    "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+    "sourceId": "source-f932ce86887297f1",
+    "publisherSourceId": "seed-simon-willison",
+    "publishedAt": "2026-11-10T05:34:14Z",
+    "feedUpdatedAt": "2026-11-10T05:34:14Z",
+    "feedFingerprint": "121ea531fd8b55dbfc473e8a40068a45b4ecf32bfee5cfdc799ca1af9991de42",
+    "discoveredAt": "2026-11-14T05:55:43Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "current",
+    "discoveryMethod": "rss_atom",
+    "revisionOf": "candidate-f932ce86887297f1",
+    "changeReason": "Feed title, date or summary changed; verify the underlying source.",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "official-candidate-gemini4-hydrogen",
+    "title": "Introducing Gemini4 Hydrogen",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "sourceId": "official-story-gemini4-hydrogen",
+    "publisherSourceId": null,
+    "publishedAt": "2026-11-12",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "gemini4-hydrogen"
+  },
+  {
+    "id": "official-candidate-a2ui10",
+    "title": "A2UI1.0 stable protocol and renderer migration",
+    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+    "sourceId": "official-story-a2ui10",
+    "publisherSourceId": null,
+    "publishedAt": "2026-11-11",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "a2ui-express"
+  },
+  {
+    "id": "official-lead-maya2",
+    "title": "Maya2 voice models",
+    "url": "https://mayaresearch.ai/",
+    "sourceId": "nov14-story-c2fc37eb2a98d23f",
+    "publisherSourceId": "social-source-0f6f710f596282ba",
+    "publishedAt": null,
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:05:47.688Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "repos-candidate-ccore-glb-17b-checkpoint",
+    "title": "CCORE 1.7B GLB coder final checkpoint and quantization caveats",
+    "url": "https://huggingface.co/ccore/Qwen3-1.7B-GLB-3D-Coder",
+    "sourceId": "nov14-story-09b1e4e563d032fd",
+    "publisherSourceId": "repos-ccore-publisher",
+    "publishedAt": null,
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "repos-candidate-liquid-d1-omni-compatibility",
+    "title": "Liquid d1-Omni model card and loader compatibility follow-up",
+    "url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+    "sourceId": "repos-lfm3-d1-omni",
+    "publisherSourceId": "repos-source-76691903cabefc17",
+    "publishedAt": null,
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "unresolved",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:16:49.985265Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "proposedReportId": "liquid-lfm3-specialized-multimodal"
+  },
+  {
+    "id": "nov14-creative-praxis1",
+    "title": "Praxis-1: From Video Pretraining to Robot Control",
+    "url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control",
+    "sourceId": "nov14-story-4159103a9ba7d00b",
+    "publisherSourceId": "seed-runway",
+    "publishedAt": null,
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-creative-luma-board",
+    "title": "A smart organizer for your Luma canvas",
+    "url": "https://lumalabs.ai/news/ai-board-manager",
+    "sourceId": "nov14-story-8e329868794f5f7b",
+    "publisherSourceId": "creative-luma-news",
+    "publishedAt": "2026-11-14",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-creative-comfy-oct",
+    "title": "The little things that shipped in October",
+    "url": "https://blog.comfy.org/p/the-little-things-that-shipped-in",
+    "sourceId": "nov14-story-c615b7a5513e4bdb",
+    "publisherSourceId": "creative-comfy-blog-repair",
+    "publishedAt": "2026-11-09",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-creative-astryx-meetup",
+    "title": "Astryx Meetup: Are Design Systems Still Valuable?",
+    "url": "https://astryx.atmeta.com/blog/astryx-meetup-are-design-systems-still-valuable",
+    "sourceId": "nov14-story-53f3c321d4516299",
+    "publisherSourceId": "nov11-astryx-blog",
+    "publishedAt": "2026-11-13",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:06:18.921Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-gemini-decisions-launch",
+    "title": "Gemini Decisions API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "sourceId": "nov14-gemini-decisions-launch",
+    "publisherSourceId": null,
+    "publishedAt": "2026-11-11",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e",
+    "reportId": "gemini-decisions-api"
+  },
+  {
+    "id": "nov14-so-arena",
+    "title": "SO-Arena",
+    "url": "https://arxiv.org/abs/2611.15777",
+    "sourceId": "nov14-so-arena-primary",
+    "publisherSourceId": null,
+    "publishedAt": "2026-11-11",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-xybench",
+    "title": "XYBench",
+    "url": "https://allenai.org/blog/xybench",
+    "sourceId": "nov14-story-90476995beedb133",
+    "publisherSourceId": null,
+    "publishedAt": "2026-11-13",
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
+  },
+  {
+    "id": "nov14-compactionbench",
+    "title": "CompactionBench",
+    "url": "https://www.microsoft.com/en-us/research/publication/benchmarking-long-horizon-agent-context-compaction-with-compactionbench/",
+    "sourceId": "nov14-story-f3b073780736b4f0",
+    "publisherSourceId": null,
+    "publishedAt": null,
+    "discoveredAt": "2026-11-14T05:55:36Z",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "researchPriority": "backlog",
+    "discoveryMethod": "public_research",
+    "sourceIdentityStatus": "canonical_url_recorded",
+    "lastConsideredAt": "2026-11-14T06:10:47.298037Z",
+    "lastConsideredRunId": "scan-20261114T055536Z-34366e"
   }
 ]

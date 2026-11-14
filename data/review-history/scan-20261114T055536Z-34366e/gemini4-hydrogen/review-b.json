@@ -1,0 +1,33 @@
+{
+  "reportId": "gemini4-hydrogen",
+  "reviewerId": "/root/nov14_hydrogen_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:19:13.373905Z",
+  "reportHash": "e592c68e5abe8fec5c1ff6b56767c5d2d2946ce8d7fa82bd95b9ac208abb9554",
+  "evidenceHash": "25e45fb4f816ed34ccd1a092b7667b15b717b47307002b5ddcd16e28d58b0cde",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented multimodal inputs, text and tool outputs, accessible API routes and migration requirements support concrete education, app, website and video-analysis trials. The report supplies acceptance checks, a correct USD 0.30 illustrative token calculation, and recovery considerations. These are actionable editorial proposals, explicitly not tested workflows or evidence of learning gains.",
+    "impact": "A distinct broadly distributed execution model with a unified million-token budget and documented long-decode integration can meaningfully affect everyday coding and knowledge-work systems. Publisher execution and orchestration measurements suggest significance, but the report correctly avoids treating them as workload-general or independently reproduced evidence. The supplied evidence supports a meaningful advance rather than exceptional field-wide impact.",
+    "novelty": "The migration documentation identifies a new xhigh level, changed default thinking, 64K non-streaming hops and execution-oriented positioning. The unified context, long-decode architecture and built-in tools are shared with Carbon and Argon, so they do not establish a uniquely new Hydrogen capability. Demonstrated differentiation remains moderate without hands-on comparisons.",
+    "maturity": "A stable model identifier, detailed capability table, explicit migration checklist, paid/free routes, pricing and continuation documentation establish usable integration readiness. The release is only two days old at capture, rollout and entitlements were not checked, and SDK recovery, production reliability and benchmark behavior were not executed. Those limits preclude a higher dependability rating.",
+    "openness": "Public specifications, prices, migration guidance and API access provide useful interface-level inspectability and some portability. The packet establishes no release of model weights, training data, training code or permissive model licensing; vendor-hosted access and state/signature requirements constrain reproducibility. Public documentation and free access do not establish open model internals."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking verification note: all three canonical packet hashes and all five referenced archive SHA-256 values match. The archived model and migration pages support the shared input/thinking/output window, 65,536 synchronous cap and long-decode distinction; modalities and exclusions match the report.",
+    "Nonblocking evidence boundary: source captures are publisher material. Public-web extraction limitations and lack of native tests remain explicit. This editorial approval is not independent experimental validation, account-access confirmation or a reproduction of vendor benchmarks.",
+    "Nonblocking precision note: the long-decode recovery and storage discussion follows the captured Interactions API guide. Its link and text should continue to be read in that API context; it does not establish identical semantics for every product surface.",
+    "Nonblocking length and markup note: whitespace counting of parsed section text gives 1,914 words, versus the packet count of 1,929 under its tokenizer; both fit the 1,800–2,200 band associated with this impact rating. Final eligibility still depends on the independent mean impact. Only paragraph and HTTPS-anchor markup appears in the report body."
+  ]
+}

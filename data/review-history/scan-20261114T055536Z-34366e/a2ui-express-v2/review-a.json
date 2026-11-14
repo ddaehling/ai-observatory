@@ -1,0 +1,34 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/nov14_a2ui_final_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:27:25.913235Z",
+  "reportHash": "569771851580552b8b97152ab634d92ace42d94a9eeaec70ea0fe4f34051a0fa",
+  "evidenceHash": "b640197278e5c259b9867124b84b4976b429a4eb43e9719726e36969fb3931c6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The report turns a documented protocol update into concrete, bounded education, app/website and video-review pilots, with appropriate trusted-data, authorization, accessibility, interrupted-stream and fallback acceptance criteria. Migration details and the compatibility matrix are useful to builders. Proposed workflows are clearly distinguished from deployment evidence and actual native testing, which was not performed.",
+    "impact": "A stable interface contract, bidirectional calls, composition constraints and documented adoption across several platforms constitute a substantial domain-level milestone. The saved announcement supports the deployment examples and explicitly limits Jetpack Compose and Gemini Enterprise to 0.9.1 and Lynx to 0.9. Broader field-wide impact or improved user outcomes is not independently established, so the evidence supports seven rather than exceptional impact.",
+    "novelty": "Separating compact model-facing notation from wire messages, server-side macro expansion and the 1.0 contract changes provide meaningful differentiation. This is principally consolidation and extension of an existing generative-interface architecture; the report appropriately preserves October history and does not treat the separate Jev experiment as a newly shipped universal capability.",
+    "maturity": "The current documentation, stable protocol declaration, migration guide, SDK matrix and named adoption examples support use in a bounded pilot. Mixed protocol versions, Python-only macros, unverified registry/package combinations, publisher-only performance measurements and absence of executed SDK or accessibility tests prevent a higher dependability rating.",
+    "openness": "The saved repositories display Apache-2.0 licensing, while inspectable protocol specifications, schemas, migration documentation and multiple renderer/agent implementations support portability. Access to permissive code does not establish open model weights, data or training methods; the cited experiments depend on hosted Gemini/Jev services, and end-to-end performance reproducibility was not demonstrated."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Input binding verified: canonical report, combined sources-and-claims evidence, and rubric SHA256 values match hashes.json. All eleven distinct cited saved capture files match their recorded byte hashes. Relevant source content and locators substantiate the central release, versions, migration, macro, benchmark and historical claims; the repaired complete announcement includes the previously missing deployment/roadmap tail.",
+    "No blocking factual or markup issue found. Report-body prose is approximately 1,919 whitespace-delimited words (the packet records 1,945 under its counter), inside the 1,800–2,200 band for impact 5–7. The coordinator must still apply the final two-review mean and score-disagreement gate independently. HTML uses simple paragraphs and HTTPS citation links with no active markup found.",
+    "Nonblocking provenance polish: the tail-support passage \"Gemini uses A2UI 0.9.1 today\" is a paraphrase, not an exact saved-source quotation. Its underlying line 84 supports the claim. Prefer the actual wording \"supports A2UI 0.9.1 today\" if the passage field is intended to preserve verbatim excerpts.",
+    "Nonblocking metadata polish: updatedAt precedes the November 14 06:21:12Z announcement-tail retrieval. If updatedAt means completion of the latest editorial revision, advance it on the next approved revision. The body already separates original publication, release event and current inspection dates correctly.",
+    "This is independent editorial review of saved documentary evidence, not experimental validation. Maintain the explicit no-installation/no-runtime/no-independent-benchmark qualification and the historical status of October prerequisites and Apparite measurements."
+  ]
+}

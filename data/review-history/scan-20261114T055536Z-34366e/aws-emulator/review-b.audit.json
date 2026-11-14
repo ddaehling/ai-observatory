@@ -1,0 +1,10 @@
+{
+  "reviewerId": "/root/nov14_aws_astra_b",
+  "reportId": "aws-emulator",
+  "reportHash": "2cd4329a8b91667c5c65b6d51a08265d4fc5f47a5008a785cde442b98b6c00f8",
+  "evidenceHash": "e1251d9c766159250dd2fdaf1e65cf72a2d09f0c125f48406601a3638d2f2ec3",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "sourceSupport": "I independently checked the frozen report, evidence and rubric and verified their canonical hashes; all six unique supporting capture-file hashes also match. The November 11 launch is supported by dated publisher text explicitly saying launched/released today, while November 14 is the retrieval date. Undated guides remain undated. README and guides support fees, no-account use, platform routes, embedded-build cost, default telemetry and opt-outs. The report makes no unsupported current-version or universal compatibility claim and clearly discloses incomplete release-table coverage. Fidelity is correctly bounded by both emulator release and test-suite version. Security, IAM/policy, function-isolation, memory lifecycle and regional exclusions match the archived guides. The original use cases and proposed acceptance checks do not imply native execution, rendered media, independent benchmarking or real-cloud validation.",
+  "publication": "The supplied 1924-word body is within 1800–2200 words for the 2000-word band associated with my independent impact score of 6. The coordinator must still apply the rubric to the final mean impact and compare the two independent ratings. I did not inspect another reviewer or worker opinion. No blocking factual or evidentiary correction is required for this bounded documentary report.",
+  "confidenceMapping": "High confidence in documentary claim support and review conclusions; no runtime-validation claim. Converted numeric 0.9 to categorical high for the required schema."
+}

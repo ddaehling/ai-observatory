@@ -1,0 +1,31 @@
+{
+  "reportId": "llm-credential-routing",
+  "reviewerId": "/root/nov14_llm_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:14:44Z",
+  "reportHash": "b3506701cae6fdcf8086f18c59ea53e0fc0013f5df28c730ef93378e3c60568e",
+  "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 7,
+    "impact": 4,
+    "novelty": 2,
+    "maturity": 8,
+    "openness": 9
+  },
+  "rationale": {
+    "usefulness": "The upgrade guidance targets the actual runtime and installation manager, and synthetic destination/credential assertions give educational, application, website-backend and media-automation builders a concrete response. Usefulness is substantial for LLM users with custom endpoints, but conditional on using this particular tool and configuration.",
+    "impact": "Two Moderate credential-routing bugs are a meaningful maintenance concern for affected LLM deployments. The evidence establishes specific configuration-dependent disclosure paths, not exploitation prevalence, user exposure or a field-wide change in AI development; this supports 4 independently of report length.",
+    "novelty": "The release repairs credential isolation and missing-key behavior rather than introducing a distinctive AI capability. The delegate-client default mismatch is an instructive implementation detail, but the evidence does not demonstrate a new general approach.",
+    "maturity": "A published 0.37.2 release, explicit affected ranges, maintained setup guidance, and reporter-authored regression tests and full-suite results support readiness. Those tests are documentary evidence only; neither this review nor the report independently executed the package or validated the patch.",
+    "openness": "The archived repository LICENSE confirms Apache 2.0, and both advisories expose conditions, synthetic reproductions and proposed patch logic. This is highly inspectable and reproducible software evidence. The review does not extend that openness to provider models, weights, training data or hosted services, nor claim an independently reproduced build.",
+    "editorialValidation": "Canonical report, evidence and rubric hashes all match the frozen packet; all three supporting archive byte hashes also match. Both advisories support Moderate severity, the November 11, 2026 publication date and 0.37.2 fix. The missing-alias range and historical 0.6–0.7.1 caveat are accurate. Citations and Apache 2.0 claim are supported. User exposure and native execution are explicitly disclaimed, and practical examples are framed as proposed applications. The 976-word body fits the 900–1100 band if the eventual independent mean impact remains below 5; final mean remains unknown in this blind review. One bounded precision repair is required for the delegate variant."
+  },
+  "confidence": 0.95,
+  "concerns": [
+    "The delegate section should distinguish the exact configuration and version of each path. GHSA-r639-rr7r-x72w lines 130–139 says the YAML delegate leak occurs when api_key_name is not set; the report's 'When no provider-specific key was configured' can conflate this with the separate missing-stored-alias fallback. Replace that phrase with 'When api_key_name was not set' and retain the correctly stored named-key exception. The same advisory line 131 dates the llm openai endpoint variant specifically from 0.32rc2, while YAML Responses models are affected from 0.32a2. Add 'from 0.32rc2 through 0.37.1' to the endpoint-invocation sentence. These are small corrections within the existing length band."
+  ]
+}

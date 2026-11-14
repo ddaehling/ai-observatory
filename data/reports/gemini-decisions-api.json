@@ -1,0 +1,152 @@
+{
+  "id": "gemini-decisions-api",
+  "title": "Gemini Decisions API brings typed judgments to audio, video and documents",
+  "entity": "Gemini Decisions API / Gemini Decision 1",
+  "category": "Tools",
+  "tags": [
+    "typed decisions",
+    "multimodal",
+    "developer tools",
+    "evaluation",
+    "education"
+  ],
+  "summary": "Google’s new hosted decision model scores fixed questions over text, images, audio, video and PDFs. It offers a practical multimedia routing component, with explicit fallbacks, input billing and reliability tests still needed.",
+  "changeType": "new",
+  "publishedAt": "2026-11-11",
+  "discoveredAt": "2026-11-14T05:55:43Z",
+  "updatedAt": "2026-11-14T06:14:43.496593Z",
+  "officialUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "A small decision can use the original media",
+      "html": "<p>Google introduced the <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/\">Gemini Decisions API on November 11, 2026</a>. Its practical contribution is a dedicated model for fixed questions about mixed media. An application can submit a recording, image, document or video alongside text and receive a result it can use directly. That creates possibilities for organizing review work without first generating a transcript, writing a prose assessment and parsing that assessment into a category.</p>\n<p>The service uses <code>gemini-decision-1</code> through the Gemini Developer API. It is a hosted building block; developers supply the application, storage, user interface and rules for acting on results. The launch says access is available through Google AI Studio, including a no-cost prototyping tier. It describes Google Cloud support as forthcoming. Those are different access statements, and this research did not test an account, region or integration.</p>\n<p>The category already includes Jev and OpenAI Decisions, covered elsewhere in this library. This report treats Google’s endpoint as a separate product. Native multimedia inputs and its own operational limits justify examining it on its own terms. A familiar question type does not make the surrounding APIs interchangeable.</p>"
+    },
+    {
+      "id": "mechanism",
+      "title": "Match the output to a decision the app understands",
+      "html": "<p>The <a href=\"https://aistudio.google.com/docs/models/gemini-decision-1\">model specification</a> describes one-pass scoring with zero generated output tokens. It supports yes/no questions, a selection among fixed options, and an ordered rubric. Up to 1,000 questions can share a request, within a 262,144-token context that also has to accommodate their instructions. Choice questions accept 2–255 alternatives; rubric questions accept 2–255 levels. These are interface limits, rather than a recommendation to fill every request.</p>\n<p>A yes/no result is useful for checking one observable condition. A choice fits a routing menu such as needs sound review, needs picture review, or manual inspection. An ordered score can prioritize a queue. The <a href=\"https://aistudio.google.com/docs/decisions-api#score\">guide</a> defines that score as an average of level indices weighted by their probabilities. An intermediate value is therefore not a selected category, a percentage of correctness or an objective quality measurement.</p>\n<p>For example, a clip may be uncertain between two review levels. Showing only their average could hide that disagreement. A useful interface retains the distribution and displays the relevant media next to it. The operator can then correct the route, and the system can preserve that correction as an evaluation example.</p>"
+    },
+    {
+      "id": "questions",
+      "title": "Independent checks need software-owned combinations",
+      "html": "<p>Question names connect requests to answers, but the model does not see those names. Write the full condition in the instructions. Questions are evaluated independently against shared evidence; a question cannot consume another answer from that same call. Dependencies belong in application code or a subsequent request. This matters when a later decision only makes sense after an earlier eligibility check.</p>\n<p>Consider a media intake form. The application already knows the file extension and whether an upload succeeded; ordinary code should validate those facts. A model might judge whether the supplied material contains a spoken explanation or a demonstration relevant to the requested lesson. Software can combine the two checks into a proposed review path. If the evidence is missing or ambiguous, the interface should keep an unresolved state rather than inventing a confident category.</p>\n<p>Keep a versioned definition of each question. When a teacher or editor disagrees, save which criteria were in force and what the model saw. A changed prompt can otherwise make yesterday’s and today’s results look comparable when they represent different tasks. Improving this definition may matter more than adding extra checks.</p>"
+    },
+    {
+      "id": "media",
+      "title": "Design around evidence that can actually be submitted",
+      "html": "<p>The model accepts text, images, video, audio and PDF inputs. Google’s guide permits media through inline data, supported Files API references and HTTPS URLs, while excluding YouTube links and direct <code>gs://</code> references. Question instructions remain text-only. Conversation and tool-call blocks are unsupported; multi-turn context must be represented as text. A media-aware endpoint therefore still needs a deliberate ingestion layer.</p>\n<p>A document workflow should preserve the original file and identify which version was assessed. A video workflow should preserve clip boundaries and the associated brief. Otherwise, a reviewer may open a different export from the one that produced the score. This is ordinary product engineering, but it determines whether an automated judgment can be challenged.</p>\n<p>Resolution is a tradeoff to evaluate, rather than an invisible performance knob. Lower visual detail may be adequate for broad scene classification and inadequate for a tiny chart label. Compare the same labeled examples under the settings your product intends to use. A successful request only demonstrates that the service accepted the input; it does not show that the necessary evidence survived ingestion.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A teacher-facing review queue is a useful first experiment",
+      "html": "<p>One bounded education pilot would organize short explanations recorded for a lesson. Start with synthetic or consented examples and a teacher-written rubric about the recording itself: whether a demonstration is visible, whether the speaker describes the relevant step, and whether the material needs manual inspection. The input is a recording plus the lesson brief; the output is a proposed review queue with inspectable criteria. This is an editorial application idea, not a tested integration.</p>\n<p>The interface should let the teacher replay the recording and correct each proposed label. Keep the initial run in shadow mode: collect predictions while the teacher makes the actual choice. Compare errors across accents, background noise, camera positions and incomplete demonstrations. A system that handles clear studio recordings may fail precisely on the ordinary classroom material that makes automation attractive.</p>\n<p>Measure whether the tool reduces sorting time without hiding examples that deserve attention. Do not turn its probability into a learner’s mastery score or use it for placement. Those decisions require different evidence and validation. If teachers repeatedly disagree about the rubric before looking at the model, resolve that ambiguity before optimizing the model’s thresholds.</p>"
+    },
+    {
+      "id": "apps",
+      "title": "Make routing reversible in an app or website",
+      "html": "<p>A second pilot is a website that collects troubleshooting material: a screenshot, a short screen recording, a PDF export and a description of the problem. Decisions could suggest an initial queue, while the website supplies a clear correction control. Use observable categories such as layout issue, missing content, export problem or unclear. The intended output is a useful starting point for a human, not a claim that the system has diagnosed the root cause.</p>\n<p>Evaluate both routing accuracy and the work created by mistakes. Sending a report to the wrong queue can be more costly than leaving it unclassified. Include mixed cases, irrelevant uploads and requests that do not fit any category. A category menu that has no legitimate answer is a product-design problem, even if the model distributes probabilities neatly across its options.</p>\n<p>Keep actions separate from classification. A suggested refund queue must not itself authorize payment; a suggested publishing queue must not release content. Store the original submission, model result, human correction and final action separately. That separation makes it possible to learn whether the model helped, whether the categories were wrong, or whether downstream software caused the failure.</p>"
+    },
+    {
+      "id": "video",
+      "title": "Use clip triage to focus editorial attention",
+      "html": "<p>For video production, try a small library of clips with a concrete brief: a required object, a visible action and a spoken line. Submit each clip and ask independent questions that determine which human checks it needs. The output could be an editorial checklist that opens the exact clip, rather than an automatically approved timeline. A separate transcription or editing system would still be needed for deliverables outside the decision endpoint’s output.</p>\n<p>Test easy positives alongside subtle negatives: an object partly obscured, a line spoken off camera, an action begun but not completed, or a brief moment that contradicts the overall scene. Review the failures at the same resolution and clip length intended for production. Avoid assuming that a good full-clip judgment establishes frame-accurate timing or a safe cut point.</p>\n<p><a href=\"https://simonwillison.net/2026/Nov/11/gemini-decisions-api/\">Simon Willison’s November 11 example</a> supplies a small independent observation: he submitted a robot video and received probabilities for four yes/no questions. That shows an author’s concrete experiment. It is too small to establish dependable media understanding, production latency, or comparative accuracy, and this report did not reproduce it.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Count complete requests and the quota they consume",
+      "html": "<p>The <a href=\"https://aistudio.google.com/docs/pricing#gemini-decision\">current pricing table</a> lists USD $0.10 per million input tokens across supported modalities. There are zero output tokens to bill. Shared evidence is counted once within a request; each question contributes its own instructions, criteria and formatting. Context caching and the Batch API are unavailable for this model, and repeated input across requests is billed again. Do not apply general Gemini batch or cache discounts to it.</p>\n<p>For an illustrative request whose measured total is 10,000 input tokens, that rate gives a model charge of $0.001. Ten thousand such requests would be $10, before retries, storage, networking or other services. This is arithmetic, not an observed invoice. Media duration is not a token count, so a per-minute audio or video budget needs measured usage from representative files.</p>\n<p>The <a href=\"https://aistudio.google.com/docs/rate-limits#gemini-decision\">rate-limit page</a> lists free-tier limits of 200 requests per minute, 50,000 input tokens per minute and 10,000 requests per day. Limits apply per project; any one can bind. Under the illustrative 10,000-token workload, the token limit allows five requests per minute even though the request limit is much higher. The pricing table also distinguishes product-improvement data use on free and paid tiers; evaluate the applicable terms before choosing data for a pilot.</p>"
+    },
+    {
+      "id": "reliability",
+      "title": "A fast answer still needs a local reliability test",
+      "html": "<p>Google reports median end-to-end latency of 150–250 ms and 50–100 ms of model compute, with the detailed latency discussion scoped to contexts up to 16K tokens and approximately flat behavior from one to 100 questions. Those are vendor measurements, not a promise for the maximum context, 1,000 questions or your upload pipeline. Measure from the user’s action to the usable interface update, including retrieval, transfer, queuing and fallback work.</p>\n<p>Probability estimates are useful for routing uncertain cases, but a confident error is still an error. Use held-out examples from the intended task to compare confidence with observed correctness. Keep the cost of false acceptance separate from the cost of unnecessary review. A single overall accuracy number can obscure the failure that actually matters to your users.</p>\n<p>The independent <a href=\"https://arxiv.org/abs/2611.15777\">SO-Arena preprint</a> reinforces a useful evaluation distinction: it examines stability under changes to the available options and recognition that no correct option exists, separately from task performance. Its general result motivates tests for this product; this report does not claim a reproduced Gemini score. Include missing-answer cases and semantically equivalent category descriptions in your own acceptance set.</p>"
+    },
+    {
+      "id": "operations",
+      "title": "Ship an explicit unresolved state",
+      "html": "<p>A production wrapper needs handling for blocked inputs, invalid requests, quota errors and unavailable service. The guide documents HTTP 400 responses for validation or safety failures; an error must not be interpreted as a negative answer. Preserve enough structured information to distinguish a rejected request from a completed judgment. Show the user a clear path to ordinary review when no usable result arrives.</p>\n<p>The useful acceptance test is modest: does this component reduce a repeated interpretation step while leaving people able to inspect and correct its mistakes? Begin with a narrow queue, a fixed evaluation set and a measured latency budget. Expand only after the difficult examples are understood. A large question limit is useful headroom, not evidence that a workflow improves when every possible criterion is automated.</p>\n<p>Gemini Decisions is worth trying where original multimedia evidence matters and the possible outputs are already known. The available documentation is substantial enough to plan a pilot, but readiness for a particular classroom, support website or video pipeline remains an empirical question. The strongest implementation will make the source material, proposed decision and fallback visible together.</p>"
+    }
+  ],
+  "useCases": [
+    "Organize teacher-reviewed recordings against explicit lesson-material criteria.",
+    "Route screenshot, video and PDF troubleshooting submissions with a correction path.",
+    "Create a human-review checklist for clips against a production brief."
+  ],
+  "limitations": [
+    "No API call, account/region access test or production integration was performed.",
+    "Google’s latency and calibration claims were not independently reproduced.",
+    "Hosted Gemini Developer API v1beta service; Google Cloud support was described as forthcoming at launch.",
+    "No context caching or Batch API; repeated cross-request media is billed again.",
+    "Question instructions are text-only; direct YouTube, gs://, conversation and tool-call inputs are unsupported.",
+    "Proposed educational workflows do not validate learner grading or placement."
+  ],
+  "sources": [
+    {
+      "id": "nov14-gemini-decisions-launch",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "accessedAt": "2026-11-14T06:00:22.794Z",
+      "publishedAt": "2026-11-11",
+      "locator": "Launch; Native multimodal evaluation; Start building today",
+      "supports": "Launch date, native modalities, vendor latency scope, availability and ecosystem status."
+    },
+    {
+      "id": "nov14-gemini-decisions-guide",
+      "title": "Decisions API developer guide",
+      "url": "https://aistudio.google.com/docs/decisions-api",
+      "accessedAt": "2026-11-14T06:03:04.989Z",
+      "publishedAt": null,
+      "locator": "Question types; Confidence; Input; Best practices; Request; Limits; Limitations",
+      "supports": "Answer semantics, independent questions, media input paths, validation and unsupported features."
+    },
+    {
+      "id": "nov14-gemini-decision-model",
+      "title": "Gemini Decision 1 model specification",
+      "url": "https://aistudio.google.com/docs/models/gemini-decision-1",
+      "accessedAt": "2026-11-14T06:02:00.146Z",
+      "publishedAt": null,
+      "locator": "Overview; Supported data types; Token limits; Capabilities",
+      "supports": "Model identifier, one-pass scoring, question/option/context limits and hosted API scope."
+    },
+    {
+      "id": "nov14-gemini-decision-pricing",
+      "title": "Gemini Developer API pricing: Gemini Decision 1",
+      "url": "https://aistudio.google.com/docs/pricing#gemini-decision",
+      "accessedAt": "2026-11-14T06:04:56.788Z",
+      "publishedAt": null,
+      "locator": "Gemini Decision 1, standard pricing table",
+      "supports": "USD input price, modality coverage, repeated-input billing, no caching/batch, free/paid data-use distinction."
+    },
+    {
+      "id": "nov14-gemini-decision-ratelimits",
+      "title": "Gemini Decision 1 rate limits",
+      "url": "https://aistudio.google.com/docs/rate-limits#gemini-decision",
+      "accessedAt": "2026-11-14T06:04:56.840Z",
+      "publishedAt": null,
+      "locator": "How rate limits work; Gemini Decision 1 rate limits",
+      "supports": "Project-level RPM/TPM/RPD limits, reset convention and documented free-tier values."
+    },
+    {
+      "id": "nov14-so-arena-primary",
+      "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+      "url": "https://arxiv.org/abs/2611.15777",
+      "accessedAt": "2026-11-14T06:04:58.228Z",
+      "publishedAt": "2026-11-11",
+      "locator": "Abstract",
+      "supports": "Independent research framing for decision stability and missing-answer recognition; no Gemini benchmark result claimed."
+    },
+    {
+      "id": "source-485ec329c8b74027",
+      "title": "Gemini Decisions API — Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "accessedAt": "2026-11-14T06:00:21.010Z",
+      "publishedAt": "2026-11-11",
+      "locator": "Video-file experiment and example probabilities",
+      "supports": "One independent author experiment, explicitly not a general accuracy or latency evaluation."
+    }
+  ],
+  "images": [],
+  "judgment": "A useful multimedia decision component for narrow, reversible workflows whose errors and review costs can be measured.",
+  "researchNote": "Original Google launch, model/API documentation, pricing and quotas were inspected through public web retrieval on November 14, 2026; an independent author example was also inspected in an owned hidden in-app-browser tab. Relevant public sections were preserved with hashes. No API execution, installation, benchmark reproduction or private account collection was performed. Workflows and acceptance criteria are editorial proposals. Dynamic documentation publication dates remain unknown. Publication requires two fresh independent Astra reviews."
+}

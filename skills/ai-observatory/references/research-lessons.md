@@ -18,6 +18,8 @@ Small batches of roughly three or four pages proved easier to checkpoint and rec
 
 Capture complete relevant source content in ignored run storage when practical, then retain concise supporting passages and locators in public evidence. Do not publish raw browser dumps or screenshots containing account chrome. A worker's claimed success needs a saved artifact or explicit tool result, not just a filename mentioned in prose.
 
+Check that a saved capture contains the specific passages used by the report. A tool response can stop before later article sections even when its title and total line count look complete. A separate browser observation does not fill that gap in a frozen review packet. Use the bounded acquisition repair to save missing sections, preserve both captures and their retrieval times, and bind the relevant locators before final review. Store verbatim excerpts as exact source text; label paraphrases as summaries.
+
 When a shared browser connection disappears mid-run, distinguish an individually attempted failure from an entrypoint that was never visited. An unvisited result keeps `checkedAt:null` and its prior access and coverage timestamps; record the outage-accounting time separately. Coordinate one availability recheck before workers resume, rather than making every remaining source repeat the same connection failure.
 
 ## Discover broadly; promote selectively

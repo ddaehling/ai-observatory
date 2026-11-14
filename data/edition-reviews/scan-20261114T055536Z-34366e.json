@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261114T055536Z-34366e",
+  "recordedAt": "2026-11-14T06:36:56.132867+00:00",
+  "status": "validated-awaiting-deployment",
+  "expectedSources": 200,
+  "accessibleSources": 190,
+  "individualFailedAttempts": 10,
+  "unvisitedSources": 0,
+  "partialNonFeedSources": 186,
+  "preservedPrimaryFeeds": 4,
+  "newMonitorsObservedSeparately": 11,
+  "totalMonitoredSources": 211,
+  "sourceLedgerAdditionsIncludingCollector": 95,
+  "sourceLedgerCount": 3104,
+  "feedCandidates": 28,
+  "researchCandidates": 13,
+  "priorCandidatesReconsidered": 16,
+  "uniqueCandidatesConsidered": 57,
+  "finalCandidateStatuses": {
+    "needs_review": 26,
+    "excluded": 21,
+    "included": 8,
+    "unresolved": 2
+  },
+  "catalogue": {
+    "considered": 68,
+    "added": 13,
+    "updated": 2,
+    "rejected": 0,
+    "deferred": 5
+  },
+  "newReports": [
+    "aws-emulator",
+    "llm-credential-routing",
+    "gemini4-hydrogen",
+    "gemini-decisions-api"
+  ],
+  "revisedReports": [
+    "a2ui-express",
+    "typesafe-jev"
+  ],
+  "unchangedProtectedReports": [
+    "pocket-tts-small",
+    "gpt6-intelligent-ui",
+    "transformers",
+    "studentsim",
+    "gemini4-carbon",
+    "elevenlabs-cue-alignment",
+    "gemini-cli-access-transition",
+    "datasette-agent-apps",
+    "embeddinggemma-2",
+    "timestral",
+    "mistral-large4",
+    "astabrief",
+    "openai-academy-learning-paths",
+    "together-link",
+    "astryx-agent-design-system",
+    "claw-ed",
+    "krea-3",
+    "claude-fable-52",
+    "images26-creative-controls",
+    "pdd-kit",
+    "minimax-h3-image",
+    "qwen38-27b",
+    "ollama-phonon",
+    "indra-ocr",
+    "voxtral-3",
+    "pytorch-pointcloud",
+    "liquid-lfm3-specialized-multimodal",
+    "cloudflare-security-audit-workflow",
+    "cadre-world-models",
+    "kimi-k31-pro",
+    "muse-ember",
+    "nemotron35-transcribe",
+    "kitten-tts-2",
+    "tutormoments",
+    "openai-decisions-api",
+    "flux3-image-klein",
+    "mecatl",
+    "agent-lightning",
+    "gpt61-terra",
+    "comfyui",
+    "reasoning-from-scratch-course",
+    "flint-interactive",
+    "fish-audio",
+    "claude-duet",
+    "rosalind-academic-plan",
+    "litpivot",
+    "notebooklm",
+    "novelty-judge-bench",
+    "pika-h3-flex-six-step-video-20261029",
+    "ollama-fly-sprites",
+    "cohere-rerank5"
+  ],
+  "reportGates": {
+    "a2ui-express": {
+      "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+      "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_a2ui_precision_a",
+        "/root/nov14_a2ui_precision_b"
+      ],
+      "wordCount": 1945,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 7.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 8.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "typesafe-jev": {
+      "reportHash": "e43d5043234981ebb628bb5d6706374381d1f82d81e6655a85d6d9d35d3c036e",
+      "evidenceHash": "8a4c14b99fc43e0e7ce7f0dfb5937195c02861da7d64805ffe0f3aef798b1265",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_jev_astra_a",
+        "/root/nov14_jev_astra_b"
+      ],
+      "wordCount": 1901,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 5.5,
+        "novelty": 5.0,
+        "maturity": 5.5,
+        "openness": 4.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "aws-emulator": {
+      "reportHash": "2cd4329a8b91667c5c65b6d51a08265d4fc5f47a5008a785cde442b98b6c00f8",
+      "evidenceHash": "e1251d9c766159250dd2fdaf1e65cf72a2d09f0c125f48406601a3638d2f2ec3",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_aws_astra_a",
+        "/root/nov14_aws_astra_b"
+      ],
+      "wordCount": 1924,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 6.0,
+        "novelty": 6.0,
+        "maturity": 5.0,
+        "openness": 8.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 0
+    },
+    "llm-credential-routing": {
+      "reportHash": "3b4881b15d149c2b73751c8b95e56085ac46ca254c212add4958242309dd76a8",
+      "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_llm_final_astra_a",
+        "/root/nov14_llm_final_astra_b"
+      ],
+      "wordCount": 983,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 4.0,
+        "novelty": 2.5,
+        "maturity": 7.5,
+        "openness": 9.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "gemini4-hydrogen": {
+      "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+      "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_hydrogen_final_a",
+        "/root/nov14_hydrogen_final_b"
+      ],
+      "wordCount": 1933,
+      "meanScores": {
+        "usefulness": 7.5,
+        "impact": 6.0,
+        "novelty": 5.0,
+        "maturity": 6.0,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    },
+    "gemini-decisions-api": {
+      "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+      "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_decisions_final_a",
+        "/root/nov14_decisions_final_b"
+      ],
+      "wordCount": 1871,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.5,
+        "novelty": 6.0,
+        "maturity": 5.0,
+        "openness": 3.0
+      },
+      "verdict": "approve",
+      "maxScoreDifference": 1
+    }
+  },
+  "validation": {
+    "reportGate": true,
+    "catalogueAndCaptureChecks": true,
+    "strictBuild": true,
+    "projectTests": 109,
+    "projectTestsPassed": true,
+    "initialSandboxTestLimit": "14 loopback-server tests could not bind under sandbox; all109 passed when permitted loopback access.",
+    "browserInspection": [
+      "redesigned index",
+      "full AWS report",
+      "source links",
+      "both reviewer rationale texts",
+      "edition coverage",
+      "source ledger"
+    ],
+    "frontendHashesUnchanged": true
+  },
+  "coverageLimits": [
+    "Chrome unavailable; public extraction and available IAB used.",
+    "No additional complete-window assertions; original RSS results preserved.",
+    "Ten actual source-access failures retained; no inference of no news.",
+    "Bounded backlog sample; unselected backlog retained.",
+    "No model/package/emulator execution or independent benchmark reproduction."
+  ],
+  "resources": {
+    "exactAstraReviewerInvocations": 22,
+    "tokenUsage": null,
+    "monetaryCost": null,
+    "note": "Counts are observed; token and monetary usage were not provided. Same-model reviews are editorial checks."
+  },
+  "skillUpdate": {
+    "changedReferences": [
+      "references/publication-checks.md",
+      "references/research-lessons.md"
+    ],
+    "installedAndVersionedCopiesMatch": true,
+    "validation": "Reference links, exact-copy hashes and placeholders checked. Generic quick_validate could not run because its existing Python lacks PyYAML; entrypoint/frontmatter unchanged."
+  }
+}

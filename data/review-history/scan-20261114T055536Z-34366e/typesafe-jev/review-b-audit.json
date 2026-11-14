@@ -1,0 +1,8 @@
+{
+  "reviewerId": "/root/nov14_jev_astra_b",
+  "reviewedAt": "2026-11-14T06:14:27.860082Z",
+  "scope": "Frozen report, evidence, rubric and manifest plus the ten underlying captures referenced in evidence. No other reviews or worker opinions inspected.",
+  "integrity": "Report and rubric digests verified using compact sorted-key UTF-8 JSON. Evidence digest verified using the documented envelope containing report sources and evidence claims. All ten capture byte hashes match. Initial comparison against the claims array alone was not the contract hash and is resolved; no manifest repair is needed.",
+  "findings": "No material unsupported claim or publication-blocking repair identified. Source retrieval dates are distinguished from release, conference publication and cookbook run dates. Historical aliases are explicitly superseded. Practical recommendations remain proposals and vendor demonstrations remain attributed.",
+  "validationLimit": "Source-grounded editorial review only; no API, model, media or classroom experiment executed."
+}

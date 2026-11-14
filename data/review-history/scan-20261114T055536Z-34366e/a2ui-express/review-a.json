@@ -1,0 +1,31 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/nov14_a2ui_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:20:00.941558Z",
+  "reportHash": "f8a0ce86e05fdd69354b10a8a295c7f4a03147424316d4282042dc51d29f0f11",
+  "evidenceHash": "f9fb60db2fe160fdd6e9f78a1e97db2334b7308d41441989dfeba0664790e3fd",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The report gives concrete, bounded education, app/web and video-review pilots, explains trusted data and action ownership, and supplies migration and failure-recovery acceptance criteria. These are useful implementation decisions, explicitly labeled proposals rather than demonstrated classroom or production outcomes. Source capture completeness needs the bounded repair below.",
+    "impact": "A documented stable protocol milestone, bidirectional functions, composition constraints and multiple renderer routes constitute a substantial advance within generated interfaces. Mixed 0.9/0.9.1/1.0 support and no independent deployment or performance tests limit evidence of broader field-wide impact. A rating of 7 supports the 2000-word band; the report is within its ten-percent tolerance.",
+    "novelty": "Swappable generation notation compiled into common wire JSON, server-side macro expansion and stronger protocol composition provide meaningful architectural differentiation. The update largely stabilizes and extends an existing approach, and the packet does not establish a fundamentally new interface paradigm or superiority over other systems.",
+    "maturity": "Current official SDK tables and migration documentation are detailed, and the captured announcement establishes the 1.0 release plus named adoption examples. However, Compose and Lynx remain on earlier protocol versions, package-registry conformance was not checked, and no runtime, accessibility or independent benchmark validation was performed. The report appropriately keeps October defaults and Apparite measurements as dated history.",
+    "openness": "The preserved repository captures establish Apache-2.0 licensing for A2UI and Apparite; inspectable protocols, catalogs, SDK sources and multiple renderer implementations enable portability. Model access fees, unverified current package combinations and unreproduced publisher benchmarks prevent treating the complete system as maximally open or reproducible."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Material evidence-binding gap: a2ui-nov14-release points only to initial-web-1.json. I verified its SHA-256 and inspected the actual multi-page capture: its A2UI article stops at L71 of a stated 156 lines. It supports the release, Compose 0.9.1 and Lynx 0.9, but does not contain the later Inside Gemini or What’s next passages used for Gemini Enterprise 0.9.1, Gemini Notebook adoption and current official decision-model SDK roadmap claims. The October launch supports only the historical absence of a decision-model inference format. Bind a complete or supplementary saved announcement capture containing those later passages, update the support locators/archive hashes and evidenceHash, then re-review the resulting packet; alternatively remove or date-limit the unsupported current claims.",
+    "Nonblocking audit: reportHash, evidenceHash and rubricHash match the specified canonical definitions, and all ten distinct referenced archive byte hashes verify. The report contains eight distinct section anchors, safe p/a markup with HTTPS links, and an explicit preserved October publication date versus November release/update chronology. Its body length fits the impact-7 band. No other reviewer output was read, and this editorial review is not independent experimental validation."
+  ]
+}

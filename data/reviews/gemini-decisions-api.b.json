@@ -1,0 +1,34 @@
+{
+  "reportId": "gemini-decisions-api",
+  "reviewerId": "/root/nov14_decisions_final_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:27:41.284193Z",
+  "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+  "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented typed outputs, independent shared-input checks, native media support and low published input price offer substantial practical value for repeated routing and editorial triage. The report turns those capabilities into specific education, website and video pilots with correction controls, shadow evaluation and measurable error costs. Value remains proposed rather than demonstrated in the target workflows; no API execution or end-to-end deployment was tested.",
+    "impact": "A purpose-built decision endpoint that accepts audio, video and PDFs alongside text and images is a significant extension of the decision-model category and can remove transcription-plus-generation-plus-parsing steps in bounded workflows. Google distribution and the documented operating envelope support meaningful potential reach. Evidence does not establish field-wide transformation, comparative reliability or independent performance, so impact remains below the highest tier.",
+    "novelty": "Native multimedia inputs and zero-output-token typed scoring are meaningfully distinctive in the comparison described by the saved independent author example. The three output forms and shared-input independent-question pattern are already present in the existing decision-model category. No controlled comparison or new algorithmic result is demonstrated here.",
+    "maturity": "The model specification, detailed guide, pricing, quota table, SDK examples and one independent video experiment support a usable pilot. The endpoint is v1beta, launch-age evidence is brief, Google Cloud support is forthcoming, caching and batch are absent, and account/region access plus production reliability were not tested. Detailed documentation does not warrant a higher dependability score.",
+    "openness": "Public documentation, request/response examples, a no-cost prototype tier and clear hosted pricing provide useful inspectability at the API boundary. The assigned evidence does not establish released model weights, training code/data, permissive model licensing or self-hosting rights; the service remains provider-hosted and reproducibility depends on access and model behavior. Public API access therefore merits only a limited openness score."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking evidence-envelope scope note: evidence.json[0], hydrogen-nov14-pricing, describes Gemini 4 Hydrogen and uses the same nov14-gemini-decision-pricing source ID as the Decision pricing claim. Its explicit #gemini-4-hydrogen URL, locator and verified saved Hydrogen table correctly identify the separate product; the report does not import its prices or capabilities. The coordinator clarified that the evidence contract collects all claims touching a canonical source page, with URL fragments stripped for source identity. Independently inspecting the passages confirms that both price claims retain correct fragment-level capture provenance and that the report Decision price is supported by its own Decision-specific capture. Thus no report pricing correction is required. For audit clarity, a canonical page title or explicit shared-page note would make this extra claim less misleading.",
+    "Input integrity audit passed for reportHash, evidenceHash using the required sources-plus-claims object, and rubricHash. All ten unique referenced saved capture/archive files also matched their recorded SHA256 values, including the extra Hydrogen archive. Matching hashes establish file binding; relevant content and locators were also inspected.",
+    "The remaining substantive report claims agree with relevant saved source passages: launch/publication November 11; retrieval November 14; dynamic documentation publication dates left unknown; Gemini Developer API v1beta and forthcoming Cloud support; 262,144-token and question/option limits; weighted score semantics; unsupported inputs and caching/batch; $0.10 input pricing; project-level quotas; and vendor latency limited to the documented context/question scope. SO-Arena is correctly used for methodological motivation and the robot-video example is correctly limited to a single unreproduced author experiment.",
+    "Nonblocking qualification: the report calls the service hosted but could state explicitly that the inspected sources establish API access rather than released weights, training data/code, or a permissive model license. Do not equate the free tier with open-source access.",
+    "Length and markup audit: section HTML contains approximately 1,856 whitespace-delimited body words, within the 1,800–2,200 band associated with this independent impact score. The supplied hash manifest reports 1,871, which does not change that result. Final length compliance must use the eventual two-reviewer mean impact. Inspected markup uses only paragraph, HTTPS anchor and code tags, with no unsafe attributes. This editorial review is not independent experimental validation, and no native API or benchmark tests were performed."
+  ]
+}

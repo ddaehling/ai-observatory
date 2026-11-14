@@ -1,0 +1,34 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/nov14_a2ui_final_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:27:34.299665Z",
+  "reportHash": "569771851580552b8b97152ab634d92ace42d94a9eeaec70ea0fe4f34051a0fa",
+  "evidenceHash": "b640197278e5c259b9867124b84b4976b429a4eb43e9719726e36969fb3931c6",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The stable protocol, renderer-specific compatibility table, concrete migration hazards and bounded evaluation criteria give educational and creative builders substantial practical value. The teacher resource chooser, app review panel and transcript-review examples connect implementation decisions to user outcomes and clearly identify proposed workflows. No classroom, app or video workflow was executed, so the usefulness is actionable documentary guidance rather than demonstrated outcome improvement.",
+    "impact": "A stable cross-framework interface contract, bidirectional calls, richer composition constraints and named publisher-reported deployments constitute a meaningful development within agent interfaces. The saved announcement explicitly limits several deployments to older versions, and neither adoption breadth nor end-user gains is independently measured. This supports a domain-significant rating of 6, not an exceptional field-wide score.",
+    "novelty": "The separation of swappable generation notation from the wire protocol, server-side macro expansion and the 1.0 composition/binding changes provide concrete differentiation. Much of the architecture predates this update and the document does not establish superiority over competing interface protocols. Official decision-model integration remains roadmap work, appropriately excluded from shipped novelty.",
+    "maturity": "The November 11 stable-release announcement and current SDK, inference-format and migration documentation materially improve readiness. Yet Compose, Gemini and Lynx remain on older versions, macros are Python-only, package-registry and installed-version conformance were not checked, and performance evidence is publisher supplied. The report accurately distinguishes the October complete-reply behavior from currently documented incremental compilation, without claiming a native test.",
+    "openness": "The dated repository captures verify Apache-2.0 code licensing, and the current primary documentation exposes protocol schemas, migration rules, multiple language and renderer implementations and reproducible evaluation structure. Model choice is separated from the protocol. Hosted Gemini/Jev dependencies in the examples, missing independent benchmark reproduction and unverified current package combinations prevent a maximum score; permissive application code does not imply open model weights or training data."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Input binding verified: reportHash, evidenceHash (sources plus claims), and rubricHash match hashes.json; all 11 distinct referenced saved-capture byte hashes match. Relevant source text and locators were inspected, including the complete announcement tail supporting deployment-version and roadmap qualifications. This is an editorial source audit, not independent experimental validation.",
+    "No blocking factual or markup issue found. Section HTML contains only paragraph and HTTPS-anchor markup. Extracted section prose is approximately 1,919 whitespace-delimited words, within the 1,800–2,200 range applicable to this reviewer's impact rating; the coordinator must recheck the required band using the final independent mean without adjusting ratings to fit length.",
+    "Nonblocking provenance cleanup: report.updatedAt is 06:10:56Z while the repaired announcement capture was retrieved at 06:21:12Z on the same date. If updatedAt denotes the final content revision, advance it to the actual final revision time. The public chronology otherwise clearly distinguishes the original October publication, November release and retrieval dates.",
+    "Nonblocking evidence excerpt precision: the announcement-tail support passage says \"Gemini uses A2UI 0.9.1 today\", while saved line 84 says Gemini renders those responses and \"supports A2UI 0.9.1 today\". The underlying factual claim is supported, but use the actual source wording if passage is intended as a verbatim quotation.",
+    "Publication must preserve the explicit lack of SDK/demo execution, the historical scope of October licensing/prerequisite and Apparite observations, current registry/conformance uncertainty, and publisher attribution for all benchmark figures."
+  ]
+}

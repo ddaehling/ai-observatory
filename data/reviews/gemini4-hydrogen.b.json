@@ -1,0 +1,33 @@
+{
+  "reportId": "gemini4-hydrogen",
+  "reviewerId": "/root/nov14_hydrogen_final_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:26:40.958596Z",
+  "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+  "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented multimodal inputs, native tool support and stable API identifier support practical coding and source-analysis trials. The report gives concrete education, app, website and video-production acceptance checks, plus unusually useful migration, pricing and recovery cautions. These are clearly proposed workflows; no measured productivity or learning benefit is established.",
+    "impact": "Broad announced deployment and a lower-cost execution role alongside other Gemini 4 models make this a meaningful practical development. A shared million-token budget and recoverable long output could affect sizeable workflows. The evidence is publisher documentation and attributed evaluations, without independent benchmark reproduction or native testing, so exceptional field-wide impact is not established.",
+    "novelty": "The documented combination of a fourth thinking level, 64K non-streaming hops and an everyday execution model at the stated rates is a meaningful differentiation from the cited migration baseline. The migration guide explicitly says Carbon and Argon already share the context architecture and built-in tools, limiting claims of a fundamentally new capability. The report appropriately avoids that stronger claim.",
+    "maturity": "A stable model identifier, detailed request migration rules, named SDK minimums, continuation semantics and Standard pricing show usable documented readiness. Newly announced rollout, untested account entitlements, ignored sampling parameters, storage requirements and recovery complexity constrain confidence in real operational reliability. No benchmark result is treated as proof of dependable deployment.",
+    "openness": "Public documentation, API access, free-tier availability and standard text or structured outputs provide some inspectability and workflow portability. The packet does not establish access to model weights, training data, training code or permissively licensed self-hosting. Hosted access and vendor-managed state are materially different from reproducibility of the model itself; the low score reflects those evidence limits rather than assuming an open release."
+  },
+  "confidence": "high",
+  "concerns": [
+    "All three canonical input hashes match hashes.json, and all six referenced saved-capture SHA256 hashes verify. Relevant source passages and locators support the reported dates, model identity, capabilities, migration rules, continuation behavior and prices. Markup contains only paragraphs and HTTPS links.",
+    "Nonblocking evidence hygiene: evidence.json also includes nov14-gemini-decisions-billing, a supported but unrelated Gemini Decision 1 claim. It is not used in the Hydrogen report and does not contaminate its pricing. Remove it when next preparing this entity packet to keep claim scope unambiguous, then regenerate the evidence hash and obtain reviews for that changed packet.",
+    "Nonblocking limitation: API documentation is saved public-web extraction, and the report explicitly records the unsuccessful browser-body capture and absence of native model/API testing. This editorial approval does not independently validate Google performance claims, actual access, cache behavior or SDK recovery.",
+    "The approximately 1,917 prose-body words meet the 1,800–2,200 range associated with my impact score of 6. The coordinator must separately check the final mean-impact length band and inter-review score-gap rule without treating this review as evidence of the other reviewer’s judgment."
+  ]
+}

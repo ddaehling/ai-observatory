@@ -1,31 +1,33 @@
 {
   "reportId": "a2ui-express",
-  "reviewerId": "/root/edition_20261028_astra_a",
+  "reviewerId": "/root/nov14_a2ui_precision_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-28T20:08:49.176604Z",
-  "reportHash": "d2476c0a467252b742401deb397c2756fb9978732b327e6ec1e50d0c067b042b",
-  "evidenceHash": "f8d8d47810667e7b5ae6af9a12fa413455f17253b21dec6a0bc248bae9ebe0eb",
+  "reviewedAt": "2026-11-14T06:30:02.428382Z",
+  "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+  "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 8,
-    "impact": 6,
+    "impact": 7,
     "novelty": 6,
-    "maturity": 5,
+    "maturity": 6,
     "openness": 8
   },
   "rationale": {
-    "usefulness": "The launch and Express specification describe a concrete compiler/catalog boundary for app and website builders. The report makes it actionable through bounded teacher-resource and transcript-review proposals, explicitly separating those proposals from deployed products and preserving SDK prerequisites.",
-    "impact": "Swappable inference formats can reduce the cost of experimenting with generated interfaces while retaining existing renderers. That is a meaningful domain-level architectural improvement; the 51-task publisher evaluation and 11-prompt Apparite example do not establish broad production adoption or field-wide performance gains.",
-    "novelty": "A schema-derived compact language separated from transport, alongside controlled layout assembly, is a meaningful differentiation within A2UI. Declarative catalogs and deterministic assembly are established techniques, and the documented results do not justify treating the combination as an entirely new interface paradigm.",
-    "maturity": "The repository calls this an early public preview, v1.0 remains a release candidate, and the main-branch changelog contains breaking changes and an unreleased default switch. The report correctly preserves the complete-reply Express compilation boundary despite the grammar’s progressive-rendering design.",
-    "openness": "Apache-2.0 code, a public specification, inspectable SDKs and renderers, and documented model-independent transport provide strong inspectability and portability. Apparite’s hosted model dependencies and the absence of independently reproduced latency/cost evidence limit a higher score."
+    "usefulness": "The protocol, inference format, catalog, renderer and application-permission boundaries are clearly separated. The migration fixture and teacher-resource, app/website review and transcript-review pilots give educational and creative builders concrete acceptance criteria. They are explicitly proposed workflows, not claimed deployments or tested SDK examples. Missing installation and cost verification limit immediate turnkey usefulness.",
+    "impact": "A stable common interface contract, bidirectional calls, accessibility metadata and documented adoption across several platforms constitute a substantial development within agent-generated interfaces. The announcement and SDK tables also establish uneven protocol-version deployment. Evidence supports domain-level significance, not demonstrated field-wide transformation or independently reproduced performance gains.",
+    "novelty": "Swappable generation notation targeting a common wire protocol, compact Express compilation and server-side macro expansion form a meaningful differentiated architecture. The update consolidates and stabilizes capabilities with migration changes; it does not establish an entirely new interaction paradigm. Decision-model SDK support remains future work, appropriately separated from the Apparite experiment.",
+    "maturity": "The November 11 stable release, detailed migration guide and SDK compatibility tables support a usable developer pilot. Current docs explicitly describe incremental compilation and validation. However, Jetpack Compose and Gemini Enterprise remain at 0.9.1, Lynx at 0.9, macros are Python-only, package-registry versions were not checked and no live implementation or accessibility behavior was tested. Stability of the protocol is not blanket runtime dependability.",
+    "openness": "Saved repository captures show Apache-2.0 licensing for A2UI and Apparite; public schemas, migration rules, SDK source links and multiple renderer/language routes provide strong inspectability and portability. Reproduction still depends on version pinning and model access; the cited measurements use hosted models and do not supply open model weights, training data or an independently reproduced runtime result. The report preserves these limits."
   },
   "confidence": "high",
   "concerns": [
-    "No publication-blocking factual issue found. Publisher performance results and Apparite’s historical experiment remain unreplicated, as the report states.",
-    "The archived A2UI repository package table labels @a2ui/agent Not published yet while the launch names npm availability. The report attributes the package statement to the launch and advises version verification; do not strengthen this into an independently verified current package-availability claim."
+    "No blocking issue found. Canonical report, evidence-with-sources and rubric hashes all match hashes.json; all 11 unique cited saved-capture byte hashes match their evidence bindings. Relevant underlying passages were inspected, including the multi-page initial capture and the repaired announcement tail.",
+    "Nonblocking verification boundary: approval is for source-supported editorial accuracy. Saved public-page extraction and same-model editorial review do not establish installed-package conformance, production reliability, classroom outcomes or independent benchmark replication. The report states these limitations.",
+    "Nonblocking date and length note: October 27 is explicitly retained as the original report publication date; the November 11 release and November 14 update/retrieval dates are separately identified. The approximately 1,900-word section body satisfies the 2,000-word plus/minus ten-percent band associated with this reviewer impact score of 7; the final two-review mean must determine the publication gate.",
+    "Nonblocking markup check: section HTML contains only paragraph and anchor tags, with HTTPS links and no event attributes or executable markup."
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/nov14_a2ui_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:20:13.220604Z",
+  "reportHash": "f8a0ce86e05fdd69354b10a8a295c7f4a03147424316d4282042dc51d29f0f11",
+  "evidenceHash": "f9fb60db2fe160fdd6e9f78a1e97db2334b7308d41441989dfeba0664790e3fd",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The report gives actionable, bounded education, app, website and video-review pilots with concrete failure cases, trusted-data boundaries, accessibility checks and fallback behavior. Express versus wire JSON and renderer selection are explained clearly. All workflows are labeled proposals rather than tested deployments; missing current-announcement evidence must be repaired.",
+    "impact": "A first stable protocol, bidirectional calls, server-side compilation and documented cross-framework support are a significant advance within generated interfaces. The SDK matrix and evolution guide substantiate the contract changes. Mixed 0.9/0.9.1/1.0 support, unverified package releases and no independent task-outcome evidence constrain field-wide impact claims.",
+    "novelty": "The separation of compact inference notation from wire JSON, schema-driven compilation, macros and the stronger 1.0 composition contract provide meaningful differentiation. Express and decision-based layout assembly predate this update, so the November milestone is principally stabilization and extension rather than a wholly new UI-generation method.",
+    "maturity": "Current SDK, macro and migration documentation is detailed enough for a bounded implementation pilot, and the report correctly distinguishes stable protocol status from renderer compatibility. There is no installation, package-registry verification, live rendering or independent reliability test; platform support remains uneven and official decision-model SDK status lacks its cited November capture passage.",
+    "openness": "Saved historical repository captures substantiate Apache-2.0 code, and current documentation exposes protocol schemas, implementation layers, catalogs and conformance routes across languages. The architecture is inspectable and portable, but model services and fees are separate, current package/version combinations were not reproduced, and this evidence does not establish open model weights or training data."
+  },
+  "confidence": "medium",
+  "concerns": [
+    "Material evidence gap: a2ui-nov14-release cites initial-web-1.json for “Inside Gemini” and “What’s next”, but the A2UI portion of that saved multi-page extraction stops at article line 71. It contains no Gemini Enterprise passage, no Gemini Notebook adoption passage, and no November official decision-model SDK roadmap passage. Therefore the report’s current Gemini Enterprise 0.9.1 and Gemini Notebook claims in what-changed, and the November roadmap assertions in evidence/apps-web/limitations, are not supported by the frozen capture. The October article establishes only the historical absence of a decision-model inference format. Repair by saving and binding the missing November passages (including the coordinator browser capture if that is the evidence actually inspected), with exact locators and hashes; alternatively remove those current assertions or explicitly limit the SDK statement to October. Recompute hashes and obtain reviews of the repaired packet.",
+    "The research note identifies public web extraction and a coordinator browser inspection, but does not disclose that the cited November announcement archive is a partial extraction. Once repaired, state the actual capture scope and reference the saved browser evidence if retaining that provenance claim. No runtime or benchmark execution is claimed, appropriately.",
+    "Nonblocking audit: canonical report, evidence and rubric hashes match; all ten unique referenced capture byte hashes match. The eight section anchors are present, the original October publication date is explicitly distinguished from the November update/event, historical streaming/default/prerequisite observations are dated, and markup contains only paragraphs and HTTPS links. Current SDK/macro/inference/evolution claims and benchmark denominators are supported by their saved pages. The body is within the 1,800–2,200-word band for this reviewer’s impact score; final length eligibility still depends on the two-review mean. This is an editorial assessment, not independent experimental validation."
+  ]
+}

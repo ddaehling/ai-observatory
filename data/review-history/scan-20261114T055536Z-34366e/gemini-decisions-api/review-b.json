@@ -1,0 +1,33 @@
+{
+  "reportId": "gemini-decisions-api",
+  "reviewerId": "/root/nov14_decisions_astra_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:19:26Z",
+  "reportHash": "80615ce98b257c9790b4ebcb3888da72944801c2ae2aee36a478c65439a904b0",
+  "evidenceHash": "f2379e716c90f174905f93472f8a2b0b66e245782922fd51aee3dee26f998d3f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The report makes a documented multimodal classification endpoint actionable through three bounded pilots: teacher-reviewed recordings, website troubleshooting intake, and video clip review. Each identifies evidence, a constrained output, correction paths and meaningful failure tests. It correctly distinguishes rubric expected indices from categorical answers or learner mastery, independent questions from dependent application logic, and request acceptance from evidence sufficiency. Billing arithmetic and the token-quota bottleneck are correct. No native integration or improvement in time saved was measured, which prevents a higher demonstrated-usefulness score.",
+    "impact": "Native text, image, audio, video and PDF evidence combined with many fixed questions in one scoring request is a meaningful extension of the decision-model application domain. The documented input price and vendor latency envelope make narrow interactive routing plausible, but the packet does not demonstrate broad deployment, reliability gains or field-wide effects. Existing decision-model peers make this an important domain advance rather than an unprecedented category. An impact score of 6 is supported independently of article length; the supplied 1,869-word count falls inside the 1,800–2,200 band appropriate to an eventual mean impact of 5–7.",
+    "novelty": "The substantive differentiation is the documented combination of native multimedia evidence with yes/no, choice and ordered-rubric outputs, shared context and independent question evaluation. The report does not claim invention of typed judgments, interchangeability with peers, or a reproduced comparative accuracy lead. The three proposed workflows are original editorial applications rather than novel capabilities proven by experiment. Without broader primary comparative testing, the evidence supports moderate differentiation.",
+    "maturity": "The model and guide provide concrete schemas, v1beta endpoint examples, limits, modality paths, probability semantics, billing, quotas and error behavior. These support a usable pilot with material constraints. All principal numerical and operational claims inspected in the saved captures match the report, including 262,144 context tokens, 1,000 questions, 2–255 options or levels, no caching or Batch API, and the restricted vendor latency context. The report explicitly discloses no API execution, account or region verification, or benchmark reproduction; the single third-party video example is not reliability validation. Production dependability and tail latency remain unestablished.",
+    "openness": "Public documentation, a no-cost access tier and inspectable request/response interfaces offer practical access, but this is a hosted proprietary model with provider-specific semantics and access limits. The packet does not establish released weights, training data, training code, permissive model licensing, local inference or portable reproduction of model outputs. It correctly avoids equating API access with open model internals. Those limitations warrant a low openness score despite adequate documentation."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking precision improvement: the launch capture at L262 explicitly describes median latency. The report correctly attributes the measurements and restricts them to contexts up to 16K and roughly 1–100 questions, but adding “median” would distinguish the quoted 150–250 ms / 50–100 ms measurements from p95 or p99 performance.",
+    "Nonblocking implementation detail: the guide distinguishes the yes probability (bounded to 0.01–0.99) from confidence, which is max(p, 1-p) for yes/no, and choice probabilities sum to one. The report makes no contradictory claim, but a compact explicit distinction would help builders avoid routing a confident negative as a positive. It is not necessary to turn this overview into a full API reference.",
+    "Input binding passed: canonical report, evidence-with-sources and rubric hashes match hashes.json; all ten unique cited capture hashes match their saved bytes. Relevant launch, model, three guide captures, price, quota, preprint abstract and author-example passages were inspected. Dynamic documentation dates remain unknown as disclosed; November 11 publication/event dates are distinct from November 14 retrieval. Only p, a and code HTML tags were found, with HTTPS links and no event attributes. Capture hashes establish packet integrity, not independent authenticity or live service behavior.",
+    "This approval is an independent editorial review of the frozen packet, not independent experimental validation. The peer review and final averaged-score length gate remain separate publication checks."
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "aws-emulator",
+  "title": "AWS Emulator brings cloud API tests into the agent loop, with fidelity limits you can inspect",
+  "entity": "AWS Emulator",
+  "category": "Open source",
+  "tags": [
+    "agents",
+    "testing",
+    "AWS",
+    "local development",
+    "education"
+  ],
+  "summary": "A local AWS API emulator gives developers and coding agents a repeatable test target. Its value depends on matching your workflow to published fidelity tests, keeping deployment and security checks on real AWS.",
+  "changeType": "new",
+  "publishedAt": "2026-11-11",
+  "discoveredAt": "2026-11-14T05:55:36Z",
+  "updatedAt": "2026-11-14T06:08:39.337Z",
+  "officialUrl": "https://github.com/aws/aws-emulator",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "Cloud dependencies become part of the local feedback loop",
+      "html": "<p>AWS launched AWS Emulator on November 11, 2026. It provides a local endpoint that responds to AWS API calls, allowing application code and coding agents to exercise cloud-dependent workflows before deployment. The practical change is that an agent can run a test, inspect the response and revise its code without creating real AWS resources for every iteration. This is useful when a test needs several related operations rather than a hand-written mock of one response. <a href=\"https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html\">The launch account</a> supplies the date; the repository documents the available software.</p><p>The project requires no AWS account for emulator use and charges no additional emulator service fee. That does not make development costless: a computer or CI runner still supplies memory, storage and build time, and real AWS validation and deployment can incur their usual charges. The emulator has no graphical interface. In server mode, the CLI and SDKs send requests to its endpoint; Rust tests can instead embed an emulator instance directly. <a href=\"https://github.com/aws/aws-emulator/blob/main/README.md\">The README</a> distinguishes these routes.</p><p>Think of it as an additional test target. A passing local test establishes something about the application and that emulator version together. It does not establish that production permissions, regional behavior, scale or every service feature will match AWS. That boundary is central to choosing what to automate.</p>"
+    },
+    {
+      "id": "agent-engineering",
+      "title": "An agent-built project with an inspectable reference",
+      "html": "<p>AWS presents the project as software written and tested entirely by autonomous agents. Its launch explanation describes three responsibilities: developing fidelity tests, finding differences between emulator and reference behavior, and fixing those differences. Public API models supply a specification, while real AWS provides the behavior against which tests are checked. These are AWS's descriptions of its engineering process, not independently audited findings from this research. <a href=\"https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator\">Matthew Goldberg's account</a> explains the division of work.</p><p>The interesting lesson is the choice of feedback. An agent producing a plausible implementation is much less informative than an agent producing an implementation that survives a specific, inspectable test. Separating test construction from issue finding and repair may make mistakes easier to locate. It does not remove the need to judge whether the tests cover the behavior users depend on, whether the reference observations remain current, or whether a change satisfies the intended contract.</p><p>For a teaching exercise about agent engineering, these distinctions are more valuable than a commit count. Students could compare a short natural-language requirement, a behavioral test and an implementation change, then identify what remains untested. The output would be an annotated evidence chain. The success criterion is a correct account of the guarantee provided by each artifact, not an assertion that autonomous code is automatically reliable.</p>"
+    },
+    {
+      "id": "fidelity",
+      "title": "Read fidelity as a test result, not a compatibility percentage",
+      "html": "<p>AWS measures fidelity using workflows that exercise operations and compare responses, resulting state and errors with AWS. Scores are published per service for a release and a version of the test suite. The documentation says control-plane APIs currently match most closely; data-plane behavior and infrastructure-as-code support vary. An unimplemented operation returns HTTP 501 with <code>NotImplemented</code>. These statements describe the emulator's documented contract and testing method. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html\">The fidelity guide</a> explains the terms.</p><p>A ratio such as 40 passing tests out of 50 is about those tests. It is not proof that 80 percent of all possible applications work. Compare releases using the same test-suite version, and inspect the operations your workflow actually calls. A newly added test can reveal an old gap, so a larger failure count need not mean a recently introduced regression.</p><p>This report does not publish a universal service-compatibility score. The release listing was inspected, but its complete service tables and historical pagination were not exhausted. For adoption, retain the selected release identifier and its test-suite version beside your own results. If an agent changes dependencies, infrastructure definitions or the workflow itself, repeat the relevant checks. The useful unit is a named scenario with expected observations, not the entire cloud described as a single supported feature.</p>"
+    },
+    {
+      "id": "choose-mode",
+      "title": "Choose a mode around the test harness you already have",
+      "html": "<p>Linux users can install RPM or Debian packages for x86_64 or aarch64. Windows and macOS use Docker; AWS supplies instructions for building an image that installs the Linux package, rather than a prebuilt Docker image. Apple Silicon uses the Arm package. The documented container command binds the host port to loopback and applies a 2 GiB memory limit. Exceeding that configured limit stops the container and loses its emulated resources. This is an example configuration, not a universal capacity claim. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/getting-started-docker.html\">The Docker guide</a> also explains how to keep distinct ports and credential directories aligned when running several instances.</p><p>Embedded mode is aimed at Rust tests using the AWS SDK for Rust. Each test can create an isolated instance and supply its HTTP client to the SDK. That avoids managing an endpoint URL and certificate for this route, but it compiles the emulator into the test binary. The README's source-build guidance calls for a Rust toolchain, a C compiler, a multicore machine and at least 100 GB of free disk for the build directory. That build budget also applies to embedded mode. It is not the size of a downloaded Linux package.</p><p>A small team should therefore choose deliberately. A prebuilt Linux package may be the simpler starting point for application integration tests. Embedded Rust tests offer a different lifecycle and isolation boundary, with a substantial initial compilation cost.</p>"
+    },
+    {
+      "id": "routing",
+      "title": "Prove that the test reached the intended endpoint",
+      "html": "<p>The SDK setup guide configures the emulator endpoint, generated credentials, configuration file and certificate. It also removes environment variables that could supply real AWS credentials. Put this setup in the same process environment that launches the tests. A shell configured earlier, or a different terminal window, is not sufficient evidence that a CI job inherited it. The documented identity check returns emulator account <code>000000000000</code>; seeing a real account identifies a routing mistake. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-emulator.html\">The SDK guide</a> provides the language-specific instructions.</p><p>Host-name behavior can matter as much as the endpoint string. Some SDK operations add prefixes, and S3 can encode a bucket in the host name. Follow the documented setup for the selected SDK rather than copying a single environment variable into an otherwise unknown configuration. Keep emulator-specific changes scoped to the test process so they do not silently affect a later deployment command.</p><p>A useful harness records the endpoint identity, selected emulator release, test input and assertion results without recording credentials. It should fail before the application test if the target cannot be verified. This is a proposed acceptance check, not a feature tested here. The goal is to make a green result interpretable: reviewers should know which system produced it and which inputs were used.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "Keep security, persistence and regional claims separate",
+      "html": "<p>The emulator's security guide explicitly excludes using it to validate permissions. IAM behavior differs, S3 bucket policies and KMS key policies are not checked as on AWS, and requests allowed locally may be rejected in the cloud. It also warns that function code is not isolated from the machine on which it runs. Use synthetic data, keep real credentials out, retain authentication and keep the endpoint private. These are concrete product constraints, not a claim that the emulator is a security sandbox. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/security.html\">Read the security boundary</a> before deciding which tests belong here.</p><p>The overview asks users to use one account and Region per instance. Resources are held in memory and disappear when the emulator stops. AWS has not tested it for long-running use or load testing. The documented validation regions are Oregon, with Northern Virginia used for global services. Those constraints rule out treating a successful local run as evidence about multi-region resilience, production durability or sustained throughput. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/what-is-service.html\">The overview's limitations</a> make those exclusions explicit.</p><p>For application development, ephemeral state can be convenient: each test run starts with a defined fixture instead of yesterday's leftovers. The same property becomes a failure if a prototype quietly treats the emulator as permanent storage. Make teardown and recreation part of the exercise, and preserve results outside the emulated resources.</p>"
+    },
+    {
+      "id": "practical-workflows",
+      "title": "Use small workflows with outputs a person can inspect",
+      "html": "<p>For an education application, start with synthetic lesson metadata and a small set of student-free sample records. Exercise the application's create, list, update and delete paths through the SDK operations it actually uses. The inspectable output is a test log paired with the expected record states. A teacher or developer should be able to explain why each assertion matters. This proposal does not establish that every database feature or managed service used by a learning platform is emulated.</p><p>For a website, a narrow content-management workflow is a useful trial: create a test asset reference, update its metadata, retrieve it and verify the deletion path. First map each step to actual AWS operations and published tests. Keep browser rendering, accessibility checks and the site's authorization tests as separate validation work. A backend returning the expected object does not prove the page presents it correctly or protects it for the right audience.</p><p>For a video-production application, the emulator may help test job metadata, upload bookkeeping or status transitions around a rendering system, where the necessary APIs have sufficient fidelity. It does not generate video or prove that a cloud transcoder produces a valid movie. Supply a fake completed-job result only when the test is explicitly about how the app handles that result. Test actual media creation and playback against the real implementation. These are proposed integration exercises; none was executed during this research.</p>"
+    },
+    {
+      "id": "pilot",
+      "title": "A pilot should end with a compatibility decision",
+      "html": "<p>AWS recommends listing the operations a project uses, finding corresponding tests in the evaluation suite's <code>manifest.jsonl</code>, and inspecting scores for the chosen release. Where a behavior has no fidelity test, the guidance is to compare your own test on the emulator and on AWS. A missing published test means uncertainty, not proof that an operation fails. The optional coding-agent skill can help inventory dependencies and identify gaps; it is not needed to understand the manual procedure. <a href=\"https://docs.aws.amazon.com/emulator/latest/userguide/check-project.html\">The project-checking guide</a> describes both approaches.</p><p>For a bounded pilot, choose one workflow with a useful success path and a meaningful rejection path. Record the expected state after each operation, including cleanup. Run it from a fresh emulator instance, and preserve the result in a small compatibility table. Add a real-AWS comparison in a separately controlled test environment where needed. Then classify each scenario as locally covered, cloud-only, or still uncertain. Keep uncertain cases visible rather than replacing them with unconditional mocks.</p><p>Measure the operational tradeoff: setup effort, first-build cost, recurring test time, maintenance work and how often differences force a cloud rerun. This research measured none of those outcomes. A pilot earns expansion when it catches relevant application mistakes and preserves the checks that only the real service can answer.</p>"
+    },
+    {
+      "id": "license-and-adoption",
+      "title": "Inspectability helps, but maintenance still has a cost",
+      "html": "<p>The repository's license is CC0 1.0 Universal, while the README identifies the <code>vendor/</code> directory as Apache License 2.0. Preserve that distinction when redistributing or incorporating the project. The inspected CC0 text includes its limitations and warranty disclaimer; a public codebase should not be described as an operational guarantee. <a href=\"https://github.com/aws/aws-emulator/blob/main/LICENSE\">The license file</a> and <a href=\"https://github.com/aws/aws-emulator/blob/main/README.md\">README</a> provide the relevant source statements.</p><p>Telemetry is enabled by default. The README documents command-line, environment-variable, configuration-file and embedded-API opt-outs, and says telemetry excludes request and response contents, code, credentials and personal data. Those are publisher statements. Teams distributing a test framework that includes the emulator should make the setting visible to their users. The repository accepts issue reports but says it does not accept pull requests; inspectable source and an open contribution channel are different properties.</p><p>AWS Emulator is worth evaluating when cloud dependencies make an agent's feedback slow or difficult to reproduce. Its strongest practical promise is a local, reviewable development loop linked to published compatibility evidence. Adopt it one tested workflow at a time, retain real-cloud checks for production behavior, and budget for version updates. The current evidence supports that bounded experiment; it does not establish complete AWS parity or independently verified autonomous engineering quality.</p>"
+    }
+  ],
+  "useCases": [
+    "Teach behavioral testing with synthetic records and an annotated specification–test–implementation chain.",
+    "Test a website or application's AWS-dependent CRUD workflow against an identified emulator release.",
+    "Test media-job bookkeeping while separately validating actual rendering and playback."
+  ],
+  "limitations": [
+    "Documentary research only; no installation, emulator execution, cloud calls or benchmark reproduction.",
+    "Service fidelity varies; complete service-score tables and release history were not exhausted.",
+    "Not a production service, security test environment, durable store, multi-account/Region test or load-test substitute.",
+    "Agent authorship and validation process are AWS claims; no independent audit was performed.",
+    "No additional emulator service fee excludes infrastructure, CI, build and real-AWS costs."
+  ],
+  "sources": [
+    {
+      "id": "repos-aws-emulator-readme",
+      "title": "AWS Emulator README",
+      "url": "https://github.com/aws/aws-emulator/blob/main/README.md",
+      "accessedAt": "2026-11-14T06:01:23.720Z",
+      "publishedAt": null,
+      "locator": "Quick start; Building from source; Telemetry; License",
+      "supports": "Modes, platform routes, build requirements, fees, telemetry, license split and contribution limits."
+    },
+    {
+      "id": "repos-aws-emulator-license",
+      "title": "AWS Emulator license",
+      "url": "https://github.com/aws/aws-emulator/blob/main/LICENSE",
+      "accessedAt": "2026-11-14T06:04:25.912Z",
+      "publishedAt": null,
+      "locator": "CC0 1.0 Universal complete license",
+      "supports": "CC0 license text and limitations."
+    },
+    {
+      "id": "repos-aws-emulator-overview",
+      "title": "What is AWS Emulator?",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/what-is-service.html",
+      "accessedAt": "2026-11-14T06:04:25.878Z",
+      "publishedAt": null,
+      "locator": "Lines 5–10 and 61–88",
+      "supports": "Service purpose, account/Region, memory lifecycle and testing limits."
+    },
+    {
+      "id": "repos-aws-emulator-fidelity",
+      "title": "Fidelity in AWS Emulator",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html",
+      "accessedAt": "2026-11-14T06:04:41.069Z",
+      "publishedAt": null,
+      "locator": "Lines 18–53",
+      "supports": "Meaning of fidelity tests, service differences and score interpretation."
+    },
+    {
+      "id": "repos-aws-emulator-security",
+      "title": "Security in AWS Emulator",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/security.html",
+      "accessedAt": "2026-11-14T06:04:41.092Z",
+      "publishedAt": null,
+      "locator": "Lines 17–65",
+      "supports": "Unsupported security validation and local execution boundaries."
+    },
+    {
+      "id": "repos-aws-emulator-sdk",
+      "title": "Pointing your AWS SDK at AWS Emulator",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-emulator.html",
+      "accessedAt": "2026-11-14T06:04:41.092Z",
+      "publishedAt": null,
+      "locator": "Lines 13–45, 71–86 and 104–123",
+      "supports": "Endpoint, credential, host prefix, certificate and identity checks."
+    },
+    {
+      "id": "repos-aws-emulator-docker",
+      "title": "Getting started with Docker",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/getting-started-docker.html",
+      "accessedAt": "2026-11-14T06:04:41.092Z",
+      "publishedAt": null,
+      "locator": "Lines 5–23 and 40–73",
+      "supports": "Build-your-own image, Arm choice, loopback binding, configured memory limit and ports."
+    },
+    {
+      "id": "repos-aws-emulator-check",
+      "title": "Checking your project against AWS Emulator",
+      "url": "https://docs.aws.amazon.com/emulator/latest/userguide/check-project.html",
+      "accessedAt": "2026-11-14T06:04:25.878Z",
+      "publishedAt": null,
+      "locator": "Lines 3–15",
+      "supports": "Manifest-led workflow inventory and real-AWS comparison for untested behavior."
+    },
+    {
+      "id": "repos-aws-emulator-launch",
+      "title": "AWS Emulator and the engineer’s job when agents write the code",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+      "accessedAt": "2026-11-14T06:04:41.069Z",
+      "publishedAt": "2026-11-11",
+      "locator": "Lines 5, 11, 20 and 33–40",
+      "supports": "Launch date and AWS account of agent-driven development."
+    },
+    {
+      "id": "repos-aws-emulator-agent-process",
+      "title": "How we built the agents that built AWS Emulator",
+      "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator",
+      "accessedAt": "2026-11-14T06:05:33.519Z",
+      "publishedAt": "2026-11-11",
+      "locator": "Lines 8–37",
+      "supports": "Named author, publication date and publisher account of three agent teams."
+    }
+  ],
+  "images": [],
+  "judgment": "A useful local test target for bounded AWS-dependent workflows, especially inside an agent development loop. Start with published fidelity evidence, inspect application-specific gaps and keep production/security validation on real AWS.",
+  "researchNote": "Public GitHub files and web documentation inspected November 14, 2026. Worker browser unavailable; acquisition used public web extraction and GitHub connector. Coordinator separately confirmed README in IAB. Dates distinguish November 11 launch from November 14 retrieval; undated docs stay undated. No software executed."
+}

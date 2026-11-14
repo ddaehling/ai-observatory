@@ -35526,5 +35526,1225 @@
       "verdict": "approve",
       "maxScoreDifference": 1
     }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-7d4d71d056da0286",
+    "candidateId": "candidate-7d4d71d056da0286",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary November13 Wallet article verifies a material release, but bounded publication capacity prioritizes Hydrogen and stable-ID A2UI revision. US Pro adults with eligible US-issued cards through dots; each purchase requires security approval. Merchant playbook/operational compatibility still needs deeper review; future delegated preapproval must not be presented as shipped.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-7d4d71d056da0286"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/initial-web-0.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-a99dfdd20d85acbb",
+    "candidateId": "candidate-a99dfdd20d85acbb",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read primary case study. Shield/Forge portal agents and 35–40% speed improvement are customer/vendor reports without comparable public protocol or newly reusable release. Retain as implementation context, not a standalone model-launch story.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-a99dfdd20d85acbb"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-a99dfdd20d85acbb.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-67672a694e389b29",
+    "candidateId": "candidate-67672a694e389b29",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary Amplitude case study contains useful Wave routing/evaluation details, but estimated 1–2day shipping and engagement lift are company-specific. Original Wave docs and controlled evaluation details should be followed before a practical standalone report; lower priority than verified platform releases.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-67672a694e389b29"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-67672a694e389b29.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-b9840fd67063a36a",
+    "candidateId": "candidate-b9840fd67063a36a",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read primary Gondola customer story. Revenue and output gains are company self-reports; simultaneous business growth does not establish Codex causality. No separately usable release requiring a new report.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-b9840fd67063a36a"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-b9840fd67063a36a.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-4922ca6fb0dd9299",
+    "candidateId": "candidate-4922ca6fb0dd9299",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read primary Holiday Extras case study. Useful workflow context, but app rebuild and conversion numbers are customer reports. Its 19% to9% error change is10percentage points, not a10% relative decrease. No reusable product release; preserve ambiguity rather than repeat headline metric.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-4922ca6fb0dd9299"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-4922ca6fb0dd9299.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-d7c1da8cb7dc41da",
+    "candidateId": "candidate-d7c1da8cb7dc41da",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read November12 pledge: $2m commitment to research network and charter, not published outcome or safety tool. Funding/programme announcement outside this edition's practical-tool priorities; no result or improved child safety inferred.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-d7c1da8cb7dc41da"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-d7c1da8cb7dc41da.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-ac94b61a25ade5ed",
+    "candidateId": "candidate-ac94b61a25ade5ed",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read Veterans Day retrospective: more than20,000 claimed a previously offered free year, training/event updates. Not a new general entitlement or model capability; existing Academy report has broader learning-path coverage. Eligibility flow not inspected.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-ac94b61a25ade5ed"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-ac94b61a25ade5ed.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-55ff14dc4213127d",
+    "candidateId": "candidate-55ff14dc4213127d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary JioStar interview gives concrete multilingual voice/visual discovery and evaluation lessons, but scale and8week delivery are company testimony; original implementation/evaluation artifacts absent. Preserve as lower-priority case-study research.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-55ff14dc4213127d"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-55ff14dc4213127d.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-9092d5eb66f29547",
+    "candidateId": "candidate-9092d5eb66f29547",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read Singapore Airlines case study. CSAT/handling-time/recommender growth are customer-level reports; future booking/baggage expansion is not current rollout evidence. No public reusable release established.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-9092d5eb66f29547"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-9092d5eb66f29547.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-37e4452e64c861cf",
+    "candidateId": "candidate-37e4452e64c861cf",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Read Cogent case study including deterministic TRACE policy checks, gateway authorization and customer metrics. New operational architecture may be useful but product access/docs and measurement design not verified; no security efficacy conclusion or standalone report yet.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-37e4452e64c861cf"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-37e4452e64c861cf.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-00427e47df5ef306",
+    "candidateId": "candidate-00427e47df5ef306",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Oldest backlog reread: article still concerns results from an internal frontier model and October15 Simons funding update. Many Lean proofs/protocols described, but theorem-level verification/repository review remains undone. New retrieval is not a newly released model.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-00427e47df5ef306"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-00427e47df5ef306.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-0adf5bb2a473897d",
+    "candidateId": "candidate-0adf5bb2a473897d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Backlog reread confirms September28 programme expansion and examples Dewey/Scrape. Future dissemination objective does not establish public software access or licensing. Close this announcement as programme context; original implementation resources may be separate future candidates.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-0adf5bb2a473897d"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-0adf5bb2a473897d.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-1dbe22633003a2af",
+    "candidateId": "candidate-1dbe22633003a2af",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Backlog reread confirms MultiLangBench public setup link versus hidden byte-for-byte COBOL migration tests. Vendor benchmark numbers do not establish production behavior preservation; repository/license and reproduction remain unreviewed within bounded pass.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-1dbe22633003a2af"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-1dbe22633003a2af.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-2896758265cec81d",
+    "candidateId": "candidate-2896758265cec81d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Backlog reread partnership article remains broad enterprise integration context. New A2UI1.0 announcement provides more concrete Jira interactive-card implementation evidence; route that material to stable A2UI report without presenting all earlier proposed partnerships as delivered.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "source-2896758265cec81d"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/candidate-2896758265cec81d.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-5b86eed0286e0e3b",
+    "candidateId": "candidate-5b86eed0286e0e3b",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the gemini4-hydrogen report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "source-5b86eed0286e0e3b",
+      "nov14-story-80d3d0d27bacfa43"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/fresh-simon-batch.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-0.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "workerRecommendation": {
+      "candidateId": "candidate-5b86eed0286e0e3b",
+      "disposition": "needs_review",
+      "reason": "Author's November 12 llm-gemini 0.37 post and primary release inspected. Hydrogen is a material Gemini-family lead; primary Google access/pricing conditions belong with the official worker's existing gemini4-carbon report revision. Do not create a duplicate family report from this plugin announcement.",
+      "sourceUrls": [
+        "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+        "https://github.com/simonw/llm-gemini/releases/tag/0.37"
+      ],
+      "evidencePaths": [
+        ".state/scan-20261114T055536Z-34366e/research/repos/fresh-simon-batch.json",
+        ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-0.json"
+      ],
+      "reportId": "gemini4-carbon"
+    },
+    "coordinatorOverride": true,
+    "researchReason": "Coordinator correction: the inspected llm-gemini 0.37 announcement is supporting context for the distinct Gemini 4 Hydrogen model. The selected new report uses gemini4-hydrogen; the existing gemini4-carbon report is not being revised for this model. Plugin availability does not establish every primary Google rollout or pricing condition. Final inclusion requires the new report's independent dual approval.",
+    "reportId": "gemini4-hydrogen",
+    "reviewGate": {
+      "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+      "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_hydrogen_final_a",
+        "/root/nov14_hydrogen_final_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1933,
+      "meanScores": {
+        "usefulness": 7.5,
+        "impact": 6.0,
+        "novelty": 5.0,
+        "maturity": 6.0,
+        "openness": 3.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-967141e571a3a88a",
+    "candidateId": "candidate-967141e571a3a88a",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the aws-emulator report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "source-967141e571a3a88a",
+      "nov14-story-78b8986836f7bb24"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/fresh-simon-batch.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/aws-readme.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/aws-docs-releases.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/aws-fidelity-and-publishers.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/aws-security-sdk-docker.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/aws-license.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/backlog-license-and-launch.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "researchReason": "Primary repository, license, launch account and operational docs support a substantive AWS Emulator report. Draft and claim packet prepared for required independent review. No installation or native testing; fidelity varies by service and security/production use excluded.",
+    "reportId": "aws-emulator",
+    "reviewGate": {
+      "reportHash": "2cd4329a8b91667c5c65b6d51a08265d4fc5f47a5008a785cde442b98b6c00f8",
+      "evidenceHash": "e1251d9c766159250dd2fdaf1e65cf72a2d09f0c125f48406601a3638d2f2ec3",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_aws_astra_a",
+        "/root/nov14_aws_astra_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1924,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 6.0,
+        "novelty": 6.0,
+        "maturity": 5.0,
+        "openness": 8.0
+      },
+      "maxScoreDifference": 0
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-8ba32157965a133a",
+    "candidateId": "candidate-8ba32157965a133a",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "The author describes adding tag-based browsing of his existing tool collection using code analysis. Useful discovery affordance, but this short page supplies insufficient distinct product change for a substantial report; no new core AI capability or native tool evaluation established.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "source-8ba32157965a133a"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/fresh-simon-batch.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-460872e68e9eeabb",
+    "candidateId": "candidate-460872e68e9eeabb",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the llm-credential-routing report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "source-460872e68e9eeabb",
+      "repos-llm-release-0372",
+      "repos-llm-advisory-missing-key",
+      "repos-llm-advisory-delegate"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-0.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/llm-security-advisories.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/llm-release-setup-profile.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/llm-license.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "researchReason": "Two primary November 11 advisories and release 0.37.2 verify conditional OpenAI-credential disclosure to custom endpoints and patched version. Draft prepared with exact affected ranges, no claim of user exposure, and synthetic-test guidance; required publication reviews pending.",
+    "reportId": "llm-credential-routing",
+    "reviewGate": {
+      "reportHash": "3b4881b15d149c2b73751c8b95e56085ac46ca254c212add4958242309dd76a8",
+      "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_llm_final_astra_a",
+        "/root/nov14_llm_final_astra_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 983,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 4.0,
+        "novelty": 2.5,
+        "maturity": 7.5,
+        "openness": 9.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-e5607ea9b3456678-dc0a05c268ba",
+    "candidateId": "candidate-e5607ea9b3456678-dc0a05c268ba",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "November 10 plugin release and Carbon availability account were inspected. Its underlying Carbon launch/availability story is already covered by stable gemini4-carbon; observed creative demonstrations do not independently establish a new capability or justify an activity bump.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "source-e5607ea9b3456678"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-0.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "relatedReportId": "gemini4-carbon"
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-6290922c900109aa",
+    "candidateId": "social-candidate-6290922c900109aa",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Oldest Duetto backlog reconsidered. Current README, actual PolyForm Noncommercial 1.0.0 code license and linked Anticipatory Music Transformer repository inspected. Upstream code is Apache 2.0, but the exact downloaded checkpoint/license and generated-output rights remain unverified. MIDI accompaniment controls and Linux/Jetson prerequisites are documented; runtime latency, media outputs and lessons remain untested. Preserve baseline date unknown; no launch claim.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "social-source-6290922c900109aa",
+      "nov14-story-65399c9f79c87a81",
+      "nov14-story-786d231402badcb4"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-repositories.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/backlog-license-and-launch.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-72d9d3123615abea",
+    "candidateId": "social-candidate-72d9d3123615abea",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "unresolved",
+    "reason": "Exact third-party Qwen4-serving PR returned public web404; one focused GitHub connector repair also returned404. No primary model announcement, checkpoint, availability or launch date established. Current Qwen hub is accessible but does not repair the inaccessible PR or prove absence of a launch.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "social-source-72d9d3123615abea",
+      "qwen-publisher-discovery"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-1.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/qwen4-pr-repair.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/captures/seed-qwen-hub.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-a979e7ccacda81f6",
+    "candidateId": "social-candidate-a979e7ccacda81f6",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Old capy-flash v0.7.4 lead reconsidered with current README and dated releases. README status is v0.12.0 while retrieved releases list labels v0.11.2 November13 latest; preserve this discrepancy pending version-specific review. Hardware scope now documents one/two RTX50 16GB GPUs, model-specific RAM and CPU requirements. Performance and same-token tests remain maintainer claims on bounded hardware; no native reproduction.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "nov14-story-a979e7ccacda81f6",
+      "nov14-story-52bbaa80db2ade4a"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/captures/social-source-a979e7ccacda81f6.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/captures/social-source-52bbaa80db2ade4a.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-b6ee2b32304d0c0d",
+    "candidateId": "social-candidate-b6ee2b32304d0c0d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Old gpu-unlock lead reconsidered via current README. It now describes RTX20/30/40 support levels, no RTX50 support and workload-specific no-change categories. Peak tensor throughput and user compatibility reports do not establish general inference gains or safety. Kernel/firmware/hardware modification claims need specialist reproducibility review before a practical recommendation; nothing installed or executed.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "social-source-b6ee2b32304d0c0d"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/focused-details-1.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-43655ce3c34369b0",
+    "candidateId": "candidate-43655ce3c34369b0",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the typesafe-jev report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "source-43655ce3c34369b0",
+      "ts-models",
+      "ts-nov14-fanout",
+      "ts-nov14-intelliprompter"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/jev-latent.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/jev-models-repair.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/jev-fanout.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/jev-intelliprompter.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false,
+    "researchReason": "Recommend material update to stable typesafe-jev: Nov12 conference use cases plus verified official fan-out, reranking and Nov4 Intelliprompter cookbook; correct current aliases to 1.14. No new model launch or independent benchmark inferred.",
+    "reportId": "typesafe-jev",
+    "reviewGate": {
+      "reportHash": "e43d5043234981ebb628bb5d6706374381d1f82d81e6655a85d6d9d35d3c036e",
+      "evidenceHash": "8a4c14b99fc43e0e7ce7f0dfb5937195c02861da7d64805ffe0f3aef798b1265",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_jev_astra_a",
+        "/root/nov14_jev_astra_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1901,
+      "meanScores": {
+        "usefulness": 7.0,
+        "impact": 5.5,
+        "novelty": 5.0,
+        "maturity": 5.5,
+        "openness": 4.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-68811c4e6ccf667c",
+    "candidateId": "candidate-68811c4e6ccf667c",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Strong baseline lead for a separate PhotoCraft/ArtCraft report, but secondary priority. Verified primary MIT license, native Rust/CLI/MCP architecture, download surfaces and explicit alpha stage; breadth ~76% is not readiness ~45%. No native install or PSD round-trip test. Nov13 article is conference reporting, not product launch date. Coordinator selected six reports including a security-report correction; retain this strong baseline for future bounded selection rather than drafting an additional report in this run.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "source-68811c4e6ccf667c",
+      "nov14-story-ec4b5e65913390d0",
+      "nov14-story-8505fb8f522f2e5d",
+      "nov14-story-1edabd850259451c"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/artcraft-latent.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/artcraft-repo.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/artcraft-parity.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/artcraft-license.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-6ae4116d7f299f0d",
+    "candidateId": "social-candidate-6ae4116d7f299f0d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Reconsidered oldest backlog by reading actual post and maintainer's linked repository. Canonical repo now ComfyUI-Guides, containing HTML/PDF guides for four model families. Post admits AI reworking of an earlier guide; individual guide instructions and PDFs not verified, licensing unclear. Preserve as educational backlog rather than endorsing hardware/settings from title.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "social-source-6ae4116d7f299f0d",
+      "nov14-story-a7a13cd68829a55d"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/backlog-cheatsheet.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/cheatsheet-repo.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-9384097176464c24",
+    "candidateId": "social-candidate-9384097176464c24",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Actual post and author-linked Hugging Face card inspected. Confirms a community Krea2 Realism checkpoint merge, not an official Krea launch. Adult-content specialization, unclear event date and no independent quality/compatibility evidence make a standalone broad educational-builder report low priority; retain exact source and licensing claim as provenance.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "social-source-9384097176464c24",
+      "nov14-story-7fe4d396a9d154a8"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/backlog-krea2.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/krea2-model.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:social-candidate-949ec3f1338d58c8",
+    "candidateId": "social-candidate-949ec3f1338d58c8",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary CastWorkshop repository now verified: Apache-2.0 beta source distribution orchestrates Ollama+ComfyUI, persistent characters and two-character scenes; 16GB VRAM/64GB RAM are planning targets, not verified minimums. README discloses no completed beta GPU acceptance run and untested macOS/Linux GPU paths. Useful baseline backlog, requires targeted workflow/model-license and visual review before full report.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "social-source-949ec3f1338d58c8",
+      "nov14-story-3adca0cb0f59a00e"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/backlog-castworkshop.json",
+      ".state/scan-20261114T055536Z-34366e/research/creative/castworkshop-repo.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:creative-eleven-v4",
+    "candidateId": "creative-eleven-v4",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Revisited original article and its methodology; September28 release remains older backlog. Article says v4/v4Turbo available in products/API, but roughly100ms inference and request-to-audible-speech figures differ; footnote removes network latency. No listening, account-level access, pricing or rights/API review performed. No new report or activity bump from retrieval.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "creative-eleven-v4"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/backlog-eleven-v4.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-16dbc3338bdcccff",
+    "candidateId": "candidate-16dbc3338bdcccff",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Inspected full Research Focus transcript. Roundup is not a single new tool report; retained CompactionBench as a separate primary research lead. The podcast says costs, while the original abstract precisely reports token consumption; do not conflate them.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-16dbc3338bdcccff",
+      "nov14-story-f3b073780736b4f0"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-3.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/compactionbench.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-db007afeffa315be-410ff82946ec",
+    "candidateId": "candidate-db007afeffa315be-410ff82946ec",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Current October 22 originating article inspected; its interaction-language scope overlaps published flint-interactive. A feed fingerprint change alone is not a new release or material report revision. Preserve date and report association.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-db007afeffa315be"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-db007afeffa315be-410ff82946ec.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "relatedReportId": "flint-interactive"
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-f55817b72e9782bd",
+    "candidateId": "candidate-f55817b72e9782bd",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "NVIDIA primary November 12 release confirms resignation and interim CEO appointment. Leadership change is preserved as verified industry context; it supplies no concrete new educational/creative tool workflow warranting a standalone practical report. Do not repeat unverified personal allegations from the roundup.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-f55817b72e9782bd",
+      "nov14-story-b2fe27ba44793bf9"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/corporate-jensen.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/nvidia-primary.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-51cca3e361b05b7b",
+    "candidateId": "candidate-51cca3e361b05b7b",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Decision-model roundup duplicates the Gemini Decisions lead. Followed original Google launch, model, API, pricing and quota docs; preserve roundup as discovery provenance, not independent validation.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-51cca3e361b05b7b",
+      "nov14-gemini-decisions-launch"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-2.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-f0a5ad843b934f7d",
+    "candidateId": "candidate-f0a5ad843b934f7d",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read roundup and repaired originating Brendan Foody public post access in IAB. Fundraise/valuation/run-rate are company claims, not audited here. No released tool or concrete workflow change supports a practical report.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-f0a5ad843b934f7d",
+      "nov14-story-758bb972cfea7753"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/corporate-mercor.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/mercor-primary.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-mercor-primary.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-a545d27a2f90bfa6-076b8b466dd8",
+    "candidateId": "candidate-a545d27a2f90bfa6-076b8b466dd8",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "IAB repair retrieved complete public conference report on voice steering, cloud environments and dots; actual workshop documentation remains to be verified against current supported setup and quotas. Reportage and a feed revision do not prove a new product launch.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-a545d27a2f90bfa6"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-a545d27a2f90bfa6-076b8b466dd8.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-candidate-a545d27a2f90bfa6-076b8b466dd8.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-4cb58a6ed2a63999",
+    "candidateId": "candidate-4cb58a6ed2a63999",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Public original release note retrieved in IAB after web failure. This is Datasette/Leaflet map compatibility and referrer-policy maintenance, not a material AI capability update. No activity bump to the existing Datasette agent-app report.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-4cb58a6ed2a63999"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-candidate-4cb58a6ed2a63999.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-e1058067669e2b5f",
+    "candidateId": "candidate-e1058067669e2b5f",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Public original release note retrieved in IAB after web failure. This is Datasette/Leaflet map compatibility and referrer-policy maintenance, not a material AI capability update. No activity bump to the existing Datasette agent-app report.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-e1058067669e2b5f"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-candidate-e1058067669e2b5f.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-485ec329c8b74027",
+    "candidateId": "candidate-485ec329c8b74027",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the gemini-decisions-api report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-485ec329c8b74027",
+      "nov14-gemini-decisions-launch",
+      "nov14-gemini-decisions-guide"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-0.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-tail.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-model.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-pricing-specific.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-limits.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "researchReason": "Original Gemini Decisions API launch and current documentation verified. Distinct native text/image/audio/video/PDF decision service, meaningful buildable workflows and constraints; report draft recommended, pending the required publication reviews.",
+    "reportId": "gemini-decisions-api",
+    "reviewGate": {
+      "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+      "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_decisions_final_a",
+        "/root/nov14_decisions_final_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1871,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.5,
+        "novelty": 6.0,
+        "maturity": 5.0,
+        "openness": 3.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-6e96a802abbc1d38",
+    "candidateId": "candidate-6e96a802abbc1d38",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Read original independent link post; IPO roadshow compute and automation claims are promotional corporate material. No released artifact or operational reproduction inspected, and the extracted transcript is secondary. Exclude standalone practical report, retaining company-claim provenance.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-6e96a802abbc1d38"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-6e96a802abbc1d38.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-f932ce86887297f1-123be5d53cb0",
+    "candidateId": "candidate-f932ce86887297f1-123be5d53cb0",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "This ownership-prompt observation fits the existing Fable 5.2 entity. It is not a material new release or an independently established general effect, so it does not warrant another report or activity update.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-f932ce86887297f1"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-f932ce86887297f1-123be5d53cb0.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "relatedReportId": "claude-fable-52",
+    "workerRecommendation": {
+      "candidateId": "candidate-f932ce86887297f1-123be5d53cb0",
+      "disposition": "excluded",
+      "reason": "Inspected quoted Fable 5.2 prompting advice. Same ownership-prompt claim belongs to the existing Fable 5.2 report, and no material new release or independently established general effect is shown by this feed revision.",
+      "sourceUrls": [
+        "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+      ],
+      "evidencePaths": [
+        ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-f932ce86887297f1-123be5d53cb0.json"
+      ],
+      "checkedAt": "2026-11-14T06:10:47.298037Z",
+      "reportId": "claude-fable-52"
+    },
+    "coordinatorOverride": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:x-astra-pro-oct16",
+    "candidateId": "x-astra-pro-oct16",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Revisited complete originating October 16 public post: Pro users/Chat tab, faster responses/tool use and parallel agents. Historical statement is readable; current detailed availability, quotas and report overlap remain unverified. No new-launch or API claim.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "x-astra-pro-oct16"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-x-astra-pro-oct16.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:x-live11-oct15",
+    "candidateId": "x-live11-oct15",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Revisited complete October 15 public voice post: six named languages and rollout to ChatGPT/Codex/dots; API explicitly coming soon in that historical post. Current API availability remains unresolved, so no API-ready report.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "x-live11-oct15"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/iab-x-live11-oct15.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-2fc54b690d7b20a2",
+    "candidateId": "candidate-2fc54b690d7b20a2",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Originating September 28 safety-cases article revisited. It explicitly concerns aspirational frontier reinforcement-learning safety cases and evolving safeguards, not a released deployment-assurance toolkit. Retain for safety-methods synthesis; no new launch.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-2fc54b690d7b20a2"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-2fc54b690d7b20a2.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:candidate-3d7b9aab56c8f4fe",
+    "candidateId": "candidate-3d7b9aab56c8f4fe",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Originating September 23 benchmark article revisited. Expert-built synthetic mental-health conversations and automated grading do not establish clinical benefit or prevalence; paper, dataset license and detailed grading validation still require bounded follow-up before publication.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "source-3d7b9aab56c8f4fe"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/candidate-3d7b9aab56c8f4fe.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:official-candidate-gemini4-hydrogen",
+    "candidateId": "official-candidate-gemini4-hydrogen",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the gemini4-hydrogen report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "official-story-gemini4-hydrogen"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/initial-web-1.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-model.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-migration.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-long-decode.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "workerRecommendation": {
+      "id": "official-candidate-gemini4-hydrogen",
+      "title": "Introducing Gemini4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "publishedAt": "2026-11-12",
+      "updatedAt": "2026-11-13",
+      "disposition": "needs_review",
+      "reason": "New distinct model; draft recommended.",
+      "evidencePaths": [
+        ".state/scan-20261114T055536Z-34366e/research/official/initial-web-1.json",
+        ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-model.json",
+        ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-migration.json",
+        ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-long-decode.json"
+      ],
+      "candidateId": "official-candidate-gemini4-hydrogen"
+    },
+    "coordinatorOverride": true,
+    "researchReason": "Coordinator selected a new report for the distinct Gemini 4 Hydrogen model; primary launch and model documentation inspected. Final inclusion requires independent dual approval of the final report and evidence.",
+    "reportId": "gemini4-hydrogen",
+    "reviewGate": {
+      "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+      "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_hydrogen_final_a",
+        "/root/nov14_hydrogen_final_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1933,
+      "meanScores": {
+        "usefulness": 7.5,
+        "impact": 6.0,
+        "novelty": 5.0,
+        "maturity": 6.0,
+        "openness": 3.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:official-candidate-a2ui10",
+    "candidateId": "official-candidate-a2ui10",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the a2ui-express report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "official-story-a2ui10"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/initial-web-1.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/priority-docs.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/a2ui-inference.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/a2ui-evolution.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/a2ui-sdk.json",
+      ".state/scan-20261114T055536Z-34366e/research/official/a2ui-macros.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "researchReason": "Material update to same underlying entity; preserve stable report.",
+    "reportId": "a2ui-express",
+    "reviewGate": {
+      "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+      "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_a2ui_precision_a",
+        "/root/nov14_a2ui_precision_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1945,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 7.0,
+        "novelty": 6.0,
+        "maturity": 6.0,
+        "openness": 8.0
+      },
+      "maxScoreDifference": 0
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:official-lead-maya2",
+    "candidateId": "official-lead-maya2",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Current product page shows Native/Global/Flash; date, model rights, API/latency claims require model documentation. No launch inference from retrieval.",
+    "decidedAt": "2026-11-14T06:05:47.688Z",
+    "supporting_source_ids": [
+      "nov14-story-c2fc37eb2a98d23f"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/official/social-source-0f6f710f596282ba.json"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:repos-candidate-ccore-glb-17b-checkpoint",
+    "candidateId": "repos-candidate-ccore-glb-17b-checkpoint",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "A dated checkpoint update on an existing monitored creative publisher is a useful practical lead. Author recommends Q8_0 over the smaller Q4_K_M, despite generic platform examples choosing Q4_K_M. No model output or software executed.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "nov14-story-09b1e4e563d032fd"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/model-deltas.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/ccore-model-limitations.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:repos-candidate-liquid-d1-omni-compatibility",
+    "candidateId": "repos-candidate-liquid-d1-omni-compatibility",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "unresolved",
+    "reason": "Hub activity suggests ongoing loader/dependency work. The current card uses repository-provided model code and a Transformers minimum, with native-audio typed decisions. No proven material report delta against the existing stable family report; retain a focused compatibility lead without duplicating a launch. Proposed report association remains pending independent dual approval.",
+    "decidedAt": "2026-11-14T06:16:49.985265Z",
+    "supporting_source_ids": [
+      "nov14-story-76691903cabefc17",
+      "repos-lfm3-d1-omni"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/repos/captures/repos-source-76691903cabefc17.json",
+      ".state/scan-20261114T055536Z-34366e/research/repos/model-deltas.json"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "proposedReportId": "liquid-lfm3-specialized-multimodal"
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-creative-praxis1",
+    "candidateId": "nov14-creative-praxis1",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Runway research page lists November11 story; linked body not inspected under two-report bound. Needs primary follow-up, not a verified deployment claim.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "nov14-story-4159103a9ba7d00b"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/seed-runway.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-creative-luma-board",
+    "candidateId": "nov14-creative-luma-board",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Listing only; date precision insufficient to determine before run cutoff. Product body uninspected.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "nov14-story-8e329868794f5f7b"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/creative-luma-news.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-creative-comfy-oct",
+    "candidateId": "nov14-creative-comfy-oct",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Archive lists branching, LoRA stacks, input-carrying templates and tidier links. Could revise existing comfyui if substantive; body not inspected in this bound.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "nov14-story-c615b7a5513e4bdb"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/comfy-repair.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-creative-astryx-meetup",
+    "candidateId": "nov14-creative-astryx-meetup",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "excluded",
+    "reason": "Inspected blog listing describes a community meetup recap; full recap body remains uninspected, so no demonstrated product delta supports an activity bump to the existing astryx-agent-design-system report.",
+    "decidedAt": "2026-11-14T06:06:18.921Z",
+    "supporting_source_ids": [
+      "nov14-story-53f3c321d4516299"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/creative/nov11-astryx-blog.json"
+    ],
+    "worker": "creative",
+    "revisitedBacklog": false,
+    "workerRecommendation": {
+      "status": "excluded",
+      "reason": "Community meetup recap rather than demonstrated product delta; existing astryx-agent-design-system should not get activity bump solely from event recap."
+    },
+    "scopeClarifiedAt": "2026-11-14T06:36:53.176824+00:00"
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-gemini-decisions-launch",
+    "candidateId": "nov14-gemini-decisions-launch",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "included",
+    "reason": "Included in the gemini-decisions-api report after both required fresh independent Astra reviews approved the exact final report, evidence and rubric hashes. The candidate and its original research judgment remain preserved.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "nov14-gemini-decisions-launch"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "workerRecommendation": {
+      "id": "nov14-gemini-decisions-launch",
+      "title": "Gemini Decisions API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "monitor": false,
+      "publishedAt": "2026-11-11",
+      "evidencePaths": [
+        ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json"
+      ],
+      "candidateId": "nov14-gemini-decisions-launch"
+    },
+    "coordinatorOverride": true,
+    "researchReason": "Coordinator selected the Gemini Decisions API report for preparation from the inspected primary launch and documentation. Final inclusion requires independent dual approval.",
+    "reportId": "gemini-decisions-api",
+    "reviewGate": {
+      "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+      "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+      "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+      "reviewerIds": [
+        "/root/nov14_decisions_final_a",
+        "/root/nov14_decisions_final_b"
+      ],
+      "verdict": "approve",
+      "wordCount": 1871,
+      "meanScores": {
+        "usefulness": 8.0,
+        "impact": 6.5,
+        "novelty": 6.0,
+        "maturity": 5.0,
+        "openness": 3.0
+      },
+      "maxScoreDifference": 1
+    }
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-so-arena",
+    "candidateId": "nov14-so-arena",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary abstract/project read; benchmark artifacts and Gemini post-paper result require fuller methodology verification before standalone report.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "nov14-so-arena-primary"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/so-primary.json",
+      ".state/scan-20261114T055536Z-34366e/research/research_social/so-project.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-xybench",
+    "candidateId": "nov14-xybench",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Primary blog read: 8,115 examples include 6,272 generated from WikiHow; avoid describing all as observed human questions. Paper/code/dataset license remain uninspected.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "nov14-story-90476995beedb133"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/xybench.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261114T055536Z-34366e:integration:nov14-compactionbench",
+    "candidateId": "nov14-compactionbench",
+    "runId": "scan-20261114T055536Z-34366e",
+    "status": "needs_review",
+    "reason": "Original abstract read; paper and implementation release/license remain uninspected. 44.2% refers to token consumption, not necessarily monetary costs.",
+    "decidedAt": "2026-11-14T06:10:47.298037Z",
+    "supporting_source_ids": [
+      "nov14-story-f3b073780736b4f0"
+    ],
+    "evidencePaths": [
+      ".state/scan-20261114T055536Z-34366e/research/research_social/compactionbench.json"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false
   }
 ]

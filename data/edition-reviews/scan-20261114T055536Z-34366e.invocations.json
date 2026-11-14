@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "runId": "scan-20261114T055536Z-34366e",
+  "recordedAt": "2026-11-14T06:31:36.441958+00:00",
+  "invocations": [
+    {
+      "reportId": "typesafe-jev",
+      "reviewerId": "/root/nov14_jev_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_jev_astra_a",
+      "recordedAt": "2026-11-14T06:14:34.856614Z",
+      "hashes": {
+        "reportHash": "e43d5043234981ebb628bb5d6706374381d1f82d81e6655a85d6d9d35d3c036e",
+        "evidenceHash": "8a4c14b99fc43e0e7ce7f0dfb5937195c02861da7d64805ffe0f3aef798b1265",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1901
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/typesafe-jev/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "typesafe-jev",
+      "reviewerId": "/root/nov14_jev_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_jev_astra_b",
+      "recordedAt": "2026-11-14T06:14:34.857002Z",
+      "hashes": {
+        "reportHash": "e43d5043234981ebb628bb5d6706374381d1f82d81e6655a85d6d9d35d3c036e",
+        "evidenceHash": "8a4c14b99fc43e0e7ce7f0dfb5937195c02861da7d64805ffe0f3aef798b1265",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1901
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/typesafe-jev/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "aws-emulator",
+      "reviewerId": "/root/nov14_aws_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_aws_astra_a",
+      "recordedAt": "2026-11-14T06:14:34.857060Z",
+      "hashes": {
+        "reportHash": "2cd4329a8b91667c5c65b6d51a08265d4fc5f47a5008a785cde442b98b6c00f8",
+        "evidenceHash": "e1251d9c766159250dd2fdaf1e65cf72a2d09f0c125f48406601a3638d2f2ec3",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1924
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/aws-emulator/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "aws-emulator",
+      "reviewerId": "/root/nov14_aws_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_aws_astra_b",
+      "recordedAt": "2026-11-14T06:14:34.857246Z",
+      "hashes": {
+        "reportHash": "2cd4329a8b91667c5c65b6d51a08265d4fc5f47a5008a785cde442b98b6c00f8",
+        "evidenceHash": "e1251d9c766159250dd2fdaf1e65cf72a2d09f0c125f48406601a3638d2f2ec3",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1924
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/aws-emulator/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "llm-credential-routing",
+      "reviewerId": "/root/nov14_llm_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_llm_astra_a",
+      "recordedAt": "2026-11-14T06:14:34.857308Z",
+      "hashes": {
+        "reportHash": "b3506701cae6fdcf8086f18c59ea53e0fc0013f5df28c730ef93378e3c60568e",
+        "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 976
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/llm-credential-routing/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "llm-credential-routing",
+      "reviewerId": "/root/nov14_llm_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_llm_astra_b",
+      "recordedAt": "2026-11-14T06:14:34.857492Z",
+      "hashes": {
+        "reportHash": "b3506701cae6fdcf8086f18c59ea53e0fc0013f5df28c730ef93378e3c60568e",
+        "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 976
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/llm-credential-routing/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "gemini4-hydrogen",
+      "reviewerId": "/root/nov14_hydrogen_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_hydrogen_astra_a",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "e592c68e5abe8fec5c1ff6b56767c5d2d2946ce8d7fa82bd95b9ac208abb9554",
+        "evidenceHash": "25e45fb4f816ed34ccd1a092b7667b15b717b47307002b5ddcd16e28d58b0cde",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1929
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini4-hydrogen/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "gemini4-hydrogen",
+      "reviewerId": "/root/nov14_hydrogen_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_hydrogen_astra_b",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "e592c68e5abe8fec5c1ff6b56767c5d2d2946ce8d7fa82bd95b9ac208abb9554",
+        "evidenceHash": "25e45fb4f816ed34ccd1a092b7667b15b717b47307002b5ddcd16e28d58b0cde",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1929
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini4-hydrogen/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_astra_a",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "f8a0ce86e05fdd69354b10a8a295c7f4a03147424316d4282042dc51d29f0f11",
+        "evidenceHash": "f9fb60db2fe160fdd6e9f78a1e97db2334b7308d41441989dfeba0664790e3fd",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_astra_b",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "f8a0ce86e05fdd69354b10a8a295c7f4a03147424316d4282042dc51d29f0f11",
+        "evidenceHash": "f9fb60db2fe160fdd6e9f78a1e97db2334b7308d41441989dfeba0664790e3fd",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "gemini-decisions-api",
+      "reviewerId": "/root/nov14_decisions_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_decisions_astra_a",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "80615ce98b257c9790b4ebcb3888da72944801c2ae2aee36a478c65439a904b0",
+        "evidenceHash": "f2379e716c90f174905f93472f8a2b0b66e245782922fd51aee3dee26f998d3f",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1869
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini-decisions-api/review-a.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "gemini-decisions-api",
+      "reviewerId": "/root/nov14_decisions_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_decisions_astra_b",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "80615ce98b257c9790b4ebcb3888da72944801c2ae2aee36a478c65439a904b0",
+        "evidenceHash": "f2379e716c90f174905f93472f8a2b0b66e245782922fd51aee3dee26f998d3f",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1869
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini-decisions-api/review-b.json",
+      "attempt": 1
+    },
+    {
+      "reportId": "llm-credential-routing",
+      "reviewerId": "/root/nov14_llm_final_astra_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_llm_final_astra_a",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "3b4881b15d149c2b73751c8b95e56085ac46ca254c212add4958242309dd76a8",
+        "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 983
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/llm-credential-routing-v2/review-a.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "llm-credential-routing",
+      "reviewerId": "/root/nov14_llm_final_astra_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_llm_final_astra_b",
+      "recordedAt": "2026-11-14T06:19:10Z",
+      "hashes": {
+        "reportHash": "3b4881b15d149c2b73751c8b95e56085ac46ca254c212add4958242309dd76a8",
+        "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 983
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/llm-credential-routing-v2/review-b.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "gemini4-hydrogen",
+      "reviewerId": "/root/nov14_hydrogen_final_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_hydrogen_final_a",
+      "recordedAt": "2026-11-14T06:26:03.661907+00:00",
+      "hashes": {
+        "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+        "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1933
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini4-hydrogen-v2/review-a.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "gemini4-hydrogen",
+      "reviewerId": "/root/nov14_hydrogen_final_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_hydrogen_final_b",
+      "recordedAt": "2026-11-14T06:26:03.662196+00:00",
+      "hashes": {
+        "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+        "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1933
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini4-hydrogen-v2/review-b.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "gemini-decisions-api",
+      "reviewerId": "/root/nov14_decisions_final_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_decisions_final_a",
+      "recordedAt": "2026-11-14T06:26:03.662253+00:00",
+      "hashes": {
+        "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+        "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1871
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini-decisions-api-v2/review-a.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "gemini-decisions-api",
+      "reviewerId": "/root/nov14_decisions_final_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_decisions_final_b",
+      "recordedAt": "2026-11-14T06:26:03.662301+00:00",
+      "hashes": {
+        "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+        "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1871
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/gemini-decisions-api-v2/review-b.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_final_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_final_a",
+      "recordedAt": "2026-11-14T06:26:03.662343+00:00",
+      "hashes": {
+        "reportHash": "569771851580552b8b97152ab634d92ace42d94a9eeaec70ea0fe4f34051a0fa",
+        "evidenceHash": "b640197278e5c259b9867124b84b4976b429a4eb43e9719726e36969fb3931c6",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express-v2/review-a.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_final_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_final_b",
+      "recordedAt": "2026-11-14T06:26:03.662387+00:00",
+      "hashes": {
+        "reportHash": "569771851580552b8b97152ab634d92ace42d94a9eeaec70ea0fe4f34051a0fa",
+        "evidenceHash": "b640197278e5c259b9867124b84b4976b429a4eb43e9719726e36969fb3931c6",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express-v2/review-b.json",
+      "attempt": 2
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_precision_a",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_precision_a",
+      "recordedAt": "2026-11-14T06:28:44.830872+00:00",
+      "hashes": {
+        "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+        "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express-v3/review-a.json",
+      "attempt": 3
+    },
+    {
+      "reportId": "a2ui-express",
+      "reviewerId": "/root/nov14_a2ui_precision_b",
+      "tool": "collaboration.spawn_agent",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/nov14_a2ui_precision_b",
+      "recordedAt": "2026-11-14T06:28:44.831007+00:00",
+      "hashes": {
+        "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+        "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
+        "rubricVersion": "1.0",
+        "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+        "wordCount": 1945
+      },
+      "reviewOutput": ".state/scan-20261114T055536Z-34366e/review-audit/frozen/a2ui-express-v3/review-b.json",
+      "attempt": 3
+    }
+  ],
+  "reviewHistory": [
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express/review-a.json",
+      "sha256": "3b7ba6373b52286a15a17c73eb3f3b4e0bc4860467d3f6d0c37debe59faaacb9"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express/review-b.json",
+      "sha256": "333c909af6cc51e45ccbd6c341d47ec4ef009cc83c88adcaeee4522b4dbc8eda"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express-v2/review-a.json",
+      "sha256": "4e1be2fe75075ad998dcb19865653369866aff7b770eb02795f14099b11e576e"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express-v2/review-b.json",
+      "sha256": "efbf47ab6801e12a58450ae175a914b2f202ae47857483fe17df33304fe738ad"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express-v3/review-a.json",
+      "sha256": "fabaa98807b89b10906925f14c0fce82a34cc16976b071be95de2f0b134251dc"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/a2ui-express-v3/review-b.json",
+      "sha256": "9c1d7d3cab5894eeb0becc37a813a94354fc49a3f01dad1dbcff52a6bb862290"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-a.audit.json",
+      "sha256": "0468fab837f30b77241f0c39572779120442bc17c6c5452bb0201234a0f0779b"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-a.json",
+      "sha256": "be8dd8103229008197c053c7220f3078bfa4f047c1ca33ab3f8aceb951806e13"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-a.raw.json",
+      "sha256": "c2dce859cce7ebd1b0ffdb0c9dd023847c4f35c0c37b2745ee809bbe258d77f7"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-b.audit.json",
+      "sha256": "da3b2acd59993c7da7fef1183939ab525719b9d4e7abe0949379c4f501f4d7c0"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-b.json",
+      "sha256": "8112f87a5cf24b0656643dbce65bf4cede814f9a987dbb005df990bf1d7e8560"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/aws-emulator/review-b.raw.json",
+      "sha256": "0fa575d8765cbafe1b7adf4e6f4c2bc827d46ad39fbbe6aadf826a3b94748aa5"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini-decisions-api/review-a.json",
+      "sha256": "46c8192707993c0c385016d32662bf5ea965d7123f7de6aaa1e076fa2f8a350b"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini-decisions-api/review-b.json",
+      "sha256": "40e6490caf199d67e1f09287ceceb3d9c1eda7d4dca7782fb0777fd03630dcc0"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini-decisions-api-v2/review-a.initial.json",
+      "sha256": "490628936af7e7820aa7511e30917921ffe2d009aa299b61a23272086686da84"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini-decisions-api-v2/review-a.json",
+      "sha256": "51c9ff1f70e87e22d77ecaf82602fe67615f9a7711ef0ac09e7e4b62622ac40e"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini-decisions-api-v2/review-b.json",
+      "sha256": "ff50f2df0238f290513f4c82fbb7d24a69594c7892042984d3afb81a161a097c"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini4-hydrogen/review-a.json",
+      "sha256": "1c5886a0252f9f75a8c063b1be641a1a11326ec12668aff6e3af8274ab3358e5"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini4-hydrogen/review-b.json",
+      "sha256": "83f22e4425eae4f0faf453cd72c156443204ae3ce8058d809561c149d43f600b"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini4-hydrogen-v2/review-a.initial.json",
+      "sha256": "01cee1a8f1b589a46c0e63aecad01c194a8d12c331944849e8504bd108e0aa96"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini4-hydrogen-v2/review-a.json",
+      "sha256": "e82e7169100583adba35a0c5b9b18567515390c3313b45d2d84ea249f136f21a"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/gemini4-hydrogen-v2/review-b.json",
+      "sha256": "5e9aa2344ecdf9ff4f85a5f5c0a8e88ca06d91eba5170a9dc8366f86d15c38a2"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/llm-credential-routing/review-a.json",
+      "sha256": "12fe8a30a509455b0fad3c8fb8d1e2cfce9aec9d03c4ee10d11e90b10f13db82"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/llm-credential-routing/review-b.json",
+      "sha256": "8ada9c57d1107374672bf9500b6c17731c5827ddc1d7faa1e06360fdb18ec452"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/llm-credential-routing-v2/review-a.json",
+      "sha256": "43f985d48ff0c887d9b8eb9f7b44e29410cc907a40aa90dfc774f823ee4d7927"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/llm-credential-routing-v2/review-b.json",
+      "sha256": "ec35e0d84f9402853c6cd419f00c50ef7caa678540dab3e7116bddbd5d08afa1"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/typesafe-jev/review-a.json",
+      "sha256": "4d4a1d6cadd82de0de5716c5ed4620b6e0bdbebc8a11186554e517000ee6b6b9"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/typesafe-jev/review-a.raw.json",
+      "sha256": "e60d3870a87d6c4c451df447fc7a7b968586e72cd218ba191c320f8e94f801ab"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/typesafe-jev/review-b-audit.json",
+      "sha256": "28910d9cd7a6f88d64136dbdccf5ef076ce66d4f2b46a72053d088a5af5375f6"
+    },
+    {
+      "path": "data/review-history/scan-20261114T055536Z-34366e/typesafe-jev/review-b.json",
+      "sha256": "62859faf7e93a2f877b9126e2a5fc2dea83538a31e7930cbb11d32081ec9a807"
+    }
+  ],
+  "reconciliation": [
+    "LLM report revised to distinguish api_key_name condition and separate affected-version ranges; two fresh reviewers approved v2.",
+    "A2UI missing announcement tail acquired once, then exact excerpt and final revision timestamp corrected; two fresh reviewers approved v3.",
+    "Two reviewers independently reconsidered their shared-pricing-page objection against the source identity and evidence-envelope contract; their original and reconciled reviews remain preserved. Neither received another reviewer's scores or conclusions."
+  ],
+  "identityNote": "Actual native collaboration invocations, exact gpt-6-astra/high/fork_turns:none. Hashes bind content; same-model reviews are editorial checks, not experimental validation."
+}

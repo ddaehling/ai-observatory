@@ -1,0 +1,32 @@
+{
+  "reportId": "a2ui-express",
+  "reviewerId": "/root/nov14_a2ui_precision_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:29:50.514249Z",
+  "reportHash": "1898b663baaaf2a2a2c0293f2e5cba07a360a71eb9fe5b2aba718ec8b1130163",
+  "evidenceHash": "24d9980982757110d46504b26ef28297f04fdf26c4b66ce76623616450904635",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 6,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The report gives actionable renderer/version selection, migration fixtures, trusted-data boundaries, recovery behavior and concrete teacher, web/app and transcript-review pilots. These are explicitly proposed workflows rather than observed improvements, and it clearly excludes video generation or timeline export. Exact package installation and user-outcome testing remain unperformed.",
+    "impact": "A stable protocol with bidirectional calls, accessibility metadata, composition constraints and documented adoption across several platforms is a substantial generative-interface infrastructure milestone. The saved November announcement supports the partner and Google examples, while explicitly showing an incomplete 1.0 rollout. Evidence does not establish universal interoperability or field-wide realized productivity gains.",
+    "novelty": "Separating model inference notation from standard wire messages, incremental validated compilation and server-side macro expansion is a meaningfully differentiated combination. However, much of Express and controlled generation predates this release; 1.0 consolidates and extends that architecture, and official decision-model SDK support is still prospective.",
+    "maturity": "The stable release, detailed evolution guide, SDK layer/version tables and named deployments support practical bounded adoption. Mixed renderer versions, Python-only macros, unverified installed package/registry combinations and the absence of native execution prevent a stronger readiness score. Publisher benchmark accuracy is not treated as independent reliability or UX evidence.",
+    "openness": "Saved repository captures identify Apache-2.0 licensing, while public protocol, migration and SDK documentation make the architecture inspectable and permit multiple languages, frameworks and inference formats. Hosting/model access remains separate; the small Apparite run uses paid hosted-model access, and reproducible runtime and cost verification were not performed. Code openness is not presented as access to hosted-model weights or training data."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Nonblocking audit note: all three canonical input hashes match hashes.json, and every one of the 11 distinct cited saved-capture SHA-256 values matches the underlying file. Relevant source passages and locators were inspected, including the complete announcement tail covering Gemini compatibility and the decision-model roadmap. This verifies packet binding and documentary support, not native execution or independent experimental validation.",
+    "Nonblocking limits remain explicit: historical October observations are dated separately from the November 11 event and November 14 retrieval/update; current documentation and publisher benchmarks do not verify released package behavior or independently measured performance. The report correctly distinguishes code-token savings from total output and separates the 51-task and 54-sample evaluations.",
+    "Nonblocking gate note: section-body whitespace count is 1,919 words, within the 1,800–2,200 band applicable to an impact score of 7; the supplied 1,945 count evidently uses a different counting convention. Final length must still be checked against the two-review mean impact. Markup inspection found only paragraph and HTTPS-link tags with no unsafe attributes."
+  ]
+}

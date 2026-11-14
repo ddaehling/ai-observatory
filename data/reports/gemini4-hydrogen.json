@@ -1,0 +1,134 @@
+{
+  "id": "gemini4-hydrogen",
+  "title": "Gemini 4 Hydrogen brings everyday agent work to a shared million-token budget",
+  "entity": "Gemini 4 Hydrogen",
+  "category": "Models",
+  "tags": [
+    "Gemini",
+    "coding",
+    "multimodal",
+    "agentic workflows",
+    "education"
+  ],
+  "summary": "Google's November 12 model targets faster everyday execution. Its API combines multimodal inputs, four thinking levels and long decode, with a shared context budget and migration changes that a simple model-name swap can miss.",
+  "changeType": "new",
+  "publishedAt": "2026-11-12",
+  "discoveredAt": "2026-11-14T06:09:15.586Z",
+  "updatedAt": "2026-11-14T06:09:15.586Z",
+  "officialUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+  "sections": [
+    {
+      "id": "release",
+      "title": "A new everyday model, with a concrete API route",
+      "html": "<p>Google introduced Gemini 4 Hydrogen on November 12, 2026, and updated its announcement on November 13. It positions Hydrogen as a faster execution model for coding, tool use and mixed-media knowledge work, usable alone or alongside Carbon and Argon. This is a distinct model, so it receives a separate report from Gemini 4 Carbon. The practical question is whether a task can reach the same accepted result with less waiting and supervision.</p><p>The <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/\">announcement</a> describes availability across AI Studio, the Gemini API, Gemini for business, the Gemini app and Search, with paid Pro and Ultra access in Antigravity. Its free-app footnote describes automatic model selection when appropriate, which differs from guaranteed manual selection. The API documentation separately offers free and paid tiers. These are documented routes, not an account-level test of regional access, quotas or rollout completion.</p><p>For a first decision, use the API route or product surface you already have and confirm that it actually exposes Hydrogen. Keep a working baseline. Select a small task with a known answer or acceptance test, and record the model, thinking setting, tools and result. A launch makes an experiment possible; it does not establish that replacing a functioning workflow will pay for itself.</p>"
+    },
+    {
+      "id": "capabilities",
+      "title": "Multimodal inputs produce text and tool work",
+      "html": "<p>The <a href=\"https://aistudio.google.com/docs/models/gemini-4-hydrogen\">model page</a> names the stable identifier gemini-4-hydrogen. It accepts text, images, video, audio and PDFs, and its native output is text. The documented capabilities include function calling, structured output, code execution, computer use and retrieval tools. Image generation, audio generation and the Live API are marked unsupported. A demonstration involving a video or website may therefore depend on tools and other services around the model.</p><p>That boundary helps define useful work. A producer could ask for a sourced scene list from supplied footage; a developer could request code for an interactive explanation; an analyst could compare tables and diagrams in a document pack. The output still needs the right checker: source timestamps for scenes, a running browser for a website, and arithmetic or underlying records for a table. A fluent description of the result is not the result itself.</p><p>Before choosing a broad multimodal task, decide which inputs are essential. Give each file a stable name and ask the model to identify the evidence behind consequential statements. Keep unsupported questions visible. A smaller, well-organized source pack is easier to audit than a large undifferentiated upload, even when a model can accept substantially more material.</p>"
+    },
+    {
+      "id": "context",
+      "title": "One shared million-token budget",
+      "html": "<p>Hydrogen's context limit is 1,048,576 tokens shared across input, thinking and output. The default synchronous response allowance is 65,536 tokens; output approaching the larger limit needs long decode. This is not an independent million-token input allowance plus another million tokens of output. The <a href=\"https://aistudio.google.com/docs/models/gemini-4-hydrogen\">specification</a> also distinguishes implicit caching from unsupported explicit caching.</p><p>The operational implication is to reserve room for the work you want back. A large repository or document collection consumes capacity before analysis starts. Plan for references, reasoning and the final deliverable rather than filling the window simply because space is available. If a task naturally divides into chapters or modules, retain an index and explicit dependencies so a human can inspect each part without reading an enormous transcript.</p><p>Consider a course-material project with forty readings. Start with an inventory containing title, author, date and a short verified description. Ask the model to propose the smallest relevant subset for one lesson, then supply or retrieve the supporting sections. Compare its selection against a teacher's reference list. The million-token option is useful headroom; a deliberate retrieval plan may still make errors and omissions easier to find.</p>"
+    },
+    {
+      "id": "migration",
+      "title": "A model-name swap can change request behavior",
+      "html": "<p>The <a href=\"https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen\">migration checklist</a> identifies several differences from Gemini 3.8 Flash. Hydrogen defaults to high thinking, supports low, medium and xhigh, and rejects minimal. Explicit cache requests must be removed. In-range custom temperature, top_p and top_k settings are ignored; out-of-range values can fail validation. Tools should be declared natively, and structured output should use a schema. Multi-turn applications must preserve conversation state and thought signatures as documented.</p><p>These changes make a representative request fixture more valuable than a successful hello-world response. Save examples covering a normal answer, a tool call, a rejected tool action, an empty search and a continuation turn. Compare the response shapes and errors with what the application expects. Audit middleware that silently adds defaults or reconstructs previous messages, because a model migration can expose assumptions outside the model-selection code.</p><p>Then vary thinking effort deliberately. Start with the existing quality threshold and compare medium and high before treating xhigh as an improvement. Reserve deeper effort for tasks where failures justify its added time and token use. A setting that helps a difficult debugging problem may be wasteful for rewriting a short label. These are proposed acceptance checks, not results from an Observatory execution.</p>"
+    },
+    {
+      "id": "continuation",
+      "title": "Long output needs recoverable job handling",
+      "html": "<p>The <a href=\"https://aistudio.google.com/docs/long-decode\">long-decode guide</a> provides server-managed background execution and client-managed continuation. Background mode requires stored interactions. Current SDKs can combine foreground continuation hops, but older versions may stop. The guide warns that fetching the final foreground interaction can return only its last hop; applications should preserve the merged response. Interrupted runs can expose partial output and a continuation token. An accepted job is therefore not a completed deliverable.</p><p>Design a visible status path: queued, working, partial, failed or complete. Save the identifier and accumulated work, and show a usable partial result when appropriate. A retry should first determine whether the original job still exists. For a migration specification, retain completed modules and their checksums rather than replacing a useful partial file with an empty failure response.</p><p>The guide also counts repeated inputs across hops and charges work completed before cancellation or failure. Aggregate usage is not the same thing as current context size. Its generic billing example uses another model's introductory rates, so this report does not apply those dollar values to Hydrogen. No long generation, cancellation, stream reconnection or SDK recovery was executed here; those behaviors require validation before a production workflow depends on them.</p>"
+    },
+    {
+      "id": "cost",
+      "title": "Count reasoning, tools and unsuccessful attempts",
+      "html": "<p>On November 14, the <a href=\"https://aistudio.google.com/docs/pricing#gemini-4-hydrogen\">Hydrogen Standard pricing table</a> lists US$1.50 per million input tokens and US$7.50 per million output tokens, including thinking. Cached input is US$0.075 per million on applicable implicit-cache hits. Search grounding has separate query charges after its allowance; one request may trigger several queries. The table also distinguishes free-tier content used to improve products from paid-tier content not used for that purpose, subject to the linked terms.</p><p>An illustrative request with 100,000 uncached input tokens and 20,000 billable output-and-thinking tokens costs US$0.30 at those token rates. That calculation excludes tools, hosting, retries and taxes. It is not a prediction for a finished task. Do not assume a cache hit, and use actual usage records when evaluating continuation or a multi-agent run.</p><p>Compare cost per accepted result. Include failed attempts and the time a reviewer spends finding defects. If a faster response needs several repairs, its apparent advantage may disappear. For a student workshop, set a small project allowance and use public teaching materials; for internal documents, check the actual account terms before uploading them. Subscription access and API billing should be treated as separate arrangements.</p>"
+    },
+    {
+      "id": "evidence",
+      "title": "Publisher comparisons identify hypotheses to test",
+      "html": "<p>Google reports stronger execution and lower fabrication than Gemini 3.8 Flash, plus an Antigravity Orchestrator experiment on Terminal-Bench 4.0 that approaches Carbon's success while using less quota and time. Those are publisher measurements with their own tasks and systems. This research did not reproduce benchmarks or audit linked demonstration outputs, and it does not interpret a ranking as proof of superiority on every workload.</p><p>A practical comparison starts with an unchanged task set. Use historical bugs, public documents with answer keys, or website interactions whose expected behavior is known. Give each model the same tools, permissions and stopping condition. Retain attempts that fail or end honestly with missing information. Record elapsed time, billable usage, correctness and review effort separately so one attractive number cannot hide another weakness.</p><p>For a multi-model experiment, define the handoff as an artifact: a plan, patch, test log or unresolved question. Have one component own integration and completion checks. Parallel workers need file ownership and conflict handling; extra agents do not automatically produce independent verification. Keep the comparison simple enough that an unexpected result can be explained and repeated before enlarging the workflow.</p>"
+    },
+    {
+      "id": "education",
+      "title": "Make evidence checking part of the lesson",
+      "html": "<p>A useful education pilot is a teacher-reviewed explainer built from a short public reading pack. Ask Hydrogen to produce an outline, a small set of claims with source locations, and questions that require comparing two sources. The teacher checks factual support and suitability before students use the material. A separate answer key makes omissions and unsupported statements visible.</p><p>The learning activity can focus on the model's limitations. Include one question that the supplied material cannot answer and one pair of sources that disagree. Students identify what additional evidence would resolve the disagreement. Success means that the resulting lesson preserves uncertainty and directs readers back to the source, rather than simply sounding authoritative. No improvement in learning outcomes is established by this report.</p><p>A teacher without confirmed model access can still use the evaluation design with an existing tool. Keep a printable or static version of the resource, and avoid making participation depend on a particular paid account. Measure the time required to verify and adapt the output. If preparation takes longer or source errors are difficult to detect, the experiment has found a useful boundary rather than a reason to increase autonomy.</p>"
+    },
+    {
+      "id": "apps-web",
+      "title": "Build one inspectable interaction",
+      "html": "<p>For an app team, choose a reversible bug such as a form losing entered data after a failed request. Provide the reproduction steps and expected behavior, then ask for a minimal patch and evidence from the relevant checks. Review validation, retry behavior and state preservation together. The task is complete only when the changed application behaves as intended.</p><p>For a website, start with one sourced interactive explanation. A rate-limit simulator, for example, should expose its assumptions, allow a user to vary a small number of inputs and display results that can be checked independently. Keep calculations in deterministic code. Inspect narrow and wide layouts, keyboard focus and missing-data states; a screenshot alone cannot demonstrate a functioning interaction.</p><p>These trials help separate model usefulness from scaffolding quality. A clear brief, reliable development environment and suitable checks may matter as much as the model choice. Preserve the baseline implementation and compare accepted patches, not just how quickly a preview appears. Deployments and changes to real user data remain separate decisions with their normal review process.</p>"
+    },
+    {
+      "id": "video-adoption",
+      "title": "Use video understanding inside a controlled production process",
+      "html": "<p>A video producer can trial Hydrogen on a source manifest and editing brief. Supply a small set of cleared clips with filenames, duration and verified time references. Ask for candidate passages, a proposed sequence and a list of missing assets. Keep observations about the footage separate from suggested narration or titles. Review every selected passage against the original media before it enters an edit.</p><p>The deliverable might be a structured shot list and a script, not a finished movie. Use existing production tools for timeline assembly, sound, captions and final export. Test repeated phrases, silence, damaged transcripts and a clip whose visible action contradicts its filename. A useful assistant should expose those ambiguities instead of smoothing them into a confident story. No native video generation or editable-timeline export is claimed for Hydrogen.</p><p>The adoption case is strongest when a bounded experiment meets the existing quality bar with less total effort. Keep the model's output, the checks and the human corrections together. Broaden the task only after recovery, cost and access are understood. This report is a documentary evaluation of a newly available model and its integration requirements; it is not a hands-on endorsement or a promise that the announced rollout has reached every reader.</p>"
+    }
+  ],
+  "useCases": [
+    "Teacher-reviewed source explanations and evidence exercises",
+    "Bounded app repairs and interactive website prototypes",
+    "Multimodal source analysis for video production briefs",
+    "Measured model routing and recoverable long-output workflows"
+  ],
+  "limitations": [
+    "No model/API execution, benchmark reproduction, cancellation or recovery testing.",
+    "Access routes are documented; account entitlements, regions and quotas were not tested.",
+    "Primary API docs were captured through public-web extraction; coordinator browser rendered navigation without the relevant body.",
+    "Native output is text; image/audio generation and LiveAPI are not supported by the inspected model page.",
+    "Rates are a dated Standard-tier snapshot; tool charges and actual cache behavior affect completed-task cost."
+  ],
+  "sources": [
+    {
+      "id": "official-story-gemini4-hydrogen",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "accessedAt": "2026-11-14T06:00:05.824Z",
+      "publishedAt": "2026-11-12",
+      "locator": "Launch and availability; last-updated November 13; four thinking levels",
+      "supports": "Dated distinct model release, announced surfaces, attributed evaluation and rollout"
+    },
+    {
+      "id": "official-doc-hydrogen-model",
+      "title": "Gemini 4 Hydrogen model documentation",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-hydrogen",
+      "accessedAt": "2026-11-14T06:02:24.554Z",
+      "publishedAt": null,
+      "locator": "Model code, data types, token limits, capabilities and stable version",
+      "supports": "Model identifier, shared context, output limits and capability exclusions"
+    },
+    {
+      "id": "official-doc-hydrogen-migration",
+      "title": "What's new in Gemini 4 Hydrogen",
+      "url": "https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen",
+      "accessedAt": "2026-11-14T06:02:24.747Z",
+      "publishedAt": null,
+      "locator": "Thinking levels; migration checklist; pairing models",
+      "supports": "Defaults and breaking migration changes, native tools and conversation state"
+    },
+    {
+      "id": "official-doc-hydrogen-long-decode",
+      "title": "Long decode — Gemini API",
+      "url": "https://aistudio.google.com/docs/long-decode",
+      "accessedAt": "2026-11-14T06:02:24.310Z",
+      "publishedAt": null,
+      "locator": "Choose how to run; client continuation; token counting; billing; limitations",
+      "supports": "Continuation, storage, partial output and billing semantics; generic rate examples not applied to Hydrogen"
+    },
+    {
+      "id": "nov14-gemini-decision-pricing",
+      "title": "Gemini Developer API pricing — Hydrogen",
+      "url": "https://aistudio.google.com/docs/pricing#gemini-4-hydrogen",
+      "accessedAt": "2026-11-14T06:06:53.186Z",
+      "publishedAt": null,
+      "locator": "Gemini 4 Hydrogen Standard table; lines536–610",
+      "supports": "USD token rates, caching, free/paid data-use distinction and search query billing"
+    }
+  ],
+  "images": [],
+  "judgment": "A useful candidate for a bounded execution-model trial. The shared context budget, changed defaults and continuation lifecycle deserve as much attention as headline speed.",
+  "researchNote": "Official announcement and API documentation inspected November 14, 2026. Primary article independently readable in the coordinator's in-app browser; worker browser was unavailable. API documentation saved as public web text with locators and hashes. No software installation or live model testing. Practical workflows are editorial proposals."
+}

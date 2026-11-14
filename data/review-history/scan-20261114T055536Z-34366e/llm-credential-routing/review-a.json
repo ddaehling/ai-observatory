@@ -1,0 +1,38 @@
+{
+  "reportId": "llm-credential-routing",
+  "reviewerId": "/root/nov14_llm_astra_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:14:14Z",
+  "reportHash": "b3506701cae6fdcf8086f18c59ea53e0fc0013f5df28c730ef93378e3c60568e",
+  "evidenceHash": "763150300532beb0eaa79a9bb63e93f27a264e883495ac5d60e09eabe744abf1",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 4,
+    "novelty": 2,
+    "maturity": 8,
+    "openness": 9
+  },
+  "rationale": {
+    "usefulness": "The report gives affected LLM users a concrete upgrade and configuration-audit path, explains how to verify the runtime actually executing a workload, and proposes synthetic credential and destination assertions. Its education, app/web backend, and script/transcript automation examples are realistic and explicitly conditional. The value is substantial within this defined audience, rather than broadly useful to all creative builders.",
+    "impact": "Two Moderate credential-routing flaws warrant remediation, including a long-lived missing-alias fallback and a narrower protocol-delegate path. The evidence supports a meaningful security maintenance change for this particular client, not a field-wide AI advance or demonstrated widespread exposure. A score of 4 reflects that bounded significance independently of report length.",
+    "novelty": "The release repairs credential isolation and propagates configuration correctly through an existing delegate. These are useful corrections but introduce no demonstrated novel model capability, development paradigm, or distinct creative workflow.",
+    "maturity": "A released patched version, clear affected ranges, explicit trigger conditions, upgrade documentation, and reporter-authored reproduction and patch-validation details support high readiness. The report correctly distinguishes those published results from independent execution. No runtime validation was performed for this review, so exceptional demonstrated reliability is not established.",
+    "openness": "Public source under Apache License 2.0, readable advisories, patch sketches, synthetic reproduction examples, and multiple installation routes make the software highly inspectable and practically reproducible. This is openness of a client and its code, not openness of the model providers, weights, data, or training methods it can access.",
+    "evidenceAudit": "The report and rubric canonical hashes match the packet. The evidence hash matches canonical JSON of the report sources plus the evidence claims, and all three referenced capture byte hashes match. Both advisory date and severity statements, affected package ranges (0.6 through 0.37.1 and 0.32a2 through 0.37.1), patched version 0.37.2, historical 0.6–0.7.1 precedence caveat, release behavior, setup routes, and Apache 2.0 license are supported by the supplied primary captures. No user exposure, package execution, independent exploit reproduction, or independent test result is invented. The report separates proposed practical exercises from observed evidence.",
+    "length": "The supplied 976-word body is within the 900–1100 band associated with this independent impact rating of 4. The eventual requirement must be checked against the two-review mean; this review does not infer or fit another reviewer rating."
+  },
+  "confidence": 0.94,
+  "concerns": [
+    {
+      "severity": "low",
+      "blocking": false,
+      "location": "delegate section",
+      "issue": "The report correctly gives the advisory-wide affected range, but does not state the narrower introduction point of the llm openai endpoint command variant. The archived advisory identifies that variant as affected from 0.32rc2. The phrase no provider-specific key was configured also summarizes rather than quotes the advisory distinction between an absent api_key_name and a configured alias whose value is missing.",
+      "suggestedRepair": "For additional precision, say the delegate advisory describes a model with no api_key_name configured, and add that the endpoint command variant applies from 0.32rc2 through 0.37.1. Retain the separate missing-alias discussion for the other advisory. These are nonblocking refinements because the current report gives the correct overall package range and does not assert an incorrect command-specific introduction version."
+    }
+  ]
+}

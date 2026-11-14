@@ -1,31 +1,28 @@
 {
   "reportId": "typesafe-jev",
-  "reviewerId": "/root/astra_b",
+  "reviewerId": "/root/nov14_jev_astra_b",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-10-18T15:25:46.346286+00:00",
-  "reportHash": "41f6290299629d11f0ebac8e7404644d43c3729a8ffac55fc9eccaf388e54c5d",
-  "evidenceHash": "326f255bca1858da47b19b64dc4fa705439cfcc1bb77213b59dd27c584aebee4",
-  "rubricVersion": "1.0",
+  "reviewedAt": "2026-11-14T06:14:27.860082Z",
+  "reportHash": "e43d5043234981ebb628bb5d6706374381d1f82d81e6655a85d6d9d35d3c036e",
+  "evidenceHash": "8a4c14b99fc43e0e7ce7f0dfb5937195c02861da7d64805ffe0f3aef798b1265",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 7,
     "impact": 6,
-    "novelty": 7,
-    "maturity": 5,
-    "openness": 3
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 4
   },
   "rationale": {
-    "usefulness": "Typed Choice/Score/Noul primitives and distributions offer actionable routing and ranking integration (ts-intro, ts-confidence); the report proposes a testable teacher-facing pilot rather than asserting deployed gains.",
-    "impact": "Separating semantic judgments from application policy could meaningfully improve a class of builder workflows (ts-intro, ts-114), but no independent evaluation establishes broad AI-development transformation.",
-    "novelty": "The explicit primitive family and code-composed decision model show meaningful product differentiation (ts-intro); images and Box expand it but remain experimental rather than a demonstrated new general capability.",
-    "maturity": "Versioned API and detailed context/confidence documentation establish usability, while 1.14 preview mapping, experimental capabilities, language unevenness and absent execution tests impose material limits (ts-models, ts-114).",
-    "openness": "Published interface and exact confidence formulas improve inspectability; reviewed sources establish a hosted service without open weights, local execution or reproducible training (ts-confidence, ts-models)."
+    "usefulness": "The report gives educational and creative builders concrete, bounded starting points: a visible help-route suggestion, a sourced retrieval shortlist, and a transcript-based rehearsal checklist. The inspected Intelliprompter capture supports the six-chunk replay, November 4 run date, score threshold and application-owned persistent state. The report turns its irreversible check behavior into useful acceptance cases and a correction requirement, while clearly labeling the teacher and editing workflows as proposals. The reranking discussion correctly separates shortlist recall from ranking quality. These are actionable designs, but their classroom value, correction effort and savings have not been measured, preventing an exceptional rating.",
+    "impact": "A hosted model interface built around reusable typed semantic judgments has meaningful potential within application development. Official fan-out and composite-scoring documentation substantiate ways to move interpretation into model calls while retaining explicit application policy, and the conference report supplies attributed examples across Glean, UiPath and Workday. This supports a moderately significant development in the domain, not a field-wide breakthrough or independently established performance advantage. The November update is correctly framed as application evidence and documentation refinement around the October 14 release. My independently selected impact score of 6 implies a provisional 2,000-word band; the supplied 1,901-word body fits its 1,800–2,200 allowance. The final band remains dependent on the independently aggregated reviews.",
+    "novelty": "Named Choice, Score and Noul judgments, returned distributions, and multi-question composition form a meaningfully distinctive developer interface. The evidence makes the patterns concrete, particularly speculative branch questions and the transcript checklist. However, classification, weighted scoring and two-stage retrieval are established approaches, and this update does not demonstrate that Jev uniquely enables them or introduces a new model capability in November. Experimental image and Box capabilities are accurately separated from the text recommendation. No independently run comparison establishes a larger novelty claim.",
+    "maturity": "The captured API, model reference, confidence definitions and executable-looking cookbook examples provide substantial documentation for a bounded hosted pilot. Current aliases, per-request versus per-question limits, input pricing and experimental headers are supported by the November 14 captures; the October alias snapshot is explicitly historical and superseded. The report correctly distinguishes distribution concentration from validated correctness, vendor replay from researcher execution, still-image input from absent native audio/video, and the legal index from account-specific retention entitlement. It discloses unavailable browser access and the inaccessible jaggedness page without inventing language-performance findings. No authenticated call, end-to-end media integration, independent reliability test or latency/cost measurement was performed, so the evidence does not justify broad production dependability.",
+    "openness": "Public API definitions, explicit confidence formulas, visible cookbook code and referenced replay caches provide useful inspectability and some ability to reproduce application behavior. The report nevertheless establishes hosted authenticated access only: no inspected evidence establishes downloadable weights, local inference, open training data, permissive model licensing or independence from the service. Account rate limits and enterprise data-retention rights remain unverified. These material portability and access constraints keep openness below the midpoint despite the useful public documentation. This assessment and the separate same-model review are editorial evaluations, not independent experimental validation."
   },
   "confidence": "high",
-  "concerns": [
-    "Non-blocking: official vendor evidence only; workload calibration, billing and educational outcomes remain untested.",
-    "Chrome spot-check on 2026-10-18 confirmed Choice/Score confidence formula distinctions, Noul absence of confidence, $0.042/M input pricing, latest/preview mappings and context limits."
-  ]
+  "concerns": []
 }

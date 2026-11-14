@@ -643,7 +643,7 @@
   },
   {
     "claim_id": "ts-model-status",
-    "claim": "Current model reference maps latest to1.13 and preview to1.14; input costs $0.042/M tokens and output is free.",
+    "claim": "On October 18, 2026, the inspected model reference mapped latest to1.13 and preview to1.14; input cost $0.042/M tokens and output was free.",
     "source_ids": [
       "ts-models"
     ],
@@ -659,14 +659,16 @@
       }
     ],
     "qualifiers": [
-      "Aliases can change; documentation snapshot on retrieval date."
+      "Aliases can change; documentation snapshot on retrieval date.",
+      "Retained historical snapshot; current aliases are documented in nov14-ts-models from November14."
     ],
     "contradicts": [],
     "source_family": "TypeSafe",
-    "status": "included",
+    "status": "historical",
     "limitations": [
       "Official vendor evidence; no independent execution or experimental validation."
-    ]
+    ],
+    "supersededBy": "nov14-ts-models"
   },
   {
     "claim_id": "ts-hallucination-scope",
@@ -21869,6 +21871,1435 @@
     "limitations": [
       "Saved primary announcement; no authenticated entitlement, model execution or independent performance test.",
       "Underlying linked documents and demonstrations were not inspected for this revision."
+    ]
+  },
+  {
+    "claim_id": "nov14-ts-confidence",
+    "claim": "As of November14, TypeSafe defines confidence as a summary of distribution concentration; Choice confidence depends on top probability and option count, Score also accounts for ordered distance, and Noul has no separate confidence field. Fixed-size Choice confidence and top probability are not independent evidence.",
+    "source_ids": [
+      "ts-confidence"
+    ],
+    "support": [
+      {
+        "source_id": "ts-confidence",
+        "url": "https://docs.typesafe.ai/confidence",
+        "locator": "When to act on confidence; How confidence is calculated",
+        "passage": "Confidence measures how concentrated the answer’s probabilities are",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:20.224Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-confidence-repair.json",
+        "archive_sha256": "21e3ef343fb72d985015411140b49910d873c5631ea782cf9a2749341e7df712"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-confidence-repair.json",
+    "captureSha256": "21e3ef343fb72d985015411140b49910d873c5631ea782cf9a2749341e7df712"
+  },
+  {
+    "claim_id": "nov14-ts-models",
+    "claim": "November14 public model reference lists Jev1.14 as latest stable since October14, both latest/preview aliases point to1.14, price $0.042 per million input tokens with free output, default64k request/32k question and opt-in262k both; hosted API accepts text/images, not native audio/video. Organization limits/account entitlement unverified.",
+    "source_ids": [
+      "ts-models"
+    ],
+    "support": [
+      {
+        "source_id": "ts-models",
+        "url": "https://docs.typesafe.ai/models",
+        "locator": "Current models; Context length; Rate limits; Aliases; Data handling",
+        "passage": "jev-preview currently points to the same model as jev-latest.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:21.594Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-models-repair.json",
+        "archive_sha256": "14068dc0b917c9d373ce91eeee0e5c9d6471df3213cc1c502af4d9892055a6e6"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-models-repair.json",
+    "captureSha256": "14068dc0b917c9d373ce91eeee0e5c9d6471df3213cc1c502af4d9892055a6e6"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-changelog",
+    "claim": "The model changelog's inspected Jev1.14 entry is dated October14,2026 and lists better multilingual support plus Box; November12 conference reporting is not a new Jev model release.",
+    "source_ids": [
+      "ts-nov14-changelog"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-changelog",
+        "url": "https://docs.typesafe.ai/changelog",
+        "locator": "Jev 1.14 entry",
+        "passage": "October 14, 2026",
+        "published_at": null,
+        "event_at": "2026-10-14",
+        "retrieved_at": "2026-11-14T06:02:20.375Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-changelog-repair.json",
+        "archive_sha256": "2cc52603f314c1af32a50740ebd87e7d09fcb131de8321063694e46b69798552"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-changelog-repair.json",
+    "captureSha256": "2cc52603f314c1af32a50740ebd87e7d09fcb131de8321063694e46b69798552"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-api",
+    "claim": "System One accepts state plus named questions, returns answers keyed to those names, model and token usage, and documents experimental headers for image assets/Box and long context.",
+    "source_ids": [
+      "ts-nov14-api"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-api",
+        "url": "https://docs.typesafe.ai/api/system-one",
+        "locator": "State; Questions; Headers; Response; Usage",
+        "passage": "Answer one or more questions about the content supplied in",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:09.895Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-api.json",
+        "archive_sha256": "bd64748f47f8d1578ef303408bb29abb020e6eb21b364311edffcdab958875d3"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-api.json",
+    "captureSha256": "bd64748f47f8d1578ef303408bb29abb020e6eb21b364311edffcdab958875d3"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-fanout",
+    "claim": "Official fan-out example asks route and potential branch details together, then ordinary code consumes only applicable answers; independent questions do not receive one another's answers.",
+    "source_ids": [
+      "ts-nov14-fanout"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-fanout",
+        "url": "https://docs.typesafe.ai/patterns/fan-out",
+        "locator": "Triaging support tickets; Route in your code",
+        "passage": "Speculative questions are ignored when irrelevant",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:49.414Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-fanout.json",
+        "archive_sha256": "b90c7f6fbd8d6513959c8ed0f2aafbeab3639c13717b5a33c7b07f51643a81eb"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-fanout.json",
+    "captureSha256": "b90c7f6fbd8d6513959c8ed0f2aafbeab3639c13717b5a33c7b07f51643a81eb"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-composite",
+    "claim": "Official composite-scoring pattern scores dimensions separately and combines normalized values using code-owned weights, permitting reweighting without redoing unchanged judgments.",
+    "source_ids": [
+      "ts-nov14-composite"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-composite",
+        "url": "https://docs.typesafe.ai/patterns/composite-scoring",
+        "locator": "Score each dimension separately; Combine the scores",
+        "passage": "combine with weights you control in code",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:48.073Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-composite.json",
+        "archive_sha256": "e3a0d80514db8140c9e450d9cd9888c159e5c63e437df7405077f4bc8434b5c2"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-composite.json",
+    "captureSha256": "e3a0d80514db8140c9e450d9cd9888c159e5c63e437df7405077f4bc8434b5c2"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-intelliprompter",
+    "claim": "Official Intelliprompter cookbook dated its replay to November4 with Jev1.14: cumulative transcript is scored once per unchecked criterion; 2.5/5 is a local coverage threshold, not confidence; app state keeps criteria checked and omits them later. Cookbook omits live microphone/ElevenLabs integration code.",
+    "source_ids": [
+      "ts-nov14-intelliprompter"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-intelliprompter",
+        "url": "https://docs.typesafe.ai/cookbooks/intelliprompter",
+        "locator": "How Intelliprompter works; Setup run date Nov4; Keep checked criteria checked",
+        "passage": "Jev returns scores; it does not keep checklist state.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:07.993Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-intelliprompter.json",
+        "archive_sha256": "97d3a85e80fe726aa83c1dcc05c932b6abae180b221b93870af864056c6a81d0"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "November4 is documented replay execution date, not inferred publication date."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-intelliprompter.json",
+    "captureSha256": "97d3a85e80fe726aa83c1dcc05c932b6abae180b221b93870af864056c6a81d0"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-rerank",
+    "claim": "Official reranking example uses BM25 candidate shortlists of30 for40 CLERC queries, then Noul question per query-candidate pair; reranking only sees passages retrieved by first stage. Report does not generalize vendor accuracy numbers.",
+    "source_ids": [
+      "ts-nov14-rerank"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-rerank",
+        "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe",
+        "locator": "Re-ranking with Jev; A re-ranking example",
+        "passage": "re-ranking only ever sees the passages that make the shortlist",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:04:13.674Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-rerank.json",
+        "archive_sha256": "0ddf0779f0dba7845496e856fdd8e0b435db8f9f03496568acc3a989d8882f11"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-rerank.json",
+    "captureSha256": "0ddf0779f0dba7845496e856fdd8e0b435db8f9f03496568acc3a989d8882f11"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-legal",
+    "claim": "TypeSafe's legal index links governing agreements and describes no training on customer data and zero-data-retention as an enterprise offering; inspected page does not establish this user's retention entitlement.",
+    "source_ids": [
+      "ts-nov14-legal"
+    ],
+    "support": [
+      {
+        "source_id": "ts-nov14-legal",
+        "url": "https://docs.typesafe.ai/legal",
+        "locator": "Legal documents; enterprise ZDR",
+        "passage": "zero data retention (ZDR) for enterprise customers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:54.013Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-legal.json",
+        "archive_sha256": "3d139d6206d9c5f956f3aeefe506b5cb1a5015d65f2207e936dd2d71b4d14f7b"
+      }
+    ],
+    "qualifiers": [
+      "Official documentation describes behavior and examples; not independently executed.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "TypeSafe",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-legal.json",
+    "captureSha256": "3d139d6206d9c5f956f3aeefe506b5cb1a5015d65f2207e936dd2d71b4d14f7b"
+  },
+  {
+    "claim_id": "nov14-ts-nov14-conference",
+    "claim": "Latent Space's November12 report attributes Jev use alongside other models to Glean, tournament reranking experimentation to UiPath, and predictive form-filling prototypes to Workday. No original demo execution or independent latency validation in this research.",
+    "source_ids": [
+      "source-43655ce3c34369b0"
+    ],
+    "support": [
+      {
+        "source_id": "source-43655ce3c34369b0",
+        "url": "https://latent.space/p/jev-revolution/",
+        "locator": "How Glean uses Jev; Jev patterns and prototypes",
+        "passage": "Glean",
+        "published_at": "2026-11-12",
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:09.308Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/creative/jev-latent.json",
+        "archive_sha256": "c11e167050ff33fa51d96b80e010f12c127305a8c137c742211d2f99abfcd204"
+      }
+    ],
+    "qualifiers": [
+      "Attributed reporting of conference presentations; not primary implementation or experimental evidence.",
+      "Documentation publication date unknown unless separately stated."
+    ],
+    "contradicts": [],
+    "source_family": "Latent Space",
+    "status": "included",
+    "limitations": [
+      "No authenticated API or native execution in this research.",
+      "Application workflow proposals and acceptance criteria are editorial analysis."
+    ],
+    "capturePath": ".state/scan-20261114T055536Z-34366e/research/creative/jev-latent.json",
+    "captureSha256": "c11e167050ff33fa51d96b80e010f12c127305a8c137c742211d2f99abfcd204"
+  },
+  {
+    "claim_id": "aws-emulator-launch-date",
+    "claim": "AWS announced AWS Emulator on November 11, 2026.",
+    "source_ids": [
+      "repos-aws-emulator-launch"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-launch",
+        "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+        "locator": "Lines 5, 11, 20 and 33–40",
+        "passage": "November 11, 2026",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-fidelity-and-publishers.json",
+        "archive_sha256": "c9032efac152dba23242b7133f45b25195170953d5eff6f2ecde1a22af008bac",
+        "retrieved_at": "2026-11-14T06:04:41.069Z"
+      }
+    ],
+    "qualifiers": [
+      "Publication and event date agree; retrieval was November 14."
+    ],
+    "contradicts": [],
+    "source_family": "www.allthingsdistributed.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-modes-and-build",
+    "claim": "The README documents local server and embedded Rust modes; embedded mode inherits the substantial source-build prerequisites.",
+    "source_ids": [
+      "repos-aws-emulator-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-readme",
+        "url": "https://github.com/aws/aws-emulator/blob/main/README.md",
+        "locator": "Quick start; Building from source; Telemetry; License",
+        "passage": "Embedded mode build cost",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-readme.json",
+        "archive_sha256": "839695643c2b6e67d435cdaf2579567c17731ecf757434e7e1e2575a3814e086",
+        "retrieved_at": "2026-11-14T06:01:23.720Z"
+      }
+    ],
+    "qualifiers": [
+      "Linux package route is distinct from compiling source; at least 100 GB free disk is build-directory guidance, not package size."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-fees-telemetry-terms",
+    "claim": "The README states no additional emulator service fee, default-on telemetry with opt-outs, and CC0 code with a vendor-directory Apache 2.0 exception.",
+    "source_ids": [
+      "repos-aws-emulator-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-readme",
+        "url": "https://github.com/aws/aws-emulator/blob/main/README.md",
+        "locator": "Quick start; Building from source; Telemetry; License",
+        "passage": "Telemetry is on by default",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-readme.json",
+        "archive_sha256": "839695643c2b6e67d435cdaf2579567c17731ecf757434e7e1e2575a3814e086",
+        "retrieved_at": "2026-11-14T06:01:23.720Z"
+      }
+    ],
+    "qualifiers": [
+      "Infrastructure, CI, build and real-cloud costs remain; telemetry content claims are AWS statements; no PR acceptance documented."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-license-text",
+    "claim": "The repository LICENSE contains CC0 1.0 Universal terms.",
+    "source_ids": [
+      "repos-aws-emulator-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-license",
+        "url": "https://github.com/aws/aws-emulator/blob/main/LICENSE",
+        "locator": "CC0 1.0 Universal complete license",
+        "passage": "CC0 1.0 Universal",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-license.json",
+        "archive_sha256": "ba83c6d25573bf9eba9f20dee81ee85b527f55f3507227568626b755411bdc2f",
+        "retrieved_at": "2026-11-14T06:04:25.912Z"
+      }
+    ],
+    "qualifiers": [
+      "License has disclaimers and does not itself guarantee service behavior."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-limits",
+    "claim": "The overview limits use to development/tests with ephemeral memory and one account/Region per instance.",
+    "source_ids": [
+      "repos-aws-emulator-overview"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-overview",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/what-is-service.html",
+        "locator": "Lines 5–10 and 61–88",
+        "passage": "Test runs, not long-running use",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-docs-releases.json",
+        "archive_sha256": "6151d939ddb8615c6403022a8fe1a6e679b8d1c72ef6b6faa3e8ea008825ebb5",
+        "retrieved_at": "2026-11-14T06:04:25.878Z"
+      }
+    ],
+    "qualifiers": [
+      "Not verified for load testing; source specifies AWS reference regions; no production equivalence inferred."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-fidelity-method",
+    "claim": "Fidelity is a release-and-test-suite-specific measure of covered behavior, with service-dependent support.",
+    "source_ids": [
+      "repos-aws-emulator-fidelity"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-fidelity",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html",
+        "locator": "Lines 18–53",
+        "passage": "Compare scores only",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-fidelity-and-publishers.json",
+        "archive_sha256": "c9032efac152dba23242b7133f45b25195170953d5eff6f2ecde1a22af008bac",
+        "retrieved_at": "2026-11-14T06:04:41.069Z"
+      }
+    ],
+    "qualifiers": [
+      "Control-plane coverage is strongest per AWS; no universal percentage asserted and no full service-table audit performed."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-security-boundary",
+    "claim": "The security documentation excludes permission validation and warns about local code execution without isolation.",
+    "source_ids": [
+      "repos-aws-emulator-security"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-security",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/security.html",
+        "locator": "Lines 17–65",
+        "passage": "Don’t use AWS Emulator to test security",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-security-sdk-docker.json",
+        "archive_sha256": "9c7b2b1882c8e1b49ba4d99bf674ab347e9a27e132fea8bdad6bd6c26c482722",
+        "retrieved_at": "2026-11-14T06:04:41.092Z"
+      }
+    ],
+    "qualifiers": [
+      "A passing local request does not establish real AWS authorization; use only test data and private endpoints."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-sdk-routing",
+    "claim": "The SDK guide documents endpoint, credential and certificate setup plus emulator identity checks.",
+    "source_ids": [
+      "repos-aws-emulator-sdk"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-sdk",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-emulator.html",
+        "locator": "Lines 13–45, 71–86 and 104–123",
+        "passage": "To check that you’re using the emulator",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-security-sdk-docker.json",
+        "archive_sha256": "9c7b2b1882c8e1b49ba4d99bf674ab347e9a27e132fea8bdad6bd6c26c482722",
+        "retrieved_at": "2026-11-14T06:04:41.092Z"
+      }
+    ],
+    "qualifiers": [
+      "Host-prefix and S3 host behavior vary by SDK; tests proposed in report were not run."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-docker-route",
+    "claim": "The Docker guide requires building an image and documents architecture, loopback, memory-limit and port requirements.",
+    "source_ids": [
+      "repos-aws-emulator-docker"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-docker",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/getting-started-docker.html",
+        "locator": "Lines 5–23 and 40–73",
+        "passage": "We don’t publish a prebuilt image.",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-security-sdk-docker.json",
+        "archive_sha256": "9c7b2b1882c8e1b49ba4d99bf674ab347e9a27e132fea8bdad6bd6c26c482722",
+        "retrieved_at": "2026-11-14T06:04:41.092Z"
+      }
+    ],
+    "qualifiers": [
+      "2 GiB is the example command limit, not a universal requirement; ephemeral resource loss follows container stop."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-project-evaluation",
+    "claim": "AWS recommends mapping project operations to published tests and comparing untested behavior against AWS.",
+    "source_ids": [
+      "repos-aws-emulator-check"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-check",
+        "url": "https://docs.aws.amazon.com/emulator/latest/userguide/check-project.html",
+        "locator": "Lines 3–15",
+        "passage": "manifest.jsonl",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/aws-docs-releases.json",
+        "archive_sha256": "6151d939ddb8615c6403022a8fe1a6e679b8d1c72ef6b6faa3e8ea008825ebb5",
+        "retrieved_at": "2026-11-14T06:04:25.878Z"
+      }
+    ],
+    "qualifiers": [
+      "A missing test is uncertainty, not evidence of incompatibility."
+    ],
+    "contradicts": [],
+    "source_family": "docs.aws.amazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "aws-emulator-agent-teams",
+    "claim": "AWS describes separate agent teams for tests, issue finding and fixes.",
+    "source_ids": [
+      "repos-aws-emulator-agent-process"
+    ],
+    "support": [
+      {
+        "source_id": "repos-aws-emulator-agent-process",
+        "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator",
+        "locator": "Lines 8–37",
+        "passage": "three teams of agents",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/backlog-license-and-launch.json",
+        "archive_sha256": "5deb8b94d498a72cbdce29ec1d31136ee1ed5086e657b2f319a813034f429bea",
+        "retrieved_at": "2026-11-14T06:05:33.519Z"
+      }
+    ],
+    "qualifiers": [
+      "AWS account of its engineering process; not independent validation or an audited authorship claim."
+    ],
+    "contradicts": [],
+    "source_family": "www.aboutamazon.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "llm-0372-release",
+    "claim": "LLM 0.37.2 was released November 11, 2026 and fixes two credential-routing bugs.",
+    "source_ids": [
+      "repos-llm-release-0372"
+    ],
+    "support": [
+      {
+        "source_id": "repos-llm-release-0372",
+        "url": "https://github.com/simonw/llm/releases/tag/0.37.2",
+        "locator": "Lines 132–145",
+        "passage": "No key found",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/llm-release-setup-profile.json",
+        "archive_sha256": "6d5859c49e454889c856940d95fe5e6a96f4099eab8f657c28badbd1b6cbe36d",
+        "retrieved_at": "2026-11-14T06:06:18.487Z"
+      }
+    ],
+    "qualifiers": [
+      "Release changes are source-documented; no local installation or user exposure assessed."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "llm-missing-key-conditions",
+    "claim": "GHSA-v9h7-jj4g-f862 covers versions >=0.6 and <0.37.2; a missing named provider key can fall back to the OpenAI environment key.",
+    "source_ids": [
+      "repos-llm-advisory-missing-key"
+    ],
+    "support": [
+      {
+        "source_id": "repos-llm-advisory-missing-key",
+        "url": "https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862",
+        "locator": "Lines 109–137, 169–180",
+        "passage": ">= 0.6, < 0.37.2",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/llm-security-advisories.json",
+        "archive_sha256": "7d94559b7e21be3b656b27a88b8bac522b10c4674edc12483debb10d018fa939",
+        "retrieved_at": "2026-11-14T06:06:01.671Z"
+      }
+    ],
+    "qualifiers": [
+      "Custom api_base plus api_key_name needed; broader 0.6–0.7.1 precedence issue was fixed in 0.8. Severity Moderate; no exploit executed."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "llm-delegate-conditions",
+    "claim": "GHSA-r639-rr7r-x72w covers versions >=0.32a2 and <0.37.2 under Responses mode with the Chat Completions option and a custom endpoint.",
+    "source_ids": [
+      "repos-llm-advisory-delegate"
+    ],
+    "support": [
+      {
+        "source_id": "repos-llm-advisory-delegate",
+        "url": "https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w",
+        "locator": "Lines 109–139, 211–220",
+        "passage": ">= 0.32a2, < 0.37.2",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/llm-security-advisories.json",
+        "archive_sha256": "7d94559b7e21be3b656b27a88b8bac522b10c4674edc12483debb10d018fa939",
+        "retrieved_at": "2026-11-14T06:06:01.671Z"
+      }
+    ],
+    "qualifiers": [
+      "Conditional key-resolution bug, including stored OpenAI key; correctly stored provider alias avoids this specific delegate path. Reporter testing is not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "llm-upgrade-route",
+    "claim": "LLM documents upgrade commands for pip, pipx, uv and Homebrew.",
+    "source_ids": [
+      "repos-llm-setup"
+    ],
+    "support": [
+      {
+        "source_id": "repos-llm-setup",
+        "url": "https://llm.datasette.io/en/stable/setup.html",
+        "locator": "Lines 58–82 and 124–177",
+        "passage": "Upgrading to the latest version",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/llm-release-setup-profile.json",
+        "archive_sha256": "6d5859c49e454889c856940d95fe5e6a96f4099eab8f657c28badbd1b6cbe36d",
+        "retrieved_at": "2026-11-14T06:06:18.487Z"
+      }
+    ],
+    "qualifiers": [
+      "Report recommends verifying the actual workload environment; no package installed or upgraded."
+    ],
+    "contradicts": [],
+    "source_family": "llm.datasette.io",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "llm-license",
+    "claim": "LLM repository LICENSE is Apache License 2.0.",
+    "source_ids": [
+      "repos-llm-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-llm-license",
+        "url": "https://github.com/simonw/llm/blob/main/LICENSE",
+        "locator": "License heading",
+        "passage": "Apache License",
+        "published_at": null,
+        "event_at": null,
+        "acquisition": "GitHub connector or public web text extraction; no execution",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/repos/llm-license.json",
+        "archive_sha256": "9ebabdc0e1c17024b0529bd03a5a67aa99ec41a05ac4b2242e2e45892818b176",
+        "retrieved_at": "2026-11-14T06:11:23.245Z"
+      }
+    ],
+    "qualifiers": [
+      "Source visibility and licensing do not certify integrations."
+    ],
+    "contradicts": [],
+    "source_family": "github.com",
+    "status": "candidate",
+    "limitations": [
+      "Documentary source inspection only; no independent runtime or benchmark validation."
+    ]
+  },
+  {
+    "claim_id": "hydrogen-nov14-release",
+    "claim": "Google announced distinct model Gemini 4 Hydrogen November 12; article updated November 13 with API/product rollout, attributed performance and automatic selection qualification for free Gemini-app users.",
+    "source_ids": [
+      "official-story-gemini4-hydrogen"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-gemini4-hydrogen",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "locator": "Announcement date; Last updated; Availability; free-app footnote",
+        "passage": "Last updated November 13, 2026",
+        "published_at": "2026-11-12",
+        "event_at": "2026-11-12",
+        "retrieved_at": "2026-11-14T06:00:05.824Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/initial-web-1.json",
+        "archive_sha256": "0f2d43a2f301c8781e346cf5aa4b2263b88c4db2bb4c4e70af485cfb87d1a1c5"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Published date and update date differ.",
+      "Rollout is not proof of entitlement in any particular account."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "hydrogen-nov14-spec",
+    "claim": "Stable gemini-4-hydrogen accepts text, image, video, audio, PDF and emits text; unified 1,048,576-token window, 65,536 synchronous default; no native image/audio generation or Live API; implicit-only caching.",
+    "source_ids": [
+      "official-doc-hydrogen-model"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-hydrogen-model",
+        "url": "https://aistudio.google.com/docs/models/gemini-4-hydrogen",
+        "locator": "Model code; supported data types; token limits; capabilities",
+        "passage": "**Context window (unified input and output token limit)** 1,048,576",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:24.554Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-model.json",
+        "archive_sha256": "1b24a8f209e67a1c2c4beae1063329b6d0eb028bc517e4c339ee9b6e2e206d06"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Do not claim independent million-token input and output allowances."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "hydrogen-nov14-migration",
+    "claim": "Hydrogen defaults high with low/medium/xhigh alternatives; minimal invalid; explicit caches unsupported; custom in-range sampling parameters ignored; declare tools/schema and preserve state/signatures.",
+    "source_ids": [
+      "official-doc-hydrogen-migration"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-hydrogen-migration",
+        "url": "https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen",
+        "locator": "Migration checklist; Understanding thinking levels",
+        "passage": "Hydrogen defaults to `high` rather than `medium`",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:24.747Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-migration.json",
+        "archive_sha256": "539368bc6ebb4b059f73990e12477e97d1949967a6a5b7b9a7f09216f6418db0"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Integration behavior documented, not reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "hydrogen-nov14-long-decode",
+    "claim": "Long decode requires background or client continuation; background requires store:true; foreground merged response and interrupted partial work need preservation; usage and cancellation have billed-work implications.",
+    "source_ids": [
+      "official-doc-hydrogen-long-decode"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-hydrogen-long-decode",
+        "url": "https://aistudio.google.com/docs/long-decode",
+        "locator": "Choose how to run; Automatic continuation; Count tokens; Understand billing",
+        "passage": "You pay for every token in every hop",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:24.310Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-long-decode.json",
+        "archive_sha256": "07230d8a71bf7f518383bd83ca4993ac01a1e5be8d6d0e0eb5d6bb72a9c2879c"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Generic dollar example belongs to another model's introductory rates; not used for Hydrogen.",
+      "SDK minimum versions and recovery paths unexecuted."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "hydrogen-nov14-pricing",
+    "claim": "Standard paid Hydrogen rates USD 1.50/million input, 7.50/million output including thinking, 0.075/million implicit cached input; Search/Maps grounding separate and free/paid data-use differ.",
+    "source_ids": [
+      "nov14-gemini-decision-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decision-pricing",
+        "url": "https://aistudio.google.com/docs/pricing#gemini-4-hydrogen",
+        "locator": "Gemini 4 Hydrogen Standard pricing table lines 536–610",
+        "passage": "Output price (including thinking tokens)",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:06:53.186Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/hydrogen-pricing.json",
+        "archive_sha256": "4af820850ecd7b064db44d4604baa101ad17913bf8ed6157b7f940ef1e48f8bc"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Pricing snapshot November 14; tools/hosting/retries excluded from illustrative 0.30 USD arithmetic.",
+      "No authenticated billing or observed cache hits."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "a2ui-nov14-release",
+    "claim": "November 11 stable A2UI 1.0 includes bidirectional calls/accessibility/extensions; Android and Gemini Enterprise still 0.9.1, Lynx 0.9; official decision-model SDK remains future work.",
+    "source_ids": [
+      "official-story-a2ui10"
+    ],
+    "support": [
+      {
+        "source_id": "official-story-a2ui10",
+        "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+        "locator": "What's new in 1.0; Inside Gemini; What's next",
+        "passage": "Today, we're releasing A2UI 1.0",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "retrieved_at": "2026-11-14T06:00:05.824Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/initial-web-1.json",
+        "archive_sha256": "0f2d43a2f301c8781e346cf5aa4b2263b88c4db2bb4c4e70af485cfb87d1a1c5"
+      },
+      {
+        "source_id": "official-story-a2ui10",
+        "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+        "locator": "Inside Gemini and What's next, lines75–93 of complete announcement capture",
+        "passage": "supports A2UI 0.9.1 today",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "retrieved_at": "2026-11-14T06:21:12Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/a2ui-announcement-tail.json",
+        "archive_sha256": "494ef672c4fcf9c502183177036e50f42ea8bfa0c98df1b9af2df763d9406902"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Distinct protocol and renderer versions; do not infer uniform 1.0 rollout.",
+      "Initial launch capture ended at line71; a focused November14 acquisition repair captured the remaining announcement, including deployment versions and roadmap boundaries."
+    ],
+    "contradicts": [],
+    "source_family": "A2UI / Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "a2ui-nov14-inference",
+    "claim": "Current docs describe Express/direct JSON/custom formats compiling to common wire messages, incremental streaming and default Express; 54-sample gemini-3.8-flash benchmark differs from historical 51-sample suite.",
+    "source_ids": [
+      "official-doc-a2ui-inference-nov14"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-a2ui-inference-nov14",
+        "url": "https://a2ui.org/concepts/inference-formats/",
+        "locator": "How inference formats stay swappable; Token and latency benchmarks",
+        "passage": "The A2UI evaluation suite (`eval/`) benchmarks each format",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:24.126Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/a2ui-inference.json",
+        "archive_sha256": "dcc94f447d1e70c508c45f33b9f24055352037b9d5fa547296c5e21ef8c626ff"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Publisher measurements; code-token reduction differs from total-output reduction.",
+      "Historical October streaming restriction remains dated, superseded by current documentation rather than silently erased."
+    ],
+    "contradicts": [],
+    "source_family": "A2UI / Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "a2ui-nov14-evolution",
+    "claim": "1.0 migration changes envelopes, catalog protocolVersion, initial surface data and reserved @ keys; blanket path/call replacement unsafe; mixed catalogs require a common version.",
+    "source_ids": [
+      "official-doc-a2ui-evolution-nov14"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-a2ui-evolution-nov14",
+        "url": "https://github.com/a2ui-project/a2ui/blob/main/specification/v1_0/docs/evolution_guide.md",
+        "locator": "Architecture changes; migration steps; component-envelope mixin keys",
+        "passage": "Do not migrate v0.9 payloads with a blanket find-and-replace",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:14.358Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/a2ui-evolution.json",
+        "archive_sha256": "62d1cea1b3915b73ef2a0e2416d7fbfadf61cd4ad8ac3e1c8c8a49b434f431c4"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Current main documentation is not verification of every released package."
+    ],
+    "contradicts": [],
+    "source_family": "A2UI / Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "a2ui-nov14-sdk",
+    "claim": "SDK docs distinguish Core/Agent/Renderer layers; TS/Dart/Python agent and framework renderer compatibility varies; Compose remains 0.9.1.",
+    "source_ids": [
+      "official-doc-a2ui-sdk-nov14"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-a2ui-sdk-nov14",
+        "url": "https://a2ui.org/concepts/sdks/",
+        "locator": "SDK layers; Agent packages; Renderer packages",
+        "passage": "Official A2UI SDKs are organized into three layers",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:43.988Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/a2ui-sdk.json",
+        "archive_sha256": "9f6f41c322985dcb9a26cde216069632f73a53de840d936f115879db5804d24f"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Package registry versions and runtime conformance unverified."
+    ],
+    "contradicts": [],
+    "source_family": "A2UI / Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "a2ui-nov14-macros",
+    "claim": "Python macros expand server-side components and trusted data before rendering; current other-language support future; macro state must be session-scoped.",
+    "source_ids": [
+      "official-doc-a2ui-macros-nov14"
+    ],
+    "support": [
+      {
+        "source_id": "official-doc-a2ui-macros-nov14",
+        "url": "https://a2ui.org/guides/macros/",
+        "locator": "Using Macros; Language support; Configure macro",
+        "passage": "Macros are currently available in the Python",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:14.434Z",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/official/a2ui-macros.json",
+        "archive_sha256": "aecc83ea081b5282196b0c47b1f5a93d188f74eb0bd7133b9a5bbdb136ffec53"
+      }
+    ],
+    "qualifiers": [
+      "Primary publisher documentation; no execution verification.",
+      "Server code still owns authorization, missing records and stale-value behavior."
+    ],
+    "contradicts": [],
+    "source_family": "A2UI / Google",
+    "status": "candidate",
+    "limitations": [
+      "No native model, SDK, demo or independent benchmark execution."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-release",
+    "claim": "Google introduced Gemini Decisions API on November 11, 2026, using gemini-decision-1 on Gemini Developer API/AI Studio. The launch describes native text, image, audio, video and PDF input and forthcoming Google Cloud support.",
+    "source_ids": [
+      "nov14-gemini-decisions-launch"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decisions-launch",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "locator": "L214–255 and L322–326",
+        "passage": "available through the Gemini API in Google AI Studio",
+        "summary": "Google introduced Gemini Decisions API on November 11, 2026, using gemini-decision-1 on Gemini Developer API/AI Studio. The launch describes native text, image, audio, video and PDF input and forthcoming Google Cloud support.",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "retrieved_at": "2026-11-14T06:00:22.794Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+        "captureSha256": "ab72afd32f7c0ac1e1c13e8457007b7b1ec734e4b6913516e63014e54b710e63",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+        "archive_sha256": "ab72afd32f7c0ac1e1c13e8457007b7b1ec734e4b6913516e63014e54b710e63"
+      }
+    ],
+    "qualifiers": [
+      "Official launch; access and rollout claims are vendor statements."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "Account, geographic access and ecosystem integrations not tested."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-shape",
+    "claim": "Gemini Decision 1 uses one-pass scoring with no generated output tokens; it supports yes/no, choice and rubric questions, up to 1,000 questions, 2–255 choice options or rubric levels, within 262,144 tokens.",
+    "source_ids": [
+      "nov14-gemini-decision-model",
+      "nov14-gemini-decisions-guide"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decision-model",
+        "url": "https://aistudio.google.com/docs/models/gemini-decision-1",
+        "locator": "L6–20; Token limits",
+        "passage": "returns calibrated outcome probabilities with zero output tokens",
+        "summary": "Gemini Decision 1 uses one-pass scoring with no generated output tokens; it supports yes/no, choice and rubric questions, up to 1,000 questions, 2–255 choice options or rubric levels, within 262,144 tokens.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:02:00.146Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-model.json",
+        "captureSha256": "cdd49155bcd938f733f3e9d351274964c01706f25e809183d841bebcce25592e",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-model.json",
+        "archive_sha256": "cdd49155bcd938f733f3e9d351274964c01706f25e809183d841bebcce25592e"
+      },
+      {
+        "source_id": "nov14-gemini-decisions-guide",
+        "url": "https://aistudio.google.com/docs/decisions-api",
+        "locator": "Limits L1207–1233",
+        "passage": "262,144 tokens across shared input and all questions",
+        "summary": "Gemini Decision 1 uses one-pass scoring with no generated output tokens; it supports yes/no, choice and rubric questions, up to 1,000 questions, 2–255 choice options or rubric levels, within 262,144 tokens.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:04.989Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+        "captureSha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd",
+        "captures": [
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs.json",
+            "captureSha256": "9655f3eb14f33150f4a03a7b40c66f2a249f205764e4ef68a917163649427417"
+          },
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-tail.json",
+            "captureSha256": "1caec0d480dea34cfa909de4226f2f333179bc8ae974ff698a04079d4cb1dbf0"
+          },
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+            "captureSha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd"
+          }
+        ],
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+        "archive_sha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd"
+      }
+    ],
+    "qualifiers": [
+      "The overall context includes shared input and all question content.",
+      "Documented interface limits are not benchmark guarantees."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No live boundary testing."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-semantics",
+    "claim": "Questions are independent and cannot see other answers or question keys. Rubric output is probability-weighted level index. Media can use Files API, inline data or HTTPS; YouTube and gs:// are unsupported, instructions are text-only, and unsupported conversation/tool-call blocks require text serialization.",
+    "source_ids": [
+      "nov14-gemini-decisions-guide"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decisions-guide",
+        "url": "https://aistudio.google.com/docs/decisions-api",
+        "locator": "Question types; Multiple questions; Input; Best practices; Request and Limitations",
+        "passage": "The model never sees question keys",
+        "summary": "Questions are independent and cannot see other answers or question keys. Rubric output is probability-weighted level index. Media can use Files API, inline data or HTTPS; YouTube and gs:// are unsupported, instructions are text-only, and unsupported conversation/tool-call blocks require text serialization.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:03:04.989Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+        "captureSha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd",
+        "captures": [
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs.json",
+            "captureSha256": "9655f3eb14f33150f4a03a7b40c66f2a249f205764e4ef68a917163649427417"
+          },
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-tail.json",
+            "captureSha256": "1caec0d480dea34cfa909de4226f2f333179bc8ae974ff698a04079d4cb1dbf0"
+          },
+          {
+            "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+            "captureSha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd"
+          }
+        ],
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-docs-end.json",
+        "archive_sha256": "f1b26f34a9f0e58993aefa636d10c793771f2f9eb232e22f2f2f35ed1836aebd"
+      }
+    ],
+    "qualifiers": [
+      "Documentation inspected in three overlapping captures: gemini-docs.json, gemini-docs-tail.json, gemini-docs-end.json.",
+      "Confidence is model-estimated, not task-specific empirical accuracy."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "Proposed application behaviors are editorial analysis, not tested integrations."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-billing",
+    "claim": "Published standard price is USD $0.10 per million input tokens for supported modalities. Shared input is billed once within a request, questions add their own tokens; no output billing, no context caching and no Batch API. Free and paid tiers differ in product-improvement data use.",
+    "source_ids": [
+      "nov14-gemini-decision-pricing"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decision-pricing",
+        "url": "https://aistudio.google.com/docs/pricing#gemini-decision",
+        "locator": "Gemini Decision 1 table L4182–4242",
+        "passage": "Each request bills shared input tokens once, regardless of question count.",
+        "summary": "Published standard price is USD $0.10 per million input tokens for supported modalities. Shared input is billed once within a request, questions add their own tokens; no output billing, no context caching and no Batch API. Free and paid tiers differ in product-improvement data use.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:04:56.788Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-pricing-specific.json",
+        "captureSha256": "7ac82efa71e1ffcd0fe30d46e57305d2718598ad49b186f87feba130536b0db2",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-pricing-specific.json",
+        "archive_sha256": "7ac82efa71e1ffcd0fe30d46e57305d2718598ad49b186f87feba130536b0db2"
+      }
+    ],
+    "qualifiers": [
+      "Pricing observed November 14, 2026; dynamic publication date unknown.",
+      "The $0.001/10,000-token example is arithmetic and excludes other costs."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No invoice or actual media token usage measured; applicable terms not comprehensively reviewed."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-quotas",
+    "claim": "The documented free tier lists 200 RPM, 50,000 input TPM and 10,000 RPD. Limits apply per project and requests are constrained by each applicable limit.",
+    "source_ids": [
+      "nov14-gemini-decision-ratelimits"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decision-ratelimits",
+        "url": "https://aistudio.google.com/docs/rate-limits#gemini-decision",
+        "locator": "How rate limits work L11–25; Gemini Decision 1 rate limits L123–163",
+        "passage": "Rate limits are applied per project, not per API key.",
+        "summary": "The documented free tier lists 200 RPM, 50,000 input TPM and 10,000 RPD. Limits apply per project and requests are constrained by each applicable limit.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:04:56.840Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-limits.json",
+        "captureSha256": "8346dc40b75db893ed3e20d42708925ef613a0711feeff3bb1069d091f6e6109",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/gemini-limits.json",
+        "archive_sha256": "8346dc40b75db893ed3e20d42708925ef613a0711feeff3bb1069d091f6e6109"
+      }
+    ],
+    "qualifiers": [
+      "Dynamic documented quota table; account limits not queried.",
+      "Five requests/minute for 10,000-token requests is illustrative arithmetic."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No account-specific or regional availability verification."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-latency",
+    "claim": "Google reports 150–250ms end-to-end and 50–100ms compute latency, with detailed scope of contexts up to 16K and approximately flat behavior from 1–100 questions.",
+    "source_ids": [
+      "nov14-gemini-decisions-launch"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-gemini-decisions-launch",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "locator": "Strong performance and calibration L255–262",
+        "passage": "across multimodal inputs and contexts up to 16K tokens",
+        "summary": "Google reports 150–250ms end-to-end and 50–100ms compute latency, with detailed scope of contexts up to 16K and approximately flat behavior from 1–100 questions.",
+        "published_at": "2026-11-11",
+        "event_at": "2026-11-11",
+        "retrieved_at": "2026-11-14T06:00:22.794Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+        "captureSha256": "ab72afd32f7c0ac1e1c13e8457007b7b1ec734e4b6913516e63014e54b710e63",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/first-1.json",
+        "archive_sha256": "ab72afd32f7c0ac1e1c13e8457007b7b1ec734e4b6913516e63014e54b710e63"
+      }
+    ],
+    "qualifiers": [
+      "Vendor measurements; not independently reproduced."
+    ],
+    "contradicts": [],
+    "source_family": "Google",
+    "status": "candidate",
+    "limitations": [
+      "No guarantee inferred for 262,144 tokens, 1,000 questions or full media upload pipeline."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-so-method",
+    "claim": "SO-Arena separately assesses task performance, stability under option-set changes, and recognizing missing valid options; it motivates local tests but does not establish a Gemini result in this report.",
+    "source_ids": [
+      "nov14-so-arena-primary"
+    ],
+    "support": [
+      {
+        "source_id": "nov14-so-arena-primary",
+        "url": "https://arxiv.org/abs/2611.15777",
+        "locator": "Abstract L16 onward",
+        "passage": "decision stability under controlled option-set changes",
+        "summary": "SO-Arena separately assesses task performance, stability under option-set changes, and recognizing missing valid options; it motivates local tests but does not establish a Gemini result in this report.",
+        "published_at": "2026-11-11",
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:04:58.228Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/so-primary.json",
+        "captureSha256": "2b0e50162ac755e9e290a6f044f4fde644b98530867f8743ad15da42a99e5456",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/so-primary.json",
+        "archive_sha256": "2b0e50162ac755e9e290a6f044f4fde644b98530867f8743ad15da42a99e5456"
+      }
+    ],
+    "qualifiers": [
+      "Preprint submitted November 11, 2026; originating authors’ claims."
+    ],
+    "contradicts": [],
+    "source_family": "Independent research",
+    "status": "candidate",
+    "limitations": [
+      "Full benchmark reproduction and later Gemini result were not verified."
+    ]
+  },
+  {
+    "claim_id": "nov14-gemini-decisions-video-example",
+    "claim": "Simon Willison reported a video-file test with four yes/no questions and returned probabilities.",
+    "source_ids": [
+      "source-485ec329c8b74027"
+    ],
+    "support": [
+      {
+        "source_id": "source-485ec329c8b74027",
+        "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+        "locator": "Video experiment L10–35",
+        "passage": "I tested it against video",
+        "summary": "Simon Willison reported a video-file test with four yes/no questions and returned probabilities.",
+        "published_at": "2026-11-11",
+        "event_at": null,
+        "retrieved_at": "2026-11-14T06:00:21.010Z",
+        "capturePath": ".state/scan-20261114T055536Z-34366e/research/research_social/first-0.json",
+        "captureSha256": "3c53c87eaf8df189bbb88897ef1b86e6f15d3ef66cf580321313bd40eef7aa18",
+        "archive_path": ".state/scan-20261114T055536Z-34366e/research/research_social/first-0.json",
+        "archive_sha256": "3c53c87eaf8df189bbb88897ef1b86e6f15d3ef66cf580321313bd40eef7aa18"
+      }
+    ],
+    "qualifiers": [
+      "Independent single-author example, not a benchmark."
+    ],
+    "contradicts": [],
+    "source_family": "Simon Willison",
+    "status": "candidate",
+    "limitations": [
+      "Not reproduced; no general accuracy, speed or comparative claim."
     ]
   }
 ]

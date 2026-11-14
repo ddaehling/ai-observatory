@@ -1,0 +1,7 @@
+{
+  "reportId": "aws-emulator",
+  "reviewerId": "/root/nov14_aws_astra_a",
+  "reviewedAt": "2026-11-14T06:14:36.794258Z",
+  "publicationReview": "All six cited capture files match their evidence SHA-256 values. Report and rubric canonical hashes match; the evidence hash matches the documented sources-plus-claims envelope. Archived primary material supports the November 11 launch date, fee wording, platform and build routes, telemetry defaults/opt-outs, license split, fidelity interpretation, SDK routing, security exclusions and ephemeral/regional boundaries. The release history and complete service-score audit are explicitly incomplete, and the text makes no unsupported current-version or universal compatibility claim. Publisher statements and proposed acceptance checks are labeled; there is no implied native validation. The 1,924-word body fits the 1,800–2,200 range applicable to this review's impact rating of 6. The coordinator must still apply the final mean-impact band after the independent second review.",
+  "schemaRepair": "Confidence categorized as high from the original 0.9; scores, verdict, hashes, identity and five dimension rationales unchanged."
+}

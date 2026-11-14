@@ -1,0 +1,33 @@
+{
+  "reportId": "gemini-decisions-api",
+  "reviewerId": "/root/nov14_decisions_final_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:27:54.843612Z",
+  "reportHash": "e1f82ea2d68d0eca07e9f53dd4e8d6ee5105eabbe4bd926d3e15e5736a4b45fb",
+  "evidenceHash": "a3b9796835fc60dfb9639f6ac86bf1c930c35ec8ba71c030a17f64a12a85de2e",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented combination of native text, image, audio, video and PDF inputs with bounded outputs is useful for concrete educational and creative intake tasks. The report gives actionable teacher-review, troubleshooting-website and video-checklist pilots, plus error handling, quota arithmetic and human correction. These remain clearly labeled proposals rather than demonstrated integrations, which prevents a higher rating.",
+    "impact": "A widely accessible multimodal decision endpoint is a meaningful extension of the decision-model domain. Low input pricing and shared-input scoring plausibly reduce implementation work for routing tasks, but the packet contains vendor latency measurements and one small external video experiment, not broad adoption or independent comparative validation. The evidence supports domain significance rather than exceptional field-wide impact.",
+    "novelty": "Native audio, video and PDF support in this dedicated closed-set interface is a meaningful distinction. The saved independent author article also places it alongside existing Jev and OpenAI decision products, so the basic three-question-type paradigm is not new. No controlled comparison establishes a more exceptional advance.",
+    "maturity": "The launch, specification, three overlapping guide captures, pricing and rate-limit tables give enough detail to plan a pilot, and an external author reports a real video call. However, the service is newly launched on v1beta, Cloud support is forthcoming, important features are unsupported, and no account access, API execution, long-context performance or task-specific reliability was tested in this research. Usable with material limits fits the evidence.",
+    "openness": "Public documentation, HTTP/SDK examples, transparent pricing and a no-cost tier make the hosted interface accessible and partially reproducible. The packet establishes no release of model weights, training data, training methods or a permissive model license, and the endpoint remains provider-dependent with untested migration semantics. Public API access should not be treated as open-model availability."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Reconciled initial binding concern after inspecting the governing DATA_CONTRACT.md line 23 and scripts/observatory.py canonical_url/evidence_hash functions: source identity is canonical-page-based, URL fragments are removed, and the evidence hash intentionally includes every claim overlapping those source IDs. The Hydrogen and Decision pricing fragments therefore legitimately share the same pricing-page identity. The Hydrogen claim retains its own model name, model-specific fragment, line locator and independently verified saved table; the Decisions billing claim retains the correct $0.10 table, and no Hydrogen rate is asserted in this report. I found no concrete false report/table binding, so I withdraw the publication-blocking objection. The source identifier/title is section-oriented and could be clearer as a page-level identity, but under the verified contract this is a nonblocking naming issue. The initial review is preserved verbatim as review-a.initial.json; input hashes and all five independent dimension scores are unchanged.",
+    "All three canonical input hashes match hashes.json. All ten unique cited saved captures, including the archive-only Hydrogen capture, match their supplied raw-file SHA256 values. Relevant source passages substantiate the Decisions launch date, modality and interface limits, independent-question semantics, pricing, quota arithmetic, latency scope, error behavior and carefully bounded external example.",
+    "Publication and retrieval dates are appropriately separated; unknown dynamic-document publication dates remain null. The report labels vendor measurements, avoids claiming a reproduced Gemini SO-Arena result, and discloses no native testing. Saved textual page sections support the claims inspected; this review is not an API experiment or independent empirical validation.",
+    "Body length is within the 1800–2200 band associated with my impact rating of 6 (1856 whitespace-delimited words after HTML parsing; tokenization explains the small difference from the packet count). The final length gate must still use the independently determined mean impact. HTML contains only p, code and a elements with HTTPS href attributes; no active-markup issue was found."
+  ]
+}

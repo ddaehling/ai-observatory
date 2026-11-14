@@ -1,0 +1,33 @@
+{
+  "reportId": "gemini4-hydrogen",
+  "reviewerId": "/root/nov14_hydrogen_final_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-14T06:26:44.501946Z",
+  "reportHash": "615f869b7e10116fe143831346d0c86000d160b8996864b9cfc6d69494a36955",
+  "evidenceHash": "78da6a966b2f8a46c27fc27696d632af053ca37268306d66ff3f13defafd0a1d",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Concrete migration constraints, shared context accounting, correct dated Standard-tier pricing and recoverable continuation guidance make this useful for builders. Educational, application, website and video trials include inspectable acceptance criteria and are explicitly proposals rather than executed outcomes. No live trials establish actual gains.",
+    "impact": "A widely distributed execution model with documented multimodal inputs, tools and large shared context can materially affect everyday agent workflows. Publisher efficiency comparisons suggest meaningful domain impact, but no reproduced comparison or independent operational result supports exceptional field-wide impact.",
+    "novelty": "The combination of faster execution positioning, an added xhigh level and detailed long-output support is meaningfully differentiated from the documented Gemini 3.8 migration baseline. The same documentation says Carbon and Argon already share the context and long-decode architecture, limiting the novelty attributable to Hydrogen itself.",
+    "maturity": "The saved model page identifies a stable endpoint and provides concrete capability limits; migration and continuation documentation cover errors, SDK requirements, recovery and billing. Actual account access, reliability, tool execution and cancellation were not tested, and the launch is recent. A stable label is insufficient for a higher dependability score.",
+    "openness": "Public documentation, API access and explicit schemas permit some inspection and workflow portability. The packet does not establish released weights, training data, training code or permissive model licensing; hosted access and documented APIs are not evidence of open-model reproducibility."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Blocking evidence-scope issue: evidence.json includes nov14-gemini-decisions-billing, a claim about Gemini Decision 1 (USD 0.10 input, zero output tokens, no Batch API). It is attached to source_id nov14-gemini-decision-pricing, but report.sources defines that ID as the Hydrogen pricing section and its Hydrogen title/locator. The underlying gemini-pricing-specific.json lines 4182–4242 do support Decision 1, not Hydrogen; Hydrogen has text output and supported Batch API. Although the report body does not repeat the wrong-model rates, this creates a misleading report-to-claim/source association. Bounded repair: remove the unrelated Decision claim from this report evidence, or explicitly separate it into its own correctly bound model packet; regenerate evidenceHash and obtain reviews of the resulting packet.",
+    "Verification note: all three canonical input hashes match hashes.json, and all six referenced saved-capture SHA256 values match. Relevant original page contents and locators were inspected. Report-body text is approximately 1917 whitespace-delimited words (the supplied counter says 1933), comfortably within the 1800–2200 band corresponding to this independent impact rating; the final two-review mean still controls the gate.",
+    "Nonblocking editorial note: add a short explicit access-versus-openness sentence stating that public API documentation does not establish available model weights, training data/code or a permissive model license. Current prose makes no false openness claim, but does not directly explain this dimension.",
+    "The substantive report claims otherwise match the saved publisher material, including publication/update distinctions, automatic selection for free app users, shared context, native output limits, sampling changes and continuation billing. Capture limitations and the absence of native testing remain explicit; markup inspected contains only paragraphs and HTTPS source links. This editorial review is not independent experimental validation."
+  ]
+}

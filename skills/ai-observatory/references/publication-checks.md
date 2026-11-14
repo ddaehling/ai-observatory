@@ -6,6 +6,8 @@ The current project contracts define the exact schema, CLI commands and review g
 
 Record current hashes for protected reports. Evidence hashes include the report's source records and claims overlapping its source IDs. Adding a new claim to a shared source can therefore invalidate an existing approval even when the report body is unchanged. Plan genuine shared-evidence revisions deliberately and re-review all affected reports; do not remove relevant evidence merely to preserve an approval.
 
+Resolve shared-page source identities before freezing review packets. Different model tables on one pricing page may share a canonical source ID after fragments are stripped. Retain each table’s fragment, locator and capture; the evidence envelope can legitimately include both models’ claims. Explain that schema behavior to reviewers without suggesting a score or verdict. Verify that report prose uses the appropriate table; do not delete valid shared-source evidence to simplify the envelope.
+
 Use one coordinator for mutations, including catalogue integration and Git. Run every observatory CLI command sequentially, even hashing. Workers write only their assigned checkpoint files. Inspect structured packets and actual evidence artifacts before merging worker claims.
 
 When relocating saved evidence, check provenance paths recursively, including preserved worker assessments and assessment history. A valid top-level entry and matching digest do not prove that a nested `capturePath`, `archive_path` or `sourceResultPath` resolves. Normalize through the actual archive map, verify the destination and bytes, and retain the frozen original worker packet.
@@ -27,6 +29,8 @@ Reconcile source results against the run's expected IDs, each candidate against 
 Run the contract's validation, completion, baseline inclusion, strict build and relevant tests in the documented order. The baseline protects all published IDs; pending updates must not silently remove old reports from the site. Inspect the generated index, a full changed report, citations, edition coverage, scores and both reviewer rationales. Interface changes also need mobile/keyboard and empty/pending-state inspection.
 
 Stage explicit project-owned public-safe files only. Inspect the staged diff; exclude ignored acquisition dumps, personal paths in public data, private account UI and unrelated untracked files. Existing publication authorization applies only to the configured project and approved content.
+
+When the interface has changed since the prior run, read its current build contract and preserve the new frontend, report IDs, anchors and reading-state keys. A working page may silently fall back to an older complete payload: also verify the deployed catalogue, individual report files, source and edition splits against the strict build. Compare frontend asset bytes and semantic JSON content, allowing only actual build-time timestamp differences.
 
 After pushing, confirm the successful Pages deployment corresponds to the pushed commit. Fetch the live manifest and data payload and compare the published report set, relevant content/evidence/review hashes and edition accounting with the local strict build. Inspect the live changed report route. A successful workflow dispatch or build is insufficient to claim the site is published.
 
