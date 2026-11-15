@@ -77397,5 +77397,3079 @@
     "feedUrl": null,
     "monitor": false,
     "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Primary public article text inspected through web tool; short observation retained in the capture bundle."
+  },
+  {
+    "id": "profile-x-com-orenoa7",
+    "name": "orenoa on X",
+    "url": "https://x.com/orenoa7",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "hardware benchmarks",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:28.075Z",
+    "discoveredFrom": "https://x.com/danielhanchen/status/2118497703797854584",
+    "lastCheckedAt": "2026-11-15T08:38:28.075Z",
+    "lastSuccessAt": "2026-11-15T08:38:28.075Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Publishes firsthand local-inference comparisons with concrete hardware, settings, workload distinctions and versioned references. Useful for investigating practical memory and throughput tradeoffs."
+  },
+  {
+    "id": "profile-evidence-af694f1e1bfec13a",
+    "name": "orenoa — Describes a controlled VRAM-budget sweep for a local Qwen model, stating engine version, hardware an",
+    "url": "https://x.com/orenoa7/status/2121784980657537062",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "hardware benchmarks",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:42.412Z",
+    "discoveredFrom": "https://x.com/orenoa7",
+    "lastCheckedAt": "2026-11-15T08:37:42.412Z",
+    "lastSuccessAt": "2026-11-15T08:37:42.412Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full expanded English translation of the original post was inspected; attached charts and numerical results were not independently validated."
+  },
+  {
+    "id": "profile-evidence-3ab9148dd75a5e95",
+    "name": "orenoa — Reports a separate comparison of five DeepSeek inference configurations on four DGX Spark systems, w",
+    "url": "https://x.com/orenoa7/status/2121559404587663644",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "hardware benchmarks",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:28.075Z",
+    "discoveredFrom": "https://x.com/orenoa7",
+    "lastCheckedAt": "2026-11-15T08:38:28.075Z",
+    "lastSuccessAt": "2026-11-15T08:38:28.075Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered English translation and the author’s adjacent reference post were inspected. Engine-specific settings differ, so this is a practical configuration comparison, not an isolated engine-only causal test."
+  },
+  {
+    "id": "profile-evidence-6e21ec35b7149dec",
+    "name": "orenoa — An adjacent author reply corrects the comparison’s TensorFold provider label from official to Mia. T",
+    "url": "https://x.com/orenoa7/status/2121566999205785942",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "hardware benchmarks",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:28.075Z",
+    "discoveredFrom": "https://x.com/orenoa7",
+    "lastCheckedAt": "2026-11-15T08:38:28.075Z",
+    "lastSuccessAt": "2026-11-15T08:38:28.075Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Original Japanese correction text and its dated permalink were inspected in the saved public thread capture."
+  },
+  {
+    "id": "profile-x-com-gregkamradt",
+    "name": "Greg Kamradt on X",
+    "url": "https://x.com/GregKamradt",
+    "kind": "social",
+    "topics": [
+      "agent evaluation",
+      "agent tools",
+      "scoped access"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:50.675Z",
+    "discoveredFrom": "https://www.gregkamradt.com/",
+    "lastCheckedAt": "2026-11-15T08:36:50.675Z",
+    "lastSuccessAt": "2026-11-15T08:36:50.675Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for firsthand agent-evaluation failure analysis and small practical tools that make agents easier to integrate."
+  },
+  {
+    "id": "profile-evidence-5061ca3d3f47798b",
+    "name": "Greg Kamradt — Describes the ARC-AGI-3 environments and first-party observed failures in future-event anticipation,",
+    "url": "https://x.com/GregKamradt/status/2036860153837084735",
+    "kind": "social",
+    "topics": [
+      "agent evaluation",
+      "agent tools",
+      "scoped access"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:50.675Z",
+    "discoveredFrom": "https://x.com/GregKamradt",
+    "lastCheckedAt": "2026-11-15T08:36:50.675Z",
+    "lastSuccessAt": "2026-11-15T08:36:50.675Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-e1031caf0c432024",
+    "name": "Greg Kamradt — InterAuth documents disposable share addresses, inherited Viewer versus Editor access, immediate Dri",
+    "url": "https://interauth.dev/",
+    "kind": "research",
+    "topics": [
+      "agent evaluation",
+      "agent tools",
+      "scoped access"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:35:44.196Z",
+    "discoveredFrom": "https://x.com/GregKamradt",
+    "lastCheckedAt": "2026-11-15T08:35:44.196Z",
+    "lastSuccessAt": "2026-11-15T08:35:44.196Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-yoheinakajima",
+    "name": "Yohei Nakajima on X",
+    "url": "https://x.com/yoheinakajima",
+    "kind": "social",
+    "topics": [
+      "agent runtimes",
+      "event sourcing",
+      "local vision models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:44.970Z",
+    "discoveredFrom": "https://yohei.me/",
+    "lastCheckedAt": "2026-11-15T08:41:44.970Z",
+    "lastSuccessAt": "2026-11-15T08:41:44.970Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for inspectable agent prototypes, durable runtime designs and local-model experiments with disclosed boundaries."
+  },
+  {
+    "id": "profile-evidence-ede099126531ea41",
+    "name": "Yohei Nakajima — The ActiveGraph README explains typed graph state, append-only event history, reactive behaviors, re",
+    "url": "https://github.com/yoheinakajima/activegraph",
+    "kind": "research",
+    "topics": [
+      "agent runtimes",
+      "event sourcing",
+      "local vision models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:46.159Z",
+    "discoveredFrom": "https://x.com/yoheinakajima",
+    "lastCheckedAt": "2026-11-15T08:36:46.159Z",
+    "lastSuccessAt": "2026-11-15T08:36:46.159Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-5188fa7a524a2689",
+    "name": "Yohei Nakajima — Separate Glance VLM harness reads typed answers from frozen model logits; README documents one-pass ",
+    "url": "https://github.com/yoheinakajima/glance",
+    "kind": "research",
+    "topics": [
+      "agent runtimes",
+      "event sourcing",
+      "local vision models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:44.970Z",
+    "discoveredFrom": "https://x.com/yoheinakajima",
+    "lastCheckedAt": "2026-11-15T08:41:44.970Z",
+    "lastSuccessAt": "2026-11-15T08:41:44.970Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-github-com-obra",
+    "name": "Jesse Vincent on GitHub",
+    "url": "https://github.com/obra",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "evaluation",
+      "agent self-modification"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:42.562Z",
+    "discoveredFrom": "https://blog.primeradiant.com/superpowers-6/",
+    "lastCheckedAt": "2026-11-15T08:37:42.562Z",
+    "lastSuccessAt": "2026-11-15T08:37:42.562Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for concrete coding-agent workflow experiments, measurement failures and guarded long-lived agent design."
+  },
+  {
+    "id": "profile-evidence-0c5612935dc1ff80",
+    "name": "Jesse Vincent — Explains review-packet precomputation, combined reviews and model-tier routing with benchmark findin",
+    "url": "https://blog.primeradiant.com/superpowers-6/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "evaluation",
+      "agent self-modification"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:42.538Z",
+    "discoveredFrom": "https://github.com/obra",
+    "lastCheckedAt": "2026-11-15T08:37:42.538Z",
+    "lastSuccessAt": "2026-11-15T08:37:42.538Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-d87423866d16d907",
+    "name": "Jesse Vincent — Describes a separate Sen design in which only a dedicated subagent can edit agent persona; includes ",
+    "url": "https://blog.primeradiant.com/the-therapist-pattern/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "evaluation",
+      "agent self-modification"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:42.562Z",
+    "discoveredFrom": "https://github.com/obra",
+    "lastCheckedAt": "2026-11-15T08:37:42.562Z",
+    "lastSuccessAt": "2026-11-15T08:37:42.562Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-samuelcolvin",
+    "name": "Samuel Colvin on X",
+    "url": "https://x.com/samuelcolvin",
+    "kind": "social",
+    "topics": [
+      "agent frameworks",
+      "sandboxing",
+      "type safety"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:14.610Z",
+    "discoveredFrom": "https://x.com/simonw/following",
+    "lastCheckedAt": "2026-11-15T08:39:14.610Z",
+    "lastSuccessAt": "2026-11-15T08:39:14.610Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for original agent-runtime engineering, restricted code execution, typed interfaces and documented design trade-offs."
+  },
+  {
+    "id": "profile-evidence-5774bc5a648c468c",
+    "name": "Samuel Colvin — Explains capability allowlisting, external host functions, bytecode execution, snapshotting, resourc",
+    "url": "https://pydantic.dev/articles/pydantic-monty",
+    "kind": "research",
+    "topics": [
+      "agent frameworks",
+      "sandboxing",
+      "type safety"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:14.579Z",
+    "discoveredFrom": "https://x.com/samuelcolvin",
+    "lastCheckedAt": "2026-11-15T08:39:14.579Z",
+    "lastSuccessAt": "2026-11-15T08:39:14.579Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-1de72d15481d76e5",
+    "name": "Samuel Colvin — Explains the original typed framework’s dependency injection, validated output, OpenTelemetry, teste",
+    "url": "https://pydantic.dev/articles/pydantic-ai-v1",
+    "kind": "research",
+    "topics": [
+      "agent frameworks",
+      "sandboxing",
+      "type safety"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:14.610Z",
+    "discoveredFrom": "https://x.com/samuelcolvin",
+    "lastCheckedAt": "2026-11-15T08:39:14.610Z",
+    "lastSuccessAt": "2026-11-15T08:39:14.610Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-antirez",
+    "name": "antirez (Salvatore Sanfilippo) on X",
+    "url": "https://x.com/antirez",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "agent-assisted testing",
+      "distributed systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:52.694Z",
+    "discoveredFrom": "https://x.com/simonw/following",
+    "lastCheckedAt": "2026-11-15T08:39:52.694Z",
+    "lastSuccessAt": "2026-11-15T08:39:52.694Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for grounded local-inference trade-offs and firsthand methods for agent-assisted software QA."
+  },
+  {
+    "id": "profile-evidence-b1083539d2b82c33",
+    "name": "antirez (Salvatore Sanfilippo) — Reports local model throughput observations, contrasts layer splitting and expert parallelism, and e",
+    "url": "https://antirez.com/news/167",
+    "kind": "research",
+    "topics": [
+      "local inference",
+      "agent-assisted testing",
+      "distributed systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:52.657Z",
+    "discoveredFrom": "https://x.com/antirez",
+    "lastCheckedAt": "2026-11-15T08:39:52.657Z",
+    "lastSuccessAt": "2026-11-15T08:39:52.657Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-e88b2d6e76c44403",
+    "name": "antirez (Salvatore Sanfilippo) — Describes using agents to inspect release diffs, design regression-focused QA, exercise distributed ",
+    "url": "https://antirez.com/news/168",
+    "kind": "research",
+    "topics": [
+      "local inference",
+      "agent-assisted testing",
+      "distributed systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:52.694Z",
+    "discoveredFrom": "https://x.com/antirez",
+    "lastCheckedAt": "2026-11-15T08:39:52.694Z",
+    "lastSuccessAt": "2026-11-15T08:39:52.694Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-badlogicgames",
+    "name": "Mario Zechner on X",
+    "url": "https://x.com/badlogicgames",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "local speech",
+      "agent runtimes"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:29.074Z",
+    "discoveredFrom": "https://x.com/yoheinakajima/status/2119851269506695309",
+    "lastCheckedAt": "2026-11-15T08:41:29.074Z",
+    "lastSuccessAt": "2026-11-15T08:41:29.074Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for unusually detailed agent implementations and candid limitations across coding and real-time local speech systems."
+  },
+  {
+    "id": "profile-evidence-0afbe3bc9323e43b",
+    "name": "Mario Zechner — Original Pi design account explains provider incompatibilities, best-effort token accounting, contex",
+    "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "local speech",
+      "agent runtimes"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:29.074Z",
+    "discoveredFrom": "https://x.com/badlogicgames",
+    "lastCheckedAt": "2026-11-15T08:41:29.074Z",
+    "lastSuccessAt": "2026-11-15T08:41:29.074Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-697a1eb683c45d89",
+    "name": "Mario Zechner — Separate robot implementation describes a Parakeet/Silero speech worker, Qwen3 TTS Rust fixes, sente",
+    "url": "https://mariozechner.at/posts/2026-05-30-shitty-robot/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "local speech",
+      "agent runtimes"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:29.038Z",
+    "discoveredFrom": "https://x.com/badlogicgames",
+    "lastCheckedAt": "2026-11-15T08:41:29.038Z",
+    "lastSuccessAt": "2026-11-15T08:41:29.038Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-kevins8",
+    "name": "Kevin S Lin on X",
+    "url": "https://x.com/kevins8",
+    "kind": "social",
+    "topics": [
+      "persistent agents",
+      "agent security",
+      "skills tooling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:24.656Z",
+    "discoveredFrom": "https://x.com/steipete/status/2121058770767982997",
+    "lastCheckedAt": "2026-11-15T08:45:24.656Z",
+    "lastSuccessAt": "2026-11-15T08:45:24.656Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for first-hand persistent-agent deployment engineering and practical cross-tool workflow infrastructure."
+  },
+  {
+    "id": "profile-evidence-d7726fc963b24640",
+    "name": "Kevin S Lin — Bylined account of remote-harness isolation, sandbox and credential boundaries, configuration exampl",
+    "url": "https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai",
+    "kind": "research",
+    "topics": [
+      "persistent agents",
+      "agent security",
+      "skills tooling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:42:50.859Z",
+    "discoveredFrom": "https://x.com/kevins8",
+    "lastCheckedAt": "2026-11-15T08:42:50.859Z",
+    "lastSuccessAt": "2026-11-15T08:42:50.859Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-4c58bf70c4cd30c1",
+    "name": "Kevin S Lin — Distinct Skillz CLI README documents source scanning, workspace detection, flattened skill-name sync",
+    "url": "https://github.com/kevinslin/skillz",
+    "kind": "research",
+    "topics": [
+      "persistent agents",
+      "agent security",
+      "skills tooling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:24.656Z",
+    "discoveredFrom": "https://x.com/kevins8",
+    "lastCheckedAt": "2026-11-15T08:45:24.656Z",
+    "lastSuccessAt": "2026-11-15T08:45:24.656Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-steve-yegge",
+    "name": "Steve Yegge on X",
+    "url": "https://x.com/Steve_Yegge",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "agent orchestration",
+      "persistent memory"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:52.528Z",
+    "discoveredFrom": "https://x.com/badlogicgames/status/2121691650162397302",
+    "lastCheckedAt": "2026-11-15T08:45:52.528Z",
+    "lastSuccessAt": "2026-11-15T08:45:52.528Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for original multi-agent architecture, persistent task state, handoff and verification patterns with operational lessons."
+  },
+  {
+    "id": "profile-evidence-56c6edad431851b2",
+    "name": "Steve Yegge — Complete Beads README specifies structured persistent task memory, version-controlled SQL storage, g",
+    "url": "https://github.com/gastownhall/beads",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "agent orchestration",
+      "persistent memory"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:42.996Z",
+    "discoveredFrom": "https://x.com/Steve_Yegge",
+    "lastCheckedAt": "2026-11-15T08:45:42.996Z",
+    "lastSuccessAt": "2026-11-15T08:45:42.996Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-d7921179bf9e4629",
+    "name": "Steve Yegge — Complete Gas Town README explains persistent workers versus sessions, git worktree hooks, task convo",
+    "url": "https://github.com/gastownhall/gastown",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "agent orchestration",
+      "persistent memory"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:52.528Z",
+    "discoveredFrom": "https://x.com/Steve_Yegge",
+    "lastCheckedAt": "2026-11-15T08:45:52.528Z",
+    "lastSuccessAt": "2026-11-15T08:45:52.528Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-davidcrawshaw",
+    "name": "David Crawshaw on X",
+    "url": "https://x.com/davidcrawshaw",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "engineering process",
+      "agent infrastructure"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:55.908Z",
+    "discoveredFrom": "https://crawshaw.io/",
+    "lastCheckedAt": "2026-11-15T08:46:55.908Z",
+    "lastSuccessAt": "2026-11-15T08:46:55.908Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for firsthand agent-workflow observations and concrete team-process changes, with explicit limits on generalization."
+  },
+  {
+    "id": "profile-evidence-55b56d07926c2752",
+    "name": "David Crawshaw — Documents first-hand changes in reading versus writing, VM isolation, a concrete Stripe ETL replacem",
+    "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "engineering process",
+      "agent infrastructure"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:55.885Z",
+    "discoveredFrom": "https://x.com/davidcrawshaw",
+    "lastCheckedAt": "2026-11-15T08:46:55.885Z",
+    "lastSuccessAt": "2026-11-15T08:46:55.885Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-2c7ccabc19a110be",
+    "name": "David Crawshaw — Separately analyzes review-load incentives and describes exe.dev’s nine-person owner-review/deploy p",
+    "url": "https://crawshaw.io/blog/agent-principal-agent",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "engineering process",
+      "agent infrastructure"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:55.908Z",
+    "discoveredFrom": "https://x.com/davidcrawshaw",
+    "lastCheckedAt": "2026-11-15T08:46:55.908Z",
+    "lastSuccessAt": "2026-11-15T08:46:55.908Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-searls",
+    "name": "Justin Searls on X",
+    "url": "https://x.com/searls",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "human review",
+      "local model integration"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:04.581Z",
+    "discoveredFrom": "https://x.com/searls",
+    "lastCheckedAt": "2026-11-15T08:48:04.581Z",
+    "lastSuccessAt": "2026-11-15T08:48:04.581Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for original personal agent infrastructure, practical human-review interfaces and detailed local-model integration work."
+  },
+  {
+    "id": "profile-evidence-fdf9f8d7630c0a7e",
+    "name": "Justin Searls — Documents issue evidence packaging, distributed worker dispatch, physical-device QA, human escalatio",
+    "url": "https://justin.searls.co/posts/im-just-a-meat-proxy/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "human review",
+      "local model integration"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:39.923Z",
+    "discoveredFrom": "https://x.com/searls",
+    "lastCheckedAt": "2026-11-15T08:47:39.923Z",
+    "lastSuccessAt": "2026-11-15T08:47:39.923Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-ce9a7da923d6e995",
+    "name": "Justin Searls — Separate hands-on Swift tutorial covers runtime-defined prompts, DynamicGenerationSchema, typed resu",
+    "url": "https://justin.searls.co/posts/how-to-generate-dynamic-data-structures-with-apple-foundation-models/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "human review",
+      "local model integration"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:04.581Z",
+    "discoveredFrom": "https://x.com/searls",
+    "lastCheckedAt": "2026-11-15T08:48:04.581Z",
+    "lastSuccessAt": "2026-11-15T08:48:04.581Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-bsky-app-profile-bahmutov-bsky-social",
+    "name": "Gleb Bahmutov on Bluesky",
+    "url": "https://bsky.app/profile/bahmutov.bsky.social",
+    "kind": "social",
+    "topics": [
+      "AI testing",
+      "test generation",
+      "specification checks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:27.324Z",
+    "discoveredFrom": "https://glebbahmutov.com/blog/cypress-prompt-vs-record-vs-code/",
+    "lastCheckedAt": "2026-11-15T08:48:27.324Z",
+    "lastSuccessAt": "2026-11-15T08:48:27.324Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for concrete AI testing failures, reproducible code examples and methods that distinguish specification correctness from merely passing tests."
+  },
+  {
+    "id": "profile-evidence-ff705ea4ebccb9c0",
+    "name": "Gleb Bahmutov — Firsthand comparison of hand coding, cy.prompt and Studio recording documents negative-assertion fai",
+    "url": "https://glebbahmutov.com/blog/cypress-prompt-vs-record-vs-code/",
+    "kind": "research",
+    "topics": [
+      "AI testing",
+      "test generation",
+      "specification checks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:27.274Z",
+    "discoveredFrom": "https://bsky.app/profile/bahmutov.bsky.social",
+    "lastCheckedAt": "2026-11-15T08:48:27.274Z",
+    "lastSuccessAt": "2026-11-15T08:48:27.274Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-63b682291d28f953",
+    "name": "Gleb Bahmutov — Separate original method captures DOM after each Cypress step and asks a model to compare snapshots ",
+    "url": "https://glebbahmutov.com/blog/does-this-look-right-to-you-ai/",
+    "kind": "research",
+    "topics": [
+      "AI testing",
+      "test generation",
+      "specification checks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:27.324Z",
+    "discoveredFrom": "https://bsky.app/profile/bahmutov.bsky.social",
+    "lastCheckedAt": "2026-11-15T08:48:27.324Z",
+    "lastSuccessAt": "2026-11-15T08:48:27.324Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-maxleiter",
+    "name": "Max Leiter on X",
+    "url": "https://x.com/maxleiter",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "retrieval",
+      "evaluation methods"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:51:10.032Z",
+    "discoveredFrom": "https://maxleiter.com/",
+    "lastCheckedAt": "2026-11-15T08:51:10.032Z",
+    "lastSuccessAt": "2026-11-15T08:51:10.032Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for production agent reliability techniques and inspectable small-system comparisons that disclose measurement trade-offs."
+  },
+  {
+    "id": "profile-evidence-1489caf09df510c0",
+    "name": "Max Leiter — Original v0 engineering account covers intent-triggered version-specific prompt injection, curated r",
+    "url": "https://vercel.com/blog/how-we-made-v0-an-effective-coding-agent",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "retrieval",
+      "evaluation methods"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:51:10.032Z",
+    "discoveredFrom": "https://x.com/maxleiter",
+    "lastCheckedAt": "2026-11-15T08:51:10.032Z",
+    "lastSuccessAt": "2026-11-15T08:51:10.032Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-33b8a0637cc6e18c",
+    "name": "Max Leiter — Separate embedding-search demo and evaluation discloses 4,668 emoji, 56 hand-labelled queries, match",
+    "url": "https://maxleiter.com/blog/embedding-emoji-search",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "retrieval",
+      "evaluation methods"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:50:10.024Z",
+    "discoveredFrom": "https://x.com/maxleiter",
+    "lastCheckedAt": "2026-11-15T08:50:10.024Z",
+    "lastSuccessAt": "2026-11-15T08:50:10.024Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-davideast",
+    "name": "David East on X",
+    "url": "https://x.com/_davideast",
+    "kind": "social",
+    "topics": [
+      "AI design tooling",
+      "agent integrations",
+      "design specifications"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:52.991Z",
+    "discoveredFrom": "https://x.com/_davideast",
+    "lastCheckedAt": "2026-11-15T08:49:52.991Z",
+    "lastSuccessAt": "2026-11-15T08:49:52.991Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for original tooling that connects generated UI design to agent workflows and makes design rules machine-checkable."
+  },
+  {
+    "id": "profile-evidence-e6a4d186a31a2541",
+    "name": "David East — Complete Stitch SDK README documents project/screen abstractions, generation/edit/variants, MCP tool",
+    "url": "https://github.com/google-labs-code/stitch-sdk",
+    "kind": "research",
+    "topics": [
+      "AI design tooling",
+      "agent integrations",
+      "design specifications"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:47.116Z",
+    "discoveredFrom": "https://x.com/_davideast",
+    "lastCheckedAt": "2026-11-15T08:49:47.116Z",
+    "lastSuccessAt": "2026-11-15T08:49:47.116Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-evidence-c5d3fe2948643ba0",
+    "name": "David East — Separate DESIGN.md README defines machine-readable tokens plus rationale, normative schema, unknown-",
+    "url": "https://github.com/google-labs-code/design.md",
+    "kind": "research",
+    "topics": [
+      "AI design tooling",
+      "agent integrations",
+      "design specifications"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:52.991Z",
+    "discoveredFrom": "https://x.com/_davideast",
+    "lastCheckedAt": "2026-11-15T08:49:52.991Z",
+    "lastSuccessAt": "2026-11-15T08:49:52.991Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete relevant rendered contribution saved in bundle; documentary inspection only, no independent benchmark replication."
+  },
+  {
+    "id": "profile-x-com-eliebakouch",
+    "name": "Elie Bakouch on X",
+    "url": "https://x.com/eliebakouch",
+    "kind": "social",
+    "topics": [
+      "training",
+      "autonomous research",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:13.883Z",
+    "discoveredFrom": "https://x.com/lvwerra/status/2120056784157085981",
+    "lastCheckedAt": "2026-11-15T08:36:13.883Z",
+    "lastSuccessAt": "2026-11-15T08:36:13.883Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Firsthand model-training experiments and careful analysis of training efficiency, data and evaluation confounds."
+  },
+  {
+    "id": "profile-evidence-63bcb727e4ca230b",
+    "name": "Elie Bakouch — Reports his multi-model autonomous optimization experiment, variance between runs, released traces, ",
+    "url": "https://x.com/eliebakouch/status/2088736593800524178",
+    "kind": "social",
+    "topics": [
+      "training",
+      "autonomous research",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:00.708Z",
+    "discoveredFrom": "https://x.com/eliebakouch",
+    "lastCheckedAt": "2026-11-15T08:36:00.708Z",
+    "lastSuccessAt": "2026-11-15T08:36:00.708Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full opening post inspected; visible followups partial; linked blog not separately evaluated."
+  },
+  {
+    "id": "profile-evidence-49d9c31cf37cc53f",
+    "name": "Elie Bakouch — Original extended analysis separates algorithmic and data gains, discusses KV-cache tradeoffs and pr",
+    "url": "https://x.com/eliebakouch/status/2121641644197896389",
+    "kind": "social",
+    "topics": [
+      "training",
+      "autonomous research",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:13.883Z",
+    "discoveredFrom": "https://x.com/eliebakouch",
+    "lastCheckedAt": "2026-11-15T08:36:13.883Z",
+    "lastSuccessAt": "2026-11-15T08:36:13.883Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete expanded post detail; quoted essay is contextual and does not count as his work."
+  },
+  {
+    "id": "profile-x-com-ofirpress",
+    "name": "Ofir Press on X",
+    "url": "https://x.com/OfirPress",
+    "kind": "social",
+    "topics": [
+      "coding agents",
+      "benchmarks",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:51.253Z",
+    "discoveredFrom": "https://w.twstalker.com/OfirPress",
+    "lastCheckedAt": "2026-11-15T08:37:51.253Z",
+    "lastSuccessAt": "2026-11-15T08:37:51.253Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original evaluations of whole-project construction and autonomous bug discovery, with test design and failure analysis."
+  },
+  {
+    "id": "profile-evidence-7acb374cff1b530b",
+    "name": "Ofir Press — SWE-sweep evaluates finding and repairing bugs without issue hints; project explains historical bug ",
+    "url": "https://swesweep.com/",
+    "kind": "research",
+    "topics": [
+      "coding agents",
+      "benchmarks",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:51.253Z",
+    "discoveredFrom": "https://x.com/OfirPress",
+    "lastCheckedAt": "2026-11-15T08:37:51.253Z",
+    "lastSuccessAt": "2026-11-15T08:37:51.253Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and substantial About/method/FAQ sections inspected; current leaderboard is a partial snapshot."
+  },
+  {
+    "id": "profile-x-com-stefanoermon",
+    "name": "Stefano Ermon on X",
+    "url": "https://x.com/StefanoErmon",
+    "kind": "social",
+    "topics": [
+      "diffusion language models",
+      "preference optimization",
+      "inference"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:19.894Z",
+    "discoveredFrom": "https://x.com/tri_dao/status/2112263206085554392",
+    "lastCheckedAt": "2026-11-15T08:38:19.894Z",
+    "lastSuccessAt": "2026-11-15T08:38:19.894Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Primary diffusion-language-model research and preference-optimization methods, alongside current model release activity."
+  },
+  {
+    "id": "profile-evidence-931b832b661764a4",
+    "name": "Stefano Ermon — Mercury research describes transformer-based diffusion models predicting tokens in parallel and codi",
+    "url": "https://arxiv.org/abs/2506.17298",
+    "kind": "research",
+    "topics": [
+      "diffusion language models",
+      "preference optimization",
+      "inference"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:51.253Z",
+    "discoveredFrom": "https://x.com/StefanoErmon",
+    "lastCheckedAt": "2026-11-15T08:37:51.253Z",
+    "lastSuccessAt": "2026-11-15T08:37:51.253Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and complete abstract inspected; performance remains report authors’ claims here."
+  },
+  {
+    "id": "profile-evidence-d5a5216fcde8733b",
+    "name": "Stefano Ermon — DPO derives a classification-loss approach to preference alignment via a closed-form optimal policy,",
+    "url": "https://arxiv.org/abs/2305.18290",
+    "kind": "research",
+    "topics": [
+      "diffusion language models",
+      "preference optimization",
+      "inference"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:19.894Z",
+    "discoveredFrom": "https://x.com/StefanoErmon",
+    "lastCheckedAt": "2026-11-15T08:38:19.894Z",
+    "lastSuccessAt": "2026-11-15T08:38:19.894Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and complete abstract inspected; current version revised July 29, 2024."
+  },
+  {
+    "id": "profile-x-com-maximelabonne",
+    "name": "Maxime Labonne on X",
+    "url": "https://x.com/maximelabonne",
+    "kind": "social",
+    "topics": [
+      "fine-tuning",
+      "model merging",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:13.459Z",
+    "discoveredFrom": "https://x.com/maximelabonne",
+    "lastCheckedAt": "2026-11-15T08:48:13.459Z",
+    "lastSuccessAt": "2026-11-15T08:48:13.459Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Firsthand implementation and evaluation walkthroughs with concrete training configurations and candid limitations."
+  },
+  {
+    "id": "profile-evidence-756b6d1276f2d883",
+    "name": "Maxime Labonne — Walks through several merging methods with runnable configurations, his own merge experiments and ev",
+    "url": "https://mlabonne.github.io/blog/posts/2024-01-08_Merge_LLMs_with_mergekit.html",
+    "kind": "research",
+    "topics": [
+      "fine-tuning",
+      "model merging",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:44.470Z",
+    "discoveredFrom": "https://x.com/maximelabonne",
+    "lastCheckedAt": "2026-11-15T08:36:44.470Z",
+    "lastSuccessAt": "2026-11-15T08:36:44.470Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Substantial article methods and experiment sections inspected; does not establish authorship of underlying merging algorithms."
+  },
+  {
+    "id": "profile-evidence-939268474a763bb3",
+    "name": "Maxime Labonne — Documents his Llama 3 preference-data preparation, training setup, logs and evaluation, including un",
+    "url": "https://mlabonne.github.io/blog/posts/2024-04-19_Fine_tune_Llama_3_with_ORPO.html",
+    "kind": "research",
+    "topics": [
+      "fine-tuning",
+      "model merging",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:06.405Z",
+    "discoveredFrom": "https://x.com/maximelabonne",
+    "lastCheckedAt": "2026-11-15T08:40:06.405Z",
+    "lastSuccessAt": "2026-11-15T08:40:06.405Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete article inspected; original hands-on experiment and explanation, with ORPO invention credited to its paper authors."
+  },
+  {
+    "id": "profile-evidence-f82467173b686d2e",
+    "name": "Maxime Labonne — Reports involvement in the team’s QAD development for Q4_0 deployment and identifies its quality, me",
+    "url": "https://x.com/maximelabonne/status/2118390973881606427",
+    "kind": "social",
+    "topics": [
+      "fine-tuning",
+      "model merging",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:54.384Z",
+    "discoveredFrom": "https://x.com/maximelabonne",
+    "lastCheckedAt": "2026-11-15T08:47:54.384Z",
+    "lastSuccessAt": "2026-11-15T08:47:54.384Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete opening post inspected; a concise first-person attribution linked here to the detailed Liquid AI original report, not counted alone as one of the two substantial works."
+  },
+  {
+    "id": "profile-evidence-349e4876ac9b47e6",
+    "name": "Maxime Labonne — Current team report evaluates distilled Q4_0 checkpoints across four sizes and hardware backends, wi",
+    "url": "https://www.liquid.ai/blog/qad",
+    "kind": "research",
+    "topics": [
+      "fine-tuning",
+      "model merging",
+      "quantization"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:13.459Z",
+    "discoveredFrom": "https://x.com/maximelabonne",
+    "lastCheckedAt": "2026-11-15T08:48:13.459Z",
+    "lastSuccessAt": "2026-11-15T08:48:13.459Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete core article sections inspected. Labonne’s participation is his own explicit claim; report credits Liquid AI collectively."
+  },
+  {
+    "id": "profile-x-com-loubnabenallal1",
+    "name": "Loubna Ben Allal on X",
+    "url": "https://x.com/LoubnaBenAllal1",
+    "kind": "social",
+    "topics": [
+      "pretraining",
+      "small language models",
+      "biological models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:26.876Z",
+    "discoveredFrom": "https://x.com/LoubnaBenAllal1",
+    "lastCheckedAt": "2026-11-15T08:48:26.876Z",
+    "lastSuccessAt": "2026-11-15T08:48:26.876Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Detailed training decisions, failure analysis and released model artifacts from directly involved research."
+  },
+  {
+    "id": "profile-evidence-310827d8faea4e7f",
+    "name": "Loubna Ben Allal — Explains SmolLM3 training choices, scaling baselines, framework tradeoffs and costly failed runs fro",
+    "url": "https://huggingfacetb-smol-training-playbook.hf.space/?__theme=system",
+    "kind": "research",
+    "topics": [
+      "pretraining",
+      "small language models",
+      "biological models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:57.638Z",
+    "discoveredFrom": "https://x.com/LoubnaBenAllal1",
+    "lastCheckedAt": "2026-11-15T08:36:57.638Z",
+    "lastSuccessAt": "2026-11-15T08:36:57.638Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Authorship and substantial introduction, training-compass, baseline and opening training-framework discussion inspected (captured lines 0–237 of 4002); not the full book."
+  },
+  {
+    "id": "profile-evidence-911183e88b78caf3",
+    "name": "Loubna Ben Allal — Announces her team’s Carbon-X DNA-and-text model and links its technical model card, explicitly repo",
+    "url": "https://x.com/LoubnaBenAllal1/status/2113212025560023513",
+    "kind": "social",
+    "topics": [
+      "pretraining",
+      "small language models",
+      "biological models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:26.876Z",
+    "discoveredFrom": "https://x.com/LoubnaBenAllal1",
+    "lastCheckedAt": "2026-11-15T08:48:26.876Z",
+    "lastSuccessAt": "2026-11-15T08:48:26.876Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete original opening post inspected; same evidence family as Carbon-X model card, not an extra distinct contribution. Claimed performance not independently replicated."
+  },
+  {
+    "id": "profile-x-com-willcb",
+    "name": "Will Brown on X",
+    "url": "https://x.com/willcb",
+    "kind": "social",
+    "topics": [
+      "reinforcement learning",
+      "agent environments",
+      "credit assignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:33.026Z",
+    "discoveredFrom": "https://x.com/willcb",
+    "lastCheckedAt": "2026-11-15T08:44:33.026Z",
+    "lastSuccessAt": "2026-11-15T08:44:33.026Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original agent-training infrastructure and research on reward design across multiple turns."
+  },
+  {
+    "id": "profile-evidence-f7c1ba97f9ede5c3",
+    "name": "Will Brown — Verifiers v1 explains separating tasks, harnesses and runtime; token-preserving interception and tra",
+    "url": "https://www.primeintellect.one/blog/verifiers-v1",
+    "kind": "research",
+    "topics": [
+      "reinforcement learning",
+      "agent environments",
+      "credit assignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:49.420Z",
+    "discoveredFrom": "https://x.com/willcb",
+    "lastCheckedAt": "2026-11-15T08:40:49.420Z",
+    "lastSuccessAt": "2026-11-15T08:40:49.420Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Named author and substantial design sections inspected; software not executed."
+  },
+  {
+    "id": "profile-evidence-a14307c37e5b6322",
+    "name": "Will Brown — Coauthored study derives GRPO/PPO variants for reward granularities and compares dense per-turn rewa",
+    "url": "https://arxiv.org/abs/2505.11821v3",
+    "kind": "research",
+    "topics": [
+      "reinforcement learning",
+      "agent environments",
+      "credit assignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:33.026Z",
+    "discoveredFrom": "https://x.com/willcb",
+    "lastCheckedAt": "2026-11-15T08:44:33.026Z",
+    "lastSuccessAt": "2026-11-15T08:44:33.026Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete abstract, author list and version history inspected; version 3 dated August 21, 2026, labeled work in progress."
+  },
+  {
+    "id": "profile-x-com-bloc97",
+    "name": "Bowen Peng on X",
+    "url": "https://x.com/bloc97_",
+    "kind": "social",
+    "topics": [
+      "pretraining efficiency",
+      "attention",
+      "training systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:33.026Z",
+    "discoveredFrom": "https://x.com/bloc97_",
+    "lastCheckedAt": "2026-11-15T08:44:33.026Z",
+    "lastSuccessAt": "2026-11-15T08:44:33.026Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Hands-on training-efficiency research with concrete implementation detail and measured scaling experiments."
+  },
+  {
+    "id": "profile-evidence-75c37601546958b8",
+    "name": "Bowen Peng — Token Superposition research extends empirical scaling and hyperparameter experiments; paper explici",
+    "url": "https://arxiv.org/pdf/2605.06546",
+    "kind": "research",
+    "topics": [
+      "pretraining efficiency",
+      "attention",
+      "training systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:33.026Z",
+    "discoveredFrom": "https://x.com/bloc97_",
+    "lastCheckedAt": "2026-11-15T08:44:33.026Z",
+    "lastSuccessAt": "2026-11-15T08:44:33.026Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author/abstract in companion capture; actual related-work, method and experiment sections inspected. Originality credited to experiments, not sole invention of the algorithm."
+  },
+  {
+    "id": "profile-evidence-a46eb58e425a8dc3",
+    "name": "Bowen Peng — Lighthouse introduces hierarchical compression around attention during training, then removes it to ",
+    "url": "https://arxiv.org/abs/2605.06554",
+    "kind": "research",
+    "topics": [
+      "pretraining efficiency",
+      "attention",
+      "training systems"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:41.009Z",
+    "discoveredFrom": "https://x.com/bloc97_",
+    "lastCheckedAt": "2026-11-15T08:40:41.009Z",
+    "lastSuccessAt": "2026-11-15T08:40:41.009Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete abstract and author list inspected; preliminary small-scale results, not proven frontier-scale gains."
+  },
+  {
+    "id": "profile-x-com-shunyuyao12",
+    "name": "Shunyu Yao on X",
+    "url": "https://x.com/ShunyuYao12",
+    "kind": "social",
+    "topics": [
+      "agents",
+      "reasoning",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:13.459Z",
+    "discoveredFrom": "https://x.com/ShunyuYao12",
+    "lastCheckedAt": "2026-11-15T08:48:13.459Z",
+    "lastSuccessAt": "2026-11-15T08:48:13.459Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Originator of agent reasoning methods and evaluations that test reliable tool use across repeated trials."
+  },
+  {
+    "id": "profile-evidence-7647307fe49844a0",
+    "name": "Shunyu Yao — ReAct interleaves language-model reasoning traces with environment actions and evaluates the approac",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "kind": "research",
+    "topics": [
+      "agents",
+      "reasoning",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:35.414Z",
+    "discoveredFrom": "https://x.com/ShunyuYao12",
+    "lastCheckedAt": "2026-11-15T08:45:35.414Z",
+    "lastSuccessAt": "2026-11-15T08:45:35.414Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and complete abstract inspected; historical study, last revised March 10, 2023."
+  },
+  {
+    "id": "profile-evidence-9e1bf2cb709d465f",
+    "name": "Shunyu Yao — Tau-bench evaluates simulated user conversations under tool and policy constraints, comparing final ",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "kind": "research",
+    "topics": [
+      "agents",
+      "reasoning",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:35.414Z",
+    "discoveredFrom": "https://x.com/ShunyuYao12",
+    "lastCheckedAt": "2026-11-15T08:45:35.414Z",
+    "lastSuccessAt": "2026-11-15T08:45:35.414Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and complete abstract inspected; original benchmark methods and reported failures, not a current leaderboard claim."
+  },
+  {
+    "id": "profile-evidence-fa26514a62f2a64f",
+    "name": "Shunyu Yao — Named coauthor of HY-Embodied-0.5: modality-specific computation, latent tokens, iterative post-trai",
+    "url": "https://arxiv.org/abs/2604.07430",
+    "kind": "research",
+    "topics": [
+      "agents",
+      "reasoning",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:13.459Z",
+    "discoveredFrom": "https://x.com/ShunyuYao12",
+    "lastCheckedAt": "2026-11-15T08:48:13.459Z",
+    "lastSuccessAt": "2026-11-15T08:48:13.459Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author list and complete abstract inspected; current 2026 substantial original research beyond historical ReAct and tau-bench."
+  },
+  {
+    "id": "profile-x-com-yuchenj-uw",
+    "name": "Yuchen Jin on X",
+    "url": "https://x.com/Yuchenj_UW",
+    "kind": "social",
+    "topics": [
+      "training experiments",
+      "inference systems",
+      "compilers"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:56.429Z",
+    "discoveredFrom": "https://x.com/Yuchenj_UW",
+    "lastCheckedAt": "2026-11-15T08:47:56.429Z",
+    "lastSuccessAt": "2026-11-15T08:47:56.429Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Firsthand training and kernel experiments, with attributable contributions to optimization and compiler research."
+  },
+  {
+    "id": "profile-evidence-f399a5fb20423170",
+    "name": "Yuchen Jin — Muon’s original technical writeup specifically credits Jin with experiments extending training durat",
+    "url": "https://kellerjordan.github.io/posts/muon/",
+    "kind": "research",
+    "topics": [
+      "training experiments",
+      "inference systems",
+      "compilers"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:19.351Z",
+    "discoveredFrom": "https://x.com/Yuchenj_UW",
+    "lastCheckedAt": "2026-11-15T08:41:19.351Z",
+    "lastSuccessAt": "2026-11-15T08:41:19.351Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full relevant algorithm, experiment and attribution sections inspected; contribution is scaling experiments, not sole invention of Muon."
+  },
+  {
+    "id": "profile-evidence-9a873bd1d8e718b3",
+    "name": "Yuchen Jin — Relax combines computational graphs, tensor programs and external calls with symbolic shape tracking",
+    "url": "https://yuchenjin.github.io/papers/asplos25-relax.pdf",
+    "kind": "research",
+    "topics": [
+      "training experiments",
+      "inference systems",
+      "compilers"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:21.364Z",
+    "discoveredFrom": "https://x.com/Yuchenj_UW",
+    "lastCheckedAt": "2026-11-15T08:44:21.364Z",
+    "lastSuccessAt": "2026-11-15T08:44:21.364Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Named author, abstract and introductory design sections inspected; paper gives the 2025 conference and March 30–April 3 venue dates, not an exact original publication day."
+  },
+  {
+    "id": "profile-evidence-9a0448730b7b952c",
+    "name": "Yuchen Jin — Reports the team’s autonomous kernel hill-climbing pipeline, model-selection finding, competition re",
+    "url": "https://x.com/Yuchenj_UW/status/2121307422421827791",
+    "kind": "social",
+    "topics": [
+      "training experiments",
+      "inference systems",
+      "compilers"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:56.429Z",
+    "discoveredFrom": "https://x.com/Yuchenj_UW",
+    "lastCheckedAt": "2026-11-15T08:47:56.429Z",
+    "lastSuccessAt": "2026-11-15T08:47:56.429Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete opening post and relevant author replies inspected. Performance and rank are author claims, not independently verified; historical research still supplies the two-work gate."
+  },
+  {
+    "id": "profile-x-com-awnihannun",
+    "name": "Awni Hannun on X",
+    "url": "https://x.com/awnihannun",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "training frameworks",
+      "sequence models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:44.427Z",
+    "discoveredFrom": "https://x.com/awnihannun",
+    "lastCheckedAt": "2026-11-15T08:49:44.427Z",
+    "lastSuccessAt": "2026-11-15T08:49:44.427Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. A framework originator who explains model architecture and hardware constraints with technical specificity."
+  },
+  {
+    "id": "profile-evidence-1f776f7d5addf317",
+    "name": "Awni Hannun — MLX defines lazy, dynamically constructed array computation with unified CPU/GPU memory and composab",
+    "url": "https://github.com/ml-explore/mlx",
+    "kind": "research",
+    "topics": [
+      "local inference",
+      "training frameworks",
+      "sequence models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:45:35.414Z",
+    "discoveredFrom": "https://x.com/awnihannun",
+    "lastCheckedAt": "2026-11-15T08:45:35.414Z",
+    "lastSuccessAt": "2026-11-15T08:45:35.414Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. README technical design, examples and contributor citation inspected. Active artifact, originally dated 2023 in citation; not all source code examined."
+  },
+  {
+    "id": "profile-evidence-49a211c046a94e93",
+    "name": "Awni Hannun — Introduces automatic differentiation over weighted finite-state transducers, new structured losses a",
+    "url": "https://arxiv.org/abs/2010.01003",
+    "kind": "research",
+    "topics": [
+      "local inference",
+      "training frameworks",
+      "sequence models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:46.667Z",
+    "discoveredFrom": "https://x.com/awnihannun",
+    "lastCheckedAt": "2026-11-15T08:46:46.667Z",
+    "lastSuccessAt": "2026-11-15T08:46:46.667Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete abstract and named author list inspected; historical research, separate from MLX."
+  },
+  {
+    "id": "profile-evidence-58b4a68f46e10c3f",
+    "name": "Awni Hannun — Explains the memory tradeoff of per-query expert selection on-device and distinguishes it from per-t",
+    "url": "https://x.com/awnihannun/status/2064202168618422396",
+    "kind": "social",
+    "topics": [
+      "local inference",
+      "training frameworks",
+      "sequence models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:44.427Z",
+    "discoveredFrom": "https://x.com/awnihannun",
+    "lastCheckedAt": "2026-11-15T08:49:44.427Z",
+    "lastSuccessAt": "2026-11-15T08:49:44.427Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete opening explanation and author source-link followup inspected. This is current technical analysis, not a claim he invented Apple’s architecture."
+  },
+  {
+    "id": "profile-x-com-togethercompute",
+    "name": "Together AI on X",
+    "url": "https://x.com/togethercompute",
+    "kind": "social",
+    "topics": [
+      "inference optimization",
+      "multi-agent methods",
+      "training infrastructure"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:06.667Z",
+    "discoveredFrom": "https://x.com/tri_dao/status/2112263652070043733",
+    "lastCheckedAt": "2026-11-15T08:47:06.667Z",
+    "lastSuccessAt": "2026-11-15T08:47:06.667Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Team-originated systems research with detailed experiments and public technical artifacts."
+  },
+  {
+    "id": "profile-evidence-b8825162418300e2",
+    "name": "Together AI — Mixture-of-Agents uses layered model outputs as subsequent-agent context, testing aggregation and mo",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5434be94e82c54327bb9dcaf7fca52b6-Paper-Conference.pdf",
+    "kind": "research",
+    "topics": [
+      "inference optimization",
+      "multi-agent methods",
+      "training infrastructure"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:46.667Z",
+    "discoveredFrom": "https://x.com/togethercompute",
+    "lastCheckedAt": "2026-11-15T08:46:46.667Z",
+    "lastSuccessAt": "2026-11-15T08:46:46.667Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Author affiliations, complete abstract and substantive introductory method sections inspected; 2025 conference edition, exact publication day not shown."
+  },
+  {
+    "id": "profile-x-com-jxbz",
+    "name": "Jeremy Bernstein on X",
+    "url": "https://x.com/jxbz",
+    "kind": "social",
+    "topics": [
+      "optimization theory",
+      "training efficiency",
+      "learning-rate scaling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:31.253Z",
+    "discoveredFrom": "https://x.com/jxbz",
+    "lastCheckedAt": "2026-11-15T08:49:31.253Z",
+    "lastSuccessAt": "2026-11-15T08:49:31.253Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original optimization theory and careful derivations connecting mathematical constraints with training practice."
+  },
+  {
+    "id": "profile-evidence-2a7bde699fe52d54",
+    "name": "Jeremy Bernstein — signSGD derives convergence and distributed aggregation properties for sign-only compressed gradient",
+    "url": "https://arxiv.org/abs/1802.04434",
+    "kind": "research",
+    "topics": [
+      "optimization theory",
+      "training efficiency",
+      "learning-rate scaling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:30.147Z",
+    "discoveredFrom": "https://x.com/jxbz",
+    "lastCheckedAt": "2026-11-15T08:47:30.147Z",
+    "lastSuccessAt": "2026-11-15T08:47:30.147Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete abstract, author list and submission history inspected; historical work."
+  },
+  {
+    "id": "profile-evidence-d29c863bbe7a16bb",
+    "name": "Jeremy Bernstein — Derives a dual-ascent manifold optimizer, gives a small CIFAR sanity check, and formalizes composing",
+    "url": "https://thinkingmachines.ai/blog/modular-manifolds/",
+    "kind": "research",
+    "topics": [
+      "optimization theory",
+      "training efficiency",
+      "learning-rate scaling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:31.253Z",
+    "discoveredFrom": "https://x.com/jxbz",
+    "lastCheckedAt": "2026-11-15T08:49:31.253Z",
+    "lastSuccessAt": "2026-11-15T08:49:31.253Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Substantial derivations, experiment and limitations inspected; original algorithm explicitly builds on Jianlin Su and Franz Louis Cesista."
+  },
+  {
+    "id": "profile-evidence-134c8f65b0cecd59",
+    "name": "Jeremy Bernstein — Connects signSGD’s theorem to modern learning-rate and batch-size scaling by rewriting the token bud",
+    "url": "https://x.com/jxbz/status/2037212720475627756",
+    "kind": "social",
+    "topics": [
+      "optimization theory",
+      "training efficiency",
+      "learning-rate scaling"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:15.915Z",
+    "discoveredFrom": "https://x.com/jxbz",
+    "lastCheckedAt": "2026-11-15T08:49:15.915Z",
+    "lastSuccessAt": "2026-11-15T08:49:15.915Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. All four numbered author posts inspected; mathematical synthesis is his own, quoted external paper is not credited as his work."
+  },
+  {
+    "id": "profile-x-com-kellerjordan0",
+    "name": "Keller Jordan on X",
+    "url": "https://x.com/kellerjordan0",
+    "kind": "social",
+    "topics": [
+      "training efficiency",
+      "optimizers",
+      "benchmarks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:52:04.346Z",
+    "discoveredFrom": "https://x.com/karpathy/status/1846790537262571739",
+    "lastCheckedAt": "2026-11-15T08:52:04.346Z",
+    "lastSuccessAt": "2026-11-15T08:52:04.346Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original optimization experiments and transparent speedrun benchmarks with concrete statistical rules and attribution."
+  },
+  {
+    "id": "profile-evidence-55871c2433874be0",
+    "name": "Keller Jordan — Introduces fast CIFAR-10 training methods and a derandomized horizontal-flip augmentation, with publ",
+    "url": "https://arxiv.org/abs/2404.00498",
+    "kind": "research",
+    "topics": [
+      "training efficiency",
+      "optimizers",
+      "benchmarks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:07.632Z",
+    "discoveredFrom": "https://x.com/kellerjordan0",
+    "lastCheckedAt": "2026-11-15T08:46:07.632Z",
+    "lastSuccessAt": "2026-11-15T08:46:07.632Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete abstract, sole author and version history inspected; historical experiments not reproduced."
+  },
+  {
+    "id": "profile-evidence-841ea21853fd7178",
+    "name": "Keller Jordan — Own 2026 benchmark-maintenance discussion considers per-step validation near convergence and reporti",
+    "url": "https://github.com/KellerJordan/modded-nanogpt/discussions/270",
+    "kind": "research",
+    "topics": [
+      "training efficiency",
+      "optimizers",
+      "benchmarks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:50:33.769Z",
+    "discoveredFrom": "https://x.com/kellerjordan0",
+    "lastCheckedAt": "2026-11-15T08:50:33.769Z",
+    "lastSuccessAt": "2026-11-15T08:50:33.769Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete opening and both owner comments inspected; current method discussion, not a new standalone paper. Comments dated May 10, 2026."
+  },
+  {
+    "id": "profile-evidence-671d87a8dfaa310e",
+    "name": "Keller Jordan — Develops a current argument separating training-data efficiency from amortized inference economics a",
+    "url": "https://x.com/kellerjordan0/status/2108688125501513887",
+    "kind": "social",
+    "topics": [
+      "training efficiency",
+      "optimizers",
+      "benchmarks"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:52:04.346Z",
+    "discoveredFrom": "https://x.com/kellerjordan0",
+    "lastCheckedAt": "2026-11-15T08:52:04.346Z",
+    "lastSuccessAt": "2026-11-15T08:52:04.346Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete original expanded commentary inspected; human-data estimates and population analogies are the author’s speculative argument, not verified experimental findings."
+  },
+  {
+    "id": "profile-github-com-lucidrains",
+    "name": "Phil Wang (lucidrains) on GitHub",
+    "url": "https://github.com/lucidrains",
+    "kind": "social",
+    "topics": [
+      "multimodal generation",
+      "quantization",
+      "open implementations"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:24.406Z",
+    "discoveredFrom": "https://github.com/lucidrains",
+    "lastCheckedAt": "2026-11-15T08:36:24.406Z",
+    "lastSuccessAt": "2026-11-15T08:36:24.406Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Practical maintained implementations with runnable examples and explicit paper attribution."
+  },
+  {
+    "id": "profile-evidence-b599f242311688e9",
+    "name": "Phil Wang (lucidrains) — Maintains vector and scalar quantization implementations, explaining residual quantizers, gradient e",
+    "url": "https://github.com/lucidrains/vector-quantize-pytorch",
+    "kind": "research",
+    "topics": [
+      "multimodal generation",
+      "quantization",
+      "open implementations"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:02.992Z",
+    "discoveredFrom": "https://github.com/lucidrains",
+    "lastCheckedAt": "2026-11-15T08:36:02.992Z",
+    "lastSuccessAt": "2026-11-15T08:36:02.992Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Rendered repository and complete README captured; upstream methods credited, not claimed as invented by this maintainer."
+  },
+  {
+    "id": "profile-evidence-ba6bba1102d28f86",
+    "name": "Phil Wang (lucidrains) — Implements multimodal Transfusion with flow matching and extensions for multiple modalities and batc",
+    "url": "https://github.com/lucidrains/transfusion-pytorch",
+    "kind": "research",
+    "topics": [
+      "multimodal generation",
+      "quantization",
+      "open implementations"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:24.406Z",
+    "discoveredFrom": "https://github.com/lucidrains",
+    "lastCheckedAt": "2026-11-15T08:36:24.406Z",
+    "lastSuccessAt": "2026-11-15T08:36:24.406Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Rendered repository and complete README captured; implementation inspected but not installed or executed."
+  },
+  {
+    "id": "profile-x-com-larsankile",
+    "name": "Lars Ankile on X",
+    "url": "https://x.com/larsankile",
+    "kind": "social",
+    "topics": [
+      "robot learning",
+      "reinforcement learning",
+      "data collection"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:22.358Z",
+    "discoveredFrom": "https://x.com/chelseabfinn/status/2108673441314566158",
+    "lastCheckedAt": "2026-11-15T08:37:22.358Z",
+    "lastSuccessAt": "2026-11-15T08:37:22.358Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Firsthand robot learning methods, data collection and careful real-world evaluation protocols."
+  },
+  {
+    "id": "profile-evidence-a0d38346aa1cb127",
+    "name": "Lars Ankile — Mulligan targets observed failure initial states for supervised robot collection and combines it wit",
+    "url": "https://mulligan.page/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "reinforcement learning",
+      "data collection"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:08.464Z",
+    "discoveredFrom": "https://x.com/larsankile",
+    "lastCheckedAt": "2026-11-15T08:37:08.464Z",
+    "lastSuccessAt": "2026-11-15T08:37:08.464Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered primary project text captured; October 9, 2026 social announcement observed, page publication date not supplied."
+  },
+  {
+    "id": "profile-evidence-4ab7a0d0eaadfae6",
+    "name": "Lars Ankile — ResFiT adds lightweight per-step residual off-policy corrections to behavior cloning policies, with ",
+    "url": "https://residual-offpolicy-rl.github.io/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "reinforcement learning",
+      "data collection"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:22.358Z",
+    "discoveredFrom": "https://x.com/larsankile",
+    "lastCheckedAt": "2026-11-15T08:37:22.358Z",
+    "lastSuccessAt": "2026-11-15T08:37:22.358Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered primary project page and explicit first-author attribution captured; author site labels ICRA 2026."
+  },
+  {
+    "id": "profile-x-com-vincesitzmann",
+    "name": "Vincent Sitzmann on X",
+    "url": "https://x.com/vincesitzmann",
+    "kind": "social",
+    "topics": [
+      "generative models",
+      "embodied learning",
+      "dataset distillation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:38.153Z",
+    "discoveredFrom": "https://x.com/vincesitzmann",
+    "lastCheckedAt": "2026-11-15T08:41:38.153Z",
+    "lastSuccessAt": "2026-11-15T08:41:38.153Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original method explanations connecting generative representations to learning and embodied action."
+  },
+  {
+    "id": "profile-evidence-0f3c0e681c16fdce",
+    "name": "Vincent Sitzmann — Mirror self-trains video-to-action mappings from attempted execution of video plans, with no expert ",
+    "url": "https://wilcoxsonm21.github.io/mirror/",
+    "kind": "research",
+    "topics": [
+      "generative models",
+      "embodied learning",
+      "dataset distillation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:38.153Z",
+    "discoveredFrom": "https://x.com/vincesitzmann",
+    "lastCheckedAt": "2026-11-15T08:41:38.153Z",
+    "lastSuccessAt": "2026-11-15T08:41:38.153Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered project text and explicit coauthor attribution captured. Code marked coming soon; experiments described, not independently reproduced."
+  },
+  {
+    "id": "profile-evidence-03212f469149fcf8",
+    "name": "Vincent Sitzmann — Explains using drifting generative models to optimize a compact image set in pretrained feature spac",
+    "url": "https://x.com/vincesitzmann/status/2121324602286604785",
+    "kind": "social",
+    "topics": [
+      "generative models",
+      "embodied learning",
+      "dataset distillation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:16.550Z",
+    "discoveredFrom": "https://x.com/vincesitzmann",
+    "lastCheckedAt": "2026-11-15T08:38:16.550Z",
+    "lastSuccessAt": "2026-11-15T08:38:16.550Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete opening post and visible own followups captured; benchmark claim remains author-reported."
+  },
+  {
+    "id": "profile-x-com-akanazawa",
+    "name": "Angjoo Kanazawa on X",
+    "url": "https://x.com/akanazawa",
+    "kind": "social",
+    "topics": [
+      "active vision",
+      "robot learning",
+      "human motion"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:02.262Z",
+    "discoveredFrom": "https://x.com/akanazawa",
+    "lastCheckedAt": "2026-11-15T08:40:02.262Z",
+    "lastSuccessAt": "2026-11-15T08:40:02.262Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original lab methods connecting visual representations, active sensing and physically grounded behavior."
+  },
+  {
+    "id": "profile-evidence-94ac9784e1b09d72",
+    "name": "Angjoo Kanazawa — EyeRobot 2.0 uses hierarchical learned gaze, foveated stereo and fixation-relative action representa",
+    "url": "https://eyerobot2.github.io/",
+    "kind": "research",
+    "topics": [
+      "active vision",
+      "robot learning",
+      "human motion"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:01.912Z",
+    "discoveredFrom": "https://x.com/akanazawa",
+    "lastCheckedAt": "2026-11-15T08:40:01.912Z",
+    "lastSuccessAt": "2026-11-15T08:40:01.912Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered project text and explicit equal-advising author attribution inspected; experiments documented, not repeated."
+  },
+  {
+    "id": "profile-evidence-b538a63b17a3e045",
+    "name": "Angjoo Kanazawa — Social Humanoid combines shared motion tokens, Diffusion Forcing and low-level tracking with retarge",
+    "url": "https://von31.github.io/social-humanoid/",
+    "kind": "research",
+    "topics": [
+      "active vision",
+      "robot learning",
+      "human motion"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:02.262Z",
+    "discoveredFrom": "https://x.com/akanazawa",
+    "lastCheckedAt": "2026-11-15T08:40:02.262Z",
+    "lastSuccessAt": "2026-11-15T08:40:02.262Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full rendered project text and named coauthor attribution inspected; code and data labeled SOON at capture."
+  },
+  {
+    "id": "profile-x-com-ed-johns",
+    "name": "Edward Johns on X",
+    "url": "https://x.com/Ed__Johns",
+    "kind": "social",
+    "topics": [
+      "in-context learning",
+      "robotics",
+      "synthetic data"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:13.768Z",
+    "discoveredFrom": "https://x.com/LerrelPinto/status/2116214616787435763",
+    "lastCheckedAt": "2026-11-15T08:40:13.768Z",
+    "lastSuccessAt": "2026-11-15T08:40:13.768Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Research on robots learning new tasks from demonstrations without per-task gradient updates."
+  },
+  {
+    "id": "profile-evidence-9c3369fbe5e09a58",
+    "name": "Edward Johns — SynthICL learns RGB-based in-context imitation from synthetic data using a flow-matching transformer",
+    "url": "https://synth-icl.github.io/",
+    "kind": "research",
+    "topics": [
+      "in-context learning",
+      "robotics",
+      "synthetic data"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:13.332Z",
+    "discoveredFrom": "https://x.com/Ed__Johns",
+    "lastCheckedAt": "2026-11-15T08:40:13.332Z",
+    "lastSuccessAt": "2026-11-15T08:40:13.332Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete project text captured, including authors, method and scope of 16 unseen real-world tasks."
+  },
+  {
+    "id": "profile-evidence-4da99d1ec500990c",
+    "name": "Edward Johns — Instant-Fold learns deformation-aware visual representations and demonstration-conditioned flow matc",
+    "url": "https://instant-fold.github.io/",
+    "kind": "research",
+    "topics": [
+      "in-context learning",
+      "robotics",
+      "synthetic data"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:13.768Z",
+    "discoveredFrom": "https://x.com/Ed__Johns",
+    "lastCheckedAt": "2026-11-15T08:40:13.768Z",
+    "lastSuccessAt": "2026-11-15T08:40:13.768Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete project text captured; distinct task/method from SynthICL, author-reported sim-to-real transfer."
+  },
+  {
+    "id": "profile-x-com-abhishekunique7",
+    "name": "Abhishek Gupta on X",
+    "url": "https://x.com/abhishekunique7",
+    "kind": "social",
+    "topics": [
+      "robot learning",
+      "latent reasoning",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:38.172Z",
+    "discoveredFrom": "https://x.com/abhishekunique7",
+    "lastCheckedAt": "2026-11-15T08:41:38.172Z",
+    "lastSuccessAt": "2026-11-15T08:41:38.172Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Methods for adaptable robot policies, human feedback and test-time computation, with detailed primary artifacts."
+  },
+  {
+    "id": "profile-evidence-75ffee420b987209",
+    "name": "Abhishek Gupta — Q-OIL treats imperfect human interventions as exploration guidance and uses separate task and optimi",
+    "url": "https://weirdlabuw.github.io/qoil/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "latent reasoning",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:38.172Z",
+    "discoveredFrom": "https://x.com/abhishekunique7",
+    "lastCheckedAt": "2026-11-15T08:41:38.172Z",
+    "lastSuccessAt": "2026-11-15T08:41:38.172Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete method/results sections and BibTeX authorship captured; experiments describe eight participants and real robot tasks."
+  },
+  {
+    "id": "profile-evidence-f48755b866df549d",
+    "name": "Abhishek Gupta — Latent Memory Palace casts control reasoning as variational inference with variable-length latent to",
+    "url": "https://weirdlabuw.github.io/lmp/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "latent reasoning",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:26.654Z",
+    "discoveredFrom": "https://x.com/abhishekunique7",
+    "lastCheckedAt": "2026-11-15T08:41:26.654Z",
+    "lastSuccessAt": "2026-11-15T08:41:26.654Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete primary page captured, including architecture, baselines and compression ablations; documentary inspection only."
+  },
+  {
+    "id": "profile-x-com-keunhongp",
+    "name": "Keunhong Park on X",
+    "url": "https://x.com/KeunhongP",
+    "kind": "social",
+    "topics": [
+      "3D generation",
+      "world models",
+      "spatial perception"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:02.650Z",
+    "discoveredFrom": "https://x.com/KeunhongP",
+    "lastCheckedAt": "2026-11-15T08:43:02.650Z",
+    "lastSuccessAt": "2026-11-15T08:43:02.650Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Firsthand spatial-model development and research connecting image generation to geometric understanding."
+  },
+  {
+    "id": "profile-evidence-dcf6d603ab0ccbdf",
+    "name": "Keunhong Park — Atlas uses camera-grounded spatial context and multimodal autoregressive rectified-flow generation f",
+    "url": "https://worldlabs.ai/blog/atlas",
+    "kind": "research",
+    "topics": [
+      "3D generation",
+      "world models",
+      "spatial perception"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:02.230Z",
+    "discoveredFrom": "https://x.com/KeunhongP",
+    "lastCheckedAt": "2026-11-15T08:43:02.230Z",
+    "lastSuccessAt": "2026-11-15T08:43:02.230Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full technical article captured, including model architecture and benchmark protocol caveats; team work with explicit individual attribution on author site."
+  },
+  {
+    "id": "profile-evidence-4f9535315c560591",
+    "name": "Keunhong Park — Modality Forcing independently noises image/depth modalities and uses per-modality decoders to adapt",
+    "url": "https://modality-forcing.github.io/",
+    "kind": "research",
+    "topics": [
+      "3D generation",
+      "world models",
+      "spatial perception"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:02.650Z",
+    "discoveredFrom": "https://x.com/KeunhongP",
+    "lastCheckedAt": "2026-11-15T08:43:02.650Z",
+    "lastSuccessAt": "2026-11-15T08:43:02.650Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete primary project captured with coauthor list, methods, ablations and benchmark tables; results not independently reproduced."
+  },
+  {
+    "id": "profile-x-com-pulkitology",
+    "name": "Pulkit Agrawal on X",
+    "url": "https://x.com/pulkitology",
+    "kind": "social",
+    "topics": [
+      "robot learning",
+      "control",
+      "sim-to-real"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:19.020Z",
+    "discoveredFrom": "https://x.com/pulkitology",
+    "lastCheckedAt": "2026-11-15T08:43:19.020Z",
+    "lastSuccessAt": "2026-11-15T08:43:19.020Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Concrete robot-learning experiments examining how sensing, controller gains and hardware choices affect learned policies."
+  },
+  {
+    "id": "profile-evidence-4029b608c1c1c3e7",
+    "name": "Pulkit Agrawal — Blind Precise Assembly learns contact-rich insertion from joint histories with simulation-trained po",
+    "url": "https://younghyopark.me/blind-proprioceptive-assembly/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "control",
+      "sim-to-real"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:18.999Z",
+    "discoveredFrom": "https://x.com/pulkitology",
+    "lastCheckedAt": "2026-11-15T08:43:18.999Z",
+    "lastSuccessAt": "2026-11-15T08:43:18.999Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete rendered method captured; real-world transfer is peg insertion, while gear meshing and threading are simulation examples. Authorship explicitly retained from collaborator site."
+  },
+  {
+    "id": "profile-evidence-7991206a260c6bcd",
+    "name": "Pulkit Agrawal — Tune to Learn systematically studies controller gains across imitation, reinforcement learning and s",
+    "url": "https://younghyopark.me/tune-to-learn/",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "control",
+      "sim-to-real"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:19.020Z",
+    "discoveredFrom": "https://x.com/pulkitology",
+    "lastCheckedAt": "2026-11-15T08:43:19.020Z",
+    "lastSuccessAt": "2026-11-15T08:43:19.020Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete primary page captured with author list and experimental details. Shared coauthored evidence family with the other included author; not independent corroboration."
+  },
+  {
+    "id": "profile-x-com-younghyo-park",
+    "name": "Younghyo Park on X",
+    "url": "https://x.com/younghyo_park",
+    "kind": "social",
+    "topics": [
+      "robot learning",
+      "control",
+      "sim-to-real"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:43:19.020Z",
+    "discoveredFrom": "https://x.com/pulkitology/status/2118412513930813877",
+    "lastCheckedAt": "2026-11-15T08:43:19.020Z",
+    "lastSuccessAt": "2026-11-15T08:43:19.020Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Concrete robot-learning experiments examining how sensing, controller gains and hardware choices affect learned policies."
+  },
+  {
+    "id": "profile-x-com-kyutai-labs",
+    "name": "Kyutai on X",
+    "url": "https://x.com/kyutai_labs",
+    "kind": "social",
+    "topics": [
+      "speech synthesis",
+      "world models",
+      "open research"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:15.253Z",
+    "discoveredFrom": "https://x.com/kyutai_labs",
+    "lastCheckedAt": "2026-11-15T08:44:15.253Z",
+    "lastSuccessAt": "2026-11-15T08:44:15.253Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Detailed original methods and open artifacts spanning audio efficiency and interactive world models."
+  },
+  {
+    "id": "profile-x-com-bfl-ai",
+    "name": "Black Forest Labs on X",
+    "url": "https://x.com/bfl_ai",
+    "kind": "social",
+    "topics": [
+      "image generation",
+      "multimodal models",
+      "representation learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:45.746Z",
+    "discoveredFrom": "https://x.com/bfl_ai",
+    "lastCheckedAt": "2026-11-15T08:47:45.746Z",
+    "lastSuccessAt": "2026-11-15T08:47:45.746Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original model-development reports with training details and controlled representation studies."
+  },
+  {
+    "id": "profile-evidence-40f1bee179101a66",
+    "name": "Black Forest Labs — Self-Flow uses dual-timestep token noise and teacher/student information asymmetry to jointly train ",
+    "url": "https://bfl.ai/research/self-flow",
+    "kind": "research",
+    "topics": [
+      "image generation",
+      "multimodal models",
+      "representation learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:45.715Z",
+    "discoveredFrom": "https://x.com/bfl_ai",
+    "lastCheckedAt": "2026-11-15T08:47:45.715Z",
+    "lastSuccessAt": "2026-11-15T08:47:45.715Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full embedded report captured, including matched comparisons, multimodal training and explicit author affiliations."
+  },
+  {
+    "id": "profile-evidence-c3ab23a582a2299c",
+    "name": "Black Forest Labs — Original controlled study examines reconstruction, learnability and compression tradeoffs across aut",
+    "url": "https://bfl.ai/research/representation-comparison",
+    "kind": "research",
+    "topics": [
+      "image generation",
+      "multimodal models",
+      "representation learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:45.746Z",
+    "discoveredFrom": "https://x.com/bfl_ai",
+    "lastCheckedAt": "2026-11-15T08:47:45.746Z",
+    "lastSuccessAt": "2026-11-15T08:47:45.746Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Rendered report text and visible table rows captured; table pagination not exhausted. Reconstruction protocols and limitations retained. Historical contribution paired with current recurring profile."
+  },
+  {
+    "id": "profile-x-com-lerrelpinto",
+    "name": "Lerrel Pinto on X",
+    "url": "https://x.com/LerrelPinto",
+    "kind": "social",
+    "topics": [
+      "robot learning",
+      "coding agents",
+      "general robot policies"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:10.467Z",
+    "discoveredFrom": "https://x.com/LerrelPinto",
+    "lastCheckedAt": "2026-11-15T08:48:10.467Z",
+    "lastSuccessAt": "2026-11-15T08:48:10.467Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Original robotics work covering deployable learned policies and code-based laboratory adaptation."
+  },
+  {
+    "id": "profile-evidence-bcf805375143dcba",
+    "name": "Lerrel Pinto — WetRobo distributes hardware, demonstration references and agent operating rules, evaluating code ad",
+    "url": "https://arxiv.org/html/2609.18435v1",
+    "kind": "research",
+    "topics": [
+      "robot learning",
+      "coding agents",
+      "general robot policies"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:10.467Z",
+    "discoveredFrom": "https://x.com/LerrelPinto",
+    "lastCheckedAt": "2026-11-15T08:48:10.467Z",
+    "lastSuccessAt": "2026-11-15T08:48:10.467Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full original paper captured with methods, trials and limitations; no broader claim about general agent superiority inferred."
+  },
+  {
+    "id": "profile-x-com-poolio",
+    "name": "Ben Poole on X",
+    "url": "https://x.com/poolio",
+    "kind": "social",
+    "topics": [
+      "3D generation",
+      "video diffusion",
+      "world models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:20.182Z",
+    "discoveredFrom": "https://x.com/poolio",
+    "lastCheckedAt": "2026-11-15T08:49:20.182Z",
+    "lastSuccessAt": "2026-11-15T08:49:20.182Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. An active originator of 3D and world-model research with methods connecting generation and reconstruction."
+  },
+  {
+    "id": "profile-evidence-7970bd81b515d096",
+    "name": "Ben Poole — CAT4D combines camera/time-conditioned multiview diffusion, alternating view/time sampling and defor",
+    "url": "https://arxiv.org/html/2411.18613v2",
+    "kind": "research",
+    "topics": [
+      "3D generation",
+      "video diffusion",
+      "world models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:20.168Z",
+    "discoveredFrom": "https://x.com/poolio",
+    "lastCheckedAt": "2026-11-15T08:49:20.168Z",
+    "lastSuccessAt": "2026-11-15T08:49:20.168Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Full paper captured, including training data, methods and benchmarks. Date is v2 revision; first submission November 27, 2024, CVPR 2025."
+  },
+  {
+    "id": "profile-evidence-0312913c6a86e03d",
+    "name": "Ben Poole — SimVS uses generative video augmentation to synthesize scene and illumination inconsistencies, then ",
+    "url": "https://alextrevithick.com/simvs/",
+    "kind": "research",
+    "topics": [
+      "3D generation",
+      "video diffusion",
+      "world models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:48:55.945Z",
+    "discoveredFrom": "https://x.com/poolio",
+    "lastCheckedAt": "2026-11-15T08:48:55.945Z",
+    "lastSuccessAt": "2026-11-15T08:48:55.945Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete primary project sections and BibTeX coauthor attribution captured. Distinct method from CAT4D although CAT4D reuses this synthetic-data approach; these are not independent replications."
+  },
+  {
+    "id": "profile-evidence-9f80864d1b7e8890",
+    "name": "Ben Poole — Current original post identifies Genie 4 as his final Google project and describes the remaining phy",
+    "url": "https://x.com/poolio/status/2115133354010124607",
+    "kind": "social",
+    "topics": [
+      "3D generation",
+      "video diffusion",
+      "world models"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:49:20.182Z",
+    "discoveredFrom": "https://x.com/poolio",
+    "lastCheckedAt": "2026-11-15T08:49:20.182Z",
+    "lastSuccessAt": "2026-11-15T08:49:20.182Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete own post captured to establish current activity, not counted as one of the two substantial contributions. Older author website employer text is stale against this current post."
+  },
+  {
+    "id": "profile-x-com-rishibommasani",
+    "name": "Rishi Bommasani on X",
+    "url": "https://x.com/RishiBommasani",
+    "kind": "social",
+    "topics": [
+      "AI evaluation",
+      "AI research automation",
+      "AI governance"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/random_walker/status/2120253269058498999",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for testing whether benchmark progress transfers to open-ended research and for connecting model evaluation to social institutions."
+  },
+  {
+    "id": "profile-evidence-1cf9928a3d86ee7f",
+    "name": "Rishi Bommasani — Introduces shadow evaluations: original paper authors grade agents attempting unpublished open-ended",
+    "url": "https://arxiv.org/abs/2607.27191",
+    "kind": "research",
+    "topics": [
+      "AI evaluation",
+      "AI research automation",
+      "AI governance"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/RishiBommasani",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-6fee92389fb9ee6f",
+    "name": "Rishi Bommasani — Coauthored a taxonomy of legal alignment, distinguishing legal compliance, interpretive methods and ",
+    "url": "https://arxiv.org/abs/2601.04175",
+    "kind": "research",
+    "topics": [
+      "AI evaluation",
+      "AI research automation",
+      "AI governance"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/RishiBommasani",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-animaanandkumar",
+    "name": "Anima Anandkumar on X",
+    "url": "https://x.com/AnimaAnandkumar",
+    "kind": "social",
+    "topics": [
+      "AI for science",
+      "neural operators",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/random_walker/following",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for scientific machine learning that ties architecture choices to physical observables and explicitly evaluates uncertainty rather than just plausible samples."
+  },
+  {
+    "id": "profile-evidence-e3c7889af4a3d088",
+    "name": "Anima Anandkumar — eSpinor introduces SU(2)-equivariant spinor message passing and compares magnetic-property predictio",
+    "url": "https://arxiv.org/abs/2610.29111",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "neural operators",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/AnimaAnandkumar",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-b8fd98daeb5a26c0",
+    "name": "Anima Anandkumar — PosteriorBench evaluates generative inverse solvers using reference posterior distributions and five",
+    "url": "https://arxiv.org/abs/2609.20794",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "neural operators",
+      "evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:36:58.762Z",
+    "discoveredFrom": "https://x.com/AnimaAnandkumar",
+    "lastCheckedAt": "2026-11-15T08:36:58.762Z",
+    "lastSuccessAt": "2026-11-15T08:36:58.762Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-mariushobbhahn",
+    "name": "Marius Hobbhahn on X",
+    "url": "https://x.com/MariusHobbhahn",
+    "kind": "social",
+    "topics": [
+      "AI safety",
+      "agent monitoring",
+      "scheming evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://arxiv.org/abs/2603.00829",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for practical studies of agent oversight, including where monitoring gains saturate and how cost affects evaluation choices."
+  },
+  {
+    "id": "profile-evidence-a7575c0f037039d6",
+    "name": "Marius Hobbhahn — Studies prompted black-box scheming monitors optimized using synthetic trajectories and evaluated on",
+    "url": "https://arxiv.org/abs/2603.00829",
+    "kind": "research",
+    "topics": [
+      "AI safety",
+      "agent monitoring",
+      "scheming evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://x.com/MariusHobbhahn",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-51b760e37357abbc",
+    "name": "Marius Hobbhahn — Studies trained action-only deliberative monitors across six out-of-distribution benchmarks, compari",
+    "url": "https://arxiv.org/abs/2605.29601",
+    "kind": "research",
+    "topics": [
+      "AI safety",
+      "agent monitoring",
+      "scheming evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://x.com/MariusHobbhahn",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-ethanjperez",
+    "name": "Ethan Perez on X",
+    "url": "https://x.com/EthanJPerez",
+    "kind": "social",
+    "topics": [
+      "AI alignment",
+      "evaluation",
+      "reasoning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://arxiv.org/abs/2601.23045",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for evaluating reasoning without clean ground truth and distinguishing systematic misalignment from incoherent failures."
+  },
+  {
+    "id": "profile-evidence-4bf72d957d156f6b",
+    "name": "Ethan Perez — Released a dataset of rated conceptual arguments with expert ratings and two scoring functions for t",
+    "url": "https://arxiv.org/abs/2607.27499",
+    "kind": "research",
+    "topics": [
+      "AI alignment",
+      "evaluation",
+      "reasoning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://x.com/EthanJPerez",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-5849a56ab769be5d",
+    "name": "Ethan Perez — Uses a bias-variance decomposition to analyze model error-incoherence as task complexity, reasoning ",
+    "url": "https://arxiv.org/abs/2601.23045",
+    "kind": "research",
+    "topics": [
+      "AI alignment",
+      "evaluation",
+      "reasoning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:37:27.877Z",
+    "discoveredFrom": "https://x.com/EthanJPerez",
+    "lastCheckedAt": "2026-11-15T08:37:27.877Z",
+    "lastSuccessAt": "2026-11-15T08:37:27.877Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-evanhub",
+    "name": "Evan Hubinger on X",
+    "url": "https://x.com/EvanHub",
+    "kind": "social",
+    "topics": [
+      "AI safety",
+      "alignment audits",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:04.301Z",
+    "discoveredFrom": "https://alignment.anthropic.com/2026/auditing-overt-saboteur/",
+    "lastCheckedAt": "2026-11-15T08:38:04.301Z",
+    "lastSuccessAt": "2026-11-15T08:38:04.301Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for hands-on research into detectable sabotage and the stability of failure disclosure during training."
+  },
+  {
+    "id": "profile-evidence-feade4fa72511256",
+    "name": "Evan Hubinger — A blind human auditor using Petri distinguished three overt saboteurs from two benign models; automa",
+    "url": "https://alignment.anthropic.com/2026/auditing-overt-saboteur/",
+    "kind": "research",
+    "topics": [
+      "AI safety",
+      "alignment audits",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:04.301Z",
+    "discoveredFrom": "https://x.com/EvanHub",
+    "lastCheckedAt": "2026-11-15T08:38:04.301Z",
+    "lastSuccessAt": "2026-11-15T08:38:04.301Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-ea9fedc4a9d989b1",
+    "name": "Evan Hubinger — Studies instability in models admitting mistakes under outcome-only reinforcement learning, includin",
+    "url": "https://arxiv.org/abs/2609.33220",
+    "kind": "research",
+    "topics": [
+      "AI safety",
+      "alignment audits",
+      "reinforcement learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:04.301Z",
+    "discoveredFrom": "https://x.com/EvanHub",
+    "lastCheckedAt": "2026-11-15T08:38:04.301Z",
+    "lastSuccessAt": "2026-11-15T08:38:04.301Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-janleike",
+    "name": "Jan Leike on X",
+    "url": "https://x.com/janleike",
+    "kind": "social",
+    "topics": [
+      "scalable oversight",
+      "weak-to-strong learning",
+      "AI research agents"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:44.238Z",
+    "discoveredFrom": "https://jan.leike.name/",
+    "lastCheckedAt": "2026-11-15T08:40:44.238Z",
+    "lastSuccessAt": "2026-11-15T08:40:44.238Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for concrete proposals and experiments on supervising stronger models and automating bounded alignment research."
+  },
+  {
+    "id": "profile-evidence-66b6bc3f4afa2dd5",
+    "name": "Jan Leike — Introduces excess description length to distinguish eliciting existing model capabilities from teach",
+    "url": "https://arxiv.org/abs/2601.04728",
+    "kind": "research",
+    "topics": [
+      "scalable oversight",
+      "weak-to-strong learning",
+      "AI research agents"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:38:04.301Z",
+    "discoveredFrom": "https://x.com/janleike",
+    "lastCheckedAt": "2026-11-15T08:38:04.301Z",
+    "lastSuccessAt": "2026-11-15T08:38:04.301Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-49de17de19310760",
+    "name": "Jan Leike — An autonomous research-agent study reports gains on weak-to-strong supervision in a bounded Qwen tra",
+    "url": "https://alignment.anthropic.com/2026/automated-w2s-researcher/",
+    "kind": "research",
+    "topics": [
+      "scalable oversight",
+      "weak-to-strong learning",
+      "AI research agents"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:44.238Z",
+    "discoveredFrom": "https://x.com/janleike",
+    "lastCheckedAt": "2026-11-15T08:40:44.238Z",
+    "lastSuccessAt": "2026-11-15T08:40:44.238Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-milescranmer",
+    "name": "Miles Cranmer on X",
+    "url": "https://x.com/MilesCranmer",
+    "kind": "social",
+    "topics": [
+      "AI for science",
+      "symbolic regression",
+      "physics machine learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:44.238Z",
+    "discoveredFrom": "https://arxiv.org/abs/2602.21307",
+    "lastCheckedAt": "2026-11-15T08:40:44.238Z",
+    "lastSuccessAt": "2026-11-15T08:40:44.238Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Adds original scientific-machine-learning methods with interpretable mathematical representations and explicit task evaluations."
+  },
+  {
+    "id": "profile-evidence-1c0d02d41199bd0b",
+    "name": "Miles Cranmer — SymTorch studies symbolic distillation of neural-network components across architectures, using reco",
+    "url": "https://arxiv.org/abs/2602.21307",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "symbolic regression",
+      "physics machine learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:44.238Z",
+    "discoveredFrom": "https://x.com/MilesCranmer",
+    "lastCheckedAt": "2026-11-15T08:40:44.238Z",
+    "lastSuccessAt": "2026-11-15T08:40:44.238Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-a562e25da9f3bee1",
+    "name": "Miles Cranmer — Mesh-native tokenisation studies learning over unstructured physical meshes and evaluates transfer/g",
+    "url": "https://arxiv.org/abs/2610.12618",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "symbolic regression",
+      "physics machine learning"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:44.238Z",
+    "discoveredFrom": "https://x.com/MilesCranmer",
+    "lastCheckedAt": "2026-11-15T08:40:44.238Z",
+    "lastSuccessAt": "2026-11-15T08:40:44.238Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-james-y-zou",
+    "name": "James Zou on X",
+    "url": "https://x.com/james_y_zou",
+    "kind": "social",
+    "topics": [
+      "AI for science",
+      "research agents",
+      "scientific evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:42.746Z",
+    "discoveredFrom": "https://arxiv.org/abs/2509.06917",
+    "lastCheckedAt": "2026-11-15T08:41:42.746Z",
+    "lastSuccessAt": "2026-11-15T08:41:42.746Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for experiments connecting language models to scientific workflows, with concrete applications and evaluation claims to follow up."
+  },
+  {
+    "id": "profile-evidence-b1efec4fbb4b3549",
+    "name": "James Zou — Studies analogical reasoning for more novel and diverse scientific ideas, including biomedical imple",
+    "url": "https://arxiv.org/abs/2605.11258",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "research agents",
+      "scientific evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:06.678Z",
+    "discoveredFrom": "https://x.com/james_y_zou",
+    "lastCheckedAt": "2026-11-15T08:40:06.678Z",
+    "lastSuccessAt": "2026-11-15T08:40:06.678Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-37cc330ab5eca069",
+    "name": "James Zou — Paper2Agent converts papers and associated code into tested MCP tools, then evaluates reproduction a",
+    "url": "https://arxiv.org/abs/2509.06917",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "research agents",
+      "scientific evaluation"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:41:42.746Z",
+    "discoveredFrom": "https://x.com/james_y_zou",
+    "lastCheckedAt": "2026-11-15T08:41:42.746Z",
+    "lastSuccessAt": "2026-11-15T08:41:42.746Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-amandaaskell",
+    "name": "Amanda Askell on X",
+    "url": "https://x.com/AmandaAskell",
+    "kind": "social",
+    "topics": [
+      "AI behavior",
+      "constitutional AI",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:06.678Z",
+    "discoveredFrom": "https://askell.io/publications/",
+    "lastCheckedAt": "2026-11-15T08:40:06.678Z",
+    "lastSuccessAt": "2026-11-15T08:40:06.678Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for first-hand reasoning about how behavioral values are specified and translated into assistant training."
+  },
+  {
+    "id": "profile-evidence-aca39f813eea9ac6",
+    "name": "Amanda Askell — The published constitution explicitly credits Askell as primary author of most text. Its complete pr",
+    "url": "https://www.anthropic.com/constitution",
+    "kind": "research",
+    "topics": [
+      "AI behavior",
+      "constitutional AI",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:39:49.130Z",
+    "discoveredFrom": "https://x.com/AmandaAskell",
+    "lastCheckedAt": "2026-11-15T08:39:49.130Z",
+    "lastSuccessAt": "2026-11-15T08:39:49.130Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-5772c3714997de0c",
+    "name": "Amanda Askell — Coauthored three experiments testing whether RLHF models reduce harmful outputs when prompted to sel",
+    "url": "https://arxiv.org/abs/2302.07459",
+    "kind": "research",
+    "topics": [
+      "AI behavior",
+      "constitutional AI",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:06.678Z",
+    "discoveredFrom": "https://x.com/AmandaAskell",
+    "lastCheckedAt": "2026-11-15T08:40:06.678Z",
+    "lastSuccessAt": "2026-11-15T08:40:06.678Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-sleepinyourhat",
+    "name": "Samuel Bowman on X",
+    "url": "https://x.com/sleepinyourhat",
+    "kind": "social",
+    "topics": [
+      "AI evaluation",
+      "behavioral auditing",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:40:06.678Z",
+    "discoveredFrom": "https://alignment.anthropic.com/2026/auditing-overt-saboteur/",
+    "lastCheckedAt": "2026-11-15T08:40:06.678Z",
+    "lastSuccessAt": "2026-11-15T08:40:06.678Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for research on how to test model behavior and where automated audits need human investigation."
+  },
+  {
+    "id": "profile-x-com-ch402",
+    "name": "Chris Olah on X",
+    "url": "https://x.com/ch402",
+    "kind": "social",
+    "topics": [
+      "mechanistic interpretability",
+      "AI behavior",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:23.074Z",
+    "discoveredFrom": "https://x.com/ch402",
+    "lastCheckedAt": "2026-11-15T08:47:23.074Z",
+    "lastSuccessAt": "2026-11-15T08:47:23.074Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Useful for detailed explanations of model internals and careful separation of interpretability hypotheses from what experiments establish."
+  },
+  {
+    "id": "profile-evidence-fbc2b9d822be9900",
+    "name": "Chris Olah — Circuit-tracing work studies Claude 3.5 Haiku through replacement models and intervention experiment",
+    "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+    "kind": "research",
+    "topics": [
+      "mechanistic interpretability",
+      "AI behavior",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:46:26.198Z",
+    "discoveredFrom": "https://x.com/ch402",
+    "lastCheckedAt": "2026-11-15T08:46:26.198Z",
+    "lastSuccessAt": "2026-11-15T08:46:26.198Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-fcd6166aa34f6d9b",
+    "name": "Chris Olah — An authored synthesis surveys behavioral and interpretability evidence for persona selection and rai",
+    "url": "https://alignment.anthropic.com/2026/psm/",
+    "kind": "research",
+    "topics": [
+      "mechanistic interpretability",
+      "AI behavior",
+      "alignment"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:23.074Z",
+    "discoveredFrom": "https://x.com/ch402",
+    "lastCheckedAt": "2026-11-15T08:47:23.074Z",
+    "lastSuccessAt": "2026-11-15T08:47:23.074Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Primary page: title, explicit byline/date, complete summary and introduction plus start of the framing section; not a full article review."
+  },
+  {
+    "id": "profile-x-com-andrewwhite01",
+    "name": "Andrew White on X",
+    "url": "https://x.com/andrewwhite01",
+    "kind": "social",
+    "topics": [
+      "AI for science",
+      "post-training",
+      "chemical structure recognition"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:15.927Z",
+    "discoveredFrom": "https://arxiv.org/abs/2607.28532",
+    "lastCheckedAt": "2026-11-15T08:47:15.927Z",
+    "lastSuccessAt": "2026-11-15T08:47:15.927Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Adds first-hand scientific model-building work with concrete task definitions, baselines and measurement questions."
+  },
+  {
+    "id": "profile-evidence-f1830428400d8300",
+    "name": "Andrew White — Introduces OCSRGlyph and MarkushGlyph for chemical structure recognition, with stereochemistry handl",
+    "url": "https://arxiv.org/abs/2607.28532",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "post-training",
+      "chemical structure recognition"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:50.662Z",
+    "discoveredFrom": "https://x.com/andrewwhite01",
+    "lastCheckedAt": "2026-11-15T08:44:50.662Z",
+    "lastSuccessAt": "2026-11-15T08:44:50.662Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-938a189eeae54081",
+    "name": "Andrew White — Studies a co-trained LLM judge as the sole reward from reference answers, evaluating arithmetic/chem",
+    "url": "https://arxiv.org/abs/2610.38851",
+    "kind": "research",
+    "topics": [
+      "AI for science",
+      "post-training",
+      "chemical structure recognition"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:47:15.927Z",
+    "discoveredFrom": "https://x.com/andrewwhite01",
+    "lastCheckedAt": "2026-11-15T08:47:15.927Z",
+    "lastSuccessAt": "2026-11-15T08:47:15.927Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-x-com-ohlennart",
+    "name": "Lennart Heim on X",
+    "url": "https://x.com/ohlennart",
+    "kind": "social",
+    "topics": [
+      "AI governance",
+      "compute policy",
+      "incident reporting"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:50.662Z",
+    "discoveredFrom": "https://arxiv.org/abs/2511.05914",
+    "lastCheckedAt": "2026-11-15T08:44:50.662Z",
+    "lastSuccessAt": "2026-11-15T08:44:50.662Z",
+    "lastCoverageAt": null,
+    "monitor": true,
+    "feedUrl": null,
+    "notes": "Public profile and selected original contributions inspected during dedicated catalogue discovery. Bounded sample; no complete news-window coverage or measured posting cadence. Adds institutional design and compute economics analysis that makes policy assumptions and tradeoffs inspectable."
+  },
+  {
+    "id": "profile-evidence-2cffe971b112a112",
+    "name": "Lennart Heim — Develops seven incident-reporting design dimensions from literature and nine safety-critical-industr",
+    "url": "https://arxiv.org/abs/2511.05914",
+    "kind": "research",
+    "topics": [
+      "AI governance",
+      "compute policy",
+      "incident reporting"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:50.662Z",
+    "discoveredFrom": "https://x.com/ohlennart",
+    "lastCheckedAt": "2026-11-15T08:44:50.662Z",
+    "lastSuccessAt": "2026-11-15T08:44:50.662Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
+  },
+  {
+    "id": "profile-evidence-0e6bccb4f1501c4b",
+    "name": "Lennart Heim — Separates how improved compute efficiency expands access from how it advances frontier performance; ",
+    "url": "https://arxiv.org/abs/2311.15377",
+    "kind": "research",
+    "topics": [
+      "AI governance",
+      "compute policy",
+      "incident reporting"
+    ],
+    "status": "active",
+    "discoveredAt": "2026-11-15T08:44:50.662Z",
+    "discoveredFrom": "https://x.com/ohlennart",
+    "lastCheckedAt": "2026-11-15T08:44:50.662Z",
+    "lastSuccessAt": "2026-11-15T08:44:50.662Z",
+    "feedUrl": null,
+    "monitor": false,
+    "notes": "Individual original contribution inspected for publisher selection, not a recurring monitor. Complete title, author list, publication metadata, abstract or introductory section; not a full paper review."
   }
 ]
