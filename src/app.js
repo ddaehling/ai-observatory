@@ -108,7 +108,7 @@
     plot: ['open', 'closed']
   };
   const THEME_LABEL = { auto: 'Automatic', plate: 'Daylight', darkroom: 'Night sky', redlight: 'Night vision' };
-  const PAGE = { reports: 60, sources: 50 };
+  const PAGE = { reports: 60, sources: 50, accounts: 40 };
   /* Measured row heights per density, in rem. contain-intrinsic-size is computed
      from these rather than guessed, so the document does not grow underneath the
      scrollbar as the reader moves down it. */
@@ -135,10 +135,11 @@
   const app = $('#app');
   const state = {
     meta: null, entries: [], byId: new Map(), runsLight: [], sourceStats: null,
-    details: new Map(), sources: null, runs: null,
+    details: new Map(), sources: null, runs: null, accounts: null,
     reading: Object.create(null), prefs: {}, storageOK: true,
     filters: { q: '', category: '', min: '', reading: '', sort: 'latest' },
     sourceFilters: { q: '', kind: '', status: '', scope: '' },
+    accountFilters: { q: '', platform: '', status: 'assessed' }, accountShown: PAGE.accounts,
     route: { name: '', id: '', anchor: '' }, routeToken: 0, booted: false,
     activeReport: null, listScroll: 0, listShown: PAGE.reports, sourceShown: PAGE.sources,
     palette: { index: 0, items: [] },
@@ -245,6 +246,17 @@
       state.runs = Array.isArray(data.runs) ? data.runs : [];
     }
     return state.runs;
+  }
+
+  async function loadAccounts() {
+    if (state.accounts) return state.accounts;
+    const payload = await fetchJSON('./accounts.json');
+    if (!payload || !Array.isArray(payload.accounts)) {
+      pending.delete('./accounts.json');
+      throw new Error('Unexpected accounts file.');
+    }
+    state.accounts = payload.accounts;
+    return state.accounts;
   }
 
   /* --------------------------------------- 5. Reading state, preferences, messages */
@@ -842,6 +854,7 @@ ${state.sky.table ? skyTableHTML() : ''}`;
       { label: 'Library', detail: 'Every report', url: '#index' },
       { label: 'Reading queue', detail: 'What you saved', url: '#queue' },
       { label: 'Sources', detail: 'The source ledger', url: '#sources' },
+      { label: 'AI accounts', detail: 'People and teams on X, GitHub and model hubs', url: '#accounts' },
       { label: 'Editions', detail: 'Every scan', url: '#editions' },
       { label: 'Method', detail: 'How reports are rated', url: '#method' },
       { label: 'Settings', detail: 'Appearance, text size, your data', url: '#settings' }
@@ -1194,8 +1207,8 @@ ${queueButton(entry)}</span></p>
   }
 
   /* ------------------------------------------------- 10. Router, focus, transitions */
-  const ROUTE_NAMES = ['index', 'queue', 'report', 'sources', 'editions', 'method', 'settings'];
-  const TITLES = { index: 'Library', queue: 'Reading queue', sources: 'Source ledger', editions: 'Editions', method: 'Method', settings: 'Settings', missing: 'Not found' };
+  const ROUTE_NAMES = ['index', 'queue', 'report', 'sources', 'accounts', 'editions', 'method', 'settings'];
+  const TITLES = { index: 'Library', queue: 'Reading queue', sources: 'Source ledger', accounts: 'AI accounts', editions: 'Editions', method: 'Method', settings: 'Settings', missing: 'Not found' };
   function parseRoute() {
     const parts = location.hash.replace(/^#\/?/, '').split('/');
     let name = parts[0] || 'index', id = '', anchor = '';
@@ -1258,7 +1271,7 @@ ${queueButton(entry)}</span></p>
       if (!isList(next.name)) state.listShown = PAGE.reports;
       document.body.dataset.route = ROUTE_NAMES.includes(next.name) ? next.name : 'missing';
       for (const link of $$('a[data-nav]')) {
-        const on = link.dataset.nav === next.name || (link.dataset.nav === 'index' && (next.name === 'report' || next.name === 'queue'));
+        const on = link.dataset.nav === next.name || (link.dataset.nav === 'index' && (next.name === 'report' || next.name === 'queue')) || (link.dataset.nav === 'sources' && next.name === 'accounts');
         if (on) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
       }
       for (const dialog of $$('dialog[open]')) dialog.close();
@@ -1266,6 +1279,7 @@ ${queueButton(entry)}</span></p>
       if (isList(next.name)) { renderLibrary(); app.setAttribute('aria-busy', 'false'); }
       else if (next.name === 'report') renderReport(next, token);
       else if (next.name === 'sources') { renderSources(token); app.setAttribute('aria-busy', 'false'); }
+      else if (next.name === 'accounts') renderAccounts(token);
       else if (next.name === 'editions') renderEditions(token);
       else if (next.name === 'method') { renderMethod(); app.setAttribute('aria-busy', 'false'); }
       else if (next.name === 'settings') { renderSettings(); app.setAttribute('aria-busy', 'false'); }
@@ -2211,6 +2225,105 @@ ${biblioHTML(entry)}`;
 </form>`;
   }
 
+  /* Accounts are a curated directory, separate from the acquisition ledger. */
+  const ACCOUNT_STATUS = { verified: 'Inspected', specialist: 'Specialist', provisional: 'Provisional', blocked: 'Access blocked', retired: 'Retired' };
+  const assessedAccount = a => ['verified', 'specialist'].includes(a.status) && a.access?.entrypointInspected === true;
+
+  function accountRowHTML(a) {
+    const status = ACCOUNT_STATUS[a.status] || 'Assessment pending';
+    const examples = (a.evidence || []).map(e => `<li>${external(e.url, e.observation || 'Observed example')}<span class="account-date">${e.publishedAt ? `Published ${esc(fmtDate(e.publishedAt))}` : 'Publication date not established'}${e.observedAt ? ` · observed ${esc(fmtDate(e.observedAt))}` : ''}</span></li>`).join('');
+    const cadence = a.cadence?.ratePerWeek;
+    return `<li role="listitem" class="account-row" id="account-${esc(a.id)}">
+      <div class="account-identity"><h2 class="account-name">${external(a.url, a.name)}</h2><p class="account-meta">${esc(a.platform)} · ${esc(status)}</p><p class="account-topics">${esc((a.topics || []).join(' · '))}</p></div>
+      <div class="account-body"><p class="account-role">${esc(sentenceCase(a.editorialRole))}</p><p class="account-purpose">${esc(a.whyMonitor || 'Editorial assessment is pending.')}</p>
+        <details class="account-details"${state.route.id === a.id ? ' open' : ''}><summary>Examples and assessment<span class="sr-only"> for ${esc(a.name)}</span></summary>
+          <div class="account-assessment">
+            <p>Last observed: ${esc(fmtDate(a.lastObservedAt))}. Assessed: ${esc(fmtDate(a.lastAssessedAt))}.</p>
+            ${!assessedAccount(a) ? '<p>This account is not in the assessed selection. Its relevance or access still needs review.</p>' : ''}
+            ${examples ? `<ul class="account-examples">${examples}</ul>` : '<p>No public examples are recorded yet.</p>'}
+            <p>${Number.isFinite(cadence) ? `Observed posting rate: ${esc(cadence)} per week.` : 'Posting frequency has not been measured.'} ${esc(a.cadence?.basis || '')}</p>
+            ${(a.access?.limitations || []).length ? `<h3 class="account-limit-title">Access and evidence limits</h3><ul class="account-limits">${a.access.limitations.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}
+            <p class="account-links"><a href="#accounts/${encodeURIComponent(a.id)}">Link to this account</a>${a.sourceId ? ` <a href="#sources/${encodeURIComponent(a.sourceId)}">Source record</a>` : ''}</p>
+          </div>
+        </details>
+      </div>
+    </li>`;
+  }
+
+  function renderAccountList() {
+    const list = $('#account-list');
+    if (!list || !state.accounts) return;
+    const f = state.accountFilters;
+    const words = f.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const all = state.accounts.filter(a => (!f.platform || a.platform === f.platform) &&
+      (f.status === 'all' || (f.status === 'assessed' ? assessedAccount(a) : a.status === f.status)) &&
+      words.every(w => [a.name, a.url, a.platform, a.editorialRole, a.whyMonitor, ...(a.topics || [])].join(' ').toLowerCase().includes(w)))
+      .sort((a, b) => collator.compare(a.name, b.name));
+    $('#account-count').textContent = `${fmtInt(all.length)} of ${plural(state.accounts.length, 'account')}`;
+    list.innerHTML = all.length ? `<ul class="account-rows" role="list">${all.slice(0, state.accountShown).map(accountRowHTML).join('')}</ul>${all.length > state.accountShown ? '<button type="button" class="button" data-accounts="more">Show more accounts</button>' : ''}` :
+      '<div class="empty-state"><h2>No accounts match these filters.</h2><p>Try another name or topic, or show every account.</p><button type="button" class="button" data-accounts="reset">Reset filters</button></div>';
+    announce(`${plural(all.length, 'account')} shown by these filters.`);
+    measureChrome();
+  }
+
+  function renderAccounts(token) {
+    stopPageWiring();
+    const deep = state.route.id;
+    if (deep) Object.assign(state.accountFilters, { q: '', platform: '', status: 'all' });
+    state.accountShown = PAGE.accounts;
+    app.innerHTML = `<div class="folio accounts-page">
+      <header class="folio-head"><h1 class="title-1" id="accounts-h">AI accounts</h1><p class="lede folio-lede">People and teams publishing AI news, research and useful work. Explore the public profiles behind our discoveries, with examples of what made each worth watching.</p></header>
+      <nav class="source-views" aria-label="Source views"><a class="chip" href="#sources">Source ledger</a><a class="chip" href="#accounts" aria-current="page">AI accounts</a></nav>
+      <p class="accounts-note">“Inspected” means the public account was visited and its relevance documented. Specialists cover a narrower field. Neither label certifies every claim. Provisional accounts are excluded from the default selection. These are dated observations, not a live feed.</p>
+      <section class="account-directory" aria-label="Account directory"><div id="accounts-content"><p role="status">Loading the account directory…</p></div></section>
+    </div>`;
+    const root = viewRoot();
+    root.addEventListener('click', event => {
+      const action = event.target.closest('[data-accounts]');
+      if (!action) return;
+      if (action.dataset.accounts === 'retry') { renderAccounts(token); return; }
+      if (action.dataset.accounts === 'more') { state.accountShown += PAGE.accounts; renderAccountList(); return; }
+      if (action.dataset.accounts === 'reset') {
+        Object.assign(state.accountFilters, { q: '', platform: '', status: 'assessed' });
+        state.accountShown = PAGE.accounts; $('#account-search').value = ''; $('#account-platform').value = ''; $('#account-status').value = 'assessed';
+        clearAccountAddress(); renderAccountList(); $('#account-search').focus();
+      }
+    });
+    loadAccounts().then(accounts => {
+      if (token !== state.routeToken) return;
+      const f = state.accountFilters;
+      const platforms = [...new Set(accounts.map(a => a.platform))].sort(collator.compare);
+      const statuses = [...new Set(accounts.map(a => a.status))].sort(collator.compare);
+      $('#accounts-content').innerHTML = `<form id="account-filters" class="account-filters" role="search" aria-label="Search AI accounts">
+        <label class="account-search-label" for="account-search">Name or topic<input class="input" id="account-search" type="search" placeholder="Try agents, education, open models…" value="${esc(f.q)}" autocomplete="off"></label>
+        <label for="account-platform">Platform<span class="select-wrap"><select class="input" id="account-platform"><option value="">All platforms</option>${platforms.map(p => `<option${f.platform === p ? ' selected' : ''}>${esc(p)}</option>`).join('')}</select></span></label>
+        <label for="account-status">Selection<span class="select-wrap"><select class="input" id="account-status"><option value="assessed"${f.status === 'assessed' ? ' selected' : ''}>Assessed only</option><option value="all"${f.status === 'all' ? ' selected' : ''}>Every account</option>${statuses.map(s => `<option value="${esc(s)}"${f.status === s ? ' selected' : ''}>${esc(ACCOUNT_STATUS[s] || sentenceCase(s))}</option>`).join('')}</select></span></label>
+        <button type="button" class="button" data-accounts="reset">Reset</button>
+      </form><p class="statusline"><span id="account-count"></span><span>Open an assessment for examples and limits.</span></p><div id="account-list"></div>`;
+      const form = $('#account-filters');
+      form.addEventListener('submit', event => event.preventDefault());
+      const refresh = () => { if (token !== state.routeToken) return; clearAccountAddress(); state.accountShown = PAGE.accounts; renderAccountList(); };
+      const searchRefresh = debounce(refresh, 120);
+      $('#account-search').addEventListener('input', event => { f.q = event.target.value; searchRefresh(); });
+      $('#account-platform').addEventListener('change', event => { f.platform = event.target.value; refresh(); });
+      $('#account-status').addEventListener('change', event => { f.status = event.target.value; refresh(); });
+      if (deep) state.accountShown = Math.max(PAGE.accounts, accounts.length);
+      renderAccountList();
+      app.setAttribute('aria-busy', 'false');
+      if (deep && !scrollToAnchor(`account-${deep}`)) announce('That account is not in this directory.');
+    }).catch(() => {
+      if (token !== state.routeToken) return;
+      app.setAttribute('aria-busy', 'false');
+      $('#accounts-content').innerHTML = '<div class="empty-state"><h2>The account directory could not be loaded.</h2><p>Try again, or browse the <a href="#sources">source ledger</a>.</p><button type="button" class="button" data-accounts="retry">Try again</button></div>';
+    });
+  }
+
+  function clearAccountAddress() {
+    if (state.route.name !== 'accounts' || !state.route.id) return;
+    state.route = { ...state.route, id: '' };
+    history.replaceState(null, '', '#accounts');
+  }
+
   function renderSources(token) {
     stopPageWiring();
     const stats = state.sourceStats || { total: 0, monitored: 0, checked: 0, byKind: {}, byStatus: {} };
@@ -2230,6 +2343,7 @@ ${biblioHTML(entry)}`;
     eyebrow: 'Provenance', id: 'sources-page-h', title: 'Sources',
     lede: 'Every place this project watches, and every page it has followed from one. This is the trail behind the reports: what was opened, when, and what was only ever a lead. <a href="#method/evidence">How sources are used</a>.'
   })}
+  <nav class="source-views" aria-label="Source views"><a class="chip" href="#sources" aria-current="page">Source ledger</a><a class="chip" href="#accounts">AI accounts</a></nav>
   ${ledgerOpeningHTML(stats)}
   <section class="ledger-list" aria-labelledby="ledger-list-h">
     <h2 class="title-2" id="ledger-list-h">The records</h2>

@@ -1769,6 +1769,46 @@
   .ledger-list .empty-state h3 { font-size: var(--fs-title-2); letter-spacing: -.022em; }
   .list-end { padding: var(--s-6) 0 var(--s-2); text-align: center; font-size: var(--fs-label); color: var(--ink-3); }
 
+  /* The account directory extends the ledger's reading rhythm and palette. */
+  .source-views { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .source-views a { text-decoration: none; }
+  .source-views a[aria-current="page"] { color: var(--accent); border-color: var(--accent); }
+  .accounts-page > .source-views, .ledger > .source-views { margin-top: var(--s-5); }
+  .accounts-page > .accounts-note { margin-top: var(--s-5); max-width: 74ch; font-size: var(--fs-label); color: var(--ink-2); }
+  .account-directory, #accounts-content { min-width: 0; }
+  .account-filters { display: grid; grid-template-columns: minmax(12rem, 2fr) minmax(8rem, 1fr) minmax(10rem, 1fr) auto; gap: var(--s-3); align-items: end; }
+  .account-filters label { display: grid; gap: var(--s-2); min-width: 0; font-size: var(--fs-label); color: var(--ink-2); }
+  .account-filters .input { width: 100%; min-width: 0; }
+  .account-filters input.input { appearance: none; min-height: 2.75rem; padding: 0 var(--s-3); background: var(--field-bg); color: var(--field-fg); border: 1px solid var(--field-border); border-radius: var(--r-3); font-size: var(--fs-callout); }
+  .account-filters input::placeholder { color: var(--field-placeholder); opacity: 1; }
+  #accounts-content > .statusline { margin-block: var(--s-5); }
+  #account-count { color: var(--ink); font-weight: 600; }
+  .account-rows { list-style: none; }
+  .account-row { display: grid; grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr); gap: var(--s-7); padding-block: var(--s-6); border-bottom: 1px solid var(--hairline); scroll-margin-top: calc(var(--chrome-h) + var(--s-5)); }
+  .account-row > * { min-width: 0; }
+  .account-name { font-size: var(--fs-row); font-weight: 600; line-height: 1.35; }
+  .account-name a { overflow-wrap: anywhere; }
+  .account-meta, .account-topics, .account-role, .account-date { font-size: var(--fs-label); color: var(--ink-2); }
+  .account-meta { margin-top: var(--s-2); }
+  .account-topics { margin-top: var(--s-3); }
+  .account-role { margin-bottom: var(--s-2); font-weight: 600; }
+  .account-purpose { max-width: 72ch; }
+  .account-details { margin-top: var(--s-3); }
+  .account-details summary { width: fit-content; cursor: pointer; color: var(--accent); padding-block: var(--s-2); font-size: var(--fs-label); }
+  .account-assessment { display: grid; gap: var(--s-4); padding-top: var(--s-3); font-size: var(--fs-label); color: var(--ink-2); overflow-wrap: anywhere; }
+  .account-examples, .account-limits { display: grid; gap: var(--s-3); padding-left: var(--s-5); list-style: disc; }
+  .account-date { display: block; margin-top: var(--s-1); }
+  .account-limit-title { font-size: inherit; color: var(--ink); font-weight: 600; }
+  .account-links { display: flex; flex-wrap: wrap; gap: var(--s-4); }
+  #account-list > .button { margin-top: var(--s-5); }
+  @media (max-width: 47.99em) {
+    .account-filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .account-search-label { grid-column: 1 / -1; }
+    .account-filters > .button { justify-self: start; }
+    .account-row { grid-template-columns: minmax(0, 1fr); gap: var(--s-4); }
+  }
+  @media (max-width: 23em) { .account-filters { grid-template-columns: minmax(0, 1fr); } }
+
   .srcs { display: grid; }
   .src { border-bottom: 1px solid var(--hairline); }
   .src-sum {

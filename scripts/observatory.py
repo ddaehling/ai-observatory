@@ -557,6 +557,73 @@ def public_sources(sources):
     return result
 
 
+def public_account_text(value):
+    """Keep public prose, suppressing fields that accidentally contain local paths."""
+    if not isinstance(value, str):
+        return ""
+    # URLs are handled separately; a slash in a public URL is not a machine path.
+    without_urls = value
+    for match in re.finditer(r"[a-zA-Z][a-zA-Z0-9+.-]*://[^\s<>\"']+", value):
+        try:
+            canonical_url(match.group().rstrip(".,;)"))
+        except ValueError:
+            return ""
+        without_urls = without_urls.replace(match.group(), "")
+    if re.search(r"(?<![\w/])(?:/|~[/\\]|[A-Za-z]:[/\\]|\\\\|\.{1,2}[/\\]|\.state[/\\])", without_urls):
+        return ""
+    return value
+
+
+def accounts_payload(catalogue):
+    """Allowlisted recurring social identities; never expose acquisition state or leads."""
+    catalogue = catalogue or {}
+    if not isinstance(catalogue, dict) or not isinstance(catalogue.get("entries", []), list):
+        raise ValueError("Invalid publisher catalogue")
+
+    def public_date(value):
+        return value if public_account_text(value) and parse_date(value) else None
+
+    def text_list(value):
+        return [text for item in value if (text := public_account_text(item))] if isinstance(value, list) else []
+
+    accounts = []
+    for entry in catalogue.get("entries", []):
+        if not isinstance(entry, dict) or entry.get("kind") != "social_account":
+            continue
+        if any(not isinstance(entry.get(key), str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,99}", entry[key]) for key in ("id", "sourceId")):
+            continue
+        try:
+            url = canonical_url(entry.get("url"))
+        except ValueError:
+            continue
+        cadence = entry.get("cadence") if isinstance(entry.get("cadence"), dict) else {}
+        rate = cadence.get("ratePerWeek")
+        if isinstance(rate, bool) or not isinstance(rate, (int, float)) or not math.isfinite(rate) or rate < 0:
+            rate = None
+        access = entry.get("access") if isinstance(entry.get("access"), dict) else {}
+        evidence = []
+        for item in entry.get("evidence", []) if isinstance(entry.get("evidence"), list) else []:
+            if not isinstance(item, dict):
+                continue
+            try:
+                evidence_url = canonical_url(item.get("url"))
+            except ValueError:
+                continue
+            evidence.append({"url": evidence_url, "publishedAt": public_date(item.get("publishedAt")), "observedAt": public_date(item.get("observedAt")), "observation": public_account_text(item.get("observation"))})
+        account = {key: public_account_text(entry.get(key)) for key in ("id", "sourceId", "name", "platform", "editorialRole", "status", "whyMonitor")}
+        account.update(
+            url=url,
+            topics=text_list(entry.get("topics")),
+            lastObservedAt=public_date(entry.get("lastObservedAt")),
+            lastAssessedAt=public_date(entry.get("lastAssessedAt")),
+            cadence={"ratePerWeek": rate, "basis": public_account_text(cadence.get("basis"))},
+            access={"entrypointInspected": access.get("entrypointInspected") is True, "coverageComplete": access.get("coverageComplete") is True, "limitations": text_list(access.get("limitations"))},
+            evidence=evidence,
+        )
+        accounts.append(account)
+    return {"schemaVersion": 1, "updatedAt": public_date(catalogue.get("updatedAt")), "accounts": accounts}
+
+
 def load_publication_baseline(root, required=False):
     baseline = read_json(root / "data/publication-baseline.json")
     if baseline is None:
@@ -714,6 +781,7 @@ def build(root, strict=False):
         save_compact_json(staging / "catalog.json", catalog_payload(payload))
         save_compact_json(staging / "sources.json", {"schemaVersion": 1, "generatedAt": generated_at, "sources": payload["sources"]})
         save_compact_json(staging / "editions.json", {"schemaVersion": 1, "generatedAt": generated_at, "runs": payload["runs"]})
+        save_compact_json(staging / "accounts.json", accounts_payload(read_json(root / "data/publisher-catalogue.json", {})))
         reports = staging / "reports"
         reports.mkdir()
         for entry in payload["entries"]:

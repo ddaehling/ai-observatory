@@ -72,6 +72,19 @@ def make_evidence():
     }]
 
 
+def make_account():
+    return {
+        "id": "social-example", "sourceId": "source-example", "name": "Example researcher",
+        "url": "https://x.com/Example", "kind": "social_account", "platform": "X",
+        "topics": ["agents", "education"], "editorialRole": "independent research", "status": "specialist",
+        "whyMonitor": "Original experiments with disclosed limits.",
+        "lastObservedAt": "2026-10-18T09:00:00Z", "lastAssessedAt": "2026-10-19T10:00:00Z",
+        "cadence": {"ratePerWeek": None, "basis": "No measured posting window."},
+        "access": {"entrypointInspected": True, "coverageComplete": False, "limitations": ["Timeline history was not exhausted."]},
+        "evidence": [{"url": "https://x.com/Example/status/123", "publishedAt": None, "observedAt": "2026-10-18T09:00:00Z", "observation": "A bounded experiment is described."}],
+    }
+
+
 def make_atom_feed(title="Story title", url="https://example.com/story", published_at="2026-10-17T10:00:00Z", updated_at="2026-10-18T10:00:00Z", summary="Documented functionality is available."):
     fields = "<title>" + escape(title) + "</title><link href=\"" + escape(url, {'"': "&quot;"}) + "\"/>"
     for tag, value in (("published", published_at), ("updated", updated_at), ("summary", summary)):
@@ -554,6 +567,84 @@ class EnrichmentTests(unittest.TestCase):
         self.assertEqual(reviews, reviews_before)
 
 
+class PublicAccountTests(unittest.TestCase):
+    def test_allowlist_preserves_assessment_limits_and_excludes_private_extras(self):
+        account = make_account()
+        account.update(provenance={"capturePath": ".state/private-capture.json"}, assessmentHistory=[{"note": "PRIVATE_HISTORY"}], discoveryProvenance=[{"context": "PRIVATE_DISCOVERY"}], rawState="PRIVATE_STATE")
+        account["cadence"]["privateEstimate"] = "PRIVATE_ESTIMATE"
+        account["access"].update(captureUrl="file:///Users/private/capture.json", coverageWindow={"runId": "PRIVATE_RUN"})
+        account["evidence"][0].update(inspection="PRIVATE_INSPECTION", provenance={"capturePath": ".state/private-post.json"})
+        before = deepcopy(account)
+        payload = observatory.accounts_payload({"schemaVersion": 1, "updatedAt": "2026-10-19T10:00:00Z", "entries": [account], "discoveryRuns": [{"private": "PRIVATE_RUN"}]})
+        expected = make_account()
+        del expected["kind"]
+        self.assertEqual(payload, {"schemaVersion": 1, "updatedAt": "2026-10-19T10:00:00Z", "accounts": [expected]})
+        self.assertEqual(account, before)
+        self.assertNotIn("PRIVATE", json.dumps(payload))
+        self.assertNotIn(".state", json.dumps(payload))
+
+    def test_only_curated_social_accounts_are_exported_without_promoting_status(self):
+        entries = [dict(make_account(), id=status, status=status) for status in ("verified", "specialist", "provisional", "blocked", "retired")]
+        entries.extend(dict(make_account(), id=kind, kind=kind) for kind in ("community", "newsletter", "blog", "research_listing"))
+        entries.append(None)
+        payload = observatory.accounts_payload({"entries": entries, "discoveryQueue": [dict(make_account(), id="unvisited-lead")]})
+        self.assertEqual([entry["status"] for entry in payload["accounts"]], ["verified", "specialist", "provisional", "blocked", "retired"])
+        self.assertEqual([entry["id"] for entry in payload["accounts"]], ["verified", "specialist", "provisional", "blocked", "retired"])
+        self.assertTrue(all(entry["cadence"]["ratePerWeek"] is None for entry in payload["accounts"]))
+        self.assertEqual(observatory.accounts_payload({}), {"schemaVersion": 1, "updatedAt": None, "accounts": []})
+
+    def test_unsafe_account_and_evidence_urls_are_excluded(self):
+        unsafe_urls = ("javascript:alert(1)", "file:///Users/private/account", "http://127.0.0.1/", "http://localhost/", "https://user:secret@example.com/", "https://example.com:8443/", "https://example.com/\nprivate")
+        account = make_account()
+        account["url"] += "?utm_source=tracking#profile"
+        account["evidence"] += [dict(account["evidence"][0], url=url) for url in unsafe_urls]
+        entries = [dict(make_account(), url=url) for url in unsafe_urls] + [account]
+        payload = observatory.accounts_payload({"entries": entries})
+        self.assertEqual(len(payload["accounts"]), 1)
+        self.assertEqual(payload["accounts"][0]["url"], "https://x.com/Example")
+        self.assertEqual(payload["accounts"][0]["evidence"], make_account()["evidence"])
+
+    def test_local_paths_and_malformed_values_cannot_escape_through_public_fields(self):
+        for local_path in ("/Users/private/account.json", "/home/private/account.json", "/private/tmp/capture.json", ".state/run/capture.json", "../capture.json", "~/capture.json", r"C:\Users\private\capture.json", "file:///Users/private/capture.json"):
+            with self.subTest(path=local_path):
+                account = make_account()
+                account.update(whyMonitor="Saved at " + local_path, topics=["agents", {"private": local_path}, local_path], lastObservedAt=local_path)
+                account["cadence"] = {"ratePerWeek": float("nan"), "basis": local_path}
+                account["access"].update(entrypointInspected="true", coverageComplete=1, limitations=["Bounded view.", local_path])
+                account["evidence"][0].update(observation="Captured at " + local_path, observedAt=local_path)
+                public = observatory.accounts_payload({"updatedAt": local_path, "entries": [account]})
+                exported = public["accounts"][0]
+                self.assertEqual(exported["whyMonitor"], "")
+                self.assertEqual(exported["topics"], ["agents"])
+                self.assertIsNone(exported["lastObservedAt"])
+                self.assertEqual(exported["cadence"], {"ratePerWeek": None, "basis": ""})
+                self.assertEqual(exported["access"], {"entrypointInspected": False, "coverageComplete": False, "limitations": ["Bounded view."]})
+                self.assertEqual(exported["evidence"][0]["observation"], "")
+                self.assertIsNone(exported["evidence"][0]["observedAt"])
+                self.assertIsNone(public["updatedAt"])
+                self.assertNotIn(local_path, json.dumps(public, ensure_ascii=False))
+        safe_prose = "Inspect the profile/archive at https://x.com/Example and retain date-window limits."
+        self.assertEqual(observatory.public_account_text(safe_prose), safe_prose)
+
+    def test_embedded_path_assignments_and_date_comments_are_suppressed(self):
+        account = make_account()
+        account.update(whyMonitor="capturePath=/Users/private/capture.json", name="state=.state/run/capture.json")
+        account["access"]["limitations"] = ["capture:/tmp/capture.json", "Source remains provisional."]
+        commented_date = "18 Oct 2026 09:00:00 +0000 (/Users/private/capture.json)"
+        account["lastAssessedAt"] = commented_date
+        account["evidence"][0]["publishedAt"] = commented_date
+        payload = observatory.accounts_payload({"updatedAt": commented_date, "entries": [account]})
+        public = payload["accounts"][0]
+        self.assertEqual(public["whyMonitor"], "")
+        self.assertEqual(public["name"], "")
+        self.assertEqual(public["access"]["limitations"], ["Source remains provisional."])
+        self.assertIsNone(payload["updatedAt"])
+        self.assertIsNone(public["lastAssessedAt"])
+        self.assertIsNone(public["evidence"][0]["publishedAt"])
+        self.assertNotIn("private", json.dumps(payload))
+        self.assertNotIn(".state", json.dumps(payload))
+
+
 class BuildTests(unittest.TestCase):
     """Exercise publication with isolated project roots and no network access."""
 
@@ -820,7 +911,7 @@ class BuildTests(unittest.TestCase):
         observatory.build(self.root, strict=True)
         output_paths = {path.relative_to(self.root / "dist").as_posix() for path in (self.root / "dist").rglob("*") if path.is_file()}
         # rglob descends into reports/, so the sentinel scan below reads every split file too.
-        self.assertTrue({"index.html", "styles.css", "app.js", "data.json", "catalog.json", "sources.json", "editions.json", "reports/test-tool.json", "manifest.json", "feed.xml", ".nojekyll"}.issubset(output_paths))
+        self.assertTrue({"index.html", "styles.css", "app.js", "data.json", "catalog.json", "sources.json", "editions.json", "accounts.json", "reports/test-tool.json", "manifest.json", "feed.xml", ".nojekyll"}.issubset(output_paths))
         for forbidden_path in ("evidence.json", "data/evidence.json", "data/candidates.json", ".hidden-design-prompt.md", "assets/design-prompt.txt", "reports/draft-tool.json"):
             self.assertNotIn(forbidden_path, output_paths)
         serialized_output = "\n".join((self.root / "dist" / path).read_text(encoding="utf-8") for path in output_paths)
@@ -830,7 +921,7 @@ class BuildTests(unittest.TestCase):
 
     def test_split_outputs_exist_and_are_compact_utf8_json(self):
         self.build_library()
-        for relative in ("catalog.json", "sources.json", "editions.json", "reports/visual-notebook.json", "reports/test-tool.json"):
+        for relative in ("catalog.json", "sources.json", "editions.json", "accounts.json", "reports/visual-notebook.json", "reports/test-tool.json"):
             with self.subTest(file=relative):
                 text = (self.root / "dist" / relative).read_text(encoding="utf-8")
                 value = json.loads(text)
@@ -903,6 +994,26 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(self.built_json("sources.json"), {"schemaVersion": 1, "generatedAt": generated_at, "sources": data["sources"]})
         self.assertEqual(self.built_json("editions.json"), {"schemaVersion": 1, "generatedAt": generated_at, "runs": data["runs"]})
 
+    def test_account_updates_do_not_change_reports_or_invalidate_approvals(self):
+        catalogue = {"schemaVersion": 1, "updatedAt": "2026-10-19T10:00:00Z", "entries": [make_account()]}
+        self.write_json("data/publisher-catalogue.json", catalogue)
+        observatory.build(self.root, strict=True)
+        report_before = self.built_json("reports/test-tool.json")
+        manifest_before = self.built_json("manifest.json")["reports"]
+        source_files_before = self.snapshot(self.root / "data/reports") | {"reviews/" + key: value for key, value in self.snapshot(self.root / "data/reviews").items()}
+        self.assertEqual(self.built_json("accounts.json"), observatory.accounts_payload(catalogue))
+        self.assertNotIn("accounts", self.built_data())
+        catalogue["updatedAt"] = "2026-10-20T10:00:00Z"
+        catalogue["entries"][0].update(status="blocked", whyMonitor="Access blocked; prior evidence retained.")
+        self.write_json("data/publisher-catalogue.json", catalogue)
+        result = observatory.build(self.root, strict=True)
+        self.assertEqual(result["publishedReports"], 1)
+        self.assertEqual(result["excludedReports"], {})
+        self.assertEqual(self.built_json("accounts.json"), observatory.accounts_payload(catalogue))
+        self.assertEqual(self.built_json("reports/test-tool.json"), report_before)
+        self.assertEqual(self.built_json("manifest.json")["reports"], manifest_before)
+        self.assertEqual(self.snapshot(self.root / "data/reports") | {"reviews/" + key: value for key, value in self.snapshot(self.root / "data/reviews").items()}, source_files_before)
+
     def test_unreviewed_and_withdrawn_reports_get_no_report_file(self):
         unreviewed = make_report()
         unreviewed["id"] = "unreviewed-tool"
@@ -935,7 +1046,7 @@ class BuildTests(unittest.TestCase):
         staged = staged_releases[0]
         reports = {"reports/" + entry["id"] + ".json" for entry in data["entries"]}
         self.assertEqual(reports, {"reports/test-tool.json", "reports/visual-notebook.json"})
-        self.assertEqual(({"catalog.json", "sources.json", "editions.json"} | reports) - set(staged), set())
+        self.assertEqual(({"catalog.json", "sources.json", "editions.json", "accounts.json"} | reports) - set(staged), set())
         # Nothing may be added, rewritten or removed once the staged release is live.
         self.assertEqual(self.snapshot(self.root / "dist"), staged)
         self.assertEqual(list(self.root.glob(".dist-*")), [])

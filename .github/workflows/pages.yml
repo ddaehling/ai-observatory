@@ -9,6 +9,7 @@ on:
       - 'data/reviews/**'
       - 'data/evidence.json'
       - 'data/sources.json'
+      - 'data/publisher-catalogue.json'
       - 'data/runs.json'
       - 'data/rubric.json'
       - 'data/publication-baseline.json'

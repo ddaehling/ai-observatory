@@ -2,7 +2,7 @@
 
 A growing public library of AI tools, models, repositories, research and creative workflows. Reports explain what changed, what the evidence supports, what to try, and where the limitations are. Source discovery is deliberately broad; coverage is finite and disclosed in each edition.
 
-[Open the website](https://ddaehling.github.io/ai-observatory/) · [GitHub repository](https://github.com/ddaehling/ai-observatory)
+[Open the website](https://ddaehling.github.io/ai-observatory/) · [AI accounts](https://ddaehling.github.io/ai-observatory/#accounts) · [GitHub repository](https://github.com/ddaehling/ai-observatory)
 
 The reading experience takes inspiration from the owner's Second Look bookmark project. Private bookmarks, browsing history and the earlier project's private source material are not imported.
 
@@ -64,7 +64,7 @@ Configure the GitHub repository's Pages source as **GitHub Actions**. Pushing re
 python3 scripts/observatory.py publish
 ```
 
-This verifies the local gate and remote commit before requesting the workflow. It does not silently commit or push unrelated files. The Actions gate runs again, and the Pages upload contains only `dist/`. The site also exposes `feed.xml` and a small `manifest.json` of approved report revisions. Besides the complete `data.json`, each build publishes a compact `catalog.json` for the first page load, one `reports/<id>.json` per published report, and `sources.json` and `editions.json` for the source ledger and edition notes. Git history preserves earlier report and review revisions.
+This verifies the local gate and remote commit before requesting the workflow. It does not silently commit or push unrelated files. The Actions gate runs again, and the Pages upload contains only `dist/`. The site also exposes `feed.xml` and a small `manifest.json` of approved report revisions. Besides the report/source/edition compatibility payload in `data.json`, each build publishes a compact `catalog.json` for the first page load, one `reports/<id>.json` per published report, and `sources.json` and `editions.json` for the source ledger and edition notes. Git history preserves earlier report and review revisions.
 
 Before publishing newly approved reports, run `python3 scripts/observatory.py baseline --include-approved` and commit `data/publication-baseline.json` with the reviewed changes. This adds protection for the new IDs and never removes existing IDs. A strict build refuses to drop a baseline report or publish an approved report that has not been added to the baseline. Finish revisions and both fresh reviews before deploying; a normal development build may omit pending reports for local inspection, but cannot be published through the strict workflow.
 
@@ -74,7 +74,7 @@ Intentional editorial withdrawal is explicit and audited: `python3 scripts/obser
 
 `src/` is the static interface. `scripts/observatory.py` owns acquisition, validation and public builds. `data/reports/`, `data/reviews/`, `data/rubric.json`, `data/evidence.json`, `data/sources.json`, `data/candidates.json`, `data/decisions.json`, `data/runs.json` and `data/publication-baseline.json` form the public audit trail. Do not put credentials, private browsing material, agent prompts or raw browser traces there. Keep source passages short and attributable.
 
-`build` assembles `dist/` in a staging folder and replaces the previous output only when every file is ready. `data.json` is the complete public payload, kept for compatibility. `catalog.json` is the small first-load file: report cards with scores and review verdicts, edition summaries and source counts, without report bodies, review rationales or review hashes. `reports/<id>.json` holds one full published report; pending, unapproved and withdrawn reports get no file. `sources.json` and `editions.json` hold the full source ledger and edition notes. These split files repackage `data.json` and add no private fields.
+`build` assembles `dist/` in a staging folder and replaces the previous output only when every file is ready. `data.json` is the complete report/source/edition compatibility payload; the account directory is published separately. `catalog.json` is the small first-load file: report cards with scores and review verdicts, edition summaries and source counts, without report bodies, review rationales or review hashes. `reports/<id>.json` holds one full published report; pending, unapproved and withdrawn reports get no file. `sources.json` and `editions.json` hold the full source ledger and edition notes. These split files repackage `data.json` and add no private fields.
 
 The collector accepts public HTTP(S) URLs, refuses private network destinations and credentials, checks redirect destinations, pins the resolved public address, verifies TLS, limits response size and applies finite fetch/run budgets. If Python's default CA store is absent, it can load a root-owned OS certificate bundle that cannot be written by group or other users; certificate and hostname checks remain required. Source content remains untrusted. The report sanitizer allows only a small semantic HTML vocabulary and safe links. It does not establish that a claim is true; that is the research and review responsibility.
 
@@ -83,3 +83,5 @@ Feeds can be truncated, blocked, delayed or incomplete, and social platforms can
 ## Design provenance
 
 Claude Opus 5.5 designed the Parallax identity, HTML shell, CSS and original SVG artwork through Claude Code. Codex implemented application behavior and integration fixes. See [DESIGN.md](DESIGN.md) and the [measured design provenance](docs/design-provenance.json).
+
+The **AI accounts** directory (`#accounts`, also linked from Sources) publishes an allowlisted view of `data/publisher-catalogue.json` as `accounts.json`. It offers profile links, topics, usefulness, dated examples and access limits, with provisional accounts excluded from the default selection. Unvisited discovery leads and local provenance are not exported. Research runs expand this catalogue through observed public reposts, quotes, substantive replies and author attribution, complemented by other discovery routes; interactions are leads, not endorsements.
