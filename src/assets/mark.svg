@@ -1,19 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Parallax">
   <title>Parallax</title>
-  <!-- The mark is the measurement: one baseline, two readings of the same object.
-       Run A is the caret above the line, run B the caret below it; the offset between
-       them is the parallax. Authored for this site; no third-party artwork. -->
-  <rect width="32" height="32" rx="7.5" fill="#14181F"/>
-  <g fill="#F2F4F8">
-    <rect x="5.5" y="15.1" width="21" height="1.8" rx=".9" opacity=".95"/>
-    <g opacity=".42">
-      <rect x="7.6" y="12.6" width="1.2" height="1.6" rx=".6"/>
-      <rect x="11.8" y="12.6" width="1.2" height="1.6" rx=".6"/>
-      <rect x="16" y="12.6" width="1.2" height="1.6" rx=".6"/>
-      <rect x="20.2" y="12.6" width="1.2" height="1.6" rx=".6"/>
-      <rect x="24.4" y="12.6" width="1.2" height="1.6" rx=".6"/>
-    </g>
-    <path d="M8.6 5.6h9.2L13.2 13.6z"/>
-    <path d="M23.4 26.4h-9.2l4.6-8z"/>
-  </g>
+  <!-- The plate in miniature: a trail of light ending at tonight's meridian, and inside it a
+       doubled trail where two runs disagreed — run A cool, run B warm. -->
+  <rect width="32" height="32" rx="7" fill="#05070d"/>
+  <path d="M16 5.20 A10.8 10.8 0 1 1 5.99 11.95" fill="none" stroke="#eef2fa" stroke-width="1.7" stroke-linecap="round" opacity=".92"/>
+  <path d="M16 9.80 A6.2 6.2 0 1 1 12.71 21.26" fill="none" stroke="#9cc6ff" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M16 11.80 A4.2 4.2 0 0 1 16.87 20.11" fill="none" stroke="#ffad78" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="16" cy="5.2" r="1.7" fill="#ffffff"/>
+  <circle cx="16" cy="16" r=".9" fill="#eef2fa"/>
 </svg>

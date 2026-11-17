@@ -82,6 +82,6 @@ Feeds can be truncated, blocked, delayed or incomplete, and social platforms can
 
 ## Design provenance
 
-Claude Opus 5.5 designed the Parallax identity, HTML shell, CSS and original SVG artwork through Claude Code. Codex implemented application behavior and integration fixes. See [DESIGN.md](DESIGN.md) and the [measured design provenance](docs/design-provenance.json).
+The current design, **Long Exposure**, was designed and built by Claude Opus 5.5 through Claude Code: the identity, the HTML shell, the stylesheet, the interface's JavaScript (`src/app.js`, including the canvas plate) and the font subsets. Codex built the research pipeline, the build and the data contract, and implemented the previous design's application behavior. See [DESIGN.md](DESIGN.md) and [the design specification](docs/LONG_EXPOSURE.md); the [measured design provenance](docs/design-provenance.json) records the first design session.
 
 The **AI accounts** directory (`#accounts`, also linked from Sources) publishes an allowlisted view of `data/publisher-catalogue.json` as `accounts.json`. It offers profile links, topics, usefulness, dated examples and access limits, with provisional accounts excluded from the default selection. Unvisited discovery leads and local provenance are not exported. Research runs expand this catalogue through observed public reposts, quotes, substantive replies and author attribution, complemented by other discovery routes; interactions are leads, not endorsements.
