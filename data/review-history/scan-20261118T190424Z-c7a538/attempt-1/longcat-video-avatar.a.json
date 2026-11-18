@@ -1,0 +1,32 @@
+{
+  "reportId": "longcat-video-avatar",
+  "reviewerId": "/root/nov18_astra_review_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:25:59.134531Z",
+  "reportHash": "dfefe3bd17019c6a77ffb0a05adf70cee8a0c3988a3795b0beac16e815b07976",
+  "evidenceHash": "97e7cda7487e8b32fd59f3b2c20f5bc82b92fdf2b7bf894f7e2aa96b3069cba7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Downloadable audio-driven avatar weights, continuation recipes and inspectable inference code offer concrete creative and educational pilot value. The report usefully exposes the adapter-default mismatch and supplies reviewable scene tests. However, its animated/fictional-character proposals need the authors' directly relevant animated-input regression disclosed.",
+    "impact": "Continuation-focused post-training and an open alternative with a substantial preference study are meaningful advances within avatar generation. This is a refinement of Avatar 1.5, with a clear gap to OmniHuman-2.0, rather than evidence of a field-wide leap. Impact 6 maps to a 1,800–2,200-word band; the current 1,871 words fit before substantive revision, and final mean impact still governs.",
+    "novelty": "Combining perceptual reinforcement learning, revised guidance, eight-step distillation and on-policy continuation training is a meaningful differentiated refinement. The same base architecture and modest predecessor preference gain constrain novelty. Step count and long-duration claims are properly distinguished from measured latency and production reliability.",
+    "maturity": "A detailed CUDA recipe, public code and a developer-run preference study establish usability with material limits. Unquantified VRAM/rendering cost, contradictory documentation, no independent trial, an animated-input regression and a high mismatch rate under rigorous lip-sync assessment keep readiness moderate.",
+    "openness": "Public inference code, downloadable adapters/backbone artifacts, a technical report and the explicit MIT weight declaration provide strong inspectability. The separately inspected code license is standard MIT. The broken model-hub license link, unreproduced training/evaluation and accelerator requirements prevent an exceptional reproducibility rating."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Blocking factual-balance omission: technical-report section 5.2 (page 12) reports animated-input human-likeness decreasing from 2.246 to 2.114 on a five-point scale, even though realistic-input scores improve from 3.083 to 3.441. The authors suggest scarce long-duration animated OPSD training examples as a possible explanation. Add this result, explicitly attributed and scoped, to the evaluation/limitations and qualify the fictional or animated character use cases. Existing generic runtime caveats do not communicate this measured subgroup regression.",
+    "Blocking practical qualification: the same section reports lip-synchronization mismatch decreasing only from 83.7% to 82.5%, assessed at 0.5x playback under a deliberately rigorous procedure. Because the article recommends narrated lessons and articulation checks, include this residual limitation with its half-speed assessment context; do not present it as an ordinary-speed production failure percentage. Preserve the distinction between natural-looking mouth motion and precise synchronization.",
+    "The linked full capture supporting both findings is research/repos/captures/longcat-report-extract.json, section 5.2, within this frozen scan. Add corresponding source-linked evidence claims and review the changed hashes after revision."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "reportId": "gpt62-astra-sol",
+  "reviewerId": "/root/nov18_astra_review_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:26:14.656272Z",
+  "reportHash": "9ca154eaee6490732e1e71f21387af57b407c016d15661b80e6d732a19b7a9ff",
+  "evidenceHash": "549a2008c54e41ceb9e524aa51620efb85f9913ec8f24a0e06a9acb8c74e49b3",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 8,
+    "novelty": 6,
+    "maturity": 7,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "The documented tool interface, exact rate qualifications and migration changes support broadly useful coding and artifact workflows. The report adds substantial, original acceptance plans for education, applications, websites, spreadsheets and video-production code; these are explicitly proposals rather than executed results. In particular, preserving reasoning items and stable prefixes is immediately actionable.",
+    "impact": "A simultaneously available flagship and lower-priced agent model family, with a million-token context interface and consequential API continuity changes, has broad potential significance for existing integrations. The provider system card also documents a new externally released AI Self-Improvement threshold. Eight reflects that breadth and potential, not independent confirmation of benchmark gains or an assertion of recursive self-improvement.",
+    "novelty": "The prefix-edit and instruction-placement behavior is a concrete differentiation, and the system card describes new capability thresholds. Much of the tool and modality surface is evolutionary; this evidence does not establish a wholly new modality or independently demonstrated breakthrough, limiting novelty to six.",
+    "maturity": "The model pages and migration guide give usable identifiers, context bounds, supported interfaces, tier pricing, residency constraints and parameter exclusions. API availability is dated in the changelog. The release is new, background windows remain beta, and the system card reports obstacle-omission regressions; no Observatory runtime evaluation establishes dependability.",
+    "openness": "Public API documentation and a detailed system card provide useful inspectability, but the inspected evidence establishes a commercial hosted service rather than downloadable weights, training data or permissive model licensing. Applications remain dependent on provider interfaces and eligibility. Three credits documentation without confusing it with model openness."
+  },
+  "confidence": "high",
+  "concerns": []
+}

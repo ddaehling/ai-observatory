@@ -1,0 +1,134 @@
+{
+  "id": "llama-cpp",
+  "title": "llama.cpp 1.0 gives local AI builders a clearer compatibility contract",
+  "entity": "llama.cpp",
+  "category": "Open source",
+  "tags": [
+    "local inference",
+    "C++",
+    "deployment",
+    "API compatibility",
+    "speech",
+    "open source"
+  ],
+  "summary": "The November 13 release introduces a public C API versioning commitment while removing old interfaces, adding memory controls and tightening server behavior. Application teams gain a clearer upgrade boundary, with migration work still required.",
+  "changeType": "new",
+  "publishedAt": "2026-11-13",
+  "discoveredAt": "2026-11-18T19:09:20.833706Z",
+  "updatedAt": "2026-11-18T19:18:08.422686Z",
+  "officialUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+  "sections": [
+    {
+      "id": "change",
+      "title": "Why a 1.0 label matters to an existing engine",
+      "html": "<p>llama.cpp and its underlying ggml library released version 1.0.0 on November 13, 2026. The major development is a clearer compatibility promise for software that embeds them. The project says API and ABI incompatibilities will require major-version changes; its published semantic-version table identifies breaking changes to the public C API in the include directory as major changes. This gives downstream developers a more explicit boundary for dependency planning. <a href=\"https://huggingface.co/blog/ggml-org/llama-cpp-v1\">Official team announcement</a>.</p><p>The engine already runs language and multimodal models across multiple hardware backends. Version 1.0 is therefore a milestone in an established project, not the first availability of local inference. The release also removes deprecated functions, adds memory-management options, extends model support and changes the server and built-in interface. Those changes affect different users differently. An application embedding the C library has a different migration problem from a user launching a prebuilt chat server.</p><p>A stable public interface does not freeze model outputs, hardware performance, command-line behavior or every HTTP endpoint. Nor does it make a downloaded model accurate. The useful question is which contract a product depends on and whether the selected version preserves that contract.</p>"
+    },
+    {
+      "id": "migration",
+      "title": "The transition itself contains breaking changes",
+      "html": "<p>The v1.0.0 notes remove thirty-five deprecated functions, <code>llama_set_warmup</code>, <code>defrag_thold</code> and its command-line option. They promote the NextN/speculative interface into <code>llama.h</code> and rename <code>llama_set_embd_state_src</code> to <code>llama_set_ctx_state_src</code>. The multimodal changes also remove <code>clip.h</code> while consolidating infrastructure into <code>mtmd</code>. These are concrete reasons to review an integration before replacing its dependency. <a href=\"https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0\">Release notes, API and multimodality changes</a>.</p><p>For a native app, a useful first step is to compile the existing binding against the tagged headers and examine every failure. Then exercise model loading, context creation, streaming, cancellation and teardown using the same model artifact as the earlier build. This is a recommended migration procedure, not a test performed in this scan. A successful compile alone cannot show that the application still handles long prompts or interrupted generations correctly.</p><p>The public versioning rules classify compatible features, backend updates, model support and API additions as minor changes, and bug fixes without API changes as patches. This is a welcome maintenance commitment. Teams should nevertheless pin the engine and model revisions used for a release and retain their own acceptance checks, because interface compatibility and task quality answer different questions.</p>"
+    },
+    {
+      "id": "memory",
+      "title": "New controls change the capacity experiment",
+      "html": "<p>The release adds OCP FP8 key/value caches, with <code>f8_e4m3</code> options, and a cache for mixture-of-experts weights held in host memory. The versioned server reference makes the arrangement more precise: <code>--moe-cache-mib</code> allocates GPU cache capacity for experts otherwise kept on the CPU, and <code>--moe-cache-cpu-share</code> selects what fraction of misses the CPU computes once that cache is full. The latter ranges from zero to one. <a href=\"https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md\">Versioned server options</a>.</p><p>This can change the balance among GPU memory, host RAM, transfer traffic and CPU work. It does not establish that an arbitrary large model fits a consumer machine or that offloading always improves responsiveness. The documented expert cache is disabled by default, and its CPU-share default is zero. A sensible comparison should preserve the model, prompt, context size and concurrency while changing one memory control at a time.</p><p>Likewise, smaller KV storage is only one part of the memory budget. Weights, activations, buffers and simultaneous requests remain relevant. Measure both time to first output and sustained generation, together with peak host and device memory. A configuration that avoids an allocation failure but stalls during an interactive task may be less useful than a smaller model. No speedup or memory saving was measured for this report.</p>"
+    },
+    {
+      "id": "models",
+      "title": "Broader support is useful only when the selected artifact works",
+      "html": "<p>The release notes add Kimi-K3.1-Pro, Ripple and xing4_0 text architectures, drama-3 speech generation, MageVL-Cowork and Kimi-K3.1 vision support. They also describe Gemma 4 streaming audio input and backend updates inherited from ggml 1.0.0. These are supported-release statements from the maintainers. They do not establish quality or a common hardware requirement across the named models. <a href=\"https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0\">New models and multimodality changes</a>.</p><p>For a product, select a particular model file, its quantization and any required projector before evaluating the engine. Record the source and license of each artifact. A smaller quantization may fit memory while changing task performance; a supported architecture name does not guarantee that every conversion or tokenizer configuration is equivalent. Treat a working model/engine pairing as the unit of evaluation.</p><p>The announcement says the project supports more than 150 architecture variants. That breadth helps builders keep options open, but an inventory count is not an application benchmark. The practical benefit is the possibility of trying several compatible models behind a similar integration boundary while preserving the same task checks. It remains the builder’s job to compare results and keep the selected model’s limitations visible.</p>"
+    },
+    {
+      "id": "server",
+      "title": "Server hardening changes operational assumptions",
+      "html": "<p>Version 1.0 includes fixes concerning SSRF, CORS, DNS rebinding and access to child instances. It restricts the Hugging Face token to Hugging Face hosts and cancels MCP tool calls on a client disconnect or timeout while notifying the MCP server. These are useful release-level improvements, particularly for applications that combine model inference with tools and remote media. They are not proof that every deployment configuration is secure. <a href=\"https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0\">Server changes</a>.</p><p>The tagged server reference defaults to listening on loopback and provides API-key authentication. Allowing tools without authentication on a non-loopback address is an explicit opt-in, disabled by default. Private-address media URLs also require an explicit opt-in. The optional MCP proxy is marked experimental and warns against use in untrusted environments. These concrete defaults should inform the product’s deployment design. <a href=\"https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md\">Network, authentication and tool options</a>.</p><p>For a classroom app or small internal tool, begin with the local boundary the documentation supplies. If multiple users need remote access, add the authentication and network arrangement appropriate to that deployment, and test timeout and cancellation behavior with harmless tools. The release’s MCP cancellation work does not by itself promise rollback of an external action already performed by a tool.</p>"
+    },
+    {
+      "id": "speech",
+      "title": "The speech endpoint has compatibility details worth preserving",
+      "html": "<p>The new <code>/v1/audio/speech</code> endpoint gives an application an OpenAI-style route for text-to-speech models. Its versioned documentation is explicit about differences: output formats are WAV or raw PCM, the default is WAV rather than MP3, and the sample rate comes from the model rather than being resampled to a common fixed value. An audio player or processing pipeline must use the returned format and rate. <a href=\"https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md\">Speech API section</a>.</p><p>Voice names also come from the model’s advertised voices. Familiar hosted-service names are not automatically mapped, and a model with predefined voices rejects unsupported names. Thus changing only a base URL can leave a narration feature broken even though the endpoint looks familiar. A useful integration test sends a short phrase, checks response metadata, decodes the audio and confirms its duration and playback speed.</p><p>This creates a concrete opportunity for local narration in a lesson tool, accessible document reader or creative preview app. The surrounding product must still handle errors, user-selected voices, chunk boundaries and the license of the speech checkpoint. This scan did not generate speech, compare voice quality or verify real-time performance. The feature is documented as available, with application fit still to be established.</p>"
+    },
+    {
+      "id": "integration",
+      "title": "A familiar HTTP interface is not complete interchangeability",
+      "html": "<p>The server documents chat completions, Responses and embeddings routes and supports synchronous and streaming chat. Its own chat-completions description avoids a strong claim of full OpenAI specification compatibility and says models need a supported chat template for optimal use. Tool calling can require the Jinja flag and an appropriate template. Schema-constrained JSON is documented, but the application still needs semantic validation of the returned values. <a href=\"https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md\">OpenAI-compatible API endpoints</a>.</p><p>A local research assistant could accept a question and a curated set of passages, return an answer plus source identifiers, then validate that every identifier refers to the supplied material. The inspectable output is a grounded answer and its evidence links. The engine supplies inference and response-format mechanisms; retrieval, document permissions, citation checking and a useful refusal path belong to the application.</p><p>For an educational exercise generator, supply a teacher-approved topic and a structured output schema, then compare generated questions against a reviewed answer key. Test malformed inputs, empty outputs, truncation and cancellation. These are proposed uses, not built-in guarantees of correct teaching content. Replacing a hosted model with a local endpoint can change privacy and operating costs, but it does not automatically preserve the previous model’s reasoning quality.</p>"
+    },
+    {
+      "id": "installation",
+      "title": "Choose a distribution and backend deliberately",
+      "html": "<p>The team lists distribution routes across desktop, mobile and server platforms, including prerelease artifacts, containers and package managers. Availability differs by channel and platform; the announcement does not mean every package manager shipped this exact version simultaneously. For a reproducible evaluation, use the v1.0.0 tag or verify the version of the chosen binary. Keep newer rolling builds distinct from the tagged release. <a href=\"https://huggingface.co/blog/ggml-org/llama-cpp-v1\">Distribution table</a>.</p><p>The tagged build guide provides CPU and accelerator paths. Metal is enabled by default on macOS; CUDA requires the NVIDIA toolkit; Vulkan and other backends have their own dependencies. Multiple backends can be built together, and device selection is documented. These options explain portability, but they do not remove hardware-specific integration work. <a href=\"https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/docs/build.md\">Versioned build guide</a>.</p><p>The engine’s MIT license permits use, modification and distribution with preservation of its notice and disclaimer. Downloaded model weights carry their own terms, which the engine license does not replace. A local deployment also has real costs: hardware, power, maintenance and engineering time. No general price-per-token or savings figure can be inferred from this release, and no such cost was measured here.</p>"
+    },
+    {
+      "id": "evaluation-plan",
+      "title": "A small acceptance set makes the release useful",
+      "html": "<p>For an existing application, preserve a short set of representative requests before upgrading. Include one ordinary prompt, one long-context case, one structured response, one concurrent request pair and one interrupted generation. If the product uses images or speech, include those paths too. Run the same inputs against the pinned old and new engine/model combinations and record output validity, latency, memory and errors. This is a recommended evaluation design, not a result.</p><p>Separate the decision to adopt the compatibility milestone from the decision to enable every new optimization. First establish a working baseline with the current model and familiar settings. Then evaluate FP8 cache storage, expert caching or a new model as individual changes. This makes a regression easier to attribute and avoids crediting the engine for an improvement caused by a different checkpoint.</p><p>For a new prototype, the built-in chat interface can reduce initial integration effort. The release adds chat groups, a live-preview Markdown editor and mobile-layout changes. Those interface improvements are documented release features; accessibility and browser behavior were not tested here. A production website should still offer clear progress, cancellation and error states around its own inference requests.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "A stronger foundation, with a precise scope",
+      "html": "<p>llama.cpp 1.0 is most valuable to developers who depend on the engine as a component. The explicit compatibility commitment can make upgrades easier to reason about, while the actual release notes expose the changes that need migration. Memory controls, speech access and server hardening broaden what a local application can attempt. None of these developments makes model selection or evaluation unnecessary.</p><p>The strongest adoption case is a maintained local or private application whose team can pin versions, test its bindings and measure the target workload. The weakest case is treating the 1.0 label as proof that an arbitrary model will run quickly or that an OpenAI-style endpoint exactly reproduces a hosted service. The versioned documentation is unusually useful because it states several of those boundaries directly.</p><p>This report inspected the official announcement, tagged release, MIT license, build guide and server reference. No binaries were installed, model files downloaded, API calls executed or benchmarks reproduced. The result is a source-backed migration and evaluation guide. The next meaningful evidence would come from the intended application on its actual hardware, with the model and request mix held explicit.</p>"
+    }
+  ],
+  "useCases": [
+    "Versioned native integrations for local language and multimodal inference",
+    "Local narration endpoints with explicit model voice and audio-format handling",
+    "Educational and research applications using validated structured outputs and source-linked answers"
+  ],
+  "limitations": [
+    "The public C API versioning commitment does not imply fixed model outputs or full HTTP compatibility.",
+    "v1.0.0 removes deprecated interfaces and requires integration-specific migration checks.",
+    "Memory, speed and quality depend on model, quantization, context, hardware and concurrency.",
+    "Model licenses are separate from the engine MIT license.",
+    "No installation, API execution or benchmark reproduction performed."
+  ],
+  "sources": [
+    {
+      "id": "repos-nov18-llama-v1-blog",
+      "title": "llama.cpp team v1.0.0 announcement",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "accessedAt": "2026-11-18T19:09:20.382762Z",
+      "publishedAt": "2026-11-13",
+      "locator": "Release; semantic-version rules; distribution; backend coverage",
+      "supports": "November 13 publication, compatibility commitment and distribution scope"
+    },
+    {
+      "id": "repos-nov18-llama-v1-release",
+      "title": "llama.cpp v1.0.0 release notes",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+      "accessedAt": "2026-11-18T19:09:20.833706Z",
+      "publishedAt": "2026-11-13",
+      "locator": "Overview; API; models; core; server; UI; ggml changes",
+      "supports": "Actual release changes and removed interfaces"
+    },
+    {
+      "id": "repos-nov18-llama-v1-server",
+      "title": "llama.cpp v1.0.0 server reference",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md",
+      "accessedAt": "2026-11-18T19:10:40.327222Z",
+      "publishedAt": null,
+      "locator": "Options; speech API; OpenAI-compatible endpoints",
+      "supports": "Memory controls, network defaults, authentication and compatibility limitations"
+    },
+    {
+      "id": "repos-nov18-llama-v1-build",
+      "title": "llama.cpp v1.0.0 build guide",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/docs/build.md",
+      "accessedAt": "2026-11-18T19:10:40.625738Z",
+      "publishedAt": null,
+      "locator": "CPU; Metal; CUDA; Vulkan; dynamic backends",
+      "supports": "Platform and backend prerequisites"
+    },
+    {
+      "id": "repos-nov18-llama-license",
+      "title": "llama.cpp v1.0.0 MIT license",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/LICENSE",
+      "accessedAt": "2026-11-18T19:10:39.647663Z",
+      "publishedAt": null,
+      "locator": "Full text",
+      "supports": "Engine licensing terms"
+    }
+  ],
+  "images": [],
+  "judgment": "A material compatibility milestone for maintained local-AI applications, best adopted through a pinned migration and workload-specific acceptance checks.",
+  "researchNote": "Primary-source documentary research retrieved November 18, 2026. Runtime references pinned to v1.0.0. No binaries installed, model weights downloaded, API calls executed or performance tests run."
+}

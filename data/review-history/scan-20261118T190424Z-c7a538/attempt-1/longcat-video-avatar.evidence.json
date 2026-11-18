@@ -1,0 +1,408 @@
+[
+  {
+    "claim_id": "nov18-longcat-release",
+    "claim": "The pinned repository announcement dates LongCat-Video-Avatar 1.6 to November 15, 2026.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-readme",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/README.md",
+        "locator": "Latest News",
+        "passage": "Nov 15, 2026",
+        "summary": "The pinned repository announcement dates LongCat-Video-Avatar 1.6 to November 15, 2026.",
+        "published_at": null,
+        "event_at": "2026-11-15",
+        "retrieved_at": "2026-11-18T19:13:56.155584Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "captureSha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "archive_sha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Repository announcement date; model-card and PDF publication dates remain unknown."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-purpose",
+    "claim": "Meituan describes more natural lip motion, long-video consistency and faster inference as version 1.6 goals.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Model Introduction and Key Features",
+        "passage": "Building upon LongCat-Video-Avatar 1.5, 1.6 improves expressive naturalness, lip–audio synchronization, coordinated facial and body motion, and visual consistency during long-form generation.",
+        "summary": "Meituan describes more natural lip motion, long-video consistency and faster inference as version 1.6 goals.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Vendor capability claims, not independently measured."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-duration",
+    "claim": "Meituan claims video continuation beyond ten minutes with reduced accumulation of visual errors.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Key Features",
+        "passage": "enabling videos exceeding 10 minutes while preserving visual quality, identity consistency, and temporal coherence.",
+        "summary": "Meituan claims video continuation beyond ten minutes with reduced accumulation of visual errors.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Developer claim; Arena ranking does not independently establish ten-minute production reliability."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-adapters",
+    "claim": "The released model card identifies DMD and OPSD LoRAs plus an optional weight-only INT8 diffusion backbone.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Quick Inference: Checkpoint composition",
+        "passage": "weight-only INT8 DiT",
+        "summary": "The released model card identifies DMD and OPSD LoRAs plus an optional weight-only INT8 diffusion backbone.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Base architecture is stated to be the same as Avatar 1.5; download recipe includes base LongCat-Video and Avatar checkpoint."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-sampling",
+    "claim": "The technical report describes fifty-to-eight-step distillation.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Introduction pp.3–4",
+        "passage": "reduces sampling from 50 to eight denoising steps",
+        "summary": "The technical report describes fifty-to-eight-step distillation.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Step count is not a measured wall-clock speed ratio."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No independently reproduced latency or memory result."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-study",
+    "claim": "The developer Arena uses 508 image-speech pairs and 33,051 valid votes across fifteen model pairings.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Section 4.1 p.9",
+        "passage": "The evaluation set consists of 508 image–speech pairs",
+        "summary": "The developer Arena uses 508 image-speech pairs and 33,051 valid votes across fifteen model pairings.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Developer-run evaluation; commercial API failures leave unequal sample counts; ties count as half a win."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-preference",
+    "claim": "The developer study ranks version 1.6 second, with 55.6% tie-adjusted preference over version 1.5 and 24.7% against OmniHuman-2.0.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Figure 5 p.9 and section 4.2 p.10",
+        "passage": "1.6 receives 55.6% of the 2,535 valid votes",
+        "summary": "The developer study ranks version 1.6 second, with 55.6% tie-adjusted preference over version 1.5 and 24.7% against OmniHuman-2.0.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Comparison conditioned on the authors’ evaluation procedure and available outputs."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Ranking is not a blanket superiority or duration guarantee."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-runtime",
+    "claim": "The card gives a CUDA 12.4/PyTorch 2.6.0 setup and two-process examples.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Quick Start and Single-Person Animation",
+        "passage": "torch==2.6.0+cu124",
+        "summary": "The card gives a CUDA 12.4/PyTorch 2.6.0 setup and two-process examples.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Recipe, not minimum GPU count or minimum VRAM proof."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No minimum VRAM or operating-cost measurement established; no native Mac execution verified."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-quantization",
+    "claim": "The card requires Transformer Engine for FP8 and forbids simultaneous FP8/INT8.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "FP8 dependency and INT8 exclusivity",
+        "passage": "Do not use `--use_fp8` and `--use_int8` simultaneously",
+        "summary": "The card requires Transformer Engine for FP8 and forbids simultaneous FP8/INT8.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Compilation warm-up and input-shape changes can add overhead; FlashAttention 3 guidance is Hopper-specific."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-license-weights",
+    "claim": "The model card explicitly declares MIT licensing for the weights.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "License Agreement",
+        "passage": "The **model weights** are released under the **MIT License**.",
+        "summary": "The model card explicitly declares MIT licensing for the weights.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "The linked model-hub LICENSE returned 404; actual code-license text is separately inspected."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-license-code",
+    "claim": "The pinned repository uses the standard MIT license.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-license",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/LICENSE",
+        "locator": "Full license",
+        "passage": "Permission is hereby granted, free of charge",
+        "summary": "The pinned repository uses the standard MIT license.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.114439Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-license.json",
+        "captureSha256": "1519175e905a42a43397da0e14fdcd584f5c5fdf40e1d8acb6fba9c74ad2150f",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-license.json",
+        "archive_sha256": "1519175e905a42a43397da0e14fdcd584f5c5fdf40e1d8acb6fba9c74ad2150f"
+      }
+    ],
+    "qualifiers": [
+      "Copyright/license notice preservation and no warranty.",
+      "Does not grant rights to an input voice, photograph or likeness."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-docs-contradiction",
+    "claim": "Pinned README says the explicit 4/1.0 settings disable mixing, conflicting with the inspected inference branch.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-readme",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/README.md",
+        "locator": "Avatar 1.6 user tips",
+        "passage": "disable mixing and load the single LoRA",
+        "summary": "Pinned README says the explicit 4/1.0 settings disable mixing, conflicting with the inspected inference branch.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.155584Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "captureSha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "archive_sha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70"
+      }
+    ],
+    "qualifiers": [
+      "Documentation inconsistency tied to commit 58eb336edc5c8c63389838727e40b8c18434e54e."
+    ],
+    "contradicts": [
+      "nov18-longcat-code-branch"
+    ],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-code-branch",
+    "claim": "The pinned inference script enables the two-adapter branch when mix_steps is greater than zero.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-inference"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-inference",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/run_demo_avatar_single_audio_to_video.py",
+        "locator": "generate lines 113–140",
+        "passage": "if args.mix_steps > 0:",
+        "summary": "The pinned inference script enables the two-adapter branch when mix_steps is greater than zero.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.181313Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-inference.json",
+        "captureSha256": "90c944944eaab6af158921a74cfc2540e5b143283489f8a56c66164b585ee947",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-inference.json",
+        "archive_sha256": "90c944944eaab6af158921a74cfc2540e5b143283489f8a56c66164b585ee947"
+      }
+    ],
+    "qualifiers": [
+      "Source inspection only; requires distillation and valid adapter files.",
+      "Parser defaults are mix_steps=3 and mix_alpha=0.5; explicit published examples override to 4/1.0."
+    ],
+    "contradicts": [
+      "nov18-longcat-docs-contradiction"
+    ],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No generated result or adapter quality comparison."
+    ]
+  }
+]

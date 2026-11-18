@@ -1,0 +1,28 @@
+{
+  "reportId": "mai-code2",
+  "reviewerId": "/root/nov18_astra_review_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:26:14.658108Z",
+  "reportHash": "a42bcd9163c828a0b0af690ff2797509021d1cbb58bd82a136814e0bd3c9c060",
+  "evidenceHash": "9b21182910b614ffb487b482b58daa333d9ab20df2bf7e82cec78f24a1c88473",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Routine engineering, contained repairs and visual coding provide a useful, well-defined adoption lane through the documented Copilot route. The report supplies concrete teacher-reviewed exercises, application fixes, website acceptance checks and media-script trials, including failure paths and accepted-patch economics. Missing complete prices and account-level availability reduce immediate procurement usefulness.",
+    "impact": "A coding-focused model family distributed through Copilot and reporting competitive cost-quality tradeoffs could materially affect everyday engineering. Evidence is vendor-authored, evaluated in specified harnesses and uses 50% promotional pricing, so it supports domain significance rather than field-wide superiority.",
+    "novelty": "The narrower enterprise-coding focus and inexpensive Flash allocation are meaningful product differentiation, with a documented visual coding study. The supplied sources do not reveal a new architecture or independently reproduced capability; a score of five reflects that boundary.",
+    "maturity": "The announcement states that both models are available in Copilot and identifies evaluated task configurations. Flash in Foundry is limited-access preview, other providers are coming soon, and exact plan, quota, geography and full price information are unresolved. These restrictions are accurately retained, and no native trial justifies a higher reliability score.",
+    "openness": "The family page exposes model/data-card links and accessible launch methodology, but those links are not evidence of inspected model terms, portable weights or training transparency. The report correctly leaves those rights unknown and separates custom customer models from untuned behavior. This is meaningful documentation around constrained hosted access."
+  },
+  "confidence": "high",
+  "concerns": []
+}

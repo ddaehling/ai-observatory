@@ -1,0 +1,28 @@
+{
+  "reportId": "tokeneconomizer",
+  "reviewerId": "/root/nov18_astra_review_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:25:59.137383Z",
+  "reportHash": "211ee1311660e0a15ba7ad8dbcfef830503585aa3956ccd4e7b15e5aec4f48a3",
+  "evidenceHash": "f7150210a6316fbe61d8a7bf091b851c9164da30f1d01a2b1529685d1495bddb",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The repository-aware controller offers a concrete trial for recurring coding, teaching-repository, website and code-based video work. The report explains what to inspect, preserve and measure rather than advertising the research percentages as a plugin discount. The mismatch between paper stopping and plugin alerts is particularly useful.",
+    "impact": "Cross-session black-box cost control has meaningful potential in coding-agent workflows, supported by multiple host/model settings and task domains. Limited benchmark continuity, historical model choices and different shipped defaults keep the evidence short of broad operational validation. Impact 6 maps to 1,800–2,200 words; the frozen body has 1,949, subject to the final mean.",
+    "novelty": "The coordinated use of operational micro-skills, tool pruning and failure-loop intervention is a meaningful experience-driven approach. The report does not suggest model retraining or wholly new primitives, and observed gains depend on recurring environment structure.",
+    "maturity": "Documented host ranges, settings, recovery mechanisms and a runnable plugin support bounded use. Experimental adapters, notification gaps, micro-skills disabled by default, the non-stopping plugin and absent independent native trials materially limit production confidence. Benchmark quality regressions are explicitly retained.",
+    "openness": "MIT source, an accessible paper and separate experiment harness/task sets provide strong methodological inspection and reproducibility opportunities. Paid or provider-controlled agents and moving main-branch compatibility constrain portability and exact repetition, so openness is strong but not complete."
+  },
+  "confidence": "high",
+  "concerns": []
+}

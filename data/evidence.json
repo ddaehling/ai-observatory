@@ -23301,5 +23301,2029 @@
     "limitations": [
       "Not reproduced; no general accuracy, speed or comparative claim."
     ]
+  },
+  {
+    "claim_id": "nov18-gpt62-launch",
+    "claim": "OpenAI announced API availability of gpt-6.2-astra and gpt-6.2-sol on November17,2026; both support Responses and Chat Completions, with tool calling requiring Responses. The same day added public-beta two/eight-hour background completion windows.",
+    "source_ids": [
+      "nov18-openai-api-changelog"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-openai-api-changelog",
+        "url": "https://developers.openai.com/api/docs/changelog",
+        "locator": "November2026, Nov17 entries",
+        "passage": "Tool calling requires the Responses API.",
+        "summary": "OpenAI announced API availability of gpt-6.2-astra and gpt-6.2-sol on November17,2026; both support Responses and Chat Completions, with tool calling requiring Responses. The same day added public-beta two/eight-hour background completion windows.",
+        "published_at": null,
+        "event_at": "2026-11-17",
+        "retrieved_at": "2026-11-18T19:09:15.876092Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-openai-changelog.capture.json",
+        "captureSha256": "ca7c09b86b8e2098c60b59acf9cafeab8a4ccceb7d355e233279126e6694f554",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-openai-changelog.capture.json",
+        "archive_sha256": "ca7c09b86b8e2098c60b59acf9cafeab8a4ccceb7d355e233279126e6694f554"
+      }
+    ],
+    "qualifiers": [
+      "Vendor documentation; background completion is public beta."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-gpt62-migration",
+    "claim": "GPT-6.2 appends top-level instructions after input; reusable instructions belong in an initial developer message for cache eligibility. Prefix edits/certain model changes/end-user or organization changes drop reasoning items. The migration guide documents reasoning defaults, unsupported parameters, ZDR and service-tier residency constraints.",
+    "source_ids": [
+      "nov18-gpt62-api-guide"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-gpt62-api-guide",
+        "url": "https://developers.openai.com/api/docs/guides/latest-model",
+        "locator": "What's new; Migration quickstart",
+        "passage": "To preserve reasoning and keep earlier input eligible",
+        "summary": "GPT-6.2 appends top-level instructions after input; reusable instructions belong in an initial developer message for cache eligibility. Prefix edits/certain model changes/end-user or organization changes drop reasoning items. The migration guide documents reasoning defaults, unsupported parameters, ZDR and service-tier residency constraints.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:15.873376Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-guide.capture.json",
+        "captureSha256": "66c59ebdcace36e57775ac9779f619b85bb3aff50d132d1ed1b9ca6f503c2ffd",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-guide.capture.json",
+        "archive_sha256": "66c59ebdcace36e57775ac9779f619b85bb3aff50d132d1ed1b9ca6f503c2ffd"
+      }
+    ],
+    "qualifiers": [
+      "API-specific behavior; ZDR is for approved organizations on eligible endpoints/features.",
+      "US/EU residency Standard/Fast/Batch; Ultrafast US-only; no guarantee for other tools inferred."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-gpt62-astra-spec",
+    "claim": "Astra accepts text and images and outputs text; context1050000,max input922000,max output128000,knowledge cutoff2026-05-18. Standard short-context rates per million: input$8,cached$0.40,output$40,30m cache writes$10,12h cache writes$20. >272K input doubles input/cache rates and multiplies output1.5 for entire request; tier multipliers documented.",
+    "source_ids": [
+      "nov18-gpt62-astra-model"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-gpt62-astra-model",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+        "locator": "Model description, context, Pricing, Modalities, Tools",
+        "passage": "1,050,000 context window",
+        "summary": "Astra accepts text and images and outputs text; context1050000,max input922000,max output128000,knowledge cutoff2026-05-18. Standard short-context rates per million: input$8,cached$0.40,output$40,30m cache writes$10,12h cache writes$20. >272K input doubles input/cache rates and multiplies output1.5 for entire request; tier multipliers documented.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:15.877994Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-astra.capture.json",
+        "captureSha256": "88c24210fbe426f48c6d1e67d333d7f581f1e4fd6bd312866e6a3dbe4d6543cd",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-astra.capture.json",
+        "archive_sha256": "88c24210fbe426f48c6d1e67d333d7f581f1e4fd6bd312866e6a3dbe4d6543cd"
+      }
+    ],
+    "qualifiers": [
+      "Prices checked November18,2026; tools/cache writes add charges; billed output can differ from visible answer.",
+      "Batch50% Standard; Fast2x; Ultrafast3x through2027-02-28 then6x from2027-03-01 Pacific."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-gpt62-sol-spec",
+    "claim": "Sol accepts text/image inputs and text output; same context/input/output bounds as Astra; cutoff2026-06-01. Standard short-context per-million rates input$2,cached$0.10,output$10,30m write$2.50,12h write$5. Same documented long-context/tier qualifications.",
+    "source_ids": [
+      "nov18-gpt62-sol-model"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-gpt62-sol-model",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+        "locator": "Model description, context, Pricing, Modalities, Tools",
+        "passage": "1,050,000 context window",
+        "summary": "Sol accepts text/image inputs and text output; same context/input/output bounds as Astra; cutoff2026-06-01. Standard short-context per-million rates input$2,cached$0.10,output$10,30m write$2.50,12h write$5. Same documented long-context/tier qualifications.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:15.878322Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-sol.capture.json",
+        "captureSha256": "a6216bca7f37fdcea4fa3c2adbe0889b2c9e386d67df1a3aa8fcf353048af63e",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-sol.capture.json",
+        "archive_sha256": "a6216bca7f37fdcea4fa3c2adbe0889b2c9e386d67df1a3aa8fcf353048af63e"
+      }
+    ],
+    "qualifiers": [
+      "Tool support is Responses-specific; not native audio/video generation.",
+      "None reasoning is rejected. Prices and modalities are documentary, not tested."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-gpt62-safety",
+    "claim": "OpenAI classifies both models Critical cyber and High biological/chemical; Astra High AI Self-Improvement, Sol below. The card explicitly treats High self-improvement as an early milestone preparing safeguards, and reports model-only blocker-omission regressions mitigated by Codex developer instructions.",
+    "source_ids": [
+      "nov18-gpt62-system-card"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-gpt62-system-card",
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/",
+        "locator": "Change log; Safety Overview; Avoiding Deceptive Interactions with Users",
+        "passage": "more likely to omit known obstacles",
+        "summary": "OpenAI classifies both models Critical cyber and High biological/chemical; Astra High AI Self-Improvement, Sol below. The card explicitly treats High self-improvement as an early milestone preparing safeguards, and reports model-only blocker-omission regressions mitigated by Codex developer instructions.",
+        "published_at": "2026-11-17",
+        "event_at": "2026-11-17",
+        "retrieved_at": "2026-11-18T19:09:16.249745Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-system-card.capture.json",
+        "captureSha256": "5ca4a35614e9c7ff3b13ccfab0d476edbc689fd935e790edcd3341dde4846d35",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-gpt62-system-card.capture.json",
+        "archive_sha256": "5ca4a35614e9c7ff3b13ccfab0d476edbc689fd935e790edcd3341dde4846d35"
+      }
+    ],
+    "qualifiers": [
+      "Provider framework assessments; not proof of unrestricted recursive self-improvement.",
+      "No independent replication or native safety tests in Observatory."
+    ],
+    "contradicts": [],
+    "source_family": "OpenAI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-mai-code2-scope",
+    "claim": "Microsoft announced Code2/Flash November17 for everyday enterprise coding, explicitly not yet tuned for fundamental science or very long-horizon agent work. Both available via GitHub Copilot; Flash limited-access Foundry preview; other named providers coming soon.",
+    "source_ids": [
+      "nov18-mai-code2-release"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-mai-code2-release",
+        "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+        "locator": "Performance and speed; Get started",
+        "passage": "limited-access preview",
+        "summary": "Microsoft announced Code2/Flash November17 for everyday enterprise coding, explicitly not yet tuned for fundamental science or very long-horizon agent work. Both available via GitHub Copilot; Flash limited-access Foundry preview; other named providers coming soon.",
+        "published_at": "2026-11-17",
+        "event_at": "2026-11-17",
+        "retrieved_at": "2026-11-18T19:09:15.877548Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-code2.capture.json",
+        "captureSha256": "47c0d1565452ac612cf4d003bcf660af633b155cae7382d402256881623dd66a",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-code2.capture.json",
+        "archive_sha256": "47c0d1565452ac612cf4d003bcf660af633b155cae7382d402256881623dd66a"
+      }
+    ],
+    "qualifiers": [
+      "Copilot plan/account-specific access not verified.",
+      "Future providers not treated as currently available."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft AI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-mai-code2-evaluation",
+    "claim": "Microsoft reports Code2 at98% of GPT6.1Sol performance at40% cost averaged over four named coding benchmarks. First three use MSBench/Copilot CLI without subagents,max reasoning; FrontierCode1.1 uses Artificial Analysis. MAI cost comparisons use50% promotional pricing. Frontend comparison involved258annotators.",
+    "source_ids": [
+      "nov18-mai-code2-release"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-mai-code2-release",
+        "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+        "locator": "Production quality; About these results footnotes1–3",
+        "passage": "50% promotional price",
+        "summary": "Microsoft reports Code2 at98% of GPT6.1Sol performance at40% cost averaged over four named coding benchmarks. First three use MSBench/Copilot CLI without subagents,max reasoning; FrontierCode1.1 uses Artificial Analysis. MAI cost comparisons use50% promotional pricing. Frontend comparison involved258annotators.",
+        "published_at": "2026-11-17",
+        "event_at": "2026-11-17",
+        "retrieved_at": "2026-11-18T19:09:15.877548Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-code2.capture.json",
+        "captureSha256": "47c0d1565452ac612cf4d003bcf660af633b155cae7382d402256881623dd66a",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-code2.capture.json",
+        "archive_sha256": "47c0d1565452ac612cf4d003bcf660af633b155cae7382d402256881623dd66a"
+      }
+    ],
+    "qualifiers": [
+      "Vendor aggregate evaluation, not independent reproduction.",
+      "Model-specific workload,harness,reasoning and pricing assumptions materially limit transfer.",
+      "Exact promotion duration and account billing not established."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft AI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-mai-code2-product",
+    "claim": "Model-family page provides Copilot entrypoint and model/data-card links. It describes customer-specific customized models, which do not establish identical untuned performance.",
+    "source_ids": [
+      "nov18-mai-code2-model"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-mai-code2-model",
+        "url": "https://microsoft.ai/models/mai-code-2/",
+        "locator": "Built for everyday developer work; Featured partners; Dig deeper",
+        "passage": "Model card",
+        "summary": "Model-family page provides Copilot entrypoint and model/data-card links. It describes customer-specific customized models, which do not establish identical untuned performance.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:11.070548Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-model.capture.json",
+        "captureSha256": "8c8827d8e8ea53cacd659db92cd4d24665f5b5de4d931713657d0af6777ccff6",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/official/primary-mai-model.capture.json",
+        "archive_sha256": "8c8827d8e8ea53cacd659db92cd4d24665f5b5de4d931713657d0af6777ccff6"
+      }
+    ],
+    "qualifiers": [
+      "Dynamic counters extracted as zeros and encoded interactive content not interpreted as measured values.",
+      "Linked PDF was not successfully read; no weights/licensing/context assumptions inferred."
+    ],
+    "contradicts": [],
+    "source_family": "Microsoft AI",
+    "status": "candidate",
+    "limitations": [
+      "Documentary acquisition; no native model benchmark or independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-release",
+    "claim": "The pinned repository announcement dates LongCat-Video-Avatar 1.6 to November 15, 2026.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-readme",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/README.md",
+        "locator": "Latest News",
+        "passage": "Nov 15, 2026",
+        "summary": "The pinned repository announcement dates LongCat-Video-Avatar 1.6 to November 15, 2026.",
+        "published_at": null,
+        "event_at": "2026-11-15",
+        "retrieved_at": "2026-11-18T19:13:56.155584Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "captureSha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "archive_sha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Repository announcement date; model-card and PDF publication dates remain unknown."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-purpose",
+    "claim": "Meituan describes more natural lip motion, long-video consistency and faster inference as version 1.6 goals.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Model Introduction and Key Features",
+        "passage": "Building upon LongCat-Video-Avatar 1.5, 1.6 improves expressive naturalness, lip–audio synchronization, coordinated facial and body motion, and visual consistency during long-form generation.",
+        "summary": "Meituan describes more natural lip motion, long-video consistency and faster inference as version 1.6 goals.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Vendor capability claims, not independently measured."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-duration",
+    "claim": "Meituan claims video continuation beyond ten minutes with reduced accumulation of visual errors.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Key Features",
+        "passage": "enabling videos exceeding 10 minutes while preserving visual quality, identity consistency, and temporal coherence.",
+        "summary": "Meituan claims video continuation beyond ten minutes with reduced accumulation of visual errors.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Developer claim; Arena ranking does not independently establish ten-minute production reliability."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-adapters",
+    "claim": "The released model card identifies DMD and OPSD LoRAs plus an optional weight-only INT8 diffusion backbone.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Quick Inference: Checkpoint composition",
+        "passage": "weight-only INT8 DiT",
+        "summary": "The released model card identifies DMD and OPSD LoRAs plus an optional weight-only INT8 diffusion backbone.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Base architecture is stated to be the same as Avatar 1.5; download recipe includes base LongCat-Video and Avatar checkpoint."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-sampling",
+    "claim": "The technical report describes fifty-to-eight-step distillation.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Introduction pp.3–4",
+        "passage": "reduces sampling from 50 to eight denoising steps",
+        "summary": "The technical report describes fifty-to-eight-step distillation.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Step count is not a measured wall-clock speed ratio."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No independently reproduced latency or memory result."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-study",
+    "claim": "The developer Arena uses 508 image-speech pairs and 33,051 valid votes across fifteen model pairings.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Section 4.1 p.9",
+        "passage": "The evaluation set consists of 508 image–speech pairs",
+        "summary": "The developer Arena uses 508 image-speech pairs and 33,051 valid votes across fifteen model pairings.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Developer-run evaluation; commercial API failures leave unequal sample counts; ties count as half a win."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No independent replication."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-preference",
+    "claim": "The developer study ranks version 1.6 second, with 55.6% tie-adjusted preference over version 1.5 and 24.7% against OmniHuman-2.0.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Figure 5 p.9 and section 4.2 p.10",
+        "passage": "1.6 receives 55.6% of the 2,535 valid votes",
+        "summary": "The developer study ranks version 1.6 second, with 55.6% tie-adjusted preference over version 1.5 and 24.7% against OmniHuman-2.0.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "captureSha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-extract.json",
+        "archive_sha256": "2a37612ee54ca8767704a7ed29d3847156af8a8e2b2e5864d3ef669e3def6d72"
+      }
+    ],
+    "qualifiers": [
+      "Comparison conditioned on the authors’ evaluation procedure and available outputs."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Ranking is not a blanket superiority or duration guarantee."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-runtime",
+    "claim": "The card gives a CUDA 12.4/PyTorch 2.6.0 setup and two-process examples.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "Quick Start and Single-Person Animation",
+        "passage": "torch==2.6.0+cu124",
+        "summary": "The card gives a CUDA 12.4/PyTorch 2.6.0 setup and two-process examples.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Recipe, not minimum GPU count or minimum VRAM proof."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No minimum VRAM or operating-cost measurement established; no native Mac execution verified."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-quantization",
+    "claim": "The card requires Transformer Engine for FP8 and forbids simultaneous FP8/INT8.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "FP8 dependency and INT8 exclusivity",
+        "passage": "Do not use `--use_fp8` and `--use_int8` simultaneously",
+        "summary": "The card requires Transformer Engine for FP8 and forbids simultaneous FP8/INT8.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [
+      "Compilation warm-up and input-shape changes can add overhead; FlashAttention 3 guidance is Hopper-specific."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-license-weights",
+    "claim": "The model card explicitly declares MIT licensing for the weights.",
+    "source_ids": [
+      "repos-nov18-longcat-modelcard"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-modelcard",
+        "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/raw/main/README.md",
+        "locator": "License Agreement",
+        "passage": "The **model weights** are released under the **MIT License**.",
+        "summary": "The model card explicitly declares MIT licensing for the weights.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:19.767244Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "captureSha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-modelcard.json",
+        "archive_sha256": "27ac1e6f7f6280659c357091f6e7b7712307740ad065695fcb67aeaa8b80d5fa"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "The linked model-hub LICENSE returned 404; actual code-license text is separately inspected."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-license-code",
+    "claim": "The pinned repository uses the standard MIT license.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-license",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/LICENSE",
+        "locator": "Full license",
+        "passage": "Permission is hereby granted, free of charge",
+        "summary": "The pinned repository uses the standard MIT license.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.114439Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-license.json",
+        "captureSha256": "1519175e905a42a43397da0e14fdcd584f5c5fdf40e1d8acb6fba9c74ad2150f",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-license.json",
+        "archive_sha256": "1519175e905a42a43397da0e14fdcd584f5c5fdf40e1d8acb6fba9c74ad2150f"
+      }
+    ],
+    "qualifiers": [
+      "Copyright/license notice preservation and no warranty.",
+      "Does not grant rights to an input voice, photograph or likeness."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-docs-contradiction",
+    "claim": "Pinned README says the explicit 4/1.0 settings disable mixing, conflicting with the inspected inference branch.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-readme"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-readme",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/README.md",
+        "locator": "Avatar 1.6 user tips",
+        "passage": "disable mixing and load the single LoRA",
+        "summary": "Pinned README says the explicit 4/1.0 settings disable mixing, conflicting with the inspected inference branch.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.155584Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "captureSha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-readme.json",
+        "archive_sha256": "ed3b0ec4d9f0ea6e4a643702a19cf2471a84dc0fcfc507177ec4b04fd97c1a70"
+      }
+    ],
+    "qualifiers": [
+      "Documentation inconsistency tied to commit 58eb336edc5c8c63389838727e40b8c18434e54e."
+    ],
+    "contradicts": [
+      "nov18-longcat-code-branch"
+    ],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-longcat-code-branch",
+    "claim": "The pinned inference script enables the two-adapter branch when mix_steps is greater than zero.",
+    "source_ids": [
+      "repos-nov18-longcat-pinned-inference"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pinned-inference",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/58eb336edc5c8c63389838727e40b8c18434e54e/run_demo_avatar_single_audio_to_video.py",
+        "locator": "generate lines 113–140",
+        "passage": "if args.mix_steps > 0:",
+        "summary": "The pinned inference script enables the two-adapter branch when mix_steps is greater than zero.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:56.181313Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-inference.json",
+        "captureSha256": "90c944944eaab6af158921a74cfc2540e5b143283489f8a56c66164b585ee947",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-pinned-inference.json",
+        "archive_sha256": "90c944944eaab6af158921a74cfc2540e5b143283489f8a56c66164b585ee947"
+      }
+    ],
+    "qualifiers": [
+      "Source inspection only; requires distillation and valid adapter files.",
+      "Parser defaults are mix_steps=3 and mix_alpha=0.5; explicit published examples override to 4/1.0."
+    ],
+    "contradicts": [
+      "nov18-longcat-docs-contradiction"
+    ],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "No generated result or adapter quality comparison."
+    ]
+  },
+  {
+    "claim_id": "nov18-llama-date",
+    "claim": "The official team announcement is published November 13, 2026 and announces v1.0.0 libraries.",
+    "source_ids": [
+      "repos-nov18-llama-v1-blog"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-blog",
+        "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+        "locator": "Published date; introductory announcement",
+        "passage": "November 13, 2026",
+        "summary": "The official team announcement is published November 13, 2026 and announces v1.0.0 libraries.",
+        "published_at": "2026-11-13",
+        "event_at": "2026-11-13",
+        "retrieved_at": "2026-11-18T19:09:20.382762Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-blog.json",
+        "captureSha256": "7667685e5154ce4af8a66afa008836ff3f781450d2329b50c705c1b78ee57f92",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-blog.json",
+        "archive_sha256": "7667685e5154ce4af8a66afa008836ff3f781450d2329b50c705c1b78ee57f92"
+      }
+    ],
+    "qualifiers": [],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-compatibility",
+    "claim": "The team promises major-version bumps for API/ABI incompatibilities and identifies public C API breaks as major changes.",
+    "source_ids": [
+      "repos-nov18-llama-v1-blog"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-blog",
+        "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+        "locator": "Semantic version update rules",
+        "passage": "Breaking change to the public C API in ./include",
+        "summary": "The team promises major-version bumps for API/ABI incompatibilities and identifies public C API breaks as major changes.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:20.382762Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-blog.json",
+        "captureSha256": "7667685e5154ce4af8a66afa008836ff3f781450d2329b50c705c1b78ee57f92",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-blog.json",
+        "archive_sha256": "7667685e5154ce4af8a66afa008836ff3f781450d2329b50c705c1b78ee57f92"
+      }
+    ],
+    "qualifiers": [
+      "Does not promise fixed model behavior, universal binary performance or complete HTTP compatibility."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-migration",
+    "claim": "The v1.0.0 release removes deprecated functions, promotes NextN and changes multimodal headers.",
+    "source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-release",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+        "locator": "API and multimodality changes",
+        "passage": "35 deprecated functions",
+        "summary": "The v1.0.0 release removes deprecated functions, promotes NextN and changes multimodal headers.",
+        "published_at": "2026-11-13",
+        "event_at": "2026-11-13",
+        "retrieved_at": "2026-11-18T19:09:20.833706Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "captureSha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "archive_sha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188"
+      }
+    ],
+    "qualifiers": [
+      "Migration is required for integrations using removed interfaces."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-new-models",
+    "claim": "Release notes identify added text, speech and vision architectures, including drama-3 TTS.",
+    "source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-release",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+        "locator": "New models and multimodality changes",
+        "passage": "drama-3 TTS",
+        "summary": "Release notes identify added text, speech and vision architectures, including drama-3 TTS.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:20.833706Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "captureSha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "archive_sha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188"
+      }
+    ],
+    "qualifiers": [
+      "Architecture support is not a model-quality, artifact-compatibility or common hardware guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-memory-controls",
+    "claim": "The server options define a GPU cache for host-resident MoE experts and configurable CPU computation of cache misses.",
+    "source_ids": [
+      "repos-nov18-llama-v1-server"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-server",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md",
+        "locator": "Options --moe-cache-mib / --moe-cache-cpu-share",
+        "passage": "GPU cache size in MiB for the MoE experts kept in the CPU",
+        "summary": "The server options define a GPU cache for host-resident MoE experts and configurable CPU computation of cache misses.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:40.327222Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "captureSha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "archive_sha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349"
+      }
+    ],
+    "qualifiers": [
+      "Expert cache disabled by default; CPU share default zero; performance must be measured."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-fp8-kv",
+    "claim": "The v1.0.0 release adds FP8 KV caches.",
+    "source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-release",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+        "locator": "Core changes",
+        "passage": "FP8 KV caches",
+        "summary": "The v1.0.0 release adds FP8 KV caches.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:20.833706Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "captureSha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "archive_sha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188"
+      }
+    ],
+    "qualifiers": [
+      "No claimed reduction in complete application memory or measured speedup."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-server-fixes",
+    "claim": "Release notes enumerate server security fixes and MCP cancellation on disconnect/timeout.",
+    "source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-release",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+        "locator": "Server changes",
+        "passage": "cancel MCP tool calls on client disconnect or timeout",
+        "summary": "Release notes enumerate server security fixes and MCP cancellation on disconnect/timeout.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:09:20.833706Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "captureSha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+        "archive_sha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188"
+      }
+    ],
+    "qualifiers": [
+      "Cancellation does not establish rollback of completed external effects or deployment security certification."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-network-defaults",
+    "claim": "The versioned server defaults to loopback, offers API keys and disables unauthenticated non-loopback tools unless explicitly enabled.",
+    "source_ids": [
+      "repos-nov18-llama-v1-server"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-server",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md",
+        "locator": "Network and authentication options",
+        "passage": "default: 127.0.0.1",
+        "summary": "The versioned server defaults to loopback, offers API keys and disables unauthenticated non-loopback tools unless explicitly enabled.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:40.327222Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "captureSha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "archive_sha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349"
+      }
+    ],
+    "qualifiers": [
+      "Private media URL access and unauthenticated tools are separate disabled opt-ins; MCP proxy is experimental."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-speech-boundary",
+    "claim": "The new speech API uses WAV/PCM and model-specific sample rates and voice names.",
+    "source_ids": [
+      "repos-nov18-llama-v1-server"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-server",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md",
+        "locator": "POST /v1/audio/speech",
+        "passage": "Defaults to `wav`, unlike the `mp3` of the OpenAI API.",
+        "summary": "The new speech API uses WAV/PCM and model-specific sample rates and voice names.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:40.327222Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "captureSha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "archive_sha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349"
+      }
+    ],
+    "qualifiers": [
+      "OpenAI voice aliases are not automatically mapped; sample rate follows the model."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-http-boundary",
+    "claim": "The server explicitly avoids a strong full OpenAI-specification compatibility claim.",
+    "source_ids": [
+      "repos-nov18-llama-v1-server"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-server",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/tools/server/README.md",
+        "locator": "POST /v1/chat/completions",
+        "passage": "While no strong claims of compatibility with OpenAI API spec is being made",
+        "summary": "The server explicitly avoids a strong full OpenAI-specification compatibility claim.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:40.327222Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "captureSha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-server.json",
+        "archive_sha256": "fc885822e47c7ef4dd17bd3ee1fed0b7b5c2b2441efc925d028288fea6f6f349"
+      }
+    ],
+    "qualifiers": [
+      "Optimal behavior depends on supported chat templates; Jinja/tool-template setup may be needed."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-platforms",
+    "claim": "The tagged build guide documents CPU, Metal, CUDA, Vulkan and other accelerator paths.",
+    "source_ids": [
+      "repos-nov18-llama-v1-build"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-v1-build",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/docs/build.md",
+        "locator": "CPU; Metal; CUDA; Vulkan",
+        "passage": "On MacOS, Metal is enabled by default.",
+        "summary": "The tagged build guide documents CPU, Metal, CUDA, Vulkan and other accelerator paths.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:40.625738Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-build.json",
+        "captureSha256": "31e5c398f6486f8bfa09e3f649a5da07a347e57c7126d96bd2a10a595a9e84af",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-build.json",
+        "archive_sha256": "31e5c398f6486f8bfa09e3f649a5da07a347e57c7126d96bd2a10a595a9e84af"
+      }
+    ],
+    "qualifiers": [
+      "CUDA requires its toolkit; hardware-specific prerequisites remain."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-llama-license",
+    "claim": "The v1.0.0 engine is licensed under standard MIT terms.",
+    "source_ids": [
+      "repos-nov18-llama-license"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-llama-license",
+        "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v1.0.0/LICENSE",
+        "locator": "Full license",
+        "passage": "Permission is hereby granted, free of charge",
+        "summary": "The v1.0.0 engine is licensed under standard MIT terms.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:39.647663Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-license.json",
+        "captureSha256": "18efdf2ab0b06161cd2dd179fd1bfb38159768e43c540e1438fecd62b97a0795",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-license.json",
+        "archive_sha256": "18efdf2ab0b06161cd2dd179fd1bfb38159768e43c540e1438fecd62b97a0795"
+      }
+    ],
+    "qualifiers": [
+      "Model weights have separate licenses.",
+      "MIT requires notice preservation and disclaims warranty."
+    ],
+    "contradicts": [],
+    "source_family": "ggml-org",
+    "status": "candidate",
+    "limitations": []
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-chronology",
+    "claim": "The paper was first submitted October15; the author public plugin announcement is October26 and Microsoft Research coverage November16.",
+    "source_ids": [
+      "nov18-tokeneconomizer-arxiv",
+      "nov18-tokeneconomizer-origin",
+      "source-97087fe3c15c5fa6"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-arxiv",
+        "url": "https://arxiv.org/abs/2610.22732",
+        "locator": "Submission history",
+        "passage": "Submitted on 15 Oct 2026",
+        "summary": "The paper was first submitted October15; the author public plugin announcement is October26 and Microsoft Research coverage November16.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:13:19.152539Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/followup/tokeneconomizer-arxiv.html",
+        "captureSha256": "d2152c33afd69d54b59acbfdbac5ec1ac420b33775c0c7d0b2f9ea844a308ceb",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/followup/tokeneconomizer-arxiv.html",
+        "archive_sha256": "d2152c33afd69d54b59acbfdbac5ec1ac420b33775c0c7d0b2f9ea844a308ceb"
+      },
+      {
+        "source_id": "nov18-tokeneconomizer-origin",
+        "url": "https://x.com/aaron_jli/status/2114797313613053952",
+        "locator": "Originating post and two author continuation posts",
+        "passage": "Oct 26, 2026",
+        "summary": "The paper was first submitted October15; the author public plugin announcement is October26 and Microsoft Research coverage November16.",
+        "published_at": "2026-10-26",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.891462Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/aaron-origin-post.html",
+        "captureSha256": "f99539c3714a920cdf94a388ac67f05354915f737b69698192219cf08995a4bc",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/aaron-origin-post.html",
+        "archive_sha256": "f99539c3714a920cdf94a388ac67f05354915f737b69698192219cf08995a4bc"
+      },
+      {
+        "source_id": "source-97087fe3c15c5fa6",
+        "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+        "locator": "At a glance; How TokenEconomizer works; Saving costs in every repository",
+        "passage": "November 16, 2026",
+        "summary": "The paper was first submitted October15; the author public plugin announcement is October26 and Microsoft Research coverage November16.",
+        "published_at": "2026-11-16",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:10:16.071097Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-97087fe3c15c5fa6.html",
+        "captureSha256": "a78fab7e97792c8e38a4585ee009a1b8d4e55b67cf52cc341f4de2e90b0e34fb",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-97087fe3c15c5fa6.html",
+        "archive_sha256": "a78fab7e97792c8e38a4585ee009a1b8d4e55b67cf52cc341f4de2e90b0e34fb"
+      }
+    ],
+    "qualifiers": [
+      "Publication and announcement dates differ; baseline discovery, not a November16 launch."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-mechanisms",
+    "claim": "The current plugin learns operational micro-skills, prunes historically unused tools and redirects/alerts on failure loops.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "It has three mechanisms:",
+        "summary": "The current plugin learns operational micro-skills, prunes historically unused tools and redirects/alerts on failure loops.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Documented current plugin behavior, not independently executed."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-benchmark-scope",
+    "claim": "Five specified agent-model settings ran277 SWE-Bench tasks from6 repositories across3 seeds, comparing high-effort default execution.",
+    "source_ids": [
+      "nov18-tokeneconomizer-paper"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-paper",
+        "url": "https://arxiv.org/html/2610.22732v1",
+        "locator": "Sections3–6; Tables1–2; AppendixE",
+        "passage": "Every setting runs the full six-repository set with three seeds.",
+        "summary": "Five specified agent-model settings ran277 SWE-Bench tasks from6 repositories across3 seeds, comparing high-effort default execution.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.886670Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "captureSha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "archive_sha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff"
+      }
+    ],
+    "qualifiers": [
+      "Claude Code Sonnet5/Opus4.8; Codex GPT5.6Terra/Sol; Copilot CLI Sonnet5; not newest model evaluation."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-cost-quality",
+    "claim": "Author evaluation reports18.4–30.9% lower mean cache-aware cost incl controller calls; Pass@1 improves4/5 settings and drops1.0pp with Opus4.8.",
+    "source_ids": [
+      "nov18-tokeneconomizer-paper"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-paper",
+        "url": "https://arxiv.org/html/2610.22732v1",
+        "locator": "Sections3–6; Tables1–2; AppendixE",
+        "passage": "Pass@1 improves in four settings and only falls by 1.0 percentage point on Opus 4.8.",
+        "summary": "Author evaluation reports18.4–30.9% lower mean cache-aware cost incl controller calls; Pass@1 improves4/5 settings and drops1.0pp with Opus4.8.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.886670Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "captureSha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "archive_sha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff"
+      }
+    ],
+    "qualifiers": [
+      "No independent reproduction; cost reductions do not prove every task improves."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-generalization",
+    "claim": "Web-Bench102tasks/5projects and100tasks each CredData/ReposVul show workload-specific cost reductions and different quality metrics.",
+    "source_ids": [
+      "nov18-tokeneconomizer-paper"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-paper",
+        "url": "https://arxiv.org/html/2610.22732v1",
+        "locator": "Sections3–6; Tables1–2; AppendixE",
+        "passage": "102 sequential Web-Bench tasks from 5 projects",
+        "summary": "Web-Bench102tasks/5projects and100tasks each CredData/ReposVul show workload-specific cost reductions and different quality metrics.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.886670Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "captureSha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "archive_sha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff"
+      }
+    ],
+    "qualifiers": [
+      "Pass@2 and F1 are not directly comparable to SWE-Bench Pass@1; micro-skills disabled in fresh-repository audits."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-warmup",
+    "claim": "Break-even by sixth task applies to the cumulative chart averaging the two Claude Code settings.",
+    "source_ids": [
+      "nov18-tokeneconomizer-paper"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-paper",
+        "url": "https://arxiv.org/html/2610.22732v1",
+        "locator": "Sections3–6; Tables1–2; AppendixE",
+        "passage": "averaged over the two Claude Code settings",
+        "summary": "Break-even by sixth task applies to the cumulative chart averaging the two Claude Code settings.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.886670Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "captureSha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "archive_sha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff"
+      }
+    ],
+    "qualifiers": [
+      "Not a universal six-prompt break-even guarantee."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-paper-stopping",
+    "claim": "The experimental paper controller can terminate rollouts after repeated stuck findings and strict backstop conditions.",
+    "source_ids": [
+      "nov18-tokeneconomizer-paper"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-paper",
+        "url": "https://arxiv.org/html/2610.22732v1",
+        "locator": "Sections3–6; Tables1–2; AppendixE",
+        "passage": "the controller terminates the rollout",
+        "summary": "The experimental paper controller can terminate rollouts after repeated stuck findings and strict backstop conditions.",
+        "published_at": "2026-10-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.886670Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "captureSha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-paper-html.html",
+        "archive_sha256": "06903dae01532c6f0b681280a54d952023d223f7a8801cc31c8f68dca7c9f8ff"
+      }
+    ],
+    "qualifiers": [
+      "Benchmark controller differs from public plugin."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-plugin-stopping",
+    "claim": "The current public plugin redirects/alerts and never stops a turn itself; headless notifications have host-specific limits.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "it never stops a turn itself.",
+        "summary": "The current public plugin redirects/alerts and never stops a turn itself; headless notifications have host-specific limits.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Not a hard spending cap; Codex exec prints no hook messages."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-defaults",
+    "claim": "Current plugin has micro-skills off by default and tool pruning/loop guard on where supported.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "Micro-skills is off by default",
+        "summary": "Current plugin has micro-skills off by default and tool pruning/loop guard on where supported.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Benchmark savings do not validate default plugin configuration."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-granularity",
+    "claim": "Tool pruning targets Claude Code tools, Codex capability packages and Copilot MCP servers; it prunes nothing on Pi.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "Tool pruning acts through each agent's own settings",
+        "summary": "Tool pruning targets Claude Code tools, Codex capability packages and Copilot MCP servers; it prunes nothing on Pi.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Different capability granularity and adapter support; restore/proposal modes documented."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-compatibility",
+    "claim": "README states Python3.10+ and specified tested host-version ranges; experimental hosts have narrower support.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "Python 3.10 or newer on PATH",
+        "summary": "README states Python3.10+ and specified tested host-version ranges; experimental hosts have narrower support.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Ranges are authors reported tested endpoints, not this run native tests or future compatibility."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-state-cost",
+    "claim": "Learned state is local, but auxiliary calls run through the agent/login and carry cost; prior-session import off by default.",
+    "source_ids": [
+      "nov18-tokeneconomizer-repo"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-repo",
+        "url": "https://github.com/microsoft/TokenEconomizer",
+        "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+        "passage": "their cost is included in its reports.",
+        "summary": "Learned state is local, but auxiliary calls run through the agent/login and carry cost; prior-session import off by default.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:31.088514Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "captureSha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/primary/tokeneconomizer-repo.html",
+        "archive_sha256": "5ecd53d973bb72f875fe78bb2d6f136d9fbaab1f7bca73029cd7d58599e968b2"
+      }
+    ],
+    "qualifiers": [
+      "Local storage is not proof of offline computation; phrase capitalization assessed against normalized text."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-tokeneconomizer-license",
+    "claim": "Inspected source license is MIT with notice retention and no warranty.",
+    "source_ids": [
+      "nov18-tokeneconomizer-license"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-tokeneconomizer-license",
+        "url": "https://github.com/microsoft/TokenEconomizer/blob/main/LICENSE",
+        "locator": "LICENSE text",
+        "passage": "MIT License",
+        "summary": "Inspected source license is MIT with notice retention and no warranty.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:15:21.890358Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-license.html",
+        "captureSha256": "fe3ac6c0df18c88ab880401a3fa7e5a0f2fdc47daf22afd58a1787f8b63412d2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/tokeneconomizer-license.html",
+        "archive_sha256": "fe3ac6c0df18c88ab880401a3fa7e5a0f2fdc47daf22afd58a1787f8b63412d2"
+      }
+    ],
+    "qualifiers": [
+      "Code licensing does not certify correctness or provider availability."
+    ],
+    "contradicts": [],
+    "source_family": "TokenEconomizer authors / Microsoft Research",
+    "status": "candidate",
+    "limitations": [
+      "Documentary evidence; no independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-apps-links",
+    "claim": "Apps 0.4a0 adds mirrored fragment state, inter-app links, link manifests, app_links and hash-aware app_debug; requires Datasette 1.0a42+.",
+    "source_ids": [
+      "nov18-datasette-81dba6fe40f7c0eb"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-81dba6fe40f7c0eb",
+        "url": "https://github.com/datasette/datasette-apps/releases/tag/0.4a0",
+        "locator": "Tagged release notes",
+        "passage": "Apps can now keep view state in the URL fragment.",
+        "summary": "Apps 0.4a0 adds mirrored fragment state, inter-app links, link manifests, app_links and hash-aware app_debug; requires Datasette 1.0a42+.",
+        "published_at": "2026-11-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.201519Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-81dba6fe40f7c0eb.html",
+        "captureSha256": "a4c25dc11a9d3003bc60eda0ff40eaddc19c68ece68ce649eaae6fb5dca9568f",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-81dba6fe40f7c0eb.html",
+        "archive_sha256": "a4c25dc11a9d3003bc60eda0ff40eaddc19c68ece68ce649eaae6fb5dca9568f"
+      }
+    ],
+    "qualifiers": [
+      "Tagged prerelease documentation, not runtime tested."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-agent-six",
+    "claim": "Agent 0.6a0 adds permission-gated homepage chat and reference input, fixes duplicate user messages, and blocks conversations when their selected model becomes unavailable.",
+    "source_ids": [
+      "nov18-datasette-d47427f5a2b9c3b3"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-d47427f5a2b9c3b3",
+        "url": "https://github.com/datasette/datasette-agent/releases/tag/0.6a0",
+        "locator": "Tagged release notes",
+        "passage": "Fixed a bug where every user message was sent to the model twice",
+        "summary": "Agent 0.6a0 adds permission-gated homepage chat and reference input, fixes duplicate user messages, and blocks conversations when their selected model becomes unavailable.",
+        "published_at": "2026-11-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.206282Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-d47427f5a2b9c3b3.html",
+        "captureSha256": "defd7966aa8a2806ae8c2ec7619aaed2fd6b7cfdf3b375a4c95bf49d2611b421",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-d47427f5a2b9c3b3.html",
+        "archive_sha256": "defd7966aa8a2806ae8c2ec7619aaed2fd6b7cfdf3b375a4c95bf49d2611b421"
+      }
+    ],
+    "qualifiers": [
+      "No measured cost reduction inferred from bug fix."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-panel-links",
+    "claim": "Agent 0.6a0 confirms external panel links and blocks panel forms submitting to other sites.",
+    "source_ids": [
+      "nov18-datasette-d47427f5a2b9c3b3"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-d47427f5a2b9c3b3",
+        "url": "https://github.com/datasette/datasette-agent/releases/tag/0.6a0",
+        "locator": "Tagged release notes",
+        "passage": "Forms in the panel that submit to another site are blocked.",
+        "summary": "Agent 0.6a0 confirms external panel links and blocks panel forms submitting to other sites.",
+        "published_at": "2026-11-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.206282Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-d47427f5a2b9c3b3.html",
+        "captureSha256": "defd7966aa8a2806ae8c2ec7619aaed2fd6b7cfdf3b375a4c95bf49d2611b421",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-d47427f5a2b9c3b3.html",
+        "archive_sha256": "defd7966aa8a2806ae8c2ec7619aaed2fd6b7cfdf3b375a4c95bf49d2611b421"
+      }
+    ],
+    "qualifiers": [
+      "Does not imply unrestricted safety of linked sites."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-endpoints",
+    "claim": "datasette-llm 0.1a11 configures Chat Completions or Responses endpoints directly; tools and streaming are enabled by default.",
+    "source_ids": [
+      "nov18-datasette-e9477865501b0215"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-e9477865501b0215",
+        "url": "https://github.com/datasette/datasette-llm/releases/tag/0.1a11",
+        "locator": "Tagged release notes",
+        "passage": "OpenAI-compatible endpoints can now be configured directly, with no extra LLM plugin.",
+        "summary": "datasette-llm 0.1a11 configures Chat Completions or Responses endpoints directly; tools and streaming are enabled by default.",
+        "published_at": "2026-11-14",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.208332Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "captureSha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "archive_sha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e"
+      }
+    ],
+    "qualifiers": [
+      "Actual server/model capability not tested; default registration does not guarantee implementation."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-credentials",
+    "claim": "Keyless endpoint models are treated as unauthenticated and never receive a provider default key; explicit named keys do not silently fall back.",
+    "source_ids": [
+      "nov18-datasette-e9477865501b0215"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-e9477865501b0215",
+        "url": "https://github.com/datasette/datasette-llm/releases/tag/0.1a11",
+        "locator": "Tagged release notes",
+        "passage": "An endpoint without a key is treated as unauthenticated and never receives a provider's default key.",
+        "summary": "Keyless endpoint models are treated as unauthenticated and never receive a provider default key; explicit named keys do not silently fall back.",
+        "published_at": "2026-11-14",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.208332Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "captureSha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "archive_sha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e"
+      }
+    ],
+    "qualifiers": [
+      "Use key rather than headers; /-/config.json exposes extra headers according to release notes."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-allowlists",
+    "claim": "Allowlists/blocklists and filter hooks now cover explicit lookups and defaults, with errors for excluded models.",
+    "source_ids": [
+      "nov18-datasette-e9477865501b0215"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-e9477865501b0215",
+        "url": "https://github.com/datasette/datasette-llm/releases/tag/0.1a11",
+        "locator": "Tagged release notes",
+        "passage": "Selecting an excluded model raises ModelNotFoundError.",
+        "summary": "Allowlists/blocklists and filter hooks now cover explicit lookups and defaults, with errors for excluded models.",
+        "published_at": "2026-11-14",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.208332Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "captureSha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-e9477865501b0215.html",
+        "archive_sha256": "eab58b55d63755cb2b2d27926a29998db20bd7e79321595fcd078e470bb40c5e"
+      }
+    ],
+    "qualifiers": [
+      "Configuration behavior documented, no native provider verification."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-stored-query-disclosure",
+    "claim": "GHSA-mw6v-83vp-7c4c affects Datasette 1.0a31–1.0a42, patched 1.0a43, exposing private query metadata and SQL via owner_id; no execution/edit/delete or forbidden table access by itself.",
+    "source_ids": [
+      "nov18-datasette-0139ca5c534e35bb-advisory"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-0139ca5c534e35bb-advisory",
+        "url": "https://github.com/simonw/datasette/security/advisories/GHSA-mw6v-83vp-7c4c",
+        "locator": "Impact; affected and patched versions; patches",
+        "passage": "The response included each private query's name, title, description and SQL.",
+        "summary": "GHSA-mw6v-83vp-7c4c affects Datasette 1.0a31–1.0a42, patched 1.0a43, exposing private query metadata and SQL via owner_id; no execution/edit/delete or forbidden table access by itself.",
+        "published_at": "2026-11-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.211137Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-0139ca5c534e35bb-advisory.html",
+        "captureSha256": "6e88319dc39260710eeb1e1c6fc04d8fdffe9e18674f3727c76ea133136e17b0",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-0139ca5c534e35bb-advisory.html",
+        "archive_sha256": "6e88319dc39260710eeb1e1c6fc04d8fdffe9e18674f3727c76ea133136e17b0"
+      }
+    ],
+    "qualifiers": [
+      "Requires saved private stored queries and known/guessed actor ID. Stable 0.65.x lacks stored queries and is unaffected by this advisory."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-download-fix",
+    "claim": "A separate route-versus-database-name download permission issue is fixed in 1.0a43 and stable 0.65.6.",
+    "source_ids": [
+      "nov18-datasette-9f458effb436880f"
+    ],
+    "support": [
+      {
+        "source_id": "nov18-datasette-9f458effb436880f",
+        "url": "https://github.com/simonw/datasette/releases/tag/0.65.6",
+        "locator": "Tagged release notes",
+        "passage": "The view-database-download and view-database permission checks for that URL are now made against the database name.",
+        "summary": "A separate route-versus-database-name download permission issue is fixed in 1.0a43 and stable 0.65.6.",
+        "published_at": "2026-11-15",
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:19:09.213068Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-9f458effb436880f.html",
+        "captureSha256": "a94a1aa80c90ef79e4a18f942c628c66b3e56e0170b0d1f8c3dbaeae2596f05f",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette/datasette-9f458effb436880f.html",
+        "archive_sha256": "a94a1aa80c90ef79e4a18f942c628c66b3e56e0170b0d1f8c3dbaeae2596f05f"
+      }
+    ],
+    "qualifiers": [
+      "Different condition from stored-query metadata disclosure; no exploit was attempted."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-write-control",
+    "claim": "Writes use explicit chat approval and actor permissions; on failure later statements are skipped and earlier successful statements are not rolled back.",
+    "source_ids": [
+      "social-datasette-agent-readme"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-agent-readme",
+        "url": "https://github.com/datasette/datasette-agent",
+        "locator": "Installation; Choosing a model; The panel; Saving queries; Executing write SQL",
+        "passage": "Statements run in order; if one fails, later statements are skipped and earlier successes are not rolled back.",
+        "summary": "Writes use explicit chat approval and actor permissions; on failure later statements are skipped and earlier successful statements are not rolled back.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:21:19.380003Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-readme.html",
+        "captureSha256": "92bff096db9448016a7dbe4f9e04bbbe2e78619ca0d15f9982b06d8b3e093411",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-readme.html",
+        "archive_sha256": "92bff096db9448016a7dbe4f9e04bbbe2e78619ca0d15f9982b06d8b3e093411"
+      }
+    ],
+    "qualifiers": [
+      "Current November 18 main-branch README may exceed tagged release behavior."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-stop-boundary",
+    "claim": "The documented Agent 0.5a0 Stop feature allows an already-started tool to finish; navigation away does not stop the conversation.",
+    "source_ids": [
+      "social-datasette-agent-release"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-agent-release",
+        "url": "https://github.com/datasette/datasette-agent/releases/tag/0.5a0",
+        "locator": "0.5a0 release notes",
+        "passage": "A tool that has already started is allowed to finish",
+        "summary": "The documented Agent 0.5a0 Stop feature allows an already-started tool to finish; navigation away does not stop the conversation.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:22:42.133985Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-release.html",
+        "captureSha256": "1706ed9e4a452aca2964cf5b9e86bd8ebf7a6c6578f92e814f378cdc1d5cb590",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-release.html",
+        "archive_sha256": "1706ed9e4a452aca2964cf5b9e86bd8ebf7a6c6578f92e814f378cdc1d5cb590"
+      }
+    ],
+    "qualifiers": [
+      "Historical tagged behavior retained as feature context; no cancellation test was run."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-app-boundary",
+    "claim": "Managed HTML apps are sandboxed with approved data/origin access, while Python plugin apps are outside that HTML sandbox.",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-apps-readme",
+        "url": "https://github.com/datasette/datasette-apps",
+        "locator": "Usage; Sandboxed apps; Data access; Permissions; App authoring; Tagging apps in datasette-agent",
+        "passage": "Apps provided by other plugins that are written in Python and HTML/JavaScript which are unrestricted but can do more things",
+        "summary": "Managed HTML apps are sandboxed with approved data/origin access, while Python plugin apps are outside that HTML sandbox.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:21:19.383303Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-readme.html",
+        "captureSha256": "fc00f7ea27ed4abf172b591907e26e14670d330c2ee5576021ff96ae3f419e83",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-readme.html",
+        "archive_sha256": "fc00f7ea27ed4abf172b591907e26e14670d330c2ee5576021ff96ae3f419e83"
+      }
+    ],
+    "qualifiers": [
+      "Current README; not a certification of generated app safety."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-fragment-input",
+    "claim": "App URL fragments are untrusted input and should not trigger writes merely by loading.",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-apps-readme",
+        "url": "https://github.com/datasette/datasette-apps",
+        "locator": "Usage; Sandboxed apps; Data access; Permissions; App authoring; Tagging apps in datasette-agent",
+        "passage": "should never write data just because a fragment was loaded.",
+        "summary": "App URL fragments are untrusted input and should not trigger writes merely by loading.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:21:19.383303Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-readme.html",
+        "captureSha256": "fc00f7ea27ed4abf172b591907e26e14670d330c2ee5576021ff96ae3f419e83",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-readme.html",
+        "archive_sha256": "fc00f7ea27ed4abf172b591907e26e14670d330c2ee5576021ff96ae3f419e83"
+      }
+    ],
+    "qualifiers": [
+      "Application authors must implement intended behavior and permissions."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-license-agent",
+    "claim": "Datasette Agent code license inspected as Apache 2.0.",
+    "source_ids": [
+      "social-datasette-agent-license"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-agent-license",
+        "url": "https://github.com/datasette/datasette-agent/blob/main/LICENSE",
+        "locator": "LICENSE: Apache License, Version 2.0, January 2004",
+        "passage": "Apache License",
+        "summary": "Datasette Agent code license inspected as Apache 2.0.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:21:19.386057Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-license.html",
+        "captureSha256": "af2d85e3dfab4abd6ff3ab09b63c9c71d54a68354aff24535d9648baedece39b",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-agent-license.html",
+        "archive_sha256": "af2d85e3dfab4abd6ff3ab09b63c9c71d54a68354aff24535d9648baedece39b"
+      }
+    ],
+    "qualifiers": [
+      "No implication for dataset/provider rights."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-datasette-license-apps",
+    "claim": "Datasette Apps code license inspected as Apache 2.0.",
+    "source_ids": [
+      "social-datasette-apps-license"
+    ],
+    "support": [
+      {
+        "source_id": "social-datasette-apps-license",
+        "url": "https://github.com/datasette/datasette-apps/blob/main/LICENSE",
+        "locator": "LICENSE: Apache License, Version 2.0, January 2004",
+        "passage": "Apache License",
+        "summary": "Datasette Apps code license inspected as Apache 2.0.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:21:19.386959Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-license.html",
+        "captureSha256": "2480fd126b2995b1877f48d6b98469361d5f6435acad4138bd9b1ac8ce202e18",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/research_social/datasette-context/social-datasette-apps-license.html",
+        "archive_sha256": "2480fd126b2995b1877f48d6b98469361d5f6435acad4138bd9b1ac8ce202e18"
+      }
+    ],
+    "qualifiers": [
+      "No implication for dataset/provider rights."
+    ],
+    "contradicts": [],
+    "source_family": "Datasette project",
+    "status": "candidate",
+    "limitations": [
+      "Documentary inspection; no native or independent experimental validation."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-absolute-rating-method",
+    "claim": "The separate human-likeness study uses 508 image-audio pairs, 270 participants and three annotations per generated video with a five-point scale.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Figure 8 and sections 5.1–5.2, PDF page 12",
+        "passage": "The absolute-rating study involves 270 participants and follows a three-annotation protocol\nfor each generated video. Participants assign a score from 1 to 5, with higher scores indicating more human-like outputs.",
+        "summary": "The separate human-likeness study uses 508 image-audio pairs, 270 participants and three annotations per generated video with a five-point scale.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "captureSha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "archive_sha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2"
+      }
+    ],
+    "qualifiers": [
+      "Section 5.1 identifies 508 image–audio pairs; invalid annotations were filtered.",
+      "This is an absolute-rating study, distinct from section 4 pairwise Arena votes and the accompanying expert issue assessment."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Developer-run study, not independently reproduced."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-animated-subset-decline",
+    "claim": "Human-likeness improves for realistic inputs from 3.083 to 3.441 but decreases for animated inputs from 2.246 to 2.114.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Figure 8 and sections 5.1–5.2, PDF page 12",
+        "passage": "inputs increases from 3.083 to 3.441, while that for animated inputs decreases from 2.246 to 2.114.",
+        "summary": "Human-likeness improves for realistic inputs from 3.083 to 3.441 but decreases for animated inputs from 2.246 to 2.114.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "captureSha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "archive_sha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2"
+      }
+    ],
+    "qualifiers": [
+      "Five-point scale; overall mean increases from 3.006 to 3.322.",
+      "Authors suggest scarce long-duration animated examples in OPSD training may contribute to reduced generalization; causal explanation is not established.",
+      "Fictional/stylized-character workflows require evaluation on the intended visual style."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Do not extrapolate the realistic-input gain to animated characters or claim statistical significance not established here."
+    ]
+  },
+  {
+    "claim_id": "nov18-longcat-residual-lipsync",
+    "claim": "Expert inspection reports lip-sync mismatch of 83.7% for version 1.5 and 82.5% for version 1.6, assessed at half-speed playback.",
+    "source_ids": [
+      "repos-nov18-longcat-pdf-repair"
+    ],
+    "support": [
+      {
+        "source_id": "repos-nov18-longcat-pdf-repair",
+        "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf",
+        "locator": "Figure 8 and sections 5.1–5.2, PDF page 12",
+        "passage": "Meanwhile, the overall lip-synchronization mismatch rate decreases from 83.7% to 82.5%. Notice that the lip-sync\nmismatch rate is checked by playing the video at 0.5x speed and this rigorous review process results in a relatively high\nerror rate.",
+        "summary": "Expert inspection reports lip-sync mismatch of 83.7% for version 1.5 and 82.5% for version 1.6, assessed at half-speed playback.",
+        "published_at": null,
+        "event_at": null,
+        "retrieved_at": "2026-11-18T19:11:27.073339Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "captureSha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2",
+        "archive_path": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-report-page12-extract.json",
+        "archive_sha256": "27233ffb8d7d48fc656487750c5f111a538d8a5ff084f317e01b815d6aa8c0e2"
+      }
+    ],
+    "qualifiers": [
+      "Expert-annotated issue rate from section 5, not the section 4 pairwise preference rate.",
+      "The authors attribute the high error rate to rigorous 0.5x playback inspection.",
+      "Naturalness, pairwise preference and precise synchronization are separate outcomes."
+    ],
+    "contradicts": [],
+    "source_family": "Meituan LongCat",
+    "status": "candidate",
+    "limitations": [
+      "Not a measured normal-speed viewer-rejection or production failure rate; no independent reproduction."
+    ]
   }
 ]

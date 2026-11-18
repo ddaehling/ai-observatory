@@ -1,0 +1,74 @@
+{
+  "runId": "scan-20261118T190424Z-c7a538",
+  "recordedAt": "2026-11-18T19:32:33.000929+00:00",
+  "changedReports": [
+    "datasette-agent-apps",
+    "gpt62-astra-sol",
+    "llama-cpp",
+    "longcat-video-avatar",
+    "mai-code2",
+    "tokeneconomizer"
+  ],
+  "reviewInvocations": [
+    {
+      "agent": "/root/nov18_astra_review_a",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "reports": [
+        "gpt62-astra-sol",
+        "mai-code2",
+        "longcat-video-avatar",
+        "llama-cpp",
+        "tokeneconomizer"
+      ]
+    },
+    {
+      "agent": "/root/nov18_astra_review_b",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "reports": [
+        "gpt62-astra-sol",
+        "mai-code2",
+        "longcat-video-avatar",
+        "llama-cpp",
+        "tokeneconomizer"
+      ]
+    },
+    {
+      "agent": "/root/nov18_astra_final_a",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "reports": [
+        "longcat-video-avatar",
+        "datasette-agent-apps"
+      ]
+    },
+    {
+      "agent": "/root/nov18_astra_final_b",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "reports": [
+        "longcat-video-avatar",
+        "datasette-agent-apps"
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "reportId": "longcat-video-avatar",
+      "attempt": 2,
+      "reason": "Both first reviews independently required animated-input subgroup regression and residual lip-sync mismatch with half-speed inspection context. Added exact source-linked claims, separate evaluation design and implications for stylized characters. New pair reviewed exact revised hashes.",
+      "previousArtifacts": "attempt-1/"
+    },
+    {
+      "reportId": "datasette-agent-apps",
+      "reason": "Stable-ID update for local model endpoints, linked apps and scoped permission fixes. Original section anchors and dates preserved. Previous approved content/evidence/reviews archived.",
+      "previousArtifacts": "pre-revision/"
+    }
+  ],
+  "qualification": "Editorial same-model checks, not independent experiments; no score differences exceeded two points."
+}

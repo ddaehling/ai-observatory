@@ -1,0 +1,148 @@
+{
+  "id": "tokeneconomizer",
+  "title": "TokenEconomizer learns a repository’s habits, with an important gap between benchmark and plugin",
+  "entity": "TokenEconomizer",
+  "category": "Open source",
+  "tags": [
+    "coding agents",
+    "cost control",
+    "repository memory",
+    "evaluation",
+    "open source"
+  ],
+  "summary": "TokenEconomizer learns from previous coding sessions to propose operational facts, prune unused tools and redirect failure loops. Author experiments report lower cache-aware costs, but today’s plugin defaults and stopping behavior differ from the benchmark controller.",
+  "changeType": "baseline",
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-11-18T19:04:30Z",
+  "updatedAt": "2026-11-18T19:18:08.268445Z",
+  "officialUrl": "https://github.com/microsoft/TokenEconomizer",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "Learning how a repository works",
+      "html": "<p>TokenEconomizer is an external controller for coding agents that uses previous work in a repository to reduce repeated effort. Its practical attraction is easy to recognize: an agent that fixed yesterday’s bug should not have to rediscover the test command, load the same unused tools, or pursue the same unproductive loop today. The project exposes that idea through an inspectable plugin and a research evaluation. It does not retrain the underlying model.</p><p>The chronology matters. The paper was first submitted to arXiv on October 15, 2026; author Aaron J. Li publicly described the deployed plugin on October 26. Microsoft Research’s November 16 article prompted this Observatory assessment. This is a baseline evaluation of an existing project, not a claim that it launched on November 16. The current repository was inspected on November 18 and can contain changes beyond the paper.</p><p>The main qualification is equally important: the experiment and the plugin differ. The paper’s controller can stop a failing rollout; the current plugin says it never stops a turn. Its default configuration also leaves one of the three mechanisms off. The research savings therefore motivate a local trial, but cannot be treated as the expected discount from installing today’s defaults.</p><p><a href=\"https://arxiv.org/abs/2610.22732\">TokenEconomizer arXiv submission record</a> · <a href=\"https://x.com/aaron_jli/status/2114797313613053952\">Aaron J. Li: TokenEconomizer announcement</a> · <a href=\"https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/\">Microsoft Research: TokenEconomizer</a></p>"
+    },
+    {
+      "id": "mechanisms",
+      "title": "Three ways to spend less effort",
+      "html": "<p>The first mechanism, micro-skills, stores short operational facts about a repository: which test invocation works, which environment variable is required, or which build step precedes another command. The current README describes learning from repeated failures and periodic model review. A proposed fact must accumulate confirming sessions before it enters the agent’s starting context, and contradictory later evidence can retire it. These are working hypotheses about the project, not a new authority over its actual instructions or tests.</p><p>The second mechanism removes tools that past sessions did not need. This can shrink repeated tool-description context, but the unit of removal depends on the host. Claude Code can omit individual tools; Codex omits capability packages; Copilot CLI omits whole MCP servers. Pi does not receive tool pruning. A useful tool inside an otherwise idle package can consequently require a different decision from an individually removable tool.</p><p>The third mechanism looks for failure loops. A rule-based trigger notices repeated errors or churn, and a model judge distinguishes a stuck turn from work that is still progressing. The current plugin can add a redirect asking for another approach, then alert the person if the problem continues. None of these mechanisms demonstrates that the resulting code is correct. They change how effort is allocated; ordinary acceptance checks still decide whether the task succeeded.</p><p><a href=\"https://github.com/microsoft/TokenEconomizer\">TokenEconomizer repository README</a></p>"
+    },
+    {
+      "id": "benchmark",
+      "title": "What the reported savings measure",
+      "html": "<p>The authors evaluated five combinations on the same 277 SWE-Bench tasks from six Python repositories: Claude Code with Sonnet 5 or Opus 4.8, Codex with GPT-5.6 Terra or GPT-5.6 Sol, and Copilot CLI with Sonnet 5. The repositories were scikit-learn, SymPy, Django, Sphinx, Matplotlib and xarray. Tasks ran chronologically within each repository, starting without prior controller history. The comparison used the unmodified agent at high reasoning effort, and results were reported over three seeds.</p><p>TokenEconomizer alone reduced mean cache-aware cost by 18.4–30.9% across those settings, including its auxiliary model calls. This is the authors’ evaluation, not an independently reproduced result. The quality result is more precise than “no performance loss”: Pass@1 improved in four settings and fell from 74.0% to 73.0% for Claude Code with Opus 4.8. Savings occurred in all 30 repository–setting cells, but that cost consistency does not establish equal quality in every cell.</p><p>The paper also evaluates 102 sequential Web-Bench tasks from five projects and 100 tasks each from two security benchmarks. It reports 16.0–21.2% lower cost for Web-Bench and 6.4–19.6% for security auditing. Those tasks use different quality measures: cumulative Pass@2 and detection F1. They should not be pooled into one success-rate claim. For the security tasks, repositories do not recur, so repository-specific micro-skills are disabled.</p><p>Even the warm-up result has a scope: the cumulative-cost chart averages the two Claude Code settings, and all six repositories become cheaper by the sixth task in that experiment. It is not a guarantee that every user breaks even after six prompts. The paper acknowledges that SWE-Bench streams contain related but independent fixes rather than actual continuous user sessions.</p><p><a href=\"https://arxiv.org/html/2610.22732v1\">TokenEconomizer paper v1</a></p>"
+    },
+    {
+      "id": "experiment-plugin",
+      "title": "Why the plugin needs its own evaluation",
+      "html": "<p>In the paper, a repeated confident stuck verdict can terminate the rollout; a strict stall condition can also force termination after a length threshold. The distributed plugin instead redirects and leaves stopping to the person or the agent’s own limits. Removing termination can change both spending and outcomes. A costly failed continuation might continue, while a difficult task prematurely stopped by the experimental controller might eventually succeed. The available evidence does not quantify that difference for today’s plugin.</p><p>The current README also states that micro-skills are off by default because the proposer adds model calls and its value depends on the repository. Tool pruning and the loop guard are on by default, where supported. Describing all three mechanisms as active immediately after installation would be misleading. A proposal-only pruning mode and a micro-skill mode based on repeated environment failures offer narrower ways to inspect behavior before enabling additional model calls.</p><p>Notifications are another practical boundary. The README says Codex headless execution prints no hook messages; some other hosts rely on the model to repeat a notice and may omit it. An unattended job is therefore not protected by a person-facing alert unless the surrounding process actually collects and acts on it. TokenEconomizer should not be described as a hard spending cap or a reliable job-cancellation service.</p><p><a href=\"https://arxiv.org/html/2610.22732v1\">TokenEconomizer paper v1</a> · <a href=\"https://github.com/microsoft/TokenEconomizer\">TokenEconomizer repository README</a></p>"
+    },
+    {
+      "id": "setup",
+      "title": "Readiness depends on the actual host",
+      "html": "<p>The project documents a Python 3.10-or-newer prerequisite and host-specific installation. Its inspected compatibility table covers Claude Code 2.1.300–2.1.310, Codex 0.153.1–0.164.0, Copilot CLI 1.0.83–1.0.102 and Pi 1.2.0–1.3.0, with separate notes for older Pi versions. These are author-reported tested ranges at the observation date, not assurance about every later version. Several additional adapters are explicitly experimental and have narrower feature coverage.</p><p>Hooks and configuration changes are part of using the plugin. A sensible trial records the exact host version, model, plugin revision and enabled mechanisms before collecting results. Check the status output, inspect which tools would be removed, and deliberately restore one to confirm that recovery works. The README says restoration removes only the plugin’s entries and prevents those tools being removed again. It also describes refusing unsafe settings edits and retaining a proposal instead.</p><p>The source code uses the MIT license, whose actual text was inspected. The repository includes an experiment harness and task sets separately from the installed plugin. That makes the method inspectable and potentially reproducible, but no installation, hook execution, experiment or compatibility test was performed for this report. The current README is documentation of the moving main branch; it is not a frozen release specification.</p><p><a href=\"https://github.com/microsoft/TokenEconomizer\">TokenEconomizer repository README</a> · <a href=\"https://github.com/microsoft/TokenEconomizer/blob/main/LICENSE\">TokenEconomizer MIT license</a></p>"
+    },
+    {
+      "id": "accounting",
+      "title": "Measure the bill and the review burden",
+      "html": "<p>The paper counts cache-aware monetary cost, including controller overhead. A raw token total is not interchangeable with that figure: cached input, uncached input and output may have different prices. Nor does a reduction in a priced benchmark translate directly into the same change in a subscription quota, invoice, elapsed time or human workload. Record those measures separately and leave unavailable values unknown.</p><p>The plugin says learned state stays on the developer’s machine and that it needs no API key of its own. Its proposer and judge normally run through the existing agent and login. Local storage therefore does not mean every computation is offline: consider what session information those calls process under the chosen host and provider configuration. Earlier-session import is separately documented as off by default; installing the plugin need not be treated as permission to ingest unrelated history.</p><p>For a fair pilot, keep a small sequence of representative tasks, fixed acceptance criteria and comparable starting states. Include setup and warm-up costs, failed attempts, controller calls, retries and time spent inspecting its decisions. Preserve the task ordering and learned-state policy. A cheaper run that skipped a required test, lost an essential tool or produced harder-to-review code is not an efficiency improvement for the project.</p><p><a href=\"https://arxiv.org/html/2610.22732v1\">TokenEconomizer paper v1</a> · <a href=\"https://github.com/microsoft/TokenEconomizer\">TokenEconomizer repository README</a></p>"
+    },
+    {
+      "id": "education",
+      "title": "A teaching repository that remembers its setup",
+      "html": "<p>An instructor maintaining an exercise repository could trial TokenEconomizer across several small changes: repair a failing example, add an edge case, improve an explanation and update a dependency. The input is the repository plus instructor-owned tests and answer expectations. The useful output is a sequence of verified patches and a short record of the facts or tool changes the controller proposed.</p><p>Start with a repository copy and one supported host. Keep the model and reasoning setting fixed, and inspect any learned test command before reusing it. After a deliberate change to the project’s setup, check whether the old fact is contradicted and retired. That exercise teaches a valuable distinction between persistent memory and reliable knowledge. A plausible remembered command can still be obsolete.</p><p>Success would mean equivalent accepted fixes with lower measured spending and no increase in instructor review time. The likely failures are stale setup assumptions, incomplete tests and a rarely used teaching tool being pruned before a later lesson needs it. This is a proposed evaluation design; neither improved learning outcomes nor savings in a classroom workflow were demonstrated in the inspected evidence.</p>"
+    },
+    {
+      "id": "apps-media",
+      "title": "Repeated website and media work",
+      "html": "<p>A team maintaining a small educational website could use a backlog of accessibility fixes, content changes and search improvements as its trial stream. Supply a clear specification and automated checks, then review keyboard behavior, links and representative pages after each patch. The controller may learn useful build or test facts, but it cannot decide that a polished screenshot satisfies a keyboard-access requirement. Keep an explicit visual and functional acceptance record beside the cost record.</p><p>The integration work is modest but real: choose a supported coding host, review its hooks, record the plugin configuration, and keep the website’s ordinary permissions and deployment process intact. Test a task that needs an infrequently used capability before accepting a pruning proposal. If the capability disappears, restoration should recover the workflow without weakening the project’s existing rules.</p><p>For a video team maintaining a code-based animation template, repeated work could involve caption timing, aspect-ratio variants and title-card edits. Inputs would be the template, approved media, a timing sheet and render checks. Outputs would be reviewed source changes and rendered clips. A useful micro-skill might capture the correct render command; an obsolete one could silently target the wrong composition. Compare captions, duration, audio alignment and representative frames, not merely whether rendering exits successfully. TokenEconomizer does not itself edit footage or establish rights to the media.</p><p>Both scenarios extend the repository-continuity idea beyond benchmark bug fixes. They remain editorial proposals. No website or media pipeline was run here, and the benchmark percentages should not be advertised as expected production savings.</p>"
+    },
+    {
+      "id": "judgment",
+      "title": "A useful hypothesis with an explicit boundary",
+      "html": "<p>TokenEconomizer offers a concrete, inspectable hypothesis: recurring project experience can reduce waste without replacing the coding model. Its strongest evidence is the authors’ multi-repository evaluation with auxiliary costs included. Its most consequential adoption limit is that the current plugin’s defaults, stopping behavior and host capabilities differ from the experimental configuration.</p><p>A bounded trial is justified when a team repeatedly uses a supported agent in the same repository and can measure correctness as well as cost. Treat learned facts and pruning decisions as reviewable configuration, preserve recovery paths, and stop the trial if verification burden rises. The project is promising as a research-backed experiment in agent efficiency; the evidence does not establish a universal discount, an autonomous budget governor, or a substitute for responsible task review.</p><p><a href=\"https://arxiv.org/html/2610.22732v1\">TokenEconomizer paper v1</a> · <a href=\"https://github.com/microsoft/TokenEconomizer\">TokenEconomizer repository README</a></p>"
+    }
+  ],
+  "useCases": [
+    "Measure repeat-task efficiency in an instructor-owned coding exercise repository",
+    "Maintain an educational website with unchanged correctness and accessibility checks",
+    "Evaluate repeated edits to a code-based animation or caption template"
+  ],
+  "limitations": [
+    "No installation, plugin execution, benchmark reproduction or independent experimental validation was performed.",
+    "Paper controller can stop rollouts; current plugin never stops turns, and its micro-skills are off by default. Published benchmark savings do not validate current plugin defaults.",
+    "Benchmark models and hosts are specified historical configurations; no GPT-6.2 or other newer-model savings were established.",
+    "SWE-Bench consists of related independent fixes, not actual continuous user sessions; three-seed results do not establish universal gains.",
+    "Current main-branch README was inspected November18 and may change; host adapters differ in pruning and notification support.",
+    "Local learned-state storage does not prove offline operation; auxiliary model calls use the selected agent/provider.",
+    "Proposed teaching, website and video workflows were not tested; no learning, production-quality or human-time improvement was measured."
+  ],
+  "sources": [
+    {
+      "id": "source-97087fe3c15c5fa6",
+      "title": "Microsoft Research: TokenEconomizer",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "accessedAt": "2026-11-18T19:10:16.071097Z",
+      "publishedAt": "2026-11-16",
+      "locator": "At a glance; How TokenEconomizer works; Saving costs in every repository",
+      "supports": "November16 coverage, mechanism overview and author benchmark claims"
+    },
+    {
+      "id": "nov18-tokeneconomizer-paper",
+      "title": "TokenEconomizer paper v1",
+      "url": "https://arxiv.org/html/2610.22732v1",
+      "accessedAt": "2026-11-18T19:15:21.886670Z",
+      "publishedAt": "2026-10-15",
+      "locator": "Sections3–6; Tables1–2; AppendixE",
+      "supports": "Experimental controller, benchmark scope, cost accounting and limitations"
+    },
+    {
+      "id": "nov18-tokeneconomizer-arxiv",
+      "title": "TokenEconomizer arXiv submission record",
+      "url": "https://arxiv.org/abs/2610.22732",
+      "accessedAt": "2026-11-18T19:13:19.152539Z",
+      "publishedAt": "2026-10-15",
+      "locator": "Submission history",
+      "supports": "First submission chronology"
+    },
+    {
+      "id": "nov18-tokeneconomizer-repo",
+      "title": "TokenEconomizer repository README",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "accessedAt": "2026-11-18T19:11:31.088514Z",
+      "publishedAt": null,
+      "locator": "README: Settings; Supported versions; What it does on each agent; When a turn gets stuck",
+      "supports": "Current defaults, compatibility, local state, recovery and stopping behavior"
+    },
+    {
+      "id": "nov18-tokeneconomizer-license",
+      "title": "TokenEconomizer MIT license",
+      "url": "https://github.com/microsoft/TokenEconomizer/blob/main/LICENSE",
+      "accessedAt": "2026-11-18T19:15:21.890358Z",
+      "publishedAt": null,
+      "locator": "LICENSE text",
+      "supports": "Code license and notice/no-warranty conditions"
+    },
+    {
+      "id": "nov18-tokeneconomizer-origin",
+      "title": "Aaron J. Li: TokenEconomizer announcement",
+      "url": "https://x.com/aaron_jli/status/2114797313613053952",
+      "accessedAt": "2026-11-18T19:15:21.891462Z",
+      "publishedAt": "2026-10-26",
+      "locator": "Originating post and two author continuation posts",
+      "supports": "Public plugin announcement chronology"
+    },
+    {
+      "id": "nov18-tokeneconomizer-project",
+      "title": "TokenEconomizer project page",
+      "url": "https://tokeneconomizer.github.io",
+      "accessedAt": "2026-11-18T19:11:31.090656Z",
+      "publishedAt": null,
+      "locator": "Overview; Results; Generalization",
+      "supports": "Author project summary and links to paper/repository"
+    }
+  ],
+  "images": [],
+  "judgment": "Worth a bounded, version-recorded pilot for repeated repository work. Compare complete accepted tasks and total spending; distinguish the experimental stopping controller from the current advisory plugin.",
+  "researchNote": "Prepared from complete retained public HTTP/parser captures after the worker Chrome-tab attempt timed out. Inspected November16 Microsoft Research article, October15 arXiv record and paper HTML v1, October26 originating author thread, current repository README, actual MIT license and project page. Acquisition does not constitute installation or testing. Paper/plugin differences are explicit; practical use cases are editorial proposals. Baseline date is first paper submission, not November16 launch."
+}

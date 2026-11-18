@@ -1,0 +1,28 @@
+{
+  "reportId": "longcat-video-avatar",
+  "reviewerId": "/root/nov18_astra_final_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:31:39.800768Z",
+  "reportHash": "6fc03afbebdc125cc6a5edb3ff500f7ab78996bcf0ddf5f02637ccbf1423ff52",
+  "evidenceHash": "771b020e5d6f142af1cc90e04fe9fa752476a850a69337c996d15a79c615aa87",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 5,
+    "novelty": 5,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The released speech/image/continuation recipes give CUDA-equipped educational and video builders a concrete evaluation path. The report specifies authorized inputs, a reviewed short scene, beginning/middle/end checks, transcript review, and a captioned website deliverable. It correctly treats these as proposed workflows and directly warns that animated-input ratings declined. Unmeasured GPU requirements, rendering cost and residual synchronization errors keep this from broadly actionable production utility.",
+    "impact": "A meaningful but bounded advance within audio-driven avatars: the saved developer study supports 55.6% tie-adjusted preference over 1.5, while the continuation-focused post-training addresses accumulated visual drift. I independently checked the saved page 9 matrix and page 12 assessment. The 24.7% result against OmniHuman-2.0, animated-subset regression and absence of independent ten-minute reliability or latency measurements limit wider significance. My impact score is 5 independently of length; the packet count of 2,118 words fits the 1,800–2,200 band for that impact, subject to the final two-review mean.",
+    "novelty": "The practical differentiation is the combination of perceptual refinement, eight-step distillation, revised guidance and rollout-based on-policy self-distillation for sustained speaking shots. The model card retains the 1.5 base architecture, and the technical report builds on existing methods. The report therefore appropriately describes a specific refinement instead of a wholly new architecture or solved long-form video generation.",
+    "maturity": "Public checkpoints, inference code and substantial developer evaluations make the release evaluable, but dependable production readiness is not established. Saved page 12 confirms the 82.5% lip-sync mismatch figure under half-speed inspection and the animated-input mean decline; the report correctly distinguishes these from normal-speed rejection rates. The pinned source confirms mix_steps=3/mix_alpha=0.5 defaults and the two-adapter branch, while the README contradicts its examples. Unknown memory minima and no executed rendering trial warrant a below-moderate readiness score.",
+    "openness": "The inspected model card explicitly declares MIT weights, the pinned code LICENSE contains the standard MIT text, and the source plus detailed technical report expose the inference and training approach. The report correctly separates the missing model-hub LICENSE file from the weight declaration and code license, and separates input likeness rights from those terms. Full training-data reproducibility and hardware portability are not established, so openness is strong rather than maximal."
+  },
+  "confidence": "high",
+  "concerns": []
+}

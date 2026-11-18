@@ -897,6 +897,39 @@ class BuildTests(unittest.TestCase):
                 observatory.build(self.root, strict=True)
         self.assert_previous_dist_preserved(marker)
 
+    def test_public_coverage_keeps_limits_but_omits_local_capture_metadata(self):
+        notes = [
+            "Partial coverage; first 50 entries only. Archive: .state/run/capture.json.",
+            "History incomplete. Archived capture .state/run/capture.json; retrieved 2026-10-28; SHA256 PRIVATE_DIGEST.",
+            "Read in Chrome; complete relevant text archived at .state/run/capture.json. No runtime test.",
+            "Documentary inspection only. {'archivePath': '.state/run/capture.json', 'archiveSha256': 'PRIVATE_DIGEST'}",
+            "No history claimed. Capture /Users/private/capture.json. Login wall remains.",
+            "History incomplete. Capture /private/tmp/capture.json; retrieved 2026-10-28; SHA256 PRIVATE_DIGEST.",
+            "Partial listing only. archive: .state/run/capture.json; retrieved 2026-10-28; sha256 PRIVATE_DIGEST.",
+            "Public documentation https://example.com/docs/v1. No runtime test.",
+        ]
+        sources = [{"id": "source-" + str(i), "url": "https://example.com/" + str(i), "notes": note} for i, note in enumerate(notes)]
+        runs = [{"id": "scan-one", "status": "complete", "finishedAt": "2026-10-28T20:00:00Z", "coverageNote": notes[0], "limitations": notes}]
+        self.write_json("data/sources.json", sources)
+        self.write_json("data/runs.json", runs)
+        observatory.build(self.root, strict=True)
+        data = self.built_data()
+        expected = [
+            "Partial coverage; first 50 entries only.", "History incomplete.",
+            "Read in Chrome. No runtime test.", "Documentary inspection only.",
+            "No history claimed. Login wall remains. Local acquisition metadata omitted.",
+            "History incomplete. Local acquisition metadata omitted.", "Partial listing only.", notes[-1],
+        ]
+        self.assertEqual([item["notes"] for item in data["sources"]], expected)
+        self.assertEqual(data["runs"][0]["limitations"], expected)
+        self.assertEqual(data["metadata"]["coverageNote"], expected[0])
+        for filename in ("data.json", "catalog.json", "sources.json", "editions.json"):
+            output = (self.root / "dist" / filename).read_text()
+            for private in (".state/", "/Users/private", "PRIVATE_DIGEST", "archivePath", "archiveSha256"):
+                self.assertNotIn(private, output)
+        self.assertEqual(json.loads((self.root / "data/sources.json").read_text()), sources)
+        self.assertEqual(json.loads((self.root / "data/runs.json").read_text()), runs)
+
     def test_build_exports_only_public_files_and_data(self):
         for relative in (".hidden-design-prompt.md", "src/.hidden-design-prompt.md", "src/assets/design-prompt.txt"):
             (self.root / relative).write_text("PRIVATE_DESIGN_PROMPT_SENTINEL", encoding="utf-8")

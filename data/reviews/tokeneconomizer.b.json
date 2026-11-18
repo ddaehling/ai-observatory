@@ -1,0 +1,28 @@
+{
+  "reportId": "tokeneconomizer",
+  "reviewerId": "/root/nov18_astra_review_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:26:14.670292Z",
+  "reportHash": "211ee1311660e0a15ba7ad8dbcfef830503585aa3956ccd4e7b15e5aec4f48a3",
+  "evidenceHash": "f7150210a6316fbe61d8a7bf091b851c9164da30f1d01a2b1529685d1495bddb",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 6,
+    "novelty": 7,
+    "maturity": 6,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "The project offers inspectable ways to reuse repository facts, prune inactive capabilities and redirect repeated failures. The report's strongest practical contribution is separating historical experiment savings from current plugin defaults and stopping behavior, then specifying accepted-task, cost and human-review checks for teaching, websites and code-based media work.",
+    "impact": "The author evaluation spans five agent-model settings and multiple task structures, with controller costs included and 18.4–30.9% mean cost reductions on the specified SWE-Bench stream. This suggests meaningful efficiency potential in recurring development, but historical models, noncontinuous repair tasks and the benchmark/plugin gap prevent a broader guaranteed-savings conclusion.",
+    "novelty": "Repository-specific, cross-session control combining operational micro-skills, selective tool exposure and failure-loop intervention is a substantive differentiated approach to cost management. The paper situates it among existing memory and context-control methods, and the report avoids portraying each ingredient as unprecedented.",
+    "maturity": "There is a public plugin, documented recovery behavior, tested host-version endpoints and an experiment harness. Several adapters are experimental, headless notification paths are limited, micro-skills are off by default, and the plugin cannot enforce a hard stop. No installation or independent experiment establishes current-default savings, so readiness is moderate.",
+    "openness": "The inspected actual MIT license, source, paper, experiment harness and task sets support meaningful inspection and reproduction. Commercial host/model availability, a moving main branch and differing adapter surfaces limit portability and exact replication. The report correctly distinguishes local learned state from provider-mediated auxiliary inference."
+  },
+  "confidence": "high",
+  "concerns": []
+}

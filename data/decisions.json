@@ -36746,5 +36746,1734 @@
     ],
     "worker": "research_social",
     "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-8f49db30003a5214",
+    "candidateId": "candidate-8f49db30003a5214",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Homepage describes talking to cast and rehearsing scenes. Inspect launch page, generation/interaction limits, access/pricing and whether it is model output or product orchestration.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-8f49db30003a5214"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/seed-pika.capture.json",
+    "captureSha256": "1154cd1535e0cc320d6f83cab28edc411a10c1308c5c540901de89fa3b384e0d",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-7c3a077a80825638",
+    "candidateId": "candidate-7c3a077a80825638",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing describes fast robotics model and Antigravity robotics plugin. Verify model documentation, hardware/control prerequisites and safety/evaluation scope.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-9026aaa1d5288963"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/official-google-developers-ai.capture.json",
+    "captureSha256": "99eebd0cbc096a9cb27d83a7762b45f6375a4f6e46ba8b54912402967d19ba68",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-3d0957b329c2f381",
+    "candidateId": "candidate-3d0957b329c2f381",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing describes Kotlin app workflow,emulator,Firebase and publishing. Read original for access and deployment prerequisites; do not equate generated demo with production app.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-5a0ccf73fdd1f18c"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/official-google-developers-ai.capture.json",
+    "captureSha256": "99eebd0cbc096a9cb27d83a7762b45f6375a4f6e46ba8b54912402967d19ba68",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-d88f1f4ad0cbbad0",
+    "candidateId": "candidate-d88f1f4ad0cbbad0",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing engineering article; verify actual architecture, product capabilities and transferable practices.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-d88f1f4ad0cbbad0"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/creative-luma-news.capture.json",
+    "captureSha256": "ca079179a4777d49fcdf7704cf55cf80866225cbe06bb2ecf2e2be9f8e4d4f78",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-8bd1bcb55bb606c9",
+    "candidateId": "candidate-8bd1bcb55bb606c9",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing describes timestamped video retrieval. Inspect preview availability, supported inputs, pricing and evaluation details.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-8bd1bcb55bb606c9"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/seed-cohere.capture.json",
+    "captureSha256": "0f43a197f74486f957033ee7e724fc9b9125bd7d76070a605f3c67b5dec02c98",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-4ee3f079eebefebb",
+    "candidateId": "candidate-4ee3f079eebefebb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing describes connected private-market signals. Inspect integration access and source/subscription prerequisites.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-4ee3f079eebefebb"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/seed-cohere.capture.json",
+    "captureSha256": "0f43a197f74486f957033ee7e724fc9b9125bd7d76070a605f3c67b5dec02c98",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-d2b827cea535a4b8",
+    "candidateId": "candidate-d2b827cea535a4b8",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Blog card says design-system skill integration. Inspect actual package/integration instructions and compare existing Astryx report before material update.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-d2b827cea535a4b8"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/nov11-astryx-blog.capture.json",
+    "captureSha256": "aaf29c29e62dea4bd62c257bebad1bf94bfcd9abbc02c4ca7566525a0cc77d17",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-13253073fa31491a",
+    "candidateId": "candidate-13253073fa31491a",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing discusses preserving prefix cache across agent turns. Read technical details and distinguish guidance from measured deployments.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-13253073fa31491a"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/seed-together-ai.capture.json",
+    "captureSha256": "52321cd00f8dfa34d9c36fee146f7245af79391098486f76705de353b99d85e4",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-2080b0164fa6b354",
+    "candidateId": "candidate-2080b0164fa6b354",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Listing describes internal documentation/tool-error changes and task-completion improvement. Inspect evaluation methods before reporting numeric result.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-2080b0164fa6b354"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/seed-together-ai.capture.json",
+    "captureSha256": "52321cd00f8dfa34d9c36fee146f7245af79391098486f76705de353b99d85e4",
+    "evidenceScope": "Listing only; linked article not visited by this worker.",
+    "dateBasis": "Publisher listing card; article date not independently verified."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:nov18-qwen4-max",
+    "candidateId": "nov18-qwen4-max",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "unresolved",
+    "reason": "Fresh official search result provided detailed release lead. Canonical public-web opens were empty/cache-miss and directHTTP was title-only shell. Need original article rendered in working Chrome or official docs/model-card acquisition before claims/date are promoted.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-756563a4144915c6"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/official/primary-qwen4.capture.json",
+    "captureSha256": "5abae31e717cebfed692e8fd987d64fe30120c6b66519afb41a3f6342d15912a",
+    "evidenceScope": "Search discovery plus failed primary full-body acquisition.",
+    "dateBasis": "Search result claims November16; primary full-body verification missing."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:nov18-mai-code2",
+    "candidateId": "nov18-mai-code2",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary announcement/model page captured; selected report drafted with promotional-pricing and limited-access qualifications. Publication remains pending exact current dual-review approvals.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "nov18-mai-code2-release"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "reportId": "mai-code2"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-longcat-avatar-16",
+    "candidateId": "nov18-repos-longcat-avatar-16",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Coordinator selected a material new version for a pending report. Primary method, license/access and runtime evidence preserved; docs conflict bounded with pinned source.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "repos-nov18-longcat-hub"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "reportId": "longcat-video-avatar",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/longcat-hub.json",
+    "captureSha256": "2a73c95b3aba7820f5e38efb633317d6e343b4b8fb7807b24c76688ccb6ae851",
+    "nextAction": "Run both required independent reviews on final integrated report/evidence."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-llama-cpp-v1",
+    "candidateId": "nov18-repos-llama-cpp-v1",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Coordinator selected material compatibility and runtime changes for a pending report. Tagged runtime docs and actual MIT license inspected.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "reportId": "llama-cpp",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/llama-v1-release.json",
+    "captureSha256": "ce201e08080f1f93914b1eb543720139069ae2fadd6dd2e59e8dd12eac771188",
+    "nextAction": "Run both required independent reviews on final integrated report/evidence."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-flint-11",
+    "candidateId": "nov18-repos-flint-11",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "README explicitly dates a material maps/layout release Nov 15; outside selected two-report capacity. Existing flint-interactive ID must be preserved.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-791e496dd2ba62d2"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "reportId": "flint-interactive",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/research-flint-repository.json",
+    "captureSha256": "11eb038366f99aab349931187e4bba98d28477ceb728eb19e31164b4bb47980a",
+    "nextAction": "Inspect tagged release notes/API changes and update flint-interactive with fresh dual review."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-capy-flash-014",
+    "candidateId": "nov18-repos-capy-flash-014",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Parsed Atom identifies Nov 18 cleanup release with context-cache and greedy-text changes; timings are developer replays, not independent benchmarks.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "nov14-story-52bbaa80db2ade4a"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/social-source-52bbaa80db2ade4a.json",
+    "captureSha256": "220b8f099de80fba86f2936dfe287e361037659d61e5435b40dd5d5db70ac8be",
+    "nextAction": "Inspect exact release/config requirements before deciding on a dedicated report."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-bria-rmbg3",
+    "candidateId": "nov18-repos-bria-rmbg3",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "unresolved",
+    "reason": "Profile exposes model update and license discussion; individual card and actual license have not been reviewed.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-5cfdcdfbcb5e9e93"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/repos-publisher-aaaa1b708b976516.json",
+    "captureSha256": "f2e82e7f4a9c958f45c139776ec694d7bdd90b0915cc5ae55eed9e173fc9063f",
+    "nextAction": "Inspect model card, release announcement and commercial-use license clauses; do not infer launch from update timestamp."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-tencent-hy4-flash",
+    "candidateId": "nov18-repos-tencent-hy4-flash",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "unresolved",
+    "reason": "Official hub exposes recently updated Hy4-flash/base/FP8 entries; individual model card, license and launch date remain unverified.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-364859f834c86602"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/repos-source-f6c07d2ff25abc65.json",
+    "captureSha256": "a5e777b6b8ba2896868e438f924270d456b7223a294a1abdc11b1d5fa66dfc4a",
+    "nextAction": "Follow primary model card and announcement; distinguish artifact updates from release date."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-openvids-windows",
+    "candidateId": "nov18-repos-openvids-windows",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Current README names macOS and Windows and explains model-provider data transmission. Precise platform-release date and actual binaries not checked.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-42eaa3e1c6557712"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/nov11-creative-publisher-openvids.json",
+    "captureSha256": "f3a3312ae9d30bb1379d665a9f6fb0d62f076ef290b60799440d250efe386eaf",
+    "nextAction": "Inspect tagged Windows release and installation/readiness notes before recommending."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-gemini-cli-old-transition",
+    "candidateId": "nov18-repos-gemini-cli-old-transition",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "README dates consumer transition June 18; existing gemini-cli-access-transition report already covers this entity. Current retrieval alone does not justify activity bump.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "gemini-cli-candidate"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "reportId": "gemini-cli-access-transition",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/seed-gemini-cli.json",
+    "captureSha256": "6f68e585dec40075980c1a30ea5d43f98aaf7ca76d0c597bfa8288649190cdd3",
+    "nextAction": null
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-pocket-old-release",
+    "candidateId": "nov18-repos-pocket-old-release",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Newest retrieved Atom entry is updated Oct 21; this is older release evidence, not a new Nov 18 launch. Preserve existing pocket-tts-small ID for any subsequent material revision.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-df721af02b12d08e"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "reportId": "pocket-tts-small",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/creative-pocket-releases.json",
+    "captureSha256": "e98f693660788ae37affae5a736314dd1f773b4d89a639a2282665422cef1757",
+    "nextAction": null
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-moss-old-news",
+    "candidateId": "nov18-repos-moss-old-news",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Visible news items are dated Oct 16–20. No new November release established by this README inspection; retain as older evidence without fresh activity bump.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-c09aefe92d3c4ea6"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/social-source-c09aefe92d3c4ea6.json",
+    "captureSha256": "7204ced893a6a52675cdd29a638bd30b310ff81ad2c3db438b91fb5cf2011993",
+    "nextAction": null
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-skill-evaluator-lead",
+    "candidateId": "nov18-repos-skill-evaluator-lead",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "unresolved",
+    "reason": "Trending listing exposes an original skill-evaluation framework; destination was not visited, and popularity does not establish quality.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-d17b0500bab017de"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/seed-github-trending.json",
+    "captureSha256": "a7fb64614edbf8aca98fa95316427bfbc25f78a0dc9d604389315cd27b888487",
+    "nextAction": "Inspect repository identity, evaluation design, license and examples; not a report recommendation."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:repos:nov18-repos-paper-orchestra-lead",
+    "candidateId": "nov18-repos-paper-orchestra-lead",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "unresolved",
+    "reason": "Trending repository description identifies automated research-paper writing; destination and research limitations not yet inspected.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-16db77652cb13e5e"
+    ],
+    "worker": "repos",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/repos/captures/seed-github-trending.json",
+    "captureSha256": "a7fb64614edbf8aca98fa95316427bfbc25f78a0dc9d604389315cd27b888487",
+    "nextAction": "Inspect original repository and research evidence; do not infer scientific validity from a writing demo."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:nov18-glyph",
+    "candidateId": "nov18-glyph",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Newly encountered through November18 HF listing, but paper published November6 outside current scan window. Primary abstract reports41,628 patients,397 concepts and4,463 significant associations; associations and held-out reproducibility are not prospective clinical benefit. Fullpaper/cohort design/code/data license require inspection.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-d7a198189fa87832"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/glyph-origin.html",
+    "captureSha256": "209ab0b9a04207e571b6d4b42255b18920b7f967baea19a9095adfad0402cc53",
+    "nextAction": "Inspect full paper, repository and rights; no clinical or learning improvement inference."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:nov14-xybench",
+    "candidateId": "nov14-xybench",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Existing stable candidate revisited, not duplicate new discovery. November13 primary article describes8,115 mixed forum/generated questions, English procedural scope, single-turn evaluation and judge agreement. Includes solution presence vs emphasis distinction. Dataset/license and paper-level checks remain undone; retain needs_review.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "nov14-story-90476995beedb133"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/followup/xybench.html",
+    "captureSha256": "6298f5b419fac9df6dc56dad44304d928db29b6fdbc33bd6dda88f6a59911ae0",
+    "nextAction": "Inspect full paper, repository and rights; no clinical or learning improvement inference."
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:catalogue:nov18-social-external-sandboxes",
+    "candidateId": "nov18-social-external-sandboxes",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Full Simon Willison article inspected. Three experimental prototypes share a protocol: v86/WASM, Apple Containers and Quicksand/QEMU. Claude Code routes Bash only and native Read/Edit remain on host; Codex routes process/filesystem operations and Pi routes named tools. Not audited for sensitive workloads; writable mounts remain writable. Documentary evidence only, no native testing. Worth report evaluation.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-17158ea1d9d0028a"
+    ],
+    "worker": "catalogue",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "url": "https://x.com/simonw",
+        "checkedAt": "2026-11-18T19:10:10.300029Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/profile-x-com-simonw.json",
+        "captureSha256": "db9f12a327620b217b31fd18fa4f42a84d1fa70fa9ded168de36bc0df29bcff0"
+      },
+      {
+        "url": "https://blog.primeradiant.com/external-sandboxes-for-coding-agents/",
+        "checkedAt": "2026-11-18T19:19:09.122200Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/external-sandboxes.json",
+        "captureSha256": "0492dbd3bbae182b0454911185b0ccc33b420d1504d1e2078c50d1ffa19c1fba"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:catalogue:nov18-social-speech-heard-history",
+    "candidateId": "nov18-social-speech-heard-history",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Full original post announces history trimming to the heard portion. Full public repository README confirms interrupt cancellation, queued-audio dropping and runtime prerequisites, but exact new implementation/history semantics need code or linked protocol-doc verification. No native testing.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-f45c8db000ba8aa9"
+    ],
+    "worker": "catalogue",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "url": "https://x.com/andimarafioti/status/2123077999004156162",
+        "checkedAt": "2026-11-18T19:14:18.791711Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/andi-current-voice.json",
+        "captureSha256": "0fb9da9d64923b9feaf6d89edb6498b58e02a14717cbaf3d4788c490bd4c43d2"
+      },
+      {
+        "url": "https://github.com/huggingface/speech-to-speech",
+        "checkedAt": "2026-11-18T19:14:18.793875Z",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/voice-repo.json",
+        "captureSha256": "af70eeeb3dcc3323b8118bac85b6a5d8c643bc782ac245d86c4cbd3512d0644e"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:catalogue:nov18-social-pangram-rediscovery",
+    "candidateId": "nov18-social-pangram-rediscovery",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Full essay is October19, despite renewed November17 discussion. Kept as source-qualification/background evidence; no material revision established and no new-story claim.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-8e99d982e2b0863f"
+    ],
+    "worker": "catalogue",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:catalogue:nov18-social-school-ai-search",
+    "candidateId": "nov18-social-school-ai-search",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Original NBC reporter post was reposted in Alex Hanna public feed. Article and primary district action not inspected; no lawsuit allegation or district claim adopted as established fact.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-996695831a421c80"
+    ],
+    "worker": "catalogue",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:catalogue:nov18-evalscience-program",
+    "candidateId": "nov18-evalscience-program",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete accepted-papers listing captured; primary papers and contribution dates unverified. Useful future research route, not evidence of completed symposium results.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "story-3df24002f2d97b02"
+    ],
+    "worker": "catalogue",
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-67952d9a918d2536",
+    "candidateId": "candidate-67952d9a918d2536",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Priority educational lead retained. Both public-web open and one trailing-slash repair failed; root Chrome acquisition is the next action. Do not infer contents from title.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-67952d9a918d2536"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-0.json",
+        "sha256": "5b08b45c49e4fecae8285e8dd180f6b04050163648c580d25db425e759b2576b",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.273Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-0.json",
+        "sha256": "a9fd6a8627a6b52864dce3db9435e8040e21b3946f2dfb461d6476ee3caeec96",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.218Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-184d931227f2504d",
+    "candidateId": "candidate-184d931227f2504d",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Both public-web open and single trailing-slash repair failed. Read the original essay and assess concrete implications before inclusion or exclusion.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-184d931227f2504d"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-0.json",
+        "sha256": "5b08b45c49e4fecae8285e8dd180f6b04050163648c580d25db425e759b2576b",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.273Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-0.json",
+        "sha256": "a9fd6a8627a6b52864dce3db9435e8040e21b3946f2dfb461d6476ee3caeec96",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.218Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-68ddb817fe4001c0",
+    "candidateId": "candidate-68ddb817fe4001c0",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Full primary article inspected after repair: chip RTL optimization, AMD collaboration and RISC-V evaluation; vendor acknowledges omitted features/area/timing limitations. Deferred behind selected model reports; inspect linked Synopsys announcement and evaluation details before standalone research report.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-68ddb817fe4001c0"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-0.json",
+        "sha256": "5b08b45c49e4fecae8285e8dd180f6b04050163648c580d25db425e759b2576b",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.273Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-0.json",
+        "sha256": "a9fd6a8627a6b52864dce3db9435e8040e21b3946f2dfb461d6476ee3caeec96",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.218Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-a1de396d3910fa2e",
+    "candidateId": "candidate-a1de396d3910fa2e",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Both public-web article routes failed. Inspect partnership terms and practical availability; title alone is insufficient for exclusion.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-a1de396d3910fa2e"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-0.json",
+        "sha256": "5b08b45c49e4fecae8285e8dd180f6b04050163648c580d25db425e759b2576b",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.273Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-0.json",
+        "sha256": "a9fd6a8627a6b52864dce3db9435e8040e21b3946f2dfb461d6476ee3caeec96",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.218Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-8f6af8c44a4a1bfb",
+    "candidateId": "candidate-8f6af8c44a4a1bfb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Selected for gpt62-astra-sol report. Direct original API/model/system-card documents preserved; root independently verified original release in Chrome. No native benchmark claims. Publication remains pending exact current dual-review approvals.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-8f6af8c44a4a1bfb"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "reportId": "gpt62-astra-sol",
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-1.json",
+        "sha256": "aae1bc8ee0fd2af2d1b09a0cb8f54cdf7fb0493827ab0d6964e494f60c6c0c9e",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.375Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-0e7f690aa4ff229b",
+    "candidateId": "candidate-0e7f690aa4ff229b",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Article routes failed after one repair. Read original defense announcement and scope before assessing practical relevance.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-0e7f690aa4ff229b"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-1.json",
+        "sha256": "aae1bc8ee0fd2af2d1b09a0cb8f54cdf7fb0493827ab0d6964e494f60c6c0c9e",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.375Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-1.json",
+        "sha256": "bc628e2b037a248a87421cff4cbe9511daa785e792abeab4114e0c0a76cb4f98",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.284Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-3047d7657748ea76",
+    "candidateId": "candidate-3047d7657748ea76",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary Sales article inspected after repair: Sales plugin,30+ partner plugins, workflow examples. Deferred due two-report bound; next verify product/help availability and plugin/account constraints, not assume universal access.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-3047d7657748ea76"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-1.json",
+        "sha256": "aae1bc8ee0fd2af2d1b09a0cb8f54cdf7fb0493827ab0d6964e494f60c6c0c9e",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.375Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-1.json",
+        "sha256": "bc628e2b037a248a87421cff4cbe9511daa785e792abeab4114e0c0a76cb4f98",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.284Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-3b3be741a87f5e21",
+    "candidateId": "candidate-3b3be741a87f5e21",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Both article routes failed. Inspect country-program scope, eligibility and dates before deciding.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-3b3be741a87f5e21"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-1.json",
+        "sha256": "aae1bc8ee0fd2af2d1b09a0cb8f54cdf7fb0493827ab0d6964e494f60c6c0c9e",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.375Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-1.json",
+        "sha256": "bc628e2b037a248a87421cff4cbe9511daa785e792abeab4114e0c0a76cb4f98",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.284Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-b43ef08ac3ed4f7a",
+    "candidateId": "candidate-b43ef08ac3ed4f7a",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary article inspected after repair: GPT6.2Astra configuration with expanded legal search, Enterprise trusted-access requests. Consequential legal benchmark claims require reading independent LAB/VALS protocols; not interchangeable with base model.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-b43ef08ac3ed4f7a"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-2.json",
+        "sha256": "0caa34e9d4b82cdb73641a10d71e34989c01a0332cf44479be26d9b185baf6c5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.496Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-1.json",
+        "sha256": "bc628e2b037a248a87421cff4cbe9511daa785e792abeab4114e0c0a76cb4f98",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.284Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-2d7a5d6b20fff3cd",
+    "candidateId": "candidate-2d7a5d6b20fff3cd",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary public-web article inspected: applications November23,50k new grants,Plus rather than prior Pro,recipient+up to2collaborators. Useful education/access story deferred; verify eligibility and current program guide before recommending enrollment.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-2d7a5d6b20fff3cd"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-2.json",
+        "sha256": "0caa34e9d4b82cdb73641a10d71e34989c01a0332cf44479be26d9b185baf6c5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.496Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-dd659f011024f04f",
+    "candidateId": "candidate-dd659f011024f04f",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary safety announcement accessible after repair; specialized classifier access requires approval. Deferred; inspect official classifier documentation and human-review limits before report, avoid capability claims from announcement alone.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-dd659f011024f04f"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-2.json",
+        "sha256": "0caa34e9d4b82cdb73641a10d71e34989c01a0332cf44479be26d9b185baf6c5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.496Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-2.json",
+        "sha256": "d34d370764b1790a153fb700bf5fab044f414fcebb6de5e329197188882540d9",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.358Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-d91fd06de7b8771e",
+    "candidateId": "candidate-d91fd06de7b8771e",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Public-web repair attempted for researcher-usage study. Retained for methodology review: read linked study, sample and self-reported time-saving limitations before treating as measured causal productivity.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-d91fd06de7b8771e"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-2.json",
+        "sha256": "0caa34e9d4b82cdb73641a10d71e34989c01a0332cf44479be26d9b185baf6c5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.496Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-2.json",
+        "sha256": "d34d370764b1790a153fb700bf5fab044f414fcebb6de5e329197188882540d9",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.358Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-b82b64ef90f76e66",
+    "candidateId": "candidate-b82b64ef90f76e66",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Customer-story acquisition attempted including repair. No sufficient independent outcome verification; read original full case and distinguish testimonials from evaluation before deciding.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-b82b64ef90f76e66"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-3.json",
+        "sha256": "79f2600f50312b12a463d666300589dad486a6ac684e69d7e969ec35339bc150",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.601Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-2.json",
+        "sha256": "d34d370764b1790a153fb700bf5fab044f414fcebb6de5e329197188882540d9",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.358Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-ff7833693fa2a067",
+    "candidateId": "candidate-ff7833693fa2a067",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Partnership article acquisition attempted including repair. Need actual agreement/product scope and practical availability; no title-only exclusion.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-ff7833693fa2a067"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-3.json",
+        "sha256": "79f2600f50312b12a463d666300589dad486a6ac684e69d7e969ec35339bc150",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.601Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-2.json",
+        "sha256": "d34d370764b1790a153fb700bf5fab044f414fcebb6de5e329197188882540d9",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.358Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-9fe6d2ae73e55f52",
+    "candidateId": "candidate-9fe6d2ae73e55f52",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary embedded-assessment programme text inspected: assessor/SSC access and escalation processes. Deferred; read protocol/external assessor evidence before judging independent oversight effectiveness.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-9fe6d2ae73e55f52"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-3.json",
+        "sha256": "79f2600f50312b12a463d666300589dad486a6ac684e69d7e969ec35339bc150",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.601Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-21b4758ab52123ac",
+    "candidateId": "candidate-21b4758ab52123ac",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary healthcare computer-use article inspected: customer implementations,controls,BAA/eligible-service conditions and clinician review. Consequential medical setting warrants deeper validation; retain next action to inspect CVS AgentKit and documented workflow limits.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-21b4758ab52123ac"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-3.json",
+        "sha256": "79f2600f50312b12a463d666300589dad486a6ac684e69d7e969ec35339bc150",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.601Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-3.json",
+        "sha256": "2aa9b94962279ed549e4abceb13456500f9e0cb2bc9f403fb80f4d9df3d81f8e",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.427Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-21e886491b30cfff",
+    "candidateId": "candidate-21e886491b30cfff",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary healthcare update inspected: computer-use agents,clinical search and20+plugins. Related to candidate-21b4758ab52123ac; consolidate provenance in a future healthcare report after checking access and validation, not a duplicate exclusion now.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-21e886491b30cfff"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-4.json",
+        "sha256": "7380b5549ad76d2414215b4ce189d59d965cc9aceb8922f0014b73c7d6ec70d5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.758Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-3.json",
+        "sha256": "2aa9b94962279ed549e4abceb13456500f9e0cb2bc9f403fb80f4d9df3d81f8e",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.427Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-60f3c7381bc61eae",
+    "candidateId": "candidate-60f3c7381bc61eae",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Primary article inspected:£1m charity partnership aims to reach25k UK young people over18months; qualifications programme is still being developed. Retain source but no standalone tool/model report this edition because no currently inspectable learning workflow or enrollment route established.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-60f3c7381bc61eae"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-4.json",
+        "sha256": "7380b5549ad76d2414215b4ce189d59d965cc9aceb8922f0014b73c7d6ec70d5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.758Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-3.json",
+        "sha256": "2aa9b94962279ed549e4abceb13456500f9e0cb2bc9f403fb80f4d9df3d81f8e",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.427Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-3d4aeac88b69acfa",
+    "candidateId": "candidate-3d4aeac88b69acfa",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Both public-web customer-story routes failed. Inspect original case and identify transferable workflow evidence before assessing inclusion.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-3d4aeac88b69acfa"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-4.json",
+        "sha256": "7380b5549ad76d2414215b4ce189d59d965cc9aceb8922f0014b73c7d6ec70d5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.758Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-3.json",
+        "sha256": "2aa9b94962279ed549e4abceb13456500f9e0cb2bc9f403fb80f4d9df3d81f8e",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.427Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-2e8f421d2ee2a3df",
+    "candidateId": "candidate-2e8f421d2ee2a3df",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Primary explainer inspected: candidate lattice definition from October preprint, not a proven completed StandardModel solution. Deferred pending paper/expert scrutiny; preserve proposal and validation qualifications.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-2e8f421d2ee2a3df"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-4.json",
+        "sha256": "7380b5549ad76d2414215b4ce189d59d965cc9aceb8922f0014b73c7d6ec70d5",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.758Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-33b95c2112c46efd",
+    "candidateId": "candidate-33b95c2112c46efd",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Publisher announcement inspected: launch of a science blog and recap of prior research. Treat as a discovery/monitoring route; not a new standalone tool or verified scientific result.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-33b95c2112c46efd"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-5.json",
+        "sha256": "36d249ba7a521a2ac8ad00cbde466269d8abdfa4afa1f118fa30e09ee8297386",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.929Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:official:candidate-35bcc4b3dafe10f2",
+    "candidateId": "candidate-35bcc4b3dafe10f2",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Both public-web article routes failed. Verify actual geography/eligibility and advertiser workflow before classifying expansion story.",
+    "decidedAt": "2026-11-18T19:24:55.005617+00:00",
+    "supporting_source_ids": [
+      "source-35bcc4b3dafe10f2"
+    ],
+    "worker": "official",
+    "revisitedBacklog": false,
+    "captures": [
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-batch-5.json",
+        "sha256": "36d249ba7a521a2ac8ad00cbde466269d8abdfa4afa1f118fa30e09ee8297386",
+        "method": "public web open parser",
+        "checkedAt": "2026-11-18T19:09:40.929Z"
+      },
+      {
+        "path": ".state/scan-20261118T190424Z-c7a538/research/official/candidate-repair-4.json",
+        "sha256": "0bbe1a77d5e17c6914572c6fe10c8cc73f36803ae67ba1c944564ed25268db0b",
+        "method": "single public-web trailing-slash repair",
+        "checkedAt": "2026-11-18T19:11:17.497Z"
+      }
+    ]
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-46af5006ff7ddd91",
+    "candidateId": "candidate-46af5006ff7ddd91",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November17 podcast introduction and part of retained full transcript inspected: AI diagnosis, imaging, whole-patient models and virtual cells. Broad discussion is not clinical validation or a released tool. Defer to scoped study-level evidence; audio/video not played.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-46af5006ff7ddd91"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-46af5006ff7ddd91.html",
+    "captureSha256": "8bef4231e7c3d16be9033e7564a3aec7b7b42a0618d6fac997acd52559a18ace"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-97087fe3c15c5fa6",
+    "candidateId": "candidate-97087fe3c15c5fa6",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Selected report tokeneconomizer drafted with paper/repository/license/author-post evidence. Root review pending. October15 paper, October26 plugin announcement and November16 blog distinct; experimental stopping vs current advisory plugin and defaults explicitly qualified.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-97087fe3c15c5fa6"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "tokeneconomizer",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-97087fe3c15c5fa6.html",
+    "captureSha256": "a78fab7e97792c8e38a4585ee009a1b8d4e55b67cf52cc341f4de2e90b0e34fb"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-7f76fde50a9a4114-a674ea07ad8a",
+    "candidateId": "candidate-7f76fde50a9a4114-a674ea07ad8a",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Article body remains dated October30 and describes synthetic pharmaceutical/capital-markets/software tenants and evaluation generation. Feed revision is not a newly released public platform. Public implementation, validation and scope of material revision need further checking.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-7f76fde50a9a4114"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-7f76fde50a9a4114-a674ea07ad8a.html",
+    "captureSha256": "25db9a0229dd1229270790e906dea040b72e568f4a43474e16abfd13116c99ef"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-db007afeffa315be-4c25906a83c6",
+    "candidateId": "candidate-db007afeffa315be-4c25906a83c6",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Inspected October22 body describes semantic events, compiler and interactive charts already covered by stable flint-interactive report. No material new capability established by this feed revision; preserve provenance without duplicate report or activity bump.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-db007afeffa315be"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "flint-interactive",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-db007afeffa315be-4c25906a83c6.html",
+    "captureSha256": "22e912a18c119dc8ae15f401a648afe64801879524f86d79c33ba3541b868db6"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-db9b81401cb73d7b",
+    "candidateId": "candidate-db9b81401cb73d7b",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November18 publication summarizes November17 GPT6.2 release with mixed independent reactions and benchmark/cost claims. Reconcile as secondary provenance with originating OpenAI candidate; rankings and influencer quotes are not product-wide validation.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-db9b81401cb73d7b"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-db9b81401cb73d7b.html",
+    "captureSha256": "2465cd13aa1fe6acf8370d1999503d83e5c36bfab780d86f2fb3fb4cae0a4398"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-6c93287c551f6b2c",
+    "candidateId": "candidate-6c93287c551f6b2c",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November17 Richard MacManus interview discusses Cloudflare Clef/Clairic System One models and post-training direction. Availability, API limits and primary technical sources unreviewed; retain candidate rather than treating neolab label as release evidence.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-6c93287c551f6b2c"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-6c93287c551f6b2c.html",
+    "captureSha256": "96a987a191497958b9840d22ccbbdeca7b92b3f7ee47f4e0a8f4e7bbda2d635e"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-e46269d685c5a5d2",
+    "candidateId": "candidate-e46269d685c5a5d2",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November17 roundup describing November16 Perplexity revenue claim also links Monitor API, Teammates and research lab. Product claims need originating docs; revenue run rate and speculative valuation do not establish builder utility. Preserve multiple-story provenance.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-e46269d685c5a5d2"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-e46269d685c5a5d2.html",
+    "captureSha256": "c6897502396b70dc911d157ddc9cb24b40d7cce17a60aeec1c9c7960f8821985"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-daab8049af8f9330",
+    "candidateId": "candidate-daab8049af8f9330",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "BFL interview article inspected: FLUX3 image/video/audio training and temporal consistency discussion. Chapters/show notes provide useful provenance, but native podcast and linked research not fully reviewed. Do not duplicate existing FLUX report based on interview alone.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-daab8049af8f9330"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-daab8049af8f9330.html",
+    "captureSha256": "4952c978b616c9ea3e7cc523a8f18db930359b26958a7828410a4db9e5ef13b7"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-e5d9238718421487",
+    "candidateId": "candidate-e5d9238718421487",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November14 multi-topic roundup body sampled and fully captured, including llama.cpp1.0, model launches, evaluation disputes and self-improvement claims. Primary origins across the roundup not all inspected; retain as discovery rather than blanket exclusion from title.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-e5d9238718421487"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-e5d9238718421487.html",
+    "captureSha256": "426ae0c3bd1a0e8832879502cf8d01c81f4fc48d23da552d18a8880a82cee3f8"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-27f7b51e3bf8f5a8",
+    "candidateId": "candidate-27f7b51e3bf8f5a8",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete short quote post contrasts generated Rust curl clones with ongoing upstream fixes. Useful maintenance/correctness critique, but underlying Daniel Stenberg article and repositories not inspected; no generalized AI rewrite conclusion.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-27f7b51e3bf8f5a8"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-27f7b51e3bf8f5a8.html",
+    "captureSha256": "1d8fe625f175a99fc29b1e33c6e831eb58bf57932d5fc92b20ac82115c4a1084"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-d6b88907cbdaa308",
+    "candidateId": "candidate-d6b88907cbdaa308",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Complete short post is a Python Software Foundation fundraising appeal, describing PyPI/core/security support. Valuable ecosystem context but no substantive AI tool/model/research change for an Observatory report.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-d6b88907cbdaa308"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-d6b88907cbdaa308.html",
+    "captureSha256": "bc73af1164a3a65ac45ca338c0ff502fa7a66b95809013cc353200bd5f524812"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-b4439a7527ca175b",
+    "candidateId": "candidate-b4439a7527ca175b",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Author post and originating Prime Radiant article inspected: three experimental external sandbox implementations. Important limits: Claude native Read/Edit remain on host, allowed services can echo credentials, unaudited prototypes, writable mounts still damageable. Defer distinct report; no security guarantee.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-b4439a7527ca175b"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-b4439a7527ca175b.html",
+    "captureSha256": "9b683b6f32d7561c5446c01891c3d9406dcc331b90b0c0b844639c5286c438d3"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-0b5f35342ecc69a5",
+    "candidateId": "candidate-0b5f35342ecc69a5",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete Simon Willison post inspected: API identifiers/prices plus one pelican/3D-task comparison and mixed reactions. Reconcile with OpenAI release candidate; anecdotal creative tests are not a comprehensive benchmark.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-0b5f35342ecc69a5"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-0b5f35342ecc69a5.html",
+    "captureSha256": "6877c668f0a56a2fa02856c24971c299c6d1974daeac7c034600457efb107617"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-9e24bec0316d82cc",
+    "candidateId": "candidate-9e24bec0316d82cc",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete November17 Datasette Lite rewrite article and repository captured. Service-worker/WebWorker routing enables JavaScript plugins and URL-addressable demos with CORS constraints. Distinct from Datasette Agent/Apps; runtime not tested, keep a bounded follow-up.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-9e24bec0316d82cc"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-9e24bec0316d82cc.html",
+    "captureSha256": "d82046d51381efbc5f0e764303f80cf7603660847c125bb62ebc3b5a25744d18"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-38f599c774ee5c8e",
+    "candidateId": "candidate-38f599c774ee5c8e",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "excluded",
+    "reason": "Complete source is a one-sentence Go programming proverb with attribution, without new AI research, release or useful implementation evidence.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-38f599c774ee5c8e"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-38f599c774ee5c8e.html",
+    "captureSha256": "f5222b328cebfd79441a092f6c772ea10d0b02cdce2aab6f5d950f8a80056d91"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-a50437ccc021c623",
+    "candidateId": "candidate-a50437ccc021c623",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete November16 LLM0.37.3 note describes SQLite3.54.1 JSON-subquery behavior breaking logging and workaround. Different issue from existing credential-routing report; tagged release/reproduction not inspected for a material update.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-a50437ccc021c623"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-a50437ccc021c623.html",
+    "captureSha256": "4488c38354223a88ac680007625367a4e6fa7f174511f02d1b0fe5f97cdbcbbb"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-3c506afcbc502083",
+    "candidateId": "candidate-3c506afcbc502083",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete November15 author post introduces alpha MapLibre/OpenFreeMap geospatial plugin and Lite demo, with author-described agent-built implementation. Source code and native map demo untested; retain useful geographic-teaching candidate.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-3c506afcbc502083"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-3c506afcbc502083.html",
+    "captureSha256": "0492ed7c5093fbfdc682f624a5574aeae4889de7f4220493e56f3a7a5e699178"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-0139ca5c534e35bb",
+    "candidateId": "candidate-0139ca5c534e35bb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Author post and primary1.0a43 release/advisory inspected for stable datasette-agent-apps update: private stored-query title/SQL disclosure does not execute query. Streaming/render changes separate from security scope; review pending. A 993-word stable-ID revision is saved with 14 evidence claims; approval remains pending.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-0139ca5c534e35bb"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "datasette-agent-apps",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-0139ca5c534e35bb.html",
+    "captureSha256": "649364e9b07bebd6b2190c78ef4bb4dc77fd4dfe83394cd37fbdcd00adfa3ea5"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-9f458effb436880f",
+    "candidateId": "candidate-9f458effb436880f",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete author post and tagged0.65.6 release inspected: backport of route-vs-name database download permission fix. Different condition from stored-query advisory; stable report update evidence, not conflated exploit. A 993-word stable-ID revision is saved with 14 evidence claims; approval remains pending.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-9f458effb436880f"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "datasette-agent-apps",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-9f458effb436880f.html",
+    "captureSha256": "b5c0fe5f380e83d855f352ec8c70e3f5a1ee17a842f25763c6f787050cc03808"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-81dba6fe40f7c0eb",
+    "candidateId": "candidate-81dba6fe40f7c0eb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Author post and tagged Apps0.4a0 release inspected: URL fragments and agent-visible URL schemes let apps link to one another. Material stable datasette-agent-apps update selected; independent review pending. A 993-word stable-ID revision is saved with 14 evidence claims; approval remains pending.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-81dba6fe40f7c0eb"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "datasette-agent-apps",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-81dba6fe40f7c0eb.html",
+    "captureSha256": "e606937ad847c32564e2056bf55d7de8ec14c28781a19ef780ab0be091730f68"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-d47427f5a2b9c3b3",
+    "candidateId": "candidate-d47427f5a2b9c3b3",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Author post and tagged Agent0.6a0 release inspected: homepage prompt and reference mentions. Material stable datasette-agent-apps update selected with surrounding releases; review pending. A 993-word stable-ID revision is saved with 14 evidence claims; approval remains pending.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-d47427f5a2b9c3b3"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "datasette-agent-apps",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-d47427f5a2b9c3b3.html",
+    "captureSha256": "acd27b44350a586478899d934e7d76fa1b8f9e6089037b0d7e4bf1604115ef0c"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-e9477865501b0215",
+    "candidateId": "candidate-e9477865501b0215",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Author post and tagged datasette-llm0.1a11 release inspected: OpenAI-compatible endpoints enable local-model configuration. Material access change for stable report, subject to actual endpoint/tool-calling support; no native local-model test. A 993-word stable-ID revision is saved with 14 evidence claims; approval remains pending.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-e9477865501b0215"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "reportId": "datasette-agent-apps",
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-e9477865501b0215.html",
+    "captureSha256": "9cf1a9f2583be53ce770d4a575c43f2fc61d80fa97de3198d02e83a29bce989d"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-4f7f1f7fcbbee0ff",
+    "candidateId": "candidate-4f7f1f7fcbbee0ff",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete November14 post describes Vega0.7 compatibility with latest Datasette alpha and Lite. Useful companion visualization change; separate tagged compatibility evidence not inspected and not an independent AI release.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-4f7f1f7fcbbee0ff"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-4f7f1f7fcbbee0ff.html",
+    "captureSha256": "1bab90b406ffb120b589c9210d1a533639aac57e7226089f7e5b774fba34385e"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-e5607ea9b3456678-b7ca9bbfce62",
+    "candidateId": "candidate-e5607ea9b3456678-b7ca9bbfce62",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "November10 body and added Antigravity swarm demo attribution inspected. Original date precedes current run window; Gemini4 Carbon already has stable report. Feed revision alone does not establish material model change; preserve demo as unverified workflow follow-up.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-e5607ea9b3456678"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-e5607ea9b3456678-b7ca9bbfce62.html",
+    "captureSha256": "97bd4e838ebd6c6caa1ac3b5b7730fc284cdce492fcd2c597915ff911466af29"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-c4312adb767125dc-dc6c07883c3a",
+    "candidateId": "candidate-c4312adb767125dc-dc6c07883c3a",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Complete November10 author post describes one generated Three.js Yonkers diorama and prompt. Older source with new feed fingerprint; no independently verified new feature or demonstrated learning benefit. Keep artifact inspection follow-up without new-launch framing.",
+    "decidedAt": "2026-11-18T19:20:20.596464Z",
+    "supporting_source_ids": [
+      "source-c4312adb767125dc"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": false,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/feed/candidate-c4312adb767125dc-dc6c07883c3a.html",
+    "captureSha256": "a0c5ca7b4a152ddac4b87f7978400bcd949e3542187cd6c43e857bd4c03504a0"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:x-astra-pro-oct16",
+    "candidateId": "x-astra-pro-oct16",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Original October16 post readable: Pro/Chat-tab parallel agents and faster tool use. This historical announcement does not establish November availability/quotas or API features; retain for a current-plan comparison, not fresh release.",
+    "decidedAt": "2026-11-18T19:14:53.329368Z",
+    "supporting_source_ids": [],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/x-astra-pro-oct16.html",
+    "captureSha256": "906c6a7a20bf219be6cbce4dc155a947915fd4d97321768e48a1ef352265e3e2"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:x-live11-oct15",
+    "candidateId": "x-live11-oct15",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Original October15 post readable: voices in French, German, Hindi, Mexican Spanish, Korean and Japanese; ChatGPT/Codex/dots rollout and API coming soon at that time. Current API readiness remains unresolved.",
+    "decidedAt": "2026-11-18T19:14:53.338543Z",
+    "supporting_source_ids": [],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/x-live11-oct15.html",
+    "captureSha256": "24b2fbcd461f19c39d3480f9cb912adab50b569c3fdfcfb950fd8c42f5def012"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-00427e47df5ef306",
+    "candidateId": "candidate-00427e47df5ef306",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Fresh original-source HTTP attempt returned403 and one public-web repair returned cache miss. Saved earlier editorial reasoning is not a fresh body check. Keep pending; next action is readable originating article plus the specific original unresolved verification.",
+    "decidedAt": "2026-11-18T19:14:53.340325Z",
+    "supporting_source_ids": [
+      "source-00427e47df5ef306"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/candidate-00427e47df5ef306.json",
+    "captureSha256": "b6f16928f4da46f16d78efeb29a9bf1a4b3782f8e478970f593110965a9be58a"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-1dbe22633003a2af",
+    "candidateId": "candidate-1dbe22633003a2af",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Fresh original-source HTTP attempt returned403 and one public-web repair returned cache miss. Saved earlier editorial reasoning is not a fresh body check. Keep pending; next action is readable originating article plus the specific original unresolved verification.",
+    "decidedAt": "2026-11-18T19:14:53.341894Z",
+    "supporting_source_ids": [
+      "source-1dbe22633003a2af"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/candidate-1dbe22633003a2af.json",
+    "captureSha256": "9b264894ecd920a961dbf418200b56bd6097a28fea09f7158d2a5214f75c773c"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-2d8e70fb45cef747",
+    "candidateId": "candidate-2d8e70fb45cef747",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Fresh original-source HTTP attempt returned403 and one public-web repair returned cache miss. Saved earlier editorial reasoning is not a fresh body check. Keep pending; next action is readable originating article plus the specific original unresolved verification.",
+    "decidedAt": "2026-11-18T19:14:53.345067Z",
+    "supporting_source_ids": [
+      "source-2d8e70fb45cef747"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/candidate-2d8e70fb45cef747.json",
+    "captureSha256": "04010a8b72901b8b5ca74aec3ade562db2699efee42a562f64902b0e06176540"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-2fc54b690d7b20a2",
+    "candidateId": "candidate-2fc54b690d7b20a2",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Public-web body inspected: safety cases are aspirational and apply to frontier RL training, with operational controls still evolving. Defer standalone report pending implemented controls and independent support; not a deployed assurance toolkit.",
+    "decidedAt": "2026-11-18T19:14:53.346193Z",
+    "supporting_source_ids": [
+      "source-2fc54b690d7b20a2"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlogweb1.json",
+    "captureSha256": "3d8d9522984ba3062c2b0871cddd3258031553aeba6a1468de8ef18302f25c8f"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-3d7b9aab56c8f4fe",
+    "candidateId": "candidate-3d7b9aab56c8f4fe",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Public-web body inspected: synthetic conversations, >80 experts/22 countries, weighted criteria and GPT-5.6 Sol automated grader. Dataset/license, grader validation and outcome evidence unreviewed. Keep methods candidate; no clinical-benefit or usage-prevalence inference.",
+    "decidedAt": "2026-11-18T19:14:53.346993Z",
+    "supporting_source_ids": [
+      "source-3d7b9aab56c8f4fe"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlogweb2.json",
+    "captureSha256": "56955f7aeffc398dcc24c0c53a8636ce5aa1679bcaa7788586b0de9985df62d1"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-45d6a2b79938283a",
+    "candidateId": "candidate-45d6a2b79938283a",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Fresh original-source HTTP attempt returned403 and one public-web repair returned cache miss. Saved earlier editorial reasoning is not a fresh body check. Keep pending; next action is readable originating article plus the specific original unresolved verification.",
+    "decidedAt": "2026-11-18T19:14:53.348274Z",
+    "supporting_source_ids": [
+      "source-45d6a2b79938283a"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/candidate-45d6a2b79938283a.json",
+    "captureSha256": "6119cbc8f2fee4a105994deb63d61287f01ce8791714977c466aa1b772970c04"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-4e324623ab7ca6fe",
+    "candidateId": "candidate-4e324623ab7ca6fe",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Fresh original-source HTTP attempt returned403 and one public-web repair returned cache miss. Saved earlier editorial reasoning is not a fresh body check. Keep pending; next action is readable originating article plus the specific original unresolved verification.",
+    "decidedAt": "2026-11-18T19:14:53.350230Z",
+    "supporting_source_ids": [
+      "source-4e324623ab7ca6fe"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlog/candidate-4e324623ab7ca6fe.json",
+    "captureSha256": "846aa9aafd2dd8c91dc0f2a9dca71befa987de5f512b524dfc8b1b32e030e6ed"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:research_social:candidate-50d71cd52400f551",
+    "candidateId": "candidate-50d71cd52400f551",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "status": "needs_review",
+    "reason": "Public-web body including October4 NPWS update inspected. Describes internal research model activity and claimed safeguards. Consequential incident account requires affected-agency corroboration and current follow-through; retain unresolved, not product news.",
+    "decidedAt": "2026-11-18T19:14:53.350753Z",
+    "supporting_source_ids": [
+      "source-50d71cd52400f551"
+    ],
+    "worker": "research_social",
+    "revisitedBacklog": true,
+    "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/backlogweb2.json",
+    "captureSha256": "56955f7aeffc398dcc24c0c53a8636ce5aa1679bcaa7788586b0de9985df62d1"
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:nov18-mai-code2",
+    "candidateId": "nov18-mai-code2",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "mai-code2",
+    "status": "included",
+    "reason": "Included in mai-code2 after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "nov18-mai-code2-release"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:nov18-repos-longcat-avatar-16",
+    "candidateId": "nov18-repos-longcat-avatar-16",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "longcat-video-avatar",
+    "status": "included",
+    "reason": "Included in longcat-video-avatar after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "repos-nov18-longcat-hub"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:nov18-repos-llama-cpp-v1",
+    "candidateId": "nov18-repos-llama-cpp-v1",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "llama-cpp",
+    "status": "included",
+    "reason": "Included in llama-cpp after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "repos-nov18-llama-v1-release"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-8f6af8c44a4a1bfb",
+    "candidateId": "candidate-8f6af8c44a4a1bfb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "gpt62-astra-sol",
+    "status": "included",
+    "reason": "Included in gpt62-astra-sol after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-8f6af8c44a4a1bfb"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-97087fe3c15c5fa6",
+    "candidateId": "candidate-97087fe3c15c5fa6",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "tokeneconomizer",
+    "status": "included",
+    "reason": "Included in tokeneconomizer after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-97087fe3c15c5fa6"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-0139ca5c534e35bb",
+    "candidateId": "candidate-0139ca5c534e35bb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "datasette-agent-apps",
+    "status": "included",
+    "reason": "Included in datasette-agent-apps after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-0139ca5c534e35bb"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-9f458effb436880f",
+    "candidateId": "candidate-9f458effb436880f",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "datasette-agent-apps",
+    "status": "included",
+    "reason": "Included in datasette-agent-apps after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-9f458effb436880f"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-81dba6fe40f7c0eb",
+    "candidateId": "candidate-81dba6fe40f7c0eb",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "datasette-agent-apps",
+    "status": "included",
+    "reason": "Included in datasette-agent-apps after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-81dba6fe40f7c0eb"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-d47427f5a2b9c3b3",
+    "candidateId": "candidate-d47427f5a2b9c3b3",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "datasette-agent-apps",
+    "status": "included",
+    "reason": "Included in datasette-agent-apps after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-d47427f5a2b9c3b3"
+    ],
+    "revisitedBacklog": false
+  },
+  {
+    "decisionId": "scan-20261118T190424Z-c7a538:approved:candidate-e9477865501b0215",
+    "candidateId": "candidate-e9477865501b0215",
+    "runId": "scan-20261118T190424Z-c7a538",
+    "reportId": "datasette-agent-apps",
+    "status": "included",
+    "reason": "Included in datasette-agent-apps after two separate fresh-context gpt-6-astra high reviews approved the current report/evidence/rubric hashes. Material claim scope, dates and limitations are preserved in that report and the preceding research disposition.",
+    "decidedAt": "2026-11-18T19:32:33.000929+00:00",
+    "supporting_source_ids": [
+      "source-e9477865501b0215"
+    ],
+    "revisitedBacklog": false
   }
 ]

@@ -1,0 +1,28 @@
+{
+  "reportId": "llama-cpp",
+  "reviewerId": "/root/nov18_astra_review_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:26:14.665961Z",
+  "reportHash": "7dcf30c5ba0b06dce180011bebd14329faa7a5768a736e8642cf1fd025080542",
+  "evidenceHash": "19f9280bc77c6d2ccf5e08acb940d767abac524cba3e12a506b9e10a00db024f",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 8,
+    "impact": 7,
+    "novelty": 5,
+    "maturity": 8,
+    "openness": 9
+  },
+  "rationale": {
+    "usefulness": "The tagged C API migration list, precise MoE-cache semantics, speech-format differences and network defaults give local application teams an unusually actionable guide. Original acceptance plans connect version pinning to educational outputs, research citations, narration and website behavior. These are correctly framed as trials, not measured improvements.",
+    "impact": "An explicit major-version compatibility commitment for an established, broadly portable inference component is significant infrastructure work. Added memory controls, speech support and server hardening can affect many downstream applications. Seven recognizes ecosystem reach without treating a 1.0 label as a new model-quality breakthrough.",
+    "novelty": "The public compatibility contract and the particular new memory/speech interfaces are meaningful additions. Local inference, multiple backends and OpenAI-style serving already existed, and the report correctly says so. The release is an important consolidation and extension, meriting five for novelty.",
+    "maturity": "Extensive versioned build/server documentation, a mature project lineage, explicit removed interfaces and concrete security fixes support strong documented readiness. The report retains experimental MCP warnings and avoids claiming full HTTP interchangeability. Workload-specific performance and reliability remain untested by the Observatory, precluding the highest score.",
+    "openness": "The actual tagged MIT license, public C/C++ source, versioned headers and broad backend/build documentation support inspection, modification and portability. Reproducible model/engine pairings are possible, although downloaded weights have separate licenses and hardware-specific behavior still requires testing. Nine credits the open engine without attributing its license to every model."
+  },
+  "confidence": "high",
+  "concerns": []
+}

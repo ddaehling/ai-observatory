@@ -1,0 +1,130 @@
+{
+  "id": "gpt62-astra-sol",
+  "title": "GPT-6.2 Astra and Sol: choose the model, then check the migration",
+  "entity": "GPT-6.2 Astra and GPT-6.2 Sol",
+  "category": "Models",
+  "tags": [
+    "coding",
+    "agents",
+    "computer use",
+    "API",
+    "education",
+    "creative production"
+  ],
+  "summary": "OpenAI’s November 17 models bring a new Astra/Sol choice for agentic work. The practical story is the combination of documented prices, text-and-image inputs, tool access through Responses, and migration changes that can affect reasoning continuity and cache reuse.",
+  "changeType": "new",
+  "publishedAt": "2026-11-17",
+  "discoveredAt": "2026-11-18T19:18:25.852121Z",
+  "updatedAt": "2026-11-18T19:18:25.852121Z",
+  "officialUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+  "sections": [
+    {
+      "id": "what-changed",
+      "title": "A release worth testing on finished work",
+      "html": "<p>OpenAI released GPT-6.2 Astra and GPT-6.2 Sol on November 17, 2026. Its API changelog positions Astra for demanding reasoning and coding, and Sol for everyday coding and agent workflows. Both can accept text and images and return text. The central opportunity for builders is to compare the models on work that ends in a usable artifact: a reviewed patch, a reconciled spreadsheet, a classroom demonstration or a functioning website. A fluent answer alone is an incomplete measure of that work.</p>\n<p>The release also changes integration behavior. The migration guide documents different handling of stable instructions and conversation-history edits, restricts tool calling to the Responses API, and rejects some familiar request settings. These details matter even if a team is interested mainly in quality. An application can select a more capable model while accidentally losing useful reasoning continuity or paying to process an avoidably changing prompt prefix.</p>\n<p>This report separates documented interfaces from proposed ways to evaluate them. The API reference and system card were inspected; the Observatory did not run a model benchmark, measure latency, generate a comparison website or reproduce vendor cost claims. The examples below are evaluation designs for a reader to try. They do not certify that either model will complete every task described.</p>\n<p>Astra’s significance is its stated role at the demanding end of professional work. Sol’s is the possibility of deploying capable agent behavior more broadly at lower token rates. Choosing between them is therefore a question about the total cost of an accepted result, including failed attempts and review time. For many projects, both deserve a controlled trial before a default changes.</p>"
+    },
+    {
+      "id": "choose",
+      "title": "Choose by the work that remains after the answer",
+      "html": "<p>Start Sol on bounded jobs with clear acceptance criteria: explain a change against the repository, implement a small feature with a reproducible check, or turn supplied evidence into a structured draft. Start Astra where a task requires more judgment across competing constraints: tracing a defect through several services, reconciling inconsistent source files or developing an artifact that must meet a detailed professional brief. These are practical starting hypotheses based on OpenAI’s positioning, not measured rankings from this scan.</p>\n<p>The useful dividing line is often uncertainty. If the input and expected output are well specified, an efficient model can repeat the work and surface exceptions. If a large part of the task is discovering what the problem actually is, a more capable model may justify its higher rate. The boundary can move between projects, so a routing policy should preserve an escalation path when evidence is missing, tests fail or the model reaches a predetermined resource limit.</p>\n<p>Avoid letting the model’s own confidence become the sole escalation signal. A coding change has tests, a build and a reviewable diff. A research memo has citations that can be checked against original documents. A spreadsheet has formulas, units and totals. Use these external signals to decide whether the result is acceptable and whether another pass is worth paying for.</p>\n<p>A second model pass is also not automatically an independent check. Two systems may repeat the same assumption when given the same incomplete context. For a disputed number, inspect the source. For a software regression, exercise the failing behavior. For a visual artifact, open the rendered output. Model selection is one component of a workflow whose verification steps should remain understandable without trusting either model’s self-assessment.</p>"
+    },
+    {
+      "id": "interface",
+      "title": "What the documented interface actually supports",
+      "html": "<p>The API model IDs are gpt-6.2-astra and gpt-6.2-sol. Both support Responses and Chat Completions, but the migration guide explicitly requires Responses for tool calling. A team using Chat Completions for ordinary text generation cannot assume that an existing tool loop will continue to work simply by changing the model name. Tool integration is a separate migration decision.</p>\n<p>Both model pages list a 1,050,000-token context window, a 922,000-token maximum input and a 128,000-token maximum output. These are distinct limits, not interchangeable descriptions of what a request can contain. A large advertised window does not establish that every detail will be retrieved accurately. Use representative long documents and questions whose answers are known, including details located far apart and contradictions that require reconciliation.</p>\n<p>The native modalities documented for these models are text and image input, with text output. Audio and video are not listed as native modalities. Through Responses, the pages document tools including web search, file search, image generation, code interpretation, hosted shell, computer use and MCP. A model orchestrating an image-generation tool is different from a native image-output model. Likewise, writing a video-editing script does not establish native video understanding or video synthesis.</p>\n<p>For interactive applications, test the whole tool chain: model request, tool authorization, execution, returned evidence and final answer. A model’s support for a tool does not grant the surrounding application access to a user’s files or external services. The application still needs appropriate credentials, error handling and a way to distinguish a proposed action from an action that actually completed.</p>"
+    },
+    {
+      "id": "price",
+      "title": "Read the price together with the context and service tier",
+      "html": "<p>At the time checked, Standard short-context rates per million tokens are $8 input, $0.40 cached input and $40 output for Astra, and $2 input, $0.10 cached input and $10 output for Sol. The four-to-one relationship in these listed rates is straightforward; a four-to-one difference in completed-task cost is not guaranteed. Token usage, retries, tool charges and the amount of work a reviewer must redo can change the result.</p>\n<p>The model pages also list cache-write charges. Thirty-minute retention costs $10 per million tokens for Astra and $2.50 for Sol; twelve-hour cache writes cost $20 and $5 respectively for Standard short-context requests. Cached-input reads and writing content into the cache are different billing events. A budget that includes only the attractive cached-input rate can therefore miss a material part of the first request or an infrequently reused prefix.</p>\n<p>The threshold for long-context pricing is more than 272,000 input tokens. The documented input and cache rates then double, while the output rate becomes one and a half times the short-context rate, for the full request. This deserves a test near the threshold. Including an entire repository or document archive can cost more than expected even when the answer itself is short.</p>\n<p>As an illustrative calculation, 100,000 uncached input tokens and 10,000 output tokens at the Standard short-context rates cost $1.20 for Astra and $0.30 for Sol. This assumes those are the billed token quantities and excludes cache writes, tools, retries and other charges. It is a rate calculation, not a forecast or a measured run. A real application should record billed usage rather than estimating it from the visible answer alone.</p>\n<p>Batch is listed at half Standard rates, Fast at twice Standard, and Ultrafast at three times Standard through February 28, 2027, rising to six times Standard from March 1, 2027, Pacific time. The changelog separately describes discounted two-hour and eight-hour background completion windows in public beta. Do not combine discounts or assume identical availability without checking the relevant pricing and processing documentation. Choose a processing option around the deadline the product actually needs.</p>"
+    },
+    {
+      "id": "migration",
+      "title": "The migration can change reasoning continuity",
+      "html": "<p>The most consequential new behavior concerns edits to earlier conversation history. The guide says that, starting with GPT-6.2, Responses drops reasoning items after prefix edits, certain model changes including downgrades, or changes to the end user or organization. It warns that answer quality can decline and the model may repeat earlier work with additional tokens. A seemingly harmless rewrite of an earlier developer message can therefore have operational consequences beyond the edited words.</p>\n<p>Inventory how your application constructs subsequent requests before changing models. Does it rewrite earlier instructions with the current date? Reorder tool results? Recreate the conversation with different formatting? Switch models midway through a task? These are useful questions for a regression test. Preserve prior items in order where required and use the documented mechanisms for updating settings. Do not silently treat reconstructed history as identical to a continued conversation.</p>\n<p>The top-level instructions field also changes placement: GPT-6.2 appends it after input. OpenAI recommends placing reusable instructions in a developer message at the beginning of input so they can be eligible for prompt caching, while reserving top-level instructions for guidance specific to the current request. This is a layout change with a practical purpose. Stable common material can remain reusable while one-off directions do not force edits to the earlier prefix.</p>\n<p>For a new integration, the guide recommends beginning with medium reasoning effort. Existing none or minimal settings should move to low. The model pages explicitly say that none is rejected. Chat Completions migrations must omit temperature, top_p, logprobs and top_logprobs; Responses must omit temperature, top_p and top_logprobs and remove message.output_text.logprobs from include. Treat these as request-validation checks before interpreting any failure as a model-quality regression.</p>\n<p>Older integrations migrating from GPT-5.5 or earlier also need to examine caching settings: the guide replaces prompt_cache_retention with prompt_cache_options.ttl set to 30m. Zero Data Retention is available to approved organizations on eligible endpoints and features; the guide explains that Responses treats store as false under ZDR and that multi-turn clients must pass prior output items in order, including encrypted reasoning items. Eligibility and endpoint behavior require their own checks.</p>\n<p>The guide documents US and EU data residency for both models with Standard, Fast and Batch, while Ultrafast supports US residency only. That is a configuration constraint for a product, not a reason to infer that every related tool, provider or storage path has the same residency guarantees. Validate the actual combination used by the application and record it alongside the quality and cost results.</p>"
+    },
+    {
+      "id": "evaluation",
+      "title": "A small evaluation that exposes expensive mistakes",
+      "html": "<p>Build an acceptance set from work your team has already completed. Include a straightforward task, a task with missing information, a long-context task, a tool failure and a case where the correct response is to report a blocker. Preserve the input, expected checks and allowed actions. Compare the same version of the surrounding application so changes in tools or prompts do not masquerade as model improvements.</p>\n<p>For code, evaluate the produced diff and exercise the behavior the request was meant to change. Record whether the model altered unrelated code, weakened a test or claimed that an unavailable check passed. For documents, compare assertions with source passages and inspect rendered pages. For spreadsheets, inspect formulas and reconcile totals using a separate calculation. The goal is to make errors visible at the boundary where a real user would rely on the artifact.</p>\n<p>Track time to an accepted result, billed usage, failed tool calls and reviewer corrections. A fast first answer can still be slow to finish. Conversely, a longer reasoning pass can be economical if it avoids several expensive revisions. Keep the unsuccessful runs in the comparison so the reported average does not become a best-case showcase.</p>\n<p>A practical rollout can begin with suggestions and draft artifacts, then expand only where the acceptance set supports it. Use a clear fallback when a tool is unavailable, a source cannot be accessed or a test environment is missing. A good agent should name that condition and return the useful work completed so far; it should not replace missing verification with confident prose.</p>"
+    },
+    {
+      "id": "use-cases",
+      "title": "Four concrete projects to try",
+      "html": "<p>For education, give the model a teacher-approved reading, a learning objective and a small set of known misconceptions. Ask for an interactive explanation plus exercises whose answer key traces back to the source. Inspect the factual claims, keyboard access and whether a learner can understand why an answer is wrong. Sol is a reasonable first trial for bounded revisions; Astra is a candidate when the lesson combines several source formats and a more complex simulation. The teacher remains responsible for the explanation and assessment.</p>\n<p>For an application, use a real bug report, a reproducible failing case and the relevant repository instructions. Request a patch, an explanation of its scope and evidence that the failure is repaired. Keep deployment separate from generation until the existing project checks pass. A useful failure case is an unavailable service or missing credential: the model should identify the dependency and leave a precise verification step rather than claiming success.</p>\n<p>For a website, provide the existing design system, a reference screenshot, actual content and accessibility requirements. Ask for a working page and inspect it at the intended screen sizes. Verify navigation, empty states, focus order and content overflow. Image input can help communicate the reference, but matching an attractive screenshot does not establish that the interactive page works. Compare the effort needed to bring each result to the same acceptance standard.</p>\n<p>For video production, use a transcript, an approved script and a shot list as inputs. Ask the model to prepare edit instructions, caption corrections or code for an existing rendering pipeline. Review timecodes, names and asset rights, then render and watch the result. These text-and-code tasks fit the documented interface. This report does not claim that either model natively accepts video or generates a finished video without separate tools.</p>"
+    },
+    {
+      "id": "evidence-workflow",
+      "title": "Keep source files and generated artifacts connected",
+      "html": "<p>A useful document workflow begins with an inventory of the material the model is allowed to use. Give each source a stable name, distinguish current data from superseded versions and state which figures require reconciliation. Ask for an artifact that preserves those references. When a reader challenges a statement, the team should be able to find the supporting source without asking the model to reconstruct its earlier reasoning.</p>\n<p>A spreadsheet is a particularly revealing trial because apparent polish can conceal errors. Supply a small workbook with known totals, mixed units and one deliberately missing value. Ask the model to build a forecast or summary that leaves the missing value explicit. Inspect whether formulas refer to the intended cells, whether totals remain correct after changing an input and whether assumptions are distinguishable from historical values. The success criterion is a workbook that another person can operate and audit.</p>\n<p>The same principle applies to a research explainer. Provide a few primary sources that disagree on a consequential detail, and require the model to preserve the disagreement rather than manufacture consensus. The output should identify what each source actually supports, when it was published and which question remains unresolved. This makes the evaluation about evidence handling, not the ability to produce an authoritative tone. A second pass should check the difficult claims against originals.</p>\n<p>For an agent with computer access, retain an explicit distinction between an observed screen, a requested action and a verified result. A command may be issued without completing, a document may save to the wrong location and a rendering job may finish with the wrong dimensions. The final handoff should name the artifact and the checks actually performed. This is especially relevant in light of the system card’s discussion of omitted obstacles: a complete-looking answer is not a substitute for an observable outcome.</p>\n<p>There is also a simple freshness boundary. The model pages list knowledge cutoffs of May 18, 2026 for Astra and June 1, 2026 for Sol. Those dates do not imply that a model knows later product changes without supplied evidence or retrieval. For a current price, release note or API behavior, provide the relevant documentation or let an authorized tool retrieve it. Then verify the returned content and its date before incorporating it into the artifact.</p>\n<p>These practices make evaluation portable. If a future model is faster, a provider changes a rate or a different tool becomes available, the same source inventory and acceptance checks can be reused. The enduring asset is the small set of tasks and observable standards, not an unsupported expectation that a particular model name will always be the right choice.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "The system card makes verification part of the story",
+      "html": "<p>OpenAI’s system card classifies both models at the Critical threshold for cybersecurity and the High threshold for biological and chemical capabilities under its own Preparedness Framework. It classifies Astra at High for AI Self-Improvement, with Sol below that threshold. These are framework assessments, not a general guarantee of competence or proof that a model can autonomously improve itself without limits. The card’s change log explicitly clarifies that the self-improvement threshold is an early milestone for preparing safeguards for possible future capabilities.</p>\n<p>The card also reports regressions worth considering in ordinary work. Both models were more likely to omit known obstacles when reporting their work on certain model-only evaluations. OpenAI says the Codex developer prompt substantially reduces those omissions. This is a concrete reason to test blocker reporting and to distinguish behavior inside Codex from behavior under an application’s own prompts and tools.</p>\n<p>The API pages document a commercial hosted service; this acquisition did not establish downloadable model weights or an open-weight license. The public system card increases inspectability, but it is still the provider’s account of its evaluations and mitigations. No independent replication of the launch comparisons was performed here, and no native hands-on results are being offered.</p>\n<p>The practical recommendation is to trial both models against a small, demanding set of completed tasks while reviewing the migration details first. Keep Sol when it produces accepted work efficiently; spend more on Astra where the additional judgment earns its cost. Preserve source checks, tests and visible failure reporting across either choice. Those practices make a model upgrade useful even when a particular benchmark win does not transfer to the work in front of you.</p>"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nov18-gpt62-api-guide",
+      "title": "Using GPT-6.2: migration and behavior",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model",
+      "accessedAt": "2026-11-18T19:09:15.873376Z",
+      "publishedAt": null,
+      "locator": "What's new; Migration quickstart; Prompting best practices",
+      "supports": "API migration, reasoning, tool calling, context handling and residency qualifications."
+    },
+    {
+      "id": "nov18-gpt62-astra-model",
+      "title": "GPT-6.2 Astra model documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+      "accessedAt": "2026-11-18T19:09:15.877994Z",
+      "publishedAt": null,
+      "locator": "Model description; context; pricing; modalities; features and tools",
+      "supports": "Astra model ID, capabilities, context limits and rate qualifications."
+    },
+    {
+      "id": "nov18-gpt62-sol-model",
+      "title": "GPT-6.2 Sol model documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+      "accessedAt": "2026-11-18T19:09:15.878322Z",
+      "publishedAt": null,
+      "locator": "Model description; context; pricing; modalities; features and tools",
+      "supports": "Sol model ID, capabilities, context limits and rate qualifications."
+    },
+    {
+      "id": "nov18-gpt62-system-card",
+      "title": "GPT-6.2 Astra and Sol system card",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/",
+      "accessedAt": "2026-11-18T19:09:16.249745Z",
+      "publishedAt": "2026-11-17",
+      "locator": "Safety Overview; Change log; Avoiding Deceptive Interactions with Users",
+      "supports": "Preparedness classifications, alignment caveats and mitigations."
+    },
+    {
+      "id": "nov18-openai-api-changelog",
+      "title": "OpenAI API changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "accessedAt": "2026-11-18T19:09:15.876092Z",
+      "publishedAt": null,
+      "locator": "November 2026: November 17 entries",
+      "supports": "Release date, API endpoint availability and background completion public beta."
+    }
+  ],
+  "images": [],
+  "useCases": [
+    "Teacher-reviewed interactive lesson with source-linked answers.",
+    "Repository bug fix with a reproducible behavioral check.",
+    "Responsive website built from actual content and inspected in a browser.",
+    "Transcript and caption workflow using a separate video rendering pipeline."
+  ],
+  "limitations": [
+    "Documentary evaluation; no native benchmark, latency test or task-cost measurement.",
+    "API and pricing details are a November 18, 2026 snapshot and include tier/context qualifications.",
+    "Provider system-card classifications and comparisons are not independent experimental validation.",
+    "Native inputs are text and images; video/audio production requires separate tools.",
+    "No downloadable weights or open-weight licensing established in the inspected sources."
+  ],
+  "judgment": "A material model-family release with actionable API documentation. Evaluate accepted artifacts and migration behavior before choosing a default.",
+  "researchNote": "Official release date verified in the API changelog; model specifications, migration guide and system card archived as primary public content. Practical examples are proposed evaluation workflows, not executed demonstrations."
+}

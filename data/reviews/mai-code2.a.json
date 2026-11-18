@@ -1,0 +1,28 @@
+{
+  "reportId": "mai-code2",
+  "reviewerId": "/root/nov18_astra_review_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:25:59.132933Z",
+  "reportHash": "a42bcd9163c828a0b0af690ff2797509021d1cbb58bd82a136814e0bd3c9c060",
+  "evidenceHash": "9b21182910b614ffb487b482b58daa333d9ab20df2bf7e82cec78f24a1c88473",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 6,
+    "openness": 3
+  },
+  "rationale": {
+    "usefulness": "Copilot availability and a defined routine-coding scope provide a useful route to evaluate accepted-patch cost. The original education, app, website and media-script examples have inputs, checks and failure conditions. Price schedules, plan eligibility and standalone deployment remain insufficiently established for a stronger actionable-value score.",
+    "impact": "The potential contribution is meaningful competition on ordinary enterprise coding costs rather than a demonstrated field-wide capability break. The launch comparisons use specified harnesses and a 50% promotion; the report preserves those limitations. Impact 6 is consistent with the frozen 1,947-word body falling within the 1,800–2,200 band, subject to the final mean.",
+    "novelty": "Task-focused price/performance and the Code 2/Flash division offer moderate differentiation. Neither the hosted model page nor vendor evaluations establish a fundamentally new technique, and customized MAI Work Flash/customer variants are correctly separated.",
+    "maturity": "The announcement establishes availability in Copilot and a limited Foundry preview for Flash. The deliberate exclusion of very long-horizon work and unknown account, pricing and context details limit readiness; benchmarks and customer quotations are not treated as a reliability guarantee.",
+    "openness": "Public launch material and model/data-card links permit limited inspection, but exact-model weights, licensing and reproducibility are unestablished. Future provider plans do not yet demonstrate portability. The report correctly avoids inferring rights from the wider Microsoft model programme."
+  },
+  "confidence": "high",
+  "concerns": []
+}

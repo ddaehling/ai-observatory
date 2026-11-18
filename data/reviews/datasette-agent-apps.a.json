@@ -1,32 +1,28 @@
 {
   "reportId": "datasette-agent-apps",
-  "reviewerId": "/root/astra_nov8_a",
+  "reviewerId": "/root/nov18_astra_final_a",
   "model": "gpt-6-astra",
   "effort": "high",
-  "reviewedAt": "2026-11-08T19:39:56.821461Z",
-  "reportHash": "81a17da32362b662caa5110a97fd6f6f6a140a8856a49c96a3493f6d7d971648",
-  "evidenceHash": "077e349f0fbbb3f6449f62d8e25f32b3f1942034144d3533f27997b6a48fd9cf",
+  "reviewedAt": "2026-11-18T19:31:17.864782Z",
+  "reportHash": "575eb729c2e6c09dca983d79bf6dc778a6c4e8453c057ab0decebc80868d7fe1",
+  "evidenceHash": "0b2228a0a96e7e2b6c26f710cacc296d623fccd65417564566d7ae3b994beaf6",
   "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
   "rubricVersion": "1.0",
   "verdict": "approve",
   "scores": {
     "usefulness": 7,
     "impact": 4,
-    "novelty": 5,
-    "maturity": 4,
+    "novelty": 4,
+    "maturity": 5,
     "openness": 8
   },
   "rationale": {
-    "usefulness": "The panel, permission-checked references and stored-query grants form a concrete path from a database question to an inspectable app. Teacher answer keys and catalogue acceptance cases are specific, original practical proposals with clear dependencies and failure checks.",
-    "impact": "These releases improve a focused Datasette editing workflow and correct an allowlist bug. Evidence does not show a broader AI-development advance, measured adoption or a new model capability; the practical benefit is strongest for existing Datasette users.",
-    "novelty": "Co-located chat/app viewing, extensible references and explicit query-grant tools are a meaningful workflow combination. Agent-assisted SQL and HTML generation are established patterns, so differentiation is moderate.",
-    "maturity": "All three versions are prereleases, documentation spans tags and current main, and a relevant model-restriction defect was just fixed. Clear operational semantics help pilots but there is no installation, compatibility, cancellation or access-control validation here.",
-    "openness": "Public code, inspected Apache 2.0 licenses for both main plugins, ordinary SQL/HTML artifacts and a configurable model layer provide strong inspectability and portability. Provider-service terms, dataset rights and model reproducibility remain separate dependencies."
+    "usefulness": "Linked app views, permission-checked references and direct local endpoints form a practical database-to-interface workflow for existing Datasette users. The report specifies instructor answer keys, forbidden-record checks, missing data, browser navigation, removed grants and accessibility tests, with an inspectable SQL-to-record video example. It also identifies actionable patched versions and credential configuration. No learning, cost or runtime benefit is claimed without testing.",
+    "impact": "The November 14–15 changes improve an existing ecosystem through linkable views, a homepage prompt, endpoint configuration and permission corrections. These are valuable operational refinements, particularly for local-model users, but the saved release notes do not demonstrate a new general AI capability or a domain-wide performance advance. A below-five impact rating reflects this incremental scope, independently of the report length.",
+    "novelty": "Fragment manifests discoverable by app_links and direct endpoint dictionaries meaningfully integrate established browser navigation and model-service mechanisms into Datasette. The report does not portray URL fragments, OpenAI-compatible endpoints or permission grants as newly invented techniques. Demonstrated differentiation is mainly workflow composition and reduced configuration friction within an existing product.",
+    "maturity": "Tagged releases and detailed current documentation expose concrete behavior, dependencies and failure boundaries, supporting a usable-with-limits score. However Agent, Apps, datasette-llm and Datasette 1.0a43 remain prereleases, recent permission/configuration bugs require attention, and no combined installation or local-model compatibility test was performed. The report accurately distinguishes stopping from rollback, documentation from enforcement testing, and HTML sandbox scope from unrestricted Python plugins.",
+    "openness": "Saved Agent and Apps LICENSE pages identify Apache 2.0; public repositories, stored SQL/app source and configurable OpenAI-compatible endpoints support inspection and portability. The report keeps dataset and model-service rights separate. Dependence on a compatible tool-calling model, alpha package combinations and untested integration prevents claiming exceptional reproducibility or universal local-server support."
   },
   "confidence": "high",
-  "concerns": [
-    "Non-blocking: current README behavior is not proven to exist in the tagged releases. The report explicitly dates it and should retain that distinction.",
-    "Non-blocking: Stop permits an in-flight tool to finish, ordered writes may partially commit, and write grants do not promise per-call approval. The report accurately foregrounds these boundaries and distinguishes managed HTML apps from unrestricted Python plugin apps.",
-    "Length check: 1,042 independently counted body words fits 900–1,100 for my impact 4; validate final mean before publication."
-  ]
+  "concerns": []
 }

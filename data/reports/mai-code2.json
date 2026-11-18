@@ -1,0 +1,97 @@
+{
+  "id": "mai-code2",
+  "title": "MAI Code 2: a cheaper coding lane with conditions to check",
+  "entity": "MAI Code 2 and MAI Code 2 Flash",
+  "category": "Models",
+  "tags": [
+    "coding",
+    "agents",
+    "GitHub Copilot",
+    "Microsoft",
+    "frontend"
+  ],
+  "summary": "Microsoft’s November 17 coding models target routine enterprise engineering. The launch is relevant to teams measuring cost per accepted patch, but its comparisons use specified harnesses and promotional pricing, while Foundry access is limited to a preview for Flash.",
+  "changeType": "new",
+  "publishedAt": "2026-11-17",
+  "discoveredAt": "2026-11-18T19:18:25.852121Z",
+  "updatedAt": "2026-11-18T19:18:25.852121Z",
+  "officialUrl": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+  "sources": [
+    {
+      "id": "nov18-mai-code2-release",
+      "title": "MAI Code 2 and Code 2 Flash launch",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "accessedAt": "2026-11-18T19:09:15.877548Z",
+      "publishedAt": "2026-11-17",
+      "locator": "Performance and speed; Production quality; Get started; About these results",
+      "supports": "Intended workloads, availability, benchmark methods and promotional price qualifications."
+    },
+    {
+      "id": "nov18-mai-code2-model",
+      "title": "MAI Code 2 model family",
+      "url": "https://microsoft.ai/models/mai-code-2/",
+      "accessedAt": "2026-11-18T19:13:11.070548Z",
+      "publishedAt": null,
+      "locator": "Built for everyday developer work; Model family; Dig deeper",
+      "supports": "Product positioning, GitHub Copilot entrypoint and model/data-card links. Dynamic numeric counters were not treated as reliable extracted values."
+    }
+  ],
+  "images": [],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "A deliberately narrower coding proposition",
+      "html": "<p>Microsoft announced MAI Code 2 and MAI Code 2 Flash on November 17, 2026. Its stated aim is affordable everyday engineering: Code 2 for work such as debugging and implementation across files, and Flash for high-volume explanations, targeted edits and routine fixes. This is a useful proposition for teams whose backlog contains many well-defined changes that do not require their most expensive model on every attempt.</p>\n<p>The announcement also sets a boundary. Microsoft says these models are not yet tuned for fundamental scientific research or very long-horizon agentic work. That qualification matters more than a generic claim of frontier quality. A team should evaluate the models within the scope being advertised before treating a favorable coding result as evidence that they can replace a general research or autonomous project agent.</p>\n<p>The Observatory inspected Microsoft’s announcement and model-family page. No coding benchmark, latency experiment, model installation or native Copilot trial was performed. The assessment below explains how to read the claims and design a useful trial. It does not present vendor demonstrations or customer testimonials as independently reproduced results.</p>\n<p>For a small product team, the relevant question is whether a less expensive model can deliver a patch that survives the same review as the current system. Lower inference spend is valuable when the work is accepted. It becomes less persuasive when the apparent saving is absorbed by repeated prompts, regressions or a reviewer rewriting the result.</p>"
+    },
+    {
+      "id": "availability",
+      "title": "What can be tried, and what is still a plan",
+      "html": "<p>The launch states that both Code 2 and Code 2 Flash are available in GitHub Copilot. It describes Code 2 Flash in Microsoft Foundry as a limited-access preview. These are separate access routes with different implications. A developer trying the model in an existing Copilot workflow is not necessarily obtaining a generally available standalone API deployment for an application.</p>\n<p>Microsoft also names OpenRouter, Vercel, Hermes, Open Code and Kilo as future distribution destinations. In the inspected announcement, these are described as coming soon. Do not design a production integration around them as though availability had already been established. Check the actual provider’s model catalogue and account permissions when making the integration decision.</p>\n<p>This scan did not independently verify the applicable Copilot plan, quota or rollout state for a particular account. It also did not establish a complete API price schedule, context limit or geographic availability matrix. Those details remain unknown here. A product team should resolve them before estimating production capacity or committing to a service-level promise.</p>\n<p>The model-family page links to a model card and separate data cards, which are useful next documents for a technical procurement review. This report does not infer downloadable weights or an open-source license from the word model, from those links, or from Microsoft’s wider release programme. The terms and deployment rights of this exact model must be checked separately.</p>"
+    },
+    {
+      "id": "claims",
+      "title": "The benchmark claim includes a promotional-price footnote",
+      "html": "<p>Microsoft’s headline comparisons combine task performance with cost. Its announcement reports Code 2 at 98% of GPT-6.1 Sol’s performance for 40% of the cost, averaged over four named coding benchmarks. It also compares Code 2 with Claude Opus 5.5. These are vendor-reported aggregate comparisons, not a statement that the models are interchangeable on every repository or every programming language.</p>\n<p>The evaluation notes identify DeepSWE 1.1, TerminalBench 2.1, SWE Atlas and FrontierCode 1.1. The first three were run on Microsoft’s MSBench platform using GitHub Copilot CLI without subagents, with models at maximum reasoning effort. FrontierCode scores and costs are attributed to Artificial Analysis. A comparison under those conditions does not automatically transfer to a different tool loop, prompt, context selection strategy or reasoning setting.</p>\n<p>The most important cost qualification is that the announcement shows MAI Code 2 and Code 2 Flash costs at a 50% promotional price. A reader should preserve that condition whenever citing the ratios. A temporary discount can make a sound trial attractive while still being an unreliable basis for a long-term production budget. The inspected material does not establish when the promotion ends or which account-specific billing arrangements apply.</p>\n<p>There is a similar distinction in frontend evaluation. The release describes a blind comparison involving interfaces, games, visualizations, 3D scenes and SVG graphics, judged by 258 annotators. That is relevant to visual coding, but it does not measure every requirement of an accessible, secure production site. The model page’s dynamic numeric counters extracted as zeros and some content was encoded for interactive rendering; those values were not used as evidence. The report relies on the announcement’s explicit text and qualifications.</p>"
+    },
+    {
+      "id": "economics",
+      "title": "Measure the cost of work your team will merge",
+      "html": "<p>An effective comparison starts with the team’s own acceptance criteria. Select several completed bug fixes or small features, restore the starting state and run the candidate model with the same relevant context. Keep the task definition, tools and verification steps consistent. Include examples with a misleading symptom or a missing dependency so that the model must investigate rather than follow an obvious template.</p>\n<p>Count accepted changes, not merely generated patches. Record model usage, tool calls, retries, elapsed time and the amount of human correction. A model that produces a plausible diff quickly but misses an integration requirement may shift cost from inference to engineering review. Conversely, an inexpensive model that reliably handles small changes can free a stronger model for the cases that actually need it.</p>\n<p>Separate promotional economics from steady-state economics. Preserve the observed price used in the trial, then rerun the budget with the applicable undiscounted rate once verified. Include failures in the denominator and keep expensive outliers visible. The resulting number should describe the cost per accepted task under stated conditions, rather than imply a universal percentage saving.</p>\n<p>A sensible first routing policy is narrow: allow Flash to handle a limited set of routine tasks, send ambiguous cases to Code 2 or the team’s existing model, and require the normal repository checks before merging. This is an editorial proposal, not a product feature verified in this scan. The team’s harness must implement routing, state transfer, budgets and failure handling explicitly.</p>"
+    },
+    {
+      "id": "education",
+      "title": "A teaching assistant that leaves the reasoning inspectable",
+      "html": "<p>In a programming course, give Flash a short function, a failing example and the lesson’s expected concepts. Ask for an explanation of the defect and a minimal suggested fix. The inspectable output is a small diff plus a test case a learner can run. The teacher can compare the explanation with a known solution and check whether the model introduces concepts that the class has not yet learned.</p>\n<p>For a harder exercise, use Code 2 to review a feature implemented across several files. Ask it to trace the data flow and identify which existing behavior each proposed edit preserves. This creates a useful opportunity for students to challenge an AI-produced explanation with execution and source inspection. The model should help make software reasoning visible, not become an authority that students are expected to trust.</p>\n<p>Do not grade the exercise solely by whether generated tests pass. Tests can encode the same mistaken assumption as the patch. Keep a separately prepared acceptance case, including boundary conditions, and require the learner to explain the change. This workflow is proposed from the model’s documented coding focus; classroom outcomes were not measured by the Observatory.</p>"
+    },
+    {
+      "id": "products",
+      "title": "Applications and websites are the clearest trials",
+      "html": "<p>For an application team, a useful starting task is a contained defect with a reproducible trigger: an incorrect validation message, a broken filter or a missing state transition. Provide the repository conventions and ask for the smallest complete repair. Inspect the diff for unrelated changes, run the behavior before and after, and check the error path as well as the happy path. The acceptance artifact is a change a maintainer can evaluate without reconstructing the entire chat.</p>\n<p>For websites, Code 2’s emphasis on visual coding suggests testing it on an existing design system rather than a blank-page showcase. Supply real content, component constraints and a reference layout. Ask for an implemented page with responsive behavior and working navigation. Then inspect focus order, labels, contrast, overflow, loading states and the behavior of every visible control. A visually appealing screenshot is only one part of the result.</p>\n<p>Flash may be a useful candidate for repeated, bounded corrections after that review: replacing an incorrect label, adjusting a component to use an existing token or adding a missing empty state. Code 2 may be worth trying when the failure involves several components or an unclear data flow. These allocations are hypotheses for evaluation, not promises that every such task will succeed.</p>\n<p>For video creators, the relevant use is coding around production: transforming a transcript into a caption file, repairing a rendering script or building a small asset-review interface. Use known input files, inspect timecodes and render a sample. This release does not establish a native video-generation or audio-generation capability. Any media model, editor or rendering framework remains a separate dependency with its own rights, formats and quality checks.</p>"
+    },
+    {
+      "id": "comparison",
+      "title": "Preserve a comparison that another engineer can repeat",
+      "html": "<p>Keep the starting repository revision and task packet with each trial. Record the model selected, available tools and any reasoning or budget settings exposed by the product. Save the proposed diff and the relevant check results. If a task is retried with extra hints, label that intervention so it does not look like an unassisted first-pass success.</p>\n<p>Review results by task type rather than collapsing everything into one attractive average. A model might be dependable for small backend fixes while needing more correction on CSS, unfamiliar build systems or cross-file refactoring. That pattern can still justify adoption for part of the backlog. It is more useful than treating a single total as proof that the model should handle every category.</p>\n<p>Include a few tasks where the requested change cannot be completed with the supplied information. For example, omit a required interface specification or make a test dependency unavailable. The desired output is a precise account of what can and cannot be established, with useful partial work preserved. This tests the engineering handoff as well as code generation.</p>\n<p>A trial can be considered successful even when it produces a limited recommendation. If Flash handles a repeatable class of repairs at lower verified total cost, keep that lane narrow and monitor the same acceptance checks. Expand the scope only when new evidence supports it. A cautious division of work is an operational result, not a failure to identify one universally best coding model.</p>"
+    },
+    {
+      "id": "limits",
+      "title": "Where the evidence stops",
+      "html": "<p>Microsoft describes MAI Work Flash as a further-optimized model derived from Code 2 Flash for work inside products such as Excel, PowerPoint, Word, Teams and Fabric IQ. The announcement reports internal results for those applications. That does not make the derived model identical to the generally named Code 2 Flash, nor does it establish that an external developer can reproduce the same behavior with an arbitrary prompt.</p>\n<p>Customer quotations on the model page describe custom versions and fine-tuned workflows. They can explain why specialized training is interesting, but the results depend on those customers’ tasks, data and systems. They should not be presented as the performance of the untouched model on unrelated code. A builder without those conditions needs their own evaluation.</p>\n<p>The broader limitation is that the release material comes from Microsoft. This report does not independently reproduce its benchmarks or verify every external score attributed in the announcement. Pricing details, deployment rights and provider availability need confirmation at the moment of adoption. The model-card links increase the amount of material a reader can inspect, but access to a document is not proof of openness or operational readiness.</p>\n<p>MAI Code 2 is therefore worth a focused trial for routine engineering, especially where a team already uses Copilot and can compare accepted patches under familiar controls. Preserve the promotional-price condition, respect the limited-preview status of the Foundry route and keep very long autonomous projects outside the initial scope. The useful outcome is a measured division of work that reduces total effort while retaining the project’s normal standards for correctness and review.</p>"
+    }
+  ],
+  "useCases": [
+    "Explain a small coding defect against a teacher-prepared answer and executable check.",
+    "Repair a contained application bug with a maintainer-reviewable diff.",
+    "Implement a site within an existing design system and inspect its real behavior.",
+    "Maintain caption or rendering scripts with actual output verification."
+  ],
+  "limitations": [
+    "No native model trial or independent benchmark replication.",
+    "Launch cost ratios use 50% promotional pricing and specified evaluation configurations.",
+    "Foundry access is a limited preview for Code 2 Flash; named additional providers are future plans in the inspected announcement.",
+    "Complete token pricing, plan requirements, context limits and geographic availability were not established.",
+    "Open-weight licensing and downloadable weights were not established for this exact model."
+  ],
+  "judgment": "A credible candidate for a narrower, lower-cost coding lane; adoption should depend on accepted-patch cost under verified access and pricing conditions.",
+  "researchNote": "Primary Microsoft announcement and model-family page inspected. Dynamic counter values were excluded from evidence. Workflows are proposed trials; provider claims and internal application results were not independently reproduced."
+}

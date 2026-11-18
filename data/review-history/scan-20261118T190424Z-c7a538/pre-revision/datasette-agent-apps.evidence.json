@@ -1,0 +1,322 @@
+[
+  {
+    "id": "datasette-integration-announcement-dates",
+    "source_ids": [
+      "source-abbb96cf14716a16",
+      "source-8265b69742e725ba"
+    ],
+    "claim": "The author announced Datasette Agent 0.5a0 on November 3, 2026 and Datasette Apps 0.3a0 on November 4, 2026.",
+    "passages": [
+      "Posted 3rd November 2026 at 11:13 pm",
+      "Posted 4th November 2026 at 12:29 am"
+    ],
+    "locator": "Each author post: RELEASE heading and Posted line",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "source-abbb96cf14716a16": "2026-11-08T19:16:42.837Z",
+      "source-8265b69742e725ba": "2026-11-08T19:16:41.865Z"
+    },
+    "qualifiers": [
+      "Dates are author publication dates, not inferred from GitHub timestamps."
+    ],
+    "limitations": [
+      "Captured release pages did not render a release timestamp; local post times have no timezone stated in the capture."
+    ]
+  },
+  {
+    "id": "datasette-agent-panel-references",
+    "source_ids": [
+      "social-datasette-agent-release"
+    ],
+    "claim": "Agent 0.5a0 adds a Datasette-page panel and permission-checked table, database and stored-query references; conversations pin their selected model.",
+    "passages": [
+      "New panel next to the chat that shows Datasette pages.",
+      "Permission checks run as the user sending the message.",
+      "The model is pinned for the life of that conversation"
+    ],
+    "locator": "0.5a0 release notes: model chooser, # references and panel bullets",
+    "event_date": "2026-11-03",
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z"
+    },
+    "qualifiers": [
+      "Event date is associated with the dated author announcement."
+    ],
+    "limitations": [
+      "Documentation observation only; no UI interaction or framing compatibility test."
+    ]
+  },
+  {
+    "id": "datasette-apps-integration-grants",
+    "source_ids": [
+      "social-datasette-apps-release",
+      "source-8265b69742e725ba"
+    ],
+    "claim": "Apps 0.3a0 adds app references, query-grant tools, creation-time query visibility/existence checks and approval for write-query grants; app links open in the Agent panel and tool results include relative paths.",
+    "passages": [
+      "Granting a write query requires approval from the user first.",
+      "app_create() now checks that each requested stored query exists and that the user can view it",
+      "App tool results now include the app's relative path"
+    ],
+    "locator": "0.3a0 release notes: integration bullets; author release post",
+    "event_date": "2026-11-04",
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z",
+      "source-8265b69742e725ba": "2026-11-08T19:16:41.865Z"
+    },
+    "qualifiers": [],
+    "limitations": [
+      "These access and approval mechanisms do not establish generated SQL correctness; no working integration was tested."
+    ]
+  },
+  {
+    "id": "datasette-agent-stop-boundary",
+    "source_ids": [
+      "social-datasette-agent-release"
+    ],
+    "claim": "Agent 0.5a0 Stop keeps streamed text, allows an already-started tool to finish and stops before the next step; conversations continue after navigation.",
+    "passages": [
+      "A tool that has already started is allowed to finish",
+      "Conversations keep running if you navigate away."
+    ],
+    "locator": "0.5a0 release notes: Stop button and continuing-conversation bullets",
+    "event_date": "2026-11-03",
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z"
+    },
+    "qualifiers": [
+      "Not an assertion of rollback or cancellation of an in-flight write."
+    ],
+    "limitations": [
+      "No cancellation experiment was performed."
+    ]
+  },
+  {
+    "id": "datasette-current-write-semantics",
+    "source_ids": [
+      "social-datasette-agent-readme"
+    ],
+    "claim": "As documented on November 8, execute_write_sql analyzes ordered statements before explicit approval, executes with actor permissions, and retains earlier successes if a later statement fails; saving queries requires approval.",
+    "passages": [
+      "asks the user for explicit approval in chat before anything runs.",
+      "later statements are skipped and earlier successes are not rolled back.",
+      "Saving always requires human approval"
+    ],
+    "locator": "Current README: Executing write SQL; Saving queries",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-readme": "2026-11-08T19:17:26.545Z"
+    },
+    "qualifiers": [
+      "Current main-branch README observation on November 8, not exclusively attributed to 0.5a0."
+    ],
+    "limitations": [
+      "No runtime or transaction-behavior test; permissions and approval do not certify query intent."
+    ]
+  },
+  {
+    "id": "datasette-release-prerequisites",
+    "source_ids": [
+      "social-datasette-agent-release",
+      "social-datasette-apps-release"
+    ],
+    "claim": "Agent 0.5a0 requires Python 3.11+, Datasette 1.0a41+, datasette-llm 0.1a9+ and llm 0.37.1+; Apps 0.3a0 requires Datasette 1.0a41+ and drops Python 3.10.",
+    "passages": [
+      "Minimum versions are now datasette>=1.0a41, datasette-llm>=0.1a9 and llm>=0.37.1.",
+      "Now requires Python 3.11 or later",
+      "Now requires Datasette 1.0a41 or higher.",
+      "dropped support for Python 3.10."
+    ],
+    "locator": "Dependency and Python bullets at end of tagged release notes",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z",
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z"
+    },
+    "qualifiers": [
+      "Documented minima, not a certified tested environment."
+    ],
+    "limitations": [
+      "Package installation and cross-version compatibility were not tested."
+    ]
+  },
+  {
+    "id": "datasette-current-model-availability",
+    "source_ids": [
+      "social-datasette-agent-readme"
+    ],
+    "claim": "The current README installs Agent into the Datasette environment and describes model availability as API-key availability filtered by configured allowlists/blocklists and tool-calling support.",
+    "passages": [
+      "Install this plugin in the same environment as Datasette.",
+      "models whose API key is available",
+      "minus any that cannot call tools"
+    ],
+    "locator": "Current README: Installation; Choosing a model",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-readme": "2026-11-08T19:17:26.545Z"
+    },
+    "qualifiers": [
+      "Observed November 8, 2026; provider model examples were not treated as an independently verified availability list."
+    ],
+    "limitations": [
+      "No provider sign-in, API call, billing or model-capability test."
+    ]
+  },
+  {
+    "id": "datasette-llm-allowlist-fix",
+    "source_ids": [
+      "social-datasette-llm-release",
+      "source-6b1c4708310c50a0"
+    ],
+    "claim": "datasette-llm 0.1a10 fixes overriding previously configured model allowlists; the author reported that model restrictions on his demo had been affected.",
+    "passages": [
+      "Fixed a bug where this plugin over-rode previously configured allow-lists of models.",
+      "Fixes a bug that affected my agent.datasette.io demo site"
+    ],
+    "locator": "0.1a10 release note; November 4 author post",
+    "event_date": "2026-11-04",
+    "publication_date": "2026-11-04",
+    "retrieved_at": {
+      "social-datasette-llm-release": "2026-11-08T19:17:37.871Z",
+      "source-6b1c4708310c50a0": "2026-11-08T19:16:41.143Z"
+    },
+    "qualifiers": [
+      "Author-reported bug and fix; the patch is newer than Agent 0.5a0 minimum datasette-llm 0.1a9."
+    ],
+    "limitations": [
+      "No reproduction or verification that the combined installation enforces the intended model set."
+    ]
+  },
+  {
+    "id": "datasette-app-types-sandbox-scope",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "The current Apps README distinguishes sandboxed managed HTML/JavaScript apps from unrestricted Python plugin apps; managed apps require configured HTTPS origins for direct network access.",
+    "passages": [
+      "Stored apps are rendered inside a sandboxed iframe.",
+      "Apps provided by other plugins that are written in Python and HTML/JavaScript which are unrestricted",
+      "Direct network access is blocked unless the app has exact https:// origins configured."
+    ],
+    "locator": "Current README: Usage; Sandboxed apps; External apps from plugins",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Observed current README on November 8, 2026; sandbox claims apply to managed HTML apps only."
+    ],
+    "limitations": [
+      "No isolation audit; explicitly allowed origins can receive app requests."
+    ]
+  },
+  {
+    "id": "datasette-app-data-bridge-and-errors",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "Managed app data requests use app-scoped endpoints and app allowlists while preserving current-actor Datasette permissions; failed queries and JavaScript/resource failures are exposed in the error panel.",
+    "passages": [
+      "the parent page forwards them to an app-scoped query endpoint.",
+      "Datasette's normal SQL and query permissions still apply.",
+      "Failed stored-query attempts"
+    ],
+    "locator": "Current README: Data access; Sandboxed apps",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Current documentation observed November 8; grants do not establish result correctness."
+    ],
+    "limitations": [
+      "No query, error-display or access-control test."
+    ]
+  },
+  {
+    "id": "datasette-app-reference-source-access",
+    "source_ids": [
+      "social-datasette-apps-readme"
+    ],
+    "claim": "Current app tags expose identifier, URL and editability; reading HTML source separately with app_view requires edit-app permission.",
+    "passages": [
+      "The agent is told the tagged app's ID and URL and whether you can edit it.",
+      "app_view tool, which requires edit-app permission."
+    ],
+    "locator": "Current README: Tagging apps in datasette-agent",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-apps-readme": "2026-11-08T19:17:36.614Z"
+    },
+    "qualifiers": [
+      "Current main-branch documentation observed November 8, 2026."
+    ],
+    "limitations": [
+      "No source-access permission test was performed."
+    ]
+  },
+  {
+    "id": "datasette-code-licenses",
+    "source_ids": [
+      "social-datasette-agent-license",
+      "social-datasette-apps-license"
+    ],
+    "claim": "The actual current LICENSE files for Agent and Apps contain the Apache License, Version 2.0.",
+    "passages": [
+      "Apache License",
+      "Version 2.0, January 2004"
+    ],
+    "locator": "Both inspected LICENSE files: opening title and full terms",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-license": "2026-11-08T19:17:50.520Z",
+      "social-datasette-apps-license": "2026-11-08T19:17:51.639Z"
+    },
+    "qualifiers": [
+      "Current main-branch code licenses observed November 8, 2026."
+    ],
+    "limitations": [
+      "This does not establish dataset, provider-service or generated-output rights; tagged-version license history was not separately compared."
+    ]
+  },
+  {
+    "id": "datasette-alpha-and-evaluation-scope",
+    "source_ids": [
+      "social-datasette-agent-release",
+      "social-datasette-apps-release",
+      "social-datasette-llm-release"
+    ],
+    "claim": "All three inspected version pages mark their releases as prereleases.",
+    "passages": [
+      "0.5a0 Pre-release",
+      "0.3a0 Pre-release",
+      "0.1a10 Pre-release"
+    ],
+    "locator": "Release headings",
+    "event_date": null,
+    "publication_date": null,
+    "retrieved_at": {
+      "social-datasette-agent-release": "2026-11-08T19:17:24.029Z",
+      "social-datasette-apps-release": "2026-11-08T19:17:25.478Z",
+      "social-datasette-llm-release": "2026-11-08T19:17:37.871Z"
+    },
+    "qualifiers": [
+      "Release status is not an independent reliability measurement."
+    ],
+    "limitations": [
+      "Report contains no installation, native execution, benchmark, compatibility or cost validation; proposed uses are editorial exercises."
+    ]
+  }
+]

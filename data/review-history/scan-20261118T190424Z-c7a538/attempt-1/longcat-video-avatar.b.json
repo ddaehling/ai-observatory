@@ -1,0 +1,32 @@
+{
+  "reportId": "longcat-video-avatar",
+  "reviewerId": "/root/nov18_astra_review_b",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:26:14.662415Z",
+  "reportHash": "dfefe3bd17019c6a77ffb0a05adf70cee8a0c3988a3795b0beac16e815b07976",
+  "evidenceHash": "97e7cda7487e8b32fd59f3b2c20f5bc82b92fdf2b7bf894f7e2aa96b3069cba7",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "revise",
+  "scores": {
+    "usefulness": 7,
+    "impact": 6,
+    "novelty": 6,
+    "maturity": 5,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Released weights, audio/image-conditioned generation and inspectable continuation code offer a concrete creative evaluation path. The report is particularly useful on CUDA setup, explicit adapter settings, staged scene review and authorized voice/image inputs. Its practical advice should also incorporate the paper's animated-input regression and residual speech-synchronization errors, which directly affect the proposed teaching and character use cases.",
+    "impact": "Targeted post-training for sustained avatar appearance is a meaningful advance within audio-driven video. The 55.6% tie-adjusted preference over 1.5 supports incremental improvement under the developer study; the 24.7% result against OmniHuman-2.0 and lack of independent duration testing constrain the broader impact claim.",
+    "novelty": "Combining perceptual reinforcement learning, revised guidance, few-step distillation and on-policy training on generated continuation histories meaningfully addresses cumulative drift. The base architecture is retained and the methods build on prior work, so this is a useful refinement rather than an unprecedented general video capability.",
+    "maturity": "A documented CUDA inference path, downloadable checkpoints and public code support research use, but hardware minima and production economics are unknown, adapter documentation contradicts code defaults, and there is no native trial. The technical report additionally shows an animated-subset human-likeness decline and substantial residual lip-sync mismatch under rigorous inspection. Five reflects usable artifacts with material limits.",
+    "openness": "The model card explicitly declares MIT weights and the pinned repository license is standard MIT; public code, adapters and a technical report make the method unusually inspectable. The broken separate weight-license link, unestablished complete training-data reproducibility and accelerator dependence prevent a maximum rating. Code terms, weight declaration and input likeness rights are correctly distinguished."
+  },
+  "confidence": "high",
+  "concerns": [
+    "Blocking substantive omission: add the technical report section 5.2 / Figure 8 result that animated-input human-likeness falls from 2.246 to 2.114, while realistic inputs rise from 3.083 to 3.441. Preserve the authors' explanation that long-duration animated examples are scarce in OPSD training. This is directly relevant to the proposed fictional/creative character workflows and qualifies the general improvement narrative.",
+    "Blocking substantive omission: report the residual lip-synchronization mismatch rate, 83.7% for 1.5 versus 82.5% for 1.6, together with the indispensable qualification that expert inspection occurs at 0.5x playback. Do not present it as an 82.5% real-time production failure rate. The same section reports aggregate consistency issues of 19.9% to 11.6% and speaker-count mismatch of 18.5% to 11.2%; include sufficient context to distinguish better appearance and expression from reliable synchronization. Source: research/repos/captures/longcat-report-extract.json, section 5.2.",
+    "The frozen body has 1,871 CLI-counted words, within the 1,800–2,200 band appropriate to my impact score of six. Recheck after adding the material limitations and after final mean impact is computed; no score adjustment is requested."
+  ]
+}

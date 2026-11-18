@@ -1,6 +1,6 @@
 {
   "id": "datasette-agent-apps",
-  "title": "Datasette connects agent chat to editable database apps and explicit query grants",
+  "title": "Datasette links agent-built apps to local models, with permission fixes to apply",
   "entity": "Datasette Agent / Datasette Apps",
   "category": "Tools",
   "tags": [
@@ -11,47 +11,47 @@
     "education",
     "open source"
   ],
-  "summary": "Agent 0.5a0 adds a panel beside chat; Apps 0.3a0 connects app references and approved stored-query access to that workflow. The related datasette-llm 0.1a10 patch fixes model allowlist handling. These alpha releases offer a concrete database-app experiment, with important write and cancellation boundaries.",
-  "changeType": "new",
+  "summary": "Agent 0.6a0, Apps 0.4a0 and datasette-llm 0.1a11 add linked app views, a homepage prompt and directly configured model endpoints, including local ones. Datasette 1.0a43 also fixes private stored-query disclosure; its scope differs from the separate download-permission fix in 0.65.6.",
+  "changeType": "update",
   "publishedAt": "2026-11-04",
   "discoveredAt": "2026-11-08T18:59:00Z",
-  "updatedAt": "2026-11-08T19:20:57Z",
-  "officialUrl": "https://github.com/datasette/datasette-agent/releases/tag/0.5a0",
+  "updatedAt": "2026-11-18T19:23:47.210863Z",
+  "officialUrl": "https://github.com/datasette/datasette-apps/releases/tag/0.4a0",
   "sections": [
     {
       "id": "change",
-      "title": "Chat and the app now share a working view",
-      "html": "<p>Datasette Agent 0.5a0 and Datasette Apps 0.3a0 bring database exploration and app editing into the same workspace. Simon Willison announced the Agent release on <a href=\"https://simonwillison.net/2026/Nov/3/datasette-agent/\">November 3, 2026</a> and the Apps release on <a href=\"https://simonwillison.net/2026/Nov/4/datasette-apps/\">November 4</a>. The practical change is a panel beside chat: a user can discuss a database-backed interface while viewing it, then request revisions. This matters most to people already maintaining structured data in Datasette.</p><p>Both releases are marked prerelease. This report assesses their notes and current documentation, not a working installation. README behavior below was observed on November 8 and may include development beyond those tagged releases.</p>"
+      "title": "Linked apps and local-model configuration arrive",
+      "html": "<p>November 14–15 releases extend Datasette’s database-to-app workflow: Agent 0.6a0 adds a homepage chat prompt, Apps 0.4a0 lets apps link to specific views in one another, and datasette-llm 0.1a11 supports directly configured OpenAI-compatible endpoints. The latter includes unauthenticated local endpoints, so a provider API key is no longer a universal prerequisite. Tool-calling capability remains necessary.</p><p>The panel beside chat and explicit query grants introduced in Agent 0.5a0 and Apps 0.3a0 remain useful context. The new releases are prereleases. This update also examines Datasette 1.0a43 permission fixes; no installation or native execution was performed. The original report date and identity are preserved.</p><p><a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.4a0\">Datasette Apps 0.4a0 release</a> · <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.6a0\">Datasette Agent 0.6a0 release</a></p>"
     },
     {
       "id": "integration",
-      "title": "References and explicit query access make the loop more concrete",
-      "html": "<p><a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.5a0\">Agent 0.5a0</a> adds a panel opened through <code>show_in_panel</code> or same-site chat links. Narrow screens switch between chat and panel; pages that reject framing get an error and a separate-tab link. Typing <code>#</code> attaches tables, databases or stored queries with permission-checked context. Conversations retain their selected model, and the new reference hook lets plugins contribute other item types.</p><p><a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.3a0\">Apps 0.3a0</a> supplies app references, full-screen app display within that panel, and tools to add or remove an app's stored-query grants. Creating an app checks that requested queries exist and are visible to the user. Granting a write query requires approval. Tool results now include relative app paths, giving the model an actual link to use. These are concrete integration improvements; they do not establish that generated SQL or interfaces are correct.</p><p>The <a href=\"https://github.com/datasette/datasette-apps#tagging-apps-in-datasette-agent\">current Apps documentation</a> makes another useful distinction: tagging an app supplies its identifier, URL and editability, not its HTML source. Reading that source through <code>app_view</code> requires edit permission. Seeing an app and authoring it remain separate capabilities.</p>"
+      "title": "References and links connect reviewed apps",
+      "html": "<p>The agent panel lets people discuss a database-backed interface while viewing it. Permission-checked # references attach tables, databases or stored queries. Apps can supply references without exposing their HTML: reading source through app_view requires edit permission.</p><p>Apps 0.4a0 adds fragment-based view state, including bookmarks, reloads and browser back/forward navigation. An app can advertise supported links through a manifest; the agent’s app_links tool lists links from apps the current user can view. A search app can therefore open a specific record in a separate detail app. The app_debug tool accepts a hash for checking that view.</p><p>Fragments are inputs, not permission grants. The current README warns that apps should not write data simply because a fragment loaded. Agent 0.6a0 also asks before opening panel links to other sites and blocks panel forms that submit elsewhere. These documented boundaries do not establish generated-interface correctness.</p><p><a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.4a0\">Datasette Apps 0.4a0 release</a></p>"
     },
     {
       "id": "control",
-      "title": "Approval and Stop have specific boundaries",
-      "html": "<p>The <a href=\"https://github.com/datasette/datasette-agent#executing-write-sql\">current Agent README</a> describes write SQL as an ordered sequence analyzed before explicit approval. Execution uses the requesting actor's permissions. If a statement fails, later statements are skipped, while earlier successful statements remain committed. Saving a query also requires approval. Reviewing SQL, parameters and affected records therefore remains part of using the assistant.</p><p>The release's Stop button preserves streamed text and stops before the next agent step. A tool already running is allowed to finish because it may have written data. Navigating away also does not stop a conversation. Neither action is a rollback mechanism. An approved query grant controls access; it does not prove that the query calculates the intended answer or that the app presents it faithfully.</p><p>The release notes establish approval for granting a write query; they do not promise a fresh chat approval every time an app invokes it.</p>"
+      "title": "Approval and cancellation retain specific boundaries",
+      "html": "<p>The Agent README describes write SQL as an ordered sequence analyzed before explicit chat approval. Execution uses the requesting actor’s permissions. If a statement fails, later statements are skipped while earlier successes remain committed. Review SQL, parameters and affected records before approval.</p><p>The 0.5a0 Stop behavior preserves streamed text and stops before the next step; an already-started tool finishes. Navigating away does not stop the conversation. Neither action rolls back writes. The existing app-query grant workflow likewise controls access rather than proving that a query calculates the intended answer.</p><p>Agent 0.6a0 fixes sending each user message twice. It also stops an existing conversation if its selected model becomes blocked, leaves the allowlist or loses its required key, asking for a new chat. Model selection remains pinned for a conversation.</p><p><a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.6a0\">Datasette Agent 0.6a0 release</a></p>"
     },
     {
       "id": "setup",
-      "title": "The model configuration is part of the installation",
-      "html": "<p>Agent 0.5a0 requires Python 3.11 or later, Datasette 1.0a41 or later, datasette-llm 0.1a9 or later, and llm 0.37.1 or later. Apps 0.3a0 requires Datasette 1.0a41 or later and drops Python 3.10. Their READMEs install the plugins into Datasette's environment. The current Agent model picker requires tool-calling capability and an available API key, subject to configured allowlists and blocklists.</p><p><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a10\">datasette-llm 0.1a10</a> fixes overriding existing model allowlists. Willison's <a href=\"https://simonwillison.net/2026/Nov/4/datasette-llm/\">November 4 post</a> says the bug affected model restrictions on his demo. This is a relevant patch to assess alongside the integration, although it exceeds Agent's stated minimum. No combined-version compatibility, provider availability, latency or billing was tested here.</p><p>For a trial, record the installed package versions and actual model selected. Confirm that an excluded model is absent from the picker and that a permitted model can complete a small query task. Model comparisons require new conversations because the selection cannot change midway through an existing chat.</p>"
+      "title": "Local endpoints change the access requirement",
+      "html": "<p>datasette-llm 0.1a11 accepts endpoint dictionaries containing api_base, with a local model identifier and separate model_name for the remote server. It supports Chat Completions or Responses endpoints without an additional LLM plugin. Endpoint models advertise tools and streaming by default; verify that the actual server and chosen model implement them.</p><p>An endpoint without key is unauthenticated and never receives a provider’s default credential. With an explicit key name, lookup checks datasette-secrets and then LLM’s stored keys. A missing named key raises an error rather than falling back. The release warns against putting credentials in extra headers because those appear in the configuration endpoint.</p><p>Allowlists and blocklists now apply to explicit model lookups and defaults, not only model listing. Apps 0.4a0 requires Datasette 1.0a42 or later, but affected private-query deployments need the 1.0a43 fix. Record the entire installed combination; minimum dependency versions alone do not establish a tested or appropriately patched setup.</p><p><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a11\">datasette-llm 0.1a11 release</a></p>"
     },
     {
       "id": "app-boundary",
-      "title": "Stored HTML apps and Python plugin apps differ",
-      "html": "<p>The <a href=\"https://github.com/datasette/datasette-apps#usage\">current Apps README</a> distinguishes managed HTML/JavaScript apps from apps supplied by Python plugins. Managed apps run in a sandboxed iframe. Their injected helpers send database and stored-query requests through app-scoped endpoints, with allowlists and the current actor's normal Datasette permissions. Direct network access requires configured HTTPS origins. Python plugin apps are outside that HTML sandbox and described as unrestricted; the sandbox claim must not be extended to them.</p><p>For managed apps, the documented error panel exposes JavaScript, resource, policy and data-query failures. That provides useful debugging evidence, not automatic validation. Operators still configure app permissions, data access and any external origins. A missing query grant should produce an understood failure state rather than a plausible-looking empty result.</p>"
+      "title": "Apply permission fixes alongside the app update",
+      "html": "<p>GHSA-mw6v-83vp-7c4c affects Datasette 1.0a31–1.0a42 and is patched in 1.0a43. The owner_id filter could expose another user’s private stored-query name, title, description and SQL, including to anonymous clients who knew or guessed the actor ID. The advisory says this does not itself allow query execution, editing, deletion or access to otherwise forbidden tables. Instances need saved private queries to be affected; stable 0.65.x has no stored queries and is unaffected by this advisory.</p><p>A separate database-download permission issue concerns databases whose configured route differs from their name. Its fix appears in 1.0a43 and stable 0.65.6; permission hooks must check the database name. Do not conflate that condition with stored-query disclosure.</p><p>Managed HTML apps remain sandboxed with app-scoped query grants and actor permissions. External HTTPS origins require configuration. Python plugin apps are unrestricted by that HTML sandbox. An allowed query or origin does not guarantee sound SQL, harmless code or appropriate data disclosure.</p><p><a href=\"https://github.com/simonw/datasette/security/advisories/GHSA-mw6v-83vp-7c4c\">Private stored-query disclosure advisory</a> · <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.6\">Datasette 0.65.6 release</a></p>"
     },
     {
       "id": "use-cases",
-      "title": "Two small projects with inspectable answers",
-      "html": "<p><strong>Dataset teaching lab:</strong> start with an attributable SQLite dataset and a teacher-written answer key. Tag the relevant table, ask for a parameterized query, inspect its SQL and result, then approve saving it and build a small filtering app. The output is a query learners can read beside an interface they can exercise. Integration requires preparing the database, configuring a model, assigning permissions and exposing the chosen query. A success check compares several known answers, including empty results and missing values, against the key. Likely failures include incorrect joins, misleading aggregates or filters that silently omit records. Teacher review is essential; generating a fluent explanation does not resolve those errors.</p><p><strong>Searchable collection website:</strong> supply a curated catalogue with source URLs and a reviewed search query; ask the agent to create a managed HTML app with filters and record links. The checkable output is a hosted Datasette app whose displayed records match that query. Integration requires hosting Datasette, configuring visibility and query grants, and designing loading, empty and error states. Check representative searches, source links, keyboard navigation and access as the intended visitor. A missing grant, schema change or unsupported generated script can break the experience. Treat accessibility and responsive layout as acceptance work, not consequences of app generation. These are proposed workflows, not demonstrations performed for this report.</p>"
+      "title": "Keep the answer checkable across linked views",
+      "html": "<p>For a teaching lab, prepare an attributable SQLite dataset and instructor-written answer key. Connect a permitted model, tag a table, inspect a proposed query, and build a search app linked to record details. Check known answers, empty results, missing values and browser back navigation. Include a forbidden record to verify that neither a guessed fragment nor a link grants access. Local inference changes hosting choices, not the need to check answers.</p><p>For a collection website, preserve reviewed stored queries and app source. Test links as the intended visitor, including keyboard use, loading failures and removed query grants. Review whether a schema change or model-generated revision silently omits records. Hosting, permissions, endpoint configuration and accessibility remain integration work.</p><p>A narrated video can show a question, its SQL and the corresponding linked record side by side. Record the dataset version and visible filters so the demonstration remains interpretable. These teaching, website and video workflows are proposals, not tested outcomes.</p>"
     },
     {
       "id": "assessment",
-      "title": "A focused alpha evaluation is the appropriate next step",
-      "html": "<p>The inspected <a href=\"https://github.com/datasette/datasette-agent/blob/main/LICENSE\">Agent</a> and <a href=\"https://github.com/datasette/datasette-apps/blob/main/LICENSE\">Apps</a> license texts are Apache 2.0. Those code terms do not establish rights to a dataset or model provider service. The strongest practical promise is a shorter path between a visible database question and an inspectable app revision. Test that promise with a small acceptance dataset and recorded versions. No independent benchmark, cost comparison, native installation or compatibility test supports broader adoption claims here.</p><p>A useful pilot should preserve the original query and app source, then record requested changes, resulting SQL and observed answers. The practical promise weakens if revisions repeatedly break previously correct filters or take longer to verify than editing the interface directly. Measure that review burden alongside whether the generated page renders: a successful tool call alone is an incomplete acceptance criterion.</p>"
+      "title": "A bounded evaluation remains appropriate",
+      "html": "<p>The inspected Agent and Apps licenses are Apache 2.0; dataset and model-service rights remain separate. The update makes linked interfaces and local endpoints more practical to investigate while tightening several configuration paths. It does not establish production readiness, compatibility with every local model, lower cost or better learning outcomes.</p><p>Start with small acceptance data and recorded package versions. Confirm that excluded models and forbidden queries fail as intended, and that app revisions preserve previously correct results. Primary tagged notes and the security advisory were inspected; README observations are dated November 18 and may describe development beyond those tags. No exploit, benchmark or live-provider test was run.</p>"
     }
   ],
   "useCases": [
@@ -59,21 +59,20 @@
     "A searchable collection website built from reviewed stored queries"
   ],
   "limitations": [
-    "All three tagged releases are prereleases; no installation, app execution, compatibility test or provider test was performed.",
-    "Current repository READMEs were observed on November 8, 2026 and may describe development beyond the tagged releases.",
-    "No independent benchmark, latency measurement, usage-cost calculation or invoice verification was performed.",
-    "Stop permits an already-started tool to finish; earlier successful write statements are not rolled back if a later statement fails.",
-    "App query grants and actor permissions restrict access but do not guarantee SQL correctness or generated-interface quality.",
-    "The managed HTML app sandbox does not apply to unrestricted Python plugin apps; external network origins are separately configured.",
-    "Model use depends on tool-calling support, available API keys, configuration and provider access; current provider availability was not verified.",
-    "Apache 2.0 was inspected for Agent and Apps code only; dataset and provider-service rights were not established."
+    "Agent, Apps, datasette-llm and Datasette 1.0a43 are prereleases; stable 0.65.6 addresses a separate database-download issue.",
+    "No installation, native app execution, exploit, compatibility test, benchmark or live provider/local-model test was performed.",
+    "Current README observations are dated November 18 and may extend beyond tagged releases.",
+    "Endpoint tools/streaming defaults do not verify that a configured server or model supports those capabilities.",
+    "Stop is not rollback, actor/query permissions do not guarantee SQL correctness, and the HTML sandbox does not restrict Python plugin apps.",
+    "The stored-query advisory exposes metadata and SQL text under stated conditions; it does not itself allow execution or otherwise unauthorized table access.",
+    "Apache 2.0 covers the inspected Agent/Apps code; data and model-service rights remain separate."
   ],
   "sources": [
     {
       "id": "social-datasette-agent-release",
       "title": "Release 0.5a0 · datasette/datasette-agent",
       "url": "https://github.com/datasette/datasette-agent/releases/tag/0.5a0",
-      "accessedAt": "2026-11-08T19:17:24.029Z",
+      "accessedAt": "2026-11-18T19:22:42.133985Z",
       "publishedAt": null,
       "locator": "0.5a0 release notes",
       "supports": "Panel, references, cancellation, model selection and dependency minima"
@@ -100,7 +99,7 @@
       "id": "social-datasette-agent-readme",
       "title": "datasette/datasette-agent: An LLM-powered agent for Datasette",
       "url": "https://github.com/datasette/datasette-agent",
-      "accessedAt": "2026-11-08T19:17:26.545Z",
+      "accessedAt": "2026-11-18T19:21:19.380003Z",
       "publishedAt": null,
       "locator": "Installation; Choosing a model; The panel; Saving queries; Executing write SQL",
       "supports": "Current documented configuration, tool calling, permissions and write semantics, observed November 8"
@@ -109,7 +108,7 @@
       "id": "social-datasette-apps-readme",
       "title": "datasette/datasette-apps: Apps that live inside Datasette",
       "url": "https://github.com/datasette/datasette-apps",
-      "accessedAt": "2026-11-08T19:17:36.614Z",
+      "accessedAt": "2026-11-18T19:21:19.383303Z",
       "publishedAt": null,
       "locator": "Usage; Sandboxed apps; Data access; Permissions; App authoring; Tagging apps in datasette-agent",
       "supports": "Current documented app types, bridge, grants, errors and app authoring, observed November 8"
@@ -118,7 +117,7 @@
       "id": "social-datasette-agent-license",
       "title": "datasette-agent/LICENSE at main · datasette/datasette-agent",
       "url": "https://github.com/datasette/datasette-agent/blob/main/LICENSE",
-      "accessedAt": "2026-11-08T19:17:50.520Z",
+      "accessedAt": "2026-11-18T19:21:19.386057Z",
       "publishedAt": null,
       "locator": "LICENSE: Apache License, Version 2.0, January 2004",
       "supports": "Actual current Agent code license text"
@@ -127,7 +126,7 @@
       "id": "social-datasette-apps-license",
       "title": "datasette-apps/LICENSE at main · datasette/datasette-apps",
       "url": "https://github.com/datasette/datasette-apps/blob/main/LICENSE",
-      "accessedAt": "2026-11-08T19:17:51.639Z",
+      "accessedAt": "2026-11-18T19:21:19.386959Z",
       "publishedAt": null,
       "locator": "LICENSE: Apache License, Version 2.0, January 2004",
       "supports": "Actual current Apps code license text"
@@ -158,9 +157,63 @@
       "publishedAt": "2026-11-04",
       "locator": "Release: datasette-llm 0.1a10; Posted 4th November 2026 at 3:26 pm",
       "supports": "Author announcement date and reported demo-site model restriction failure"
+    },
+    {
+      "id": "nov18-datasette-81dba6fe40f7c0eb",
+      "title": "Datasette Apps 0.4a0 release",
+      "url": "https://github.com/datasette/datasette-apps/releases/tag/0.4a0",
+      "accessedAt": "2026-11-18T19:19:09.201519Z",
+      "publishedAt": "2026-11-15",
+      "locator": "Tagged release notes",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
+    },
+    {
+      "id": "nov18-datasette-d47427f5a2b9c3b3",
+      "title": "Datasette Agent 0.6a0 release",
+      "url": "https://github.com/datasette/datasette-agent/releases/tag/0.6a0",
+      "accessedAt": "2026-11-18T19:19:09.206282Z",
+      "publishedAt": "2026-11-15",
+      "locator": "Tagged release notes",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
+    },
+    {
+      "id": "nov18-datasette-e9477865501b0215",
+      "title": "datasette-llm 0.1a11 release",
+      "url": "https://github.com/datasette/datasette-llm/releases/tag/0.1a11",
+      "accessedAt": "2026-11-18T19:19:09.208332Z",
+      "publishedAt": "2026-11-14",
+      "locator": "Tagged release notes",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
+    },
+    {
+      "id": "nov18-datasette-0139ca5c534e35bb",
+      "title": "Datasette 1.0a43 release",
+      "url": "https://github.com/simonw/datasette/releases/tag/1.0a43",
+      "accessedAt": "2026-11-18T19:19:09.209966Z",
+      "publishedAt": "2026-11-15",
+      "locator": "Tagged release notes",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
+    },
+    {
+      "id": "nov18-datasette-0139ca5c534e35bb-advisory",
+      "title": "Private stored-query disclosure advisory",
+      "url": "https://github.com/simonw/datasette/security/advisories/GHSA-mw6v-83vp-7c4c",
+      "accessedAt": "2026-11-18T19:19:09.211137Z",
+      "publishedAt": "2026-11-15",
+      "locator": "Impact; affected and patched versions; patches",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
+    },
+    {
+      "id": "nov18-datasette-9f458effb436880f",
+      "title": "Datasette 0.65.6 release",
+      "url": "https://github.com/simonw/datasette/releases/tag/0.65.6",
+      "accessedAt": "2026-11-18T19:19:09.213068Z",
+      "publishedAt": "2026-11-15",
+      "locator": "Tagged release notes",
+      "supports": "Current release behavior, dependencies, model configuration and permission boundaries"
     }
   ],
   "images": [],
-  "judgment": "Worth a small, version-recorded evaluation for existing Datasette datasets, with reviewed queries and acceptance cases. The panel and grant tools improve the documented editing workflow, but alpha status and untested generated results limit adoption confidence.",
-  "researchNote": "Prepared from ten public browser captures acquired on November 8, 2026: three tagged release pages, two current READMEs, two actual current LICENSE texts and three dated posts by the project author. Author posts establish the November 3 Agent announcement and November 4 Apps and datasette-llm announcements; GitHub captures did not display release timestamps. The report publication date follows the November 4 Apps integration announcement. Current README details are explicitly dated observations, not assumed release-version behavior. No installation, native execution, hosted sign-in, compatibility test, benchmark or billing check was performed. Use cases and acceptance criteria are editorial proposals. No claim of exhaustive repository review or independent experimental validation."
+  "judgment": "A useful incremental update for existing Datasette datasets: test linked apps and local-model access on small acceptance data, with patched permissions and recorded versions. The alpha releases and untested generated results still limit adoption confidence.",
+  "researchNote": "Stable report revised from six freshly captured primary tagged release/advisory pages, four current Agent/Apps README/license captures, the earlier Agent 0.5a0 release reread and author release posts. Public HTTP/parser acquisition followed a Chrome timeout. Existing architectural context was rechecked where used; no native execution, exploit or independent experimental validation was performed. Use cases remain editorial proposals."
 }

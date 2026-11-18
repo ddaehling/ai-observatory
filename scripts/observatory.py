@@ -553,7 +553,10 @@ def public_sources(sources):
                 canonical_url(source["feedUrl"])
         except ValueError:
             continue
-        result.append({key: value for key, value in source.items() if key in keys})
+        item = {key: value for key, value in source.items() if key in keys}
+        if "notes" in item:
+            item["notes"] = public_coverage_text(item["notes"])
+        result.append(item)
     return result
 
 
@@ -572,6 +575,23 @@ def public_account_text(value):
     if re.search(r"(?<![\w/])(?:/|~[/\\]|[A-Za-z]:[/\\]|\\\\|\.{1,2}[/\\]|\.state[/\\])", without_urls):
         return ""
     return value
+
+
+def public_coverage_text(value):
+    """Remove embedded acquisition metadata without rewriting the source ledger."""
+    if not isinstance(value, str):
+        return value
+    # Older notes embedded flat capture dictionaries or appended archive citations.
+    text = re.sub(r"\s*\{[^{}]*['\"](?:archivePath|capturePath)['\"]\s*:[^{}]*\}", "", value, flags=re.I)
+    text = re.sub(r"\s*(?:Archived capture|Archive:)\s+\.state[/\\][^\n]*", "", text, flags=re.I)
+    text = re.sub(r";\s*complete relevant text archived at\s+\.state/[^\s]+", ".", text, flags=re.I)
+    if public_account_text(text) == text:
+        return text.strip()
+    # Fail closed per sentence/clause, retaining neighboring coverage limitations.
+    clauses = re.split(r"(?<=[.;])\s+", text)
+    safe = [clause for clause in clauses if public_account_text(clause) == clause
+            and not re.match(r"(?:retrieved(?:At)?\b|(?:archive|capture)?sha-?256\b)", clause, re.I)]
+    return " ".join(safe + ["Local acquisition metadata omitted."]).strip()
 
 
 def accounts_payload(catalogue):
@@ -754,6 +774,11 @@ def build(root, strict=False):
             raise ValueError("Frontend file is missing: src/" + filename)
     sources = public_sources(read_json(root / "data/sources.json", []))
     runs = read_json(root / "data/runs.json", [])
+    for run in runs:
+        if "coverageNote" in run:
+            run["coverageNote"] = public_coverage_text(run["coverageNote"])
+        if isinstance(run.get("limitations"), list):
+            run["limitations"] = [public_coverage_text(note) for note in run["limitations"]]
     complete = completed_runs(runs)
     last = complete[-1] if complete else None
     last_scan = last["finishedAt"] if last else None

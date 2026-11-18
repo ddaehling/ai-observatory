@@ -1,0 +1,28 @@
+{
+  "reportId": "longcat-video-avatar",
+  "reviewerId": "/root/nov18_astra_final_a",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reviewedAt": "2026-11-18T19:31:17.860393Z",
+  "reportHash": "6fc03afbebdc125cc6a5edb3ff500f7ab78996bcf0ddf5f02637ccbf1423ff52",
+  "evidenceHash": "771b020e5d6f142af1cc90e04fe9fa752476a850a69337c996d15a79c615aa87",
+  "rubricHash": "6cdb83fea230724139b314156b7fdfcc6369cf51b8e14a18baf32bb20b980098",
+  "rubricVersion": "1.0",
+  "verdict": "approve",
+  "scores": {
+    "usefulness": 6,
+    "impact": 6,
+    "novelty": 5,
+    "maturity": 4,
+    "openness": 8
+  },
+  "rationale": {
+    "usefulness": "Download instructions, speech/image inputs, continuation examples and inspectable inference code make a bounded avatar-video pilot actionable. The report gives concrete lesson, dialogue and captioned website deliverables with identity, lip timing and start/middle/end checks. Those proposals are appropriately qualified: no output was generated, stylized-input ratings declined, and hardware cost is unknown. This is useful to CUDA-equipped creative teams, not yet broadly accessible production tooling.",
+    "impact": "Continuation-focused post-training and a downloadable release address a meaningful problem in sustained speaking videos. The saved developer study supports a modest predecessor improvement (55.6% tie-adjusted preference) and second place among six systems, while the realistic-input rating rises. The 24.7% preference against OmniHuman-2.0, animated-input regression, residual synchronization errors and absence of independent long-duration tests limit the significance to a substantive domain advance rather than a field-wide breakthrough.",
+    "novelty": "The distinct contribution is the combination of perceptual refinement, revised guidance and long-video rollout/self-distillation on an existing Avatar 1.5 backbone. The report correctly avoids claiming a new base architecture or that all pipeline components are new. Eight-step sampling alone is not novel to this release: the pinned README already describes eight steps for version 1.5. The continuation refinement is meaningfully differentiated, but superiority and original-method claims remain bounded by developer evidence.",
+    "maturity": "The card provides concrete CUDA/PyTorch dependencies and runnable-looking single/multi-person recipes, but this review did not execute them. Minimum VRAM, render latency and production economics remain unverified. Pinned source confirms parser defaults of 3/0.5 versus explicit 4/1.0 examples and a two-adapter branch that contradicts README prose. Figure 8 confirms 82.5% expert half-speed lip-sync mismatch and lower animated-input ratings. These make readiness materially conditional despite the public release.",
+    "openness": "The saved model card explicitly declares MIT weights and provides download paths; the pinned repository contains the standard MIT code license, and source plus a detailed technical report make behavior inspectable. The report properly distinguishes the hub LICENSE-link failure from the inspected code license and does not imply rights in input likenesses. Unreleased or unverified training artifacts, unmeasured hardware portability and inconsistent inference documentation prevent an exceptional reproducibility score."
+  },
+  "confidence": "high",
+  "concerns": []
+}

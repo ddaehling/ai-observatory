@@ -6422,16 +6422,21 @@
         "ratePerWeek": null,
         "basis": "No posting-rate measurement. Profile and selected original examples were inspected; the visible timeline is not a complete observation window."
       },
-      "lastObservedAt": "2026-11-15T06:57:54.737Z",
-      "lastAssessedAt": "2026-11-15T07:33:41.659586Z",
+      "lastObservedAt": "2026-11-18T19:10:10.300029Z",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
       "access": {
         "entrypointInspected": true,
         "captureUrl": "https://x.com/simonw",
         "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261118T190424Z-c7a538",
+          "windowStart": null,
+          "windowEnd": "2026-11-18T19:10:10.300029Z",
+          "scope": "Initial public profile posts only; pinned content and collapsed excerpts remain bounded."
+        },
         "limitations": [
-          "Bounded public profile sample; no full-history or posting-frequency claim.",
-          "Model performance and product claims are author reports, not independently reproduced.",
-          "Initial profile capture preserved visible month/day but returned null datetime attributes; publishedAt stays null rather than supplying an invented timestamp."
+          "Public HTTP profile and visible posts inspected; no full timeline pagination.",
+          "Some posts are collapsed; quoted work is attributed to its original author and does not establish endorsement or independent corroboration."
         ]
       },
       "evidence": [
@@ -6448,15 +6453,28 @@
           "observedAt": "2026-11-15T06:57:54.737Z",
           "observation": "Applies the same task prompt to Claude Fable and links his own comparison output.",
           "inspection": "Live Chrome public article card; text and exact links preserved in scoped capture."
+        },
+        {
+          "url": "https://x.com/simonw/status/2122500307557265651",
+          "publishedAt": "2026-11-17",
+          "observedAt": "2026-11-18T19:10:10.300029Z",
+          "observation": "Visible November17 post links his November16 external-sandbox article, which was subsequently inspected in full. The prototypes and agent-specific file-access limitations are documented; no native testing or security audit was performed.",
+          "inspection": "Profile post text inspected; linked article inspection is separately recorded in candidate evidence."
+        },
+        {
+          "url": "https://blog.primeradiant.com/external-sandboxes-for-coding-agents/",
+          "publishedAt": "2026-11-16",
+          "observedAt": "2026-11-18T19:19:09.122200Z",
+          "observation": "Full November16 original article describes three experimental external-sandbox prototypes and documents that Claude Code native Read/Edit remain on the host. No audit suitable for sensitive workloads is claimed.",
+          "inspection": "Full public text inspected; no native product testing."
         }
       ],
       "originalityBasis": "Publishes firsthand side-by-side model experiments with prompts and linked outputs.",
       "provenance": {
-        "runId": null,
-        "discoveryRunId": "profiles-20261115",
-        "capturePath": ".state/profiles-20261115/captures/builders/simonw.json",
-        "captureSha256": "49fdb6dfb98e00166558cc0618063dc362d29198341d240d62b7702c3cecdfc2",
-        "sourceResultPath": null
+        "runId": "scan-20261118T190424Z-c7a538",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/assessment-seed-profile-x-com-simonw.json",
+        "captureSha256": "d675ae1ba22d300d2307bd4b424e58fe8c4abe3d16040ceeeff3abf12f644d3a",
+        "sourceResultPath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/source-results.json"
       },
       "assessmentHistory": [
         {
@@ -6465,6 +6483,12 @@
           "status": "specialist",
           "reason": "Accepted for concrete originating work in inspected profile posts.",
           "originalityBasis": "Publishes firsthand side-by-side model experiments with prompts and linked outputs."
+        },
+        {
+          "assessedAt": "2026-11-18T19:20:31.242292Z",
+          "observedAt": "2026-11-18T19:10:10.300029Z",
+          "runId": "scan-20261118T190424Z-c7a538",
+          "observation": "Visible November17 post links his November16 external-sandbox article, which was subsequently inspected in full. The prototypes and agent-specific file-access limitations are documented; no native testing or security audit was performed. Historical assessments preserved; no watermark advanced."
         }
       ],
       "discoveryProvenance": [
@@ -17594,17 +17618,21 @@
         "ratePerWeek": null,
         "basis": "No posting-rate measurement. The current profile and selected original examples were inspected; the visible timeline is not a complete observation window."
       },
-      "lastObservedAt": "2026-11-15T16:44:43.875Z",
-      "lastAssessedAt": "2026-11-15T17:21:25.083285Z",
+      "lastObservedAt": "2026-11-18T19:10:06.625468Z",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
       "access": {
         "entrypointInspected": true,
         "captureUrl": "https://x.com/mervenoyann",
         "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261118T190424Z-c7a538",
+          "windowStart": null,
+          "windowEnd": "2026-11-18T19:10:06.625468Z",
+          "scope": "Initial public profile posts only; pinned content and collapsed excerpts remain bounded."
+        },
         "limitations": [
-          "Hugging Face employee; vendor-affiliated writing. Coauthorship does not establish responsibility for every implementation detail.",
-          "Example workflows and reported experimental results were inspected, not executed or independently reproduced.",
-          "Linked videos and repositories were not comprehensively reviewed; no posting-frequency claim.",
-          "Shared-follow sample: Chip Huyen (@chipro), Eugene Yan (@eugeneyan), Hamel Husain (@HamelHusain), Loubna Ben Allal (@LoubnaBenAllal1), Nathan Lambert (@natolambert), Thomas Wolf (@Thom_Wolf). Counts are lower bounds from partial, potentially noncontiguous public Following-list slices observed on 15 November 2026; absence from other sampled lists is unknown. Follows are discovery signals, not endorsements or evidence of originality."
+          "Public HTTP profile and visible posts inspected; no full timeline pagination.",
+          "Some posts are collapsed; quoted work is attributed to its original author and does not establish endorsement or independent corroboration."
         ]
       },
       "evidence": [
@@ -17621,6 +17649,13 @@
           "observedAt": "2026-11-15T16:44:37.120Z",
           "observation": "Coauthored agent-training curriculum compares supervised traces, distillation, reward learning, environments and asynchronous harness training, explaining failure recovery and teacher/reward limitations. Linked sessions were not watched.",
           "inspection": "Complete article heading/byline/date and body through harnesses and scale inspected."
+        },
+        {
+          "url": "https://x.com/mervenoyann/status/2072060618769924357",
+          "publishedAt": "2026-06-30",
+          "observedAt": "2026-11-18T19:10:06.625468Z",
+          "observation": "June30 book collaboration with Andi Marafioti, Miquel Farré and Orr Zohar was traced to the full post. Current profile also compares local decision models and LLMs; comparative claim was not independently benchmarked.",
+          "inspection": "Profile and full book-collaboration post inspected."
         }
       ],
       "originalityBasis": "Two distinct, current coauthored technical guides; the curriculum adds structured explanation rather than merely relaying other accounts.",
@@ -17725,11 +17760,10 @@
         ]
       },
       "provenance": {
-        "runId": null,
-        "discoveryRunId": "profiles-follow-overlap-20261115",
-        "capturePath": ".state/profiles-follow-overlap-20261115/captures/root/mervenoyann.quality.json",
-        "captureSha256": "edde6dabf0023983562648c853bf9d88e2d13611d00ddbd51446349e561fb918",
-        "sourceResultPath": null
+        "runId": "scan-20261118T190424Z-c7a538",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/assessment-seed-social-source-47f9a0851d0684d5.json",
+        "captureSha256": "8f217a9c59b88705234411d8c39b03dfa68f09724035674bc084ca60f826e2d1",
+        "sourceResultPath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/source-results.json"
       },
       "assessmentHistory": [
         {
@@ -17738,6 +17772,12 @@
           "status": "specialist",
           "reason": "Inspected actual recurring profile, two distinct attributable substantive primary contributions, and current original AI work. Shared follows prioritize discovery only.",
           "originalityBasis": "Two distinct, current coauthored technical guides; the curriculum adds structured explanation rather than merely relaying other accounts."
+        },
+        {
+          "assessedAt": "2026-11-18T19:20:31.242292Z",
+          "observedAt": "2026-11-18T19:10:06.625468Z",
+          "runId": "scan-20261118T190424Z-c7a538",
+          "observation": "June30 book collaboration with Andi Marafioti, Miquel Farré and Orr Zohar was traced to the full post. Current profile also compares local decision models and LLMs; comparative claim was not independently benchmarked. Historical assessments preserved; no watermark advanced."
         }
       ]
     },
@@ -27714,24 +27754,21 @@
         "ratePerWeek": null,
         "basis": "No measured posting-rate window. Bounded profile and selected contribution inspection; no complete timeline, measured posting cadence, reproduced result or news-window coverage is claimed."
       },
-      "lastObservedAt": "2026-11-17T19:39:48.477365+00:00",
-      "lastAssessedAt": "2026-11-17T19:53:41.905195+00:00",
+      "lastObservedAt": "2026-11-18T19:10:54.900889Z",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
       "access": {
         "entrypointInspected": true,
         "captureUrl": "https://x.com/swyx",
         "coverageComplete": false,
         "coverageWindow": {
-          "runId": null,
+          "runId": "scan-20261118T190424Z-c7a538",
           "windowStart": null,
-          "windowEnd": null,
-          "scope": "Standalone current profile and selected original contributions."
+          "windowEnd": "2026-11-18T19:10:54.900889Z",
+          "scope": "Initial public profile posts only; pinned content and collapsed excerpts remain bounded."
         },
         "limitations": [
-          "Public profile and bounded rendered post sample only; no complete timeline or measured posting cadence.",
-          "Publication dates identify inspected versions where shown; undated pages remain null.",
-          "Research results and design claims were read, not independently reproduced.",
-          "Commercial affiliation affects perspective; promotional claims are not treated as independent evaluation.",
-          "Bounded profile and selected contribution inspection; no complete timeline, measured posting cadence, reproduced result or news-window coverage is claimed. Observed follow overlap is a discovery signal, not an endorsement or evidence of quality. Partial samples provide lower bounds only."
+          "Public HTTP profile and visible posts inspected; no full timeline pagination.",
+          "Some posts are collapsed; quoted work is attributed to its original author and does not establish endorsement or independent corroboration."
         ]
       },
       "evidence": [
@@ -27761,6 +27798,13 @@
           "inspection": "Public identity, professional context and relevant links; identity evidence only.",
           "capturePath": ".state/profiles-follow-overlap-20261117/root/captures/swyx-home.json",
           "captureSha256": "fe7d8e0cdee41acd9db0d6b4dfd1a0c7f3ea7ec86762ae7df0bf27f8b5001651"
+        },
+        {
+          "url": "https://x.com/swyx/status/2122862646265520150",
+          "publishedAt": "2026-11-18",
+          "observedAt": "2026-11-18T19:10:54.900889Z",
+          "observation": "Visible quote criticizes the Astra launch advertisement while distinguishing his model assessment; embedded Brian Lovin reply is likewise critical of the advertisement. Do not treat quote as product-performance evidence.",
+          "inspection": "Profile quote and embedded reply inspected; some surrounding post text remains collapsed."
         }
       ],
       "originalityBasis": "His personal homepage connects the X account to Latent Space and lists the AI Engineer essay as his writing. Two distinct original essays linked from his personal site develop professional and agent-lab arguments; his commercial affiliation is explicit.",
@@ -27785,14 +27829,10 @@
         }
       ],
       "provenance": {
-        "runId": null,
-        "discoveryRunId": "profiles-follow-overlap-20261117",
-        "capturePath": ".state/profiles-follow-overlap-20261117/integration-captures/profile-x-com-swyx.346e656b4f713d1a.bundle.json",
-        "captureSha256": "346e656b4f713d1a0a7218b0797b54c1df978f21b83ee255018a268ed3b6c520",
-        "sourceResultPath": null,
-        "profileCapturePath": ".state/profiles-follow-overlap-20261117/root/captures/swyx.profile.json",
-        "profileCaptureSha256": "4c8baa98368007ebad7876f382fc61a04cd9a44593a0a9f517fc51a1ca791bbf",
-        "profileInspectedAt": "2026-11-17T19:30:39.597Z"
+        "runId": "scan-20261118T190424Z-c7a538",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/assessment-seed-profile-source-f17989223612d5b0.json",
+        "captureSha256": "18a6872780744ccfae42a243b30617f0da3e12b184451fcb113d721c4478ce3b",
+        "sourceResultPath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/source-results.json"
       },
       "assessmentHistory": [
         {
@@ -27801,6 +27841,12 @@
           "status": "specialist",
           "reason": "Distinct original contributions and public identity verified; shared follows used only for discovery.",
           "originalityBasis": "His personal homepage connects the X account to Latent Space and lists the AI Engineer essay as his writing. Two distinct original essays linked from his personal site develop professional and agent-lab arguments; his commercial affiliation is explicit."
+        },
+        {
+          "assessedAt": "2026-11-18T19:20:31.242292Z",
+          "observedAt": "2026-11-18T19:10:54.900889Z",
+          "runId": "scan-20261118T190424Z-c7a538",
+          "observation": "Visible quote criticizes the Astra launch advertisement while distinguishing his model assessment; embedded Brian Lovin reply is likewise critical of the advertisement. Do not treat quote as product-performance evidence. Historical assessments preserved; no watermark advanced."
         }
       ]
     },
@@ -33146,6 +33192,189 @@
           "originalityBasis": "Profile directly links Cognitive Resonance. Two distinct original works are fully available: an investigation of an AI-centred school organization and a conducted interview about AI, cognition and culture."
         }
       ]
+    },
+    {
+      "id": "profile-bsky-app-profile-emilymbender-bsky-social",
+      "sourceId": "profile-bsky-app-profile-emilymbender-bsky-social",
+      "name": "Emily M. Bender",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social",
+      "kind": "social_account",
+      "platform": "Bluesky",
+      "topics": [
+        "NLP evaluation",
+        "AI claims",
+        "education",
+        "societal impact"
+      ],
+      "editorialRole": "specialist research and critical analysis",
+      "status": "specialist",
+      "whyMonitor": "Computational linguist offering original explanations of evaluation, language-model interpretation and AI claims. Useful for checking detector metrics and educational decisions; critical commentary is an attributed viewpoint rather than independent experimental validation.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Bounded current 25-item feed plus selected older work; no complete dated observation window."
+      },
+      "lastObservedAt": "2026-11-18T19:12:22.747543Z",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://bsky.app/profile/emilymbender.bsky.social",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261118T190424Z-c7a538",
+          "windowStart": null,
+          "windowEnd": "2026-11-18T19:12:22.747543Z",
+          "scope": "Identity header, 25-item public author feed and selected original work; no pagination."
+        },
+        "limitations": [
+          "Profile HTML exposes identity but requires JavaScript for feed; one public AppView API retrieval supplied 25 current feed items, without pagination.",
+          "This bounded sample does not establish full history or a numerical posting cadence.",
+          "Two substantive contribution examples include older coauthored analysis; Bender and Hanna are collaborators and are not independent corroboration of one another.",
+          "Critical and political commentary is attributed analysis; no detector experiment or native product test was performed."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://buttondown.com/maiht3k/archive/pangram-is-not-an-oracle/",
+          "publishedAt": "2026-10-19",
+          "observedAt": "2026-11-18T19:13:18.551857Z",
+          "observation": "October 19 essay explains false positives/negatives, domain-matched evaluation and probabilistic detector scores, and argues against treating a detector result as an oracle. November discussion is rediscovery of this older essay.",
+          "inspection": "Full public text inspected; no native product testing."
+        },
+        {
+          "url": "https://www.techpolicy.press/the-myth-of-agi/",
+          "publishedAt": "2025-06-03",
+          "observedAt": "2026-11-18T19:13:18.554297Z",
+          "observation": "Distinct coauthored June 2025 argument examining competing definitions of AGI and their policy implications; opinion and analysis, not a performance experiment.",
+          "inspection": "Full public text inspected; no native product testing."
+        },
+        {
+          "url": "https://faculty.washington.edu/ebender/",
+          "publishedAt": null,
+          "observedAt": "2026-11-18T19:11:30.251945Z",
+          "observation": "University homepage identifies her computational-linguistics role and links publications and the collaboration with Alex Hanna.",
+          "inspection": "Actual author homepage inspected; page update date unknown."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261118T190424Z-c7a538",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/assessment-emilymbender.json",
+        "captureSha256": "d4aa57b76bd1f4069f8717221264c3f28f78eee4a69c432b9610807602b4a39e",
+        "sourceResultPath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/additional-source-results.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-18T19:20:31.242292Z",
+          "runId": "scan-20261118T190424Z-c7a538",
+          "observation": "Added after actual profile/API inspection, explicit identity-link verification and two distinct full original contributions; specialist status and mixed-topic limitations retained."
+        }
+      ],
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://bsky.app/profile/emilymbender.bsky.social",
+          "toUrl": "https://faculty.washington.edu/ebender/",
+          "sourceUrl": "https://bsky.app/profile/emilymbender.bsky.social",
+          "type": "primary-author link",
+          "observedAt": "2026-11-18T19:11:30.249503Z",
+          "publishedAt": null,
+          "context": "Actual Bluesky identity header links the University of Washington author homepage and The AI Con. The direction recorded is profile to faculty homepage; no reciprocal Bluesky link from the faculty page is claimed."
+        }
+      ]
+    },
+    {
+      "id": "profile-bsky-app-profile-alexhanna-bsky-social",
+      "sourceId": "profile-bsky-app-profile-alexhanna-bsky-social",
+      "name": "Alex Hanna",
+      "url": "https://bsky.app/profile/alexhanna.bsky.social",
+      "kind": "social_account",
+      "platform": "Bluesky",
+      "topics": [
+        "AI labor",
+        "dataset accountability",
+        "AI policy",
+        "critical analysis"
+      ],
+      "editorialRole": "specialist research and critical analysis",
+      "status": "specialist",
+      "whyMonitor": "Sociologist and DAIR research director publishing original analysis of data work, labor and AI policy. Useful for examining who bears costs and how AI claims shape deployment; public feed mixes research, advocacy, political discussion and reposts.",
+      "cadence": {
+        "ratePerWeek": null,
+        "basis": "Bounded current 24-item feed plus selected older work; no complete dated observation window."
+      },
+      "lastObservedAt": "2026-11-18T19:12:22.748782Z",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "access": {
+        "entrypointInspected": true,
+        "captureUrl": "https://bsky.app/profile/alexhanna.bsky.social",
+        "coverageComplete": false,
+        "coverageWindow": {
+          "runId": "scan-20261118T190424Z-c7a538",
+          "windowStart": null,
+          "windowEnd": "2026-11-18T19:12:22.748782Z",
+          "scope": "Identity header, 24-item public author feed and selected original work; no pagination."
+        },
+        "limitations": [
+          "Profile HTML exposes identity but requires JavaScript for feed; one public AppView API retrieval supplied 24 current feed items, without pagination.",
+          "This bounded sample does not establish full history or a numerical posting cadence.",
+          "Two substantive contribution examples include older coauthored analysis; Bender and Hanna are collaborators and are not independent corroboration of one another.",
+          "Critical and political commentary is attributed analysis; no detector experiment or native product test was performed."
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.techpolicy.press/the-myth-of-agi/",
+          "publishedAt": "2025-06-03",
+          "observedAt": "2026-11-18T19:13:18.554297Z",
+          "observation": "Coauthored June 2025 analysis of AGI definitions and policy framing, distinct from the earlier labor/consumer essay.",
+          "inspection": "Full public text inspected; no native product testing."
+        },
+        {
+          "url": "https://www.techpolicy.press/ai-hurts-consumers-and-workers-and-isnt-intelligent/",
+          "publishedAt": "2023-08-04",
+          "observedAt": "2026-11-18T19:14:18.783900Z",
+          "observation": "Distinct August 2023 coauthored essay on labor restructuring, human verification, consumer harms and regulatory accountability around generative AI. Historical analysis, not current product readiness evidence.",
+          "inspection": "Full public text inspected; no native product testing."
+        },
+        {
+          "url": "https://alex-hanna.com",
+          "publishedAt": null,
+          "observedAt": "2026-11-18T19:11:31.232689Z",
+          "observation": "Actual author homepage identifies her role and explicitly links this Bluesky profile and publications.",
+          "inspection": "Public author homepage and publications archive inspected."
+        }
+      ],
+      "provenance": {
+        "runId": "scan-20261118T190424Z-c7a538",
+        "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/assessment-alexhanna.json",
+        "captureSha256": "f70f9b7e6ef58308bc8d3c4fc0b6eb47a5fbdd3e3d7ea379b77899fc0aeca272",
+        "sourceResultPath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/additional-source-results.json"
+      },
+      "assessmentHistory": [
+        {
+          "assessedAt": "2026-11-18T19:20:31.242292Z",
+          "runId": "scan-20261118T190424Z-c7a538",
+          "observation": "Added after actual profile/API inspection, explicit identity-link verification and two distinct full original contributions; specialist status and mixed-topic limitations retained."
+        }
+      ],
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://faculty.washington.edu/ebender/",
+          "toUrl": "https://alex-hanna.com",
+          "sourceUrl": "https://faculty.washington.edu/ebender/",
+          "type": "collaboration",
+          "observedAt": "2026-11-18T19:11:30.251945Z",
+          "publishedAt": null,
+          "context": "University author page explicitly credits The AI Con collaboration with Alex Hanna and links her own website. This observed collaboration is not independent corroboration."
+        },
+        {
+          "fromUrl": "https://alex-hanna.com",
+          "toUrl": "https://bsky.app/profile/alexhanna.bsky.social",
+          "sourceUrl": "https://alex-hanna.com",
+          "type": "primary-author link",
+          "observedAt": "2026-11-18T19:11:31.232689Z",
+          "publishedAt": null,
+          "context": "Alex Hanna’s actual homepage explicitly links this Bluesky profile. This is the second observed link in the faculty-homepage to coauthor-homepage to social-profile chain."
+        }
+      ]
     }
   ],
   "discoveryQueue": [
@@ -33154,13 +33383,13 @@
       "name": "TLDR on Instagram",
       "url": "https://www.instagram.com/tldr_newsletter/",
       "sourceId": null,
-      "status": "provisional",
+      "status": "deferred",
       "discoveredAt": "2026-10-30T20:51:27.329Z",
       "discoveredFrom": "https://tldr.tech/ai",
-      "reason": "Public-web fallback could not retrieve the profile. Identity examples and cadence remain unverified; shared Chrome interruption prevented browser follow-up.",
-      "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/web-tldr-instagram-attempt.json",
-      "captureSha256": "29a79950386be4fad5b269e737179a6279984472fdb2dbf4c434771cf25bbaf7",
-      "nextAction": "Inspect public profile and representative dated AI items when acquisition is available.",
+      "reason": "Instagram retrieval exposed only an empty/login-oriented page; public-web fallback also failed. No representative AI posts or current identity content verified.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/queue-instagram.json",
+      "captureSha256": "4327139696cf69ae6755352b27011326858b637a230f98f28b03847a08048646",
+      "nextAction": "Revisit public profile when a substantive feed can be retrieved; retain as unqualified lead.",
       "observationHistory": [
         {
           "record": {
@@ -33231,25 +33460,37 @@
             "lastAttemptAt": "2026-11-08T19:21:11.629Z"
           },
           "scope": "Prior queue state retained before November 11 reassessment."
+        },
+        {
+          "record": {
+            "status": "provisional",
+            "reason": "Public-web fallback could not retrieve the profile. Identity examples and cadence remain unverified; shared Chrome interruption prevented browser follow-up.",
+            "nextAction": "Inspect public profile and representative dated AI items when acquisition is available.",
+            "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/web-tldr-instagram-attempt.json",
+            "captureSha256": "29a79950386be4fad5b269e737179a6279984472fdb2dbf4c434771cf25bbaf7",
+            "lastAssessedAt": "2026-11-11T05:37:09Z",
+            "lastAttemptAt": "2026-11-11T05:21:34.420Z"
+          },
+          "scope": "Prior unresolved assessment retained before November18 revisit."
         }
       ],
-      "lastAssessedAt": "2026-11-11T05:37:09Z",
-      "lastAttemptAt": "2026-11-11T05:21:34.420Z",
-      "acquisitionMethod": "public_web"
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "lastAttemptAt": "2026-11-18T19:11:31.372859Z",
+      "acquisitionMethod": "public_http_safe_fetch_with_public_web_attempt"
     },
     {
       "id": "lead-06011951fa7f2bae",
       "name": "EvalScience",
       "url": "https://evalscience.org/2026fall-nyc/",
       "sourceId": null,
-      "status": "provisional",
+      "status": "deferred",
       "discoveredAt": "2026-11-03T19:18:44.013Z",
       "discoveredFrom": "https://www.google.com/search?q=AI+agent+evaluation+education+independent+research+October+2026",
-      "reason": "Two bounded observations inspected the November 20 EvalScience symposium page and program. The event remains a deferred lead because a recurring originating publisher and representative research outputs have not been verified; no publication-frequency or completed-result claim is made.",
-      "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
-      "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
-      "nextAction": "Inspect the originating recurring publisher surface and representative outputs after the symposium before catalogue promotion.",
-      "lastAssessedAt": "2026-11-11T05:37:09Z",
+      "reason": "Full upcoming November20 event page, recurring nonprofit homepage and 12-talk/62-poster accepted-papers list inspected. A listing establishes a useful discovery route but individual paper results and recurring original publications remain unverified.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/queue-evalscience.json",
+      "captureSha256": "1e5f7430bdd37cdd087f3647227d445821b4b2e2f8ae11f95180eb4f5fa46750",
+      "nextAction": "After November20, inspect symposium outputs and linked primary papers; consider the recurring homepage/listing separately from individual stories.",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
       "observationHistory": [
         {
           "record": {
@@ -33283,9 +33524,21 @@
             "lastAssessedAt": "2026-11-08T19:19:30.492340Z"
           },
           "scope": "Previous unresolved lead retained."
+        },
+        {
+          "record": {
+            "status": "provisional",
+            "reason": "Two bounded observations inspected the November 20 EvalScience symposium page and program. The event remains a deferred lead because a recurring originating publisher and representative research outputs have not been verified; no publication-frequency or completed-result claim is made.",
+            "nextAction": "Inspect the originating recurring publisher surface and representative outputs after the symposium before catalogue promotion.",
+            "capturePath": ".state/scan-20261102T190626Z-3a6f04/resume-20261103/official/discovery-query.json",
+            "captureSha256": "50655032f4b98e7316c9d9161b645e91fe3353fc0c0d5912c26abcc003924eb3",
+            "lastAssessedAt": "2026-11-11T05:37:09Z",
+            "lastAttemptAt": "2026-11-11T05:21:34.338Z"
+          },
+          "scope": "Prior unresolved assessment retained before November18 revisit."
         }
       ],
-      "lastAttemptAt": "2026-11-11T05:21:34.338Z",
+      "lastAttemptAt": "2026-11-18T19:11:31.491706Z",
       "latestInspections": [
         {
           "url": "https://evalscience.org/2026fall-nyc/",
@@ -33309,21 +33562,22 @@
             "sourceResultPath": ".state/scan-20261111T050317Z-31980a/research/research_social/bundle.json"
           }
         }
-      ]
+      ],
+      "acquisitionMethod": "public_http_safe_fetch_with_public_web_attempt"
     },
     {
       "id": "lead-08594d3fa8aad6ba",
       "name": "UC San Diego Today",
       "url": "https://today.ucsd.edu/story/uc-san-diego-launches-center-for-principled-agentic-intelligence",
       "sourceId": null,
-      "status": "provisional",
+      "status": "deferred",
       "discoveredAt": "2026-11-03T19:18:44.013Z",
       "discoveredFrom": "https://www.google.com/search?q=AI+agent+evaluation+education+independent+research+October+2026",
-      "reason": "Full October 28 institutional launch article describes planned agentic-AI research and an open testbed. No released testbed or recurring center publication surface was verified.",
-      "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/web-ucsd-queue.json",
-      "captureSha256": "2caede1ff770e6a3ab2933f28f2be2d06ca890fcde7cf08acc2ad435674d6bc5",
-      "nextAction": "Inspect the center research/publications entrypoint and a released artifact; keep this news article as story evidence only.",
-      "lastAssessedAt": "2026-11-11T05:37:09Z",
+      "reason": "Full October28 institutional launch article remains accessible. It describes a planned open-source agent evaluation testbed; no released artifact or recurring center research publication surface was established.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/queue-ucsd.json",
+      "captureSha256": "7e3230a0480d5d62fe8ce3575de6d40e7e49684e732e4385e83acd972643c905",
+      "nextAction": "Inspect the center research/publications entrypoint and an actually released testbed; keep launch article as story evidence only.",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
       "observationHistory": [
         {
           "record": {
@@ -33374,10 +33628,22 @@
             "lastAssessedAt": "2026-11-08T19:19:30.492340Z"
           },
           "scope": "Prior queue state retained before November 11 reassessment."
+        },
+        {
+          "record": {
+            "status": "provisional",
+            "reason": "Full October 28 institutional launch article describes planned agentic-AI research and an open testbed. No released testbed or recurring center publication surface was verified.",
+            "nextAction": "Inspect the center research/publications entrypoint and a released artifact; keep this news article as story evidence only.",
+            "capturePath": ".state/scan-20261111T050317Z-31980a/research/research_social/web-ucsd-queue.json",
+            "captureSha256": "2caede1ff770e6a3ab2933f28f2be2d06ca890fcde7cf08acc2ad435674d6bc5",
+            "lastAssessedAt": "2026-11-11T05:37:09Z",
+            "lastAttemptAt": "2026-11-11T05:20:44.229Z"
+          },
+          "scope": "Prior unresolved assessment retained before November18 revisit."
         }
       ],
-      "lastAttemptAt": "2026-11-11T05:20:44.229Z",
-      "acquisitionMethod": "public_web"
+      "lastAttemptAt": "2026-11-18T19:11:31.933212Z",
+      "acquisitionMethod": "public_http_safe_fetch_with_public_web_attempt"
     },
     {
       "id": "nov11-gitdiscover-astryx-lead",
@@ -38950,6 +39216,108 @@
         "Profile and feed observations use documented unauthenticated public Bluesky API rendered in Chrome; candidate native app layout was not separately inspected."
       ],
       "profileInspectedAt": "2026-11-17T19:27:16.924Z"
+    },
+    {
+      "id": "nov18-lead-andimarafioti",
+      "name": "Andi Marafioti",
+      "url": "https://x.com/andimarafioti",
+      "sourceId": null,
+      "status": "deferred",
+      "discoveredAt": "2026-11-18T19:14:18.789351Z",
+      "discoveredFrom": "https://x.com/mervenoyann/status/2072060618769924357",
+      "reason": "Public profile and two announcements about the same speech-to-speech project inspected; book collaboration observed, but substantive book authorship content was not inspected. Do not count project updates as two distinct contributions.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/merve-book-collaborator.json",
+      "captureSha256": "8fffd68ed4a1569dc6cb2443fe1bd5e0aeeeba76b4510d317c48a8ab6609b198",
+      "nextAction": "Inspect a second distinct attributable research/teaching contribution and its primary artifact; then reassess for specialist promotion.",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "lastAttemptAt": "2026-11-18T19:12:25.517595Z",
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://x.com/mervenoyann",
+          "toUrl": "https://x.com/andimarafioti",
+          "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+          "type": "collaboration",
+          "observedAt": "2026-11-18T19:14:18.789351Z",
+          "publishedAt": "2026-06-30",
+          "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+        }
+      ]
+    },
+    {
+      "id": "nov18-lead-micuelll",
+      "name": "Miquel Farré",
+      "url": "https://x.com/micuelll",
+      "sourceId": null,
+      "status": "deferred",
+      "discoveredAt": "2026-11-18T19:14:18.789351Z",
+      "discoveredFrom": "https://x.com/mervenoyann/status/2072060618769924357",
+      "reason": "Actual profile shows book author identity and Studio Jadu affiliation, but sampled posts mainly amplify other people’s work. Two distinct attributable substantive contributions were not established.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/merve-book-collaborator-two.json",
+      "captureSha256": "7cf90ce9849bfe353e5097cd3fe9c20c2f395552fb4265d689371947a3bee4c0",
+      "nextAction": "Inspect the book and a separate authored technical contribution before promotion.",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "lastAttemptAt": "2026-11-18T19:12:25.938311Z",
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://x.com/mervenoyann",
+          "toUrl": "https://x.com/micuelll",
+          "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+          "type": "collaboration",
+          "observedAt": "2026-11-18T19:14:18.789351Z",
+          "publishedAt": "2026-06-30",
+          "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+        }
+      ]
+    },
+    {
+      "id": "nov18-lead-orr_zohar",
+      "name": "Orr Zohar",
+      "url": "https://x.com/orr_zohar",
+      "sourceId": null,
+      "status": "deferred",
+      "discoveredAt": "2026-11-18T19:14:18.789351Z",
+      "discoveredFrom": "https://x.com/mervenoyann/status/2072060618769924357",
+      "reason": "Actual profile and older research quotations inspected. Quoted FineVision/DINO work does not itself establish his authorship; book collaboration is an observed discovery clue only.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/catalogue/captures/merve-book-collaborator-three.json",
+      "captureSha256": "cb8e1938bd4d9fbc743de9e775976458e398625626c3653ff427ae4a65eefb4c",
+      "nextAction": "Trace explicit project bylines and inspect two distinct attributable contributions; do not infer authorship from quotes or affiliation.",
+      "lastAssessedAt": "2026-11-18T19:20:31.242292Z",
+      "lastAttemptAt": "2026-11-18T19:12:26.662249Z",
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://x.com/mervenoyann",
+          "toUrl": "https://x.com/orr_zohar",
+          "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+          "type": "collaboration",
+          "observedAt": "2026-11-18T19:14:18.789351Z",
+          "publishedAt": "2026-06-30",
+          "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+        }
+      ]
+    },
+    {
+      "id": "nov18-aaron-j-li-lead",
+      "name": "Aaron J. Li",
+      "url": "https://x.com/aaron_jli",
+      "reason": "Originating TokenEconomizer author thread inspected, including public collaborator attribution. Recurring profile not visited; keep as concrete lead until identity/representative-history check.",
+      "capturePath": ".state/scan-20261118T190424Z-c7a538/research/research_social/report-primary/aaron-origin-post.html",
+      "captureSha256": "f99539c3714a920cdf94a388ac67f05354915f737b69698192219cf08995a4bc",
+      "nextAction": "Inspect recurring public profile and representative outputs before promotion.",
+      "discoveryProvenance": [
+        {
+          "fromUrl": "https://tokeneconomizer.github.io",
+          "toUrl": "https://x.com/aaron_jli",
+          "sourceUrl": "https://x.com/aaron_jli/status/2114797313613053952",
+          "type": "primary_project_author_attribution",
+          "observedAt": "2026-11-18T19:15:21.891462Z",
+          "publishedAt": "2026-10-26",
+          "context": "Project links originating author post; author credits Microsoft Research/Security and named collaborators. Attribution is not endorsement."
+        }
+      ],
+      "sourceId": null,
+      "status": "deferred",
+      "discoveredAt": "2026-11-18T19:15:21.891462Z",
+      "discoveredFrom": "https://x.com/aaron_jli/status/2114797313613053952"
     }
   ],
   "rejectedOrLowerPriorityNotes": [
@@ -39030,17 +39398,17 @@
     }
   ],
   "counts": {
-    "entries": 334,
-    "directlyInspectedSocialAccounts": 292,
+    "entries": 336,
+    "directlyInspectedSocialAccounts": 294,
     "communities": 4,
-    "discoveryQueue": 92,
+    "discoveryQueue": 96,
     "statuses": {
       "verified": 24,
       "provisional": 1,
-      "specialist": 309
+      "specialist": 311
     }
   },
-  "updatedAt": "2026-11-17T19:53:41.905195+00:00",
+  "updatedAt": "2026-11-18T19:25:34.284588+00:00",
   "discoveryRuns": [
     {
       "id": "catalogue-bootstrap-20261031",
@@ -61576,6 +61944,208 @@
       "newEvidenceSources": 157,
       "newProfileMonitors": 54,
       "promotedProfileMonitors": 0
+    },
+    {
+      "id": "discovery-scan-20261118T190424Z-c7a538",
+      "runId": "scan-20261118T190424Z-c7a538",
+      "recordedAt": "2026-11-18T19:20:31.242292Z",
+      "purpose": "scheduled_news_scan_catalogue_discovery",
+      "evidenceRunIds": [
+        "scan-20261118T190424Z-c7a538"
+      ],
+      "considered": 13,
+      "added": 2,
+      "updated": 3,
+      "rejected": 1,
+      "deferred": 7,
+      "reason": "Bounded four-seed interaction and complementary primary-author pass; two substantive specialist additions, existing-seed reassessments, oldest-three unresolved leads revisited, and explicit nonqualifying candidate reasons. No following lists or mass expansion. One additional primary-project author was retained as an unvisited profile lead.",
+      "consideredItems": [
+        {
+          "id": "profile-bsky-app-profile-emilymbender-bsky-social",
+          "url": "https://bsky.app/profile/emilymbender.bsky.social",
+          "disposition": "added",
+          "reason": "Actual profile and current public feed inspected, explicit author identity links checked, and two distinct original contributions inspected in full. Specialist scope, mixed-topic activity and older examples disclosed.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://bsky.app/profile/emilymbender.bsky.social",
+              "toUrl": "https://faculty.washington.edu/ebender/",
+              "sourceUrl": "https://bsky.app/profile/emilymbender.bsky.social",
+              "type": "primary-author link",
+              "observedAt": "2026-11-18T19:11:30.249503Z",
+              "publishedAt": null,
+              "context": "Actual Bluesky identity header links the University of Washington author homepage and The AI Con. The direction recorded is profile to faculty homepage; no reciprocal Bluesky link from the faculty page is claimed."
+            }
+          ]
+        },
+        {
+          "id": "profile-bsky-app-profile-alexhanna-bsky-social",
+          "url": "https://bsky.app/profile/alexhanna.bsky.social",
+          "disposition": "added",
+          "reason": "Actual profile and current public feed inspected, explicit author identity links checked, and two distinct original contributions inspected in full. Specialist scope, mixed-topic activity and older examples disclosed.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://faculty.washington.edu/ebender/",
+              "toUrl": "https://alex-hanna.com",
+              "sourceUrl": "https://faculty.washington.edu/ebender/",
+              "type": "collaboration",
+              "observedAt": "2026-11-18T19:11:30.251945Z",
+              "publishedAt": null,
+              "context": "University author page explicitly credits The AI Con collaboration with Alex Hanna and links her own website. This observed collaboration is not independent corroboration."
+            },
+            {
+              "fromUrl": "https://alex-hanna.com",
+              "toUrl": "https://bsky.app/profile/alexhanna.bsky.social",
+              "sourceUrl": "https://alex-hanna.com",
+              "type": "primary-author link",
+              "observedAt": "2026-11-18T19:11:31.232689Z",
+              "publishedAt": null,
+              "context": "Alex Hanna’s actual homepage explicitly links this Bluesky profile. This is the second observed link in the faculty-homepage to coauthor-homepage to social-profile chain."
+            }
+          ]
+        },
+        {
+          "id": "profile-x-com-simonw",
+          "url": "https://x.com/simonw",
+          "disposition": "updated",
+          "reason": "Reassessed actual current public profile and selected bounded post/interaction; unchanged core editorial purpose and unknown cadence."
+        },
+        {
+          "id": "profile-x-com-mervenoyann",
+          "url": "https://x.com/mervenoyann",
+          "disposition": "updated",
+          "reason": "Reassessed actual current public profile and selected bounded post/interaction; unchanged core editorial purpose and unknown cadence."
+        },
+        {
+          "id": "profile-x-com-swyx",
+          "url": "https://x.com/swyx",
+          "disposition": "updated",
+          "reason": "Reassessed actual current public profile and selected bounded post/interaction; unchanged core editorial purpose and unknown cadence."
+        },
+        {
+          "id": "lead-6a963705f80eaba3",
+          "url": "https://www.instagram.com/tldr_newsletter/",
+          "disposition": "deferred",
+          "reason": "Instagram retrieval exposed only an empty/login-oriented page; public-web fallback also failed. No representative AI posts or current identity content verified."
+        },
+        {
+          "id": "lead-06011951fa7f2bae",
+          "url": "https://evalscience.org/2026fall-nyc/",
+          "disposition": "deferred",
+          "reason": "Full upcoming November20 event page, recurring nonprofit homepage and 12-talk/62-poster accepted-papers list inspected. A listing establishes a useful discovery route but individual paper results and recurring original publications remain unverified."
+        },
+        {
+          "id": "lead-08594d3fa8aad6ba",
+          "url": "https://today.ucsd.edu/story/uc-san-diego-launches-center-for-principled-agentic-intelligence",
+          "disposition": "deferred",
+          "reason": "Full October28 institutional launch article remains accessible. It describes a planned open-source agent evaluation testbed; no released artifact or recurring center research publication surface was established."
+        },
+        {
+          "id": "nov18-lead-andimarafioti",
+          "url": "https://x.com/andimarafioti",
+          "disposition": "deferred",
+          "reason": "Public profile and two announcements about the same speech-to-speech project inspected; book collaboration observed, but substantive book authorship content was not inspected. Do not count project updates as two distinct contributions.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://x.com/mervenoyann",
+              "toUrl": "https://x.com/andimarafioti",
+              "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+              "type": "collaboration",
+              "observedAt": "2026-11-18T19:14:18.789351Z",
+              "publishedAt": "2026-06-30",
+              "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+            }
+          ]
+        },
+        {
+          "id": "nov18-lead-micuelll",
+          "url": "https://x.com/micuelll",
+          "disposition": "deferred",
+          "reason": "Actual profile shows book author identity and Studio Jadu affiliation, but sampled posts mainly amplify other people’s work. Two distinct attributable substantive contributions were not established.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://x.com/mervenoyann",
+              "toUrl": "https://x.com/micuelll",
+              "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+              "type": "collaboration",
+              "observedAt": "2026-11-18T19:14:18.789351Z",
+              "publishedAt": "2026-06-30",
+              "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+            }
+          ]
+        },
+        {
+          "id": "nov18-lead-orr_zohar",
+          "url": "https://x.com/orr_zohar",
+          "disposition": "deferred",
+          "reason": "Actual profile and older research quotations inspected. Quoted FineVision/DINO work does not itself establish his authorship; book collaboration is an observed discovery clue only.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://x.com/mervenoyann",
+              "toUrl": "https://x.com/orr_zohar",
+              "sourceUrl": "https://x.com/mervenoyann/status/2072060618769924357",
+              "type": "collaboration",
+              "observedAt": "2026-11-18T19:14:18.789351Z",
+              "publishedAt": "2026-06-30",
+              "context": "Merve credits these three handles in her book-release post. This is explicit collaboration attribution, not a quality endorsement; the post was opened separately."
+            }
+          ]
+        },
+        {
+          "id": "nov18-considered-brian-lovin",
+          "url": "https://x.com/brian_lovin",
+          "disposition": "rejected",
+          "reason": "Actual profile and full quoted reply inspected; useful product-design viewpoint, but bounded sample did not establish two original AI technical contributions. Lower priority for this AI research catalogue, not an adverse judgment of the person.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://x.com/swyx",
+              "toUrl": "https://x.com/brian_lovin",
+              "sourceUrl": "https://x.com/swyx/status/2122862646265520150",
+              "type": "quote",
+              "observedAt": "2026-11-18T19:10:54.900889Z",
+              "publishedAt": "2026-11-18",
+              "context": "Swyx quotes Brian Lovin’s reply criticizing the Astra advertisement and adds his own criticism of the ad while treating the model separately. Critical quote context is preserved; no technical-quality endorsement inferred."
+            }
+          ]
+        },
+        {
+          "id": "nov18-aaron-j-li-lead",
+          "url": "https://x.com/aaron_jli",
+          "disposition": "deferred",
+          "reason": "Originating TokenEconomizer author thread inspected, including public collaborator attribution. Recurring profile not visited; keep as concrete lead until identity/representative-history check.",
+          "discoveryProvenance": [
+            {
+              "fromUrl": "https://tokeneconomizer.github.io",
+              "toUrl": "https://x.com/aaron_jli",
+              "sourceUrl": "https://x.com/aaron_jli/status/2114797313613053952",
+              "type": "primary_project_author_attribution",
+              "observedAt": "2026-11-18T19:15:21.891462Z",
+              "publishedAt": "2026-10-26",
+              "context": "Project links originating author post; author credits Microsoft Research/Security and named collaborators. Attribution is not endorsement."
+            }
+          ]
+        }
+      ],
+      "strategy": {
+        "seeds": [
+          "https://x.com/simonw",
+          "https://x.com/mervenoyann",
+          "https://x.com/swyx",
+          "https://bsky.app/profile/emilymbender.bsky.social"
+        ],
+        "routes": [
+          "Public profile posts and observed quotes/collaborator attribution",
+          "Public AppView author-feed repost/quote inspection",
+          "Explicit author-homepage and coauthor links",
+          "Targeted public search for critical AI/evaluation gaps",
+          "Oldest three unresolved catalogue leads"
+        ],
+        "bounds": "Four seeds, one interaction hop; a second author-homepage hop only for explicit identity/collaboration verification. Twelve deduplicated considered identities; no following graph. One public retrieval per assigned monitor, with one 13-source Bluesky API repair batch.",
+        "limitations": [
+          "Worker Chrome initialization unavailable. Root social follow-up to Merve timed out before a successful observation; no social Chrome success claimed.",
+          "HTTP/API initial listings are partial; none exhaust the outstanding windows.",
+          "New specialist contributions include older coauthored analyses; social rediscovery did not create a new launch or update."
+        ]
+      }
     }
   ]
 }
