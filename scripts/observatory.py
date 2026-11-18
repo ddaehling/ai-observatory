@@ -581,15 +581,27 @@ def public_coverage_text(value):
     """Remove embedded acquisition metadata without rewriting the source ledger."""
     if not isinstance(value, str):
         return value
+
+    def safe_prose(prose):
+        without_urls = prose
+        for match in re.finditer(r"[a-zA-Z][a-zA-Z0-9+.-]*://[^\s<>\"']+", prose):
+            try:
+                canonical_url(match.group().rstrip(".,;)"))
+            except ValueError:
+                return False
+            without_urls = without_urls.replace(match.group(), "")
+        # Web routes such as /archive and prose such as Windows / Linux are public.
+        return not re.search(r"(?<![\w/])(?:/(?:Users|home|private|tmp|var|etc|Volumes|opt|root)/|~[/\\]|[A-Za-z]:[/\\]|\\\\|\.{1,2}[/\\]|\.state[/\\])", without_urls, re.I)
+
     # Older notes embedded flat capture dictionaries or appended archive citations.
     text = re.sub(r"\s*\{[^{}]*['\"](?:archivePath|capturePath)['\"]\s*:[^{}]*\}", "", value, flags=re.I)
     text = re.sub(r"\s*(?:Archived capture|Archive:)\s+\.state[/\\][^\n]*", "", text, flags=re.I)
     text = re.sub(r";\s*complete relevant text archived at\s+\.state/[^\s]+", ".", text, flags=re.I)
-    if public_account_text(text) == text:
+    if safe_prose(text):
         return text.strip()
     # Fail closed per sentence/clause, retaining neighboring coverage limitations.
     clauses = re.split(r"(?<=[.;])\s+", text)
-    safe = [clause for clause in clauses if public_account_text(clause) == clause
+    safe = [clause for clause in clauses if safe_prose(clause)
             and not re.match(r"(?:retrieved(?:At)?\b|(?:archive|capture)?sha-?256\b)", clause, re.I)]
     return " ".join(safe + ["Local acquisition metadata omitted."]).strip()
 

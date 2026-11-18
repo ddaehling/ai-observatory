@@ -906,6 +906,7 @@ class BuildTests(unittest.TestCase):
             "No history claimed. Capture /Users/private/capture.json. Login wall remains.",
             "History incomplete. Capture /private/tmp/capture.json; retrieved 2026-10-28; SHA256 PRIVATE_DIGEST.",
             "Partial listing only. archive: .state/run/capture.json; retrieved 2026-10-28; sha256 PRIVATE_DIGEST.",
+            "Inspected public /archive list, November11 through October1; Windows / Linux support; Parameters / Device tab.",
             "Public documentation https://example.com/docs/v1. No runtime test.",
         ]
         sources = [{"id": "source-" + str(i), "url": "https://example.com/" + str(i), "notes": note} for i, note in enumerate(notes)]
@@ -918,7 +919,7 @@ class BuildTests(unittest.TestCase):
             "Partial coverage; first 50 entries only.", "History incomplete.",
             "Read in Chrome. No runtime test.", "Documentary inspection only.",
             "No history claimed. Login wall remains. Local acquisition metadata omitted.",
-            "History incomplete. Local acquisition metadata omitted.", "Partial listing only.", notes[-1],
+            "History incomplete. Local acquisition metadata omitted.", "Partial listing only.", notes[-2], notes[-1],
         ]
         self.assertEqual([item["notes"] for item in data["sources"]], expected)
         self.assertEqual(data["runs"][0]["limitations"], expected)
